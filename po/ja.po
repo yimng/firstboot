@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Aug 13 16:47:40 2002\n"
-"PO-Revision-Date: 2002-08-08 09:53GMT+10:00\n"
+"PO-Revision-Date: 2002-08-14 10:47GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -44,17 +44,15 @@ msgstr ""
 
 #: ../src/firstboot.py:87
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
 #: ../src/firstboot.py:88
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:93
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
@@ -69,27 +67,29 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"以下に表示してあるCDのどれかを所有している場合、そのCDを挿入して必要な "
+"ボタンを押すことによりパッケージをインストールできます。"
 
 #: ../src/modules/additional_cds.py:73
-#, fuzzy
 msgid "Red Hat Linux Documentation CD"
-msgstr "Red HatドキュメントCD"
+msgstr "Red Hat LinuxドキュメントCD"
 
 #: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
 #: ../src/modules/additional_cds.py:99
 msgid "Install..."
-msgstr ""
+msgstr "インストール..."
 
 #: ../src/modules/additional_cds.py:84
-#, fuzzy
 msgid "Red Hat Linux Installation CD"
-msgstr "Red HatドキュメントCD"
+msgstr "Red Hat LinuxインストールCD"
 
 #: ../src/modules/additional_cds.py:117
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"CD-ROMは検出されませんでした。 CD-ROMをドライブに挿入して\"OK\"を "
+"クリックして続けて下さい。"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -120,9 +120,8 @@ msgid "Finish Setup"
 msgstr "セットアップを終了"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Setup!"
-msgstr "セットアップを終了"
+msgstr "セットアップ終了!"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -166,7 +165,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -181,18 +179,18 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"Red Hat Update Agentは、マシンをRed Hat Networkに登録しますので、 Red Hatから"
-"直接最新のソフトウェアパッケージを受け取ることができます。 このツールの使用す"
-"れば、セキュリティパッチ、バグ修正、ソフトウェア パッケージ拡張などをいつも最"
-"新の状態にしてRed Hat Linuxシステムを 所有することができます。\n"
-" \n"
-"この製品を購入していればRed Hat Network 基本サービスの無料試行の権利がありま"
-"す。 この無料試行にアクセスするには、ボックスの中にある製品アクティベーション"
-"カード で詳細を確認してください。\n"
-" \n"
+"Red Hat 更新エージェントは、マシンをRed Hat Networkに登録しますので、 Red Hatから"
+"直接最新のソフトウェアパッケージを受け取ることができます。 このツールの "
+"使用すれば、セキュリティパッチ、バグフィックス、ソフトウェアパッケージ追加など "
+"をいつも最新の状態にしてRed Hat Linuxシステムを 所有する "
+"ことができます。\n"
+"\n"
+"この製品を購入していればRed Hat Network基本サービスの無料試行の権利がありま"
+"す。この無料試行にアクセスするには、ボックスの中にある製品アクティベーション"
+"カードで詳細を確認してください。\n"
+"\n"
 "この製品を購入していない場合、http://rhn.redhat.comのサイトで詳細情報を得る"
 "か、 又はRed Hat Network基本サービスを購読してください。\n"
-"\n"
 
 #: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
@@ -467,3 +465,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
