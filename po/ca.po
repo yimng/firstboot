@@ -1,14 +1,14 @@
 # Catalan translations for firstboot package.
-# Copyright (C) 2003 Free Software Foundation
+# Copyright (C) 2004 Free Software Foundation
 # This file is distributed under the same license as the PACKAGE package.
-# Xavier Conde Rueda <xaviconde@eresmas.com>, 2003.
-# 
+# Xavier Conde Rueda <xaviconde@eresmas.com>, 2003, 2004.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-07-15 15:04-0400\n"
-"PO-Revision-Date: 2004-03-09 19:15+0100\n"
+"PO-Revision-Date: 2004-08-17 20:25+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -21,11 +21,11 @@ msgstr "Surt"
 
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr "Acord quant a la llicència"
+msgstr "Acord de llicència"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr "_Sí, estic d'acord amb l'acord quant a la llicència"
+msgstr "_Sí, estic d'acord amb l'acord de llicència"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
@@ -33,7 +33,7 @@ msgstr "N_o, no hi estic d'acord"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Voleu tornar a llegir o reconsiderar l'acord quant a la llicència?"
+msgstr "Voleu tornar a llegir o reconsiderar l'acord de llicència?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -41,7 +41,7 @@ msgstr "To_rna a llegir la llicència"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr "_Acaba"
+msgstr "_Atura"
 
 #: ../src/exceptionWindow.py:48
 #, python-format
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
 msgid "_Back"
-msgstr "_Endarrere"
+msgstr "_Anterior"
 
 #: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
 msgid "_Next"
@@ -83,7 +83,7 @@ msgstr "Següe_nt"
 #: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr "Benvingut"
+msgstr "Benvinguts"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -115,7 +115,7 @@ msgstr "Configuració de la targeta de so"
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration"
-msgstr "Configuració de la zona horària"
+msgstr "Configuració del fus horari"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
@@ -127,7 +127,7 @@ msgstr "Seleccioneu l'element que voleu modificar "
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr "Agent de configuració"
+msgstr "Agent de la configuració"
 
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
@@ -161,9 +161,8 @@ msgstr ""
 "continuar."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "System User"
-msgstr "Serveis del sistema"
+msgstr "Usuari del sistema"
 
 #: ../src/modules/create_user.py:65
 msgid ""
@@ -293,7 +292,7 @@ msgstr "Data i hora"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr "Definiu la data i l'hora del sistema."
+msgstr "Especifiqueu la data i l'hora del sistema."
 
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
@@ -311,8 +310,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"No s'ha pogut establir una connexió amb %s. O bé %s no es troba disponible, "
-"o bé la configuració del vostre tallafocs està bloquejant les connexions NTP."
+"No s'ha pogut establir la connexió amb %s. O bé %s no es troba disponible, o "
+"bé la configuració del tallafocs està bloquejant les connexions NTP."
 
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
@@ -320,7 +319,7 @@ msgstr "S'està contactant amb el servidor NTP. Espereu..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr "Visualització"
+msgstr "Pantalla"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
@@ -329,14 +328,14 @@ msgstr ""
 
 #: ../src/modules/finished.py:21
 msgid "Finish Setup"
-msgstr "Ha acabat la configuració"
+msgstr "Finalitza la configuració"
 
 #: ../src/modules/finished.py:35
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"El vostre sistema ja està configurat i llest per ser usat. Feu clic al botó "
+"Aquest sistema ja està configurat i llest per ser usat. Feu clic al botó "
 "\"Següent\" al cantó inferior dret per continuar."
 
 #: ../src/modules/networking.py:44
@@ -345,7 +344,7 @@ msgstr "Configuració de la xarxa"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr "S'han detectat els següents dispositius de xarxa en el vostre sistema:"
+msgstr "S'han detectat els següents dispositius de xarxa en aquest sistema:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
@@ -380,15 +379,15 @@ msgid ""
 msgstr ""
 "Feu clic al botó \"Reprodueix so\" per escoltar un so de prova. Hauríeu de "
 "sentir tres sons consecutius. El primer estarà en el canal dret, el segon en "
-"el canal esquerre, i el tercer en el centre."
+"el canal esquerre, i el tercer al centre."
 
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
-msgstr "Zona horària"
+msgstr "Fus horari"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr "Definiu la zona horària del sistema."
+msgstr "Especifiqueu el fus horari del sistema."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -396,7 +395,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"S'han de seguir uns passos més abans que el vostre sistema estigui llest. "
+"S'han de seguir uns passos més abans que aquest sistema estigui llest. "
 "L'agent de configuració us guiarà a través d'una configuració bàsica. Feu "
 "clic al botó \"Següent\" en el cantó inferior dret per continuar."
 
