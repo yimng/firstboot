@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot \n"
 "POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
-"PO-Revision-Date: 2002-07-30 21:41+0300\n"
+"PO-Revision-Date: 2002-08-10 18:59+0300\n"
 "Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,6 @@ msgstr ""
 "X-Generator: KBabel 0.9.6\n"
 
 #: ../src/exceptionWindow.py:32
-#, fuzzy
 msgid "An error has occured in the %s module."
 msgstr "%s modülünde bir hata oluştu."
 
@@ -26,6 +25,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"%s modülünde bir sorun olduğundan Red Hat Ayar\n"
+"Aracısı bu modülü yüklemeden kalan modülleri\n"
+"çalıştırmaya uğraşacak."
 
 #: ../src/exceptionWindow.py:41
 msgid ""
@@ -34,6 +36,11 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Konusu 'firstboot' olan bir hata raporunu lütfen\n"
+"http://www.redhat.com/bugzilla adresindeki Red Hat Hata\n"
+"İzleme Sisteminden gönderiniz. Hata ayıklama çıktısının\n"
+"bir koyası %s olarak kaydedilmiştir. Bu dosyayı hata\n"
+"raporunuza eklemeyi unutmayınız.\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -49,7 +56,7 @@ msgstr "Linux Uygulamaları CD'si"
 
 #: ../src/modules/additional_cds.py:32
 msgid "Install Additional Software"
-msgstr ""
+msgstr "Ek Yazılım Kurulumu"
 
 #: ../src/modules/additional_cds.py:59
 msgid ""
@@ -74,14 +81,12 @@ msgid "Error"
 msgstr "Hata"
 
 #: ../src/modules/date.py:49
-#, fuzzy
 msgid "Date and Time"
 msgstr "Tarih ve Saat"
 
 #: ../src/modules/date.py:50
-#, fuzzy
 msgid "Date and Time Configuration"
-msgstr "Tarih ve Saat Ayarları"
+msgstr "Tarih ve Saat Yapılandırması"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
@@ -100,12 +105,10 @@ msgid "Finish Setup"
 msgstr "Son Ayar"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
 msgstr "Kurulum Tamamlandı!"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
@@ -116,18 +119,16 @@ msgstr ""
 "için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
 
 #: ../src/modules/soundcard_gui.py:49
-#, fuzzy
 msgid "Sound Card"
-msgstr "Ses kartı:"
+msgstr "Ses Kartı"
 
 #: ../src/modules/soundcard_gui.py:50
-#, fuzzy
 msgid "Sound Card Configuration"
-msgstr "Tarih ve Saat Ayarları"
+msgstr "Ses Kartı Yapılandırması"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "Makinanızda bir ses kartı saptandı."
 
 #: ../src/modules/soundcard_gui.py:93
 msgid ""
@@ -136,18 +137,19 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Örnek sesi duymak için \"Deneme sesi çal\" dğmesine tıklayınız. 3 seslik bir "
+"dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sağ kanaldan, üçüncü ses "
+"ise ortadan gelecek."
 
 #: ../src/modules/up2date.py:18
-#, fuzzy
 msgid "Update Agent"
-msgstr "Red Hat Güncelleme Aracısı"
+msgstr "Güncelleme Aracısı"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat Güncelleme Aracısı"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -163,11 +165,19 @@ msgid ""
 "information or to subscribe to Red Hat Network Basic Service. \n"
 "\n"
 msgstr ""
-"RHN üzerinden kayıt işleminiz tamamlandı. Artık yazılım paketlerinin son "
-"çıkan sürümlerini Rad Hat Güncelleme Aracısını kullanarak Red Hat'tan "
-"alabilirsiniz. Bu aracıyı kullanararak, Red Hat Linux sisteminizi daima "
+"Red Hat Güncelleme Aracısı, en güncel yazılım paketlerini doğrudan Red Hat'tan "
+"alabilmenize olanak sağlayacak olan Red Hat Ağına (RHN) kayıt işlemine "
+"başlayacak. Bu aracıyı kullanararak, Red Hat Linux sisteminizi daima "
 "güncel tutabilecek, en son güvenlik yamalarına ve yazılımlardaki en "
-"sonyeniliklere ilk siz sahip olabileceksiniz."
+"sonyeniliklere ilk siz sahip olabileceksiniz.\n"
+"\n"
+"Bu ürünü siz satın aldıysanız, Red Hat Ağının Temel Servisine ücretsiz deneme "
+"üyeliğinizi başlatmak için kutudan çıkan etkinlik kartındaki bilgileri "
+"okuyunuz.\n"
+"\n"
+"Bu ürünü siz satın almadıysanız, http://rhn.redhat.com adresini ziyaret "
+"ederek bu servise üyelik hakkında ayrıntılı bilgi edinebilirsiniz.\n"
+"\n"
 
 #: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
@@ -276,3 +286,4 @@ msgstr ""
 
 #~ msgid "Finish Installation"
 #~ msgstr "Kurulum Sonu"
+
