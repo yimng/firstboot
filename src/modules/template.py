@@ -20,6 +20,10 @@ class childWindow:
     def write_file(self):
         pass
 
+    def apply(self):
+        print "applying template changes"
+        pass
+
     def stand_alone(self):
         toplevel = GtkWindow()
         toplevel.set_usize(300, 400)
