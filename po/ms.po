@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ms\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
 "PO-Revision-Date: 2003-06-20 12:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -42,19 +42,30 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr ""
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr ""
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
+msgid "_Back"
+msgstr ""
+
+#: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
+msgstr ""
+
+#: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:28
+msgid "Welcome"
 msgstr ""
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
@@ -62,7 +73,9 @@ msgid "Additional CDs"
 msgstr ""
 
 #: ../src/modules/additional_cds.py:39
-msgid "If you have any of the CDs listed below, you can install packages from them by inserting the CD and clicking the appropriate button."
+msgid ""
+"If you have any of the CDs listed below, you can install packages from them "
+"by inserting the CD and clicking the appropriate button."
 msgstr ""
 
 #: ../src/modules/additional_cds.py:51
@@ -79,7 +92,9 @@ msgid "Red Hat Linux Installation CD"
 msgstr ""
 
 #: ../src/modules/additional_cds.py:99
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
 
 #: ../src/modules/create_user.py:22
@@ -87,7 +102,10 @@ msgid "User Account"
 msgstr ""
 
 #: ../src/modules/create_user.py:47
-msgid "It is recommended that you create a personal user account for normal (non-administrative) use.  To create a personal account, provide the requested information."
+msgid ""
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
 msgstr ""
 
 #: ../src/modules/create_user.py:57
@@ -107,35 +125,42 @@ msgid "Confir_m Password:"
 msgstr ""
 
 #: ../src/modules/create_user.py:94
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
 msgstr ""
 
 #: ../src/modules/create_user.py:104
 msgid "_Use Network Login..."
 msgstr ""
 
-#: ../src/modules/create_user.py:137
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 msgstr ""
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
 msgstr ""
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 msgid "Create _account"
 msgstr ""
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr ""
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 
-#: ../src/modules/create_user.py:191
-msgid "The username '%s' is a reserved system account.  Please specify another username."
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
 msgstr ""
 
 #: ../src/modules/create_user.py:238
@@ -147,27 +172,37 @@ msgid "The user name may not begin with a number."
 msgstr ""
 
 #: ../src/modules/create_user.py:252
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
 msgstr ""
 
 #: ../src/modules/create_user.py:259
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
 msgstr ""
 
 #: ../src/modules/create_user.py:266
-msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
 msgstr ""
 
 #: ../src/modules/create_user.py:273
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
 msgstr ""
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 
 #: ../src/modules/date.py:51
@@ -187,7 +222,9 @@ msgid "Error"
 msgstr "Ralat"
 
 #: ../src/modules/date.py:145
-msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
+msgid ""
+"A connection with %s could not be established.  Either %s is not available "
+"or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
 
 #: ../src/modules/date.py:182
@@ -199,7 +236,33 @@ msgid "Finish Setup"
 msgstr ""
 
 #: ../src/modules/finished.py:33
-msgid "Your system is now set up and ready to use.  Please click the \"Forward\" button in the lower right corner to continue."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Forward\" "
+"button in the lower right corner to continue."
+msgstr ""
+
+#: ../src/modules/networking.py:23
+msgid "Network Setup"
+msgstr ""
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+msgid "Network Device"
+msgstr ""
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+msgid "_Change Network Configuration..."
+msgstr ""
+
+#: ../src/modules/networking.py:120
+msgid "static"
 msgstr ""
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
@@ -211,7 +274,19 @@ msgid "A sound card has been detected on your computer."
 msgstr ""
 
 #: ../src/modules/soundcard_gui.py:74
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+msgid "Please set the timezone for the system."
 msgstr ""
 
 #: ../src/modules/up2date.py:19
@@ -220,11 +295,18 @@ msgstr ""
 
 #: ../src/modules/up2date.py:36
 msgid ""
-"This step will register your system with a complimentary Demo Account from Red Hat Network so that you can receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software enhancements. \n"
+"This step will register your system with a complimentary Demo Account from "
+"Red Hat Network so that you can receive the latest software packages "
+"directly from Red Hat.  Using this tool will allow you to always have the "
+"most up-to-date Red Hat Linux system with all the security patches, bug "
+"fixes, and software enhancements. \n"
 "\n"
-"If you purchased this product, you are entitled to a free trial of Red Hat Network Basic Service. To access the free trial, please refer to the product activation card found in the box for detailed instructions. \n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
 "\n"
-"If you did not purchase this product, visit http://rhn.redhat.com for more information or to subscribe to Red Hat Network Basic Service. \n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
 
 #: ../src/modules/up2date.py:55
@@ -235,12 +317,11 @@ msgstr ""
 msgid "_No, I do not want to register my system."
 msgstr ""
 
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr ""
-
 #: ../src/modules/welcome.py:35
-msgid "There are a few more steps to take before your system is ready to use.  The Red Hat Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Red Hat Setup Agent will now guide you through some basic configuration.  "
+"Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 
 #: ../src/textWindow.py:15
@@ -253,12 +334,15 @@ msgstr "Ya"
 
 #: ../src/textWindow.py:17
 msgid ""
-"The Red Hat Setup Agent can assist you in configuring your machine by guiding you through a series of steps.  Setup Agent requires the X Window System to run.  \n"
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
 "\n"
-"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose \"No\", the system will continue booting and you will never see this message again.  Do you wish to run the Setup Agent now?"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
 msgstr ""
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Setup Agent"
-

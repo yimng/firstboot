@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 9.1\n"
-"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
+"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
 "PO-Revision-Date: 2003-06-20 20:30+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -49,7 +49,8 @@ msgstr "Firstboot je bil v tem sistemu že pognan.\n"
 #: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
-msgstr "Če želite zagnati firstboot iz ukazne vrstice, izvedite naslednje ukaze:"
+msgstr ""
+"Če želite zagnati firstboot iz ukazne vrstice, izvedite naslednje ukaze:"
 
 #: ../src/firstboot.py:99
 msgid ""
@@ -61,9 +62,18 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot ne teče v ravni teka sistema 3."
 
-#: ../src/firstbootWindow.py:254
+#: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
+msgid "_Back"
+msgstr ""
+
+#: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
 msgstr "_Naprej"
+
+#: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Dobrodošli"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -74,8 +84,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Če imate katero od spodaj naštetih plošč, lahko z nje namestite pakete "
-"tako, da vstavite ploščo in kliknete ustrezni gumb."
+"Če imate katero od spodaj naštetih plošč, lahko z nje namestite pakete tako, "
+"da vstavite ploščo in kliknete ustrezni gumb."
 
 #: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
@@ -95,8 +105,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM ni bil zaznan. Prosim, vstavite ploščo v pogon in kliknite \"V "
-"redu\" za nadaljevanje."
+"CD-ROM ni bil zaznan. Prosim, vstavite ploščo v pogon in kliknite \"V redu\" "
+"za nadaljevanje."
 
 #: ../src/modules/create_user.py:22
 msgid "User Account"
@@ -132,8 +142,8 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Če morate uporabljati omrežno avtentikacijo kot je Kerberos ali NIS, "
-"prosim, kliknite gumb Uporabi omrežno prijavo."
+"Če morate uporabljati omrežno avtentikacijo kot je Kerberos ali NIS, prosim, "
+"kliknite gumb Uporabi omrežno prijavo."
 
 #: ../src/modules/create_user.py:104
 msgid "_Use Network Login..."
@@ -145,9 +155,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Toplo priporočamo, da naredite osebni uporabniški račun. Če nadaljujete "
-"brez računa, se boste lahko prijavili le kot root, ki pa je rezerviran "
-"zgolj za skrbniško rabo."
+"Toplo priporočamo, da naredite osebni uporabniški račun. Če nadaljujete brez "
+"računa, se boste lahko prijavili le kot root, ki pa je rezerviran zgolj za "
+"skrbniško rabo."
 
 #: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
@@ -170,8 +180,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Uporabniško ime '%s' je že ime rezerviranega sistemskega računa. "
-"Prosim, določite novo uporabniško ime."
+"Uporabniško ime '%s' je že ime rezerviranega sistemskega računa. Prosim, "
+"določite novo uporabniško ime."
 
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
@@ -202,16 +212,16 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Uporabniško ime '%s' vsebuje velike črke. Prosim, ne uporabljajte "
-"velikih črk v uporabniškem imenu."
+"Uporabniško ime '%s' vsebuje velike črke. Prosim, ne uporabljajte velikih "
+"črk v uporabniškem imenu."
 
 #: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Uporabniško ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le "
-"znake ASCII."
+"Uporabniško ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake "
+"ASCII."
 
 #: ../src/modules/create_user.py:283
 msgid ""
@@ -221,7 +231,8 @@ msgstr "Geslo vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
 #: ../src/modules/create_user.py:295
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
+msgstr ""
+"Ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -244,8 +255,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"S strežnikom %s ni moč vzpostaviti povezave. Bodisi %s ni dostopen ali "
-"pa nastavitve požarnega zidu v vašem računalniku preprečujejo povezave NTP."
+"S strežnikom %s ni moč vzpostaviti povezave. Bodisi %s ni dostopen ali pa "
+"nastavitve požarnega zidu v vašem računalniku preprečujejo povezave NTP."
 
 #: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
@@ -260,8 +271,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite "
-"gumb \"Naprej\" v spodnjem desnem kotu."
+"Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite gumb "
+"\"Naprej\" v spodnjem desnem kotu."
 
 #: ../src/modules/networking.py:23
 msgid "Network Setup"
@@ -303,8 +314,8 @@ msgid ""
 "will be in the center."
 msgstr ""
 "Kliknite gumb \"Predvajaj preskusni zvok\", da slišite preskusni zvok. "
-"Slišati bi morali zaporedje treh zvokov. Prvi zvok bo v desnem kanalu, "
-"drugi v levem, tretji pa bo na sredini."
+"Slišati bi morali zaporedje treh zvokov. Prvi zvok bo v desnem kanalu, drugi "
+"v levem, tretji pa bo na sredini."
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
@@ -333,20 +344,20 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"V tem koraku boste registrirali svoj sistem z dodatnim "
-"Demonstracijskim računom z Omrežja Red Hat, tako da boste lahko "
-"prejemali zadnje programske pakete neposredno od podjetja Red Hat.  S "
-"pomočjo tega orodja boste lahko vedno imeli najbolj osvežen sistem Red "
-"Hat Linux, z vsemi varnostnimi popravki, popravki hroščev in\n"
+"V tem koraku boste registrirali svoj sistem z dodatnim Demonstracijskim "
+"računom z Omrežja Red Hat, tako da boste lahko prejemali zadnje programske "
+"pakete neposredno od podjetja Red Hat.  S pomočjo tega orodja boste lahko "
+"vedno imeli najbolj osvežen sistem Red Hat Linux, z vsemi varnostnimi "
+"popravki, popravki hroščev in\n"
 "izboljšavami programja.\n"
 "\n"
-"Če ste ta izdelek kupili, vam pripada brezplačni preskus osnovne "
-"storitve Omrežja Red Hat. Za podrobna navodila o temu poglejte "
-"aktivacijsko kartico izdelka, ki jo najdete v škatli.\n"
+"Če ste ta izdelek kupili, vam pripada brezplačni preskus osnovne storitve "
+"Omrežja Red Hat. Za podrobna navodila o temu poglejte aktivacijsko kartico "
+"izdelka, ki jo najdete v škatli.\n"
 "\n"
-"Če tega izdelka niste kupili, obiščite http://rhn.redhat.com za več "
-"podatkov ali se naročite na osnovno storitev Omrežja Red Hat "
-"(angl. Red Hat Network Basic Service).\n"
+"Če tega izdelka niste kupili, obiščite http://rhn.redhat.com za več podatkov "
+"ali se naročite na osnovno storitev Omrežja Red Hat (angl. Red Hat Network "
+"Basic Service).\n"
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
@@ -356,20 +367,15 @@ msgstr "_Da, želim registrirati svoj sistem v Omrežju Red Hat."
 msgid "_No, I do not want to register my system."
 msgstr "_Ne, svojega sistema ne želim registrirati."
 
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Dobrodošli"
-
 #: ../src/modules/welcome.py:35
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Preden bo sistem pripravljen za rabo, morate narediti še nekaj "
-"korakov. Nastavitveni agent Red Hat vas bo vodil po nekaj osnovnih "
-"namestitvah. Za nadaljevanje, prosim, kliknite gumb \"Naprej\" v "
-"spodnjem desnem kotu."
+"Preden bo sistem pripravljen za rabo, morate narediti še nekaj korakov. "
+"Nastavitveni agent Red Hat vas bo vodil po nekaj osnovnih namestitvah. Za "
+"nadaljevanje, prosim, kliknite gumb \"Naprej\" v spodnjem desnem kotu."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -389,9 +395,9 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
-"Nastavitveni agent Red Hat vam lahko pomaga pri prikrojitvi stroja "
-"tako, da vas pelje skozi zaporedja korakov. Nastavitveni agent "
-"potrebuje okensko okolje X, da se lahko zažene.\n"
+"Nastavitveni agent Red Hat vam lahko pomaga pri prikrojitvi stroja tako, da "
+"vas pelje skozi zaporedja korakov. Nastavitveni agent potrebuje okensko "
+"okolje X, da se lahko zažene.\n"
 "\n"
 "Če bi radi pognali nastavitvenega agenta, prosim, izberite \"Da\". Če "
 "izberete \"Ne\", se bo sistem začenjal zaganjati in nikoli več ne boste "

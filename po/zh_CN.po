@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
-"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
+"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
 "PO-Revision-Date: 2003-06-10 14:34+1000\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -60,9 +60,18 @@ msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot 不在运行级别 3 中运行。"
 
-#: ../src/firstbootWindow.py:254
+#: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
+msgid "_Back"
+msgstr ""
+
+#: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
 msgstr "下一步(_N)"
+
+#: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "欢迎"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -335,10 +344,6 @@ msgstr "是，我想在红帽网络注册我的系统(_Y)。"
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
 msgstr "否，我不想注册我的系统(_N)。"
-
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "欢迎"
 
 #: ../src/modules/welcome.py:35
 msgid ""

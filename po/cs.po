@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
+"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
 "PO-Revision-Date: 2003-06-19 21:42+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -60,9 +60,18 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot neběží v runlevelu 3."
 
-#: ../src/firstbootWindow.py:254
+#: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
+msgid "_Back"
+msgstr ""
+
+#: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
 msgstr "_Další"
+
+#: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Vítejte"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -353,10 +362,6 @@ msgstr "_Ano, chci svůj počítač zaregistrovat do Red Hat Network."
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
 msgstr "_Ne, nechci svůj počítač zaregistrovat."
-
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Vítejte"
 
 #: ../src/modules/welcome.py:35
 msgid ""

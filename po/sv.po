@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
+"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
 "PO-Revision-Date: 2003-03-04 11:57+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -66,9 +66,18 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot kör inte på körnivå 3."
 
-#: ../src/firstbootWindow.py:254
+#: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
+msgid "_Back"
+msgstr ""
+
+#: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
 msgstr ""
+
+#: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Välkommen"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -364,10 +373,6 @@ msgstr "_Ja, jag vill registrera mitt system i Red Hat Network."
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
 msgstr "_Nej, jag vill inte registrera mitt system."
-
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Välkommen"
 
 #: ../src/modules/welcome.py:35
 msgid ""

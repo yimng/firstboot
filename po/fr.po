@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
+"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
 "PO-Revision-Date: 2003-06-20 09:18+1000\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: french <fr@li.org>\n"
@@ -46,13 +46,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot a déjà été exécuté sur ce système.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de "
 "commande&nbsp;:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot au cours du "
 "démarrage du système&nbsp;:"
@@ -61,9 +63,18 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot n'exécute pas en niveau d'exécution 3."
 
-#: ../src/firstbootWindow.py:254
+#: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
+msgid "_Back"
+msgstr ""
+
+#: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
 msgstr "_Suivant"
+
+#: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Bienvenue"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -165,7 +176,8 @@ msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
 
 #: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr ""
+"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
 #: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
@@ -216,13 +228,15 @@ msgstr ""
 "n'utiliser que des caractères ASCII."
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
 "caractères ASCII."
@@ -274,7 +288,8 @@ msgstr "Configuration du réseau "
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr "Les périphériques réseau suivants ont été détectés sur le système&nbsp;:"
+msgstr ""
+"Les périphériques réseau suivants ont été détectés sur le système&nbsp;:"
 
 #: ../src/modules/networking.py:69
 msgid "Network Device"
@@ -346,8 +361,8 @@ msgstr ""
 "\n"
 "Si vous avez acheté ce produit, vous avez un essai gratuit de Red Hat "
 "Network Basic Service. Pour accéder à cet essai gratuit, consultez la carte "
-"d'activation du produit que vous trouverez dans la boîte&nbsp;: elle contient des "
-"indications plus précises.\n"
+"d'activation du produit que vous trouverez dans la boîte&nbsp;: elle "
+"contient des indications plus précises.\n"
 "\n"
 "Si vous n'avez pas acheté ce produit, rendez-vous à l'adresse http://rhn."
 "redhat.com pour de plus amples détails ou pour vous inscrire à Red Hat "
@@ -360,10 +375,6 @@ msgstr "_Oui, je voudrais enregistrer mon système à Red Hat Network."
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
 msgstr "_Non, je ne veux pas enregistrer mon système."
-
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Bienvenue"
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -400,7 +411,8 @@ msgstr ""
 "\n"
 "Si vous désirez lancer l'agent de mise à jour, veuillez choisir \"Oui\". Si "
 "vous choisissez \"Non\", le système poursuivra son amorçage et ce message ne "
-"réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour maintenant&nbsp;?"
+"réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour "
+"maintenant&nbsp;?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
@@ -650,4 +662,3 @@ msgstr "Agent de mise à jour Red Hat"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Lancer l'agent de mise à jour Red Hat"
-
