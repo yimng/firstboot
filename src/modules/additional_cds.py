@@ -100,6 +100,9 @@ class childWindow:
         return self.vbox, eventBox
 
     def autorun(self, *args):
+        i = gtk.Invisible ()
+        i.grab_add ()
+
         mountFlag = None
 
         while not mountFlag:
@@ -135,6 +138,8 @@ class childWindow:
                 time.sleep(0.1)
 
         diskutil.umount('/mnt/cdrom')
+
+        i.grab_remove ()
 
     def apply(self, notebook):
         return 1
