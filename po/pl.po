@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-11 19:06+0000\n"
+"POT-Creation-Date: 2004-03-08 16:31+0100\n"
+"PO-Revision-Date: 2004-03-13 11:40+0100\n"
 "Last-Translator: Grzegorz Rajda <marius@w9.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -95,8 +95,8 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Odkąd jest problem z modułem %s, \n"
-"Agent instalacji Red Hat nie może go wczytać \n"
-"i w efekcie nie porafi uruchomić"
+"Agent Instalacji Red Hat nie może go wczytać. \n"
+"W efekcie nie porafi uruchomić pozostałych modułów."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -106,6 +106,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Wyślij informacje o błędzie do systemu śledzenia błędów \n"
+"firmy Red Hat (http://www.redhat.com/bugzilla. \n"
+"Kopia informacji o błędzie została zapisana do %s \n"
+"Upewnij się czy załączyłeś ten plik do raportu. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -219,12 +223,12 @@ msgstr ""
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
-msgstr ""
+msgstr "_Wstecz"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
-msgstr ""
+msgstr "Dale_j"
 
 #. Add the button box to the bottom of the box which contains the notebook.
 #. Add the main HBox to a VBox which will sit in the window.
@@ -269,7 +273,7 @@ msgstr ""
 #: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr ""
+msgstr "Witamy"
 
 #. Let's take some screenshots
 #. # functions.py - some helper functions
@@ -334,51 +338,51 @@ msgstr ""
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Autoryzacja"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration"
-msgstr ""
+msgstr "Konfiguracja firewalla"
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration"
-msgstr ""
+msgstr "Konfiguracja klawiatury"
 
 #: ../src/textWindow.py:36
 msgid "Network configuration"
-msgstr ""
+msgstr "Konfiguracja sieci"
 
 #: ../src/textWindow.py:37
 msgid "Printer configuration"
-msgstr ""
+msgstr "Konfiguracja drukarki"
 
 #: ../src/textWindow.py:38
 msgid "System services"
-msgstr ""
+msgstr "Usługi systemowe"
 
 #: ../src/textWindow.py:39
 msgid "Sound card configuration"
-msgstr ""
+msgstr "Konfiguracja karty dźwiękowej"
 
 #: ../src/textWindow.py:40
 msgid "Timezone configuration"
-msgstr ""
+msgstr "Konfiguracja strefy czasowej"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr ""
+msgstr "Narzędzie uruchom"
 
 #: ../src/textWindow.py:42
 msgid "Exit"
-msgstr ""
+msgstr "Wyjście"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Zaznacz pozycje, którą chcesz zmodyfikować"
 
 #: ../src/textWindow.py:50
 msgid "Setup Agent"
-msgstr ""
+msgstr "Agent Instalacji"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -409,24 +413,26 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr ""
+msgstr "Dodatkowe płyty"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"Jeśli posiadasz jakiekolwiek płyty z pakietami, możesz je zainstalować "
+"po włożeniu płyty do napędu i kliknięciu na odpowiedni przycisk."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
-msgstr ""
+msgstr "Instalacja..."
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
+msgstr "Płyta CD-ROM nie została wykryta. Włóż ją do napędu i kliknij \"OK\" aby kontynuować."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
