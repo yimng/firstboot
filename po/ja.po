@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-07-31 16:02GMT+10:00\n"
+"PO-Revision-Date: 2002-08-02 09:02GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,8 @@ msgstr ""
 "X-Generator: KBabel 1.0beta1\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
-msgstr "モジュール%sにエラーが発生しました。"
+msgstr "%sモジュールにエラーが発生しました。"
 
 #: ../src/exceptionWindow.py:34
 msgid ""
@@ -27,6 +26,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"%sモジュールに問題がありますので、\n "
+"Red Hat Setup Agentはこのモジュールをロードしません。\n "
+"そして残りのモジュールの実行を試みます。"
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -35,6 +37,10 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"http://www.redhat.com/bugzillaで Red Hatバグ追跡システムの中の \n"
+"'firstboot'へバグ報告を提出して下さい。\n "
+"デバッグ出力のコピーは/tmp/firstboot.txt に保存してあります。\n "
+"バグ報告には必ず、このファイルを添付して下さい。\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -49,9 +55,8 @@ msgid "Linux Application CD"
 msgstr "LinuxアプリケーションCD"
 
 #: ../src/modules/additional_cds.py:32
-#, fuzzy
 msgid "Install Additional Software"
-msgstr "追加のソフトウェアをインストール"
+msgstr "別のソフトウェアをインストール"
 
 #: ../src/modules/additional_cds.py:59
 msgid ""
@@ -100,19 +105,17 @@ msgid "Finish Setup"
 msgstr "セットアップを終了"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
-msgstr "インストールを終了しました。!"
+msgstr "インストールを終了しました!"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"おめでとうございます!  Red Hat Linux システムがセットアップ出来ましたので、こ"
-"れで 使用できます。楽しいコンピュータの世界をお楽しみ下さい。右下の隅にある "
+"おめでとうございます!  Red Hat Linux システムが設定できましたので、使用の "
+"準備ができました。楽しいコンピュータの世界をお楽しみ下さい。右下の隅にある "
 "\"Forward\"ボタンをクリックして続けてください。"
 
 #: ../src/modules/soundcard_gui.py:50
@@ -406,3 +409,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
