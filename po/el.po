@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-06-23 22:44-0200\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team: Greek <nls@hellug.gr>\n"
@@ -129,7 +129,8 @@ msgid "_Username:"
 msgstr "_Όνομα χρήστη:"
 
 #: ../src/modules/create_user.py:64
-msgid "Full _Name:"
+#, fuzzy
+msgid "Full Nam_e:"
 msgstr "Ο_νοματεπώνυμο:"
 
 #: ../src/modules/create_user.py:71
@@ -148,10 +149,10 @@ msgstr ""
 
 #: ../src/modules/create_user.py:104
 #, fuzzy
-msgid "_Use Network Login..."
+msgid "Use Network _Login..."
 msgstr "_Χρήση Σύνδεσης Μέσω Δικτύου..."
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -162,25 +163,25 @@ msgstr ""
 "λογαριασμό (root) ο οποίος είναι προορισμένος μόνο για την διαχείριση του "
 "συστήματος."
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 msgid "_Continue"
 msgstr "_Συνέχεια"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 msgid "Create _account"
 msgstr "Δημιουργία _λογαριασμού"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Τα συνθηματικά δεν ταιριάζουν.  Παρακαλώ εισάγετε το συνθηματικό ξανά."
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 "Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
 "χαρακτήρες."
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -290,19 +291,19 @@ msgstr "Ρύθμιση Δικτύου"
 msgid "The following network devices have been detected on the system:"
 msgstr ""
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr "Συσκευή Δικτύου"
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr ""
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr ""
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr ""
 
@@ -374,7 +375,8 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Ναι, θέλω να καταχωρήσω το σύστημα μου στο Δίκτυο Red Hat."
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
 msgstr "_Όχι, δε θέλω να καταχωρήσω το σύστημα μου."
 
 #: ../src/modules/welcome.py:35

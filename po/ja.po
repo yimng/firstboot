@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-06-30 10:18+1000\n"
 "Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
 "Language-Team: Japanese <kdeveloper@kde.gr.jp>\n"
@@ -48,11 +48,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:120
@@ -123,7 +125,8 @@ msgid "_Username:"
 msgstr "ユーザー名(_U):"
 
 #: ../src/modules/create_user.py:64
-msgid "Full _Name:"
+#, fuzzy
+msgid "Full Nam_e:"
 msgstr "フルネーム(_N): "
 
 #: ../src/modules/create_user.py:71
@@ -143,10 +146,11 @@ msgstr ""
 "クログインを使用するボタンをクリックしてください。"
 
 #: ../src/modules/create_user.py:104
-msgid "_Use Network Login..."
+#, fuzzy
+msgid "Use Network _Login..."
 msgstr "ネットワークログインを使用する(_U)..."
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -156,23 +160,23 @@ msgstr ""
 "状態で継続すると、rootアカウントでログインするしかありません。但し、 これは管"
 "理業務用のみに予約されています。"
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 msgid "_Continue"
 msgstr "続ける(_C)"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 msgid "Create _account"
 msgstr "アカウントを作成(_a)"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "パスワードが一致しません。再度パスワードを入力して下さい。"
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -192,7 +196,8 @@ msgstr "ユーザー名は番号で始まってはいけません。"
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
+msgstr ""
+"ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:259
 msgid ""
@@ -219,12 +224,15 @@ msgstr ""
 "い。"
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -274,19 +282,19 @@ msgstr "ネットワーク設定"
 msgid "The following network devices have been detected on the system:"
 msgstr "システム上に、以下のネットワークデバイスが検出されました。"
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr "ネットワークデバイス"
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr "ブートプロトコル"
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr "ネットワーク構成を変更する(_C)..."
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr "静的"
 
@@ -354,7 +362,8 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "はい、システムをRed Hatネットワークへ登録したいです(_Y)。"
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
 msgstr "いいえ、システムを登録しません(_N)。"
 
 #: ../src/modules/welcome.py:35
@@ -662,4 +671,3 @@ msgstr "Red Hatセットアップエージェント"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-

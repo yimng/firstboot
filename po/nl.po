@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot RH8.1\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-06-27 01:04+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -48,13 +48,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot is al eens uitgevoerd op dit systeem.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Om firstboot vanaf de opdrachtregel uit te voeren, gebruikt u de volgende "
 "opdrachten:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Om firstboot tijdens het opstarten van het systeem uit te voeren, gebruikt u "
 "de volgende opdrachten:"
@@ -105,7 +107,8 @@ msgstr "Red Hat Linux Installatie CD"
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
+msgstr ""
+"Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
 
 #: ../src/modules/create_user.py:22
 msgid "User Account"
@@ -126,7 +129,8 @@ msgid "_Username:"
 msgstr "_Gebruikersnaam:"
 
 #: ../src/modules/create_user.py:64
-msgid "Full _Name:"
+#, fuzzy
+msgid "Full Nam_e:"
 msgstr "_Volledige naam:"
 
 #: ../src/modules/create_user.py:71
@@ -146,10 +150,11 @@ msgstr ""
 "op de Gebruik Netwerk Login knop."
 
 #: ../src/modules/create_user.py:104
-msgid "_Use Network Login..."
+#, fuzzy
+msgid "Use Network _Login..."
 msgstr "Gebruik _Netwerk Login..."
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -159,23 +164,23 @@ msgstr ""
 "doorgaat zonder account, kunt u zich alleen aanmelden met het root-account "
 "hetgeen zuiver bedoeld is voor systeembeheer."
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 msgid "_Continue"
 msgstr "_Doorgaan"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 msgid "Create _account"
 msgstr "_Account aanmaken"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "De wachtwoorden komen niet overeen. Voer het wachtwoord nogmaals in."
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Het wachtwoord is te kort. Gebruik minimaal 6 tekens."
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -225,14 +230,17 @@ msgstr ""
 "ASCII-tekens."
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Het wachtwoord bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-"
 "tekens."
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "De naam '%s' bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-tekens."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"De naam '%s' bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-tekens."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -284,19 +292,19 @@ msgstr "Netwerk Instellingen"
 msgid "The following network devices have been detected on the system:"
 msgstr "De volgende netwerkapparaten zijn op uw systeem gevonden:"
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr "Netwerkapparaat"
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr "Boot protocol"
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr "Netwerk _configuratie veranderen..."
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr "statisch"
 
@@ -356,16 +364,17 @@ msgstr ""
 "Red Hat Network Basic Service. Om de gratis proef te proberen, kijkt u op de "
 "activeringskaart die in de doos zit voor verdere instructies. \n"
 "\n"
-"Als u dit product niet heeft aangeschaft, kunt u voor meer informatie "
-"http://rhn.redhat.com bezoeken, waar u zich tevens op Red Hat Network Basic "
-"Service kunt abonneren. \n"
+"Als u dit product niet heeft aangeschaft, kunt u voor meer informatie http://"
+"rhn.redhat.com bezoeken, waar u zich tevens op Red Hat Network Basic Service "
+"kunt abonneren. \n"
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Ja, ik wil mijn systeem bij Red Hat Network laten registreren."
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
 msgstr "_Nee, ik wil mijn systeem niet laten registreren."
 
 #: ../src/modules/welcome.py:35
@@ -376,8 +385,8 @@ msgid ""
 msgstr ""
 "Er zijn nog een aantal taken te verrichten voordat uw systeem klaar is voor "
 "gebruik. De Red Hat Setup Agent zal u nu helpen met het maken van een "
-"basisconfiguratie. Klik op \"Volgende\" rechtsonder in het scherm om door "
-"te gaan."
+"basisconfiguratie. Klik op \"Volgende\" rechtsonder in het scherm om door te "
+"gaan."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -408,4 +417,3 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Setup Agent"
-

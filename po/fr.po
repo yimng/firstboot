@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-06-27 09:19+1000\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: french <fr@li.org>\n"
@@ -46,13 +46,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot a déjà été exécuté sur ce système.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de "
 "commande :"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot au cours du "
 "démarrage du système :"
@@ -127,7 +129,8 @@ msgid "_Username:"
 msgstr "Nom d'_utilisateur :"
 
 #: ../src/modules/create_user.py:64
-msgid "Full _Name:"
+#, fuzzy
+msgid "Full Nam_e:"
 msgstr "_Nom et prénom :"
 
 #: ../src/modules/create_user.py:71
@@ -147,10 +150,11 @@ msgstr ""
 "veuillez cliquer sur le bouton Utiliser la connexion réseau."
 
 #: ../src/modules/create_user.py:104
-msgid "_Use Network Login..."
+#, fuzzy
+msgid "Use Network _Login..."
 msgstr "_Utiliser la connexion réseau..."
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -160,23 +164,24 @@ msgstr ""
 "continuez sans compte, vous ne pouvez que vous connecter avec le compte "
 "root, qui est réservé pour les utilisations administratives, seulement."
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 msgid "_Continue"
 msgstr "_Continuer"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 msgid "Create _account"
 msgstr "Créer un _compte"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr ""
+"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -225,13 +230,15 @@ msgstr ""
 "n'utiliser que des caractères ASCII."
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
 "caractères ASCII."
@@ -285,19 +292,19 @@ msgstr "Configuration du réseau "
 msgid "The following network devices have been detected on the system:"
 msgstr "Les périphériques réseau suivants ont été détectés sur le système :"
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr "Périphérique du réseau "
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr "Protocole de démarrage"
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr "_Changer la configuration réseau..."
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr "statique"
 
@@ -355,8 +362,8 @@ msgstr ""
 "\n"
 "Si vous avez acheté ce produit, vous avez un essai gratuit de Red Hat "
 "Network Basic Service. Pour accéder à cet essai gratuit, consultez la carte "
-"d'activation du produit que vous trouverez dans la boîte : elle "
-"contient des indications plus précises.\n"
+"d'activation du produit que vous trouverez dans la boîte : elle contient des "
+"indications plus précises.\n"
 "\n"
 "Si vous n'avez pas acheté ce produit, rendez-vous à l'adresse http://rhn."
 "redhat.com pour de plus amples détails ou pour vous inscrire à Red Hat "
@@ -367,7 +374,8 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Oui, je voudrais enregistrer mon système à Red Hat Network."
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
 msgstr "_Non, je ne veux pas enregistrer mon système."
 
 #: ../src/modules/welcome.py:35
@@ -405,8 +413,7 @@ msgstr ""
 "\n"
 "Si vous désirez lancer l'agent de mise à jour, veuillez choisir \"Oui\". Si "
 "vous choisissez \"Non\", le système poursuivra son amorçage et ce message ne "
-"réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour "
-"maintenant ?"
+"réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour maintenant ?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
@@ -656,4 +663,3 @@ msgstr "Agent de mise à jour Red Hat"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Lancer l'agent de mise à jour Red Hat"
-

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-03-04 11:57+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -133,7 +133,7 @@ msgstr "Användarnamn:"
 
 #: ../src/modules/create_user.py:64
 #, fuzzy
-msgid "Full _Name:"
+msgid "Full Nam_e:"
 msgstr "Fullständigt namn:"
 
 #: ../src/modules/create_user.py:71
@@ -153,10 +153,10 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/create_user.py:104
-msgid "_Use Network Login..."
+msgid "Use Network _Login..."
 msgstr ""
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -166,25 +166,25 @@ msgstr ""
 "fortsätter utan ett konto kan du bara logga in med rootkontot, vilket är "
 "reserverat för administrativt bruk."
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 #, fuzzy
 msgid "_Continue"
 msgstr "Fortsätt"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 #, fuzzy
 msgid "Create _account"
 msgstr "Skapa konto"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -290,19 +290,19 @@ msgstr ""
 msgid "The following network devices have been detected on the system:"
 msgstr ""
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr ""
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr ""
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr ""
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr ""
 
@@ -371,8 +371,9 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Ja, jag vill registrera mitt system i Red Hat Network."
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
-msgstr "_Nej, jag vill inte registrera mitt system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
+msgstr "Nej, jag vill inte registrera mitt system."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -415,11 +416,11 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Red Hats konfigurationsagent"
 
+#~ msgid "_No, I do not want to register my system."
+#~ msgstr "_Nej, jag vill inte registrera mitt system."
+
 #~ msgid "Yes, I want to register my system with Red Hat Network."
 #~ msgstr "Ja, jag vill registrera mitt system i Red Hat Network."
-
-#~ msgid "No, I do not want to register my system."
-#~ msgstr "Nej, jag vill inte registrera mitt system."
 
 #~ msgid "Update Agent"
 #~ msgstr "Uppdateringsagent"

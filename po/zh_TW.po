@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-06-29 11:12+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
@@ -46,11 +46,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:120
@@ -119,7 +121,8 @@ msgid "_Username:"
 msgstr "使用者名稱(_U)："
 
 #: ../src/modules/create_user.py:64
-msgid "Full _Name:"
+#, fuzzy
+msgid "Full Nam_e:"
 msgstr "全名(_N)："
 
 #: ../src/modules/create_user.py:71
@@ -139,10 +142,11 @@ msgstr ""
 "按鈕。"
 
 #: ../src/modules/create_user.py:104
-msgid "_Use Network Login..."
+#, fuzzy
+msgid "Use Network _Login..."
 msgstr "使用網路登入(_U)..."
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -151,23 +155,23 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號，在您建立一個帳號之前， 假如您選擇繼續，您"
 "便只能以保留做系統管理使用的 root 帳號登入。"
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 msgid "_Continue"
 msgstr "繼續(_C)"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 msgid "Create _account"
 msgstr "建立帳號(_A)"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "密碼不符。 請再試一次。"
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -206,11 +210,13 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:51
@@ -259,19 +265,19 @@ msgstr "網路設定"
 msgid "The following network devices have been detected on the system:"
 msgstr "在系統上偵測到下列的網路裝置："
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr "網路裝置"
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr "開機通訊協定"
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr "變更網路配置(_C)..."
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr "靜態"
 
@@ -337,7 +343,8 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "是的，我想要向 Red Hat Network 註冊我的系統(_Y)。"
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
 msgstr "不，我不想要註冊我的系統(_N)。"
 
 #: ../src/modules/welcome.py:35
@@ -641,4 +648,3 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-06-27 10:24+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -125,7 +125,8 @@ msgid "_Username:"
 msgstr "_Utilizador:"
 
 #: ../src/modules/create_user.py:64
-msgid "Full _Name:"
+#, fuzzy
+msgid "Full Nam_e:"
 msgstr "_Nome Completo:"
 
 #: ../src/modules/create_user.py:71
@@ -145,10 +146,11 @@ msgstr ""
 "NIS, por favor carregue em Utilizar Autenticação por Rede."
 
 #: ../src/modules/create_user.py:104
-msgid "_Use Network Login..."
+#, fuzzy
+msgid "Use Network _Login..."
 msgstr "_Utilizar Autenticação por Rede..."
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -158,23 +160,23 @@ msgstr ""
 "continuar sem essa conta, só se poderá ligar com a conta 'root', a qual é "
 "reservada apenas para o uso administrativo."
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 msgid "_Continue"
 msgstr "_Continuar"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 msgid "Create _account"
 msgstr "Cri_ar conta"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "As senhas não coincidem.  Por favor volte a inserir a senha."
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "A senha é demasiado curta.  Por favor insira pelo menos 6 caracteres."
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -285,19 +287,19 @@ msgstr "Configuração da Rede"
 msgid "The following network devices have been detected on the system:"
 msgstr "Os seguintes dispositivos de rede foram detectados no seu computador:"
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr "Dispositivo de Rede"
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr "Protocolo de arranque"
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr "Alterar a _Configuração de Rede..."
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr "estático"
 
@@ -366,7 +368,8 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Sim, quero registar o meu sistema na Red Hat Network."
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
 msgstr "_Não, não quero registar o meu sistema."
 
 #: ../src/modules/welcome.py:35

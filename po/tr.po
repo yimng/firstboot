@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
-"POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
+"POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
 "PO-Revision-Date: 2003-07-04 21:13+0300\n"
 "Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
 "Language-Team: Turkish <tr@li.org>\n"
@@ -50,12 +50,17 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot zaten birkez bu sistem üzerinde çalıştırılmış.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Firstboot'u komut satırından çalıştırmak için, takip eden komutları kullanın:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+"Firstboot'u komut satırından çalıştırmak için, takip eden komutları kullanın:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "Firstboot'u sistem açılışında çalıştırmak için, takip eden komutları kullanın:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+"Firstboot'u sistem açılışında çalıştırmak için, takip eden komutları "
+"kullanın:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
@@ -83,8 +88,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Aşağıda listelenen CD'lerden herhangi birine sahipseniz, bunlardan bir yazılım "
-"yüklemek için CD'yi yerleştirin ve ilgili düğmeye basın."
+"Aşağıda listelenen CD'lerden herhangi birine sahipseniz, bunlardan bir "
+"yazılım yüklemek için CD'yi yerleştirin ve ilgili düğmeye basın."
 
 #: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
@@ -117,15 +122,17 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"Günlük kullanım için (yönetimsel olmayan) kişisel bir kullanıcı hesabı açmanız "
-"şiddetle önerilir.  Kişisel bir hesap için, gereken bilgileri giriniz."
+"Günlük kullanım için (yönetimsel olmayan) kişisel bir kullanıcı hesabı "
+"açmanız şiddetle önerilir.  Kişisel bir hesap için, gereken bilgileri "
+"giriniz."
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
 msgstr "_Kullanıcı Adı:"
 
 #: ../src/modules/create_user.py:64
-msgid "Full _Name:"
+#, fuzzy
+msgid "Full Nam_e:"
 msgstr "Tam _İsim:"
 
 #: ../src/modules/create_user.py:71
@@ -145,36 +152,37 @@ msgstr ""
 "gerekiyorsa , lütfen Ağ Oturumu Açmayı Kullan'a tıklayın."
 
 #: ../src/modules/create_user.py:104
-msgid "_Use Network Login..."
+#, fuzzy
+msgid "Use Network _Login..."
 msgstr "_Ağ Oturumu Açmayı Kullan..."
 
-#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
 "Kişisel bir kullanıcı hesabı oluşturmanı şiddetle önerilir.  Eğer bir hesap "
-"oluşturmadan devam ederseniz, sadece sistem yönetimi için oluşturulmuş "
-"root hesabını kullanarak sisteme girebilirsiniz."
+"oluşturmadan devam ederseniz, sadece sistem yönetimi için oluşturulmuş root "
+"hesabını kullanarak sisteme girebilirsiniz."
 
-#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
+#: ../src/modules/create_user.py:145
 msgid "_Continue"
 msgstr "_Devam"
 
-#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
+#: ../src/modules/create_user.py:146
 msgid "Create _account"
 msgstr "Hesap _oluştur"
 
-#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Parolalar örtüşmüyor.  Lütfen parolayı tekrar giriniz."
 
-#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Parolanız çok kısa.  Lütfen en az 6 karakter kullanın."
 
-#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -194,15 +202,17 @@ msgstr "Kullanıcı adı sayı ile başlamamalıdır."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "Kullanıcı adı '%s' boşluk içeriyor.  Lütfen kullanıcı adı içinde boşluk kullanmayın."
+msgstr ""
+"Kullanıcı adı '%s' boşluk içeriyor.  Lütfen kullanıcı adı içinde boşluk "
+"kullanmayın."
 
 #: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Kullanıcı adı '%s' noktalama işaretleri içeriyor.  Lütfen kullanıcı adı içinde "
-"noktalama işaretleri kullanmayın."
+"Kullanıcı adı '%s' noktalama işaretleri içeriyor.  Lütfen kullanıcı adı "
+"içinde noktalama işaretleri kullanmayın."
 
 #: ../src/modules/create_user.py:266
 msgid ""
@@ -221,12 +231,18 @@ msgstr ""
 "karakterler kullanın."
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Parola geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterleri kullanın."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Parola geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterleri "
+"kullanın."
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "İsim '%s' geçersiz karakter içeriyor.  Lütfen sadece ASCII karakterleri kullanın."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"İsim '%s' geçersiz karakter içeriyor.  Lütfen sadece ASCII karakterleri "
+"kullanın."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -277,19 +293,19 @@ msgstr "Ağ Kurulumu"
 msgid "The following network devices have been detected on the system:"
 msgstr "Sisteminizde şu ağ aygıtı bulundu:"
 
-#: ../src/modules/networking.py:69
+#: ../src/modules/networking.py:68
 msgid "Network Device"
 msgstr "Ağ Aygıtı"
 
-#: ../src/modules/networking.py:71
+#: ../src/modules/networking.py:70
 msgid "Boot protocol"
 msgstr "Boot protokolü"
 
-#: ../src/modules/networking.py:77
+#: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
 msgstr "Ağ Yapılandırmasını Değiştir..."
 
-#: ../src/modules/networking.py:120
+#: ../src/modules/networking.py:119
 msgid "static"
 msgstr "sabit"
 
@@ -358,7 +374,8 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Evet, sistemimi Red Hat Network'e kaydettirmek istiyorum."
 
 #: ../src/modules/up2date.py:56
-msgid "_No, I do not want to register my system."
+#, fuzzy
+msgid "N_o, I do not want to register my system."
 msgstr "_Hayır, sistemimi kaydettirmek istemiyorum."
 
 #: ../src/modules/welcome.py:35
@@ -367,9 +384,10 @@ msgid ""
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç adım "
-"kaldı. Red Hat Kurulum Aracısı bazı temel yapılandırmalarda size rehberlik "
-"edecek. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
+"Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç "
+"adım kaldı. Red Hat Kurulum Aracısı bazı temel yapılandırmalarda size "
+"rehberlik edecek. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine "
+"tıklayınız."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -390,14 +408,13 @@ msgid ""
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
 "Red Hat Kurulum Aracısı bir kaç adımda size yardımcı olarak sisteminizi "
-"kolayca yapılandırmanızı sağlayacak.  Kurulum Aracısı çalışmak için X "
-"Window Sistemini gerektirir.  \n"
+"kolayca yapılandırmanızı sağlayacak.  Kurulum Aracısı çalışmak için X Window "
+"Sistemini gerektirir.  \n"
 "\n"
 "Kurulum Aracısı'nı çalıştırmak için lütfen \"Evet\"i seçin.  Eğer \"Hayır\"ı "
-"secek olursanız, sisteminiz açılmaya devam edecek ve bu mesajı bir "
-"daha görmeyeceksiniz. Kurulum Aracısı'nı çalıştırmak ister misiniz?"
+"secek olursanız, sisteminiz açılmaya devam edecek ve bu mesajı bir daha "
+"görmeyeceksiniz. Kurulum Aracısı'nı çalıştırmak ister misiniz?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Kurulum Aracısı"
-
