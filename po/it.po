@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
-"PO-Revision-Date: 2002-07-08 09:46GMT\n"
+"PO-Revision-Date: 2002-07-26 15:23GMT\n"
 "Last-Translator: Marisa <marisa@redhat.it>\n"
 "Language-Team:  <it@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../src/exceptionWindow.py:30
 msgid "An error has occured in module %s."
-msgstr ""
+msgstr "Si è verificato un errore nel modulo %s."
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -70,14 +70,17 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Impossibile stabilire la connessione con %s. Può darsi che %s non sia "
+"disponibileo che le impostazione del firewall del computer blocchino le "
+"connessioni NTP."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "Termina installazione"
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
-msgstr ""
+msgstr "Installazione completata!"
 
 #: ../src/modules/finished.py:42
 msgid ""
@@ -85,6 +88,9 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
+"Contratulazioni! Il sistema Red Hat Linux è stato installato correttamente. "
+"Ci auguriamo che il suo utilizzo possa offrire grandi vantaggi. Fare clic "
+"sulpulsante \"Avanti\" nella parte inferiore destra per continuare."
 
 #: ../src/modules/hardware.py:27
 msgid "Configure Hardware"
@@ -189,14 +195,13 @@ msgstr "DNS terziario"
 
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
-msgstr ""
+msgstr "Aggiornare il sistema"
 
 #: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:53
-#, fuzzy
 msgid ""
 "Now that you are registered with Red Hat Network, you can run the Red Hat "
 "Update Agent to receive the latest software packages directly from Red Hat.  "
@@ -206,27 +211,25 @@ msgid ""
 msgstr ""
 "Dopo la registrazione con Red Hat Network, è possibile eseguire il Red Hat "
 "Update Agent per ricevere gli ultimi pacchetti software direttamente da Red "
-"Hat.  Questo tool permette di disporre di un sistema Red Hat Linux sempre "
-"aggiornato con patch per la sicurezza, risoluzioni dei bug eperfezionamenti "
-"dei pacchetti software"
+"Hat. Questo tool permette di disporre di un sistema Red Hat Linux sempre "
+"aggiornato con patch per la sicurezza, risoluzioni dei bug e perfezionamenti "
+"dei pacchetti software."
 
 #: ../src/modules/up2date.py:66
-#, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
-msgstr "Registrazione del sistema con Red Hat Network"
+msgstr "Procedere con la registrazione del sistema con Red Hat Network"
 
 #: ../src/modules/up2date.py:67
 msgid "No, I do not want to register my system."
-msgstr ""
+msgstr "Non procedere con la registrazione del sistema."
 
 #: ../src/modules/welcome.py:19
 msgid "Welcome"
 msgstr "Benvenuti"
 
 #: ../src/modules/welcome.py:28
-#, fuzzy
 msgid "Welcome to Red Hat Linux!"
-msgstr "Benvenuti a Red Hat Linux Beta!"
+msgstr "Benvenuti a Red Hat Linux!"
 
 #: ../src/modules/welcome.py:42
 msgid ""
@@ -235,147 +238,7 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
-
-#~ msgid "Keyboard"
-#~ msgstr "Tastiera"
-
-#, fuzzy
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "Selezionare la tastiera del sistema."
-
-#, fuzzy
-#~ msgid "Language"
-#~ msgstr "Selezione della lingua"
-
-#~ msgid "Language Configuration"
-#~ msgstr "Configurazione della lingua"
-
-#, fuzzy
-#~ msgid "A configuration tool to set the language for the system"
-#~ msgstr "Selezionare la lingua di default del sistema."
-
-#~ msgid "Language Selection"
-#~ msgstr "Selezione della lingua"
-
-#~ msgid "Please select the default language for the system."
-#~ msgstr "Selezionare la lingua di default del sistema."
-
-#~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "Le modifiche diventeranno effettive all'avvio successivo."
-
-#~ msgid "Mouse"
-#~ msgstr "Mouse"
-
-#~ msgid "Mouse Configuration"
-#~ msgstr "Configurazione del mouse"
-
-#, fuzzy
-#~ msgid "Select the appropriate mouse for the system."
-#~ msgstr "Selezionare la tastiera del sistema."
-
-#~ msgid "Emulate 3 button click"
-#~ msgstr "Emulazione mouse a 3 pulsanti"
-
-#~ msgid "Root Password"
-#~ msgstr "Password di root"
-
-#~ msgid "Please set the root password for the system."
-#~ msgstr "Impostare la password di root del sistema."
-
-#~ msgid "Root Password:"
-#~ msgstr "Password di root:"
-
-#~ msgid "Confirm:"
-#~ msgstr "Conferma:"
-
-#~ msgid "Root password must be at least 6 characters in length."
-#~ msgstr "La password di root deve comprendere almeno 6 caratteri."
-
-#~ msgid "Passwords do not match.  Please try again."
-#~ msgstr "Le password non corrispondono. Riprovare."
-
-#, fuzzy
-#~ msgid "Security Level"
-#~ msgstr "Livello di sicurezza:"
-
-#~ msgid "Security Level Configuration"
-#~ msgstr "Configurazione del livello di sicurezza"
-
-#~ msgid "Please choose the security level for the system."
-#~ msgstr "Scegliere il livello di sicurezza del sistema."
-
-#~ msgid "Security Level:"
-#~ msgstr "Livello di sicurezza:"
-
-#~ msgid "Use default firewall rules"
-#~ msgstr "Utilizzare le regole di firewall di default"
-
-#~ msgid "Customize"
-#~ msgstr "Personalizza"
-
-#~ msgid "Trusted devices:"
-#~ msgstr "Dispositivi fidati:"
-
-#~ msgid "Allow incoming:"
-#~ msgstr "Consenti in entrata:"
-
-#~ msgid "Other ports: (1029:tcp)"
-#~ msgstr "Altre porte: (1029:tcp)"
-
-#~ msgid "Keyboard Configuration"
-#~ msgstr "Configurazione della tastiera"
-
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "Selezionare il mouse del sistema."
-
-#~ msgid "Register with RHN"
-#~ msgstr "Registrazione con RHN"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Network è una soluzione Internet per gestire uno o più sistemi "
-#~ "Red Hat Linux. Tutti i messaggi relativi alla sicurezza, alla risoluzione "
-#~ "dei bug e al perfezionamentodel sistema (noti come Errata) possono essere "
-#~ "reperiti direttamente da Red Hat. E' inoltre possibile ottenere gli "
-#~ "aggiornamenti automaticamente sul propriosistema non appena sono "
-#~ "disponibili. \n"
-#~ "\n"
-#~ "Dato che Red Hat Network tiene traccia del rilascio degli aggiornamenti "
-#~ "degli Errata e invia notifiche via e-mail, può:"
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " -- Ridurre il tempo e lo sforzo richiesto dagli amministratori di "
-#~ "sistema perdisporre sempre degli ultimi errata Red Hat\n"
-#~ " -- Ridurre al minimo i pericoli per la sicurezza della rete fornendo "
-#~ "lepatch rese disponibili da Red Hat\n"
-#~ " -- Filtrare gli aggiornamenti dei pacchetti non adatti alla rete\n"
-#~ " -- Pianificare gli aggiornamenti degli errata in modo che i pacchetti "
-#~ "siano distribuitia sistemi selezionati nel momento desiderato"
-
-#~ msgid "Register system now"
-#~ msgstr "Registrazione del sistema"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "Connessione di rete attualmente non disponibile."
-
-#~ msgid "Firewall Configuration"
-#~ msgstr "Configurazione del firewall"
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "Avvio di Red Hat Update Agent"
+"Benvenuti a Red Hat Setup Agent. Ci sono alcune operazioni da compiere prima "
+"che il sistema sia pronto. Red Hat Setup Agent guida l'utentenel processo di "
+"configurazione di base. Fare clic sul pulsante \"Avanti\" nella parte "
+"inferiore destra per continuare."

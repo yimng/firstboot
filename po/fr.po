@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
-"PO-Revision-Date: 2002-07-10 15:03+0200\n"
+"PO-Revision-Date: 2002-07-26 13:01+0200\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../src/exceptionWindow.py:30
 msgid "An error has occured in module %s."
-msgstr ""
+msgstr "Une erreur s'est produite dans le module %s."
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -46,8 +46,8 @@ msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
 msgstr ""
-"Cette fonctionnalité n'est pas encore implémentée. Veuillez ne pas reporter "
-"de bogue concernant ce bouton."
+"Cette fonctionnalité n'est pas encore implémentée. Veuillez ne pas "
+"reporter de bogue concernant ce bouton."
 
 #: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
 msgid "Error"
@@ -70,14 +70,17 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Impossible d'établir la connexion avec %s, ou %s n'est pas disponible, ou "
+"encore les paramètres de pare-feu de votre ordinateur bloquent la connexion "
+"NTP."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "Terminer le paramétrage"
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
-msgstr ""
+msgstr "Installation terminée !"
 
 #: ../src/modules/finished.py:42
 msgid ""
@@ -85,6 +88,10 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
+"Félicitations ! Votre système Red Hat Linux est maintenant paramétré et "
+"prêt à l'emploi. Nous espérons que vous apprécierez de travailler avec "
+"ce système. Pour continuer veuillez cliquer sur le bouton \"Avant\" dans le "
+"coin en-bas à droite."
 
 #: ../src/modules/hardware.py:27
 msgid "Configure Hardware"
@@ -134,10 +141,11 @@ msgid ""
 "to update your system.  To set up a network connection, please click on the "
 "button below.\n"
 msgstr ""
-"Une connexion de réseau n'a pas été détectée. Il est nécessaire de vous "
-"connecter au réseau pour enregistrer votre système à l'aide de RHN et pour "
-"pouvoir utiliser Red Hat Update Agent pour mettre à jour votre système. Pour "
-"établir une connexion, veuillez cliquer sur le bouton ci-dessous.\n"
+"Une connexion de réseau n'a pas été détectée. Il est nécessaire de "
+"vous connecter au réseau pour enregistrer votre système à l'aide de RHN "
+"et pour pouvoir utiliser Red Hat Update Agent pour mettre à jour votre "
+"système. Pour établir une connexion, veuillez cliquer sur le bouton "
+"ci-dessous.\n"
 
 #: ../src/modules/networking.py:118
 msgid "Set up networking..."
@@ -189,14 +197,13 @@ msgstr "DNS ternaire"
 
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
-msgstr ""
+msgstr "Mettre votre système à jour"
 
 #: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:53
-#, fuzzy
 msgid ""
 "Now that you are registered with Red Hat Network, you can run the Red Hat "
 "Update Agent to receive the latest software packages directly from Red Hat.  "
@@ -204,29 +211,28 @@ msgid ""
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
 msgstr ""
-"Vous êtes maintenant enregistrés dans Red Hat Network. Vous pouvez exécuter "
-"l'agent de mise à jour Red Hat pour recevoir les derniers paquetages de "
-"logiciels directement de Red Hat. En utilisant cet outil vous aurez toujours "
-"un système Red Hat Linux équipé des derniers patches de sécurité, "
-"réparations de bogues et améliorations des paquetages de logiciels"
+"Vous êtes maintenant enregistrés dans Red Hat Network. Vous pouvez "
+"exécuter l'agent de mise à jour Red Hat pour recevoir les derniers "
+"paquetages de logiciels directement de Red Hat. En utilisant cet outil vous "
+"aurez toujours un système Red Hat Linux équipé des derniers patches de "
+"sécurité, réparations de bogues et améliorations des paquetages de "
+"logiciels."
 
 #: ../src/modules/up2date.py:66
-#, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
-msgstr "Enregistrez votre système avec Red Hat Network"
+msgstr "Oui, je voudrais enregistrer mon système avec Red Hat Network"
 
 #: ../src/modules/up2date.py:67
 msgid "No, I do not want to register my system."
-msgstr ""
+msgstr "Non, je ne veux pas enregistrer mon système."
 
 #: ../src/modules/welcome.py:19
 msgid "Welcome"
 msgstr "Bienvenue"
 
 #: ../src/modules/welcome.py:28
-#, fuzzy
 msgid "Welcome to Red Hat Linux!"
-msgstr "Bienvenue dans Red Hat Linux Beta !"
+msgstr "Bienvenue dans Red Hat Linux !"
 
 #: ../src/modules/welcome.py:42
 msgid ""
@@ -235,9 +241,16 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
+"Bonjour ! Bienvenue dans l'agent de mise à jour Red Hat. Il vous reste "
+"quelques étapes avant que votre système ne soit prêt à l'emploi. L'agent "
+"de mise à jour Red Hat vous guidera dans la configuration de base. Pour "
+"continuer, cliquez sur le bouton \"Avant\"."
 
 #~ msgid "Keyboard"
 #~ msgstr "Clavier"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "Configuration du clavier"
 
 #, fuzzy
 #~ msgid "Select the appropriate keyboard for the system."
@@ -261,7 +274,8 @@ msgstr ""
 #~ msgstr "Veuillez paramétrer la langue par défaut de votre système."
 
 #~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "Les modifications seront appliquées lors de la prochaine connexion."
+#~ msgstr ""
+#~ "Les modifications seront appliquées lors de la prochaine connexion."
 
 #~ msgid "Mouse"
 #~ msgstr "Souris"
@@ -269,9 +283,8 @@ msgstr ""
 #~ msgid "Mouse Configuration"
 #~ msgstr "Configuration de la souris"
 
-#, fuzzy
-#~ msgid "Select the appropriate mouse for the system."
-#~ msgstr "Veuillez sélectionner le clavier de votre système."
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "Veuillez sélectionner la souris de votre système."
 
 #~ msgid "Emulate 3 button click"
 #~ msgstr "Emuler le troisième bouton"
@@ -322,27 +335,21 @@ msgstr ""
 #~ msgid "Other ports: (1029:tcp)"
 #~ msgstr "Autres ports (1029:tcp)"
 
-#~ msgid "Keyboard Configuration"
-#~ msgstr "Configuration du clavier"
-
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "Veuillez sélectionner la souris de votre système."
-
 #~ msgid "Register with RHN"
 #~ msgstr "Enregistrez-vous avec RHN"
 
 #~ msgid ""
 #~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
+#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts "
+#~ "(collectively known as Errata Alerts) can be retreived directly from Red "
+#~ "Hat. You can even have updates automatically delivered directly to your "
+#~ "system as soon as they are released. \n"
 #~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
+#~ "Because Red Hat Network keeps track of when Errata Updates are released and "
+#~ "sends you email notifications, it can:"
 #~ msgstr ""
-#~ "Red Hat Network est une solution Internet pour la gestion d'un ou "
-#~ "plusieurs systèmes Linux. Toutes les alertes de sécurité, les alertes de "
+#~ "Red Hat Network est une solution Internet pour la gestion d'un ou plusieurs "
+#~ "systèmes Linux. Toutes les alertes de sécurité, les alertes de "
 #~ "réparation de bogue et les alertes d'amélioration (collectivement appelés "
 #~ "Alertes Errata) peuvent être récupérées directement depuis Red Hat. Vous "
 #~ "pouvez obtenir directement les mises à jour sur votre système dès "
@@ -352,8 +359,8 @@ msgstr ""
 #~ "et vous envoie une note par courrier électronique. Il peut donc :"
 
 #~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
+#~ " -- Reduce the time and effort required by system administrators to stay on "
+#~ "top of the Red Hat errata list\n"
 #~ " -- Minimize security vulnerabilities in your network by providing the "
 #~ "patches as soon as Red Hat releases them\n"
 #~ " -- Filter out package updates not relevant to your network\n"
