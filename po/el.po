@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Fri Jan 31 16:12:24 2003\n"
-"PO-Revision-Date: 2003-01-27 01:13+0200\n"
+"PO-Revision-Date: 2003-02-01 01:30+0200\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team: Greek <nls@hellug.gr>\n"
 "MIME-Version: 1.0\n"
@@ -48,15 +48,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Το Firstboot έχει ήδη εκτελεστεί μια φορά σε αυτό το σύστημα.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Για να τρέξετε το firstboot απο την γραμμή εντολών, εκτελέστε τις ακόλουθες "
 "εντολές:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Για να τρέξετε το firstboot  κατά την διάρκεια της εκκίνησης του συστήματος, "
 "εκτελέστε τις ακόλουθες εντολές:"
@@ -100,7 +98,7 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "Λογαριασμός Χρήστη"
 
 #: ../src/modules/create_user.py:44
 msgid ""
@@ -133,12 +131,13 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/create_user.py:107
+#, fuzzy
 msgid "Continue"
-msgstr ""
+msgstr "Συνέχεια"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "Δημιουργία λογαριασμού"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
@@ -156,12 +155,12 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Υπάρχει ήδη ένας λογαριασμός με όνομα χρήστη %s.  Παρακαλώ ορίστε ένα "
+"Υπάρχει ήδη ένας λογαριασμός με όνομα χρήστη '%s'.  Παρακαλώ ορίστε ένα "
 "διαφορετικό όνομα χρήστη."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "The user name must be less than 33 characters long."
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
@@ -186,26 +185,21 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/create_user.py:235
+#, fuzzy
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Το όνομα χρήστη '%s' περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
+"χρησιμοποιήστε μόνο ASCII χαρακτήρες."
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
-"χαρακτήρες."
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
-"χαρακτήρες."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -213,7 +207,7 @@ msgstr "Ημερομηνία και Ώρα"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Παρακαλώ ορίσετε ημερομηνία και ώρα για το σύστημα."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
@@ -271,7 +265,7 @@ msgstr ""
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
-msgstr ""
+msgstr "Δίκτυο Red Hat"
 
 #: ../src/modules/up2date.py:36
 #, fuzzy
@@ -305,9 +299,8 @@ msgstr ""
 "υπηρεσία του δικτύου Red Hat.   \n"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid "Yes, I want to register my system with Red Hat Network."
-msgstr "Ναι, θέλω να εγγραφώ στο Δίκτυο Red Hat."
+msgstr "Ναι, θέλω να καταχωρήσω το σύστημα μου στο Δίκτυο Red Hat."
 
 #: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
@@ -390,3 +383,4 @@ msgstr "Εργαλείο Ρύθμισης της Red Hat"
 
 #~ msgid "Red Hat Update Agent"
 #~ msgstr "Εργαλείο Αναβάθμισης της Red Hat"
+
