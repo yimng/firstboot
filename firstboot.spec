@@ -74,6 +74,7 @@ fi
 %changelog
 * Fri May 16 2003 Brent Fox <bfox@redhat.com> 1.0.6-2
 - Added a mnemonic for network login button (bug #90636)
+- added more mnemonics create_user.py (bug #90865)
 
 * Mon Mar 24 2003 Brent Fox <bfox@redhat.com> 1.0.6-1
 - add a button to create_user.py to launch authconfig-gtk
