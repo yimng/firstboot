@@ -1,6 +1,7 @@
 # Swedish messages for firstboot.
 # Copyright (C) 2002, 2003 Christian Rose
 # Christian Rose <menthos@menthos.com>, 2002, 2003.
+# Göran Uddeborg <goeran@uddeborg.pp.se>, 2003.
 #
 # $Id$
 #
@@ -8,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
-"PO-Revision-Date: 2003-01-25 16:02+0100\n"
-"Last-Translator: Christian Rose <menthos@menthos.com>\n"
+"PO-Revision-Date: 2003-01-29 22:16+0100\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.pp.se>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,7 +64,7 @@ msgstr ""
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot kör inte på körnivå 3."
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -100,14 +101,14 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "Användarkonto"
 
 #: ../src/modules/create_user.py:44
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr ""
+msgstr "Det rekommenderas att du skapar ett personligt användarkonto för normalt (ickeadministrativt) bruk.  För att skapa ett personligt konto, ge den begärda informationen."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -130,15 +131,15 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "Det rekommenderas varmt att ett personligt användarkonto skapas.  Om du fortsätter utan ett konto kan du bara logga in med rootkontot, vilket är reserverat för administrativt bruk."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr ""
+msgstr "Fortsätt"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "Skapa konto"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
@@ -149,56 +150,52 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
 #: ../src/modules/create_user.py:153
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"Ett konto med användarnamnet %s finns redan. Ange ett annat användarnamn."
+msgstr "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat användarnamn."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "Användarnamnet måste vara mindre än 33 tecken långt."
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "Användarnamnet för inte börja med en siffra."
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
-msgstr ""
+msgstr "Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i %s."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
+msgstr "Användarnamnet \"%s\" innehåller skiljetecken.  Använd inte skiljetecken i användarnamnet."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
+msgstr "Användarnamnet \"%s\" innehåller versaler.  Använd inte versaler i användarnamnet."
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
+msgstr "Användarnamnet \"%s\" innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Lösenordet är för kort. Använd minst 6 tecken."
+msgstr "Lösenordet innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Lösenordet är för kort. Använd minst 6 tecken."
+msgstr "Namnet \"%s\" innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -233,14 +230,10 @@ msgid "Finish Setup"
 msgstr "Slutför konfiguration"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
-msgstr ""
-"Ditt Red Hat Linux-system är nu konfigurerat och redo för användning. Vi "
-"hoppas att du kommer att ha en trevlig datorupplevelse. Tryck på knappen "
-"\"Framåt\" i nedre högra hörnet för att fortsätta."
+msgstr "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen \"Framåt\" i nedre högra hörnet för att fortsätta."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -343,306 +336,3 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hats konfigurationsagent"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "Installera ytterligare programvara"
-
-#~ msgid "Create A User"
-#~ msgstr "Skapa en användare"
-
-#~ msgid ""
-#~ "A user account is required to use the system.  Create a user account by "
-#~ "filling in the information below."
-#~ msgstr ""
-#~ "Ett användarkonto krävs för att kunna använda systemet. Skapa ett "
-#~ "användarkonto genom att fylla i nedanstående information."
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?"
-#~ msgstr ""
-#~ "Ett användarkonto skapades inte. Är du säker på att du vill fortsätta "
-#~ "utan att skapa ett användarkonto?"
-
-#~ msgid "Set Date and Time"
-#~ msgstr "Ställ in datum och tid"
-
-#~ msgid "Finished Setup!"
-#~ msgstr "Slutförde konfiguration!"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hats uppdateringsagent"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "Konfiguration av datum och tid"
-
-#~ msgid "Sound Card Configuration"
-#~ msgstr "Ljudkortskonfiguration"
-
-#~ msgid "Welcome to Red Hat Linux!"
-#~ msgstr "Välkommen till Red Hat Linux!"
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?."
-#~ msgstr ""
-#~ "Ett användarkonto skapades inte. Är du säker på att du vill fortsätta "
-#~ "utan att skapa ett användarkonto?"
-
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install software\" button below."
-#~ msgstr ""
-#~ "Om du har ytterligare cd-skivor som du vill installera, exempelvis skivan "
-#~ "\"Red Hat Linux Documentation CD\", kan du göra det nu. Stoppa in skivan "
-#~ "i enheten och klicka på knappen \"Installera programvara\" nedan."
-
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install Additional software\" button below."
-#~ msgstr ""
-#~ "Om du har ytterligare cd-skivor som du vill installera, exempelvis skivan "
-#~ "\"Red Hat Linux Documentation CD\", kan du göra det nu. Stoppa in skivan "
-#~ "i enheten och klicka på knappen \"Installera ytterligare programvara\" "
-#~ "nedan."
-
-#~ msgid "Linux Application CD"
-#~ msgstr "Linux Application CD"
-
-#~ msgid ""
-#~ "This feature is not yet implemented.  Please do not report bugs about "
-#~ "this button."
-#~ msgstr ""
-#~ "Denna funktion är ännu inte implementerad. Rapportera inte fel "
-#~ "beträffande denna knapp."
-
-#~ msgid "Finished Installation!"
-#~ msgstr "Installationen slutfördes!"
-
-#~ msgid "Update Your System"
-#~ msgstr "Uppdatera ditt system"
-
-#~ msgid "Network check"
-#~ msgstr "Nätverkskontroll"
-
-#~ msgid "Set up Networking"
-#~ msgstr "Konfigurera nätverksåtkomst"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "En nätverksanslutning kunde inte hittas. Nätverksanslutning är nödvändig "
-#~ "för att kunna registrera ditt system med RHN och för att använda Red Hats "
-#~ "uppdateringsagent för att uppdatera ditt system. Klicka på knappen nedan "
-#~ "för att konfigurera en nätverksanslutning.\n"
-
-#~ msgid "Set up networking..."
-#~ msgstr "Konfigurera nätverksåtkomst..."
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "Konfigurera med hjälp av DHCP"
-
-#~ msgid "IP Address"
-#~ msgstr "IP-adress"
-
-#~ msgid "Netmask"
-#~ msgstr "Nätmask"
-
-#~ msgid "Network"
-#~ msgstr "Nätverk"
-
-#~ msgid "Broadcast"
-#~ msgstr "Broadcast"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Gateway"
-#~ msgstr "Gateway"
-
-#~ msgid "Hostname"
-#~ msgstr "Värdnamn"
-
-#~ msgid "Primary DNS"
-#~ msgstr "Primär DNS"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "Sekundär DNS"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "Tertiär DNS"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "Konfigurera hårdvara"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "Tangentbordstabell:"
-
-#~ msgid "Configure..."
-#~ msgstr "Konfigurera..."
-
-#~ msgid "Mouse:"
-#~ msgstr "Mus:"
-
-#~ msgid "Networking:"
-#~ msgstr "Nätverksåtkomst:"
-
-#~ msgid "Display:"
-#~ msgstr "Display:"
-
-#~ msgid "Printers:"
-#~ msgstr "Skrivare:"
-
-#~ msgid "Finish Installation"
-#~ msgstr "Avsluta installation"
-
-#~ msgid "Welcome to Red Hat Linux Beta!"
-#~ msgstr "Välkommen till Red Hat Linux Beta!"
-
-#~ msgid "Keyboard"
-#~ msgstr "Tangentbord"
-
-#~ msgid "Configure the system keyboard"
-#~ msgstr "Konfigurera systemtangentbordet"
-
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "Välj lämpligt tangentbord för systemet."
-
-#~ msgid "Language"
-#~ msgstr "Språk"
-
-#~ msgid "Language Configuration"
-#~ msgstr "Språkkonfiguration"
-
-#~ msgid "A configuration tool to set the language for the system"
-#~ msgstr "Ett konfigurationsverktyg för konfiguration av språket på systemet"
-
-#~ msgid "Language Selection"
-#~ msgstr "Språkval"
-
-#~ msgid "Please select the default language for the system."
-#~ msgstr "Välj standardspråket för systemet."
-
-#~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "Ändringarna kommer att börja gälla nästa gång du loggar in."
-
-#~ msgid "Mouse"
-#~ msgstr "Mus"
-
-#~ msgid "Mouse Configuration"
-#~ msgstr "Muskonfiguration"
-
-#~ msgid "A configuration tool for the mouse"
-#~ msgstr "Ett konfigurationsverktyg för musen"
-
-#~ msgid "Select the appropriate mouse for the system."
-#~ msgstr "Välj lämplig mus för systemet."
-
-#~ msgid "Emulate 3 button click"
-#~ msgstr "Emulera 3-knapparsklick"
-
-#~ msgid "Root Password"
-#~ msgstr "Rootlösenord"
-
-#~ msgid "Please set the root password for the system."
-#~ msgstr "Ställ in rootlösenordet för systemet."
-
-#~ msgid "Confirm:"
-#~ msgstr "Bekräfta:"
-
-#~ msgid "Security Level"
-#~ msgstr "Säkerhetsnivå"
-
-#~ msgid "Security Level Configuration"
-#~ msgstr "Konfiguration av säkerhetsnivå"
-
-#~ msgid "Configure system security level"
-#~ msgstr "Konfigurera systemets säkerhetsnivå"
-
-#~ msgid "Please choose the security level for the system."
-#~ msgstr "Välj säkerhetsnivån för systemet."
-
-#~ msgid "Security Level:"
-#~ msgstr "Säkerhetsnivå:"
-
-#~ msgid "Use default firewall rules"
-#~ msgstr "Använd standardbrandväggsregler"
-
-#~ msgid "Customize"
-#~ msgstr "Anpassa"
-
-#~ msgid "Trusted devices:"
-#~ msgstr "Pålitliga enheter:"
-
-#~ msgid "Allow incoming:"
-#~ msgstr "Tillåt inkommande:"
-
-#~ msgid "Other ports: (1029:tcp)"
-#~ msgstr "Andra portar: (1029:tcp)"
-
-#~ msgid ""
-#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
-#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
-#~ msgstr ""
-#~ "Ogiltig port angiven: %s. Det korrekta formatet är \"port:protokoll, port:"
-#~ "protokoll\". Till exempel \"1234:udp, 3456:tcp\""
-
-#~ msgid "Languages"
-#~ msgstr "Språk"
-
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "Välj mus för systemet."
-
-#~ msgid "Register with RHN"
-#~ msgstr "Registrera i RHN"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Network är en nätverkslösning för hantering av en eller flera Red "
-#~ "Hat Linux-system. Alla säkerhetsvarningar, felfixvarningar och "
-#~ "förbättringsvarningar (tillsammans kallade erratavarningar) kan hämtas "
-#~ "direkt från Red Hat. Du kan till och med få uppdateringar direkt "
-#~ "levererade till ditt system så fort de har släppts.\n"
-#~ "\n"
-#~ "Eftersom Red Hat Network håller reda på när erratauppdateringar släpps "
-#~ "skickar dig information om detta per e-post kan det:"
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " -- Reducera den tid och möda som krävs av systemadministratörer för att "
-#~ "hålla system aktuella med Red Hats erratalista\n"
-#~ " -- Minimera säkerhetssårbarheter i ditt nätverk genom att tillhandahålla "
-#~ "fixar så fort Red Hat släpper dem\n"
-#~ " -- Filtrera ut paketuppdateringar som inte är relevanta för ditt "
-#~ "nätverk\n"
-#~ " -- Schemalägga erratauppdateringar så att paket levereras till utvalda "
-#~ "system när du så önskar"
-
-#~ msgid "Register system now"
-#~ msgstr "Registrera systemet nu"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "Du har ingen nätverksanslutning för tillfället."
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "Starta Red Hats uppdateringsagent"
