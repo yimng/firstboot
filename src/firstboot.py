@@ -44,6 +44,7 @@ rhgb = None
 autoscreenshot = None
 forcegui = None
 FILENAME = "/etc/sysconfig/firstboot"
+DISPLAY_FILE = "/etc/rhgb/temp/display"
 
 for arg in sys.argv:
     if arg == '--reconfig':
@@ -150,7 +151,10 @@ if runlevel == 3 and forcegui == None:
 
 #If rhgb (graphical boot) is running, let's use it's X server
 if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin/rhgb-client --ping") == 0):
-    os.environ["DISPLAY"] = "127.0.0.1:0"
+    try:
+        os.environ["DISPLAY"] = open("DISPLAY_FILE", "r").read()
+    except:
+        os.environ["DISPLAY"] = "127.0.0.1:0"
     #However, we still need to start up metacity and merge the X resources
     wm_pid = None
     wm_pid = startWindowManager()
