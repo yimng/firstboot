@@ -1,3 +1,4 @@
+# translation of zh_TW.po to Traditional Chinese
 # translation of zh_TW.po to Chinese Traditional
 # Translation of zh_TW.po to Traditional Chinese
 # Translation of zh_TW.po to Chinese (traditional)
@@ -10,14 +11,14 @@ msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-10 11:21-0400\n"
-"PO-Revision-Date: 2004-08-09 10:38+1000\n"
+"PO-Revision-Date: 2004-09-13 15:04+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
-"Language-Team: Chinese Traditional <zh_TW@li.org>\n"
+"Language-Team: Traditional Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -94,7 +95,7 @@ msgstr "歡迎"
 #: ../src/firstbootWindow.py:402
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "匯入模組 %s 失敗：%s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -163,8 +164,7 @@ msgid ""
 msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並按下『確定』以繼續。"
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續。"
 
 #: ../src/modules/create_user.py:39
@@ -271,14 +271,12 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:47
@@ -390,338 +388,3 @@ msgstr ""
 "在使用您的系統之前，要先完成幾個步驟。 設定代理程式現在將引導您做一些基本的設"
 "定。 請點選在右下角的 『下一步』 按鈕以繼續。"
 
-#~ msgid "User Account"
-#~ msgstr "使用者帳號"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr "使用者名稱 '%s' 是保留的系統帳號，請指定另一個使用者名稱。"
-
-#~ msgid "Mouse configuration "
-#~ msgstr "滑鼠設定 "
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "firstboot 已經在這部系統上執行過一次。\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot 不會在執行等級 3 執行。"
-
-#~ msgid "Yes"
-#~ msgstr "是"
-
-#~ msgid "No"
-#~ msgstr "否"
-
-#~ msgid ""
-#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
-#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
-#~ "System to run.  \n"
-#~ "\n"
-#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-#~ "\"No\", the system will continue booting and you will never see this "
-#~ "message again.  Do you wish to run the Setup Agent now?"
-#~ msgstr ""
-#~ "Red Hat 設定代理程式藉由引導您完成一系列的步驟來幫助您設定您的系統。 設定"
-#~ "代理程式需要在 X 視窗系統中執行。\n"
-#~ "\n"
-#~ "假如您想要執行設定代理程式，請選擇『是』。 假如您選擇『否』，系統將繼續開"
-#~ "機， 而且您將不會再看到這段訊息。 您現在想要執行設定代理程式嗎？"
-
-#~ msgid "Red Hat Linux Documentation CD"
-#~ msgstr "Red Hat Linux 說明文件光碟"
-
-#~ msgid "Red Hat Linux Installation CD"
-#~ msgstr "Red Hat Linux 安裝光碟"
-
-#~ msgid "Red Hat Network"
-#~ msgstr "Red Hat Network"
-
-#~ msgid ""
-#~ "This step will register your system with a complimentary Demo Account "
-#~ "from Red Hat Network so that you can receive the latest software packages "
-#~ "directly from Red Hat.  Using this tool will allow you to always have the "
-#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
-#~ "fixes, and software enhancements. \n"
-#~ "\n"
-#~ "If you purchased this product, you are entitled to a free trial of Red "
-#~ "Hat Network Basic Service. To access the free trial, please refer to the "
-#~ "product activation card found in the box for detailed instructions. \n"
-#~ "\n"
-#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
-#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
-#~ msgstr ""
-#~ "這個步驟將會向 Red Hat Network 註冊您的系統為一個免費的示範帳號，如此您便"
-#~ "可以接收直接從 Red Hat 傳來最新的軟體套件。 使用這個工具將使您總是擁有最新"
-#~ "的 Red Hat Linux 系統，並含有所有的安全性修補、程式錯誤修正以及軟體套件的"
-#~ "功能強化。\n"
-#~ "\n"
-#~ "假如您是購買這個產品，您將享有免費試用 Red Hat Network Basic Service。 如"
-#~ "要使用這個免費服務，請參閱盒內所附的 『產品註冊卡』，以取得更詳細的資"
-#~ "訊。\n"
-#~ "\n"
-#~ "假如您沒有購買這個產品，請拜訪 http://rhn.redhat.com 以取得更多資訊，或訂"
-#~ "閱 Red Hat Network Basic Service。\n"
-
-#~ msgid "_Yes, I want to register my system with Red Hat Network."
-#~ msgstr "是的，我想要向 Red Hat Network 註冊我的系統(_Y)。"
-
-#~ msgid "N_o, I do not want to register my system."
-#~ msgstr "不，我不想要註冊我的系統(_O)。"
-
-#~ msgid "Update Agent"
-#~ msgstr "更新代理程式"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "安裝其他的軟體"
-
-#~ msgid "Create A User"
-#~ msgstr "建立一個使用者"
-
-#~ msgid ""
-#~ "A user account is required to use the system.  Create a user account by "
-#~ "filling in the information below."
-#~ msgstr "系統需要一個使用者帳號。 請填入以下的資訊以建立一個使用者帳號。"
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?"
-#~ msgstr ""
-#~ "並未建立一個使用者帳號。 在建立一個使用者帳號之前，您確定您想要繼續嗎？"
-
-#~ msgid "Set Date and Time"
-#~ msgstr "設定日期與時間"
-
-#~ msgid "Finished Setup!"
-#~ msgstr "完成設定！"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hat 更新代理程式"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "日期與時間設定"
-
-#~ msgid "Welcome to Red Hat Linux!"
-#~ msgstr "歡迎使用 Red Hat Linux！"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install software\" button below."
-#~ msgstr ""
-#~ "假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文"
-#~ "件 CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
-
-#~ msgid "Linux Application CD"
-#~ msgstr "Linux 應用程式 CD"
-
-#~ msgid ""
-#~ "This feature is not yet implemented.  Please do not report bugs about "
-#~ "this button."
-#~ msgstr "這個功能尚未完成。 請不要回報關於這個按鈕的程式錯誤。"
-
-#~ msgid "Finished Installation!"
-#~ msgstr "完成系統安裝！"
-
-#~ msgid "Update Your System"
-#~ msgstr "更新您的系統"
-
-#~ msgid "Set up Networking"
-#~ msgstr "設定網路連線"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "偵測不到網路連線。 需要用到網路連線以註冊您的系統到 RHN，並使用 Red Hat 更"
-#~ "新代理程式來更新您的系統。 要設定網路連線，請點選以下的按鈕。\n"
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "使用 DHCP 設定"
-
-#~ msgid "IP Address"
-#~ msgstr "IP 位址"
-
-#~ msgid "Netmask"
-#~ msgstr "網路遮罩"
-
-#~ msgid "Broadcast"
-#~ msgstr "廣播"
-
-#~ msgid "%s:"
-#~ msgstr "%s："
-
-#~ msgid "Gateway"
-#~ msgstr "閘道器"
-
-#~ msgid "Hostname"
-#~ msgstr "主機名稱"
-
-#~ msgid "Primary DNS"
-#~ msgstr "主 DNS"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "次 DNS"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "第三個 DNS"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "設定硬體"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "鍵盤配置："
-
-#~ msgid "Configure..."
-#~ msgstr "設定..."
-
-#~ msgid "Mouse:"
-#~ msgstr "滑鼠："
-
-#~ msgid "Networking:"
-#~ msgstr "網路連線："
-
-#~ msgid "Printers:"
-#~ msgstr "印表機："
-
-#~ msgid "Finish Installation"
-#~ msgstr "完成系統安裝"
-
-#~ msgid "Keyboard"
-#~ msgstr "鍵盤配置"
-
-#, fuzzy
-#~ msgid "Configure the system keyboard"
-#~ msgstr "系統鍵盤的設定工具"
-
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "請選擇系統的鍵盤。"
-
-#~ msgid "Language"
-#~ msgstr "語系選擇"
-
-#~ msgid "Language Configuration"
-#~ msgstr "語系設定"
-
-#~ msgid "A configuration tool to set the language for the system"
-#~ msgstr "用來設定系統語言的一個設定工具"
-
-#~ msgid "Language Selection"
-#~ msgstr "語系選擇"
-
-#~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "所做的變更將在下次您登入時生效。"
-
-#~ msgid "Mouse"
-#~ msgstr "滑鼠"
-
-#~ msgid "A configuration tool for the mouse"
-#~ msgstr "滑鼠的設定工具"
-
-#, fuzzy
-#~ msgid "Select the appropriate mouse for the system."
-#~ msgstr "請選擇系統的鍵盤。"
-
-#~ msgid "Emulate 3 button click"
-#~ msgstr "模擬三鍵式滑鼠 "
-
-#~ msgid "Root Password"
-#~ msgstr "Root 密碼"
-
-#~ msgid "Please set the root password for the system."
-#~ msgstr "請設定系統的 root 密碼。"
-
-#~ msgid "Confirm:"
-#~ msgstr "密碼確認："
-
-#~ msgid "Security Level"
-#~ msgstr "安全等級"
-
-#~ msgid "Security Level Configuration"
-#~ msgstr "安全等級設定"
-
-#~ msgid "Configure system security level"
-#~ msgstr "設定系統的安全等級"
-
-#~ msgid "Please choose the security level for the system."
-#~ msgstr "請選擇系統的安全等級。"
-
-#~ msgid "Security Level:"
-#~ msgstr "安全等級："
-
-#~ msgid "Use default firewall rules"
-#~ msgstr "使用預設防火牆規則"
-
-#~ msgid "Customize"
-#~ msgstr "自訂"
-
-#~ msgid "Allow incoming:"
-#~ msgstr "允許流入："
-
-#~ msgid "Other ports: (1029:tcp)"
-#~ msgstr "其他連接埠： (1029:tcp)"
-
-#~ msgid ""
-#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
-#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
-#~ msgstr ""
-#~ "無效的連接埠： %s。  正確的格式為 'port:protocol, port:protocol'。  例"
-#~ "如，'1234:udp, 3456:tcp'"
-
-#~ msgid "Register with RHN"
-#~ msgstr "向 RHN 註冊"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Network 是用來管理一或多個 Red Hat Linux 系統的一種網際網路的解決"
-#~ "方案。 所有的 安全性警示，程式錯誤修正警示以及功能性加強警示（集合稱為 "
-#~ "Errata Alerts），都可以直接從 Red Hat 取得。 您甚至可以設定自動傳送新釋出"
-#~ "的更新到您的系統。\n"
-#~ "\n"
-#~ "因為 Red Hat Network 追蹤 Errata 更新的釋放，並傳送您電子郵件通知，它可"
-#~ "以："
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " -- 減少系統管理員為了要保持 Red Hat errata 清單的更新，所需要的時間與精"
-#~ "神\n"
-#~ " -- 一旦 Red Hat 釋出修補程式便提供它們以減少網路環境中的安全性漏洞\n"
-#~ " -- 過濾掉與您網路不相關的套件更新\n"
-#~ " -- 排程 Errata 的更新以便套件在您需要時傳送至選定的系統"
-
-#~ msgid "Register system now"
-#~ msgstr "馬上註冊系統"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "目前您並沒有網路連線。"
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "啟動 Red Hat 更新代理程式"
