@@ -53,29 +53,42 @@ class childWindow:
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        table = gtk.Table(3, 2)
+        table = gtk.Table(3, 3)
         table.set_col_spacings(10)
         table.set_row_spacings(10)
 
-        label = gtk.Label(_("If you have any of the CDs listed below, you can install "
-                            "packages from them by inserting the CD and clicking the "
-                            "appropriate button."))
+        cd_label = _("""Please insert the disc labeled "Red Hat Enterprise Linux """
+                     """Extras" to allow for installation of third-party plug-ins and """
+                     """applications.  You may also insert the Documentation disc, or """
+                     """other Red Hat-provided discs to install additional software at """
+                     """this time.""")
 
+
+
+        if os.uname()[4] == "ia64 ":
+#        if 1:
+            cd_label = cd_label + _("""\n\nTo enable runtime support of 32-bit applications on the Intel """
+                                    """Itanium2 architecture, you must install the Intel Execution """
+                                    """Layer package from the Extras disc now.""")
+
+
+            
+        label = gtk.Label(cd_label)
         label.set_line_wrap(TRUE)
         label.set_size_request(500, -1)
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, FALSE, TRUE)
 
-##        pix = functions.imageFromFile("docs.png")
-##        table.attach(pix, 0, 1, 0, 1, gtk.SHRINK)
+#        pix = functions.imageFromFile("docs.png")
+#        table.attach(pix, 0, 1, 0, 1, gtk.SHRINK)
 
-##         label = gtk.Label(_("Red Hat Linux Documentation CD"))                            
-##         label.set_alignment(0.0, 0.5)
-##         table.attach(label, 1, 2, 0, 1, gtk.FILL, gtk.SHRINK)
+#        label = gtk.Label(_("Red Hat Linux Documentation CD"))                            
+#        label.set_alignment(0.0, 0.5)
+#        table.attach(label, 1, 2, 0, 1, gtk.FILL, gtk.SHRINK)
 
-##         button = gtk.Button(_("Install..."))
-##         button.connect("clicked", self.autorun)
-##         table.attach(button, 2, 3, 0, 1, gtk.SHRINK, gtk.SHRINK)
+#        button = gtk.Button(_("Install..."))
+#        button.connect("clicked", self.autorun)
+#        table.attach(button, 2, 3, 0, 1, gtk.SHRINK, gtk.SHRINK)
  
 ##         pix = functions.imageFromFile("cd.png")
 ##         table.attach(pix, 0, 1, 1, 2, gtk.SHRINK)
@@ -98,6 +111,19 @@ class childWindow:
         button = gtk.Button(_("Install..."))
         button.connect("clicked", self.autorun)
         table.attach(button, 2, 3, 2, 3, gtk.SHRINK, gtk.SHRINK)
+
+
+#        pix = functions.imageFromFile("lacd.png")
+#        table.attach(pix, 0, 1, 3, 4, gtk.SHRINK)
+                                                                                                             
+#        label = gtk.Label(_("Intel Execution Layer from the Extras CD."))
+#        label.set_alignment(0.0, 0.5)
+#        table.attach(label, 1, 2, 3, 4, gtk.FILL, gtk.SHRINK)
+                                                                                                             
+#        button = gtk.Button(_("Install..."))
+#        button.connect("clicked", self.autorun)
+#        table.attach(button, 2, 3, 3, 4, gtk.SHRINK, gtk.SHRINK)
+
 
         internalVBox.pack_start(table, gtk.FALSE, padding=20)
         self.vbox.pack_start(internalVBox, gtk.TRUE)
