@@ -38,7 +38,6 @@ class firstbootWindow:
         else:
             win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
             
-            
         win.set_resizable(gtk.FALSE)
         win.set_position(gtk.WIN_POS_CENTER)
         win.set_decorated(gtk.FALSE)
@@ -78,9 +77,8 @@ class firstbootWindow:
 
         # Import each module, and filter out those
         for module in list:
-            print module, self.doDebug
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
-                   "obj = %s.childWindow(%s)") % (module, module, module, self.doDebug)
+                   "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
 
             # If the module defines a moduleClass, it has to match the mode
@@ -111,7 +109,8 @@ class firstbootWindow:
             print module.__dict__
             
             if self.doDebug:
-                vbox, eventbox = module.launch()
+                print "calling", module.moduleName
+                vbox, eventbox = module.launch(self.doDebug)
             else:
                 try:
                     vbox, eventbox = module.launch()
@@ -304,7 +303,7 @@ class firstbootWindow:
         except:
             pass
 
-
+        result = None
         #Call the apply method if it exists
         try:
             result = module.apply(self.notebook)
