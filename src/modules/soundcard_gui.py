@@ -53,9 +53,7 @@ class SoundWindow:
     def __init__(self):
         #Initialize soundcard page
         self.soundcardPage = soundcard.childWindow()
-        self.notebook = self.soundcardPage.getNotebook()
-        self.notebook.set_border_width(5)
-
+        self.soundcardBox = self.soundcardPage.getSoundcardBox()
         self.soundcardBackend = soundcardBackend.soundcardBackend()
         
     def launch(self, doDebug = None):
@@ -107,10 +105,9 @@ class SoundWindow:
             self.mainVBox.pack_start(internalVBox, gtk.FALSE)
             internalVBox.pack_start(messageLabel, gtk.FALSE)
             internalVBox.pack_start(label, gtk.FALSE)
-            self.notebook.set_show_border(gtk.FALSE)
 
             hbox = gtk.HBox()
-            hbox.pack_start(self.notebook, gtk.FALSE)
+            hbox.pack_start(self.soundcardBox, gtk.FALSE)
             
             internalVBox.pack_start(hbox, gtk.FALSE)
 
