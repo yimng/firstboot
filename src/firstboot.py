@@ -2,6 +2,7 @@
 
 import sys, os
 import signal
+import time
 
 x_class = None
 wm_pid = None
