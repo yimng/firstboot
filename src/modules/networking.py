@@ -21,7 +21,7 @@ class childWindow:
 
         if network:
             print "network is functional...skipping screen"
-            return 
+            return None, None
         else:
             print "network is not functional...showing screen"
             self.mainVBox = gtk.VBox()
