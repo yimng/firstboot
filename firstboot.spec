@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 9
+Release: 10
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -26,6 +26,7 @@ Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
 Requires: redhat-config-packages
 Requires: up2date
+Requires: redhat-logos
 
 %description
 The firstboot utility runs after installation.  It 
@@ -66,6 +67,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Sep 05 2002 Brent Fox <bfox@redhat.com> 1.0.1-10
+- moved some pixmaps to redhat-logos package
+- added a requires for redhat-logos package
+
 * Tue Sep 03 2002 Brent Fox <bfox@redhat.com> 1.0.1-9
 - call dithering magic to make new pixmaps appear correctly
 
