@@ -130,7 +130,11 @@ class firstbootWindow:
                 # If it launched, add it to the mdoule list.
                 self.moduleList.append(module)
                 # Set the background of the header to a uniform color.
-                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
+#                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
+#                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e889b"))
+                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#758baa"))
+                # Give some vertical spacing to the window titlebar
+                eventbox.get_children()[0].set_border_width(3)
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
                     self.notebook.append_page(vbox, gtk.Label(module.moduleName))
@@ -139,15 +143,13 @@ class firstbootWindow:
                     label = gtk.Label(module.moduleName)
                     label.set_alignment(0.0, 0.5)
                     hbox.pack_start(pix, gtk.FALSE)
+
                     hbox.pack_end(label, gtk.TRUE)
                     self.leftLabelVBox.pack_start(hbox, gtk.FALSE, gtk.TRUE, 3)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
                 pages = pages + 1
 
-
-        # Hook up a signal to highlight the selected page, and switch to page 0.
-#        self.notebook.connect("switch-page", self.switchPage)
         self.notebook.set_current_page(0)
         self.setPointer(0)
 
@@ -181,7 +183,6 @@ class firstbootWindow:
 
         # Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
         alignment = gtk.Alignment()
-#        alignment.add(self.rightVBox)
         alignment.add(borderBox)
         alignment.set(0.2, 0.2, 0.8, 0.9)
         self.mainHBox.pack_start(alignment, gtk.TRUE)
@@ -209,13 +210,11 @@ class firstbootWindow:
         self.backButton.connect('clicked', self.backClicked)
         self.backButton.set_sensitive(gtk.FALSE)
         self.bb.pack_start(self.backButton)
-        # Create the "go forward" and "finish" buttons.
+        # Create the "go forward" button.
         self.nextButton = gtk.Button(stock='gtk-go-forward')
-        self.nextButton.connect('clicked', self.nextClicked)
+        self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
 
         self.bb.pack_start(self.nextButton)
-        self.finishButton = gtk.Button(stock='gtk-close')
-        self.finishButton.connect('clicked', self.finishClicked)
 	# Add the button box to the bottom of the box which contains the notebook.
         self.lowerHBox.pack_start(self.bb, gtk.TRUE)        
         self.internalVBox.pack_start(self.lowerHBox, gtk.FALSE, 10)
@@ -223,7 +222,7 @@ class firstbootWindow:
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
-        pix = functions.imageFromFile("bg.png")
+        pix = functions.imageFromFile("bg-gray.png")
 	if pix:
             win.realize()
             win.set_app_paintable(gtk.TRUE)
@@ -314,9 +313,8 @@ class firstbootWindow:
         #Check to see if we're on the last page.  
         tmp = self.notebook.get_nth_page(self.notebook.get_current_page() + 1)        
         if not tmp:
-            self.bb.remove(self.nextButton)
-            self.bb.pack_end(self.finishButton)
-            self.bb.show_all()
+            self.nextButton.disconnect(self.nextHandler)
+            self.nextHandler = self.nextButton.connect('clicked', self.finishClicked)
 
         self.backButton.set_sensitive(gtk.TRUE)
 
@@ -328,10 +326,8 @@ class firstbootWindow:
         if self.notebook.get_current_page() == 0:
             self.backButton.set_sensitive(gtk.FALSE)
 
-        if self.finishButton in self.bb.get_children():
-            self.bb.remove(self.finishButton)
-            self.bb.pack_end(self.nextButton)
-            self.bb.show_all()
+        self.nextButton.disconnect(self.nextHandler)
+        self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
 
     def keyRelease(self, window, event):
         if (event.keyval == gtk.keysyms.F12):
