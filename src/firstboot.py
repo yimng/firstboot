@@ -158,7 +158,7 @@ if not os.environ.has_key('DISPLAY'):
 
           if not xserver_pid:
               path = "/etc/X11/X"
-              args = [path, ':1', 'vt7', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
+              args = [path, ':1', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
 
               os.execvp(path, args)
 	      os._exit(1)

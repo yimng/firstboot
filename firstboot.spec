@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.8
+Version: 1.0.9
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -72,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu May 22 2003 Brent Fox <bfox@redhat.com> 1.0.9-1
+- remove explicit vt7 argument to X (bug #87636)
+
 * Thu May 22 2003 Brent Fox <bfox@redhat.com> 1.0.8-1
 - pass rhgb status into firstbootWindow.py
 - don't draw background if rhgb isn't running
