@@ -51,26 +51,12 @@ class childWindow:
         self.table.set_row_spacings(6)
         self.vbox.pack_start(self.table)
 
-        pix = functions.imageFromFile("networking.png")
-        self.table.attach(pix, 0, 1, 1, 2, gtk.FILL, gtk.FILL)
-        label = gtk.Label(_("Networking:"))
-        label.set_alignment(0.0, 0.5)
-        self.table.attach(label, 1, 2, 1, 2, gtk.FILL, gtk.FILL)
-
-        pix = functions.imageFromFile("display.png")
-        self.table.attach(pix, 0, 1, 2, 3, gtk.FILL, gtk.FILL)
-        label = gtk.Label(_("Display:"))
-        label.set_alignment(0.0, 0.5)
-        self.table.attach(label, 1, 2, 2, 3, gtk.FILL, gtk.FILL)
-
-        pix = functions.imageFromFile("printer.png")
-        self.table.attach(pix, 0, 1, 3, 4, gtk.FILL, gtk.FILL)
-        label = gtk.Label(_("Printers:"))
-        label.set_alignment(0.0, 0.5)
-        self.table.attach(label, 1, 2, 3, 4, gtk.FILL, gtk.FILL)
-
+        self.table_row = 0
 
         self.configureSoundcard()
+        self.configureNetworking()
+        self.configureDisplay()
+        self.configurePrinters()
         
 #        pix = self.imageFromFile("splash.png")
 #        self.vbox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
@@ -99,22 +85,46 @@ class childWindow:
         self.device, self.module, self.description = self.soundcardBackend.getData(cards[0])
 
         pix = functions.imageFromFile("multimedia.png")
-        self.table.attach(pix, 0, 1, 0, 1, gtk.FILL, gtk.FILL)
+        self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         label = gtk.Label(_("Sound card:"))
         label.set_alignment(0.0, 0.5)
-        self.table.attach(label, 1, 2, 0, 1, gtk.FILL, gtk.FILL)
+        self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         self.soundcard_label = gtk.Label(_("Sound card:"))
         self.soundcard_label.set_alignment(0.0, 0.5)
-        self.table.attach(self.soundcard_label, 2, 3, 0, 1, gtk.FILL, gtk.FILL)
+        self.table.attach(self.soundcard_label, 2, 3, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         self.soundcard_button = gtk.Button(_("Configure..."))
         self.soundcard_button.connect("clicked", self.soundcard_button_clicked)
-        self.table.attach(self.soundcard_button, 3, 4, 0, 1, gtk.EXPAND, gtk.SHRINK)
-
+        self.table.attach(self.soundcard_button, 3, 4, self.table_row, self.table_row + 1, gtk.EXPAND, gtk.SHRINK)
+        self.table_row = self.table_row + 1
 
         self.device, self.module, self.description = self.soundcardBackend.getData(cards[0])
         maker, model = string.split(self.description, "|")
         self.soundcard_label.set_text(model)
 
+    def configureNetworking(self):
+        pix = functions.imageFromFile("networking.png")
+        self.table.attach(pix, 0, 1, 1, 2, gtk.FILL, gtk.FILL)
+        label = gtk.Label(_("Networking:"))
+        label.set_alignment(0.0, 0.5)
+        self.table.attach(label, 1, 2, 1, 2, gtk.FILL, gtk.FILL)
+
+    def configureDisplay(self):
+        pix = functions.imageFromFile("display.png")
+        self.table.attach(pix, 0, 1, 2, 3, gtk.FILL, gtk.FILL)
+        label = gtk.Label(_("Display:"))
+        label.set_alignment(0.0, 0.5)
+        self.table.attach(label, 1, 2, 2, 3, gtk.FILL, gtk.FILL)
+
+    def configurePrinters(self):
+        pix = functions.imageFromFile("printer.png")
+        self.table.attach(pix, 0, 1, 3, 4, gtk.FILL, gtk.FILL)
+        label = gtk.Label(_("Printers:"))
+        label.set_alignment(0.0, 0.5)
+        self.table.attach(label, 1, 2, 3, 4, gtk.FILL, gtk.FILL)
+
+
+        
+    ############Event Handlers#############
         
     def soundcard_button_clicked(self, *args):
         win = os.fork()
