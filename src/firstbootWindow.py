@@ -30,6 +30,7 @@ import gobject
 import functions
 import firstbootBackend
 from rhpl.translate import cat
+from rhpl import ethtool
 
 ##
 ## I18N
@@ -215,11 +216,9 @@ class firstbootWindow:
     def switchPage(self, notebook, page, page_num, *args):
         # catch the switch page signal, so we can re poke modules
         # that need a signal that they are being shown
-        #print "nb: %s page: %s page_num: %s args: %s" % (notebook, page, page_num, args)
         try:
             module = self.moduleList[page_num]
         except:
-            print "THIS WAS NOT SUPPOSED TO HAPPEN: nb: %s page: %s page_num: %s args: %s" % (notebook, page, page_num, args)
             pass
 
         #print "module: %s" % module
@@ -369,6 +368,14 @@ class firstbootWindow:
         eb.set_app_paintable(gtk.TRUE)
         eb.window.set_back_pixmap(bgimage, gtk.FALSE)
 
+    def checkNetwork(self):
+	# see if we have a non loopback interface up
+	intfs = ethtool.get_active_devices()
+        for intf in intfs:
+	    if intf != "lo":
+		return 1
+	return 0		
+
     def loadModules(self):
         self.moduleList = []
         self.moduleDict = {}
@@ -404,6 +411,14 @@ class firstbootWindow:
 #			 "rhn_activate_gui", "rhn_newaccount_gui"]:
 #                obj.passInParent(self)
 
+
+	    # if the module needs network access, and we dont have it, skip
+            # the module
+	    if hasattr(obj, "needsnetwork"):
+		if not self.checkNetwork():
+		    continue
+
+
             # If the module defines a moduleClass, it has to match the mode
             # we're starting up in, otherwise it's always used.  Add it to
             # a dictionary keyed by the module's declared priority.
@@ -414,6 +429,7 @@ class firstbootWindow:
                     self.moduleDict[int(obj.runPriority)] = obj
             else:
                 self.moduleDict[int(obj.runPriority)] = obj
+
 
         # Get the list of module priorities, sort them to determine a run
 	# order, and build a list with the modules in the proper order.
