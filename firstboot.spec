@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.1
-Release: 4
+Version: 0.9.2
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -61,6 +61,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Jul 01 2002 Brent Fox <bfox@redhat.com> 0.9.2-1
+- Bump rev number
+
 * Fri Jun 28 2002 Brent Fox <bfox@redhat.com> 0.9.1-4
 - Require metacity
 
