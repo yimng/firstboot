@@ -47,7 +47,7 @@ class SoundWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
     moduleName = _("Sound Card")
-    windowTitle = _("Sound Card Configuration")
+    windowTitle = _("Sound Card")
     shortMessage = _("A sound card has been detected on your computer.")
     
     def __init__(self):
