@@ -35,6 +35,7 @@ class childWindow:
         self.txt = _("Your system is now set up and ready to use.  Please "
                             "click the \"Next\" button in the lower right corner to continue.")
 
+	self.post_txt = _("Please click the \"Next\" button in the lower right corner to continue.")
         self.label = gtk.Label(self.txt)
             
         self.label.set_line_wrap(gtk.TRUE)
@@ -61,6 +62,7 @@ class childWindow:
 		# are any other errors
                 self.txt = "" + "\n\n"
                 self.txt = self.txt + new_txt
+		self.txt = self.txt + "\n\n" + self.post_txt
 
             # dont need these files anymore
             for file in files:
