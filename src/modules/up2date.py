@@ -88,6 +88,7 @@ class childWindow:
         return self.vbox, eventBox
 
     def run_up2date(self, *args):
+        #Create a gtkInvisible dialog to block until up2date is complete
         i = gtk.Invisible ()
         i.grab_add ()
 
