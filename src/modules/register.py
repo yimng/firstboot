@@ -8,7 +8,7 @@ from socket import gethostbyname
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 110
+    runPriority = 120
     moduleName = "Register with RHN"
 
     def __init__(self):
@@ -76,7 +76,7 @@ class childWindow:
                              "selected systems when you want it")
             label.set_line_wrap(TRUE)
             label.set_alignment(0.1, 0.5)
-            label.set_usize(600, -1)
+            label.set_usize(400, -1)
 #To start using Red Hat Network today, follow these steps:
 
             internalVBox.pack_start(label, FALSE, TRUE)
