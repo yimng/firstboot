@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
-"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
+"POT-Creation-Date: Fri Jan 31 14:00:19 2003\n"
 "PO-Revision-Date: 2003-01-30 08:45GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -47,11 +47,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:120
@@ -101,9 +103,8 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"通常(管理業務以外)の使用には、個人的なユーザーアカウントを作成される事を "
-"お勧めします。個人アカウントを作成するには、要求される情報を用意して "
-"下さい。"
+"通常(管理業務以外)の使用には、個人的なユーザーアカウントを作成される事を お勧"
+"めします。個人アカウントを作成するには、要求される情報を用意して 下さい。"
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -127,9 +128,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"個人のユーザーアカウントの作成が強く推奨されます。このようなアカウントが "
-"ない状態で継続すると、rootアカウントでログインするしかありません。但し、 "
-"これは管理業務用のみに予約されています。"
+"個人のユーザーアカウントの作成が強く推奨されます。このようなアカウントが ない"
+"状態で継続すると、rootアカウントでログインするしかありません。但し、 これは管"
+"理業務用のみに予約されています。"
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
@@ -152,8 +153,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"ユーザー名%sのアカウントは予約されたシステムアカウントです。別のユーザー "
-"を指定して下さい。"
+"ユーザー名%sのアカウントは予約されたシステムアカウントです。別のユーザー を指"
+"定して下さい。"
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
@@ -174,32 +175,35 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"ユーザー名'%s'には句読点があります。ユーザー名には句読点は使用しないで "
-"下さい。"
+"ユーザー名'%s'には句読点があります。ユーザー名には句読点は使用しないで 下さ"
+"い。"
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"ユーザー名'%s'には大文字が含まれています。ユーザー名には大文字を含め "
-"ないで下さい。"
+"ユーザー名'%s'には大文字が含まれています。ユーザー名には大文字を含め ないで下"
+"さい。"
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"ユーザー名'%s'には無効な文字が含まれています。ASCII文字のみを使用して "
-"下さい。"
+"ユーザー名'%s'には無効な文字が含まれています。ASCII文字のみを使用して 下さ"
+"い。"
 
 #: ../src/modules/create_user.py:245
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:257
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -238,8 +242,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"システムが設定できましたので使用できる状態になりました。右下隅にある「前」 "
-"ボタンをクリックして続けてください。"
+"システムが設定できましたので使用できる状態になりました。右下隅にある「前」 ボ"
+"タンをクリックして続けてください。"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -261,16 +265,18 @@ msgstr ""
 "側のチャンネルです。 3番目の音は中央となります。"
 
 #: ../src/modules/up2date.py:19
-msgid "Update Agent"
-msgstr "更新エージェント"
+#, fuzzy
+msgid "Red Hat Network"
+msgstr "ネットワーク"
 
 #: ../src/modules/up2date.py:36
+#, fuzzy
 msgid ""
-"The Red Hat Update Agent will register your machine with Red Hat Network so "
-"that you can receive the latest software packages directly from Red Hat.  "
-"Using this tool will allow you to always have the most up-to-date Red Hat "
-"Linux system with all the security patches, bug fixes, and software package "
-"enhancements. \n"
+"This step will register your system with a complimentary Demo Account from "
+"Red Hat Network so that you can receive the latest software packages "
+"directly from Red Hat.  Using this tool will allow you to always have the "
+"most up-to-date Red Hat Linux system with all the security patches, bug "
+"fixes, and software enhancements. \n"
 "\n"
 "If you purchased this product, you are entitled to a free trial of Red Hat "
 "Network Basic Service. To access the free trial, please refer to the product "
@@ -292,7 +298,8 @@ msgstr ""
 "か、 又はRed Hat Network基本サービスを購読してください。\n"
 
 #: ../src/modules/up2date.py:55
-msgid "Yes, I would like to register with Red Hat Network."
+#, fuzzy
+msgid "Yes, register my system with Red Hat Network."
 msgstr "はい、Red Hat Networkへ登録したいです。"
 
 #: ../src/modules/up2date.py:56
@@ -342,6 +349,9 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hatセットアップエージェント"
+
+#~ msgid "Update Agent"
+#~ msgstr "更新エージェント"
 
 #~ msgid "Install Additional Software"
 #~ msgstr "別のソフトウェアをインストール"
@@ -434,9 +444,6 @@ msgstr "Red Hatセットアップエージェント"
 
 #~ msgid "Netmask"
 #~ msgstr "ネットマスク"
-
-#~ msgid "Network"
-#~ msgstr "ネットワーク"
 
 #~ msgid "Broadcast"
 #~ msgstr "ブロードキャスト"
@@ -617,4 +624,3 @@ msgstr "Red Hatセットアップエージェント"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-

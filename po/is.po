@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
+"POT-Creation-Date: Fri Jan 31 14:00:19 2003\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <ra@ra.is>\n"
@@ -130,8 +130,8 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Við mælum eindregið með að þú búir til notandaaðgang. Ef þú heldur áfram "
-"án þess getur þú einungis notað vélina sem rótarnotandinn sem er eingöngu "
+"Við mælum eindregið með að þú búir til notandaaðgang. Ef þú heldur áfram án "
+"þess getur þú einungis notað vélina sem rótarnotandinn sem er eingöngu "
 "ætlaður til kerfisstjórnunar."
 
 #: ../src/modules/create_user.py:107
@@ -155,7 +155,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Notandaheitið '%s' er frátekinn kerfisnotandi. Vinsamlegast veldu annað heiti."
+"Notandaheitið '%s' er frátekinn kerfisnotandi. Vinsamlegast veldu annað "
+"heiti."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
@@ -170,24 +171,23 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
-"Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í "
-"%s."
+"Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í %s."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Notandaheitið '%s' er með púnktum eða kommum. Vinsamlegast notið ekki "
-"slík tákn í notandaheitum."
+"Notandaheitið '%s' er með púnktum eða kommum. Vinsamlegast notið ekki slík "
+"tákn í notandaheitum."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Notandaheitið '%s' inniheldur hástafi. Vinsamlegast notið ekki hástafi "
-"í notandaheitum."
+"Notandaheitið '%s' inniheldur hástafi. Vinsamlegast notið ekki hástafi í "
+"notandaheitum."
 
 #: ../src/modules/create_user.py:235
 msgid ""
@@ -269,16 +269,17 @@ msgstr ""
 "hljóðið í þeim vinstri og þriðja hljóðið í báðum."
 
 #: ../src/modules/up2date.py:19
-msgid "Update Agent"
-msgstr "Uppfærsluálfurinn"
+msgid "Red Hat Network"
+msgstr ""
 
 #: ../src/modules/up2date.py:36
+#, fuzzy
 msgid ""
-"The Red Hat Update Agent will register your machine with Red Hat Network so "
-"that you can receive the latest software packages directly from Red Hat.  "
-"Using this tool will allow you to always have the most up-to-date Red Hat "
-"Linux system with all the security patches, bug fixes, and software package "
-"enhancements. \n"
+"This step will register your system with a complimentary Demo Account from "
+"Red Hat Network so that you can receive the latest software packages "
+"directly from Red Hat.  Using this tool will allow you to always have the "
+"most up-to-date Red Hat Linux system with all the security patches, bug "
+"fixes, and software enhancements. \n"
 "\n"
 "If you purchased this product, you are entitled to a free trial of Red Hat "
 "Network Basic Service. To access the free trial, please refer to the product "
@@ -300,7 +301,8 @@ msgstr ""
 "frekari upplýsingar um hvernig þú virkjar þessa þjónustu.\n"
 
 #: ../src/modules/up2date.py:55
-msgid "Yes, I would like to register with Red Hat Network."
+#, fuzzy
+msgid "Yes, register my system with Red Hat Network."
 msgstr "Já ég vil skrá mig hjá Red Hat Network."
 
 #: ../src/modules/up2date.py:56
@@ -350,3 +352,6 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat uppsetningarálfurinn"
+
+#~ msgid "Update Agent"
+#~ msgstr "Uppfærsluálfurinn"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
+"POT-Creation-Date: Fri Jan 31 14:00:19 2003\n"
 "PO-Revision-Date: 2003-01-29 23:39+0100\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -107,8 +107,8 @@ msgid ""
 "information."
 msgstr ""
 "Det anbefales at du opretter en personlig brugerkonto for normal (ikke-"
-"administrativ) brug. For at oprette en personlig konto skal du opgive "
-"de forspurgte oplysninger."
+"administrativ) brug. For at oprette en personlig konto skal du opgive de "
+"forspurgte oplysninger."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -196,22 +196,18 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun "
-"ascii-tegn."
+"Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/create_user.py:245
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun "
-"ascii-tegn."
+"Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/create_user.py:257
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Navnet '%s' indeholder ugyldige tegn. Brug venligst kun "
-"ascii-tegn."
+msgstr "Navnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -273,16 +269,17 @@ msgstr ""
 "skal være i den venstre kanal, og den tredje lyd skal være i midten."
 
 #: ../src/modules/up2date.py:19
-msgid "Update Agent"
-msgstr "Opdateringsagent"
+msgid "Red Hat Network"
+msgstr ""
 
 #: ../src/modules/up2date.py:36
+#, fuzzy
 msgid ""
-"The Red Hat Update Agent will register your machine with Red Hat Network so "
-"that you can receive the latest software packages directly from Red Hat.  "
-"Using this tool will allow you to always have the most up-to-date Red Hat "
-"Linux system with all the security patches, bug fixes, and software package "
-"enhancements. \n"
+"This step will register your system with a complimentary Demo Account from "
+"Red Hat Network so that you can receive the latest software packages "
+"directly from Red Hat.  Using this tool will allow you to always have the "
+"most up-to-date Red Hat Linux system with all the security patches, bug "
+"fixes, and software enhancements. \n"
 "\n"
 "If you purchased this product, you are entitled to a free trial of Red Hat "
 "Network Basic Service. To access the free trial, please refer to the product "
@@ -304,7 +301,8 @@ msgstr ""
 "yderligere oplysninger om at abonnere på Red Hat netværks basale tjeneste. \n"
 
 #: ../src/modules/up2date.py:55
-msgid "Yes, I would like to register with Red Hat Network."
+#, fuzzy
+msgid "Yes, register my system with Red Hat Network."
 msgstr "Ja, jeg vil gerne registrere mit system hos Red Hat Network."
 
 #: ../src/modules/up2date.py:56
@@ -354,6 +352,9 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat konfigurationssagent"
+
+#~ msgid "Update Agent"
+#~ msgstr "Opdateringsagent"
 
 #~ msgid "Install Additional Software"
 #~ msgstr "Installér yderligere programmel"

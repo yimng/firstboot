@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
+"POT-Creation-Date: Fri Jan 31 14:00:19 2003\n"
 "PO-Revision-Date: 2003-01-30 10:27+1000\n"
 "Last-Translator: David Barzilay <barzilay@redhat.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
@@ -45,11 +45,14 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "O 'firstboot' já foi executado uma vez neste sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+"Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para rodar o 'firstboot' durante o início do sistema, execute os seguintes "
 "comandos:"
@@ -102,8 +105,8 @@ msgid ""
 "information."
 msgstr ""
 "É recomendado que você crie uma conta de usuário normal (não-"
-"administrativa).  Para criar uma conta pessoal, indique as"
-"informações requisitadas."
+"administrativa).  Para criar uma conta pessoal, indique asinformações "
+"requisitadas."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -127,9 +130,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"É altamente recomendada a criação de uma conta pessoal de usuário.  "
-"Se você continuar sem conta, só poderá logar com a conta root, "
-"que é reservada apenas para uso administrativo."
+"É altamente recomendada a criação de uma conta pessoal de usuário.  Se você "
+"continuar sem conta, só poderá logar com a conta root, que é reservada "
+"apenas para uso administrativo."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
@@ -168,24 +171,23 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
-"O nome de usuário '%s' contém espaço(s).  Por favor não inclua espaços "
-"no %s."
+"O nome de usuário '%s' contém espaço(s).  Por favor não inclua espaços no %s."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"O nome de usuário '%s' contém caracter(es) de pontuação.  Por favor "
-"não use pontuação no nome do usuário."
+"O nome de usuário '%s' contém caracter(es) de pontuação.  Por favor não use "
+"pontuação no nome do usuário."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"O nome de usuário '%s' contém caracteres em caixa alta.  Por favor não "
-"use caracteres em caixa alta no nome do usuário."
+"O nome de usuário '%s' contém caracteres em caixa alta.  Por favor não use "
+"caracteres em caixa alta no nome do usuário."
 
 #: ../src/modules/create_user.py:235
 msgid ""
@@ -196,12 +198,17 @@ msgstr ""
 "apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:245
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:257
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "O nome '%s' contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"O nome '%s' contém caracteres inválidos.  Por favor use apenas caracteres "
+"ASCII."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -264,16 +271,17 @@ msgstr ""
 "segundo no canal da esquerda e o terceiro tocará no centro."
 
 #: ../src/modules/up2date.py:19
-msgid "Update Agent"
-msgstr "Agente de Atualizações "
+msgid "Red Hat Network"
+msgstr ""
 
 #: ../src/modules/up2date.py:36
+#, fuzzy
 msgid ""
-"The Red Hat Update Agent will register your machine with Red Hat Network so "
-"that you can receive the latest software packages directly from Red Hat.  "
-"Using this tool will allow you to always have the most up-to-date Red Hat "
-"Linux system with all the security patches, bug fixes, and software package "
-"enhancements. \n"
+"This step will register your system with a complimentary Demo Account from "
+"Red Hat Network so that you can receive the latest software packages "
+"directly from Red Hat.  Using this tool will allow you to always have the "
+"most up-to-date Red Hat Linux system with all the security patches, bug "
+"fixes, and software enhancements. \n"
 "\n"
 "If you purchased this product, you are entitled to a free trial of Red Hat "
 "Network Basic Service. To access the free trial, please refer to the product "
@@ -297,7 +305,8 @@ msgstr ""
 "informações ou registre-se no Serviço Básico da Red Hat Network. \n"
 
 #: ../src/modules/up2date.py:55
-msgid "Yes, I would like to register with Red Hat Network."
+#, fuzzy
+msgid "Yes, register my system with Red Hat Network."
 msgstr "Sim, quero registrar-me na Red Hat Network."
 
 #: ../src/modules/up2date.py:56
@@ -350,6 +359,9 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Agente de Configuração Red Hat"
 
+#~ msgid "Update Agent"
+#~ msgstr "Agente de Atualizações "
+
 #~ msgid "Install Additional Software"
 #~ msgstr "Instalar Software Adicional"
 
@@ -387,4 +399,3 @@ msgstr "Agente de Configuração Red Hat"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Bem-vindo ao Red Hat Linux!"
-

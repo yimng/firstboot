@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
+"POT-Creation-Date: Fri Jan 31 14:00:19 2003\n"
 "PO-Revision-Date: 2003-01-30 09:05GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -46,11 +46,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:120
@@ -97,7 +99,9 @@ msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需信息。"
+msgstr ""
+"建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
+"信息。"
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -120,7 +124,9 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来登录，而这个账号是为管理而保留的。"
+msgstr ""
+"极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
+"登录，而这个账号是为管理而保留的。"
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
@@ -177,11 +183,13 @@ msgid ""
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:245
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:257
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/date.py:51
@@ -241,16 +249,18 @@ msgstr ""
 "频；第二种声音是左频；第三种声音将会在中间。"
 
 #: ../src/modules/up2date.py:19
-msgid "Update Agent"
-msgstr "更新代理"
+#, fuzzy
+msgid "Red Hat Network"
+msgstr "网络"
 
 #: ../src/modules/up2date.py:36
+#, fuzzy
 msgid ""
-"The Red Hat Update Agent will register your machine with Red Hat Network so "
-"that you can receive the latest software packages directly from Red Hat.  "
-"Using this tool will allow you to always have the most up-to-date Red Hat "
-"Linux system with all the security patches, bug fixes, and software package "
-"enhancements. \n"
+"This step will register your system with a complimentary Demo Account from "
+"Red Hat Network so that you can receive the latest software packages "
+"directly from Red Hat.  Using this tool will allow you to always have the "
+"most up-to-date Red Hat Linux system with all the security patches, bug "
+"fixes, and software enhancements. \n"
 "\n"
 "If you purchased this product, you are entitled to a free trial of Red Hat "
 "Network Basic Service. To access the free trial, please refer to the product "
@@ -270,7 +280,8 @@ msgstr ""
 "Red Hat 网络的基本服务。\n"
 
 #: ../src/modules/up2date.py:55
-msgid "Yes, I would like to register with Red Hat Network."
+#, fuzzy
+msgid "Yes, register my system with Red Hat Network."
 msgstr "是，我想在 Red Hat 网络注册。"
 
 #: ../src/modules/up2date.py:56
@@ -317,6 +328,9 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat 设置代理"
+
+#~ msgid "Update Agent"
+#~ msgstr "更新代理"
 
 #~ msgid "Install Additional Software"
 #~ msgstr "安装额外软件"
@@ -402,9 +416,6 @@ msgstr "Red Hat 设置代理"
 
 #~ msgid "Netmask"
 #~ msgstr "子网掩码"
-
-#~ msgid "Network"
-#~ msgstr "网络"
 
 #~ msgid "Broadcast"
 #~ msgstr "广播"
@@ -575,4 +586,3 @@ msgstr "Red Hat 设置代理"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-
