@@ -5,7 +5,8 @@ import string
 import libglade
 import gtk
 
-xml = libglade.GladeXML ("/home/devel/bfox/redhat/firstboot/glade/firewall.glade", domain="redhat-config-firewall")
+xml = libglade.GladeXML ("../glade/firewall.glade", domain="redhat-config-firewall")
+#xml = libglade.GladeXML ("/usr/share/firstboot/glade/firewall.glade", domain="redhat-config-firewall")
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
