@@ -58,7 +58,7 @@ class childWindow:
         label = gtk.Label(_("If you have additional CDs from the Red Hat Linux box "
                           "set, such as the Red Hat Linux Documentation CD or the "
                           "Linux Applications CD, please insert the disc now and "
-                          "click the button below."))
+                          "click the corresponding button below."))
         
         label.set_line_wrap(TRUE)
         label.set_size_request(400, -1)
