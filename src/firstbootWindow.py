@@ -254,50 +254,13 @@ class firstbootWindow:
         os._exit(0)
 
     def nextClicked(self, *args):
-        global screenshotIndex
-        global screenshotDir
-
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
             pass
 
         if self.autoscreenshot != None:
-            #Let's take some auto screenshots
-            if screenshotDir is None:
-                screenshotDir = "/tmp/firstboot-screenshots"
-
-                if not os.access(screenshotDir, os.R_OK):
-                    try:
-                        os.mkdir(screenshotDir)
-                    except:
-                        screenshotDir = None
-
-
-            screen_width = gtk.gdk.screen_width()
-            screen_height = gtk.gdk.screen_height()
-
-            src_x = (screen_width - 800) / 2
-            src_y = (screen_height - 600) / 2
-
-            screenshot = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, gtk.FALSE, 8,
-                                        800, 600)
-
-            screenshot.get_from_drawable(gtk.gdk.get_default_root_window(),
-                                         gtk.gdk.colormap_get_system(),
-                                         src_x, src_y, 0, 0,
-                                         800, 600)
-
-            if screenshot:
-                while (1):
-                    sname = "screenshot-%04d.png" % ( screenshotIndex,)
-                    if not os.access(screenshotDir + '/' + sname, os.R_OK):
-                        break
-
-                    screenshotIndex = screenshotIndex + 1
-
-                screenshot.save (screenshotDir + '/' + sname, "png")
-                screenshotIndex = screenshotIndex + 1
+            self.takeScreenShot()
 
         result = None
         #Call the apply method if it exists
@@ -353,6 +316,8 @@ class firstbootWindow:
             self.nextClicked()
         if (event.keyval == gtk.keysyms.F11):
             self.backClicked()
+        if (event.keyval == gtk.keysyms.Print and event.state & gtk.gdk.SHIFT_MASK):
+            self.takeScreenShot()
 
     def closeRelease(self, window, event):
         if (event.keyval == gtk.keysyms.F12):
@@ -538,3 +503,42 @@ class firstbootWindow:
         self.notebook.show_all()
         self.notebook.set_current_page(1)
 
+    def takeScreenShot(self):
+        global screenshotIndex
+        global screenshotDir
+
+        #Let's take some screenshots
+        if screenshotDir is None:
+            screenshotDir = "/tmp/firstboot-screenshots"
+
+            if not os.access(screenshotDir, os.R_OK):
+                try:
+                    os.mkdir(screenshotDir)
+                except:
+                    screenshotDir = None
+
+        screen_width = gtk.gdk.screen_width()
+        screen_height = gtk.gdk.screen_height()
+
+        src_x = (screen_width - 800) / 2
+        src_y = (screen_height - 600) / 2
+
+        screenshot = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, gtk.FALSE, 8,
+                                    800, 600)
+
+        screenshot.get_from_drawable(gtk.gdk.get_default_root_window(),
+                                     gtk.gdk.colormap_get_system(),
+                                     src_x, src_y, 0, 0,
+                                     800, 600)
+
+        if screenshot:
+            while (1):
+                sname = "screenshot-%04d.png" % ( screenshotIndex,)
+                if not os.access(screenshotDir + '/' + sname, os.R_OK):
+                    break
+
+                screenshotIndex = screenshotIndex + 1
+
+            screenshot.save (screenshotDir + '/' + sname, "png")
+            screenshotIndex = screenshotIndex + 1
+    
