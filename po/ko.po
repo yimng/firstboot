@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2003-09-11 17:51-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-12-04 17:55-0500\n"
 "PO-Revision-Date: 2003-09-25 09:52+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -16,44 +17,78 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.0\n"
 
-#. !/usr/bin/python2.2
+#. # eula_strings.py
+#. #
+#. # Copyright (C) 2003 Red Hat, Inc.
+#. # Copyright (C) 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #. #
 #. # I18N
 #. #
-#: ../src/eula_strings.py:10
+#: ../src/eula_strings.py:27
 msgid "License Agreement"
 msgstr "사용 계약서"
 
-#: ../src/eula_strings.py:11
+#: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
 msgstr "네, 사용 계약서에 동의합니다(_Y)"
 
-#: ../src/eula_strings.py:12
+#: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
 msgstr "아니오, 동의하지 않습니다(_O)"
 
-#: ../src/eula_strings.py:13
+#: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
 msgstr "사용 계약서를 다시 검토해보시겠습니까?"
 
-#: ../src/eula_strings.py:14
+#: ../src/eula_strings.py:31
 msgid "_Reread license"
 msgstr "사용 계약서 다시 읽어보기(_R)"
 
-#: ../src/eula_strings.py:15
+#: ../src/eula_strings.py:32
 msgid "_Shut down"
 msgstr "종료(_S)"
 
-#. !/usr/bin/python2.2
+#. # exceptionWindow.py - the UI to display traceback information
+#. #
+#. # Copyright (C) 2002, 2003 Red Hat, Inc.
+#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #. #
 #. # I18N
 #. #
-#: ../src/exceptionWindow.py:31
+#: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "%s 모듈에서 오류가 발생했습니다."
 
-#: ../src/exceptionWindow.py:36
+#: ../src/exceptionWindow.py:53
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -64,7 +99,7 @@ msgstr ""
 "Red Hat 설정 에이전트는 이 모듈을 로드하지 않고 \n"
 "그 외 나머지 모듈을 실행할 것입니다."
 
-#: ../src/exceptionWindow.py:40
+#: ../src/exceptionWindow.py:57
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -79,10 +114,46 @@ msgstr ""
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
-#. !/usr/bin/python2.2
+#. # firstbootBackend.py - contains the writeSysconfigFile function
+#. #
+#. # Copyright (C) 2002, 2003 Red Hat, Inc.
+#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
-#. !/usr/bin/python2.2
+#. !/usr/bin/python2
+#. #
+#. # firstboot.py - kickoff script for firstboot
+#. #
+#. # Copyright (C) 2002, 2003 Red Hat, Inc.
+#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #. #
 #. # I18N
 #. #
@@ -94,59 +165,67 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:93
+#: ../src/firstboot.py:112
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
-#: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+#: ../src/firstboot.py:113
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
-#: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+#: ../src/firstboot.py:118
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #. Firstboot has never been run before, so start it up
-#. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
-#. if they want to run firstboot or not.
-#. They booted the machine in runlevel 3.  Assume that they don't want to see firstboot
-#: ../src/firstboot.py:120
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
-
-#. #-------Comment out the newt window for now.  Ran out of time for GinGin
-#. #     import textWindow
-#. #     from snack import *
-#. #     screen = SnackScreen()
-#. #     result = textWindow.TextWindow()(screen)
-#. #     if result == -1:
-#. #         #If they don't want to run firstboot, exit for good
-#. #         screen.finish()
-#. #         firstbootBackend.writeSysconfigFile(doDebug)
-#. #         os._exit(0)
-#. #     else:
-#. #         #They want to run firstboot, so let's pass on through
-#. #         screen.finish()
+#. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
+#. textWindow for the TUI
+#. Keep running the program until either the timer has expired or the user pressed Exit
+#. They're done with firstboot.  Exit for good
 #. If rhgb (graphical boot) is running, let's use it's X server
 #. However, we still need to start up metacity and merge the X resources
 #. If there's no X Server running, let's start one
 #. set the display environment variable
-#.
-#. Copyright 2001,2002 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
+#. # firstbootWindow.py - the main firstboot UI and framework.py
+#. #
+#. # Copyright (C) 2002, 2003 Red Hat, Inc.
+#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #. #
 #. # I18N
 #. #
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
-#. If rhgb isn't running, then we need to draw the background
+#. #         if rhgb == None:
+#. #             #If rhgb isn't running, then we need to draw the background
+#. #             pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+#. #             if pixbuf is not None:
+#. #                 pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
+#. #                 bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
+#. #                 gc = bgimage.new_gc()
+#. #                 pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
+#. #                                           y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+#. #                 self.win.set_app_paintable(gtk.TRUE)
+#. #                 self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+#. #                 if not self.doDebug:
+#. #                     self.win.set_size_request(x_screen, y_screen)
+#. Let's draw the background
 #. Create the notebook.  We use a ListView to control which page in the
 #. notebook is displayed.
 #. Add the box on the left to the window's HBox.
@@ -155,12 +234,12 @@ msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
 msgid "_Back"
 msgstr "뒤로(_B)"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
 msgid "_Next"
 msgstr "다음(_N)"
 
@@ -204,112 +283,164 @@ msgstr "다음(_N)"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "환영합니다"
 
-#. !/usr/bin/python2.2
+#. # functions.py - some helper functions
+#. #
+#. # Copyright (C) 2002, 2003 Red Hat, Inc.
+#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #. Attempt to load a gtk.Image from a file.
 #. Attempt to load a gtk.Image from a file.
-#. !/usr/bin/python2.2
-#. time.sleep(15)
-#. If they don't want to run firstboot, exit for good
-#. They want to run firstboot, so let's pass on through
-#. !/usr/bin/python
+#. !/usr/bin/python2
+#. # runTextWindow.py - startup script to test the textWindow module
+#. #
+#. # Copyright (C) 2002, 2003 Red Hat, Inc.
+#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#. # textWindow.py - the code for firstboot TUI
+#. #
+#. # Copyright (C) 2002, 2003 Red Hat, Inc.
+#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+#. #
+#. # This program is free software; you can redistribute it and/or modify
+#. # it under the terms of the GNU General Public License as published by
+#. # the Free Software Foundation; either version 2 of the License, or
+#. # (at your option) any later version.
+#. #
+#. # This program is distributed in the hope that it will be useful,
+#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. # GNU General Public License for more details.
+#. #
+#. # You should have received a copy of the GNU General Public License
+#. # along with this program; if not, write to the Free Software
+#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:15
-msgid "Yes"
-msgstr "예"
-
-#: ../src/textWindow.py:15
-msgid "No"
-msgstr "아니오"
-
-#: ../src/textWindow.py:17
-msgid ""
-"The Red Hat Setup Agent can assist you in configuring your machine by "
-"guiding you through a series of steps.  Setup Agent requires the X Window "
-"System to run.  \n"
-"\n"
-"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-"\"No\", the system will continue booting and you will never see this message "
-"again.  Do you wish to run the Setup Agent now?"
+#: ../src/textWindow.py:33
+msgid "Authentication"
 msgstr ""
-"Red Hat 설정 에이전트는 단계별로 여러분의 기계를 설정하실 수 있도록 도와드립"
-"니다.  설정 에이전트를 사용하시려면 X 윈도우 시스템이 실행 중이어야 합니"
-"다. \n"
-"\n"
-"설정 에이전트를 실행하시려면, \"예\"를 선택해 주십시오. \"아니오\"를 선택하시"
-"면, 시스템이 계속 부팅되며 이 메시지가 다시는 나타나지 않을 것입니다. 지금 설"
-"정 에이전트를 실행하시겠습니까?"
 
-#: ../src/textWindow.py:24
-msgid "Red Hat Setup Agent"
+#: ../src/textWindow.py:34
+#, fuzzy
+msgid "Firewall configuration "
+msgstr "방화벽 설정"
+
+#: ../src/textWindow.py:35
+#, fuzzy
+msgid "Keyboard configuration "
+msgstr "사운드 카드 설정"
+
+#: ../src/textWindow.py:36
+#, fuzzy
+msgid "Mouse configuration "
+msgstr "마우스 설정"
+
+#: ../src/textWindow.py:37
+#, fuzzy
+msgid "Network configuration "
+msgstr "네트워크 설정 변경(_C)..."
+
+#: ../src/textWindow.py:38
+#, fuzzy
+msgid "Printer configuration "
+msgstr "마우스 설정"
+
+#: ../src/textWindow.py:39
+#, fuzzy
+msgid "System services "
+msgstr "신뢰하는 장치:"
+
+#: ../src/textWindow.py:40
+#, fuzzy
+msgid "Sound card configuration "
+msgstr "사운드 카드 설정"
+
+#: ../src/textWindow.py:41
+#, fuzzy
+msgid "Timezone configuration "
+msgstr "마우스 설정"
+
+#: ../src/textWindow.py:43
+msgid "Run Tool"
+msgstr ""
+
+#: ../src/textWindow.py:43
+msgid "Exit"
+msgstr ""
+
+#: ../src/textWindow.py:45
+msgid "Select the item that you wish to modify "
+msgstr ""
+
+#: ../src/textWindow.py:51
+#, fuzzy
+msgid "Setup Agent"
 msgstr "Red Hat 설정 에이전트"
 
-#. !/usr/bin/python2.2
-#. os.execv("test.py", [""])
+#. Set a timeout limit so that firstboot won't hang around forever on headless machines
+#. We've reached the timeout limit.  Let's return -1
+#. They've selected to run a config tool.  Lauch it now
 #.
-#. splashscreen.py: a quick splashscreen window that displays during ipl
+#. additional_cds.py - firstboot module for add-on CDs
 #.
-#. Matt Wilson <msw@redhat.com>
+#. Copyright 2002, 2003 Red Hat, Inc.
+#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
 #.
-#. Copyright 2001 Red Hat, Inc.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
 #.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
 #.
-#. You should have received a copy of the GNU Library Public License
+#. You should have received a copy of the GNU General Public License
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #.
-#. from flags import flags
-#. #     #set the background to a dark gray
-#. #     if flags.setupFilesystems:
-#. #         path = ("/usr/X11R6/bin/xsetroot",)
-#. #         args = ("-solid", "gray45")
-#. #         child = os.fork ()
-#. #         if (child == 0):
-#. #             os.execv (path[0], path + args)
-#. #         try:
-#. #             pid, status = os.waitpid(child, 0)
-#. #         except OSError, (errno, msg):
-#. #             print __name__, "waitpid:", msg
-#. win = GtkWindow()
-#. win.set_title("popup")
-#. win.show_all()
-#. hpane = GtkHPaned()
-#. print sys.path
-#. moduleList.append(obj)
-#.
-#. xserver.py - initial xserver startup for firstboot
-#.
-#. Matt Wilson <msw@redhat.com>
-#. Brent Fox <bfox@redhat.com>
-#.
-#. Copyright 2001 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. override fontpath because xfs is not running yet!
-#. give time for the server to fail (if it is going to fail...)
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
 msgstr "추가 CD"
 
-#: ../src/modules/additional_cds.py:39
+#: ../src/modules/additional_cds.py:60
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -317,21 +448,12 @@ msgstr ""
 "아래에 나온 CD를 가지고 계시다면, 이 CD를 삽입하신 후 적절한 버튼을 클릭하셔"
 "서 패키지를 설치하실 수 있습니다."
 
-#: ../src/modules/additional_cds.py:51
-msgid "Red Hat Linux Documentation CD"
-msgstr "Red Hat Linux 문서 자료 CD"
-
-#: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
-#: ../src/modules/additional_cds.py:77
+#: ../src/modules/additional_cds.py:98
 msgid "Install..."
 msgstr "설치..."
 
-#: ../src/modules/additional_cds.py:62
-msgid "Red Hat Linux Installation CD"
-msgstr "Red Hat Linux 설치 CD"
-
 #. Create a gtkInvisible widget to block until the autorun is complete
-#: ../src/modules/additional_cds.py:99
+#: ../src/modules/additional_cds.py:120
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -343,16 +465,17 @@ msgstr ""
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
-#: ../src/modules/additional_cds.py:133
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:154
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
-#. I think redhat-config-packages will do a umount, but just in case it doesn't...
-#. Yep, redhat-config-packages has already umounted the disc, so fall through and go on
+#. I think system-config-packages will do a umount, but just in case it doesn't...
+#. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
 #. #
 #. # I18N
@@ -486,13 +609,16 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -500,11 +626,10 @@ msgstr ""
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
 #.
-#. date_gui.py - GUI front end code for mouse configuration
+#. date.py - GUI front end code for date, time and ntp configuration
 #.
-#. Brent Fox <bfox@redhat.com>
-#.
-#. Copyright 2002 Red Hat, Inc.
+#. Copyright 2002, 2003 Red Hat, Inc.
+#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
 #.
 #. This program is free software; you can redistribute it and/or modify
 #. it under the terms of the GNU General Public License as published by
@@ -520,16 +645,15 @@ msgstr ""
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #.
-#. !/usr/bin/python2.2
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/date.py:51
+#: ../src/modules/date.py:47
 msgid "Date and Time"
 msgstr "날짜와 시간"
 
-#: ../src/modules/date.py:54
+#: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "시스템 날짜와 시간을 설정해 주십시오."
 
@@ -539,16 +663,16 @@ msgstr "시스템 날짜와 시간을 설정해 주십시오."
 #. We're not using ntp, so stop the service
 #. set the time on the system according to what the user set it to
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:116
+#: ../src/modules/date.py:112
 msgid "Please enter a time server."
 msgstr "시간 서버를 입력해 주십시오."
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:137
-#: ../src/modules/date.py:168
+#: ../src/modules/date.py:114 ../src/modules/date.py:133
+#: ../src/modules/date.py:164
 msgid "Error"
 msgstr "오류"
 
-#: ../src/modules/date.py:130 ../src/modules/date.py:161
+#: ../src/modules/date.py:126 ../src/modules/date.py:157
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -558,11 +682,46 @@ msgstr ""
 "문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
 
 #. do something slow
-#: ../src/modules/date.py:198
+#: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTP 서버에 연결 중입니다.  잠시만 기다려주십시오..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
+#.
+#. display.py - GUI front end code for firstboot screen resolution
+#.
+#. Copyright 2003 Red Hat, Inc.
+#. Copyright 2003 Brent Fox <bfox@redhat.com>
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
+#: ../src/modules/display.py:45
+#, fuzzy
+msgid "Display"
+msgstr "화면 표시:"
+
+#: ../src/modules/display.py:48
+#, fuzzy
+msgid "Please select the resolution and color depth that you wish to use"
+msgstr "시스템을 위한 기본 언어를 선택해 주십시오."
+
+#. Add icon to the top frame
 #. #
 #. # I18N
 #. #
@@ -579,42 +738,11 @@ msgstr ""
 "시스템 설정이 완료되어 이제 사용하실 수 있습니다.  다음 단계로 계속 진행하시"
 "려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
 
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/networking.py:23
-msgid "Network Setup"
-msgstr "네트워크 설정"
-
-#: ../src/modules/networking.py:49
-msgid "The following network devices have been detected on the system:"
-msgstr "다음과 같은 네트워크 장치가 시스템에서 검색되었습니다:"
-
-#: ../src/modules/networking.py:68
-msgid "Network Device"
-msgstr "네트워크 장치"
-
-#: ../src/modules/networking.py:70
-msgid "Boot protocol"
-msgstr "부트 프로토콜"
-
-#: ../src/modules/networking.py:76
-msgid "_Change Network Configuration..."
-msgstr "네트워크 설정 변경(_C)..."
-
-#: ../src/modules/networking.py:119
-msgid "static"
-msgstr "정적"
-
-#. Create a gtkInvisible dialog to block until up2date is complete
-#. Run rhn_register so they can register with RHN
 #.
-#. soundcard_gui.py - GUI front end code for soundcard configuration
+#. networking.py - networking module for firstboot
 #.
-#. Brent Fox <bfox@redhat.com>
-#.
-#. Copyright 2002 Red Hat, Inc.
+#. Copyright 2002, 2003 Red Hat, Inc.
+#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
 #.
 #. This program is free software; you can redistribute it and/or modify
 #. it under the terms of the GNU General Public License as published by
@@ -630,22 +758,71 @@ msgstr "정적"
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #.
-#. !/usr/bin/python2.2
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
+#: ../src/modules/networking.py:44
+msgid "Network Setup"
+msgstr "네트워크 설정"
+
+#: ../src/modules/networking.py:70
+msgid "The following network devices have been detected on the system:"
+msgstr "다음과 같은 네트워크 장치가 시스템에서 검색되었습니다:"
+
+#: ../src/modules/networking.py:89
+msgid "Network Device"
+msgstr "네트워크 장치"
+
+#: ../src/modules/networking.py:91
+msgid "Boot protocol"
+msgstr "부트 프로토콜"
+
+#: ../src/modules/networking.py:97
+msgid "_Change Network Configuration..."
+msgstr "네트워크 설정 변경(_C)..."
+
+#: ../src/modules/networking.py:140
+msgid "static"
+msgstr "정적"
+
+#. Create a gtkInvisible dialog to block until up2date is complete
+#. Run rhn_register so they can register with RHN
+#.
+#. soundcard_gui.py - GUI front end code for soundcard configuration
+#.
+#. Copyright 2002, 2003 Red Hat, Inc.
+#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
+#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
 msgstr "사운드 카드"
 
-#: ../src/modules/soundcard_gui.py:51
+#: ../src/modules/soundcard_gui.py:48
 msgid "A sound card has been detected on your computer."
 msgstr "사운드 카드가 검색되었습니다."
 
 #. Initialize soundcard page
 #. Add icon to the top frame
-#: ../src/modules/soundcard_gui.py:74
+#: ../src/modules/soundcard_gui.py:71
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -659,9 +836,8 @@ msgstr ""
 #.
 #. timezone.py - GUI front end code for mouse configuration
 #.
-#. Brent Fox <bfox@redhat.com>
-#.
 #. Copyright 2003 Red Hat, Inc.
+#. Copyright 2003 Brent Fox <bfox@redhat.com>
 #.
 #. This program is free software; you can redistribute it and/or modify
 #. it under the terms of the GNU General Public License as published by
@@ -677,77 +853,98 @@ msgstr ""
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #.
-#. !/usr/bin/python2.2
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/timezone.py:51
+#: ../src/modules/timezone.py:48
 msgid "Timezone"
 msgstr "시간대"
 
-#: ../src/modules/timezone.py:55
+#: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
 msgstr "시스템에 맞는 시간대를 선택해 주십시오."
 
-#. Initialize timezone backend
-#. Initialize datePage and pass dateBackend into it
-#. Add icon to the top frame
-#. Get the timezone info from the timezone page
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/up2date.py:19
-msgid "Red Hat Network"
-msgstr "Red Hat 네트워크"
-
-#: ../src/modules/up2date.py:36
-msgid ""
-"This step will register your system with a complimentary Demo Account from "
-"Red Hat Network so that you can receive the latest software packages "
-"directly from Red Hat.  Using this tool will allow you to always have the "
-"most up-to-date Red Hat Linux system with all the security patches, bug "
-"fixes, and software enhancements. \n"
-"\n"
-"If you purchased this product, you are entitled to a free trial of Red Hat "
-"Network Basic Service. To access the free trial, please refer to the product "
-"activation card found in the box for detailed instructions. \n"
-"\n"
-"If you did not purchase this product, visit http://rhn.redhat.com for more "
-"information or to subscribe to Red Hat Network Basic Service. \n"
-msgstr ""
-"Red Hat 업데이트 에이전트는 이제 여러분의 컴퓨터를 무료 데모 계좌로 Red Hat "
-"Network에 등록할 것입니다. 등록하시면 Red Hat에서 직접 최신 소프트웨어 패키지"
-"를 다운로드 받으실 수 있습니다. Red Hat 업데이트 에이전트를 사용함으로써 항"
-"상 보안 패치, 버그 수정과 개선된 소프트웨어 패키지를 갖춘 최신의 Red Hat "
-"Linux 시스템을 사용하실 수 있습니다.\n"
-"\n"
-"이 제품을 구입하시면 Red Hat 네트워크 기본 서비스를 무료로 사용하실 수 있는 "
-"기회를 드립니다. 무료 사용을 신청하시려면, 제품 상자에 들어있는 제품 활성화 "
-"카드에 적힌 상세한 지시 사항을 따르시기 바랍니다. \n"
-"\n"
-"이 제품을 구입하지 않으셨다면, http://rhn.redhat.com 사이트를 방문하셔서 Red "
-"Hat 네트워크 기본 서비스에 등록하셔서 보다 많은 정보를 얻으실 수 있습니다.\n"
-
-#: ../src/modules/up2date.py:55
-msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr "네, Red Hat Network에 시스템을 등록합니다.(_Y)"
-
-#: ../src/modules/up2date.py:56
-msgid "N_o, I do not want to register my system."
-msgstr "아니오, 시스템을 등록하지 않습니다.(_O)"
-
 #: ../src/modules/welcome.py:35
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
-"Red Hat Setup Agent will now guide you through some basic configuration.  "
-"Please click the \"Next\" button in the lower right corner to continue."
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  Red Hat 설정 에이전"
 "트는 이제 몇가지 기본적인 설정 과정을 여러 가지 단계를 통해 길잡이를 해드릴 "
 "것입니다. 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합"
 "니다."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
+
+#~ msgid "Yes"
+#~ msgstr "예"
+
+#~ msgid "No"
+#~ msgstr "아니오"
+
+#~ msgid ""
+#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
+#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
+#~ "System to run.  \n"
+#~ "\n"
+#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+#~ "\"No\", the system will continue booting and you will never see this "
+#~ "message again.  Do you wish to run the Setup Agent now?"
+#~ msgstr ""
+#~ "Red Hat 설정 에이전트는 단계별로 여러분의 기계를 설정하실 수 있도록 도와드"
+#~ "립니다.  설정 에이전트를 사용하시려면 X 윈도우 시스템이 실행 중이어야 합니"
+#~ "다. \n"
+#~ "\n"
+#~ "설정 에이전트를 실행하시려면, \"예\"를 선택해 주십시오. \"아니오\"를 선택"
+#~ "하시면, 시스템이 계속 부팅되며 이 메시지가 다시는 나타나지 않을 것입니다. "
+#~ "지금 설정 에이전트를 실행하시겠습니까?"
+
+#~ msgid "Red Hat Linux Documentation CD"
+#~ msgstr "Red Hat Linux 문서 자료 CD"
+
+#~ msgid "Red Hat Linux Installation CD"
+#~ msgstr "Red Hat Linux 설치 CD"
+
+#~ msgid "Red Hat Network"
+#~ msgstr "Red Hat 네트워크"
+
+#~ msgid ""
+#~ "This step will register your system with a complimentary Demo Account "
+#~ "from Red Hat Network so that you can receive the latest software packages "
+#~ "directly from Red Hat.  Using this tool will allow you to always have the "
+#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
+#~ "fixes, and software enhancements. \n"
+#~ "\n"
+#~ "If you purchased this product, you are entitled to a free trial of Red "
+#~ "Hat Network Basic Service. To access the free trial, please refer to the "
+#~ "product activation card found in the box for detailed instructions. \n"
+#~ "\n"
+#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
+#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
+#~ msgstr ""
+#~ "Red Hat 업데이트 에이전트는 이제 여러분의 컴퓨터를 무료 데모 계좌로 Red "
+#~ "Hat Network에 등록할 것입니다. 등록하시면 Red Hat에서 직접 최신 소프트웨"
+#~ "어 패키지를 다운로드 받으실 수 있습니다. Red Hat 업데이트 에이전트를 사용"
+#~ "함으로써 항상 보안 패치, 버그 수정과 개선된 소프트웨어 패키지를 갖춘 최신"
+#~ "의 Red Hat Linux 시스템을 사용하실 수 있습니다.\n"
+#~ "\n"
+#~ "이 제품을 구입하시면 Red Hat 네트워크 기본 서비스를 무료로 사용하실 수 있"
+#~ "는 기회를 드립니다. 무료 사용을 신청하시려면, 제품 상자에 들어있는 제품 활"
+#~ "성화 카드에 적힌 상세한 지시 사항을 따르시기 바랍니다. \n"
+#~ "\n"
+#~ "이 제품을 구입하지 않으셨다면, http://rhn.redhat.com 사이트를 방문하셔서 "
+#~ "Red Hat 네트워크 기본 서비스에 등록하셔서 보다 많은 정보를 얻으실 수 있습"
+#~ "니다.\n"
+
+#~ msgid "_Yes, I want to register my system with Red Hat Network."
+#~ msgstr "네, Red Hat Network에 시스템을 등록합니다.(_Y)"
+
+#~ msgid "N_o, I do not want to register my system."
+#~ msgstr "아니오, 시스템을 등록하지 않습니다.(_O)"
 
 #~ msgid "Update Agent"
 #~ msgstr "업데이트 에이전트"
@@ -783,9 +980,6 @@ msgstr ""
 
 #~ msgid "Date and Time Configuration"
 #~ msgstr "날짜와 시간 설정"
-
-#~ msgid "Sound Card Configuration"
-#~ msgstr "사운드 카드 설정"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Red Hat Linux에 오신것을 환영합니다!"
@@ -874,9 +1068,6 @@ msgstr ""
 #~ msgid "Networking:"
 #~ msgstr "네트워킹:"
 
-#~ msgid "Display:"
-#~ msgstr "화면 표시:"
-
 #~ msgid "Printers:"
 #~ msgstr "프린터:"
 
@@ -905,17 +1096,11 @@ msgstr ""
 #~ msgid "Language Selection"
 #~ msgstr "언어 선택"
 
-#~ msgid "Please select the default language for the system."
-#~ msgstr "시스템을 위한 기본 언어를 선택해 주십시오."
-
 #~ msgid "The changes will take effect the next time you log in."
 #~ msgstr "다음에 로그인 하시면 변경 사항이 나타날 것입니다."
 
 #~ msgid "Mouse"
 #~ msgstr "마우스"
-
-#~ msgid "Mouse Configuration"
-#~ msgstr "마우스 설정"
 
 #~ msgid "A configuration tool for the mouse"
 #~ msgstr "마우스 설정 도구"
@@ -956,9 +1141,6 @@ msgstr ""
 
 #~ msgid "Customize"
 #~ msgstr "사용자 정의"
-
-#~ msgid "Trusted devices:"
-#~ msgstr "신뢰하는 장치:"
 
 #~ msgid "Allow incoming:"
 #~ msgstr "허용할 서비스:"
@@ -1018,9 +1200,5 @@ msgstr ""
 #~ msgid "You currently have no network connection."
 #~ msgstr "현재 네트워크가 연결되어 있지 않습니다."
 
-#~ msgid "Firewall Configuration"
-#~ msgstr "방화벽 설정"
-
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-
