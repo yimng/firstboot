@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-02-25 14:33GMT+10:00\n"
+"PO-Revision-Date: 2004-03-19 10:29GMT+10:00\n"
 "Last-Translator: Kiyoto James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.3\n"
 
 #. # eula_strings.py
 #. #
@@ -343,39 +343,32 @@ msgid "Authentication"
 msgstr "認証"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration"
-msgstr "ファイヤーウォールの設定"
+msgstr "ファイヤーウォール設定"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration"
-msgstr "キーボードの設定"
+msgstr "キーボード設定"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Network configuration"
-msgstr "ネットワークの設定"
+msgstr "ネットワーク設定"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Printer configuration"
-msgstr "プリンターの設定"
+msgstr "プリンター設定"
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "System services"
 msgstr "システムサービス"
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "Sound card configuration"
-msgstr "サウンドカードの設定"
+msgstr "サウンドカード設定"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Timezone configuration"
-msgstr "タイムゾーンの設定"
+msgstr "タイムゾーン設定"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
@@ -450,8 +443,7 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "オートランプログラムがcd上に見つかりません。「ＯＫ」をクリックして継続しま"
 "す。"
@@ -562,8 +554,7 @@ msgstr "ユーザー名は番号で始まってはいけません。"
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
+msgstr "ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:267
 #, python-format
@@ -593,17 +584,14 @@ msgstr ""
 "い。"
 
 #: ../src/modules/create_user.py:291
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII文字のみを使用して下さい。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -1191,3 +1179,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
