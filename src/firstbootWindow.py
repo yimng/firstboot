@@ -33,6 +33,8 @@ class firstbootWindow:
         win = gtk.Window()
         win.connect("destroy", self.destroy)
 
+        win.connect ("key-release-event", self.keyRelease)
+
         if gtk.gdk.screen_width() >= 800:            
             win.set_size_request(800, 600)
         else:
@@ -335,6 +337,13 @@ class firstbootWindow:
             self.bb.show_all()
 
 #        self.stepList.select_row(self.notebook.get_current_page(), 0)
+
+    def keyRelease(self, window, event):
+        print "calling", window, event
+        if (event.keyval == gtk.keysyms.F12):
+            self.nextClicked()
+        if (event.keyval == gtk.keysyms.F11):
+            self.backClicked()
 
     # When a row in the list is selected, select the corresponding page in
     # the notebook.
