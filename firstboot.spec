@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 12
+Release: 13
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Mar  7 2003 Brent Fox <bfox@redhat.com> 1.0.5-13
+- bump rev for 3.0E
+
 * Fri Feb 28 2003 Brent Fox <bfox@redhat.com> 1.0.5-12
 - fix bug #85358
 
