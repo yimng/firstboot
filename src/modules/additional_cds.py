@@ -17,7 +17,7 @@ _=gettext.gettext
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = -140
+    runPriority = 140
     moduleName = (_("Additional CDs"))
 
 #    def __init__(self):
