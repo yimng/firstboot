@@ -34,7 +34,7 @@ make
 %install
 make INSTROOT=$RPM_BUILD_ROOT install
 
-%find_lang %name
+#%find_lang %name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,7 +49,7 @@ if [ -d /usr/share/firstboot ] ; then
   chkconfig --del firstboot
 fi
 
-%files -f %{name}.lang
+#%files -f %{name}.lang
 %defattr(-,root,root)
 #%doc COPYING
 #%doc doc/*
