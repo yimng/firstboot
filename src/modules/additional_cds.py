@@ -100,7 +100,7 @@ class childWindow:
         return self.vbox, eventBox
 
     def autorun(self, *args):
-        #Create a gtkInvisible dialog to block until the autorun is complete
+        #Create a gtkInvisible widget to block until the autorun is complete
         i = gtk.Invisible ()
         i.grab_add ()
 
@@ -122,6 +122,9 @@ class childWindow:
                 dlg.destroy()
                 
                 if rc == 0:
+                    #Be sure to remove the focus grab if we have to return here.
+                    #Otherwise, the user is stuck
+                    i.grab_remove ()
                     return
                 
         pid = functions.start_process("/mnt/cdrom/autorun")
@@ -139,7 +142,7 @@ class childWindow:
                 time.sleep(0.1)
 
         diskutil.umount('/mnt/cdrom')
-
+        #Remove the focus grab of the gtkInvisible widget
         i.grab_remove ()
 
     def apply(self, notebook):
