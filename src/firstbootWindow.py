@@ -21,6 +21,7 @@ import gobject
 
 class firstbootWindow:
     def __init__(self, wm_pid, doReconfig, doDebug):
+        print "starting firstbootWindow", doReconfig, doDebug
         self.wm_pid = wm_pid
         self.doReconfig = doReconfig
         self.doDebug = doDebug
@@ -104,24 +105,32 @@ class firstbootWindow:
             # Launch the module's GUI.
             vbox = None
             eventbox = None
-            try:
+
+            print module.__dict__
+            
+            if self.doDebug:
                 vbox, eventbox = module.launch()
-            except:
-                continue
-            # If it launched, add it to the mdoule list.
-            self.moduleList.append(module)
-            # Set the background of the header to a uniform color.
-            eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
-            # If the module has a name, add it to the ListStore as well, mapping
-            # the module name to the page number.
-            if hasattr(module, "moduleName"):
-                self.notebook.append_page(vbox, gtk.Label(module.moduleName))
-                iter = self.moduleStore.append()
-                self.moduleStore.set_value(iter, 0, module.moduleName)
-                self.moduleStore.set_value(iter, 1, pages)
             else:
-                self.notebook.append_page(vbox, gtk.Label(" "))
-            pages = pages + 1
+                try:
+                    vbox, eventbox = module.launch()
+                except:
+                    continue
+
+            if vbox and eventbox:
+                # If it launched, add it to the mdoule list.
+                self.moduleList.append(module)
+                # Set the background of the header to a uniform color.
+                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
+                # If the module has a name, add it to the ListStore as well, mapping
+                # the module name to the page number.
+                if hasattr(module, "moduleName"):
+                    self.notebook.append_page(vbox, gtk.Label(module.moduleName))
+                    iter = self.moduleStore.append()
+                    self.moduleStore.set_value(iter, 0, module.moduleName)
+                    self.moduleStore.set_value(iter, 1, pages)
+                else:
+                    self.notebook.append_page(vbox, gtk.Label(" "))
+                pages = pages + 1
 
         # Create the TreeView widget and pack it into a box.
         self.moduleView = gtk.TreeView(self.moduleStore)
