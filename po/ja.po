@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-06-28 16:25GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -112,74 +112,6 @@ msgstr "ディスプレー："
 msgid "Printers:"
 msgstr "プリンター："
 
-#: ../src/modules/keyboard_gui.py:69
-#, fuzzy
-msgid "Keyboard"
-msgstr "キーボードマップ"
-
-#: ../src/modules/keyboard_gui.py:71
-#, fuzzy
-msgid "Keyboard Configuration"
-msgstr "日付と時刻の設定"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr ""
-
-#: ../src/modules/keyboard_gui.py:74
-#, fuzzy
-msgid "Select the appropriate keyboard for the system."
-msgstr "システム用に日付と時刻を設定して下さい。"
-
-#: ../src/modules/language.py:40
-msgid "Language"
-msgstr ""
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-#, fuzzy
-msgid "Language Configuration"
-msgstr "日付と時刻の設定"
-
-#: ../src/modules/language.py:43
-msgid "A configuration tool to set the language for the system"
-msgstr ""
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr ""
-
-#: ../src/modules/language.py:58
-#, fuzzy
-msgid "Please select the default language for the system."
-msgstr "システム用に日付と時刻を設定して下さい。"
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr ""
-
-#: ../src/modules/mouse_gui.py:38
-#, fuzzy
-msgid "Mouse"
-msgstr "マウス"
-
-#: ../src/modules/mouse_gui.py:40
-#, fuzzy
-msgid "Mouse Configuration"
-msgstr "日付と時刻の設定"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr ""
-
-#: ../src/modules/mouse_gui.py:43
-#, fuzzy
-msgid "Please select the mouse for the system."
-msgstr "システム用に日付と時刻を設定して下さい。"
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr ""
-
 #: ../src/modules/networking.py:19
 msgid "Network check"
 msgstr "ネットワーク確認"
@@ -247,80 +179,6 @@ msgstr "2番目のDNS"
 msgid "Ternary DNS"
 msgstr "3番目のDNS"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr ""
-
-#: ../src/modules/rootpassword.py:60
-#, fuzzy
-msgid "Please set the root password for the system."
-msgstr "システム用に日付と時刻を設定して下さい。"
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr ""
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr ""
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr ""
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr ""
-
-#: ../src/modules/securitylevel.py:22
-msgid "Security Level"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-#, fuzzy
-msgid "Security Level Configuration"
-msgstr "日付と時刻の設定"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:39
-#, fuzzy
-msgid "Please choose the security level for the system."
-msgstr "システム用に日付と時刻を設定して下さい。"
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr ""
@@ -359,6 +217,54 @@ msgstr "ようこそ"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Red Hat Linux Beta版へようこそ!"
+
+#, fuzzy
+#~ msgid "Keyboard"
+#~ msgstr "キーボードマップ"
+
+#, fuzzy
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "システム用に日付と時刻を設定して下さい。"
+
+#, fuzzy
+#~ msgid "Language Configuration"
+#~ msgstr "日付と時刻の設定"
+
+#, fuzzy
+#~ msgid "Please select the default language for the system."
+#~ msgstr "システム用に日付と時刻を設定して下さい。"
+
+#, fuzzy
+#~ msgid "Mouse"
+#~ msgstr "マウス"
+
+#, fuzzy
+#~ msgid "Mouse Configuration"
+#~ msgstr "日付と時刻の設定"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "システム用に日付と時刻を設定して下さい。"
+
+#, fuzzy
+#~ msgid "Please set the root password for the system."
+#~ msgstr "システム用に日付と時刻を設定して下さい。"
+
+#, fuzzy
+#~ msgid "Security Level Configuration"
+#~ msgstr "日付と時刻の設定"
+
+#, fuzzy
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "システム用に日付と時刻を設定して下さい。"
+
+#, fuzzy
+#~ msgid "Keyboard Configuration"
+#~ msgstr "日付と時刻の設定"
+
+#, fuzzy
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "システム用に日付と時刻を設定して下さい。"
 
 #~ msgid "Register with RHN"
 #~ msgstr "RHNへの登録"

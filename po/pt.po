@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-07-09 01:04+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -108,75 +108,6 @@ msgstr "Ecrã:"
 msgid "Printers:"
 msgstr "Impressoras:"
 
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "Teclado"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "Configuração do Teclado"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr ""
-
-#: ../src/modules/keyboard_gui.py:74
-#, fuzzy
-msgid "Select the appropriate keyboard for the system."
-msgstr "Escolha a disposição das teclas no seu teclado."
-
-#: ../src/modules/language.py:40
-#, fuzzy
-msgid "Language"
-msgstr "Escolha de Lingua"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "Configuração de Lingua"
-
-#: ../src/modules/language.py:43
-#, fuzzy
-msgid "A configuration tool to set the language for the system"
-msgstr "Escolha a lingua por omissão neste computador."
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "Escolha de Lingua"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "Escolha a lingua por omissão neste computador."
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr ""
-"processes that hold critical resources is a classic response to priority "
-"inversion problems. Ingo's patch takes a slightly simpler approach by "
-"treating the entire kernel as such a resource. This patch will raise the "
-"priority of SCHED_BATCH processes a bit more than is strictly necessary; the "
-"approach should be robust, however, and the difference in scheduling "
-"behavior would be difficult to measure. "
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "Rato"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "Configuração do Rato"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr ""
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "Escolha o rato ligado ao computador."
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "Emular o terceiro botão"
-
 #: ../src/modules/networking.py:19
 msgid "Network check"
 msgstr "Verificação de rede"
@@ -245,78 +176,6 @@ msgstr "DNS Secundário"
 msgid "Ternary DNS"
 msgstr "DNS Terciário"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "Senha de Root"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "Escolha a senha de root para o seu computador."
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "Senha de Root:"
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "Confirmação:"
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "A senha de root deve ter pelo menos 6 caracteres."
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "A senhas não são iguais.  Por favor repita."
-
-#: ../src/modules/securitylevel.py:22
-#, fuzzy
-msgid "Security Level"
-msgstr "Nível de Segurança"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "Configuração do Nível de Segurança"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "Escolha o nível de segurança do seu computador."
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "Nível de Segurança"
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "Utilizar regras de 'firewall' por omissão"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "Personalizar"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "Dispositivos de confiança:"
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "Permitir a entrada:"
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "Outros portos: (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr ""
@@ -356,6 +215,104 @@ msgstr "Bem-vindo"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Bem-vindo ao Red Hat Linux (versão beta)!"
+
+#~ msgid "Keyboard"
+#~ msgstr "Teclado"
+
+#, fuzzy
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "Escolha a disposição das teclas no seu teclado."
+
+#, fuzzy
+#~ msgid "Language"
+#~ msgstr "Escolha de Lingua"
+
+#~ msgid "Language Configuration"
+#~ msgstr "Configuração de Lingua"
+
+#, fuzzy
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "Escolha a lingua por omissão neste computador."
+
+#~ msgid "Language Selection"
+#~ msgstr "Escolha de Lingua"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "Escolha a lingua por omissão neste computador."
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr ""
+#~ "processes that hold critical resources is a classic response to priority "
+#~ "inversion problems. Ingo's patch takes a slightly simpler approach by "
+#~ "treating the entire kernel as such a resource. This patch will raise the "
+#~ "priority of SCHED_BATCH processes a bit more than is strictly necessary; "
+#~ "the approach should be robust, however, and the difference in scheduling "
+#~ "behavior would be difficult to measure. "
+
+#~ msgid "Mouse"
+#~ msgstr "Rato"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "Configuração do Rato"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "Escolha a disposição das teclas no seu teclado."
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "Emular o terceiro botão"
+
+#~ msgid "Root Password"
+#~ msgstr "Senha de Root"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "Escolha a senha de root para o seu computador."
+
+#~ msgid "Root Password:"
+#~ msgstr "Senha de Root:"
+
+#~ msgid "Confirm:"
+#~ msgstr "Confirmação:"
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "A senha de root deve ter pelo menos 6 caracteres."
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "A senhas não são iguais.  Por favor repita."
+
+#, fuzzy
+#~ msgid "Security Level"
+#~ msgstr "Nível de Segurança"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "Configuração do Nível de Segurança"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "Escolha o nível de segurança do seu computador."
+
+#~ msgid "Security Level:"
+#~ msgstr "Nível de Segurança"
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "Utilizar regras de 'firewall' por omissão"
+
+#~ msgid "Customize"
+#~ msgstr "Personalizar"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "Dispositivos de confiança:"
+
+#~ msgid "Allow incoming:"
+#~ msgstr "Permitir a entrada:"
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "Outros portos: (1029:tcp)"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "Configuração do Teclado"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "Escolha o rato ligado ao computador."
 
 #~ msgid "Register with RHN"
 #~ msgstr "Registar na RHN"

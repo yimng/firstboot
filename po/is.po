@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-05-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <ra@hp.is>\n"
@@ -45,8 +45,8 @@ msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
 msgstr ""
-"Þessi eiginleiki er enn ekki útfærður. Vinsamlegast sendið ekki inn tilkynningu "
-"um þennan hnapp."
+"Þessi eiginleiki er enn ekki útfærður. Vinsamlegast sendið ekki inn "
+"tilkynningu um þennan hnapp."
 
 #: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
 msgid "Error"
@@ -112,66 +112,6 @@ msgstr "Skjákort:"
 #: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "Prentari:"
-
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "Lyklaborð"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "Stillingar lyklaborðs"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr "Stillingatól fyrir lyklaborð"
-
-#: ../src/modules/keyboard_gui.py:74
-msgid "Select the appropriate keyboard for the system."
-msgstr "Vinsamlegast veldu það lyklaborð sem þú vilt nota."
-
-#: ../src/modules/language.py:40
-msgid "Language"
-msgstr "Tungumál"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "Stillingar tungumála"
-
-#: ../src/modules/language.py:43
-msgid "A configuration tool to set the language for the system"
-msgstr "Tól til að stilla tungumálaval vélarinnar"
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "Tungumálaval"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "Vinsamlegast veldu sjálfgefið tungumál vélarinnar."
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "Breytingarnar munu taka gildi næst þegar þú tengist."
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "Mús"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "Stillingar músar"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr "Stillingatól fyrir músina"
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "Vinsamlegast músina sem tengd er vélinni."
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "Herma eftir 3 hnöppum"
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -240,79 +180,6 @@ msgstr "Annar DNS þjónn"
 msgid "Ternary DNS"
 msgstr "Þriðji DNS þjónn"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "Rótarlykilorð"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "Vinsamlegast settu rótarlykilorð vélarinnar."
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "Rótarlykilorð:"
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "Staðfesta:"
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "Rótarlykilorðið þarf að vera að minnsta kosti 6 stafir að lengd."
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "Lykilorðin stemma ekki. Vinsamlegast reyndu aftur."
-
-#: ../src/modules/securitylevel.py:22
-msgid "Security Level"
-msgstr "Örygisstig"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "Stillingar öryggis"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr "Staðfestu öryggisstigið"
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "Vinsamlegast veldu öryggisstig vélarinnar."
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "Öryggisstig:"
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "Nota sjálfgefnar eldveggjareglur"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "Sérsníða"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "Treyst netkort:"
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "Leyfa tengingar inn:"
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "Önnur port: (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-"Ógilt port: %s.  Rétt snið er 'port:prótókollur, port:prótókollur'. "
-"til dæmis '1234:udp, 3456:tcp'"
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr "Uppfæra vélina þína"
@@ -350,3 +217,108 @@ msgstr "Velkomin(n)"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Velkomin(n) í Betu af Red Hat Linux!"
+
+#~ msgid "Keyboard"
+#~ msgstr "Lyklaborð"
+
+#, fuzzy
+#~ msgid "Configure the system keyboard"
+#~ msgstr "Stillingatól fyrir lyklaborð"
+
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "Vinsamlegast veldu það lyklaborð sem þú vilt nota."
+
+#~ msgid "Language"
+#~ msgstr "Tungumál"
+
+#~ msgid "Language Configuration"
+#~ msgstr "Stillingar tungumála"
+
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "Tól til að stilla tungumálaval vélarinnar"
+
+#~ msgid "Language Selection"
+#~ msgstr "Tungumálaval"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "Vinsamlegast veldu sjálfgefið tungumál vélarinnar."
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "Breytingarnar munu taka gildi næst þegar þú tengist."
+
+#~ msgid "Mouse"
+#~ msgstr "Mús"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "Stillingar músar"
+
+#~ msgid "A configuration tool for the mouse"
+#~ msgstr "Stillingatól fyrir músina"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "Vinsamlegast veldu það lyklaborð sem þú vilt nota."
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "Herma eftir 3 hnöppum"
+
+#~ msgid "Root Password"
+#~ msgstr "Rótarlykilorð"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "Vinsamlegast settu rótarlykilorð vélarinnar."
+
+#~ msgid "Root Password:"
+#~ msgstr "Rótarlykilorð:"
+
+#~ msgid "Confirm:"
+#~ msgstr "Staðfesta:"
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "Rótarlykilorðið þarf að vera að minnsta kosti 6 stafir að lengd."
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "Lykilorðin stemma ekki. Vinsamlegast reyndu aftur."
+
+#~ msgid "Security Level"
+#~ msgstr "Örygisstig"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "Stillingar öryggis"
+
+#~ msgid "Configure system security level"
+#~ msgstr "Staðfestu öryggisstigið"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "Vinsamlegast veldu öryggisstig vélarinnar."
+
+#~ msgid "Security Level:"
+#~ msgstr "Öryggisstig:"
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "Nota sjálfgefnar eldveggjareglur"
+
+#~ msgid "Customize"
+#~ msgstr "Sérsníða"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "Treyst netkort:"
+
+#~ msgid "Allow incoming:"
+#~ msgstr "Leyfa tengingar inn:"
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "Önnur port: (1029:tcp)"
+
+#~ msgid ""
+#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
+#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
+#~ msgstr ""
+#~ "Ógilt port: %s.  Rétt snið er 'port:prótókollur, port:prótókollur'. til "
+#~ "dæmis '1234:udp, 3456:tcp'"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "Stillingar lyklaborðs"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "Vinsamlegast músina sem tengd er vélinni."

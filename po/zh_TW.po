@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-07-24 09:20+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
@@ -67,8 +67,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"無法建立與 %s 的連線。 也許是 %s 無法使用，或您系統的防火牆 "
-"設定阻擋 NTP 的連線。"
+"無法建立與 %s 的連線。 也許是 %s 無法使用，或您系統的防火牆 設定阻擋 NTP 的連"
+"線。"
 
 #: ../src/modules/finished.py:19
 msgid "Finish Installation"
@@ -110,66 +110,6 @@ msgstr "顯示器："
 #: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "印表機："
-
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "鍵盤配置"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "鍵盤設定"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr "系統鍵盤的設定工具"
-
-#: ../src/modules/keyboard_gui.py:74
-msgid "Select the appropriate keyboard for the system."
-msgstr "請選擇系統的鍵盤。"
-
-#: ../src/modules/language.py:40
-msgid "Language"
-msgstr "語系選擇"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "語系設定"
-
-#: ../src/modules/language.py:43
-msgid "A configuration tool to set the language for the system"
-msgstr "用來設定系統語言的一個設定工具"
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "語系選擇"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "請選擇系統預設的語言。"
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "所做的變更將在下次您登入時生效。"
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "滑鼠"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "滑鼠設定"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr "滑鼠的設定工具"
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "請選擇系統的滑鼠。"
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "模擬三鍵式滑鼠 "
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -237,79 +177,6 @@ msgstr "次 DNS"
 msgid "Ternary DNS"
 msgstr "第三個 DNS"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "Root 密碼"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "請設定系統的 root 密碼。"
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "Root 密碼："
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "密碼確認："
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "Root 密碼的長度必須至少為 6 個字元。"
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "密碼不符。 請再試一次。"
-
-#: ../src/modules/securitylevel.py:22
-msgid "Security Level"
-msgstr "安全等級"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "安全等級設定"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr "設定系統的安全等級"
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "請選擇系統的安全等級。"
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "安全等級："
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "使用預設防火牆規則"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "自訂"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "信任裝置："
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "允許流入："
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "其他連接埠： (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-"無效的連接埠： %s。  正確的格式為 'port:protocol, port:"
-"protocol'。  例如，'1234:udp, 3456:tcp'"
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr "更新您的系統"
@@ -345,6 +212,111 @@ msgstr "歡迎"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "歡迎使用 Red Hat Linux Beta！"
+
+#~ msgid "Keyboard"
+#~ msgstr "鍵盤配置"
+
+#, fuzzy
+#~ msgid "Configure the system keyboard"
+#~ msgstr "系統鍵盤的設定工具"
+
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "請選擇系統的鍵盤。"
+
+#~ msgid "Language"
+#~ msgstr "語系選擇"
+
+#~ msgid "Language Configuration"
+#~ msgstr "語系設定"
+
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "用來設定系統語言的一個設定工具"
+
+#~ msgid "Language Selection"
+#~ msgstr "語系選擇"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "請選擇系統預設的語言。"
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "所做的變更將在下次您登入時生效。"
+
+#~ msgid "Mouse"
+#~ msgstr "滑鼠"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "滑鼠設定"
+
+#~ msgid "A configuration tool for the mouse"
+#~ msgstr "滑鼠的設定工具"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "請選擇系統的鍵盤。"
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "模擬三鍵式滑鼠 "
+
+#~ msgid "Root Password"
+#~ msgstr "Root 密碼"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "請設定系統的 root 密碼。"
+
+#~ msgid "Root Password:"
+#~ msgstr "Root 密碼："
+
+#~ msgid "Confirm:"
+#~ msgstr "密碼確認："
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "Root 密碼的長度必須至少為 6 個字元。"
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "密碼不符。 請再試一次。"
+
+#~ msgid "Security Level"
+#~ msgstr "安全等級"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "安全等級設定"
+
+#~ msgid "Configure system security level"
+#~ msgstr "設定系統的安全等級"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "請選擇系統的安全等級。"
+
+#~ msgid "Security Level:"
+#~ msgstr "安全等級："
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "使用預設防火牆規則"
+
+#~ msgid "Customize"
+#~ msgstr "自訂"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "信任裝置："
+
+#~ msgid "Allow incoming:"
+#~ msgstr "允許流入："
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "其他連接埠： (1029:tcp)"
+
+#~ msgid ""
+#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
+#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
+#~ msgstr ""
+#~ "無效的連接埠： %s。  正確的格式為 'port:protocol, port:protocol'。  例"
+#~ "如，'1234:udp, 3456:tcp'"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "鍵盤設定"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "請選擇系統的滑鼠。"
 
 #~ msgid "Register with RHN"
 #~ msgstr "向 RHN 註冊"
@@ -393,4 +365,3 @@ msgstr "歡迎使用 Red Hat Linux Beta！"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-

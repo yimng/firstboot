@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-07-23 18:39+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -35,13 +35,18 @@ msgid ""
 "If you have additional CDs from the Red Hat Linux box set, such as the Red "
 "Hat Linux Documentation CD or the Linux Applications CD, please insert the "
 "disc now and click the corresponding button below."
-msgstr "Hvis du har tilleggs-CDer fra Red Hat Linux bokssettet, slik som Red Hat Linux dokumentasjons-CDen eller Linux Applications CDen, vennligst sett denne inn nå og klikk på den korresponderende knappen under."
+msgstr ""
+"Hvis du har tilleggs-CDer fra Red Hat Linux bokssettet, slik som Red Hat "
+"Linux dokumentasjons-CDen eller Linux Applications CDen, vennligst sett "
+"denne inn nå og klikk på den korresponderende knappen under."
 
 #: ../src/modules/additional_cds.py:93
 msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
-msgstr "Denne funksjonen er ikke implementert ennå. Vennligst ikke rapporter feil om denne knappen."
+msgstr ""
+"Denne funksjonen er ikke implementert ennå. Vennligst ikke rapporter feil om "
+"denne knappen."
 
 #: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
 msgid "Error"
@@ -63,7 +68,10 @@ msgstr "Vennligst sett dato og klokkeslett for systemet."
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
-msgstr "En tilkobling til %s kunne ikke opprettes. Enten er %s ikke tilgjengelig eller så blokkerer brannvegginnstillingene på din datamaskin NTP-tilkoblinger."
+msgstr ""
+"En tilkobling til %s kunne ikke opprettes. Enten er %s ikke tilgjengelig "
+"eller så blokkerer brannvegginnstillingene på din datamaskin NTP-"
+"tilkoblinger."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Installation"
@@ -106,66 +114,6 @@ msgstr "Skjerm:"
 msgid "Printers:"
 msgstr "Skrivere:"
 
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "Tastatur"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "Konfigurasjon av tastatur"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr "Et konfigurasjonsverktøy for systemtastaturet"
-
-#: ../src/modules/keyboard_gui.py:74
-msgid "Select the appropriate keyboard for the system."
-msgstr "Velg riktig tastatur for systemet."
-
-#: ../src/modules/language.py:40
-msgid "Language"
-msgstr "Språk"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "Konfigurasjon av språk"
-
-#: ../src/modules/language.py:43
-msgid "A configuration tool to set the language for the system"
-msgstr "Et konfigurasjonsverktøy for å sette språket for systemet"
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "Språkvalg"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "Vennligst velg forvalgt språk for systemet."
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "Endringene vil tre i kraft neste gang du logger inn."
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "Mus"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "Konfigurasjon av mus"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr "Et konfigurasjonsverktøy for mus"
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "Vennligst velg riktig mus for systemet."
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "Emuler 3-knappers klikk"
-
 #: ../src/modules/networking.py:19
 msgid "Network check"
 msgstr "Sjekk av nettverk"
@@ -180,7 +128,11 @@ msgid ""
 "for registering your system with RHN and for using the Red Hat Update Agent "
 "to update your system.  To set up a network connection, please click on the "
 "button below.\n"
-msgstr "En nettverkstilknytning ble ikke funnet. Nettverkskonnektivitet er nødvendig for å registrere ditt system hos RHN og for å bruke Red Hat Update Agent til å oppdatere ditt system. Vennligst klikk på knappen under for å sette opp en nettverkstilknytning.\n"
+msgstr ""
+"En nettverkstilknytning ble ikke funnet. Nettverkskonnektivitet er nødvendig "
+"for å registrere ditt system hos RHN og for å bruke Red Hat Update Agent til "
+"å oppdatere ditt system. Vennligst klikk på knappen under for å sette opp en "
+"nettverkstilknytning.\n"
 
 #: ../src/modules/networking.py:118
 msgid "Set up networking..."
@@ -230,77 +182,6 @@ msgstr "Sekundær DNS"
 msgid "Ternary DNS"
 msgstr "Tertiær DNS"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "Root-passord"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "Vennligst sett passord for root på systemet."
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "Root-passord:"
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "Bekreft:"
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "Root-passordet må være minst 6 tegn langt."
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "Passordene er ikke like. Vennligst prøv igjen."
-
-#: ../src/modules/securitylevel.py:22
-msgid "Security Level"
-msgstr "Sikkerhetsnivå"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "Konfigurasjon av sikkerhetsnivå"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr "Konfigurer systemets sikkerhetsnivå"
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "Vennligst velg sikkerhetsnivå for systemet."
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "Sikkerhetsnivå:"
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "Bruk forvalgte brannveggregler"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "Tilpass"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "Enheter vi stoler på:"
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "Tillat innkommende:"
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "Andre porter: (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr "Ugyldig port oppgitt: %s. Riktig format er «port:protokoll, port:protokoll». For eksempel, «1234:udp, 3456:tcp»"
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr "Oppdater ditt system"
@@ -316,7 +197,11 @@ msgid ""
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
-msgstr "Nå som du har registrert deg hos Red Hat Network kan du kjøre Red Hat Update Agent for å motta de siste programvarepakkene direkte fra Red Hat. Bruk av dette verktøyet vil la deg holde ditt Red Hat Linux system oppdatert med alle sikkerhetsoppgraderinger, feilopprettinger og forbedringer i pakkene."
+msgstr ""
+"Nå som du har registrert deg hos Red Hat Network kan du kjøre Red Hat Update "
+"Agent for å motta de siste programvarepakkene direkte fra Red Hat. Bruk av "
+"dette verktøyet vil la deg holde ditt Red Hat Linux system oppdatert med "
+"alle sikkerhetsoppgraderinger, feilopprettinger og forbedringer i pakkene."
 
 #: ../src/modules/up2date.py:66
 msgid "Yes, I would like to register with Red Hat Network"
@@ -333,6 +218,111 @@ msgstr "Velkommen"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Velkomment til Red Hat Linux Beta!"
+
+#~ msgid "Keyboard"
+#~ msgstr "Tastatur"
+
+#, fuzzy
+#~ msgid "Configure the system keyboard"
+#~ msgstr "Et konfigurasjonsverktøy for systemtastaturet"
+
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "Velg riktig tastatur for systemet."
+
+#~ msgid "Language"
+#~ msgstr "Språk"
+
+#~ msgid "Language Configuration"
+#~ msgstr "Konfigurasjon av språk"
+
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "Et konfigurasjonsverktøy for å sette språket for systemet"
+
+#~ msgid "Language Selection"
+#~ msgstr "Språkvalg"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "Vennligst velg forvalgt språk for systemet."
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "Endringene vil tre i kraft neste gang du logger inn."
+
+#~ msgid "Mouse"
+#~ msgstr "Mus"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "Konfigurasjon av mus"
+
+#~ msgid "A configuration tool for the mouse"
+#~ msgstr "Et konfigurasjonsverktøy for mus"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "Velg riktig tastatur for systemet."
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "Emuler 3-knappers klikk"
+
+#~ msgid "Root Password"
+#~ msgstr "Root-passord"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "Vennligst sett passord for root på systemet."
+
+#~ msgid "Root Password:"
+#~ msgstr "Root-passord:"
+
+#~ msgid "Confirm:"
+#~ msgstr "Bekreft:"
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "Root-passordet må være minst 6 tegn langt."
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "Passordene er ikke like. Vennligst prøv igjen."
+
+#~ msgid "Security Level"
+#~ msgstr "Sikkerhetsnivå"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "Konfigurasjon av sikkerhetsnivå"
+
+#~ msgid "Configure system security level"
+#~ msgstr "Konfigurer systemets sikkerhetsnivå"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "Vennligst velg sikkerhetsnivå for systemet."
+
+#~ msgid "Security Level:"
+#~ msgstr "Sikkerhetsnivå:"
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "Bruk forvalgte brannveggregler"
+
+#~ msgid "Customize"
+#~ msgstr "Tilpass"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "Enheter vi stoler på:"
+
+#~ msgid "Allow incoming:"
+#~ msgstr "Tillat innkommende:"
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "Andre porter: (1029:tcp)"
+
+#~ msgid ""
+#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
+#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
+#~ msgstr ""
+#~ "Ugyldig port oppgitt: %s. Riktig format er «port:protokoll, port:"
+#~ "protokoll». For eksempel, «1234:udp, 3456:tcp»"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "Konfigurasjon av tastatur"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "Vennligst velg riktig mus for systemet."
 
 #~ msgid "Register with RHN"
 #~ msgstr "Registrer hos RHN"

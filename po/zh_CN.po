@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-07-03 09:04GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -109,69 +109,6 @@ msgstr "显示："
 msgid "Printers:"
 msgstr "打印机："
 
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "键盘"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "键盘配置"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr ""
-
-#: ../src/modules/keyboard_gui.py:74
-#, fuzzy
-msgid "Select the appropriate keyboard for the system."
-msgstr "请为系统选择键盘。"
-
-#: ../src/modules/language.py:40
-#, fuzzy
-msgid "Language"
-msgstr "语言选择"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "语言配置"
-
-#: ../src/modules/language.py:43
-#, fuzzy
-msgid "A configuration tool to set the language for the system"
-msgstr "请为系统选择默认语言。"
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "语言选择"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "请为系统选择默认语言。"
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "下次登录时，所做改变将会生效。"
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "鼠标"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "鼠标配置"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr ""
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "请为系统选择鼠标。"
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "模拟三键点击"
-
 #: ../src/modules/networking.py:19
 msgid "Network check"
 msgstr "网络检查"
@@ -238,78 +175,6 @@ msgstr "次 DNS"
 msgid "Ternary DNS"
 msgstr "第三 DNS"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "根口令"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "请为系统设置根口令。"
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "根口令："
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "确认："
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "根口令至少应有六个字符。"
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "口令不匹配。请再试。"
-
-#: ../src/modules/securitylevel.py:22
-#, fuzzy
-msgid "Security Level"
-msgstr "安全级别："
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "安全级别配置"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "请为系统选择安全级别。"
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "安全级别："
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "使用默认的防火墙规则"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "定制"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "信任的设备："
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "允许进入："
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "其它端口：(1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr ""
@@ -347,6 +212,98 @@ msgstr "欢迎"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "欢迎使用 Red Hat Linux Beta！"
+
+#~ msgid "Keyboard"
+#~ msgstr "键盘"
+
+#, fuzzy
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "请为系统选择键盘。"
+
+#, fuzzy
+#~ msgid "Language"
+#~ msgstr "语言选择"
+
+#~ msgid "Language Configuration"
+#~ msgstr "语言配置"
+
+#, fuzzy
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "请为系统选择默认语言。"
+
+#~ msgid "Language Selection"
+#~ msgstr "语言选择"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "请为系统选择默认语言。"
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "下次登录时，所做改变将会生效。"
+
+#~ msgid "Mouse"
+#~ msgstr "鼠标"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "鼠标配置"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "请为系统选择键盘。"
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "模拟三键点击"
+
+#~ msgid "Root Password"
+#~ msgstr "根口令"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "请为系统设置根口令。"
+
+#~ msgid "Root Password:"
+#~ msgstr "根口令："
+
+#~ msgid "Confirm:"
+#~ msgstr "确认："
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "根口令至少应有六个字符。"
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "口令不匹配。请再试。"
+
+#, fuzzy
+#~ msgid "Security Level"
+#~ msgstr "安全级别："
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "安全级别配置"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "请为系统选择安全级别。"
+
+#~ msgid "Security Level:"
+#~ msgstr "安全级别："
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "使用默认的防火墙规则"
+
+#~ msgid "Customize"
+#~ msgstr "定制"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "信任的设备："
+
+#~ msgid "Allow incoming:"
+#~ msgstr "允许进入："
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "其它端口：(1029:tcp)"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "键盘配置"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "请为系统选择鼠标。"
 
 #~ msgid "Register with RHN"
 #~ msgstr "在 RHN 注册"

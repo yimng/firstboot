@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-07-23 22:11+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -38,17 +38,17 @@ msgid ""
 "Hat Linux Documentation CD or the Linux Applications CD, please insert the "
 "disc now and click the corresponding button below."
 msgstr ""
-"Om du har ytterligare cd-skivor från Red Hat Linux-lådan, exempelvis "
-"skivan \"Red Hat Linux Documentation CD\" eller \"Linux Applications CD\" "
-"bör du stoppa in skivan nu och klicka på motsvarande knapp nedan."
+"Om du har ytterligare cd-skivor från Red Hat Linux-lådan, exempelvis skivan "
+"\"Red Hat Linux Documentation CD\" eller \"Linux Applications CD\" bör du "
+"stoppa in skivan nu och klicka på motsvarande knapp nedan."
 
 #: ../src/modules/additional_cds.py:93
 msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
 msgstr ""
-"Denna funktion är ännu inte implementerad. Rapportera inte fel "
-"beträffande denna knapp."
+"Denna funktion är ännu inte implementerad. Rapportera inte fel beträffande "
+"denna knapp."
 
 #: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
 msgid "Error"
@@ -71,9 +71,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"En anslutning med %s kunde inte etableras. Antingen är %s inte "
-"tillgänglig eller så blockerar brandväggsinställningarna på din dator "
-"NTP-anslutningar."
+"En anslutning med %s kunde inte etableras. Antingen är %s inte tillgänglig "
+"eller så blockerar brandväggsinställningarna på din dator NTP-anslutningar."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Installation"
@@ -115,69 +114,6 @@ msgstr "Display:"
 #: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "Skrivare:"
-
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "Tangentbord"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "Tangentbordskonfiguration"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr "Ett konfigurationsverktyg för systemtangentbordet"
-
-#: ../src/modules/keyboard_gui.py:74
-msgid "Select the appropriate keyboard for the system."
-msgstr "Välj lämpligt tangentbord för systemet."
-
-#: ../src/modules/language.py:40
-msgid "Language"
-msgstr "Språk"
-
-msgid "Languages"
-msgstr "Språk"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "Språkkonfiguration"
-
-#: ../src/modules/language.py:43
-msgid "A configuration tool to set the language for the system"
-msgstr "Ett konfigurationsverktyg för konfiguration av språket på systemet"
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "Språkval"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "Välj standardspråket för systemet."
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "Ändringarna kommer att börja gälla nästa gång du loggar in."
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "Mus"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "Muskonfiguration"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr "Ett konfigurationsverktyg för musen"
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "Välj mus för systemet."
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "Emulera 3-knapparsklick"
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -247,79 +183,6 @@ msgstr "Sekundär DNS"
 msgid "Ternary DNS"
 msgstr "Tertiär DNS"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "Rootlösenord"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "Ställ in rootlösenordet för systemet."
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "Rootlösenord:"
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "Bekräfta:"
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "Rootlösenordet måste vara minst 6 tecken långt."
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "Lösenorden stämmer inte överens. Försök igen."
-
-#: ../src/modules/securitylevel.py:22
-msgid "Security Level"
-msgstr "Säkerhetsnivå"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "Konfiguration av säkerhetsnivå"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr "Konfigurera systemets säkerhetsnivå"
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "Välj säkerhetsnivån för systemet."
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "Säkerhetsnivå:"
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "Använd standardbrandväggsregler"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "Anpassa"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "Pålitliga enheter:"
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "Tillåt inkommande:"
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "Andra portar: (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-"Ogiltig port angiven: %s. Det korrekta formatet är \"port:protokoll, port:"
-"protokoll\". Till exempel \"1234:udp, 3456:tcp\""
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr "Uppdatera ditt system"
@@ -337,10 +200,9 @@ msgid ""
 "enhancements."
 msgstr ""
 "Nu när du har registrerat dig i Red Hat Network kan du köra Red Hats "
-"uppdateringsagent för att få de senaste programpaketen direkt från Red "
-"Hat. Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat "
-"Linux-system med alla säkerhetsfixar, felfixar och förbättringar av "
-"programpaket."
+"uppdateringsagent för att få de senaste programpaketen direkt från Red Hat. "
+"Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat Linux-"
+"system med alla säkerhetsfixar, felfixar och förbättringar av programpaket."
 
 #: ../src/modules/up2date.py:66
 msgid "Yes, I would like to register with Red Hat Network"
@@ -357,6 +219,114 @@ msgstr "Välkommen"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Välkommen till Red Hat Linux Beta!"
+
+#~ msgid "Keyboard"
+#~ msgstr "Tangentbord"
+
+#, fuzzy
+#~ msgid "Configure the system keyboard"
+#~ msgstr "Ett konfigurationsverktyg för systemtangentbordet"
+
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "Välj lämpligt tangentbord för systemet."
+
+#~ msgid "Language"
+#~ msgstr "Språk"
+
+#~ msgid "Language Configuration"
+#~ msgstr "Språkkonfiguration"
+
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "Ett konfigurationsverktyg för konfiguration av språket på systemet"
+
+#~ msgid "Language Selection"
+#~ msgstr "Språkval"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "Välj standardspråket för systemet."
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "Ändringarna kommer att börja gälla nästa gång du loggar in."
+
+#~ msgid "Mouse"
+#~ msgstr "Mus"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "Muskonfiguration"
+
+#~ msgid "A configuration tool for the mouse"
+#~ msgstr "Ett konfigurationsverktyg för musen"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "Välj lämpligt tangentbord för systemet."
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "Emulera 3-knapparsklick"
+
+#~ msgid "Root Password"
+#~ msgstr "Rootlösenord"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "Ställ in rootlösenordet för systemet."
+
+#~ msgid "Root Password:"
+#~ msgstr "Rootlösenord:"
+
+#~ msgid "Confirm:"
+#~ msgstr "Bekräfta:"
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "Rootlösenordet måste vara minst 6 tecken långt."
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "Lösenorden stämmer inte överens. Försök igen."
+
+#~ msgid "Security Level"
+#~ msgstr "Säkerhetsnivå"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "Konfiguration av säkerhetsnivå"
+
+#~ msgid "Configure system security level"
+#~ msgstr "Konfigurera systemets säkerhetsnivå"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "Välj säkerhetsnivån för systemet."
+
+#~ msgid "Security Level:"
+#~ msgstr "Säkerhetsnivå:"
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "Använd standardbrandväggsregler"
+
+#~ msgid "Customize"
+#~ msgstr "Anpassa"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "Pålitliga enheter:"
+
+#~ msgid "Allow incoming:"
+#~ msgstr "Tillåt inkommande:"
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "Andra portar: (1029:tcp)"
+
+#~ msgid ""
+#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
+#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
+#~ msgstr ""
+#~ "Ogiltig port angiven: %s. Det korrekta formatet är \"port:protokoll, port:"
+#~ "protokoll\". Till exempel \"1234:udp, 3456:tcp\""
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "Tangentbordskonfiguration"
+
+#~ msgid "Languages"
+#~ msgstr "Språk"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "Välj mus för systemet."
 
 #~ msgid "Register with RHN"
 #~ msgstr "Registrera i RHN"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-07-10 15:03+0200\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -112,69 +112,6 @@ msgstr "Affichage :"
 msgid "Printers:"
 msgstr "Imprimantes :"
 
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "Clavier"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "Configuration du clavier"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr ""
-
-#: ../src/modules/keyboard_gui.py:74
-#, fuzzy
-msgid "Select the appropriate keyboard for the system."
-msgstr "Veuillez sélectionner le clavier de votre système."
-
-#: ../src/modules/language.py:40
-#, fuzzy
-msgid "Language"
-msgstr "Sélection de la langue"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "Configuration de la langue"
-
-#: ../src/modules/language.py:43
-#, fuzzy
-msgid "A configuration tool to set the language for the system"
-msgstr "Veuillez paramétrer la langue par défaut de votre système."
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "Sélection de la langue"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "Veuillez paramétrer la langue par défaut de votre système."
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "Les modifications seront appliquées lors de la prochaine connexion."
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "Souris"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "Configuration de la souris"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr ""
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "Veuillez sélectionner la souris de votre système."
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "Emuler le troisième bouton"
-
 #: ../src/modules/networking.py:19
 msgid "Network check"
 msgstr "Vérification du réseau "
@@ -243,78 +180,6 @@ msgstr "DNS secondaire"
 msgid "Ternary DNS"
 msgstr "DNS ternaire"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "Mot de passe root"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "Veuillez paramétrer le mot de passe root de votre système."
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "Mot de passe root :"
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "Confirmation :"
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "Le mot de passe root doit comporter au moins 6 caractères."
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
-
-#: ../src/modules/securitylevel.py:22
-#, fuzzy
-msgid "Security Level"
-msgstr "Niveau de sécurité :"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "Configuration du niveau de sécurité"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr ""
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "Veuillez paramétrer le niveau de sécurité de votre système."
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "Niveau de sécurité :"
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "Utiliser les règles de pare-feu par défaut"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "Personnalisation"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "Périphériques de confiance : "
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "Entrée autorisée : "
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "Autres ports (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr ""
@@ -354,6 +219,98 @@ msgstr "Bienvenue"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Bienvenue dans Red Hat Linux Beta !"
+
+#~ msgid "Keyboard"
+#~ msgstr "Clavier"
+
+#, fuzzy
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "Veuillez sélectionner le clavier de votre système."
+
+#, fuzzy
+#~ msgid "Language"
+#~ msgstr "Sélection de la langue"
+
+#~ msgid "Language Configuration"
+#~ msgstr "Configuration de la langue"
+
+#, fuzzy
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "Veuillez paramétrer la langue par défaut de votre système."
+
+#~ msgid "Language Selection"
+#~ msgstr "Sélection de la langue"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "Veuillez paramétrer la langue par défaut de votre système."
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "Les modifications seront appliquées lors de la prochaine connexion."
+
+#~ msgid "Mouse"
+#~ msgstr "Souris"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "Configuration de la souris"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "Veuillez sélectionner le clavier de votre système."
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "Emuler le troisième bouton"
+
+#~ msgid "Root Password"
+#~ msgstr "Mot de passe root"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "Veuillez paramétrer le mot de passe root de votre système."
+
+#~ msgid "Root Password:"
+#~ msgstr "Mot de passe root :"
+
+#~ msgid "Confirm:"
+#~ msgstr "Confirmation :"
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "Le mot de passe root doit comporter au moins 6 caractères."
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
+
+#, fuzzy
+#~ msgid "Security Level"
+#~ msgstr "Niveau de sécurité :"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "Configuration du niveau de sécurité"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "Veuillez paramétrer le niveau de sécurité de votre système."
+
+#~ msgid "Security Level:"
+#~ msgstr "Niveau de sécurité :"
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "Utiliser les règles de pare-feu par défaut"
+
+#~ msgid "Customize"
+#~ msgstr "Personnalisation"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "Périphériques de confiance : "
+
+#~ msgid "Allow incoming:"
+#~ msgstr "Entrée autorisée : "
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "Autres ports (1029:tcp)"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "Configuration du clavier"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "Veuillez sélectionner la souris de votre système."
 
 #~ msgid "Register with RHN"
 #~ msgstr "Enregistrez-vous avec RHN"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
 "PO-Revision-Date: 2002-07-24 10:21+1000\n"
 "Last-Translator: Michelle Kim <mkim@brisbane.redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -72,8 +72,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 "
-"컴퓨터에 설정된 방화벽 때문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
+"%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 컴퓨터에 설정된 방화벽 때"
+"문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
 
 #: ../src/modules/finished.py:19
 msgid "Finish Installation"
@@ -115,66 +115,6 @@ msgstr "화면 표시:"
 #: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "프린터:"
-
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "키보드"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "키보드 설정"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr "시스템 키보드를 설정하는 도구"
-
-#: ../src/modules/keyboard_gui.py:74
-msgid "Select the appropriate keyboard for the system."
-msgstr "시스템에 맞는 키보드를 선택해 주십시오."
-
-#: ../src/modules/language.py:40
-msgid "Language"
-msgstr "언어"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "언어 설정"
-
-#: ../src/modules/language.py:43
-msgid "A configuration tool to set the language for the system"
-msgstr "시스템에 사용할 언어를 설정하는 도구"
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "언어 선택"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "시스템을 위한 기본 언어를 선택해 주십시오."
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "다음에 로그인 하시면 변경 사항이 나타날 것입니다."
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "마우스"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "마우스 설정"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr "마우스 설정 도구"
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "시스템에 맞는 마우스를 선택해 주십시오."
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "3 버튼 마우스 클릭처럼 사용하기"
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -243,79 +183,6 @@ msgstr "제2의 DNS"
 msgid "Ternary DNS"
 msgstr "제3의 DNS"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "루트 암호"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "시스템 루트 암호를 설정해 주십시오."
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "루트 암호:"
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "확인:"
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "루트 암호는 최소한 6 글자 이상이어야 합니다."
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
-
-#: ../src/modules/securitylevel.py:22
-msgid "Security Level"
-msgstr "보안 수준"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "보안 수준 설정"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr "시스템 보안 수준 설정"
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "시스템의 보안 수준을 선택해 주십시오."
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "보안 수준:"
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "기본 방화벽 규칙 사용"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "사용자 정의"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "신뢰하는 장치:"
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "허용할 서비스:"
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "그 외의 포트: (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-"잘못된 포트: %s.  올바른 형식은 '포트:프로토콜, 포트:프로토콜' 입니다.  "
-"예, '1234:udp, 3456:tcp'"
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr "시스템을 업데이트 하십시오"
@@ -334,8 +201,8 @@ msgid ""
 msgstr ""
 "이제 Red Hat Network에 등록되었습니다. Red Hat 업데이트 에이전트를 실행하여 "
 "Red Hat에서 직접 최신 소프트웨어 패키지를 다운로드 받으실 수 있습니다.   Red "
-"Hat 업데이트 에이전트를 사용함으로써 항상 보안 패치, 버그 수정과 개선된 "
-"소프트웨어 패키지를 갖춘 최신의 Red Hat Linux 시스템을 사용하실 수 있습니다."
+"Hat 업데이트 에이전트를 사용함으로써 항상 보안 패치, 버그 수정과 개선된 소프"
+"트웨어 패키지를 갖춘 최신의 Red Hat Linux 시스템을 사용하실 수 있습니다."
 
 #: ../src/modules/up2date.py:66
 msgid "Yes, I would like to register with Red Hat Network"
@@ -352,6 +219,111 @@ msgstr "환영합니다"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Red Hat Linux Beta에 오신 것을 환영합니다!"
+
+#~ msgid "Keyboard"
+#~ msgstr "키보드"
+
+#, fuzzy
+#~ msgid "Configure the system keyboard"
+#~ msgstr "시스템 키보드를 설정하는 도구"
+
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "시스템에 맞는 키보드를 선택해 주십시오."
+
+#~ msgid "Language"
+#~ msgstr "언어"
+
+#~ msgid "Language Configuration"
+#~ msgstr "언어 설정"
+
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "시스템에 사용할 언어를 설정하는 도구"
+
+#~ msgid "Language Selection"
+#~ msgstr "언어 선택"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "시스템을 위한 기본 언어를 선택해 주십시오."
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "다음에 로그인 하시면 변경 사항이 나타날 것입니다."
+
+#~ msgid "Mouse"
+#~ msgstr "마우스"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "마우스 설정"
+
+#~ msgid "A configuration tool for the mouse"
+#~ msgstr "마우스 설정 도구"
+
+#, fuzzy
+#~ msgid "Select the appropriate mouse for the system."
+#~ msgstr "시스템에 맞는 키보드를 선택해 주십시오."
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "3 버튼 마우스 클릭처럼 사용하기"
+
+#~ msgid "Root Password"
+#~ msgstr "루트 암호"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "시스템 루트 암호를 설정해 주십시오."
+
+#~ msgid "Root Password:"
+#~ msgstr "루트 암호:"
+
+#~ msgid "Confirm:"
+#~ msgstr "확인:"
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "루트 암호는 최소한 6 글자 이상이어야 합니다."
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
+
+#~ msgid "Security Level"
+#~ msgstr "보안 수준"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "보안 수준 설정"
+
+#~ msgid "Configure system security level"
+#~ msgstr "시스템 보안 수준 설정"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "시스템의 보안 수준을 선택해 주십시오."
+
+#~ msgid "Security Level:"
+#~ msgstr "보안 수준:"
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "기본 방화벽 규칙 사용"
+
+#~ msgid "Customize"
+#~ msgstr "사용자 정의"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "신뢰하는 장치:"
+
+#~ msgid "Allow incoming:"
+#~ msgstr "허용할 서비스:"
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "그 외의 포트: (1029:tcp)"
+
+#~ msgid ""
+#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
+#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
+#~ msgstr ""
+#~ "잘못된 포트: %s.  올바른 형식은 '포트:프로토콜, 포트:프로토콜' 입니다.  "
+#~ "예, '1234:udp, 3456:tcp'"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "키보드 설정"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "시스템에 맞는 마우스를 선택해 주십시오."
 
 #~ msgid "Register with RHN"
 #~ msgstr "RHN에 등록하십시오"
@@ -403,4 +375,3 @@ msgstr "Red Hat Linux Beta에 오신 것을 환영합니다!"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-
