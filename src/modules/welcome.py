@@ -16,7 +16,7 @@ class childWindow:
         self.vbox.set_usize(400, 200)
 
 
-        label = gtk.Label("Welcome to Re!")
+        label = gtk.Label("Welcome to Red Hat Linux Son of Enigma!")
         label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
         titleBox = gtk.HBox()
@@ -58,5 +58,6 @@ class childWindow:
     def write_file(self):
         pass
 
-    def apply(self):
+    def apply(self, notebook):
+        print "nothing to do"
         pass

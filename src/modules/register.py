@@ -130,8 +130,5 @@ class childWindow:
             path = "/usr/sbin/rhn_register"
             os.execv(path, [""])
 
-    def write_file(self):
-        pass
-
-    def apply(self):
+    def apply(self, notebook):
         pass

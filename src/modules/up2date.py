@@ -24,7 +24,7 @@ class childWindow:
             titleBox = gtk.HBox()
 
             try:
-                p = gtk.gdk.pixbuf_new_from_file("images/networking.png")
+                p = gtk.gdk.pixbuf_new_from_file("images/boxset_standard.png")
             except:
                 pass
 
@@ -67,7 +67,13 @@ class childWindow:
             a = gtk.Alignment()
             a.add(launchButton)            
             a.set(0.3, 0.0, 0.3, 0.5)
+
+#            eventBox = gtk.EventBox()
+#            eventBox.add(a)
+#            eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#0000BB"))
+
             internalVBox.pack_start(a, gtk.FALSE, padding=10)
+#            internalVBox.pack_start(eventBox, gtk.FALSE, padding=10)
 
             launchButton.connect("clicked", self.up2date)
 
@@ -91,5 +97,6 @@ class childWindow:
     def write_file(self):
         pass
 
-    def apply(self):
+    def apply(self, notebook):
+        print "nothing to do"
         pass

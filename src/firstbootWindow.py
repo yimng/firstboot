@@ -60,7 +60,7 @@ class firstbootWindow:
         self.notebook.set_show_border(gtk.FALSE)
 
 #        path = ('/usr/share/firstboot/modules')
-        path = ('/home/bfox/redhat/firstboot/src/modules')
+        path = ('/home/devel/bfox/redhat/firstboot/src/modules')
         files = os.listdir(path)
         list = []
 
@@ -74,7 +74,7 @@ class firstbootWindow:
         for module in list:
             print module
 #            sys.path.append('/usr/share/firstboot/modules')
-            sys.path.append('/home/bfox/redhat/firstboot/src/modules')
+            sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
@@ -113,20 +113,16 @@ class firstbootWindow:
         self.rightVBox.set_usize(400, 200)
 
         eventBox = gtk.EventBox()
-
         self.internalVBox = gtk.VBox()
         self.internalVBox.pack_start(self.notebook, gtk.TRUE)
-
         eventBox.add(self.internalVBox)
         eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
         self.rightVBox.pack_start(eventBox, gtk.TRUE)
-#        self.rightVBox.pack_start(label, TRUE)
 
         a = gtk.Alignment()
         a.add(self.rightVBox)
         a.set(0.5, 0.5, 0.9, 0.9)
         self.mainHBox.pack_start(a, gtk.TRUE)
-
 
         bb = gtk.HButtonBox()
         bb.set_layout(gtk.BUTTONBOX_END)
@@ -136,30 +132,20 @@ class firstbootWindow:
         backButton.connect('clicked', self.backClicked)
         nextButton = gtk.Button("Next")
         group = gtk.AccelGroup()
-        nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
-                                   gtk.gdk.RELEASE_MASK, 0)
         nextButton.connect('clicked', self.okClicked)
 
         self.internalVBox.pack_start(bb, gtk.FALSE, 10)
 
+        #Accelerators aren't currently working in GTK 2.0   Grrrrrrr.
+#        nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
+#                                   gtk.gdk.RELEASE_MASK, 0)
 #        backButton.add_accelerator('clicked', group, GDK.F11,
 #                                   GDK.RELEASE_MASK, 0)
         win.add_accel_group(group)
         bb.pack_start(backButton)
         bb.pack_start(nextButton)
 
-#        self.notebook.set_usize(300, -1)
-#        self.hpane.handle_size(0)
-#        mainVBox.pack_start(self.hpane)
         mainVBox.pack_start(self.mainHBox)
-#        mainVBox.pack_start(self.notebook)
-#        self.notebook.set_border_width(10)
-
-
-#        a = GtkAlignment()
-#        a.add(GtkHSeparator())
-#        a.set(0.0, 0.0, 0.5, 0.5)
-#        mainVBox.pack_start(gtk.HSeparator(), gtk.FALSE)
 
         try:
             p = gtk.gdk.pixbuf_new_from_file("images/bg.png")
@@ -173,7 +159,6 @@ class firstbootWindow:
         win.realize()
         win.set_app_paintable(gtk.TRUE)
 
-        
         bgimage = gtk.gdk.Pixmap(win.window, 800, 600, -1)
         gc = bgimage.new_gc ()
         p.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
@@ -183,23 +168,25 @@ class firstbootWindow:
             box = module.launch()
             if box:
                 self.notebook.append_page(box, gtk.Label(" "))
-#                self.setTitle(module.title)
-                
-#        mainVBox.pack_start(bb, gtk.FALSE, padding=10)
+
         win.add(mainVBox)
         win.show_all()
-#        self.notebook.set_page(0)
-#        self.stepList.select_row(0, 0)
         gtk.main()
 
     def okClicked(self, *args):
+        try:
+            module = self.moduleList[self.notebook.get_current_page()]
+        except:
+            pass
 
-#        module = self.moduleList[self.notebook.get_current_page()]
+#        module.apply(self.notebook)
+
         #Call the apply method if it exists
-#        try:
-#            module.apply()
-#        except:
-#            pass
+        try:
+            module.apply(self.notebook)
+        except:
+            pass
+
         self.notebook.next_page()
 #        self.stepList.select_row(self.notebook.get_current_page(), 0)
 
