@@ -1,4 +1,5 @@
-# Copyright 2001 Red Hat, Inc.
+#
+# Copyright 2001,2002 Red Hat, Inc.
 #
 # This software may be freely redistributed under the terms of the GNU
 # library public license.
@@ -18,28 +19,31 @@ import sys
 import gtk
 import gobject
 
-doReconfig = 1
+doReconfig = 0
+doDebug = 0
 
 for arg in sys.argv:
     if arg == '--reconfig':
         print "starting reconfig mode"
-        doReconfig = 0
+        doReconfig = 1
+    if arg == '--debug':
+        print "starting with debugging options"
+        doDebug = 1
 
 sys.argv = sys.argv[:1]
-
-print doReconfig
 
 class firstbootWindow:
     def __init__(self):
         self.mainHBox = gtk.HBox(gtk.FALSE, 10)
         self.moduleList = []
         self.moduleDict = {}
-        self.moduleStore = gtk.ListStore(gobject.TYPE_STRING)
+        self.moduleStore = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_INT)
 
 #        root = _root_window ()
 #        cursor = cursor_new (GDK.LEFT_PTR)
 #        root.set_cursor (cursor)
 
+        # Create the initial window and a vbox to fill it with.
         win = gtk.Window()
         win.set_size_request(800, 600)
         win.set_resizable(gtk.FALSE)
@@ -48,25 +52,26 @@ class firstbootWindow:
         path = ('/usr/share/firstboot/modules')
         sys.path.append(path)
 
-        p = None        
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("pixmaps/titlebar.png")
-        except:
+        pix = self.imageFromFile("pixmaps/titlebar.png")
+        if pix:
+#            mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
             pass
 
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)
-#            mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
-        
+        # Create the notebook.  We use a ListView to control which page in the
+        # notebook is displayed.
         self.notebook = gtk.Notebook()
-        self.notebook.set_show_tabs(gtk.FALSE)
-        self.notebook.set_show_border(gtk.FALSE)
+	if doDebug:
+            self.notebook.set_show_tabs(gtk.TRUE)
+            self.notebook.set_show_border(gtk.TRUE)
+            self.notebook.set_scrollable(gtk.TRUE)
+        else:
+            self.notebook.set_show_tabs(gtk.FALSE)
+            self.notebook.set_show_border(gtk.FALSE)
 
+        # Generate a list of all of the module files (which becomes the list of
+        # all non-hidden files in the directory with extensions other than .py.
         files = os.listdir(path)
-
         list = []
-
         for file in files:
             if file[0] == '.':
                 continue
@@ -74,6 +79,7 @@ class firstbootWindow:
                 continue
             list.append(file[:-3])
 
+        # Import each module, and filter out those
         for module in list:
 #            print module
 #sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
@@ -81,137 +87,143 @@ class firstbootWindow:
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
 
-            if doReconfig == 1:
-                try:
-                    if obj.moduleClass == "reconfig":
-                        pass
-                    else:
-                        self.moduleDict[int(obj.runPriority)] = obj
-                except:
+            # If the module defines a moduleClass, it has to match the mode
+            # we're starting up in, otherwise it's always used.  Add it to
+            # a dictionary keyed by the module's declared priority.
+            if hasattr(obj, "moduleClass"):
+                if (doReconfig and (obj.moduleClass == "reconfig")):
                     self.moduleDict[int(obj.runPriority)] = obj
-                    pass
-                
+                elif (not doReconfig and (obj.moduleClass != "reconfig")):
+                    self.moduleDict[int(obj.runPriority)] = obj
             else:
                 self.moduleDict[int(obj.runPriority)] = obj
 
-        tmpList = self.moduleDict.keys()
-        tmpList.sort()
+        # Get the list of module priorities, sort them to determine a run
+	# order, and build a list with the modules in the proper order.
+        modulePriorityList = self.moduleDict.keys()
+        modulePriorityList.sort()
 
-        for module in tmpList:
-            self.moduleList.append(self.moduleDict[module])
-
-            try:
-                if self.moduleDict[module].moduleName:
-#                    print self.moduleDict[module].moduleName
-                    iter = self.moduleStore.append()
-                    self.moduleStore.set_value(iter, 0, self.moduleDict[module].moduleName)
-
-            except:
-                pass
-
-        for module in self.moduleList:
+	# Add the modules to the proper lists.
+        pages = 0
+        for priority in modulePriorityList:
+            # Add the module to the list of modules.
+            module = self.moduleDict[priority]
+            # Launch the module's GUI.
             vbox = None
             eventbox = None
-            data = module.launch()
             try:
-                vbox, eventbox = data
+                vbox, eventbox = module.launch()
             except:
-                pass
-            if eventbox and vbox:
-                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
+                continue
+            # If it launched, add it to the mdoule list.
+            self.moduleList.append(module)
+            # Set the background of the header to a uniform color.
+            eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
+            # If the module has a name, add it to the ListStore as well, mapping
+            # the module name to the page number.
+            if hasattr(module, "moduleName"):
+                self.notebook.append_page(vbox, gtk.Label(module.moduleName))
+                iter = self.moduleStore.append()
+                self.moduleStore.set_value(iter, 0, module.moduleName)
+                self.moduleStore.set_value(iter, 1, pages)
+            else:
                 self.notebook.append_page(vbox, gtk.Label(" "))
+            pages = pages + 1
 
+        # Create the TreeView widget and pack it into a box.
         self.moduleView = gtk.TreeView(self.moduleStore)
-#        selection = self.moduleView.get_selection()
-#        selection.connect("changed", self.selectRow)
-
+        if doDebug:
+            self.moduleView.connect("cursor-changed", self.cursorChanged)
         leftVBox = gtk.VBox()
         leftVBox.pack_start(self.moduleView, gtk.TRUE)
 
+        # Hook up a signal to highlight the selected page, and switch to page 0.
+        self.notebook.connect("switch-page", self.switchPage)
+        self.notebook.set_current_page(0)
 
-        p = None        
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("pixmaps/redhat-logo.png")
-        except:
-            pass
-
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)        
+        # Add our logo to the left box, below the TreeView.
+        pix = self.imageFromFile("pixmaps/redhat-logo.png")
+        if pix:
             leftVBox.pack_start(pix, gtk.FALSE)
 
+        # Tell the TreeView how to display the ListStore.
         col = gtk.TreeViewColumn(None, gtk.CellRendererText(), text=0)
         self.moduleView.append_column(col)
         self.moduleView.set_property("headers-visible", gtk.FALSE)
-        self.moduleView.set_size_request(195, -1)        
+        self.moduleView.set_size_request(195, -1)
+
+        # Add the box on the left to the window's HBox.
         self.mainHBox.pack_start(leftVBox, gtk.FALSE)
 
-
 #########################################
-        self.rightVBox = gtk.VBox()
-        self.rightVBox.set_size_request(400, 200)
 
-        eventBox = gtk.EventBox()
+        # Populate the right side of the window.  Add the notebook to a VBox.
         self.internalVBox = gtk.VBox()
         self.internalVBox.pack_start(self.notebook, gtk.TRUE)
+
+        # Now add the VBox to an EventBox.
+        eventBox = gtk.EventBox()
         eventBox.add(self.internalVBox)
         eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
+
+        # Now add the EventBox to the right-side VBox.
+        self.rightVBox = gtk.VBox()
+        self.rightVBox.set_size_request(400, 200)
         self.rightVBox.pack_start(eventBox, gtk.TRUE)
 
-        a = gtk.Alignment()
-        a.add(self.rightVBox)
-        a.set(0.5, 0.5, 0.9, 0.9)
-        self.mainHBox.pack_start(a, gtk.TRUE)
+        # Add an Alignment widget to the top-level HBox, and place the
+	# right-side VBox into it.
+        alignment = gtk.Alignment()
+        alignment.add(self.rightVBox)
+        alignment.set(0.5, 0.5, 0.9, 0.9)
+        self.mainHBox.pack_start(alignment, gtk.TRUE)
 
+        # Create a button box to handle navigation.
         self.bb = gtk.HButtonBox()
         self.bb.set_layout(gtk.BUTTONBOX_END)
         self.bb.set_border_width(10)
         self.bb.set_spacing(10)
+        # Create the "go back" button, marking it insensitive by default.
         self.backButton = gtk.Button(stock='gtk-go-back')
         self.backButton.connect('clicked', self.backClicked)
         self.backButton.set_sensitive(gtk.FALSE)
+        self.bb.pack_start(self.backButton)
+        # Create the "go forward" and "finish" buttons.
         self.nextButton = gtk.Button(stock='gtk-go-forward')
+        self.nextButton.connect('clicked', self.okClicked)
+        self.bb.pack_start(self.nextButton)
         self.finishButton = gtk.Button(stock='gtk-close')
         self.finishButton.connect('clicked', self.finishClicked)
-        group = gtk.AccelGroup()
-        self.nextButton.connect('clicked', self.okClicked)
-
+	# Add the button box to the bottom of the box which contains the
+	# notebook.
         self.internalVBox.pack_start(self.bb, gtk.FALSE, 10)
 
+
         #Accelerators aren't currently working in GTK 2.0   Grrrrrrr.
+#        group = gtk.AccelGroup()
 #        self.nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
 #                                   gtk.gdk.RELEASE_MASK, 0)
 #        self.backButton.add_accelerator('clicked', group, GDK.F11,
 #                                   GDK.RELEASE_MASK, 0)
-        win.add_accel_group(group)
-        self.bb.pack_start(self.backButton)
-        self.bb.pack_start(self.nextButton)
+#        win.add_accel_group(group)
 
+	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("pixmaps/bg.png")
-        except:
-            pass
+        pix = self.imageFromFile("pixmaps/bg.png")
+	if pix:
+            win.realize()
+            win.set_app_paintable(gtk.TRUE)
 
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)
+            bgimage = gtk.gdk.Pixmap(win.window, 800, 600, -1)
+            gc = bgimage.new_gc ()
+            pix.get_pixbuf().render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+            win.window.set_back_pixmap (bgimage, gtk.FALSE)
 
-        win.realize()
-        win.set_app_paintable(gtk.TRUE)
-
-        bgimage = gtk.gdk.Pixmap(win.window, 800, 600, -1)
-        gc = bgimage.new_gc ()
-        p.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-        win.window.set_back_pixmap (bgimage, gtk.FALSE)
-        
+        # Show the main window and go for it.
         win.add(mainVBox)
         win.show_all()
         gtk.main()
-
-    def selectRow(self, *args):
-        print "select Row"
 
     def finishClicked(self, *args):
         print "exiting"
@@ -269,8 +281,38 @@ class firstbootWindow:
 
 #        self.stepList.select_row(self.notebook.get_current_page(), 0)
 
-    def selectRow(self, list, row, col, event):
-        self.notebook.set_page(row)
+    # When a row in the list is selected, select the corresponding page in
+    # the notebook.
+    def cursorChanged(self, list):
+        selection = self.moduleView.get_selection()
+        model, iter = selection.get_selected()
+        if model and iter:
+            row = model.get_value(iter, 1)
+            self.notebook.set_current_page(row)
 
+    # When the notebook page is changed, select the right item in the list.
+    def switchPage(self, notebook, page_widget, page):
+        iter = self.moduleStore.get_iter_root()
+        selection = self.moduleView.get_selection()
+        pnum = self.moduleStore.get_value(iter, 1)
+        if (pnum == page):
+            selection.select_iter(iter)
+            return
+	while self.moduleStore.iter_next(iter):
+            pnum = self.moduleStore.get_value(iter, 1)
+            if (pnum == page):
+                selection.select_iter(iter)
+                break;
 
-
+    # Attempt to load a gtk.Image from a file.
+    def imageFromFile(self, filename):
+        p = None        
+        try:
+            p = gtk.gdk.pixbuf_new_from_file(filename)
+        except:
+            pass
+        if p:
+            pix = gtk.Image()
+            pix.set_from_pixbuf(p)        
+            return pix
+        return None
