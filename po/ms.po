@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-18 11:57+0800\n"
+"PO-Revision-Date: 2004-03-22 10:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -381,9 +381,8 @@ msgid "Select the item that you wish to modify "
 msgstr "Pilih perkara yang anda hendak ubahsuai "
 
 #: ../src/textWindow.py:50
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hat Setup Agent"
+msgstr "Agen Pemasangan"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -413,38 +412,37 @@ msgstr "Red Hat Setup Agent"
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
-#, fuzzy
 msgid "Additional CDs"
-msgstr "Tambahan"
+msgstr "CD Tambahan"
 
 #: ../src/modules/additional_cds.py:60
-#, fuzzy
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr "dan."
+msgstr ""
+"Jika anda mempunyai sebarang CD yang disenaraikan dibawah, anda boleh memasang pakej dari "
+"mereka dengan memasukkan CD dan menklik butang yang betul."
 
 #: ../src/modules/additional_cds.py:98
-#, fuzzy
 msgid "Install..."
-msgstr "Install."
+msgstr "Pasang..."
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
-#, fuzzy
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "A dalam dan OK."
+msgstr ""
+"CD-ROM tidak dapat dikesan.  Sila masukkan CD-ROM dalam pemacu dan "
+"klik \"OK\" untuk meneruskan."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-#, fuzzy
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "on OK."
+msgstr "Program autorun tidak dijumpai pada cd. Klik \"OK\" untuk meneruskan."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -456,17 +454,18 @@ msgstr "on OK."
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
-#, fuzzy
 msgid "User Account"
-msgstr "Pengguna"
+msgstr "Akaun Pengguna"
 
 #: ../src/modules/create_user.py:48
-#, fuzzy
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr "pengguna normal Kepada."
+msgstr ""
+"Adalah disyorkan anda mencipta akaun pengguna persendirian untuk kegunaan normal "
+"(bukan pengurusan).  Untuk mencipta akaun persendirian, berikan maklumat "
+"yang diminta."
 
 #: ../src/modules/create_user.py:58
 msgid "_Username:"
@@ -507,7 +506,6 @@ msgid ""
 msgstr "pengguna dalam."
 
 #: ../src/modules/create_user.py:149
-#, fuzzy
 msgid "_Continue"
 msgstr "_Teruskan"
 
@@ -675,7 +673,6 @@ msgstr ""
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
-#, fuzzy
 msgid "Display"
 msgstr "Paparan"
 
