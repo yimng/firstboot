@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
-"PO-Revision-Date: 2002-08-02 09:02GMT+10:00\n"
+"PO-Revision-Date: 2002-08-08 09:53GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,6 @@ msgstr ""
 " そして残りのモジュールの実行を試みます。"
 
 #: ../src/exceptionWindow.py:41
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -40,8 +39,8 @@ msgid ""
 msgstr ""
 "http://www.redhat.com/bugzillaで Red Hatバグ追跡システムの中の \n"
 "'firstboot'へバグ報告を提出して下さい。\n"
-" デバッグ出力のコピーは/tmp/firstboot.txt に保存してあります。\n"
-" バグ報告には必ず、このファイルを添付して下さい。\n"
+"デバッグ出力のコピーは%sに保存してあります。\n"
+"バグ報告には必ず、このファイルを添付して下さい。\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -143,16 +142,14 @@ msgstr ""
 "側のチャンネルです。 3番目の音は 中央となります。"
 
 #: ../src/modules/up2date.py:18
-#, fuzzy
 msgid "Update Agent"
-msgstr "Red Hat Update Agent"
+msgstr "更新エージェント"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -168,10 +165,19 @@ msgid ""
 "information or to subscribe to Red Hat Network Basic Service. \n"
 "\n"
 msgstr ""
-"Red Hat Update Agentは、マシンをRed Hat Networkに登録しますので、 Red Hatから"
-"直接最新のソフトウェアパッケージを受け取ることができます。 このツールの使用す"
-"れば、セキュリティパッチ、バグ修正、 ソフトウェアパッケージ拡張などをいつも最"
-"新の状態にしてRed Hat Linuxシステムを 所有することができます。"
+"Red Hat Update Agentは、マシンをRed Hat Networkに登録しますので、 "
+"Red Hatから直接最新のソフトウェアパッケージを受け取ることができます。 "
+"このツールの使用すれば、セキュリティパッチ、バグ修正、ソフトウェア "
+"パッケージ拡張などをいつも最新の状態にしてRed Hat Linuxシステムを "
+"所有することができます。\n "
+"\n"
+"この製品を購入していればRed Hat Network 基本サービスの無料試行の権利があります。 "
+"この無料試行にアクセスするには、ボックスの中にある製品アクティベーションカード "
+"で詳細を確認してください。\n "
+"\n"
+"この製品を購入していない場合、http://rhn.redhat.comのサイトで詳細情報を得るか、 "
+"又はRed Hat Network基本サービスを購読してください。\n"
+"\n"
 
 #: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
@@ -423,3 +429,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
