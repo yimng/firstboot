@@ -25,7 +25,7 @@ class childWindow:
         self.vbox = gtk.VBox(gtk.FALSE, 10)
         self.vbox.set_size_request(400, 200)
 
-        msg = (_("Finished installation!"))
+        msg = (_("Finished Installation!"))
         label = gtk.Label("")
         label.set_alignment(0.4, 0.5)
         label.set_markup("<span size='x-large'>%s</span>" % msg)

@@ -29,7 +29,7 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        msg = (_("Install additional software"))
+        msg = (_("Install Additional Software"))
         label = gtk.Label("")
         label.set_alignment(0.4, 0.5)
         label.set_markup("<span size='x-large'>%s</span>" % msg)
