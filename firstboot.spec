@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.1.6
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Jul 22 2003 Brent Fox <bfox@redhat.com> 1.1.6-2
+- bump relnum and rebuild
+
 * Tue Jul 22 2003 Brent Fox <bfox@redhat.com> 1.1.6-1
 - resolve conflict between "Next" and "Forward" (bug #100498)
 
