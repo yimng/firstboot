@@ -5,14 +5,15 @@
 # Sarah Smith <sarahs@redhat.com>, 2002,2003.
 # Sarah Saiying Smith <sarahs@redhat.com>, 2003
 # Sarah Saiying Wang <sarahs@redhat.com>, 2003
+# Sarah Wang <sarahs@redhat.com>, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-09-24 23:58+1000\n"
-"Last-Translator: Sarah Saiying Wang <sarahs@redhat.com>\n"
+"PO-Revision-Date: 2003-12-05 11:55+1000\n"
+"Last-Translator: Sarah Wang <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -173,13 +174,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
 #: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #. Firstboot has never been run before, so start it up
@@ -352,64 +351,55 @@ msgstr "欢迎"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "验证"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration "
 msgstr "防火墙配置"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration "
-msgstr "声卡配置"
+msgstr "键盘配置"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Mouse configuration "
 msgstr "鼠标配置"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "改变网络配置(_C)..."
+msgstr "网络配置"
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "Printer configuration "
-msgstr "鼠标配置"
+msgstr "打印机配置"
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "System services "
-msgstr "信任的设备："
+msgstr "系统服务"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Sound card configuration "
 msgstr "声卡配置"
 
 #: ../src/textWindow.py:41
-#, fuzzy
 msgid "Timezone configuration "
-msgstr "鼠标配置"
+msgstr "时区配置"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "运行工具"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "退出"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "选择您想修改的项目"
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hat 设置代理"
+msgstr "设置代理"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -466,8 +456,7 @@ msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -594,15 +583,13 @@ msgid ""
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -694,14 +681,12 @@ msgstr "正在联系 NTP 服务器。请稍候..."
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
-#, fuzzy
 msgid "Display"
-msgstr "显示："
+msgstr "显示"
 
 #: ../src/modules/display.py:48
-#, fuzzy
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "请为系统选择默认语言。"
+msgstr "请选择您想使用的分辨率和色彩深度"
 
 #. Add icon to the top frame
 #. #
@@ -845,13 +830,12 @@ msgid "Please set the timezone for the system."
 msgstr "请为系统设置时区。"
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"在您的系统一切就绪前还要执行几个步骤。红帽设置代理将会引导您进行一些基本配"
+"在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配"
 "置。请点击右下角的“下一步”按钮来继续。"
 
 #~ msgid "Firstboot does not run in runlevel 3."
@@ -1147,3 +1131,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
+
