@@ -93,7 +93,7 @@ class childWindow:
 
 
         authHBox = gtk.HBox()
-        authButton = gtk.Button(_("Use Network Login..."))
+        authButton = gtk.Button(_("_Use Network Login..."))
         authButton.connect("clicked", self.run_authconfig)
         align = gtk.Alignment()
         align.add(authButton)
@@ -305,8 +305,6 @@ class childWindow:
                 gtk.main_iteration_do()
 
             child_pid, status = os.waitpid(pid, os.WNOHANG)
-            
-            print child_pid, pid
             
             if child_pid == pid:
                 flag = 1
