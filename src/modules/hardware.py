@@ -19,7 +19,7 @@ _=gettext.gettext
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = -100
+    runPriority = 100
     moduleName = "Configure hardware"
 
     def __init__(self, doDebug = None):
