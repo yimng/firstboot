@@ -137,7 +137,6 @@ class firstbootWindow:
         leftEventBox = gtk.EventBox()
         leftEventBox.add(self.leftLabelVBox)
         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7383a3"))
-#        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6b87bd"))
 
         leftVBox = gtk.VBox()
         leftVBox.pack_start(leftEventBox, gtk.TRUE)
