@@ -20,6 +20,9 @@ unset LC_MESSAGES
 [ -z "${CONSOLETYPE:-}" ] && CONSOLETYPE="`/sbin/consoletype`"
 export LANG
 
+# Source function library.
+. /etc/init.d/functions
+
 FILENAME=/etc/sysconfig/firstboot
 
 [ -z "$HOME" ] && export HOME=/
