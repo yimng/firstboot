@@ -66,7 +66,9 @@ class SoundWindow:
         else:
             self.mainVBox = gtk.VBox()
 
-            title = gtk.Label(self.windowTitle)
+            title = gtk.Label("")
+            title.set_alignment(0.4, 0.5)
+            title.set_markup("<span size='x-large'>%s</span>" % self.windowTitle)            
             title.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
             titleBox = gtk.HBox()
