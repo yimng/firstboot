@@ -21,6 +21,7 @@ xserver_pid = None
 doDebug = None
 doReconfig = None
 lowRes = None
+rhgb = None
 FILENAME = "/etc/sysconfig/firstboot"
 
 for arg in sys.argv:
@@ -63,7 +64,6 @@ def mergeXresources():
     path = "/etc/X11/Xresources"
     if os.access(path, os.R_OK):
 	os.system("xrdb -merge %s" % path)
-
 
 #Let's check to see if firstboot should be run or not
 #If we're in debug mode, run anyway.  Even if the file exists
@@ -145,6 +145,7 @@ if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin
     wm_pid = None
     wm_pid = startWindowManager()
     mergeXresources()
+    rhgb = 1
 
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
@@ -187,4 +188,4 @@ if not os.environ.has_key('DISPLAY'):
      mergeXresources()
 
 import firstbootWindow
-firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug, lowRes)
+firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb)
