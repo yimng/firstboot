@@ -117,7 +117,7 @@ class childWindow:
 
     def updateLabels(self):
         module_dict = {}
-        lines = open("/etc/modules.conf").readlines()
+        lines = open("/etc/modprobe.conf").readlines()
         for line in lines:
             tokens = string.split(line)
             if string.strip(tokens[0]) == "alias" and string.strip(tokens[1][:3]) == "eth":
