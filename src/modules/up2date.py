@@ -15,7 +15,7 @@ _=gettext.gettext
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 130
-    moduleName = (_("Update Your System"))
+    moduleName = (_("Update Agent"))
                 
     def launch(self, doDebug=None):
         if doDebug:
@@ -57,7 +57,13 @@ class childWindow:
                             "packages directly from Red Hat.  Using this tool will allow you "
                             "to always have the most up-to-date Red Hat Linux system "
                             "with all the security patches, bug fixes, and software "
-                            "package enhancements."))
+                            "package enhancements. \n\n"
+                            "If you purchased this product, you are entitled to a free trial of Red "
+                            "Hat Network Basic Service. To access the free trial, please refer to the "
+                            "product activation card found in the box for detailed instructions. \n\n"
+                            "If you did not purchase this product, visit http://rhn.redhat.com for "
+                            "more information or to subscribe to Red Hat Network Basic Service. \n\n"))
+
         label.set_line_wrap(gtk.TRUE)
         label.set_size_request(400, -1)
         label.set_alignment(0.0, 0.5)
