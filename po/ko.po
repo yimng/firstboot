@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
-"PO-Revision-Date: 2003-01-16 09:20+1000\n"
+"PO-Revision-Date: 2003-01-30 10:28+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,19 +46,16 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -95,7 +92,7 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "사용자 계정"
 
 #: ../src/modules/create_user.py:44
 msgid ""
@@ -103,6 +100,9 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"(관리 목적이 아닌) 일반 작업을 수행하시기 위해 "
+"개인 사용자 계정을 만드시길 바랍니다.  개인 계정을 만드시려면, "
+"요청된 정보를 기입해 주십시오."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -126,14 +126,17 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"개인 사용자 계정을 만드시기를 적극 권장합니다.  "
+"계정을 만드시지 않고 계속 진행하신다면, 관리자 용으로만 "
+"사용되는 루트 계정을 사용하여 로그인하셔야 합니다."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr ""
+msgstr "계속 진행"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "계정 만들기"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
@@ -144,55 +147,60 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
 
 #: ../src/modules/create_user.py:153
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "사용자명 %s 계정이 이미 존재합니다.  다른 사용자명을 지정해 주십시오."
+msgstr ""
+"사용자명 '%s'은 시스템 계정 용으로 보존되어 있습니다. "
+"다른 사용자명을 지정해 주십시오."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "사용자명은 33 문자를 넘어서는 안됩니다."
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "사용자명은 숫자로 시작해서는 안됩니다."
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
+"사용자명 '%s'에 공백이 포함되어 있습니다.  %s에 공백을 포함시키지 "
+"마십시오."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"사용자명 '%s'에 구두점이 포함되어 있습니다.  사용자명에 "
+"구두점을 사용하지 마십시오."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"사용자명 '%s'에 대문자가 포함되어 있습니다.  사용자명에 "
+"대문자를 사용하지 마십시오."
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"사용자명 '%s'에 잘못된 문자가 포함되어 있습니다.  사용자명에 "
+"ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -227,14 +235,13 @@ msgid "Finish Setup"
 msgstr "설정 완료"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Red Hat Linux 시스템 설정이 완료되어 이제 사용하실 수 있습니다.  즐겁고 유익"
-"한 컴퓨터의 세계를 경험해 보시기 바랍니다. 다음 단계로 계속 진행하시려면, 오"
-"른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
+"시스템 설정이 완료되어 이제 사용하실 수 있습니다.  "
+"다음 단계로 계속 진행하시려면, 오른쪽 하단 모서리에 위치한 "
+"\"다음\" 버튼을 클릭해 주십시오."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -623,3 +630,4 @@ msgstr "Red Hat 설정 에이전트"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
