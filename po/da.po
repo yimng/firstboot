@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
 "POT-Creation-Date: Tue Aug 13 22:19:03 2002\n"
-"PO-Revision-Date: 2002-08-02 23:39+0200\n"
+"PO-Revision-Date: 2002-08-17 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,6 @@ msgstr ""
 "den vil forsøge at køre de resterende moduler."
 
 #: ../src/exceptionWindow.py:41
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -44,17 +43,19 @@ msgstr ""
 
 #: ../src/firstboot.py:88
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "Firstboot er allerede blevet kørt en gang på dette system.\n"
 
 #: ../src/firstboot.py:89
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
+"For at køre 'firstboot' fra kommandolinjen skal du køre de følgende kommandoer:"
 
 #: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
+"For at køre 'firstboot' ved systemopstart skal du køre de følgende kommandoer:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
@@ -69,27 +70,29 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"Hvis du har nogen af cd'erne nævnt nedenfor kan du installere pakker fra "
+"dem ved at insætte cd'en ok klikke på den tilsvarende knap."
 
 #: ../src/modules/additional_cds.py:73
-#, fuzzy
 msgid "Red Hat Linux Documentation CD"
-msgstr "Red Hat dokumentations-CD"
+msgstr "Red Hat Linux dokumentations-CD"
 
 #: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
 #: ../src/modules/additional_cds.py:99
 msgid "Install..."
-msgstr ""
+msgstr "Installér..."
 
 #: ../src/modules/additional_cds.py:84
-#, fuzzy
 msgid "Red Hat Linux Installation CD"
-msgstr "Red Hat dokumentations-CD"
+msgstr "Red Hat Linux dokumentations-CD"
 
 #: ../src/modules/additional_cds.py:117
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik "
+"'O.k.' for at fortsætte"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -120,9 +123,8 @@ msgid "Finish Setup"
 msgstr "Færdiggør opsætning"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Setup!"
-msgstr "Færdiggør opsætning"
+msgstr "Opsætning færdig!"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -158,16 +160,14 @@ msgstr ""
 "skal være i den venstre kanal, og den tredje lyd skal være i midten."
 
 #: ../src/modules/up2date.py:19
-#, fuzzy
 msgid "Update Agent"
-msgstr "Red Hat opdateringsagent"
+msgstr "Opdateringsagent"
 
 #: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat opdateringsagent"
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -186,6 +186,13 @@ msgstr ""
 "kan få de seneste programpakker direkte fra Red Hat. Ved at bruge dette "
 "værktøj kan du altid have de mest opdaterede Red Hat Linux-system med alle "
 "sikkerhedsrettelser, fejlrettelser og forbedringer af programpakker"
+"\n"
+"Hvis du købte dette produkt har du ret til en gratis prøve på Red Hat Netværks "
+"basale tjeneste. For at få adgang til den gratis prøve skal du se "
+"produktets aktiveringskort som findes i kassen for detaljerede instruktioner. \n"
+"\n"
+"Hvis du ikke har købt dette produkt, så besøg http://rhn.redhat.com for "
+"yderligere oplysninger om at abonnere på Red Hat netværks basale tjeneste. \n"
 
 #: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
@@ -215,7 +222,6 @@ msgstr ""
 "nu lede dig gennem noget grundlæggende konfigurering. Klik på 'Næste'-"
 "knappen i det nederste højre hjørne for at fortsætte."
 
-#, fuzzy
 #~ msgid ""
 #~ "If you have additional CD-ROMs that you would like to install, such as "
 #~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
@@ -324,7 +330,6 @@ msgstr ""
 #~ msgid "Select the appropriate keyboard for the system."
 #~ msgstr "Sæt dato og klokkeslet for systemet."
 
-#, fuzzy
 #~ msgid "Language Configuration"
 #~ msgstr "Konfiguration af dato og klokkeslet"
 
