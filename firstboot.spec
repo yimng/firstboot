@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.3
-Release: 6
+Version: 1.0.4
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -69,6 +69,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Jan 17 2003 Brent Fox <bfox@redhat.com> 1.0.4-1
+- make hboxes transparent and use a new background
+
 * Mon Jan 13 2003 Brent Fox <bfox@redhat.com> 1.0.3-6
 - make it so that we can paint the root window
 
