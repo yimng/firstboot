@@ -54,6 +54,7 @@ msgstr ""
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
+"Til að keyra firstboot sjálfkrafa þegar vélin ræsir þarftu að framkvæma eftirfarandi skipanir:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
@@ -68,19 +69,21 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"Ef þú ert með einhvern af diskunum hér að neðan getur þú sett inn pakka af "
+"þeim með því að setja þá í drifið og smella á viðeigandi hnapp."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Red Hat Linux Documentation CD"
-msgstr ""
+msgstr "Red Hat Linux handbókardiskurinn"
 
 #: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
 #: ../src/modules/additional_cds.py:99
 msgid "Install..."
-msgstr ""
+msgstr "Setja upp..."
 
 #: ../src/modules/additional_cds.py:84
 msgid "Red Hat Linux Installation CD"
-msgstr ""
+msgstr "Red Hat Linux uppsetningardiskur"
 
 #: ../src/modules/additional_cds.py:117
 msgid ""
@@ -164,7 +167,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat uppfærsluálfurinn"
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -179,11 +181,17 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"Nú þegar þú hefur skráð vélina hjá Red Hat Network getur þú keyrt Red Hat "
-"uppfærslutólið til að sækja nýjustu hugbúnðarpakkana frá Red Hat. Með þessu "
-"tóli getur þú, á einfaldann hátt, haldið vélinni þinni í lagi með nýjustu "
-"útgáfum af húgbúnaði og með öllum öryggisuppfærslum, villuleiðréttingum og "
-"viðbótum"
+"Nú mun Red Hat uppfærsluálfurinn skrá vélina þína hjá Red Hat Network svo "
+"þú getir sótt nýjustu hugbúnðarpakkana frá Red Hat. Með þessu tóli getur "
+"þú, á einfaldann hátt, haldið vélinni þinni í lagi með nýjustu útgáfum af "
+"húgbúnaði og með öllum öryggisuppfærslum, villuleiðréttingum og viðbótum.\n"
+"\n"
+"Ef þú keyptir þennan hugbúnað áttu rétt á ókeypis reynslutíma á grunnþjónustu "
+"Red Hat Network. Til að virkja þessa þjónustu þarftu að fara eftir þeim "
+"leiðbeiningum sem komu með í kassanum.\n"
+"\n"
+"Hafir þú ekki keypt pakkann getur þú farið á http://rhn.redhat.com til að "
+"fá frekari upplýsingar um hvernig þú virkjar þessa þjónustu.\n"
 
 #: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
@@ -213,13 +221,3 @@ msgstr ""
 "uppsetningarforritið mun nú leiða þig í gegnum það sem eftir er að stilla. "
 "Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra horninu hér að neðan til "
 "að halda áfram."
-
-#, fuzzy
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install software\" button below."
-#~ msgstr ""
-#~ "Ef þú ert með fleiri diska úr Red Hat Linux kassanum eins og til dæmis "
-#~ "Red Hat Linux handbókardiskinn eða hugbúnaðardiskinn, settu þá í drifið "
-#~ "og smelltu á hnappinn hér fyrir neðan."
