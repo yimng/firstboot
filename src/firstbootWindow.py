@@ -49,7 +49,11 @@ class firstbootWindow:
         win.set_resizable(gtk.FALSE)
         mainVBox = gtk.VBox()
 
-        path = ('/usr/share/firstboot/modules')
+        if doDebug:
+            path = ('modules/')
+        else:
+            path = ('/usr/share/firstboot/modules')
+
         sys.path.append(path)
 
         pix = self.imageFromFile("pixmaps/titlebar.png")
