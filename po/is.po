@@ -29,7 +29,7 @@ msgstr "Hugbúnaðardiskur"
 
 #: ../src/modules/additional_cds.py:58
 msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
-msgstr ""
+msgstr "Ef þú ert með fleiri diska úr Red Hat Linux kassanum eins og til dæmis Red Hat Linux handbókardiskinn eða hugbúnaðardiskinn, settu þá í drifið og smelltu á hnappinn hér fyrir neðan."
 
 #: ../src/modules/date.py:48
 msgid "Date & Time"
@@ -41,7 +41,7 @@ msgstr "Stillingar dagsettningar og tíma"
 
 #: ../src/modules/date.py:51
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Vinsamlegast settu dagsetningu og tíma vélarinnar."
 
 #: ../src/modules/hardware.py:28
 msgid "Configure hardware"
@@ -88,6 +88,7 @@ msgstr "Stilla net"
 msgid ""
 "A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
 msgstr ""
+"Engin nettenging fannst í vélinni þinni.  Net tenging er nauðsynleg til að skrá vélina þína hjá RHN og til þess að nota Red Hat uppfærsluþjónustuna. Til að setja upp nettengingu skaltu smella á hnappinn hér fyrir neðan.\n"
 
 #: ../src/modules/networking.py:114
 msgid "Set up networking..."
@@ -151,6 +152,9 @@ msgid ""
 "\n"
 "Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
 msgstr ""
+"Red Hat Network er umsjónarkerfi fyrir eina eða fleiri Red Hat Linux vélar. Allar uppfærslur, hvort sem þær eru við öryggisgöllum, almennum göllum í hugbúnaði eða viðbætur (betur þekkt sem 'Errata' tilkynningar) er hægt að fá beint frá Red Hat. Þú getur jafnvel fengið þessar uppfærslur sendar til þín sjálfvirkt um leið og þær koma út.\n"
+"\n"
+"Red Hat Network heldur utanum hvenær uppfærslur koma út og senda þér tilkynningu, svo það getur:"
 
 #: ../src/modules/register.py:68
 msgid ""
@@ -159,6 +163,10 @@ msgid ""
 " -- Filter out package updates not relevant to your network\n"
 " -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
 msgstr ""
+" -- Lágmarkað þann tíma og þá vinnu sem fer í að halda kerfinu uppfærðu og í lagi\n"
+" -- Takmarkað þær öryggisholur sem upp geta komið með því að setja inn uppfærslur við þeim um leið og þær koma út\n"
+" -- Síað út uppfærslur sem ekki eiga við vélina þína eða netið þitt\n"
+" -- Sent til þín uppfærslur svo pakkar eru sendir til valinna véla þegar þú vilt."
 
 #: ../src/modules/register.py:80
 msgid "Register system now"
@@ -174,7 +182,7 @@ msgstr "Red Hat uppfærsluálfurinn"
 
 #: ../src/modules/up2date.py:55
 msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
-msgstr ""
+msgstr "Nú þegar þú hefur skráð vélina hjá Red Hat Network getur þú keyrt Red Hat uppfærslutólið til að sækja nýjustu hugbúnðarpakkana frá Red Hat. Með þessu tóli getur þú, á einfaldann hátt, haldið vélinni þinni í lagi með nýjustu útgáfum af húgbúnaði og með öllum öryggisuppfærslum, villuleiðréttingum og viðbótum"
 
 #: ../src/modules/up2date.py:66
 msgid "Start the Red Hat Update Agent"
