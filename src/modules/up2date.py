@@ -6,7 +6,7 @@ import os
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 120
+    runPriority = 130
     moduleName = "up2date"
 
     def __init__(self):

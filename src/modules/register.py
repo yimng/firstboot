@@ -3,25 +3,46 @@
 from gtk import *
 import string
 import os
+from socket import gethostname
+from socket import gethostbyname
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 110
+    runPriority = 120
     moduleName = "Register with RHN"
 
     def __init__(self):
         print "initializing RHN module"
 
-        
-                
     def launch(self):
         self.vbox = GtkVBox()
-        label = GtkLabel("Register your system with Red Hat Network")
-        self.vbox.pack_start(label, FALSE, TRUE, 30)
-        launchButton = GtkButton("Register system now")
-        launchButton.connect("clicked", self.rhn_register)
-        self.vbox.pack_start(launchButton, FALSE)
+
+        if self.networkAvailable() == TRUE:
+            label = GtkLabel("Register your system with Red Hat Network")
+            self.vbox.pack_start(label, FALSE, TRUE, 30)
+            launchButton = GtkButton("Register system now")
+            launchButton.connect("clicked", self.rhn_register)
+            self.vbox.pack_start(launchButton, FALSE)
+        else:
+            label = GtkLabel("You currently have no network.")
+            self.vbox.pack_start(label, FALSE, TRUE, 30)
+#            launchButton = GtkButton("Register system now")
+#            launchButton.connect("clicked", self.rhn_register)
+#            self.vbox.pack_start(launchButton, FALSE)
+
+
         return self.vbox
+
+    def networkAvailable(self):
+        try:
+            gethostbyname(gethostname())
+            print gethostname()
+            print gethostbyname(gethostname())
+            print "network is functional"
+            return TRUE
+        except:
+            print "no networking found"
+            return FALSE
 
     def rhn_register(self, *args):
         win = os.fork()
@@ -34,10 +55,3 @@ class childWindow:
     def write_file(self):
         pass
 
-    def stand_alone(self):
-        toplevel = GtkWindow()
-        toplevel.set_usize(300, 400)
-        box = childWindow().launch()
-        toplevel.add(box)
-        toplevel.show_all()
-        mainloop()

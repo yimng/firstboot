@@ -108,14 +108,14 @@ class firstbootWindow:
 
         for module in tmpList:
             self.moduleList.append(self.moduleDict[module])
-            self.stepList.append([self.moduleDict[module].moduleName])
+#            self.stepList.append([self.moduleDict[module].moduleName])
 
         for module in self.moduleList:
             box = module.launch()
             if box:
                 self.notebook.append_page(box, GtkLabel(" "))
 
-        self.hpane.add2(self.notebook)
+#        self.hpane.add2(self.notebook)
 
         bb = GtkHButtonBox()
         bb.set_layout(BUTTONBOX_END)
@@ -132,7 +132,8 @@ class firstbootWindow:
         bb.pack_start(backButton)
         bb.pack_start(nextButton)
 
-        mainVBox.pack_start(self.hpane)
+#        mainVBox.pack_start(self.hpane)
+        mainVBox.pack_start(self.notebook)
         mainVBox.pack_start(bb, FALSE, 20)
         win.add(mainVBox)
         win.show_all()
