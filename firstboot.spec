@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.12
+Version: 1.3.13
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon May  3 2004 Brent Fox <bfox@redhat.com> 1.3.13-1
+- fix Norwegian translation bug (bug #122206)
+
 * Thu Apr 22 2004 Brent Fox <bfox@redhat.com> 1.3.12-1
 - look for xorg.conf, not XF86Config (bug #121489)
 
