@@ -11,6 +11,8 @@ class childWindow:
 
     def __init__(self):
         print "initializing additional_cd module"
+        self.additionalDiscs = {"Red Hat Documentation CD" : "docs.png", "Linux Application CD" : "lacd.png"}
+
                 
     def launch(self):
         os.stat('/etc/sysconfig/rhn/rhn_register')
@@ -33,8 +35,6 @@ class childWindow:
             pix.set_from_pixbuf(p)
             titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
-
-
         titleBox.pack_start(label)
 
         eventBox = gtk.EventBox()
@@ -42,7 +42,6 @@ class childWindow:
         eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
         self.vbox.pack_start(eventBox, FALSE)
 
-#        self.vbox.pack_start(label, FALSE, TRUE, 30)
         a = gtk.Alignment()
         a.add(gtk.HSeparator())
         a.set(0.5, 0.5, 1.0, 1.0)
@@ -62,19 +61,27 @@ class childWindow:
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, FALSE, TRUE)
 
-        launchButton = gtk.Button("Install additional software")
-        a = gtk.Alignment()
-        a.add(launchButton)            
-        a.set(0.3, 0.0, 0.3, 0.5)
+#        launchButton = gtk.Button("Install additional software")
+#        a = gtk.Alignment()
+#        a.add(launchButton)            
+#        a.set(0.3, 0.0, 0.3, 0.5)
 
 #            eventBox = gtk.EventBox()
 #            eventBox.add(a)
 #            eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#0000BB"))
 
-        internalVBox.pack_start(a, gtk.FALSE, padding=10)
+#        internalVBox.pack_start(a, gtk.FALSE, padding=10)
 #            internalVBox.pack_start(eventBox, gtk.FALSE, padding=10)
 
-        launchButton.connect("clicked", self.autorun)
+        buttons = self.additionalDiscs.keys()
+        buttons.sort()
+        for button in buttons:
+            newButton = self.create_button(self.additionalDiscs[button], button)
+            newButton.connect("clicked", self.autorun)
+            internalVBox.pack_start(newButton, gtk.FALSE, padding=10)
+
+
+#        launchButton.connect("clicked", self.autorun)
 
         eventBox = gtk.EventBox()
         eventBox.add(internalVBox)
@@ -82,6 +89,30 @@ class childWindow:
         self.vbox.pack_start(eventBox, TRUE)
 
         return self.vbox
+
+    def create_button(self, image, name):
+        print image, name
+        p = None
+        try:
+            path = string.join(["images/", image], "")
+            print path
+            p = gtk.gdk.pixbuf_new_from_file(path)
+        except:
+            pass
+
+        box = gtk.HBox()
+
+        if p:
+            pix = gtk.Image()
+            pix.set_from_pixbuf(p)
+            box.pack_start(pix, gtk.FALSE)
+
+        label = gtk.Label(name)
+        box.pack_start(label, gtk.FALSE)
+        button = gtk.Button()
+        button.add(box)
+        return button
+
 
     def autorun(self, *args):
         mount = os.fork()
@@ -108,28 +139,6 @@ class childWindow:
             except:
                 print "not mounted yet"
                 
-
-#        pid, status = os.waitpid(mount, 0)
-#        print "First", pid, status
-            
-#        import time
-#        time.sleep(5)
-
-#        pid, status = os.waitpid(mount, 0)
-#        print "Second", pid, status, os.WIFEXITED(status)
-
-
-##         if mount > 0:
-##             try:
-##                 os.stat('/mnt/cdrom/autorun')
-
-##                 win = os.fork()
-##                 if not win:
-##                     print "launching cd installer"
-##                     os.execv("/mnt/cdrom/autorun", ["autorun"])
-##             except:
-##                 print "no cdrom mounted"
-            
     def write_file(self):
         pass
 
