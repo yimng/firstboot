@@ -1,4 +1,4 @@
-## firstbootWindow.py - the main firstboot UI and framework.py
+2## firstbootWindow.py - the main firstboot UI and framework.py
 ##
 ## Copyright (C) 2002, 2003 Red Hat, Inc.
 ## Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
@@ -293,6 +293,8 @@ class firstbootWindow:
             result = exceptionWindow.ExceptionWindow(module, text)
             pass
 
+        # record the current page as the new previous page
+        self.prevPage = self.moduleNameToNotebookIndex[module.moduleName]
         if result != None:
 	    if self.nextPage:
 		self.notebook.set_current_page(self.nextPage)
@@ -323,7 +325,12 @@ class firstbootWindow:
         self.backButton.set_sensitive(gtk.TRUE)
 
     def backClicked(self, *args):
-        self.notebook.prev_page()
+        if self.prevPage:
+            self.notebook.set_current_page(self.prevPage)
+            module = self.moduleList[self.prevPage]
+            self.prevPage = None
+        else:
+            self.notebook.prev_page()
         #Call setPointer to make the left hand pointer move to the correct pointer
         self.setPointer(self.notebook.get_current_page())
 
