@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-13 15:06+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -76,10 +76,6 @@ msgstr ""
 "Skriv felrapporten på engelska. En kopia av felsökningsutdatan\n"
 "har sparats i %s. Försäkra dig om att du bifogar\n"
 "den filen med felrapporten.\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot kör inte på körnivå 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -173,9 +169,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"För att aktivera körtidsstöd för 32-bitarsprogram på "
-"Intel Itanium2-arkitekturen måste du installera paketet "
-"Intel Execution Layer från Extras-skivan nu."
+"För att aktivera körtidsstöd för 32-bitarsprogram på Intel Itanium2-"
+"arkitekturen måste du installera paketet Intel Execution Layer från Extras-"
+"skivan nu."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -201,10 +197,11 @@ msgid "System User"
 msgstr "Systemanvändare"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Det rekommenderas att du skapar ett personligt användarkonto för normalt "
 "(ickeadministrativt) bruk.  För att skapa ett personligt konto, ge den "
@@ -348,6 +345,13 @@ msgstr ""
 "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
 "\"Nästa\" i nedre högra hörnet för att fortsätta."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
+"\"Nästa\" i nedre högra hörnet för att fortsätta."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Nätverkskonfiguration"
@@ -409,6 +413,9 @@ msgstr ""
 "Konfigurationsagenten kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Nästa\" i nedre högra hörnet för att "
 "fortsätta."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot kör inte på körnivå 3."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

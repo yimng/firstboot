@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2006-09-10 15:15+0300\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -71,10 +71,6 @@ msgstr ""
 "в системі обробки помилок за адресою http://www.redhat.com/bugzilla. \n"
 "Копію налагоджувальної інформації збережено у %s \n"
 "Переконайтесь, що ви приєднали цей файл до повідомлення про помилку.\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr ""
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -185,10 +181,11 @@ msgid "System User"
 msgstr "Користувач системи"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Для звичайного використання (не адміністративного) рекомендується створити "
 "персональний обліковий запис. Для створення облікового запису введіть "
@@ -330,6 +327,13 @@ msgstr "Завершення налаштовування"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"Ваша система налаштована та готова до роботи. Щоб продовжити натисніть \"Далі"
+"\" у правому нижньому куті."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Ваша система налаштована та готова до роботи. Щоб продовжити натисніть \"Далі"
 "\" у правому нижньому куті."

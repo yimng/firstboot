@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 22:10+0200\n"
 "Last-Translator: Ronny Buchmann <ronny-vlug@vlugnet.org>\n"
 "Language-Team: German <de@li.org>\n"
@@ -78,10 +78,6 @@ msgstr ""
 "das Red Hat Bug Tracking System unter http://www.redhat.com/bugzilla.\n"
 "Eine Kopie der Debug-Meldung wurde in %s gespeichert.\n"
 "Vergewissern Sie sich, dass Sie diese Datei dem Fehlerbericht anlegen.\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot kann nicht im Runlevel 3 ausgeführt werden."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -202,10 +198,11 @@ msgid "System User"
 msgstr "Systembenutzer"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Es wird empfohlen, dass Sie einen Benutzeraccount für normale (nicht-"
 "administrative) Benutzung anlegen.  Um einen Benutzeraccount zu anzulegen, "
@@ -354,6 +351,13 @@ msgstr ""
 "Ihr System ist nun eingerichtet und kann verwendet werden.  Klicken Sie auf "
 "die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Ihr System ist nun eingerichtet und kann verwendet werden.  Klicken Sie auf "
+"die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Netzwerk-Setup"
@@ -414,6 +418,9 @@ msgstr ""
 "Nur noch ein paar Schritte, und Sie können Ihr System verwenden.  Der Setup "
 "Agent führt Sie dabei durch die Basiskonfiguration.  Klicken Sie auf \"Weiter"
 "\" unten rechts, um fortzufahren."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot kann nicht im Runlevel 3 ausgeführt werden."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-07 14:44+1000\n"
 "Last-Translator: Sarah Wang <sarahs@redhat.com>\n"
 "Language-Team: zh_CN <i18n@redhat.com>\n"
@@ -73,10 +73,6 @@ msgstr ""
 "的错误：http://www.redhat.com/bugzilla。\n"
 "调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot 不在运行级别3中运行。"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -153,8 +149,8 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"请插入“红帽企业 Linux 附加光盘”来进行安装第三方插件和应用程序。此时，您还可以插入"
-"文档光盘，或其它由红帽提供的光盘来安装额外软件。"
+"请插入“红帽企业 Linux 附加光盘”来进行安装第三方插件和应用程序。此时，您还可以"
+"插入文档光盘，或其它由红帽提供的光盘来安装额外软件。"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -181,7 +177,8 @@ msgid ""
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #: ../src/modules/create_user.py:39
@@ -189,10 +186,11 @@ msgid "System User"
 msgstr "系统用户"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
 "信息。"
@@ -286,12 +284,14 @@ msgid ""
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/date.py:47
@@ -318,6 +318,11 @@ msgstr "结束设置"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr "您的系统现已设置完毕，一切就绪。请点击右下角的“下一步”按钮来继续。"
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr "您的系统现已设置完毕，一切就绪。请点击右下角的“下一步”按钮来继续。"
 
 #: ../src/modules/networking.py:44
@@ -379,6 +384,9 @@ msgstr ""
 "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
 "点击右下角的“下一步”按钮来继续。"
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot 不在运行级别3中运行。"
+
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
@@ -402,4 +410,3 @@ msgstr ""
 
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "正在联系 NTP 服务器。请稍候..."
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: package\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-07-15 15:04-0400\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -63,10 +63,6 @@ msgid ""
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
-msgstr ""
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
 msgstr ""
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
@@ -176,9 +172,9 @@ msgstr ""
 
 #: ../src/modules/create_user.py:65
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 
 #: ../src/modules/create_user.py:75
@@ -302,6 +298,10 @@ msgstr ""
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+
+#: ../src/modules/finished.py:38
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 
 #: ../src/modules/networking.py:44

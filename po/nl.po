@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-09-10 23:49+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -74,10 +74,6 @@ msgstr ""
 "http://www.redhat.com/bugzilla. Een kopie van de \n"
 "debug-uitvoer is opgeslagen in %s Vergeet niet om dit \n"
 "bestand als bijlage te voegen bij het fout-rapport. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot kan niet in runlevel 3 worden uitgevoerd."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -190,10 +186,11 @@ msgid "System User"
 msgstr "Systeem gebruiker"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Het wordt aanbevolen om voor het normale dagelijkse gebruik van de computer "
 "(dus geen systeembeheer) een persoonlijk account aan te maken. Om een "
@@ -339,6 +336,14 @@ msgstr ""
 "Uw systeem is nu ingesteld en klaar voor gebruik. Klik op de \"Volgende\" "
 "knop rechts onder in het scherm om door te gaan."
 
+# BUG: Forward is verwarrend, moet Continue zijn of Next
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Uw systeem is nu ingesteld en klaar voor gebruik. Klik op de \"Volgende\" "
+"knop rechts onder in het scherm om door te gaan."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Netwerk instellingen"
@@ -401,6 +406,9 @@ msgstr ""
 "gebruik. De Setup Agent zal u nu helpen met het maken van een basis- "
 "configuratie. Klik op \"Volgende\" rechts onder in het scherm om door te "
 "gaan."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot kan niet in runlevel 3 worden uitgevoerd."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

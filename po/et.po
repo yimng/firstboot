@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: et\n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-11 14:04+0200\n"
 "Last-Translator: Allan Sims <allsi@eau.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -71,28 +72,18 @@ msgstr ""
 "Silumise väljundi koopia salvestati faili %s \n"
 "Lisa see fail kindlasti rapordile. \n"
 
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot ei käivitu kolmandal käivitustasemel"
-
-#: ../src/firstbootWindowLocal.py:186
-#: ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192
-#: ../src/firstbootWindow.py:573
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Tagasi"
 
-#: ../src/firstbootWindowLocal.py:194
-#: ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200
-#: ../src/firstbootWindow.py:577
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Edasi"
 
-#: ../src/firstbootWindowLocal.py:532
-#: ../src/firstbootWindow.py:569
-#: ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Tere tulemast"
 
@@ -145,45 +136,69 @@ msgstr "Vali element, mida soovid muuta "
 msgid "Setup Agent"
 msgstr "Seadistusagent"
 
-#: ../src/modules/additional_cds.py:42
-#: ../src/modules/additional_cds.py:107
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "Täiendavad CD-d"
 
 #: ../src/modules/additional_cds.py:60
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Palun sisesta ketas \"Red Hat Enterprise Linux Extras\" lubamaks installeerida kolmandate poolte rakendusi ja pluginaid. Sa võid samuti sisestada Dokumentatsiooni ketta või teisi Red-Hat-i poolt välja antud tarkvara plaate."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Palun sisesta ketas \"Red Hat Enterprise Linux Extras\" lubamaks "
+"installeerida kolmandate poolte rakendusi ja pluginaid. Sa võid samuti "
+"sisestada Dokumentatsiooni ketta või teisi Red-Hat-i poolt välja antud "
+"tarkvara plaate."
 
 #  if 1:
+#. if 1:
 #: ../src/modules/additional_cds.py:70
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture, you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Lubamaks 32-bitiste rakenduste käivitusaegset toetust Inteli Itanium2 arhitektuurile pead sa installeerima Intel Execution Layer paketi kettalt Extras."
+"Lubamaks 32-bitiste rakenduste käivitusaegset toetust Inteli Itanium2 "
+"arhitektuurile pead sa installeerima Intel Execution Layer paketi kettalt "
+"Extras."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Installeerimine..."
 
 #: ../src/modules/additional_cds.py:146
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "CD-ketast ei leitud. Palun sisesta CD-ketas lugejasse ja jätkamiseks vajuta Olgu"
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ketast ei leitud. Palun sisesta CD-ketas lugejasse ja jätkamiseks vajuta "
+"Olgu"
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
 msgstr "Süsteemi kasutaja"
 
 #: ../src/modules/create_user.py:65
-msgid "It is recommended that you create a personal user account for normal (non-administrative) use.  To create a personal account, provide the requested information."
-msgstr "On tugevalt soovitatud luua tavakasutaja konto normaalseks kasutamiseks.Tavakasutaja konto loomiseks on vaja mõningast teavet."
+#, fuzzy
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"On tugevalt soovitatud luua tavakasutaja konto normaalseks kasutamiseks."
+"Tavakasutaja konto loomiseks on vaja mõningast teavet."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -202,16 +217,26 @@ msgid "Confir_m Password:"
 msgstr "_Kinnita parool:"
 
 #: ../src/modules/create_user.py:112
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Kui sul on vaja kasutada tuvastamist võrgus nagu Kerberos või NIS, palun vajuta Kasuta võrgu logimise nuppu."
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Kui sul on vaja kasutada tuvastamist võrgus nagu Kerberos või NIS, palun "
+"vajuta Kasuta võrgu logimise nuppu."
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "Kasuta võrgu sisse logimist..."
 
 #: ../src/modules/create_user.py:158
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "On tugevalt soovitatud luua tavakasutaja konto. Kui sa jätkad ilma kontota, saad sa logida sisse ainult juurkasutajana (root), kes on reserveeritud süsteemi haldamiseks."
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"On tugevalt soovitatud luua tavakasutaja konto. Kui sa jätkad ilma kontota, "
+"saad sa logida sisse ainult juurkasutajana (root), kes on reserveeritud "
+"süsteemi haldamiseks."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -240,31 +265,45 @@ msgstr "Kasutaja nimi ei saa alata numbriga."
 #. Check for whitespace
 #: ../src/modules/create_user.py:291
 #, python-format
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
 msgstr "Kasutaja nimi '%s' sisaldab tühikut. Palun ära kasuta nimes tühikut."
 
 #: ../src/modules/create_user.py:298
 #, python-format
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
-msgstr "Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+"Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
 
 #: ../src/modules/create_user.py:305
 #, python-format
-msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
-msgstr "Kasutaja nimi '%s' sisaldab suuri tähti. Palun kasuta nimes ainult väikseid tähti."
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Kasutaja nimi '%s' sisaldab suuri tähti. Palun kasuta nimes ainult väikseid "
+"tähti."
 
 #: ../src/modules/create_user.py:312
 #, python-format
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+"Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Parool sisaldab valesid märke. Kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/date.py:47
@@ -288,8 +327,19 @@ msgid "Finish Setup"
 msgstr "Seadistus lõpetatud"
 
 #: ../src/modules/finished.py:35
-msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Süsteem on üles seatud ja valmis kasutamiseks. Palun vajuta \"Edasi\" nuppu jätkamiseks."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr ""
+"Süsteem on üles seatud ja valmis kasutamiseks. Palun vajuta \"Edasi\" nuppu "
+"jätkamiseks."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Süsteem on üles seatud ja valmis kasutamiseks. Palun vajuta \"Edasi\" nuppu "
+"jätkamiseks."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -315,8 +365,7 @@ msgstr "_Muuda võrgu seadeid..."
 msgid "static"
 msgstr "püsiv"
 
-#: ../src/modules/soundcard_gui.py:46
-#: ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
 msgstr "Helikaart"
 
@@ -325,8 +374,15 @@ msgid "A sound card has been detected on your computer."
 msgstr "Arvutist leiti helikaart."
 
 #: ../src/modules/soundcard_gui.py:71
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Vajuta nuppu \"Mängi test heli\" näidis heli kuulamiseks.  Sa peaks kuulma kolme heli seeriat.  Esimene tuleb paremast kõlarist, teine vasakust ja kolmas mõlemast korraga."
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Vajuta nuppu \"Mängi test heli\" näidis heli kuulamiseks.  Sa peaks kuulma "
+"kolme heli seeriat.  Esimene tuleb paremast kõlarist, teine vasakust ja "
+"kolmas mõlemast korraga."
 
 #: ../src/modules/timezone.py:47
 msgid "Timezone"
@@ -337,6 +393,13 @@ msgid "Please set the timezone for the system."
 msgstr "Palun sea ajavöönd."
 
 #: ../src/modules/welcome.py:35
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Lõpuni on jäänud vaid mõned sammud veel.  Seadistusagent juhatab sind peamiste seadete panemisel. Jätkamiseks vajuta \"Edasi\"."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Lõpuni on jäänud vaid mõned sammud veel.  Seadistusagent juhatab sind "
+"peamiste seadete panemisel. Jätkamiseks vajuta \"Edasi\"."
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot ei käivitu kolmandal käivitustasemel"

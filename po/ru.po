@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 10:59+0400\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
@@ -76,10 +76,6 @@ msgstr ""
 "системе обработки ошибок по адресу http://www.redhat.com/bugzilla. \n"
 "Копия отладочной информации сохранена в %s \n"
 "Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot не может быть запущен на уровне запуска 3"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -199,10 +195,11 @@ msgid "System User"
 msgstr "Пользователь системы"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Для нормального использования (не административного) рекомендуется создать "
 "вашу персональную учетную запись.  Для создания учетной записи введите "
@@ -348,6 +345,13 @@ msgstr ""
 "Ваша система настроена и готова к работе.  Нажмите \"Далее\" в правом нижнем "
 "углу для продолжения."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Ваша система настроена и готова к работе.  Нажмите \"Далее\" в правом нижнем "
+"углу для продолжения."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Настройка сети"
@@ -408,6 +412,9 @@ msgstr ""
 "Осталось еще несколько шагов, после которых ваша система будет готова к "
 "работе.  В этом вам поможет Помощник по настройке.  Нажмите \"Далее\" для "
 "продолжения."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot не может быть запущен на уровне запуска 3"
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-05 12:18-0700\n"
 "Last-Translator: Николай Сърмаджиев <nikolayd@sarmadzhiev.tk>\n"
 "Language-Team: Български <bg@li.org>\n"
@@ -82,10 +82,6 @@ msgstr ""
 "система за грешки на адрес http://www.redhat.com/bugzilla. \n"
 "Копие на дебъг информацията е запазен на %s.\n"
 "Моля, закачете файла към описанието на грешката.\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot не може да се стартира в ниво (runlevel) 3"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -161,7 +157,11 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr "Моля поставете диска \"Ред Хат Ентърпрайс Линукс - Екстри\" за да инсталирате приставки(plug-ins) и приложения на други производители.  Може да поставите и диска \"Документация\" или всеки друг Ред Хат диск за инсталирането на допълнителен софтуер."
+msgstr ""
+"Моля поставете диска \"Ред Хат Ентърпрайс Линукс - Екстри\" за да "
+"инсталирате приставки(plug-ins) и приложения на други производители.  Може "
+"да поставите и диска \"Документация\" или всеки друг Ред Хат диск за "
+"инсталирането на допълнителен софтуер."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -174,7 +174,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"За да включите поддръжка на 32-битови приложения на Intel Itanium2 архитектури, трябва сега да инсталирате пакета Intel Execution Layer от диска с Екстри."
+"За да включите поддръжка на 32-битови приложения на Intel Itanium2 "
+"архитектури, трябва сега да инсталирате пакета Intel Execution Layer от "
+"диска с Екстри."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -189,7 +191,8 @@ msgstr ""
 "\" за продължаване."
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Авто-стартиращата програма не може да бъде намерена на CD-то. Натиснете "
 "\"Добре\" за продължаване."
@@ -199,10 +202,11 @@ msgid "System User"
 msgstr "Системен потребител"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Препоръчително е да създадете личен потребителски акаунт за нормална (не-"
 "административна) работа. За да създадете личен акаунт, задайте необходимата "
@@ -308,13 +312,17 @@ msgstr ""
 "невалидни символи в потребителското име."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -342,6 +350,13 @@ msgstr "Приключване на установяването"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"Вашата система е готова за използване. Моля натиснете бутона \"Следващ\" в "
+"долния десен ъгъл за да продължите."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Вашата система е готова за използване. Моля натиснете бутона \"Следващ\" в "
 "долния десен ъгъл за да продължите."
@@ -407,3 +422,5 @@ msgstr ""
 "Агента за установяване ще Ви преведе през базовите конфигурации. Моля, "
 "натиснете бутон \"Следващ\" в долния десен ъгъл за да продължите."
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot не може да се стартира в ниво (runlevel) 3"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-05 21:38+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -71,10 +71,6 @@ msgstr ""
 "chyb Red Hat na http://www.redhat.com/bugzilla. \n"
 "Kopie ladicího výpisu byla uložena do %s \n"
 "Připojte tento soubor k hlášení chyby. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot neběží v runlevelu 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -150,7 +146,10 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr "Pro instalaci zásuvných modulů a aplikací od třetích stran prosím vložte CD označené \"Red Hat Enterprise Linux Extras\". Teď také můžete nainstalovat jiný software vložením CD s dokumentací nebo jiných CD od Red Hat."
+msgstr ""
+"Pro instalaci zásuvných modulů a aplikací od třetích stran prosím vložte CD "
+"označené \"Red Hat Enterprise Linux Extras\". Teď také můžete nainstalovat "
+"jiný software vložením CD s dokumentací nebo jiných CD od Red Hat."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -160,7 +159,12 @@ msgid ""
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
-msgstr "\n\nPro umožnění běhové podpory dvaatřicetibitových aplikací na architektuře Intel Itanium2 musíte nyní nainstalovat balíček Intel Execution Layer z CD Extras."
+msgstr ""
+"\n"
+"\n"
+"Pro umožnění běhové podpory dvaatřicetibitových aplikací na architektuře "
+"Intel Itanium2 musíte nyní nainstalovat balíček Intel Execution Layer z CD "
+"Extras."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -184,10 +188,11 @@ msgid "System User"
 msgstr "Uživatel systému"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Doporučuje se pro normální použití (ne správu systému) vytvořit osobní "
 "uživatelský účet. Uživatelský účet vytvoříte po zadání požadovaných "
@@ -331,6 +336,13 @@ msgstr ""
 "Váš systém je nyní nastaven a připraven k použití. Pokračujte prosím "
 "kliknutím na tlačítko \"Další\" v pravém dolním rohu."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Váš systém je nyní nastaven a připraven k použití. Pokračujte prosím "
+"kliknutím na tlačítko \"Další\" v pravém dolním rohu."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Nastavení sítě"
@@ -391,6 +403,9 @@ msgstr ""
 "Před použitím vašeho systému je třeba provést ještě několik kroků. Setup "
 "Agent vás nyní provede základním nastavením. Pokračujte prosím kliknutím na "
 "tlačítko \"Další\" v pravém dolním rohu."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot neběží v runlevelu 3."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 09:03+0200\n"
 "Last-Translator: Tom Berner <tom@man.lodz.pl>\n"
 "Language-Team: POLISH <pl@li.org>\n"
@@ -74,10 +74,6 @@ msgstr ""
 "firmy Red Hat (http://www.redhat.com/bugzilla. \n"
 "Kopia informacji o błędzie została zapisana do %s \n"
 "Upewnij się czy załączyłeś ten plik do raportu. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot nie jest uruchamiany na poziomie 3"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -155,9 +151,9 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Aby zainstalować aplikacje i plugin'y innych producentów proszę włożyć dysk "
-"opisany jako  \"Red Hat Enterprise Linux Extras\".  Można również włożyć dysk "
-"z dokumentacją lub inny dostarczony przez Red Hat aby zainstalować dodatkowe "
-"oprogramowanie."
+"opisany jako  \"Red Hat Enterprise Linux Extras\".  Można również włożyć "
+"dysk z dokumentacją lub inny dostarczony przez Red Hat aby zainstalować "
+"dodatkowe oprogramowanie."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -170,9 +166,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Aby włączyć wsparcie wykonywania aplikacji 32 bitowych w architekturze "
-"Intel Itanium2 trzeba zainstalować pakiet Intel Execution Layer z dysku "
-"z dodatkami (Extras) do systemu."
+"Aby włączyć wsparcie wykonywania aplikacji 32 bitowych w architekturze Intel "
+"Itanium2 trzeba zainstalować pakiet Intel Execution Layer z dysku z "
+"dodatkami (Extras) do systemu."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -187,7 +183,8 @@ msgstr ""
 "kontynuować."
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Program automatycznego uruchomienia nie został znaleziony na płycie. Kliknij "
 "\"OK\" aby kontynuować."
@@ -197,10 +194,11 @@ msgid "System User"
 msgstr "Użytkownik systemowy"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Zalecamy stworzenie prywatnego konta (nie administratora) do codziennej "
 "pracy. Aby stworzyć prywatne konto, podaj wymagane informacje."
@@ -273,14 +271,16 @@ msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
+msgstr ""
+"Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
 
 #: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr "Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
+msgstr ""
+"Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -294,15 +294,18 @@ msgstr "Nazwa użytkownika '%s' zawiera duże litery, których nie może zawiera
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
+msgstr ""
+"Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Hasło zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nazwisko '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/date.py:47
@@ -329,6 +332,13 @@ msgstr "Koniec instalacji"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"System został zainstalowany i jest już gotowy do użycia. Kliknij \"Dalej\" w "
+"dolnym prawym rogu okna żeby kontynuować."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "System został zainstalowany i jest już gotowy do użycia. Kliknij \"Dalej\" w "
 "dolnym prawym rogu okna żeby kontynuować."
@@ -394,3 +404,5 @@ msgstr ""
 "obecnie nie posiada poradnika o podstawowej konfiguracji.Kliknij \"Dalej\" w "
 "dolnym prawym rogu okna żeby kontynuować."
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot nie jest uruchamiany na poziomie 3"

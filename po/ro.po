@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-06-23 13:52+0300\n"
 "Last-Translator: Răzvan Corneliu C.R. VILT <razvan.vilt@linux360.ro>\n"
 "Language-Team: Romanian <ro-team@linux360.ro>\n"
@@ -74,10 +74,6 @@ msgstr ""
 "http://www.redhat.com/bugzilla.O copie a mesajelor de diagnosticare a fost "
 "salvată în %s \n"
 "Aveţi grijă să ataşaţi acest fişier la raportul d-voastră. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr ""
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -190,10 +186,11 @@ msgid "System User"
 msgstr "Serviciile sistemului"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Este recomandat să creaţi un cont de utilizator normal (non-administrator) "
 "pentruuz personal.  Pentru a creea un astfel de cont, introduceţi "
@@ -339,6 +336,13 @@ msgstr "Terminaţi configurarea"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"Sistemul d-voastră este acum gata pentru utilizare.  Vă rugăm daţi click pe "
+"butonul \"Next\" din colţul dreapta jos pentru a continua."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Sistemul d-voastră este acum gata pentru utilizare.  Vă rugăm daţi click pe "
 "butonul \"Next\" din colţul dreapta jos pentru a continua."

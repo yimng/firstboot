@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2003-12-15 22:29+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -70,10 +70,6 @@ msgstr ""
 "sustava za praćenje grešaka na http://www.redhat.com/bugzilla. \n"
 "Kopija izlaza je spremljena u %s \n"
 "Tu datoteku prikvačite uz vaš izvještaj o grešci. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr ""
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -192,10 +188,11 @@ msgid "System User"
 msgstr "Servisi sustava "
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Preporučeno je stvaranje osobnog korisničkog računa za normalnu (ne-"
 "administrativnu) uporabu. Da biste stvorili osobni račun, morate "
@@ -337,6 +334,13 @@ msgstr "Završi postavljanje"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"Vaš sustav je podešen i spreman za uporabu. Za nastavak kliknite na gumb "
+"\"Sljedeći\" u donjem desnom kutu."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Vaš sustav je podešen i spreman za uporabu. Za nastavak kliknite na gumb "
 "\"Sljedeći\" u donjem desnom kutu."

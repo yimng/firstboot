@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -75,10 +75,6 @@ msgstr ""
 "ติดตามข้อผิดพลาดของเรดแฮทที่ http://www.redhat.com/bugzilla \n"
 "ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr ""
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -186,10 +182,11 @@ msgid "System User"
 msgstr "ผู้ใช้ระบบ"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "ขอแนะนำให้คุณสร้างบัญชีผู้ใช้ส่วนตัว สำหรับใช้ในงานทั่วไป (ที่ไม่เกี่ยวกับการบริหารระบบ) "
 "สำหรับการสร้างบัญชีผู้ใช้ส่วนตัว ให้กรอกข้อมูลที่จำเป็นเหล่านี้"
@@ -319,6 +316,13 @@ msgstr "ติดตั้งเสร็จแล้ว"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
+"\" ด้านล่างขวาเพื่อทำงานต่อไป"
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
 "\" ด้านล่างขวาเพื่อทำงานต่อไป"

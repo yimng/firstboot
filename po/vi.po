@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2003-09-21 15:54+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -71,10 +71,6 @@ msgstr ""
 "lỗi Red Hat tại http://www.redhat.com/bugzilla.\n"
 "Một bản sao thông tin debug được lưu vào %s\n"
 "Nhớ gửi kèm tập tin này với bản báo cáo lỗi.\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot không chạy trong runlevel 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -191,10 +187,11 @@ msgid "System User"
 msgstr ""
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Bạn được khuyến cáo nên tạo một tài khoản cá nhân cho những công việc bình "
 "thường (không phải những công việc quản lý hệ thống). Để tạo tài khoản cá "
@@ -332,6 +329,13 @@ msgstr ""
 "Hệ thống bạn đã được cài đặt xong và có thể được sử dụng. Vui lòng nhấn nút "
 "\"Tới\" ở góc phải, dưới để tiếp tục."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Hệ thống bạn đã được cài đặt xong và có thể được sử dụng. Vui lòng nhấn nút "
+"\"Tới\" ở góc phải, dưới để tiếp tục."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Thiết lập Mạng"
@@ -392,6 +396,9 @@ msgstr ""
 "Bạn cần thực hiện vài bước nữa, trước khi hệ thống có thể sẵn sàng hoạt "
 "động. Bây giờ, Trợ tá Cài đặt Red Hat sẽ hướng dẫn bạn thực hiện các cấu "
 "hình cơ bản. Vui lòng nhấn nút \"Tới\" tại góc dưới, bên phải để tiếp tục."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot không chạy trong runlevel 3."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

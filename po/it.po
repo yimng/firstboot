@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-11 10:32+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -76,10 +76,6 @@ msgstr ""
 "dei bug di Red Hat all'indirizzo http://www.redhat.com/bugzilla. \n"
 "Una copia del risultato dell'operazione di debug ่ stata salvata in %s.\n"
 "Accertarsi di allegare il file al report del bug. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot non puรณ essere eseguito nel runlevel 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -156,9 +152,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Inserite il disco \"Red Hat Enterprise Linux Extra\" per permettere l'installazione delle "
-"applicazioni e dei plug-in di terzi. Potete inserire anche il disco di Documentazione, o "
-"altri dischi di Red Hat, per poter installare del software aggiuntivo."
+"Inserite il disco \"Red Hat Enterprise Linux Extra\" per permettere "
+"l'installazione delle applicazioni e dei plug-in di terzi. Potete inserire "
+"anche il disco di Documentazione, o altri dischi di Red Hat, per poter "
+"installare del software aggiuntivo."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -171,8 +168,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Per abilitare il supporto 'runtime' delle applicazioni a 32-bit sull'architettura Intel Itanium2, "
-"installate ora il pacchetto Intel Execution Layer contenuto nel disco Extra."
+"Per abilitare il supporto 'runtime' delle applicazioni a 32-bit "
+"sull'architettura Intel Itanium2, installate ora il pacchetto Intel "
+"Execution Layer contenuto nel disco Extra."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -187,18 +185,21 @@ msgstr ""
 "per continuare."
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Il programma autorun non ่ stato trovato sul CD. Premi \"OK\" per continuare."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Il programma autorun non ่ stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
 msgstr "Utente del sistema"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "ษ consigliato creare un account utente personale per un uso (non-"
 "amministrativo) normale.  Per creare un account personale, fornire le "
@@ -253,11 +254,13 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "La password non ้ corretta.  Si prega di riprovare ad inserire la password."
+msgstr ""
+"La password non ้ corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La password ้ troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr ""
+"La password ้ troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -305,14 +308,16 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -341,6 +346,13 @@ msgstr "Termina installazione"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"Il vostro sistema แ stato impostato ed ้ pronto per l'uso.  Si prega di fare "
+"clic sul pulsante \"Avanti\" nell'angolo basso a destra per continuare. "
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Il vostro sistema แ stato impostato ed ้ pronto per l'uso.  Si prega di fare "
 "clic sul pulsante \"Avanti\" nell'angolo basso a destra per continuare. "
@@ -407,6 +419,9 @@ msgstr ""
 "prima che il sistema sia pronto.  Red Hat Setup Agent guida l'utente nel "
 "processo di configurazione di base.  Fare clic sul pulsante \"Successivo\" "
 "nella parte inferiore destra per continuare."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot non puรณ essere eseguito nel runlevel 3."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
@@ -567,4 +582,3 @@ msgstr ""
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
-

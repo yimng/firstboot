@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 18:16+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <Indlinux-hindi@lists.sourceforge.net>\n"
@@ -72,10 +72,6 @@ msgstr ""
 "http://www.redhat.com/bugzilla पर एक दोष भेजें।दोषमार्जन \n"
 "निर्गत की एक छायाप्रति, %s में सुरक्षित किया गया। उस संचिका\n"
 " को दोष सूचना के साथ भेजना न भूलें।\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot runlevel 3 में काम नहीं करता है."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -151,7 +147,10 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr "तीसरी पार्टी plug-ins और अनुप्रयोग के अधिष्ठापन की अनुमति के लिए \"Red Hat Enterprise Linux Extras\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त साफ्टवेयर के अधिष्ठापन के लिए ग्रंथन डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
+msgstr ""
+"तीसरी पार्टी plug-ins और अनुप्रयोग के अधिष्ठापन की अनुमति के लिए \"Red Hat "
+"Enterprise Linux Extras\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त साफ्टवेयर "
+"के अधिष्ठापन के लिए ग्रंथन डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -164,7 +163,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 architecture पर 32-bit अनुप्रयोग के लिए, आप अब अतिरिक्त डिस्क से अवश्य Intel Execution Layer संकुल अधिष्ठापित करें."
+"Intel Itanium2 architecture पर 32-bit अनुप्रयोग के लिए, आप अब अतिरिक्त डिस्क से "
+"अवश्य Intel Execution Layer संकुल अधिष्ठापित करें."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -179,7 +179,8 @@ msgstr ""
 "के लिए दबाएँ।"
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "सीडी पर स्वतःकार्य प्रोग्राम नहीं पाया जा सकता है. जारी रखने के लिए \"OK\" को क्लिक "
 "करें."
@@ -189,10 +190,11 @@ msgid "System User"
 msgstr "सिस्टम उपभोक्ता"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "यह अनुमोदित है कि आप साधारण (अप्रशासनिक) प्रयोग के लिए एक व्यक्तिगत उपयोगकर्ता लेखा "
 "बनाएँ। एक व्यक्तिगत लेखा बनाने के लिए, माँगी गई जानकारी को दें।"
@@ -291,15 +293,18 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "'%s' उपयोगकर्तानाम में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
+msgstr ""
+"'%s' उपयोगकर्तानाम में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "शब्दकूट में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "'%s' नाम में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
 #: ../src/modules/date.py:47
@@ -326,6 +331,13 @@ msgstr "व्यवस्था समाप्त करें"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"आपका तंञ की अब व्यवस्था हो गई है और उपयोग के लिए तैयार है। कृपया निचे दाँयें कोने में  "
+"\"अगला\" बटन दबाकर कर सतत करें।"
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "आपका तंञ की अब व्यवस्था हो गई है और उपयोग के लिए तैयार है। कृपया निचे दाँयें कोने में  "
 "\"अगला\" बटन दबाकर कर सतत करें।"
@@ -391,3 +403,5 @@ msgstr ""
 "आपको कुछ मौलिक विन्यास के माध्यम से आपका मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे "
 "दांयें कोने में \"अगला\" बटन दबाकर कर सतत करें."
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot runlevel 3 में काम नहीं करता है."

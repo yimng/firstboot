@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-05 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <ra@ra.is>\n"
@@ -71,10 +71,6 @@ msgstr ""
 "Red Hat villuvefnum á http://www.redhat.com/bugzilla. \n"
 "Afrit af villumeldingunum var vistað í %s \n"
 "Mundi að hengja hana við villutilkynninguna. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot keyrir ekki í keyrslustigi 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -153,8 +149,8 @@ msgid ""
 msgstr ""
 "Vinsamlega láttu diskinn merktann \"Red Hat Enterprise Linux Extras\" í "
 "drifið núna til að setja upp hugbúnað frá þriðja aðila.  Þú getur einnig "
-"sett inn handbókardiskinn eða aðra diska frá Red Hat til að setja upp "
-"meiri hugbúnað."
+"sett inn handbókardiskinn eða aðra diska frá Red Hat til að setja upp meiri "
+"hugbúnað."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -167,9 +163,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Ef þú vilt virkja stuðning við 32 bita forrit á Intel Itanium2 vélum "
-"skaltu setja inn \"Intel Execution Layer\" pakkann af aukaefnis "
-"disknum núna."
+"Ef þú vilt virkja stuðning við 32 bita forrit á Intel Itanium2 vélum skaltu "
+"setja inn \"Intel Execution Layer\" pakkann af aukaefnis disknum núna."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -195,10 +190,11 @@ msgid "System User"
 msgstr "Kerfisnotandi"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Við mælum með að þú búir til notandaaðgang handa þér fyrir alla almenna "
 "vinnslu. Til að búa til notandaaðgang þarftu að gefa upp umbeðnar "
@@ -344,6 +340,13 @@ msgstr ""
 "Vélin þín er nú uppsett og tilbúin til notkunar. Vinsamlegast smelltu á "
 "\"Áfram\" hnappinn í hægra horninu hér að neðan til að halda áfram."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Vélin þín er nú uppsett og tilbúin til notkunar. Vinsamlegast smelltu á "
+"\"Áfram\" hnappinn í hægra horninu hér að neðan til að halda áfram."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Stilla net"
@@ -405,3 +408,6 @@ msgstr ""
 "tilbúin til notkunar. Uppsetningarforritið mun nú leiða þig í gegnum það sem "
 "eftir er að stilla. Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra "
 "horninu hér að neðan til að halda áfram."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot keyrir ekki í keyrslustigi 3."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-10 16:19+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <<dansk@klid.dk>>\n"
@@ -76,10 +76,6 @@ msgstr ""
 "fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
 "En kopi af fejlsøgningsuddata er gemt i %s. \n"
 "Vær sød at vedlægge denne fil til fejlrapporten. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot kører ikke i kørselsnineau 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -156,10 +152,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Indsæt venligst skiven mærket \"Red Hat Enterprise Linux Extras\" for at tillade "
-"installation af tredjeparts-moduler og -programmer. Du kan også "
-"indsætte Dokumentationsskiven, eller andre Red Hat-leverede disketter for at installere "
-"flere programmer på dette tidspunkt."
+"Indsæt venligst skiven mærket \"Red Hat Enterprise Linux Extras\" for at "
+"tillade installation af tredjeparts-moduler og -programmer. Du kan også "
+"indsætte Dokumentationsskiven, eller andre Red Hat-leverede disketter for at "
+"installere flere programmer på dette tidspunkt."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -172,8 +168,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"For at aktivere køretidsunderstøttelse for 32-bit programmer på Intel Itanium2 "
-"arkitekturen skal du installere Intel Execution Layer-pakken fra "
+"For at aktivere køretidsunderstøttelse for 32-bit programmer på Intel "
+"Itanium2 arkitekturen skal du installere Intel Execution Layer-pakken fra "
 "Extra-skiven nu."
 
 #: ../src/modules/additional_cds.py:111
@@ -189,7 +185,8 @@ msgstr ""
 "for at fortsætte"
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Autorun-programmet kan ikke findes på cd-skiven. Klik på \"O.k.\" for at "
 "fortsætte."
@@ -199,10 +196,11 @@ msgid "System User"
 msgstr "System-bruger"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Det anbefales at du opretter en personlig brugerkonto for normal (ikke-"
 "administrativ) brug. For at oprette en personlig konto skal du opgive de "
@@ -303,15 +301,19 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
+msgstr ""
+"Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Navnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/date.py:47
@@ -338,6 +340,13 @@ msgstr "Færdiggør opsætning"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"Dit system er nu sat op og klar til brug. Klik på 'Næste'-knappen i det "
+"nederste højre hjørne for at fortsætte."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Dit system er nu sat op og klar til brug. Klik på 'Næste'-knappen i det "
 "nederste højre hjørne for at fortsætte."
@@ -404,6 +413,9 @@ msgstr ""
 "konfigurering. Klik på 'Næste'-knappen i det nederste højre hjørne for at "
 "fortsætte."
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot kører ikke i kørselsnineau 3."
+
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
@@ -428,4 +440,3 @@ msgstr ""
 
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "Kontakter NTP-server. Vent venligst..."
-

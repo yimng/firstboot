@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 11:55+0200\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -73,10 +73,6 @@ msgstr ""
 "hibakövető rendszerben, ezen a címen: http://www.redhat.com/bugzilla. \n"
 "A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
 "Kérjük csatolja ezt a fájlt a hibabejelentéshez. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "A Firstboot program nem fut le 3-as futási szinten."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -153,10 +149,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Kérem helyezze be a \"Red Hat Enterprise Linux Extras\" feliratú lemezt "
-"a más gyártótól származó bővítőmodulok és alkalmazások telepítéséhez. Más telepítési "
-"lemez is megadható (például a dokumentáció vagy a Red Hat által készített valamilyen más "
-"szoftver lemeze)."
+"Kérem helyezze be a \"Red Hat Enterprise Linux Extras\" feliratú lemezt a "
+"más gyártótól származó bővítőmodulok és alkalmazások telepítéséhez. Más "
+"telepítési lemez is megadható (például a dokumentáció vagy a Red Hat által "
+"készített valamilyen más szoftver lemeze)."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -169,9 +165,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Ha engedélyezni szeretné a 32 bites alkalmazások futásidejű támogatását Intel Itanium2 "
-"rendszeren, akkor most telepítse fel az Intel Execution Layer csomagot "
-"az Extras lemezről."
+"Ha engedélyezni szeretné a 32 bites alkalmazások futásidejű támogatását "
+"Intel Itanium2 rendszeren, akkor most telepítse fel az Intel Execution Layer "
+"csomagot az Extras lemezről."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -197,10 +193,11 @@ msgid "System User"
 msgstr "Rendszerfelhasználó"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Érdemes legalább egy normál (nem rendszergazdai jogú) felhasználónevet "
 "létrehozni. Új név létrehozásához be kell írni a szükséges adatokat."
@@ -347,6 +344,13 @@ msgstr ""
 "A rendszer telepítése befejeződött. Továbblépéshez kattintson a \"Tovább\" "
 "gombra a jobb alsó sarokban."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"A rendszer telepítése befejeződött. Továbblépéshez kattintson a \"Tovább\" "
+"gombra a jobb alsó sarokban."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Hálózati beállítások"
@@ -408,3 +412,5 @@ msgstr ""
 "Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
 "kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "A Firstboot program nem fut le 3-as futási szinten."

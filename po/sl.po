@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-03-28 15:19+0200\n"
 "Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
 "Language-Team: slovenščina <translation-team-sl@lists.sourceforge.net>\n"
@@ -76,10 +76,6 @@ msgstr ""
 "http://www.redhat.com/bugzilla.  Izvod razhroščevalnega \n"
 "izhoda se je shranil v %s. Zagotovo pripnite tudi \n"
 "to datoteko.\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot ne teče v ravni teka sistema 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -191,10 +187,11 @@ msgid "System User"
 msgstr "Storitve Sistema"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Priporoča se, da ustvarite osebni uporabniški račun za običajno (ne-"
 "skrbniško) rabo. Za to podajte zahtevane podatke."
@@ -338,6 +335,13 @@ msgstr ""
 "Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite gumb "
 "\"Naprej\" v spodnjem desnem kotu."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite gumb "
+"\"Naprej\" v spodnjem desnem kotu."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Nastavitev omrežja"
@@ -398,6 +402,9 @@ msgstr ""
 "Preden bo sistem pripravljen za rabo, morate narediti še nekaj korakov. "
 "Nastavitveni agent vas bo vodil po nekaj osnovnih nastavitvah. Za "
 "nadaljevanje kliknite gumb \"Naprej\" v spodnjem desnem kotu."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot ne teče v ravni teka sistema 3."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

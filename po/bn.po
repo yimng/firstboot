@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 11:40+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -75,10 +75,6 @@ msgstr ""
 "রেডহ্যাট ত্রুটি অনুসন্ধান সিস্টেমে একটি ত্রুটি প্রতিবেদন পেশ করুন।\n"
 "এক কপি debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
 "ঐ ফাইলটি ত্রুটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot রানলেভেল ৩ -এ চালানো সম্ভব নয়।"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -159,10 +155,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"তৃতীশ-পক্ষের প্তাগ-ইন এবং অ্যাপ্লিকেশন ইনস্টল করবার জন্য \"Red Hat Enterprise Linux Extras\" "
-"নামক ডিস্কটি অনুগ্রহ করে প্রবেশ করান।  অতিরিক্ত সফ্টওয়ের ইনস্টল করবার জন্য "
-"আপনি এইবার ডকুমেন্টেশন ডিস্ক, অথবা Red-Hat-র উপলব্ধ করা অন্যান্য "
-"ডিস্কও প্রবেশ করাতে পারন।"
+"তৃতীশ-পক্ষের প্তাগ-ইন এবং অ্যাপ্লিকেশন ইনস্টল করবার জন্য \"Red Hat Enterprise Linux "
+"Extras\" নামক ডিস্কটি অনুগ্রহ করে প্রবেশ করান।  অতিরিক্ত সফ্টওয়ের ইনস্টল করবার জন্য "
+"আপনি এইবার ডকুমেন্টেশন ডিস্ক, অথবা Red-Hat-র উপলব্ধ করা অন্যান্য ডিস্কও প্রবেশ করাতে "
+"পারন।"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -175,9 +171,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 আর্কিটেকচারের উপর ৩২-বিট অ্যাপ্লিকেশনের জন্য সমর্থন সক্রিয় "
-"সক্রিয় করবার জন্য, Extras ডিস্কটি থেকে Intel Execution Layer "
-" প্যাকেজটি আপনার ইনস্টল করা আবশ্যক।"
+"Intel Itanium2 আর্কিটেকচারের উপর ৩২-বিট অ্যাপ্লিকেশনের জন্য সমর্থন সক্রিয় সক্রিয় "
+"করবার জন্য, Extras ডিস্কটি থেকে Intel Execution Layer  প্যাকেজটি আপনার ইনস্টল "
+"করা আবশ্যক।"
 
 # modified by RB
 #: ../src/modules/additional_cds.py:111
@@ -206,10 +202,11 @@ msgstr "সিস্টেম ব্যবহারকারী"
 
 # modified by RB
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "সাধারন কাজে ব্যবহার (non-administrative) করার জন্য ব্যক্তিগত অ্যাকাউন্ট তৈরি করার "
 "উপদেশ দেয়া হচ্ছে।ব্যক্তিগত অ্যাকাউন্ট তৈরি করার জন্য সকল প্রয়োজনীয় তথ্য উপলব্ধ করুন।"
@@ -363,6 +360,14 @@ msgstr ""
 "আপনার সিস্টেমটি কাজের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের কোনায় "
 "অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
 
+# modified by RB
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"আপনার সিস্টেমটি কাজের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের কোনায় "
+"অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "নেটওয়ার্ক সেটাপ"
@@ -427,6 +432,9 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে সেটাপ এজেন্ট আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot রানলেভেল ৩ -এ চালানো সম্ভব নয়।"
 
 # modified by RB
 #~ msgid ""

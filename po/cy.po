@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.cy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-03-01 17:42+0000\n"
 "Last-Translator: Owain Green <owaing@oceanfree.net>\n"
 "Language-Team: Cymraeg <Cy@li.org>\n"
@@ -74,10 +74,6 @@ msgstr ""
 "'firstboot' yn system olrhain namau Red Hat yn\n"
 "http://www.redhat.com/bugzilla. Cadwyd copi o'r allbwn \n"
 "dadnamu yn %s. Cofiwch atodi'r ffeil hon at yr adroddiad nam. \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Nid yw firstboot yn rhedeg yn runlevel 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -188,10 +184,11 @@ msgstr "Defnyddiwr System"
 
 # Bug in the English - should be "normal usage"
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "Argymellir eich bod yn creu cyfrif defnyddiwr personol ar gyfer defnydd "
 "arferol (nid gweinyddol). I greu cyfrif bersonol, darparwch y wybodaeth a "
@@ -339,6 +336,13 @@ msgstr ""
 "Mae eich system nawr wedi ei osod ac yn barod i'w defnyddio. Cliciwch y "
 "botwm \"Nesaf\" yn y gornel dde waelod i barhau."
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Mae eich system nawr wedi ei osod ac yn barod i'w defnyddio. Cliciwch y "
+"botwm \"Nesaf\" yn y gornel dde waelod i barhau."
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "Gosod Rhwydwaith"
@@ -400,6 +404,9 @@ msgstr ""
 "defnyddio. Bydd yr Asiant Gosod yn eich arwain chi drwy'r ychydig gyflunio "
 "sylfaenol nawr.  Cliciwch y botwm \"Nesaf\" yn y gornel chwith waelod i "
 "barhau."
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Nid yw firstboot yn rhedeg yn runlevel 3."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

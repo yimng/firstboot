@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-12 11:38+1000\n"
 "Last-Translator: David Barzilay <barzilay@redhat.com>\n"
 "Language-Team: Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
@@ -79,10 +79,6 @@ msgstr ""
 "de gestão de erros do Red Hat em http://www.redhat.com/bugzilla. \n"
 "Uma cópia da saída de depuração ('debug output') foi gravada em %s \n"
 "Certifique-se de anexar este arquivo ao relatório de erro ('bug report'). \n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "O firstboot não roda no nível de execução 3."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -159,10 +155,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Por favor, insira o disco \"Red Hat Enterprise Linux Extras\" para "
-"permitir a instalação de aplicações e plug-ins de terceiros.  Você "
-"pode também inserir o disco de Documentação ou outros discos "
-"providos pela Red Hat para instalar software adicional neste momento."
+"Por favor, insira o disco \"Red Hat Enterprise Linux Extras\" para permitir "
+"a instalação de aplicações e plug-ins de terceiros.  Você pode também "
+"inserir o disco de Documentação ou outros discos providos pela Red Hat para "
+"instalar software adicional neste momento."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -175,8 +171,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Para permitir o suporte da execução de aplicações de 32 bits na arquitetura Itanium2 "
-"da Intel, você deve instalar o pacote Execution Layer da Intel do disco Extras agora."
+"Para permitir o suporte da execução de aplicações de 32 bits na arquitetura "
+"Itanium2 da Intel, você deve instalar o pacote Execution Layer da Intel do "
+"disco Extras agora."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -191,7 +188,8 @@ msgstr ""
 "clique \"OK\" para continuar."
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "O programa autorun não pode ser encontrado no CD. Clique em \"OK\" para "
 "continuar."
@@ -201,10 +199,11 @@ msgid "System User"
 msgstr "Usuário do sistema"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "É recomendado que você crie uma conta de usuário normal (não-"
 "administrativa).  Para criar uma conta pessoal, indique as informações "
@@ -310,12 +309,15 @@ msgstr ""
 "apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "O nome '%s' contém caracteres inválidos.  Por favor use apenas caracteres "
 "ASCII."
@@ -334,7 +336,8 @@ msgstr "Display"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Por favor selecione a resolução e profundidade de cor que deseja utilizar"
+msgstr ""
+"Por favor selecione a resolução e profundidade de cor que deseja utilizar"
 
 #: ../src/modules/finished.py:21
 msgid "Finish Setup"
@@ -344,6 +347,13 @@ msgstr "Terminar a Configuração"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr ""
+"Seu sistema agora está configurado e pronto para ser usado.  Por favor "
+"clique no botão \"Próximo\" no canto inferior direito para continuar."
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Seu sistema agora está configurado e pronto para ser usado.  Por favor "
 "clique no botão \"Próximo\" no canto inferior direito para continuar."
@@ -410,6 +420,9 @@ msgstr ""
 "através de algumas configurações básicas.  Por favor clique no botão "
 "\"Próximo\" no canto inferior direito para continuar."
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "O firstboot não roda no nível de execução 3."
+
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
@@ -434,4 +447,3 @@ msgstr ""
 
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "Contactando o servidor NTP.  Por favor aguarde..."
-

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 22:39+0900\n"
 "Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
 "Language-Team:  <ja@li.org>\n"
@@ -77,10 +77,6 @@ msgstr ""
 "'firstboot'へバグ報告を提出して下さい。\n"
 "デバッグ出力のコピーは%sに保存してあります。\n"
 "バグ報告には必ず、このファイルを添付して下さい。\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot はランレベル 3 では動作しません。"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -157,10 +153,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"サードパーティ製のプラグインやアプリケーションのインストールをするために \"Red Hat "
-"Enterprise Linux Extras\" というラベルのディスクを入れてください。この際、ドキュ"
-"メントディスクや追加ソフトのインストールのために Red Hat の提供したディスクを挿入で"
-"きます。"
+"サードパーティ製のプラグインやアプリケーションのインストールをするために "
+"\"Red Hat Enterprise Linux Extras\" というラベルのディスクを入れてください。"
+"この際、ドキュメントディスクや追加ソフトのインストールのために Red Hat の提供"
+"したディスクを挿入できます。"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -173,8 +169,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Intel の Itanium2 アーキテクチャーで 32-bit アプリケーションのランタイムサポートする"
-"ため、追加ディスクから Intel Execution Layer パッケージをインストールしてください。"
+"Intel の Itanium2 アーキテクチャーで 32-bit アプリケーションのランタイムサ"
+"ポートするため、追加ディスクから Intel Execution Layer パッケージをインストー"
+"ルしてください。"
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -200,10 +197,11 @@ msgid "System User"
 msgstr "システムユーザー"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "通常(管理業務以外)の使用には、個人的なユーザーアカウントを作成される事をお勧"
 "めします。個人アカウントを作成するには、要求される情報を用意して下さい。"
@@ -346,6 +344,13 @@ msgstr ""
 "システムが設定できましたので使用できる状態になりました。右下隅にある \"次へ"
 "\" ボタンをクリックして続けてください。"
 
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"システムが設定できましたので使用できる状態になりました。右下隅にある \"次へ"
+"\" ボタンをクリックして続けてください。"
+
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "ネットワーク設定"
@@ -406,6 +411,9 @@ msgstr ""
 "システムが使用できるようになるまでもう少しステップがあります。セットアップ"
 "エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
 "\"次へ\" ボタンをクリックして続けて下さい。"
+
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot はランレベル 3 では動作しません。"
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

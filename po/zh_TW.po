@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 12:40-0400\n"
+"POT-Creation-Date: 2004-10-15 13:47-0400\n"
 "PO-Revision-Date: 2004-10-06 10:43+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Traditional Chinese <zh@li.org>\n"
@@ -76,10 +76,6 @@ msgstr ""
 "的程式錯誤追蹤系統 - http://www.redhat.com/bugzilla。\n"
 "除錯輸出的一個複本已經儲存到 %s \n"
 "請確定有附上這個檔案到程式錯誤報告。\n"
-
-#: ../src/firstboot.py:135
-msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot 不能在執行等級三之下運行。"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -155,7 +151,10 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr "請放入「Red Hat Enterprise Linux Extras」光碟，以安裝協力廠商的嵌入程式與應用程式。您也可以放入文件光碟，或其他 Red Hat 所提供的光碟，好一併安裝其他額外的軟體。"
+msgstr ""
+"請放入「Red Hat Enterprise Linux Extras」光碟，以安裝協力廠商的嵌入程式與應用"
+"程式。您也可以放入文件光碟，或其他 Red Hat 所提供的光碟，好一併安裝其他額外的"
+"軟體。"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -168,7 +167,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"要在英特爾（Intel）Itanium2 架構下，支援 32 位元的應用程式，您現在必須從 Extras 光碟中安裝 Intel Execution Layer 套件。"
+"要在英特爾（Intel）Itanium2 架構下，支援 32 位元的應用程式，您現在必須從 "
+"Extras 光碟中安裝 Intel Execution Layer 套件。"
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -181,7 +181,8 @@ msgid ""
 msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並按下『確定』以繼續。"
 
 #: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續。"
 
 #: ../src/modules/create_user.py:39
@@ -189,10 +190,11 @@ msgid "System User"
 msgstr "系統使用者"
 
 #: ../src/modules/create_user.py:65
+#, fuzzy
 msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 "強烈建議您建立一個個人的使用者帳號以做一般用途（非系統管理）， 如要建立一個個"
 "人的帳號，請提供所要求的資訊。"
@@ -288,12 +290,14 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:47
@@ -320,6 +324,11 @@ msgstr "完成設定"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
+msgstr "現在您的系統已經設定好可以使用了，請點選右下角的『下一步』按鈕繼續。"
+
+#: ../src/modules/finished.py:38
+#, fuzzy
+msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr "現在您的系統已經設定好可以使用了，請點選右下角的『下一步』按鈕繼續。"
 
 #: ../src/modules/networking.py:44
@@ -382,3 +391,5 @@ msgstr ""
 "在使用您的系統之前，要先完成幾個步驟。 設定代理程式現在將引導您做一些基本的設"
 "定。 請點選在右下角的 『下一步』 按鈕以繼續。"
 
+#~ msgid "Firstboot does not run in runlevel 3."
+#~ msgstr "Firstboot 不能在執行等級三之下運行。"
