@@ -25,23 +25,23 @@ msgstr "Ліцензійна угода"
 
 #: ../src/eula_strings.py:11
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "_Так, я погоджуюсь з ліцензійною угодою"
 
 #: ../src/eula_strings.py:12
 msgid "N_o, I do not agree"
-msgstr ""
+msgstr "Ні, я не згоден"
 
 #: ../src/eula_strings.py:13
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "Бажаєте перечитати ліцензійну угоду ще рах?"
 
 #: ../src/eula_strings.py:14
 msgid "_Reread license"
-msgstr ""
+msgstr "_Перечитати ліцензію"
 
 #: ../src/eula_strings.py:15
 msgid "_Shut down"
-msgstr ""
+msgstr "_Вимкнути"
 
 #. !/usr/bin/python2.2
 #. #
@@ -50,7 +50,7 @@ msgstr ""
 #: ../src/exceptionWindow.py:31
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Виникла помилка у модулі %s."
 
 #: ../src/exceptionWindow.py:36
 #, python-format
@@ -59,6 +59,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Через проблему у модулі %s, \n"
+"Red Hat Setup Agent не завантажить цей модуль\n"
+"та спробує завантажити решту модулів."
 
 #: ../src/exceptionWindow.py:40
 #, python-format
@@ -68,6 +71,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Будь ласка, заповніть повідомлення про помилку у 'firstboot'\n"
+"в системі обробки помилок за адресою http://www.redhat.com/bugzilla. \n"
+"Копію налагоджувальної інформації збережено у %s \n"
+"Переконайтесь, що ви приєднали цей файл до повідомлення про помилку.\n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -88,17 +95,19 @@ msgstr ""
 #. Firstboot should not be run
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "Firstboot вже був запущений у цій системі.\n"
 
 #: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
+"Щоб запустити firstboot з командного рядка, виконайте наступні команди:"
 
 #: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
+"Щоб запустити firstboot при завантаженні, виконайте наступні команди:"
 
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
@@ -106,7 +115,7 @@ msgstr ""
 #. They booted the machine in runlevel 3.  Assume that they don't want to see firstboot
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot не можна запускати на рівні запуску 3."
 
 #. #-------Comment out the newt window for now.  Ran out of time for GinGin
 #. #     import textWindow
@@ -151,12 +160,12 @@ msgstr ""
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
-msgstr ""
+msgstr "_Назад"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
-msgstr ""
+msgstr "_Вперед"
 
 #. Add the button box to the bottom of the box which contains the notebook.
 #. Add the main HBox to a VBox which will sit in the window.
@@ -201,7 +210,7 @@ msgstr ""
 #: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr ""
+msgstr "Ласкаво просимо"
 
 #. !/usr/bin/python2.2
 #. Attempt to load a gtk.Image from a file.
@@ -216,11 +225,11 @@ msgstr ""
 #. #
 #: ../src/textWindow.py:15
 msgid "Yes"
-msgstr ""
+msgstr "Так"
 
 #: ../src/textWindow.py:15
 msgid "No"
-msgstr ""
+msgstr "Ні"
 
 #: ../src/textWindow.py:17
 msgid ""
@@ -232,10 +241,17 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
+"Red Hat Setup Agent може допомогти вам у налаштовуванні вашої системи, "
+"для цього треба пройти декілька кроків. Setup Agent потребує X Window "
+"для запуску.  \n"
+"\n"
+"Якщо ви бажаєте запустити Setup Agent, натисніть \"Так\". Якзо ви виберете "
+"\"Ні\" - система продовжить завантаження, та надалі ви більше не побачите це "
+"повідомлення. Бажаєте запустити Setup Agent ?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
-msgstr ""
+msgstr "Red Hat Setup Agent"
 
 #. !/usr/bin/python2.2
 #. os.execv("test.py", [""])
@@ -294,26 +310,28 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
-msgstr ""
+msgstr "Додаткові CD"
 
 #: ../src/modules/additional_cds.py:39
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"Якщо у вас є перелічені нижче додаткові CD, ви можете встановити х них пакети, "
+"якщо вставите CD та натиснете відповідну кнопку."
 
 #: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
-msgstr ""
+msgstr "Диск документації Red Hat Linux"
 
 #: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
 #: ../src/modules/additional_cds.py:77
 msgid "Install..."
-msgstr ""
+msgstr "Встановлення..."
 
 #: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
-msgstr ""
+msgstr "Red Hat Linux Installation CD"
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:99
@@ -321,6 +339,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"CD-ROM не знайдено. Вставте CD-ROM у пристрій та натисніть \"Гаразд\" для "
+"продовження."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -330,6 +350,7 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
+"Програму autorun не знайдено на cd. Натисніть \"Гаразд\" для продовження."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -342,7 +363,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
 msgid "User Account"
-msgstr ""
+msgstr "Обліковий запис"
 
 #: ../src/modules/create_user.py:47
 msgid ""
@@ -350,22 +371,25 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"Для звичайного використання (не адміністративного) рекомендується створити "
+"персональний обліковий запис. Для створення облікового запису введіть "
+"необхідну інформацію."
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
-msgstr ""
+msgstr "_Ім'я користувача:"
 
 #: ../src/modules/create_user.py:64
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "П_овне ім'я:"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
-msgstr ""
+msgstr "_Пароль:"
 
 #: ../src/modules/create_user.py:78
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Під_твердження паролю:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:94
@@ -373,10 +397,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Якщо вам необхідно використовувати мережеву автентифікацію, наприклад "
+"Kerberos чи NIS, натисніть на кнопку \"Автентифікація по мережі\"."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Автентифікація по _мережі..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -384,23 +410,26 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Наполегливо рекомендується створити окремий обліковий запис. Якщо ви "
+"відмовитесь ви зможете ввійти у систему лише як користувач root, "
+"який зарезервований лише для адміністрування."
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
-msgstr ""
+msgstr "_Продовжити"
 
 #: ../src/modules/create_user.py:146
 msgid "Create _account"
-msgstr ""
+msgstr "Створити _обліковий запис"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Паролі не співпадають. Введіть пароль знову."
 
 #: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "Пароль надто короткий. Використовуйте паролі довжиною не менше 6 символів."
 
 #: ../src/modules/create_user.py:191
 #, python-format
@@ -408,17 +437,18 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"Ім'я користувача '%s' зарезервовано. Вкажіть інше ім'я користувача."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "Довжина імені користувача не повинна перевищувати 33 символів."
 
 #: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "Ім'я користувача не повинно починатись з цифри."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
@@ -428,6 +458,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
+"Ім'я користувача '%s' містить символ пробілу. Не використовуйте символи пробілу "
+"у імені користувача."
 
 #: ../src/modules/create_user.py:263
 #, python-format
@@ -435,6 +467,9 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"Ім'я користувача '%s' містить символ пунктуації. Не використовуйте символи пунктуації "
+"у імені користувача."
+
 
 #: ../src/modules/create_user.py:270
 #, python-format
@@ -442,6 +477,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"Ім'я користувача '%s' містить символ у верхньому регістрі. Не використовуйте символи у верхньому регістрі "
+"у імені користувача."
 
 #: ../src/modules/create_user.py:277
 #, python-format
@@ -449,11 +486,15 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Ім'я користувача '%s' містить неправильний символ. Використовуйте лише ASCII символи "
+"у імені користувача."
+
 
 #: ../src/modules/create_user.py:287
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"Пароль містить некоректні символи. Використовуйте лише ASCII символи."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
@@ -461,6 +502,7 @@ msgstr ""
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"Ім'я '%s' містить некоректні символи. Використовуйте лише ASCII символи."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -492,11 +534,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:51
 msgid "Date and Time"
-msgstr ""
+msgstr "Дата та час"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Встановіть дату та час."
 
 #. Initialize date backend
 #. Initialize datePage and pass dateBackend into it
@@ -506,12 +548,12 @@ msgstr ""
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
-msgstr ""
+msgstr "Вкажіть сервер точного часу."
 
 #: ../src/modules/date.py:118 ../src/modules/date.py:137
 #: ../src/modules/date.py:168
 msgid "Error"
-msgstr ""
+msgstr "Помилка"
 
 #: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
@@ -519,11 +561,13 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Неможливо встановити з'єднання з %s. Ймовірно %s недоступний, або "
+"брандмауер вашого комп'ютера блокує NTP-з'єднання."
 
 #. do something slow
 #: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "З'єднання з NTP сервером. Будь ласка, зачекайте..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #. #
@@ -532,13 +576,15 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "Завершення настройки"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
+"Ваша система налаштована та готова до роботи. Щоб продовжити натисніть "
+"\"Далі\" у правому нижньому куті."
 
 #. #
 #. # I18N
@@ -546,27 +592,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:23
 msgid "Network Setup"
-msgstr ""
+msgstr "Настройка мережі"
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "В системі знайдено наступні мережеві пристрої:"
 
 #: ../src/modules/networking.py:68
 msgid "Network Device"
-msgstr ""
+msgstr "Мережевий пристрій"
 
 #: ../src/modules/networking.py:70
 msgid "Boot protocol"
-msgstr ""
+msgstr "Протокол завантаження"
 
 #: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "_Змінити конфігурацію мережі..."
 
 #: ../src/modules/networking.py:119
 msgid "static"
-msgstr ""
+msgstr "статична"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -598,11 +644,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
-msgstr ""
+msgstr "Звукова карта"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "У вашому комп'ютері виявлено звукову карту."
 
 #. Initialize soundcard page
 #. Add icon to the top frame
@@ -613,6 +659,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Для перевірки звуку натисніть кнопку \"Програти взірець звуку\". Ви повинні "
+"почути серію з трьох звуків. Перший повинен бути у правому каналі, другий "
+"у лівому каналі, та третій по центру."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -642,11 +691,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "Часовий пояс"
 
 #: ../src/modules/timezone.py:55
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "Вкажіть часовий пояс"
 
 #. Initialize timezone backend
 #. Initialize datePage and pass dateBackend into it
@@ -658,7 +707,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
-msgstr ""
+msgstr "ed Hat Network"
 
 #: ../src/modules/up2date.py:36
 msgid ""
@@ -675,14 +724,27 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
+"Цей крок реєструє вашу систему з безкоштовною демонстраційним обліковим записом "
+"у Red Hat Network. Ви зможете безкоштовно отримувати останні пакети з "
+"програмами безпосередньо з Red Hat. Використовуючи цю утиліту ви завжди "
+"зможете мати свіжу версію Red Hat Linux з усіма виправленнями помилок, проблем "
+"безпеки та розширеннями можливостей.\n"
+"\n"
+"Якщо ви купили цей продукт, ви маєте право на безкоштовний випробувальний термін "
+"Red Hat Network Basic Service. Для цього слідуйте інструкціям приведеним у картці "
+"активації продукту в коробці. \n"
+"\n"
+"Якщо ви не купували цей продукт, відвідайте http://rhn.redhat.com для "
+"отримання докладнішої інформації про підписку на Red Hat Network Basic Service. \n"
+
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr ""
+msgstr "_Так, я бажаю зареєструвати мою систему у Red Hat Network."
 
 #: ../src/modules/up2date.py:56
 msgid "N_o, I do not want to register my system."
-msgstr ""
+msgstr "_Ні, я не бажаю реєструвати мою систему."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -690,3 +752,5 @@ msgid ""
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
+"Лишилось ще декілька кроків, після чого ваша система буде готова до роботи. "
+"Red Hat Setup Agent допоможе вам з настроюванням. Натисніть \"Далі\" для продовження."
