@@ -9,6 +9,7 @@ Group: System Environment/Base
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Source0: %{name}-%{version}.tar.gz
 Obsoletes:anaconda-reconfig
+Prereq: chkconfig /etc/init.d
 Requires: pygtk
 Requires: python
 Requires: pygnome
@@ -39,10 +40,14 @@ make INSTROOT=$RPM_BUILD_ROOT install
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+chkconfig --add firstboot
+
 %preun
 if [ -d /usr/share/firstboot ] ; then
   rm -rf /usr/share/firstboot/*.pyc
   rm -rf /usr/share/firstboot/modules/*.pyc
+  chkconfig --del firstboot
 fi
 
 %files -f %{name}.lang
