@@ -1,8 +1,7 @@
-from gtk import *
 import string
 import gobject
 import gtk
-#import gdkpixbuf
+import os
 from socket import gethostname
 #from socket import gethostbyname
 
@@ -14,7 +13,6 @@ class childWindow:
     def __init__(self):
         print "initializing network check module"
         self.netDevs = self.networkDevices()
-        self.state = gtk.FALSE
         self.page = None
                 
     def launch(self):
@@ -23,10 +21,10 @@ class childWindow:
         if network:
             return
         else:
-            self.vbox = gtk.VBox(FALSE)
+            self.mainVBox = gtk.VBox()
 
-            label = gtk.Label("Set up Networking")
-            label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
+            title = gtk.Label("Set up Networking")
+            title.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
             titleBox = gtk.HBox()
 
@@ -40,65 +38,32 @@ class childWindow:
                 pix.set_from_pixbuf(p)
                 titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
-
-
-            titleBox.pack_start(label)
+            titleBox.pack_start(title)
 
             eventBox = gtk.EventBox()
             eventBox.add(titleBox)
             eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
-            self.vbox.pack_start(eventBox, FALSE)
+            self.mainVBox.pack_start(eventBox, gtk.FALSE)
 
-            internalVBox = gtk.VBox()
+            internalVBox = gtk.VBox(gtk.FALSE, 10)
             internalVBox.set_border_width(10)
 
-            hbox = gtk.HBox(FALSE, 10)
             label = gtk.Label("A network connection was not detected.  Network connectivity "
                              "is necessary for registering your system with RHN and for using "
-                              "the Red Hat Update Agent "
-                             "to update your system.\n\n ")
-            label.set_line_wrap(TRUE)
+                              "the Red Hat Update Agent to update your system.  "
+                              "To set up a network connection, please click on the button below.\n")
+
+            label.set_line_wrap(gtk.TRUE)
             label.set_size_request(500, -1)
             label.set_alignment(0.0, 0.5)
 
-            p = None
-            try:
-                p = gdkpixbuf.new_from_file("images/networking.png")
-            except:
-                pass
-
-            if p:
-                pix = apply (gtk.Pixmap, p.render_pixmap_and_mask())
-                align = gtk.Alignment()
-                align.add(pix)
-                align.set(0.0, 0.0, 0.0, 0.0)
-                hbox.pack_start(align, FALSE, TRUE, 0)
+            self.mainVBox.pack_start(internalVBox, gtk.FALSE)
+            internalVBox.pack_start(label, gtk.FALSE, gtk.TRUE)
 
 
-            hbox.pack_start(label, FALSE, TRUE)
-
-            self.vbox.pack_start(internalVBox, gtk.FALSE)
-            internalVBox.pack_start(hbox, FALSE, TRUE)
-#            self.vbox.pack_start(label, FALSE, TRUE, 30)
-            label = gtk.Label("Would you like to set up networking now?")
-            label.set_line_wrap(TRUE)
-            label.set_alignment(0.1, 0.5)
-            internalVBox.pack_start(label, FALSE, TRUE)
-#            return self.vbox
-
-            radioVbox = gtk.VBox()
-            self.yesRadio = gtk.RadioButton(None, "Yes")
-            self.yesRadio.modify_bg(gtk.STATE_PRELIGHT, gtk.gdk.color_parse("#baeeff"))
-            self.noRadio = gtk.RadioButton(self.yesRadio, "No")
-            self.noRadio.modify_bg(gtk.STATE_PRELIGHT, gtk.gdk.color_parse("#baeeff"))
-            radioVbox.pack_start(self.yesRadio, FALSE)
-            radioVbox.pack_start(self.noRadio, FALSE)
-            a = gtk.Alignment()
-            a.add(radioVbox)
-            a.set(0.2, 0.5, 0.5, 1.0)
-            internalVBox.pack_start(a, FALSE, TRUE)
-
-        return self.vbox
+            internalVBox.pack_start(self.page1())
+            
+        return self.mainVBox
 
     def networkDevices(self):
         netdevices = []
@@ -117,105 +82,48 @@ class childWindow:
     def networkAvailable(self):
         try:
             gethostbyname(gethostname())
-            return TRUE
+            return gtk.TRUE
         except:
-            return FALSE
+            return gtk.FALSE
 
     def write_file(self):
         pass
 
     def apply(self, notebook):
-        print "applying network changes"
-        if self.state == gtk.FALSE:
-            print "foodog"
-            if self.yesRadio.get_active() == 1:
-                print "here"
-                fd = open(".networkcheck.lock", "w")
-                fd.write(" ")
-                fd.close()
-#                widget = self.page2()
+         print "applying network changes"
 
-                self.page = notebook.get_current_page()
-                notebook.insert_page(widget, gtk.Label(" "), self.page + 1)
-                notebook.show_all()
-                self.state = gtk.TRUE
-            else:
-                notebook.next_page()
-        else:
-            print "hooha!"
-            print self.noRadio.get_active()
-            if self.noRadio.get_active() == 1 and self.page:
-#                notebook.remove_page(self.page + 1)
-                notebook.next_page()
-                notebook.show_all()
-                self.state = gtk.FALSE
-                self.page = None
-                pass
+    def page1(self):
+        bb = gtk.HButtonBox()
+        bb.set_layout(gtk.BUTTONBOX_END)
+        bb.set_border_width(10)
+#        bb.set_spacing(10)
+        self.yesButton = gtk.Button("Set up networking...")
+        self.yesButton.connect("clicked", self.setupNetwork)
+        bb.pack_start(self.yesButton, gtk.FALSE)
+        a = gtk.Alignment()
+        a.add(bb)
+        a.set(0.1, 0.0, 0.1, 1.0)
 
-
-##     def apply(self, notebook, moduleList):
-##         print "in apply"
-##         if self.state == gtk.FALSE:
-##             print "here"
-##             if self.yesRadio.get_active() == 1:
-##                 print "going live"
-## #                widget = self.page2()
-##                 newClass = page3()
-##                 print newClass
-
-##                 self.page = notebook.get_current_page()
-##                 notebook.insert_page(newClass.launch(), gtk.Label(" "), self.page + 1)
-##                 notebook.show_all()
-##                 self.state = gtk.TRUE
-##         else:
-##             if self.noRadio.get_active() == 1 and self.page:
-##                 notebook.remove_page(self.page + 1)
-##                 notebook.show_all()
-##                 self.state = gtk.FALSE
-##                 self.page = None
-##                 pass            
-
-
+        box = gtk.VBox() 
+#        box.pack_start(label, gtk.FALSE, gtk.TRUE)
+        box.pack_start(a, gtk.FALSE)
+        return box
 
     def page2(self):
         box = gtk.VBox()
 #        label = gtk.Label("Adding page")
 #        box.pack_start(label)
 
-        label = gtk.Label("Set up Networking")
-        label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
-
-        titleBox = gtk.HBox()
-
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("images/networking.png")
-        except:
-            pass
-
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)
-            titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
-
-
-
-        titleBox.pack_start(label)
-
-        eventBox = gtk.EventBox()
-        eventBox.add(titleBox)
-        eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
-        box.pack_start(eventBox, FALSE)
-
         notebook = gtk.Notebook()
         align = gtk.Alignment(0.0, 0.5, 0.3, 1.0)
         align.add(notebook)
 
         internalVBox = gtk.VBox()
-        internalVBox.pack_start(align, FALSE, FALSE)
+        internalVBox.pack_start(align, gtk.FALSE, gtk.FALSE)
 
         align = gtk.Alignment(0.0, 0.5, 0.6, 1.0)
         align.add(gtk.HSeparator())
-        internalVBox.pack_start(align, FALSE, FALSE, 10)
+        internalVBox.pack_start(align, gtk.FALSE, gtk.FALSE, 10)
         internalVBox.set_border_width(10)
         
         box.pack_start(internalVBox, gtk.FALSE)
@@ -228,7 +136,7 @@ class childWindow:
             DHCPcb = gtk.CheckButton(("Configure using DHCP"))
 
             align.add(DHCPcb)
-            devbox.pack_start(align, FALSE)
+            devbox.pack_start(align, gtk.FALSE)
 
             align = gtk.Alignment()
             bootcb = gtk.CheckButton(("Activate on boot"))
@@ -238,9 +146,9 @@ class childWindow:
 #                               or onboot == "yes")
             align.add(bootcb)
 
-            devbox.pack_start(align, FALSE)
+            devbox.pack_start(align, gtk.FALSE)
 
-            devbox.pack_start(gtk.HSeparator(), FALSE, padding=3)
+            devbox.pack_start(gtk.HSeparator(), gtk.FALSE, padding=3)
 
             options = [(("IP Address"), "ipaddr"),
                        (("Netmask"),    "netmask"),
@@ -263,7 +171,7 @@ class childWindow:
             for t in range(len(options)):
                 label = gtk.Label("%s:" %(options[t][0],))
                 label.set_alignment(0.0, 0.5)
-                ipTable.attach(label, 0, 1, t, t+1, FILL, 0, 10)
+                ipTable.attach(label, 0, 1, t, t+1, gtk.FILL, 0, 10)
                 entry = gtk.Entry(15)
           # entry.set_usize(gdk_char_width(entry.get_style().font, '0')*15, -1)
                 entry.set_size_request(7 * 15, -1)
@@ -271,7 +179,7 @@ class childWindow:
 
 #                entry.set_text(devs[i].get(options[t][1]))
                 options[t] = entry
-                ipTable.attach(entry, 1, 2, t, t+1, 0, FILL|EXPAND)
+                ipTable.attach(entry, 1, 2, t, t+1, 0, gtk.FILL|gtk.EXPAND)
 
 #            for t in range(len(options)):
 #                if t == 0 or t == 1:
@@ -291,7 +199,7 @@ class childWindow:
 ##             options[2].connect("focus_out_event", self.focusOutNW, devs[i])
 ##             options[3].connect("focus_out_event", self.focusOutBC, devs[i])
 
-            devbox.pack_start(ipTable, FALSE, FALSE, 5)
+            devbox.pack_start(ipTable, gtk.FALSE, gtk.FALSE, 5)
 
             devbox.show_all()
             notebook.append_page(devbox, gtk.Label(dev))
@@ -299,7 +207,7 @@ class childWindow:
 #            a = GtkAlignment()
 #            a.add(GtkHSeparator())
 #            a.set(0.0, 0.0, 0.5, 0.5)
-#            box.pack_start(a, FALSE, padding=10)
+#            box.pack_start(a, gtk.FALSE, padding=10)
 
 
         options = [("Hostname"), ("Gateway"), ("Primary DNS"),
@@ -308,7 +216,7 @@ class childWindow:
         for i in range(len(options)):
             label = gtk.Label("%s:" %(options[i],))
             label.set_alignment(0.0, 0.0)
-            self.ipTable.attach(label, 0, 1, i, i+1, FILL, 0, 10)
+            self.ipTable.attach(label, 0, 1, i, i+1, gtk.FILL, 0, 10)
             if i == 0:
                 options[i] = gtk.Entry()
                 options[i].set_size_request(7 * 30, -1)
@@ -318,7 +226,7 @@ class childWindow:
 #            options[i].connect("activate", forward)
             align = gtk.Alignment(0, 0.5)
             align.add(options[i])
-            self.ipTable.attach(align, 1, 2, i, i+1, FILL, 0)
+            self.ipTable.attach(align, 1, 2, i, i+1, gtk.FILL, 0)
         self.ipTable.set_row_spacing(0, 5)
 
         self.hostname = options[0]
@@ -338,21 +246,19 @@ class childWindow:
 
         self.ns3 = options[4]
 #        self.ns3.set_text(self.network.ternaryNS)
-        box.pack_start(self.ipTable, FALSE, FALSE, 5)
+        box.pack_start(self.ipTable, gtk.FALSE, gtk.FALSE, 5)
 
 
         return box
 
-class page3:
-    def __init__(self):
-        print "initializing page2"
-#        self.launch()
 
-    def launch(self):
-        hbox = gtk.HBox()
-        label = gtk.Label("Hello")
-        hbox.pack_start(label)
-        return hbox
+    def setupNetwork(self, *args):
+        win = os.fork()
 
-    def apply (self):
-        print "applying page2"
+        if (not win):
+            print "launching internet-druid"
+            path = "/usr/sbin/internet-druid"
+            os.execv(path, [""])
+
+
+

@@ -31,7 +31,7 @@ print doReconfig
 
 class firstbootWindow:
     def __init__(self):
-        self.mainHBox = gtk.HBox()
+        self.mainHBox = gtk.HBox(gtk.FALSE, 10)
         self.moduleList = []
         self.moduleDict = {}
         self.moduleStore = gtk.ListStore(gobject.TYPE_STRING)
@@ -117,11 +117,25 @@ class firstbootWindow:
 #        selection = self.moduleView.get_selection()
 #        selection.connect("changed", self.selectRow)
 
+        p = None        
+        try:
+            p = gtk.gdk.pixbuf_new_from_file("images/redhat-logo.png")
+        except:
+            pass
+
+        if p:
+            pix = gtk.Image()
+            pix.set_from_pixbuf(p)
+            
+        leftVBox = gtk.VBox()
+        leftVBox.pack_start(self.moduleView, gtk.TRUE)
+        leftVBox.pack_start(pix, gtk.FALSE)
+
         col = gtk.TreeViewColumn(None, gtk.CellRendererText(), text=0)
         self.moduleView.append_column(col)
         self.moduleView.set_property("headers-visible", gtk.FALSE)
-        self.moduleView.set_size_request(200, -1)
-        self.mainHBox.pack_start(self.moduleView, gtk.FALSE)
+        self.moduleView.set_size_request(195, -1)        
+        self.mainHBox.pack_start(leftVBox, gtk.FALSE)
 
 
 #########################################
