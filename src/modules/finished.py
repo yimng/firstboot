@@ -60,9 +60,9 @@ class childWindow:
                 self.txt = self.txt + "\n\n"
                 self.txt = self.txt + new_txt
 
-        # dont need these files anymore
-        for file in files:
-            os.unlink(file)
+            # dont need these files anymore
+            for file in files:
+                os.unlink(file)
             
         self.label.set_text(self.txt)
 
