@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.4
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -27,6 +27,7 @@ Requires: redhat-config-rootpassword
 Requires: redhat-config-packages
 Requires: up2date
 Requires: redhat-logos
+Requires: redhat-artwork
 Requires: xsri
 ExcludeArch: s390 s390x
 
@@ -69,6 +70,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Jan 20 2003 Brent Fox <bfox@redhat.com> 1.0.4-2
+- use the gdm background as the background image
+
 * Fri Jan 17 2003 Brent Fox <bfox@redhat.com> 1.0.4-1
 - make hboxes transparent and use a new background
 
