@@ -65,6 +65,7 @@ fi
 * Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-5
 - Print out a message if user tries to run firstboot again
 - move firstboot to firstboot.py and create a shell script for firstboot
+- applied a patch from dburcaw@terraplex.com to check to see if we're run as root
 
 * Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-4
 - Try to fix race condition
