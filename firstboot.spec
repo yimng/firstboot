@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 8
+Release: 9
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -66,6 +66,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Sep 03 2002 Brent Fox <bfox@redhat.com> 1.0.1-9
+- call dithering magic to make new pixmaps appear correctly
+
 * Tue Sep 03 2002 Brent Fox <bfox@redhat.com> 1.0.1-8
 - get new pixmaps from garrett
 
