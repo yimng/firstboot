@@ -4,20 +4,21 @@
 # James Hashida <khashida@redhat.com>,2002,2003.
 # Noriko Mizumoto <noriko@redhat.com>, 2003.
 # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004.
+# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-10 11:21-0400\n"
-"PO-Revision-Date: 2004-07-17 16:31+0900\n"
-"Last-Translator: Tadashi Jokagi <fedora@elf.no-ip.org>\n"
-"Language-Team: Japanese <ja@li.org>\n"
+"PO-Revision-Date: 2004-09-11 01:13+0900\n"
+"Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
+"Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -93,8 +94,9 @@ msgstr "ようこそ"
 
 #: ../src/firstbootWindow.py:402
 #, python-format
+#, fuzzy
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "%s のモジュールのインポートに失敗しました: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -165,8 +167,7 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "オートランプログラムがcd上に見つかりません。 \"OK\" をクリックして継続しま"
 "す。"
@@ -252,8 +253,7 @@ msgstr "ユーザー名は数字で始まってはいけません。"
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
+msgstr "ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -283,16 +283,13 @@ msgstr ""
 "い。"
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"名前 '%s' には無効な文字が含まれています。ASCII 文字のみを使用して下さい。"
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "名前 '%s' には無効な文字が含まれています。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -406,349 +403,3 @@ msgstr ""
 "エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
 "\"次へ\" ボタンをクリックして続けて下さい。"
 
-#~ msgid "User Account"
-#~ msgstr "ユーザーアカウント"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "ユーザー名%sのアカウントは予約されたシステムアカウントです。別のユーザー "
-#~ "を指定して下さい。"
-
-#~ msgid "Mouse configuration "
-#~ msgstr "マウスの設定"
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstbootはランレベル3では起動しません。"
-
-#~ msgid "Yes"
-#~ msgstr "はい"
-
-#~ msgid "No"
-#~ msgstr "いいえ"
-
-#~ msgid ""
-#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
-#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
-#~ "System to run.  \n"
-#~ "\n"
-#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-#~ "\"No\", the system will continue booting and you will never see this "
-#~ "message again.  Do you wish to run the Setup Agent now?"
-#~ msgstr ""
-#~ "Red Hatセットアップエージェントは、各ステップ毎にガイドすることにより、 マ"
-#~ "シンの設定をお手伝いします。セットアップエージェントにはX Window Systemの"
-#~ "起動が必要です。\n"
-#~ "\n"
-#~ "セットアップエージェントを実行するには、「はい」を選択します。「いいえ」"
-#~ "を 選択すると、システムはブートを続行して、再度このメッセージがでることは "
-#~ "ありません。今すぐセットアップエージェントを実行しますか?"
-
-#~ msgid "Red Hat Linux Documentation CD"
-#~ msgstr "Red Hat LinuxドキュメントCD"
-
-#~ msgid "Red Hat Linux Installation CD"
-#~ msgstr "Red Hat LinuxインストールCD"
-
-#~ msgid "Red Hat Network"
-#~ msgstr "Red Hat ネットワーク"
-
-#~ msgid ""
-#~ "This step will register your system with a complimentary Demo Account "
-#~ "from Red Hat Network so that you can receive the latest software packages "
-#~ "directly from Red Hat.  Using this tool will allow you to always have the "
-#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
-#~ "fixes, and software enhancements. \n"
-#~ "\n"
-#~ "If you purchased this product, you are entitled to a free trial of Red "
-#~ "Hat Network Basic Service. To access the free trial, please refer to the "
-#~ "product activation card found in the box for detailed instructions. \n"
-#~ "\n"
-#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
-#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
-#~ msgstr ""
-#~ "このステップで無料デモアカウントによりマシンをRed Hat ネットワークに登録し"
-#~ "ま すので、Red Hatから直接最新のソフトウェアパッケージを受け取ることがで "
-#~ "きます。このツールを使用すれば、セキュリティパッチ、バグ修正、ソフトウェ"
-#~ "ア パッケージ追加などをいつも最新の状態にしてRed Hat Linuxシステムを維持 "
-#~ "することができます。\n"
-#~ "\n"
-#~ "この製品を購入していればRed Hat ネットワーク基本サービスの無料試行の権利が"
-#~ "あります。この無料試行にアクセスするには、ボックスの中にある製品アクティ"
-#~ "ベーション(登録)カードで詳細を確認してください。\n"
-#~ "\n"
-#~ "この製品を購入していない場合、http://rhn.redhat.comのサイトで詳細情報を得"
-#~ "るか、 又はRed Hat ネットワーク基本サービスを購読してください。\n"
-
-#~ msgid "_Yes, I want to register my system with Red Hat Network."
-#~ msgstr "はい、システムをRed Hatネットワークへ登録したいです(_Y)。"
-
-#~ msgid "N_o, I do not want to register my system."
-#~ msgstr "いいえ、システムを登録しません(_N)。"
-
-#~ msgid "Update Agent"
-#~ msgstr "更新エージェント"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "別のソフトウェアをインストール"
-
-#~ msgid "Create A User"
-#~ msgstr "ユーザーを作成"
-
-#~ msgid ""
-#~ "A user account is required to use the system.  Create a user account by "
-#~ "filling in the information below."
-#~ msgstr ""
-#~ "システムを使用するにはユーザーアカウントが必要です。下の情報を記入して "
-#~ "ユーザーアカウントを作成して下さい。"
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?"
-#~ msgstr ""
-#~ "ユーザーアカウントが作成されていません。本当にユーザーアカウントを作成 せ"
-#~ "ずに続けてもよろしいですか?"
-
-#~ msgid "Set Date and Time"
-#~ msgstr "日付と時刻を設定"
-
-#~ msgid "Finished Setup!"
-#~ msgstr "セットアップ終了!"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hat 更新エージェント"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "日付 と 時刻 の設定"
-
-#~ msgid "Welcome to Red Hat Linux!"
-#~ msgstr "Red Hat Linux へようこそ!"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install software\" button below."
-#~ msgstr ""
-#~ "Red Hat LinuxドキュメントCD又はLinuxアプリケーションCDなどのRed Hat Linux"
-#~ "ボックスセットからの追加のCDをお持ちの場合は、そのディスクを挿入して下の該"
-#~ "当する ボタンをクリックして下さい。"
-
-#~ msgid "Linux Application CD"
-#~ msgstr "LinuxアプリケーションCD"
-
-#~ msgid ""
-#~ "This feature is not yet implemented.  Please do not report bugs about "
-#~ "this button."
-#~ msgstr ""
-#~ "この機能はまだ実装されていません。 このボタンについての不具合レポートは提"
-#~ "出 しないで下さい。"
-
-#~ msgid "Finished Installation!"
-#~ msgstr "インストールを終了しました!"
-
-#~ msgid "Update Your System"
-#~ msgstr "システムを更新"
-
-#~ msgid "Set up Networking"
-#~ msgstr "ネットワーク構成設定"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "ネットワークの接続が認知できませんでした。システムのRHNへの登録と更新の為"
-#~ "にRed Hat Update Agentを使用する為にはネットワークの接続が必要です。ネット"
-#~ "ワーク接続を設定するには下のボタンをクリックして下さい。\n"
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "DHCPを使用して設定"
-
-#~ msgid "IP Address"
-#~ msgstr "IPアドレス"
-
-#~ msgid "Netmask"
-#~ msgstr "ネットマスク"
-
-#~ msgid "Broadcast"
-#~ msgstr "ブロードキャスト"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Gateway"
-#~ msgstr "ゲートウェイ"
-
-#~ msgid "Hostname"
-#~ msgstr "ホスト名"
-
-#~ msgid "Primary DNS"
-#~ msgstr "1番目のDNS"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "2番目のDNS"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "3番目のDNS"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "ハードウェアを設定"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "キーボードマップ"
-
-#~ msgid "Configure..."
-#~ msgstr "...設定"
-
-#~ msgid "Mouse:"
-#~ msgstr "マウス"
-
-#~ msgid "Networking:"
-#~ msgstr "ネットワーク構成："
-
-#~ msgid "Printers:"
-#~ msgstr "プリンター："
-
-#~ msgid "Finish Installation"
-#~ msgstr "インストールを終了"
-
-#~ msgid "Keyboard"
-#~ msgstr "キーボード"
-
-#~ msgid "A configuration tool for the system keyboard"
-#~ msgstr "システムキーボード用の設定ツール"
-
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "システム用の適切なキーボードを選択。"
-
-#~ msgid "Language"
-#~ msgstr "言語"
-
-#~ msgid "Language Configuration"
-#~ msgstr "言語の設定"
-
-#~ msgid "A configuration tool to set the language for the system"
-#~ msgstr "システム用の言語をセットする設定ツール"
-
-#~ msgid "Language Selection"
-#~ msgstr "言語の選択"
-
-#~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "変更は次回ログインする時に反映されます。"
-
-#~ msgid "Mouse"
-#~ msgstr "マウス"
-
-#~ msgid "A configuration tool for the mouse"
-#~ msgstr "マウス用の設定ツール"
-
-#~ msgid "Emulate 3 button click"
-#~ msgstr "3ボタンクリックをエミュレート(模倣)"
-
-#~ msgid "Root Password"
-#~ msgstr "ルートパスワード"
-
-#~ msgid "Please set the root password for the system."
-#~ msgstr "システム用のルートパスワードをセットして下さい。"
-
-#~ msgid "Confirm:"
-#~ msgstr "確認："
-
-#~ msgid "Security Level"
-#~ msgstr "セキュリティレベル"
-
-#~ msgid "Security Level Configuration"
-#~ msgstr "セキュリティレベルの設定"
-
-#~ msgid "Configure system security level"
-#~ msgstr "システムセキュリティレベルを設定"
-
-#~ msgid "Please choose the security level for the system."
-#~ msgstr "システム用のセキュリティレベルを選んで下さい。"
-
-#~ msgid "Security Level:"
-#~ msgstr "セキュリティレベル："
-
-#~ msgid "Use default firewall rules"
-#~ msgstr "ディフォルトのファイヤーウォール規則を使用"
-
-#~ msgid "Customize"
-#~ msgstr "カスタマイズ"
-
-#~ msgid "Allow incoming:"
-#~ msgstr "侵入を許可："
-
-#~ msgid "Other ports: (1029:tcp)"
-#~ msgstr "他のポート: (1029:tcp)"
-
-#~ msgid ""
-#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
-#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
-#~ msgstr ""
-#~ "無効なポートが与えられました: %s。 正式な形式は 'port:protocol, port: "
-#~ "protocol' です。例えば、'1234:udp, 3456:tcp'"
-
-#~ msgid "Register with RHN"
-#~ msgstr "RHNへの登録"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Networkは、1つ又はそれ以上のRed Hat Linuxシステムを管理する為のイ"
-#~ "ンターネットソリューションです。全てのセキュリティ通知、バグ修正通知、及び"
-#~ "拡張通知(まとめてErrata通知と呼びます)は Red Hatから直接取り込めます。さら"
-#~ "に更新が発表され次第自動的に登録したシステムに受け取ることが出来ます。\n"
-#~ "\n"
-#~ "Red Hat Networkは、いつErrataの更新が発行されるかチェックしてemailで通知を"
-#~ "送りますので、更新が出来るわけです。"
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " --- Red Hat errataリストの最新状態を保持してシステム管理者に求められる時"
-#~ "間と労力を節約。\n"
-#~ "  ----Red Hatが発行次第、パッチを装備してネットワークのセキュリティ問題を"
-#~ "最小限に維持。\n"
-#~ "  ----使用ネットワークに関連しないパッケージの更新をフィルターにかける。\n"
-#~ "   ----希望の時間に選択したシステムにErrata更新が送信されるようにスケ"
-#~ "ジュールする。"
-
-#~ msgid "Register system now"
-#~ msgstr "システムを今登録する"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "現在、ネットワークの接続はありません。"
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "Red Hat Update Agentを開始"
