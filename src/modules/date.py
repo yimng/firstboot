@@ -49,9 +49,9 @@ class TimeWindow(FirstbootGuiWindow):
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 90
     moduleName = _("Date and Time")
-    windowTitle = _("Date and Time Configuration")
+    windowTitle = _("Set Date and Time")
     htmlTag = "time"
-    shortMessage = _("Please set the date and time for the system.")
+#    shortMessage = _("Please set the date and time for the system.")
 
     def getNext(self):
         pass

@@ -25,27 +25,14 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        msg = (_("Welcome to Red Hat Linux!"))
-        label = gtk.Label("")
-        label.set_markup("<span size='x-large'>%s</span>" % msg)
-        label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
-        label.set_alignment(0.4, 0.5)
+        msg = (_("Welcome"))
 
-        titleBox = gtk.HBox()
-
-        pix = functions.imageFromFile("shadowman-round-48.png")
-        titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
-
-        titleBox.pack_start(label)
-
-        eventBox = gtk.EventBox()
-        eventBox.add(titleBox)
-        self.vbox.pack_start(eventBox, FALSE)
+        title_pix = functions.imageFromFile("workstation.png")
 
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        label = gtk.Label(_("Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to "
+        label = gtk.Label(_("There are a few more steps to "
                           "take before your system is ready to use.  The Red Hat Setup Agent "
                           "will now guide you through some basic configuration.  Please click the "
                             "\"Forward\" button in the lower right corner to continue."))
@@ -59,7 +46,7 @@ class childWindow:
         pix = functions.ditheredImageFromFile("splash-small.png")
         self.vbox.pack_start(pix, gtk.TRUE, gtk.TRUE, 5)
             
-        return self.vbox, eventBox
+        return self.vbox, title_pix, msg
 
     def apply(self, notebook):
         return 0

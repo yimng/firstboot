@@ -64,25 +64,8 @@ class SoundWindow:
         else:
             self.mainVBox = gtk.VBox()
 
-            title = gtk.Label("")
-            title.set_alignment(0.4, 0.5)
-            title.set_markup("<span size='x-large'>%s</span>" % self.windowTitle)            
-            title.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
-
-            titleBox = gtk.HBox()
-
             #Add icon to the top frame
             self.icon = functions.imageFromFile("multimedia.png")
-
-            if self.icon:
-                titleBox.pack_start(self.icon, gtk.FALSE, gtk.TRUE, 5)
-
-            titleBox.pack_start(title)
-
-            eventBox = gtk.EventBox()
-            eventBox.add(titleBox)
-            eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
-            self.mainVBox.pack_start(eventBox, gtk.FALSE)
 
             internalVBox = gtk.VBox(gtk.FALSE, 10)
             internalVBox.set_border_width(10)
@@ -111,7 +94,7 @@ class SoundWindow:
             
             internalVBox.pack_start(hbox, gtk.FALSE)
 
-            return self.mainVBox, eventBox
+            return self.mainVBox, self.icon, self.windowTitle
 
     def apply(self, *args):
         return 0

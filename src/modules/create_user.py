@@ -37,21 +37,8 @@ class childWindow:
         self.vbox.set_size_request(400, 200)
 
         msg = (_("Create A User"))
-        label = gtk.Label("")
-        label.set_markup("<span size='x-large'>%s</span>" % msg)
-        label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
-        label.set_alignment(0.4, 0.5)
 
-        titleBox = gtk.HBox()
-
-        pix = functions.imageFromFile("create-user.png")
-        titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
-
-        titleBox.pack_start(label)
-
-        eventBox = gtk.EventBox()
-        eventBox.add(titleBox)
-        self.vbox.pack_start(eventBox, FALSE)
+        title_pix = functions.imageFromFile("create-user.png")
 
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
@@ -88,7 +75,7 @@ class childWindow:
         internalVBox.pack_start(table, gtk.TRUE, 15)
         self.vbox.pack_start(internalVBox, gtk.FALSE, 5)
 
-        return self.vbox, eventBox
+        return self.vbox, title_pix, msg
 
     def grabFocus(self):
         self.usernameEntry.grab_focus()
