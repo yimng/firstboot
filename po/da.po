@@ -1,20 +1,19 @@
-# translation of da.po to 
 # Danish translation of firstboot.
 # Copyright © 2002 Free Software Foundation.
 # Kjartan Maraas <kmaraas@gnome.org>, 2002.
-# Keld Simonsen <keld@dkuug.dk>, 2002-2003.
+# Keld Simonsen <keld@dkuug.dk>, 2002-2003, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2003-12-24 00:57+0100\n"
+"PO-Revision-Date: 2004-03-13 11:19+0100\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
-"Language-Team:  <dansk@klid.dk>\n"
+"Language-Team: Danish <<dansk@klid.dk>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.0.2\n"
 
@@ -45,24 +44,23 @@ msgstr "Licensaftale"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "_Ja, jeg godkender licensaftalen"
 
 #: ../src/eula_strings.py:29
-#, fuzzy
 msgid "N_o, I do not agree"
-msgstr "_Nej, jeg vil ikke registrere mit system."
+msgstr "Nej, jeg er _ikke enig"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "Vil du læse licensaftalen igen eller overveje den igen?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "_Læs licensaftalen igen"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "_Luk ned"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -102,7 +100,7 @@ msgstr ""
 "den vil forsøge at køre de resterende moduler."
 
 #: ../src/exceptionWindow.py:57
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -111,8 +109,8 @@ msgid ""
 msgstr ""
 "Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
 "fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
-"En kopi af fejlsøgningsuddata er gemt i /tmp/firstboot.txt \n"
-"Vør sød at vedlægge denne fil til fejlrapporten. \n"
+"En kopi af fejlsøgningsuddata er gemt i %s. \n"
+"Vær sød at vedlægge denne fil til fejlrapporten. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -226,12 +224,12 @@ msgstr ""
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
-msgstr ""
+msgstr "_Tilbage"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
-msgstr ""
+msgstr "_Næste"
 
 #. Add the button box to the bottom of the box which contains the notebook.
 #. Add the main HBox to a VBox which will sit in the window.
@@ -341,58 +339,51 @@ msgstr "Velkommen"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Autentisering"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration"
-msgstr "Konfiguration af dato og klokkeslet"
+msgstr "Konfiguration af brandmur"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration"
-msgstr "Konfiguration af lydkort"
+msgstr "Konfiguration af tastatur"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Network configuration"
-msgstr "Konfiguration af dato og klokkeslet"
+msgstr "Konfiguration af netværk"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Printer configuration"
-msgstr "Konfiguration af lydkort"
+msgstr "Konfiguration af printer"
 
 #: ../src/textWindow.py:38
 msgid "System services"
-msgstr ""
+msgstr "Systemtjenester"
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "Sound card configuration"
 msgstr "Konfiguration af lydkort"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Timezone configuration"
-msgstr "Konfiguration af lydkort"
+msgstr "Konfiguration af tidszone"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr ""
+msgstr "Kør værktøj"
 
 #: ../src/textWindow.py:42
 msgid "Exit"
-msgstr ""
+msgstr "Afslut"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Vælg det objekt som du vil ændre "
 
 #: ../src/textWindow.py:50
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hat konfigurationssagent"
+msgstr "Konfigurationshjælper"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -431,7 +422,7 @@ msgid ""
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
 "Hvis du har nogen af cd'erne nævnt nedenfor kan du installere pakker fra dem "
-"ved at insætte cd'en ok klikke på den tilsvarende knap."
+"ved at indsætte cd'en ok klikke på den tilsvarende knap."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -451,9 +442,10 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
+"Autorun-programmet kan ikke findes på cd-skiven. Klik på \"O.k.\" for at "
+"fortsætte."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -479,24 +471,20 @@ msgstr ""
 "forspurgte oplysninger."
 
 #: ../src/modules/create_user.py:58
-#, fuzzy
 msgid "_Username:"
-msgstr "Brugernavn:"
+msgstr "_Brugernavn:"
 
 #: ../src/modules/create_user.py:65
-#, fuzzy
 msgid "Full Nam_e:"
-msgstr "Fulde navn:"
+msgstr "_Fulde navn:"
 
 #: ../src/modules/create_user.py:72
-#, fuzzy
 msgid "_Password:"
-msgstr "Adgangskode:"
+msgstr "_Adgangskode:"
 
 #: ../src/modules/create_user.py:79
-#, fuzzy
 msgid "Confir_m Password:"
-msgstr "Bekræft adgangskode:"
+msgstr "_Bekræft adgangskode:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:95
@@ -504,11 +492,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Hvis du skal bruge netværksautentisering som eksempelvis Kerberos eller NIS "
+"skal du klikke på knappen Brug netværksindlogning."
 
 #: ../src/modules/create_user.py:105
-#, fuzzy
 msgid "Use Network _Login..."
-msgstr "Konfiguration af dato og klokkeslet"
+msgstr "Brug netværksindlogning..."
 
 #. If they've run authconfig, don't pop up messageDialog
 #: ../src/modules/create_user.py:141
@@ -522,14 +511,12 @@ msgstr ""
 "reserveret til administrativ brug."
 
 #: ../src/modules/create_user.py:149
-#, fuzzy
 msgid "_Continue"
-msgstr "Fortsæt"
+msgstr "_Fortsæt"
 
 #: ../src/modules/create_user.py:150
-#, fuzzy
 msgid "Create _account"
-msgstr "Opret konto"
+msgstr "Opret _konto"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:176
@@ -563,12 +550,13 @@ msgstr "Brugernavnet må ikke begynde med et tal."
 #. specifically allow "_" and "-"
 #. Check for whitespace
 #: ../src/modules/create_user.py:260
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Brugernavnet indeholder blanke. Lad venligst være med at bruge blanke i %s"
+"Brugernavnet '%s' indeholder blanke. Lad venligst være med at bruge blanke i "
+"brugernavnet."
 
 #: ../src/modules/create_user.py:267
 #, python-format
@@ -593,20 +581,16 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
+msgstr "Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/create_user.py:291
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Navnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -699,11 +683,11 @@ msgstr "Kontakter NTP-server. Vent venligst..."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Display"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Vælg den opløsning og den farvedybde som du vil bruge"
 
 #. Add icon to the top frame
 #. #
@@ -715,7 +699,6 @@ msgid "Finish Setup"
 msgstr "Færdiggør opsætning"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -749,28 +732,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
-msgstr ""
+msgstr "Netværkskonfiguration"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "De følgende netværksenheder er fundet på systemet:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr ""
+msgstr "Netværksenhed"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "Opstartsprotokol"
 
 #: ../src/modules/networking.py:97
-#, fuzzy
 msgid "_Change Network Configuration..."
-msgstr "Konfiguration af dato og klokkeslet"
+msgstr "_Ændr netværkskonfiguration..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
-msgstr ""
+msgstr "statisk"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -845,148 +827,20 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
-msgstr ""
+msgstr "Tidszone"
 
 #: ../src/modules/timezone.py:52
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "Sæt dato og klokkeslet for systemet."
+msgstr "Indstil tidszone for systemet."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Der er endnu nogle enkelte trin der skal gøres før dit system er klar til "
-"brug. Red Hats opsætningsagent vil nu lede dig gennem noget grundlæggende "
+"brug. Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
 "konfigurering. Klik på 'Næste'-knappen i det nederste højre hjørne for at "
 "fortsætte."
 
-#, fuzzy
-#~ msgid "Mouse configuration "
-#~ msgstr "Konfiguration af lydkort"
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Firstboot er allerede blevet kørt en gang på dette system.\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "For at køre 'firstboot' fra kommandolinjen skal du køre de følgende "
-#~ "kommandoer:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "For at køre 'firstboot' ved systemopstart skal du køre de følgende "
-#~ "kommandoer:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot kører ikke i kørselsniveau 3."
-
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgid "No"
-#~ msgstr "Nej"
-
-#~ msgid ""
-#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
-#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
-#~ "System to run.  \n"
-#~ "\n"
-#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-#~ "\"No\", the system will continue booting and you will never see this "
-#~ "message again.  Do you wish to run the Setup Agent now?"
-#~ msgstr ""
-#~ "Red Hat opsætningtagent kan hjælpe dig med at konfigurere din maskine ved "
-#~ "at lede dig gennem en række trin. Opsætningtagenten kræver at X Windows "
-#~ "kører.\n"
-#~ "\n"
-#~ "Hvis du ønsker at køre opsætningtagenten skal du vælge 'Ja'. Hvis du "
-#~ "vælger 'Nej' vil systemet fortsætte opstart og du vil aldrig se denne "
-#~ "besked igen. Vil du køre opsætningtagenten nu?"
-
-#~ msgid "Red Hat Linux Documentation CD"
-#~ msgstr "Red Hat Linux dokumentations-CD"
-
-#~ msgid "Red Hat Linux Installation CD"
-#~ msgstr "Red Hat Linux dokumentations-CD"
-
-#~ msgid "Red Hat Network"
-#~ msgstr "Red Hats Netværk"
-
-#~ msgid ""
-#~ "This step will register your system with a complimentary Demo Account "
-#~ "from Red Hat Network so that you can receive the latest software packages "
-#~ "directly from Red Hat.  Using this tool will allow you to always have the "
-#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
-#~ "fixes, and software enhancements. \n"
-#~ "\n"
-#~ "If you purchased this product, you are entitled to a free trial of Red "
-#~ "Hat Network Basic Service. To access the free trial, please refer to the "
-#~ "product activation card found in the box for detailed instructions. \n"
-#~ "\n"
-#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
-#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
-#~ msgstr ""
-#~ "Dette trin vil registrere dit system som en gratis demokonto fra Red Hat "
-#~ "Network så du kan få de seneste programpakker direkte fra Red Hat. Ved at "
-#~ "bruge dette værktøj kan du altid have de mest opdaterede Red Hat Linux-"
-#~ "system med alle sikkerhedsrettelser, fejlrettelser og forbedringer af "
-#~ "programpakker\n"
-#~ "\n"
-#~ "Hvis du købte dette produkt har du ret til en gratis prøve på Red Hat "
-#~ "Netværks basale tjeneste. For at få adgang til den gratis prøve skal du "
-#~ "kigge efter produktets aktiveringskort, som findes i kassen, og som har "
-#~ "detaljerede instruktioner. \n"
-#~ "\n"
-#~ "Hvis du ikke har købt dette produkt, så besøg http://rhn.redhat.com for "
-#~ "yderligere oplysninger om at abonnere på Red Hat netværks basale "
-#~ "tjeneste. \n"
-
-#~ msgid "_Yes, I want to register my system with Red Hat Network."
-#~ msgstr "_Ja, jeg ønsker at registrere mit system hos Red Hat Network."
-
-#, fuzzy
-#~ msgid "N_o, I do not want to register my system."
-#~ msgstr "_Nej, jeg vil ikke registrere mit system."
-
-#~ msgid "Update Agent"
-#~ msgstr "Opdateringsagent"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "Installér yderligere programmel"
-
-#~ msgid "Create A User"
-#~ msgstr "Opret en bruger"
-
-#~ msgid ""
-#~ "A user account is required to use the system.  Create a user account by "
-#~ "filling in the information below."
-#~ msgstr ""
-#~ "En brugerkonto kræves for at bruge systemet. Opret en brugerkonto ved at "
-#~ "udfylde informationen nednfor."
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?"
-#~ msgstr ""
-#~ "En brugerkonto blev ikke oprettet. Er du sikker på at du ønsker at "
-#~ "fortsætte uden at gøre dette?"
-
-#~ msgid "Set Date and Time"
-#~ msgstr "Sæt dato og klokkeslæt"
-
-#~ msgid "Finished Setup!"
-#~ msgstr "Opsætning færdig!"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hat opdateringsagent"
-
-#~ msgid "Welcome to Red Hat Linux!"
-#~ msgstr "Velkommen til Red Hat Linux!"
