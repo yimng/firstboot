@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.0
-Release: 2
+Release: 3
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -59,8 +59,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Fri Jun 21 2002 Brent Fox <bfox@redhat.com> 0.9.0-2
+* Fri Jun 21 2002 Brent Fox <bfox@redhat.com> 0.9.0-3
 - Added snapsrc to makefile
+- Rebuild for completeness
 
 * Wed Jun 12 2002 Brent Fox <bfox@redhat.com> 0.2.0-3
 - Fixed a string error in the welcome module
