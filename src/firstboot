@@ -32,11 +32,9 @@ def startWindowManager():
     if (not wm_pid):
         path = '/usr/bin/metacity'
         args = ['--display=:1']
-        os.execv(path, args)
-
+        os.execvp(path, args)
 
     # give time for the window manager to start up
-    time.sleep (3)
     status = 0
     try:
         pid, status = os.waitpid (wm_pid, os.WNOHANG)
@@ -45,19 +43,10 @@ def startWindowManager():
         print "in except"
         print __name__, "waitpid:", msg
 
-
     if status:
         raise RuntimeError, "Window manager failed to start"
 
     return wm_pid
-
-def setRootBackground():
-    root_pid = os.fork()
-
-    if (not root_pid):
-        path = '/usr/bin/X11/xsetroot'
-        args = [path, '-solid', 'midnightblue', '-display', ':1']
-        os.execv(path, args)
 
 def mergeXresources():
     path = "/etc/X11/Xresources"
@@ -109,18 +98,34 @@ if not os.environ.has_key('DISPLAY'):
             x_class = xserver.XServer()
     except:
         pass
-    
+
+    wm_pid = None
     wm_pid = startWindowManager()
-    setRootBackground()
     mergeXresources()
 
 #Hack to make sure the X server has started before importing gtk
 finished = 0
+count = 0
+
 while not finished:
     try:	
         import firstbootWindow
-        finished = 1
+	if "firstbootWindow" in firstbootWindow.__dict__.keys():
+	     firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
+             finished = 1
+        else:
+	     count = count + 1
+	     if count > 15:
+		  print "Skipping firstboot..."
+		  finished = 1
+		  os._exit(0)
+	     time.sleep(1)
+	     pass
     except:
+	import traceback
+        (type, value, tb) = sys.exc_info()
+        list = traceback.format_exception(type, value, tb)
+        text = string.joinfields(list, "")
+	print text
         time.sleep(1)
 
-firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
