@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
-"PO-Revision-Date: 2003-02-19 09:11+0100\n"
+"PO-Revision-Date: 2003-03-25 14:32+0100\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: french <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Un problème s'étant produit dans le module %s, \n"
-"Red Hat Setup Agent ne le chargera pas et \n"
+"l'Agent de mise à jour Red Hat ne le chargera pas et \n"
 "essaiera d'exécuter les autres modules."
 
 #: ../src/exceptionWindow.py:40
@@ -36,11 +36,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Veuillez remplir le formulaire concernant 'firstboot' dans le système de "
-"pistage \n"
-"des bogues de Red Hat, à l'adresse http://www.redhat.com/buzilla. \n"
+"Veuillez remplir le formulaire concernant 'firstboot' dans le système de \n"
+"pistage des bogues de Red Hat, à l'adresse http://www.redhat.com/buzilla. \n"
 "Une copie de la sortie de débogage a été sauvegardée dans %s \n"
-"Veillez à bien joindre ce fichier au rapport de bogue.\n"
+"Veillez à bien joindre ce fichier au rapport de bogues.\n"
 
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
@@ -50,13 +49,13 @@ msgstr "Firstboot a déjà été exécuté sur ce système.\n"
 msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de "
-"commande :"
+"commande:"
 
 #: ../src/firstboot.py:99
 msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot au cours du "
-"démarrage du système :"
+"démarrage du système:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
@@ -64,20 +63,20 @@ msgstr "Firstboot n'exécute pas en niveau d'exécution 3."
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
-msgstr "CD supplémentaires"
+msgstr "CD-ROM supplémentaires"
 
 #: ../src/modules/additional_cds.py:39
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Si vous disposez de l'un des CD figurant dans la liste ci-dessous, vous "
+"Si vous disposez de l'un des CD-ROM figurant dans la liste ci-dessous, vous "
 "pouvez installer les paquetages à partir de ceux-ci en introduisant "
-"simplement le CD et cliquant sur le bouton approprié."
+"simplement le CD-ROM et cliquant sur le bouton approprié."
 
 #: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
-msgstr "CD de documentation Red Hat Linux"
+msgstr "CD-ROM de documentation Red Hat Linux"
 
 #: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
 #: ../src/modules/additional_cds.py:77
@@ -86,14 +85,14 @@ msgstr "Installation..."
 
 #: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
-msgstr "CD d'installation Red Hat Linux"
+msgstr "CD-ROM d'installation Red Hat Linux"
 
 #: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur "
+"Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur, "
 "puis cliquer sur \"OK\" pour continuer."
 
 #: ../src/modules/create_user.py:20
@@ -112,7 +111,7 @@ msgstr ""
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
-msgstr "Non d'utilisateur:"
+msgstr "Nom d'utilisateur:"
 
 #: ../src/modules/create_user.py:59
 msgid "Full Name:"
@@ -133,7 +132,7 @@ msgid ""
 "which is reserved for administrative use only."
 msgstr ""
 "Il est hautement conseillé de créer un compte utilisateur personnel. Si vous "
-"continuez sans compte, vous ne pouvez que vous connecter avec lescompte "
+"continuez sans compte, vous ne pouvez que vous connecter avec le compte "
 "root, qui est réservé pour les utilisations administratives, seulement."
 
 #: ../src/modules/create_user.py:107
@@ -146,7 +145,7 @@ msgstr "Créer un compte"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau. "
+msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
 
 #: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
@@ -218,11 +217,11 @@ msgstr "Date et Heure"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr "Veuillez paramétrer la date et l'heure de votre système."
+msgstr "Veuillez configurer la date et l'heure de votre système."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
-msgstr "Veuillez entrer un serveur temps."
+msgstr "Veuillez entrer un serveur de temps."
 
 #: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
@@ -233,9 +232,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Impossible d'établir la connexion avec %s, ou %s n'est pas disponible, ou "
-"encore les paramètres de pare-feu de votre ordinateur bloquent la connexion "
-"NTP."
+"Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible, ou "
+"les paramètres de pare-feu de votre ordinateur bloquent la connexion NTP."
 
 #: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
@@ -243,20 +241,20 @@ msgstr "Connexion au serveur NTP.  Veuillez patienter..."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr "Terminer le paramétrage"
+msgstr "Terminer la configuration"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Votre système Red Hat Linux est maintenant paramétré et prêt à l'emploi. "
-"Pour continuer veuillez cliquer sur le bouton \"Avant\" dans le coin en-bas "
+"Votre système Red Hat Linux est maintenant configuré et prêt à l'emploi. "
+"Pour continuer, veuillez cliquer sur le bouton \"Suivant\" dans le coin en-bas "
 "à droite."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
-msgstr "Carte son "
+msgstr "Carte son"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
@@ -292,10 +290,10 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"Cette étape enregistrera votre système avec un Demo Account gratuit de Red "
+"Cette étape enregistrera votre système à un compte d'essai gratuit de Red "
 "Hat Network. Vous pourrez ainsi recevoir les derniers paquetages de "
-"logiciels directement de Red Hat. En utilisant cet outil vous aurez toujours "
-"un système Red Hat Linux équipé des derniers patches de sécurité, correctifs "
+"logiciels directement de Red Hat. En utilisant cet outil, vous aurez toujours "
+"un système Red Hat Linux équipé des derniers patchs de sécurité, correctifs "
 "de bogues et améliorations des paquetages de logiciels.\n"
 "\n"
 "Si vous avez acheté ce produit, vous avez un essai gratuit de Red Hat "
@@ -303,13 +301,13 @@ msgstr ""
 "d'activation du produit que vous trouverez dans la boîte: elle contient des "
 "indications plus précises.\n"
 "\n"
-"Si vous n'avez pas acheté ce produit, rendez-vous à http://rhn.redhat.com "
+"Si vous n'avez pas acheté ce produit, rendez-vous à l'adresse http://rhn.redhat.com "
 "pour de plus amples détails ou pour vous inscrire à Red Hat Network Basic "
-"Service. \n"
+"Service.\n"
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr "_Oui, je voudrais enregistrer mon système avec Red Hat Network."
+msgstr "_Oui, je voudrais enregistrer mon système à Red Hat Network."
 
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
@@ -327,7 +325,7 @@ msgid ""
 msgstr ""
 "Il vous reste quelques étapes avant que votre système ne soit prêt à "
 "l'emploi. L'agent de mise à jour Red Hat vous guidera dans la configuration "
-"de base. Pour continuer, cliquez sur le bouton \"Avant\" dans le coin en bas "
+"de base. Pour continuer, cliquez sur le bouton \"Suivant\" dans le coin en bas "
 "à droite."
 
 #: ../src/textWindow.py:15
@@ -348,17 +346,17 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
-"L'agent de paramétrage Red Hat Setup Agent peut vous aider à configurer "
-"votre machine en vous guidant dans une série d'étapes. Setup Agent a besoin "
-"du système X Window pour fonctionner. \n"
+"L'agent de mise à jour Red Hat peut vous aider à configurer "
+"votre machine en vous guidant dans une série d'étapes. L'agent de mise à "
+"jour a besoin du système X Window pour fonctionner. \n"
 "\n"
-"Si vous désirez lancer Setup Agent, veuillez choisir \"Oui\". Si vous "
+"Si vous désirez lancer l'agent de mise à jour, veuillez choisir \"Oui\". Si vous "
 "choisissez \"Non\", le système poursuivra son amorçage et ce message ne "
-"réapparaîtra plus. Voulez-vous lancer Setup Agent maintenant?"
+"réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour maintenant?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
-msgstr "Red Hat Setup Agent"
+msgstr "Agent de mise à jour Red Hat"
 
 #~ msgid "Update Agent"
 #~ msgstr "Update Agent"
