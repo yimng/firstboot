@@ -29,14 +29,16 @@ class firstbootWindow:
         self.moduleDict = {}
         self.moduleStore = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_INT)
 
-#        root = _root_window ()
-#        cursor = cursor_new (GDK.LEFT_PTR)
-#        root.set_cursor (cursor)
-
         # Create the initial window and a vbox to fill it with.
         win = gtk.Window()
         win.connect("destroy", self.destroy)
-        win.set_size_request(800, 600)
+
+        if gtk.gdk.screen_width() >= 800:            
+            win.set_size_request(800, 600)
+        else:
+            win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
+            
+            
         win.set_resizable(gtk.FALSE)
         win.set_position(gtk.WIN_POS_CENTER)
         win.set_decorated(gtk.FALSE)
