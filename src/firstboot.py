@@ -141,7 +141,7 @@ if runlevel == 3:
 #If there's no X Server running, let's start one
 
 if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin/rhgb-client --ping") == 0):
-    os.putenv("DISPLAY", "127.0.0.1:0")
+    os.environ["DISPLAY"] = "127.0.0.1:0"
     
 if not os.environ.has_key('DISPLAY'):
     
