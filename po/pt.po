@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-07-31 13:25+0100\n"
+"PO-Revision-Date: 2002-08-02 10:40+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,6 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
 msgstr "Ocorreu um erro no módulo %s."
 
@@ -21,6 +20,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Uma vez que ocorreu um problema com o módulo %s,  \n"
+"O Agente de Configuração da Red Hat não o vai carregar e \n"
+"vai tentar executar os módulos restantes."
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -29,6 +31,10 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Por favor adicione um erro no componente 'firstboot' no sistema \n"
+"de gestão de erros da Red Hat em http://www.redhat.com/bugzilla. \n"
+"Uma cópia da saída de depuração foi gravada em  /tmp/firstboot.txt \n"
+"Por favor anexe este ficheiro ao relatório de erro. \n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -43,9 +49,8 @@ msgid "Linux Application CD"
 msgstr "CD de Aplicações Linux"
 
 #: ../src/modules/additional_cds.py:32
-#, fuzzy
 msgid "Install Additional Software"
-msgstr "Instalar software adicional"
+msgstr "Instalar Software Adicional"
 
 #: ../src/modules/additional_cds.py:59
 msgid ""
@@ -95,12 +100,10 @@ msgid "Finish Setup"
 msgstr "Terminar a Configuração"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
-msgstr "Instalação terminou!"
+msgstr "Instalação Terminou!"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
