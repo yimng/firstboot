@@ -158,7 +158,7 @@ if runlevel == 3 and forcegui == None:
 #If rhgb (graphical boot) is running, let's use it's X server
 if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin/rhgb-client --ping") == 0):
     try:
-        os.environ["DISPLAY"] = open("DISPLAY_FILE", "r").read()
+        os.environ["DISPLAY"] = open(DISPLAY_FILE, "r").read()
     except:
         os.environ["DISPLAY"] = "127.0.0.1:0"
     #However, we still need to start up metacity and merge the X resources
