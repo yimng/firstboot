@@ -12,13 +12,13 @@ msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
-"PO-Revision-Date: 2004-07-19 01:20+0300\n"
+"PO-Revision-Date: 2004-11-30 05:44-0500\n"
 "Last-Translator: Munzir Taha <munzir@kacst.edu.sa>\n"
-"Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -98,7 +98,6 @@ msgid "module import of %s failed: %s"
 msgstr "فشل استيراد الوحدة %s: %s"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Licence Aggrement"
 msgstr "اتفاقية التّرخيص"
 
@@ -156,7 +155,7 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr ""
+msgstr "الرجاء إدخال القرص المسمّى \"Red Hat Enterprise Linux Extras\" للسماح بتثبيت الوظائف الإضافيّة والبرامج من طرف ثالث. يمكنك أيضاً إدخال قرص الوثائق، أو الأقراص الأخرى من Red Hat لتثبيت برامج إضافيّة الآن."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:69
@@ -167,6 +166,9 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"لتمكين دعم التطبيقات ذات 32-بت  على هيكليّة معالج Intel Itanium2، كما يجب عليك تثبيت حزمة Intel Execution Layer من قرص Extras الآن."
 
 #: ../src/modules/additional_cds.py:110
 msgid "Install..."
@@ -181,8 +183,7 @@ msgstr ""
 "\" للاستمرار."
 
 #: ../src/modules/additional_cds.py:179
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
@@ -192,14 +193,11 @@ msgid "System User"
 msgstr "مستخدم للنظام"
 
 #: ../src/modules/create_user.py:70
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
-"يُستحسن إنشاء حساب شخصي للاستخدام العادي (لغير أغراض الإدارة).  لإنشاء حساب "
-"شخصي، أدخل البيانات المطلوبة."
+msgstr "يُستحسن إنشاء حساب شخصي للاستخدام العادي (لغير أغراض الإدارة) لنظامك.  لإنشاء حساب شخصي، أدخل البيانات المطلوبة أدناه."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -295,18 +293,15 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
+msgstr "اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "كلمة المرور تحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "الاسم '%s' يحتوي على حروف غير صالحة. الرّجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/date.py:46
@@ -338,11 +333,8 @@ msgstr ""
 "الأيمن للاستمرار."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"تم إعداد نظامك و هو جاهز الآن للاستخدام. رجاء اضغظ زر \"التالي\" في الركن "
-"الأيمن للاستمرار."
+msgstr "رجاء اضغظ زر \"التالي\" في الركن أسفل اليمين للاستمرار."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -404,26 +396,3 @@ msgstr ""
 "يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في "
 "الركن الأيمنللمتابعة."
 
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "إذا كان لديك أي من الأقراص المُدمجة التالية يمكنك تثبيت حزم البرامج منها "
-#~ "بإدخال القُرص المُدمج والضّغط على الزر المناسب."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "الرّجاء إدخال خادم للوقت."
-
-#~ msgid "Error"
-#~ msgstr "خطأ"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح أو أن إعدادات الجدار الناري "
-#~ "الخاص بك تعترض اتصالات NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "جاري الاتصال بخادم NTP.  الرّجاء الانتظار..."
