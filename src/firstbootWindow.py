@@ -272,8 +272,6 @@ class firstbootWindow:
         except:
             pass
 
-        print result
-
         if result:
             self.notebook.next_page()
             module = self.moduleList[self.notebook.get_current_page()]
