@@ -4,6 +4,7 @@ import gtk
 import gobject
 import sys
 import functions
+import libuser
 
 ##
 ## I18N
