@@ -29,7 +29,7 @@ class childWindow:
             titleBox = gtk.HBox()
 
             try:
-                p = gtk.gdk.pixbuf_new_from_file("images/networking.png")
+                p = gtk.gdk.pixbuf_new_from_file("pixmaps/networking.png")
             except:
                 pass
 

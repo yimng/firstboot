@@ -20,8 +20,10 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
+        p = None
+        
         try:
-            p = gtk.gdk.pixbuf_new_from_file("images/shadowman-round-48.png")
+            p = gtk.gdk.pixbuf_new_from_file("pixmaps/shadowman-round-48.png")
         except:
             pass
 
@@ -37,7 +39,7 @@ class childWindow:
         self.vbox.pack_start(eventBox, FALSE)
 
         try:
-            p = gtk.gdk.pixbuf_new_from_file("images/splash.png")
+            p = gtk.gdk.pixbuf_new_from_file("pixmaps/splash.png")
         except:
             pass
 

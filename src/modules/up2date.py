@@ -24,7 +24,7 @@ class childWindow:
             titleBox = gtk.HBox()
 
             try:
-                p = gtk.gdk.pixbuf_new_from_file("images/boxset_standard.png")
+                p = gtk.gdk.pixbuf_new_from_file("pixmaps/boxset_standard.png")
             except:
                 pass
 

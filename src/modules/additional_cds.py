@@ -26,7 +26,7 @@ class childWindow:
         titleBox = gtk.HBox()
 
         try:
-            p = gtk.gdk.pixbuf_new_from_file("images/boxset_standard.png")
+            p = gtk.gdk.pixbuf_new_from_file("pixmaps/boxset_standard.png")
         except:
             pass
 
@@ -91,7 +91,7 @@ class childWindow:
         print image, name
         p = None
         try:
-            path = string.join(["images/", image], "")
+            path = string.join(["pixmaps/", image], "")
             print path
             p = gtk.gdk.pixbuf_new_from_file(path)
         except:
