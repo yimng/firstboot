@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.31
+Version: 1.3.32
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Oct 18 2004 Adrian Likins <alikins@redhat.com> - 1.3.32-1
+- #129885 (do the right thing on ia64)
+
 * Fri Oct 15 2004 Adrian Likins <alikins@redhat.com> - 1.3.30-1
 - merge some updates from rhel3 branch
 - try enabling tui stuff again
