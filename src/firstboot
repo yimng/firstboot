@@ -50,6 +50,7 @@ def startWindowManager():
         raise RuntimeError, "Window manager failed to start"
 
     return wm_pid
+
 def setRootBackground():
     root_pid = os.fork()
 
@@ -58,6 +59,10 @@ def setRootBackground():
         args = [path, '-solid', 'midnightblue', '-display', ':1']
         os.execv(path, args)
 
+def mergeXresources():
+    path = "/etc/X11/Xresources"
+    if os.access(path, os.R_OK):
+	os.system("xrdb -merge %s" % path)
 
 #Let's check to see if firstboot should be run or not
 #If we're in debug mode, run anyway.  Even if the file exists
@@ -107,6 +112,7 @@ if not os.environ.has_key('DISPLAY'):
     
     wm_pid = startWindowManager()
     setRootBackground()
+    mergeXresources()
 
 #Hack to make sure the X server has started before importing gtk
 finished = 0
