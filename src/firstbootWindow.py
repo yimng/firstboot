@@ -121,7 +121,6 @@ class firstbootWindow:
                 try:
                     print "calling", module.moduleName
                     vbox, eventbox = module.launch(self.doDebug)
-                    print "not getting here"
                 except:
                     import exceptionWindow
                     (type, value, tb) = sys.exc_info()
@@ -130,12 +129,9 @@ class firstbootWindow:
                     exceptionWindow.ExceptionWindow(module, text)
                     pass                    
             else:
-                print "fell into first else"
                 try:
-                    print "in second try"
                     vbox, eventbox = module.launch() 
                 except:
-                    print "fell into last bucket"
                     import exceptionWindow
                     (type, value, tb) = sys.exc_info()
                     list = traceback.format_exception(type, value, tb)
