@@ -157,8 +157,6 @@ class firstbootWindow:
         # Add the box on the left to the window's HBox.
         self.mainHBox.pack_start(leftVBox, gtk.FALSE)
 
-#########################################
-
         # Populate the right side of the window.  Add the notebook to a VBox.
         self.internalVBox = gtk.VBox()
         self.internalVBox.pack_start(self.notebook, gtk.TRUE)
