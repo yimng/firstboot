@@ -334,7 +334,7 @@ class firstbootWindow:
         if self.notebook.get_current_page() == 0:
             self.backButton.set_sensitive(gtk.FALSE)
 
-        if self.finishButton in self.bb.children():
+        if self.finishButton in self.bb.get_children():
             self.bb.remove(self.finishButton)
             self.bb.pack_end(self.nextButton)
             self.bb.show_all()
