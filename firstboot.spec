@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.9
-Release: 13
+Version: 1.0.0
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -64,6 +64,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 21 2002 Brent Fox <bfox@redhat.com> 1.0.0-1
+- Implement a lowres mode for 640x480 screens
+
 * Thu Aug 15 2002 Brent Fox <bfox@rehdat.com> 0.9.9-13
 - Don't show up2date screen if machine is already registered
 
