@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.6
-Release: 2
+Version: 1.0.7
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -72,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon May 19 2003 Brent Fox <bfox@redhat.com> 1.0.7-1
+- check to see if rhgb is running
+
 * Fri May 16 2003 Brent Fox <bfox@redhat.com> 1.0.6-2
 - Added a mnemonic for network login button (bug #90636)
 - added more mnemonics create_user.py (bug #90865)
