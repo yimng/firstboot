@@ -445,6 +445,10 @@ class firstbootWindow:
                         obj.noNetwork()
 		    continue
 
+	    if hasattr(obj, "skipme"):
+		# the module itself has decided for some reason that
+                # that it should not be shown, so skip it
+		continue
 
             # If the module defines a moduleClass, it has to match the mode
             # we're starting up in, otherwise it's always used.  Add it to
