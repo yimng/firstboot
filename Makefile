@@ -37,6 +37,7 @@ install:
 #	install src/${PKGNAME} $(INSTROOT)$(PKGDATADIR)/${PKGNAME}
 	install ${PKGNAME}.pam $(INSTROOT)$(PAMD_DIR)/${PKGNAME}
 	install ${PKGNAME}.console $(INSTROOT)$(SECURITY_DIR)/${PKGNAME}
+	install -m 755 src/firstboot $(INSTROOT)/usr/sbin/firstboot
 
 archive:
 	cvs tag -cFR $(CVSTAG) .
