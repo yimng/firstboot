@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Jul 30 19:55:59 2002\n"
-"PO-Revision-Date: 2002-07-26 09:28GMT+10:00\n"
+"PO-Revision-Date: 2002-07-31 16:02GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "LinuxアプリケーションCD"
 
 #: ../src/modules/additional_cds.py:32
 msgid "Install additional software"
-msgstr ""
+msgstr "追加のソフトウェアをインストール"
 
 #: ../src/modules/additional_cds.py:59
 msgid ""
@@ -59,14 +59,12 @@ msgid "Error"
 msgstr "エラー"
 
 #: ../src/modules/date.py:49
-#, fuzzy
 msgid "Date and Time"
-msgstr "日付と時刻"
+msgstr "日付 と 時刻"
 
 #: ../src/modules/date.py:50
-#, fuzzy
 msgid "Date and Time Configuration"
-msgstr "日付と時刻の設定"
+msgstr "日付 と 時刻 の設定"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
@@ -99,18 +97,16 @@ msgstr ""
 "\"Forward\"ボタンをクリックして続けてください。"
 
 #: ../src/modules/soundcard_gui.py:50
-#, fuzzy
 msgid "Sound Card"
-msgstr "サウンドカード"
+msgstr "サウンド カード"
 
 #: ../src/modules/soundcard_gui.py:51
-#, fuzzy
 msgid "Sound Card Configuration"
-msgstr "キーボードの設定"
+msgstr "サウンド カードの設定"
 
 #: ../src/modules/soundcard_gui.py:52
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "コンピュータ上にサウンドカードが検出されました。"
 
 #: ../src/modules/soundcard_gui.py:70
 msgid ""
@@ -119,6 +115,10 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"\"Play test sound\"ボタンをクリックしてサンプルサウンドを聞いてください。 "
+"連続 して3つの音が聞こえるはずです。最初の音は、右のチャンネルで "
+"2番目の音が 左側のチャンネルです。 3番目の音は "
+"中央となります。"
 
 #: ../src/modules/up2date.py:18
 msgid "Update Your System"
@@ -129,7 +129,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -137,10 +136,11 @@ msgid ""
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
 msgstr ""
-"これでRed Hat Networkに登録されましたので、Red Hat Update Agentを使用して 最"
-"新のソフトウェアパすべてのッケージを直接、Red Hatから取り込むことが 出 来ま"
-"す。このツール使用すれば、セキュリティシステムパッチ、バグ修正、 ソフトウェア"
-"パッケージ拡いつも張も更新された最新のRed Hat Linuxを 持つことができます。"
+"Red Hat Update Agentは、マシンをRed Hat Networkに登録しますので、 "
+"Red Hatから直接最新のソフトウェアパッケージを受け取ることができます。 "
+"このツールの使用すれば、セキュリティパッチ、バグ修正、 ソフトウェア"
+"パッケージ拡張などをいつも最新の状態にしてRed Hat Linuxシステムを "
+"所有することができます。"
 
 #: ../src/modules/up2date.py:68
 msgid "Yes, I would like to register with Red Hat Network"
@@ -389,3 +389,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
