@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.30
+Version: 1.3.31
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
