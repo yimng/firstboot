@@ -51,7 +51,7 @@ class TimeWindow(FirstbootGuiWindow):
     moduleName = _("Date and Time")
     windowTitle = moduleName
     htmlTag = "time"
-#    shortMessage = _("Please set the date and time for the system.")
+    shortMessage = _("Please set the date and time for the system.")
 
     def getNext(self):
         pass
@@ -66,14 +66,24 @@ class TimeWindow(FirstbootGuiWindow):
 
         #Add icon to the top frame
         self.icon = functions.imageFromPath("/usr/share/redhat-config-date/pixmaps/redhat-config-date.png")
+        self.mainVBox = gtk.VBox()
 
-        self.myVbox = self.datePageVBox
+        internalVBox = gtk.VBox(gtk.FALSE, 10)
+        internalVBox.set_border_width(10)
 
+        messageLabel = gtk.Label(self.shortMessage)
+        messageLabel.set_line_wrap(gtk.TRUE)
+        messageLabel.set_size_request(500, -1)
+        messageLabel.set_alignment(0.0, 0.5)
+
+        internalVBox.pack_start(messageLabel, gtk.FALSE)
+        internalVBox.pack_start(self.datePageVBox, gtk.TRUE)
+        self.mainVBox.pack_start(internalVBox, gtk.TRUE)
 
     def launch(self, doDebug=None):
         self.doDebug = doDebug
         self.setupScreen()
-        return FirstbootGuiWindow.launch(self)
+        return self.mainVBox, self.icon, self.windowTitle
 
     def response_cb (self, dialog, response_id, pid):
         if response_id == gtk.RESPONSE_CANCEL:
@@ -191,12 +201,6 @@ class TimeWindow(FirstbootGuiWindow):
             return 0
 
     def grabFocus(self):
-        print "entering date screen"
         self.datePage.updateSpinButtons()
-
-    def stand_alone(self, doDebug = None):
-        self.doDebug = doDebug
-        self.setupScreen()
-        return FirstbootGuiWindow.stand_alone(self, TimeWindow.windowTitle)
 
 childWindow = TimeWindow
