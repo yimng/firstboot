@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.4
-Release: 4
+Release: 5
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Jan 28 2003 Brent Fox <bfox@redhat.com> 1.0.4-5
+- don't use Yes/No dialogs in create_user.py (bug #82680)
+- only use root window mode in non-debug mode
+
 * Fri Jan 24 2003 Brent Fox <bfox@redhat.com> 1.0.4-4
 - better validity checking for user name and password
 
