@@ -1,20 +1,20 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.2.0
-Release: 3
+Version: 0.9.0
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
 Group: System Environment/Base
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-Source0: %{name}-%{version}.tar.gz
+Source0: %{name}-%{version}.tar.bz2
 Obsoletes:anaconda-reconfig
 Prereq: chkconfig /etc/init.d
 Requires: pygtk2
 Requires: python
 Requires: usermode >= 1.36
 Requires: redhat-config-language
-#Requires: redhat-config-mouse
+Requires: redhat-config-mouse
 Requires: redhat-config-keyboard
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
@@ -59,6 +59,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Jun 21 2002 Brent Fox <bfox@redhat.com> 0.9.0-2
+- Added snapsrc to makefile
+
 * Wed Jun 12 2002 Brent Fox <bfox@redhat.com> 0.2.0-3
 - Fixed a string error in the welcome module
 
