@@ -33,6 +33,7 @@ case "$1" in
 	    echo -n "Running system reconfiguration tool"
 	    /usr/sbin/firstboot --reconfig
 	    rm -f /etc/reconfigSys
+	    exit 0
 	fi
 
 	/usr/sbin/firstboot
