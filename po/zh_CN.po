@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Aug 13 22:19:03 2002\n"
-"PO-Revision-Date: 2002-08-12 10:35GMT+10:00\n"
+"PO-Revision-Date: 2002-08-14 15:02+1000\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
-"Language-Team: Simplified Chinese <zh@li.org>\n"
+"Language-Team: Simplified Chinese <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,17 +43,15 @@ msgstr ""
 
 #: ../src/firstboot.py:88
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
 #: ../src/firstboot.py:89
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
@@ -67,28 +65,26 @@ msgstr "安装额外软件"
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr ""
+msgstr "如果你有任何下面列出的光盘，你可以通过插入光盘，再点击恰当的按钮来安装软件包。"
 
 #: ../src/modules/additional_cds.py:73
-#, fuzzy
 msgid "Red Hat Linux Documentation CD"
-msgstr "Red Hat 文档光盘"
+msgstr "Red Hat Linux 文档光盘"
 
 #: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
 #: ../src/modules/additional_cds.py:99
 msgid "Install..."
-msgstr ""
+msgstr "安装..."
 
 #: ../src/modules/additional_cds.py:84
-#, fuzzy
 msgid "Red Hat Linux Installation CD"
-msgstr "Red Hat 文档光盘"
+msgstr "Red Hat Linux 安装光盘"
 
 #: ../src/modules/additional_cds.py:117
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
+msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -119,9 +115,8 @@ msgid "Finish Setup"
 msgstr "设置完毕"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Setup!"
-msgstr "设置完毕"
+msgstr "设置完毕！"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -163,7 +158,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理"
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -185,9 +179,8 @@ msgstr ""
 "如果你购买了该产品，你将有权得到 Red Hat 网络基本服务的免费试用。要使用该项免"
 "费服务，请参考盒内的产品激活卡来阅读详细指令。\n"
 "\n"
-"如果你没有购买该产品，请访问 http://rhn.redhat.com 来获取详情， 或者来订阅 "
+"如果你没有购买该产品，请访问 http://rhn.redhat.com 来获取详情，或者来订阅"
 "Red Hat 网络的基本服务。\n"
-"\n"
 
 #: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
@@ -446,3 +439,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
+
