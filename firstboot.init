@@ -29,21 +29,23 @@ FILENAME=/etc/sysconfig/firstboot
 
 case "$1" in
  start)
+	[ -f "$FILENAME" ] && exit 0
+
+	runlevel=$(set -- $(runlevel); eval "echo \$$#" )
+	if grep -q "^id:5:initdefault:" /etc/inittab && [ "x$runlevel" = x5 ]; then
+	    if [ ! -f /etc/X11/xorg.conf -a ! -f /etc/X11/XF86Config ] ; then
+		echo -n $"X is not configured.  Running system-config-display"
+		/usr/bin/system-config-display
+		echo -n $"X is now configured.  Starting Setup Agent"
+	    fi
+	fi
+
         if grep -i reconfig /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
 
 	    echo -n $"Running system reconfiguration tool"
 	    /usr/sbin/firstboot --reconfig
 	    rm -f /etc/reconfigSys
 	    exit 0
-	fi
-
-	runlevel=$(set -- $(runlevel); eval "echo \$$#" )
-	if grep -q "^id:5:initdefault:" /etc/inittab && [ "x$runlevel" = x5 ]; then
-	    if [ ! -f /etc/X11/xorg.conf ] ; then
-		echo -n $"X is not configured.  Running system-config-display"
-		/usr/bin/system-config-display
-		echo -n $"X is now configured.  Starting Setup Agent"
-	    fi
 	fi
 
 	/usr/sbin/firstboot
