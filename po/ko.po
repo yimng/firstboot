@@ -1,4 +1,4 @@
-# translation of ko.po to 
+# translation of ko.po to
 # translation of ko.po to Korean
 # Copyright (C) 2002 Red Hat, Inc.
 # Michelle J Kim <mkim@redhat.com>, 2003
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "POT-Creation-Date: Fri Jul 18 18:25:45 2003\n"
-"PO-Revision-Date: 2003-07-01 09:34+1000\n"
+"PO-Revision-Date: 2003-07-21 09:20+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -47,15 +47,12 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
@@ -125,9 +122,8 @@ msgid "_Username:"
 msgstr "사용자명(_U):"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full Nam_e:"
-msgstr "이름(_N):"
+msgstr "이름(_E):"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
@@ -146,9 +142,8 @@ msgstr ""
 "을 클릭해 주십시오."
 
 #: ../src/modules/create_user.py:104
-#, fuzzy
 msgid "Use Network _Login..."
-msgstr "네트워크 로그인 사용(_U)..."
+msgstr "네트워크 로그인 사용(_L)..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -225,14 +220,11 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -365,9 +357,8 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "네, Red Hat Network에 시스템을 등록합니다.(_Y)"
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid "N_o, I do not want to register my system."
-msgstr "아니오, 시스템을 등록하지 않습니다.(_N)"
+msgstr "아니오, 시스템을 등록하지 않습니다.(_O)"
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -684,3 +675,4 @@ msgstr "Red Hat 설정 에이전트"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
