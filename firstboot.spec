@@ -9,7 +9,7 @@ Group: System Environment/Base
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildArch: noarch
 Source0: %{name}-%{version}.tar.bz2
-Obsoletes:anaconda-reconfig
+Obsoletes: anaconda-reconfig
 Prereq: chkconfig, /etc/init.d
 BuildPreReq: python-tools
 Requires: pygtk2
@@ -27,6 +27,7 @@ Requires: redhat-config-rootpassword
 Requires: redhat-config-packages
 Requires: up2date
 Requires: redhat-logos
+ExcludeArch: s390 s390x
 
 %description
 The firstboot utility runs after installation.  It 
@@ -67,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Nov 22 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- exclude mainframe
+
 * Wed Nov 13 2002 Brent Fox <bfox@redhat.com> 1.0.2-3
 - fix soundcard and mouse problem
 
