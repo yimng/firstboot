@@ -3,7 +3,7 @@
 import sys, os
 import signal
 
-xcfg = None
+x_class = None
 
 if __name__ == "__main__":
     signal.signal (signal.SIGINT, signal.SIG_DFL)
@@ -13,14 +13,14 @@ if not os.environ.has_key('DISPLAY'):
     import xserver
     try:
         if os.access("/etc/X11/XF86Config", os.R_OK) or os.access("/etc/X11/XF86Config-4", os.R_OK):
-         xcfg = xserver.start_existing_X ()
+            x_class = xserver.XServer()
     except:
          pass
 
     wm = os.fork()
 
     if (not wm):
-        path = '/usr/bin/sawfish'
+        path = '/usr/bin/metacity'
         args = ['--display=:1']
         os.execv(path, args)
 
