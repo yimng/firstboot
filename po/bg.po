@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
-"PO-Revision-Date: 2004-11-11 01:28+0200\n"
+"PO-Revision-Date: 2004-11-12 00:26+0200\n"
 "Last-Translator: Doncho N. Gunchev <mr700@globalnet.bg>\n"
 "Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr "_Изключване"
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "Получена е грешка в модула %s."
+msgstr "Възникна грешка в модул %s."
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -58,9 +58,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"Тъй като има проблем с модула %s, агента за \n"
-"настройка на Red Hat за настройка ще го пропусне \n"
-"и ще се опита да стартира останалите модули."
+"Тъй като има проблем с модул %s, агента за \n"
+"настройка на Red Hat няма да го зареди и \n"
+"ще се опита да стартира останалите модули."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -72,13 +72,13 @@ msgid ""
 msgstr ""
 "Моля съобщете за грешката във 'firstboot' на следящата за \n"
 "грешки система на Red Hat на http://www.redhat.com/bugzilla. \n"
-"Копие на debug изхода е запазен в %s.\n"
-"Моля прикачете файла към рапорта за грешката.\n"
+"Копие на debug изхода е запазен в %s. \n"
+"Моля прикачете файла към рапорта за грешката. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
-msgstr "_Предходен"
+msgstr "_Назад"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
 #: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
@@ -154,10 +154,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Моля поставете диска \"Ред Хат Ентърпрайс Линукс - Екстри\" за да "
-"инсталирате приставки(plug-ins) и приложения на други производители.  Може "
-"да поставите и диска \"Документация\" или всеки друг Ред Хат диск за "
-"инсталирането на допълнителен софтуер."
+"Моля поставете диска с етикет \"Red Hat Enterprise Linux Extras\" за да "
+"инсталирате приставки и приложения на други производители.  Може "
+"да поставите и диска с Документация или всеки друг предоставен от "
+"Red Hat диск за да инсталирате допълнителен софтуер сега."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:69
@@ -170,9 +170,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"За да включите поддръжка на 32-битови приложения на Intel Itanium2 "
-"архитектури, трябва сега да инсталирате пакета Intel Execution Layer от "
-"диска с екстри."
+"За да включите поддръжка за 32-битови приложения на Intel Itanium2 "
+"архитектури, трябва да инсталирате пакета Intel Execution Layer от "
+"диска с добавки(Extras) сега."
 
 #: ../src/modules/additional_cds.py:110
 msgid "Install..."
@@ -184,13 +184,11 @@ msgid ""
 "click \"OK\" to continue."
 msgstr ""
 "CD-ROM не бе намерен.  Моля поставете CD-ROM в устройството и натиснете "
-"\"Добре\" за продължаване."
+"\"Добре\" за продължение."
 
 #: ../src/modules/additional_cds.py:179
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Авто-стартиращата програма не може да бъде намерена на CD-то. Натиснете "
-"\"Добре\" за продължение."
+msgstr "Няма авто-стартиращата програма на CD-то. Натиснете \"Добре\" за продължение."
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
@@ -227,12 +225,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Ако използвате мрежова идентификация, като например Kerberos или NIS, моля "
-"натиснете бутона \"Ползване на мрежово удостоверяване\"."
+"Ако използвате мрежово удостоверяване, като например Kerberos или NIS, "
+"моля натиснете бутона \"Ползване на мрежово удостоверяване\"."
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
-msgstr "Ползване на _мрежово удостоверяване..."
+msgstr "Ползване на мрежово _удостоверяване..."
 
 #: ../src/modules/create_user.py:163
 msgid ""
@@ -240,9 +238,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Горещо се препоръчва да създадете личен акаунт.  Ако желаете да продължите "
-"без акаунт, може да влизате с root акаунта, които е запазен само за "
-"административно използване."
+"Горещо се препоръчва да създадете личен акаунт.  Ако желаете да "
+"продължите без акаунт, може да влизате само с акаунта на root, "
+"които е запазен само за административно ползване."
 
 #: ../src/modules/create_user.py:171
 msgid "_Continue"
@@ -284,8 +282,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Потребителското име %s съдържа пунктуационни символи.  Моля не ги ползвайте "
-"в потребителското име."
+"Потребителското име %s съдържа пунктуационни символи.  Моля не ги "
+"ползвайте в потребителското име."
 
 #: ../src/modules/create_user.py:310
 #, python-format
@@ -293,8 +291,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Потребителското име %s съдържа главни букви.  Моля не ги ползвайте в "
-"потребителското име."
+"Потребителското име %s съдържа главни букви.  Моля не ги ползвайте "
+"в потребителското име."
 
 #: ../src/modules/create_user.py:317
 #, python-format
@@ -302,8 +300,8 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Потребителското име %s съдържа невалидни символи.  Моля ползвайте само ASCII "
-"символи."
+"Потребителското име %s съдържа невалидни символи.  Моля ползвайте "
+"само ASCII символи."
 
 #: ../src/modules/create_user.py:327
 msgid "The password contains invalid characters.  Please use only ASCII characters."
@@ -328,23 +326,23 @@ msgstr "Екран"
 
 #: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Моля изберете резолюция и дълбочина на цвета които желаете да ползвате"
+msgstr "Моля изберете желаните от Вас резолюция и дълбочина на цвят"
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr "Приключване на установяването"
+msgstr "Приключване на настройката"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Вашата система е готова за използване.  Моля натиснете бутона \"Следващ\" в "
-"долния десен ъгъл за да продължите."
+"Вашата система е готова за използване.  Моля натиснете бутона "
+"\"Следващ\" в долния десен ъгъл за продължение."
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Моля натиснете бутона \"Следващ\" в долния десен ъгъл за да продължите."
+msgstr "Моля натиснете бутона \"Следващ\" в долния десен ъгъл за продължение."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -364,7 +362,7 @@ msgstr "Портокол за зареждане"
 
 #: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
-msgstr "Промяна на мрежовата конфигурация..."
+msgstr "Промяна на мрежовата конфигура_ция..."
 
 #: ../src/modules/networking.py:138
 msgid "static"
@@ -385,9 +383,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Моля натиснете бутона \"Просвирване на тестов звук\" за да чуете примерен "
-"звук.  Би трябвало да се пусне серия от три звука.  Първия ще бъде от десния "
-"канал, втория от левия канал и третия от центъра."
+"Моля натиснете бутона \"Просвирване на тестов звук\" за да чуете "
+"примерен звук.  Би трябвало да се пусне серия от три звука.  Първия "
+"ще бъде от десния канал, втория от левия канал и третия от центъра."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -403,8 +401,8 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Няколко допълнителни стъпки са нужни за да приготвите системата за работа.  "
-"Агента за настройка ще Ви преведе през базовите конфигурации.  Моля "
+"Има още няколко стъпки преди системата Ви да бъде готова за работа.  "
+"Агента за настройка ще Ви преведе през някои базови настройки.  Моля "
 "натиснете бутон \"Следващ\" в долния десен ъгъл за да продължите."
 
 #~ msgid "Firstboot does not run in runlevel 3."
