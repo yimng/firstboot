@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
-"PO-Revision-Date: 2003-01-06 08:58+1000\n"
+"PO-Revision-Date: 2003-01-16 09:22+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -46,13 +46,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
@@ -120,8 +118,7 @@ msgstr "密碼確認："
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
-msgstr ""
-"並未建立一個使用者帳號。 在建立一個使用者帳號之前，您確定您想要繼續嗎？"
+msgstr "並未建立一個使用者帳號。 在建立一個使用者帳號之前，您確定您想要繼續嗎？"
 
 #: ../src/modules/create_user.py:107
 msgid "The passwords do not match.  Please enter the password again."
@@ -132,8 +129,7 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
 #: ../src/modules/create_user.py:126
-msgid ""
-"An account with username %s already exists.  Please specify another username."
+msgid "An account with username %s already exists.  Please specify another username."
 msgstr "使用者名稱 %s 所屬的帳號已經存在，請指定另一個使用者名稱。"
 
 #: ../src/modules/date.py:51
@@ -141,9 +137,8 @@ msgid "Date and Time"
 msgstr "日期與時間"
 
 #: ../src/modules/date.py:52
-#, fuzzy
 msgid "Set Date and Time"
-msgstr "日期與時間"
+msgstr "設定日期與時間"
 
 #: ../src/modules/date.py:106
 msgid "Please enter a time server."
@@ -174,14 +169,13 @@ msgid "Finished Setup!"
 msgstr "完成設定！"
 
 #: ../src/modules/finished.py:35
-#, fuzzy
 msgid ""
 "Your Red Hat Linux system is now set up and ready to use.  We hope that you "
 "will have a pleasant computing experience.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"恭喜您！  現在您的 Red Hat Linux 系統已經設定好可以使用了。 我們期待您擁有一"
-"個愉快的全新體驗。  請點選右下角的 『下一步』 按鈕繼續。"
+"現在您的 Red Hat Linux 系統已經設定好可以使用了。 我們期待您擁有一"
+"個愉快的全新體驗。 請點選右下角的『下一步』按鈕繼續。"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -248,14 +242,12 @@ msgid "Welcome"
 msgstr "歡迎"
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"您好！ 歡迎使用 Red Hat 設定代理程式。  在使用您的系統之前，要先完成幾個步"
-"驟。  Red Hat 設定代理程式現在將引導您做一些基本的設定。 請點選在右下角的 "
+"在使用您的系統之前，要先完成幾個步驟。 Red Hat 設定代理程式現在將引導您做一些基本的設定。 請點選在右下角的 "
 "『下一步』 按鈕以繼續。"
 
 #: ../src/textWindow.py:15
@@ -536,3 +528,4 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
+
