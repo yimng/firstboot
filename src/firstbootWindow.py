@@ -78,7 +78,7 @@ class firstbootWindow:
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
-            
+
             if doReconfig == 1:
                 try:
                     if obj.moduleClass == "reconfig":
@@ -128,9 +128,9 @@ class firstbootWindow:
         bb.set_layout(gtk.BUTTONBOX_END)
         bb.set_border_width(10)
         bb.set_spacing(10)
-        backButton = gtk.Button("Back")
+        backButton = gtk.Button(stock='gtk-go-back')
         backButton.connect('clicked', self.backClicked)
-        nextButton = gtk.Button("Next")
+        nextButton = gtk.Button(stock='gtk-go-forward')
         group = gtk.AccelGroup()
         nextButton.connect('clicked', self.okClicked)
 
@@ -163,7 +163,7 @@ class firstbootWindow:
         gc = bgimage.new_gc ()
         p.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
         win.window.set_back_pixmap (bgimage, gtk.FALSE)
-
+        
         for module in self.moduleList:
             box = module.launch()
             if box:
