@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 7
+Release: 8
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -66,6 +66,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Sep 03 2002 Brent Fox <bfox@redhat.com> 1.0.1-8
+- get new pixmaps from garrett
+
 * Fri Aug 30 2002 Brent Fox <bfox@redhat.com> 1.0.1-7
 - Wrap umount in a try/except in additional_cds.py
 
