@@ -30,5 +30,5 @@ if not os.environ.has_key('DISPLAY'):
 #from window import showWindow
 #showWindow()
 
-import mainWindow
-mainWindow.mainWindow()
+import firstbootWindow
+firstbootWindow.firstbootWindow()
