@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.2.4
+Version: 1.3.1
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -73,6 +73,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Oct 24 2003 Brent Fox <bfox@redhat.com> 1.3.1-1
+- bump version
+- first stab at text mode
+
 * Wed Oct 15 2003 Brent Fox <bfox@redhat.com> 1.2.4-1
 - pull lightrays.png from a different location
 
