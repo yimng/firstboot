@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Aug 13 22:19:03 2002\n"
-"PO-Revision-Date: 2002-08-26 16:06+0200\n"
+"PO-Revision-Date: 2002-08-26 17:00+0200\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,18 +36,22 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Veuillez remplir le formulaire concernant 'firstboot' dans le système de pistage \n"
+"des bogues de Red Hat, à l'adresse http://www.redhat.com/buzilla. \n"
+"Une copie de la sortie de débogage a été sauvegardée dans %s \n"
+"Veillez à bien joindre ce fichier au rapport de bogue.\n"
 
 #: ../src/firstboot.py:88
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "Firstboot a déjà été exécuté sur ce système.\n"
 
 #: ../src/firstboot.py:89
 msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr ""
+msgstr "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de commande :"
 
 #: ../src/firstboot.py:94
 msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
+msgstr "Exécutez les commandes suivantes pour exécuter firstboot au cours du démarrage du système :"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
@@ -55,42 +59,42 @@ msgstr "CD supplémentaires"
 
 #: ../src/modules/additional_cds.py:30
 msgid "Install Additional Software"
-msgstr ""
+msgstr "Installer un logiciel supplémentaire"
 
 #: ../src/modules/additional_cds.py:61
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"Si vous disposez de l'un des CD figurant dans la liste ci-dessous, vous pouvez installer les "
+"paquetages à partir de ceux-ci en introduisant simplement le CD et cliquant sur le bouton approprié."
 
 #: ../src/modules/additional_cds.py:73
-#, fuzzy
 msgid "Red Hat Linux Documentation CD"
-msgstr "CD de documentation Red Hat"
+msgstr "CD de documentation Red Hat Linux"
 
 #: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
 #: ../src/modules/additional_cds.py:99
 msgid "Install..."
-msgstr ""
+msgstr "Installation..."
 
 #: ../src/modules/additional_cds.py:84
-#, fuzzy
 msgid "Red Hat Linux Installation CD"
-msgstr "CD de documentation Red Hat"
+msgstr "CD d'installation Red Hat Linux"
 
 #: ../src/modules/additional_cds.py:117
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur puis cliquer sur "
+"\"OK\" pour continuer."
 
 #: ../src/modules/date.py:49
-#, fuzzy
 msgid "Date and Time"
-msgstr "Date & Heure"
+msgstr "Date et Heure"
 
 #: ../src/modules/date.py:50
-#, fuzzy
 msgid "Date and Time Configuration"
 msgstr "Configuration de la date et de l'heure"
 
@@ -116,12 +120,10 @@ msgid "Finish Setup"
 msgstr "Terminer le paramétrage"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Setup!"
-msgstr "Terminer le paramétrage"
+msgstr "Paramétrage terminé !"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
@@ -133,18 +135,16 @@ msgstr ""
 "coin en-bas à droite."
 
 #: ../src/modules/soundcard_gui.py:49
-#, fuzzy
 msgid "Sound Card"
-msgstr "Carte son :"
+msgstr "Carte son "
 
 #: ../src/modules/soundcard_gui.py:50
-#, fuzzy
 msgid "Sound Card Configuration"
-msgstr "Configuration du clavier"
+msgstr "Configuration de la carte son"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "Une carte son a été détectée sur votre ordinateur."
 
 #: ../src/modules/soundcard_gui.py:93
 msgid ""
@@ -153,18 +153,19 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Cliquez sur le bouton \"Son test\" pour avoir un échantillon de son. Vous devriez entendre "
+"une série de trois sons. Le premier sera dans le canal de droite, le second dans celui de gauche et "
+"le troisième au centre."
 
 #: ../src/modules/up2date.py:19
-#, fuzzy
 msgid "Update Agent"
-msgstr "Red Hat Update Agent"
+msgstr "Update Agent"
 
 #: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -179,12 +180,20 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"Vous êtes maintenant enregistrés dans Red Hat Network. Vous pouvez "
-"exécuter l'agent de mise à jour Red Hat pour recevoir les derniers "
+"L'agent de mise à jour Red Hat enregistrera votre ordinateur. Vous pourrez ainsi recevoir les derniers "
 "paquetages de logiciels directement de Red Hat. En utilisant cet outil vous "
 "aurez toujours un système Red Hat Linux équipé des derniers patches de "
-"sécurité, réparations de bogues et améliorations des paquetages de "
-"logiciels."
+"sécurité, correctifs de bogues et améliorations des paquetages de "
+"logiciels.\n"
+"\n"
+"Si vous avez acheté ce produit, vous avez un essai gratuit de Red Hat "
+"Network Basic Service. Pour accéder à cet essai gratuit, consultez "
+"la carte d'activation du produit que vous trouverez dans la boîte : elle contient des "
+"indications plus précises.\n"
+"\n"
+"Si vous n'avez pas acheté ce produit, rendez-vous à l'adresse Red Hat "
+"Network Basic Service. Vous y trouverez de plus amples détails et pourrez vous inscrire à "
+"Red Hat Network Basic Service. \n"
 
 #: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
@@ -233,9 +242,6 @@ msgstr ""
 #~ "Cette fonctionnalité n'est pas encore implémentée. Veuillez ne pas "
 #~ "reporter de bogue concernant ce bouton."
 
-#, fuzzy
-#~ msgid "Finished Installation!"
-#~ msgstr "Installation terminée !"
 
 #~ msgid "Update Your System"
 #~ msgstr "Mettre votre système à jour"
@@ -318,18 +324,10 @@ msgstr ""
 #~ msgid "Keyboard"
 #~ msgstr "Clavier"
 
-#, fuzzy
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "Veuillez sélectionner le clavier de votre système."
-
-#, fuzzy
-#~ msgid "Language"
-#~ msgstr "Sélection de la langue"
 
 #~ msgid "Language Configuration"
 #~ msgstr "Configuration de la langue"
 
-#, fuzzy
 #~ msgid "A configuration tool to set the language for the system"
 #~ msgstr "Veuillez paramétrer la langue par défaut de votre système."
 
@@ -373,7 +371,6 @@ msgstr ""
 #~ msgid "Passwords do not match.  Please try again."
 #~ msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
 
-#, fuzzy
 #~ msgid "Security Level"
 #~ msgstr "Niveau de sécurité :"
 
