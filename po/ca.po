@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-15 13:47-0400\n"
-"PO-Revision-Date: 2004-09-15 11:38+0200\n"
+"PO-Revision-Date: 2004-10-18 15:29+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -147,6 +147,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Inerteu el disc etiquetat \"Red Hat Enterprise Linux Extras\" per permetre "
+"la instal·lació de connectors i aplicacions de tercers. També podeu inserir "
+"el disc de documentació, o altres discs proporcionats per Red Hat per "
+"instal·lar programari ara."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -157,6 +161,11 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Per habilitar el suport per a aplicacions de 32 bits en temps d'execució en "
+"l'arquitectura Intel Itanium2, heu d'instal·lar el paquet Intel Execution "
+"Layer del disc d'extres."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -182,15 +191,14 @@ msgid "System User"
 msgstr "Usuari del sistema"
 
 #: ../src/modules/create_user.py:65
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"És recomanable que creeu un compte personal d'usuari per a ús normal (és a "
-"dir, per a tasques no administratives). Per crear el vostre compte personal, "
-"proporcioneu la informació demanada."
+"És recomanable que creeu un compte personal d'usuari 'username' per a ús "
+"normal (és a dir, per a tasques no administratives). Per crear el compte "
+"personal 'username', proporcioneu la informació demanada."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -334,11 +342,8 @@ msgstr ""
 "\"Següent\" al cantó inferior dret per continuar."
 
 #: ../src/modules/finished.py:38
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Aquest sistema ja està configurat i llest per ser usat. Feu clic al botó "
-"\"Següent\" al cantó inferior dret per continuar."
+msgstr "Feu clic al botó \"Següent\" al cantó inferior dret per continuar."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
