@@ -116,21 +116,27 @@ tokens = string.split(line)
 runlevel = int(tokens[-1])
 
 if runlevel == 3:
-    import textWindow
-    from snack import *
+    #They booted the machine in runlevel 3.  Assume that they don't want to see firstboot
+    print (_("Firstboot does not run in runlevel 3."))
+    firstbootBackend.writeSysconfigFile(doDebug)
+    os._exit(0)
     
-    screen = SnackScreen()
+##-------Comment out the newt window for now.  Ran out of time for GinGin
+##     import textWindow
+##     from snack import *
+    
+##     screen = SnackScreen()
 
-    result = textWindow.TextWindow()(screen)
+##     result = textWindow.TextWindow()(screen)
 
-    if result == -1:
-        #If they don't want to run firstboot, exit for good
-        screen.finish()
-        firstbootBackend.writeSysconfigFile(doDebug)
-        os._exit(0)
-    else:
-        #They want to run firstboot, so let's pass on through
-        screen.finish()
+##     if result == -1:
+##         #If they don't want to run firstboot, exit for good
+##         screen.finish()
+##         firstbootBackend.writeSysconfigFile(doDebug)
+##         os._exit(0)
+##     else:
+##         #They want to run firstboot, so let's pass on through
+##         screen.finish()
 
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
