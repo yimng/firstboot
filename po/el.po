@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Aug 13 22:19:03 2002\n"
+"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
 "PO-Revision-Date: 2002-08-25 16:32--500\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team: Greek <nls@hellug.gr>\n"
@@ -13,18 +13,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/exceptionWindow.py:32
-msgid "An error has occured in the %s module."
+#: ../src/exceptionWindow.py:31
+#, fuzzy
+msgid "An error has occurred in the %s module."
 msgstr "Παρουσιάστηκε σφάλμα στο άρθρωμα %s."
 
-#: ../src/exceptionWindow.py:37
+#: ../src/exceptionWindow.py:36
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr " "
 
-#: ../src/exceptionWindow.py:41
+#: ../src/exceptionWindow.py:40
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -32,21 +33,21 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
-#: ../src/firstboot.py:88
+#: ../src/firstboot.py:91
 msgid "Firstboot has already been run once on this system.\n"
 msgstr ""
 
-#: ../src/firstboot.py:89
+#: ../src/firstboot.py:92
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 
-#: ../src/firstboot.py:94
+#: ../src/firstboot.py:97
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
 msgid "Additional CDs"
 msgstr "Eπιπρόσθετα CDs"
 
@@ -54,52 +55,56 @@ msgstr "Eπιπρόσθετα CDs"
 msgid "Install Additional Software"
 msgstr "Εγκατάσταση Επιπρόσθετου Λογισμικού"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:55
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:67
 msgid "Red Hat Linux Documentation CD"
 msgstr "CD Τεκμηρίωσης του Red Hat Linux"
 
-#: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
-#: ../src/modules/additional_cds.py:99
+#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
+#: ../src/modules/additional_cds.py:93
 msgid "Install..."
 msgstr "Εγκατάσταση..."
 
-#: ../src/modules/additional_cds.py:84
+#: ../src/modules/additional_cds.py:78
 msgid "Red Hat Linux Installation CD"
 msgstr "CD Εγκατάστασης του Red Hat Linux"
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:115
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Ημερομηνία και Ώρα"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:52
 msgid "Date and Time Configuration"
 msgstr "Ρύθμιση Ημερομηνίας και Ώρας"
 
-#: ../src/modules/date.py:52
+#: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
 msgstr "Παρακαλώ ορίσετε ημερομηνία και ώρα για το σύστημα."
 
-#: ../src/modules/date.py:109
+#: ../src/modules/date.py:120
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
 
-#: ../src/modules/date.py:111
+#: ../src/modules/date.py:127
 msgid "Error"
 msgstr "Σφάλμα"
+
+#: ../src/modules/date.py:157
+msgid "Contacting NTP server.  Please wait..."
+msgstr ""
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
@@ -109,7 +114,7 @@ msgstr "Τέλος Ρύθμισης"
 msgid "Finished Setup!"
 msgstr "Η ρύθμιση Έλαβε Τέλος!"
 
-#: ../src/modules/finished.py:45
+#: ../src/modules/finished.py:48
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
@@ -143,11 +148,11 @@ msgstr ""
 msgid "Update Agent"
 msgstr ""
 
-#: ../src/modules/up2date.py:28
+#: ../src/modules/up2date.py:31
 msgid "Red Hat Update Agent"
 msgstr ""
 
-#: ../src/modules/up2date.py:56
+#: ../src/modules/up2date.py:53
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -163,11 +168,11 @@ msgid ""
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:72
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Ναι, θέλω να εγγραφώ στο Red Hat Network"
 
-#: ../src/modules/up2date.py:76
+#: ../src/modules/up2date.py:73
 msgid "No, I do not want to register my system."
 msgstr "Όχι, δεν θέλω να καταταχωρήσω το σύστημα μου."
 
@@ -179,7 +184,7 @@ msgstr "Καλώς ήλθατε"
 msgid "Welcome to Red Hat Linux!"
 msgstr "Καλώς ήλθτατε στο Red Hat Linux!"
 
-#: ../src/modules/welcome.py:45
+#: ../src/modules/welcome.py:48
 msgid ""
 "Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
 "before your system is ready to use.  The Red Hat Setup Agent will now guide "

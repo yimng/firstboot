@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Tue Aug 13 22:19:03 2002\n"
+"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <ra@hp.is>\n"
@@ -14,11 +14,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 
-#: ../src/exceptionWindow.py:32
-msgid "An error has occured in the %s module."
+#: ../src/exceptionWindow.py:31
+#, fuzzy
+msgid "An error has occurred in the %s module."
 msgstr "Villa kom upp í reklinum %s."
 
-#: ../src/exceptionWindow.py:37
+#: ../src/exceptionWindow.py:36
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
@@ -28,7 +29,7 @@ msgstr ""
 "Red Hat uppsetningarforritið ekki lesa hann inn \n"
 "og mun halda áfram að reyna þá rekla sem eftir eru."
 
-#: ../src/exceptionWindow.py:41
+#: ../src/exceptionWindow.py:40
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -40,24 +41,24 @@ msgstr ""
 "Afrit af villumeldingunum var vistað í %s \n"
 "Mundi að hengja hana við villutilkynninguna. \n"
 
-#: ../src/firstboot.py:88
+#: ../src/firstboot.py:91
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot hefur þegar verið keyrt á þessari vél.\n"
 
-#: ../src/firstboot.py:89
+#: ../src/firstboot.py:92
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Gefðu eftirfarandi skipanir ef þú vilt keyra firstboot úr skipanalínunni:"
 
-#: ../src/firstboot.py:94
+#: ../src/firstboot.py:97
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Til að keyra firstboot sjálfkrafa þegar vélin ræsir þarftu að framkvæma "
 "eftirfarandi skipanir:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
 msgid "Additional CDs"
 msgstr "Auka diskar"
 
@@ -65,7 +66,7 @@ msgstr "Auka diskar"
 msgid "Install Additional Software"
 msgstr "Setja inn auka hugbúnað"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:55
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -73,20 +74,20 @@ msgstr ""
 "Ef þú ert með einhvern af diskunum hér að neðan getur þú sett inn pakka af "
 "þeim með því að setja þá í drifið og smella á viðeigandi hnapp."
 
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:67
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat Linux handbókardiskurinn"
 
-#: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
-#: ../src/modules/additional_cds.py:99
+#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
+#: ../src/modules/additional_cds.py:93
 msgid "Install..."
 msgstr "Setja upp..."
 
-#: ../src/modules/additional_cds.py:84
+#: ../src/modules/additional_cds.py:78
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux uppsetningardiskur"
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:115
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -94,19 +95,19 @@ msgstr ""
 "Geisladiskur fannst ekki. Vinsamlegast settu geisladisk í drifið og veldu "
 "\"Í lagi\" til að halda áfram."
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Dagsettning og tími"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:52
 msgid "Date and Time Configuration"
 msgstr "Stillingar dagsettningar og tíma"
 
-#: ../src/modules/date.py:52
+#: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
 msgstr "Vinsamlegast settu dagsetningu og tíma vélarinnar."
 
-#: ../src/modules/date.py:109
+#: ../src/modules/date.py:120
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -114,9 +115,13 @@ msgstr ""
 "Ekki tókst að tengjast %s. Annaðhvort er %s ekki til staðar eða "
 "eldveggjarstillingar velarinnar þinnar leyfa ekki NTP tengingar."
 
-#: ../src/modules/date.py:111
+#: ../src/modules/date.py:127
 msgid "Error"
 msgstr "Villa"
+
+#: ../src/modules/date.py:157
+msgid "Contacting NTP server.  Please wait..."
+msgstr ""
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
@@ -126,7 +131,7 @@ msgstr "Ljúka uppsetningu"
 msgid "Finished Setup!"
 msgstr "Uppsetningu lokið!"
 
-#: ../src/modules/finished.py:45
+#: ../src/modules/finished.py:48
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
@@ -163,11 +168,11 @@ msgstr ""
 msgid "Update Agent"
 msgstr "Uppfærsluálfurinn"
 
-#: ../src/modules/up2date.py:28
+#: ../src/modules/up2date.py:31
 msgid "Red Hat Update Agent"
 msgstr "Red Hat uppfærsluálfurinn"
 
-#: ../src/modules/up2date.py:56
+#: ../src/modules/up2date.py:53
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -194,11 +199,11 @@ msgstr ""
 "Hafir þú ekki keypt pakkann getur þú farið á http://rhn.redhat.com til að fá "
 "frekari upplýsingar um hvernig þú virkjar þessa þjónustu.\n"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:72
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Já ég vil skrá vélina hjá Red Hat Network"
 
-#: ../src/modules/up2date.py:76
+#: ../src/modules/up2date.py:73
 msgid "No, I do not want to register my system."
 msgstr "Nei ég vil ekki skrá vélina hjá Red Hat Network"
 
@@ -210,7 +215,7 @@ msgstr "Velkomin(n)"
 msgid "Welcome to Red Hat Linux!"
 msgstr "Velkomin(n) í Red Hat Linux!"
 
-#: ../src/modules/welcome.py:45
+#: ../src/modules/welcome.py:48
 msgid ""
 "Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
 "before your system is ready to use.  The Red Hat Setup Agent will now guide "
