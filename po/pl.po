@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-05 12:40-0400\n"
-"PO-Revision-Date: 2004-09-12 18:07+0200\n"
+"PO-Revision-Date: 2004-10-06 09:03+0200\n"
 "Last-Translator: Tom Berner <tom@man.lodz.pl>\n"
 "Language-Team: POLISH <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../src/firstboot.py:135
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot nie jest uruchamiany na poziomie 3"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -154,6 +154,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Aby zainstalować aplikacje i plugin'y innych producentów proszę włożyć dysk "
+"opisany jako  \"Red Hat Enterprise Linux Extras\".  Można również włożyć dysk "
+"z dokumentacją lub inny dostarczony przez Red Hat aby zainstalować dodatkowe "
+"oprogramowanie."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -164,6 +168,11 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Aby włączyć wsparcie wykonywania aplikacji 32 bitowych w architekturze "
+"Intel Itanium2 trzeba zainstalować pakiet Intel Execution Layer z dysku "
+"z dodatkami (Extras) do systemu."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -178,8 +187,7 @@ msgstr ""
 "kontynuować."
 
 #: ../src/modules/additional_cds.py:180
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Program automatycznego uruchomienia nie został znaleziony na płycie. Kliknij "
 "\"OK\" aby kontynuować."
@@ -265,16 +273,14 @@ msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
+msgstr "Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
 
 #: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
-"Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
+msgstr "Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -288,18 +294,15 @@ msgstr "Nazwa użytkownika '%s' zawiera duże litery, których nie może zawiera
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
+msgstr "Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Hasło zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nazwisko '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/date.py:47
@@ -391,26 +394,3 @@ msgstr ""
 "obecnie nie posiada poradnika o podstawowej konfiguracji.Kliknij \"Dalej\" w "
 "dolnym prawym rogu okna żeby kontynuować."
 
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Jeśli posiadasz jakiekolwiek płyty z pakietami, możesz je zainstalować po "
-#~ "włożeniu płyty do napędu i kliknięciu na odpowiedni przycisk."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Wprowadź serwer czasu."
-
-#~ msgid "Error"
-#~ msgstr "Błąd"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Połączenie z %s nie zostało nawiązane. Albo serwer %s jest nieosiągalny "
-#~ "albo firewall blokuje połączenia NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Nawiązuje połączenie z serwerem NTP. Proszę czekać..."
