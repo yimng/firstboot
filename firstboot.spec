@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.8
-Release: 2
+Version: 1.1.9
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -11,7 +11,7 @@ BuildArch: noarch
 Source0: %{name}-%{version}.tar.bz2
 Obsoletes: anaconda-reconfig
 Prereq: chkconfig, /etc/init.d
-BuildPreReq: python-tools
+BuildPreReq: gettext
 Requires: pygtk2
 Requires: python
 Requires: usermode >= 1.36
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 13 2003 Brent Fox <bfox@redhat.com> 1.1.9-1
+- replace BuildRequires on python-tools with gettext
+
 * Thu Jul 31 2003 Brent Fox <bfox@redhat.com> 1.1.8-2
 - bump relnum and rebuild
 
