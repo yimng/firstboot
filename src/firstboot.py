@@ -11,12 +11,22 @@ if __name__ == "__main__":
 
 if not os.environ.has_key('DISPLAY'):
     import xserver
-    try:
+    
+    try:        
         if os.access("/etc/X11/XF86Config", os.R_OK) or os.access("/etc/X11/XF86Config-4", os.R_OK):
             x_class = xserver.XServer()
     except:
-         pass
+        pass
+    
+    startWindowManager()
+    setRootBackground()
 
+
+import firstbootWindow
+firstbootWindow.firstbootWindow(wm_pid)
+
+
+def startWindowManager(self):    
     wm_pid = os.fork()
 
     if (not wm_pid):
@@ -24,5 +34,26 @@ if not os.environ.has_key('DISPLAY'):
         args = ['--display=:1']
         os.execv(path, args)
 
-import firstbootWindow
-firstbootWindow.firstbootWindow(wm_pid)
+
+    # give time for the window manager to start up
+    time.sleep (3)
+    status = 0
+    try:
+        pid, status = os.waitpid (self.wm_pid, os.WNOHANG)
+        
+    except OSError, (errno, msg):
+        print "in except"
+        print __name__, "waitpid:", msg
+
+
+    if status:
+        raise RuntimeError, "Window manager failed to start"
+
+def setRootBackground(self):
+    root_pid = os.fork()
+
+    if (not root_pid):
+        path = '/usr/bin/X11/xsetroot'
+        args = [path, '-solid', 'gray45']
+        os.execv(path, args)
+
