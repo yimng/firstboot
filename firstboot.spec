@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.14
+Version: 1.3.15
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Jun 21 2004 Brent Fox <bfox@redhat.com> - 1.3.15-1
+- apply patch from mikem in bug #121489
+
 * Wed May 12 2004 Elliot Lee <sopwith@redhat.com> 1.3.14-1
 - Fix initscript (#121489)
 
