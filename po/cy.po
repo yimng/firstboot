@@ -1,19 +1,22 @@
+# translation of firstboot.pot to Cymraeg
 # Copyright (C) 2003
 # This file is distributed under the same license as the rhgb package.
 # Alan Cox <alan@redhat.com>, 2003.
 # Dafydd Harries <daf@parnassus.ath.cx>, 2003.
+# Owain Green <owaing@oceanfree.net>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: firstboot.cy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-10-14 20:51+0100\n"
-"Last-Translator: Dafydd Harries <daf@parnassus.ath.cx>\n"
-"Language-Team: Cymraeg <gnome-cy@pengwyn.linux.org.uk>\n"
+"PO-Revision-Date: 2004-02-24 12:25+0000\n"
+"Last-Translator: Owain Green <owaing@oceanfree.net>\n"
+"Language-Team: Cymraeg <Cy@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
 
 #. # eula_strings.py
 #. #
@@ -54,7 +57,7 @@ msgstr "Hoffech chi ail-ddarllen neu ailystyried y Cytundeb Trwydded?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr "_Ail-ddarllen y trwydded"
+msgstr "_Ail-ddarllen y drwydded"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
@@ -93,9 +96,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"Achos mae problem gydag y modiwl '%s', \n"
-"Ni fydd Red Hat Setup Agent yn llwythio y modiwl hwn a \n"
-"bydd yn ceisio rhedeg y modylau sydd ar ôl."
+"Gan fod problem gyda'r modiwl '%s', \n"
+"Ni fydd Red Hat Setup Agent yn llwytho'r modiwl yma a \n"
+"bydd yn ceisio rhedeg y modiwlau sydd ar ôl."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -106,9 +109,9 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 "Os gwelwch yn dda, cyflwynwch adroddiad nam yn erbyn \n"
-"'firstboot' yn system dilyn namau Red Hat at \n"
+"'firstboot' yn system olrhain namau Red Hat yn\n"
 "http://www.redhat.com/bugzilla. Cadwyd copi o'r allbwn \n"
-"dadnamu yn %s. Cofiwch atodi'r ffeil hwn i'r adroddiad nam. \n"
+"dadnamu yn %s. Cofiwch atodi'r ffeil hon at yr adroddiad nam. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -165,20 +168,18 @@ msgstr ""
 #. Firstboot should not be run
 #: ../src/firstboot.py:112
 msgid "Firstboot has already been run once on this system.\n"
-msgstr "Rhedwyd firstboot eisioes ar y system hwn.\n"
+msgstr "Rhedwyd firstboot eisioes ar y system hon.\n"
 
 #: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
-"Os hoffech chi rhedeg firstboot o'r llinell orchymyn, gallwch rhedeg y "
+"Os hoffech chi rhedeg firstboot o'r llinell orchymyn, gallwch redeg y "
 "gorchmynion canlynol:"
 
 #: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
-"Er mwyn rhedeg firstboot yn ystod cychwyn y system, gallwch rhedeg y "
+"Er mwyn rhedeg firstboot yn ystod cychwyn y system, rhedwch y "
 "gorchmynion canlynol:"
 
 #. Firstboot has never been run before, so start it up
@@ -351,57 +352,55 @@ msgstr "Croeso"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Dilysiant"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration "
-msgstr ""
+msgstr "Cyfluniad mur cadarn"
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration "
-msgstr ""
+msgstr "Cyfluniad bysellfwrdd"
 
 #: ../src/textWindow.py:36
 msgid "Mouse configuration "
-msgstr ""
+msgstr "Cyfluniad llygoden"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "_Newid Ffurfwedd Rwydwaith..."
+msgstr "Cyfluniad Rhwydwaith"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration "
-msgstr ""
+msgstr "Cyfluniad argraffydd "
 
 #: ../src/textWindow.py:39
 msgid "System services "
-msgstr ""
+msgstr "Gwasanaethau system "
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration "
-msgstr ""
+msgstr "Cyfluniad cerdyn sain "
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration "
-msgstr ""
+msgstr "Cyfluniad cylchfa amser "
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "Rhedeg Erfyn"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "Gadael"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Dewiswch yr eitem yr hoffech ei addasu "
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Asiant Gosod Red Hat"
+msgstr "Asiant Gosod"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -432,19 +431,19 @@ msgstr "Asiant Gosod Red Hat"
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr "CDs Ychwanegol"
+msgstr "CDdau Ychwanegol"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Os mae rhai o'r CDs sydd wedi eu rhestri isod gennych, gallwch osod pecynnau "
-"ohonoynt gan rhoi'r CD i fewn a clicio'r botwm priodol."
+"Os oes gennych rai o'r CDdau a restrir isod, gallwch osod pecynnau "
+"oddi arnynt drwy roi'r CDd i mewn a chlicio'r botwm priodol."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
-msgstr "Gosod..."
+msgstr "Arsefydlu..."
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
@@ -452,18 +451,16 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Ni ganfuwyd CD-ROM. Rhowch CD-ROM yn y gyrriant a cliciwch \"Iawn\" er mwyn "
-"parhau."
+"Ni ganfuwyd CDd-ROM. Rhowch CDd-ROM yn y gyriant a cliciwch \"Iawn\" i"
+"barhau."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Ni ganfuwyd y rhaglen awto-rhedeg ar y cd. Cliciwch \"Iawn\" er mwyn parhau."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Ni ganfuwyd y rhaglen awto-redeg ar yr cdd. Cliciwch \"Iawn\" i barhau."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -476,7 +473,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
 msgid "User Account"
-msgstr "Cyfrif Defnyddiwr"
+msgstr "Cyfrif Ddefnyddiwr"
 
 # Bug in the English - should be "normal usage"
 #: ../src/modules/create_user.py:47
@@ -485,13 +482,13 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"Rydym ni yn argymell eich bod chi yn creu cyfrif defnyddiwr personol ar "
-"gyfer defnydd safonol (nid gweinyddol). Er mwyn creu cyfrif personol, "
-"darparwch y gwybodaeth a ofynnir."
+"Argymellir eich bod yn creu cyfrif defnyddiwr personol ar gyfer defnydd "
+"arferol (nid gweinyddol). I greu cyfrif bersonol, darparwch y wybodaeth "
+"a ofynnir amdani."
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
-msgstr "Enw _Defnyddiwr"
+msgstr "Enw _Defnyddiwr:"
 
 #: ../src/modules/create_user.py:64
 msgid "Full Nam_e:"
@@ -499,11 +496,11 @@ msgstr "Enw _Llawn:"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
-msgstr "_Cyfrinair"
+msgstr "_Cyfrinair:"
 
 #: ../src/modules/create_user.py:78
 msgid "Confir_m Password:"
-msgstr "C_adarnhau'r Cyfrinair"
+msgstr "C_adarnhau'r Cyfrinair:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:94
@@ -511,12 +508,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Os ydych chi angen ddefynddio dilysiant rhwydwaith megis Kerberos neu NIS, "
-"cliciwch y botwm 'Defnyddio Mewngofnodi Rhwydwaith'."
+"Os oes angen i chi ddefynddio dilysiant rhwydwaith megis Kerberos neu NIS, "
+"cliciwch y botwm Defnyddio Mewngofnod Rhwydwaith."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
-msgstr "Defnyddio _Mewngofnodi Rhwydwaith..."
+msgstr "Defnyddio _Mewngofnod Rhwydwaith..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -524,9 +521,10 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Rydym ni yn argymell yn gryf bod cyfrif defnyddiwr personol yn cael ei greu. "
-"Os ydych chi'n parhau heb gyfrif, gallwch chi yn mewngofnodi gyda'r cyfrif "
-"root, a gaiff ei neilltuo ar gyfer ddefnydd gweinyddol yn unig."
+"Argymellir yn gryf bod cyfrif defnyddiwr personol yn cael ei greu. "
+"Os barhewch heb gyfrif, dim ond â'r gyfrif gwraidd byddwch chi'n "
+"gallu mewnofnodi, ac mae hon wedi'i neilltuo ar gyfer defnydd "
+"gweinyddol yn unig."
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
@@ -550,8 +548,7 @@ msgstr "Mae'r cyfrinair yn rhy fyr. Defnyddiwch o leiaf 6 nod."
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"Mae'r enw defnyddiwr '%s' yn gyfrif system neilltuedig. Dewiswch un arall."
+msgstr "Mae'r enw defnyddiwr '%s' yn gyfrif system neilltuedig. Penodwch un arall."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
@@ -562,7 +559,7 @@ msgstr "Rhaid i'r enw defnyddiwr fod yn llai na 33 nod o hyd."
 
 #: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
-msgstr "Ni chaiff yr enw defnyddiwr dechrau gyda rhif."
+msgstr "Ni chaiff yr enw defnyddiwr ddechrau â rhif."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
@@ -572,7 +569,7 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Mae'r enw defnyddiwr '%s' yn gynnwys bylchnodau. Peidiwch â chynnwys "
+"Mae'r enw defnyddiwr '%s' yn cynnwys bylchnodau. Peidiwch â chynnwys "
 "bylchnodau yn yr enw defnyddiwr."
 
 #: ../src/modules/create_user.py:263
@@ -590,7 +587,7 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Mae'r enw defnyddiwr '%s' yn gynnwys nodau bras. Peidiwch â chynnwys nodau "
+"Mae'r enw defnyddiwr '%s' yn cynnwys nodau bras. Peidiwch â chynnwys nodau "
 "bras yn yr enw defnyddiwr."
 
 #: ../src/modules/create_user.py:277
@@ -599,12 +596,11 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Mae'r enw defnyddiwr '%s' yn gynnwys nodau annilys. Defnyddiwch nodau ASCII "
+"Mae'r enw defnyddiwr '%s' yn cynnwys nodau annilys. Defnyddiwch nodau ASCII "
 "yn unig os gwelwch yn dda."
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Mae'r cyfrinair yn cynnwys nodau annilys. Defnyddiwch nodau ASCII yn unig os "
 "gwelwch yn dda."
@@ -612,10 +608,9 @@ msgstr ""
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"Mae'r enw '%s' yn gynnwys nodau annilys. Defnyddiwc nodau ASCII yn unig os "
+"Mae'r enw '%s' yn cynnwys nodau annilys. Defnyddiwch nodau ASCII yn unig os "
 "gwelwch yn dda."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -650,7 +645,7 @@ msgstr "Dyddiad ac Amser"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr "Os gwelwch yn dda, gosodwch y dyddiad ac amser ar gyfer y system."
+msgstr "Gosodwch y dyddiad ac amser ar gyfer y system, os gwelwch yn dda."
 
 #. Initialize date backend
 #. Initialize datePage and pass dateBackend into it
@@ -673,13 +668,13 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Methwyd cysylltu â %s. Naill ai tydi %s ddim ar gael neu mae'r "
-"ffurfweddiadau mur cadarn ar eich cyfrifiadur yn gwrthod cysylltiadau NTP."
+"Nid oedd modd sefydlu cysylltiad â %s. Naill ai nid yw %s ar gael neu mae'r "
+"gosodiadau mur cadarn ar eich cyfrifiadur yn gwrthod cysylltiadau NTP."
 
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr "Yn cysylltu a'r gweinydd NTP. Arhoswch os gwelwch yn dda..."
+msgstr "Yn cysylltu â'r gweinydd NTP. Arhoswch os gwelwch yn dda..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -708,11 +703,11 @@ msgstr "Yn cysylltu a'r gweinydd NTP. Arhoswch os gwelwch yn dda..."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Dangosydd"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Dewiswch y cydraniad a'r dyfnder lliw yr ydych am eu defnyddio"
 
 #. Add icon to the top frame
 #. #
@@ -721,15 +716,15 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr "Gorffen Y Gosodiad"
+msgstr "Gorffen y Gosodiad"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Mae eich system yn awr wedi ei osod ac yn barod i defnyddio. Cliciwch y "
-"botwm \"Nesaf\" yn y gornel de gwaelod er mwyn parhau."
+"Mae eich system nawr wedi ei osod ac yn barod i'w defnyddio. Cliciwch y "
+"botwm \"Nesaf\" yn y gornel dde waelod i barhau."
 
 #.
 #. networking.py - networking module for firstboot
@@ -761,11 +756,11 @@ msgstr "Gosod Rhwydwaith"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr "Canfodwyd y dyfeisiau rhwydwaith canlynol ar y system:"
+msgstr "Canfuwyd y dyfeisiau rhwydwaith canlynol ar y system:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr "Dyfais Rhwydwaith"
+msgstr "Dyfais Rwydwaith"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
@@ -773,7 +768,7 @@ msgstr "Protocol cychwyn"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr "_Newid Ffurfwedd Rwydwaith..."
+msgstr "_Newid Cyfluniad Rhwydwaith..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
@@ -822,9 +817,10 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Clichwch y botwm \"Chwarae sain prawf\" er mwyn clywed sain enghraifft. "
-"Dylech chi glywed cyfres o dri sain. Bydd y sain cyntaf ar y sianel dde, yr "
-"ail sain ar y sianel chwith ac y drydedd sain yn y canol."
+"Clichwch y botwm \"Canu sain prawf\" i glywed sain enghreifftiol. "
+"Dylech chi glywed cyfres o dri sain. Bydd y sain cyntaf yn y "
+"sianel dde, yr ail sain yn y sianel chwith, ac fe fydd y drydedd sain "
+"yn y canol."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -856,18 +852,17 @@ msgstr "Cylchfa amser"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr "Gosodwch gylchfa amser y system."
+msgstr "Gosodwch gylchfa amser ar gyfer y system."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Mae ambell cam i fynd cyn mae eich system yn barod i defnyddio. ByddRed Hat "
-"Setup Agent nawr yn eich arwain chi drwy'r ffurfwedd sylfaenol.  Os gwelwch "
-"yn dda, cliciwch y botwm \"Nesaf\" yn y gornel chwith waelod er mwyn parhau."
+"Mae ychydig rhagor o gamau i fynd cyn bod eich system yn barod i'w defnyddio. "
+"Bydd yr Asiant Gosod yn eich arwain chi drwy'r ychydig gyflunio sylfaenol nawr.  "
+"Cliciwch y botwm \"Nesaf\" yn y gornel chwith waelod i barhau."
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Nid yw firstboot yn rhedeg yn runlevel 3."
@@ -937,3 +932,4 @@ msgstr ""
 
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "_Na Hoffwn, dydw i ddim eisiau cofrestru fy system."
+
