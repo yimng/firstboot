@@ -2,19 +2,20 @@
 # firstboot ja.po Japanese Translation.
 # Copyright (C) 2002 Red Hat Inc.
 # James Hashida <khashida@redhat.com>,2002,2003
+# Noriko Mizumoto <noriko@redhat.com>, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
-"PO-Revision-Date: 2003-02-19 08:38GMT+10:00\n"
-"Last-Translator: James Hashida <khashida@redhat.com>\n"
-"Language-Team: Japanese <i18-list@redhat.com>\n"
+"PO-Revision-Date: 2003-06-25 15:46+1000\n"
+"Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
+"Language-Team: Japanese <kdeveloper@kde.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0\n"
 
 #: ../src/exceptionWindow.py:31
 msgid "An error has occurred in the %s module."
@@ -47,13 +48,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:120
@@ -62,7 +61,7 @@ msgstr "Firstbootはランレベル3では起動しません。"
 
 #: ../src/firstbootWindow.py:254
 msgid "_Next"
-msgstr ""
+msgstr "次へ(_N)"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -111,35 +110,32 @@ msgstr ""
 "めします。個人アカウントを作成するには、要求される情報を用意して 下さい。"
 
 #: ../src/modules/create_user.py:57
-#, fuzzy
 msgid "_Username:"
-msgstr "ユーザー名:"
+msgstr "ユーザー名(_U):"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full _Name:"
-msgstr "フルネーム: "
+msgstr "フルネーム(_N): "
 
 #: ../src/modules/create_user.py:71
-#, fuzzy
 msgid "_Password:"
-msgstr "パスワード:"
+msgstr "パスワード(_P):"
 
 #: ../src/modules/create_user.py:78
-#, fuzzy
 msgid "Confir_m Password:"
-msgstr "パスワードの確認:"
+msgstr "パスワードの確認(_m):"
 
 #: ../src/modules/create_user.py:94
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Kerberos や NIS などのネットワーク認証を使用する必要がある場合は、 "
+"ネットワークログインを使用するボタンをクリックしてください。"
 
 #: ../src/modules/create_user.py:104
-#, fuzzy
 msgid "_Use Network Login..."
-msgstr "ネットワーク構成を設定する..."
+msgstr "ネットワークログインを使用する(_U)..."
 
 #: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
@@ -152,14 +148,12 @@ msgstr ""
 "理業務用のみに予約されています。"
 
 #: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
-#, fuzzy
 msgid "_Continue"
-msgstr "続ける"
+msgstr "続ける(_C)"
 
 #: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
-#, fuzzy
 msgid "Create _account"
-msgstr "アカウントを作成"
+msgstr "アカウントを作成(_a)"
 
 #: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
@@ -186,11 +180,10 @@ msgid "The user name may not begin with a number."
 msgstr "ユーザー名は番号で始まってはいけません。"
 
 #: ../src/modules/create_user.py:252
-#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "ユーザー名'%s'には空白があります。%sには空白を含めないで下さい。"
+msgstr "ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:259
 msgid ""
@@ -217,15 +210,12 @@ msgstr ""
 "い。"
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -268,31 +258,28 @@ msgstr ""
 "ボタンをクリックして続けてください。"
 
 #: ../src/modules/networking.py:23
-#, fuzzy
 msgid "Network Setup"
-msgstr "ネットワーク確認"
+msgstr "ネットワーク設定"
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "システム上に、以下のネットワークデバイスが検出されました。"
 
 #: ../src/modules/networking.py:69
-#, fuzzy
 msgid "Network Device"
-msgstr "ネットワーク確認"
+msgstr "ネットワークデバイス"
 
 #: ../src/modules/networking.py:71
 msgid "Boot protocol"
-msgstr ""
+msgstr "ブートプロトコル"
 
 #: ../src/modules/networking.py:77
-#, fuzzy
 msgid "_Change Network Configuration..."
-msgstr "ネットワーク構成を設定する..."
+msgstr "ネットワーク構成を変更する(_C)..."
 
 #: ../src/modules/networking.py:120
 msgid "static"
-msgstr ""
+msgstr "静的"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -315,12 +302,11 @@ msgstr ""
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "タイムゾーン"
 
 #: ../src/modules/timezone.py:55
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "システム用のマウスを選択して下さい。"
+msgstr "システムのタイムゾーンを設定してください。"
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -671,3 +657,4 @@ msgstr "Red Hatセットアップエージェント"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
