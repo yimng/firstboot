@@ -133,8 +133,7 @@ class firstbootWindow:
 
         # Create the TreeView widget and pack it into a box.
         self.moduleView = gtk.TreeView(self.moduleStore)
-        if self.doDebug:
-            self.moduleView.connect("cursor-changed", self.cursorChanged)
+        self.moduleView.connect("cursor-changed", self.cursorChanged)
         leftVBox = gtk.VBox()
         leftVBox.pack_start(self.moduleView, gtk.TRUE)
 
