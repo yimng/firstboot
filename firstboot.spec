@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.4
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -62,6 +62,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Jul 16 2002 Brent Fox <bfox@redhat.com> 0.9.4-2
+- bump rev num and rebuild
+
 * Sat Jul 13 2002 Brent Fox <bfox@redhat.com> 0.9.4-1
 - fixed preun script to not blow away runlevel symlinks on upgrades
 
