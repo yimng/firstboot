@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 6
+Release: 7
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Aug 30 2002 Brent Fox <bfox@redhat.com> 1.0.1-7
+- Wrap umount in a try/except in additional_cds.py
+
 * Fri Aug 30 2002 Brent Fox <bfox@redhat.com> 1.0.1-6
 - run chkconfig on starting/stopping ntpd
 
