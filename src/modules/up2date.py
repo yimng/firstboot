@@ -92,7 +92,7 @@ class childWindow:
 
     def run_up2date(self, *args):
         #Run rhn_register so they can register with RHN
-        pid = self.start_process()
+        pid = functions.start_process("/usr/bin/up2date")
 
         flag = None
         while not flag:
@@ -105,18 +105,6 @@ class childWindow:
                 flag = 1
             else:
                 time.sleep(0.1)
-
-    def start_process(self):
-        path = "/usr/bin/up2date"
-        args = [path]
-
-        child = os.fork()
-
-        if not child:
-            os.execvp(path, args)
-            os._exit(1)
-            
-        return child
 
     def apply(self, notebook):
         # If they want to register, then kick off rhn_register.  If not, then pass
