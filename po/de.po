@@ -1,26 +1,28 @@
+# translation of de.po to 
 # translation of de.po to German
 # translation of firstboot.po to Deutsch
 # translation of firstboot.po to
 # translation of de.po to Deutsch
+# Ronny Buchmann <ronny-vlug@vlugnet.org> 2004
 # Copyright (C) YEAR ORGANIZATION.
 # Bernd Groh <bgroh@redhat.com>, 2002,2003.
 # Bernd Bartmann <Bernd.Bartmann@sohanet.de>, 2004.
 # Andreas Müller <redhat@andreas-mueller.com>, 2004.
-# Ronny Buchmann <ronny-vlug@vlugnet.org> 2004
+# Verena <vfuehrer@redhat.com>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
-"PO-Revision-Date: 2004-10-15 23:30+0200\n"
-"Last-Translator: Ronny Buchmann <ronny-vlug@vlugnet.org>\n"
-"Language-Team: German <de@li.org>\n"
+"PO-Revision-Date: 2004-11-16 09:56+1000\n"
+"Last-Translator: Verena <vfuehrer@redhat.com>\n"
+"Language-Team:  <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: GNU Emacs 21.3.1\n"
+"X-Generator: KBabel 1.3\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -100,7 +102,6 @@ msgid "module import of %s failed: %s"
 msgstr "Modulimport von %s fehlgeschlagen: %s"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Licence Aggrement"
 msgstr "Lizenzvereinbarung"
 
@@ -192,8 +193,7 @@ msgstr ""
 "und klicken Sie auf \"OK\" um fortzufahren."
 
 #: ../src/modules/additional_cds.py:179
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Kann das Autorun-Programm nicht auf der CD finden. Klicken Sie \"OK\", um "
 "fortzufahren."
@@ -260,8 +260,7 @@ msgstr "_Account erzeugen"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
+msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
@@ -313,16 +312,14 @@ msgstr ""
 "ASCII-Zeichen."
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
 "Zeichen."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
 "Zeichen."
@@ -357,8 +354,7 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
+msgstr "Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -421,365 +417,3 @@ msgstr ""
 "Agent führt Sie dabei durch die Basiskonfiguration.  Klicken Sie auf \"Weiter"
 "\" unten rechts, um fortzufahren."
 
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot kann nicht im Runlevel 3 ausgeführt werden."
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Wenn Sie eine der unten angeführten CDs besitzen, können Sie die darauf "
-#~ "befindlichen Pakete installieren. Legen Sie hierzu die CD ein und klicken "
-#~ "Sie auf die entsprechende Schaltfläche."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Bitte geben Sie einen Zeit-Server ein."
-
-#~ msgid "Error"
-#~ msgstr "Fehler"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Es konnte keine Verbindung mit %s hergestellt werden. Entweder ist %s "
-#~ "nicht verfügbar oder die Firewall-Einstellungen Ihres Computers "
-#~ "verhindern NTP-Verbindungen."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Es wird eine Verbindung zum NTP-Server hergestellt. Bitte warten..."
-
-#~ msgid "User Account"
-#~ msgstr "Benutzeraccount"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Der Benutzername '%s' ist ein reservierter Account.  Bitte geben Sie "
-#~ "einen anderen Benutzernamen an."
-
-#~ msgid "Mouse configuration "
-#~ msgstr "Mauskonfiguration "
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Firstboot wurde in diesem System bereits ein Mal ausgeführt.\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "Um firstboot von der Befehlszeile auszuführen, führen Sie die folgenden "
-#~ "Befehle aus:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "Um firstboot auszuführen, während das System bootet, führen Sie die "
-#~ "folgenden Befehle aus:"
-
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgid "No"
-#~ msgstr "Nein"
-
-#~ msgid ""
-#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
-#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
-#~ "System to run.  \n"
-#~ "\n"
-#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-#~ "\"No\", the system will continue booting and you will never see this "
-#~ "message again.  Do you wish to run the Setup Agent now?"
-#~ msgstr ""
-#~ "Der Red Hat Setup Agent kann Ihnen bei der Konfiguration Ihres Rechners "
-#~ "helfen, indem dieser Sie durch eine Reihe von Schritten führt.  Setup "
-#~ "Agent erfordert, dass das X Window System läuft.  \n"
-#~ "\n"
-#~ "Wenn Sie den Setup Agent ausführen wollen, wählen Sie bitte \"Ja\".  "
-#~ "Sollten Sie \"Nein\" wählen, wird das System mit dem Bootvorgang "
-#~ "fortfahren und Sie werden diese Meldung nicht wieder sehen.  Wollen Sie "
-#~ "den Setup Agent jetzt ausführen?"
-
-#~ msgid "Red Hat Linux Documentation CD"
-#~ msgstr "Red Hat Linux Dokumentations-CD"
-
-#~ msgid "Red Hat Linux Installation CD"
-#~ msgstr "Red Hat Linux Installations-CD"
-
-#~ msgid "Red Hat Network"
-#~ msgstr "Red Hat Network"
-
-#~ msgid ""
-#~ "This step will register your system with a complimentary Demo Account "
-#~ "from Red Hat Network so that you can receive the latest software packages "
-#~ "directly from Red Hat.  Using this tool will allow you to always have the "
-#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
-#~ "fixes, and software enhancements. \n"
-#~ "\n"
-#~ "If you purchased this product, you are entitled to a free trial of Red "
-#~ "Hat Network Basic Service. To access the free trial, please refer to the "
-#~ "product activation card found in the box for detailed instructions. \n"
-#~ "\n"
-#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
-#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
-#~ msgstr ""
-#~ "Dieser Schritt wird Ihren Computer mit einem kostenlosen Demo-Account bei "
-#~ "Red Hat Network registrieren, und Sie können dann die aktuellen Software-"
-#~ "Pakete direkt von Red Hat herunterladen. Der Red Hat Update Agent liefert "
-#~ "Ihnen das jeweils neueste Red Hat Linux System mit sämtlichen neuen "
-#~ "Sicherheits-Patches, Fehlerlösungen und Software-Erweiterungen.\n"
-#~ "\n"
-#~ "Wenn Sie dieses Produkt erworben haben, können Sie Red Hat Network Basic "
-#~ "Service kostenlos testen. Auf der mitgelieferten Aktivierungskarte finden "
-#~ "Sie detaillierte Informationen. \n"
-#~ "\n"
-#~ "Wenn Sie dieses Produkt nicht erworben haben, finden Sie dagegen unter "
-#~ "http://rhn.redhat.com weitere Informationen zur Registrierung für den Red "
-#~ "Hat Network Basic Service.\n"
-
-#~ msgid "_Yes, I want to register my system with Red Hat Network."
-#~ msgstr "_Ja, ich möchte mein System bei Red Hat Network registrieren."
-
-#~ msgid "N_o, I do not want to register my system."
-#~ msgstr "Ne_in, ich möchte mein System nicht registrieren."
-
-#~ msgid "Update Agent"
-#~ msgstr "Update Agent"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "Zusätzliche Software installieren"
-
-#~ msgid "Create A User"
-#~ msgstr "Benutzer erzeugen"
-
-#~ msgid ""
-#~ "A user account is required to use the system.  Create a user account by "
-#~ "filling in the information below."
-#~ msgstr ""
-#~ "Ein Benutzeraccount ist zur Verwendung des Systems benötigt.  Erzeugen "
-#~ "Sie einen Benutzeraccount durch Ausfüllen der folgenden Information."
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?"
-#~ msgstr ""
-#~ "Es wurde kein Benutzeraccount erzeugt.  Sind Sie sicher, dass Sie "
-#~ "fortfahren wollen, ohne einen Benutzeraccount zu erzeugen?"
-
-#~ msgid "Set Date and Time"
-#~ msgstr "Datum und Uhrzeit einstellen"
-
-#~ msgid "Finished Setup!"
-#~ msgstr "Setup ist abgeschlossen!"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hat Update Agent"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "Konfiguration von Datum und Uhrzeit"
-
-#~ msgid "Welcome to Red Hat Linux!"
-#~ msgstr "Willkommen bei Red Hat Linux!"
-
-#~ msgid "Linux Application CD"
-#~ msgstr "Linux Anwendungs-CD"
-
-#~ msgid ""
-#~ "If you have additional CDs from the Red Hat Linux box set, such as the "
-#~ "Red Hat Linux Documentation CD or the Linux Applications CD, please "
-#~ "insert the disc now and click the corresponding button below."
-#~ msgstr ""
-#~ "Wenn Sie zusätzliche CDs des Red Hat Linux Sets wie beispielsweise die "
-#~ "Dokumentations-CD von Red Hat Linux oder die Linux Anwendungs-CD "
-#~ "besitzen, legen Sie diese CD nun ein und klicken Sie auf die Schaltfläche "
-#~ "unten."
-
-#~ msgid ""
-#~ "This feature is not yet implemented.  Please do not report bugs about "
-#~ "this button."
-#~ msgstr ""
-#~ "Diese Funktion wurde noch nicht implementiert. Erstellen Sie daher keinen "
-#~ "Fehlerbericht in Bezug auf diese Schaltfläche."
-
-#~ msgid "Finished Installation!"
-#~ msgstr "Installation beendet!"
-
-#~ msgid "Update Your System"
-#~ msgstr "Aktualisieren Sie Ihr System"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "Hardware konfigurieren"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "Tastaturbelegung:"
-
-#~ msgid "Configure..."
-#~ msgstr "Konfigurieren..."
-
-#~ msgid "Mouse:"
-#~ msgstr "Maus:"
-
-#~ msgid "Networking:"
-#~ msgstr "Netzwerk:"
-
-#~ msgid "Printers:"
-#~ msgstr "Drucker:"
-
-#~ msgid "Set up Networking"
-#~ msgstr "Netzwerk einstellen"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "Es konnte keine Netzwerkverbindung ermittelt werden. Eine solche "
-#~ "Verbindung ist jedoch notwendig, um Ihr System für RHN registrieren zu "
-#~ "lassen und damit der Red Hat Update Agent Ihr System aktualisieren kann. "
-#~ "Klicken Sie auf die Schaltfläche unten, um eine Netzwerkverbindung "
-#~ "einzustellen.\n"
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "Konfiguration mithilfe von DHCP"
-
-#~ msgid "IP Address"
-#~ msgstr "IP-Adresse"
-
-#~ msgid "Netmask"
-#~ msgstr "Netzmaske"
-
-#~ msgid "Broadcast"
-#~ msgstr "Broadcast"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Gateway"
-#~ msgstr "Gateway"
-
-#~ msgid "Hostname"
-#~ msgstr "Hostname"
-
-#~ msgid "Primary DNS"
-#~ msgstr "Primärer DNS"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "Sekundärer DNS"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "Ternärer DNS"
-
-#~ msgid "Keyboard"
-#~ msgstr "Tastatur"
-
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "Wählen Sie die Tastatur für das System."
-
-#~ msgid "Language"
-#~ msgstr "Auswahl der Sprache"
-
-#~ msgid "Language Configuration"
-#~ msgstr "Konfiguration der Sprache"
-
-#~ msgid "A configuration tool to set the language for the system"
-#~ msgstr "Wählen Sie die Standardsprache für das System."
-
-#~ msgid "Language Selection"
-#~ msgstr "Auswahl der Sprache"
-
-#~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "Die Änderungen werden beim nächsten Login wirksam."
-
-#~ msgid "Mouse"
-#~ msgstr "Maus"
-
-#~ msgid "Emulate 3 button click"
-#~ msgstr "3-Tasten-Klick emulieren"
-
-#~ msgid "Root Password"
-#~ msgstr "Root-Passwort"
-
-#~ msgid "Please set the root password for the system."
-#~ msgstr "Stellen Sie das Root-Passwort für das System ein."
-
-#~ msgid "Confirm:"
-#~ msgstr "Bestätigen:"
-
-#~ msgid "Security Level"
-#~ msgstr "Sicherheitslevel:"
-
-#~ msgid "Security Level Configuration"
-#~ msgstr "Konfiguration des Sicherheitslevels"
-
-#~ msgid "Please choose the security level for the system."
-#~ msgstr "Wählen Sie den Sicherheitslevel für das System."
-
-#~ msgid "Security Level:"
-#~ msgstr "Sicherheitslevel:"
-
-#~ msgid "Use default firewall rules"
-#~ msgstr "Verwenden Sie die Firewall-Regeln"
-
-#~ msgid "Customize"
-#~ msgstr "Benutzerkonfiguriert einstellen"
-
-#~ msgid "Allow incoming:"
-#~ msgstr "Eingang ermöglichen:"
-
-#~ msgid "Other ports: (1029:tcp)"
-#~ msgstr "Andere Ports: (1029:tcp)"
-
-#~ msgid "Register with RHN"
-#~ msgstr "Bei RHN registrieren"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Network ist eine Internet-Lösung für das Verwalten von einem oder "
-#~ "mehreren Linux-Systemen. Alle Alerts in Bezug auf Sicherheitsfragen, "
-#~ "Fehlerbehebungen, Erweiterungen (allgemein bekannt als Errata Alerts) "
-#~ "stehen direkt bei Red Hat zur Verfügung. Darüber hinaus können Updates "
-#~ "automatisch an Ihr System geliefert werden, sobald sie freigegeben sind.\n"
-#~ "\n"
-#~ "Dabei zeichnet Red Hat Network die Freigabe von Errata Updates auf und "
-#~ "sendet Ihnen entsprechende Mitteilungen per E-Mail. Dies bedeutet "
-#~ "folgende Vorteile:"
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " -- Reduzieren des Zeit- und Arbeitsaufwands der Systemadministratoren, "
-#~ "um\n"
-#~ "die Red Hat Errata-Liste auf dem aktuellen Stand zu halten\n"
-#~ " -- Verbessern der Sicherheit Ihres Netzwerks über die Lieferungvon "
-#~ "Patches, sobald sie von Red Hat freigegeben sind\n"
-#~ " -- Herausfiltern von für Ihr System nicht relevanten Paket-Updates\n"
-#~ " -- Planen von Errata-Updates, um Pakete an bestimmte Systeme zu liefern,"
-#~ "wenn Sie dies wünschen."
-
-#~ msgid "Register system now"
-#~ msgstr "System jetzt registrieren"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "Derzeit besteht keine Netzwerkverbindung."
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "Starten Sie den Red Hat Update Agent"
