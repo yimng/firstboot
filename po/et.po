@@ -94,6 +94,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Kuna esineb probleem mooduliga %s, \n"
+"Red Hat Setup Agent ei lae seda moodulit ning \n"
+" üritab käivitada ülejäänud moodulid."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -103,6 +106,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Palun saada 'firstboot' fail Red Hat vea \n"
+"saatmise süsteemi http://www.redhat.com/bugzilla. \n"
+"Silumise väljundi koopia salvestati faili %s \n"
+"Lisa see fail kindlasti rapordile. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -171,6 +178,7 @@ msgstr ""
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
+"Esmaseks süsteemi üles laadimiseks käivita järgmised käsud:"
 
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
@@ -439,6 +447,7 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"CD-ketast ei leitud. Palun sisesta CD-ketas lugejasse ja jätkamiseks vajuta Olgu"
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -448,6 +457,7 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
+"Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -468,6 +478,8 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"On tugevalt soovitatud luua tavakasutaja konto normaalseks kasutamiseks."
+"Tavakasutaja konto loomiseks on vaja mõningast teavet."
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
@@ -491,6 +503,8 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Kui sul on vaja kasutada tuvastamist võrgus nagu Kerberos või NIS, palun "
+"vajuta Kasuta võrgu logimise nuppu."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
@@ -502,6 +516,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"On tugevalt soovitatud luua tavakasutaja konto. Kui sa jätkad ilma kontota, "
+"saad sa logida sisse ainult juurkasutajana (root), kes on reserveeritud "
+"süsteemi haldamiseks."
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
@@ -526,6 +543,7 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"Kasutaja nimi '%s' on reserveeritud süsteemi poolt.  Palun pane teine nimi."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
@@ -546,6 +564,9 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
+"Kasutaja nimi '%s' sisaldab tühikut."
+" Palun ära kasuta tühikut nimes."
+
 
 #: ../src/modules/create_user.py:263
 #, python-format
@@ -553,6 +574,9 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"Kasutaja nimi '%s' sisaldab kirjavahemärke."
+" Palun ära kasuta kirjavahemärke."
+
 
 #: ../src/modules/create_user.py:270
 #, python-format
@@ -560,6 +584,7 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"Kasutaja nimi '%s' sisaldab suuri tähti. Palun kasuta ainult väikseid tähti nimes."
 
 #: ../src/modules/create_user.py:277
 #, python-format
@@ -567,6 +592,7 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:287
 msgid ""
@@ -580,6 +606,7 @@ msgstr ""
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"Nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -636,6 +663,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Ühendust %s ei saa rajada.  Kas %s ei ole kättesaadav "
+" või tulemüür takistab ühenduse ajaserverisse."
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -689,6 +718,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
+"Süsteem on üles seatud ja valmis kasutamiseks. Palun vajuta \"Edasi\" "
+"nuppu jätkamiseks."
 
 #.
 #. networking.py - networking module for firstboot
@@ -728,7 +759,7 @@ msgstr "Võrgu seade"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "Käivitus protokoll"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
@@ -781,6 +812,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Vajuta nuppu \"Mängi test heli\" näidis heli kuulamiseks.  Sa peaks kuulma "
+"kolme heli seeriat.  Esimene tuleb paremast kõlarist, teine vasakust ja "
+"kolmas mõlemast korraga."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -820,3 +854,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
+"Lõpuni on jäänud vaid mõned sammud veel.  Seadistus agent juhatab "
+"sind peamiste seadete panemisel. Jätkamiseks vajuta \"Edasi\"."
+
