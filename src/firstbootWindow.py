@@ -34,31 +34,28 @@ class firstbootWindow:
         self.moduleDict = {}
 
         # Create the initial window and a vbox to fill it with.
-
         self.win = gtk.Window()
         self.win.connect("destroy", self.destroy)
         self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
         self.win.realize()
 
         mainVBox = gtk.VBox()
+        self.win.add(mainVBox)
 
+        #This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
+        self.win.set_decorated(gtk.FALSE)
+        self.win.set_size_request(800, 600)
+        self.win.set_position(gtk.WIN_POS_CENTER)
+        self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_SPLASH",))
 
-        if self.doDebug:
-            #Draw the app in a 800x600 window
-            self.win.set_decorated(gtk.FALSE)
-        else:
-            #This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
-            self.win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
-            self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
-
-            al = gtk.Alignment (0.5, 0.5, 0.0, 0.0)
-            self.win.add (al)
-            self.win.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#000000"))
-            eb = gtk.EventBox ()
-            eb.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#CCCCCC"))
-            al.add(eb)
-            eb.add (mainVBox)
-
+        #Set the background of the window
+        pixbuf = functions.pixbufFromFile("bg.png")
+        bgimage = gtk.gdk.Pixmap(self.win.window, 800, 600, -1)
+        gc = bgimage.new_gc()
+        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_NORMAL, 0, 0)
+        self.win.set_app_paintable(gtk.TRUE)
+        self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+        self.win.realize()
 
         if gtk.gdk.screen_width() >= 800:            
             mainVBox.set_size_request(800, 600)
