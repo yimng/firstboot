@@ -1,5 +1,6 @@
 # 
 #
+#
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Allan Sims <allsi@eau.ee>, 2004.
@@ -10,13 +11,13 @@ msgstr ""
 "Project-Id-Version: et\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-07-15 15:04-0400\n"
-"PO-Revision-Date: 2004-03-10 18:58+0200\n"
+"PO-Revision-Date: 2004-08-11 23:10+0300\n"
 "Last-Translator: Allan Sims <allsi@eau.ee>\n"
-"Language-Team: Estonian <Eesti>\n"
+"Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -130,7 +131,7 @@ msgstr "Vali element, mida soovid muuta "
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr "Seadistus agent"
+msgstr "Seadistusagent"
 
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
@@ -157,15 +158,12 @@ msgstr ""
 "Olgu"
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "System User"
-msgstr "Süsteemi teenused"
+msgstr "Süsteemi kasutaja"
 
 #: ../src/modules/create_user.py:65
 msgid ""
@@ -182,7 +180,7 @@ msgstr "_Kasutaja nimi:"
 
 #: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
-msgstr "Täisnimi:"
+msgstr "_Täisnimi:"
 
 #: ../src/modules/create_user.py:89
 msgid "_Password:"
@@ -190,7 +188,7 @@ msgstr "_Parool:"
 
 #: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
-msgstr "Kinnita parool:"
+msgstr "_Kinnita parool:"
 
 #: ../src/modules/create_user.py:112
 msgid ""
@@ -220,7 +218,7 @@ msgstr "_Jätka"
 
 #: ../src/modules/create_user.py:167
 msgid "Create _account"
-msgstr "Loo konto"
+msgstr "_Loo konto"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
@@ -244,42 +242,36 @@ msgstr "Kasutaja nimi ei saa alata numbriga."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "Kasutaja nimi '%s' sisaldab tühikut. Palun ära kasuta tühikut nimes."
+msgstr "Kasutaja nimi '%s' sisaldab tühikut. Palun ära kasuta nimes tühikut."
 
 #: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
-"Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
+msgstr "Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
 
 #: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
-"Kasutaja nimi '%s' sisaldab suuri tähti. Palun kasuta ainult väikseid tähti "
-"nimes."
+msgstr "Kasutaja nimi '%s' sisaldab suuri tähti. Palun kasuta nimes ainult väikseid tähti."
 
 #: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
+msgstr "Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Parool sisaldab valesid märke. Kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/date.py:47
@@ -306,7 +298,7 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Ühendust %s ei saa rajada.  Kas %s ei ole kättesaadav  või tulemüür takistab "
+"Ühendust %s ei saa rajada.  Kas %s ei ole kättesaadav või tulemüür takistab "
 "ühenduse ajaserverisse."
 
 #: ../src/modules/date.py:194
@@ -339,7 +331,7 @@ msgstr "Võrgu seadistus"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr "Leitit järgnevad võrgu seadmed:"
+msgstr "Leiti järgnevad võrgu seadmed:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
@@ -359,11 +351,11 @@ msgstr "püsiv"
 
 #: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
-msgstr "Heli kaart"
+msgstr "Helikaart"
 
 #: ../src/modules/soundcard_gui.py:48
 msgid "A sound card has been detected on your computer."
-msgstr "Heli kaart leiti arvutist."
+msgstr "Arvutist leiti helikaart."
 
 #: ../src/modules/soundcard_gui.py:71
 msgid ""
@@ -390,31 +382,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Lõpuni on jäänud vaid mõned sammud veel.  Seadistus agent juhatab sind "
+"Lõpuni on jäänud vaid mõned sammud veel.  Seadistusagent juhatab sind "
 "peamiste seadete panemisel. Jätkamiseks vajuta \"Edasi\"."
 
-#~ msgid "User Account"
-#~ msgstr "Kasutaja konto"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Kasutaja nimi '%s' on reserveeritud süsteemi poolt.  Palun pane teine "
-#~ "nimi."
-
-#~ msgid "Mouse configuration "
-#~ msgstr "Hiire seaded "
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Esmane laadimine on juba ükskord tehtud.\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr "Esmaseks käivitamiseks käsurealt tuleb kasutada järgmisi käske:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr "Esmaseks süsteemi üles laadimiseks käivita järgmised käsud:"
