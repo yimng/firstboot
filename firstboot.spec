@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.9
-Release: 11
+Release: 12
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -63,6 +63,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 14 2002 Brent Fox <bfox@redhat.com> 0.9.9-12
+- fix reconfig mode
+- change pixmap on finished screen
+
 * Tue Aug 13 2002 Brent Fox <bfox@redhat.com> 0.9.9-11
 - pass None into startNtpService
 
