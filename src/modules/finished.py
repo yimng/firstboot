@@ -16,7 +16,7 @@ _=gettext.gettext
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 500
-    moduleName = (_("Finish Installation"))
+    moduleName = (_("Finish Setup"))
 
     def launch(self, doDebug = None):
         if doDebug:
