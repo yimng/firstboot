@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-30 16:26+0800\n"
+"PO-Revision-Date: 2004-04-05 18:42+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -558,29 +558,32 @@ msgstr ""
 "punctuation dalam nama pengguna."
 
 #: ../src/modules/create_user.py:274
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr "pengguna dalam pengguna."
+msgstr ""
+"Nama pengguna '%s' mengandungi aksara hurufbesar.  Sila jangan gunakan aksara "
+"hurufbesar dalam nama pengguna."
 
 #: ../src/modules/create_user.py:281
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "pengguna."
+msgstr ""
+"Nama pengguna.'%s' mengandungi aksara tidak sah.  Sila gunakan hanya "
+"aksara ASCII."
 
 #: ../src/modules/create_user.py:291
 msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgstr "Kata laluan mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
-#, fuzzy
 msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "unama s."
+msgstr "Nama '%s' mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -613,9 +616,8 @@ msgid "Date and Time"
 msgstr "Tarikh dan Masa"
 
 #: ../src/modules/date.py:50
-#, fuzzy
 msgid "Please set the date and time for the system."
-msgstr "dan."
+msgstr "Sila tetapkan tarikh dan masa untuk sistem."
 
 #. Initialize date backend
 #. Initialize datePage and pass dateBackend into it
@@ -625,7 +627,7 @@ msgstr "dan."
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr ""
+msgstr "Sila masukkan pelayan masa."
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
@@ -633,16 +635,18 @@ msgid "Error"
 msgstr "Ralat"
 
 #: ../src/modules/date.py:126 ../src/modules/date.py:157
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
-msgstr "A on."
+msgstr ""
+"Sambungan dengan %s tidak dapat dibuat.  Sama ada %s tiada atau "
+"tetapan firewall pada komputer anda menghalang sambungan NTP."
 
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "Menghubungi pelayan NTP.  Sila tunggu..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -674,9 +678,8 @@ msgid "Display"
 msgstr "Paparan"
 
 #: ../src/modules/display.py:48
-#, fuzzy
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "dan"
+msgstr "Sila pilih resolusi dan kedalaman warna yang ada hendak guna"
 
 #. Add icon to the top frame
 #. #
@@ -688,11 +691,12 @@ msgid "Finish Setup"
 msgstr "Tetapan Tamat"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
-msgstr "dan Seterusnya dalam."
+msgstr ""
+"Sistem anda telah ditetapkan dan sedia untuk diguna.  Sila klik butang \"Maju\" "
+"pada bucu kanan bawah untuk meneruskan."
 
 #.
 #. networking.py - networking module for firstboot
@@ -723,18 +727,16 @@ msgid "Network Setup"
 msgstr "Tetapan Rangkaian"
 
 #: ../src/modules/networking.py:70
-#, fuzzy
 msgid "The following network devices have been detected on the system:"
-msgstr "on:"
+msgstr "Peranti rangkaian berikut telah dikesan pada sistem:"
 
 #: ../src/modules/networking.py:89
-#, fuzzy
 msgid "Network Device"
-msgstr "Rangkaian"
+msgstr "Peranti Rangkaian"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "Protokol boot"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
@@ -781,13 +783,16 @@ msgstr "Kad bunyi telah dikesan pada komputer anda."
 #. Initialize soundcard page
 #. Add icon to the top frame
 #: ../src/modules/soundcard_gui.py:71
-#, fuzzy
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
-msgstr "dalam dalam dan dalam."
+msgstr ""
+"Klik butang \"Mainkan ujian bunyi\" untuk mendengar contoh bunyi.  Anda sepatutnya "
+"mendengar rangkaian tiga bunyi.  Bunyi pertama akan berada di saluran kanan, "
+"bunyi kedua akan berada di saluran kiri, dan bunyi ketiga akan berada "
+"di tengah-tengah."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
