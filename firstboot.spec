@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.4
+Version: 1.3.5
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -74,6 +74,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Feb 17 2004 Brent Fox <bfox@redhat.com> 1.3.5-1
+- call self.win.present() to allow initial keyboard input
+
 * Mon Feb 16 2004 Brent Fox <bfox@redhat.com> 1.3.4-1
 - UTF-8ify fr.po
 - make sure the root window stays on the bottom (bug #105631)

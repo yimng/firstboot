@@ -201,6 +201,7 @@ class firstbootWindow:
         mainVBox.pack_start(self.mainHBox)
 
         self.win.show_all()
+        self.win.present()
         self.nextButton.grab_focus()
         gtk.main()
 
