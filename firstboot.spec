@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.14
+Version: 1.1.15
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 28 2003 Brent Fox <bfox@bfox.devel.redhat.com> 1.1.15-1
+- handle network timeouts better in the date.py screen
+
 * Thu Aug 28 2003 Brent Fox <bfox@bfox.devel.redhat.com> 1.1.14-1
 - handle cds without autorun files better in additional_cds.py
 
