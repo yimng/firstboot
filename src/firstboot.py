@@ -42,6 +42,7 @@ doReconfig = None
 lowRes = None
 rhgb = None
 autoscreenshot = None
+forcegui = None
 FILENAME = "/etc/sysconfig/firstboot"
 
 for arg in sys.argv:
@@ -56,6 +57,8 @@ for arg in sys.argv:
         lowRes = 1
     if arg == '--autoscreenshot':
         autoscreenshot = 1
+    if arg == '--forcegui':
+        forcegui = 1
 
 if __name__ == "__main__":
     signal.signal (signal.SIGINT, signal.SIG_DFL)
@@ -127,7 +130,7 @@ line = string.strip(line)
 tokens = string.split(line)
 runlevel = int(tokens[-1])
 
-if runlevel == 3:
+if runlevel == 3 and forcegui == None:
     import textWindow
     from snack import *
     
