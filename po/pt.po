@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
+"POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
 "PO-Revision-Date: 2002-07-24 14:34+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -65,16 +65,24 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Não foi possível estabelecer uma ligação com %s.  O %s não está disponível ou\n"
+"Não foi possível estabelecer uma ligação com %s.  O %s não está disponível "
+"ou\n"
 "a configuração da 'firewall' no seu computador está a bloquear ligações NTP."
 
 #: ../src/modules/finished.py:19
-msgid "Finish Installation"
-msgstr "Terminar Instalação"
+msgid "Finish Setup"
+msgstr ""
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
 msgstr "Instalação terminou!"
+
+#: ../src/modules/finished.py:42
+msgid ""
+"Contratulations!  Your Red Hat Linux system is now set up and ready to use.  "
+"We hope that you will have a pleasant computing experience.  Please click "
+"the \"Forward\" button in the lower right corner to continue."
+msgstr ""
 
 #: ../src/modules/hardware.py:27
 msgid "Configure Hardware"
@@ -192,7 +200,12 @@ msgid ""
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
-msgstr "Agora que se registou na Red Hat Network, pode executar o Agente de Actualizações da Red Hat para receber os últimos pacotes de 'software' directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu sistema Red Hat actualizado, com todas as correcções de segurança, de erros e melhorias a pacotes."
+msgstr ""
+"Agora que se registou na Red Hat Network, pode executar o Agente de "
+"Actualizações da Red Hat para receber os últimos pacotes de 'software' "
+"directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu "
+"sistema Red Hat actualizado, com todas as correcções de segurança, de erros "
+"e melhorias a pacotes."
 
 #: ../src/modules/up2date.py:66
 msgid "Yes, I would like to register with Red Hat Network"
@@ -207,8 +220,20 @@ msgid "Welcome"
 msgstr "Bem-vindo"
 
 #: ../src/modules/welcome.py:28
-msgid "Welcome to Red Hat Linux Beta!"
+#, fuzzy
+msgid "Welcome to Red Hat Linux!"
 msgstr "Bem-vindo ao Red Hat Linux (versão beta)!"
+
+#: ../src/modules/welcome.py:42
+msgid ""
+"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
+"before your system is ready to use.  The Red Hat Setup Agent will now guide "
+"you through some basic configuration.  Please click the \"Forward\" button "
+"in the lower right corner to continue."
+msgstr ""
+
+#~ msgid "Finish Installation"
+#~ msgstr "Terminar Instalação"
 
 #~ msgid "Keyboard"
 #~ msgstr "Teclado"

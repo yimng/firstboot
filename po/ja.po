@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
+"POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
 "PO-Revision-Date: 2002-07-24 14:44GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -71,16 +71,23 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"%sとの接続が確立できません。 %sが利用できないか又は、コンピュータの "
-"ファイヤーウォールの設定がNTP の接続を阻止しています。"
+"%sとの接続が確立できません。 %sが利用できないか又は、コンピュータの ファイ"
+"ヤーウォールの設定がNTP の接続を阻止しています。"
 
 #: ../src/modules/finished.py:19
-msgid "Finish Installation"
-msgstr "インストールを終了"
+msgid "Finish Setup"
+msgstr ""
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
 msgstr "インストールを終了しました。!"
+
+#: ../src/modules/finished.py:42
+msgid ""
+"Contratulations!  Your Red Hat Linux system is now set up and ready to use.  "
+"We hope that you will have a pleasant computing experience.  Please click "
+"the \"Forward\" button in the lower right corner to continue."
+msgstr ""
 
 #: ../src/modules/hardware.py:27
 msgid "Configure Hardware"
@@ -114,66 +121,6 @@ msgstr "ディスプレー："
 #: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "プリンター："
-
-#: ../src/modules/keyboard_gui.py:69
-msgid "Keyboard"
-msgstr "キーボード"
-
-#: ../src/modules/keyboard_gui.py:71
-msgid "Keyboard Configuration"
-msgstr "キーボードの設定"
-
-#: ../src/modules/keyboard_gui.py:72
-msgid "A configuration tool for the system keyboard"
-msgstr "システムキーボード用の設定ツール"
-
-#: ../src/modules/keyboard_gui.py:74
-msgid "Select the appropriate keyboard for the system."
-msgstr "システム用の適切なキーボードを選択。"
-
-#: ../src/modules/language.py:40
-msgid "Language"
-msgstr "言語"
-
-#: ../src/modules/language.py:42 ../src/modules/language.py:197
-msgid "Language Configuration"
-msgstr "言語の設定"
-
-#: ../src/modules/language.py:43
-msgid "A configuration tool to set the language for the system"
-msgstr "システム用の言語をセットする設定ツール"
-
-#: ../src/modules/language.py:55
-msgid "Language Selection"
-msgstr "言語の選択"
-
-#: ../src/modules/language.py:58
-msgid "Please select the default language for the system."
-msgstr "システム用のディフォルト言語を選択して下さい。"
-
-#: ../src/modules/language.py:161
-msgid "The changes will take effect the next time you log in."
-msgstr "変更は次回ログインする時に反映されます。"
-
-#: ../src/modules/mouse_gui.py:38
-msgid "Mouse"
-msgstr "マウス"
-
-#: ../src/modules/mouse_gui.py:40
-msgid "Mouse Configuration"
-msgstr "マウスの設定"
-
-#: ../src/modules/mouse_gui.py:42
-msgid "A configuration tool for the mouse"
-msgstr "マウス用の設定ツール"
-
-#: ../src/modules/mouse_gui.py:43
-msgid "Please select the mouse for the system."
-msgstr "システム用のマウスを選択して下さい。"
-
-#: ../src/modules/mouse_gui.py:53
-msgid "Emulate 3 button click"
-msgstr "3ボタンクリックをエミュレート(模倣)"
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -242,79 +189,6 @@ msgstr "2番目のDNS"
 msgid "Ternary DNS"
 msgstr "3番目のDNS"
 
-#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
-msgid "Root Password"
-msgstr "ルートパスワード"
-
-#: ../src/modules/rootpassword.py:60
-msgid "Please set the root password for the system."
-msgstr "システム用のルートパスワードをセットして下さい。"
-
-#: ../src/modules/rootpassword.py:65
-msgid "Root Password:"
-msgstr "ルートパスワード："
-
-#: ../src/modules/rootpassword.py:69
-msgid "Confirm:"
-msgstr "確認："
-
-#: ../src/modules/rootpassword.py:89
-msgid "Root password must be at least 6 characters in length."
-msgstr "ルートパスワードは最低6文字の長さである必要があります。"
-
-#: ../src/modules/rootpassword.py:99
-msgid "Passwords do not match.  Please try again."
-msgstr "パスワードが一致しません。再度入力して下さい。"
-
-#: ../src/modules/securitylevel.py:22
-msgid "Security Level"
-msgstr "セキュリティレベル"
-
-#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
-#: ../src/modules/securitylevel.py:251
-msgid "Security Level Configuration"
-msgstr "セキュリティレベルの設定"
-
-#: ../src/modules/securitylevel.py:25
-msgid "Configure system security level"
-msgstr "システムセキュリティレベルを設定"
-
-#: ../src/modules/securitylevel.py:39
-msgid "Please choose the security level for the system."
-msgstr "システム用のセキュリティレベルを選んで下さい。"
-
-#: ../src/modules/securitylevel.py:42
-msgid "Security Level:"
-msgstr "セキュリティレベル："
-
-#: ../src/modules/securitylevel.py:49
-msgid "Use default firewall rules"
-msgstr "ディフォルトのファイヤーウォール規則を使用"
-
-#: ../src/modules/securitylevel.py:50
-msgid "Customize"
-msgstr "カスタマイズ"
-
-#: ../src/modules/securitylevel.py:52
-msgid "Trusted devices:"
-msgstr "信用するデバイス："
-
-#: ../src/modules/securitylevel.py:59
-msgid "Allow incoming:"
-msgstr "侵入を許可："
-
-#: ../src/modules/securitylevel.py:66
-msgid "Other ports: (1029:tcp)"
-msgstr "他のポート: (1029:tcp)"
-
-#: ../src/modules/securitylevel.py:196
-msgid ""
-"Invalid port given: %s.  The proper format is 'port:protocol, port:"
-"protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
-"無効なポートが与えられました: %s。 正式な形式は 'port:protocol, port: "
-"protocol' です。例えば、'1234:udp, 3456:tcp'"
-
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
 msgstr "システムを更新"
@@ -331,11 +205,10 @@ msgid ""
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
 msgstr ""
-"これでRed Hat Networkに登録されましたので、Red Hat Update Agentを使用して "
-"最新のソフトウェアパすべてのッケージを直接、Red Hatから取り込むことが "
-"出 来ます。このツール使用すれば、セキュリティシステムパッチ、バグ修正、 "
-"ソフトウェアパッケージ拡いつも張も更新された最新の"
-"Red Hat Linuxを 持つことができます。"
+"これでRed Hat Networkに登録されましたので、Red Hat Update Agentを使用して 最"
+"新のソフトウェアパすべてのッケージを直接、Red Hatから取り込むことが 出 来ま"
+"す。このツール使用すれば、セキュリティシステムパッチ、バグ修正、 ソフトウェア"
+"パッケージ拡いつも張も更新された最新のRed Hat Linuxを 持つことができます。"
 
 #: ../src/modules/up2date.py:66
 msgid "Yes, I would like to register with Red Hat Network"
@@ -350,8 +223,120 @@ msgid "Welcome"
 msgstr "ようこそ"
 
 #: ../src/modules/welcome.py:28
-msgid "Welcome to Red Hat Linux Beta!"
+#, fuzzy
+msgid "Welcome to Red Hat Linux!"
 msgstr "Red Hat Linux Beta版へようこそ!"
+
+#: ../src/modules/welcome.py:42
+msgid ""
+"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
+"before your system is ready to use.  The Red Hat Setup Agent will now guide "
+"you through some basic configuration.  Please click the \"Forward\" button "
+"in the lower right corner to continue."
+msgstr ""
+
+#~ msgid "Finish Installation"
+#~ msgstr "インストールを終了"
+
+#~ msgid "Keyboard"
+#~ msgstr "キーボード"
+
+#~ msgid "Keyboard Configuration"
+#~ msgstr "キーボードの設定"
+
+#~ msgid "A configuration tool for the system keyboard"
+#~ msgstr "システムキーボード用の設定ツール"
+
+#~ msgid "Select the appropriate keyboard for the system."
+#~ msgstr "システム用の適切なキーボードを選択。"
+
+#~ msgid "Language"
+#~ msgstr "言語"
+
+#~ msgid "Language Configuration"
+#~ msgstr "言語の設定"
+
+#~ msgid "A configuration tool to set the language for the system"
+#~ msgstr "システム用の言語をセットする設定ツール"
+
+#~ msgid "Language Selection"
+#~ msgstr "言語の選択"
+
+#~ msgid "Please select the default language for the system."
+#~ msgstr "システム用のディフォルト言語を選択して下さい。"
+
+#~ msgid "The changes will take effect the next time you log in."
+#~ msgstr "変更は次回ログインする時に反映されます。"
+
+#~ msgid "Mouse"
+#~ msgstr "マウス"
+
+#~ msgid "Mouse Configuration"
+#~ msgstr "マウスの設定"
+
+#~ msgid "A configuration tool for the mouse"
+#~ msgstr "マウス用の設定ツール"
+
+#~ msgid "Please select the mouse for the system."
+#~ msgstr "システム用のマウスを選択して下さい。"
+
+#~ msgid "Emulate 3 button click"
+#~ msgstr "3ボタンクリックをエミュレート(模倣)"
+
+#~ msgid "Root Password"
+#~ msgstr "ルートパスワード"
+
+#~ msgid "Please set the root password for the system."
+#~ msgstr "システム用のルートパスワードをセットして下さい。"
+
+#~ msgid "Root Password:"
+#~ msgstr "ルートパスワード："
+
+#~ msgid "Confirm:"
+#~ msgstr "確認："
+
+#~ msgid "Root password must be at least 6 characters in length."
+#~ msgstr "ルートパスワードは最低6文字の長さである必要があります。"
+
+#~ msgid "Passwords do not match.  Please try again."
+#~ msgstr "パスワードが一致しません。再度入力して下さい。"
+
+#~ msgid "Security Level"
+#~ msgstr "セキュリティレベル"
+
+#~ msgid "Security Level Configuration"
+#~ msgstr "セキュリティレベルの設定"
+
+#~ msgid "Configure system security level"
+#~ msgstr "システムセキュリティレベルを設定"
+
+#~ msgid "Please choose the security level for the system."
+#~ msgstr "システム用のセキュリティレベルを選んで下さい。"
+
+#~ msgid "Security Level:"
+#~ msgstr "セキュリティレベル："
+
+#~ msgid "Use default firewall rules"
+#~ msgstr "ディフォルトのファイヤーウォール規則を使用"
+
+#~ msgid "Customize"
+#~ msgstr "カスタマイズ"
+
+#~ msgid "Trusted devices:"
+#~ msgstr "信用するデバイス："
+
+#~ msgid "Allow incoming:"
+#~ msgstr "侵入を許可："
+
+#~ msgid "Other ports: (1029:tcp)"
+#~ msgstr "他のポート: (1029:tcp)"
+
+#~ msgid ""
+#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
+#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
+#~ msgstr ""
+#~ "無効なポートが与えられました: %s。 正式な形式は 'port:protocol, port: "
+#~ "protocol' です。例えば、'1234:udp, 3456:tcp'"
 
 #~ msgid "Register with RHN"
 #~ msgstr "RHNへの登録"
@@ -399,4 +384,3 @@ msgstr "Red Hat Linux Beta版へようこそ!"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-
