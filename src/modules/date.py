@@ -126,7 +126,23 @@ class TimeWindow(FirstbootGuiWindow):
                     return
 
                 ntpServerList = self.datePage.getNtpServerList()
-                self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList)
+                if self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList) == None:
+                    text = (_("A connection with %s could not be established.  "
+                                           "Either %s is not available or the firewall settings "
+                                           "on your computer are blocking NTP connections." %
+                                           (sysTimeServer, sysTimeServer)))
+
+                    dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
+
+                    dlg.set_title(_("Error"))
+                    dlg.set_default_size(100, 100)
+                    dlg.set_position (gtk.WIN_POS_CENTER_ON_PARENT)
+                    dlg.set_border_width(2)
+                    dlg.set_modal(gtk.TRUE)
+                    rc = dlg.run()
+                    dlg.destroy()
+                    self.failedFlag = 1
+                    return
 
                 def child_handler (signum, stack_frame):
                     if not pid:
