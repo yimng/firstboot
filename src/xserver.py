@@ -41,10 +41,8 @@ class XServer:
         # give time for the server to fail (if it is going to fail...)
         time.sleep (5)
         status = 0
-        print "about to try"
         try:
             pid, status = os.waitpid (self.xserver_pid, os.WNOHANG)
-
         except OSError, (errno, msg):
             print "in except"
             print __name__, "waitpid:", msg
