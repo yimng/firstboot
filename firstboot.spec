@@ -75,6 +75,7 @@ fi
 %changelog
 * Mon Sep 22 2003 Brent Fox <bfox@redhat.com> 1.2.1-1
 - remove some items from the additional cd's screen for now
+- remove some references to Red Hat Linux from welcome.py and up2date.py
 
 * Fri Aug 29 2003 Brent Fox <bfox@redhat.com> 1.1.16-2
 - bump relnum and rebuild
