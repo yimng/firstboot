@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+# firstboot:         Starts the firstboot druid if it hasn't been run before
+#
+# description:       Firstboot is a druid style program that runs on the first time /
+#                    a machine is booted after install.  It checks for the existence /
+#                    of an /etc/sysconfig/firstboot file.  If it doesn't find the file, /
+#                    then the firstboot program needs to run.  If it finds the file, /
+#                    firstboot will not be run.
+#                    If /etc/reconfigSys exists, run the reconfiguration
+#		     program and remove /etc/reconfigSys when done.
+#
+#                    Also will run if 'reconfig' is on the kernel cmdline.
+#
+# Source function library.
+. /etc/init.d/functions
+[ -f /etc/sysconfig/i18n ] && . /etc/sysconfig/i18n
+export LANG
+
+FILENAME=/etc/sysconfig/firstboot
+
+case "$1" in
+ start)
+        if grep -i reconfig /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
+	    echo -n "Running system reconfiguration tool"
+	    /usr/sbin/firstboot --reconfig
+	    rm -f /etc/reconfigSys
+	fi
+
+	# We don't want to run this on random runlevel changes.
+	touch /var/lock/subsys/reconfig
+
+	;;
+ stop)
+ 	rm -f /var/lock/subsys/reconfig
+ 	;;
+ *)
+ 	echo "Usage: reconfig {start|stop}"
+	exit 1
+	;;
+esac
+
+exit $RETVAL
