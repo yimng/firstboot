@@ -1,19 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of it.po to Italian
 # Copyright (C) YEAR ORGANIZATION
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Francesco Valente <fvalen@redhat.com>, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: it\n"
 "POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
-"PO-Revision-Date: 2003-02-25 08:55+1000\n"
+"PO-Revision-Date: 2003-06-18 14:32+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0\n"
 
 #: ../src/exceptionWindow.py:31
 msgid "An error has occurred in the %s module."
@@ -47,14 +47,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot è già stato eseguito su questo sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Per eseguire firstboot durante l'avvio del sistema, eseguire i seguenti "
 "comandi:"
@@ -65,7 +62,7 @@ msgstr "Firstboot non puó essere eseguito nel runlevel 3."
 
 #: ../src/firstbootWindow.py:258
 msgid "_Next"
-msgstr ""
+msgstr "_Successivo"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -115,34 +112,32 @@ msgstr ""
 "informazioni richieste."
 
 #: ../src/modules/create_user.py:57
-#, fuzzy
 msgid "_Username:"
-msgstr "Nome utente:"
+msgstr "_Nome utente:"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full _Name:"
-msgstr "Nome:"
+msgstr "Nome_completo:"
 
 #: ../src/modules/create_user.py:71
-#, fuzzy
 msgid "_Password:"
-msgstr "Password:"
+msgstr "_Password:"
 
 #: ../src/modules/create_user.py:78
-#, fuzzy
 msgid "Confir_m Password:"
-msgstr "Confermare la Password:"
+msgstr "Confer_mare la Password:"
 
 #: ../src/modules/create_user.py:94
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Se avete necessità di usare una autenticazione di rete come Kerberos o NIS, si prega "
+"di fare clic sul pulsante di registrazione di rete 'Use Network Login'."
 
 #: ../src/modules/create_user.py:104
 msgid "_Use Network Login..."
-msgstr ""
+msgstr "_Use Network Login..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -155,24 +150,20 @@ msgstr ""
 "riservato solo per un uso amministrativo."
 
 #: ../src/modules/create_user.py:145
-#, fuzzy
 msgid "_Continue"
-msgstr "Continuare"
+msgstr "_Continuare"
 
 #: ../src/modules/create_user.py:146
-#, fuzzy
 msgid "Create _account"
-msgstr "Creare un account"
+msgstr "Creare un _account"
 
 #: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr "La password non é corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:191
 msgid ""
@@ -191,13 +182,12 @@ msgid "The user name may not begin with a number."
 msgstr "Il nome utente non dovrebbe iniziare con un numero."
 
 #: ../src/modules/create_user.py:252
-#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Il nome utente '%s' contiene degli spazi.  Prego non includere alcun spazio "
-"nel %s."
+"Il nome utente '%s' contiene degli spazi.  Si prega di non includere alcuno spazio "
+"nel nome utente."
 
 #: ../src/modules/create_user.py:259
 msgid ""
@@ -224,15 +214,13 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -333,8 +321,7 @@ msgstr ""
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr ""
-"Si, voglio procedere alla registrazione del mio sistema con Red Hat Network."
+msgstr "Si, voglio procedere alla registrazione del mio sistema con Red Hat Network."
 
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
@@ -425,3 +412,4 @@ msgstr "Red Hat Update Agent"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
+
