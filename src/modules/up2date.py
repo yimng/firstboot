@@ -82,6 +82,7 @@ class childWindow:
         #Run rhn_register so they can register with RHN
         path = "/usr/sbin/up2date"
         fd = os.popen(path)
+        foo = fd.read()
         fd.close()
 
     def apply(self, notebook):
