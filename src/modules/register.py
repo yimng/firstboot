@@ -77,7 +77,6 @@ class childWindow:
             label.set_line_wrap(TRUE)
             label.set_alignment(0.1, 0.5)
             label.set_size_request(400, -1)
-#To start using Red Hat Network today, follow these steps:
 
             internalVBox.pack_start(label, FALSE, TRUE)
             launchButton = gtk.Button("Register system now")
@@ -96,20 +95,9 @@ class childWindow:
 #            launchButton.connect("clicked", self.rhn_register)
 #            internalVBox.pack_start(launchButton, FALSE)
 
+        self.vbox.pack_start(internalVBox)
 
-
-
-
-#        label = gtk.Label("Welcome message goes here")
-
-
-
-        eventBox = gtk.EventBox()
-        eventBox.add(internalVBox)
-        eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
-        self.vbox.pack_start(eventBox, TRUE)
-
-        return self.vbox
+        return self.vbox, eventBox
 
     def networkAvailable(self):
         try:

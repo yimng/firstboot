@@ -63,7 +63,7 @@ class childWindow:
 
             internalVBox.pack_start(self.page1())
             
-        return self.mainVBox
+        return self.mainVBox, eventBox
 
     def networkDevices(self):
         netdevices = []

@@ -68,21 +68,13 @@ class childWindow:
             a.add(launchButton)            
             a.set(0.3, 0.0, 0.3, 0.5)
 
-#            eventBox = gtk.EventBox()
-#            eventBox.add(a)
-#            eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#0000BB"))
-
             internalVBox.pack_start(a, gtk.FALSE, padding=10)
-#            internalVBox.pack_start(eventBox, gtk.FALSE, padding=10)
 
             launchButton.connect("clicked", self.up2date)
 
-            eventBox = gtk.EventBox()
-            eventBox.add(internalVBox)
-            eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
-            self.vbox.pack_start(eventBox, TRUE)
+            self.vbox.pack_start(internalVBox, TRUE)
 
-            return self.vbox
+            return self.vbox, eventBox
         except:
             return
 

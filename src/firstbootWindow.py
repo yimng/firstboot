@@ -109,9 +109,10 @@ class firstbootWindow:
                 pass
 
         for module in self.moduleList:
-             box = module.launch()
-             if box:
-                 self.notebook.append_page(box, gtk.Label(" "))
+             vbox, eventbox = module.launch()
+             eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
+             if vbox:
+                 self.notebook.append_page(vbox, gtk.Label(" "))
 
         self.moduleView = gtk.TreeView(self.moduleStore)
 #        selection = self.moduleView.get_selection()
