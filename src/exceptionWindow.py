@@ -29,7 +29,7 @@ class ExceptionWindow:
         text_buf = gtk.TextBuffer(None)
         text_scroll.add(text_view)
 
-        label = gtk.Label(_("An error has occured in the %s module." % module.moduleName))
+        label = gtk.Label(_("An error has occurred in the %s module." % module.moduleName))
         label.set_alignment(0.0, 0.5)
 
         path = "/root/firstboot.%s" % time.time()
