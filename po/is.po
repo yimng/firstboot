@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot keyrir ekki í keyrslustigi 3."
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "Notandaaðgangur"
 
 #: ../src/modules/create_user.py:44
 msgid ""
@@ -104,6 +104,9 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"Við mælum með að þú búir til notandaaðgang handa þér fyrir alla almenna "
+"vinnslu. Til að búa til notandaaðgang þarftu að gefa upp umbeðnar "
+"upplýsingar."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -127,14 +130,17 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Við mælum eindregið með að þú búir til notandaaðgang. Ef þú heldur áfram "
+"án þess getur þú einungis notað vélina sem rótarnotandinn sem er eingöngu "
+"ætlaður til kerfisstjórnunar."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr ""
+msgstr "Halda áfram"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "Búa til notandaaðgang"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
@@ -145,55 +151,63 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lykilorðið er of stutt. Vinsamlegast hafðu það amk 6 stafi."
 
 #: ../src/modules/create_user.py:153
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "Notandi með heitinu %s er þegar til. Vinsamlegast veldu annað heiti."
+msgstr ""
+"Notandaheitið '%s' er frátekinn kerfisnotandi. Vinsamlegast veldu annað heiti."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "Notandaheitið má ekki vera lengra en 33 stafir."
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "Notandaheitið má ekki byrja á tölu."
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
+"Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í "
+"%s."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"Notandaheitið '%s' er með púnktum eða kommum. Vinsamlegast notið ekki "
+"slík tákn í notandaheitum."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"Notandaheitið '%s' inniheldur hástafi. Vinsamlegast notið ekki hástafi "
+"í notandaheitum."
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Notandaheitið '%s' inniheldur ógilda stafi.  Vinsamlegast notið eingöngu "
+"ASCII tákn."
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Lykilorðið er of stutt. Vinsamlegast hafðu það amk 6 stafi."
+msgstr ""
+"Lykilorðið inniheldur ógilda stafi.  Vinsamlegast notið eingöngu ASCII tákn."
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Lykilorðið er of stutt. Vinsamlegast hafðu það amk 6 stafi."
+msgstr ""
+"Heitið '%s' inniheldur ógilda stafi.  Vinsamlegast notið eingöngu ASCII tákn."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -201,7 +215,7 @@ msgstr "Dagsettning og tími"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Vinsamlegast settu dagsettningu og tíma vélarinnar."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
@@ -228,14 +242,12 @@ msgid "Finish Setup"
 msgstr "Ljúka uppsetningu"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Red Hat Linux vélin þín er nú uppsett og tilbúin til notkunar.  Við vonum að "
-"þú njótir reynslunnar af Red Hat Linux. Vinsamlegast smelltu á \"Áfram\" "
-"hnappinn í hægra horninu hér að neðan til að halda áfram."
+"Red Hat Linux vélin þín er nú uppsett og tilbúin til notkunar. Vinsamlegast "
+"smelltu á \"Áfram\" hnappinn í hægra horninu hér að neðan til að halda áfram."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -338,32 +350,3 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat uppsetningarálfurinn"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "Setja inn auka hugbúnað"
-
-#~ msgid "Create A User"
-#~ msgstr "Búa til notanda"
-
-#~ msgid ""
-#~ "A user account is required to use the system.  Create a user account by "
-#~ "filling in the information below."
-#~ msgstr ""
-#~ "Notandaaðgangur er nauðsynlegur til þess að nota vélina. Þú getur búið "
-#~ "hann til með því að fylla út formið hér fyrir neðan."
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?"
-#~ msgstr ""
-#~ "Þú bjóst ekki til notandaaðgang. Ertu viss um að þú viljir halda áfram án "
-#~ "þess að búa hann til?"
-
-#~ msgid "Set Date and Time"
-#~ msgstr "Stilla dagsettningu og tíma"
-
-#~ msgid "Finished Setup!"
-#~ msgstr "Uppsetningu lokið!"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hat uppfærsluálfurinn"
