@@ -3,6 +3,7 @@
 #
 # Copyright 2002, 2003 Red Hat, Inc.
 # Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
+# Copyright 2004 Nils Philippsen <nphilipp@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -29,7 +30,6 @@ import functions
 
 sys.path.append('/usr/share/system-config-date/')
 import mainWindow
-import dateBackend
 
 from rhpl.firstboot_gui_window import FirstbootGuiWindow
 
@@ -53,12 +53,9 @@ class TimeWindow(FirstbootGuiWindow):
         pass
 
     def setupScreen(self):
-        self.dateWindow = mainWindow.mainWindow (firstboot = True)
+        self.dateWindow = mainWindow.mainWindow (firstboot = True, showPages = ["datetime", "ntp"])
 
-        #Initialize date backend
-        self.dateBackend = self.dateWindow.dateBackend
-
-        self.datePageNotebook = self.dateWindow.firstboot_notebook ()
+        self.datePageNotebook = self.dateWindow.firstboot_widget ()
 
         #Add icon to the top frame
         self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
@@ -87,7 +84,7 @@ class TimeWindow(FirstbootGuiWindow):
         dialog.hide ()
 
     def apply(self, *args):
-        if 0:
+        if self.doDebug:
             print "applying date changes not available in debug mode"
         else:
             return self.dateWindow.firstboot_apply ()
@@ -96,6 +93,5 @@ class TimeWindow(FirstbootGuiWindow):
 
     def grabFocus(self):
         pass
-#        self.datePage.updateSpinButtons()
 
 childWindow = TimeWindow

@@ -1,8 +1,9 @@
 #
-# timezone.py - GUI front end code for mouse configuration
+# timezone.py - GUI front end code for timezone configuration
 #
-# Copyright 2003 Red Hat, Inc.
-# Copyright 2003 Brent Fox <bfox@redhat.com>
+# Copyright 2002, 2003 Red Hat, Inc.
+# Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
+# Copyright 2004 Nils Philippsen <nphilipp@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,7 +22,6 @@
 
 import string
 import gtk
-import gobject
 import sys
 import os
 import signal
@@ -29,8 +29,7 @@ import time
 import functions
 
 sys.path.append('/usr/share/system-config-date/')
-import timezone_gui
-import timezoneBackend
+import mainWindow
 
 from rhpl.firstboot_gui_window import FirstbootGuiWindow
 
@@ -53,14 +52,11 @@ class TimeWindow(FirstbootGuiWindow):
 
     def getNext(self):
         pass
-    
-    def setupScreen(self):
-        #Initialize timezone backend
-        self.timezoneBackend = timezoneBackend.timezoneBackend()
 
-        #Initialize datePage and pass dateBackend into it
-        self.timezonePage = timezone_gui.timezonePage()
-        self.timezonePageVBox = self.timezonePage.getSmallVBox()
+    def setupScreen(self):
+        self.timezoneWindow = mainWindow.mainWindow (firstboot = True, showPages = ["timezone"])
+
+        self.timezoneWidget = self.timezoneWindow.firstboot_widget ()
 
         #Add icon to the top frame
         self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
@@ -75,7 +71,7 @@ class TimeWindow(FirstbootGuiWindow):
         messageLabel.set_alignment(0.0, 0.5)
 
         internalVBox.pack_start(messageLabel, gtk.FALSE)
-        internalVBox.pack_start(self.timezonePageVBox, gtk.TRUE)
+        internalVBox.pack_start(self.timezoneWidget, gtk.TRUE)
         self.mainVBox.pack_start(internalVBox, gtk.TRUE)
 
     def launch(self, doDebug=None):
@@ -92,10 +88,11 @@ class TimeWindow(FirstbootGuiWindow):
         if self.doDebug:
             print "applying timezone changes not available in debug mode"
         else:
-            #Get the timezone info from the timezone page
-            timezone, utc, arc = self.timezonePage.getTimezoneInfo()
-            self.timezoneBackend.writeConfig(timezone, utc, arc)
-           
+            return self.timezoneWindow.firstboot_apply ()
+
         return 0
+
+    def grabFocus(self):
+        pass
 
 childWindow = TimeWindow
