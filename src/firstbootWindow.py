@@ -23,7 +23,7 @@ import functions
 import firstbootBackend
 
 class firstbootWindow:
-    def __init__(self, xserver_pid, wm_pid, doReconfig, doDebug, lowRes):
+    def __init__(self, xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb):
         self.xserver_pid = xserver_pid
         self.wm_pid = wm_pid
         self.doReconfig = doReconfig
@@ -34,7 +34,7 @@ class firstbootWindow:
         self.moduleDict = {}
 
         # Create the initial window and a vbox to fill it with.
-        self.win = gtk.Window()
+        self.win = gtk.Window(gtk.WINDOW_POPUP)
         self.win.connect("destroy", self.destroy)
         self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
         self.win.realize()
@@ -46,16 +46,17 @@ class firstbootWindow:
         x_screen = gtk.gdk.screen_width()
         y_screen = gtk.gdk.screen_height()        
 
-        #Set the background of the window
-        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
-        if pixbuf is not None:
-            pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
-            bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
-            gc = bgimage.new_gc()
-            pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
-                                      y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-            self.win.set_app_paintable(gtk.TRUE)
-            self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+        if not rhgb:
+            #If rhgb isn't running, then we need to draw the background
+            pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+            if pixbuf is not None:
+                pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
+                bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
+                gc = bgimage.new_gc()
+                pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
+                                          y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+                self.win.set_app_paintable(gtk.TRUE)
+                self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
 
         align = gtk.Alignment(0.5, 0.5, 0.0, 0.0)
         eb = gtk.EventBox()
