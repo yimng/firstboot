@@ -62,10 +62,6 @@ class childWindow:
         internalVBox.set_border_width(10)
         internalVBox.set_spacing(10)
 
-#        label = gtk.Label(_("It is recommended that you create a personal user account for "
-#                            "normal (non-administrative) use.  To create a personal account, "
-#                            "provide the requested information."))
-
 	label = gtk.Label(_("It is recommended that you create a system 'username' for regular "
 			    "(non-administrative) use of your system. To create a system 'username,' "
 			    "please provide the information requested below."))
