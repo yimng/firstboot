@@ -1,5 +1,4 @@
 # Translation of zh_TW.po to Chinese (traditional)
-# Translation of zh_TW.po to Chinese (traditional)
 # Copyright (C) 2002 Red Hat Inc.
 # Ben Wu <hpwu@redhat.com>, 2002
 #
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Aug 13 22:19:03 2002\n"
-"PO-Revision-Date: 2002-08-12 10:06+1000\n"
+"PO-Revision-Date: 2002-08-15 09:29+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -44,17 +43,15 @@ msgstr ""
 
 #: ../src/firstboot.py:88
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:89
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
@@ -69,27 +66,27 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"假如您有以下列出的任何光碟片，您可以藉由放入該光碟片， "
+"並按下適當的按鈕來安裝套件。"
 
 #: ../src/modules/additional_cds.py:73
-#, fuzzy
 msgid "Red Hat Linux Documentation CD"
-msgstr "Red Hat 說明文件 CD"
+msgstr "Red Hat Linux 說明文件光碟"
 
 #: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
 #: ../src/modules/additional_cds.py:99
 msgid "Install..."
-msgstr ""
+msgstr "安裝..."
 
 #: ../src/modules/additional_cds.py:84
-#, fuzzy
 msgid "Red Hat Linux Installation CD"
-msgstr "Red Hat 說明文件 CD"
+msgstr "Red Hat Linux 安裝光碟"
 
 #: ../src/modules/additional_cds.py:117
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
+msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並按下『確定』以繼續。"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -120,9 +117,8 @@ msgid "Finish Setup"
 msgstr "完成設定"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Setup!"
-msgstr "完成設定"
+msgstr "完成設定！"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -165,7 +161,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理程式"
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -180,16 +175,15 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"Red Hat 更新代理程式將會向 Red Hat Network 註冊您的機器， 如此您便可以接收直"
+"Red Hat 更新代理程式將會向 Red Hat Network 註冊您的機器，如此您便可以接收直"
 "接從 Red Hat 傳來最新的軟體套件。 使用這個工具將使您總是擁有最新的 Red Hat "
-"Linux 系統，並含有所有的安全性修補，程式錯誤修正以及 軟體套件的功能強化。\n"
+"Linux 系統，並含有所有的安全性修補，程式錯誤修正以及軟體套件的功能強化。\n"
 "\n"
 "假如您是購買這個產品，您將享有免費試用 Red Hat Network Basic Service。 如要使"
 "用這個試用服務，請參閱盒內所附的 『產品註冊卡』，以取得更詳細的資訊。\n"
 "\n"
-"假如您沒有購買這個產品，請拜訪 http://rhn.redhat.com 以取得更多資訊， 或訂閱 "
+"假如您沒有購買這個產品，請拜訪 http://rhn.redhat.com 以取得更多資訊，或訂閱 "
 "Red Hat Network Basic Service。\n"
-"\n"
 
 #: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
@@ -465,3 +459,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
+
