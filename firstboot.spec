@@ -74,6 +74,7 @@ fi
 %changelog
 * Mon May 19 2003 Brent Fox <bfox@redhat.com> 1.0.7-1
 - check to see if rhgb is running
+- if rhgb is running, start up metacity and merge X resources
 
 * Fri May 16 2003 Brent Fox <bfox@redhat.com> 1.0.6-2
 - Added a mnemonic for network login button (bug #90636)
