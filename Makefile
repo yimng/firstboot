@@ -69,11 +69,11 @@ create-snapshot:
 	@echo "The final archive is in $(PKGNAME)-$(VERSION).tar.bz2"
 
 local:
-	@rm -rf ${PKGNAME}-$(VERSION).tar.gz
+	@rm -rf ${PKGNAME}-$(VERSION).tar.*
 	@rm -rf /tmp/${PKGNAME}-$(VERSION) /tmp/${PKGNAME}
 	@cd /tmp; cp -a ~/redhat/${PKGNAME} ${PKGNAME}
 	@mv /tmp/${PKGNAME} /tmp/${PKGNAME}-$(VERSION)
-	@dir=$$PWD; cd /tmp; tar cvzf $$dir/${PKGNAME}-$(VERSION).tar.gz ${PKGNAME}-$(VERSION)
+	@dir=$$PWD; cd /tmp; tar --bzip2 -cSpf $$dir/${PKGNAME}-$(VERSION).tar.bz2 ${PKGNAME}-$(VERSION)
 	@rm -rf /tmp/${PKGNAME}-$(VERSION)	
 	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.gz"
 
