@@ -36,81 +36,92 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Sila failkan pepijat terhadap 'firstboot' dalam sistem \n"
+"penjejakan pepijat Red Hat di http://www.redhat.com/bugzilla. \n"
+"Satu salinan keluaran debug telah disimpan di %s \n"
+"Pastikan fail tersebut dilampirkan bersama laporan pepijat. \n"
 
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "Firstboot telah pernah dilaksanakan sekali pada sistem ini.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
+#, fuzzy
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Masuk:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
+#, fuzzy
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "Masuk:"
 
 #: ../src/firstboot.py:120
+#, fuzzy
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "dalam."
 
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
-msgstr ""
+msgstr "_Undur"
 
 #: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
-msgstr ""
+msgstr "_Maju"
 
 #: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr ""
+msgstr "Selamat Datang"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr ""
 
 #: ../src/modules/additional_cds.py:39
+#, fuzzy
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr ""
+msgstr "dan."
 
 #: ../src/modules/additional_cds.py:51
+#, fuzzy
 msgid "Red Hat Linux Documentation CD"
-msgstr ""
+msgstr "Dokumentasi"
 
 #: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
 #: ../src/modules/additional_cds.py:77
+#, fuzzy
 msgid "Install..."
-msgstr ""
+msgstr "Install."
 
 #: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
 msgstr ""
 
 #: ../src/modules/additional_cds.py:99
+#, fuzzy
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
+msgstr "A dalam dan OK."
 
 #: ../src/modules/create_user.py:22
+#, fuzzy
 msgid "User Account"
-msgstr ""
+msgstr "Pengguna"
 
 #: ../src/modules/create_user.py:47
+#, fuzzy
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr ""
+msgstr "pengguna normal Kepada."
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
-msgstr ""
+msgstr "_Namapengguna:"
 
 #: ../src/modules/create_user.py:64
 msgid "Full Nam_e:"
@@ -118,17 +129,19 @@ msgstr ""
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
-msgstr ""
+msgstr "_Katalaluan:"
 
 #: ../src/modules/create_user.py:78
+#, fuzzy
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Katalaluan:"
 
 #: ../src/modules/create_user.py:94
+#, fuzzy
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "Kerberos NIS Rangkaian."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
@@ -139,7 +152,7 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "pengguna dalam."
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
@@ -164,54 +177,59 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/create_user.py:238
+#, fuzzy
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "pengguna."
 
 #: ../src/modules/create_user.py:244
+#, fuzzy
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "pengguna."
 
 #: ../src/modules/create_user.py:252
+#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
+msgstr "pengguna dalam pengguna."
 
 #: ../src/modules/create_user.py:259
+#, fuzzy
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
+msgstr "pengguna dalam pengguna."
 
 #: ../src/modules/create_user.py:266
+#, fuzzy
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
+msgstr "pengguna dalam pengguna."
 
 #: ../src/modules/create_user.py:273
+#, fuzzy
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
+msgstr "pengguna."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
-msgstr ""
+msgstr "Tarikh dan Masa"
 
 #: ../src/modules/date.py:54
+#, fuzzy
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "dan."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
@@ -222,36 +240,41 @@ msgid "Error"
 msgstr "Ralat"
 
 #: ../src/modules/date.py:145
+#, fuzzy
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
+msgstr "A on."
 
 #: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
 msgstr ""
 
 #: ../src/modules/finished.py:19
+#, fuzzy
 msgid "Finish Setup"
-msgstr ""
+msgstr "Tamat"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
-msgstr ""
+msgstr "dan Maju dalam."
 
 #: ../src/modules/networking.py:23
+#, fuzzy
 msgid "Network Setup"
-msgstr ""
+msgstr "Rangkaian"
 
 #: ../src/modules/networking.py:49
+#, fuzzy
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "on:"
 
 #: ../src/modules/networking.py:68
 msgid "Network Device"
-msgstr ""
+msgstr "Rangkaian"
 
 #: ../src/modules/networking.py:70
 msgid "Boot protocol"
@@ -259,27 +282,30 @@ msgstr ""
 
 #: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "Ubah Rangkaian Konfigurasikan."
 
 #: ../src/modules/networking.py:119
 msgid "static"
 msgstr ""
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
+#, fuzzy
 msgid "Sound Card"
-msgstr ""
+msgstr "Bunyi"
 
 #: ../src/modules/soundcard_gui.py:51
+#, fuzzy
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "A on."
 
 #: ../src/modules/soundcard_gui.py:74
+#, fuzzy
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
-msgstr ""
+msgstr "dalam dalam dan dalam."
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
@@ -294,6 +320,7 @@ msgid "Red Hat Network"
 msgstr ""
 
 #: ../src/modules/up2date.py:36
+#, fuzzy
 msgid ""
 "This step will register your system with a complimentary Demo Account from "
 "Red Hat Network so that you can receive the latest software packages "
@@ -307,17 +334,19 @@ msgid ""
 "\n"
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
-msgstr ""
+msgstr "Rangkaian dan Rangkaian Asas Kepada dalamhttp://rhn.redhat.com Rangkaian Asas"
 
 #: ../src/modules/up2date.py:55
+#, fuzzy
 msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr ""
+msgstr "Ya Rangkaian."
 
 #: ../src/modules/up2date.py:56
 msgid "N_o, I do not want to register my system."
 msgstr ""
 
 #: ../src/modules/welcome.py:35
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
@@ -333,6 +362,7 @@ msgid "Yes"
 msgstr "Ya"
 
 #: ../src/textWindow.py:17
+#, fuzzy
 msgid ""
 "The Red Hat Setup Agent can assist you in configuring your machine by "
 "guiding you through a series of steps.  Setup Agent requires the X Window "
@@ -341,8 +371,9 @@ msgid ""
 "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
-msgstr ""
+msgstr "dalam Sistem Ya Tidak dan?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Setup Agent"
+
