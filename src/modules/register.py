@@ -3,6 +3,7 @@ import string
 import gtk
 import gobject
 import os
+import functions
 from socket import gethostname
 from socket import gethostbyname
 
@@ -24,19 +25,9 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        p = None
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("pixmaps/networking.png")
-        except:
-            pass
-
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)
+        pix = functions.imageFromFile("networking.png")
+        if pix:
             titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
-
-
-        
         titleBox.pack_start(label)
 
         eventBox = gtk.EventBox()
@@ -44,7 +35,6 @@ class childWindow:
         eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
         self.vbox.pack_start(eventBox, FALSE)
 
-#        self.vbox.pack_start(label, FALSE, TRUE, 30)
         a = gtk.Alignment()
         a.add(gtk.HSeparator())
         a.set(0.5, 0.5, 1.0, 1.0)
@@ -53,7 +43,6 @@ class childWindow:
 
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
-
 
         if self.networkAvailable() == TRUE:
             label = gtk.Label("Red Hat Network is an Internet solution for managing "

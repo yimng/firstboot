@@ -39,7 +39,8 @@ class childWindow:
         titleBox = gtk.HBox()
 
         pix = functions.imageFromFile("hwbrowser.png")
-        titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
+        if pix:
+            titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
         titleBox.pack_start(label)
 
@@ -74,7 +75,8 @@ class childWindow:
         
         
         pix = functions.imageFromFile("keyboard.png")
-        self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+        if pix:
+            self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         label = gtk.Label(_("Keyboard Map:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
@@ -88,7 +90,8 @@ class childWindow:
 
     def configureMouse(self):
         pix = functions.imageFromFile("mouse.png")
-        self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+        if pix:
+            self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         label = gtk.Label(_("Mouse:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
@@ -102,7 +105,8 @@ class childWindow:
         self.device, self.module, self.description = self.soundcardBackend.getData(cards[0])
 
         pix = functions.imageFromFile("multimedia.png")
-        self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+        if pix:
+            self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         label = gtk.Label(_("Sound card:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
@@ -120,7 +124,8 @@ class childWindow:
 
     def configureNetworking(self):
         pix = functions.imageFromFile("networking.png")
-        self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+        if pix:
+            self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         label = gtk.Label(_("Networking:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
@@ -128,7 +133,8 @@ class childWindow:
 
     def configureDisplay(self):
         pix = functions.imageFromFile("display.png")
-        self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+        if pix:
+            self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         label = gtk.Label(_("Display:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
@@ -136,7 +142,8 @@ class childWindow:
 
     def configurePrinters(self):
         pix = functions.imageFromFile("printer.png")
-        self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+        if pix:
+            self.table.attach(pix, 0, 1, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         label = gtk.Label(_("Printers:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)

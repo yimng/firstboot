@@ -3,6 +3,7 @@ import string
 import gtk
 import gobject
 import os
+import functions
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
@@ -12,7 +13,6 @@ class childWindow:
     def __init__(self, doDebug = None):
         print "initializing additional_cd module"
         self.additionalDiscs = {"Red Hat Documentation CD" : "docs.png", "Linux Application CD" : "lacd.png"}
-
                 
     def launch(self):
         os.stat('/etc/sysconfig/rhn/rhn_register')
@@ -25,16 +25,8 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        p = None
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("pixmaps/boxset_standard.png")
-        except:
-            pass
-
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)
-            titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
+        pix = functions.imageFromFile("boxset_standard.png")
+        titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
         titleBox.pack_start(label)
 
@@ -74,18 +66,9 @@ class childWindow:
         return self.vbox, eventBox
 
     def create_button(self, image, name):
-        p = None
-        try:
-            path = string.join(["pixmaps/", image], "")
-            p = gtk.gdk.pixbuf_new_from_file(path)
-        except:
-            pass
-
+        pix = functions.imageFromFile(image)
         box = gtk.HBox()
-
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)
+        if pix:
             box.pack_start(pix, gtk.FALSE)
 
         label = gtk.Label(name)

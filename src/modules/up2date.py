@@ -3,6 +3,7 @@ import string
 import gtk
 import gobject
 import os
+import functions
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
@@ -23,18 +24,10 @@ class childWindow:
 
             titleBox = gtk.HBox()
 
-            try:
-                p = gtk.gdk.pixbuf_new_from_file("pixmaps/boxset_standard.png")
-            except:
-                pass
-
-            if p:
-                pix = gtk.Image()
-                pix.set_from_pixbuf(p)
+            pix = functions.imageFromFile("boxset_standard.png")
+            if pix:
                 titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
-
-
-
+            
             titleBox.pack_start(label)
 
             eventBox = gtk.EventBox()
@@ -42,7 +35,6 @@ class childWindow:
             eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
             self.vbox.pack_start(eventBox, FALSE)
 
-    #        self.vbox.pack_start(label, FALSE, TRUE, 30)
             a = gtk.Alignment()
             a.add(gtk.HSeparator())
             a.set(0.5, 0.5, 1.0, 1.0)
