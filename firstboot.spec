@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.1.0
-Release: 8
+Version: 0.2.0
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -59,6 +59,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri May 31 2002 Brent Fox <bfox@redhat.com> 0.2.0-1
+- Fix hardare screen's run priority
+
 * Thu May 30 2002 Brent Fox <bfox@redhat.com> 0.1.0-8
 - Created the beginnings of the hardware screen
 
