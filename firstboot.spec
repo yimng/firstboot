@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 4
+Release: 5
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 29 2002 Brent Fox <bfox@redhat.com> 1.0.1-5
+- Make the date screen update the time widgets when the screen is entered
+
 * Thu Aug 29 2002 Brent Fox <bfox@redhat.com> 1.0.1-4
 - Convert po files to UTF-8
 
