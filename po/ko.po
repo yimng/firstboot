@@ -1,23 +1,25 @@
+# translation of ko.po to Korean
 # firstboot.po Korean translation.
 # Copyright (C) 2002 Red Hat, Inc.
 # Michelle Jiyeen KIM <mkim@redhat.com>, 2002.
+# Michelle Kim <mkim@brisbane.redhat.com>, 2002
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: ko\n"
 "POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
-"PO-Revision-Date: 2002-07-02 19:24GMT+10:00\n"
+"PO-Revision-Date: 2002-07-24 10:21+1000\n"
 "Last-Translator: Michelle Kim <mkim@brisbane.redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0beta1\n"
 
 #: ../src/exceptionWindow.py:30
 msgid "An error has occured in module %s."
-msgstr ""
+msgstr "%s 모듈에서 오류가 발생했습니다."
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -70,14 +72,16 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 "
+"컴퓨터에 설정된 방화벽 때문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
 
 #: ../src/modules/finished.py:19
 msgid "Finish Installation"
-msgstr ""
+msgstr "설치 완료"
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
-msgstr ""
+msgstr "설치를 완료했습니다!"
 
 #: ../src/modules/hardware.py:27
 msgid "Configure Hardware"
@@ -122,26 +126,23 @@ msgstr "키보드 설정"
 
 #: ../src/modules/keyboard_gui.py:72
 msgid "A configuration tool for the system keyboard"
-msgstr ""
+msgstr "시스템 키보드를 설정하는 도구"
 
 #: ../src/modules/keyboard_gui.py:74
-#, fuzzy
 msgid "Select the appropriate keyboard for the system."
 msgstr "시스템에 맞는 키보드를 선택해 주십시오."
 
 #: ../src/modules/language.py:40
-#, fuzzy
 msgid "Language"
-msgstr "언어 선택"
+msgstr "언어"
 
 #: ../src/modules/language.py:42 ../src/modules/language.py:197
 msgid "Language Configuration"
 msgstr "언어 설정"
 
 #: ../src/modules/language.py:43
-#, fuzzy
 msgid "A configuration tool to set the language for the system"
-msgstr "시스템을 위한 기본 언어를 선택해 주십시오."
+msgstr "시스템에 사용할 언어를 설정하는 도구"
 
 #: ../src/modules/language.py:55
 msgid "Language Selection"
@@ -165,7 +166,7 @@ msgstr "마우스 설정"
 
 #: ../src/modules/mouse_gui.py:42
 msgid "A configuration tool for the mouse"
-msgstr ""
+msgstr "마우스 설정 도구"
 
 #: ../src/modules/mouse_gui.py:43
 msgid "Please select the mouse for the system."
@@ -267,9 +268,8 @@ msgid "Passwords do not match.  Please try again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
 #: ../src/modules/securitylevel.py:22
-#, fuzzy
 msgid "Security Level"
-msgstr "보안 수준:"
+msgstr "보안 수준"
 
 #: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
 #: ../src/modules/securitylevel.py:251
@@ -278,7 +278,7 @@ msgstr "보안 수준 설정"
 
 #: ../src/modules/securitylevel.py:25
 msgid "Configure system security level"
-msgstr ""
+msgstr "시스템 보안 수준 설정"
 
 #: ../src/modules/securitylevel.py:39
 msgid "Please choose the security level for the system."
@@ -313,17 +313,18 @@ msgid ""
 "Invalid port given: %s.  The proper format is 'port:protocol, port:"
 "protocol'.  For example, '1234:udp, 3456:tcp'"
 msgstr ""
+"잘못된 포트: %s.  올바른 형식은 '포트:프로토콜, 포트:프로토콜' 입니다.  "
+"예, '1234:udp, 3456:tcp'"
 
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
-msgstr ""
+msgstr "시스템을 업데이트 하십시오"
 
 #: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 업데이트 에이전트"
 
 #: ../src/modules/up2date.py:53
-#, fuzzy
 msgid ""
 "Now that you are registered with Red Hat Network, you can run the Red Hat "
 "Update Agent to receive the latest software packages directly from Red Hat.  "
@@ -332,18 +333,17 @@ msgid ""
 "enhancements."
 msgstr ""
 "이제 Red Hat Network에 등록되었습니다. Red Hat 업데이트 에이전트를 실행하여 "
-"Red Hat에서 직접 최신 소프트웨어 패키지를 다운로드 받을 수 있습니다.   Red "
-"Hat 업데이트 에이전트를 사용함으로써 여러분은 항상 보안 패치, 버그 수정과 개"
-"선된 소프트웨어 패키지를 갖춘 최신의 Red Hat Linux 시스템을 가질 수 있습니다."
+"Red Hat에서 직접 최신 소프트웨어 패키지를 다운로드 받으실 수 있습니다.   Red "
+"Hat 업데이트 에이전트를 사용함으로써 항상 보안 패치, 버그 수정과 개선된 "
+"소프트웨어 패키지를 갖춘 최신의 Red Hat Linux 시스템을 사용하실 수 있습니다."
 
 #: ../src/modules/up2date.py:66
-#, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
-msgstr "Red Hat Network에 여러분의 시스템을 등록하십시오."
+msgstr "네, Red Hat Network에 시스템을 등록합니다."
 
 #: ../src/modules/up2date.py:67
 msgid "No, I do not want to register my system."
-msgstr ""
+msgstr "아니오, 시스템을 등록하지 않습니다."
 
 #: ../src/modules/welcome.py:19
 msgid "Welcome"
@@ -403,3 +403,4 @@ msgstr "Red Hat Linux Beta에 오신 것을 환영합니다!"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
