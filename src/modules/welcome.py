@@ -20,17 +20,8 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        p = None
-        
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("pixmaps/shadowman-round-48.png")
-        except:
-            pass
-
-        if p:
-            self.icon = gtk.Image()
-            self.icon.set_from_pixbuf(p)
-            titleBox.pack_start(self.icon, gtk.FALSE, gtk.TRUE, 5)
+        pix = self.imageFromFile("shadowman-round-48.png")
+        titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
         titleBox.pack_start(label)
 
@@ -38,15 +29,8 @@ class childWindow:
         eventBox.add(titleBox)
         self.vbox.pack_start(eventBox, FALSE)
 
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("pixmaps/splash.png")
-        except:
-            pass
-
-        if p:
-            self.splash = gtk.Image()
-            self.splash.set_from_pixbuf(p)
-            self.vbox.pack_start(self.splash, gtk.FALSE, gtk.TRUE, 5)
+        pix = self.imageFromFile("splash.png")
+        self.vbox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
 
 #        label = gtk.Label("Welcome message goes here")
@@ -62,3 +46,22 @@ class childWindow:
 
     def apply(self, notebook):
         return 1
+
+    # Attempt to load a gtk.Image from a file.
+    def imageFromFile(self, filename):
+        p = None        
+        try:
+            path = "../pixmaps/" + filename
+            p = gtk.gdk.pixbuf_new_from_file(path)
+        except:
+            try:
+                path = "/usr/share/firstboot/pixmaps/" + filename
+                p = gtk.gdk.pixbuf_new_from_file(path)
+            except:
+                pass
+
+        if p:
+            pix = gtk.Image()
+            pix.set_from_pixbuf(p)        
+            return pix
+        return None
