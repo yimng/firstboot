@@ -12,8 +12,6 @@ DATADIR=${PREFIX}/share
 PKGDATADIR=${DATADIR}/${PKGNAME}
 PKGIMAGESDIR=${PKGDATADIR}/images
 
-PAMD_DIR        = /etc/pam.d
-SECURITY_DIR    =/etc/security/console.apps
 
 default: subdirs
 
@@ -24,8 +22,6 @@ install:
 	mkdir -p $(INSTROOT)/usr/sbin
 	mkdir -p $(INSTROOT)/etc/rc.d/init.d
 	mkdir -p $(INSTROOT)$(PKGDATADIR)
-	mkdir -p $(INSTROOT)$(PAMD_DIR)
-	mkdir -p $(INSTROOT)$(SECURITY_DIR)
 	mkdir -p $(INSTROOT)$(PKGDATADIR)/pixmaps
 	mkdir -p $(INSTROOT)/usr/share/firstboot/modules
 	install src/*.py $(INSTROOT)$(PKGDATADIR)
