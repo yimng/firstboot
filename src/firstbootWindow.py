@@ -252,7 +252,7 @@ class firstbootWindow:
         #Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
         if (not self.doDebug):
             fd = open("/etc/sysconfig/firstboot", "w")
-            fd.write("RUN_FIRSTBOOT=NO")
+            fd.write("RUN_FIRSTBOOT=NO\n")
             fd.close()
 
         #Exit the GTK loop
