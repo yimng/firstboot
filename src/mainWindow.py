@@ -30,7 +30,6 @@ class mainWindow:
         self.hpane = GtkHPaned()
         self.moduleList = []
         self.moduleDict = {}
-        self.moduleIter = 0
         self.usedModuleList = []
 
         root = _root_window ()
@@ -44,11 +43,23 @@ class mainWindow:
         win = GtkWindow()
         win.set_usize(800, 600)
         mainVBox = GtkVBox()
+
+        try:
+            p = gdkpixbuf.new_from_file("images/titlebar.png")
+        except:
+            pass
+
+        if p:
+            pix = apply (GtkPixmap, p.render_pixmap_and_mask())
+            mainVBox.pack_start(pix, FALSE, TRUE, 0)
+        
         self.stepList = GtkCList()
         self.hpane.set_position(200)
         self.hpane.add1(self.stepList)
 
         self.notebook = GtkNotebook()
+        self.notebook.set_show_tabs(FALSE)
+        self.notebook.set_show_border(FALSE)
 
         path = ('modules/')
         files = os.listdir(path)
@@ -61,38 +72,26 @@ class mainWindow:
                 continue
             list.append(file[:-3])
 
-        print list
-
         for module in list:
             sys.path.append('./modules')
             cmd = "import %s\nif %s.__dict__.has_key('childWindow'): obj = %s.childWindow()" % (module, module, module)
             exec(cmd)
             self.moduleDict[int(obj.runPriority)] = obj
 
-
-            self.stepList.append([string.capitalize(module)])
-
-
         tmpList = self.moduleDict.keys()
         tmpList.sort()
-        print tmpList
 
         for module in tmpList:
             self.moduleList.append(self.moduleDict[module])
+            self.stepList.append([self.moduleDict[module].moduleName])
 
+        for module in self.moduleList:
+            box = module.launch()
+            self.notebook.append_page(box, GtkLabel(" "))
 
-        mod = self.moduleList[0]
-        box = mod.launch()
-
-        print self.moduleIter
-        self.moduleIter = self.moduleIter + 1
-        print self.moduleIter
-
-#        self.hpane.add2(box)
         self.hpane.add2(self.notebook)
-        
-        self.notebook.append_page(box, GtkLabel("foo"))
-    
+
+
         bb = GtkHButtonBox()
         bb.set_layout(BUTTONBOX_END)
         backButton = GtkButton("Back")
@@ -106,21 +105,12 @@ class mainWindow:
         mainVBox.pack_start(bb, FALSE, 20)
         win.add(mainVBox)
         win.show_all()
+        self.notebook.set_page(0)
         mainloop()
 
     def okClicked(self, *args):
-        self.usedModuleList.append(self.hpane.children()[1])
-#        print self.usedModuleList
-        self.hpane.remove(self.hpane.children()[1])       
-        box = self.moduleList[self.moduleIter].launch()
-        self.moduleIter = self.moduleIter + 1
-        self.hpane.add2(box)
-        self.hpane.show_all()
+        self.notebook.next_page()
 
     def backClicked(self, *args):
-#        print "going back, list is", self.usedModuleList
-        self.hpane.children()[1].destroy()
-#        self.hpane.children()[1].hide()
-        self.moduleIter = self.moduleIter - 1
-        self.hpane.add2(self.usedModuleList.pop())
-        self.hpane.show_all()
+        self.notebook.prev_page()
+

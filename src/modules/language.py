@@ -5,7 +5,7 @@ import string
 
 class childWindow:
     runPriority = 1
-
+    moduleName = "Language"
 
     def __init__(self):
         self.clist = GtkCList()

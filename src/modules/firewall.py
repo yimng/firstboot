@@ -11,26 +11,20 @@ xml = libglade.GladeXML ("../glade/firewall.glade", domain="redhat-config-firewa
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 40
+    moduleName = "Firewall"
 
     def __init__(self):
         self.toplevel = xml.get_widget("mainWindow")
         self.vbox = xml.get_widget("mainVBox")
-        print "initializing module"
-
                 
     def launch(self):
-        print "launching firewall"
         #Hack to remove vbox from the toplevel window so it can
         #be packed into firstboot's main window
-        print self.toplevel.children()
-
         if self.toplevel.children() != []:
-            print "removing child"
             self.toplevel.remove(self.toplevel.children()[0])
         else:
-            print "no child to remove"
+            pass
 
-        print self.vbox
         return self.vbox
 
 #        label = GtkLabel("foo")

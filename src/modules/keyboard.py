@@ -5,11 +5,10 @@ import string
 
 class childWindow:
     runPriority = 2
-
+    moduleName = "Keyboard"
 
     def __init__(self):
-        print "init keyboard"
-#        self.clist = GtkCList()
+        self.clist = GtkCList()
      
     def fill_list(self, langDict, defaultLang, installedLangs):
         list = langDict.keys()
@@ -20,11 +19,10 @@ class childWindow:
                     self.clist.select_row(row, 0)
                 
     def launch(self):
-        print "launching keyboard screen"
         self.vbox = GtkVBox()
         label = GtkLabel("Please select the keyboard to use.")
         self.vbox.pack_start(label, FALSE, TRUE, 30)
-#        self.vbox.pack_start(self.clist)
+        self.vbox.pack_start(self.clist)
         l = GtkLabel("foo")
         return self.vbox
 
