@@ -25,6 +25,17 @@ from gtk import _root_window
 import GDK
 import gdkpixbuf
 
+doReconfig = 1
+
+for arg in sys.argv:
+    if arg == '--reconfig':
+        print "starting reconfig mode"
+        doReconfig = 0
+
+sys.argv = sys.argv[:1]
+
+print doReconfig
+
 class mainWindow:
     def __init__(self):
         self.hpane = GtkHPaned()
@@ -38,7 +49,6 @@ class mainWindow:
 
         width = screen_width()
         p = None
-
         
         win = GtkWindow()
         win.set_usize(800, 600)
@@ -54,7 +64,7 @@ class mainWindow:
             mainVBox.pack_start(pix, FALSE, TRUE, 0)
         
         self.stepList = GtkCList()
-        self.stepList.connect("select-row", self.rowSelected)
+        self.stepList.connect("select-row", self.selectRow)
         self.hpane.set_position(200)
         self.hpane.add1(self.stepList)
 
@@ -75,9 +85,23 @@ class mainWindow:
 
         for module in list:
             sys.path.append('./modules')
-            cmd = "import %s\nif %s.__dict__.has_key('childWindow'): obj = %s.childWindow()" % (module, module, module)
+            cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
+                   "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
-            self.moduleDict[int(obj.runPriority)] = obj
+
+            
+            if doReconfig == 1:
+                try:
+                    if obj.moduleClass == "reconfig":
+                        pass
+                    else:
+                        self.moduleDict[int(obj.runPriority)] = obj
+                except:
+                    self.moduleDict[int(obj.runPriority)] = obj
+                    pass
+                
+            else:
+                self.moduleDict[int(obj.runPriority)] = obj
 
         tmpList = self.moduleDict.keys()
         tmpList.sort()
@@ -99,6 +123,12 @@ class mainWindow:
         backButton.connect('clicked', self.backClicked)
         nextButton = GtkButton("Next")
         nextButton.connect('clicked', self.okClicked)
+        group = GtkAccelGroup()
+        nextButton.add_accelerator('clicked', group, GDK.F12,
+                                   GDK.RELEASE_MASK, 0)
+        backButton.add_accelerator('clicked', group, GDK.F11,
+                                   GDK.RELEASE_MASK, 0)
+        win.add_accel_group(group)
         bb.pack_start(backButton)
         bb.pack_start(nextButton)
 
@@ -111,6 +141,12 @@ class mainWindow:
         mainloop()
 
     def okClicked(self, *args):
+        module = self.moduleList[self.notebook.get_current_page()]
+        #Call the apply method if it exists
+        try:
+            module.apply()
+        except:
+            pass
         self.notebook.next_page()
         self.stepList.select_row(self.notebook.get_current_page(), 0)
 
@@ -118,5 +154,6 @@ class mainWindow:
         self.notebook.prev_page()
         self.stepList.select_row(self.notebook.get_current_page(), 0)
 
-    def rowSelected(self, list, row, col, event):
+    def selectRow(self, list, row, col, event):
         self.notebook.set_page(row)
+
