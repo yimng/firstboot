@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
-"PO-Revision-Date: 2002-08-05 01:29+1000\n"
+"PO-Revision-Date: 2002-08-12 10:35GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
-"Language-Team: Simplified Chinese <i18n@redhat.com>\n"
+"Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,7 +30,6 @@ msgstr ""
 "它将会试图运行剩余的模块。"
 
 #: ../src/exceptionWindow.py:41
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -39,7 +38,7 @@ msgid ""
 msgstr ""
 "请向 Red Hat 的错误跟踪系统报告关于“firstboot”\n"
 "的错误：http://www.redhat.com/bugzilla。\n"
-"调试输出的副本已被保存在 /tmp/firstboot.txt \n"
+"调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
 
 #: ../src/modules/additional_cds.py:19
@@ -137,16 +136,14 @@ msgstr ""
 "右频；第二种声音是左频；第三种声音将 会在中间。"
 
 #: ../src/modules/up2date.py:18
-#, fuzzy
 msgid "Update Agent"
-msgstr "Red Hat 更新代理"
+msgstr "更新代理"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -164,7 +161,14 @@ msgid ""
 msgstr ""
 "Red Hat 更新代理将会在 Red Hat 网络上注册你的机器，因此你可以直接从 Red Hat "
 "检索最新的软件包。使用本工具会允许你一直拥有最新的 Red Hat Linux 系统和所有的"
-"安全补丁、错误修正、及对软件包的增进。"
+"安全补丁、错误修正、及对软件包的增进。\n"
+"\n"
+"如果你购买了该产品，你将有权得到 Red Hat 网络基本服务的免费试用。"
+"要使用该项免费服务，请参考盒内的产品激活卡来阅读详细指令。\n"
+"\n"
+"如果你没有购买该产品，请访问 http://rhn.redhat.com 来获取详情， "
+"或者来订阅 Red Hat 网络的基本服务。\n"
+"\n"
 
 #: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
@@ -403,3 +407,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
+
