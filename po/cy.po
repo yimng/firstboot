@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-10 16:47-0500\n"
+"POT-Creation-Date: 2004-12-07 12:31-0500\n"
 "PO-Revision-Date: 2004-11-11 09:31+0000\n"
 "Last-Translator: Dafydd Walters <dwalters@dragontechnology.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -78,70 +78,66 @@ msgstr ""
 "dadnamu yn %s. Cofiwch atodi'r ffeil hon at yr adroddiad nam. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
 msgid "_Back"
 msgstr "_Yn Ôl"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
 msgid "_Next"
 msgstr "_Nesaf"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Croeso"
 
-#: ../src/firstbootWindow.py:421
+#: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "methu llwytho modiwl %s: %s"
 
-#: ../src/textWindow.py:36
-msgid "Licence Aggrement"
-msgstr "Cytundeb Trwydded"
-
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "Dilysiant"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:35
 msgid "Firewall configuration"
 msgstr "Cyfluniad mur cadarn"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:36
 msgid "Keyboard configuration"
 msgstr "Cyfluniad bysellfwrdd"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:37
 msgid "Network configuration"
 msgstr "Cyfluniad rhwydwaith"
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:38
 msgid "Printer configuration"
 msgstr "Cyfluniad argraffydd "
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr "Gwasanaethau system"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:40
 msgid "Sound card configuration"
 msgstr "Cyfluniad cerdyn sain"
 
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Cyfluniad cylchfa amser"
 
-#: ../src/textWindow.py:52
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr "Rhedeg Erfyn"
 
-#: ../src/textWindow.py:54
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "Dewiswch yr eitem yr hoffech ei addasu "
 
-#: ../src/textWindow.py:60
+#: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "Asiant Gosod"
 
@@ -184,11 +180,14 @@ msgstr "Arsefydlu..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "Ni ganfuwyd CDd-ROM. Rhowch CDd-ROM yn y gyriant a cliciwch \"Iawn\" ibarhau."
+msgstr ""
+"Ni ganfuwyd CDd-ROM. Rhowch CDd-ROM yn y gyriant a cliciwch \"Iawn\" ibarhau."
 
 #: ../src/modules/additional_cds.py:179
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Ni ganfuwyd y rhaglen awto-redeg ar yr cdd. Cliciwch \"Iawn\" i barhau."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Ni ganfuwyd y rhaglen awto-redeg ar yr cdd. Cliciwch \"Iawn\" i barhau."
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
@@ -286,15 +285,6 @@ msgstr ""
 "Mae'r enw defnyddiwr '%s' yn cynnwys atalnodau. Peidiwch â chynnwys "
 "atalnodau yn yr enw defnyddiwr."
 
-#: ../src/modules/create_user.py:310
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"Mae'r enw defnyddiwr '%s' yn cynnwys nodau bras. Peidiwch â chynnwys nodau "
-"bras yn yr enw defnyddiwr."
-
 #: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
@@ -305,14 +295,16 @@ msgstr ""
 "yn unig os gwelwch yn dda."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Mae'r cyfrinair yn cynnwys nodau annilys. Defnyddiwch nodau ASCII yn unig os "
 "gwelwch yn dda."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Mae'r enw '%s' yn cynnwys nodau annilys. Defnyddiwch nodau ASCII yn unig os "
 "gwelwch yn dda."
@@ -410,6 +402,16 @@ msgstr ""
 "defnyddio. Bydd yr Asiant Gosod yn eich arwain chi drwy'r ychydig gyflunio "
 "sylfaenol nawr.  Cliciwch y botwm \"Nesaf\" yn y gornel chwith waelod i "
 "barhau."
+
+#~ msgid "Licence Aggrement"
+#~ msgstr "Cytundeb Trwydded"
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "Mae'r enw defnyddiwr '%s' yn cynnwys nodau bras. Peidiwch â chynnwys "
+#~ "nodau bras yn yr enw defnyddiwr."
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Nid yw firstboot yn rhedeg yn runlevel 3."
@@ -533,4 +535,3 @@ msgstr ""
 
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "_Na Hoffwn, dydw i ddim eisiau cofrestru fy system."
-

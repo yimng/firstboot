@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-10 16:47-0500\n"
+"POT-Creation-Date: 2004-12-07 12:31-0500\n"
 "PO-Revision-Date: 2003-09-21 15:54+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -73,77 +73,72 @@ msgstr ""
 "Nhớ gửi kèm tập tin này với bản báo cáo lỗi.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
 msgid "_Back"
 msgstr "_Lùi"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
 msgid "_Next"
 msgstr "_Tới"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Chào mừng"
 
-#: ../src/firstbootWindow.py:421
+#: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/textWindow.py:36
-#, fuzzy
-msgid "Licence Aggrement"
-msgstr "License Agreement"
-
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr ""
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:35
 #, fuzzy
 msgid "Firewall configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:36
 #, fuzzy
 msgid "Keyboard configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:37
 #, fuzzy
 msgid "Network configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:38
 #, fuzzy
 msgid "Printer configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr ""
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:40
 #, fuzzy
 msgid "Sound card configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:41
 #, fuzzy
 msgid "Timezone configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:52
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr ""
 
-#: ../src/textWindow.py:54
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr ""
 
-#: ../src/textWindow.py:60
+#: ../src/textWindow.py:51
 #, fuzzy
 msgid "Setup Agent"
 msgstr "Trợ tá Cài đặt Red Hat"
@@ -279,13 +274,6 @@ msgid ""
 "punctuation in the user name."
 msgstr "Tên người dùng '%s' chứa ký tự phân cách. Vui lòng loại bỏ chúng."
 
-#: ../src/modules/create_user.py:310
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr "Tên người dùng '%s' chứa chữ hoa. Vui lòng không dùng chữ hoa."
-
 #: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
@@ -401,6 +389,15 @@ msgstr ""
 "Bạn cần thực hiện vài bước nữa, trước khi hệ thống có thể sẵn sàng hoạt "
 "động. Bây giờ, Trợ tá Cài đặt Red Hat sẽ hướng dẫn bạn thực hiện các cấu "
 "hình cơ bản. Vui lòng nhấn nút \"Tới\" tại góc dưới, bên phải để tiếp tục."
+
+#, fuzzy
+#~ msgid "Licence Aggrement"
+#~ msgstr "License Agreement"
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr "Tên người dùng '%s' chứa chữ hoa. Vui lòng không dùng chữ hoa."
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot không chạy trong runlevel 3."
