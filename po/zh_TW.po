@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "POT-Creation-Date: 2003-08-28 19:29-0400\n"
-"PO-Revision-Date: 2003-07-24 09:04+1000\n"
+"PO-Revision-Date: 2003-09-01 08:38+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -71,13 +71,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #. Firstboot has never been run before, so start it up
@@ -314,9 +312,8 @@ msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並�
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:133
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續。"
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -444,15 +441,13 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -965,3 +960,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
+
