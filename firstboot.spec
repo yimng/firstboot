@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 28 2002 Brent Fox <bfox@redhat.com> 1.0.1-2
+- Fix typo
+
 * Wed Aug 28 2002 Brent Fox <bfox@redhat.com> 1.0.1-1
 - Convert to noarch
 - Add a root window mode for firstbootWindow
