@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.15
+Version: 1.3.16
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Jun 30 2004 Adrian Likins <alikins@redhat.com> - 1.3.16-1
+- apply patch to allow modules to go forward/back in
+  the module order
+
 * Mon Jun 21 2004 Brent Fox <bfox@redhat.com> - 1.3.15-1
 - apply patch from mikem in bug #121489
 
