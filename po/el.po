@@ -1,3 +1,4 @@
+# translation of el.po to 
 # Greek translation for firstboot
 # Copyright (C) 2002 Nikos Charonitakis
 # reviewed from ta panta rei <ta_panta_rei@flashmail.com>
@@ -10,7 +11,7 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-14 20:07-0400\n"
-"PO-Revision-Date: 2004-08-05 01:10+0300\n"
+"PO-Revision-Date: 2004-09-26 16:27-0300\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team:  <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
@@ -89,7 +90,7 @@ msgstr "_Επόμενο"
 #: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "αποτυχία εισαγωγής του αρθρώματος %s: %s"
 
 #: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
@@ -165,8 +166,7 @@ msgstr ""
 "πατήστε \"Εντάξει\" για να συνεχίσετε."
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Το πρόγραμμα autorun δεν εντοπίστηκε στο cd. Πατήστε \"Εντάξει\" για να "
 "συνεχίσετε."
@@ -288,16 +288,14 @@ msgstr ""
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το συνθηματικό περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το όνομα '%s' περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο  ASCII χαρακτήρες."
@@ -393,19 +391,3 @@ msgstr ""
 "διαμόρφωσης.  Παρακαλώ πατήστε το κουμπί  \"Επόμενο\" στην δεξιά κάτω γωνία "
 "για να συνεχίσετε. "
 
-#~ msgid "Please enter a time server."
-#~ msgstr "Παρακαλώ εισάγετε ένα εξυπηρετητή ώρας."
-
-#~ msgid "Error"
-#~ msgstr "Σφάλμα"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Δεν στάθηκε δυνατή η σύνδεση με τον %s.  'Η ο %s δεν είναι διαθέσιμος ή "
-#~ "οι ρυθμίσεις firewall του υπολογιστή σας δεν επιτρέπουν συνδέσεις NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Επικοινωνία με τον εξυπηρετητή NTP.  Παρακαλώ περιμένετε..."
