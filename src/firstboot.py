@@ -131,23 +131,30 @@ line = string.strip(line)
 tokens = string.split(line)
 runlevel = int(tokens[-1])
 
-if runlevel == 3 and forcegui == None:
-    import textWindow
-    from snack import *
+if runlevel == 3:
+    print (_("Firstboot does not run in runlevel 3."))
+    firstbootBackend.writeSysconfigFile(doDebug)
+    os._exit(0)
+
     
-    screen = SnackScreen()
-    result = 0
 
-    while result != -1:
+#if runlevel == 3 and forcegui == None:
+#    import textWindow
+#    from snack import *
+    
+#    screen = SnackScreen()
+#    result = 0
+
+#    while result != -1:
         #Keep running the program until either the timer has expired or the user pressed Exit
-        screen = SnackScreen()
-        result = textWindow.TextWindow()(screen)
+#        screen = SnackScreen()
+#        result = textWindow.TextWindow()(screen)
 
-    if result == -1:
+#    if result == -1:
         #They're done with firstboot.  Exit for good
-        screen.finish()
-        firstbootBackend.writeSysconfigFile(doDebug)
-        os._exit(0)
+#        screen.finish()
+#        firstbootBackend.writeSysconfigFile(doDebug)
+#        os._exit(0)
 
 #If rhgb (graphical boot) is running, let's use it's X server
 if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin/rhgb-client --ping") == 0):
