@@ -26,7 +26,6 @@ class childWindow:
         if doDebug:
             print "initializing additional_cd module"
 
-        os.stat('/etc/sysconfig/rhn/rhn_register')
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
