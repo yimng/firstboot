@@ -29,7 +29,7 @@ for arg in sys.argv:
     if arg == '--debug':
         print "starting with debugging options"
         doDebug = 1
-
+    
 sys.argv = sys.argv[:1]
 
 class firstbootWindow:
@@ -58,6 +58,9 @@ class firstbootWindow:
         else:
             path = ('/usr/share/firstboot/modules')
 
+        ####Remove me
+        path = ('modules/')
+        
         sys.path.append(path)
 
         pix = self.imageFromFile("pixmaps/titlebar.png")
@@ -89,8 +92,9 @@ class firstbootWindow:
 
         # Import each module, and filter out those
         for module in list:
+            print module, doDebug
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
-                   "obj = %s.childWindow()") % (module, module, module)
+                   "obj = %s.childWindow(%s)") % (module, module, module, doDebug)
             exec(cmd)
 
             # If the module defines a moduleClass, it has to match the mode
@@ -197,6 +201,10 @@ class firstbootWindow:
         # Create the "go forward" and "finish" buttons.
         self.nextButton = gtk.Button(stock='gtk-go-forward')
         self.nextButton.connect('clicked', self.nextClicked)
+#        group = gtk.AccelGroup()
+#        self.nextButton.add_accelerator("clicked", group, gtk.gdk.keyval_from_name("p"), gtk.gdk.RELEASE_MASK, 0)
+#        win.add_accel_group(group)
+
         self.bb.pack_start(self.nextButton)
         self.finishButton = gtk.Button(stock='gtk-close')
         self.finishButton.connect('clicked', self.finishClicked)
@@ -275,6 +283,7 @@ class firstbootWindow:
         if result:
             self.notebook.next_page()
             module = self.moduleList[self.notebook.get_current_page()]
+
             if "grabFocus" in dir(module):
                 #If the module needs to grab the focus, let it
                 module.grabFocus()
