@@ -188,51 +188,68 @@ class childWindow:
         return None
         
     def isUsernameOk(self, str, widget):
-        tag = _("user name")
+        if len(str) > 32:
+            messageDialog.showErrorMessage(_("The user name must be less than 33 characters long."))
+            widget.set_text("")
+            widget.grab_focus()
+            return None  
+
+        if str[0] in string.digits:
+            messageDialog.showErrorMessage(_("The user name may not begin with a number."))
+            widget.set_text("")
+            widget.grab_focus()
+            return None
+
         for i in str:
             if i in string.whitespace:
                 #Check for whitespace
-                self.showErrorMessage(_("The %s '%s' contains whitespace.  "
-                                        "Please do not include whitespace in the %s.")
-                                      % (tag, str, tag))
+                self.showErrorMessage(_("The user name '%s' contains whitespace.  "
+                                        "Please do not include whitespace in the %s.") % str)
+                widget.set_text("")
+                widget.grab_focus()
+                return None
+
+            if i in string.punctuation:
+                messageDialog.showErrorMessage(_("The user name '%s' contains punctuation characters.  "
+                                                 "Please do not use punctuation in the user name.") % str)
+                widget.set_text("")
+                widget.grab_focus()
+                return None
+
+            if i in string.uppercase:
+                messageDialog.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
+                                                 "Please do not use uppercase characters in the user name.") % str)
                 widget.set_text("")
                 widget.grab_focus()
                 return None
                 
-            if i not in string.ascii_letters:
-                if i not in string.digits:
-                    self.showErrorMessage(_("The %s '%s' contains non-ASCII "
-                                            "characters.  Please use only ASCII characters.")
-                                          % (tag, str))
-                    widget.set_text("")
-                    widget.grab_focus()
-                    return None
+            if i not in string.ascii_letters and i not in string.digits:
+                self.showErrorMessage(_("The user name '%s' contains invalid "
+                                        "characters.  Please use only ASCII characters.") % str)
+                widget.set_text("")
+                widget.grab_focus()
+                return None
         return 1
 
     def isPasswordOk(self, str, widget):
-        tag = _("password")
         for i in str:
-            if i not in string.ascii_letters:
-                if i not in string.digits:
-                    self.showErrorMessage(_("The %s contains non-ASCII characters.  "
-                                            "Please use only ASCII characters.") % tag)
-                    widget.set_text("")
-                    widget.grab_focus()
-                    return None
+            if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation and i not in whitespace:
+                self.showErrorMessage(_("The password contains invalid characters.  "
+                                        "Please use only ASCII characters.") % tag)
+                widget.set_text("")
+                widget.grab_focus()
+                return None
         return 1
 
     def isNameOk(self, str, widget):
-        tag = ("name")
         for i in str:
-            if i not in string.ascii_letters:
-                if i not in string.digits:
-                    #have to check for whitespace for gecos, since whitespace is ok
-                    if i not in string.whitespace:
-                        self.showErrorMessage(_("The %s '%s' contains non-ASCII characters.  "
-                                                "Please use only ASCII characters.")
-                                              % (tag, str))
-                        widget.set_text("")
-                        widget.grab_focus()
-                        return None
+            if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation:
+                #have to check for whitespace for gecos, since whitespace is ok
+                if i not in string.whitespace:
+                    self.showErrorMessage(_("The name '%s' contains invalid characters.  "
+                                            "Please use only ASCII characters.") % str)
+                    widget.set_text("")
+                    widget.grab_focus()
+                    return None
         return 1
 
