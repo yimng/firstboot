@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-13 11:12+0530\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@redhat.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms: Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"Plural-Forms: Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
 "\n"
 
 #: ../src/constants_text.py:36
@@ -99,25 +100,25 @@ msgstr ""
 "ਡੀਬੱਗ ਆਉਟਪੁੱਟ ਦੀ ਇੱਕ ਨਕਲ ਨੂੰ %s ਵਿੱਚ ਸੰਭਾਲੀ ਜਾਵੇ ਅਤੇ\n"
 "ਯਕੀਨੀ ਕਰ ਲਵੋ ਕਿ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਵਿੱਚ ਜ਼ਰੂਰ ਦਿੱਤੀ ਜਾਵੇ\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "ਪਿੱਛੇ(_B)"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "ਅੱਗੇ(_N)"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "ਜੀ ਆਇਆਂ ਨੂੰ"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s ਦੇ ਮੈਡੀਊਲ ਦਾ ਆਯਾਤ ਅਸਫਲ: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "ਜੀ ਆਇਆਂ ਨੂੰ"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -188,7 +189,8 @@ msgstr ""
 "\"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ "
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "ਸੀਡੀ ਤੇ ਸਵੈ-ਚਾਲਤ ਕਾਰਜ ਨਹੀ ਲੱਭਿਆ ਜਾ ਸਕਿਆ ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ"
 
 #: ../src/modules/create_user.py:39
@@ -300,12 +302,14 @@ msgid ""
 msgstr "ਉਪਭੋਗਤਾ-ਨਾਂ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ASCII ਅੱਖਰ ਹੀ ਵਰਤੋਂ"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "ਗੁਪਤ-ਕੋਡ ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ| ਕਿਰਪਾ ਕਰਕੇ ASCII ਅੱਖਰ ਹੀ ਵਰਤੋ "
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "ਨਾਂ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ASCII ਅੱਖਰ ਹੀ ਵਰਤੋ|"
 
 #: ../src/modules/date.py:47
@@ -315,29 +319,6 @@ msgstr "ਮਿਤੀ ਤੇ ਸਮਾਂ"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਿਸਟਮ ਦੀ ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਨਿਰਧਾਰਨ ਕਰੋ"
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਮਾਂ-ਸਰਵਰ ਭਰੋ"
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "ਗਲਤੀ"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"%s ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਬਣਾਇਆ ਨਹੀ ਜਾ ਸਕਿਆ ਹੈ ਜਾਂ ਤਾਂ %s ਉਪਲੱਬਧ ਨਹੀ ਹੈ ਜਾਂ ਤੁਹਾਡਾ ਕੰਪਿਊਟਰ ਦੇ "
-"ਫਾਇਰਵਾਲ ਨਿਰਧਾਰਨ ਨੇ NTP ਕੁਨੈਕਸ਼ਨ ਨੂੰ ਬੰਦ ਕੀਤਾ ਹੋਇਆ ਹੈ|"
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "NTP ਸਰਵਰ ਨਾਲ ਜੁਡ਼ ਰਿਹਾ ਹੈ , ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -419,3 +400,19 @@ msgstr ""
 "ਇੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ| ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਜਾਰੀ "
 "ਰਹਿਣ ਲਈ ਦਬਾਉ|"
 
+#~ msgid "Please enter a time server."
+#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਮਾਂ-ਸਰਵਰ ਭਰੋ"
+
+#~ msgid "Error"
+#~ msgstr "ਗਲਤੀ"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "%s ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਬਣਾਇਆ ਨਹੀ ਜਾ ਸਕਿਆ ਹੈ ਜਾਂ ਤਾਂ %s ਉਪਲੱਬਧ ਨਹੀ ਹੈ ਜਾਂ ਤੁਹਾਡਾ ਕੰਪਿਊਟਰ ਦੇ "
+#~ "ਫਾਇਰਵਾਲ ਨਿਰਧਾਰਨ ਨੇ NTP ਕੁਨੈਕਸ਼ਨ ਨੂੰ ਬੰਦ ਕੀਤਾ ਹੋਇਆ ਹੈ|"
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "NTP ਸਰਵਰ ਨਾਲ ਜੁਡ਼ ਰਿਹਾ ਹੈ , ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ..."

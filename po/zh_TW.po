@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-13 15:04+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Traditional Chinese <zh@li.org>\n"
@@ -77,25 +77,25 @@ msgstr ""
 "除錯輸出的一個複本已經儲存到 %s \n"
 "請確定有附上這個檔案到程式錯誤報告。\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "上一步(_B)"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "下一步(_N)"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "歡迎"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "匯入模組 %s 失敗：%s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "歡迎"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -164,7 +164,8 @@ msgid ""
 msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並按下『確定』以繼續。"
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續。"
 
 #: ../src/modules/create_user.py:39
@@ -271,12 +272,14 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:47
@@ -286,29 +289,6 @@ msgstr "日期與時間"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "請設定系統的日期與時間。"
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "請輸入一個時間伺服器。"
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "錯誤"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"無法建立與 %s 的連線。 也許是 %s 無法使用，或您系統的防火牆 設定阻擋 NTP 的連"
-"線。"
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "連線 NTP 伺服器中。  請稍後..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -388,3 +368,19 @@ msgstr ""
 "在使用您的系統之前，要先完成幾個步驟。 設定代理程式現在將引導您做一些基本的設"
 "定。 請點選在右下角的 『下一步』 按鈕以繼續。"
 
+#~ msgid "Please enter a time server."
+#~ msgstr "請輸入一個時間伺服器。"
+
+#~ msgid "Error"
+#~ msgstr "錯誤"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "無法建立與 %s 的連線。 也許是 %s 無法使用，或您系統的防火牆 設定阻擋 NTP "
+#~ "的連線。"
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "連線 NTP 伺服器中。  請稍後..."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-10 20:21+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -72,25 +72,25 @@ msgstr ""
 "S'ha desat una copia de la sortida de depuració a %s. \n"
 "Assegureu-vos que adjunteu aquest fitxer a l'informe d'errors. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Anterior"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "Següe_nt"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Benvinguts"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "No s'ha pogut importar el mòdul %s: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Benvinguts"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -301,29 +301,6 @@ msgstr "Data i hora"
 msgid "Please set the date and time for the system."
 msgstr "Especifiqueu la data i l'hora del sistema."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Introduïu un servidor de temps."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Error"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"No s'ha pogut establir la connexió amb %s. O bé %s no es troba disponible, o "
-"bé la configuració del tallafocs està bloquejant les connexions NTP."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "S'està contactant amb el servidor NTP. Espereu..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Pantalla"
@@ -405,6 +382,24 @@ msgstr ""
 "S'han de seguir uns passos més abans que aquest sistema estigui llest. "
 "L'agent de configuració us guiarà a través d'una configuració bàsica. Feu "
 "clic al botó \"Següent\" en el cantó inferior dret per continuar."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Introduïu un servidor de temps."
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "No s'ha pogut establir la connexió amb %s. O bé %s no es troba "
+#~ "disponible, o bé la configuració del tallafocs està bloquejant les "
+#~ "connexions NTP."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "S'està contactant amb el servidor NTP. Espereu..."
 
 #~ msgid "User Account"
 #~ msgstr "Compte d'usuari"

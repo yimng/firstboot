@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-14 05:51-0500\n"
 "Last-Translator: Erwien Samantha Y <erwiensamantha@sederhana.or.id>\n"
 "Language-Team: \n"
@@ -60,7 +61,9 @@ msgstr "Tidak, Saya tidak setuju"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Apakah anda ingin membaca ulang atau mempertimbangkan kembali Persetujuan Lisensi?"
+msgstr ""
+"Apakah anda ingin membaca ulang atau mempertimbangkan kembali Persetujuan "
+"Lisensi?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -120,31 +123,25 @@ msgstr ""
 "Salinan dari output debug telah disimpan di %s \n"
 "Pastikan anda menyertakan (attach) file tersebut pada laporan bug. \n"
 
-#: ../src/firstbootWindowLocal.py:186
-#: ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187
-#: ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "Kem_bali"
 
-#: ../src/firstbootWindowLocal.py:194
-#: ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195
-#: ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "Sela_njutnya"
 
-#: ../src/firstbootWindowLocal.py:525
-#: ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Selamat Datang"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import dari %s modul gagal: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Selamat Datang"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -190,34 +187,50 @@ msgstr "Pilih item yang ingin anda modifikasi"
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:42
-#: ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
 msgstr "CD Tambahan"
 
 #: ../src/modules/additional_cds.py:60
-msgid "If you have any of the CDs listed below, you can install packages from them by inserting the CD and clicking the appropriate button."
-msgstr "Jika anda memiliki CD seperti yang terlihat di bawah ini, anda dapat menginstal paket dengan cara memasukkan CD dan menekan tombol yang sesuai."
+msgid ""
+"If you have any of the CDs listed below, you can install packages from them "
+"by inserting the CD and clicking the appropriate button."
+msgstr ""
+"Jika anda memiliki CD seperti yang terlihat di bawah ini, anda dapat "
+"menginstal paket dengan cara memasukkan CD dan menekan tombol yang sesuai."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
 msgstr "Install..."
 
 #: ../src/modules/additional_cds.py:120
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan \"OK\" untuk melanjutkan."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan \"OK"
+"\" untuk melanjutkan."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "program autorun tidak dapat ditemukan pada cd. Tekan \"OK\" untuk melanjutkan."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"program autorun tidak dapat ditemukan pada cd. Tekan \"OK\" untuk "
+"melanjutkan."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
 msgstr "User Sistem"
 
 #: ../src/modules/create_user.py:65
-msgid "It is recommended that you create a personal user account for normal (non-administrative) use.  To create a personal account, provide the requested information."
-msgstr "Disarankan agar anda membuat account user personal untuk penggunaan normal (non-administratif). Untuk membuat account personal, sediakan informasi yang diminta."
+msgid ""
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
+msgstr ""
+"Disarankan agar anda membuat account user personal untuk penggunaan normal "
+"(non-administratif). Untuk membuat account personal, sediakan informasi yang "
+"diminta."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -236,16 +249,26 @@ msgid "Confir_m Password:"
 msgstr "Konfir_masi Password:"
 
 #: ../src/modules/create_user.py:112
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Jika anda membutuhkan otentikasi jaringan seperti Kerberos atau NIS, silahkanklik tombol Pergunakan Login Jaringan"
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Jika anda membutuhkan otentikasi jaringan seperti Kerberos atau NIS, "
+"silahkanklik tombol Pergunakan Login Jaringan"
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "Gunakan _Login Jaringan..."
 
 #: ../src/modules/create_user.py:158
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Sangat disarankan agar anda membuat account user personal.  Jika anda ingin melanjutkan tanpanya, anda hanya akan dapat masuk dengan account root dimana account ini disiapkan hanya untuk keperluan administratif."
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"Sangat disarankan agar anda membuat account user personal.  Jika anda ingin "
+"melanjutkan tanpanya, anda hanya akan dapat masuk dengan account root dimana "
+"account ini disiapkan hanya untuk keperluan administratif."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -274,32 +297,54 @@ msgstr "Nama user tidak boleh dimulai dengan angka."
 #. Check for whitespace
 #: ../src/modules/create_user.py:291
 #, python-format
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
-msgstr "Nama user '%s' mengandung whitespace. Jangan memasukkan whitespace pada nama user"
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Nama user '%s' mengandung whitespace. Jangan memasukkan whitespace pada nama "
+"user"
 
 #: ../src/modules/create_user.py:298
 #, python-format
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
-msgstr "Nama user '%s' mengandung karakter tanda baca. Jangan mempergunakan tanda baca pada nama user."
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+"Nama user '%s' mengandung karakter tanda baca. Jangan mempergunakan tanda "
+"baca pada nama user."
 
 #: ../src/modules/create_user.py:305
 #, python-format
-msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
-msgstr "Nama user '%s' mengandung huruf besar. Jangan mempergunakan huruf besar pada nama user"
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Nama user '%s' mengandung huruf besar. Jangan mempergunakan huruf besar pada "
+"nama user"
 
 #: ../src/modules/create_user.py:312
 #, python-format
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Nama user '%s' mengandung karakter yang tidak valid. Pergunakan hanya karakter ASCII."
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+"Nama user '%s' mengandung karakter yang tidak valid. Pergunakan hanya "
+"karakter ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Password mengandung karakter yang tidak valid. Pergunakan hanya karakter ASCII."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Password mengandung karakter yang tidak valid. Pergunakan hanya karakter "
+"ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Nama '%s' mengandung karakter yang tidak valid. Pergunakan hanya karakter ASCII."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Nama '%s' mengandung karakter yang tidak valid. Pergunakan hanya karakter "
+"ASCII."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -308,27 +353,6 @@ msgstr "Tanggal dan Waktu"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "Set tanggal dan waktu untuk sistem."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Masukkan server waktu (time server)."
-
-#: ../src/modules/date.py:123
-#: ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Kesalahan"
-
-#: ../src/modules/date.py:136
-#: ../src/modules/date.py:167
-#, python-format
-msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
-msgstr "Koneksi dengan %s tidak dapat terjalin. Kemungkinan %s tidak tersedia atau setting firewall pada komputer anda menghalangi koneksi NTP."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Menghubungi Server NTP. Silahkan tunggu..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -343,8 +367,12 @@ msgid "Finish Setup"
 msgstr "Setup Selesai"
 
 #: ../src/modules/finished.py:35
-msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Sekarang sistem anda telah siap dipergunakan. Klik tombol \"Lanjutkan\" yang ada di pojok kanan bawah untuk melanjutkan."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr ""
+"Sekarang sistem anda telah siap dipergunakan. Klik tombol \"Lanjutkan\" yang "
+"ada di pojok kanan bawah untuk melanjutkan."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -370,8 +398,7 @@ msgstr "Ubah Konfigurasi Jaringan..."
 msgid "static"
 msgstr "statik"
 
-#: ../src/modules/soundcard_gui.py:46
-#: ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
 msgstr "Sound Card"
 
@@ -380,8 +407,16 @@ msgid "A sound card has been detected on your computer."
 msgstr "Terdeteksi sebuah sound card pada komputer anda."
 
 #: ../src/modules/soundcard_gui.py:71
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Klik tombol \"Play test sound\" untuk mendengarkan contoh suara. Anda seharusnya mendengar tiga rangkaian suara. Suara pertama akan muncul di kanal sebelah kanan, suara kedua akan muncul di kanal sebelah kiri, dan suara ketiga akan muncul di tengah."
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Klik tombol \"Play test sound\" untuk mendengarkan contoh suara. Anda "
+"seharusnya mendengar tiga rangkaian suara. Suara pertama akan muncul di "
+"kanal sebelah kanan, suara kedua akan muncul di kanal sebelah kiri, dan "
+"suara ketiga akan muncul di tengah."
 
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
@@ -392,6 +427,28 @@ msgid "Please set the timezone for the system."
 msgstr "Silahkan set zona waktu untuk sistem"
 
 #: ../src/modules/welcome.py:35
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Ada beberapa langkah lagi yang perlu anda lakukan sebelum sistem siap dipergunakan. Setup Agent akan memandu anda melakukan beberapa konfigurasi dasar. Tekan tombol \"Lanjutkan\" pada pojok kanan bawah untuk melanjutkan."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Ada beberapa langkah lagi yang perlu anda lakukan sebelum sistem siap "
+"dipergunakan. Setup Agent akan memandu anda melakukan beberapa konfigurasi "
+"dasar. Tekan tombol \"Lanjutkan\" pada pojok kanan bawah untuk melanjutkan."
 
+#~ msgid "Please enter a time server."
+#~ msgstr "Masukkan server waktu (time server)."
+
+#~ msgid "Error"
+#~ msgstr "Kesalahan"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Koneksi dengan %s tidak dapat terjalin. Kemungkinan %s tidak tersedia "
+#~ "atau setting firewall pada komputer anda menghalangi koneksi NTP."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Menghubungi Server NTP. Silahkan tunggu..."

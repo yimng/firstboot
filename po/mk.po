@@ -11,13 +11,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-11 22:59+0200\n"
 "Last-Translator: Tomislav Markovski <tome@users.ossm.org.mk>\n"
 "Language-Team: Macedonian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -76,25 +76,25 @@ msgstr ""
 "Копија од излезот на грешката е зачуван во %s \n"
 "Пратете ја таа датотека заедно со извештајот. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "На_зад"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Напред"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Добродојдовте"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "увезувањето на модулот %s не успеа: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Добродојдовте"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -305,29 +305,6 @@ msgstr "Датум и време"
 msgid "Please set the date and time for the system."
 msgstr "Наместете го датумот и времето на вашиот систем."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Внесете сервер за време."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Грешка"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Не можам да се врзам со %s. Можеби %s е недостапен или подесувањата за огнен "
-"ѕид (firewall) на вашиот систем блокираат НТП врски."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Врзување со НТП серверот. Ве молам причекајте..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Дисплеј"
@@ -409,6 +386,23 @@ msgstr ""
 "Има уште неколку чекори пред првата употреба на вашиот систем.  Агентот за "
 "инсталација ќе ве води низ некои основни конфигурации.  Кликнете на копчето "
 "„Следно“ во десниот долен агол за понатаму."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Внесете сервер за време."
+
+#~ msgid "Error"
+#~ msgstr "Грешка"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Не можам да се врзам со %s. Можеби %s е недостапен или подесувањата за "
+#~ "огнен ѕид (firewall) на вашиот систем блокираат НТП врски."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Врзување со НТП серверот. Ве молам причекајте..."
 
 #~ msgid "User Account"
 #~ msgstr "Корисник"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-06-04 21:18+0300\n"
 "Last-Translator: Robertas Dereškevičius <roberto@mikrovisata.net>\n"
 "Language-Team: Lithuanian\n"
@@ -74,25 +74,25 @@ msgstr ""
 "Kopija debug išeities išsaugota į %s \n"
 "Neužmirškite prijungti bylą pranešime. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Atgal"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "Pirmy_n"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Sveiki"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Sveiki"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -294,29 +294,6 @@ msgstr "Data ir Laikas"
 msgid "Please set the date and time for the system."
 msgstr "Prašome nustatyti sistemos datą ir laiką."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Prašome įvesti laiko serverį."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Klaida"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Prisijungimas į %s nepavyko.  %s nepasiekiamas arba ugniasienės nustatymai "
-"blokuoja NTP prisijungimus."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Jungiasi su NTP serveriu.  Prašome palaukti..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Ekranas"
@@ -397,6 +374,23 @@ msgstr ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Prašome įvesti laiko serverį."
+
+#~ msgid "Error"
+#~ msgstr "Klaida"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Prisijungimas į %s nepavyko.  %s nepasiekiamas arba ugniasienės "
+#~ "nustatymai blokuoja NTP prisijungimus."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Jungiasi su NTP serveriu.  Prašome palaukti..."
 
 #~ msgid "User Account"
 #~ msgstr "Vartotojo Nustatymai"

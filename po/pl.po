@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-12 18:07+0200\n"
 "Last-Translator: Tom Berner <tom@man.lodz.pl>\n"
 "Language-Team: POLISH <pl@li.org>\n"
@@ -75,25 +75,25 @@ msgstr ""
 "Kopia informacji o błędzie została zapisana do %s \n"
 "Upewnij się czy załączyłeś ten plik do raportu. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Wstecz"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "Dale_j"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Witamy"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import modułu %s nie powiódł się: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Witamy"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -164,7 +164,8 @@ msgstr ""
 "kontynuować."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Program automatycznego uruchomienia nie został znaleziony na płycie. Kliknij "
 "\"OK\" aby kontynuować."
@@ -250,14 +251,16 @@ msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
+msgstr ""
+"Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
 
 #: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr "Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
+msgstr ""
+"Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -271,15 +274,18 @@ msgstr "Nazwa użytkownika '%s' zawiera duże litery, których nie może zawiera
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
+msgstr ""
+"Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Hasło zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nazwisko '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/date.py:47
@@ -289,29 +295,6 @@ msgstr "Data i czas"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "Ustaw datę i czas dla systemu."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Wprowadź serwer czasu."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Błąd"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Połączenie z %s nie zostało nawiązane. Albo serwer %s jest nieosiągalny albo "
-"firewall blokuje połączenia NTP."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Nawiązuje połączenie z serwerem NTP. Proszę czekać..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -394,3 +377,19 @@ msgstr ""
 "obecnie nie posiada poradnika o podstawowej konfiguracji.Kliknij \"Dalej\" w "
 "dolnym prawym rogu okna żeby kontynuować."
 
+#~ msgid "Please enter a time server."
+#~ msgstr "Wprowadź serwer czasu."
+
+#~ msgid "Error"
+#~ msgstr "Błąd"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Połączenie z %s nie zostało nawiązane. Albo serwer %s jest nieosiągalny "
+#~ "albo firewall blokuje połączenia NTP."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Nawiązuje połączenie z serwerem NTP. Proszę czekać..."

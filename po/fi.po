@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-11 17:57+0300\n"
 "Last-Translator: Mikko Ikola <ikola@iki.fi>\n"
 "Language-Team: Finnish\n"
@@ -72,25 +72,25 @@ msgstr ""
 "Kopio vianjäljitystulosteesta on tallennettu tiedostoon %s.\n"
 "Muista liittää tämä tiedosto vikailmoitukseen.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Edellinen"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Seuraava"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Tervetuloa"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "moduulin %s tuominen epäonnistui: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Tervetuloa"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -294,29 +294,6 @@ msgstr "Päivämäärä ja aika"
 msgid "Please set the date and time for the system."
 msgstr "Aseta järjestelmän päivämäärä ja aika."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Syötä aikapalvelin."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Virhe"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Yhteyttä osoitteeseen %s ei saatu muodostettua. Joko %s ei ole saatavilla "
-"tai palomuuriasetukset estävät NTP-yhteydet."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Yhdistetään NTP-palvelimeen. Odota..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Näyttö"
@@ -397,6 +374,23 @@ msgstr ""
 "Järjestelmä on muutamaa vaihetta vaille valmis käyttöön. Asennusohjelma "
 "ohjaa sinut nyt joidenkin perusasetusten läpi. Napsauta \"Seuraava\"-"
 "painiketta alhaalta oikealta jatkaaksesi."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Syötä aikapalvelin."
+
+#~ msgid "Error"
+#~ msgstr "Virhe"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Yhteyttä osoitteeseen %s ei saatu muodostettua. Joko %s ei ole saatavilla "
+#~ "tai palomuuriasetukset estävät NTP-yhteydet."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Yhdistetään NTP-palvelimeen. Odota..."
 
 #~ msgid "User Account"
 #~ msgstr "Käyttäjätunnus"

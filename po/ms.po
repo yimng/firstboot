@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ms\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-13 12:36+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -73,25 +73,25 @@ msgstr ""
 "Satu salinan keluaran debug telah disimpan di %s \n"
 "Pastikan fail tersebut dilampirkan bersama laporan pepijat. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Undur"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Maju"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Selamat Datang"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "mengimport modul %s gagal: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Selamat Datang"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -163,7 +163,8 @@ msgstr ""
 "\" untuk meneruskan."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Program autorun tidak dijumpai pada cd. Klik \"OK\" untuk meneruskan."
 
 #: ../src/modules/create_user.py:39
@@ -277,13 +278,17 @@ msgstr ""
 "ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Kata laluan mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Kata laluan mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Nama '%s' mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Nama '%s' mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -292,29 +297,6 @@ msgstr "Tarikh dan Masa"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "Sila tetapkan tarikh dan masa untuk sistem."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Sila masukkan pelayan masa."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Ralat"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Sambungan dengan %s tidak dapat dibuat.  Sama ada %s tiada atau tetapan "
-"firewall pada komputer anda menghalang sambungan NTP."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Menghubungi pelayan NTP.  Sila tunggu..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -398,3 +380,19 @@ msgstr ""
 "Agen Tetapan akan membantu anda melalui beberapa tetapan asas.  Sila klik "
 "butang \"Maju\" pada bahagian sudut bawah kanan untuk meneruskan."
 
+#~ msgid "Please enter a time server."
+#~ msgstr "Sila masukkan pelayan masa."
+
+#~ msgid "Error"
+#~ msgstr "Ralat"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Sambungan dengan %s tidak dapat dibuat.  Sama ada %s tiada atau tetapan "
+#~ "firewall pada komputer anda menghalang sambungan NTP."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Menghubungi pelayan NTP.  Sila tunggu..."

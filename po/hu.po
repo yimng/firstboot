@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-14 11:55+0200\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -74,25 +74,25 @@ msgstr ""
 "A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
 "Kérjük csatolja ezt a fájlt a hibabejelentéshez. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Vissza"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Tovább"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Üdvözöljük"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "a(z) %s modul importálása nem sikerült: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Üdvözöljük"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -164,7 +164,8 @@ msgstr ""
 "és kattintson az \"OK\" gombra."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "\"OK\" gombra."
@@ -282,14 +283,16 @@ msgstr ""
 "karaktereket lehet használni."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet "
 "használni."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket "
 "lehet használni."
@@ -301,30 +304,6 @@ msgstr "Dátum és idő"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "Állítsa be a pontos dátumot és időt."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Adja meg egy időkiszolgáló nevét."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Hiba"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Nem sikerült kapcsolatot létesíteni ezzel: %s. %s nem érhető el vagy a "
-"tűzfal beállításai olyanok, hogy a számítógép nem engedélyezi az NTP-"
-"kapcsolatot."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Csatlakozás az NTP-kiszolgálóhoz. Egy kis türelmet kérek..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -407,3 +386,20 @@ msgstr ""
 "Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
 "kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
+#~ msgid "Please enter a time server."
+#~ msgstr "Adja meg egy időkiszolgáló nevét."
+
+#~ msgid "Error"
+#~ msgstr "Hiba"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Nem sikerült kapcsolatot létesíteni ezzel: %s. %s nem érhető el vagy a "
+#~ "tűzfal beállításai olyanok, hogy a számítógép nem engedélyezi az NTP-"
+#~ "kapcsolatot."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Csatlakozás az NTP-kiszolgálóhoz. Egy kis türelmet kérek..."

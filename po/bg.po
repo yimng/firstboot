@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-10 11:56-0700\n"
 "Last-Translator: Николай Сърмаджиев,преносим <nikolayds@msn.com>\n"
 "Language-Team:  <bg@li.org>\n"
@@ -80,25 +80,25 @@ msgstr ""
 "Копие на дебъг информацията е запазен на %s.\n"
 "Моля, закачете файла към описанието на грешката.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "Обратно"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "Следващ"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Добре дошли"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "модулния импорт на %s се провали: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Добре дошли"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -169,7 +169,8 @@ msgstr ""
 "\" за продължаване."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Авто-стартиращата програма не може да бъде намерена на CD-то. Натиснете "
 "\"Добре\" за продължаване."
@@ -288,13 +289,17 @@ msgstr ""
 "невалидни символи в потребителското име."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -303,29 +308,6 @@ msgstr "Дата и Време"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "Моля, установете дата и времето на системата."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Моля, въведете времеви сървър."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Грешка"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Не може да се установи връзка с %s. Или %s не е наличен или настройките на "
-"защитната стена на компютъра блокират NTP връзки."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Свързване с NTP сървър. Моля изчакайте..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -410,3 +392,19 @@ msgstr ""
 "Агента за Установяване ще Ви преведе през някой базови конфигурации. Моля, "
 "натиснете бутон \"Следващ\" в долния десен ъгъл за да продължите."
 
+#~ msgid "Please enter a time server."
+#~ msgstr "Моля, въведете времеви сървър."
+
+#~ msgid "Error"
+#~ msgstr "Грешка"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Не може да се установи връзка с %s. Или %s не е наличен или настройките "
+#~ "на защитната стена на компютъра блокират NTP връзки."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Свързване с NTP сървър. Моля изчакайте..."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-11 01:13+0900\n"
 "Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
@@ -77,26 +77,25 @@ msgstr ""
 "デバッグ出力のコピーは%sに保存してあります。\n"
 "バグ報告には必ず、このファイルを添付して下さい。\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "戻る(_B)"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "次へ(_N)"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
+#, fuzzy, python-format
+msgid "module import of %s failed: %s"
+msgstr "%s のモジュールのインポートに失敗しました: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "ようこそ"
-
-#: ../src/firstbootWindow.py:402
-#, python-format
-#, fuzzy
-msgid "module import of %s failed: %s"
-msgstr "%s のモジュールのインポートに失敗しました: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -167,7 +166,8 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "オートランプログラムがcd上に見つかりません。 \"OK\" をクリックして継続しま"
 "す。"
@@ -253,7 +253,8 @@ msgstr "ユーザー名は数字で始まってはいけません。"
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
+msgstr ""
+"ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -283,13 +284,16 @@ msgstr ""
 "い。"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "名前 '%s' には無効な文字が含まれています。ASCII 文字のみを使用して下さい。"
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"名前 '%s' には無効な文字が含まれています。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -298,29 +302,6 @@ msgstr "日付と時刻"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "システム用に日付と時刻を設定して下さい。"
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "タイムサーバを入力して下さい。"
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "エラー"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"%s との接続が確立できません。%s が利用できないか又は、コンピュータのファイア"
-"ウォールの設定が NTP の接続を阻止しています。"
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "NTPサーバに接続しています。お待ち下さい..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -403,3 +384,19 @@ msgstr ""
 "エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
 "\"次へ\" ボタンをクリックして続けて下さい。"
 
+#~ msgid "Please enter a time server."
+#~ msgstr "タイムサーバを入力して下さい。"
+
+#~ msgid "Error"
+#~ msgstr "エラー"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "%s との接続が確立できません。%s が利用できないか又は、コンピュータのファイ"
+#~ "アウォールの設定が NTP の接続を阻止しています。"
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "NTPサーバに接続しています。お待ち下さい..."

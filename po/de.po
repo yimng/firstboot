@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-11 08:58+0200\n"
 "Last-Translator: Eduard Pech <kongretkrassescheissendreck@simstim.net>\n"
 "Language-Team: German <de@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: GNU Emacs 21.3.1"
+"X-Generator: GNU Emacs 21.3.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -78,25 +78,25 @@ msgstr ""
 "Eine Kopie der Debug-Meldung wurde in %s gespeichert.\n"
 "Vergewissern Sie sich, dass Sie diese Datei dem Fehlerbericht anlegen.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Zurück"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Weiter"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Willkommen"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "Modulimport von %s fehlgeschlagen: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Willkommen"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -311,30 +311,6 @@ msgstr "Datum und Uhrzeit"
 msgid "Please set the date and time for the system."
 msgstr "Stellen Sie das Datum und die Uhrzeit des Systems ein."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Bitte geben Sie einen Zeit-Server ein."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Fehler"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Es konnte keine Verbindung mit %s hergestellt werden. Entweder ist %s nicht "
-"verfügbar oder die Firewall-Einstellungen Ihres Computers verhindern NTP-"
-"Verbindungen."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Es wird eine Verbindung zum NTP-Server hergestellt. Bitte warten..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Anzeige"
@@ -415,6 +391,24 @@ msgstr ""
 "Nur noch ein paar Schritte, und Sie können Ihr System verwenden.  Der Setup "
 "Agent führt Sie dabei durch die Basiskonfiguration.  Klicken Sie auf \"Weiter"
 "\" unten rechts, um fortzufahren."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Bitte geben Sie einen Zeit-Server ein."
+
+#~ msgid "Error"
+#~ msgstr "Fehler"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Es konnte keine Verbindung mit %s hergestellt werden. Entweder ist %s "
+#~ "nicht verfügbar oder die Firewall-Einstellungen Ihres Computers "
+#~ "verhindern NTP-Verbindungen."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Es wird eine Verbindung zum NTP-Server hergestellt. Bitte warten..."
 
 #~ msgid "User Account"
 #~ msgstr "Benutzeraccount"

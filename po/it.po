@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-08-19 10:40+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -77,25 +77,25 @@ msgstr ""
 "Una copia del risultato dell'operazione di debug è stata salvata in %s.\n"
 "Accertarsi di allegare il file al report del bug. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Precedente"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Successivo"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Benvenuti"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Benvenuti"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -310,30 +310,6 @@ msgstr "Data e Ora"
 msgid "Please set the date and time for the system."
 msgstr "Impostare la data e l'ora del sistema."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Inserire il nome di un server del tempo."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Errore"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Impossibile stabilire la connessione con %s. Può darsi che %s non sia "
-"disponibile o che le impostazione del firewall del computer blocchino le "
-"connessioni NTP."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Tentativo di contattare il server NTP. Attendere..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Display"
@@ -416,6 +392,24 @@ msgstr ""
 "prima che il sistema sia pronto.  Red Hat Setup Agent guida l'utente nel "
 "processo di configurazione di base.  Fare clic sul pulsante \"Successivo\" "
 "nella parte inferiore destra per continuare."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Inserire il nome di un server del tempo."
+
+#~ msgid "Error"
+#~ msgstr "Errore"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Impossibile stabilire la connessione con %s. Può darsi che %s non sia "
+#~ "disponibile o che le impostazione del firewall del computer blocchino le "
+#~ "connessioni NTP."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Tentativo di contattare il server NTP. Attendere..."
 
 #~ msgid "User Account"
 #~ msgstr "Account utente"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-08-05 01:10+0300\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team:  <nls@tux.hellug.gr>\n"
@@ -76,25 +76,25 @@ msgstr ""
 "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος φυλάχθηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Πίσω"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Επόμενο"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Καλώς ήλθατε"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Καλώς ήλθατε"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -310,29 +310,6 @@ msgstr "Ημερομηνία και Ώρα"
 msgid "Please set the date and time for the system."
 msgstr "Παρακαλώ ορίσετε ημερομηνία και ώρα για το σύστημα."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Παρακαλώ εισάγετε ένα εξυπηρετητή ώρας."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Σφάλμα"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Δεν στάθηκε δυνατή η σύνδεση με τον %s.  'Η ο %s δεν είναι διαθέσιμος ή οι "
-"ρυθμίσεις firewall του υπολογιστή σας δεν επιτρέπουν συνδέσεις NTP."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Επικοινωνία με τον εξυπηρετητή NTP.  Παρακαλώ περιμένετε..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Οθόνη"
@@ -415,3 +392,20 @@ msgstr ""
 "σύστημα.  Το Εργαλείο Ρύθμισης θα σας οδηγήσει στην εκτέλεση μιας βασικής "
 "διαμόρφωσης.  Παρακαλώ πατήστε το κουμπί  \"Επόμενο\" στην δεξιά κάτω γωνία "
 "για να συνεχίσετε. "
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Παρακαλώ εισάγετε ένα εξυπηρετητή ώρας."
+
+#~ msgid "Error"
+#~ msgstr "Σφάλμα"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Δεν στάθηκε δυνατή η σύνδεση με τον %s.  'Η ο %s δεν είναι διαθέσιμος ή "
+#~ "οι ρυθμίσεις firewall του υπολογιστή σας δεν επιτρέπουν συνδέσεις NTP."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Επικοινωνία με τον εξυπηρετητή NTP.  Παρακαλώ περιμένετε..."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-03-28 15:19+0200\n"
 "Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
 "Language-Team: slovenščina <translation-team-sl@lists.sourceforge.net>\n"
@@ -77,25 +77,25 @@ msgstr ""
 "izhoda se je shranil v %s. Zagotovo pripnite tudi \n"
 "to datoteko.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "Na_zaj"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "Na_prej"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Dobrodošli"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Dobrodošli"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -304,29 +304,6 @@ msgstr "Datum in čas"
 msgid "Please set the date and time for the system."
 msgstr "Prosim, nastavite sistemski datum in čas."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Prosim, vnesite časovni strežnik."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Napaka"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"S strežnikom %s ni moč vzpostaviti povezave. Bodisi %s ni dostopen ali pa "
-"nastavitve požarnega zidu v vašem računalniku preprečujejo povezave NTP."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Povezujem se s strežnikom NTP. Prosim, počakajte..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Zaslon"
@@ -407,6 +384,23 @@ msgstr ""
 "Preden bo sistem pripravljen za rabo, morate narediti še nekaj korakov. "
 "Nastavitveni agent vas bo vodil po nekaj osnovnih nastavitvah. Za "
 "nadaljevanje kliknite gumb \"Naprej\" v spodnjem desnem kotu."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Prosim, vnesite časovni strežnik."
+
+#~ msgid "Error"
+#~ msgstr "Napaka"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "S strežnikom %s ni moč vzpostaviti povezave. Bodisi %s ni dostopen ali pa "
+#~ "nastavitve požarnega zidu v vašem računalniku preprečujejo povezave NTP."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Povezujem se s strežnikom NTP. Prosim, počakajte..."
 
 #~ msgid "User Account"
 #~ msgstr "Uporabniški račun"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-11 20:56+1100\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
@@ -77,25 +77,25 @@ msgstr ""
 "Копия отладочной информации сохранена в %s \n"
 "Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Далее"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Добро пожаловать"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "импорт модуля %s завершился неудачно: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Добро пожаловать"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -166,7 +166,8 @@ msgstr ""
 "продолжения."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Программа autorun не найдена на cd. Найдите \"OK\" для продолжения."
 
 #: ../src/modules/create_user.py:39
@@ -283,13 +284,17 @@ msgstr ""
 "символы ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Пароль содержит некорректные символы.  Используйте только символы ASCII."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Пароль содержит некорректные символы.  Используйте только символы ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Имя '%s' содержит некорректные символы.  Используйте только символы ASCII."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Имя '%s' содержит некорректные символы.  Используйте только символы ASCII."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -298,29 +303,6 @@ msgstr "Дата и время"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "Установите дату и время."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Укажите сервер точного времени."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Ошибка"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Соединение с %s невозможно.  Вероятно, %s недоступен или брандмауэр на вашем "
-"компьютере блокирует NTP-соединения."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Соединение с сервером NTP.  Пожалуйста, подождите..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -402,6 +384,23 @@ msgstr ""
 "Осталось еще несколько шагов, после которых ваша система будет готова к "
 "работе.  В этом вам поможет Помощник по настройке.  Нажмите \"Далее\" для "
 "продолжения."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Укажите сервер точного времени."
+
+#~ msgid "Error"
+#~ msgstr "Ошибка"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Соединение с %s невозможно.  Вероятно, %s недоступен или брандмауэр на "
+#~ "вашем компьютере блокирует NTP-соединения."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Соединение с сервером NTP.  Пожалуйста, подождите..."
 
 #~ msgid "User Account"
 #~ msgstr "Учетная запись"
@@ -499,4 +498,3 @@ msgstr ""
 
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "_Нет, я не хочу регистрировать мою систему."
-

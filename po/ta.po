@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-14 10:05+0530\n"
 "Last-Translator: Jayaradha N <jaya@pune.redhat.com>\n"
 "Language-Team: Tamil <zhakanini@yahoogroups.com>\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -74,25 +75,25 @@ msgstr ""
 "உங்கள் பிழை %s இல் சேமிக்கப்பட்டுள்ளது \n"
 "மறக்காமல் பிழை கோப்பை இணைத்து பிழை அறிக்கையை பதிவு செய்யவும்.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "(_B)பிழை"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "(_N)அடுத்து"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "நல்வரவு"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s பகுதி ஏற்றம் தோல்வி: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "நல்வரவு"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -163,7 +164,8 @@ msgstr ""
 "\" என்பதை க்ளிக் செய்து தொடரவும்."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "தானாக துவக்கும் நிரலாம் குறுந்தகட்டை கண்டுபிடிக்க முடியவில்லை \"சரி\" என்பதை க்ளிக் "
 "செய்து தொடரவும்"
@@ -280,12 +282,15 @@ msgstr ""
 "பயன்படுத்தவும்."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "கடவுச்சொல்லில் செல்லாத எழுத்துக்கள் உள்ளது உள்ளது. ASCII எழுத்துக்களை மட்டும் பயன்படுத்தவும்."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"கடவுச்சொல்லில் செல்லாத எழுத்துக்கள் உள்ளது உள்ளது. ASCII எழுத்துக்களை மட்டும் பயன்படுத்தவும்."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "ாளர் பெயர் '%s'  இல் சில செல்லாத எழுத்துக்கள் உள்ளது. ASCII எழுத்துக்களை மட்டும் "
 "பயன்படுத்தவும்."
@@ -297,29 +302,6 @@ msgstr "தேதி மற்றும் நேரம்"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "தயவு செய்து கணினிக்கான தேதி மற்றும் நேரத்தை அமைக்கவும்."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "சேவகனுக்கான நேரத்தை அமைக்கவும்."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "பிழை"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"%s இணைப்பை ஏற்படுத்த முடியவில்லை.%s கிடைக்கவில்லை அல்லது உங்கள் கணினியின் நெருப்பு சுவர் "
-"அமைப்பு NTP இணைப்பை தடுக்கலாம்."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "NTP சேவகனுடன் தொடர்பு கொள்கிறது. காத்திருக்கவும்..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -402,3 +384,19 @@ msgstr ""
 "மேளாலர் அடிப்படை அமைப்புகளை உருவாக்க உங்களுக்கு உதவுவார், \"அடுத்து\" என்பதை க்ளிக் "
 "செய்து தொடரவும்."
 
+#~ msgid "Please enter a time server."
+#~ msgstr "சேவகனுக்கான நேரத்தை அமைக்கவும்."
+
+#~ msgid "Error"
+#~ msgstr "பிழை"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "%s இணைப்பை ஏற்படுத்த முடியவில்லை.%s கிடைக்கவில்லை அல்லது உங்கள் கணினியின் நெருப்பு "
+#~ "சுவர் அமைப்பு NTP இணைப்பை தடுக்கலாம்."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "NTP சேவகனுடன் தொடர்பு கொள்கிறது. காத்திருக்கவும்..."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -76,25 +76,25 @@ msgstr ""
 "ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_ย้อนกลับ"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_ถัดไป"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "ยินดีต้อนรับ"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "ยินดีต้อนรับ"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -288,29 +288,6 @@ msgstr "วันที่และเวลา"
 msgid "Please set the date and time for the system."
 msgstr "กรุณาตั้งค่าวันที่และเวลาของระบบ"
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "กรุณาป้อนเซิร์ฟเวอร์เวลา"
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "ผิดพลาด"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"การเชื่อมต่อกับ %s ไม่สามารถกระทำได้  อาจเนื่องจาก %s ไม่พร้อมให้บริการหรือ  "
-"ไฟร์วอลล์บนเครื่องของคุณกั้นการเชื่อมต่อ NTP เอาไว้"
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "กำลังติดต่อ เซิร์ฟเวอร์ NTP กรุณารอสักครู่ ..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "การแสดงผล"
@@ -391,3 +368,20 @@ msgstr ""
 "ต่อไปนี้จะเป็นขั้นตอนสั้นๆ ที่ต้องตั้งค่า ก่อนจะใช้งานระบบของคุณ "
 "ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
 "ที่มุมล่างขวาเพื่อทำงานต่อ"
+
+#~ msgid "Please enter a time server."
+#~ msgstr "กรุณาป้อนเซิร์ฟเวอร์เวลา"
+
+#~ msgid "Error"
+#~ msgstr "ผิดพลาด"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "การเชื่อมต่อกับ %s ไม่สามารถกระทำได้  อาจเนื่องจาก %s ไม่พร้อมให้บริการหรือ  "
+#~ "ไฟร์วอลล์บนเครื่องของคุณกั้นการเชื่อมต่อ NTP เอาไว้"
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "กำลังติดต่อ เซิร์ฟเวอร์ NTP กรุณารอสักครู่ ..."

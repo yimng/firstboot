@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-10 23:49+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -75,25 +75,25 @@ msgstr ""
 "debug-uitvoer is opgeslagen in %s Vergeet niet om dit \n"
 "bestand als bijlage te voegen bij het fout-rapport. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_Terug"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_Volgende"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "Welkom"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "importeren van module %s is mislukt: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Welkom"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -304,30 +304,6 @@ msgstr "Datum en tijd"
 msgid "Please set the date and time for the system."
 msgstr "Stel de datum en de tijd in voor het systeem."
 
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "Voer een tijdserver in."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "Fout"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Er kon geen verbinding met %s worden gemaakt.  De oorzaak is dat ofwel %s "
-"niet beschikbaar is, of de firewall-instellingen op uw computer blokkeren de "
-"verbinding met een NTP-server."
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "Verbinding maken met NTP-server.  Een ogenblik alstublieft..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "Beeldscherm"
@@ -411,6 +387,24 @@ msgstr ""
 "gebruik. De Setup Agent zal u nu helpen met het maken van een basis- "
 "configuratie. Klik op \"Volgende\" rechts onder in het scherm om door te "
 "gaan."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "Voer een tijdserver in."
+
+#~ msgid "Error"
+#~ msgstr "Fout"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "Er kon geen verbinding met %s worden gemaakt.  De oorzaak is dat ofwel %s "
+#~ "niet beschikbaar is, of de firewall-instellingen op uw computer blokkeren "
+#~ "de verbinding met een NTP-server."
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "Verbinding maken met NTP-server.  Een ogenblik alstublieft..."
 
 #~ msgid "User Account"
 #~ msgstr "Gebruikersaccount"

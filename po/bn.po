@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-07-22 18:19+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -72,25 +72,25 @@ msgstr ""
 "এক কপি debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
 "ঐ ফাইলটি ত্রুটি অনুসন্ধান সিস্টেমে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "_পূর্ববর্তী"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "_পরবর্তী"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "স্বাগতম"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "স্বাগতম"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -296,30 +296,6 @@ msgstr "তারিখ এবং সময়"
 msgid "Please set the date and time for the system."
 msgstr "অনুগ্রহ করে সিস্টেমটির জন্য তারিখ এবং সময় নির্ধারন করে দিন।"
 
-#  They want ntp but have not set a server
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "একটি সময় সার্ভার এর নাম দিন।"
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "সমস্যা"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"%s এর সাথে সংযোগ স্হাপন সম্ভব হয়নি। হয় %s নেই অথবা আপনার কম্পিউটারের "
-"ফায়ারওয়ালের নিয়ম-কানুন এনটিপি সংযোগগুলোকে বাধা দিচ্ছে।"
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "এনটিপি সার্ভারের সাথে সংযোগ স্হাপন করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন..."
-
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "ডিসপ্লে"
@@ -398,3 +374,21 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে সেটাপ এজেন্ট আপনাকে সাহায্য করবে। চালিয়ে যাবার "
 "জন্য নিচে ডানদিকের \"পরবর্তী\" বোতামটি চাপুন।"
+
+#  They want ntp but have not set a server
+#~ msgid "Please enter a time server."
+#~ msgstr "একটি সময় সার্ভার এর নাম দিন।"
+
+#~ msgid "Error"
+#~ msgstr "সমস্যা"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "%s এর সাথে সংযোগ স্হাপন সম্ভব হয়নি। হয় %s নেই অথবা আপনার কম্পিউটারের "
+#~ "ফায়ারওয়ালের নিয়ম-কানুন এনটিপি সংযোগগুলোকে বাধা দিচ্ছে।"
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "এনটিপি সার্ভারের সাথে সংযোগ স্হাপন করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন..."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:21-0400\n"
+"POT-Creation-Date: 2004-09-14 20:07-0400\n"
 "PO-Revision-Date: 2004-09-13 08:23+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -73,25 +73,25 @@ msgstr ""
 "디버그 출력 결과는 %s에 저장되어 있습니다. \n"
 "이 파일을 버그 리포트에 첨부해 주십시오.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
 msgstr "뒤로(_B)"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
 msgstr "다음(_N)"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
-msgid "Welcome"
-msgstr "환영합니다"
-
-#: ../src/firstbootWindow.py:402
+#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s 모듈 가져오기에 실패했습니다: %s"
+
+#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "환영합니다"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -162,7 +162,8 @@ msgstr ""
 "을 클릭하여 계속 진행해 주십시오."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -280,12 +281,15 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -297,29 +301,6 @@ msgstr "날짜와 시간"
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "시스템 날짜와 시간을 설정해 주십시오."
-
-#. They want ntp but have not set a server
-#: ../src/modules/date.py:121
-msgid "Please enter a time server."
-msgstr "시간 서버를 입력해 주십시오."
-
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
-#: ../src/modules/date.py:174
-msgid "Error"
-msgstr "오류"
-
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
-#, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 컴퓨터에 설정된 방화벽 때"
-"문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
-
-#: ../src/modules/date.py:204
-msgid "Contacting NTP server.  Please wait..."
-msgstr "NTP 서버에 연결 중입니다.  잠시만 기다려주십시오..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -401,6 +382,23 @@ msgstr ""
 "몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  설정 에이전트는 이"
 "제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 것입니다. 오른쪽 하"
 "단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합니다."
+
+#~ msgid "Please enter a time server."
+#~ msgstr "시간 서버를 입력해 주십시오."
+
+#~ msgid "Error"
+#~ msgstr "오류"
+
+#~ msgid ""
+#~ "A connection with %s could not be established.  Either %s is not "
+#~ "available or the firewall settings on your computer are blocking NTP "
+#~ "connections."
+#~ msgstr ""
+#~ "%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 컴퓨터에 설정된 방화"
+#~ "벽 때문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
+
+#~ msgid "Contacting NTP server.  Please wait..."
+#~ msgstr "NTP 서버에 연결 중입니다.  잠시만 기다려주십시오..."
 
 #~ msgid "User Account"
 #~ msgstr "사용자 계정"
@@ -755,4 +753,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-
