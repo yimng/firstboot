@@ -102,7 +102,7 @@ class TimeWindow(FirstbootGuiWindow):
                     #Server was contacted, so write out the correct files and start up the service
                     ntpServerList = self.datePage.getNtpServerList()
                     self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList)
-                    self.dateBackend.startNtpService()
+                    self.dateBackend.startNtpService(None)
                     self.dateBackend.syncHardwareClock()
                 else:
                     dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
@@ -120,7 +120,7 @@ class TimeWindow(FirstbootGuiWindow):
 
                 ntpServersList = self.datePage.getNtpServerList()
                 self.dateBackend.writeNtpConfig(sysTimeServer, ntpServersList)
-                self.dateBackend.startNtpService()
+                self.dateBackend.startNtpService(None)
                 self.dateBackend.syncHardwareClock()
 
         return 1
