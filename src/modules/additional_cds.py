@@ -3,7 +3,9 @@ import string
 import gtk
 import gobject
 import os
+import time
 import functions
+import rhpl.diskutil as diskutil
 
 ##
 ## I18N
@@ -15,12 +17,12 @@ _=gettext.gettext
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 140
+    runPriority = -140
     moduleName = (_("Additional CDs"))
 
-    def __init__(self):
-        self.additionalDiscs = {(_("Red Hat Documentation CD")) : "docs.png",
-                                (_("Linux Application CD")) : "lacd.png"}
+#    def __init__(self):
+#        self.additionalDiscs = {(_("Red Hat Documentation CD")) : "docs.png",
+#                                (_("Linux Application CD")) : "lacd.png"}
                 
     def launch(self, doDebug=None):
         if doDebug:
@@ -37,7 +39,7 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        pix = functions.imageFromFile("boxset_standard.png")
+        pix = functions.imageFromFile("docs.png")
         titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
         titleBox.pack_start(label)
@@ -56,22 +58,33 @@ class childWindow:
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        label = gtk.Label(_("If you have additional CDs from the Red Hat Linux box "
-                          "set, such as the Red Hat Linux Documentation CD or the "
-                          "Linux Applications CD, please insert the disc now and "
-                          "click the corresponding button below."))
+        label = gtk.Label(_("If you have additional CD-ROMs that you would like to install, "
+                            "such as the Red Hat Linux Docmentation CD, you may do that "
+                            "now.  Place the CD-ROM in the drive and click the "
+                            "\"Install software\" button below."))
+
+
+#        label = gtk.Label(_("If you have additional CDs from the Red Hat Linux box "
+#                          "set, such as the Red Hat Linux Documentation CD or the "
+#                          "Linux Applications CD, please insert the disc now and "
+#                          "click the corresponding button below."))
         
         label.set_line_wrap(TRUE)
         label.set_size_request(400, -1)
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, FALSE, TRUE)
 
-        buttons = self.additionalDiscs.keys()
-        buttons.sort()
-        for button in buttons:
-            newButton = self.create_button(self.additionalDiscs[button], button)
-            newButton.connect("clicked", self.autorun)
-            internalVBox.pack_start(newButton, gtk.FALSE, padding=10)
+ #       buttons = self.additionalDiscs.keys()
+ #       buttons.sort()
+##        for button in buttons:
+##             newButton = self.create_button(self.additionalDiscs[button], button)
+##             newButton.connect("clicked", self.autorun)
+##             internalVBox.pack_start(newButton, gtk.FALSE, padding=10)
+
+        self.installButton = self.create_button("lacd.png", "Install software")
+        self.installButton.connect("clicked", self.autorun)
+        internalVBox.pack_start(self.installButton, gtk.FALSE, padding=10)
+
 
         self.vbox.pack_start(internalVBox, TRUE)
 
@@ -91,31 +104,41 @@ class childWindow:
 
 
     def autorun(self, *args):
-        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
-_("This feature is not yet implemented.  Please do not report bugs about this button."))
-        dlg.set_title(_("Error"))
-        dlg.set_default_size(100, 100)
-        dlg.set_position (gtk.WIN_POS_CENTER)
-        dlg.set_border_width(2)
-        dlg.set_modal(gtk.TRUE)
-        rc = dlg.run()
-        dlg.destroy()
+        mountFlag = None
 
-##         mount = os.fork()
-##         if (not mount):
-##             os.execv("/bin/mount", ["mount", "/dev/cdrom"])
-
-##         pid, status = os.waitpid(mount, 0)
-
-##         if os.WIFEXITED(status) and (os.WEXITSTATUS(status) == 0):
-##             try:
-##                 os.stat('/mnt/cdrom/autorun')
-
-##                 win = os.fork()
-##                 if not win:
-##                     os.execv("/mnt/cdrom/autorun", ["autorun"])
-##             except:
-##                 pass
+        while not mountFlag:
+            try:
+                diskutil.mount('/dev/cdrom', '/mnt/cdrom', fstype="iso9660", readOnly = 1)
+                mountFlag = 1
+            except:
+                dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
+                                        (_("A CD-ROM has not been detected.  Please insert "
+                                           "a CD-ROM in the drive and click \"OK\" to continue.")))
+                dlg.set_position(gtk.WIN_POS_CENTER)
+                dlg.set_modal(gtk.TRUE)
+                cancelButton = dlg.add_button('gtk-cancel', 0)
+                okButton = dlg.add_button('gtk-ok', 1)
+                rc = dlg.run()
+                dlg.destroy()
                 
+                if rc == 0:
+                    return
+                
+        pid = functions.start_process("/mnt/cdrom/autorun")
+
+        flag = None
+        while not flag:
+            while gtk.events_pending():
+                gtk.main_iteration_do()
+
+            child_pid, status = os.waitpid(pid, os.WNOHANG)
+            
+            if child_pid == pid:
+                flag = 1
+            else:
+                time.sleep(0.1)
+
+        diskutil.umount('/mnt/cdrom')
+
     def apply(self, notebook):
         return 1
