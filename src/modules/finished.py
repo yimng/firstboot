@@ -31,7 +31,7 @@ class childWindow:
         internalVBox.set_border_width(10)
 
         label = gtk.Label(_("Your system is now set up and ready to use.  Please "
-                            "click the \"Forward\" button in the lower right corner to continue."))
+                            "click the \"Next\" button in the lower right corner to continue."))
 
         label.set_line_wrap(gtk.TRUE)
         label.set_alignment(0.0, 0.5)
