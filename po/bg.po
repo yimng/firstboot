@@ -1,3 +1,4 @@
+# translation of bg.po to Bulgarian
 # translation of bg.po to Български
 # translation of bg.po to
 # translation of bg.po to
@@ -10,19 +11,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Николай Сърмаджиев,преносим <nikolayds@msn.com>, 2004.
 # Николай Сърмаджиев <nikolayd@sarmadzhiev.tk>, 2004.
+# Doncho N. Gunchev <mr700@globalnet.bg>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-15 13:47-0400\n"
-"PO-Revision-Date: 2004-10-05 12:18-0700\n"
-"Last-Translator: Николай Сърмаджиев <nikolayd@sarmadzhiev.tk>\n"
-"Language-Team: Български <bg@li.org>\n"
+"PO-Revision-Date: 2004-10-17 07:17+0300\n"
+"Last-Translator: Doncho N. Gunchev <mr700@globalnet.bg>\n"
+"Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.9\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -43,7 +45,7 @@ msgstr "_Не, не съм съгласен"
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
 msgstr ""
-"Бихте ли желали да отново да прочетете и преразгледате лицензионното "
+"Бихте ли желали да препрочетете или преразгледате лицензионното "
 "споразумение?"
 
 #: ../src/eula_strings.py:31
@@ -66,8 +68,8 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"Тъй като има проблем с модулът %s, \n"
-"Ред Хат агента за установяване ще го пропусне и\n"
+"Тъй като има проблем с модула %s, \n"
+"Ред Хат агента за настройка ще го пропусне и\n"
 "ще се опита да стартира останалите модули."
 
 #: ../src/exceptionWindow.py:57
@@ -78,10 +80,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Моля, съобщавайте за грешки в 'firstboot' на следящата\n"
+"Моля съобщавайте за грешки в 'firstboot' на следящата\n"
 "система за грешки на адрес http://www.redhat.com/bugzilla. \n"
-"Копие на дебъг информацията е запазен на %s.\n"
-"Моля, закачете файла към описанието на грешката.\n"
+"Копие на дебъг информацията е запазен в %s.\n"
+"Моля прикачете файла към описанието на грешката.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -101,7 +103,7 @@ msgstr "Добре дошли"
 #: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr "модулния импорт на %s се провали: %s"
+msgstr "импорта на модул %s се провали: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -109,19 +111,19 @@ msgstr "Удостоверяване"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
-msgstr "Настройване на защитната стена"
+msgstr "Настройки на защитната стена"
 
 #: ../src/textWindow.py:36
 msgid "Keyboard configuration"
-msgstr "Настройване на клавиатурата"
+msgstr "Настройки на клавиатурата"
 
 #: ../src/textWindow.py:37
 msgid "Network configuration"
-msgstr "Настройване на мрежата"
+msgstr "Настройки на мрежата"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration"
-msgstr "Настройване на принтера"
+msgstr "Настройки на принтера"
 
 #: ../src/textWindow.py:39
 msgid "System services"
@@ -129,7 +131,7 @@ msgstr "Системни услуги"
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration"
-msgstr "Настройване на звуковата карта"
+msgstr "Настройки на звуковата карта"
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration"
@@ -141,11 +143,11 @@ msgstr "Стартиране на инструмент"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr "Изберете какво да промените"
+msgstr "Изберете какво да промените "
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr "Агент за установяване"
+msgstr "Агент за настройка"
 
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
@@ -176,7 +178,7 @@ msgstr ""
 "\n"
 "За да включите поддръжка на 32-битови приложения на Intel Itanium2 "
 "архитектури, трябва сега да инсталирате пакета Intel Execution Layer от "
-"диска с Екстри."
+"диска с екстри."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -187,30 +189,28 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM не е намерен. Моля поставете CD-ROM в устройството и натиснете \"Добре"
-"\" за продължаване."
+"CD-ROM не бе намерен.  Моля поставете CD-ROM в устройството и "
+"натиснете \"Добре\" за продължаване."
 
 #: ../src/modules/additional_cds.py:180
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Авто-стартиращата програма не може да бъде намерена на CD-то. Натиснете "
-"\"Добре\" за продължаване."
+"\"Добре\" за продължение."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
 msgstr "Системен потребител"
 
 #: ../src/modules/create_user.py:65
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "Препоръчително е да създадете личен потребителски акаунт за нормална (не-"
-"административна) работа. За да създадете личен акаунт, задайте необходимата "
-"информация."
+"административна) работа. За да създадете личен акаунт, моля задайте "
+"необходимата информация изисквана по-долу."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -218,7 +218,7 @@ msgstr "_Потребителско име:"
 
 #: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
-msgstr "_Име:"
+msgstr "Пълно _име:"
 
 #: ../src/modules/create_user.py:89
 msgid "_Password:"
@@ -226,19 +226,19 @@ msgstr "П_арола:"
 
 #: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
-msgstr "По_твърждаване:"
+msgstr "Потвърж_дение:"
 
 #: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Ако използвате мрежова идентификация, като например Kerberos или NIS, моля "
-"натиснете бутона \"Използване на мрежово удостоверяване\"."
+"Ако използвате мрежова идентификация, като например Kerberos или NIS, "
+"моля натиснете бутона \"Ползване на мрежово удостоверяване\"."
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
-msgstr "Използване на _мрежово удостоверяване..."
+msgstr "Ползване на _мрежово удостоверяване..."
 
 #: ../src/modules/create_user.py:158
 msgid ""
@@ -246,13 +246,13 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Горещо се препоръчва да създадете личен акаунт. Ако желаете да продължите "
+"Горещо се препоръчва да създадете личен акаунт.  Ако желаете да продължите "
 "без акаунт, може да влизате с root акаунта, които е запазен само за "
 "административно използване."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
-msgstr "_Продължаване"
+msgstr "_Продължение"
 
 #: ../src/modules/create_user.py:167
 msgid "Create _account"
@@ -260,15 +260,15 @@ msgstr "Създаване на _акаунт"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Паролите не съвпадат. Моля въведете паралота отново."
+msgstr "Паролите не съвпадат.  Моля въведете паролата отново."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Паролата е много къса. Моля, използвайте поне 6 символа."
+msgstr "Паролата е много къса.  Моля използвайте поне 6 символа."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
-msgstr "Потребителското име трябва да бъде по-малко от 33 символа."
+msgstr "Потребителското име трябва да бъде по-късо от 33 символа."
 
 #: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
@@ -281,8 +281,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Потребителското име %s съдържа whitespace. Моля, не използвайте whitespace в "
-"потребителското име."
+"Потребителското име %s съдържа празни символи.  Моля не ги ползвайте "
+"в потребителското име."
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -290,8 +290,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Потребителското име %s съдържа символи за пунктуация. Моля, не използвайте "
-"символи за пунктуация в потребителското име."
+"Потребителското име %s съдържа пунктуационни символи.  Моля не ги "
+"ползвайте в потребителското име."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -299,8 +299,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Потребителското име %s съдържа символи от горния регистър. Моля, не "
-"използвайте символи от горния регистър в потребителското име."
+"Потребителското име %s съдържа главни букви.  Моля не ги "
+"ползвайте в потребителското име."
 
 #: ../src/modules/create_user.py:312
 #, python-format
@@ -308,21 +308,17 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Потребителското име %s съдържа невалидни символи. Моля, не използвайте "
-"невалидни символи в потребителското име."
+"Потребителското име %s съдържа невалидни символи.  Моля ползвайте "
+"само ASCII символи."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Паролата съдържа невалидни символи.  Моля ползвайте само ASCII символи."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Името %s съдържа невалидни символи.  Моля ползвайте само ASCII символи."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -330,7 +326,7 @@ msgstr "Дата и време"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr "Моля, установете дата и времето на системата."
+msgstr "Моля установете дата и времето на системата."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -338,9 +334,7 @@ msgstr "Екран"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
-"Моля, изберете резолюцията и цветовата наситеност, която желаете да се "
-"използва"
+msgstr "Моля изберете резолюция и дълбочина на цвета които желаете да ползвате"
 
 #: ../src/modules/finished.py:21
 msgid "Finish Setup"
@@ -351,15 +345,12 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Вашата система е готова за използване. Моля натиснете бутона \"Следващ\" в "
-"долния десен ъгъл за да продължите."
+"Вашата система е готова за използване.  Моля натиснете бутона \"Следващ\" "
+"в долния десен ъгъл за да продължите."
 
 #: ../src/modules/finished.py:38
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Вашата система е готова за използване. Моля натиснете бутона \"Следващ\" в "
-"долния десен ъгъл за да продължите."
+msgstr "Моля натиснете бутона \"Следващ\" в долния десен ъгъл за да продължите."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -375,7 +366,7 @@ msgstr "Мрежови устройства"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr "Портокол за начално зареждане"
+msgstr "Портокол за зареждане"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
@@ -401,7 +392,7 @@ msgid ""
 "will be in the center."
 msgstr ""
 "Моля натиснете бутона \"Просвирване на тестов звук\" за да чуете примерен "
-"звук. Би трябвало да се пусне серия от три звука. Първия ще бъде от десния "
+"звук.  Би трябвало да се пусне серия от три звука.  Първия ще бъде от десния "
 "канал, втория от левия канал и третия от центъра."
 
 #: ../src/modules/timezone.py:47
@@ -410,7 +401,7 @@ msgstr "Часови пояс"
 
 #: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
-msgstr "Моля, задайте часовия пояс на системата."
+msgstr "Моля задайте часовия пояс на системата."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -418,9 +409,10 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Няколко допълнителни стъпки са нужни за да приготвите системата за работа. "
-"Агента за установяване ще Ви преведе през базовите конфигурации. Моля, "
+"Няколко допълнителни стъпки са нужни за да приготвите системата за работа.  "
+"Агента за настройка ще Ви преведе през базовите конфигурации.  Моля "
 "натиснете бутон \"Следващ\" в долния десен ъгъл за да продължите."
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot не може да се стартира в ниво (runlevel) 3"
+
