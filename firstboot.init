@@ -37,7 +37,7 @@ case "$1" in
  	rm -f /var/lock/subsys/reconfig
  	;;
  *)
- 	echo "Usage: reconfig {start|stop}"
+	/usr/sbin/firstboot
 	exit 1
 	;;
 esac

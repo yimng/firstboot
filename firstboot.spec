@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.1.0
-Release: 5
+Release: 6
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -62,8 +62,9 @@ fi
 
 
 %changelog
-* Tue May 28 2002 Brent Fox <bfox@redhat.com> 0.1.0-5
+* Tue May 28 2002 Brent Fox <bfox@redhat.com> 0.1.0-6
 - Rebuild for completeness
+- Fix bug in init script
 
 * Sun May 26 2002 Brent Fox <bfox@redhat.com> 0.1.0-4
 - Get startup scripts ready to go
