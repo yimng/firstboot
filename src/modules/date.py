@@ -28,7 +28,7 @@ import time
 import functions
 
 sys.path.append('/usr/share/system-config-date/')
-import date_gui
+import mainWindow
 import dateBackend
 
 from rhpl.firstboot_gui_window import FirstbootGuiWindow
@@ -52,24 +52,12 @@ class TimeWindow(FirstbootGuiWindow):
     def getNext(self):
         pass
 
-    def custom_handler (self, glade, function_name, widget_name, str1, str2, int1, int2):
-        if date_gui.custom_widgets.has_key(function_name):
-            return date_gui.custom_widgets[function_name] ()
-
-    
     def setupScreen(self):
         #Initialize date backend
         self.dateBackend = dateBackend.dateBackend()
 
-        # hmm, call the hook to generate the custom widgets on datePage
-        gtk.glade.set_custom_handler(self.custom_handler)
-        
-        #Initialize datePage and pass dateBackend into it
-        self.xml = gtk.glade.XML("/usr/share/system-config-date/system-config-date.glade", "vbox2", domain="system-config-date")
-        self.datePage = date_gui.datePage(self.dateBackend, self.xml)
-        # a date_gui.datePage.getVBox would be better here, but thats broken atm
-        self.datePageVBox = self.datePage.getVBox()
- 
+        self.datePage = mainWindow.childWindow()
+        self.datePageNotebook = self.datePage.launch()
 
         #Add icon to the top frame
         self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
@@ -84,7 +72,7 @@ class TimeWindow(FirstbootGuiWindow):
         messageLabel.set_alignment(0.0, 0.5)
 
         internalVBox.pack_start(messageLabel, gtk.FALSE)
-        internalVBox.pack_start(self.datePageVBox, gtk.TRUE)
+        internalVBox.pack_start(self.datePageNotebook, gtk.TRUE)
         self.mainVBox.pack_start(internalVBox, gtk.TRUE)
 
     def launch(self, doDebug=None):
@@ -224,6 +212,7 @@ class TimeWindow(FirstbootGuiWindow):
             return 0
 
     def grabFocus(self):
-        self.datePage.updateSpinButtons()
+        pass
+#        self.datePage.updateSpinButtons()
 
 childWindow = TimeWindow
