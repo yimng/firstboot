@@ -63,14 +63,18 @@ class childWindow:
             label.set_alignment(0.0, 0.5)
             internalVBox.pack_start(label, FALSE, TRUE)
 
-            launchButton = gtk.Button(_("Start the Red Hat Update Agent"))
+            radioBox = gtk.VBox()
+
+            self.radioYes = gtk.RadioButton(None, _("Yes, I would like to register with Red Hat Network"))
+            radioNo = gtk.RadioButton(self.radioYes, _("No, I do not want to register my system."))
+
+            radioBox.pack_start(self.radioYes, gtk.FALSE)
+            radioBox.pack_start(radioNo, gtk.FALSE)
+
             a = gtk.Alignment()
-            a.add(launchButton)            
+            a.add(radioBox)
             a.set(0.3, 0.0, 0.3, 0.5)
-
-            internalVBox.pack_start(a, gtk.FALSE, padding=10)
-
-            launchButton.connect("clicked", self.up2date)
+            internalVBox.pack_start(a, FALSE, padding=10)
 
             self.vbox.pack_start(internalVBox, TRUE)
 
@@ -78,23 +82,16 @@ class childWindow:
         except:
             return
 
-    def up2date(self, *args):
-        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
-_("This feature is not yet implemented.  Please do not report bugs about this button."))
-        dlg.set_title(_("Error"))
-        dlg.set_default_size(100, 100)
-        dlg.set_position (gtk.WIN_POS_CENTER)
-        dlg.set_border_width(2)
-        dlg.set_modal(gtk.TRUE)
-        rc = dlg.run()
-        dlg.destroy()
+    def run_up2date(self, *args):
+        #Run rhn_register so they can register with RHN
+        path = "/usr/sbin/up2date"
+        fd = os.popen(path)
+        fd.close()
 
-##         win = os.fork()
-
-##         if (not win):
-##             print "launching up2date"
-##             path = "/usr/sbin/up2date"
-##             os.execv(path, [""])
-            
     def apply(self, notebook):
+        # If they want to register, then kick off rhn_register.  If not, then pass
+        if self.radioYes.get_active() == gtk.TRUE:            
+            #We can ping www.redhat.com, so the network is active
+            self.run_up2date()
         return 1
+            
