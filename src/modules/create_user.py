@@ -284,7 +284,7 @@ class childWindow:
         for i in str:
             if i == "_" or i == "-":
                 #specifically allow "_" and "-"
-                return 1
+                continue
 
             if i in string.whitespace:
                 #Check for whitespace
