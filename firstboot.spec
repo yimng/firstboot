@@ -50,14 +50,17 @@ fi
 #%doc COPYING
 #%doc doc/*
 %dir /usr/share/firstboot/
-
+%config /etc/rc.d/init.d/firstboot
 /usr/share/firstboot/*
 /usr/sbin/firstboot
+
+
 
 %changelog
 * Sun May 26 2002 Brent Fox <bfox@redhat.com> 0.1.0-4
 - Get startup scripts ready to go
 - Prepare package for placement into newest tree
+- Install init script into correct place
 
 * Tue Nov 28 2001 Brent Fox <bfox@redhat.com>
 - initial coding and packaging

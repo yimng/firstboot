@@ -22,6 +22,7 @@ subdirs:
 
 install:
 	mkdir -p $(INSTROOT)/usr/sbin
+	mkdir -p $(INSTROOT)/etc/rc.d/init.d
 	mkdir -p $(INSTROOT)$(PKGDATADIR)
 	mkdir -p $(INSTROOT)$(PAMD_DIR)
 	mkdir -p $(INSTROOT)$(SECURITY_DIR)
@@ -32,6 +33,7 @@ install:
 #		sed -e s,@VERSION@,$(VERSION),g $${py} > $(INSTROOT)$(PKGDATADIR)/`basename $${py}` ; \
 #	done
 
+	cp -a firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
 	install src/modules/*.py $(INSTROOT)$(PKGDATADIR)/modules
 	install src/pixmaps/*.png $(INSTROOT)$(PKGDATADIR)/pixmaps
 #	install src/${PKGNAME} $(INSTROOT)$(PKGDATADIR)/${PKGNAME}
