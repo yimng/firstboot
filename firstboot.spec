@@ -59,7 +59,7 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Wed June 12 2002 Brent Fox <bfox@redhat.com> 0.2.0-3
+* Wed Jun 12 2002 Brent Fox <bfox@redhat.com> 0.2.0-3
 - Fixed a string error in the welcome module
 
 * Fri May 31 2002 Brent Fox <bfox@redhat.com> 0.2.0-2

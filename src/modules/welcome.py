@@ -18,7 +18,7 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        label = gtk.Label("Welcome to Red Hat Linux Beta One!")
+        label = gtk.Label("Welcome to Red Hat Linux Beta!")
         label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
         titleBox = gtk.HBox()
