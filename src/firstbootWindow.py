@@ -67,6 +67,7 @@ class firstbootWindow:
         self.moduleList = []
         self.moduleDict = {}
 
+	self.nextPage = None
         # Create the initial window and a vbox to fill it with.
         self.win = gtk.Window()
         self.win.connect("destroy", self.destroy)
@@ -127,10 +128,11 @@ class firstbootWindow:
         # Create the notebook.  We use a ListView to control which page in the
         # notebook is displayed.
         self.notebook = gtk.Notebook()
-
         if self.doDebug:
             print "starting firstbootWindow", doReconfig, doDebug                    
-            self.modulePath = ('modules/')
+            #self.modulePath = ('modules/')
+	    self.modulePath = ('/usr/src/rhn/up2date/firstboot')
+	    #self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)            
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_scrollable(gtk.TRUE)
@@ -205,6 +207,8 @@ class firstbootWindow:
         self.nextButton.grab_focus()
         gtk.main()
 
+    def setPage(self, modulename):
+	self.nextPage = self.moduleNameToNotebookIndex[modulename]
 
     def destroy(self, *args):
         #Exit the GTK loop
@@ -262,7 +266,6 @@ class firstbootWindow:
 
         if self.autoscreenshot != None:
             self.takeScreenShot()
-
         result = None
         #Call the apply method if it exists
         try:
@@ -276,8 +279,13 @@ class firstbootWindow:
             pass
 
         if result != None:
-            self.notebook.next_page()
-            module = self.moduleList[self.notebook.get_current_page()]
+	    if self.nextPage:
+		self.notebook.set_current_page(self.nextPage)
+		module = self.moduleList[self.nextPage]
+		self.nextPage = None
+	    else:
+		self.notebook.next_page()
+                module = self.moduleList[self.notebook.get_current_page()]
             #Call setPointer to make the left hand pointer move to the correct pointer
             self.setPointer(self.notebook.get_current_page())
 
@@ -368,8 +376,11 @@ class firstbootWindow:
 
             # XXX - hack to allow firstboot to pass in the parent class into language
             # this will allow the language module to change firstboot's current locale
-            if module == "language":
-                obj.passInParent(self)
+	    if module == "language" or hasattr(obj, "needsparent"):
+		obj.passInParent(self)
+#            if module in ["language", "rhn_login_gui", "rhn_optout_gui",
+#			 "rhn_activate_gui", "rhn_newaccount_gui"]:
+#                obj.passInParent(self)
 
             # If the module defines a moduleClass, it has to match the mode
             # we're starting up in, otherwise it's always used.  Add it to
@@ -398,6 +409,7 @@ class firstbootWindow:
 
 	# Add the modules to the proper lists.
         pages = 0
+	self.moduleNameToNotebookIndex = {}
         for priority in modulePriorityList:
             # Add the module to the list of modules.
             module = self.moduleDict[priority]
@@ -450,6 +462,7 @@ class firstbootWindow:
 
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
+		    self.moduleNameToNotebookIndex[module.moduleName] = pages
                     self.notebook.append_page(vbox, gtk.Label(_(module.moduleName)))
                     hbox = gtk.HBox(gtk.FALSE, 5)
                     pix = functions.imageFromFile("pointer-blank.png")
@@ -462,6 +475,7 @@ class firstbootWindow:
                     self.leftLabelVBox.pack_start(hbox, gtk.FALSE, gtk.TRUE, 3)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
+		    self.moduleNameToNotebookIndex["unamemodule-%s" % pages] = pages
                 pages = pages + 1
         
     def clearNotebook(self):
