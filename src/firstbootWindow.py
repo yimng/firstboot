@@ -52,9 +52,9 @@ class firstbootWindow:
             al = gtk.Alignment (0.5, 0.5, 0.0, 0.0)
             self.win.add (al)
             self.win.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#000000"))
-            ev = gtk.EventBox ()
-            al.add(ev)
-            ev.add (mainVBox)
+            eb = gtk.EventBox ()
+            al.add(eb)
+            eb.add (mainVBox)
 
 
         if gtk.gdk.screen_width() >= 800:            
@@ -268,10 +268,11 @@ class firstbootWindow:
                 self.win.realize()
                 self.win.set_app_paintable(gtk.TRUE)
                 self.win.window.set_back_pixmap (bgimage, gtk.FALSE)
-            else:
-                ev.realize()
-                ev.set_app_paintable(gtk.TRUE)
-                ev.window.set_back_pixmap (bgimage, gtk.FALSE)
+#            else:
+#                self.win.realize()
+#                eb.realize()
+#                eb.connect("expose_event", self.preventExpose)
+#                eb.window.set_back_pixmap (bgimage, gtk.FALSE)
 
         # Show the main window and go for it.
         if self.doDebug:
@@ -280,6 +281,11 @@ class firstbootWindow:
         self.win.show_all()
         self.nextButton.grab_focus()
         gtk.main()
+
+#    def preventExpose(self, eb, event):
+#        if event.window == eb.window:
+#            return 1
+#        return 0
 
     def destroy(self, *args):
         #Exit the GTK loop
