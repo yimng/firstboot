@@ -72,7 +72,7 @@ fi
 
 %changelog
 * Mon Feb 24 2003 Nalin Dahyabhai <nalin@redhat.com>
-- compare text to string.whitespace, not whitespace (#85047)
+- compare text to string.whitespace, not whitespace (#85038)
 
 * Mon Feb 24 2003 Brent Fox <bfox@redhat.com> 1.0.5-9
 - apply initscript patch from mikem@redhat.com.  Avoids calling telinit (bug #84848)
