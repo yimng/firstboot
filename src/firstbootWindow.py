@@ -140,7 +140,7 @@ class firstbootWindow:
                     label.set_alignment(0.0, 0.5)
                     hbox.pack_start(pix, gtk.FALSE)
                     hbox.pack_end(label, gtk.TRUE)
-                    self.leftLabelVBox.pack_start(hbox, gtk.FALSE, 5)
+                    self.leftLabelVBox.pack_start(hbox, gtk.FALSE, gtk.TRUE, 3)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
                 pages = pages + 1
