@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-15 13:47-0400\n"
+"POT-Creation-Date: 2004-11-10 16:47-0500\n"
 "PO-Revision-Date: 2004-09-10 23:49+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -76,76 +76,81 @@ msgstr ""
 "bestand als bijlage te voegen bij het fout-rapport. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
 msgstr "_Terug"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
 msgid "_Next"
 msgstr "_Volgende"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Welkom"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "importeren van module %s is mislukt: %s"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:36
+#, fuzzy
+msgid "Licence Aggrement"
+msgstr "Gebruiksovereenkomst"
+
+#: ../src/textWindow.py:37
 msgid "Authentication"
 msgstr "Authenticatie"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:38
 msgid "Firewall configuration"
 msgstr "Firewall configuratie"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:39
 msgid "Keyboard configuration"
 msgstr "Toetsenbord configuratie"
 
 # aanpassen ipv veranderen misschien beter?
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:40
 msgid "Network configuration"
 msgstr "Netwerk configuratie"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:41
 msgid "Printer configuration"
 msgstr "Printer configuratie"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:42
 msgid "System services"
 msgstr "Systeem voorzieningen"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:43
 msgid "Sound card configuration"
 msgstr "Geluidskaart configuratie"
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:44
 msgid "Timezone configuration"
 msgstr "Tijdzone configuratie"
 
 # vertaling (?)
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:52
 msgid "Run Tool"
 msgstr "Start programma"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:54
 msgid "Select the item that you wish to modify "
 msgstr "Selecteer het onderdeel dat u wilt wijzigen "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:60
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
+#: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
 msgstr "Extra CD's"
 
-#: ../src/modules/additional_cds.py:60
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -154,7 +159,7 @@ msgid ""
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
 "\n"
@@ -163,29 +168,29 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:111
+#: ../src/modules/additional_cds.py:110
 msgid "Install..."
 msgstr "Installeren..."
 
-#: ../src/modules/additional_cds.py:146
+#: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
 "Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
 
-#: ../src/modules/additional_cds.py:180
+#: ../src/modules/additional_cds.py:179
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Het 'autorun' programma kan niet worden gevonden op de CD. Klik op \"OK\" om "
 "door te gaan."
 
-#: ../src/modules/create_user.py:39
+#: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "Systeem gebruiker"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:70
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -196,24 +201,24 @@ msgstr ""
 "(dus geen systeembeheer) een persoonlijk account aan te maken. Om een "
 "persoonlijk account aan te maken, moet u de gevraagde informatie leveren."
 
-#: ../src/modules/create_user.py:75
+#: ../src/modules/create_user.py:80
 msgid "_Username:"
 msgstr "_Gebruikersnaam:"
 
-#: ../src/modules/create_user.py:82
+#: ../src/modules/create_user.py:87
 msgid "Full Nam_e:"
 msgstr "_Volledige naam:"
 
-#: ../src/modules/create_user.py:89
+#: ../src/modules/create_user.py:94
 msgid "_Password:"
 msgstr "_Wachtwoord:"
 
-#: ../src/modules/create_user.py:96
+#: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
 msgstr "Wachtwoord _bevestigen:"
 
 # de 'X' knop is niet mooi: beter: de knop 'X'
-#: ../src/modules/create_user.py:112
+#: ../src/modules/create_user.py:117
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -221,11 +226,11 @@ msgstr ""
 "Als u netwerk authenticatie wilt gebruiken, zoals Kerberos of NIS, klik dan "
 "op de knop: Netwerk login gebruiken."
 
-#: ../src/modules/create_user.py:122
+#: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "_Netwerk login gebruiken..."
 
-#: ../src/modules/create_user.py:158
+#: ../src/modules/create_user.py:163
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -235,33 +240,33 @@ msgstr ""
 "doorgaat zonder account, kunt u zich alleen aanmelden met het root-account "
 "hetgeen alleen bedoeld is voor systeembeheer."
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:171
 msgid "_Continue"
 msgstr "_Doorgaan"
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:172
 msgid "Create _account"
 msgstr "_Account aanmaken"
 
-#: ../src/modules/create_user.py:193
+#: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "De wachtwoorden komen niet overeen. Voer het wachtwoord nogmaals in."
 
-#: ../src/modules/create_user.py:201
+#: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Het wachtwoord is te kort. Gebruik minimaal 6 tekens."
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
 msgstr "De gebruikersnaam moet korter zijn dan 33 tekens."
 
-#: ../src/modules/create_user.py:279
+#: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
 msgstr "De gebruikersnaam mag niet met een getal beginnen."
 
 # BUG: ? in the %s ?
 #. Check for whitespace
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:296
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -270,7 +275,7 @@ msgstr ""
 "De gebruikersnaam '%s' bevat spaties of tabs. Gebruik deze niet in de "
 "gebruikersnaam."
 
-#: ../src/modules/create_user.py:298
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -279,7 +284,7 @@ msgstr ""
 "De gebruikersnaam '%s' bevat leestekens. Gebruik geen leestekens in de "
 "gebruikersnaam."
 
-#: ../src/modules/create_user.py:305
+#: ../src/modules/create_user.py:310
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -288,7 +293,7 @@ msgstr ""
 "De gebruikersnaam '%s' bevat hoofdletters. Gebruik geen hoofdletters in de "
 "gebruikersnaam."
 
-#: ../src/modules/create_user.py:312
+#: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -296,39 +301,39 @@ msgid ""
 msgstr ""
 "De gebruikersnaam '%s' bevat ongeldige tekens. Gebruik alleen ASCII-tekens."
 
-#: ../src/modules/create_user.py:322
+#: ../src/modules/create_user.py:327
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Het wachtwoord bevat ongeldige tekens. Gebruik alleen ASCII-tekens."
 
-#: ../src/modules/create_user.py:334
+#: ../src/modules/create_user.py:339
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "De naam '%s' bevat ongeldige tekens. Gebruik alleen ASCII-tekens."
 
-#: ../src/modules/date.py:47
+#: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Datum en tijd"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
 msgstr "Stel de datum en de tijd in voor het systeem."
 
-#: ../src/modules/display.py:45
+#: ../src/modules/display.py:44
 msgid "Display"
 msgstr "Beeldscherm"
 
-#: ../src/modules/display.py:48
+#: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Selecteer de resolutie en de kleurdiepte die u wilt gebruiken"
 
-#: ../src/modules/finished.py:21
+#: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Setup voltooien"
 
 # BUG: Forward is verwarrend, moet Continue zijn of Next
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -337,47 +342,47 @@ msgstr ""
 "knop rechts onder in het scherm om door te gaan."
 
 # BUG: Forward is verwarrend, moet Continue zijn of Next
-#: ../src/modules/finished.py:38
+#: ../src/modules/finished.py:36
 #, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Uw systeem is nu ingesteld en klaar voor gebruik. Klik op de \"Volgende\" "
 "knop rechts onder in het scherm om door te gaan."
 
-#: ../src/modules/networking.py:44
+#: ../src/modules/networking.py:42
 msgid "Network Setup"
 msgstr "Netwerk instellingen"
 
-#: ../src/modules/networking.py:70
+#: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
 msgstr "De volgende netwerkapparaten zijn op uw systeem gevonden:"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:87
 msgid "Network Device"
 msgstr "Netwerkapparaat"
 
-#: ../src/modules/networking.py:91
+#: ../src/modules/networking.py:89
 msgid "Boot protocol"
 msgstr "Opstart protocol"
 
 # aanpassen ipv veranderen misschien beter?
-#: ../src/modules/networking.py:97
+#: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
 msgstr "Netwerk_configuratie veranderen..."
 
-#: ../src/modules/networking.py:140
+#: ../src/modules/networking.py:138
 msgid "static"
 msgstr "statisch"
 
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "Geluidskaart"
 
-#: ../src/modules/soundcard_gui.py:48
+#: ../src/modules/soundcard_gui.py:47
 msgid "A sound card has been detected on your computer."
 msgstr "Er is een geluidskaart gedetecteerd in uw computer."
 
-#: ../src/modules/soundcard_gui.py:71
+#: ../src/modules/soundcard_gui.py:70
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -388,15 +393,15 @@ msgstr ""
 "drie geluiden te horen. Het eerste geluid komt uit het rechter kanaal, het "
 "tweede uit het linker kanaal en het derde geluid zal uit het midden komen."
 
-#: ../src/modules/timezone.py:47
+#: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Tijdzone"
 
-#: ../src/modules/timezone.py:51
+#: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
 msgstr "Stel de tijdzone in voor het systeem."
 
-#: ../src/modules/welcome.py:35
+#: ../src/modules/welcome.py:34
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "

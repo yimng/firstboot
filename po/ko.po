@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-15 13:47-0400\n"
+"POT-Creation-Date: 2004-11-10 16:47-0500\n"
 "PO-Revision-Date: 2004-10-18 09:47+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -74,87 +74,92 @@ msgstr ""
 "이 파일을 버그 리포트에 첨부해 주십시오.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
 msgstr "뒤로(_B)"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
 msgid "_Next"
 msgstr "다음(_N)"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "환영합니다"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s 모듈 가져오기에 실패했습니다: %s"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:36
+#, fuzzy
+msgid "Licence Aggrement"
+msgstr "사용 계약서"
+
+#: ../src/textWindow.py:37
 msgid "Authentication"
 msgstr "인증"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:38
 msgid "Firewall configuration"
 msgstr "방화벽 설정 "
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:39
 msgid "Keyboard configuration"
 msgstr "키보드 설정"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:40
 msgid "Network configuration"
 msgstr "네트워크 설정 "
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:41
 msgid "Printer configuration"
 msgstr "프린터 설정"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:42
 msgid "System services"
 msgstr "시스템 서비스"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:43
 msgid "Sound card configuration"
 msgstr "사운드 카드 설정"
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:44
 msgid "Timezone configuration"
 msgstr "시간대 설정"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:52
 msgid "Run Tool"
 msgstr "도구 실행"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:54
 msgid "Select the item that you wish to modify "
 msgstr "수정할 항목을 선택해 주십시오 "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:60
 msgid "Setup Agent"
 msgstr "설정 에이전트"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
+#: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
 msgstr "추가 CD"
 
-#: ../src/modules/additional_cds.py:60
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"\"Red Hat Enterprise Linux 추가\" 디스크를 삽입하여 "
-"제삼자 플러그인과 응용 프로그램을 설치하실 수 있습니다. "
-"문서 자료 디스크를 설치하거나, 또는 Red Hat에서 제공한 기타 다른 디스크를 "
-"이용하여 언제든지 추가 소프트웨어를 설치 가능합니다."
+"\"Red Hat Enterprise Linux 추가\" 디스크를 삽입하여 제삼자 플러그인과 응용 프"
+"로그램을 설치하실 수 있습니다. 문서 자료 디스크를 설치하거나, 또는 Red Hat에"
+"서 제공한 기타 다른 디스크를 이용하여 언제든지 추가 소프트웨어를 설치 가능합"
+"니다."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
 "\n"
@@ -164,14 +169,14 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 아키텍쳐에서 32 비트 응용 프로그램을 런타임 지원하려면, "
-"추가 시디에서 Intel Execution Layer 패키지를 지금 설치하셔야 합니다."
+"Intel Itanium2 아키텍쳐에서 32 비트 응용 프로그램을 런타임 지원하려면, 추가 "
+"시디에서 Intel Execution Layer 패키지를 지금 설치하셔야 합니다."
 
-#: ../src/modules/additional_cds.py:111
+#: ../src/modules/additional_cds.py:110
 msgid "Install..."
 msgstr "설치..."
 
-#: ../src/modules/additional_cds.py:146
+#: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -179,42 +184,43 @@ msgstr ""
 "CD-ROM이 감지되지 않았습니다.  CD-ROM을 드라이브에 삽입하신 후 \"확인\" 버튼"
 "을 클릭하여 계속 진행해 주십시오."
 
-#: ../src/modules/additional_cds.py:180
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:179
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
 
-#: ../src/modules/create_user.py:39
+#: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "시스템 사용자"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:70
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"(관리자 계정이 아닌) 일반d 사용자 계정을생성하시기길 권장합니다다."
-"시스템 '사용자 계정'을  만드시려면,아래에  요청된 정보를 기입해 주십시오."
+"(관리자 계정이 아닌) 일반d 사용자 계정을생성하시기길 권장합니다다.시스템 '사"
+"용자 계정'을  만드시려면,아래에  요청된 정보를 기입해 주십시오."
 
-#: ../src/modules/create_user.py:75
+#: ../src/modules/create_user.py:80
 msgid "_Username:"
 msgstr "사용자명(_U):"
 
-#: ../src/modules/create_user.py:82
+#: ../src/modules/create_user.py:87
 msgid "Full Nam_e:"
 msgstr "이름(_E):"
 
-#: ../src/modules/create_user.py:89
+#: ../src/modules/create_user.py:94
 msgid "_Password:"
 msgstr "암호(_P):"
 
-#: ../src/modules/create_user.py:96
+#: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
 msgstr "암호 확인(_M):"
 
-#: ../src/modules/create_user.py:112
+#: ../src/modules/create_user.py:117
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -222,11 +228,11 @@ msgstr ""
 "커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
 "을 클릭해 주십시오."
 
-#: ../src/modules/create_user.py:122
+#: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "네트워크 로그인 사용(_L)..."
 
-#: ../src/modules/create_user.py:158
+#: ../src/modules/create_user.py:163
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -236,32 +242,32 @@ msgstr ""
 "행하신다면, 관리자 용으로만 사용되는 루트 계정을 사용하여 로그인하셔야 합니"
 "다."
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:171
 msgid "_Continue"
 msgstr "계속 진행(_C)"
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:172
 msgid "Create _account"
 msgstr "계정 만들기(_A)"
 
-#: ../src/modules/create_user.py:193
+#: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
-#: ../src/modules/create_user.py:201
+#: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
 msgstr "사용자명은 33 문자를 넘어서는 안됩니다."
 
-#: ../src/modules/create_user.py:279
+#: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
 msgstr "사용자명은 숫자로 시작해서는 안됩니다."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:296
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -270,7 +276,7 @@ msgstr ""
 "사용자명 '%s'에 공백이 포함되어 있습니다.  사용자명에 공백을 포함시키지 마십"
 "시오."
 
-#: ../src/modules/create_user.py:298
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -279,7 +285,7 @@ msgstr ""
 "사용자명 '%s'에 구두점이 포함되어 있습니다.  사용자명에 구두점을 사용하지 마"
 "십시오."
 
-#: ../src/modules/create_user.py:305
+#: ../src/modules/create_user.py:310
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -288,7 +294,7 @@ msgstr ""
 "사용자명 '%s'에 대문자가 포함되어 있습니다.  사용자명에 대문자를 사용하지 마"
 "십시오."
 
-#: ../src/modules/create_user.py:312
+#: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -297,38 +303,41 @@ msgstr ""
 "사용자명 '%s'에 잘못된 문자가 포함되어 있습니다.  사용자명에 ASCII 문자만 사"
 "용하시기 바랍니다."
 
-#: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+#: ../src/modules/create_user.py:327
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
-#: ../src/modules/create_user.py:334
+#: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
 
-#: ../src/modules/date.py:47
+#: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "날짜와 시간"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
 msgstr "시스템 날짜와 시간을 설정해 주십시오."
 
-#: ../src/modules/display.py:45
+#: ../src/modules/display.py:44
 msgid "Display"
 msgstr "화면 표시"
 
-#: ../src/modules/display.py:48
+#: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "사용할 해상도와 색상수를 선택해 주십시오."
 
-#: ../src/modules/finished.py:21
+#: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "설정 완료"
 
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -336,43 +345,45 @@ msgstr ""
 "시스템 설정이 완료되어 이제 사용하실 수 있습니다.  다음 단계로 계속 진행하시"
 "려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
 
-#: ../src/modules/finished.py:38
+#: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "다음 단계로 계속 진행하시려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
+msgstr ""
+"다음 단계로 계속 진행하시려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클"
+"릭해 주십시오."
 
-#: ../src/modules/networking.py:44
+#: ../src/modules/networking.py:42
 msgid "Network Setup"
 msgstr "네트워크 설정"
 
-#: ../src/modules/networking.py:70
+#: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
 msgstr "다음과 같은 네트워크 장치가 시스템에서 검색되었습니다:"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:87
 msgid "Network Device"
 msgstr "네트워크 장치"
 
-#: ../src/modules/networking.py:91
+#: ../src/modules/networking.py:89
 msgid "Boot protocol"
 msgstr "부트 프로토콜"
 
-#: ../src/modules/networking.py:97
+#: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
 msgstr "네트워크 설정 변경(_C)..."
 
-#: ../src/modules/networking.py:140
+#: ../src/modules/networking.py:138
 msgid "static"
 msgstr "정적"
 
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "사운드 카드"
 
-#: ../src/modules/soundcard_gui.py:48
+#: ../src/modules/soundcard_gui.py:47
 msgid "A sound card has been detected on your computer."
 msgstr "사운드 카드가 검색되었습니다."
 
-#: ../src/modules/soundcard_gui.py:71
+#: ../src/modules/soundcard_gui.py:70
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -383,15 +394,15 @@ msgstr ""
 "세가지 사운드가 들릴 것입니다. 첫번째 사운드는 오른쪽 채널, 두번째 사운드는 "
 "왼쪽 채널, 그리고 세번째 사운드는 중앙에서 재생됩니다."
 
-#: ../src/modules/timezone.py:47
+#: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "시간대"
 
-#: ../src/modules/timezone.py:51
+#: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
 msgstr "시스템에 맞는 시간대를 선택해 주십시오."
 
-#: ../src/modules/welcome.py:35
+#: ../src/modules/welcome.py:34
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -778,4 +789,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-

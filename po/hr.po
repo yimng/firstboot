@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-15 13:47-0400\n"
+"POT-Creation-Date: 2004-11-10 16:47-0500\n"
 "PO-Revision-Date: 2003-12-15 22:29+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -72,81 +72,86 @@ msgstr ""
 "Tu datoteku prikvačite uz vaš izvještaj o grešci. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
 msgstr "_Nazad"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
 msgid "_Next"
 msgstr "_Sljedeći"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Dobrodošli"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:36
+#, fuzzy
+msgid "Licence Aggrement"
+msgstr "Licencni dogovor"
+
+#: ../src/textWindow.py:37
 msgid "Authentication"
 msgstr "Provjera vjerodostojnosti"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:38
 #, fuzzy
 msgid "Firewall configuration"
 msgstr "Postavke vatrozida "
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:39
 #, fuzzy
 msgid "Keyboard configuration"
 msgstr "Postavke tipkovnice "
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:40
 #, fuzzy
 msgid "Network configuration"
 msgstr "Postavke mreže "
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:41
 #, fuzzy
 msgid "Printer configuration"
 msgstr "Postavke pisača "
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:42
 #, fuzzy
 msgid "System services"
 msgstr "Servisi sustava "
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:43
 #, fuzzy
 msgid "Sound card configuration"
 msgstr "Postavke zvučne kartice "
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:44
 #, fuzzy
 msgid "Timezone configuration"
 msgstr "Postavke vremenske zone "
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:52
 msgid "Run Tool"
 msgstr "Pokreni alat"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:54
 msgid "Select the item that you wish to modify "
 msgstr "Označite stavku koju želite izmijeniti "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:60
 msgid "Setup Agent"
 msgstr "Agent postavki"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
+#: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
 msgstr "Dodatni CD-i"
 
-#: ../src/modules/additional_cds.py:60
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -155,7 +160,7 @@ msgid ""
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
 "\n"
@@ -164,11 +169,11 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:111
+#: ../src/modules/additional_cds.py:110
 msgid "Install..."
 msgstr "Instaliraj..."
 
-#: ../src/modules/additional_cds.py:146
+#: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -176,18 +181,18 @@ msgstr ""
 "CD-ROM nije nađen. Molim ubacite CD-ROM u vaš CD-ROM pogon i kliknite \"U "
 "redu\" za nastavak."
 
-#: ../src/modules/additional_cds.py:180
+#: ../src/modules/additional_cds.py:179
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Program autorun se ne može naći na cd-u. Za nastavak pritisnite \"U redu\"."
 
-#: ../src/modules/create_user.py:39
+#: ../src/modules/create_user.py:43
 #, fuzzy
 msgid "System User"
 msgstr "Servisi sustava "
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:70
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -198,23 +203,23 @@ msgstr ""
 "administrativnu) uporabu. Da biste stvorili osobni račun, morate "
 "datiodgovarajuće podatke."
 
-#: ../src/modules/create_user.py:75
+#: ../src/modules/create_user.py:80
 msgid "_Username:"
 msgstr "_Korisničko ime:"
 
-#: ../src/modules/create_user.py:82
+#: ../src/modules/create_user.py:87
 msgid "Full Nam_e:"
 msgstr "Puno im_e:"
 
-#: ../src/modules/create_user.py:89
+#: ../src/modules/create_user.py:94
 msgid "_Password:"
 msgstr "_Lozinka:"
 
-#: ../src/modules/create_user.py:96
+#: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
 msgstr "_Potvrdi lozinku:"
 
-#: ../src/modules/create_user.py:112
+#: ../src/modules/create_user.py:117
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -222,11 +227,11 @@ msgstr ""
 "Ako trebate koristiti mrežnu autentifikaciju poput Kerberosa ili NISa, molim "
 "kliknite na gumb Koristi mrežnu prijavu."
 
-#: ../src/modules/create_user.py:122
+#: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "Koristi _mrežnu prijavu..."
 
-#: ../src/modules/create_user.py:158
+#: ../src/modules/create_user.py:163
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -236,32 +241,32 @@ msgstr ""
 "računa, moći ćete se prijaviti samo sa root korisničkim računom, a on je "
 "rezerviran samoo za administrativnu uporabu."
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:171
 msgid "_Continue"
 msgstr "_Nastavi"
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:172
 msgid "Create _account"
 msgstr "Stvori _korisnički račun"
 
-#: ../src/modules/create_user.py:193
+#: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lozinka ne odgovara. Molim, ponovo unesite lozinku."
 
-#: ../src/modules/create_user.py:201
+#: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lozinka je prekratka. Molim, koristite najmanje 6 znakova."
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
 msgstr "Korisničko ime mora biti kraće od 33 znakova."
 
-#: ../src/modules/create_user.py:279
+#: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
 msgstr "Korisničko ime ne može početi s brojem."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:296
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -270,7 +275,7 @@ msgstr ""
 "Ime korisnika '%s' sadrži razmake. Nemojte koristiti razmake u imenu "
 "korisnika."
 
-#: ../src/modules/create_user.py:298
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -279,7 +284,7 @@ msgstr ""
 "Ime korisnika '%s' sadrži punkcijske znakove. Nemojte koristiti punkcijske "
 "znakove u imenu korisnika."
 
-#: ../src/modules/create_user.py:305
+#: ../src/modules/create_user.py:310
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -288,7 +293,7 @@ msgstr ""
 "Ime korisnika '%s' sadrži velika slova. Nemojte koristiti velika slova u "
 "imenu korisnika."
 
-#: ../src/modules/create_user.py:312
+#: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -297,40 +302,40 @@ msgstr ""
 "Ime korisnika '%s' sadrži nedozvoljene znakove. Molim koristite samo ASCII "
 "znakove."
 
-#: ../src/modules/create_user.py:322
+#: ../src/modules/create_user.py:327
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Lozinka sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
 
-#: ../src/modules/create_user.py:334
+#: ../src/modules/create_user.py:339
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Ime '%s' sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
 
-#: ../src/modules/date.py:47
+#: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Datum i vrijeme"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
 msgstr "Molim, postavite datum i vrijeme za sustav."
 
-#: ../src/modules/display.py:45
+#: ../src/modules/display.py:44
 msgid "Display"
 msgstr "Prikaz"
 
-#: ../src/modules/display.py:48
+#: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Molime, označite razlućivost i kvalitetu boja koju želite koristiti"
 
-#: ../src/modules/finished.py:21
+#: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Završi postavljanje"
 
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -338,46 +343,46 @@ msgstr ""
 "Vaš sustav je podešen i spreman za uporabu. Za nastavak kliknite na gumb "
 "\"Sljedeći\" u donjem desnom kutu."
 
-#: ../src/modules/finished.py:38
+#: ../src/modules/finished.py:36
 #, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Vaš sustav je podešen i spreman za uporabu. Za nastavak kliknite na gumb "
 "\"Sljedeći\" u donjem desnom kutu."
 
-#: ../src/modules/networking.py:44
+#: ../src/modules/networking.py:42
 msgid "Network Setup"
 msgstr "Postavke mreže"
 
-#: ../src/modules/networking.py:70
+#: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
 msgstr "Sljedeći mrežni uređaji su nađeni u ustavu:"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:87
 msgid "Network Device"
 msgstr "Mrežni uređaj"
 
-#: ../src/modules/networking.py:91
+#: ../src/modules/networking.py:89
 msgid "Boot protocol"
 msgstr "Protocol pokretanja sustava"
 
-#: ../src/modules/networking.py:97
+#: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
 msgstr "_Promjeni mrežne postavke..."
 
-#: ../src/modules/networking.py:140
+#: ../src/modules/networking.py:138
 msgid "static"
 msgstr "statično"
 
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "Zvučna kartica"
 
-#: ../src/modules/soundcard_gui.py:48
+#: ../src/modules/soundcard_gui.py:47
 msgid "A sound card has been detected on your computer."
 msgstr "Zvučna kartica je detektirana u vašem računalu."
 
-#: ../src/modules/soundcard_gui.py:71
+#: ../src/modules/soundcard_gui.py:70
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -388,15 +393,15 @@ msgstr ""
 "od tri zvuka. Prvi zvuk je na desnom kanalu, drugi na lijevom kanalu, a "
 "treći u sredini."
 
-#: ../src/modules/timezone.py:47
+#: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Vremenska zona"
 
-#: ../src/modules/timezone.py:51
+#: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
 msgstr "Molim, postavite vremensku zonu za sustav."
 
-#: ../src/modules/welcome.py:35
+#: ../src/modules/welcome.py:34
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "

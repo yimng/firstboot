@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-15 13:47-0400\n"
+"POT-Creation-Date: 2004-11-10 16:47-0500\n"
 "PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -77,74 +77,79 @@ msgstr ""
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
 msgstr "_ย้อนกลับ"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
 msgid "_Next"
 msgstr "_ถัดไป"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:36
+#, fuzzy
+msgid "Licence Aggrement"
+msgstr "การยอมรับสัญญาอนุญาต"
+
+#: ../src/textWindow.py:37
 msgid "Authentication"
 msgstr "การรับรองสิทธิ"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:38
 msgid "Firewall configuration"
 msgstr "ตั้งค่าไฟร์วอลล์"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:39
 msgid "Keyboard configuration"
 msgstr "ตั้งค่าแป้นพิมพ์"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:40
 msgid "Network configuration"
 msgstr "ตั้งค่าเน็ตเวิร์ค"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:41
 msgid "Printer configuration"
 msgstr "ตั้งค่าเครื่องพิมพ์"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:42
 msgid "System services"
 msgstr "การให้บริการ"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:43
 msgid "Sound card configuration"
 msgstr "ตั้งค่าการ์ดเสียง"
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:44
 msgid "Timezone configuration"
 msgstr "ตั้งค่าเขตเวลา"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:52
 msgid "Run Tool"
 msgstr "เรียกใช้เครื่องมือ"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:54
 msgid "Select the item that you wish to modify "
 msgstr "เลือกไอเทมที่ต้องการแก้ไข"
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:60
 msgid "Setup Agent"
 msgstr "ตัวติดตั้ง"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
+#: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
 msgstr "แผ่นซีดีเสริม"
 
-#: ../src/modules/additional_cds.py:60
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -153,7 +158,7 @@ msgid ""
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
 "\n"
@@ -162,26 +167,26 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:111
+#: ../src/modules/additional_cds.py:110
 msgid "Install..."
 msgstr "ติดตั้ง..."
 
-#: ../src/modules/additional_cds.py:146
+#: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "ตรวจไม่พบซีดีรอม กรุณาใส่แผ่นซีดีแล้วคลิก \"ตกลง\""
 
-#: ../src/modules/additional_cds.py:180
+#: ../src/modules/additional_cds.py:179
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
 
-#: ../src/modules/create_user.py:39
+#: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "ผู้ใช้ระบบ"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:70
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -191,23 +196,23 @@ msgstr ""
 "ขอแนะนำให้คุณสร้างบัญชีผู้ใช้ส่วนตัว สำหรับใช้ในงานทั่วไป (ที่ไม่เกี่ยวกับการบริหารระบบ) "
 "สำหรับการสร้างบัญชีผู้ใช้ส่วนตัว ให้กรอกข้อมูลที่จำเป็นเหล่านี้"
 
-#: ../src/modules/create_user.py:75
+#: ../src/modules/create_user.py:80
 msgid "_Username:"
 msgstr "ชื่อ_ผู้ใช้:"
 
-#: ../src/modules/create_user.py:82
+#: ../src/modules/create_user.py:87
 msgid "Full Nam_e:"
 msgstr "ชื่อเ_ต็ม:"
 
-#: ../src/modules/create_user.py:89
+#: ../src/modules/create_user.py:94
 msgid "_Password:"
 msgstr "_รหัสผ่าน:"
 
-#: ../src/modules/create_user.py:96
+#: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
 msgstr "_ยืนยันรหัสผ่าน :"
 
-#: ../src/modules/create_user.py:112
+#: ../src/modules/create_user.py:117
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -215,11 +220,11 @@ msgstr ""
 "ถ้าคุณจำเป็นต้องใช้การอนุญาตสิทธิผ่านเครือข่าย เช่น Kerberos หรือ  NIS ให้คลิกที่ปุ่ม "
 "ล็อกอินผ่านเครือข่าย"
 
-#: ../src/modules/create_user.py:122
+#: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "_ล็อกอินผ่านเครือข่าย..."
 
-#: ../src/modules/create_user.py:158
+#: ../src/modules/create_user.py:163
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -228,91 +233,91 @@ msgstr ""
 "ขอแนะนำเป็นอย่างยิ่งว่า ควรสร้าง บัญชีผู้ใช้ส่วนตัวมิฉะนั้น ถ้าคุณผ่านขั้นตอนนี้ไปโดยไม่สร้าง บัญชีผู้ใช้ "
 "คุณจะล็อกอินได้เฉพาะบัญชีชื่อ root  ซึ่งเป็นบัญชีที่สงวนไว้สำหรับการจัดการระบบเท่านั้น"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:171
 msgid "_Continue"
 msgstr "_ทำต่อไป"
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:172
 msgid "Create _account"
 msgstr "สร้าง_บัญชีผู้ใช้"
 
-#: ../src/modules/create_user.py:193
+#: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "รหัสผ่านของคุณไม่ตรงกัน กรุณากรอกใหม่อีกครั้ง"
 
-#: ../src/modules/create_user.py:201
+#: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "รหัสผ่านของคุณสั้นเกินไป กรุณาใช้รหัสความยาวอย่างน้อย 6 ตัวอักษร"
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
 msgstr "ชื่อผู้ใช้ต้องยาวไม่เกิน 33 ตัวอักษร"
 
-#: ../src/modules/create_user.py:279
+#: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
 msgstr "ชื่อผู้ใช้ ต้องไม่ขึ้นต้นด้วยตัวเลข"
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:296
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "ชื่อผู้ใช้ %s มีช่องว่างอยู่ กรุณาอย่าใส่ช่องว่างในชื่อ"
 
-#: ../src/modules/create_user.py:298
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "ชื่อผู้ใช้ %s เครื่องหมายวรรคตอนอยู่ กรุณาอย่าใช้เครื่องหมายใดๆ ในชื่อ"
 
-#: ../src/modules/create_user.py:305
+#: ../src/modules/create_user.py:310
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
 
-#: ../src/modules/create_user.py:312
+#: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "ชื่อผู้ใช้ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
-#: ../src/modules/create_user.py:322
+#: ../src/modules/create_user.py:327
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "รหัสผ่านมีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
-#: ../src/modules/create_user.py:334
+#: ../src/modules/create_user.py:339
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "ชื่อ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
-#: ../src/modules/date.py:47
+#: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "วันที่และเวลา"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
 msgstr "กรุณาตั้งค่าวันที่และเวลาของระบบ"
 
-#: ../src/modules/display.py:45
+#: ../src/modules/display.py:44
 msgid "Display"
 msgstr "การแสดงผล"
 
-#: ../src/modules/display.py:48
+#: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "กรุณาเลือกความละเอียดและความลึกสีที่คุณต้องการใช้"
 
-#: ../src/modules/finished.py:21
+#: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "ติดตั้งเสร็จแล้ว"
 
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -320,46 +325,46 @@ msgstr ""
 "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
 "\" ด้านล่างขวาเพื่อทำงานต่อไป"
 
-#: ../src/modules/finished.py:38
+#: ../src/modules/finished.py:36
 #, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
 "\" ด้านล่างขวาเพื่อทำงานต่อไป"
 
-#: ../src/modules/networking.py:44
+#: ../src/modules/networking.py:42
 msgid "Network Setup"
 msgstr "ตั้งค่าเน็ตเวิร์ก"
 
-#: ../src/modules/networking.py:70
+#: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
 msgstr "อุปกรณ์เครือข่ายเหล่านี้ ถูกตรวจสอบพบว่ามีอยู่ในระบบ"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:87
 msgid "Network Device"
 msgstr "อุปกรณ์เครือข่าย"
 
-#: ../src/modules/networking.py:91
+#: ../src/modules/networking.py:89
 msgid "Boot protocol"
 msgstr "โพรโตคอลบูต"
 
-#: ../src/modules/networking.py:97
+#: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
 msgstr "เปลี่ยนแปลงการตั้งค่าเน็ตเวิร์ค"
 
-#: ../src/modules/networking.py:140
+#: ../src/modules/networking.py:138
 msgid "static"
 msgstr "ค่าแน่นอน"
 
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "การ์ดเสียง"
 
-#: ../src/modules/soundcard_gui.py:48
+#: ../src/modules/soundcard_gui.py:47
 msgid "A sound card has been detected on your computer."
 msgstr "ได้ตรวจพบการ์ดเสียงบนระบบของคุณ"
 
-#: ../src/modules/soundcard_gui.py:71
+#: ../src/modules/soundcard_gui.py:70
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -370,15 +375,15 @@ msgstr ""
 "อันแรกเป็นเสียงจากลำโพงด้านขวา อันที่สองเป็นเสียงจากลำโพงด้านซ้าย และสุดท้ายเป็นเสียง "
 "ที่ตำแหน่งกลาง"
 
-#: ../src/modules/timezone.py:47
+#: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "เขตเวลา"
 
-#: ../src/modules/timezone.py:51
+#: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
 msgstr "กรุณาตั้งค่าเขตเวลาให้ระบบของคุณ"
 
-#: ../src/modules/welcome.py:35
+#: ../src/modules/welcome.py:34
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "

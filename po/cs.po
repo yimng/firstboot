@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-15 13:47-0400\n"
+"POT-Creation-Date: 2004-11-10 16:47-0500\n"
 "PO-Revision-Date: 2004-10-16 04:03+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -73,74 +73,79 @@ msgstr ""
 "Připojte tento soubor k hlášení chyby. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
 msgstr "_Zpět"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
 msgid "_Next"
 msgstr "_Další"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Vítejte"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import modulu %s selhal: %s"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:36
+#, fuzzy
+msgid "Licence Aggrement"
+msgstr "Licenční smlouva"
+
+#: ../src/textWindow.py:37
 msgid "Authentication"
 msgstr "Autentizace"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:38
 msgid "Firewall configuration"
 msgstr "Nastavení firewallu"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:39
 msgid "Keyboard configuration"
 msgstr "Nastavení klávesnice"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:40
 msgid "Network configuration"
 msgstr "Nastavení sítě"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:41
 msgid "Printer configuration"
 msgstr "Nastavení tiskárny"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:42
 msgid "System services"
 msgstr "Systémové služby"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:43
 msgid "Sound card configuration"
 msgstr "Nastavení zvukové karty"
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:44
 msgid "Timezone configuration"
 msgstr "Nastavení časové zóny"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:52
 msgid "Run Tool"
 msgstr "Spustit nástroj"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:54
 msgid "Select the item that you wish to modify "
 msgstr "Vyberte položku, kterou chcete upravit "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:60
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
+#: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
 msgstr "Jiná CD"
 
-#: ../src/modules/additional_cds.py:60
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -152,7 +157,7 @@ msgstr ""
 "jiný software vložením CD s dokumentací nebo jiných CD od Red Hat."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
 "\n"
@@ -166,11 +171,11 @@ msgstr ""
 "Intel Itanium2 musíte nyní nainstalovat balíček Intel Execution Layer z CD "
 "Extras."
 
-#: ../src/modules/additional_cds.py:111
+#: ../src/modules/additional_cds.py:110
 msgid "Install..."
 msgstr "Instalovat..."
 
-#: ../src/modules/additional_cds.py:146
+#: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -178,39 +183,42 @@ msgstr ""
 "Nebylo nalezeno CD-ROM. Vložte prosím do CD-ROM do jednotky a pokračujte "
 "kliknutím na \"OK\"."
 
-#: ../src/modules/additional_cds.py:180
+#: ../src/modules/additional_cds.py:179
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Na cd nebyl nalezen program autorun. Pokračujte kliknutím na \"OK\"."
 
-#: ../src/modules/create_user.py:39
+#: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "Uživatel systému"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:70
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "Doporučuje se pro normální používání (ne správu systému) vytvořit systémové 'jméno uživatele'. Systémové 'jméno uživatele' vytvoříte po zadání požadovaných informací."
+msgstr ""
+"Doporučuje se pro normální používání (ne správu systému) vytvořit systémové "
+"'jméno uživatele'. Systémové 'jméno uživatele' vytvoříte po zadání "
+"požadovaných informací."
 
-#: ../src/modules/create_user.py:75
+#: ../src/modules/create_user.py:80
 msgid "_Username:"
 msgstr "Jméno _uživatele:"
 
-#: ../src/modules/create_user.py:82
+#: ../src/modules/create_user.py:87
 msgid "Full Nam_e:"
 msgstr "Plné _jméno:"
 
-#: ../src/modules/create_user.py:89
+#: ../src/modules/create_user.py:94
 msgid "_Password:"
 msgstr "_Heslo:"
 
-#: ../src/modules/create_user.py:96
+#: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
 msgstr "_Potvrďte heslo:"
 
-#: ../src/modules/create_user.py:112
+#: ../src/modules/create_user.py:117
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -218,11 +226,11 @@ msgstr ""
 "Pokud potřebujete používat síťovou autentizaci, např. Kerberos nebo NIS, "
 "klikněte prosím na tlačítko Používat síťové přihlašování."
 
-#: ../src/modules/create_user.py:122
+#: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "Používat _síťové přihlašování..."
 
-#: ../src/modules/create_user.py:158
+#: ../src/modules/create_user.py:163
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -232,32 +240,32 @@ msgstr ""
 "bez vytvoření účtu, budete se moci přihlásit jen do účtu root, který je "
 "rezervován jen pro správu systému."
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:171
 msgid "_Continue"
 msgstr "_Pokračovat"
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:172
 msgid "Create _account"
 msgstr "_Vytvořit účet"
 
-#: ../src/modules/create_user.py:193
+#: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Hesla nesouhlasí. Zadejte heslo prosím znovu."
 
-#: ../src/modules/create_user.py:201
+#: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
 msgstr "Jméno uživatele musí být kratší než 33 znaků."
 
-#: ../src/modules/create_user.py:279
+#: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
 msgstr "Jméno uživatele nemůže začínat číslicí."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:296
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -266,7 +274,7 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje mezery. Nepoužívejte prosím mezery ve jménu "
 "uživatele."
 
-#: ../src/modules/create_user.py:298
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -275,7 +283,7 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje interpunkci. Nepoužívejte prosím ve jménu "
 "uživatele interpunkci."
 
-#: ../src/modules/create_user.py:305
+#: ../src/modules/create_user.py:310
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -284,7 +292,7 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje velká písmena. Nepoužívejte prosím ve jménu "
 "uživatele velká písmena."
 
-#: ../src/modules/create_user.py:312
+#: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -293,38 +301,38 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje neplatné znaky. Použijte prosím jen znaky "
 "ASCII."
 
-#: ../src/modules/create_user.py:322
+#: ../src/modules/create_user.py:327
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Heslo obsahuje neplatné znaky. Použijte prosím jen znaky ASCII."
 
-#: ../src/modules/create_user.py:334
+#: ../src/modules/create_user.py:339
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Jméno '%s' obsahuje neplatné znaky. Použijte prosím jen znaky ASCII."
 
-#: ../src/modules/date.py:47
+#: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Datum a čas"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
 msgstr "Nastavte prosím systémové datum a čas."
 
-#: ../src/modules/display.py:45
+#: ../src/modules/display.py:44
 msgid "Display"
 msgstr "Zobrazení"
 
-#: ../src/modules/display.py:48
+#: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Vyberte prosím rozlišení a barevnou hloubku, kterou chcete používat"
 
-#: ../src/modules/finished.py:21
+#: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Konec nastavení"
 
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -332,43 +340,44 @@ msgstr ""
 "Váš systém je nyní nastaven a připraven k použití. Pokračujte prosím "
 "kliknutím na tlačítko \"Další\" v pravém dolním rohu."
 
-#: ../src/modules/finished.py:38
+#: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Pokračujte prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu."
+msgstr ""
+"Pokračujte prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu."
 
-#: ../src/modules/networking.py:44
+#: ../src/modules/networking.py:42
 msgid "Network Setup"
 msgstr "Nastavení sítě"
 
-#: ../src/modules/networking.py:70
+#: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
 msgstr "V systému byla detekována následující síťová zařízení:"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:87
 msgid "Network Device"
 msgstr "Síťové zařízení"
 
-#: ../src/modules/networking.py:91
+#: ../src/modules/networking.py:89
 msgid "Boot protocol"
 msgstr "Zaváděcí protokol"
 
-#: ../src/modules/networking.py:97
+#: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
 msgstr "Změnit _nastavení sítě..."
 
-#: ../src/modules/networking.py:140
+#: ../src/modules/networking.py:138
 msgid "static"
 msgstr "statický"
 
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "Zvuková karta"
 
-#: ../src/modules/soundcard_gui.py:48
+#: ../src/modules/soundcard_gui.py:47
 msgid "A sound card has been detected on your computer."
 msgstr "Na vašem počítači byla nalezena zvuková karta."
 
-#: ../src/modules/soundcard_gui.py:71
+#: ../src/modules/soundcard_gui.py:70
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -379,15 +388,15 @@ msgstr ""
 "Měli byste slyšet sérii tří zvuků. První zvuk bude z pravého kanálu, druhý z "
 "levého kanálu a třetí z obou."
 
-#: ../src/modules/timezone.py:47
+#: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Časová zóna"
 
-#: ../src/modules/timezone.py:51
+#: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
 msgstr "Nastavte prosím systémovou časovou zónu."
 
-#: ../src/modules/welcome.py:35
+#: ../src/modules/welcome.py:34
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-15 13:47-0400\n"
+"POT-Creation-Date: 2004-11-10 16:47-0500\n"
 "PO-Revision-Date: 2004-09-25 16:08+0300\n"
 "Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
 "Language-Team: Belorussian\n"
@@ -75,74 +75,79 @@ msgstr ""
 "паведамленьня. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
 msgstr "На_зад"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
 msgid "_Next"
 msgstr "На_перад"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Шчыра вітаем!"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "збой імпарту модуля %s: %s"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:36
+#, fuzzy
+msgid "Licence Aggrement"
+msgstr "Ліцэнзыйнае пагадненьне"
+
+#: ../src/textWindow.py:37
 msgid "Authentication"
 msgstr "Аўтэнтыфікацыя"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:38
 msgid "Firewall configuration"
 msgstr "Наладка міжсеткавага экрана"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:39
 msgid "Keyboard configuration"
 msgstr "Наладка клявіятуры"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:40
 msgid "Network configuration"
 msgstr "Наладка сеткі"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:41
 msgid "Printer configuration"
 msgstr "Наладка друкаркі"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:42
 msgid "System services"
 msgstr "Сыстэмныя паслугі"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:43
 msgid "Sound card configuration"
 msgstr "Наладка гуку"
 
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:44
 msgid "Timezone configuration"
 msgstr "Наладка часавога пояса"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:52
 msgid "Run Tool"
 msgstr "Запусьціць сродак"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:54
 msgid "Select the item that you wish to modify "
 msgstr "Вылучыце элемэнт, які вы жадаеце зьмяніць "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:60
 msgid "Setup Agent"
 msgstr "Агент наладкі"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
+#: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
 msgstr "Дадатковыя CD дыскі"
 
-#: ../src/modules/additional_cds.py:60
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -151,7 +156,7 @@ msgid ""
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
 "\n"
@@ -160,11 +165,11 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:111
+#: ../src/modules/additional_cds.py:110
 msgid "Install..."
 msgstr "Усталёўваньне..."
 
-#: ../src/modules/additional_cds.py:146
+#: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -172,17 +177,17 @@ msgstr ""
 "Дыск ня быў вызначаны. Калі ласка, устаўце дыск у прыладу йпстрыкніце \"Добра"
 "\" для працягу."
 
-#: ../src/modules/additional_cds.py:180
+#: ../src/modules/additional_cds.py:179
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Праграма аўтазапуку ня знойдзена на дыске. Пстрыкніце \"Добра\" для працягу."
 
-#: ../src/modules/create_user.py:39
+#: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "Сыстэмны карыстальнік"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:70
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -193,23 +198,23 @@ msgstr ""
 "(неадміністратыўнага) выкарыстаньня. Каб стварыць уласны рахунак,паведаміце "
 "неабходныя зьвесткі."
 
-#: ../src/modules/create_user.py:75
+#: ../src/modules/create_user.py:80
 msgid "_Username:"
 msgstr "_Уліковае імя:"
 
-#: ../src/modules/create_user.py:82
+#: ../src/modules/create_user.py:87
 msgid "Full Nam_e:"
 msgstr "Імя й прозьві_шча:"
 
-#: ../src/modules/create_user.py:89
+#: ../src/modules/create_user.py:94
 msgid "_Password:"
 msgstr "_Пароль:"
 
-#: ../src/modules/create_user.py:96
+#: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
 msgstr "Па_цьверджаньне пароля:"
 
-#: ../src/modules/create_user.py:112
+#: ../src/modules/create_user.py:117
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -217,11 +222,11 @@ msgstr ""
 "Калі ваб неабходна сеткавая аўтэнтіфікацыя, накшталт Kerberos альбо NIS,калі "
 "ласка, пстрыкніце кнопку \"Уваход праз сетку...\"."
 
-#: ../src/modules/create_user.py:122
+#: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "Уваход праз _сетку..."
 
-#: ../src/modules/create_user.py:158
+#: ../src/modules/create_user.py:163
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -231,32 +236,32 @@ msgstr ""
 "здолееце ўвайсьці толькі як root, але гэты рахунак прызначаны толькі для "
 "адміністратыўнага выкарыстаньня."
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:171
 msgid "_Continue"
 msgstr "_Працяг"
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:172
 msgid "Create _account"
 msgstr "Стварыць _рахунак"
 
-#: ../src/modules/create_user.py:193
+#: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Паролі не супадаюць. Калі ласка, паўтарыце пароль."
 
-#: ../src/modules/create_user.py:201
+#: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Пароль надта кароткі. Пароль мусіць быць ня меншым за 6 знакаў."
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
 msgstr "Уліковае імя павінна быць меншым за 33 знакі."
 
-#: ../src/modules/create_user.py:279
+#: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
 msgstr "Уліковае імя ня можа пачынацца з лічбаў."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:296
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -265,7 +270,7 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае прагал. Калі ласка, не ўжывайце прагалы ва-"
 "ўліковых імёнах."
 
-#: ../src/modules/create_user.py:298
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -274,7 +279,7 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае знакі прыпынку. Калі ласка, не ўжывайце знакі "
 "прыпынку ва-ўліковых імёнах."
 
-#: ../src/modules/create_user.py:305
+#: ../src/modules/create_user.py:310
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -283,7 +288,7 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае заглаўныя літары. Калі ласка, не ўжывайце "
 "заглаўныя літары ва-ўліковых імёнах."
 
-#: ../src/modules/create_user.py:312
+#: ../src/modules/create_user.py:317
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -292,13 +297,13 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце "
 "толькі ASCII знакі."
 
-#: ../src/modules/create_user.py:322
+#: ../src/modules/create_user.py:327
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Пароль утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце толькі ASCII знакі."
 
-#: ../src/modules/create_user.py:334
+#: ../src/modules/create_user.py:339
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -306,29 +311,29 @@ msgstr ""
 "Назва \"%s\" утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце толькі ASCII "
 "знакі."
 
-#: ../src/modules/date.py:47
+#: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Дата і час"
 
-#: ../src/modules/date.py:50
+#: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
 msgstr "Калі ласка, выстаўце дату й час для вашае сыстэмы."
 
-#: ../src/modules/display.py:45
+#: ../src/modules/display.py:44
 msgid "Display"
 msgstr "Дысплэй"
 
-#: ../src/modules/display.py:48
+#: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 "Калі ласка, вылучыце разрозьненьне й глыбіню колераў, якую вы жадаеце "
 "выкарыстоўваць"
 
-#: ../src/modules/finished.py:21
+#: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Завершыць наладку"
 
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -336,46 +341,46 @@ msgstr ""
 "Вашая сыстэма наладжана й падрыхтавана для выкарыстаньня. Калі ласка,"
 "пстрыкніце кнопку \"Наперад\" у левым ніжнім куце для працягу."
 
-#: ../src/modules/finished.py:38
+#: ../src/modules/finished.py:36
 #, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Вашая сыстэма наладжана й падрыхтавана для выкарыстаньня. Калі ласка,"
 "пстрыкніце кнопку \"Наперад\" у левым ніжнім куце для працягу."
 
-#: ../src/modules/networking.py:44
+#: ../src/modules/networking.py:42
 msgid "Network Setup"
 msgstr "Наладка сеткі"
 
-#: ../src/modules/networking.py:70
+#: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
 msgstr "Наступны сеткавыя прылады былі вызначаны ў сыстэме:"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:87
 msgid "Network Device"
 msgstr "Сеткавая прылада"
 
-#: ../src/modules/networking.py:91
+#: ../src/modules/networking.py:89
 msgid "Boot protocol"
 msgstr "Пратакол загрузкі"
 
-#: ../src/modules/networking.py:97
+#: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
 msgstr "Зь_мяніць наладку сеткі..."
 
-#: ../src/modules/networking.py:140
+#: ../src/modules/networking.py:138
 msgid "static"
 msgstr "статычны"
 
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "Гукавая картка"
 
-#: ../src/modules/soundcard_gui.py:48
+#: ../src/modules/soundcard_gui.py:47
 msgid "A sound card has been detected on your computer."
 msgstr "У сыстэме знойдзена гукавая картка."
 
-#: ../src/modules/soundcard_gui.py:71
+#: ../src/modules/soundcard_gui.py:70
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -386,15 +391,15 @@ msgstr ""
 "павінны пачуць сэрыю гукаў. Першы гук павінны ісьці праз правы кнал, другі - "
 "праз левы й трэці - праз абодва."
 
-#: ../src/modules/timezone.py:47
+#: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Часавы пояс"
 
-#: ../src/modules/timezone.py:51
+#: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
 msgstr "Калі ласка, выстаўце часавы пояс сыстэмы."
 
-#: ../src/modules/welcome.py:35
+#: ../src/modules/welcome.py:34
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
