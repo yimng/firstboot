@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.3
+Version: 1.1.4
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Jul  2 2003 Brent Fox <bfox@redhat.com> 1.1.4-1
+- remove unneeded code from the neworking module
+
 * Thu Jun 26 2003 Brent Fox <bfox@redhat.com> 1.1.3-1
 - first stab at getting locale changing working (#91984)
 
