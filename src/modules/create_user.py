@@ -24,6 +24,7 @@ class childWindow:
     def launch(self, doDebug = None):
         self.doDebug = doDebug
         self.admin = libuser.admin()
+        self.nisFlag = None
 
         if doDebug:
             print "initializing newuser module"
@@ -109,7 +110,6 @@ class childWindow:
         authHBox.pack_start(align, gtk.TRUE)
         internalVBox.pack_start(authHBox, gtk.TRUE, gtk.TRUE)
 
-
         self.vbox.pack_start(internalVBox, gtk.FALSE, 15)
 
         users = self.admin.enumerateUsersFull()
@@ -131,6 +131,10 @@ class childWindow:
 
         username = self.usernameEntry.get_text()
         username = string.strip(username)
+
+        if username == "" and self.nisFlag != None:
+            #If they've run authconfig, don't pop up messageDialog
+            return 0
         
         if username == "":
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_NONE,
@@ -304,6 +308,8 @@ class childWindow:
         return 1
 
     def run_authconfig(self, *args):
+        self.nisFlag = 1
+        
         #Create a gtkInvisible dialog to block until up2date is complete
         i = gtk.Invisible ()
         i.grab_add ()
