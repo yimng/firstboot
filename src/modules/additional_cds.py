@@ -27,8 +27,6 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        msg = (_("Install Additional Software"))
-
         title_pix = functions.imageFromFile("lacd.png")
 
         internalVBox = gtk.VBox()
@@ -83,7 +81,7 @@ class childWindow:
         internalVBox.pack_start(table, gtk.FALSE, padding=20)
         self.vbox.pack_start(internalVBox, gtk.TRUE)
 
-        return self.vbox, title_pix, msg
+        return self.vbox, title_pix, self.moduleName
 
     def autorun(self, *args):
         #Create a gtkInvisible widget to block until the autorun is complete
