@@ -75,6 +75,8 @@ fi
 %changelog
 * Fri Oct 24 2003 Brent Fox <bfox@redhat.com> 1.3.1-1
 - bump version
+- use CVS head now for Fedora Core 2
+- made firstboot-cambridge branch for Fedora Core 1
 - first stab at text mode
 
 * Wed Oct 15 2003 Brent Fox <bfox@redhat.com> 1.2.4-1
