@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.9
-Release: 5
+Release: 6
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -21,6 +21,7 @@ Requires: redhat-config-keyboard
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
 Requires: redhat-config-soundcard
+Requires: redhat-config-packages
 Requires: up2date
 
 %description
@@ -62,6 +63,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Aug 13 2002 Brent Fox <bfox@redhat.com> 0.9.9-6
+- Require redhat-config-packages
+- Change string in finished module
+
 * Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-5
 - Print out a message if user tries to run firstboot again
 - move firstboot to firstboot.py and create a shell script for firstboot
