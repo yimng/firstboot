@@ -33,7 +33,7 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        pix = functions.imageFromFile("shadowman-round-48.png")
+        pix = functions.imageFromFile("workstation.png")
         titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
         titleBox.pack_start(label)
