@@ -1,7 +1,7 @@
 # translation of firstboot to Finnish
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# This file is distributed under the same license as the firstboot package.
 # Mikko Ikola <ikola@iki.fi>, 2004.
+# Lauri Nurmi <lanurmi@iki.fi>, 2004.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
 "PO-Revision-Date: 2004-09-11 17:57+0300\n"
-"Last-Translator: Mikko Ikola <ikola@iki.fi>\n"
+"Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,7 +93,6 @@ msgid "module import of %s failed: %s"
 msgstr "moduulin %s tuominen epäonnistui: %s"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Licence Aggrement"
 msgstr "Lisenssisopimus"
 
@@ -152,6 +151,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Syötä levy \"Red Hat Enterprise Linux Extras\" asentaaksesi kolmansien "
+"osapuolien liitännäsiä ja sovelluksia. Voit myös syöttää Documentation-levyn, "
+"tai muun Red Hatin toimittaman levyn asentaaksesi ylimääräisiä ohjelmistoja nyt."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:69
@@ -162,6 +164,10 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Ottaaksesi käyttöön 32-bittisten sovellusten ajonaikaisen tuen Intel Itanium2 "
+"-alustalla, on nyt asennettava Intel Execution Layer -paketti Extras-levyltä."
 
 #: ../src/modules/additional_cds.py:110
 msgid "Install..."
@@ -184,14 +190,13 @@ msgid "System User"
 msgstr "Järjestelmän käyttäjä"
 
 #: ../src/modules/create_user.py:70
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"On suositeltavaa, että luot henkilökohtaisen käyttäjätunnuksen normaaliin "
-"(ei-ylläpito) käyttöön. Luodaksesi tunnuksen syötä seuraavat tiedot."
+"On erittäin suositeltavaa, että luot henkilökohtaisen käyttäjätunnuksen "
+"normaaliin (ei-ylläpito-)käyttöön. Luodaksesi tunnuksen syötä seuraavat tiedot."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -327,15 +332,12 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Järjestelmäsi on nyt asennettu ja valmiina käyttöön. Napsauta \"Seuraava\"-"
+"Järjestelmä on nyt asennettu ja valmiina käyttöön. Napsauta \"Seuraava\"-"
 "painiketta alhaalta oikealta jatkaaksesi."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Järjestelmäsi on nyt asennettu ja valmiina käyttöön. Napsauta \"Seuraava\"-"
-"painiketta alhaalta oikealta jatkaaksesi."
+msgstr "Napsauta \"Seuraava\"-painiketta alhaalta oikealta jatkaaksesi."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
