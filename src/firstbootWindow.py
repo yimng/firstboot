@@ -65,20 +65,34 @@ class firstbootWindow:
         x_screen = gtk.gdk.screen_width()
         y_screen = gtk.gdk.screen_height()        
 
-        if rhgb == None:
-            #If rhgb isn't running, then we need to draw the background
-            pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
-            if pixbuf is not None:
-                pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
-                bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
-                gc = bgimage.new_gc()
-                pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
-                                          y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-                self.win.set_app_paintable(gtk.TRUE)
-                self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+##         if rhgb == None:
+##             #If rhgb isn't running, then we need to draw the background
+##             pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+##             if pixbuf is not None:
+##                 pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
+##                 bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
+##                 gc = bgimage.new_gc()
+##                 pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
+##                                           y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+##                 self.win.set_app_paintable(gtk.TRUE)
+##                 self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
 
-                if not self.doDebug:
-                    self.win.set_size_request(x_screen, y_screen)
+##                 if not self.doDebug:
+##                     self.win.set_size_request(x_screen, y_screen)
+
+        #Let's draw the background
+        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+        if pixbuf is not None:
+            pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
+            bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
+            gc = bgimage.new_gc()
+            pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
+                                      y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+            self.win.set_app_paintable(gtk.TRUE)
+            self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+
+            if not self.doDebug:
+                self.win.set_size_request(x_screen, y_screen)
 
         align = gtk.Alignment(0.5, 0.5, 0.0, 0.0)
         eb = gtk.EventBox()
