@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.0
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -15,6 +15,7 @@ Requires: pygtk2
 Requires: python
 Requires: usermode >= 1.36
 Requires: metacity
+Requires: rhpl
 Requires: redhat-config-date
 Requires: redhat-config-language
 Requires: redhat-config-mouse
@@ -64,6 +65,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 21 2002 Brent Fox <bfox@redhat.com> 1.0.0-2
+- pull translation domains from rhpl
+
 * Wed Aug 21 2002 Brent Fox <bfox@redhat.com> 1.0.0-1
 - Implement a lowres mode for 640x480 screens
 
