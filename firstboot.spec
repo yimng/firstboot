@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.3
-Release: 2
+Version: 0.9.4
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -9,11 +9,12 @@ Group: System Environment/Base
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Source0: %{name}-%{version}.tar.bz2
 Obsoletes:anaconda-reconfig
-Prereq: chkconfig /etc/init.d
+Prereq: chkconfig, /etc/init.d
 Requires: pygtk2
 Requires: python
 Requires: usermode >= 1.36
 Requires: metacity
+Requires: redhat-config-date
 Requires: redhat-config-language
 Requires: redhat-config-mouse
 Requires: redhat-config-keyboard
@@ -41,10 +42,10 @@ make INSTROOT=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %post
-chkconfig --level 5 firstboot on
-
+chkconfig --add firstboot
+		
 %preun
-if [ -d /usr/share/firstboot ] ; then
+if [ $1 = 0 ]; then
   rm -rf /usr/share/firstboot/*.pyc
   rm -rf /usr/share/firstboot/modules/*.pyc
   chkconfig --del firstboot
@@ -55,12 +56,15 @@ fi
 %defattr(-,root,root)
 #%doc COPYING
 #%doc doc/*
-%dir /usr/share/firstboot/
 %config /etc/rc.d/init.d/firstboot
+%dir /usr/share/firstboot/
 /usr/share/firstboot/*
 /usr/sbin/firstboot
 
 %changelog
+* Sat Jul 13 2002 Brent Fox <bfox@redhat.com> 0.9.4-1
+- fixed preun script to not blow away runlevel symlinks on upgrades
+
 * Thu Jul 11 2002 Brent Fox <bfox@redhat.com> 0.9.3-2
 - Update changelogs and rebuild
 
