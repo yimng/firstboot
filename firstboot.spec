@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.2.1
+Version: 1.2.2
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Oct  8 2003 Brent Fox <bfox@redhat.com> 1.2.2-1
+- remove up2date module from Fedora
+
 * Mon Sep 22 2003 Brent Fox <bfox@redhat.com> 1.2.1-1
 - remove some items from the additional cd's screen for now
 - remove some references to Red Hat Linux from welcome.py and up2date.py
