@@ -7,6 +7,8 @@ import sys
 import functions
 sys.path.append('/usr/share/redhat-config-soundcard')
 sys.path.append('/usr/share/redhat-config-keyboard')
+#sys.path.append('/usr/share/redhat-config-mouse')
+sys.path.append('/home/bfox/redhat/redhat-config-mouse/src')
 import soundcardBackend
 import rhpl.keyboard as keyboard
 
@@ -94,6 +96,13 @@ class childWindow:
         label = gtk.Label(_("Mouse:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+
+        self.mouse_label = gtk.Label("")
+        self.mouse_label.set_alignment(0.0, 0.5)
+        self.table.attach(self.mouse_label, 2, 3, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
+        self.mouse_button = gtk.Button(_("Configure..."))
+        self.mouse_button.connect("clicked", self.mouse_button_clicked)
+        self.table.attach(self.mouse_button, 3, 4, self.table_row, self.table_row + 1, gtk.EXPAND, gtk.SHRINK)
         self.table_row = self.table_row + 1
 
     def configureSoundcard(self):
@@ -154,6 +163,13 @@ class childWindow:
         app.stand_alone()
         #If the keyboard changed, let's see what the new keymap is
         self.keyboard_label.set_text(app.getData())
+
+    def mouse_button_clicked(self, *args):
+        import mouse_gui
+        app = mouse_gui.childWindow()
+        app.stand_alone(self.doDebug)
+        #If the mouse changed, let's see what the new keymap is
+#        self.mouse_label.set_text(app.getData())
 
     def soundcard_button_clicked(self, *args):
         import soundcard
