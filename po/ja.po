@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-06-30 10:18+1000\n"
-"Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
-"Language-Team: Japanese <kdeveloper@kde.gr.jp>\n"
+"PO-Revision-Date: 2004-02-25 14:33GMT+10:00\n"
+"Last-Translator: Kiyoto James Hashida <khashida@redhat.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,28 +41,27 @@ msgstr ""
 #. #
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "ライセンス同意書"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "はい、私はライセンス同意書に同意します(_Y)"
 
 #: ../src/eula_strings.py:29
-#, fuzzy
 msgid "N_o, I do not agree"
-msgstr "いいえ、システムを登録しません(_N)。"
+msgstr "いいえ、同意しません(_O)。"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "ライセンス同意書の再読、又は再検討をしたいですか？"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "ライセンスの再読(_R)"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "停止(_S)"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -172,13 +171,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
 #: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #. Firstboot has never been run before, so start it up
@@ -351,64 +348,55 @@ msgstr "ようこそ"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "認証"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration "
-msgstr "マウスの設定"
+msgstr "ファイヤーウォールの設定"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration "
-msgstr "サウンドカードの設定"
+msgstr "キーボードの設定"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Mouse configuration "
 msgstr "マウスの設定"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "ネットワーク構成を変更する(_C)..."
+msgstr "ネットワークの設定"
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "Printer configuration "
-msgstr "マウスの設定"
+msgstr "プリンターの設定"
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "System services "
-msgstr "信用するデバイス："
+msgstr "システムサービス"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Sound card configuration "
 msgstr "サウンドカードの設定"
 
 #: ../src/textWindow.py:41
-#, fuzzy
 msgid "Timezone configuration "
-msgstr "マウスの設定"
+msgstr "タイムゾーンの設定"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "ツールを実行"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "終了"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "修正したい項目を選択して下さい"
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hatセットアップエージェント"
+msgstr "セットアップエージェント"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -467,9 +455,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "オートランプログラムがcd上に見つかりません。「ＯＫ」をクリックして継続します。"
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -498,9 +485,8 @@ msgid "_Username:"
 msgstr "ユーザー名(_U):"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full Nam_e:"
-msgstr "フルネーム(_N): "
+msgstr "フルネーム(_E): "
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
@@ -520,9 +506,8 @@ msgstr ""
 "クログインを使用するボタンをクリックしてください。"
 
 #: ../src/modules/create_user.py:104
-#, fuzzy
 msgid "Use Network _Login..."
-msgstr "ネットワークログインを使用する(_U)..."
+msgstr "ネットワークログインを使用する(_L)..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -578,8 +563,7 @@ msgstr "ユーザー名は番号で始まってはいけません。"
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
+msgstr "ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:263
 #, python-format
@@ -609,17 +593,14 @@ msgstr ""
 "い。"
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII文字のみを使用して下さい。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -710,14 +691,12 @@ msgstr "NTPサーバに接続しています。お待ち下さい..."
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
-#, fuzzy
 msgid "Display"
-msgstr "ディスプレー："
+msgstr "ディスプレー"
 
 #: ../src/modules/display.py:48
-#, fuzzy
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "システム用のディフォルト言語を選択して下さい。"
+msgstr "使用したい解像度と色の深さを選択して下さい。"
 
 #. Add icon to the top frame
 #. #
@@ -729,13 +708,12 @@ msgid "Finish Setup"
 msgstr "セットアップを終了"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"システムが設定できましたので使用できる状態になりました。右下隅にあるボタン"
-"「次へ」をクリックして続けてください。"
+"システムが設定できましたので使用できる状態になりました。右下隅にある"
+"「次へ」ボタンをクリックして続けてください。"
 
 #.
 #. networking.py - networking module for firstboot
@@ -865,15 +843,14 @@ msgid "Please set the timezone for the system."
 msgstr "システムのタイムゾーンを設定してください。"
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"システムが使用できるようになるまで もう少しステップがあります。Red Hat セット"
-"アップエージェントはここで、基本的な設定を通してガイドをしていきます。 右下の"
-"隅にあるボタン「次へ」をクリックして続けて下さい。"
+"システムが使用できるようになるまでもう少しステップがあります。セット"
+"アップエージェントはここで、基本的な設定を通してガイドしていきます。 "
+"右下隅にある「次へ」ボタンをクリックして続けて下さい。"
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstbootはランレベル3では起動しません。"
@@ -1193,3 +1170,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
