@@ -178,6 +178,19 @@ class firstbootWindow:
         alignment.set(0.5, 0.5, 0.9, 0.9)
         self.mainHBox.pack_start(alignment, gtk.TRUE)
 
+        # Create a lower hbox that will contain the close button and button box
+        self.lowerHBox = gtk.HBox()
+
+        # Create an exit button
+        self.left_bb = gtk.HButtonBox()
+        self.left_bb.set_layout(gtk.BUTTONBOX_START)
+        self.left_bb.set_border_width(10)
+        self.left_bb.set_spacing(10)
+        self.exitButton = gtk.Button(stock='gtk-quit')
+        self.exitButton.connect("clicked", self.abortFirstboot)
+        self.left_bb.pack_start(self.exitButton)
+        self.lowerHBox.pack_start(self.left_bb, gtk.FALSE)
+        
         # Create a button box to handle navigation.
         self.bb = gtk.HButtonBox()
         self.bb.set_layout(gtk.BUTTONBOX_END)
@@ -200,7 +213,10 @@ class firstbootWindow:
         self.finishButton.connect('clicked', self.finishClicked)
 	# Add the button box to the bottom of the box which contains the
 	# notebook.
-        self.internalVBox.pack_start(self.bb, gtk.FALSE, 10)
+        self.lowerHBox.pack_start(self.bb, gtk.TRUE)
+        
+#        self.internalVBox.pack_start(self.bb, gtk.FALSE, 10)
+        self.internalVBox.pack_start(self.lowerHBox, gtk.FALSE, 10)
 
 
         #Accelerators aren't currently working in GTK 2.0   Grrrrrrr.
@@ -262,6 +278,23 @@ class firstbootWindow:
             os.kill(self.wm_pid, 15)
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
+
+    def abortFirstboot(self, *args):
+        #Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
+        if (not self.doDebug):
+            fd = open("/etc/sysconfig/firstboot", "w")
+            fd.write("RUN_FIRSTBOOT=NO\n")
+            fd.close()
+
+        #Exit the GTK loop
+        gtk.mainquit()
+        if self.wm_pid:
+        #Kill the window manager
+            os.kill(self.wm_pid, 15)
+        #Exit firstboot.  This should take down the X server as well
+        os._exit(0)
+
+
 
     def nextClicked(self, *args):
         try:
