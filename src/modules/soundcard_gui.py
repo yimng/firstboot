@@ -29,8 +29,7 @@ import sys
 import os
 import functions
 
-#sys.path.append('/usr/share/redhat-config-soundcard/')
-sys.path.append('/home/devel/bfox/redhat/redhat-config-soundcard/src/')
+sys.path.append('/usr/share/redhat-config-soundcard/')
 import soundcard
 import soundcardBackend
 
