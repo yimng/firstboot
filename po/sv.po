@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
-"PO-Revision-Date: 2002-08-08 01:00+0200\n"
+"PO-Revision-Date: 2002-08-13 17:19+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,17 +46,20 @@ msgstr ""
 
 #: ../src/firstboot.py:83
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "Firstboot har redan körts en gång på detta system.\n"
 
 #: ../src/firstboot.py:84
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
+"För att kunna köra firstboot från kommandoraden kör du följande kommandon:"
 
 #: ../src/firstboot.py:89
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
+"För att kunna köra firstboot under systemuppstarten kör du följande "
+"kommandon:"
 
 #: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
@@ -67,21 +70,32 @@ msgid "Install Additional Software"
 msgstr "Installera ytterligare programvara"
 
 #: ../src/modules/additional_cds.py:61
-#, fuzzy
 msgid ""
 "If you have additional CD-ROMs that you would like to install, such as the "
 "Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
 "drive and click the \"Install software\" button below."
 msgstr ""
-"Om du har ytterligare cd-skivor från Red Hat Linux-lådan, exempelvis skivan "
-"\"Red Hat Linux Documentation CD\" eller \"Linux Applications CD\" bör du "
-"stoppa in skivan nu och klicka på motsvarande knapp nedan."
+"Om du har ytterligare cd-skivor som du vill installera, exempelvis skivan "
+"\"Red Hat Linux Documentation CD\", kan du göra det nu. Stoppa in skivan "
+"i enheten och klicka på knappen \"Installera programvara\" nedan."
+
+msgid ""
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install Additional software\" button below."
+msgstr ""
+"Om du har ytterligare cd-skivor som du vill installera, exempelvis skivan "
+"\"Red Hat Linux Documentation CD\", kan du göra det nu. Stoppa in skivan "
+"i enheten och klicka på knappen \"Installera ytterligare programvara\" "
+"nedan."
 
 #: ../src/modules/additional_cds.py:115
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"En cd-romskiva har inte detekterats. Stoppa in en cd-romskiva i enheten "
+"och klicka på \"OK\" för att fortsätta."
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -112,9 +126,8 @@ msgid "Finish Setup"
 msgstr "Slutför konfiguration"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Setup!"
-msgstr "Slutför konfiguration"
+msgstr "Slutförde konfiguration!"
 
 #: ../src/modules/finished.py:45
 msgid ""
