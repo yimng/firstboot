@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.4
-Release: 2
+Release: 3
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -70,6 +70,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Jan 21 2003 Brent Fox <bfox@redhat.com> 1.0.4-3
+- remove print statement that was causing a traceback
+
 * Mon Jan 20 2003 Brent Fox <bfox@redhat.com> 1.0.4-2
 - use the gdm background as the background image
 
