@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Tue Jul 22 22:58:03 2003\n"
-"PO-Revision-Date: 2003-03-04 11:57+0100\n"
+"PO-Revision-Date: 2003-08-13 00:02+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -68,11 +68,11 @@ msgstr "Firstboot kör inte på körnivå 3."
 
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
-msgstr ""
+msgstr "_Bakåt"
 
 #: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
-msgstr ""
+msgstr "_Nästa"
 
 #: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
@@ -127,23 +127,31 @@ msgstr ""
 "begärda informationen."
 
 #: ../src/modules/create_user.py:57
-#, fuzzy
 msgid "_Username:"
+msgstr "_Användarnamn:"
+
+msgid "Username:"
 msgstr "Användarnamn:"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full Nam_e:"
+msgstr "Fullständigt na_mn:"
+
+msgid "Full Name:"
 msgstr "Fullständigt namn:"
 
 #: ../src/modules/create_user.py:71
-#, fuzzy
 msgid "_Password:"
+msgstr "_Lösenord:"
+
+msgid "Password:"
 msgstr "Lösenord:"
 
 #: ../src/modules/create_user.py:78
-#, fuzzy
 msgid "Confir_m Password:"
+msgstr "_Bekräfta lösenord:"
+
+msgid "Confirm Password:"
 msgstr "Bekräfta lösenord:"
 
 #: ../src/modules/create_user.py:94
@@ -151,10 +159,15 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Om du måste använda nätverksautentisering som exempelvis Kerberos eller NIS "
+"bör du klicka på knappen Använd nätverksinloggning."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Använd nätverksinloggning..."
+
+msgid "Use Network Login..."
+msgstr "Använd nätverksin_loggning..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -167,13 +180,17 @@ msgstr ""
 "reserverat för administrativt bruk."
 
 #: ../src/modules/create_user.py:145
-#, fuzzy
 msgid "_Continue"
+msgstr "_Fortsätt"
+
+msgid "Continue"
 msgstr "Fortsätt"
 
 #: ../src/modules/create_user.py:146
-#, fuzzy
 msgid "Create _account"
+msgstr "Skapa _konto"
+
+msgid "Create account"
 msgstr "Skapa konto"
 
 #: ../src/modules/create_user.py:172
@@ -201,12 +218,12 @@ msgid "The user name may not begin with a number."
 msgstr "Användarnamnet får inte börja med en siffra."
 
 #: ../src/modules/create_user.py:252
-#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i %s."
+"Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i "
+"användarnamnet."
 
 #: ../src/modules/create_user.py:259
 msgid ""
@@ -275,37 +292,39 @@ msgid "Finish Setup"
 msgstr "Slutför konfiguration"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
-"\"Framåt\" i nedre högra hörnet för att fortsätta."
+"\"Nästa\" i nedre högra hörnet för att fortsätta."
 
 #: ../src/modules/networking.py:23
 msgid "Network Setup"
-msgstr ""
+msgstr "Nätverkskonfiguration"
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "Följande nätverksenheter har hittats på systemet:"
 
 #: ../src/modules/networking.py:68
 msgid "Network Device"
-msgstr ""
+msgstr "Nätverksenhet"
 
 #: ../src/modules/networking.py:70
 msgid "Boot protocol"
-msgstr ""
+msgstr "Startprotokoll"
 
 #: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "_Ändra nätverkskonfiguration..."
+
+msgid "Change Network Configuration..."
+msgstr "Ändra nätverkskonfiguration..."
 
 #: ../src/modules/networking.py:119
 msgid "static"
-msgstr ""
+msgstr "statisk"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -328,12 +347,11 @@ msgstr ""
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "Tidszon"
 
 #: ../src/modules/timezone.py:55
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "Ställ in datum och tid för systemet."
+msgstr "Ställ in tidszonen för systemet."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -372,12 +390,13 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Ja, jag vill registrera mitt system i Red Hat Network."
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid "N_o, I do not want to register my system."
+msgstr "N_ej, jag vill inte registrera mitt system."
+
+msgid "No, I do not want to register my system."
 msgstr "Nej, jag vill inte registrera mitt system."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
@@ -385,7 +404,7 @@ msgid ""
 msgstr ""
 "Det är ytterligare några steg kvar innan ditt system är redo för användning. "
 "Red Hats konfigurationsagent kommer nu att leda dig genom en del "
-"grundläggande konfiguration. Klicka på knappen \"Framåt\" i nedre högra "
+"grundläggande konfiguration. Klicka på knappen \"Nästa\" i nedre högra "
 "hörnet för att fortsätta."
 
 #: ../src/textWindow.py:15
