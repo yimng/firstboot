@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.9
-Release: 4
+Release: 5
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -62,6 +62,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-5
+- Print out a message if user tries to run firstboot again
+- move firstboot to firstboot.py and create a shell script for firstboot
+
 * Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-4
 - Try to fix race condition
 - Have init script return 0 instead of 1
