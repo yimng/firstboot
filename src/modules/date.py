@@ -27,6 +27,8 @@ import gtk
 import gobject
 import sys
 import os
+import signal
+import time
 import functions
 
 sys.path.append('/usr/share/redhat-config-date/')
@@ -54,8 +56,8 @@ class TimeWindow(FirstbootGuiWindow):
     def getNext(self):
         pass
     
-    def destroy(self, args):
-        gtk.mainquit()
+#    def destroy(self, args):
+#        gtk.mainquit()
     
     def setupScreen(self):
         #Initialize date backend
@@ -76,7 +78,13 @@ class TimeWindow(FirstbootGuiWindow):
         self.setupScreen()
         return FirstbootGuiWindow.launch(self)
 
+    def response_cb (self, dialog, response_id, pid):
+        if response_id == gtk.RESPONSE_CANCEL:
+            os.kill (pid, signal.SIGINT)
+        dialog.hide ()
+
     def apply(self, *args):
+        self.doDebug = None
         if self.doDebug:
             print "applying date changes not available in debug mode"
         else:
@@ -94,34 +102,74 @@ class TimeWindow(FirstbootGuiWindow):
             elif ntpEnabled == gtk.TRUE:
                 sysTimeServer = self.datePage.getTimeServer()
 
-                #First, check to see if we can communicate with the requested server
-                data = os.popen("ping -c 2 %s" % sysTimeServer)
-                rc = data.close()
+                ntpServerList = self.datePage.getNtpServerList()
+                self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList)
 
-                if rc == None:
-                    #Server was contacted, so write out the correct files and start up the service
-                    ntpServerList = self.datePage.getNtpServerList()
-                    self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList)
-                    self.dateBackend.startNtpService(None)
+                def child_handler (signum, stack_frame):
+                    if not pid:
+                        return
+                    
+                    realpid, waitstat = os.waitpid(pid, os.WNOHANG)
+                        
+                    if realpid != pid:
+                        return
+                    gtk.mainquit()
+                    result = os.read (read,100)
+                    os.close (read)
+                    signal.signal (signal.SIGCHLD, signal.SIG_DFL)
+                    
+                    if int(result) > 0:
+                        text = (_("A connection with %s could not be established.  "
+                                               "Either %s is not available or the firewall settings "
+                                               "on your computer are blocking NTP connections." %
+                                               (sysTimeServer, sysTimeServer)))
+
+                        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
+
+                        dlg.set_title(_("Error"))
+                        dlg.set_default_size(100, 100)
+                        dlg.set_position (gtk.WIN_POS_CENTER_ON_PARENT)
+                        dlg.set_border_width(2)
+                        dlg.set_modal(gtk.TRUE)
+                        rc = dlg.run()
+                        dlg.destroy()
+
+                        return
+
                     self.dateBackend.syncHardwareClock()
-                else:
-                    dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
-    _("A connection with %s could not be established.  Either %s is not available or the firewall settings "
-      "on your computer are blocking NTP connections." % (sysTimeServer, sysTimeServer)))
-                    dlg.set_title(_("Error"))
-                    dlg.set_default_size(100, 100)
-                    dlg.set_position (gtk.WIN_POS_CENTER)
-                    dlg.set_border_width(2)
-                    dlg.set_modal(gtk.TRUE)
-                    rc = dlg.run()
-                    dlg.destroy()
-                    #We want to break out of the apply and not advance firstboot to the next screen
-                    return 0
 
-                ntpServersList = self.datePage.getNtpServerList()
-                self.dateBackend.writeNtpConfig(sysTimeServer, ntpServersList)
-                self.dateBackend.startNtpService(None)
-                self.dateBackend.syncHardwareClock()
+                signal.signal (signal.SIGCHLD, child_handler)
+                (read, write) = os.pipe ()
+                pid = os.fork ()
+
+                if pid == 0:
+                    signal.signal (signal.SIGCHLD, signal.SIG_DFL)
+                    # do something slow
+                    os.close (read)
+                    time.sleep (2)
+                    retval = self.dateBackend.startNtpService(None)
+                    retval = str(retval)
+                    os.write (write, retval)
+                    os._exit (0)
+
+                os.close (write)
+
+
+                dlg = gtk.Dialog('', None, 0, (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL))
+                dlg.set_border_width(10)
+                label = gtk.Label(_("Contacting NTP server.  Please wait..."))
+                dlg.vbox.set_spacing(5)
+                dlg.vbox.add(label)
+                dlg.set_position (gtk.WIN_POS_CENTER)
+                dlg.set_modal(gtk.TRUE)
+                dlg.connect ('response', self.response_cb, pid)
+                dlg.show_all()
+
+                #work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
+                id = gtk.timeout_add(20, lambda:1)
+                gtk.mainloop()
+                dlg.destroy()
+                gtk.idle_remove (id)          
 
         return 1
 
