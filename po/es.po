@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-12-01 22:59+0100\n"
+"PO-Revision-Date: 2003-12-14 21:40+0100\n"
 "Last-Translator: Luis Mayoral <mayoral@linuxadicto.org>\n"
 "Language-Team: Español <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -178,15 +178,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot ya ha sido ejectuado con anterioridad en este sistema.\n"
 
 #: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot desde la línea de comandos, ejecute los siguientes "
 "comandos:"
 
 #: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot durante el arranque del sistema, ejecute los "
 "siguientes comandos:"
@@ -361,63 +359,55 @@ msgstr "Bienvenido"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Autenticación"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration "
-msgstr "Configuración de la fecha y de la hora"
+msgstr "Configuración del cortafuegos"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration "
-msgstr "Configuración de la tarjeta de sonido"
+msgstr "Configuración del teclado"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Mouse configuration "
-msgstr "Configuración de la tarjeta de sonido"
+msgstr "Configuración del ratón"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "_Cambiar configuración de la red..."
+msgstr "Configuración de la red"
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "Printer configuration "
-msgstr "Configuración de la tarjeta de sonido"
+msgstr "Configuración de la impresora"
 
 #: ../src/textWindow.py:39
 msgid "System services "
-msgstr ""
+msgstr "Servicios del sistema"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Sound card configuration "
 msgstr "Configuración de la tarjeta de sonido"
 
 #: ../src/textWindow.py:41
-#, fuzzy
 msgid "Timezone configuration "
-msgstr "Configuración de la fecha y de la hora"
+msgstr "Configuración de la zona horaria"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "Ejecutar Herramienta"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "Salir"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Seleccione el ítem que desea modificar"
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Agente de configuración de Red Hat"
+msgstr "Agente de Configuración"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -476,8 +466,7 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "No se puede encontrar el programa de autorun en el cd. Pulse en  \"OK\" para "
 "continuar."
@@ -555,13 +544,11 @@ msgstr "Crear cuent_a"
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
+msgstr "Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
 
 #: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
+msgstr "La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
 
 #: ../src/modules/create_user.py:191
 #, python-format
@@ -622,8 +609,7 @@ msgstr ""
 "caracteres  ASCII."
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La contraseña contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII."
@@ -631,8 +617,7 @@ msgstr ""
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "El nombre '%s' contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII. "
@@ -728,11 +713,11 @@ msgstr "Contactar el servidor NTP.  Por favor, espere..."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Pantalla"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Seleccione la resolución y profundidad de color que desea utilizar"
 
 #. Add icon to the top frame
 #. #
@@ -880,7 +865,6 @@ msgid "Please set the timezone for the system."
 msgstr "Configure la zona horaria para el sistema."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -889,7 +873,7 @@ msgstr ""
 "Hay algunos pasos más que debe realizar antes de que su sistema esté listo "
 "para ser utilizado. El Agente del configuración de Red Hat le guiará a "
 "través de algunos elementos básicos de configuración. Pulse el botón "
-"\"Adelante\" en la parte inferior derecha para continuar."
+"\"Adelante\" en la esquina inferior derecha para continuar."
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot  no se ejecuta en el nivel de ejecución 3."
@@ -997,3 +981,4 @@ msgstr ""
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "¡Bienvenido a Red Hat Linux!"
+
