@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
+"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
 "PO-Revision-Date: 2003-01-16 14:12+1000\n"
 "Last-Translator: David Barzilay <barzilay@redhat.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
@@ -45,24 +45,27 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "O 'firstboot' já foi executado uma vez neste sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+"Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para rodar o 'firstboot' durante o início do sistema, execute os seguintes "
 "comandos:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
+#: ../src/firstboot.py:120
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr "CDs Adicionais"
 
-#: ../src/modules/additional_cds.py:30
-msgid "Install Additional Software"
-msgstr "Instalar Software Adicional"
-
-#: ../src/modules/additional_cds.py:41
+#: ../src/modules/additional_cds.py:39
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -70,20 +73,20 @@ msgstr ""
 "Se você tiver algum dos CDs listados abaixo, pode instalar os seus pacotes "
 "introduzindo o CD e clicando o botão apropriado."
 
-#: ../src/modules/additional_cds.py:53
+#: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
 msgstr "CD de Documentação do Red Hat Linux"
 
-#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
-#: ../src/modules/additional_cds.py:79
+#: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
+#: ../src/modules/additional_cds.py:77
 msgid "Install..."
 msgstr "Instalar..."
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
 msgstr "CD de Instalação do Red Hat Linux"
 
-#: ../src/modules/additional_cds.py:101
+#: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -91,73 +94,126 @@ msgstr ""
 "Não foi detectado nenhum CD-ROM.  Por favor introduza um CD no 'drive' e "
 "clique \"OK\" para continuar."
 
-#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
-msgid "Create A User"
-msgstr "Criar um Usuário"
-
-#: ../src/modules/create_user.py:46
-msgid ""
-"A user account is required to use the system.  Create a user account by "
-"filling in the information below."
+#: ../src/modules/create_user.py:20
+msgid "User Account"
 msgstr ""
-"É necessário criar uma conta de usuário para utilizar o sistema.  Crie uma "
-"conta de usuário preenchendo as informações abaixo."
 
-#: ../src/modules/create_user.py:55
+#: ../src/modules/create_user.py:44
+msgid ""
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
+msgstr ""
+
+#: ../src/modules/create_user.py:54
 msgid "Username:"
 msgstr "Nome do Usuário:"
 
-#: ../src/modules/create_user.py:60
+#: ../src/modules/create_user.py:59
 msgid "Full Name:"
 msgstr "Nome Completo:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:64
 msgid "Password:"
 msgstr "Senha:"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid "Confirm Password:"
 msgstr "Confirme a Senha:"
 
-#: ../src/modules/create_user.py:91
+#: ../src/modules/create_user.py:99
 msgid ""
-"A user account was not created.  Are you sure that you want to continue "
-"without creating a user account?"
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 msgstr ""
-"A conta de usuário não foi criada.  Tem certeza que deseja continuarsem "
-"criar um usuário?"
 
 #: ../src/modules/create_user.py:107
+msgid "Continue"
+msgstr ""
+
+#: ../src/modules/create_user.py:108
+msgid "Create account"
+msgstr ""
+
+#: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "As senhas não coincidem.  Por favor insira a senha novamente."
 
-#: ../src/modules/create_user.py:115
+#: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "A senha é muito curta.  Por favor use no mínimo 6 caracteres."
 
-#: ../src/modules/create_user.py:126
-msgid "An account with username %s already exists.  Please specify another username."
+#: ../src/modules/create_user.py:153
+#, fuzzy
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
 msgstr ""
 "Já existe uma conta para o usuário de nome %s.  Por favor escolha outro nome "
 "de usuário."
+
+#: ../src/modules/create_user.py:200
+msgid "The user name must be less than 33 characters long."
+msgstr ""
+
+#: ../src/modules/create_user.py:206
+msgid "The user name may not begin with a number."
+msgstr ""
+
+#: ../src/modules/create_user.py:214
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the %s."
+msgstr ""
+
+#: ../src/modules/create_user.py:221
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:228
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:235
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+
+#: ../src/modules/create_user.py:245
+#, fuzzy
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "A senha é muito curta.  Por favor use no mínimo 6 caracteres."
+
+#: ../src/modules/create_user.py:257
+#, fuzzy
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "A senha é muito curta.  Por favor use no mínimo 6 caracteres."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Data e Hora"
 
-#: ../src/modules/date.py:52
-msgid "Set Date and Time"
-msgstr "Configurar Data e Hora"
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr "Por favor configure a data e a hora para o computador."
 
-#: ../src/modules/date.py:106
+#: ../src/modules/date.py:116
 msgid "Please enter a time server."
 msgstr "Por favor indique a hora do servidor."
 
-#: ../src/modules/date.py:108 ../src/modules/date.py:142
+#: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
 msgstr "Erro"
 
-#: ../src/modules/date.py:135
+#: ../src/modules/date.py:145
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -166,7 +222,7 @@ msgstr ""
 "ou a configuração do 'firewall' no seu computador está bloqueando conexões "
 "NTP."
 
-#: ../src/modules/date.py:172
+#: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Contactando o servidor NTP.  Por favor aguarde..."
 
@@ -174,20 +230,15 @@ msgstr "Contactando o servidor NTP.  Por favor aguarde..."
 msgid "Finish Setup"
 msgstr "Terminar a Configuração"
 
-#: ../src/modules/finished.py:28
-msgid "Finished Setup!"
-msgstr "Fim da Configuração!"
-
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
-"will have a pleasant computing experience.  Please click the \"Forward\" "
+"Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Seu sistema Red Hat Linux agora está configurado e pronto para ser "
-"usado.  Esperamos que você tenha uma experiência computacional agradável.  "
-"Por favor clique no botão \"Avançar\" no canto inferior direito para "
-"continuar."
+"Seu sistema Red Hat Linux agora está configurado e pronto para ser usado.  "
+"Esperamos que você tenha uma experiência computacional agradável.  Por favor "
+"clique no botão \"Avançar\" no canto inferior direito para continuar."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -212,11 +263,7 @@ msgstr ""
 msgid "Update Agent"
 msgstr "Agente de Atualizações "
 
-#: ../src/modules/up2date.py:31
-msgid "Red Hat Update Agent"
-msgstr "Agente de Atualizações Red Hat"
-
-#: ../src/modules/up2date.py:38
+#: ../src/modules/up2date.py:36
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -245,11 +292,11 @@ msgstr ""
 "Se você não adquiriu este produto, visite http://rhn.redhat.com para mais "
 "informações ou registre-se no Serviço Básico da Red Hat Network. \n"
 
-#: ../src/modules/up2date.py:57
+#: ../src/modules/up2date.py:55
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "Sim, quero registrar-me na Red Hat Network."
 
-#: ../src/modules/up2date.py:58
+#: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
 msgstr "Não, não quero registrar o meu sistema."
 
@@ -264,9 +311,9 @@ msgid ""
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Ainda há mais alguns passos a percorrer antes do seu computador estar pronto "
-"para ser utilizado.  O Agente de Configuração da Red Hat agora irá guiá-lo através de "
-"algumas configurações básicas.  Por favor clique no botão \"Avançar\" no "
-"canto inferior direito para continuar."
+"para ser utilizado.  O Agente de Configuração da Red Hat agora irá guiá-lo "
+"através de algumas configurações básicas.  Por favor clique no botão "
+"\"Avançar\" no canto inferior direito para continuar."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -299,15 +346,40 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Agente de Configuração Red Hat"
 
+#~ msgid "Install Additional Software"
+#~ msgstr "Instalar Software Adicional"
+
+#~ msgid "Create A User"
+#~ msgstr "Criar um Usuário"
+
+#~ msgid ""
+#~ "A user account is required to use the system.  Create a user account by "
+#~ "filling in the information below."
+#~ msgstr ""
+#~ "É necessário criar uma conta de usuário para utilizar o sistema.  Crie "
+#~ "uma conta de usuário preenchendo as informações abaixo."
+
+#~ msgid ""
+#~ "A user account was not created.  Are you sure that you want to continue "
+#~ "without creating a user account?"
+#~ msgstr ""
+#~ "A conta de usuário não foi criada.  Tem certeza que deseja continuarsem "
+#~ "criar um usuário?"
+
+#~ msgid "Set Date and Time"
+#~ msgstr "Configurar Data e Hora"
+
+#~ msgid "Finished Setup!"
+#~ msgstr "Fim da Configuração!"
+
+#~ msgid "Red Hat Update Agent"
+#~ msgstr "Agente de Atualizações Red Hat"
+
 #~ msgid "Date and Time Configuration"
 #~ msgstr "Configuração de Data e Hora"
-
-#~ msgid "Please set the date and time for the system."
-#~ msgstr "Por favor configure a data e a hora para o computador."
 
 #~ msgid "Sound Card Configuration"
 #~ msgstr "Configuração da Placa de Som"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Bem-vindo ao Red Hat Linux!"
-

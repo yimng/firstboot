@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
+"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
 "PO-Revision-Date: 2003-01-21 17:42+0100\n"
 "Last-Translator: Milan Kerslager <kerslage@linux.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -56,15 +56,15 @@ msgstr ""
 "Pro spuštění programu firstboot při startu systému spusťte následující "
 "příkazy:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
+#: ../src/firstboot.py:120
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr "Jiná CD"
 
-#: ../src/modules/additional_cds.py:30
-msgid "Install Additional Software"
-msgstr "Instalace dalšího software"
-
-#: ../src/modules/additional_cds.py:41
+#: ../src/modules/additional_cds.py:39
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -72,20 +72,20 @@ msgstr ""
 "Máte-li některé z CD vypsaných níže, můžete z nich nainstalovat balíčky "
 "vložením CD a kliknutím na odpovídající tlačítko."
 
-#: ../src/modules/additional_cds.py:53
+#: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat Linux CD s dokumentací"
 
-#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
-#: ../src/modules/additional_cds.py:79
+#: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
+#: ../src/modules/additional_cds.py:77
 msgid "Install..."
 msgstr "Instalovat..."
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux instalační CD"
 
-#: ../src/modules/additional_cds.py:101
+#: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -93,74 +93,126 @@ msgstr ""
 "Nebylo nalezeno CD-ROM. Vložte prosím do CD-ROM do jednotky a pokračujte "
 "kliknutím na \"OK\"."
 
-#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
-msgid "Create A User"
-msgstr "Vytvořit uživatele"
-
-#: ../src/modules/create_user.py:46
-msgid ""
-"A user account is required to use the system.  Create a user account by "
-"filling in the information below."
+#: ../src/modules/create_user.py:20
+msgid "User Account"
 msgstr ""
-"Pro používání systému je vyžadován uživatelský účet. Vytvořte uživatelský "
-"účet vyplněním informací níže."
 
-#: ../src/modules/create_user.py:55
+#: ../src/modules/create_user.py:44
+msgid ""
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
+msgstr ""
+
+#: ../src/modules/create_user.py:54
 msgid "Username:"
 msgstr "Přihlašovací jméno:"
 
-#: ../src/modules/create_user.py:60
+#: ../src/modules/create_user.py:59
 msgid "Full Name:"
 msgstr "Plné jméno:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:64
 msgid "Password:"
 msgstr "Heslo:"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid "Confirm Password:"
 msgstr "Potvrďte heslo:"
 
-#: ../src/modules/create_user.py:91
+#: ../src/modules/create_user.py:99
 msgid ""
-"A user account was not created.  Are you sure that you want to continue "
-"without creating a user account?"
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 msgstr ""
-"Nebyl vytvořen uživatelský účet. Jste si jisti, že chcete pokračovat bez "
-"vytvoření uživatelského účtu?"
 
 #: ../src/modules/create_user.py:107
+msgid "Continue"
+msgstr ""
+
+#: ../src/modules/create_user.py:108
+msgid "Create account"
+msgstr ""
+
+#: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Hesla nesouhlasí. Zadejte heslo prosím znovu."
 
-#: ../src/modules/create_user.py:115
+#: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:153
+#, fuzzy
 msgid ""
-"An account with username %s already exists.  Please specify another username."
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
 msgstr ""
 "Účet s uživatelským jménem %s již existuje. Zadejte prosím jiné uživatelské "
 "jméno."
+
+#: ../src/modules/create_user.py:200
+msgid "The user name must be less than 33 characters long."
+msgstr ""
+
+#: ../src/modules/create_user.py:206
+msgid "The user name may not begin with a number."
+msgstr ""
+
+#: ../src/modules/create_user.py:214
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the %s."
+msgstr ""
+
+#: ../src/modules/create_user.py:221
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:228
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:235
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+
+#: ../src/modules/create_user.py:245
+#, fuzzy
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
+
+#: ../src/modules/create_user.py:257
+#, fuzzy
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Datum a čas"
 
-#: ../src/modules/date.py:52
-msgid "Set Date and Time"
-msgstr "Nastavit Datum a čas"
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr ""
 
-#: ../src/modules/date.py:106
+#: ../src/modules/date.py:116
 msgid "Please enter a time server."
 msgstr "Zadejte prosím server času."
 
-#: ../src/modules/date.py:108 ../src/modules/date.py:142
+#: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
 msgstr "Chyba"
 
-#: ../src/modules/date.py:135
+#: ../src/modules/date.py:145
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -168,7 +220,7 @@ msgstr ""
 "Nebylo možné se spojit s %s. Buď je %s nedostupný, nebo nastavení firewallu "
 "blokují spojení NTP."
 
-#: ../src/modules/date.py:172
+#: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Spojuji se s NTP serverem. Prosím čekejte..."
 
@@ -176,14 +228,10 @@ msgstr "Spojuji se s NTP serverem. Prosím čekejte..."
 msgid "Finish Setup"
 msgstr "Konec nastavení"
 
-#: ../src/modules/finished.py:28
-msgid "Finished Setup!"
-msgstr "Nastavení hotovo!"
-
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
-"will have a pleasant computing experience.  Please click the \"Forward\" "
+"Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Váš systém Red Hat Linux je nyní nastaven a připraven k použití. Doufáme, že "
@@ -213,11 +261,7 @@ msgstr ""
 msgid "Update Agent"
 msgstr "Update Agent"
 
-#: ../src/modules/up2date.py:31
-msgid "Red Hat Update Agent"
-msgstr "Red Hat Update Agent"
-
-#: ../src/modules/up2date.py:38
+#: ../src/modules/up2date.py:36
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -245,11 +289,11 @@ msgstr ""
 "Jestliže jste si tento produkt nekoupili, navštivte http://rhn.redhat.com "
 "pro více informací nebo pro objednání služby Red Hat Network Basic. \n"
 
-#: ../src/modules/up2date.py:57
+#: ../src/modules/up2date.py:55
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "Ano, chci se zaregistrovat u Red Hat Network."
 
-#: ../src/modules/up2date.py:58
+#: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
 msgstr "Ne, nechci svůj počítač zaregistrovat."
 
@@ -295,6 +339,35 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Setup Agent"
+
+#~ msgid "Install Additional Software"
+#~ msgstr "Instalace dalšího software"
+
+#~ msgid "Create A User"
+#~ msgstr "Vytvořit uživatele"
+
+#~ msgid ""
+#~ "A user account is required to use the system.  Create a user account by "
+#~ "filling in the information below."
+#~ msgstr ""
+#~ "Pro používání systému je vyžadován uživatelský účet. Vytvořte uživatelský "
+#~ "účet vyplněním informací níže."
+
+#~ msgid ""
+#~ "A user account was not created.  Are you sure that you want to continue "
+#~ "without creating a user account?"
+#~ msgstr ""
+#~ "Nebyl vytvořen uživatelský účet. Jste si jisti, že chcete pokračovat bez "
+#~ "vytvoření uživatelského účtu?"
+
+#~ msgid "Set Date and Time"
+#~ msgstr "Nastavit Datum a čas"
+
+#~ msgid "Finished Setup!"
+#~ msgstr "Nastavení hotovo!"
+
+#~ msgid "Red Hat Update Agent"
+#~ msgstr "Red Hat Update Agent"
 
 #~ msgid "Sound Card Configuration"
 #~ msgstr "Nastavení zvukové karty"

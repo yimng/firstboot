@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
-"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
+"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
 "PO-Revision-Date: 2003-01-15 18:35GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -47,22 +47,24 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
+#: ../src/firstboot.py:120
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr "追加のCD"
 
-#: ../src/modules/additional_cds.py:30
-msgid "Install Additional Software"
-msgstr "別のソフトウェアをインストール"
-
-#: ../src/modules/additional_cds.py:41
+#: ../src/modules/additional_cds.py:39
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -70,20 +72,20 @@ msgstr ""
 "以下に表示してあるCDのどれかを所有している場合、そのCDを挿入して必要な ボタン"
 "を押すことによりパッケージをインストールできます。"
 
-#: ../src/modules/additional_cds.py:53
+#: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat LinuxドキュメントCD"
 
-#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
-#: ../src/modules/additional_cds.py:79
+#: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
+#: ../src/modules/additional_cds.py:77
 msgid "Install..."
 msgstr "インストール..."
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat LinuxインストールCD"
 
-#: ../src/modules/additional_cds.py:101
+#: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -91,71 +93,125 @@ msgstr ""
 "CD-ROMは検出されませんでした。 CD-ROMをドライブに挿入して\"OK\"を クリックし"
 "て続けて下さい。"
 
-#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
-msgid "Create A User"
-msgstr "ユーザーを作成"
-
-#: ../src/modules/create_user.py:46
-msgid ""
-"A user account is required to use the system.  Create a user account by "
-"filling in the information below."
+#: ../src/modules/create_user.py:20
+msgid "User Account"
 msgstr ""
-"システムを使用するにはユーザーアカウントが必要です。下の情報を記入して ユー"
-"ザーアカウントを作成して下さい。"
 
-#: ../src/modules/create_user.py:55
+#: ../src/modules/create_user.py:44
+msgid ""
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
+msgstr ""
+
+#: ../src/modules/create_user.py:54
 msgid "Username:"
 msgstr "ユーザー名:"
 
-#: ../src/modules/create_user.py:60
+#: ../src/modules/create_user.py:59
 msgid "Full Name:"
 msgstr "フルネーム: "
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:64
 msgid "Password:"
 msgstr "パスワード:"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid "Confirm Password:"
 msgstr "パスワードの確認:"
 
-#: ../src/modules/create_user.py:91
+#: ../src/modules/create_user.py:99
 msgid ""
-"A user account was not created.  Are you sure that you want to continue "
-"without creating a user account?"
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 msgstr ""
-"ユーザーアカウントが作成されていません。本当にユーザーアカウントを作成 せずに"
-"続けてもよろしいですか?"
 
 #: ../src/modules/create_user.py:107
+msgid "Continue"
+msgstr ""
+
+#: ../src/modules/create_user.py:108
+msgid "Create account"
+msgstr ""
+
+#: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "パスワードが一致しません。再度パスワードを入力して下さい。"
 
-#: ../src/modules/create_user.py:115
+#: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
 
-#: ../src/modules/create_user.py:126
-msgid "An account with username %s already exists.  Please specify another username."
-msgstr "ユーザー名%sのアカウントはすでに存在します。別のユーザー名を指定して下さい。"
+#: ../src/modules/create_user.py:153
+#, fuzzy
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"ユーザー名%sのアカウントはすでに存在します。別のユーザー名を指定して下さい。"
+
+#: ../src/modules/create_user.py:200
+msgid "The user name must be less than 33 characters long."
+msgstr ""
+
+#: ../src/modules/create_user.py:206
+msgid "The user name may not begin with a number."
+msgstr ""
+
+#: ../src/modules/create_user.py:214
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the %s."
+msgstr ""
+
+#: ../src/modules/create_user.py:221
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:228
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:235
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+
+#: ../src/modules/create_user.py:245
+#, fuzzy
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
+
+#: ../src/modules/create_user.py:257
+#, fuzzy
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "日付 と 時刻"
 
-#: ../src/modules/date.py:52
-msgid "Set Date and Time"
-msgstr "日付と時刻を設定"
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr "システム用に日付と時刻を設定して下さい。"
 
-#: ../src/modules/date.py:106
+#: ../src/modules/date.py:116
 msgid "Please enter a time server."
 msgstr "タイムサーバを入力して下さい。"
 
-#: ../src/modules/date.py:108 ../src/modules/date.py:142
+#: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
 msgstr "エラー"
 
-#: ../src/modules/date.py:135
+#: ../src/modules/date.py:145
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -163,7 +219,7 @@ msgstr ""
 "%sとの接続が確立できません。 %sが利用できないか又は、コンピュータの ファイ"
 "ヤーウォールの設定がNTP の接続を阻止しています。"
 
-#: ../src/modules/date.py:172
+#: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTPサーバに接続しています。お待ち下さい..."
 
@@ -171,19 +227,15 @@ msgstr "NTPサーバに接続しています。お待ち下さい..."
 msgid "Finish Setup"
 msgstr "セットアップを終了"
 
-#: ../src/modules/finished.py:28
-msgid "Finished Setup!"
-msgstr "セットアップ終了!"
-
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
-"will have a pleasant computing experience.  Please click the \"Forward\" "
+"Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Red Hat Linux システムが設定できましたので、使用できる状態です。楽しい "
-"コンピュータの世界をお楽しみ下さい。右下の隅にある 「前」"
-"ボタンをクリックして続けてください。"
+"Red Hat Linux システムが設定できましたので、使用できる状態です。楽しい コン"
+"ピュータの世界をお楽しみ下さい。右下の隅にある 「前」ボタンをクリックして続け"
+"てください。"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -208,11 +260,7 @@ msgstr ""
 msgid "Update Agent"
 msgstr "更新エージェント"
 
-#: ../src/modules/up2date.py:31
-msgid "Red Hat Update Agent"
-msgstr "Red Hat 更新エージェント"
-
-#: ../src/modules/up2date.py:38
+#: ../src/modules/up2date.py:36
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -239,11 +287,11 @@ msgstr ""
 "この製品を購入していない場合、http://rhn.redhat.comのサイトで詳細情報を得る"
 "か、 又はRed Hat Network基本サービスを購読してください。\n"
 
-#: ../src/modules/up2date.py:57
+#: ../src/modules/up2date.py:55
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "はい、Red Hat Networkへ登録したいです。"
 
-#: ../src/modules/up2date.py:58
+#: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
 msgstr "いいえ、システムを登録しません。"
 
@@ -257,9 +305,9 @@ msgid ""
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"システムが使用できるようになるまで もう少しステップがあります。Red Hat "
-"セットアップエージェントはここで、基本的な設定を通してガイドをしていきます。 "
-"右下の隅にある「前」ボタンをクリックして続けて下さい。"
+"システムが使用できるようになるまで もう少しステップがあります。Red Hat セット"
+"アップエージェントはここで、基本的な設定を通してガイドをしていきます。 右下の"
+"隅にある「前」ボタンをクリックして続けて下さい。"
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -291,11 +339,37 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Red Hatセットアップエージェント"
 
+#~ msgid "Install Additional Software"
+#~ msgstr "別のソフトウェアをインストール"
+
+#~ msgid "Create A User"
+#~ msgstr "ユーザーを作成"
+
+#~ msgid ""
+#~ "A user account is required to use the system.  Create a user account by "
+#~ "filling in the information below."
+#~ msgstr ""
+#~ "システムを使用するにはユーザーアカウントが必要です。下の情報を記入して "
+#~ "ユーザーアカウントを作成して下さい。"
+
+#~ msgid ""
+#~ "A user account was not created.  Are you sure that you want to continue "
+#~ "without creating a user account?"
+#~ msgstr ""
+#~ "ユーザーアカウントが作成されていません。本当にユーザーアカウントを作成 せ"
+#~ "ずに続けてもよろしいですか?"
+
+#~ msgid "Set Date and Time"
+#~ msgstr "日付と時刻を設定"
+
+#~ msgid "Finished Setup!"
+#~ msgstr "セットアップ終了!"
+
+#~ msgid "Red Hat Update Agent"
+#~ msgstr "Red Hat 更新エージェント"
+
 #~ msgid "Date and Time Configuration"
 #~ msgstr "日付 と 時刻 の設定"
-
-#~ msgid "Please set the date and time for the system."
-#~ msgstr "システム用に日付と時刻を設定して下さい。"
 
 #~ msgid "Sound Card Configuration"
 #~ msgstr "サウンドカードの設定"
@@ -539,4 +613,3 @@ msgstr "Red Hatセットアップエージェント"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-

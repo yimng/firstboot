@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
-"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
+"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
 "PO-Revision-Date: 2003-01-18 15:10+0100\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -53,15 +53,15 @@ msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr "For å kjøre firstboot ved systemstart, kjør følgende kommandoer:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
+#: ../src/firstboot.py:120
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr "Tilleggs-CDer"
 
-#: ../src/modules/additional_cds.py:30
-msgid "Install Additional Software"
-msgstr "Installer tilleggsprogramvare"
-
-#: ../src/modules/additional_cds.py:41
+#: ../src/modules/additional_cds.py:39
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -69,20 +69,20 @@ msgstr ""
 "Hvis du har noen av CDene listet under kan du installere pakker fra dem ved "
 "å sette inn CDen og trykke knappen."
 
-#: ../src/modules/additional_cds.py:53
+#: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat dokumentasjons-CD"
 
-#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
-#: ../src/modules/additional_cds.py:79
+#: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
+#: ../src/modules/additional_cds.py:77
 msgid "Install..."
 msgstr "Installer..."
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux installasjons-CD"
 
-#: ../src/modules/additional_cds.py:101
+#: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -90,74 +90,126 @@ msgstr ""
 "Fant ingen CD-ROM. Sett inn en CD-ROM i spilleren og trykk \"OK\" for å "
 "fortsette."
 
-#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
-msgid "Create A User"
-msgstr "Opprett en bruker"
-
-#: ../src/modules/create_user.py:46
-msgid ""
-"A user account is required to use the system.  Create a user account by "
-"filling in the information below."
+#: ../src/modules/create_user.py:20
+msgid "User Account"
 msgstr ""
-"En brukerkonto kreves for å bruke systemet. Opprett en brukerkonto ved å "
-"fylle ut informasjonen under."
 
-#: ../src/modules/create_user.py:55
+#: ../src/modules/create_user.py:44
+msgid ""
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
+msgstr ""
+
+#: ../src/modules/create_user.py:54
 msgid "Username:"
 msgstr "Brukernavn:"
 
-#: ../src/modules/create_user.py:60
+#: ../src/modules/create_user.py:59
 msgid "Full Name:"
 msgstr "Fullt navn:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:64
 msgid "Password:"
 msgstr "Passord:"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid "Confirm Password:"
 msgstr "Bekreft passord:"
 
-#: ../src/modules/create_user.py:91
+#: ../src/modules/create_user.py:99
 msgid ""
-"A user account was not created.  Are you sure that you want to continue "
-"without creating a user account?"
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 msgstr ""
-"En brukerkonto ble ikke opprettet. Er du sikker på at du ønsker å fortsette "
-"uten å gjøre dette?"
 
 #: ../src/modules/create_user.py:107
+msgid "Continue"
+msgstr ""
+
+#: ../src/modules/create_user.py:108
+msgid "Create account"
+msgstr ""
+
+#: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Passordene er ikke like. Vennligst oppgi passordet igjen."
 
-#: ../src/modules/create_user.py:115
+#: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:153
+#, fuzzy
 msgid ""
-"An account with username %s already exists.  Please specify another username."
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
 msgstr ""
 "En konto med navnet %s eksisterer allerede. Vennligst oppgi et annet "
 "brukernavn."
+
+#: ../src/modules/create_user.py:200
+msgid "The user name must be less than 33 characters long."
+msgstr ""
+
+#: ../src/modules/create_user.py:206
+msgid "The user name may not begin with a number."
+msgstr ""
+
+#: ../src/modules/create_user.py:214
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the %s."
+msgstr ""
+
+#: ../src/modules/create_user.py:221
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:228
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:235
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+
+#: ../src/modules/create_user.py:245
+#, fuzzy
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
+
+#: ../src/modules/create_user.py:257
+#, fuzzy
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Dato & klokkeslett"
 
-#: ../src/modules/date.py:52
-msgid "Set Date and Time"
-msgstr "Sett dato og klokkeslett"
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr ""
 
-#: ../src/modules/date.py:106
+#: ../src/modules/date.py:116
 msgid "Please enter a time server."
 msgstr "Vennligst oppgi en tidtjener."
 
-#: ../src/modules/date.py:108 ../src/modules/date.py:142
+#: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
 msgstr "Feil"
 
-#: ../src/modules/date.py:135
+#: ../src/modules/date.py:145
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -166,7 +218,7 @@ msgstr ""
 "eller så blokkerer brannvegginnstillingene på din datamaskin NTP-"
 "tilkoblinger."
 
-#: ../src/modules/date.py:172
+#: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Kontakter NTP-tjener..."
 
@@ -174,16 +226,15 @@ msgstr "Kontakter NTP-tjener..."
 msgid "Finish Setup"
 msgstr "Avslutt Oppsett"
 
-#: ../src/modules/finished.py:28
-msgid "Finished Setup!"
-msgstr "Ferdig med oppsett!"
-
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
-"will have a pleasant computing experience.  Please click the \"Forward\" "
+"Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
-msgstr "Ditt Red Hat Linux-system er nå satt opp og ferdig for bruk. Vi håper at du blir fornøyd med produktet. Trykk «Fortsett»-knappen i nedre høyre hjørne for å fortsette."
+msgstr ""
+"Ditt Red Hat Linux-system er nå satt opp og ferdig for bruk. Vi håper at du "
+"blir fornøyd med produktet. Trykk «Fortsett»-knappen i nedre høyre hjørne "
+"for å fortsette."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -208,11 +259,7 @@ msgstr ""
 msgid "Update Agent"
 msgstr "Oppdateringsagent"
 
-#: ../src/modules/up2date.py:31
-msgid "Red Hat Update Agent"
-msgstr "Red Hat oppdateringsagent"
-
-#: ../src/modules/up2date.py:38
+#: ../src/modules/up2date.py:36
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -240,11 +287,11 @@ msgstr ""
 "informasjon eller for å abonnere på Red Hat Networks basistjeneste.\n"
 "\n"
 
-#: ../src/modules/up2date.py:57
+#: ../src/modules/up2date.py:55
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "Ja, jeg ønsker å registrere meg hos Red Hat Network."
 
-#: ../src/modules/up2date.py:58
+#: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
 msgstr "Nei, jeg ønsker ikke å registrere mitt system."
 
@@ -257,7 +304,10 @@ msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
-msgstr "Det gjenstår noen steg før systemet er klart til bruk. Red Hat Setup Agent vil nå hjelpe deg gjennom grunnleggende konfigurasjon. Trykk «Fortsett»-knappen i nedre høyre hjørne for å fortsette."
+msgstr ""
+"Det gjenstår noen steg før systemet er klart til bruk. Red Hat Setup Agent "
+"vil nå hjelpe deg gjennom grunnleggende konfigurasjon. Trykk «Fortsett»-"
+"knappen i nedre høyre hjørne for å fortsette."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -287,3 +337,32 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat oppsettagent"
+
+#~ msgid "Install Additional Software"
+#~ msgstr "Installer tilleggsprogramvare"
+
+#~ msgid "Create A User"
+#~ msgstr "Opprett en bruker"
+
+#~ msgid ""
+#~ "A user account is required to use the system.  Create a user account by "
+#~ "filling in the information below."
+#~ msgstr ""
+#~ "En brukerkonto kreves for å bruke systemet. Opprett en brukerkonto ved å "
+#~ "fylle ut informasjonen under."
+
+#~ msgid ""
+#~ "A user account was not created.  Are you sure that you want to continue "
+#~ "without creating a user account?"
+#~ msgstr ""
+#~ "En brukerkonto ble ikke opprettet. Er du sikker på at du ønsker å "
+#~ "fortsette uten å gjøre dette?"
+
+#~ msgid "Set Date and Time"
+#~ msgstr "Sett dato og klokkeslett"
+
+#~ msgid "Finished Setup!"
+#~ msgstr "Ferdig med oppsett!"
+
+#~ msgid "Red Hat Update Agent"
+#~ msgstr "Red Hat oppdateringsagent"

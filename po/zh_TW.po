@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
+"POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
 "PO-Revision-Date: 2003-01-16 09:22+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
@@ -46,22 +46,24 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
+#: ../src/firstboot.py:120
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr "其他的 CDs"
 
-#: ../src/modules/additional_cds.py:30
-msgid "Install Additional Software"
-msgstr "安裝其他的軟體"
-
-#: ../src/modules/additional_cds.py:41
+#: ../src/modules/additional_cds.py:39
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -69,86 +71,143 @@ msgstr ""
 "假如您有以下列出的任何光碟片，您可以藉由放入該光碟片，並按下適當的按鈕來安裝"
 "套件。"
 
-#: ../src/modules/additional_cds.py:53
+#: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat Linux 說明文件光碟"
 
-#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
-#: ../src/modules/additional_cds.py:79
+#: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
+#: ../src/modules/additional_cds.py:77
 msgid "Install..."
 msgstr "安裝..."
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux 安裝光碟"
 
-#: ../src/modules/additional_cds.py:101
+#: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並按下『確定』以繼續。"
 
-#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
-msgid "Create A User"
-msgstr "建立一個使用者"
+#: ../src/modules/create_user.py:20
+msgid "User Account"
+msgstr ""
 
-#: ../src/modules/create_user.py:46
+#: ../src/modules/create_user.py:44
 msgid ""
-"A user account is required to use the system.  Create a user account by "
-"filling in the information below."
-msgstr "系統需要一個使用者帳號。 請填入以下的資訊以建立一個使用者帳號。"
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
+msgstr ""
 
-#: ../src/modules/create_user.py:55
+#: ../src/modules/create_user.py:54
 msgid "Username:"
 msgstr "使用者名稱："
 
-#: ../src/modules/create_user.py:60
+#: ../src/modules/create_user.py:59
 msgid "Full Name:"
 msgstr "全名："
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:64
 msgid "Password:"
 msgstr "密碼："
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid "Confirm Password:"
 msgstr "密碼確認："
 
-#: ../src/modules/create_user.py:91
+#: ../src/modules/create_user.py:99
 msgid ""
-"A user account was not created.  Are you sure that you want to continue "
-"without creating a user account?"
-msgstr "並未建立一個使用者帳號。 在建立一個使用者帳號之前，您確定您想要繼續嗎？"
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
 
 #: ../src/modules/create_user.py:107
+msgid "Continue"
+msgstr ""
+
+#: ../src/modules/create_user.py:108
+msgid "Create account"
+msgstr ""
+
+#: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "密碼不符。 請再試一次。"
 
-#: ../src/modules/create_user.py:115
+#: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
-#: ../src/modules/create_user.py:126
-msgid "An account with username %s already exists.  Please specify another username."
+#: ../src/modules/create_user.py:153
+#, fuzzy
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
 msgstr "使用者名稱 %s 所屬的帳號已經存在，請指定另一個使用者名稱。"
+
+#: ../src/modules/create_user.py:200
+msgid "The user name must be less than 33 characters long."
+msgstr ""
+
+#: ../src/modules/create_user.py:206
+msgid "The user name may not begin with a number."
+msgstr ""
+
+#: ../src/modules/create_user.py:214
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the %s."
+msgstr ""
+
+#: ../src/modules/create_user.py:221
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:228
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+
+#: ../src/modules/create_user.py:235
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+
+#: ../src/modules/create_user.py:245
+#, fuzzy
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "密碼太短了，至少您得使用 6 個字元。"
+
+#: ../src/modules/create_user.py:257
+#, fuzzy
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "密碼太短了，至少您得使用 6 個字元。"
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "日期與時間"
 
-#: ../src/modules/date.py:52
-msgid "Set Date and Time"
-msgstr "設定日期與時間"
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr "請設定系統的日期與時間。"
 
-#: ../src/modules/date.py:106
+#: ../src/modules/date.py:116
 msgid "Please enter a time server."
 msgstr "請輸入一個時間伺服器。"
 
-#: ../src/modules/date.py:108 ../src/modules/date.py:142
+#: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
 msgstr "錯誤"
 
-#: ../src/modules/date.py:135
+#: ../src/modules/date.py:145
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -156,7 +215,7 @@ msgstr ""
 "無法建立與 %s 的連線。 也許是 %s 無法使用，或您系統的防火牆 設定阻擋 NTP 的連"
 "線。"
 
-#: ../src/modules/date.py:172
+#: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
 msgstr "連線 NTP 伺服器中。  請稍後..."
 
@@ -164,18 +223,14 @@ msgstr "連線 NTP 伺服器中。  請稍後..."
 msgid "Finish Setup"
 msgstr "完成設定"
 
-#: ../src/modules/finished.py:28
-msgid "Finished Setup!"
-msgstr "完成設定！"
-
-#: ../src/modules/finished.py:35
+#: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
-"will have a pleasant computing experience.  Please click the \"Forward\" "
+"Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"現在您的 Red Hat Linux 系統已經設定好可以使用了。 我們期待您擁有一"
-"個愉快的全新體驗。 請點選右下角的『下一步』按鈕繼續。"
+"現在您的 Red Hat Linux 系統已經設定好可以使用了。 我們期待您擁有一個愉快的全"
+"新體驗。 請點選右下角的『下一步』按鈕繼續。"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -200,11 +255,7 @@ msgstr ""
 msgid "Update Agent"
 msgstr "更新代理程式"
 
-#: ../src/modules/up2date.py:31
-msgid "Red Hat Update Agent"
-msgstr "Red Hat 更新代理程式"
-
-#: ../src/modules/up2date.py:38
+#: ../src/modules/up2date.py:36
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -229,11 +280,11 @@ msgstr ""
 "假如您沒有購買這個產品，請拜訪 http://rhn.redhat.com 以取得更多資訊，或訂閱 "
 "Red Hat Network Basic Service。\n"
 
-#: ../src/modules/up2date.py:57
+#: ../src/modules/up2date.py:55
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "是的，我想要向 Red Hat Network 註冊我的系統"
 
-#: ../src/modules/up2date.py:58
+#: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
 msgstr "不，我不想要註冊我的系統。"
 
@@ -247,8 +298,8 @@ msgid ""
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"在使用您的系統之前，要先完成幾個步驟。 Red Hat 設定代理程式現在將引導您做一些基本的設定。 請點選在右下角的 "
-"『下一步』 按鈕以繼續。"
+"在使用您的系統之前，要先完成幾個步驟。 Red Hat 設定代理程式現在將引導您做一些"
+"基本的設定。 請點選在右下角的 『下一步』 按鈕以繼續。"
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -278,11 +329,34 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat 設定代理程式"
 
+#~ msgid "Install Additional Software"
+#~ msgstr "安裝其他的軟體"
+
+#~ msgid "Create A User"
+#~ msgstr "建立一個使用者"
+
+#~ msgid ""
+#~ "A user account is required to use the system.  Create a user account by "
+#~ "filling in the information below."
+#~ msgstr "系統需要一個使用者帳號。 請填入以下的資訊以建立一個使用者帳號。"
+
+#~ msgid ""
+#~ "A user account was not created.  Are you sure that you want to continue "
+#~ "without creating a user account?"
+#~ msgstr ""
+#~ "並未建立一個使用者帳號。 在建立一個使用者帳號之前，您確定您想要繼續嗎？"
+
+#~ msgid "Set Date and Time"
+#~ msgstr "設定日期與時間"
+
+#~ msgid "Finished Setup!"
+#~ msgstr "完成設定！"
+
+#~ msgid "Red Hat Update Agent"
+#~ msgstr "Red Hat 更新代理程式"
+
 #~ msgid "Date and Time Configuration"
 #~ msgstr "日期與時間設定"
-
-#~ msgid "Please set the date and time for the system."
-#~ msgstr "請設定系統的日期與時間。"
 
 #~ msgid "Sound Card Configuration"
 #~ msgstr "音效卡設定"
@@ -528,4 +602,3 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-
