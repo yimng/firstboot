@@ -109,12 +109,23 @@ class childWindow:
             return FALSE
 
     def rhn_register(self, *args):
-        win = os.fork()
+        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
+_("This feature is not yet implemented.  Please do not report bugs about this button."))
+        dlg.set_title(_("Error"))
+        dlg.set_default_size(100, 100)
+        dlg.set_position (gtk.WIN_POS_CENTER)
+        dlg.set_border_width(2)
+        dlg.set_modal(gtk.TRUE)
+        rc = dlg.run()
+        dlg.destroy()
 
-        if (not win):
-            print "launching rhn_register"
-            path = "/usr/sbin/rhn_register"
-            os.execv(path, [""])
+
+##         win = os.fork()
+
+##         if (not win):
+##             print "launching rhn_register"
+##             path = "/usr/sbin/rhn_register"
+##             os.execv(path, [""])
 
     def apply(self, notebook):
         return 1
