@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-12-05 09:32+0000\n"
+"PO-Revision-Date: 2004-01-05 10:06+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -386,7 +386,7 @@ msgstr "Configuração do fuso horário "
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr "Executar Ferramenta"
+msgstr "Executar"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
@@ -546,20 +546,18 @@ msgstr "A senha é demasiado curta.  Por favor insira pelo menos 6 caracteres."
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"O nome de utilizador '%s' está reservado para uso pelo sistema.  Por favor "
-"escolha outro nome de utilizador."
+msgstr "O nome de utilizador '%s' está reservado para uso pelo sistema.  Por favor escolha outro nome de utilizador."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
-msgstr "O nome do utilizador deve ter menos do que 33 caracteres."
+msgstr "O nome de utilizador deve ter menos do que 33 caracteres."
 
 #: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
-msgstr "O nome do utilizador não pode começar por um número."
+msgstr "O nome de utilizador não pode começar por um número."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
@@ -568,52 +566,40 @@ msgstr "O nome do utilizador não pode começar por um número."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"O nome de utilizador '%s' contém  espaços.  Por favor, não inclua espaços no "
-"nome do utilizador."
+msgstr "O nome de utilizador '%s' contém espaços.  Por favor não inclua espaços no nome de utilizador."
 
 #: ../src/modules/create_user.py:263
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
-"O utilizador '%s' contém símbolos de pontuação. Por favor, não inclua esses "
-"símbolos no nome do utilizador."
+msgstr "O nome de utilizador '%s' contém símbolos de pontuação.  Por favor não inclua esses símbolos no nome de utilizador."
 
 #: ../src/modules/create_user.py:270
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
-"O utilizador '%s' contém caracteres maiúsculos. Por favor não use caracteres "
-"maiúsculos no nome do utilizador."
+msgstr "O nome de utilizador '%s' contém caracteres maiúsculos.  Por favor não inclua caracteres maiúsculos no nome de utilizador."
 
 #: ../src/modules/create_user.py:277
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"O utilizador '%s' contém caracteres inválidos. Utilize por favor apenas "
-"caracteres ASCII."
+msgstr "O nome de utilizador '%s' contém caracteres inválidos.  Por favor insira apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:287
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"A senha contém caracteres inválidos. Utilize por favor apenas caracteres "
-"ASCII."
+msgstr "A senha contém caracteres inválidos.  Por favor utilize apenas caracteres ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"O nome '%s' contém caracteres inválidos. Utilize por favor apenas caracteres "
-"ASCII."
+msgstr "O nome '%s' contém caracteres inválidos.  Por favor insira apenas caracteres ASCII."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -669,10 +655,7 @@ msgstr "Erro"
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"Não foi possível estabelecer uma ligação com %s.  O %s não está disponível "
-"ou a configuração da 'firewall' no seu computador está a bloquear ligações "
-"NTP."
+msgstr "Não foi possível estabelecer uma ligação a %s.  O %s não está disponível ou a configuração da 'firewall' no seu computador está a bloquear ligações NTP."
 
 #. do something slow
 #: ../src/modules/date.py:194
