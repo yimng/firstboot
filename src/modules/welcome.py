@@ -16,14 +16,8 @@ class childWindow:
         self.vbox.set_usize(400, 200)
 
 
-
-
-        ####################Title Box##############
-#        print dir(self.vbox)
-        label = gtk.Label("Welcome to Red Hat Linux 8.0!")
+        label = gtk.Label("Welcome to Re!")
         label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
-#        label.modify_bg(gtk.STATE_NORMAL, blue)
-#        self.vbox.modify_base(gtk.STATE_NORMAL, blue)
 
         titleBox = gtk.HBox()
 
@@ -44,11 +38,7 @@ class childWindow:
         eventBox = gtk.EventBox()
         eventBox.add(titleBox)
         eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
-#        label.set_border_width(10)
-        self.vbox.pack_start(eventBox, FALSE, 40)
-
-
-
+        self.vbox.pack_start(eventBox, FALSE)
 
 #        self.vbox.pack_start(label, FALSE, TRUE, 30)
         a = gtk.Alignment()
@@ -62,14 +52,8 @@ class childWindow:
         eventBox.add(label)
         eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
         self.vbox.pack_start(eventBox, TRUE)
-#        self.vbox.pack_start(label, TRUE)
 
-        a = gtk.Alignment()
-        a.add(self.vbox)
-        a.set(0.5, 0.5, 0.9, 0.9)
-
-        return a
-#        return self.vbox
+        return self.vbox
 
     def write_file(self):
         pass
