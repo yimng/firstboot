@@ -166,10 +166,8 @@ class childWindow:
 
         
     def soundcard_button_clicked(self, *args):
-        win = os.fork()
-
-        if (not win):
-            if self.doDebug:
-                print "launching redhat-config-soundcard"
-            path = "/usr/share/redhat-config-soundcard/redhat-config-soundcard.py"
-            os.execv(path, [""])
+        import soundcard
+        app = soundcard.childWindow()
+        val = app.stand_alone()
+        #If the soundcard data changed, let's see what the new value is
+        self.soundcard_label.set_text(app.getData())
