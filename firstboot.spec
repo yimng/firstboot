@@ -1,13 +1,14 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.1.0
-Release: 2
+Release: 3
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
 Group: System Environment/Base
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Source0: %{name}-%{version}.tar.gz
+Obsoletes:anaconda-reconfig
 Requires: pygtk
 Requires: python
 Requires: pygnome
