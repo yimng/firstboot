@@ -12,7 +12,8 @@ class childWindow:
     moduleName = "Register with RHN"
 
     def __init__(self, doDebug=None):
-        print "initializing register module"
+        if doDebug:
+            print "initializing register module"
                 
     def launch(self):
         self.vbox = gtk.VBox()
