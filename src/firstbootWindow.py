@@ -11,6 +11,7 @@
 
 import string
 import os
+import traceback
 os.environ["PYGTK_DISABLE_THREADS"] = "1"
 os.environ["PYGTK_FATAL_EXCEPTIONS"] = "1"
 os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
@@ -289,6 +290,11 @@ class firstbootWindow:
         try:
             result = module.apply(self.notebook)
         except:
+            import exceptionWindow
+            (type, value, tb) = sys.exc_info()
+            list = traceback.format_exception(type, value, tb)
+            text = string.joinfields(list, "")
+            exceptionWindow.ExceptionWindow(module, text)
             pass
 
         if result:
