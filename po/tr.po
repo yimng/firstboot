@@ -1,22 +1,22 @@
-# translation of tr.po to Turkish
+# 
 # Turkish translations for firstboot messages.
 # Copyright (C) 2002,2003 Free Software Foundation, Inc
 # $Id$
-# Nilgün Belma Bugüner <nilgun@superonline.com>, 2002.
+# Nilgün Belma Bugüner <nilgun@superonline.com>, 2002,2003.
 # Erçin EKER <erc.caldera@gmx.net>, 2003.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
 "POT-Creation-Date: Tue Jul 22 22:58:03 2003\n"
-"PO-Revision-Date: 2003-07-04 21:13+0300\n"
-"Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
-"Language-Team: Turkish <tr@li.org>\n"
+"PO-Revision-Date: 2003-07-27 09:57+0300\n"
+"Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
+"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.2\n"
+"X-Generator: KBabel 1.0\n"
 
 #: ../src/exceptionWindow.py:31
 msgid "An error has occurred in the %s module."
@@ -50,14 +50,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot zaten birkez bu sistem üzerinde çalıştırılmış.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Firstboot'u komut satırından çalıştırmak için, takip eden komutları kullanın:"
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Firstboot'u komut satırından çalıştırmak için, takip eden komutları kullanın:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Firstboot'u sistem açılışında çalıştırmak için, takip eden komutları "
 "kullanın:"
@@ -131,9 +128,8 @@ msgid "_Username:"
 msgstr "_Kullanıcı Adı:"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full Nam_e:"
-msgstr "Tam _İsim:"
+msgstr "_Adı ve Soyadı:"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
@@ -152,9 +148,8 @@ msgstr ""
 "gerekiyorsa , lütfen Ağ Oturumu Açmayı Kullan'a tıklayın."
 
 #: ../src/modules/create_user.py:104
-#, fuzzy
 msgid "Use Network _Login..."
-msgstr "_Ağ Oturumu Açmayı Kullan..."
+msgstr "Ağ _Oturumu Açmayı Kullan..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -231,15 +226,13 @@ msgstr ""
 "karakterler kullanın."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Parola geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterleri "
 "kullanın."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "İsim '%s' geçersiz karakter içeriyor.  Lütfen sadece ASCII karakterleri "
 "kullanın."
@@ -277,14 +270,12 @@ msgid "Finish Setup"
 msgstr "Son Ayar"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Tebrikler! Red Hat Linux sisteminiz ayarlandı ve artık kullanıma hazır. "
-"Sisteminizi kullandıkça deneyiminizin artacağına inanıyoruz. Devam etmek "
-"için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
+"Sisteminiz ayarlandı ve artık kullanıma hazır. "
+"Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
 
 #: ../src/modules/networking.py:23
 msgid "Network Setup"
@@ -375,12 +366,10 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Evet, sistemimi Red Hat Network'e kaydettirmek istiyorum."
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid "N_o, I do not want to register my system."
 msgstr "_Hayır, sistemimi kaydettirmek istemiyorum."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
@@ -420,3 +409,4 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Kurulum Aracısı"
+
