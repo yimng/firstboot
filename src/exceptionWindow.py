@@ -13,8 +13,7 @@ gettext.textdomain ("firstboot")
 _=gettext.gettext
 
 class ExceptionWindow:
-    def __init__ (self, wm_pid, module, traceback):
-        self.wm_pid = wm_pid
+    def __init__ (self, module, traceback):
         win = gtk.Dialog()
         win.set_size_request(400, 300)
 
@@ -64,7 +63,6 @@ class ExceptionWindow:
         win.destroy()
 
     def destroy(self, *args):
-        gtk.mainquit()
-        if self.wm_pid:
-            os.kill(self.wm_pid, 15)
-        os._exit(0)
+        #Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
+        #and try to complete the other steps successfully
+        return 1
