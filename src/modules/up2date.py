@@ -32,7 +32,7 @@ class childWindow:
 
             titleBox = gtk.HBox()
 
-            pix = functions.imageFromFile("boxset_standard.png")
+            pix = functions.imageFromFile("up2date.png")
             if pix:
                 titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
             
