@@ -173,6 +173,9 @@ class TimeWindow(FirstbootGuiWindow):
         else:
             return 1
 
+    def grabFocus(self):
+        print "entering date screen"
+        self.datePage.updateSpinButtons()
 
     def stand_alone(self, doDebug = None):
         self.doDebug = doDebug
