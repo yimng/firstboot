@@ -29,14 +29,10 @@ install:
 	mkdir -p $(INSTROOT)$(PKGDATADIR)/pixmaps
 	mkdir -p $(INSTROOT)/usr/share/firstboot/modules
 	install src/*.py $(INSTROOT)$(PKGDATADIR)
-#	for py in src/*.py ; do \
-#		sed -e s,@VERSION@,$(VERSION),g $${py} > $(INSTROOT)$(PKGDATADIR)/`basename $${py}` ; \
-#	done
 
 	install -m 755 firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
 	install src/modules/*.py $(INSTROOT)$(PKGDATADIR)/modules
 	install src/pixmaps/*.png $(INSTROOT)$(PKGDATADIR)/pixmaps
-#	install src/${PKGNAME} $(INSTROOT)$(PKGDATADIR)/${PKGNAME}
 	install ${PKGNAME}.pam $(INSTROOT)$(PAMD_DIR)/${PKGNAME}
 	install ${PKGNAME}.console $(INSTROOT)$(SECURITY_DIR)/${PKGNAME}
 	install -m 755 src/firstboot $(INSTROOT)/usr/sbin/firstboot
