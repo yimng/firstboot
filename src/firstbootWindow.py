@@ -258,7 +258,7 @@ class firstbootWindow:
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
-        pix = functions.imageFromFile("bg-gray2.png")
+        pix = functions.imageFromFile("bg-gray.png")
 	if pix:
             bgimage = gtk.gdk.Pixmap(self.win.window, 800, 600, -1)
             gc = bgimage.new_gc ()
