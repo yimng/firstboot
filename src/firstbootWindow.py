@@ -514,7 +514,8 @@ class firstbootWindow:
                 title_label.set_markup("<span foreground='#000000' size='30000' font_family='Helvetica'><b>%s</b></span>" % (_(title)))
 
                 titleBox = gtk.HBox()
-                titleBox.pack_start(pix, gtk.FALSE)
+                if pix:
+                    titleBox.pack_start(pix, gtk.FALSE)
                 titleBox.pack_start(title_label, gtk.TRUE)
                 titleBox.set_spacing(8)
 
