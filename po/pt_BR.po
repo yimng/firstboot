@@ -1,0 +1,306 @@
+# Portuguese localization of Red Hat Linux
+# Pedro Morais <morais@kde.org>
+# José Nuno Pires <jncp@netcabo.pt>
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"POT-Creation-Date: Tue Dec  3 11:28:14 2002\n"
+"PO-Revision-Date: 2002-12-22 10:41+1000\n"
+"Last-Translator: David Barzilay <barzilay@redhat.com>\n"
+"Language-Team: Portuguese <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-Generator: KBabel 0.9.6\n"
+
+#: ../src/exceptionWindow.py:31
+msgid "An error has occurred in the %s module."
+msgstr "Ocorreu um erro no módulo %s."
+
+#: ../src/exceptionWindow.py:36
+msgid ""
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
+msgstr ""
+"Uma vez que ocorreu um problema com o módulo %s, \n"
+"O Agente de Configuração Red Hat não carregará este módulo e \n"
+"tentará executar os módulos restantes."
+
+#: ../src/exceptionWindow.py:40
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
+msgstr ""
+"Por favor adicione um erro ('bug') em 'firstboot' no sistema \n"
+"de gestão de erros do Red Hat em http://www.redhat.com/bugzilla. \n"
+"Uma cópia da saída de depuração ('debug output') foi gravada em %s \n"
+"Certifique-se de anexar este arquivo ao relatório de erro ('bug report'). \n"
+
+#: ../src/firstboot.py:93
+msgid "Firstboot has already been run once on this system.\n"
+msgstr "O 'firstboot' já foi executado uma vez neste sistema.\n"
+
+#: ../src/firstboot.py:94
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
+
+#: ../src/firstboot.py:99
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+"Para rodar o 'firstboot' durante o início do sistema, execute os seguintes "
+"comandos:"
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
+msgid "Additional CDs"
+msgstr "CDs Adicionais"
+
+#: ../src/modules/additional_cds.py:30
+msgid "Install Additional Software"
+msgstr "Instalar Software Adicional"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"If you have any of the CDs listed below, you can install packages from them "
+"by inserting the CD and clicking the appropriate button."
+msgstr ""
+"Se você tiver algum dos CDs listados abaixo, pode instalar os seus pacotes "
+"introduzindo o CD e clicando o botão apropriado."
+
+#: ../src/modules/additional_cds.py:67
+msgid "Red Hat Linux Documentation CD"
+msgstr "CD de Documentação do Red Hat Linux"
+
+#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
+#: ../src/modules/additional_cds.py:93
+msgid "Install..."
+msgstr "Instalar..."
+
+#: ../src/modules/additional_cds.py:78
+msgid "Red Hat Linux Installation CD"
+msgstr "CD de Instalação do Red Hat Linux"
+
+#: ../src/modules/additional_cds.py:115
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Não foi detectado nenhum CD-ROM.  Por favor introduza um CD no 'drive' e "
+"clique \"OK\" para continuar."
+
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr "Criar um Usuário"
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+"É necessário criar uma conta de usuário para utilizar o sistema.  Crie uma "
+"conta de usuário preenchendo as informações abaixo."
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr "Nome do Usuário:"
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr "Nome Completo:"
+
+#: ../src/modules/create_user.py:78
+msgid "Password:"
+msgstr "Senha:"
+
+#: ../src/modules/create_user.py:83
+msgid "Confirm Password:"
+msgstr "Confirme a Senha:"
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?"
+msgstr ""
+"A conta de usuário não foi criada.  Tem certeza que deseja continuar"
+"sem criar um usuário?"
+
+#: ../src/modules/create_user.py:117
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "As senhas não coincidem.  Por favor insira a senha novamente."
+
+#: ../src/modules/create_user.py:126
+msgid "An account with username %s already exists.  Please specify another username."
+msgstr ""
+"Já existe uma conta para o usuário de nome %s.  Por favor escolha outro nome de "
+"usuário."
+
+#: ../src/modules/date.py:51
+msgid "Date and Time"
+msgstr "Data e Hora"
+
+#: ../src/modules/date.py:52
+msgid "Date and Time Configuration"
+msgstr "Configuração de Data e Hora"
+
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr "Por favor configure a data e a hora para o computador."
+
+#: ../src/modules/date.py:121
+msgid ""
+"A connection with %s could not be established.  Either %s is not available "
+"or the firewall settings on your computer are blocking NTP connections."
+msgstr ""
+"Não foi possível estabelecer uma conexão com %s.  O %s não está disponível "
+"ou a configuração do 'firewall' no seu computador está bloqueando conexões NTP."
+
+#: ../src/modules/date.py:128
+msgid "Error"
+msgstr "Erro"
+
+#: ../src/modules/date.py:158
+msgid "Contacting NTP server.  Please wait..."
+msgstr "Contactando o servidor NTP.  Por favor aguarde..."
+
+#: ../src/modules/finished.py:19
+msgid "Finish Setup"
+msgstr "Terminar a Configuração"
+
+#: ../src/modules/finished.py:28
+msgid "Finished Setup!"
+msgstr "Fim da Configuração!"
+
+#: ../src/modules/finished.py:48
+msgid ""
+"Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
+"We hope that you will have a pleasant computing experience.  Please click "
+"the \"Forward\" button in the lower right corner to continue."
+msgstr ""
+"Parabéns!  Seu sistema Red Hat Linux agora está configurado e pronto"
+"para ser usado.  Esperamos que você tenha uma experiência computacional "
+"agradável.  Por favor clique no botão \"Avançar\" no canto inferior "
+"direito para continuar."
+
+#: ../src/modules/soundcard_gui.py:49
+msgid "Sound Card"
+msgstr "Placa de som"
+
+#: ../src/modules/soundcard_gui.py:50
+msgid "Sound Card Configuration"
+msgstr "Configuração da Placa de Som"
+
+#: ../src/modules/soundcard_gui.py:51
+msgid "A sound card has been detected on your computer."
+msgstr "Foi detectada uma placa de som no seu computador."
+
+#: ../src/modules/soundcard_gui.py:91
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Clique no botão \"Testar som\" para ouvir um som de teste.  Você deverá ouvir"
+"uma série de três sons.  O primeiro som tocará no canal da direita, o segundo no "
+"canal da esquerda e o terceiro tocará no centro."
+
+#: ../src/modules/up2date.py:19
+msgid "Update Agent"
+msgstr "Agente de Atualizações "
+
+#: ../src/modules/up2date.py:31
+msgid "Red Hat Update Agent"
+msgstr "Agente de Atualizações Red Hat"
+
+#: ../src/modules/up2date.py:53
+msgid ""
+"The Red Hat Update Agent will register your machine with Red Hat Network so "
+"that you can receive the latest software packages directly from Red Hat.  "
+"Using this tool will allow you to always have the most up-to-date Red Hat "
+"Linux system with all the security patches, bug fixes, and software package "
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+msgstr ""
+"O Agente de Atualizações Red Hat registrará agora sua máquina na Rede"
+"Red Hat para que você possa receber os últimos pacotes de software "
+"diretamente da Red Hat.  Utilizando esta ferramenta permite que você tenha"
+"sempre o seu sistema Red Hat atualizado, com todas as correcções de"
+"segurança, correções de erros ('bugs') e melhorias dos pacotes.\n"
+"\n"
+"Se você adquiriu este produto, tem direito a experimentar gratuitamente o"
+"Serviço Básico da Red Hat Network. Para acessar o teste gratuito, por"
+"favor consulte as informações detalhadas no cartão de ativação do produto"
+"encontrado em sua caixa.\n"
+"\n"
+"Se você não adquiriu este produto, visite http://rhn.redhat.com para mais "
+"informações ou registre-se no Serviço Básico da Rede Red Hat. \n"
+
+#: ../src/modules/up2date.py:72
+msgid "Yes, I would like to register with Red Hat Network"
+msgstr "Sim, quero registrar-me na Rede Red Hat"
+
+#: ../src/modules/up2date.py:73
+msgid "No, I do not want to register my system."
+msgstr "Não, não quero registrar o meu sistema."
+
+#: ../src/modules/welcome.py:19
+msgid "Welcome"
+msgstr "Bem-vindo"
+
+#: ../src/modules/welcome.py:28
+msgid "Welcome to Red Hat Linux!"
+msgstr "Bem-vindo ao Red Hat Linux!"
+
+#: ../src/modules/welcome.py:48
+msgid ""
+"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
+"before your system is ready to use.  The Red Hat Setup Agent will now guide "
+"you through some basic configuration.  Please click the \"Forward\" button "
+"in the lower right corner to continue."
+msgstr ""
+"Olá!  Seja bem-vindo ao Agente de Configuração do Red Hat.  Ainda há mais"
+"alguns passos a percorrer antes do seu computador estar pronto para ser utilizado.  "
+"O Agente de Configuração da Red Hat agora irá guiá-lo através de algumas "
+"configurações básicas.  Por favor clique no botão \"Avançar\" no canto inferior "
+"direito para continuar."
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr "Não"
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr "Sim"
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+"O Agente de Configuração da Red Hat pode ajudá-lo a configurar seu "
+"sistema através de uma série de passos.  O Agente de "
+"Configuração necessita do Sistema de Janelas X para rodar.  \n"
+"\n"
+"Se você deseja rodar o Agente de Configuração, escolha \"Sim\".  Se"
+"escolher \"Não\" o sistema continuará iniciando normalmente e"
+"você nunca mais verá esta mensagem novamente.  "
+"Você deseja executar o Agente de Configuração agora?"
+
+#: ../src/textWindow.py:24
+msgid "Red Hat Setup Agent"
+msgstr "Agente de Configuração Red Hat"
+
