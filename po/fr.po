@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-08-31 16:22-0400\n"
-"PO-Revision-Date: 2004-07-23 10:49+1000\n"
+"PO-Revision-Date: 2004-09-07 12:04+1000\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "N_on, je ne l'accepte pas"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Souhaitez-vous relire ou reconsidérer le contrat de licence ?"
+msgstr "Souhaitez-vous relire ou reconsidérer le contrat de licence ?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -69,9 +69,9 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Veuillez remplir un formulaire concernant 'firstboot' dans le système de \n"
-"pistage des bogues de Red Hat à l'adresse http://www.redhat.com/buzilla. \n"
-"Une copie de la sortie de débogage a été sauvegardée dans %s \n"
+"Veuillez signaler le bogue concernant « firstboot » dans le Bug Tracking System\n"
+"de Red Hat à l'adresse suivante : http://www.redhat.com/buzilla. \n"
+"Une copie de la sortie de débogage a été sauvegardée dans %s. \n"
 "Veillez à bien joindre ce fichier au rapport de bogues.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
@@ -135,16 +135,16 @@ msgstr "Agent de configuration"
 
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr "CD-ROMs supplémentaires"
+msgstr "CD-ROM supplémentaires"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Si vous disposez de l'un des CD-ROMs figurant dans la liste ci-dessous, vous "
+"Si vous disposez de l'un des CD-ROM figurant dans la liste ci-dessous, vous "
 "pouvez installer les paquetages à partir de ceux-ci en introduisant "
-"simplement le CD-ROM et cliquant sur le bouton approprié."
+"le CD-ROM et en cliquant sur le bouton approprié."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -156,14 +156,13 @@ msgid ""
 "click \"OK\" to continue."
 msgstr ""
 "Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur, "
-"puis cliquer sur \"OK\" pour continuer."
+"puis cliquer sur « OK » pour continuer."
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliquer "
-"sur \"OK\" pour continuer."
+"sur « OK » pour continuer."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -177,23 +176,23 @@ msgid ""
 msgstr ""
 "Il est conseillé de créer un compte utilisateur personnel pour les "
 "utilisations normales (non administratives). Pour créer un compte personnel, "
-"renseignez les informations requises."
+"donnez les informations requises."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
-msgstr "Nom d'_utilisateur :"
+msgstr "Nom d'_utilisateur :"
 
 #: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
-msgstr "Nom _et prénom :"
+msgstr "Nom _et prénom :"
 
 #: ../src/modules/create_user.py:89
 msgid "_Password:"
-msgstr "Mot de _passe :"
+msgstr "Mot de _passe :"
 
 #: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
-msgstr "Confir_mer le mot de passe :"
+msgstr "Confir_mer le mot de passe :"
 
 #: ../src/modules/create_user.py:112
 msgid ""
@@ -201,7 +200,7 @@ msgid ""
 "click the Use Network Login button."
 msgstr ""
 "Si vous devez utiliser l'authentification réseau comme Kerberos ou NIS, "
-"veuillez cliquer sur le bouton \"Utiliser la connexion réseau\"."
+"veuillez cliquer sur le bouton « Utiliser la connexion réseau »."
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
@@ -231,8 +230,7 @@ msgstr "Les mots de passe ne correspondent pas. Essayez à nouveau."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -249,7 +247,7 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Le nom d'utilisateur '%s' contient des espaces blancs. Veuillez ne pas "
+"Le nom d'utilisateur « %s » contient des espaces blancs. Veuillez ne pas "
 "inclure d'espaces blancs dans le nom d'utilisateur."
 
 #: ../src/modules/create_user.py:298
@@ -258,7 +256,7 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Le nom d'utilisateur '%s' contient des caractères de ponctuation. Veuillez "
+"Le nom d'utilisateur « %s » contient des caractères de ponctuation. Veuillez "
 "ne pas utiliser de ponctuation dans le nom d'utilisateur."
 
 #: ../src/modules/create_user.py:305
@@ -267,7 +265,7 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Le nom d'utilisateur '%s' contient des caractères en majuscules. Veuillez ne "
+"Le nom d'utilisateur « %s » contient des caractères en majuscules. Veuillez ne "
 "pas utiliser de caractères en majuscules dans le nom d'utilisateur."
 
 #: ../src/modules/create_user.py:312
@@ -276,22 +274,20 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Le nom d'utilisateur '%s' contient des caractères non valides. Veuillez "
+"Le nom d'utilisateur « %s » contient des caractères non valides. Veuillez "
 "n'utiliser que des caractères ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
+"Le nom « %s » contient des caractères non valides. Veuillez n'utiliser que des "
 "caractères ASCII."
 
 #: ../src/modules/date.py:47
@@ -318,7 +314,7 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible ou "
+"Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible, soit "
 "les paramètres de pare-feu de votre ordinateur bloquent la connexion NTP."
 
 #: ../src/modules/date.py:205
@@ -345,7 +341,7 @@ msgid ""
 "button in the lower right corner to continue."
 msgstr ""
 "Votre système est maintenant configuré et prêt à l'emploi. Pour continuer, "
-"veuillez cliquer sur le bouton \"Suivant\" dans le coin en-bas à droite."
+"veuillez cliquer sur le bouton « Suivant » dans le coin en bas à droite."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -353,11 +349,11 @@ msgstr "Configuration du réseau "
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr "Les périphériques réseau suivants ont été détectés sur le système :"
+msgstr "Les périphériques réseau suivants ont été détectés sur le système :"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr "Périphérique du réseau"
+msgstr "Périphérique réseau"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
@@ -386,7 +382,7 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Cliquez sur le bouton \"Tester le son\" pour écouter un échantillon sonore. "
+"Cliquez sur le bouton « Tester le son » pour écouter un échantillon sonore. "
 "Vous devriez entendre une série de trois sons. Le premier sera sur le canal "
 "de droite, le second sur celui de gauche et le troisième au centre."
 
@@ -405,9 +401,10 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Il vous reste encore quelques étapes à effectuer avant que votre système ne "
-"soit prêt à l'emploi. L'agent de configuration Red Hat vous guidera tout au "
+"soit prêt à l'emploi. L'agent de configuration de Red Hat vous guidera tout au "
 "long de la configuration de base. Pour continuer, cliquez sur le bouton "
-"\"Suivant\" dans le coin en bas à droite."
+"« Suivant » dans le coin en bas à droite."
 
 #~ msgid "User Account"
 #~ msgstr "Compte utilisateur"
+
