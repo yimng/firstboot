@@ -141,7 +141,13 @@ class childWindow:
             else:
                 time.sleep(0.1)
 
-        diskutil.umount('/mnt/cdrom')
+        #I think redhat-config-packages will do a umount, but just in case it doesn't...
+        try:
+            diskutil.umount('/mnt/cdrom')
+        except:
+            #Yep, redhat-config-packages has already umounted the disc, so fall through and go on
+            pass
+
         #Remove the focus grab of the gtkInvisible widget
         i.grab_remove ()
 
