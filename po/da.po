@@ -1,5 +1,5 @@
 # Danish translation of firstboot.
-# Copyright Â© 2002 Free Software Foundation.
+# Copyright © 2002 Free Software Foundation.
 # Kjartan Maraas <kmaraas@gnome.org>, 2002.
 # Keld Simonsen <keld@dkuug.dk>, 2002.
 #
@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
 "POT-Creation-Date: Fri Jan  3 15:50:50 2003\n"
-"PO-Revision-Date: 2003-01-08 23:39+0200\n"
+"PO-Revision-Date: 2003-01-10 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Generated-By: pygettext.py 1.4\n"
 
@@ -26,8 +26,8 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Da der er et problem med %s-modulet, \n"
-"vil Red Hat OpsÃ¦tningsagenten ikke indlÃ¦se dette modul, og \n"
-"den vil forsÃ¸ge at kÃ¸re de resterende moduler."
+"vil Red Hat Opsætningsagenten ikke indlæse dette modul, og \n"
+"den vil forsøge at køre de resterende moduler."
 
 #: ../src/exceptionWindow.py:40
 msgid ""
@@ -36,27 +36,27 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"VÃ¦r venlig at indsende en fejlrapport pÃ¥ 'firstboot' via Red Hats \n"
-"fejlrapporteringssystem pÃ¥ http://www.redhat.com/bugzilla. \n"
-"En kopi af fejlsÃ¸gningsuddata er gemt i /tmp/firstboot.txt \n"
-"VÃ¸r sÃ¸d at vedlÃ¦gge denne fil til fejlrapporten. \n"
+"Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
+"fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
+"En kopi af fejlsøgningsuddata er gemt i /tmp/firstboot.txt \n"
+"Vør sød at vedlægge denne fil til fejlrapporten. \n"
 
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstboot er allerede blevet kÃ¸rt en gang pÃ¥ dette system.\n"
+msgstr "Firstboot er allerede blevet kørt en gang på dette system.\n"
 
 #: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
-"For at kÃ¸re 'firstboot' fra kommandolinjen skal du kÃ¸re de fÃ¸lgende "
+"For at køre 'firstboot' fra kommandolinjen skal du køre de følgende "
 "kommandoer:"
 
 #: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
-"For at kÃ¸re 'firstboot' ved systemopstart skal du kÃ¸re de fÃ¸lgende "
+"For at køre 'firstboot' ved systemopstart skal du køre de følgende "
 "kommandoer:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
@@ -65,15 +65,15 @@ msgstr "Yderligere CDer"
 
 #: ../src/modules/additional_cds.py:30
 msgid "Install Additional Software"
-msgstr "InstallÃ©r yderligere programmel"
+msgstr "Installér yderligere programmel"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Hvis du har nogen af cd'erne nÃ¦vnt nedenfor kan du installere pakker fra dem "
-"ved at insÃ¦tte cd'en ok klikke pÃ¥ den tilsvarende knap."
+"Hvis du har nogen af cd'erne nævnt nedenfor kan du installere pakker fra dem "
+"ved at insætte cd'en ok klikke på den tilsvarende knap."
 
 #: ../src/modules/additional_cds.py:67
 msgid "Red Hat Linux Documentation CD"
@@ -82,7 +82,7 @@ msgstr "Red Hat Linux dokumentations-CD"
 #: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
 #: ../src/modules/additional_cds.py:93
 msgid "Install..."
-msgstr "InstallÃ©r..."
+msgstr "Installér..."
 
 #: ../src/modules/additional_cds.py:78
 msgid "Red Hat Linux Installation CD"
@@ -93,8 +93,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"En cdrom blev ikke fundet. IndsÃ¦t venligst en cdrom i drevet og klik 'O.k.' "
-"for at fortsÃ¦tte"
+"En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
+"for at fortsætte"
 
 #: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
 msgid "Create A User"
@@ -105,6 +105,8 @@ msgid ""
 "A user account is required to use the system.  Create a user account by "
 "filling in the information below."
 msgstr ""
+"En brugerkonto kræves for at bruge systemet. Opret en brugerkonto ved at "
+"udfylde informationen nednfor."
 
 #: ../src/modules/create_user.py:68
 msgid "Username:"
@@ -120,26 +122,30 @@ msgstr "Adgangskode:"
 
 #: ../src/modules/create_user.py:83
 msgid "Confirm Password:"
-msgstr ""
+msgstr "Bekræft adgangskode:"
 
 #: ../src/modules/create_user.py:104
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
 msgstr ""
+"En brugerkonto blev ikke oprettet. Er du sikker på at du ønsker at fortsætte "
+"uden at gøre dette?"
 
 #: ../src/modules/create_user.py:120
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 
 #: ../src/modules/create_user.py:128
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
 #: ../src/modules/create_user.py:139
 msgid ""
 "An account with username %s already exists.  Please specify another username."
 msgstr ""
+"En konto med navnet %s eksisterer allerede. Angiv venligst et andet "
+"brugernavn."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -151,11 +157,11 @@ msgstr "Konfiguration af dato og klokkeslet"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr "SÃ¦t dato og klokkeslet for systemet."
+msgstr "Sæt dato og klokkeslet for systemet."
 
 #: ../src/modules/date.py:106
 msgid "Please enter a time server."
-msgstr ""
+msgstr "Angiv venligst en tidsserver."
 
 #: ../src/modules/date.py:108 ../src/modules/date.py:142
 msgid "Error"
@@ -166,8 +172,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"En forbindelse med %s kunne ikke etableres. Enten er %s ikke tilgÃ¦ngelig "
-"eller ogsÃ¥ blokerer brandmursindstillingerne pÃ¥ din maskine NTP-forbindelser."
+"En forbindelse med %s kunne ikke etableres. Enten er %s ikke tilgængelig "
+"eller også blokerer brandmursindstillingerne på din maskine NTP-forbindelser."
 
 #: ../src/modules/date.py:172
 msgid "Contacting NTP server.  Please wait..."
@@ -175,11 +181,11 @@ msgstr "Kontakter NTP-server. Vent venligst..."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr "FÃ¦rdiggÃ¸r opsÃ¦tning"
+msgstr "Færdiggør opsætning"
 
 #: ../src/modules/finished.py:28
 msgid "Finished Setup!"
-msgstr "OpsÃ¦tning fÃ¦rdig!"
+msgstr "Opsætning færdig!"
 
 #: ../src/modules/finished.py:48
 msgid ""
@@ -187,9 +193,9 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Tillykke! Dit Red Hat Linux-system er nu sat op og klar til brug. Vi hÃ¥ber "
-"at du vil fÃ¥ en behagelig oplevelse med systemet. Klik pÃ¥ 'NÃ¦ste'-knappen i "
-"det nederste hÃ¸jre hjÃ¸rne for at fortsÃ¦tte."
+"Tillykke! Dit Red Hat Linux-system er nu sat op og klar til brug. Vi håber "
+"at du vil få en behagelig oplevelse med systemet. Klik på 'Næste'-knappen i "
+"det nederste højre hjørne for at fortsætte."
 
 #: ../src/modules/soundcard_gui.py:49
 msgid "Sound Card"
@@ -201,7 +207,7 @@ msgstr "Konfiguration af lydkort"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
-msgstr "Et lydkort er blevet fundet pÃ¥ din maskine."
+msgstr "Et lydkort er blevet fundet på din maskine."
 
 #: ../src/modules/soundcard_gui.py:91
 msgid ""
@@ -210,9 +216,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Klik pÃ¥ 'Afspil lydprÃ¸ve'-knappen for at hÃ¸re en lydprÃ¸ve. Du bÃ¸r hÃ¸re en "
-"serie med 3 lyde. Den fÃ¸rste lyd skal vÃ¦re i den hÃ¸jre kanal, den anden lyd "
-"skal vÃ¦re i den venstre kanal, og den tredje lyd skal vÃ¦re i midten."
+"Klik på 'Afspil lydprøve'-knappen for at høre en lydprøve. Du bør høre en "
+"serie med 3 lyde. Den første lyd skal være i den højre kanal, den anden lyd "
+"skal være i den venstre kanal, og den tredje lyd skal være i midten."
 
 #: ../src/modules/up2date.py:19
 msgid "Update Agent"
@@ -237,17 +243,17 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"Red Hats Opdateringsagent vil registrere din maskine i Red Hat Network sÃ¥ du "
-"kan fÃ¥ de seneste programpakker direkte fra Red Hat. Ved at bruge dette "
-"vÃ¦rktÃ¸j kan du altid have de mest opdaterede Red Hat Linux-system med alle "
+"Red Hats Opdateringsagent vil registrere din maskine i Red Hat Network så du "
+"kan få de seneste programpakker direkte fra Red Hat. Ved at bruge dette "
+"værktøj kan du altid have de mest opdaterede Red Hat Linux-system med alle "
 "sikkerhedsrettelser, fejlrettelser og forbedringer af programpakker\n"
-"Hvis du kÃ¸bte dette produkt har du ret til en gratis prÃ¸ve pÃ¥ Red Hat "
-"NetvÃ¦rks basale tjeneste. For at fÃ¥ adgang til den gratis prÃ¸ve skal du se "
+"Hvis du købte dette produkt har du ret til en gratis prøve på Red Hat "
+"Netværks basale tjeneste. For at få adgang til den gratis prøve skal du se "
 "produktets aktiveringskort som findes i kassen for detaljerede "
 "instruktioner. \n"
 "\n"
-"Hvis du ikke har kÃ¸bt dette produkt, sÃ¥ besÃ¸g http://rhn.redhat.com for "
-"yderligere oplysninger om at abonnere pÃ¥ Red Hat netvÃ¦rks basale tjeneste. \n"
+"Hvis du ikke har købt dette produkt, så besøg http://rhn.redhat.com for "
+"yderligere oplysninger om at abonnere på Red Hat netværks basale tjeneste. \n"
 
 #: ../src/modules/up2date.py:72
 msgid "Yes, I would like to register with Red Hat Network."
@@ -272,18 +278,18 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
-"Hej! Velkommen til Red Hats opsÃ¦tningsagent. Der er endnu nogle enkelte trin "
-"der skal gÃ¸res fÃ¸r dit system er klar til brug. Red Hats opsÃ¦tningsagent vil "
-"nu lede dig gennem noget grundlÃ¦ggende konfigurering. Klik pÃ¥ 'NÃ¦ste'-"
-"knappen i det nederste hÃ¸jre hjÃ¸rne for at fortsÃ¦tte."
+"Hej! Velkommen til Red Hats opsætningsagent. Der er endnu nogle enkelte trin "
+"der skal gøres før dit system er klar til brug. Red Hats opsætningsagent vil "
+"nu lede dig gennem noget grundlæggende konfigurering. Klik på "
+"'Næste'-knappen i det nederste højre hjørne for at fortsætte."
 
 #: ../src/textWindow.py:15
 msgid "No"
-msgstr ""
+msgstr "Nej"
 
 #: ../src/textWindow.py:15
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: ../src/textWindow.py:17
 msgid ""
@@ -295,197 +301,14 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
+"Red Hat opsætningtagent kan hjælpe dig med at konfigurere din maskine ved at "
+"lede dig gennem en række trin. Opsætningtagenten kræver at X Windows "
+"kører.\n"
+"\n"
+"Hvis du ønsker at køre opsætningtagenten skal du vælge 'Ja'. Hvis du vælger "
+"'Nej' vil systemet fortsætte opstart og du vil aldrig se denne besked "
+"igen. Vil du køre opsætningtagenten nu?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat konfigurationssagent"
-
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install software\" button below."
-#~ msgstr ""
-#~ "Hvis du har yderligere cd'er fra Red Hat Linux-kassen, sÃ¥som cd'en \"Red "
-#~ "Hat Linux Documentation CD\" eller \"Linux Applications CD\" sÃ¥ indsÃ¦t "
-#~ "cd'en nu og klikke pÃ¥ knappen nedenfor."
-
-#~ msgid "Linux Application CD"
-#~ msgstr "Linux applikations-CD"
-
-#~ msgid ""
-#~ "This feature is not yet implemented.  Please do not report bugs about "
-#~ "this button."
-#~ msgstr ""
-#~ "Denne facilitet er endnu ikke implementeret. Lad venligst vÃ¦re med at "
-#~ "rapprotere fejl om denne knap."
-
-#~ msgid "Finished Installation!"
-#~ msgstr "FÃ¦rdiggjorde installation!"
-
-#~ msgid "Update Your System"
-#~ msgstr "OpdatÃ©r dit system"
-
-#~ msgid "Network check"
-#~ msgstr "Tjek af netvÃ¦rk"
-
-#~ msgid "Set up Networking"
-#~ msgstr "SÃ¦t netvÃ¦rk op"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "En netvÃ¦rksopkobling kunne ikke findes. NetvÃ¦rksadgang er nÃ¸dvendig for "
-#~ "at kunne registrere dit system med RHN og for at bruge Red Hats "
-#~ "opdateringsagent for at opdatere dit system. Klik pÃ¥ knappen nedenunder "
-#~ "for at konfigurere en netvÃ¦rksopkobling.\n"
-
-#~ msgid "Set up networking..."
-#~ msgstr "SÃ¦t netvÃ¦rk op..."
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "Konfigurer med DHCP"
-
-#~ msgid "IP Address"
-#~ msgstr "IP-adresse"
-
-#~ msgid "Netmask"
-#~ msgstr "Netmaske"
-
-#~ msgid "Network"
-#~ msgstr "NetvÃ¦rk"
-
-#~ msgid "Broadcast"
-#~ msgstr "Rundkastning (broadcast)"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Gateway"
-#~ msgstr "Portner (gateway)"
-
-#~ msgid "Hostname"
-#~ msgstr "VÃ¦rtsnavn"
-
-#~ msgid "Primary DNS"
-#~ msgstr "PrimÃ¦r DNS"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "SekundÃ¦r DNS"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "TertiÃ¦r DNS"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "KonfigurÃ©r maskinel"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "Tastaturoversigt:"
-
-#~ msgid "Configure..."
-#~ msgstr "KonfigurÃ©r..."
-
-#~ msgid "Mouse:"
-#~ msgstr "Mus:"
-
-#~ msgid "Networking:"
-#~ msgstr "NetvÃ¦rk:"
-
-#~ msgid "Display:"
-#~ msgstr "SkÃ¦rm:"
-
-#~ msgid "Printers:"
-#~ msgstr "Skrivere:"
-
-#~ msgid "Welcome to Red Hat Linux Beta!"
-#~ msgstr "Velkommen til Red Hat Linux Beta!"
-
-#~ msgid "Keyboard"
-#~ msgstr "Tastaturkort:"
-
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "SÃ¦t dato og klokkeslÃ¦t for systemet."
-
-#~ msgid "Language Configuration"
-#~ msgstr "Konfiguration af dato og klokkeslÃ¦t"
-
-#~ msgid "Please select the default language for the system."
-#~ msgstr "SÃ¦t dato og klokkeslÃ¦t for systemet."
-
-#, fuzzy
-#~ msgid "Mouse"
-#~ msgstr "Mus:"
-
-#, fuzzy
-#~ msgid "Mouse Configuration"
-#~ msgstr "Konfiguration af dato og klokkeslÃ¦t"
-
-#, fuzzy
-#~ msgid "Select the appropriate mouse for the system."
-#~ msgstr "SÃ¦t dato og klokkeslÃ¦t for systemet."
-
-#, fuzzy
-#~ msgid "Please set the root password for the system."
-#~ msgstr "SÃ¦t dato og klokkeslÃ¦t for systemet."
-
-#, fuzzy
-#~ msgid "Security Level Configuration"
-#~ msgstr "Konfiguration af dato og klokkeslÃ¦t"
-
-#, fuzzy
-#~ msgid "Please choose the security level for the system."
-#~ msgstr "SÃ¦t dato og klokkeslÃ¦t for systemet."
-
-#, fuzzy
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "SÃ¦t dato og klokkeslÃ¦t for systemet."
-
-#~ msgid "Register with RHN"
-#~ msgstr "RegistrÃ©r hos RHN"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Network er en netvÃ¦rkslÃ¸sning for administration af en eller "
-#~ "flere Red Hat Linux-systemer. Alle sikkerhedsvarsler, "
-#~ "fejlrettelsesvarsler og forbedringsvarsler (tilsammen kaldet errata-"
-#~ "varsler) kan hentes direkte fra Red Hat. Du kan endog fÃ¥ opdateringer "
-#~ "direkte levereret til dit system sÃ¥ snart de er blevet udgivet.\n"
-#~ "\n"
-#~ "Da Red Hat Network holder rede pÃ¥ hvornÃ¥r errataopdateringar udgives og "
-#~ "sender dig information om dette per e-post, kan det:"
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " -- Reducere den tid og indsats som krÃ¦ves af systemadministratorer for "
-#~ "at holde system aktuelle med Red Hats errataliste\n"
-#~ " -- Minimere sikkerheds-sÃ¥rbarheder i dit netvÃ¦rk ved at tilvejebringe "
-#~ "rettelser sÃ¥ snart Red Hat udgiver dem\n"
-#~ " -- Udfiltrere pakkeopdateringer som ikke er relevante for dit netvÃ¦rk\n"
-#~ " -- SkemalÃ¦gge errataopdateringer sÃ¥ pakker levereres til udvalgte "
-#~ "systemer nÃ¥r du Ã¸nsker dette"
-
-#~ msgid "Register system now"
-#~ msgstr "RegistrÃ©r systemet nu"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "Du har ingen netvÃ¦rkstilkobling endnu."
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "Start Red Hat opdateringsagent"
