@@ -253,8 +253,9 @@ class firstbootWindow:
 
         #Exit the GTK loop
         gtk.mainquit()
+        if self.wm_pid:
         #Kill the window manager
-        os.kill(self.wm_pid, 15)
+            os.kill(self.wm_pid, 15)
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
 
@@ -269,7 +270,6 @@ class firstbootWindow:
         try:
             result = module.apply(self.notebook)
         except:
-            print "in except"
             pass
 
         print result
@@ -277,10 +277,9 @@ class firstbootWindow:
         if result:
             self.notebook.next_page()
             module = self.moduleList[self.notebook.get_current_page()]
-            print "module is", dir(module)
             if "grabFocus" in dir(module):
+                #If the module needs to grab the focus, let it
                 module.grabFocus()
-            
 
         else:
             #Something went wrong in the module.  Don't advance
