@@ -19,22 +19,11 @@ import sys
 import gtk
 import gobject
 
-doReconfig = 0
-doDebug = 0
-
-for arg in sys.argv:
-    if arg == '--reconfig':
-        print "starting reconfig mode"
-        doReconfig = 1
-    if arg == '--debug':
-        print "starting with debugging options"
-        doDebug = 1
-    
-sys.argv = sys.argv[:1]
-
 class firstbootWindow:
-    def __init__(self, wm_pid):
+    def __init__(self, wm_pid, doReconfig, doDebug):
         self.wm_pid = wm_pid
+        self.doReconfig = doReconfig
+        self.doDebug = doDebug
         self.mainHBox = gtk.HBox(gtk.FALSE, 10)
         self.moduleList = []
         self.moduleDict = {}
@@ -53,31 +42,25 @@ class firstbootWindow:
         win.set_decorated(gtk.FALSE)
         mainVBox = gtk.VBox()
 
-        if doDebug:
-            path = ('modules/')
-        else:
-            path = ('/usr/share/firstboot/modules')
-
-        ####Remove me
-        path = ('modules/')
-        
-        sys.path.append(path)
-
-        pix = self.imageFromFile("pixmaps/titlebar.png")
-        if pix:
-#            mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
-            pass
-
         # Create the notebook.  We use a ListView to control which page in the
         # notebook is displayed.
         self.notebook = gtk.Notebook()
-	if doDebug:
-            self.notebook.set_show_tabs(gtk.TRUE)
-            self.notebook.set_show_border(gtk.TRUE)
+
+        if self.doDebug:
+            path = ('modules/')
             self.notebook.set_scrollable(gtk.TRUE)
         else:
+            path = ('/usr/share/firstboot/modules')
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
+
+        sys.path.append(path)
+
+        #Code for an upper title bar like anaconda.  We may turn this on if we get some UI help
+##         pix = self.imageFromFile("pixmaps/titlebar.png")
+##         if pix:
+##             mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
+##             pass
 
         # Generate a list of all of the module files (which becomes the list of
         # all non-hidden files in the directory with extensions other than .py.
@@ -92,18 +75,18 @@ class firstbootWindow:
 
         # Import each module, and filter out those
         for module in list:
-            print module, doDebug
+            print module, self.doDebug
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
-                   "obj = %s.childWindow(%s)") % (module, module, module, doDebug)
+                   "obj = %s.childWindow(%s)") % (module, module, module, self.doDebug)
             exec(cmd)
 
             # If the module defines a moduleClass, it has to match the mode
             # we're starting up in, otherwise it's always used.  Add it to
             # a dictionary keyed by the module's declared priority.
             if hasattr(obj, "moduleClass"):
-                if (doReconfig and (obj.moduleClass == "reconfig")):
+                if (self.doReconfig and (obj.moduleClass == "reconfig")):
                     self.moduleDict[int(obj.runPriority)] = obj
-                elif (not doReconfig and (obj.moduleClass != "reconfig")):
+                elif (not self.doReconfig and (obj.moduleClass != "reconfig")):
                     self.moduleDict[int(obj.runPriority)] = obj
             else:
                 self.moduleDict[int(obj.runPriority)] = obj
@@ -142,7 +125,7 @@ class firstbootWindow:
 
         # Create the TreeView widget and pack it into a box.
         self.moduleView = gtk.TreeView(self.moduleStore)
-        if doDebug:
+        if self.doDebug:
             self.moduleView.connect("cursor-changed", self.cursorChanged)
         leftVBox = gtk.VBox()
         leftVBox.pack_start(self.moduleView, gtk.TRUE)
@@ -258,6 +241,12 @@ class firstbootWindow:
             module.apply(self.notebook)
         except:
             pass
+
+        #Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
+        if (not self.doDebug):
+            fd = open("/etc/sysconfig/firstboot", "w")
+            fd.write("RUN_FIRSTBOOT=NO")
+            fd.close()
 
         #Exit the GTK loop
         gtk.mainquit()
