@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: Wed Jun 26 12:34:52 2002\n"
+"POT-Creation-Date: Tue Jul  2 17:52:19 2002\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,52 +28,106 @@ msgid "Linux Application CD"
 msgstr ""
 
 #: ../src/modules/additional_cds.py:58
-msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
+msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the corresponding button below."
 msgstr ""
 
-#: ../src/modules/date.py:48
-msgid "Date & Time"
+#: ../src/modules/additional_cds.py:94 ../src/modules/register.py:113
+#: ../src/modules/up2date.py:83
+msgid "This feature is not yet implemented.  Please do not report bugs about this button."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:95 ../src/modules/register.py:114
+#: ../src/modules/up2date.py:84
+msgid "Error"
 msgstr ""
 
 #: ../src/modules/date.py:49
+msgid "Date & Time"
+msgstr ""
+
+#: ../src/modules/date.py:50
 msgid "Date & Time Configuration"
 msgstr ""
 
-#: ../src/modules/date.py:51
+#: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr ""
 
-#: ../src/modules/hardware.py:28
-msgid "Configure hardware"
+#: ../src/modules/hardware.py:27
+msgid "Configure Hardware"
 msgstr ""
 
-#: ../src/modules/hardware.py:82
+#: ../src/modules/hardware.py:81
 msgid "Keyboard Map:"
 msgstr ""
 
-#: ../src/modules/hardware.py:88 ../src/modules/hardware.py:104
-#: ../src/modules/hardware.py:125
+#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
+#: ../src/modules/hardware.py:124
 msgid "Configure..."
 msgstr ""
 
-#: ../src/modules/hardware.py:97
+#: ../src/modules/hardware.py:96
 msgid "Mouse:"
 msgstr ""
 
-#: ../src/modules/hardware.py:119
+#: ../src/modules/hardware.py:118
 msgid "Sound card:"
 msgstr ""
 
-#: ../src/modules/hardware.py:136
+#: ../src/modules/hardware.py:135
 msgid "Networking:"
 msgstr ""
 
-#: ../src/modules/hardware.py:145
+#: ../src/modules/hardware.py:144
 msgid "Display:"
 msgstr ""
 
-#: ../src/modules/hardware.py:154
+#: ../src/modules/hardware.py:153
 msgid "Printers:"
+msgstr ""
+
+#: ../src/modules/keyboard_gui.py:39
+msgid "Keyboard"
+msgstr ""
+
+#: ../src/modules/keyboard_gui.py:41
+msgid "Keyboard Configuration"
+msgstr ""
+
+#: ../src/modules/keyboard_gui.py:43
+msgid "Please select the keyboard for the system."
+msgstr ""
+
+#: ../src/modules/language.py:53
+msgid "Language Selection"
+msgstr ""
+
+#: ../src/modules/language.py:56
+msgid "Please select the default language for the system."
+msgstr ""
+
+#: ../src/modules/language.py:160
+msgid "The changes will take effect the next time you log in."
+msgstr ""
+
+#: ../src/modules/language.py:196
+msgid "Language Configuration"
+msgstr ""
+
+#: ../src/modules/mouse_gui.py:38
+msgid "Mouse"
+msgstr ""
+
+#: ../src/modules/mouse_gui.py:40
+msgid "Mouse Configuration"
+msgstr ""
+
+#: ../src/modules/mouse_gui.py:42
+msgid "Please select the mouse for the system."
+msgstr ""
+
+#: ../src/modules/mouse_gui.py:52
+msgid "Emulate 3 button click"
 msgstr ""
 
 #: ../src/modules/networking.py:19
@@ -166,6 +220,66 @@ msgstr ""
 
 #: ../src/modules/register.py:90
 msgid "You currently have no network connection."
+msgstr ""
+
+#: ../src/modules/rootpassword.py:56
+msgid "Root Password"
+msgstr ""
+
+#: ../src/modules/rootpassword.py:59
+msgid "Please set the root password for the system."
+msgstr ""
+
+#: ../src/modules/rootpassword.py:64
+msgid "Root Password:"
+msgstr ""
+
+#: ../src/modules/rootpassword.py:68
+msgid "Confirm:"
+msgstr ""
+
+#: ../src/modules/rootpassword.py:88
+msgid "Root password must be at least 6 characters in length."
+msgstr ""
+
+#: ../src/modules/rootpassword.py:98
+msgid "Passwords do not match.  Please try again."
+msgstr ""
+
+#: ../src/modules/securitylevel.py:35
+msgid "Security Level Configuration"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:37
+msgid "Please choose the security level for the system."
+msgstr ""
+
+#: ../src/modules/securitylevel.py:40
+msgid "Security Level:"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:47
+msgid "Use default firewall rules"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:48
+msgid "Customize"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:50
+msgid "Trusted devices:"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:57
+msgid "Allow incoming:"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:64
+msgid "Other ports: (1029:tcp)"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:249
+msgid "Firewall Configuration"
 msgstr ""
 
 #: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
