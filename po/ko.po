@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Jun 26 12:34:52 2002\n"
-"PO-Revision-Date: 2002-06-28 16:24GMT+10.00\n"
+"POT-Creation-Date: Tue Jul  2 17:52:19 2002\n"
+"PO-Revision-Date: 2002-07-02 19:24GMT+10:00\n"
 "Last-Translator: Michelle Kim <mkim@brisbane.redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,53 +28,114 @@ msgid "Linux Application CD"
 msgstr "Linux 응용 프로그램 CD"
 
 #: ../src/modules/additional_cds.py:58
-msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
-msgstr "만일 Red Hat Linux 박스 정품에 Red Hat 문서 자료 CD나 Linux 응용 프로그램 CD와 같은 추가 CD가 들어있다면, 지금 디스크를 삽입하고 아래 버튼을 클릭해 주십시오. "
+msgid ""
+"If you have additional CDs from the Red Hat Linux box set, such as the Red "
+"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
+"disc now and click the corresponding button below."
+msgstr ""
+"만일 Red Hat Linux 박스 정품에 Red Hat 문서 자료 CD나 Linux 응용 프로그램 CD와 같은 "
+"추가 CD가 들어있다면, 지금 디스크를 삽입하고 아래의 해당 버튼을 클릭해 주십시오. "
 
-#: ../src/modules/date.py:48
+#: ../src/modules/additional_cds.py:94 ../src/modules/register.py:113
+#: ../src/modules/up2date.py:83
+msgid ""
+"This feature is not yet implemented.  Please do not report bugs about this "
+"button."
+msgstr "이 기능은 아직 실행되지 않습니다.  이 버튼과 관련된 버그는 보고하지 말아 주십시오."
+
+#: ../src/modules/additional_cds.py:95 ../src/modules/register.py:114
+#: ../src/modules/up2date.py:84
+msgid "Error"
+msgstr "오류"
+
+#: ../src/modules/date.py:49
 msgid "Date & Time"
 msgstr "날짜 & 시간"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:50
 msgid "Date & Time Configuration"
 msgstr "날짜 & 시간 설정"
 
-#: ../src/modules/date.py:51
+#: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr "시스템 날짜와 시간을 설정해 주십시오."
 
-#: ../src/modules/hardware.py:28
-msgid "Configure hardware"
+#: ../src/modules/hardware.py:27
+msgid "Configure Hardware"
 msgstr "하드웨어 설정"
 
-#: ../src/modules/hardware.py:82
+#: ../src/modules/hardware.py:81
 msgid "Keyboard Map:"
 msgstr "키보드 맵:"
 
-#: ../src/modules/hardware.py:88 ../src/modules/hardware.py:104
-#: ../src/modules/hardware.py:125
+#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
+#: ../src/modules/hardware.py:124
 msgid "Configure..."
 msgstr "설정..."
 
-#: ../src/modules/hardware.py:97
+#: ../src/modules/hardware.py:96
 msgid "Mouse:"
 msgstr "마우스:"
 
-#: ../src/modules/hardware.py:119
+#: ../src/modules/hardware.py:118
 msgid "Sound card:"
 msgstr "사운드 카드:"
 
-#: ../src/modules/hardware.py:136
+#: ../src/modules/hardware.py:135
 msgid "Networking:"
 msgstr "네트워킹:"
 
-#: ../src/modules/hardware.py:145
+#: ../src/modules/hardware.py:144
 msgid "Display:"
 msgstr "화면 표시:"
 
-#: ../src/modules/hardware.py:154
+#: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "프린터:"
+
+#: ../src/modules/keyboard_gui.py:39
+msgid "Keyboard"
+msgstr "키보드"
+
+#: ../src/modules/keyboard_gui.py:41
+msgid "Keyboard Configuration"
+msgstr "키보드 설정"
+
+#: ../src/modules/keyboard_gui.py:43
+msgid "Please select the keyboard for the system."
+msgstr "시스템에 맞는 키보드를 선택해 주십시오."
+
+#: ../src/modules/language.py:53
+msgid "Language Selection"
+msgstr "언어 선택"
+
+#: ../src/modules/language.py:56
+msgid "Please select the default language for the system."
+msgstr "시스템을 위한 기본 언어를 선택해 주십시오."
+
+#: ../src/modules/language.py:160
+msgid "The changes will take effect the next time you log in."
+msgstr "다음에 로그인 하시면 변경 사항이 나타날 것입니다."
+
+#: ../src/modules/language.py:196
+msgid "Language Configuration"
+msgstr "언어 설정"
+
+#: ../src/modules/mouse_gui.py:38
+msgid "Mouse"
+msgstr "마우스"
+
+#: ../src/modules/mouse_gui.py:40
+msgid "Mouse Configuration"
+msgstr "마우스 설정"
+
+#: ../src/modules/mouse_gui.py:42
+msgid "Please select the mouse for the system."
+msgstr "시스템에 맞는 마우스를 선택해 주십시오."
+
+#: ../src/modules/mouse_gui.py:52
+msgid "Emulate 3 button click"
+msgstr "3 버튼 마우스 클릭처럼 사용하기"
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -85,8 +146,15 @@ msgid "Set up Networking"
 msgstr "네트워킹 셋업"
 
 #: ../src/modules/networking.py:64
-msgid "A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
-msgstr "네트워크 연결을 감지할 수 없습니다.  네트워크 연결 없이는 RHN에 시스템 등록하기와 Red Hat Update Agent를 사용한 시스템 업데이트가 불가능합니다.  네트워크 연결을 설정하기 위해서는 아래 버튼을 클릭해 주십시오.\n"
+msgid ""
+"A network connection was not detected.  Network connectivity is necessary "
+"for registering your system with RHN and for using the Red Hat Update Agent "
+"to update your system.  To set up a network connection, please click on the "
+"button below.\n"
+msgstr ""
+"네트워크 연결을 감지할 수 없습니다.  네트워크 연결 없이는 RHN에 시스템 등록하"
+"기와 Red Hat Update Agent를 사용한 시스템 업데이트가 불가능합니다.  네트워크 "
+"연결을 설정하기 위해서는 아래 버튼을 클릭해 주십시오.\n"
 
 #: ../src/modules/networking.py:114
 msgid "Set up networking..."
@@ -146,27 +214,40 @@ msgstr "Red Hat Network에 여러분의 시스템을 등록하십시오."
 
 #: ../src/modules/register.py:55
 msgid ""
-"Red Hat Network is an Internet solution for managing one or more Red Hat Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts (collectively known as Errata Alerts) can be retreived directly from Red Hat. You can even have updates automatically delivered directly to your system as soon as they are released. \n"
+"Red Hat Network is an Internet solution for managing one or more Red Hat "
+"Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts "
+"(collectively known as Errata Alerts) can be retreived directly from Red "
+"Hat. You can even have updates automatically delivered directly to your "
+"system as soon as they are released. \n"
 "\n"
-"Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
+"Because Red Hat Network keeps track of when Errata Updates are released and "
+"sends you email notifications, it can:"
 msgstr ""
-"Red Hat Network는 한개나 그 이상의 Red Hat Linux 시스템을 관리하는 인터넷 솔루션입니다. "
-"Red Hat에서 직접 모든 보안 경고와 버그 수정 경고, 그리고 강화 경고 (종합적으로 에라타 경고)를 보내드립니다. "
-"또한 새로운 소프트웨어가 배포될 때마다 바로 사용자의 시스템을 자동으로 업데이트합니다. \n"
-"Red Hat Network는 Errata 업데이트가 이루어진 시기를 계속적으로 기록하여 사용자의 이메일로 통보하며 "
-"따라서 Red Hat Network는 다음과 같은 기능을 갖추고 있습니다: "
+"Red Hat Network는 한개나 그 이상의 Red Hat Linux 시스템을 관리하는 인터넷 솔"
+"루션입니다. Red Hat에서 직접 모든 보안 경고와 버그 수정 경고, 그리고 강화 경"
+"고 (종합적으로 에라타 경고)를 보내드립니다. 또한 새로운 소프트웨어가 배포될 "
+"때마다 바로 사용자의 시스템을 자동으로 업데이트합니다. \n"
+"Red Hat Network는 Errata 업데이트가 이루어진 시기를 계속적으로 기록하여 사용"
+"자의 이메일로 통보하며 따라서 Red Hat Network는 다음과 같은 기능을 갖추고 있"
+"습니다: "
 
 #: ../src/modules/register.py:68
 msgid ""
-" -- Reduce the time and effort required by system administrators to stay on top of the Red Hat errata list\n"
-" -- Minimize security vulnerabilities in your network by providing the patches as soon as Red Hat releases them\n"
+" -- Reduce the time and effort required by system administrators to stay on "
+"top of the Red Hat errata list\n"
+" -- Minimize security vulnerabilities in your network by providing the "
+"patches as soon as Red Hat releases them\n"
 " -- Filter out package updates not relevant to your network\n"
-" -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
+" -- Schedule Errata Updates so that packages are delivered to selected "
+"systems when you want it"
 msgstr ""
-" -- 항상 Red Hat 에라타 목록을 확인해야 하는 시스템 관리자의 시간과 노력을 절약해줍니다.\n"
-" -- Red Hat에서 새로운 패치가 나올때마다 사용자의 시스템에 제공되므로 보안 위험을 최소화합니다.\n"
+" -- 항상 Red Hat 에라타 목록을 확인해야 하는 시스템 관리자의 시간과 노력을 절"
+"약해줍니다.\n"
+" -- Red Hat에서 새로운 패치가 나올때마다 사용자의 시스템에 제공되므로 보안 위"
+"험을 최소화합니다.\n"
 " -- 사용자의 네트워크에 필요하지 않은 패키지 업데이트는 실행하지 않습니다\n"
-" -- 선택된 시스템으로 원하는 시간에 패키지가 업데이트될 수 있도록 에라타 업데이트를 계획할 수 있습니다."
+" -- 선택된 시스템으로 원하는 시간에 패키지가 업데이트될 수 있도록 에라타 업데"
+"이트를 계획할 수 있습니다."
 
 #: ../src/modules/register.py:80
 msgid "Register system now"
@@ -176,16 +257,82 @@ msgstr "지금 바로 시스템을 등록하십시오"
 msgid "You currently have no network connection."
 msgstr "현재 네트워크가 연결되어 있지 않습니다."
 
+#: ../src/modules/rootpassword.py:56
+msgid "Root Password"
+msgstr "루트 암호"
+
+#: ../src/modules/rootpassword.py:59
+msgid "Please set the root password for the system."
+msgstr "시스템 루트 암호를 설정해 주십시오."
+
+#: ../src/modules/rootpassword.py:64
+msgid "Root Password:"
+msgstr "루트 암호:"
+
+#: ../src/modules/rootpassword.py:68
+msgid "Confirm:"
+msgstr "확인:"
+
+#: ../src/modules/rootpassword.py:88
+msgid "Root password must be at least 6 characters in length."
+msgstr "루트 암호는 최소한 6 글자 이상이어야 합니다."
+
+#: ../src/modules/rootpassword.py:98
+msgid "Passwords do not match.  Please try again."
+msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
+
+#: ../src/modules/securitylevel.py:35
+msgid "Security Level Configuration"
+msgstr "보안 수준 설정"
+
+#: ../src/modules/securitylevel.py:37
+msgid "Please choose the security level for the system."
+msgstr "시스템의 보안 수준을 선택해 주십시오."
+
+#: ../src/modules/securitylevel.py:40
+msgid "Security Level:"
+msgstr "보안 수준:"
+
+#: ../src/modules/securitylevel.py:47
+msgid "Use default firewall rules"
+msgstr "기본 방화벽 규칙 사용"
+
+#: ../src/modules/securitylevel.py:48
+msgid "Customize"
+msgstr "사용자 정의"
+
+#: ../src/modules/securitylevel.py:50
+msgid "Trusted devices:"
+msgstr "신뢰하는 장치:"
+
+#: ../src/modules/securitylevel.py:57
+msgid "Allow incoming:"
+msgstr "허용할 서비스:"
+
+#: ../src/modules/securitylevel.py:64
+msgid "Other ports: (1029:tcp)"
+msgstr "그 외의 포트: (1029:tcp)"
+
+#: ../src/modules/securitylevel.py:249
+msgid "Firewall Configuration"
+msgstr "방화벽 설정"
+
 #: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 업데이트 에이전트"
 
 #: ../src/modules/up2date.py:55
-msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
+msgid ""
+"Now that you are registered with Red Hat Network, you can run the Red Hat "
+"Update Agent to receive the latest software packages directly from Red Hat.  "
+"Using this tool will allow you to always have the most up-to-date Red Hat "
+"Linux system with all the security patches, bug fixes, and software package "
+"enhancements"
 msgstr ""
-"이제 Red Hat Network에 등록되었습니다. Red Hat 업데이트 에이전트를 실행하여 Red Hat에서 직접 최신 소프트웨어 패키지를 "
-"다운로드 받을 수 있습니다.   Red Hat 업데이트 에이전트를 사용함으로써 여러분은 항상 보안 패치, 버그 수정과 개선된 소프트웨어 패키지를 "
-"갖춘 최신의 Red Hat Linux 시스템을 가질 수 있습니다."
+"이제 Red Hat Network에 등록되었습니다. Red Hat 업데이트 에이전트를 실행하여 "
+"Red Hat에서 직접 최신 소프트웨어 패키지를 다운로드 받을 수 있습니다.   Red "
+"Hat 업데이트 에이전트를 사용함으로써 여러분은 항상 보안 패치, 버그 수정과 개"
+"선된 소프트웨어 패키지를 갖춘 최신의 Red Hat Linux 시스템을 가질 수 있습니다."
 
 #: ../src/modules/up2date.py:66
 msgid "Start the Red Hat Update Agent"
