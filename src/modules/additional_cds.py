@@ -110,20 +110,38 @@ class childWindow:
                     #Otherwise, the user is stuck
                     i.grab_remove ()
                     return
-                
-        pid = functions.start_process("/mnt/cdrom/autorun")
 
-        flag = None
-        while not flag:
-            while gtk.events_pending():
-                gtk.main_iteration_do()
+        if os.access("/mnt/cdrom/autorun", os.R_OK):
+            #If there's an autorun file on the cd, run it
+            pid = functions.start_process("/mnt/cdrom/autorun")
 
-            child_pid, status = os.waitpid(pid, os.WNOHANG)
-            
-            if child_pid == pid:
-                flag = 1
-            else:
-                time.sleep(0.1)
+            flag = None
+            while not flag:
+                while gtk.events_pending():
+                    gtk.main_iteration_do()
+
+                child_pid, status = os.waitpid(pid, os.WNOHANG)
+
+                if child_pid == pid:
+                    flag = 1
+                else:
+                    time.sleep(0.1)
+
+        else:
+            #There's no autorun on the disc, so complain
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
+                                    (_("The autorun program cannot be found on the cd. "
+                                       "Click \"OK\" to continue.")))
+            dlg.set_position(gtk.WIN_POS_CENTER)
+            dlg.set_modal(gtk.TRUE)
+            okButton = dlg.add_button('gtk-ok', 0)
+            rc = dlg.run()
+            dlg.destroy()
+
+            if rc == 0:
+                #Be sure to remove the focus grab if we have to return here.
+                #Otherwise, the user is stuck
+                i.grab_remove ()
 
         #I think redhat-config-packages will do a umount, but just in case it doesn't...
         try:
