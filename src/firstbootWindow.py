@@ -24,6 +24,9 @@ os.environ["PYGTK_DISABLE_THREADS"] = "1"
 os.environ["PYGTK_FATAL_EXCEPTIONS"] = "1"
 os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
 
+
+
+
 import sys
 import gtk
 import gobject
@@ -297,9 +300,11 @@ class firstbootWindow:
 
         # record the current page as the new previous page
         self.prevPage = self.moduleNameToNotebookIndex[module.moduleName]
-        self.pageHistory.append(self.moduleNameToNotebookIndex[module.moduleName])
-        
+
         if result != None:
+            pgNum = self.moduleNameToNotebookIndex[module.moduleName]
+            self.pageHistory.append(pgNum)
+#            print "self.pageHistory: %s" % self.pageHistory
 	    if self.nextPage:
 		self.notebook.set_current_page(self.nextPage)
 		module = self.moduleList[self.nextPage]
@@ -329,6 +334,7 @@ class firstbootWindow:
         self.backButton.set_sensitive(gtk.TRUE)
 
     def backClicked(self, *args):
+#        print "back: %s" % self.pageHistory
         if len(self.pageHistory):
             self.notebook.set_current_page(self.pageHistory[-1])
             del self.pageHistory[-1]
@@ -387,6 +393,7 @@ class firstbootWindow:
 		return 1
 	return 0		
 
+
     def loadModules(self):
         self.moduleList = []
         self.moduleDict = {}
@@ -432,6 +439,10 @@ class firstbootWindow:
             # the module
 	    if hasattr(obj, "needsnetwork"):
 		if not self.checkNetwork():
+                    # we need a way to run some stuff from the modules
+                    # if they have no network
+                    if hasattr(obj, "noNetwork"):
+                        obj.noNetwork()
 		    continue
 
 
