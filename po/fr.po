@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
-"PO-Revision-Date: 2003-06-17 10:05+1000\n"
+"PO-Revision-Date: 2003-06-20 09:18+1000\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: french <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,18 +46,16 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot a déjà été exécuté sur ce système.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de "
-"commande:"
+"commande&nbsp;:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot au cours du "
-"démarrage du système:"
+"démarrage du système&nbsp;:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
@@ -117,19 +115,19 @@ msgstr ""
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
-msgstr "Nom d'_utilisateur:"
+msgstr "Nom d'_utilisateur&nbsp;:"
 
 #: ../src/modules/create_user.py:64
 msgid "Full _Name:"
-msgstr "_Nom et prénom:"
+msgstr "_Nom et prénom&nbsp;:"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
-msgstr "Mot de _passe:"
+msgstr "Mot de _passe&nbsp;:"
 
 #: ../src/modules/create_user.py:78
 msgid "Confir_m Password:"
-msgstr "Confir_mer le mot de passe:"
+msgstr "Confir_mer le mot de passe&nbsp;:"
 
 #: ../src/modules/create_user.py:94
 msgid ""
@@ -167,8 +165,7 @@ msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
 
 #: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
 #: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
@@ -219,15 +216,13 @@ msgstr ""
 "n'utiliser que des caractères ASCII."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
 "caractères ASCII."
@@ -274,31 +269,28 @@ msgstr ""
 "bas à droite."
 
 #: ../src/modules/networking.py:23
-#, fuzzy
 msgid "Network Setup"
-msgstr "Vérification du réseau "
+msgstr "Configuration du réseau "
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "Les périphériques réseau suivants ont été détectés sur le système&nbsp;:"
 
 #: ../src/modules/networking.py:69
-#, fuzzy
 msgid "Network Device"
-msgstr "Vérification du réseau "
+msgstr "Périphérique du réseau "
 
 #: ../src/modules/networking.py:71
 msgid "Boot protocol"
-msgstr ""
+msgstr "Protocole de démarrage"
 
 #: ../src/modules/networking.py:77
-#, fuzzy
 msgid "_Change Network Configuration..."
-msgstr "_Utiliser la connexion réseau..."
+msgstr "_Changer la configuration réseau..."
 
 #: ../src/modules/networking.py:120
 msgid "static"
-msgstr ""
+msgstr "statique"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -321,12 +313,11 @@ msgstr ""
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "Fuseau horaire"
 
 #: ../src/modules/timezone.py:55
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "Veuillez sélectionner la souris de votre système."
+msgstr "Veuillez sélectionner le fuseau horaire de votre système."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -355,7 +346,7 @@ msgstr ""
 "\n"
 "Si vous avez acheté ce produit, vous avez un essai gratuit de Red Hat "
 "Network Basic Service. Pour accéder à cet essai gratuit, consultez la carte "
-"d'activation du produit que vous trouverez dans la boîte: elle contient des "
+"d'activation du produit que vous trouverez dans la boîte&nbsp;: elle contient des "
 "indications plus précises.\n"
 "\n"
 "Si vous n'avez pas acheté ce produit, rendez-vous à l'adresse http://rhn."
@@ -409,7 +400,7 @@ msgstr ""
 "\n"
 "Si vous désirez lancer l'agent de mise à jour, veuillez choisir \"Oui\". Si "
 "vous choisissez \"Non\", le système poursuivra son amorçage et ce message ne "
-"réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour maintenant?"
+"réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour maintenant&nbsp;?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
@@ -659,3 +650,4 @@ msgstr "Agent de mise à jour Red Hat"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Lancer l'agent de mise à jour Red Hat"
+
