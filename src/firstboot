@@ -86,14 +86,14 @@ if (not doDebug):
         #Firstboot has never been run before, so start it up
         pass
 
-#Let's see if /etc/reconfigSys exists.  If it does, we need to enter reconfig mode
-try:
-    os.stat("/etc/reconfigSys")
-    #It exists, so set reconfig mode flag to 1
-    doReconfig = 1
-except:
-    #It doesn't exist, so set reconfig mode flag to 0
-    doReconfig = 0
+    #Let's see if /etc/reconfigSys exists.  If it does, we need to enter reconfig mode
+    try:	
+        os.stat("/etc/reconfigSys")
+        #It exists, so set reconfig mode flag to 1
+        doReconfig = 1
+    except:
+        #It doesn't exist, so set reconfig mode flag to 0
+        doReconfig = 0
 
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
