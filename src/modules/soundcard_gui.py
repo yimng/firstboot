@@ -80,7 +80,7 @@ class SoundWindow:
             label.set_size_request(500, -1)
             label.set_alignment(0.0, 0.5)
 
-            messageLabel = gtk.Label(self.shortMessage)
+            messageLabel = gtk.Label(_(self.shortMessage))
             messageLabel.set_line_wrap(gtk.TRUE)
             messageLabel.set_size_request(500, -1)
             messageLabel.set_alignment(0.0, 0.5)
