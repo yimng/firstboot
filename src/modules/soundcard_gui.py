@@ -60,7 +60,7 @@ class SoundWindow:
         cards = self.soundcardBackend.probeCards()
 
         if not cards:
-            return None, None
+            return None, None, None
         else:
             self.mainVBox = gtk.VBox()
 
