@@ -150,19 +150,12 @@ class childWindow:
         
     ############Event Handlers#############
     def keyboard_button_clicked(self, *args):
-#        pass
-#        win = os.fork()
-
-##         if (not win):
-##             if self.doDebug:
-##                 print "launching redhat-config-keyboard"
-##             path = "/usr/share/redhat-config-keyboard/redhat-config-keyboard.py"
-##             os.execv(path, [""])
         import keyboard_gui
         app = keyboard_gui.childWindow()
         app.stand_alone()
+        #If the keyboard changed, let's see what the new keymap is
+        self.keyboard_label.set_text(app.getData())
 
-        
     def soundcard_button_clicked(self, *args):
         import soundcard
         app = soundcard.childWindow()
