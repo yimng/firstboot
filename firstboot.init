@@ -33,10 +33,13 @@ case "$1" in
 	    exit 0
 	fi
 
-	if [ ! -f /etc/X11/XF86Config ] ; then
-	    echo -n $"X is not configured.  Running redhat-config-xfree86"
-	    /usr/bin/redhat-config-xfree86
-	    echo -n $"X is now configured.  Starting Setup Agent"
+
+	if grep -q "^id:5:initdefault:" /etc/inittab && telinit 5; then
+	    if [ ! -f /etc/X11/XF86Config ] ; then
+		echo -n $"X is not configured.  Running redhat-config-xfree86"
+		/usr/bin/redhat-config-xfree86
+		echo -n $"X is now configured.  Starting Setup Agent"
+	    fi
 	fi
 
 	/usr/sbin/firstboot
