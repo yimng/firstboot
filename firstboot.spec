@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.2.3
+Version: 1.2.4
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Oct 15 2003 Brent Fox <bfox@redhat.com> 1.2.4-1
+- pull lightrays.png from a different location
+
 * Wed Oct  8 2003 Brent Fox <bfox@redhat.com> 1.2.3-1
 - override rhgb's background
 
