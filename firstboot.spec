@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 9
+Release: 10
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,7 +71,7 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Mon Feb 24 2003 Nalin Dahyabhai <nalin@redhat.com>
+* Mon Feb 24 2003 Nalin Dahyabhai <nalin@redhat.com> 1.0.5-10
 - compare text to string.whitespace, not whitespace (#85038)
 
 * Mon Feb 24 2003 Brent Fox <bfox@redhat.com> 1.0.5-9
