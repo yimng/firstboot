@@ -96,17 +96,18 @@ class SoundWindow:
                                 "right channel, the second sound will be in the left channel, "
                                 "and the third sound will be in the center."))
             label.set_line_wrap(gtk.TRUE)
-            label.set_size_request(400, -1)
+            label.set_size_request(500, -1)
             label.set_alignment(0.0, 0.5)
 
             messageLabel = gtk.Label(self.shortMessage)
             messageLabel.set_line_wrap(gtk.TRUE)
-            messageLabel.set_size_request(400, -1)
+            messageLabel.set_size_request(500, -1)
             messageLabel.set_alignment(0.0, 0.5)
 
             self.mainVBox.pack_start(internalVBox, gtk.FALSE)
             internalVBox.pack_start(messageLabel, gtk.FALSE)
             internalVBox.pack_start(label, gtk.FALSE)
+            self.notebook.set_show_border(gtk.FALSE)
 
             hbox = gtk.HBox()
             hbox.pack_start(self.notebook, gtk.FALSE)
