@@ -196,7 +196,7 @@ class firstbootWindow:
         self.bb.pack_start(self.backButton)
         # Create the "go forward" and "finish" buttons.
         self.nextButton = gtk.Button(stock='gtk-go-forward')
-        self.nextButton.connect('clicked', self.okClicked)
+        self.nextButton.connect('clicked', self.nextClicked)
         self.bb.pack_start(self.nextButton)
         self.finishButton = gtk.Button(stock='gtk-close')
         self.finishButton.connect('clicked', self.finishClicked)
@@ -258,19 +258,33 @@ class firstbootWindow:
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
 
-    def okClicked(self, *args):
+    def nextClicked(self, *args):
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
             pass
 
+
         #Call the apply method if it exists
         try:
-            module.apply(self.notebook)
+            result = module.apply(self.notebook)
         except:
+            print "in except"
             pass
 
-        self.notebook.next_page()
+        print result
+
+        if result:
+            self.notebook.next_page()
+            module = self.moduleList[self.notebook.get_current_page()]
+            print "module is", dir(module)
+            if "grabFocus" in dir(module):
+                module.grabFocus()
+            
+
+        else:
+            #Something went wrong in the module.  Don't advance
+            return
 
         #Check to see if we're on the last page.  
         tmp = self.notebook.get_nth_page(self.notebook.get_current_page() + 1)        
