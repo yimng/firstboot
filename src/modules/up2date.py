@@ -63,10 +63,10 @@ class childWindow:
                             "Hat Network Basic Service. To access the free trial, please refer to the "
                             "product activation card found in the box for detailed instructions. \n\n"
                             "If you did not purchase this product, visit http://rhn.redhat.com for "
-                            "more information or to subscribe to Red Hat Network Basic Service. \n\n"))
+                            "more information or to subscribe to Red Hat Network Basic Service. \n"))
 
         label.set_line_wrap(gtk.TRUE)
-        label.set_size_request(400, -1)
+        label.set_size_request(500, -1)
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, gtk.FALSE, gtk.TRUE)
 
