@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
-"PO-Revision-Date: 2002-08-30 10:26+1000\n"
+"PO-Revision-Date: 2002-12-03 13:40+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0beta1\n"
+"X-Generator: KBabel 0.9.6\n"
 
 #: ../src/exceptionWindow.py:31
 msgid "An error has occurred in the %s module."
@@ -46,15 +46,12 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
 msgid "Additional CDs"
@@ -95,47 +92,47 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
 msgid "Create A User"
-msgstr ""
+msgstr "사용자 생성하기"
 
 #: ../src/modules/create_user.py:59
 msgid ""
 "A user account is required to use the system.  Create a user account by "
 "filling in the information below."
 msgstr ""
+"시스템을 사용하시려면 사용자 계정이 필요합니다. 아래쪽 정보를 "
+"기입하셔서 사용자 계정을 생성하시기 바랍니다."
 
 #: ../src/modules/create_user.py:68
 msgid "Username:"
-msgstr ""
+msgstr "사용자명:"
 
 #: ../src/modules/create_user.py:73
 msgid "Full Name:"
-msgstr ""
+msgstr "이름:"
 
 #: ../src/modules/create_user.py:78
-#, fuzzy
 msgid "Password:"
-msgstr "루트 암호:"
+msgstr "암호:"
 
 #: ../src/modules/create_user.py:83
-#, fuzzy
 msgid "Confirm Password:"
-msgstr "루트 암호:"
+msgstr "암호 확인:"
 
 #: ../src/modules/create_user.py:104
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?."
 msgstr ""
+"사용자 계정이 생성되지 않았습니다.  사용자 계정을 생성하지 않고 "
+"계속 진행하시길 원하십니까?"
 
 #: ../src/modules/create_user.py:117
-#, fuzzy
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
 #: ../src/modules/create_user.py:126
-msgid ""
-"An account with username %s already exists.  Please specify another username."
-msgstr ""
+msgid "An account with username %s already exists.  Please specify another username."
+msgstr "사용자명 %s 계정이 이미 존재합니다.  다른 사용자명을 지정해 주십시오."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -273,11 +270,11 @@ msgstr ""
 
 #: ../src/textWindow.py:15
 msgid "No"
-msgstr ""
+msgstr "아니오"
 
 #: ../src/textWindow.py:15
 msgid "Yes"
-msgstr ""
+msgstr "예"
 
 #: ../src/textWindow.py:17
 msgid ""
@@ -289,11 +286,17 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
+"Red Hat 설정 에이전트는 단계별로 여러분의 기계를 설정하실 수 있도록 "
+"도와드립니다.  설정 에이전트를 사용하시려면 X 윈도우 시스템이 "
+"실행 중이어야 합니다. \n"
+"\n"
+"설정 에이전트를 실행하시려면, \"예\"를 선택해 주십시오. "
+"\"아니오\"를 선택하시면, 시스템이 계속 부팅되며 이 메시지가 다시는 "
+"나타나지 않을 것입니다. 지금 설정 에이전트를 실행하시겠습니까?"
 
 #: ../src/textWindow.py:24
-#, fuzzy
 msgid "Red Hat Setup Agent"
-msgstr "Red Hat 업데이트 에이전트"
+msgstr "Red Hat 설정 에이전트"
 
 #, fuzzy
 #~ msgid ""
@@ -543,3 +546,4 @@ msgstr "Red Hat 업데이트 에이전트"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
