@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.9
+Version: 1.0.10
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -72,6 +72,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu May 29 2003 Brent Fox <bfox@redhat.com> 1.0.10-1
+- updated deprecated function call in functions.py
+- don't grab the whole screen in debug mode
+
 * Thu May 22 2003 Brent Fox <bfox@redhat.com> 1.0.9-1
 - remove explicit vt7 argument to X (bug #87636)
 
