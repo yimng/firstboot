@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <ra@hp.is>\n"
@@ -40,43 +40,44 @@ msgstr ""
 "Afrit af villumeldingunum var vistað í %s \n"
 "Mundi að hengja hana við villutilkynninguna. \n"
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "Auka diskar"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat handbókardiskurinn"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Hugbúnaðardiskur"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr "Setja inn auka hugbúnað"
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "Ef þú ert með fleiri diska úr Red Hat Linux kassanum eins og til dæmis Red "
 "Hat Linux handbókardiskinn eða hugbúnaðardiskinn, settu þá í drifið og "
 "smelltu á hnappinn hér fyrir neðan."
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
-"Þessi eiginleiki er enn ekki útfærður. Vinsamlegast sendið ekki inn "
-"tilkynningu um þennan hnapp."
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "Villa"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -98,13 +99,18 @@ msgstr ""
 "Ekki tókst að tengjast %s. Annaðhvort er %s ekki til staðar eða "
 "eldveggjarstillingar velarinnar þinnar leyfa ekki NTP tengingar."
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "Villa"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Ljúka uppsetningu"
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
-msgstr "Uppsetningu lokið!"
+#, fuzzy
+msgid "Finished Setup!"
+msgstr "Ljúka uppsetningu"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -135,19 +141,19 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Smelltu á \"Spila hljóð\" hnappinn til að prófa hljóðkortið. Þú ættir "
-"að heyra þrjú hljóð. Fyrsta hljóðið ætti að vera í hægri hátalaranum, "
-"annað hljóðið í þeim vinstri og þriðja hljóðið í báðum."
+"Smelltu á \"Spila hljóð\" hnappinn til að prófa hljóðkortið. Þú ættir að "
+"heyra þrjú hljóð. Fyrsta hljóðið ætti að vera í hægri hátalaranum, annað "
+"hljóðið í þeim vinstri og þriðja hljóðið í báðum."
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 msgid "Update Agent"
 msgstr "Uppfærsluálfurinn"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat uppfærsluálfurinn"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 #, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
@@ -170,11 +176,11 @@ msgstr ""
 "útgáfum af húgbúnaði og með öllum öryggisuppfærslum, villuleiðréttingum og "
 "viðbótum"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Já ég vil skrá vélina hjá Red Hat Network"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "Nei ég vil ekki skrá vélina hjá Red Hat Network"
 
@@ -198,3 +204,19 @@ msgstr ""
 "uppsetningarforritið mun nú leiða þig í gegnum það sem eftir er að stilla. "
 "Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra horninu hér að neðan til "
 "að halda áfram."
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat handbókardiskurinn"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Hugbúnaðardiskur"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr ""
+#~ "Þessi eiginleiki er enn ekki útfærður. Vinsamlegast sendið ekki inn "
+#~ "tilkynningu um þennan hnapp."
+
+#~ msgid "Finished Installation!"
+#~ msgstr "Uppsetningu lokið!"

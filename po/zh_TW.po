@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-08-12 10:06+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
@@ -42,40 +42,43 @@ msgstr ""
 "除錯輸出的一個複本已經儲存到 %s \n"
 "請確定有附上這個檔案到程式錯誤報告。\n"
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "額外的 CDs"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat 說明文件 CD"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Linux 應用程式 CD"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr "安裝附加的軟體"
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文件 "
 "CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
-msgstr "這個功能尚未完成。 請不要回報關於這個按鈕的程式錯誤。"
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "錯誤"
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -97,13 +100,18 @@ msgstr ""
 "無法建立與 %s 的連線。 也許是 %s 無法使用，或您系統的防火牆 設定阻擋 NTP 的連"
 "線。"
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "錯誤"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "完成設定"
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
-msgstr "完成系統安裝！"
+#, fuzzy
+msgid "Finished Setup!"
+msgstr "完成設定"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -137,15 +145,15 @@ msgstr ""
 "音。  第一個聲音會是在右聲道，第二個聲音會是在左聲道，而第三個 聲音會是在中"
 "間。"
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 msgid "Update Agent"
 msgstr "更新代理程式"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理程式"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -161,25 +169,22 @@ msgid ""
 "information or to subscribe to Red Hat Network Basic Service. \n"
 "\n"
 msgstr ""
-"Red Hat 更新代理程式將會向 Red Hat Network 註冊您的機器， "
-"如此您便可以接收直接從 Red Hat 傳來最新的軟體套件。 "
-"使用這個工具將使您總是擁有最新的 Red Hat "
-"Linux 系統，並含有所有的安全性修補，程式錯誤修正以及 "
-"軟體套件的功能強化。\n"
+"Red Hat 更新代理程式將會向 Red Hat Network 註冊您的機器， 如此您便可以接收直"
+"接從 Red Hat 傳來最新的軟體套件。 使用這個工具將使您總是擁有最新的 Red Hat "
+"Linux 系統，並含有所有的安全性修補，程式錯誤修正以及 軟體套件的功能強化。\n"
 "\n"
-"假如您是購買這個產品，您將享有免費試用 Red Hat "
-"Network Basic Service。 如要使用這個試用服務，請參閱盒內所附的 "
-"『產品註冊卡』，以取得更詳細的資訊。\n"
+"假如您是購買這個產品，您將享有免費試用 Red Hat Network Basic Service。 如要使"
+"用這個試用服務，請參閱盒內所附的 『產品註冊卡』，以取得更詳細的資訊。\n"
 "\n"
-"假如您沒有購買這個產品，請拜訪 http://rhn.redhat.com 以取得更多資訊， "
-"或訂閱 Red Hat Network Basic Service。\n"
+"假如您沒有購買這個產品，請拜訪 http://rhn.redhat.com 以取得更多資訊， 或訂閱 "
+"Red Hat Network Basic Service。\n"
 "\n"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "是的，我想要向 Red Hat Network 註冊我的系統"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "不，我不想要註冊我的系統。"
 
@@ -201,6 +206,20 @@ msgstr ""
 "嗨！ 歡迎使用 Red Hat 設定代理程式。  在使用您的系統之前，要先 完成幾個步"
 "驟。  Red Hat 設定代理程式現在將引導您做一些基本的設定。 請點選在右下角的 "
 "\"下一步\" 按鈕以繼續。"
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat 說明文件 CD"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Linux 應用程式 CD"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr "這個功能尚未完成。 請不要回報關於這個按鈕的程式錯誤。"
+
+#~ msgid "Finished Installation!"
+#~ msgstr "完成系統安裝！"
 
 #~ msgid "Update Your System"
 #~ msgstr "更新您的系統"
@@ -429,4 +448,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-

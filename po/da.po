@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-08-02 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -42,43 +42,44 @@ msgstr ""
 "En kopi af fejlsøgningsuddata er gemt i /tmp/firstboot.txt \n"
 "Vør sød at vedlægge denne fil til fejlrapporten. \n"
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "Yderligere CDer"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat dokumentations-CD"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Linux applikations-CD"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr "Installér yderligere programmel"
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "Hvis du har yderligere cd'er fra Red Hat Linux-kassen, såsom cd'en \"Red Hat "
 "Linux Documentation CD\" eller \"Linux Applications CD\" så indsæt cd'en nu "
 "og klikke på knappen nedenfor."
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
-"Denne facilitet er endnu ikke implementeret. Lad venligst være med at "
-"rapprotere fejl om denne knap."
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "Fejl"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -100,13 +101,18 @@ msgstr ""
 "En forbindelse med %s kunne ikke etableres. Enten er %s ikke tilgængelig "
 "eller også blokerer brandmursindstillingerne på din maskine NTP-forbindelser."
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "Fejl"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Færdiggør opsætning"
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
-msgstr "Færdiggjorde installation!"
+#, fuzzy
+msgid "Finished Setup!"
+msgstr "Færdiggør opsætning"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -141,16 +147,16 @@ msgstr ""
 "serie med 3 lyde. Den første lyd skal være i den højre kanal, den anden lyd "
 "skal være i den venstre kanal, og den tredje lyd skal være i midten."
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 #, fuzzy
 msgid "Update Agent"
 msgstr "Red Hat opdateringsagent"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat opdateringsagent"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 #, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
@@ -172,11 +178,11 @@ msgstr ""
 "værktøj kan du altid have de mest opdaterede Red Hat Linux-system med alle "
 "sikkerhedsrettelser, fejlrettelser og forbedringer af programpakker"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Ja, jeg vil gerne registrere mit system hos Red Hat Network"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "Nej, jeg vil ikke registrere mit system."
 
@@ -199,6 +205,22 @@ msgstr ""
 "der skal gøres før dit system er klar til brug. Red Hats opsætningsagent vil "
 "nu lede dig gennem noget grundlæggende konfigurering. Klik på 'Næste'-"
 "knappen i det nederste højre hjørne for at fortsætte."
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat dokumentations-CD"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Linux applikations-CD"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr ""
+#~ "Denne facilitet er endnu ikke implementeret. Lad venligst være med at "
+#~ "rapprotere fejl om denne knap."
+
+#~ msgid "Finished Installation!"
+#~ msgstr "Færdiggjorde installation!"
 
 #~ msgid "Update Your System"
 #~ msgstr "Opdatér dit system"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-07-17 11:12GMT\n"
 "Last-Translator: Nuria Soriano <nuria@redhat.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -34,43 +34,44 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "CDs adicionales"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "CD de documentación de Red Hat"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "CD de aplicaciones Linux"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "Si posee CDs adicionales de la caja de Red Hat Linux, como el CD de "
 "documentación de Red Hat Linux o el CD de aplicaciones Linux, introduzca el "
 "disco y pulse el botón en la parte inferior."
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
-"Esta característica no ha sido implementada. No informe de este error sobre "
-"el botón."
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "Error"
 
 #: ../src/modules/date.py:49
 #, fuzzy
@@ -92,12 +93,16 @@ msgid ""
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "Error"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr ""
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
+msgid "Finished Setup!"
 msgstr ""
 
 #: ../src/modules/finished.py:45
@@ -129,16 +134,16 @@ msgid ""
 "will be in the center."
 msgstr ""
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 #, fuzzy
 msgid "Update Agent"
 msgstr "Agente de actualización de Red Hat"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Agente de actualización de Red Hat"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 #, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
@@ -161,12 +166,12 @@ msgstr ""
 "poseer elsistema Red Hat Linux más actualizado con todos los parches de "
 "seguridad, parches a erratas y mejoras del paquete de software"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 #, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Registrar su sistema con Red Hat Network"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr ""
 
@@ -186,6 +191,19 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "CD de documentación de Red Hat"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "CD de aplicaciones Linux"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr ""
+#~ "Esta característica no ha sido implementada. No informe de este error "
+#~ "sobre el botón."
 
 #~ msgid "Configure Hardware"
 #~ msgstr "Configurar el hardware"
@@ -216,14 +234,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update Agent "
-#~ "to update your system.  To set up a network connection, please click on the "
-#~ "button below.\n"
+#~ "for registering your system with RHN and for using the Red Hat Update "
+#~ "Agent to update your system.  To set up a network connection, please "
+#~ "click on the button below.\n"
 #~ msgstr ""
-#~ "No se ha detectado la conexión de red. Es necesaria la conectividad de red "
-#~ "para registrar su sistema con RHN y para usar el Red Hat Update Agent para "
-#~ "actualizar su sistema. Para configurar la red, pulse el botón de la parte "
-#~ "inferior.\n"
+#~ "No se ha detectado la conexión de red. Es necesaria la conectividad de "
+#~ "red para registrar su sistema con RHN y para usar el Red Hat Update Agent "
+#~ "para actualizar su sistema. Para configurar la red, pulse el botón de la "
+#~ "parte inferior.\n"
 
 #~ msgid "Set up networking..."
 #~ msgstr "Configuración de la red..."
@@ -351,27 +369,27 @@ msgstr ""
 
 #~ msgid ""
 #~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts "
-#~ "(collectively known as Errata Alerts) can be retreived directly from Red "
-#~ "Hat. You can even have updates automatically delivered directly to your "
-#~ "system as soon as they are released. \n"
+#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
+#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
+#~ "from Red Hat. You can even have updates automatically delivered directly "
+#~ "to your system as soon as they are released. \n"
 #~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released and "
-#~ "sends you email notifications, it can:"
+#~ "Because Red Hat Network keeps track of when Errata Updates are released "
+#~ "and sends you email notifications, it can:"
 #~ msgstr ""
 #~ "Red Hat Network es una solución de Internet para gestionar uno o más "
 #~ "sistemas Red Hat Linux. Todas las alerta de seguridad, alertas de "
 #~ "resolución de errores y mejoras de alertas (conocidas colectivamente como "
-#~ "alertas de errata) pueden ser recuperadas directamente desde Red Hat. Puede "
-#~ "obtener actualizaciones entregadas directamente para su sistema tan pronto "
-#~ "como éste sea entregado.\n"
+#~ "alertas de errata) pueden ser recuperadas directamente desde Red Hat. "
+#~ "Puede obtener actualizaciones entregadas directamente para su sistema tan "
+#~ "pronto como éste sea entregado.\n"
 #~ "\n"
-#~ "Red Hat Network sigue la huella de las actualizaciones de erratas entregadas "
-#~ "y envía las notificaciones de correo electrónico, puede:"
+#~ "Red Hat Network sigue la huella de las actualizaciones de erratas "
+#~ "entregadas y envía las notificaciones de correo electrónico, puede:"
 
 #~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay on "
-#~ "top of the Red Hat errata list\n"
+#~ " -- Reduce the time and effort required by system administrators to stay "
+#~ "on top of the Red Hat errata list\n"
 #~ " -- Minimize security vulnerabilities in your network by providing the "
 #~ "patches as soon as Red Hat releases them\n"
 #~ " -- Filter out package updates not relevant to your network\n"
@@ -379,10 +397,11 @@ msgstr ""
 #~ "systems when you want it"
 #~ msgstr ""
 #~ " -- Reduce el tiempo y el esfuerzo que necesitan los administradores del "
-#~ "sistema para conservar el primer puesto en la lista de erratas de Red Hat\n"
-#~ " -- Minimizar las vulnerabilidades de su red al proporcionar los parches tan "
-#~ "pronto como Red Hat los entregue  -- Filtrar las actualizaciones del paquete "
-#~ "que no sean relevantes para su red\n"
+#~ "sistema para conservar el primer puesto en la lista de erratas de Red "
+#~ "Hat\n"
+#~ " -- Minimizar las vulnerabilidades de su red al proporcionar los parches "
+#~ "tan pronto como Red Hat los entregue  -- Filtrar las actualizaciones del "
+#~ "paquete que no sean relevantes para su red\n"
 #~ " -- Planificar actualizaciones de erratas para que los paquetes sean "
 #~ "entregados\n"
 #~ "a sistemas seleccionados cuando los desee. "

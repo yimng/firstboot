@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-08-08 01:00+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -44,43 +44,44 @@ msgstr ""
 "har sparats i %s. Försäkra dig om att du bifogar\n"
 "den filen med felrapporten.\n"
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "Ytterligare cd-skivor"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat Documentation CD"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Linux Application CD"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr "Installera ytterligare programvara"
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "Om du har ytterligare cd-skivor från Red Hat Linux-lådan, exempelvis skivan "
 "\"Red Hat Linux Documentation CD\" eller \"Linux Applications CD\" bör du "
 "stoppa in skivan nu och klicka på motsvarande knapp nedan."
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
-"Denna funktion är ännu inte implementerad. Rapportera inte fel beträffande "
-"denna knapp."
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "Fel"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -102,13 +103,18 @@ msgstr ""
 "En anslutning med %s kunde inte etableras. Antingen är %s inte tillgänglig "
 "eller så blockerar brandväggsinställningarna på din dator NTP-anslutningar."
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "Fel"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Slutför konfiguration"
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
-msgstr "Installationen slutfördes!"
+#, fuzzy
+msgid "Finished Setup!"
+msgstr "Slutför konfiguration"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -143,15 +149,15 @@ msgstr ""
 "höra en serie med tre ljud. Det första ljudet kommer att vara i den högra "
 "kanalen, det andra ljudet i den vänstra och det tredje i mitten."
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 msgid "Update Agent"
 msgstr "Uppdateringsagent"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hats uppdateringsagent"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -170,22 +176,20 @@ msgstr ""
 "Red Hats uppdateringsagent kommer att registrera din maskin i Red Hat "
 "Network, så att du kan få de senaste programpaketen direkt från Red Hat. "
 "Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat Linux-"
-"system med alla säkerhetsfixar, felfixar och förbättringar av programpaket.""\n"
+"system med alla säkerhetsfixar, felfixar och förbättringar av programpaket.\n"
 "Om du köpte denna produkt har du rätt till en fri provperiod med Red Hat "
-"Networks \"Basic\"-tjänst. För att aktivera den fria provperioden behöver "
-"du följa instruktionerna som finns på produktaktiveringskortet i "
-"kartongen.\n"
+"Networks \"Basic\"-tjänst. För att aktivera den fria provperioden behöver du "
+"följa instruktionerna som finns på produktaktiveringskortet i kartongen.\n"
 "\n"
-"Om du inte köpte denna produkt bör du besöka http://rhn.redhat.com för "
-"mer information eller för att prenumerera på Red Hat Networks "
-"\"Basic\"-tjänst.\n"
+"Om du inte köpte denna produkt bör du besöka http://rhn.redhat.com för mer "
+"information eller för att prenumerera på Red Hat Networks \"Basic\"-tjänst.\n"
 "\n"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Ja, jag vill registrera mitt system i Red Hat Network"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "Nej, jag vill inte registrera mitt system."
 
@@ -209,6 +213,22 @@ msgstr ""
 "konfigurationsagent kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Framåt\" i nedre högra hörnet för att "
 "fortsätta."
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat Documentation CD"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Linux Application CD"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr ""
+#~ "Denna funktion är ännu inte implementerad. Rapportera inte fel "
+#~ "beträffande denna knapp."
+
+#~ msgid "Finished Installation!"
+#~ msgstr "Installationen slutfördes!"
 
 #~ msgid "Update Your System"
 #~ msgstr "Uppdatera ditt system"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-08-08 09:49+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -41,43 +41,44 @@ msgstr ""
 "디버그 출력 결과는 %s에 저장되어 있습니다. \n"
 "이 파일을 버그 리포트에 첨부해 주십시오.\n"
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "추가 CD"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat 문서 자료 CD"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Linux 응용 프로그램 CD"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr "추가 소프트웨어 설치"
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "만일 Red Hat Linux 박스 정품에 Red Hat 문서 자료 CD나 Linux 응용 프로그램 CD"
 "와 같은 추가 CD가 들어있다면, 지금 디스크를 삽입하고 아래의 해당 버튼을 클릭"
 "해 주십시오. "
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
-"이 기능은 아직 실행되지 않습니다.  이 버튼과 관련된 버그는 보고하지 말아 주십"
-"시오."
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "오류"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -99,13 +100,18 @@ msgstr ""
 "%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 컴퓨터에 설정된 방화벽 때"
 "문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "오류"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "설정 완료"
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
-msgstr "설치를 완료했습니다!"
+#, fuzzy
+msgid "Finished Setup!"
+msgstr "설정 완료"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -140,15 +146,15 @@ msgstr ""
 "세가지 사운드가 들릴 것입니다. 첫번째 사운드는 오른쪽 채널, 두번째 사운드는 "
 "왼쪽 채널, 그리고 세번째 사운드는 중앙에서 재생됩니다."
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 msgid "Update Agent"
 msgstr "업데이트 에이전트"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 업데이트 에이전트"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -171,18 +177,18 @@ msgstr ""
 "하실 수 있습니다.\n"
 "\n"
 "이 제품을 구입하시면 Red Hat 네트워크 기본 서비스를 무료로 사용하실 수 있는 "
-"기회를 드립니다. 무료 사용을 신청하시려면, 제품 상자에 들어있는 "
-"제품 활성화 카드에 적힌 상세한 지시 사항을 따르시기 바랍니다. \n"
+"기회를 드립니다. 무료 사용을 신청하시려면, 제품 상자에 들어있는 제품 활성화 "
+"카드에 적힌 상세한 지시 사항을 따르시기 바랍니다. \n"
 "\n"
-"이 제품을 구입하지 않으셨다면, http://rhn.redhat.com 사이트를 방문하셔서 "
-"Red Hat 네트워크 기본 서비스에 등록하셔서 보다 많은 정보를 얻으실 수 있습니다.\n"
+"이 제품을 구입하지 않으셨다면, http://rhn.redhat.com 사이트를 방문하셔서 Red "
+"Hat 네트워크 기본 서비스에 등록하셔서 보다 많은 정보를 얻으실 수 있습니다.\n"
 "\n"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "네, Red Hat Network에 시스템을 등록합니다."
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "아니오, 시스템을 등록하지 않습니다."
 
@@ -206,6 +212,22 @@ msgstr ""
 "트는 이제 몇가지 기본적인 설정 과정을 여러가지 단계를 통해 길잡이를 해드릴 것"
 "입니다. 오른쪽 하단 모서리에 위치한 \"앞으로 (Forward)\" 버튼을 클릭하시면, "
 "계속 진행합니다."
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat 문서 자료 CD"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Linux 응용 프로그램 CD"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr ""
+#~ "이 기능은 아직 실행되지 않습니다.  이 버튼과 관련된 버그는 보고하지 말아 "
+#~ "주십시오."
+
+#~ msgid "Finished Installation!"
+#~ msgstr "설치를 완료했습니다!"
 
 #~ msgid "Update Your System"
 #~ msgstr "시스템을 업데이트 하십시오"
@@ -438,4 +460,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-

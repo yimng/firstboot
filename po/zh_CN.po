@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-08-12 10:35GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -41,40 +41,43 @@ msgstr ""
 "调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "额外光盘"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat 文档光盘"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Linux 应用程序光盘"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr "安装额外软件"
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "如果你有额外的 Red Hat Linux 盒装光盘，如 Red Hat Linux 文档光盘 或 Linux 应"
 "用程序光盘，请将它插入并点击以下的相应按钮。"
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
-msgstr "该功能还没有实现。请不要提交关于该按钮的错误。"
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "错误"
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -96,13 +99,18 @@ msgstr ""
 "无法建立和 %s 的连接。或许是由于 %s 不可用，或许是 由于你的计算机上的防火墙设"
 "置堵塞了 NTP 连接。"
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "错误"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "设置完毕"
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
-msgstr "安装完毕！"
+#, fuzzy
+msgid "Finished Setup!"
+msgstr "设置完毕"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -135,15 +143,15 @@ msgstr ""
 "点击“播放测试声音”按钮来试听声音示例。 你应该听到三种声音系列。第一种声音是 "
 "右频；第二种声音是左频；第三种声音将 会在中间。"
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 msgid "Update Agent"
 msgstr "更新代理"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -163,18 +171,18 @@ msgstr ""
 "检索最新的软件包。使用本工具会允许你一直拥有最新的 Red Hat Linux 系统和所有的"
 "安全补丁、错误修正、及对软件包的增进。\n"
 "\n"
-"如果你购买了该产品，你将有权得到 Red Hat 网络基本服务的免费试用。"
-"要使用该项免费服务，请参考盒内的产品激活卡来阅读详细指令。\n"
+"如果你购买了该产品，你将有权得到 Red Hat 网络基本服务的免费试用。要使用该项免"
+"费服务，请参考盒内的产品激活卡来阅读详细指令。\n"
 "\n"
-"如果你没有购买该产品，请访问 http://rhn.redhat.com 来获取详情， "
-"或者来订阅 Red Hat 网络的基本服务。\n"
+"如果你没有购买该产品，请访问 http://rhn.redhat.com 来获取详情， 或者来订阅 "
+"Red Hat 网络的基本服务。\n"
 "\n"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "是，我想在 Red Hat 网络注册"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "否，我不想注册我的系统。"
 
@@ -195,6 +203,20 @@ msgid ""
 msgstr ""
 "嗨！欢迎使用 Red Hat 设置代理。在你的系统一切就绪前要执行几个步骤。 Red Hat "
 "设置代理将会引导你通过一些基本配置。请点击右下角的“向前” 按钮来继续。"
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat 文档光盘"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Linux 应用程序光盘"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr "该功能还没有实现。请不要提交关于该按钮的错误。"
+
+#~ msgid "Finished Installation!"
+#~ msgstr "安装完毕！"
 
 #~ msgid "Update Your System"
 #~ msgstr "更新你的系统"
@@ -407,4 +429,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-07-23 18:39+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -34,43 +34,44 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "Tilleggs-CDer"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat dokumentasjons-CD"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Linux applikasjons-CD"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "Hvis du har tilleggs-CDer fra Red Hat Linux bokssettet, slik som Red Hat "
 "Linux dokumentasjons-CDen eller Linux Applications CDen, vennligst sett "
 "denne inn nå og klikk på den korresponderende knappen under."
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
-"Denne funksjonen er ikke implementert ennå. Vennligst ikke rapporter feil om "
-"denne knappen."
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "Feil"
 
 #: ../src/modules/date.py:49
 #, fuzzy
@@ -95,14 +96,17 @@ msgstr ""
 "eller så blokkerer brannvegginnstillingene på din datamaskin NTP-"
 "tilkoblinger."
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "Feil"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr ""
 
 #: ../src/modules/finished.py:28
-#, fuzzy
-msgid "Finished Installation!"
-msgstr "Installasjonen er fullført!"
+msgid "Finished Setup!"
+msgstr ""
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -133,16 +137,16 @@ msgid ""
 "will be in the center."
 msgstr ""
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 #, fuzzy
 msgid "Update Agent"
 msgstr "Red Hat oppdateringsagent"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat oppdateringsagent"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 #, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
@@ -164,11 +168,11 @@ msgstr ""
 "dette verktøyet vil la deg holde ditt Red Hat Linux system oppdatert med "
 "alle sikkerhetsoppgraderinger, feilopprettinger og forbedringer i pakkene."
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Ja, jeg ønsker å registrere meg hos Red Hat Network"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "Nei, jeg ønsker ikke å registrere mitt system."
 
@@ -188,6 +192,23 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat dokumentasjons-CD"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Linux applikasjons-CD"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr ""
+#~ "Denne funksjonen er ikke implementert ennå. Vennligst ikke rapporter feil "
+#~ "om denne knappen."
+
+#, fuzzy
+#~ msgid "Finished Installation!"
+#~ msgstr "Installasjonen er fullført!"
 
 #~ msgid "Update Your System"
 #~ msgstr "Oppdater ditt system"

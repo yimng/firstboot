@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
+"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
 "PO-Revision-Date: 2002-08-08 10:40GMT\n"
 "Last-Translator: Marisa <marisa@redhat.it>\n"
 "Language-Team:  <it@li.org>\n"
@@ -42,43 +42,44 @@ msgstr ""
 "Una copia del risultato dell'operazione di debug è stata salvata in %s.\n"
 "Accertarsi di allegare il file al report dei bug. \n"
 
-#: ../src/modules/additional_cds.py:19
+#: ../src/firstboot.py:83
+msgid "Firstboot has already been run once on this system.\n"
+msgstr ""
+
+#: ../src/firstboot.py:84
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+
+#: ../src/firstboot.py:89
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:21
 msgid "Additional CDs"
 msgstr "CD aggiuntivi"
 
-#: ../src/modules/additional_cds.py:22
-msgid "Red Hat Documentation CD"
-msgstr "Red Hat Documentation CD"
-
-#: ../src/modules/additional_cds.py:23
-msgid "Linux Application CD"
-msgstr "Linux Application CD"
-
-#: ../src/modules/additional_cds.py:32
+#: ../src/modules/additional_cds.py:34
 msgid "Install Additional Software"
 msgstr "Installa software aggiuntivo"
 
-#: ../src/modules/additional_cds.py:59
+#: ../src/modules/additional_cds.py:61
+#, fuzzy
 msgid ""
-"If you have additional CDs from the Red Hat Linux box set, such as the Red "
-"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
-"disc now and click the corresponding button below."
+"If you have additional CD-ROMs that you would like to install, such as the "
+"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
+"drive and click the \"Install software\" button below."
 msgstr ""
 "Se nella scatola di Red Hat Linux sono presenti dei CD aggiuntivi, quali il "
 "Red Hat Linux Documentation CD o il Linux Applications CD, inserire il disco "
 "e fare clic sul pulsante sotto."
 
-#: ../src/modules/additional_cds.py:95
+#: ../src/modules/additional_cds.py:115
 msgid ""
-"This feature is not yet implemented.  Please do not report bugs about this "
-"button."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
-"Questa funzionalità non è ancora stata implementata. Non segnalare bug per "
-"questo pulsante."
-
-#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
-msgid "Error"
-msgstr "Errore"
 
 #: ../src/modules/date.py:49
 msgid "Date and Time"
@@ -101,13 +102,18 @@ msgstr ""
 "disponibileo che le impostazione del firewall del computer blocchino le "
 "connessioni NTP."
 
+#: ../src/modules/date.py:111
+msgid "Error"
+msgstr "Errore"
+
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Termina installazione"
 
 #: ../src/modules/finished.py:28
-msgid "Finished Installation!"
-msgstr "Installazione completata!"
+#, fuzzy
+msgid "Finished Setup!"
+msgstr "Termina installazione"
 
 #: ../src/modules/finished.py:45
 msgid ""
@@ -140,18 +146,18 @@ msgid ""
 msgstr ""
 "Fare clic sul pulsante \"Riproduci test audio\" per ascoltare un campione "
 "audio. Si dovrebbe sentire una serie di tre suoni. Il primo suono sarà nel "
-"canale destro, il secondo sarà nel canale sinistro e il terzo suono "
-"sarànel centro."
+"canale destro, il secondo sarà nel canale sinistro e il terzo suono sarànel "
+"centro."
 
-#: ../src/modules/up2date.py:18
+#: ../src/modules/up2date.py:19
 msgid "Update Agent"
 msgstr "Update Agent"
 
-#: ../src/modules/up2date.py:27
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
-#: ../src/modules/up2date.py:55
+#: ../src/modules/up2date.py:56
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -177,16 +183,16 @@ msgstr ""
 "di base di Red Hat Network. Per maggiori informazioni, leggere la scheda "
 "dell'attivazione del prodotto disponibile nella confezione.\n"
 "\n"
-"Se il prodotto non è stato acquistato, visitare il sito "
-"http://rhn.redhat.com per ottenere ulteriori informazioni oppure "
-"sottoscrivere il servizio di base di Red Hat Network.\n"
+"Se il prodotto non è stato acquistato, visitare il sito http://rhn.redhat."
+"com per ottenere ulteriori informazioni oppure sottoscrivere il servizio di "
+"base di Red Hat Network.\n"
 "\n"
 
-#: ../src/modules/up2date.py:74
+#: ../src/modules/up2date.py:75
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Procedere con la registrazione del sistema con Red Hat Network"
 
-#: ../src/modules/up2date.py:75
+#: ../src/modules/up2date.py:76
 msgid "No, I do not want to register my system."
 msgstr "Non procedere con la registrazione del sistema."
 
@@ -209,3 +215,19 @@ msgstr ""
 "che il sistema sia pronto. Red Hat Setup Agent guida l'utentenel processo di "
 "configurazione di base. Fare clic sul pulsante \"Avanti\" nella parte "
 "inferiore destra per continuare."
+
+#~ msgid "Red Hat Documentation CD"
+#~ msgstr "Red Hat Documentation CD"
+
+#~ msgid "Linux Application CD"
+#~ msgstr "Linux Application CD"
+
+#~ msgid ""
+#~ "This feature is not yet implemented.  Please do not report bugs about "
+#~ "this button."
+#~ msgstr ""
+#~ "Questa funzionalità non è ancora stata implementata. Non segnalare bug "
+#~ "per questo pulsante."
+
+#~ msgid "Finished Installation!"
+#~ msgstr "Installazione completata!"
