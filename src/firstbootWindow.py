@@ -130,8 +130,8 @@ class firstbootWindow:
         self.notebook = gtk.Notebook()
         if self.doDebug:
             print "starting firstbootWindow", doReconfig, doDebug                    
-            #self.modulePath = ('modules/')
-	    self.modulePath = ('/usr/src/rhn/up2date/firstboot')
+            self.modulePath = ('modules/')
+	    #self.modulePath = ('/usr/src/rhn/up2date/firstboot')
 	    #self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)            
             self.notebook.set_show_tabs(gtk.FALSE)
@@ -143,6 +143,8 @@ class firstbootWindow:
             self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
+
+        self.notebook.connect("switch-page", self.switchPage)
 
         sys.path.append(self.modulePath)
 
@@ -209,6 +211,20 @@ class firstbootWindow:
 
     def setPage(self, modulename):
 	self.nextPage = self.moduleNameToNotebookIndex[modulename]
+
+    def switchPage(self, notebook, page, page_num, *args):
+        # catch the switch page signal, so we can re poke modules
+        # that need a signal that they are being shown
+        print "nb: %s page: %s page_num: %s args: %s" % (notebook, page, page_num, args)
+        try:
+            module = self.moduleList[page_num]
+        except:
+            print "THIS WAS NOT SUPPOSED TO HAPPEN"
+            pass
+
+        print "module: %s" % module
+        if hasattr(module, "updatePage"):
+            module.updatePage()
 
     def destroy(self, *args):
         #Exit the GTK loop
