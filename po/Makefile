@@ -6,7 +6,7 @@
 TOP	 = ../..
 
 # What is this package?
-NLSPACKAGE	= redhat-config-firewall
+NLSPACKAGE	= firstboot
 POTFILE		= $(NLSPACKAGE).pot
 INSTALL		= /usr/bin/install -c
 INSTALL_DATA	= $(INSTALL) -m 644
@@ -17,8 +17,8 @@ INSTALL_NLS_DIR = $(RPM_BUILD_ROOT)/usr/share/locale
 
 # PO catalog handling
 MSGMERGE	= msgmerge -v
-PYGETTEXT	= ./pygettext.py --default-domain=$(NLSPACKAGE) \
-		  --verbose --output-file=$(NLSPACKAGE).po 
+PYGETTEXT	= pygettext.py --default-domain=$(NLSPACKAGE) \
+		  --verbose --output=$(NLSPACKAGE).po 
 XGETTEXT	= xgettext --default-domain=$(NLSPACKAGE) \
 		  --add-comments		  
 MSGFMT		= msgfmt --statistics --verbose
@@ -26,12 +26,12 @@ MSGFMT		= msgfmt --statistics --verbose
 # What do we need to do
 POFILES		= $(wildcard *.po)
 MOFILES		= $(patsubst %.po,%.mo,$(POFILES))
-PYSRC		= $(wildcard ../*.py)
-SRCFILES	= $(PYSRC) redhat-config-firewall.gladestrings
+PYSRC		= $(wildcard ../src/*.py ../src/modules/*.py)
+SRCFILES 	= $(PYSRC)
 
-default:: clean
+#default:: clean
 
-#all::  update-po $(MOFILES)
+all::  update-po $(MOFILES)
 
 $(POTFILE): $(SRCFILES)
 	$(PYGETTEXT) --keyword=_ --keyword=N_ $(SRCFILES)
