@@ -29,7 +29,17 @@ FILENAME=/etc/sysconfig/firstboot
 
 case "$1" in
  start)
-	[ -f "$FILENAME" ] && exit 0
+	action=run
+
+	if [ -f "$FILENAME" ] && ! grep -q '^RUN_FIRSTBOOT=YES' "$FILENAME"; then
+	    action=skip
+	fi
+
+	if grep -i reconfig /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
+	    action=reconfig
+	fi
+
+	[ $action = skip ] && exit 0
 
 	runlevel=$(set -- $(runlevel); eval "echo \$$#" )
 	if grep -q "^id:5:initdefault:" /etc/inittab && [ "x$runlevel" = x5 ]; then
@@ -40,8 +50,7 @@ case "$1" in
 	    fi
 	fi
 
-        if grep -i reconfig /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
-
+	if [ $action = reconfig ]; then
 	    echo -n $"Running system reconfiguration tool"
 	    /usr/sbin/firstboot --reconfig
 	    rm -f /etc/reconfigSys
