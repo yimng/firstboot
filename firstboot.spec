@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.33
+Version: 1.3.34
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Oct 27 2004 Adrian Likins <alikins@redhat.com> - 1.3.34-1
+- add code to detect if a module wants to be skipped
+  (basically, stuff to me not show RHN modules on fedora)
+
 * Mon Oct 18 2004 Adrian Likins <alikins@redhat.com> - 1.3.33-1
 - #129885 (do the right thing on ia64)
 - #129532 (typo in display file location)
