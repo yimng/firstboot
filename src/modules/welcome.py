@@ -8,7 +8,7 @@ class childWindow:
     runPriority = 0
     moduleName = "Welcome"
 
-    def __init__(self):
+    def __init__(self, doDebug = None):
         print "initializing welcome module"
                 
     def launch(self):

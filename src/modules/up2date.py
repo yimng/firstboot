@@ -9,7 +9,7 @@ class childWindow:
     runPriority = 130
     moduleName = "Red Hat Update Agent"
 
-    def __init__(self):
+    def __init__(self, doDebug=None):
         print "initializing up2date module"
                 
     def launch(self):

@@ -9,7 +9,7 @@ class childWindow:
     runPriority = 1000
     moduleName = "Additional CDs"
 
-    def __init__(self):
+    def __init__(self, doDebug = None):
         print "initializing additional_cd module"
         self.additionalDiscs = {"Red Hat Documentation CD" : "docs.png", "Linux Application CD" : "lacd.png"}
 

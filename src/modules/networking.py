@@ -8,9 +8,10 @@ from socket import gethostbyname
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
-#    moduleName = "Network check"
+    moduleName = "Network check"
 
-    def __init__(self):
+    def __init__(self, doDebug = None):
+        self.doDebug = doDebug
         print "initializing network check module"
         self.netDevs = self.networkDevices()
         self.page = None
@@ -19,8 +20,10 @@ class childWindow:
         network = self.networkAvailable()
 
         if network:
+            print "network is functional...skipping screen"
             return 
         else:
+            print "network is not functional...showing screen"
             self.mainVBox = gtk.VBox()
 
             title = gtk.Label("Set up Networking")
@@ -71,6 +74,7 @@ class childWindow:
         f = open("/proc/net/dev")
         lines = f.readlines()
         f.close()
+
         # skip first two lines, they are header
         lines = lines[2:]
         for line in lines:

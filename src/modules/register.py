@@ -11,7 +11,7 @@ class childWindow:
     runPriority = 120
     moduleName = "Register with RHN"
 
-    def __init__(self):
+    def __init__(self, doDebug=None):
         print "initializing register module"
                 
     def launch(self):
