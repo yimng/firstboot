@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-09-25 09:52+1000\n"
+"PO-Revision-Date: 2003-12-12 10:11+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -96,7 +96,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 " %s 모듈에서 문제가 발생했기 때문에, \n"
-"Red Hat 설정 에이전트는 이 모듈을 로드하지 않고 \n"
+"Red Hat 설정 에이전트는 이 모듈을 읽어오지 않고 \n"
 "그 외 나머지 모듈을 실행할 것입니다."
 
 #: ../src/exceptionWindow.py:57
@@ -170,15 +170,12 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
@@ -350,64 +347,55 @@ msgstr "환영합니다"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "인증"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration "
-msgstr "방화벽 설정"
+msgstr "방화벽 설정 "
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration "
-msgstr "사운드 카드 설정"
+msgstr "키보드 설정"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Mouse configuration "
-msgstr "마우스 설정"
+msgstr "마우스 설정 "
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "네트워크 설정 변경(_C)..."
+msgstr "네트워크 설정 "
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "Printer configuration "
-msgstr "마우스 설정"
+msgstr "프린터 설정 "
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "System services "
-msgstr "신뢰하는 장치:"
+msgstr "시스템 서비스"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Sound card configuration "
-msgstr "사운드 카드 설정"
+msgstr "사운드 카드 설정 "
 
 #: ../src/textWindow.py:41
-#, fuzzy
 msgid "Timezone configuration "
-msgstr "마우스 설정"
+msgstr "시간대 설정"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "도구 실행"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "종료"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "수정할 항목을 선택해 주십시오 "
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hat 설정 에이전트"
+msgstr "설정 에이전트"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -466,8 +454,7 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -609,16 +596,13 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -712,14 +696,12 @@ msgstr "NTP 서버에 연결 중입니다.  잠시만 기다려주십시오..."
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
-#, fuzzy
 msgid "Display"
-msgstr "화면 표시:"
+msgstr "화면 표시"
 
 #: ../src/modules/display.py:48
-#, fuzzy
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "시스템을 위한 기본 언어를 선택해 주십시오."
+msgstr "사용할 해상도와 색상수를 선택해 주십시오."
 
 #. Add icon to the top frame
 #. #
@@ -866,14 +848,13 @@ msgid "Please set the timezone for the system."
 msgstr "시스템에 맞는 시간대를 선택해 주십시오."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  Red Hat 설정 에이전"
-"트는 이제 몇가지 기본적인 설정 과정을 여러 가지 단계를 통해 길잡이를 해드릴 "
+"몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  설정 에이전"
+"트는 이제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 "
 "것입니다. 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합"
 "니다."
 
@@ -1202,3 +1183,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
