@@ -6,11 +6,13 @@ import os
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 30
-    moduleName = "Register with Red Hat Network"
+    runPriority = 110
+    moduleName = "Register with RHN"
 
     def __init__(self):
         print "initializing RHN module"
+
+        
                 
     def launch(self):
         self.vbox = GtkVBox()

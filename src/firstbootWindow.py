@@ -1,8 +1,3 @@
-#
-# splashscreen.py: a quick splashscreen window that displays during ipl
-#
-# Matt Wilson <msw@redhat.com>
-#
 # Copyright 2001 Red Hat, Inc.
 #
 # This software may be freely redistributed under the terms of the GNU
@@ -52,6 +47,7 @@ class firstbootWindow:
         
         win = GtkWindow()
         win.set_usize(800, 600)
+        win.set_policy(FALSE, FALSE, FALSE)
         mainVBox = GtkVBox()
 
         try:
@@ -72,7 +68,8 @@ class firstbootWindow:
         self.notebook.set_show_tabs(FALSE)
         self.notebook.set_show_border(FALSE)
 
-        path = ('/usr/share/firstboot/modules')
+#        path = ('/usr/share/firstboot/modules')
+        path = ('/home/devel/bfox/redhat/firstboot/src/modules')
         files = os.listdir(path)
         list = []
 
@@ -86,7 +83,8 @@ class firstbootWindow:
         for module in list:
 #            sys.path.append('./modules')
             print module
-            sys.path.append('/usr/share/firstboot/modules')
+#            sys.path.append('/usr/share/firstboot/modules')
+            sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
@@ -114,10 +112,10 @@ class firstbootWindow:
 
         for module in self.moduleList:
             box = module.launch()
-            self.notebook.append_page(box, GtkLabel(" "))
+            if box:
+                self.notebook.append_page(box, GtkLabel(" "))
 
         self.hpane.add2(self.notebook)
-
 
         bb = GtkHButtonBox()
         bb.set_layout(BUTTONBOX_END)
