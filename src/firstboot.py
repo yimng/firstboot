@@ -132,7 +132,6 @@ if runlevel == 3:
         #They want to run firstboot, so let's pass on through
         screen.finish()
 
-
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
     
@@ -141,7 +140,6 @@ if not os.environ.has_key('DISPLAY'):
           os.environ['DISPLAY'] = ':1'
 
 	  xserver_pid = os.fork()
-
 
           if not xserver_pid:
               path = "/etc/X11/X"
@@ -169,7 +167,6 @@ if not os.environ.has_key('DISPLAY'):
                 pass
             time.sleep(1)
             count = count + 1
-    
 
      wm_pid = None
      wm_pid = startWindowManager()
