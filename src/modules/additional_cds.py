@@ -65,7 +65,7 @@ class childWindow:
 
 
 
-        if os.uname()[4] == "ia64 ":
+        if os.uname()[4] == "ia64":
 #        if 1:
             cd_label = cd_label + _("""\n\nTo enable runtime support of 32-bit applications on the Intel """
                                     """Itanium2 architecture, you must install the Intel Execution """
