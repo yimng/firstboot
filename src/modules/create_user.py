@@ -140,7 +140,6 @@ class childWindow:
             return None
 
         user = self.admin.lookupUserByName(username)
-        print user, user.get(libuser.UIDNUMBER)[0]
 
         if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
             self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
