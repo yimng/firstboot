@@ -53,7 +53,7 @@ class childWindow:
         radioBox = gtk.VBox()
 
         self.radioYes = gtk.RadioButton(None, _("_Yes, I want to register my system with Red Hat Network."))
-        radioNo = gtk.RadioButton(self.radioYes, _("_No, I do not want to register my system."))
+        radioNo = gtk.RadioButton(self.radioYes, _("N_o, I do not want to register my system."))
 
         radioBox.pack_start(self.radioYes, gtk.FALSE)
         radioBox.pack_start(radioNo, gtk.FALSE)
