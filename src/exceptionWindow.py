@@ -51,9 +51,12 @@ class ExceptionWindow:
         win.vbox.pack_start(label, gtk.FALSE)
         win.vbox.pack_start(text_scroll, gtk.TRUE)
 
-        fd = open(path, "w")
-        fd.write(traceback)
-        fd.close()
+        try:
+            fd = open(path, "w")
+            fd.write(traceback)
+            fd.close()
+        except:
+            pass
         
         win.show_all()
         win.run()
