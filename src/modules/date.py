@@ -56,8 +56,13 @@ class TimeWindow(FirstbootGuiWindow):
         #Initialize date backend
         self.dateBackend = dateBackend.dateBackend()
 
-        self.datePage = mainWindow.childWindow()
-        self.datePageNotebook = self.datePage.launch()
+        self.dateWindow = mainWindow.mainWindow()
+        if self.dateWindow.vbox.children() != []:
+            self.dateWindow.vbox.remove(self.dateWindow.vbox.children()[0])
+        else:
+            pass
+
+        self.datePageNotebook = self.dateWindow.launch()
 
         #Add icon to the top frame
         self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
@@ -88,12 +93,12 @@ class TimeWindow(FirstbootGuiWindow):
     def apply(self, *args):
         self.failedFlag = None
         
-        if self.doDebug:
+        if 0:
             print "applying date changes not available in debug mode"
         else:
-            sysDate = self.datePage.getDate()
-            sysTime = self.datePage.getTime()
-            ntpEnabled = self.datePage.getNtpEnabled()
+            sysDate = self.dateWindow.datePage.getDate()
+            sysTime = self.dateWindow.datePage.getTime()
+            ntpEnabled = self.dateWindow.datePage.getNtpEnabled()
 
             if ntpEnabled == gtk.FALSE:
                 #We're not using ntp, so stop the service
@@ -104,9 +109,14 @@ class TimeWindow(FirstbootGuiWindow):
                 self.dateBackend.chkconfigOff()
 
             elif ntpEnabled == gtk.TRUE:
-                sysTimeServer = self.datePage.getTimeServer()
+                sysTimeServer = self.dateWindow.datePage.getNtpServers()
 
-                if sysTimeServer == "":
+                ntpServers = self.dateWindow.datePage.getNtpServers ()
+                ntpServerChoices = self.dateWindow.datePage.getNtpServerChoices ()
+                ntpBroadcastClient = self.dateWindow.datePage.getNtpBroadcastClient ()
+                ntpLocalTimeSource = self.dateWindow.datePage.getNtpLocalTimeSource ()
+
+                if len(ntpServers) == 0 and not ntpBroadcastClient:
                     #They want ntp but have not set a server
                     text = (_("Please enter a time server."))
                     dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
@@ -120,8 +130,9 @@ class TimeWindow(FirstbootGuiWindow):
                     self.datePage.ntpCombo.entry.grab_focus()
                     return
 
-                ntpServerList = self.datePage.getNtpServerList()
-                if self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList) == None:
+
+                ntpServerList = self.dateWindow.datePage.getNtpServers()
+                if self.dateBackend.writeNtpConfig(ntpServers, ntpServerChoices, ntpBroadcastClient, ntpLocalTimeSource) == None:
                     text = (_("A connection with %s could not be established.  "
                                            "Either %s is not available or the firewall settings "
                                            "on your computer are blocking NTP connections." %
