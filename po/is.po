@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Tue Dec  3 11:28:14 2002\n"
+"POT-Creation-Date: Sun Dec 22 11:52:36 2002\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <ra@ra.is>\n"
@@ -127,8 +127,8 @@ msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
 msgstr ""
-"Þú bjóst ekki til notandaaðgang. Ertu viss um að þú viljir halda áfram "
-"án þess að búa hann til?"
+"Þú bjóst ekki til notandaaðgang. Ertu viss um að þú viljir halda áfram án "
+"þess að búa hann til?"
 
 #: ../src/modules/create_user.py:117
 msgid "The passwords do not match.  Please enter the password again."
@@ -137,8 +137,7 @@ msgstr "Lykilorðin stemma ekki. Vinsamlegast sláðu það inn aftur."
 #: ../src/modules/create_user.py:126
 msgid ""
 "An account with username %s already exists.  Please specify another username."
-msgstr ""
-"Notandi með heitinu %s er þegar til. Vinsamlegast veldu annað heiti."
+msgstr "Notandi með heitinu %s er þegar til. Vinsamlegast veldu annað heiti."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -152,7 +151,15 @@ msgstr "Stillingar dagsettningar og tíma"
 msgid "Please set the date and time for the system."
 msgstr "Vinsamlegast settu dagsetningu og tíma vélarinnar."
 
-#: ../src/modules/date.py:121
+#: ../src/modules/date.py:106
+msgid "Please enter a time server."
+msgstr ""
+
+#: ../src/modules/date.py:108 ../src/modules/date.py:142
+msgid "Error"
+msgstr "Villa"
+
+#: ../src/modules/date.py:135
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -160,11 +167,7 @@ msgstr ""
 "Ekki tókst að tengjast %s. Annaðhvort er %s ekki til staðar eða "
 "eldveggjarstillingar velarinnar þinnar leyfa ekki NTP tengingar."
 
-#: ../src/modules/date.py:128
-msgid "Error"
-msgstr "Villa"
-
-#: ../src/modules/date.py:158
+#: ../src/modules/date.py:172
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Tengist NTP þjóninum.  Vinsamlegast bíðið..."
 
@@ -291,12 +294,12 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
-"Red Hat uppsetningarálfurinn getur á einfaldann máta gert þér kleyft að stilla "
-"kerfið þitt í nokkrum einföldum skrefum. Uppsetningarálfurinn þarf að keyra "
-"í X gluggakerfinu.\n"
+"Red Hat uppsetningarálfurinn getur á einfaldann máta gert þér kleyft að "
+"stilla kerfið þitt í nokkrum einföldum skrefum. Uppsetningarálfurinn þarf að "
+"keyra í X gluggakerfinu.\n"
 "\n"
-"Ef þú vilt keyra álfinn skaltu velja \"Já\". Ef þú velur \"Nei\" mun vélin halda "
-"áfram að ræsa og þú sérð þessi skilaboð aldrei framar."
+"Ef þú vilt keyra álfinn skaltu velja \"Já\". Ef þú velur \"Nei\" mun vélin "
+"halda áfram að ræsa og þú sérð þessi skilaboð aldrei framar."
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"

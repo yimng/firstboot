@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
-"POT-Creation-Date: Tue Dec  3 11:28:14 2002\n"
+"POT-Creation-Date: Sun Dec 22 11:52:36 2002\n"
 "PO-Revision-Date: 2002-12-04 09:11+0100\n"
 "Last-Translator: Bernd Groh <bgroh@redhat.com>\n"
 "Language-Team: Deutsch <de@li.org>\n"
@@ -47,13 +47,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot wurde in diesem System bereits ein Mal ausgeführt.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Um firstboot von der Befehlszeile auszuführen, führen Sie die folgenden "
 "Befehle aus:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Um firstboot auszuführen, während das System bootet, führen Sie die "
 "folgenden Befehle aus:"
@@ -134,10 +136,12 @@ msgstr ""
 
 #: ../src/modules/create_user.py:117
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
+msgstr ""
+"Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
 
 #: ../src/modules/create_user.py:126
-msgid "An account with username %s already exists.  Please specify another username."
+msgid ""
+"An account with username %s already exists.  Please specify another username."
 msgstr ""
 "Ein Account mit dem Benutzernamen %s existiert bereits.  Bitte geben Sie "
 "einen anderen Benutzernamen an."
@@ -154,7 +158,15 @@ msgstr "Konfiguration von Datum und Uhrzeit"
 msgid "Please set the date and time for the system."
 msgstr "Stellen Sie das Datum und die Uhrzeit des Systems ein."
 
-#: ../src/modules/date.py:121
+#: ../src/modules/date.py:106
+msgid "Please enter a time server."
+msgstr ""
+
+#: ../src/modules/date.py:108 ../src/modules/date.py:142
+msgid "Error"
+msgstr "Fehler"
+
+#: ../src/modules/date.py:135
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -163,11 +175,7 @@ msgstr ""
 "verfügbaroder die Firewall-Einstellungen Ihres Computers verhindern NTP-"
 "Verbindungen."
 
-#: ../src/modules/date.py:128
-msgid "Error"
-msgstr "Fehler"
-
-#: ../src/modules/date.py:158
+#: ../src/modules/date.py:172
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Es wird eine Verbindung zum NTP-Server hergestellt. Bitte warten..."
 
@@ -537,4 +545,3 @@ msgstr "Red Hat Setup Agent"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Starten Sie den Red Hat Update Agent"
-

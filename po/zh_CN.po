@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Dec  3 11:28:14 2002\n"
+"POT-Creation-Date: Sun Dec 22 11:52:36 2002\n"
 "PO-Revision-Date: 2002-12-05 11:03GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -46,11 +46,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
@@ -125,7 +127,8 @@ msgid "The passwords do not match.  Please enter the password again."
 msgstr "口令不匹配。请重新输入口令。"
 
 #: ../src/modules/create_user.py:126
-msgid "An account with username %s already exists.  Please specify another username."
+msgid ""
+"An account with username %s already exists.  Please specify another username."
 msgstr "用户名为 %s 的账号已经存在。请指定另一个用户名。"
 
 #: ../src/modules/date.py:51
@@ -140,7 +143,15 @@ msgstr "日期和时间配置"
 msgid "Please set the date and time for the system."
 msgstr "请为系统设置日期和时间。"
 
-#: ../src/modules/date.py:121
+#: ../src/modules/date.py:106
+msgid "Please enter a time server."
+msgstr ""
+
+#: ../src/modules/date.py:108 ../src/modules/date.py:142
+msgid "Error"
+msgstr "错误"
+
+#: ../src/modules/date.py:135
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -148,11 +159,7 @@ msgstr ""
 "无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙设"
 "置堵塞了 NTP 连接。"
 
-#: ../src/modules/date.py:128
-msgid "Error"
-msgstr "错误"
-
-#: ../src/modules/date.py:158
+#: ../src/modules/date.py:172
 msgid "Contacting NTP server.  Please wait..."
 msgstr "正在联系 NTP 服务器。请稍候..."
 
@@ -507,4 +514,3 @@ msgstr "Red Hat 设置代理"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-

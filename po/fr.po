@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Dec  3 11:28:14 2002\n"
+"POT-Creation-Date: Sun Dec 22 11:52:36 2002\n"
 "PO-Revision-Date: 2002-12-10 21:38+1000\n"
 "Last-Translator: Jean-Paul AUBRY <jpaubry@redhat.com>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -47,13 +47,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot a déjà été exécuté sur ce système.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de "
 "commande :"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot au cours du "
 "démarrage du système :"
@@ -105,8 +107,8 @@ msgid ""
 "A user account is required to use the system.  Create a user account by "
 "filling in the information below."
 msgstr ""
-"Un compte utilisateur est nécessaire pour utiliser le système. Créer un compte utilisateur en "
-"fournissant les informations ci-dessous."
+"Un compte utilisateur est nécessaire pour utiliser le système. Créer un "
+"compte utilisateur en fournissant les informations ci-dessous."
 
 #: ../src/modules/create_user.py:68
 msgid "Username:"
@@ -129,16 +131,19 @@ msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
 msgstr ""
-"Aucun compte utilisateur n'a été créé. Êtes-vous certain de vouloir poursuivre sans créer de "
-"compte utilisateur?"
+"Aucun compte utilisateur n'a été créé. Êtes-vous certain de vouloir "
+"poursuivre sans créer de compte utilisateur?"
 
 #: ../src/modules/create_user.py:117
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau. "
 
 #: ../src/modules/create_user.py:126
-msgid "An account with username %s already exists.  Please specify another username."
-msgstr "Un compte portant le nom d'utilisateur %s existe déjà. Veuillez spécifier un autre nom."
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
+"Un compte portant le nom d'utilisateur %s existe déjà. Veuillez spécifier un "
+"autre nom."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -152,7 +157,15 @@ msgstr "Configuration de la date et de l'heure"
 msgid "Please set the date and time for the system."
 msgstr "Veuillez paramétrer la date et l'heure de votre système."
 
-#: ../src/modules/date.py:121
+#: ../src/modules/date.py:106
+msgid "Please enter a time server."
+msgstr ""
+
+#: ../src/modules/date.py:108 ../src/modules/date.py:142
+msgid "Error"
+msgstr "Erreur"
+
+#: ../src/modules/date.py:135
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -161,11 +174,7 @@ msgstr ""
 "encore les paramètres de pare-feu de votre ordinateur bloquent la connexion "
 "NTP."
 
-#: ../src/modules/date.py:128
-msgid "Error"
-msgstr "Erreur"
-
-#: ../src/modules/date.py:158
+#: ../src/modules/date.py:172
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Connexion au serveur NTP.  Veuillez patienter..."
 
@@ -295,12 +304,13 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
-"L'agent de paramétrage Red Hat Setup Agent peut vous aider à configurer votre machine en "
-"vous guidant dans une série d'étapes. Setup Agent a besoin du système X Window pour fonctionner. \n"
+"L'agent de paramétrage Red Hat Setup Agent peut vous aider à configurer "
+"votre machine en vous guidant dans une série d'étapes. Setup Agent a besoin "
+"du système X Window pour fonctionner. \n"
 "\n"
-"Si vous désirez lancer Setup Agent, veuillez choisir \"Oui\". Si vous choisissez \"Non\", le système "
-"poursuivra son amorçage et ce message ne réapparaîtra plus. Voulez-vous lancer "
-"Setup Agent maintenant?"
+"Si vous désirez lancer Setup Agent, veuillez choisir \"Oui\". Si vous "
+"choisissez \"Non\", le système poursuivra son amorçage et ce message ne "
+"réapparaîtra plus. Voulez-vous lancer Setup Agent maintenant?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
@@ -524,4 +534,3 @@ msgstr "Red Hat Setup Agent"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Lancer l'agent de mise à jour Red Hat"
-

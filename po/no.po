@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
-"POT-Creation-Date: Tue Dec  3 11:28:14 2002\n"
+"POT-Creation-Date: Sun Dec 22 11:52:36 2002\n"
 "PO-Revision-Date: 2002-08-29 19:29-0400\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -143,7 +143,15 @@ msgstr "Konfigurasjon av dato og klokkeslett"
 msgid "Please set the date and time for the system."
 msgstr "Vennligst sett dato og klokkeslett for systemet."
 
-#: ../src/modules/date.py:121
+#: ../src/modules/date.py:106
+msgid "Please enter a time server."
+msgstr ""
+
+#: ../src/modules/date.py:108 ../src/modules/date.py:142
+msgid "Error"
+msgstr "Feil"
+
+#: ../src/modules/date.py:135
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -152,11 +160,7 @@ msgstr ""
 "eller så blokkerer brannvegginnstillingene på din datamaskin NTP-"
 "tilkoblinger."
 
-#: ../src/modules/date.py:128
-msgid "Error"
-msgstr "Feil"
-
-#: ../src/modules/date.py:158
+#: ../src/modules/date.py:172
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Kontakter NTP-tjener..."
 
