@@ -1,13 +1,14 @@
 # translation of ru.po to Russian
 # Copyright (C) 2003
 # Alexandr Kanevskiy <kad@blackcatlinux.com>, 2003
+# Leonid Kanter <leon@geon.donetsk.ua>, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "POT-Creation-Date: Fri Jan 31 16:12:24 2003\n"
-"PO-Revision-Date: 2003-02-04 19:18+0200\n"
-"Last-Translator: Alexandr Kanevskiy <kad@blackcatlinux.com>\n"
+"PO-Revision-Date: 2003-02-07 18:53+0200\n"
+"Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +40,7 @@ msgstr ""
 "Пожалуйста заполните сообщение об ошибке в 'firstboot' в \n"
 "системе обработки ошибок по адресу http://www.redhat.com/bugzilla. \n"
 "Копия отладочной информации сохранена в %s \n"
-"Убедитесь что вы прикрепили этот файл к отчету об ошибке.\n"
+"Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
 
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
@@ -47,11 +48,11 @@ msgstr "Firstboot уже однажды был запущен на этой си
 
 #: ../src/firstboot.py:94
 msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Для того чтобы запустить firstboot из командной строки, выполните следующие комманды:"
+msgstr "Для того, чтобы запустить firstboot из командной строки, выполните следующие комманды:"
 
 #: ../src/firstboot.py:99
 msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "Для того чтобы запустить firstboot в процессе загрузки, выполните следующие комманды:"
+msgstr "Для того, чтобы запустить firstboot в процессе загрузки, выполните следующие комманды:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
@@ -63,11 +64,11 @@ msgstr "Дополнительные CD"
 
 #: ../src/modules/additional_cds.py:39
 msgid "If you have any of the CDs listed below, you can install packages from them by inserting the CD and clicking the appropriate button."
-msgstr "Если вы имеете CD перечисленные ниже, вы можете установить пакеты вставив CD и нажав на соответствующую кнопку."
+msgstr "Если у вас есть CD, перечисленные ниже, вы можете установить пакеты, вставив CD и нажав на соответствующую кнопку."
 
 #: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
-msgstr "Red Hat Linux Documentation CD"
+msgstr "Диск документации Red Hat Linux"
 
 #: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
 #: ../src/modules/additional_cds.py:77
@@ -108,7 +109,7 @@ msgstr "Подтвердите пароль:"
 
 #: ../src/modules/create_user.py:99
 msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Настоятельно рекомендуется создать отдельную учетную запись. Если вы откажитесь, вы сможете войти в систему только как пользователь root который зарезервирован только для административных целей."
+msgstr "Настоятельно рекомендуется создать отдельную учетную запись. Если вы откажетесь, вы сможете войти в систему только как пользователь root, который зарезервирован только для административных целей."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
@@ -120,15 +121,15 @@ msgstr "Создать учетную запись"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Введенные пароли не совпадают.  Пожалуйста введите пароль еще раз."
+msgstr "Введенные пароли не совпадают.  Введите пароль еще раз."
 
 #: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Пароль слишком короткий.  Пожалуйста используйте пароли не меньше 6 символов."
+msgstr "Пароль слишком короткий.  Используйте пароли не меньше 6 символов."
 
 #: ../src/modules/create_user.py:153
 msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Имя пользователя '%s' зарезервировано.  Пожалуйста укажите другое имя пользователя."
+msgstr "Имя пользователя '%s' зарезервировано.  Укажите другое имя пользователя."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
