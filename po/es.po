@@ -1,6 +1,7 @@
 # translation of es.po to 
 # translation of es.po to
 # translation of es.po to
+# translation of es.po to
 # translation of es.po to spanish
 # Copyright (C) YEAR ORGANIZATION
 # Yelitza Louze <ylouze@redhat.com>, 2003
@@ -9,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "POT-Creation-Date: Tue Jul 22 22:58:03 2003\n"
-"PO-Revision-Date: 2003-07-21 16:08+1000\n"
+"PO-Revision-Date: 2003-07-25 11:19+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +30,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Existe un problema con el módulo %s,\n"
-"el agente de configuración de Red Hat no cargará este módulo e intentará "
+"el Agente de configuración de Red Hat no cargará este módulo e intentará "
 "ejecutar los módulo restantes."
 
 #: ../src/exceptionWindow.py:40
@@ -41,7 +42,7 @@ msgid ""
 msgstr ""
 "Archive un error en 'firstboot' en el sistema de seguimiento de errores de "
 "Red\n"
-"Hat en http://www.redhat.com/bugzilla. Se ha salvado una copia de la salida "
+"Hat en http://www.redhat.com/bugzilla. Se ha guardado una copia de la salida "
 "de\n"
 "depuración para %s. Asegúrese de adjuntar ese fichero para informar de un "
 "error.\n"
@@ -51,22 +52,20 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot ya ha sido ejectuado con anterioridad en este sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot desde la línea de comandos, ejecute los siguientes "
 "comandos:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot durante el arranque del sistema, ejecute los "
 "siguientes comandos:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot  no se ejecuta en el nivel 3."
+msgstr "Firstboot  no se ejecuta en el nivel de ejecución 3."
 
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
@@ -74,7 +73,7 @@ msgstr "_Atrás"
 
 #: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
-msgstr "_Siguiente"
+msgstr "_Adelante"
 
 #: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
@@ -176,13 +175,11 @@ msgstr "Crear cuent_a"
 
 #: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
+msgstr "Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
 
 #: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
+msgstr "La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
 
 #: ../src/modules/create_user.py:191
 msgid ""
@@ -233,15 +230,13 @@ msgstr ""
 "caracteres  ASCII."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La contraseña contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "El nombre '%s' contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII. "
@@ -252,11 +247,11 @@ msgstr "Fecha y Hora"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr "Configure al fecha y la hora para el sistema."
+msgstr "Configure la fecha y la hora para el sistema."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
-msgstr "Por favor ingrese un servidor de tiempo."
+msgstr "Por favor ingrese un servidor horario."
 
 #: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
@@ -280,13 +275,12 @@ msgid "Finish Setup"
 msgstr "Finalizar la configuración"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Su sistema está configurado y preparado para ser usado. Por favor presione "
-"el botón \"Adelante\" en el botón de la parte inferior derecha para "
+"el botón \"Adelante\" de la parte inferior derecha para "
 "continuar."
 
 #: ../src/modules/networking.py:23
@@ -328,9 +322,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Pulse el botón \"Play test sound\" para escuchar un sonido de prueba. "
+"Pulse el botón \"Realice una prueba de sonido\" para escuchar un sonido de prueba. "
 "Debería oír series de tres sonidos. El primero estará en el canal de la "
-"derecha, el segundo en el de la izquierda y el tercero en el del centro."
+"derecha, el segundo en el de la izquierda y el tercero en el canal del centro."
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
@@ -362,13 +356,13 @@ msgstr ""
 "Este paso registrará su sistema con una Cuenta de demostración de Red Hat "
 "Network para que pueda recibir los últimos paquetes de software directamente "
 "de Red Hat. El uso de esta herramienta le permitirá poseer el sistema Red "
-"Hat Linux más actualizado con todos los parches de seguridad, parches de "
+"Hat Linux más actualizado con todos los parches de seguridad, "
 "erratas y mejoras de paquetes de software. \n"
 "\n"
 "Si ha comprado este producto, le corresponde un viaje gratis al servicio "
 "básico de Red Hat Network. Para acceder a esta prueba gratuita, remítase a "
-"la tarjeta de activación del producto que encuentra en la caja para obtener "
-"información más detallada. \n"
+"la tarjeta de activación del producto que se encuentra en la caja para obtener "
+" más detalles. \n"
 "\n"
 "Si no ha comprado este producto, visite http://rhn.redhat.com para obtener "
 "más información o para suscribirse al servicio básico de Red Hat Network.\n"
@@ -382,7 +376,6 @@ msgid "N_o, I do not want to register my system."
 msgstr "N_o, no deseo registrar mi sistema."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
@@ -391,7 +384,7 @@ msgstr ""
 "Hay algunos pasos más que debe realizar antes de que su sistema esté listo "
 "para ser utilizado. El Agente del configuración de Red Hat le guiará a "
 "través de algunos elementos básicos de configuración. Pulse el botón "
-"\"Forward\" en la parte inferior derecha para continuar."
+"\"Adelante\" en la parte inferior derecha para continuar."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -463,3 +456,4 @@ msgstr "Agente de configuración de Red Hat"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "¡Bienvenido a Red Hat Linux!"
+
