@@ -33,8 +33,6 @@ install:
 	install -m 755 firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
 	install src/modules/*.py $(INSTROOT)$(PKGDATADIR)/modules
 	install src/pixmaps/*.png $(INSTROOT)$(PKGDATADIR)/pixmaps
-	install ${PKGNAME}.pam $(INSTROOT)$(PAMD_DIR)/${PKGNAME}
-	install ${PKGNAME}.console $(INSTROOT)$(SECURITY_DIR)/${PKGNAME}
 	install -m 755 src/firstboot $(INSTROOT)/usr/sbin/firstboot
 	for d in $(SUBDIRS); do \
 	(cd $$d; $(MAKE) INSTROOT=$(INSTROOT) MANDIR=$(MANDIR) install) \
