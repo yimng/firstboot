@@ -47,7 +47,6 @@ def startWindowManager():
         raise RuntimeError, "Window manager failed to start"
 
     return wm_pid
-
 def setRootBackground():
     root_pid = os.fork()
 
