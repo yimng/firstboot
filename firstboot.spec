@@ -62,7 +62,7 @@ fi
 
 %changelog
 * Thu May 30 2002 Brent Fox <bfox@redhat.com> 0.1.0-7
-- Fixed Requires 
+- Fixed Requires to not pull in pygnome
 
 * Tue May 28 2002 Brent Fox <bfox@redhat.com> 0.1.0-6
 - Rebuild for completeness
