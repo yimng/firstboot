@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-07-24 23:05+1000\n"
+"PO-Revision-Date: 2002-08-05 01:29+1000\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,8 @@ msgstr ""
 "X-Generator: KBabel 0.9.6\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
-msgstr "模块 %s 出现错误。"
+msgstr "模块 %s 中出现错误。"
 
 #: ../src/exceptionWindow.py:34
 msgid ""
@@ -26,6 +25,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"由于 %s 模块中出现问题，\n"
+"Red Hat 设置代理无法载入该模块\n"
+"它将会试图运行剩余的模块。"
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -34,6 +36,10 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"请向 Red Hat 的错误跟踪系统报告关于“firstboot”\n"
+"的错误：http://www.redhat.com/bugzilla。\n"
+"调试输出的副本已被保存在 /tmp/firstboot.txt \n"
+"请在提交错误时确定附带该文件。\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -49,7 +55,7 @@ msgstr "Linux 应用程序光盘"
 
 #: ../src/modules/additional_cds.py:32
 msgid "Install Additional Software"
-msgstr ""
+msgstr "安装额外软件"
 
 #: ../src/modules/additional_cds.py:59
 msgid ""
@@ -71,14 +77,12 @@ msgid "Error"
 msgstr "错误"
 
 #: ../src/modules/date.py:49
-#, fuzzy
 msgid "Date and Time"
-msgstr "日期 & 时间"
+msgstr "日期和时间"
 
 #: ../src/modules/date.py:50
-#, fuzzy
 msgid "Date and Time Configuration"
-msgstr "日期 & 时间配置"
+msgstr "日期和时间配置"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
@@ -94,10 +98,9 @@ msgstr ""
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "设置完毕"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
 msgstr "安装完毕！"
 
@@ -107,20 +110,20 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
+"祝贺你！你的 Red Hat Linux 系统现已设置完毕，一切就绪。 "
+"我们希望你喜欢该系统。请点击右下角的“向前”按钮来继续。"
 
 #: ../src/modules/soundcard_gui.py:50
-#, fuzzy
 msgid "Sound Card"
-msgstr "声卡："
+msgstr "声卡"
 
 #: ../src/modules/soundcard_gui.py:51
-#, fuzzy
 msgid "Sound Card Configuration"
-msgstr "键盘配置"
+msgstr "声卡配置"
 
 #: ../src/modules/soundcard_gui.py:52
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "在你的计算机上检测到声卡。"
 
 #: ../src/modules/soundcard_gui.py:70
 msgid ""
@@ -129,6 +132,10 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"点击“播放测试声音”按钮来试听声音示例。 "
+"你应该听到三种声音系列。第一种声音是 "
+"右频；第二种声音是左频；第三种声音将 "
+"会在中间。"
 
 #: ../src/modules/up2date.py:18
 msgid "Update Your System"
@@ -139,7 +146,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -147,7 +153,7 @@ msgid ""
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
 msgstr ""
-"现在你已在 Red Hat 网络注册，你可以运行 Red Hat 更新代理来直接从 Red Hat 检索"
+"Red Hat 更新代理将会在 Red Hat 网络上注册你的机器，因此你可以直接从 Red Hat 检索"
 "最新的软件包。使用本工具会允许你一直拥有最新的 Red Hat Linux 系统和所有的安全"
 "补丁、错误修正、及对软件包的增进。"
 
@@ -164,9 +170,8 @@ msgid "Welcome"
 msgstr "欢迎"
 
 #: ../src/modules/welcome.py:28
-#, fuzzy
 msgid "Welcome to Red Hat Linux!"
-msgstr "欢迎使用 Red Hat Linux Beta！"
+msgstr "欢迎使用 Red Hat Linux！"
 
 #: ../src/modules/welcome.py:45
 msgid ""
@@ -175,6 +180,9 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
+"嗨！欢迎使用 Red Hat 设置代理。在你的系统一切就绪前要执行几个步骤。 "
+"Red Hat 设置代理将会引导你通过一些基本配置。请点击右下角的“向前” "
+"按钮来继续。"
 
 #~ msgid "Network check"
 #~ msgstr "网络检查"
@@ -384,3 +392,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
+
