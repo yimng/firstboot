@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 11
+Release: 12
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Feb 28 2003 Brent Fox <bfox@redhat.com> 1.0.5-12
+- fix bug #85358
+
 * Tue Feb 25 2003 Jeremy Katz <katzj@redhat.com> 1.0.5-11
 - background image name changed (#85160)
 - don't traceback if background doesn't exist
