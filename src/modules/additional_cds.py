@@ -62,27 +62,12 @@ class childWindow:
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, FALSE, TRUE)
 
-#        launchButton = gtk.Button("Install additional software")
-#        a = gtk.Alignment()
-#        a.add(launchButton)            
-#        a.set(0.3, 0.0, 0.3, 0.5)
-
-#            eventBox = gtk.EventBox()
-#            eventBox.add(a)
-#            eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#0000BB"))
-
-#        internalVBox.pack_start(a, gtk.FALSE, padding=10)
-#            internalVBox.pack_start(eventBox, gtk.FALSE, padding=10)
-
         buttons = self.additionalDiscs.keys()
         buttons.sort()
         for button in buttons:
             newButton = self.create_button(self.additionalDiscs[button], button)
             newButton.connect("clicked", self.autorun)
             internalVBox.pack_start(newButton, gtk.FALSE, padding=10)
-
-
-#        launchButton.connect("clicked", self.autorun)
 
         self.vbox.pack_start(internalVBox, TRUE)
 
