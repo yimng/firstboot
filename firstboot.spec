@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 8
+Release: 9
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Feb 24 2003 Brent Fox <bfox@redhat.com> 1.0.5-9
+- apply initscript patch from mikem@redhat.com.  Avoids calling telinit (bug #84848)
+
 * Fri Feb 21 2003 Brent Fox <bfox@redhat.com> 1.0.5-8
 - call RGB_DITHER_MAX (bug #84850)
 
