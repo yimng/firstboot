@@ -21,6 +21,7 @@ import gtk
 import gobject
 import functions
 import firstbootBackend
+from rhpl.translate import cat
 
 ##
 ## I18N
@@ -37,6 +38,17 @@ class firstbootWindow:
         self.doDebug = doDebug
         self.lowRes = lowRes
         self.mainHBox = gtk.HBox(gtk.FALSE, 10)
+        self.leftLabelVBox = gtk.VBox()
+
+        self.leftLabelVBox.set_border_width(12)
+        
+        leftEventBox = gtk.EventBox()
+        leftEventBox.add(self.leftLabelVBox)
+        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
+
+        self.leftVBox = gtk.VBox()
+        self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
+
         self.moduleList = []
         self.moduleDict = {}
 
@@ -89,136 +101,27 @@ class firstbootWindow:
 
         if self.doDebug:
             print "starting firstbootWindow", doReconfig, doDebug                    
-            path = ('modules/')
+            self.modulePath = ('modules/')
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_scrollable(gtk.TRUE)
             self.notebook.set_show_border(gtk.FALSE)
         else:
-            path = ('/usr/share/firstboot/modules')
+            self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)
             self.win.window.property_change ("_NET_WM_STATE", "ATOM", 32, gtk.gdk.PROP_MODE_APPEND, ("_NET_WM_STATE_BELOW",))
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
 
-        sys.path.append(path)
+        sys.path.append(self.modulePath)
 
-        # Generate a list of all of the module files (which becomes the list of
-        # all non-hidden files in the directory with extensions other than .py.
-        files = os.listdir(path)
-        list = []
-        for file in files:
-            if file[0] == '.':
-                continue
-            if file[-3:] != ".py":
-                continue
-            list.append(file[:-3])
-
-        # Import each module, and filter out those
-        for module in list:
-            cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
-                   "obj = %s.childWindow()") % (module, module, module)
-            exec(cmd)
-
-            # If the module defines a moduleClass, it has to match the mode
-            # we're starting up in, otherwise it's always used.  Add it to
-            # a dictionary keyed by the module's declared priority.
-            if hasattr(obj, "moduleClass"):
-                if (self.doReconfig and (obj.moduleClass == "reconfig")):
-                    self.moduleDict[int(obj.runPriority)] = obj
-                elif (not self.doReconfig and (obj.moduleClass != "reconfig")):
-                    self.moduleDict[int(obj.runPriority)] = obj
-            else:
-                self.moduleDict[int(obj.runPriority)] = obj
-
-        # Get the list of module priorities, sort them to determine a run
-	# order, and build a list with the modules in the proper order.
-        modulePriorityList = self.moduleDict.keys()
-        modulePriorityList.sort()
-
-        self.leftLabelVBox = gtk.VBox()
-        self.leftLabelVBox.set_border_width(12)
-        
-        leftEventBox = gtk.EventBox()
-        leftEventBox.add(self.leftLabelVBox)
-        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
-
-        leftVBox = gtk.VBox()
-        leftVBox.pack_start(leftEventBox, gtk.TRUE)
-
-	# Add the modules to the proper lists.
-        pages = 0
-        for priority in modulePriorityList:
-            # Add the module to the list of modules.
-            module = self.moduleDict[priority]
-            # Launch the module's GUI.
-            vbox = None
-            eventbox = None
-
-            if self.doDebug:
-                try:
-                    print "calling", module.moduleName
-                    vbox, pix, title = module.launch(self.doDebug)
-                except:
-                    import exceptionWindow
-                    (type, value, tb) = sys.exc_info()
-                    list = traceback.format_exception(type, value, tb)
-                    text = string.joinfields(list, "")
-                    exceptionWindow.ExceptionWindow(module, text)
-                    pass                    
-            else:
-                try:
-                    vbox, pix, title = module.launch() 
-                except:
-                    import exceptionWindow
-                    (type, value, tb) = sys.exc_info()
-                    list = traceback.format_exception(type, value, tb)
-                    text = string.joinfields(list, "")
-                    exceptionWindow.ExceptionWindow(module, text)
-                    pass
-                    continue
-
-            if vbox and title:
-                # If it launched, add it to the mdoule list.
-                self.moduleList.append(module)
-
-                title_label = gtk.Label("")
-                title_label.set_alignment(0.0, 0.5)
-                title_label.set_markup("<span foreground='#000000' size='30000' font_family='Helvetica'><b>%s</b></span>" % title)
-
-                titleBox = gtk.HBox()
-                titleBox.pack_start(pix, gtk.FALSE)
-                titleBox.pack_start(title_label, gtk.TRUE)
-                titleBox.set_spacing(8)
-
-                vbox.pack_start(titleBox, gtk.FALSE)
-                vbox.reorder_child(titleBox, 0)
-                
-                if self.lowRes:
-                    # If we're in 640x480 mode, remove the title bars
-                    vbox.remove(vbox.get_children()[0])
-
-                # If the module has a name, add it to the list of labels
-                if hasattr(module, "moduleName"):
-                    self.notebook.append_page(vbox, gtk.Label(module.moduleName))
-                    hbox = gtk.HBox(gtk.FALSE, 5)
-                    pix = functions.imageFromFile("pointer-blank.png")
-                    label = gtk.Label("")
-                    label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % module.moduleName)
-                    label.set_alignment(0.0, 0.5)
-                    hbox.pack_start(pix, gtk.FALSE)
-
-                    hbox.pack_end(label, gtk.TRUE)
-                    self.leftLabelVBox.pack_start(hbox, gtk.FALSE, gtk.TRUE, 3)
-                else:
-                    self.notebook.append_page(vbox, gtk.Label(" "))
-                pages = pages + 1
+        self.loadModules()
 
         self.notebook.set_current_page(0)
         self.setPointer(0)
 
         if not self.lowRes:
             # Add the box on the left to the window's HBox.
-            self.mainHBox.pack_start(leftVBox, gtk.FALSE)
+            self.mainHBox.pack_start(self.leftVBox, gtk.FALSE)
 
         # Populate the right side of the window.  Add the notebook to a VBox.
         self.internalVBox = gtk.VBox()
@@ -245,6 +148,9 @@ class firstbootWindow:
         self.bb.set_spacing(10)
         # Create the "go back" button, marking it insensitive by default.
         self.backButton = gtk.Button(stock='gtk-go-back')
+        label = self.backButton.get_children()[0].get_children()[0].get_children()[1]
+        label.set_text(_("_Back"))
+        label.set_property("use_underline", gtk.TRUE)
         self.backButton.connect('clicked', self.backClicked)
         self.backButton.set_sensitive(gtk.FALSE)
         self.bb.pack_start(self.backButton)
@@ -402,3 +308,163 @@ class firstbootWindow:
         pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
         eb.set_app_paintable(gtk.TRUE)
         eb.window.set_back_pixmap(bgimage, gtk.FALSE)
+
+    def loadModules(self):
+        self.moduleList = []
+        self.moduleDict = {}
+
+        # Generate a list of all of the module files (which becomes the list of
+        # all non-hidden files in the directory with extensions other than .py.
+        files = os.listdir(self.modulePath)
+        list = []
+        for file in files:
+            if file[0] == '.':
+                continue
+            if file[-3:] != ".py":
+                continue
+            list.append(file[:-3])
+
+        # Import each module, and filter out those
+        for module in list:
+            cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
+                   "obj = %s.childWindow()") % (module, module, module)
+            exec(cmd)
+
+            # XXX - hack to allow firstboot to pass in the parent class into language
+            # this will allow the language module to change firstboot's current locale
+            if module == "language":
+                obj.passInParent(self)
+
+            # If the module defines a moduleClass, it has to match the mode
+            # we're starting up in, otherwise it's always used.  Add it to
+            # a dictionary keyed by the module's declared priority.
+            if hasattr(obj, "moduleClass"):
+                if (self.doReconfig and (obj.moduleClass == "reconfig")):
+                    self.moduleDict[int(obj.runPriority)] = obj
+                elif (not self.doReconfig and (obj.moduleClass != "reconfig")):
+                    self.moduleDict[int(obj.runPriority)] = obj
+            else:
+                self.moduleDict[int(obj.runPriority)] = obj
+
+        # Get the list of module priorities, sort them to determine a run
+	# order, and build a list with the modules in the proper order.
+        modulePriorityList = self.moduleDict.keys()
+        modulePriorityList.sort()
+
+##         self.leftLabelVBox.set_border_width(12)
+        
+##         leftEventBox = gtk.EventBox()
+##         leftEventBox.add(self.leftLabelVBox)
+##         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
+
+##         self.leftVBox = gtk.VBox()
+##         self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
+
+	# Add the modules to the proper lists.
+        pages = 0
+        for priority in modulePriorityList:
+            # Add the module to the list of modules.
+            module = self.moduleDict[priority]
+            # Launch the module's GUI.
+            vbox = None
+            eventbox = None
+
+            if self.doDebug:
+                try:
+                    print "calling", module.moduleName
+                    vbox, pix, title = module.launch(self.doDebug)
+                except:
+                    import exceptionWindow
+                    (type, value, tb) = sys.exc_info()
+                    list = traceback.format_exception(type, value, tb)
+                    text = string.joinfields(list, "")
+                    exceptionWindow.ExceptionWindow(module, text)
+                    pass                    
+            else:
+                try:
+                    vbox, pix, title = module.launch() 
+                except:
+                    import exceptionWindow
+                    (type, value, tb) = sys.exc_info()
+                    list = traceback.format_exception(type, value, tb)
+                    text = string.joinfields(list, "")
+                    exceptionWindow.ExceptionWindow(module, text)
+                    pass
+                    continue
+
+            if vbox and title:
+                # If it launched, add it to the mdoule list.
+                self.moduleList.append(module)
+
+                title_label = gtk.Label("")
+                title_label.set_alignment(0.0, 0.5)
+                title_label.set_markup("<span foreground='#000000' size='30000' font_family='Helvetica'><b>%s</b></span>" % (_(title)))
+
+                titleBox = gtk.HBox()
+                titleBox.pack_start(pix, gtk.FALSE)
+                titleBox.pack_start(title_label, gtk.TRUE)
+                titleBox.set_spacing(8)
+
+                vbox.pack_start(titleBox, gtk.FALSE)
+                vbox.reorder_child(titleBox, 0)
+                
+                if self.lowRes:
+                    # If we're in 640x480 mode, remove the title bars
+                    vbox.remove(vbox.get_children()[0])
+
+                # If the module has a name, add it to the list of labels
+                if hasattr(module, "moduleName"):
+                    self.notebook.append_page(vbox, gtk.Label(_(module.moduleName)))
+                    hbox = gtk.HBox(gtk.FALSE, 5)
+                    pix = functions.imageFromFile("pointer-blank.png")
+                    label = gtk.Label("")
+                    label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % (_(module.moduleName)))
+                    label.set_alignment(0.0, 0.5)
+                    hbox.pack_start(pix, gtk.FALSE)
+
+                    hbox.pack_end(label, gtk.TRUE)
+                    self.leftLabelVBox.pack_start(hbox, gtk.FALSE, gtk.TRUE, 3)
+                else:
+                    self.notebook.append_page(vbox, gtk.Label(" "))
+                pages = pages + 1
+        
+    def clearNotebook(self):
+        for widget in self.leftLabelVBox.get_children():
+            self.leftLabelVBox.remove(widget)
+
+        pageNum = len(self.notebook.get_children())
+        for i in range(pageNum):
+            self.notebook.hide()
+            self.notebook.remove_page(0)
+            
+    def changeLocale(self, lang, fullName):
+        lc, encoding = string.split(lang, ".")
+        prefix, suffix = string.split(lc, "_")
+
+        os.environ["RUNTIMELANG"] = fullName
+        os.environ["LANG"] = lc
+        os.environ["LC_NUMERIC"] = "C"
+        import locale
+        locale.setlocale(locale.LC_ALL, "")
+
+        newlangs = [lang, lc, prefix]
+        cat.setlangs(newlangs)
+
+        self.leftLabelVBox.get_children()[0].get_children()[1].set_text(_("Welcome"))
+
+        # Change the locale on the buttons.
+        label = self.backButton.get_children()[0].get_children()[0].get_children()[1]
+        label.set_text(_("_Back"))
+        label.set_property("use_underline", gtk.TRUE)
+
+        label = self.nextButton.get_children()[0].get_children()[0].get_children()[1]
+        label.set_text(_("_Next"))
+        label.set_property("use_underline", gtk.TRUE)
+        
+        self.clearNotebook()
+        self.loadModules()
+
+        self.leftLabelVBox.show_all()
+        self.notebook.show_all()
+        self.notebook.set_current_page(1)
+
