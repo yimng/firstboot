@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: Fri Jan  3 15:50:50 2003\n"
+"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
 "PO-Revision-Date: 2003-01-06 09:10+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -46,14 +46,17 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
 msgid "Additional CDs"
 msgstr "추가 CD"
 
@@ -61,7 +64,7 @@ msgstr "추가 CD"
 msgid "Install Additional Software"
 msgstr "추가 소프트웨어 설치"
 
-#: ../src/modules/additional_cds.py:55
+#: ../src/modules/additional_cds.py:41
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -69,20 +72,20 @@ msgstr ""
 "아래에 나온 CD를 가지고 계시다면, 이 CD를 삽입하신 후 적절한 버튼을 클릭하셔"
 "서 패키지를 설치하실 수 있습니다."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:53
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat Linux 문서 자료 CD"
 
-#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
+#: ../src/modules/additional_cds.py:79
 msgid "Install..."
 msgstr "설치..."
 
-#: ../src/modules/additional_cds.py:78
+#: ../src/modules/additional_cds.py:64
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux 설치 CD"
 
-#: ../src/modules/additional_cds.py:115
+#: ../src/modules/additional_cds.py:101
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -94,7 +97,7 @@ msgstr ""
 msgid "Create A User"
 msgstr "사용자 생성하기"
 
-#: ../src/modules/create_user.py:59
+#: ../src/modules/create_user.py:46
 msgid ""
 "A user account is required to use the system.  Create a user account by "
 "filling in the information below."
@@ -102,23 +105,23 @@ msgstr ""
 "시스템을 사용하시려면 사용자 계정이 필요합니다. 아래쪽 정보를 기입하셔서 사용"
 "자 계정을 생성하시기 바랍니다."
 
-#: ../src/modules/create_user.py:68
+#: ../src/modules/create_user.py:55
 msgid "Username:"
 msgstr "사용자명:"
 
-#: ../src/modules/create_user.py:73
+#: ../src/modules/create_user.py:60
 msgid "Full Name:"
 msgstr "이름:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:65
 msgid "Password:"
 msgstr "암호:"
 
-#: ../src/modules/create_user.py:83
+#: ../src/modules/create_user.py:70
 msgid "Confirm Password:"
 msgstr "암호 확인:"
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:91
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
@@ -126,16 +129,17 @@ msgstr ""
 "사용자 계정이 생성되지 않았습니다.  사용자 계정을 생성하지 않고 계속 진행하시"
 "겠습니까?"
 
-#: ../src/modules/create_user.py:120
+#: ../src/modules/create_user.py:107
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
-#: ../src/modules/create_user.py:128
+#: ../src/modules/create_user.py:115
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
 
-#: ../src/modules/create_user.py:139
-msgid "An account with username %s already exists.  Please specify another username."
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
 msgstr "사용자명 %s 계정이 이미 존재합니다.  다른 사용자명을 지정해 주십시오."
 
 #: ../src/modules/date.py:51
@@ -143,12 +147,9 @@ msgid "Date and Time"
 msgstr "날짜와 시간"
 
 #: ../src/modules/date.py:52
-msgid "Date and Time Configuration"
-msgstr "날짜와 시간 설정"
-
-#: ../src/modules/date.py:54
-msgid "Please set the date and time for the system."
-msgstr "시스템 날짜와 시간을 설정해 주십시오."
+#, fuzzy
+msgid "Set Date and Time"
+msgstr "날짜와 시간"
 
 #: ../src/modules/date.py:106
 msgid "Please enter a time server."
@@ -178,29 +179,26 @@ msgstr "설정 완료"
 msgid "Finished Setup!"
 msgstr "설정 완료!"
 
-#: ../src/modules/finished.py:48
+#: ../src/modules/finished.py:35
+#, fuzzy
 msgid ""
-"Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
-"We hope that you will have a pleasant computing experience.  Please click "
-"the \"Forward\" button in the lower right corner to continue."
+"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
+"will have a pleasant computing experience.  Please click the \"Forward\" "
+"button in the lower right corner to continue."
 msgstr ""
 "축하합니다! Red Hat Linux 시스템이 설정되어 이제 사용하실 수 있습니다.  즐겁"
 "고 유익한 컴퓨터의 세계를 경험해 보시기 바랍니다. 오른쪽 하단 모서리에 위치"
 "한 \"앞으로 (Forward)\" 버튼을 클릭하시면, 계속 진행합니다."
 
-#: ../src/modules/soundcard_gui.py:49
+#: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "사운드 카드"
-
-#: ../src/modules/soundcard_gui.py:50
-msgid "Sound Card Configuration"
-msgstr "사운드 카드 설정"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "사운드 카드가 검색되었습니다."
 
-#: ../src/modules/soundcard_gui.py:91
+#: ../src/modules/soundcard_gui.py:74
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -219,7 +217,7 @@ msgstr "업데이트 에이전트"
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 업데이트 에이전트"
 
-#: ../src/modules/up2date.py:53
+#: ../src/modules/up2date.py:38
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -247,28 +245,24 @@ msgstr ""
 "이 제품을 구입하지 않으셨다면, http://rhn.redhat.com 사이트를 방문하셔서 Red "
 "Hat 네트워크 기본 서비스에 등록하셔서 보다 많은 정보를 얻으실 수 있습니다.\n"
 
-#: ../src/modules/up2date.py:72
+#: ../src/modules/up2date.py:57
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "네, Red Hat Network에 시스템을 등록합니다."
 
-#: ../src/modules/up2date.py:73
+#: ../src/modules/up2date.py:58
 msgid "No, I do not want to register my system."
 msgstr "아니오, 시스템을 등록하지 않습니다."
 
-#: ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "환영합니다"
 
-#: ../src/modules/welcome.py:28
-msgid "Welcome to Red Hat Linux!"
-msgstr "Red Hat Linux에 오신것을 환영합니다!"
-
-#: ../src/modules/welcome.py:48
+#: ../src/modules/welcome.py:35
+#, fuzzy
 msgid ""
-"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
-"before your system is ready to use.  The Red Hat Setup Agent will now guide "
-"you through some basic configuration.  Please click the \"Forward\" button "
-"in the lower right corner to continue."
+"There are a few more steps to take before your system is ready to use.  The "
+"Red Hat Setup Agent will now guide you through some basic configuration.  "
+"Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "안녕하세요! Red Hat 설정 에이전트에 오신것을 환영합니다.  시스템이 사용 가능"
 "하도록 준비되려면 아직 몇가지 단계를 더 거치셔야 합니다.  Red Hat 설정 에이전"
@@ -305,6 +299,18 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat 설정 에이전트"
+
+#~ msgid "Date and Time Configuration"
+#~ msgstr "날짜와 시간 설정"
+
+#~ msgid "Please set the date and time for the system."
+#~ msgstr "시스템 날짜와 시간을 설정해 주십시오."
+
+#~ msgid "Sound Card Configuration"
+#~ msgstr "사운드 카드 설정"
+
+#~ msgid "Welcome to Red Hat Linux!"
+#~ msgstr "Red Hat Linux에 오신것을 환영합니다!"
 
 #, fuzzy
 #~ msgid ""
@@ -551,4 +557,3 @@ msgstr "Red Hat 설정 에이전트"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-

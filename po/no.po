@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
-"POT-Creation-Date: Fri Jan  3 15:50:50 2003\n"
+"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
 "PO-Revision-Date: 2003-01-15 01:50+0100\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -53,7 +53,7 @@ msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr "For å kjøre firstboot ved systemstart, kjør følgende kommandoer:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
 msgid "Additional CDs"
 msgstr "Tilleggs-CDer"
 
@@ -61,7 +61,7 @@ msgstr "Tilleggs-CDer"
 msgid "Install Additional Software"
 msgstr "Installer tilleggsprogramvare"
 
-#: ../src/modules/additional_cds.py:55
+#: ../src/modules/additional_cds.py:41
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -69,20 +69,20 @@ msgstr ""
 "Hvis du har noen av CDene listet under kan du installere pakker fra dem ved "
 "å sette inn CDen og trykke knappen."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:53
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat dokumentasjons-CD"
 
-#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
+#: ../src/modules/additional_cds.py:79
 msgid "Install..."
 msgstr "Installer..."
 
-#: ../src/modules/additional_cds.py:78
+#: ../src/modules/additional_cds.py:64
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux installasjons-CD"
 
-#: ../src/modules/additional_cds.py:115
+#: ../src/modules/additional_cds.py:101
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Create A User"
 msgstr "Opprett en bruker"
 
-#: ../src/modules/create_user.py:59
+#: ../src/modules/create_user.py:46
 msgid ""
 "A user account is required to use the system.  Create a user account by "
 "filling in the information below."
@@ -102,23 +102,23 @@ msgstr ""
 "En brukerkonto kreves for å bruke systemet. Opprett en brukerkonto ved å "
 "fylle ut informasjonen under."
 
-#: ../src/modules/create_user.py:68
+#: ../src/modules/create_user.py:55
 msgid "Username:"
 msgstr "Brukernavn:"
 
-#: ../src/modules/create_user.py:73
+#: ../src/modules/create_user.py:60
 msgid "Full Name:"
 msgstr "Fullt navn:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:65
 msgid "Password:"
 msgstr "Passord:"
 
-#: ../src/modules/create_user.py:83
+#: ../src/modules/create_user.py:70
 msgid "Confirm Password:"
 msgstr "Bekreft passord:"
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:91
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
@@ -126,15 +126,15 @@ msgstr ""
 "En brukerkonto ble ikke opprettet. Er du sikker på at du ønsker å fortsette "
 "uten å gjøre dette?"
 
-#: ../src/modules/create_user.py:120
+#: ../src/modules/create_user.py:107
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Passordene er ikke like. Vennligst oppgi passordet igjen."
 
-#: ../src/modules/create_user.py:128
+#: ../src/modules/create_user.py:115
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
 
-#: ../src/modules/create_user.py:139
+#: ../src/modules/create_user.py:126
 msgid ""
 "An account with username %s already exists.  Please specify another username."
 msgstr ""
@@ -146,12 +146,9 @@ msgid "Date and Time"
 msgstr "Dato & klokkeslett"
 
 #: ../src/modules/date.py:52
-msgid "Date and Time Configuration"
-msgstr "Konfigurasjon av dato og klokkeslett"
-
-#: ../src/modules/date.py:54
-msgid "Please set the date and time for the system."
-msgstr "Vennligst sett dato og klokkeslett for systemet."
+#, fuzzy
+msgid "Set Date and Time"
+msgstr "Dato & klokkeslett"
 
 #: ../src/modules/date.py:106
 msgid "Please enter a time server."
@@ -182,29 +179,26 @@ msgstr "Avslutt Oppsett"
 msgid "Finished Setup!"
 msgstr "Ferdig med oppsett!"
 
-#: ../src/modules/finished.py:48
+#: ../src/modules/finished.py:35
+#, fuzzy
 msgid ""
-"Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
-"We hope that you will have a pleasant computing experience.  Please click "
-"the \"Forward\" button in the lower right corner to continue."
+"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
+"will have a pleasant computing experience.  Please click the \"Forward\" "
+"button in the lower right corner to continue."
 msgstr ""
 "Gratulerer! Ditt Red Hat Linux-system er nå satt opp og ferdig for bruk. Vi "
 "håper at du blir fornøyd med produktet. Trykk \"Fremover\" knappen i nedre "
 "høyre hjørne for å fortsette."
 
-#: ../src/modules/soundcard_gui.py:49
+#: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Lydkort"
-
-#: ../src/modules/soundcard_gui.py:50
-msgid "Sound Card Configuration"
-msgstr "Konfigurasjon av lyd"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "Et lydkort er funnet på ditt system."
 
-#: ../src/modules/soundcard_gui.py:91
+#: ../src/modules/soundcard_gui.py:74
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -223,7 +217,7 @@ msgstr "Oppdateringsagent"
 msgid "Red Hat Update Agent"
 msgstr "Red Hat oppdateringsagent"
 
-#: ../src/modules/up2date.py:53
+#: ../src/modules/up2date.py:38
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -251,28 +245,24 @@ msgstr ""
 "informasjon eller for å abonnere på Red Hat Networks basistjeneste.\n"
 "\n"
 
-#: ../src/modules/up2date.py:72
+#: ../src/modules/up2date.py:57
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "Ja, jeg ønsker å registrere meg hos Red Hat Network."
 
-#: ../src/modules/up2date.py:73
+#: ../src/modules/up2date.py:58
 msgid "No, I do not want to register my system."
 msgstr "Nei, jeg ønsker ikke å registrere mitt system."
 
-#: ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Velkommen"
 
-#: ../src/modules/welcome.py:28
-msgid "Welcome to Red Hat Linux!"
-msgstr "Velkommen til Red Hat Linux!"
-
-#: ../src/modules/welcome.py:48
+#: ../src/modules/welcome.py:35
+#, fuzzy
 msgid ""
-"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
-"before your system is ready to use.  The Red Hat Setup Agent will now guide "
-"you through some basic configuration.  Please click the \"Forward\" button "
-"in the lower right corner to continue."
+"There are a few more steps to take before your system is ready to use.  The "
+"Red Hat Setup Agent will now guide you through some basic configuration.  "
+"Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Hei! Velkommen til Red Hat Setup Agent, som vil hjelpe deg gjennom noen "
 "konfigurasjonsskritt før systemet er klart for bruk. Trykk \"Fremover\"-"
@@ -306,3 +296,15 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat oppsettagent"
+
+#~ msgid "Date and Time Configuration"
+#~ msgstr "Konfigurasjon av dato og klokkeslett"
+
+#~ msgid "Please set the date and time for the system."
+#~ msgstr "Vennligst sett dato og klokkeslett for systemet."
+
+#~ msgid "Sound Card Configuration"
+#~ msgstr "Konfigurasjon av lyd"
+
+#~ msgid "Welcome to Red Hat Linux!"
+#~ msgstr "Velkommen til Red Hat Linux!"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Fri Jan  3 15:50:50 2003\n"
+"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
 "PO-Revision-Date: 2003-01-06 08:57+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
@@ -48,18 +48,20 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot ya ha sido ejectuado con anterioridad en este sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot desde la línea de comandos, ejecute los siguientes "
 "comandos:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot durante el arranque del sistema, ejecute los "
 "siguientes comandos:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
 msgid "Additional CDs"
 msgstr "CDs adicionales"
 
@@ -67,7 +69,7 @@ msgstr "CDs adicionales"
 msgid "Install Additional Software"
 msgstr "Instalación de software adicional"
 
-#: ../src/modules/additional_cds.py:55
+#: ../src/modules/additional_cds.py:41
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -75,20 +77,20 @@ msgstr ""
 "Si posee cualquiera de los CDs citados en la parte posterior, podrá instalar "
 "los paquetes al insertar el CD y pulsar el botón adecuado."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:53
 msgid "Red Hat Linux Documentation CD"
 msgstr "CD de documentación de Red Hat Linux"
 
-#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
+#: ../src/modules/additional_cds.py:79
 msgid "Install..."
 msgstr "Instalación..."
 
-#: ../src/modules/additional_cds.py:78
+#: ../src/modules/additional_cds.py:64
 msgid "Red Hat Linux Installation CD"
 msgstr "CD de instalación de Red Hat Linux"
 
-#: ../src/modules/additional_cds.py:115
+#: ../src/modules/additional_cds.py:101
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -100,7 +102,7 @@ msgstr ""
 msgid "Create A User"
 msgstr "Crear un usuario"
 
-#: ../src/modules/create_user.py:59
+#: ../src/modules/create_user.py:46
 msgid ""
 "A user account is required to use the system.  Create a user account by "
 "filling in the information below."
@@ -108,23 +110,23 @@ msgstr ""
 "Se requiere una cuenta de usuario para usar el sistema.  Cree una cuenta de "
 "usuario completando la información que se solicita más abajo. "
 
-#: ../src/modules/create_user.py:68
+#: ../src/modules/create_user.py:55
 msgid "Username:"
 msgstr "Nombre de usuario:"
 
-#: ../src/modules/create_user.py:73
+#: ../src/modules/create_user.py:60
 msgid "Full Name:"
 msgstr "Nombre completo:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:65
 msgid "Password:"
 msgstr "Contraseña:"
 
-#: ../src/modules/create_user.py:83
+#: ../src/modules/create_user.py:70
 msgid "Confirm Password:"
 msgstr "Confirme la contraseña: "
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:91
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
@@ -132,16 +134,19 @@ msgstr ""
 "No se creó una cuenta de usuario. Está seguro que desea continuar sin crear "
 "una cuenta de usuario?.  "
 
-#: ../src/modules/create_user.py:120
+#: ../src/modules/create_user.py:107
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
+msgstr ""
+"Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
 
-#: ../src/modules/create_user.py:128
+#: ../src/modules/create_user.py:115
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
+msgstr ""
+"La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
 
-#: ../src/modules/create_user.py:139
-msgid "An account with username %s already exists.  Please specify another username."
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
 msgstr ""
 "Ya existe una cuenta con el nombre de usuario %s.  Por favor especifique "
 "otro nombre."
@@ -151,12 +156,9 @@ msgid "Date and Time"
 msgstr "Fecha y Hora"
 
 #: ../src/modules/date.py:52
-msgid "Date and Time Configuration"
-msgstr "Configuración de la fecha y de la hora"
-
-#: ../src/modules/date.py:54
-msgid "Please set the date and time for the system."
-msgstr "Configure al fecha y la hora para el sistema."
+#, fuzzy
+msgid "Set Date and Time"
+msgstr "Fecha y Hora"
 
 #: ../src/modules/date.py:106
 msgid "Please enter a time server."
@@ -187,29 +189,26 @@ msgstr "Finalizar la configuración"
 msgid "Finished Setup!"
 msgstr "¡Configuración acabada!"
 
-#: ../src/modules/finished.py:48
+#: ../src/modules/finished.py:35
+#, fuzzy
 msgid ""
-"Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
-"We hope that you will have a pleasant computing experience.  Please click "
-"the \"Forward\" button in the lower right corner to continue."
+"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
+"will have a pleasant computing experience.  Please click the \"Forward\" "
+"button in the lower right corner to continue."
 msgstr ""
 "¡Enhorabuena! Su sistema Red Hat Linux está configurado y preparado para ser "
 "usado. Esperamos que experiencia sea provechosa. Haga click en el botón "
 "\"Forward\" en el botón derecho de la parte posterior para continuar."
 
-#: ../src/modules/soundcard_gui.py:49
+#: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Tarjeta de sonido"
-
-#: ../src/modules/soundcard_gui.py:50
-msgid "Sound Card Configuration"
-msgstr "Configuración de la tarjeta de sonido"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "Se ha detectado una tarjeta de sonido en su ordenador."
 
-#: ../src/modules/soundcard_gui.py:91
+#: ../src/modules/soundcard_gui.py:74
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -228,7 +227,7 @@ msgstr "Agente de actualización"
 msgid "Red Hat Update Agent"
 msgstr "Agente de actualización de Red Hat"
 
-#: ../src/modules/up2date.py:53
+#: ../src/modules/up2date.py:38
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -258,28 +257,24 @@ msgstr ""
 "Si no ha comprado este producto, visite http://rhn.redhat.com para obtener "
 "más información o para suscribirse al servicio básico de Red Hat Network.\n"
 
-#: ../src/modules/up2date.py:72
+#: ../src/modules/up2date.py:57
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "Sí, me gustaría registrar mi sistema al servicio Red Hat Network."
 
-#: ../src/modules/up2date.py:73
+#: ../src/modules/up2date.py:58
 msgid "No, I do not want to register my system."
 msgstr "No deseo registrar mi sistema."
 
-#: ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Bienvenido"
 
-#: ../src/modules/welcome.py:28
-msgid "Welcome to Red Hat Linux!"
-msgstr "¡Bienvenido a Red Hat Linux!"
-
-#: ../src/modules/welcome.py:48
+#: ../src/modules/welcome.py:35
+#, fuzzy
 msgid ""
-"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
-"before your system is ready to use.  The Red Hat Setup Agent will now guide "
-"you through some basic configuration.  Please click the \"Forward\" button "
-"in the lower right corner to continue."
+"There are a few more steps to take before your system is ready to use.  The "
+"Red Hat Setup Agent will now guide you through some basic configuration.  "
+"Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Bienvenido al agente del configuración de Red Hat. Deberá pasar por "
 "diferentes etapas hasta que pueda hacer uso de sus sistema. El agente de "
@@ -316,3 +311,14 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Agente de configuración de Red Hat"
 
+#~ msgid "Date and Time Configuration"
+#~ msgstr "Configuración de la fecha y de la hora"
+
+#~ msgid "Please set the date and time for the system."
+#~ msgstr "Configure al fecha y la hora para el sistema."
+
+#~ msgid "Sound Card Configuration"
+#~ msgstr "Configuración de la tarjeta de sonido"
+
+#~ msgid "Welcome to Red Hat Linux!"
+#~ msgstr "¡Bienvenido a Red Hat Linux!"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Fri Jan  3 15:50:50 2003\n"
+"POT-Creation-Date: Wed Jan 15 02:32:35 2003\n"
 "PO-Revision-Date: 2003-01-04 16:10+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 "För att kunna köra firstboot under systemuppstarten kör du följande "
 "kommandon:"
 
-#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:75
 msgid "Additional CDs"
 msgstr "Ytterligare cd-skivor"
 
@@ -69,7 +69,7 @@ msgstr "Ytterligare cd-skivor"
 msgid "Install Additional Software"
 msgstr "Installera ytterligare programvara"
 
-#: ../src/modules/additional_cds.py:55
+#: ../src/modules/additional_cds.py:41
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
@@ -77,20 +77,20 @@ msgstr ""
 "Om du har någon av nedanstående cd-skivor kan du installera paket från dem "
 "genom att sätta in cd-skivan och klicka på lämplig knapp."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:53
 msgid "Red Hat Linux Documentation CD"
 msgstr "Red Hat Linux Documentation CD"
 
-#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:57 ../src/modules/additional_cds.py:68
+#: ../src/modules/additional_cds.py:79
 msgid "Install..."
 msgstr "Installera..."
 
-#: ../src/modules/additional_cds.py:78
+#: ../src/modules/additional_cds.py:64
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux Installation CD"
 
-#: ../src/modules/additional_cds.py:115
+#: ../src/modules/additional_cds.py:101
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -102,7 +102,7 @@ msgstr ""
 msgid "Create A User"
 msgstr "Skapa en användare"
 
-#: ../src/modules/create_user.py:59
+#: ../src/modules/create_user.py:46
 msgid ""
 "A user account is required to use the system.  Create a user account by "
 "filling in the information below."
@@ -110,23 +110,23 @@ msgstr ""
 "Ett användarkonto krävs för att kunna använda systemet. Skapa ett "
 "användarkontogenom att fylla i nedanstående information."
 
-#: ../src/modules/create_user.py:68
+#: ../src/modules/create_user.py:55
 msgid "Username:"
 msgstr "Användarnamn:"
 
-#: ../src/modules/create_user.py:73
+#: ../src/modules/create_user.py:60
 msgid "Full Name:"
 msgstr "Fullständigt namn:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:65
 msgid "Password:"
 msgstr "Lösenord:"
 
-#: ../src/modules/create_user.py:83
+#: ../src/modules/create_user.py:70
 msgid "Confirm Password:"
 msgstr "Bekräfta lösenord:"
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:91
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
@@ -134,15 +134,15 @@ msgstr ""
 "Ett användarkonto skapades inte. Är du säker på att du vill fortsätta utan "
 "att skapa ett användarkonto?"
 
-#: ../src/modules/create_user.py:120
+#: ../src/modules/create_user.py:107
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:128
+#: ../src/modules/create_user.py:115
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:139
+#: ../src/modules/create_user.py:126
 msgid ""
 "An account with username %s already exists.  Please specify another username."
 msgstr ""
@@ -153,12 +153,9 @@ msgid "Date and Time"
 msgstr "Datum och tid"
 
 #: ../src/modules/date.py:52
-msgid "Date and Time Configuration"
-msgstr "Konfiguration av datum och tid"
-
-#: ../src/modules/date.py:54
-msgid "Please set the date and time for the system."
-msgstr "Ställ in datum och tid för systemet."
+#, fuzzy
+msgid "Set Date and Time"
+msgstr "Datum och tid"
 
 #: ../src/modules/date.py:106
 msgid "Please enter a time server."
@@ -188,29 +185,26 @@ msgstr "Slutför konfiguration"
 msgid "Finished Setup!"
 msgstr "Slutförde konfiguration!"
 
-#: ../src/modules/finished.py:48
+#: ../src/modules/finished.py:35
+#, fuzzy
 msgid ""
-"Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
-"We hope that you will have a pleasant computing experience.  Please click "
-"the \"Forward\" button in the lower right corner to continue."
+"Your Red Hat Linux system is now set up and ready to use.  We hope that you "
+"will have a pleasant computing experience.  Please click the \"Forward\" "
+"button in the lower right corner to continue."
 msgstr ""
 "Gratulerar! Ditt Red Hat Linux-system är nu konfigurerat och redo för "
 "användning. Vi hoppas att du kommer att ha en trevlig datorupplevelse. Tryck "
 "på knappen \"Framåt\" i nedre högra hörnet för att fortsätta."
 
-#: ../src/modules/soundcard_gui.py:49
+#: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Ljudkort"
-
-#: ../src/modules/soundcard_gui.py:50
-msgid "Sound Card Configuration"
-msgstr "Ljudkortskonfiguration"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "Ett ljudkort har hittats på din dator."
 
-#: ../src/modules/soundcard_gui.py:91
+#: ../src/modules/soundcard_gui.py:74
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -229,7 +223,7 @@ msgstr "Uppdateringsagent"
 msgid "Red Hat Update Agent"
 msgstr "Red Hats uppdateringsagent"
 
-#: ../src/modules/up2date.py:53
+#: ../src/modules/up2date.py:38
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -255,28 +249,24 @@ msgstr ""
 "Om du inte köpte denna produkt, besök då http://rhn.redhat.com för mer "
 "information eller för att prenumerera på Red Hat Networks \"Basic\"-tjänst.\n"
 
-#: ../src/modules/up2date.py:72
+#: ../src/modules/up2date.py:57
 msgid "Yes, I would like to register with Red Hat Network."
 msgstr "Ja, jag vill registrera i Red Hat Network."
 
-#: ../src/modules/up2date.py:73
+#: ../src/modules/up2date.py:58
 msgid "No, I do not want to register my system."
 msgstr "Nej, jag vill inte registrera mitt system."
 
-#: ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Välkommen"
 
-#: ../src/modules/welcome.py:28
-msgid "Welcome to Red Hat Linux!"
-msgstr "Välkommen till Red Hat Linux!"
-
-#: ../src/modules/welcome.py:48
+#: ../src/modules/welcome.py:35
+#, fuzzy
 msgid ""
-"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
-"before your system is ready to use.  The Red Hat Setup Agent will now guide "
-"you through some basic configuration.  Please click the \"Forward\" button "
-"in the lower right corner to continue."
+"There are a few more steps to take before your system is ready to use.  The "
+"Red Hat Setup Agent will now guide you through some basic configuration.  "
+"Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Hej! Välkommen till Red Hats konfigurationsagent. Det är ytterligare några "
 "steg kvar innan ditt system är redo för användning. Red Hats "
@@ -313,6 +303,18 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hats konfigurationsagent"
+
+#~ msgid "Date and Time Configuration"
+#~ msgstr "Konfiguration av datum och tid"
+
+#~ msgid "Please set the date and time for the system."
+#~ msgstr "Ställ in datum och tid för systemet."
+
+#~ msgid "Sound Card Configuration"
+#~ msgstr "Ljudkortskonfiguration"
+
+#~ msgid "Welcome to Red Hat Linux!"
+#~ msgstr "Välkommen till Red Hat Linux!"
 
 #~ msgid ""
 #~ "A user account was not created.  Are you sure that you want to continue "
