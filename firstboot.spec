@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.5
-Release: 2
+Version: 1.3.6
+Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -54,7 +54,10 @@ make INSTROOT=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %post
-chkconfig --add firstboot
+if ! [ -f /etc/sysconfig/firstboot ]
+then
+  chkconfig --add firstboot
+fi
 		
 %preun
 if [ $1 = 0 ]; then
@@ -73,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Mar  4 2004 Brent Fox <bfox@redhat.com> 1.3.6-1
+- only call chkconfig -add if /etc/sysconfig/firstboot does not exist
+
 * Mon Mar  1 2004 Brent Fox <bfox@redhat.com> 1.3.5-2
 - remove Requires on system-config-mouse
 
