@@ -16,7 +16,7 @@ _=gettext.gettext
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 130
-    moduleName = (_("Update Agent"))
+    moduleName = (_("Red Hat Network"))
                 
     def launch(self, doDebug=None):
         if doDebug:
@@ -33,12 +33,12 @@ class childWindow:
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        label = gtk.Label(_("The Red Hat Update Agent will register your machine with "
+        label = gtk.Label(_("This step will register your system with a complimentary Demo Account from "
                             "Red Hat Network so that you can receive the latest software "
                             "packages directly from Red Hat.  Using this tool will allow you "
                             "to always have the most up-to-date Red Hat Linux system "
                             "with all the security patches, bug fixes, and software "
-                            "package enhancements. \n\n"
+                            "enhancements. \n\n"
                             "If you purchased this product, you are entitled to a free trial of Red "
                             "Hat Network Basic Service. To access the free trial, please refer to the "
                             "product activation card found in the box for detailed instructions. \n\n"
@@ -52,7 +52,7 @@ class childWindow:
 
         radioBox = gtk.VBox()
 
-        self.radioYes = gtk.RadioButton(None, _("Yes, I would like to register with Red Hat Network."))
+        self.radioYes = gtk.RadioButton(None, _("Yes, register my system with Red Hat Network."))
         radioNo = gtk.RadioButton(self.radioYes, _("No, I do not want to register my system."))
 
         radioBox.pack_start(self.radioYes, gtk.FALSE)
