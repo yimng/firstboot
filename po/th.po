@@ -11,9 +11,9 @@ msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-07-15 15:04-0400\n"
-"PO-Revision-Date: 2004-06-23 22:20+0700\n"
+"PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
-"Language-Team: Thai <L10N@OpenTLE.org>\n"
+"Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,7 +50,7 @@ msgstr "_ปิดเครื่อง"
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "ข้อผิดพลาดนี้เกิดขึ้นระหว่างการโหลด โมดูล %s"
+msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับโมดูล %s"
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -60,7 +60,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "เนื่องจากเกิดปัญหากับโมดูล %s \n"
-"ตัวติดตั้งเรดแฮทจะไม่โหลดโมดูลนี้ และ \n"
+"ตัวติดตั้งเรดแฮทจะไม่โหลดโมดูลนี้ \n"
 "และจะพยายามโหลดโมดูลที่ยังเหลืออยู่ต่อไป"
 
 #: ../src/exceptionWindow.py:57
@@ -71,9 +71,9 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"กรุณาส่งแฟ้มบันทึกข้อผิดพลาดเกี่ยวกับ 'firstboot' ไปยังระบบ\n"
+"กรุณาส่งบันทึกข้อผิดพลาดเกี่ยวกับ 'firstboot' ไปยังระบบ\n"
 "ติดตามข้อผิดพลาดของเรดแฮทที่ http://www.redhat.com/bugzilla \n"
-"ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่ %s \n"
+"ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
 #: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
@@ -87,7 +87,7 @@ msgstr "_ถัดไป"
 #: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr "ยิ_นดีต้อนรับ"
+msgstr "ยินดีต้อนรับ"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -123,7 +123,7 @@ msgstr "ตั้งค่าเขตเวลา"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr "เรียกใช้เครื่องมือือ"
+msgstr "เรียกใช้เครื่องมือ"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
@@ -141,7 +141,7 @@ msgstr "แผ่นซีดีเสริม"
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr "ถ้าคุณมีซีดีดังที่แสดงข้างล่างนี้ คุณสามารถติดตั้งแพกเกจจากมันได้ โดยใส่ซีดีเข้าไป แล้วคลิกปุ่ม"
+msgstr "ถ้าคุณมีซีดีดังที่แสดงข้างล่างนี้ คุณสามารถติดตั้งแพกเกจจากมันได้ โดยใส่ซีดีเข้าไป แล้วคลิกปุ่มที่เหมาะสม"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -154,14 +154,12 @@ msgid ""
 msgstr "ตรวจไม่พบซีดีรอม กรุณาใส่แผ่นซีดีแล้วคลิก \"ตกลง\""
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "System User"
-msgstr "การให้บริการ"
+msgstr "ผู้ใช้ระบบ"
 
 #: ../src/modules/create_user.py:65
 msgid ""
@@ -170,7 +168,7 @@ msgid ""
 "information."
 msgstr ""
 "ขอแนะนำให้คุณสร้างบัญชีผู้ใช้ส่วนตัว สำหรับใช้ในงานทั่วไป (ที่ไม่เกี่ยวกับการบริหารระบบ) "
-"สำหรับการสร้างบัญชีผู้ใช้ส่วนตัว จงกรอกข้อมูลที่จำเป็นเหล่านี้"
+"สำหรับการสร้างบัญชีผู้ใช้ส่วนตัว ให้กรอกข้อมูลที่จำเป็นเหล่านี้"
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -182,7 +180,7 @@ msgstr "ชื่อเ_ต็ม:"
 
 #: ../src/modules/create_user.py:89
 msgid "_Password:"
-msgstr "ร_หัสผ่าน:"
+msgstr "_รหัสผ่าน:"
 
 #: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
@@ -192,13 +190,11 @@ msgstr "_ยืนยันรหัสผ่าน :"
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
-"ถ้าคุณจำเป็นต้องใช้การอนุญาตสิทธิผ่านเครือข่าย เช่น Kerberos หรือ  NIS ให้คลิกที่ปุ่ม "
-"\"ล็อกอินผ่านเครือข่าย\""
+msgstr "ถ้าคุณจำเป็นต้องใช้การอนุญาตสิทธิผ่านเครือข่าย เช่น Kerberos หรือ  NIS ให้คลิกที่ปุ่ม ล็อกอินผ่านเครือข่าย"
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
-msgstr "_ล็อกอินผ่านเครือข่าย .."
+msgstr "_ล็อกอินผ่านเครือข่าย..."
 
 #: ../src/modules/create_user.py:158
 msgid ""
@@ -219,7 +215,7 @@ msgstr "สร้าง_บัญชีผู้ใช้"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "รหัสผ่านของคุณไม่ตรงกันกรุณากรอกใหม่อีกครั้ง"
+msgstr "รหัสผ่านของคุณไม่ตรงกัน กรุณากรอกใหม่อีกครั้ง"
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
@@ -263,14 +259,12 @@ msgid ""
 msgstr "ชื่อผู้ใช้ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "รหัสผ่านมีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "ชื่อ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
 #: ../src/modules/date.py:47
@@ -284,7 +278,7 @@ msgstr "กรุณาตั้งค่าวันที่และเวล
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr "กรุณากรอกเซิร์ฟเวอร์เวลา"
+msgstr "กรุณาป้อนเซิร์ฟเวอร์เวลา"
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
@@ -297,7 +291,7 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"การเชื่อมต่อกับ %s ไม่สามารถกระทำได้  %s อาจจะ ไม่พร้อมให้บริการหรือ  "
+"การเชื่อมต่อกับ %s ไม่สามารถกระทำได้  อาจเนื่องจาก %s ไม่พร้อมให้บริการหรือ  "
 "ไฟร์วอลล์บนเครื่องของคุณกั้นการเชื่อมต่อ NTP เอาไว้"
 
 #: ../src/modules/date.py:194
@@ -320,9 +314,7 @@ msgstr "ติดตั้งเสร็จแล้ว"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
-msgstr ""
-"ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
-"\" ด้านล่างขวาเพื่อทำงานต่อไป"
+msgstr "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป\" ด้านล่างขวาเพื่อทำงานต่อไป"
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -342,7 +334,7 @@ msgstr "โพรโตคอลบูต"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr "เปลี่ยนแปลงค่าตั้งเน็ตเวิร์ค"
+msgstr "เปลี่ยนแปลงการตั้งค่าเน็ตเวิร์ค"
 
 #: ../src/modules/networking.py:140
 msgid "static"
@@ -385,5 +377,3 @@ msgstr ""
 "ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
 "ที่มุมล่างขวาเพื่อทำงานต่อ"
 
-#~ msgid "User Account"
-#~ msgstr "บัญชีผู้ใช้"
