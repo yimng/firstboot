@@ -1,4 +1,5 @@
 # 
+#
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Allan Sims <allsi@eau.ee>, 2004.
@@ -9,7 +10,7 @@ msgstr ""
 "Project-Id-Version: et\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-01-27 18:28+0200\n"
+"PO-Revision-Date: 2004-03-10 18:58+0200\n"
 "Last-Translator: Allan Sims <allsi@eau.ee>\n"
 "Language-Team: Estonian <Eesti>\n"
 "MIME-Version: 1.0\n"
@@ -342,39 +343,32 @@ msgid "Authentication"
 msgstr "Tuvastamine"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration"
-msgstr "Tulemüüri seaded "
+msgstr "Tulemüüri seaded"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration"
-msgstr "Klaviatuuri seaded "
+msgstr "Klaviatuuri seaded"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Network configuration"
-msgstr "Võrgu seaded "
+msgstr "Võrgu seaded"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Printer configuration"
-msgstr "Printeri seaded "
+msgstr "Printeri seaded"
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "System services"
-msgstr "Süsteemi teenused "
+msgstr "Süsteemi teenused"
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "Sound card configuration"
-msgstr "Helikaardi seaded "
+msgstr "Helikaardi seaded"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Timezone configuration"
-msgstr "Ajavööndi seaded "
+msgstr "Ajavööndi seaded"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
@@ -449,10 +443,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -538,8 +530,7 @@ msgstr "Parool on liiga lühike. Parool peab olema vähemalt 6 tähemärki."
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"Kasutaja nimi '%s' on reserveeritud süsteemi poolt.  Palun pane teine nimi."
+msgstr "Kasutaja nimi '%s' on reserveeritud süsteemi poolt.  Palun pane teine nimi."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
@@ -566,8 +557,7 @@ msgstr "Kasutaja nimi '%s' sisaldab tühikut. Palun ära kasuta tühikut nimes."
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
-"Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
+msgstr "Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
 
 #: ../src/modules/create_user.py:274
 #, python-format
@@ -583,19 +573,16 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
+msgstr "Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:291
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Parool sisaldab valesid märke. Kasuta ainult ASCII märke."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -862,3 +849,4 @@ msgstr ""
 #~ "In order to run firstboot during system bootup, run the following "
 #~ "commands:"
 #~ msgstr "Esmaseks süsteemi üles laadimiseks käivita järgmised käsud:"
+
