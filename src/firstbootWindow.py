@@ -135,7 +135,7 @@ class firstbootWindow:
         self.notebook.set_current_page(0)
 
         # Add our logo to the left box, below the TreeView.
-        pix = self.imageFromFile("pixmaps/redhat-logo.png")
+        pix = self.imageFromFile("redhat-logo.png")
         if pix:
             leftVBox.pack_start(pix, gtk.FALSE)
 
@@ -207,7 +207,7 @@ class firstbootWindow:
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
-        pix = self.imageFromFile("pixmaps/bg.png")
+        pix = self.imageFromFile("bg.png")
 	if pix:
             win.realize()
             win.set_app_paintable(gtk.TRUE)
@@ -329,9 +329,16 @@ class firstbootWindow:
     def imageFromFile(self, filename):
         p = None        
         try:
-            p = gtk.gdk.pixbuf_new_from_file(filename)
+            path = "pixmaps/" + filename
+            p = gtk.gdk.pixbuf_new_from_file(path)
         except:
-            pass
+            try:
+                path = "/usr/share/firstboot/pixmaps/" + filename
+                p = gtk.gdk.pixbuf_new_from_file(path)
+            except:
+                pass
+
+
         if p:
             pix = gtk.Image()
             pix.set_from_pixbuf(p)        
