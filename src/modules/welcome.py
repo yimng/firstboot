@@ -25,8 +25,6 @@ class childWindow:
         self.vbox = gtk.VBox(gtk.FALSE, 10)
         self.vbox.set_size_request(400, 200)
 
-#        label = gtk.Label(_("Welcome to Red Hat Linux!"))
-#        label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
         msg = (_("Welcome to Red Hat Linux!"))
         label = gtk.Label("")
         label.set_markup("<span size='x-large'>%s</span>" % msg)
