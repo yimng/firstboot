@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-23 17:46+0100\n"
+"PO-Revision-Date: 2004-04-05 17:44+0200\n"
 "Last-Translator: Stephane Raimbault <stephane.raimbault@free.fr>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -106,10 +106,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Veuillez remplir le formulaire concernant 'firstboot' dans le système de \n"
-"pistage des bogues de Red Hat, à l'adresse http://www.redhat.com/buzilla. \n"
+"Veuillez remplir un formulaire concernant 'firstboot' dans le système de \n"
+"pistage des bogues de Red Hat à l'adresse http://www.redhat.com/buzilla. \n"
 "Une copie de la sortie de débogage a été sauvegardée dans %s \n"
-"Veillez à  bien joindre ce fichier au rapport de bogues.\n"
+"Veillez à bien joindre ce fichier au rapport de bogues.\n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -413,7 +413,7 @@ msgstr "Agent de configuration"
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr "CD-ROM supplémentaires"
+msgstr "Cédéroms supplémentaires"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
@@ -482,7 +482,7 @@ msgstr "Mot de _passe :"
 
 #: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
-msgstr "Mot de passe (confirmation) :"
+msgstr "Confir_mer le mot de passe :"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:95
@@ -491,7 +491,7 @@ msgid ""
 "click the Use Network Login button."
 msgstr ""
 "Si vous devez utiliser l'authentification réseau comme Kerberos ou NIS, "
-"veuillez cliquer sur le bouton Utiliser la connexion réseau."
+"veuillez cliquer sur le bouton \"Utiliser la connexion réseau\"."
 
 #: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
@@ -530,9 +530,7 @@ msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"Le nom d'utilisateur '%s' est un compte système réservé. Veuillez spécifier "
-"un autre nom."
+msgstr "Le nom d'utilisateur '%s' correspond à un compte système réservé. Veuillez spécifier un autre nom."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
