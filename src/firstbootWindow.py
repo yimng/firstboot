@@ -46,7 +46,7 @@ class firstbootWindow:
         x_screen = gtk.gdk.screen_width()
         y_screen = gtk.gdk.screen_height()        
 
-        if not rhgb:
+        if rhgb == None:
             #If rhgb isn't running, then we need to draw the background
             pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
             if pixbuf is not None:
@@ -57,6 +57,7 @@ class firstbootWindow:
                                           y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
                 self.win.set_app_paintable(gtk.TRUE)
                 self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+                self.win.set_size_request(x_screen, y_screen)
 
         align = gtk.Alignment(0.5, 0.5, 0.0, 0.0)
         eb = gtk.EventBox()
@@ -85,7 +86,6 @@ class firstbootWindow:
             self.notebook.set_show_border(gtk.FALSE)
         else:
             path = ('/usr/share/firstboot/modules')
-            self.win.set_size_request(x_screen, y_screen)
             self.win.set_position(gtk.WIN_POS_CENTER)
             self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
             self.notebook.set_show_tabs(gtk.FALSE)
