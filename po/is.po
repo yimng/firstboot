@@ -16,7 +16,7 @@ msgstr ""
 
 #: ../src/exceptionWindow.py:30
 msgid "An error has occured in module %s."
-msgstr ""
+msgstr "Villa kom upp í rekli %s."
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -31,7 +31,6 @@ msgid "Linux Application CD"
 msgstr "Hugbúnaðardiskur"
 
 #: ../src/modules/additional_cds.py:57
-#, fuzzy
 msgid ""
 "If you have additional CDs from the Red Hat Linux box set, such as the Red "
 "Hat Linux Documentation CD or the Linux Applications CD, please insert the "
@@ -46,10 +45,12 @@ msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
 msgstr ""
+"Þessi eiginleiki er enn ekki útfærður. Vinsamlegast sendið ekki inn tilkynningu "
+"um þennan hnapp."
 
 #: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
 msgid "Error"
-msgstr ""
+msgstr "Villa"
 
 #: ../src/modules/date.py:49
 msgid "Date & Time"
@@ -68,17 +69,18 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Ekki tókst að tengjast %s. Annaðhvort er %s ekki til staðar eða "
+"eldveggjarstillingar velarinnar þinnar leyfa ekki NTP tengingar."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Installation"
-msgstr ""
+msgstr "Ljúka uppsetningu"
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
-msgstr ""
+msgstr "Uppsetningu lokið!"
 
 #: ../src/modules/hardware.py:27
-#, fuzzy
 msgid "Configure Hardware"
 msgstr "Stilla vélbúnað"
 
@@ -112,40 +114,36 @@ msgid "Printers:"
 msgstr "Prentari:"
 
 #: ../src/modules/keyboard_gui.py:69
-#, fuzzy
 msgid "Keyboard"
-msgstr "Lyklaborð:"
+msgstr "Lyklaborð"
 
 #: ../src/modules/keyboard_gui.py:71
-#, fuzzy
 msgid "Keyboard Configuration"
-msgstr "Stillingar dagsettningar og tíma"
+msgstr "Stillingar lyklaborðs"
 
 #: ../src/modules/keyboard_gui.py:72
 msgid "A configuration tool for the system keyboard"
-msgstr ""
+msgstr "Stillingatól fyrir lyklaborð"
 
 #: ../src/modules/keyboard_gui.py:74
-#, fuzzy
 msgid "Select the appropriate keyboard for the system."
-msgstr "Vinsamlegast settu dagsetningu og tíma vélarinnar."
+msgstr "Vinsamlegast veldu það lyklaborð sem þú vilt nota."
 
 #: ../src/modules/language.py:40
 msgid "Language"
-msgstr ""
+msgstr "Tungumál"
 
 #: ../src/modules/language.py:42 ../src/modules/language.py:197
-#, fuzzy
 msgid "Language Configuration"
-msgstr "Stillingar dagsettningar og tíma"
+msgstr "Stillingar tungumála"
 
 #: ../src/modules/language.py:43
 msgid "A configuration tool to set the language for the system"
-msgstr ""
+msgstr "Tól til að stilla tungumálaval vélarinnar"
 
 #: ../src/modules/language.py:55
 msgid "Language Selection"
-msgstr ""
+msgstr "Tungumálaval"
 
 #: ../src/modules/language.py:58
 #, fuzzy
@@ -157,9 +155,8 @@ msgid "The changes will take effect the next time you log in."
 msgstr ""
 
 #: ../src/modules/mouse_gui.py:38
-#, fuzzy
 msgid "Mouse"
-msgstr "Mús:"
+msgstr "Mús"
 
 #: ../src/modules/mouse_gui.py:40
 #, fuzzy
@@ -322,14 +319,13 @@ msgstr ""
 
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
-msgstr ""
+msgstr "Uppfæra vélina þína"
 
 #: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hat uppfærsluálfurinn"
 
 #: ../src/modules/up2date.py:53
-#, fuzzy
 msgid ""
 "Now that you are registered with Red Hat Network, you can run the Red Hat "
 "Update Agent to receive the latest software packages directly from Red Hat.  "
@@ -344,13 +340,12 @@ msgstr ""
 "viðbótum"
 
 #: ../src/modules/up2date.py:66
-#, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
-msgstr "Skrá vélina hjá Red Hat Network"
+msgstr "Já ég vil skrá vélina hjá Red Hat Network"
 
 #: ../src/modules/up2date.py:67
 msgid "No, I do not want to register my system."
-msgstr ""
+msgstr "Nei ég vil ekki skrá vélina hjá Red Hat Network"
 
 #: ../src/modules/welcome.py:19
 msgid "Welcome"
@@ -359,51 +354,3 @@ msgstr "Velkomin(n)"
 #: ../src/modules/welcome.py:28
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Velkomin(n) í Betu af Red Hat Linux!"
-
-#~ msgid "Register with RHN"
-#~ msgstr "Skrá vélina hjá RHN"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Network er umsjónarkerfi fyrir eina eða fleiri Red Hat Linux "
-#~ "vélar. Allar uppfærslur, hvort sem þær eru við öryggisgöllum, almennum "
-#~ "göllum í hugbúnaði eða viðbætur (betur þekkt sem 'Errata' tilkynningar) "
-#~ "er hægt að fá beint frá Red Hat. Þú getur jafnvel fengið þessar "
-#~ "uppfærslur sendar til þín sjálfvirkt um leið og þær koma út.\n"
-#~ "\n"
-#~ "Red Hat Network heldur utanum hvenær uppfærslur koma út og senda þér "
-#~ "tilkynningu, svo það getur:"
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " -- Lágmarkað þann tíma og þá vinnu sem fer í að halda kerfinu uppfærðu "
-#~ "og í lagi\n"
-#~ " -- Takmarkað þær öryggisholur sem upp geta komið með því að setja inn "
-#~ "uppfærslur við þeim um leið og þær koma út\n"
-#~ " -- Síað út uppfærslur sem ekki eiga við vélina þína eða netið þitt\n"
-#~ " -- Sent til þín uppfærslur svo pakkar eru sendir til valinna véla þegar "
-#~ "þú vilt."
-
-#~ msgid "Register system now"
-#~ msgstr "Skrá vélina núna"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "Þú virðist ekki hafa neina nettengingu."
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "Ræsa uppfærsluálfinn"
