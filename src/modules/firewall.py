@@ -16,6 +16,8 @@ class childWindow:
     def __init__(self):
         self.toplevel = xml.get_widget("mainWindow")
         self.vbox = xml.get_widget("mainVBox")
+        self.deviceList = xml.get_widget("deviceList")
+        self.netdevices = []
                 
     def launch(self):
         #Hack to remove vbox from the toplevel window so it can
@@ -25,11 +27,26 @@ class childWindow:
         else:
             pass
 
+        self.devices = self.availableDevices()
+        for device in self.devices:
+            self.deviceList.append([device])
+
         return self.vbox
 
 #        label = GtkLabel("foo")
 #        return label
 
+    def availableDevices(self):
+        f = open("/proc/net/dev")
+        lines = f.readlines()
+        f.close()
+        # skip first two lines, they are header
+        lines = lines[2:]
+        for line in lines:
+            dev = string.strip(line[0:6])
+            if dev != "lo":
+                self.netdevices.append(dev)
+        return self.netdevices
 
     def write_file(self):
         pass

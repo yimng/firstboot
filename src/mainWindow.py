@@ -54,6 +54,7 @@ class mainWindow:
             mainVBox.pack_start(pix, FALSE, TRUE, 0)
         
         self.stepList = GtkCList()
+        self.stepList.connect("select-row", self.rowSelected)
         self.hpane.set_position(200)
         self.hpane.add1(self.stepList)
 
@@ -106,11 +107,16 @@ class mainWindow:
         win.add(mainVBox)
         win.show_all()
         self.notebook.set_page(0)
+        self.stepList.select_row(0, 0)
         mainloop()
 
     def okClicked(self, *args):
         self.notebook.next_page()
+        self.stepList.select_row(self.notebook.get_current_page(), 0)
 
     def backClicked(self, *args):
         self.notebook.prev_page()
+        self.stepList.select_row(self.notebook.get_current_page(), 0)
 
+    def rowSelected(self, list, row, col, event):
+        self.notebook.set_page(row)
