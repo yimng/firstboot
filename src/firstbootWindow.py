@@ -34,7 +34,7 @@ class firstbootWindow:
         self.moduleDict = {}
 
         # Create the initial window and a vbox to fill it with.
-        self.win = gtk.Window(gtk.WINDOW_POPUP)
+        self.win = gtk.Window()
         self.win.connect("destroy", self.destroy)
         self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
         self.win.realize()
@@ -87,7 +87,7 @@ class firstbootWindow:
         else:
             path = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)
-            self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
+            self.win.window.property_change ("_NET_WM_STATE", "ATOM", 32, gtk.gdk.PROP_MODE_APPEND, ("_NET_WM_STATE_BELOW",))
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
 
