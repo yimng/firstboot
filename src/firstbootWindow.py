@@ -106,8 +106,6 @@ class firstbootWindow:
             vbox = None
             eventbox = None
 
-            print module.__dict__
-            
             if self.doDebug:
                 print "calling", module.moduleName
                 vbox, eventbox = module.launch(self.doDebug)
