@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.3
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Dec 23 2002 Brent Fox <bfox@redhat.com> 1.0.3-4
+- enforce 6 char user passwords
+
 * Sun Dec 22 2002 Brent Fox <bfox@redhat.com> 1.0.3-3
 - require an NTP server if NTP selected in date.py
 
