@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-03 16:00-0400\n"
+"POT-Creation-Date: 2004-07-15 15:04-0400\n"
 "PO-Revision-Date: 2004-03-11 09:50+0800\n"
 "Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -15,43 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#.
-#. constants_text.py: text mode constants
-#.
-#. Copyright 2000-2002 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "退出"
 
-#. # eula_strings.py
-#. #
-#. # Copyright (C) 2003 Red Hat, Inc.
-#. # Copyright (C) 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. #
-#. # I18N
-#. #
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
 msgstr "许可协议"
@@ -76,27 +43,6 @@ msgstr "重新阅读许可(_R)"
 msgid "_Shut down"
 msgstr "关闭(_S)"
 
-#. # exceptionWindow.py - the UI to display traceback information
-#. #
-#. # Copyright (C) 2002, 2003 Red Hat, Inc.
-#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. #
-#. # I18N
-#. #
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
@@ -126,231 +72,19 @@ msgstr ""
 "调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
 
-#. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
-#. and try to complete the other steps successfully
-#. # firstbootBackend.py - contains the writeSysconfigFile function
-#. #
-#. # Copyright (C) 2002, 2003 Red Hat, Inc.
-#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Turn off the firstboot init script
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
-#. !/usr/bin/python2
-#. #
-#. # firstboot.py - kickoff script for firstboot
-#. #
-#. # Copyright (C) 2002, 2003 Red Hat, Inc.
-#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. #
-#. # I18N
-#. #
-#. Let's check to see if firstboot should be run or not
-#. If we're in debug mode, run anyway.  Even if the file exists
-#. Well first, is this even being run as root?
-#. We're not in debug mode, so do some checking
-#. First, look and see if /etc/sysconfig/firstboot exists
-#. If /etc/sysconfig/firstboot exists, parse the file
-#. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
-#. Firstboot should not be run
-#. Firstboot has never been run before, so start it up
-#. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
-#. textWindow for the TUI
-#. Keep running the program until either the timer has expired or the user pressed Exit
-#. They're done with firstboot.  Exit for good
-#. If rhgb (graphical boot) is running, let's use it's X server
-#. However, we still need to start up metacity and merge the X resources
-#. If there's no X Server running, let's start one
-#. set the display environment variable
-#. # firstbootWindow.py - the main firstboot UI and framework.py
-#. #
-#. # Copyright (C) 2002, 2003 Red Hat, Inc.
-#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. #
-#. # I18N
-#. #
-#.
-#. Stuff for screenshots
-#.
-#. Create the initial window and a vbox to fill it with.
-#. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
-#. #         if rhgb == None:
-#. #             #If rhgb isn't running, then we need to draw the background
-#. #             pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
-#. #             if pixbuf is not None:
-#. #                 pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
-#. #                 bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
-#. #                 gc = bgimage.new_gc()
-#. #                 pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
-#. #                                           y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-#. #                 self.win.set_app_paintable(gtk.TRUE)
-#. #                 self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
-#. #                 if not self.doDebug:
-#. #                     self.win.set_size_request(x_screen, y_screen)
-#. Let's draw the background
-#. Create the notebook.  We use a ListView to control which page in the
-#. notebook is displayed.
-#. Add the box on the left to the window's HBox.
-#. Populate the right side of the window.  Add the notebook to a VBox.
-#. Now add the EventBox to the right-side VBox.
-#. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
-#. Create a button box to handle navigation.
-#. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
 msgid "_Back"
 msgstr "返回(_B)"
 
-#. Create the "go forward" button.
-#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
 msgid "_Next"
 msgstr "下一步(_N)"
 
-#. Add the button box to the bottom of the box which contains the notebook.
-#. Add the main HBox to a VBox which will sit in the window.
-#. Exit the GTK loop
-#. Kill the window manager
-#. Exit firstboot.  This should take down the X server as well
-#. Call the apply method if it exists
-#. Call exitFirstboot to do some cleanup before exiting
-#. Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
-#. Exit the GTK loop
-#. Kill the window manager
-#. Give the X server a second to exit
-#. Exit firstboot.  This should take down the X server as well
-#. Call the apply method if it exists
-#. Call setPointer to make the left hand pointer move to the correct pointer
-#. If the module needs to grab the focus, let it
-#. Something went wrong in the module.  Don't advance
-#. Check to see if we're on the last page.
-#. Call setPointer to make the left hand pointer move to the correct pointer
-#. Generate a list of all of the module files (which becomes the list of
-#. all non-hidden files in the directory with extensions other than .py.
-#. Import each module, and filter out those
-#. XXX - hack to allow firstboot to pass in the parent class into language
-#. this will allow the language module to change firstboot's current locale
-#. If the module defines a moduleClass, it has to match the mode
-#. we're starting up in, otherwise it's always used.  Add it to
-#. a dictionary keyed by the module's declared priority.
-#. Get the list of module priorities, sort them to determine a run
-#. order, and build a list with the modules in the proper order.
-#. #         self.leftLabelVBox.set_border_width(12)
-#. #         leftEventBox = gtk.EventBox()
-#. #         leftEventBox.add(self.leftLabelVBox)
-#. #         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
-#. #         self.leftVBox = gtk.VBox()
-#. #         self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
-#. Add the modules to the proper lists.
-#. Add the module to the list of modules.
-#. Launch the module's GUI.
-#. If it launched, add it to the mdoule list.
-#. If we're in 640x480 mode, remove the title bars
-#. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "欢迎"
 
-#. Let's take some screenshots
-#. # functions.py - some helper functions
-#. #
-#. # Copyright (C) 2002, 2003 Red Hat, Inc.
-#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Attempt to load a gtk.Image from a file.
-#. Attempt to load a gtk.Image from a file.
-#. !/usr/bin/python2
-#. # runTextWindow.py - startup script to test the textWindow module
-#. #
-#. # Copyright (C) 2002, 2003 Red Hat, Inc.
-#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. # textWindow.py - the code for firstboot TUI
-#. #
-#. # Copyright (C) 2002, 2003 Red Hat, Inc.
-#. # Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
-#. #
-#. # This program is free software; you can redistribute it and/or modify
-#. # it under the terms of the GNU General Public License as published by
-#. # the Free Software Foundation; either version 2 of the License, or
-#. # (at your option) any later version.
-#. #
-#. # This program is distributed in the hope that it will be useful,
-#. # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. # GNU General Public License for more details.
-#. #
-#. # You should have received a copy of the GNU General Public License
-#. # along with this program; if not, write to the Free Software
-#. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. #
-#. # I18N
-#. #
 #: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "验证"
@@ -395,33 +129,6 @@ msgstr "选择您想修改的项目"
 msgid "Setup Agent"
 msgstr "设置代理"
 
-#. Set a timeout limit so that firstboot won't hang around forever on headless machines
-#. We've reached the timeout limit.  Let's return -1
-#. They've selected to run a config tool.  Lauch it now
-#.
-#. additional_cds.py - firstboot module for add-on CDs
-#.
-#. Copyright 2002, 2003 Red Hat, Inc.
-#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
 msgstr "额外光盘"
@@ -438,37 +145,22 @@ msgstr ""
 msgid "Install..."
 msgstr "安装..."
 
-#. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
-#. Be sure to remove the focus grab if we have to return here.
-#. Otherwise, the user is stuck
-#. If there's an autorun file on the cd, run it
-#. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
-#. Be sure to remove the focus grab if we have to return here.
-#. Otherwise, the user is stuck
-#. I think system-config-packages will do a umount, but just in case it doesn't...
-#. Yep, system-config-packages has already umounted the disc, so fall through and go on
-#. Remove the focus grab of the gtkInvisible widget
-#. import libuser
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:39
-msgid "User Account"
-msgstr "用户账号"
+#, fuzzy
+msgid "System User"
+msgstr "系统服务"
 
-#. self.admin = libuser.admin()
 #: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
@@ -494,7 +186,6 @@ msgstr "口令(_P)："
 msgid "Confir_m Password:"
 msgstr "确认口令(_M)："
 
-#. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
@@ -505,14 +196,6 @@ msgstr "如果您需要使用网络验证，如 Kerberos 或 NIS，请点击“�
 msgid "Use Network _Login..."
 msgstr "使用网络登录(_L)..."
 
-#. users = self.admin.enumerateUsersFull()
-#. self.normalUsersList = []
-#. for userEnt in users:
-#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
-#. if uidNumber == 500:
-#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
-#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
-#. If they've run authconfig, don't pop up messageDialog
 #: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
@@ -530,7 +213,6 @@ msgstr "继续(_C)"
 msgid "Create _account"
 msgstr "创建账号(_A)"
 
-#. Check for ascii-only strings
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "口令不匹配。请重新输入口令。"
@@ -539,18 +221,6 @@ msgstr "口令不匹配。请重新输入口令。"
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "口令太短。请至少使用 6 个字符。"
 
-#. user = self.admin.lookupUserByName(username)
-#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
-#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
-#. self.usernameEntry.set_text("")
-#. self.usernameEntry.grab_focus()
-#. return None
-#. Check for ascii-only strings
-#. XXX: using libuser means that we get killed by selinux so for now
-#. let's just exec useradd, etc.  this is a hack that we need to
-#. back off of for the FC2 release
-#. If we get to this point, all the input seems to be valid.  Let's add the user
-#. if the user doesn't already exist
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "用户名长度必须小于 33 个字符。"
@@ -559,7 +229,6 @@ msgstr "用户名长度必须小于 33 个字符。"
 msgid "The user name may not begin with a number."
 msgstr "用户名不能以数字开头。"
 
-#. specifically allow "_" and "-"
 #. Check for whitespace
 #: ../src/modules/create_user.py:291
 #, python-format
@@ -594,39 +263,12 @@ msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
-#. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:334
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
-#. Create a gtkInvisible dialog to block until up2date is complete
-#. Run rhn_register so they can register with RHN
-#.
-#. date.py - GUI front end code for date, time and ntp configuration
-#.
-#. Copyright 2002, 2003 Red Hat, Inc.
-#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:47
 msgid "Date and Time"
 msgstr "日期和时间"
@@ -635,11 +277,6 @@ msgstr "日期和时间"
 msgid "Please set the date and time for the system."
 msgstr "请为系统设置日期和时间。"
 
-#. Initialize date backend
-#. Initialize datePage and pass dateBackend into it
-#. Add icon to the top frame
-#. We're not using ntp, so stop the service
-#. set the time on the system according to what the user set it to
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
@@ -659,36 +296,10 @@ msgstr ""
 "无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙设"
 "置堵塞了 NTP 连接。"
 
-#. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
 msgstr "正在联系 NTP 服务器。请稍候..."
 
-#. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
-#.
-#. display.py - GUI front end code for firstboot screen resolution
-#.
-#. Copyright 2003 Red Hat, Inc.
-#. Copyright 2003 Brent Fox <bfox@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
 msgstr "显示"
@@ -697,45 +308,16 @@ msgstr "显示"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "请选择您想使用的分辨率和色彩深度"
 
-#. Add icon to the top frame
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/finished.py:19
+#: ../src/modules/finished.py:21
 msgid "Finish Setup"
 msgstr "结束设置"
 
-#: ../src/modules/finished.py:33
+#: ../src/modules/finished.py:35
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr "您的系统现已设置完毕，一切就绪。请点击右下角的“下一步”按钮来继续。"
 
-#.
-#. networking.py - networking module for firstboot
-#.
-#. Copyright 2002, 2003 Red Hat, Inc.
-#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "网络设置"
@@ -760,32 +342,6 @@ msgstr "改变网络配置(_C)..."
 msgid "static"
 msgstr "静态"
 
-#. Create a gtkInvisible dialog to block until up2date is complete
-#. Run rhn_register so they can register with RHN
-#.
-#. soundcard_gui.py - GUI front end code for soundcard configuration
-#.
-#. Copyright 2002, 2003 Red Hat, Inc.
-#. Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
 msgstr "声卡"
@@ -794,8 +350,6 @@ msgstr "声卡"
 msgid "A sound card has been detected on your computer."
 msgstr "在您的计算机上检测到声卡。"
 
-#. Initialize soundcard page
-#. Add icon to the top frame
 #: ../src/modules/soundcard_gui.py:71
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
@@ -806,30 +360,6 @@ msgstr ""
 "点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右"
 "频；第二种声音是左频；第三种声音将会在中间。"
 
-#.
-#. timezone.py - GUI front end code for mouse configuration
-#.
-#. Copyright 2003 Red Hat, Inc.
-#. Copyright 2003 Brent Fox <bfox@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
 msgstr "时区"
@@ -846,6 +376,9 @@ msgid ""
 msgstr ""
 "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
 "点击右下角的“下一步”按钮来继续。"
+
+#~ msgid "User Account"
+#~ msgstr "用户账号"
 
 #~ msgid ""
 #~ "The username '%s' is a reserved system account.  Please specify another "
