@@ -22,7 +22,8 @@ import gobject
 import functions
 
 class firstbootWindow:
-    def __init__(self, wm_pid, doReconfig, doDebug, lowRes):
+    def __init__(self, xserver_pid, wm_pid, doReconfig, doDebug, lowRes):
+        self.xserver_pid = xserver_pid
         self.wm_pid = wm_pid
         self.doReconfig = doReconfig
         self.doDebug = doDebug
@@ -294,6 +295,10 @@ class firstbootWindow:
         #Kill the window manager
         if self.wm_pid:
             os.kill(self.wm_pid, 15)
+
+        if self.xserver_pid:
+            os.kill(self.xserver_pid, 15)
+
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
 
@@ -327,6 +332,10 @@ class firstbootWindow:
         if self.wm_pid:
         #Kill the window manager
             os.kill(self.wm_pid, 15)
+
+        if self.xserver_pid:
+            os.kill(self.xserver_pid, 15)
+
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
 

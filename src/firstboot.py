@@ -16,6 +16,7 @@ import rhpl.translate as translate
 translate.textdomain ("firstboot")
 
 wm_pid = None
+xserver_pid = None
 doDebug = None
 doReconfig = None
 lowRes = None
@@ -148,4 +149,4 @@ if not os.environ.has_key('DISPLAY'):
      mergeXresources()
 
 import firstbootWindow
-firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug, lowRes)
+firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug, lowRes)
