@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.3
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Dec 17 2002 Brent Fox <bfox@redhat.com> 1.0.3-2
+- don't run x tool if /etc/sysconfig/firstboot exists
+
 * Mon Dec 02 2002 Brent Fox <bfox@redhat.com> 1.0.3-1
 - Create a message for machines that boot in runlevel 3
 
