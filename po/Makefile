@@ -17,8 +17,6 @@ INSTALL_NLS_DIR = $(RPM_BUILD_ROOT)/usr/share/locale
 
 # PO catalog handling
 MSGMERGE	= msgmerge -v
-PYGETTEXT	= pygettext.py --default-domain=$(NLSPACKAGE) \
-		  --verbose --output=$(NLSPACKAGE).po 
 XGETTEXT	= xgettext --default-domain=$(NLSPACKAGE) \
 		  --add-comments		  
 MSGFMT		= msgfmt --statistics --verbose
@@ -34,7 +32,7 @@ SRCFILES 	= $(PYSRC)
 all::  update-po $(MOFILES)
 
 $(POTFILE): $(SRCFILES)
-	$(PYGETTEXT) --keyword=_ --keyword=N_ $(SRCFILES)
+	$(XGETTEXT) --keyword=_ --keyword=N_ $(SRCFILES)
 	@if cmp -s $(NLSPACKAGE).po $(POTFILE); then \
 	    rm -f $(NLSPACKAGE).po; \
 	else \
