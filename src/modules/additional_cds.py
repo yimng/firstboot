@@ -45,27 +45,27 @@ class childWindow:
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, FALSE, TRUE)
 
-        pix = functions.imageFromFile("docs.png")
-        table.attach(pix, 0, 1, 0, 1, gtk.SHRINK)
+##        pix = functions.imageFromFile("docs.png")
+##        table.attach(pix, 0, 1, 0, 1, gtk.SHRINK)
 
-        label = gtk.Label(_("Red Hat Linux Documentation CD"))                            
-        label.set_alignment(0.0, 0.5)
-        table.attach(label, 1, 2, 0, 1, gtk.FILL, gtk.SHRINK)
+##         label = gtk.Label(_("Red Hat Linux Documentation CD"))                            
+##         label.set_alignment(0.0, 0.5)
+##         table.attach(label, 1, 2, 0, 1, gtk.FILL, gtk.SHRINK)
 
-        button = gtk.Button(_("Install..."))
-        button.connect("clicked", self.autorun)
-        table.attach(button, 2, 3, 0, 1, gtk.SHRINK, gtk.SHRINK)
+##         button = gtk.Button(_("Install..."))
+##         button.connect("clicked", self.autorun)
+##         table.attach(button, 2, 3, 0, 1, gtk.SHRINK, gtk.SHRINK)
  
-        pix = functions.imageFromFile("cd.png")
-        table.attach(pix, 0, 1, 1, 2, gtk.SHRINK)
+##         pix = functions.imageFromFile("cd.png")
+##         table.attach(pix, 0, 1, 1, 2, gtk.SHRINK)
 
-        label = gtk.Label(_("Red Hat Linux Installation CD"))                            
-        label.set_alignment(0.0, 0.5)
-        table.attach(label, 1, 2, 1, 2, gtk.FILL, gtk.SHRINK)
+##         label = gtk.Label(_("Red Hat Linux Installation CD"))                            
+##         label.set_alignment(0.0, 0.5)
+##         table.attach(label, 1, 2, 1, 2, gtk.FILL, gtk.SHRINK)
 
-        button = gtk.Button(_("Install..."))
-        button.connect("clicked", self.autorun)
-        table.attach(button, 2, 3, 1, 2, gtk.SHRINK, gtk.SHRINK)
+##         button = gtk.Button(_("Install..."))
+##         button.connect("clicked", self.autorun)
+##         table.attach(button, 2, 3, 1, 2, gtk.SHRINK, gtk.SHRINK)
 
         pix = functions.imageFromFile("lacd.png")
         table.attach(pix, 0, 1, 2, 3, gtk.SHRINK)
