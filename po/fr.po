@@ -1,22 +1,20 @@
 # translation of fr.po to French
-# translation of fr.po to french
-# Copyright (C) YEAR ORGANIZATION
+# Copyright (C) 2004 Free Software Foundation
 # Audrey Simons <asimons@redhat.com>, 2003
 # Jean-Paul Aubry <jpaubry@redhat.com>, 2003,2004
+# Stephane Raimbault <stephane.raimbault@free.fr>, 2004
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-09 15:59+0100\n"
-"Last-Translator: Jean-Paul Aubry <jpaubry@redhat.com>\n"
+"PO-Revision-Date: 2004-03-23 17:46+0100\n"
+"Last-Translator: Stephane Raimbault <stephane.raimbault@free.fr>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0\n"
+"Content-Transfer-Encoding: 8bit"
 
 #. # eula_strings.py
 #. #
@@ -61,7 +59,7 @@ msgstr "_Relire la licence"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr "_àteindre"
+msgstr "É_teindre"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -344,31 +342,31 @@ msgstr "Authentification"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration"
-msgstr "Configuration de pare-feu "
+msgstr "Configuration du pare-feu"
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration"
-msgstr "Configuration du clavier "
+msgstr "Configuration du clavier"
 
 #: ../src/textWindow.py:36
 msgid "Network configuration"
-msgstr "Configuration réseau "
+msgstr "Configuration réseau"
 
 #: ../src/textWindow.py:37
 msgid "Printer configuration"
-msgstr "Configuration de l'imprimante "
+msgstr "Configuration de l'imprimante"
 
 #: ../src/textWindow.py:38
 msgid "System services"
-msgstr "Services du système "
+msgstr "Services du système"
 
 #: ../src/textWindow.py:39
 msgid "Sound card configuration"
-msgstr "Configuration de la carte son  "
+msgstr "Configuration de la carte son"
 
 #: ../src/textWindow.py:40
 msgid "Timezone configuration"
-msgstr "Configuration du fuseau horaire "
+msgstr "Configuration du fuseau horaire"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
@@ -422,9 +420,9 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Si vous disposez de l'un des CD-ROM figurant dans la liste ci-dessous, vous "
-"pouvez installer les paquetages à  partir de ceux-ci en introduisant "
-"simplement le CD-ROM et cliquant sur le bouton approprié."
+"Si vous disposez de l'un des cédéroms figurant dans la liste ci-dessous, vous "
+"pouvez installer les paquetages à partir de ceux-ci en introduisant "
+"simplement le cédérom et cliquant sur le bouton approprié."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -436,7 +434,7 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur, "
+"Aucun cédérom n'a été détecté. Veuillez insérer un cédérom dans le lecteur, "
 "puis cliquer sur \"OK\" pour continuer."
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -445,9 +443,7 @@ msgstr ""
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliquer "
-"sur \"OK\" pour continuer."
+msgstr "Impossible de trouver le programme autorun sur le cédérom. Veuillez cliquer sur \"OK\" pour continuer."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -469,8 +465,8 @@ msgid ""
 "information."
 msgstr ""
 "Il est conseillé de créer un compte utilisateur personnel pour les "
-"utilisations normales (non administratives). Pour créer un compte personnel, "
-"donnez les informations demandées."
+"utilisations normales (non administratives). Pour créer un compte "
+"personnel, renseignez les informations requises."
 
 #: ../src/modules/create_user.py:58
 msgid "_Username:"
@@ -486,7 +482,7 @@ msgstr "Mot de _passe :"
 
 #: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
-msgstr "Confir_mer le mot de passe :"
+msgstr "Mot de passe (confirmation) :"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:95
@@ -508,9 +504,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Il est hautement conseillé de créer un compte utilisateur personnel. Si vous "
-"continuez sans compte, vous ne pouvez que vous connecter avec le compte "
-"root, qui est réservé pour les utilisations administratives, seulement."
+"Il est vivement conseillé de créer un compte utilisateur personnel. Si vous "
+"poursuivez sans compte utilisateur, vous ne pourrez vous connecter qu'avec "
+"le compte root, qui est réservé uniquement aux utilisations administratives."
 
 #: ../src/modules/create_user.py:149
 msgid "_Continue"
@@ -523,7 +519,7 @@ msgstr "Créer un _compte"
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Les mots de passe ne correspondent pas. Essayez à  nouveau."
+msgstr "Les mots de passe ne correspondent pas. Essayez à nouveau."
 
 #: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
@@ -589,16 +585,14 @@ msgstr ""
 
 #: ../src/modules/create_user.py:291
 msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
+msgstr "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
 msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
+msgstr "Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
 "caractères ASCII."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -629,7 +623,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:47
 msgid "Date and Time"
-msgstr "Date et Heure"
+msgstr "Date et heure"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
@@ -656,7 +650,7 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible, ou "
+"Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible ou "
 "les paramètres de pare-feu de votre ordinateur bloquent la connexion NTP."
 
 #. do something slow
@@ -695,9 +689,7 @@ msgstr "Affichage"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
-"Veuillez sélectionner la résolution et la profondeur des couleurs que vous "
-"souhaitez utiliser"
+msgstr "Veuillez sélectionner la résolution et la profondeur des couleurs que vous souhaitez utiliser"
 
 #. Add icon to the top frame
 #. #
@@ -713,8 +705,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Votre système est maintenant configuré et prêt à  l'emploi. Pour continuer, "
-"veuillez cliquer sur le bouton \"Suivant\" dans le coin en-bas à  droite."
+"Votre système est maintenant configuré et prêt à l'emploi. Pour continuer, "
+"veuillez cliquer sur le bouton \"Suivant\" dans le coin en-bas à droite."
 
 #.
 #. networking.py - networking module for firstboot
@@ -750,7 +742,7 @@ msgstr "Les périphériques réseau suivants ont été détectés sur le systèm
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr "Périphérique du réseau "
+msgstr "Périphérique du réseau"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
@@ -807,9 +799,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Cliquez sur le bouton \"Tester le son\" pour avoir un échantillon de son. "
-"Vous devriez entendre une série de trois sons. Le premier sera dans le canal "
-"de droite, le second dans celui de gauche et le troisième au centre."
+"Cliquez sur le bouton \"Tester le son\" pour écouter un échantillon sonore. "
+"Vous devriez entendre une série de trois sons. Le premier sera sur le canal "
+"de droite, le second sur celui de gauche et le troisième au centre."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -849,10 +841,10 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Il vous reste encore quelques étapes à  effectuer avant que votre système ne "
-"soit prêt à  l'emploi. L'agent de configuration Red Hat vous guidera tout au "
-"long de la configuration de base. Pour continuer, cliquez sur le bouton "
-"\"Suivant\" dans le coin en bas à  droite."
+"Il vous reste encore quelques étapes à effectuer avant que votre système "
+"ne soit prêt à l'emploi. L'agent de configuration Red Hat vous guidera tout au "
+"long de la configuration de base. Pour continuer, cliquez sur le bouton \"Suivant\" "
+"dans le coin en bas à droite."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "Configuration de la souris "
@@ -1173,4 +1165,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Lancer l'agent de mise Ã  jour Red Hat"
-
