@@ -10,7 +10,7 @@ class childWindow:
     moduleName = "Red Hat Update Agent"
 
     def __init__(self):
-        print "initializing welcome module"
+        print "initializing up2date module"
                 
     def launch(self):
         try:
