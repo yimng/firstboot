@@ -46,9 +46,9 @@ class firstbootWindow:
         self.win.set_decorated(gtk.FALSE)
         x_screen = gtk.gdk.screen_width()
         y_screen = gtk.gdk.screen_height()        
-        self.win.set_size_request(x_screen, y_screen)
-        self.win.set_position(gtk.WIN_POS_CENTER)
-        self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
+##         self.win.set_size_request(x_screen, y_screen)
+##         self.win.set_position(gtk.WIN_POS_CENTER)
+##         self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
 
         #Set the background of the window
         pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
@@ -86,6 +86,9 @@ class firstbootWindow:
             self.notebook.set_show_border(gtk.FALSE)
         else:
             path = ('/usr/share/firstboot/modules')
+            self.win.set_size_request(x_screen, y_screen)
+            self.win.set_position(gtk.WIN_POS_CENTER)
+            self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
 
