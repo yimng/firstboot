@@ -1,5 +1,5 @@
 #License: GPL
-#Copyright Red Hat Inc.  Jan 2002
+#Copyright Red Hat Inc.  Jan 2004
 
 PKGNAME=firstboot
 VERSION=$(shell awk '/Version:/ { print $$2 }' ${PKGNAME}.spec)
