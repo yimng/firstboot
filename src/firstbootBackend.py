@@ -19,7 +19,7 @@
 
 import os
 
-def chkconfigOff()
+def chkconfigOff():
         #Turn off the firstboot init script
         path = "/sbin/chkconfig --del firstboot"
         os.system(path)
