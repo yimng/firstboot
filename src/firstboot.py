@@ -41,6 +41,7 @@ doDebug = None
 doReconfig = None
 lowRes = None
 rhgb = None
+autoscreenshot = None
 FILENAME = "/etc/sysconfig/firstboot"
 
 for arg in sys.argv:
@@ -53,6 +54,8 @@ for arg in sys.argv:
     if arg == '--lowres':
         print "starting in lowres mode"
         lowRes = 1
+    if arg == '--autoscreenshot':
+        autoscreenshot = 1
 
 if __name__ == "__main__":
     signal.signal (signal.SIGINT, signal.SIG_DFL)
@@ -202,4 +205,4 @@ if not os.environ.has_key('DISPLAY'):
      mergeXresources()
 
 import firstbootWindow
-firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb)
+firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb, autoscreenshot)
