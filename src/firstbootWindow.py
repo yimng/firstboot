@@ -57,7 +57,9 @@ class firstbootWindow:
                                           y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
                 self.win.set_app_paintable(gtk.TRUE)
                 self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
-                self.win.set_size_request(x_screen, y_screen)
+
+                if not self.doDebug:
+                    self.win.set_size_request(x_screen, y_screen)
 
         align = gtk.Alignment(0.5, 0.5, 0.0, 0.0)
         eb = gtk.EventBox()
