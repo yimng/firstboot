@@ -1,20 +1,22 @@
+# translation of it.po to 
 # translation of it.po to Italian
-# Copyright (C) YEAR ORGANIZATION
-# Francesco Valente <fvalen@redhat.com>, 2003
+# Copyright (C) YEAR ORGANIZATION.
+# Francesco Valente <fvalen@redhat.com>, 2003.
+# Paolo Dona' <vik@3jv.com>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-06-18 14:32+1000\n"
-"Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
-"Language-Team: Italian <i18n-list@redhat.com>\n"
+"PO-Revision-Date: 2004-02-04 14:06+0100\n"
+"Last-Translator: Paolo Dona' <vik@3jv.com>\n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.0.2\n"
 
 #. # eula_strings.py
 #. #
@@ -39,28 +41,27 @@ msgstr ""
 #. #
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "Accettazione Licenza"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "_Si, accetto i termini della Licenza"
 
 #: ../src/eula_strings.py:29
-#, fuzzy
 msgid "N_o, I do not agree"
 msgstr "_No, non voglio procedere alla registrazione del sistema."
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "Vuoi rileggere o riconsiderare i termini della licenza?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "_Rileggi licenza"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "_Spegni"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -171,14 +172,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot è già stato eseguito su questo sistema.\n"
 
 #: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
 
 #: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Per eseguire firstboot durante l'avvio del sistema, eseguire i seguenti "
 "comandi:"
@@ -239,7 +237,7 @@ msgstr ""
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
 msgid "_Back"
-msgstr ""
+msgstr "_Precedente"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
@@ -353,63 +351,55 @@ msgstr "Benvenuti"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Autenticazione"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration "
-msgstr "Configurazione Data e Ora"
+msgstr "Configurazione del Firewall"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration "
-msgstr "Configurazione scheda audio"
+msgstr "Configurazione tastiera "
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Mouse configuration "
-msgstr "Configurazione scheda audio"
+msgstr "Configurazione mouse"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "_Use Network Login..."
+msgstr "Configurazione della rete "
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "Printer configuration "
-msgstr "Configurazione scheda audio"
+msgstr "Configurazione stampante "
 
 #: ../src/textWindow.py:39
 msgid "System services "
-msgstr ""
+msgstr "Servizi di sistema "
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Sound card configuration "
-msgstr "Configurazione scheda audio"
+msgstr "Configurazione scheda audio "
 
 #: ../src/textWindow.py:41
-#, fuzzy
 msgid "Timezone configuration "
 msgstr "Configurazione Data e Ora"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "Esegui Strumento"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "Esci"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Seleziona la voce che vuoi modificare "
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hat Update Agent"
+msgstr "Setup Agent"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -468,9 +458,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -500,9 +489,8 @@ msgid "_Username:"
 msgstr "_Nome utente:"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full Nam_e:"
-msgstr "Nome_completo:"
+msgstr "Nome _completo:"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
@@ -523,7 +511,6 @@ msgstr ""
 "Login'."
 
 #: ../src/modules/create_user.py:104
-#, fuzzy
 msgid "Use Network _Login..."
 msgstr "_Use Network Login..."
 
@@ -539,22 +526,20 @@ msgstr ""
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
-msgstr "_Continuare"
+msgstr "_Continua"
 
 #: ../src/modules/create_user.py:146
 msgid "Create _account"
-msgstr "Creare un _account"
+msgstr "Crea un _account"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr "La password non é corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:191
 #, python-format
@@ -583,9 +568,7 @@ msgstr "Il nome utente non dovrebbe iniziare con un numero."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"Il nome utente '%s' contiene degli spazi.  Si prega di non includere alcuno "
-"spazio nel nome utente."
+msgstr "Il nome utente '%s' contiene degli spazi.  Si prega di non includere alcuno spazi nel nome utente."
 
 #: ../src/modules/create_user.py:263
 #, python-format
@@ -615,8 +598,7 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -624,8 +606,7 @@ msgstr ""
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -721,11 +702,11 @@ msgstr "Tentativo di contattare il server NTP. Attendere..."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Display"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Selezionare la risoluzione e la profondità di colore desiderata"
 
 #. Add icon to the top frame
 #. #
@@ -737,7 +718,6 @@ msgid "Finish Setup"
 msgstr "Termina installazione"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -771,28 +751,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
-msgstr ""
+msgstr "Impostazione Rete"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "Queste periferiche di rete sono state rilevate nel sistema:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr ""
+msgstr "Periferica di Rete"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "Protocollo di Boot"
 
 #: ../src/modules/networking.py:97
-#, fuzzy
 msgid "_Change Network Configuration..."
-msgstr "_Use Network Login..."
+msgstr "_Cambia la configurazione di rete..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
-msgstr ""
+msgstr "statico"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -868,15 +847,13 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
-msgstr ""
+msgstr "Data e Ora"
 
 #: ../src/modules/timezone.py:52
-#, fuzzy
 msgid "Please set the timezone for the system."
 msgstr "Impostare la data e l'ora del sistema."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -994,3 +971,4 @@ msgstr ""
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
+
