@@ -9,7 +9,8 @@ class childWindow:
     moduleName = "Welcome"
 
     def __init__(self, doDebug = None):
-        print "initializing welcome module"
+        if doDebug:
+            print "initializing welcome module"
                 
     def launch(self):
         self.vbox = gtk.VBox()
