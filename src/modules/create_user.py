@@ -61,7 +61,7 @@ class childWindow:
         table.attach(label, 0, 1, 0, 1, gtk.FILL)
         table.attach(self.usernameEntry, 1, 2, 0, 1, gtk.SHRINK, gtk.FILL, 5, 5)
 
-        label = gtk.Label(_("Full _Name:"))
+        label = gtk.Label(_("Full Nam_e:"))
         label.set_use_underline(gtk.TRUE)
         label.set_mnemonic_widget(self.fullnameEntry)
         label.set_alignment(0.0, 0.5)
@@ -101,7 +101,7 @@ class childWindow:
 
 
         authHBox = gtk.HBox()
-        authButton = gtk.Button(_("_Use Network Login..."))
+        authButton = gtk.Button(_("Use Network _Login..."))
         authButton.connect("clicked", self.run_authconfig)
         align = gtk.Alignment()
         align.add(authButton)
