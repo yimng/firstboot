@@ -123,25 +123,5 @@ if not os.environ.has_key('DISPLAY'):
 finished = 0
 count = 0
 
-while not finished:
-    try:	
-        import firstbootWindow
-	if "firstbootWindow" in firstbootWindow.__dict__.keys():
-	     firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
-             finished = 1
-        else:
-	     count = count + 1
-	     if count > 15:
-		  print "Skipping firstboot..."
-		  finished = 1
-		  os._exit(0)
-	     time.sleep(1)
-	     pass
-    except:
-	import traceback
-        (type, value, tb) = sys.exc_info()
-        list = traceback.format_exception(type, value, tb)
-        text = string.joinfields(list, "")
-	print text
-        time.sleep(1)
-
+import firstbootWindow
+firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
