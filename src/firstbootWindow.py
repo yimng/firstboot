@@ -185,7 +185,7 @@ class firstbootWindow:
         self.left_bb.set_border_width(10)
         self.left_bb.set_spacing(10)
         self.exitButton = gtk.Button(stock='gtk-quit')
-        self.exitButton.connect("clicked", self.abortFirstboot)
+        self.exitButton.connect("clicked", self.writeSysconfigFile)
         self.left_bb.pack_start(self.exitButton)
         self.lowerHBox.pack_start(self.left_bb, gtk.FALSE)
         
@@ -263,21 +263,9 @@ class firstbootWindow:
         except:
             pass
 
-        #Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
-        if (not self.doDebug):
-            fd = open("/etc/sysconfig/firstboot", "w")
-            fd.write("RUN_FIRSTBOOT=NO\n")
-            fd.close()
+        self.writeSysconfigFile()
 
-        #Exit the GTK loop
-        gtk.mainquit()
-        if self.wm_pid:
-        #Kill the window manager
-            os.kill(self.wm_pid, 15)
-        #Exit firstboot.  This should take down the X server as well
-        os._exit(0)
-
-    def abortFirstboot(self, *args):
+    def writeSysconfigFile(self, *args):
         #Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
         if (not self.doDebug):
             fd = open("/etc/sysconfig/firstboot", "w")
