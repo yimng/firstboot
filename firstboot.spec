@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Feb 11 2003 Brent Fox <bfox@redhat.com> 1.0.5-4
+- fix bug #84068
+
 * Wed Feb  5 2003 Brent Fox <bfox@redhat.com> 1.0.5-3
 - check for empty soundcard list, not list = None
 
