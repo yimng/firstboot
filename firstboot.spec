@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.0
-Release: 4
+Release: 5
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -60,6 +60,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Jun 25 2002 Brent Fox <bfox@redhat.com> 0.9.4-5
+- Change initscript to not start firstboot on runlevel changes
+
 * Mon Jun 24 2002 Brent Fox <bfox@redhat.com> 0.9.4-4
 - Fix spec file
 
