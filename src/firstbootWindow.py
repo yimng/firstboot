@@ -31,20 +31,20 @@ class firstbootWindow:
         self.moduleDict = {}
 
         # Create the initial window and a vbox to fill it with.
-        win = gtk.Window()
-        win.connect("destroy", self.destroy)
+        self.win = gtk.Window()
+        self.win.connect("destroy", self.destroy)
 
-        win.connect ("key-release-event", self.keyRelease)
+        self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
         print "Screen width is", gtk.gdk.screen_width()
 
         if gtk.gdk.screen_width() >= 800:            
-            win.set_size_request(800, 600)
+            self.win.set_size_request(800, 600)
         else:
-            win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
+            self.win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
             
-        win.set_resizable(gtk.FALSE)
-        win.set_position(gtk.WIN_POS_CENTER)
-        win.set_decorated(gtk.FALSE)
+        self.win.set_resizable(gtk.FALSE)
+        self.win.set_position(gtk.WIN_POS_CENTER)
+        self.win.set_decorated(gtk.FALSE)
         mainVBox = gtk.VBox()
 
         # Create the notebook.  We use a ListView to control which page in the
@@ -118,12 +118,30 @@ class firstbootWindow:
             eventbox = None
 
             if self.doDebug:
-                print "calling", module.moduleName
-                vbox, eventbox = module.launch(self.doDebug)
-            else:
                 try:
-                    vbox, eventbox = module.launch()
+                    print "calling", module.moduleName
+                    vbox, eventbox = module.launch(self.doDebug)
+                    print "not getting here"
                 except:
+                    import exceptionWindow
+                    (type, value, tb) = sys.exc_info()
+                    list = traceback.format_exception(type, value, tb)
+                    text = string.joinfields(list, "")
+                    exceptionWindow.ExceptionWindow(module, text)
+                    pass                    
+            else:
+                print "fell into first else"
+                try:
+                    print "in second try"
+                    vbox, eventbox = module.launch() 
+                except:
+                    print "fell into last bucket"
+                    import exceptionWindow
+                    (type, value, tb) = sys.exc_info()
+                    list = traceback.format_exception(type, value, tb)
+                    text = string.joinfields(list, "")
+                    exceptionWindow.ExceptionWindow(module, text)
+                    pass
                     continue
 
             if vbox and eventbox:
@@ -224,17 +242,17 @@ class firstbootWindow:
 
         pix = functions.imageFromFile("bg-gray.png")
 	if pix:
-            win.realize()
-            win.set_app_paintable(gtk.TRUE)
+            self.win.realize()
+            self.win.set_app_paintable(gtk.TRUE)
 
-            bgimage = gtk.gdk.Pixmap(win.window, 800, 600, -1)
+            bgimage = gtk.gdk.Pixmap(self.win.window, 800, 600, -1)
             gc = bgimage.new_gc ()
             pix.get_pixbuf().render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-            win.window.set_back_pixmap (bgimage, gtk.FALSE)
+            self.win.window.set_back_pixmap (bgimage, gtk.FALSE)
 
         # Show the main window and go for it.
-        win.add(mainVBox)
-        win.show_all()
+        self.win.add(mainVBox)
+        self.win.show_all()
         gtk.main()
 
     def destroy(self, *args):
@@ -315,6 +333,8 @@ class firstbootWindow:
         if not tmp:
             self.nextButton.disconnect(self.nextHandler)
             self.nextHandler = self.nextButton.connect('clicked', self.finishClicked)
+            self.win.disconnect(self.winHandler)
+            self.winHandler = self.win.connect ("key-release-event", self.closeRelease)
 
         self.backButton.set_sensitive(gtk.TRUE)
 
@@ -328,6 +348,8 @@ class firstbootWindow:
 
         self.nextButton.disconnect(self.nextHandler)
         self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
+        self.win.disconnect(self.winHandler)
+        self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
 
     def keyRelease(self, window, event):
         if (event.keyval == gtk.keysyms.F12):
@@ -335,6 +357,11 @@ class firstbootWindow:
         if (event.keyval == gtk.keysyms.F11):
             self.backClicked()
 
+    def closeRelease(self, window, event):
+        if (event.keyval == gtk.keysyms.F12):
+            self.finishClicked()
+        if (event.keyval == gtk.keysyms.F11):
+            self.backClicked()
 
     def setPointer(self, number):
         items = self.leftLabelVBox.get_children()
