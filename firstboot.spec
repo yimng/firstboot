@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.24
+Version: 1.3.25
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,9 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Tue Sep 14 2004 Adrian Likins <alikins@redhat.com> - 1.3.24-1
+* Tue Sep 14 2004 Adrian Likins <alikins@redhat.com> - 1.3.25-1
 - change finish screen to not show default "success" 
   message if were also showing errors
+- fix forward/back behaviour
 
 * Fri Sep 10 2004 Adrian Likins <alikins@redhat.com> - 1.3.23-1
 - fix for finish screen
