@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-15 12:18-0400\n"
 "PO-Revision-Date: 2004-04-08 14:00+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -98,10 +98,12 @@ msgstr "বন্ধ"
 #. # I18N
 #. #
 #: ../src/exceptionWindow.py:48
+#, python-format
 msgid "An error has occurred in the %s module."
 msgstr "%s মডিউলে একটি ত্রুটি দেখা দিয়েছে"
 
 #: ../src/exceptionWindow.py:53
+#, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
@@ -112,6 +114,7 @@ msgstr ""
 "মডিউলগুলো লোড করার চেষ্টা করছে।"
 
 #: ../src/exceptionWindow.py:57
+#, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -384,10 +387,6 @@ msgstr "সময় এলাকা কনফিগারেশন "
 msgid "Run Tool"
 msgstr "Run Tool"
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr "বাহির"
-
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "আপনি যেটি পরিবর্তন করতে চান সেইটি পছন্দ করুন "
@@ -544,14 +543,6 @@ msgstr "পাসওয়ার্ডগুলো একই নয়। অনুগ
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অন্তত ৬ অক্ষরের পাসওয়ার্ড দিন।"
 
-#: ../src/modules/create_user.py:195
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"%s এই ব্যাবহারকারী নামটি সিস্টেম একাউন্টের জন্য সংরক্ষিত। অনুগ্রহপূর্বক অন্য একটি নাম "
-"দিন।"
-
 #. user = self.admin.lookupUserByName(username)
 #. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
 #. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
@@ -672,6 +663,7 @@ msgid "Error"
 msgstr "সমস্যা"
 
 #: ../src/modules/date.py:126 ../src/modules/date.py:157
+#, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
