@@ -60,10 +60,14 @@ def mergeXresources():
 	os.system("xrdb -merge %s" % path)
 
 
-
 #Let's check to see if firstboot should be run or not
 #If we're in debug mode, run anyway.  Even if the file exists
 if (not doDebug):
+    #Well first, is this even being run as root?
+    if os.getuid() > 0 or os.geteuid() > 0:
+       print "You must be root to run firstboot."
+       sys.exit(0)
+
     #We're not in debug mode, so do some checking
     #First, look and see if /etc/sysconfig/firstboot exists
     if os.access(FILENAME, os.R_OK):
