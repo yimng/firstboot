@@ -197,13 +197,13 @@ class childWindow:
         
     def isUsernameOk(self, str, widget):
         if len(str) > 32:
-            messageDialog.showErrorMessage(_("The user name must be less than 33 characters long."))
+            self.showErrorMessage(_("The user name must be less than 33 characters long."))
             widget.set_text("")
             widget.grab_focus()
             return None  
 
         if str[0] in string.digits:
-            messageDialog.showErrorMessage(_("The user name may not begin with a number."))
+            self.showErrorMessage(_("The user name may not begin with a number."))
             widget.set_text("")
             widget.grab_focus()
             return None
@@ -218,14 +218,14 @@ class childWindow:
                 return None
 
             if i in string.punctuation:
-                messageDialog.showErrorMessage(_("The user name '%s' contains punctuation characters.  "
+                self.showErrorMessage(_("The user name '%s' contains punctuation characters.  "
                                                  "Please do not use punctuation in the user name.") % str)
                 widget.set_text("")
                 widget.grab_focus()
                 return None
 
             if i in string.uppercase:
-                messageDialog.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
+                self.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
                                                  "Please do not use uppercase characters in the user name.") % str)
                 widget.set_text("")
                 widget.grab_focus()

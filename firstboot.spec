@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 6
+Release: 7
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Feb 20 2003 Brent Fox <bfox@redhat.com> 1.0.5-7
+- fix traceback in create_users.py (bug #84722)
+
 * Tue Feb 18 2003 Brent Fox <bfox@redhat.com> 1.0.5-6
 - add mnemonics to up2date.py (bug #84487)
 
