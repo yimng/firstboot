@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.6
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -72,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri May 16 2003 Brent Fox <bfox@redhat.com> 1.0.6-2
+- Added a mnemonic for network login button (bug #90636)
+
 * Mon Mar 24 2003 Brent Fox <bfox@redhat.com> 1.0.6-1
 - add a button to create_user.py to launch authconfig-gtk
 
