@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.1.0
-Release: 6
+Release: 7
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -10,9 +10,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Source0: %{name}-%{version}.tar.gz
 Obsoletes:anaconda-reconfig
 Prereq: chkconfig /etc/init.d
-Requires: pygtk
+Requires: pygtk2
 Requires: python
-Requires: pygnome
 Requires: usermode >= 1.36
 Requires: redhat-config-language
 #Requires: redhat-config-mouse
@@ -62,6 +61,9 @@ fi
 
 
 %changelog
+* Thu May 30 2002 Brent Fox <bfox@redhat.com> 0.1.0-7
+- Fixed Requires 
+
 * Tue May 28 2002 Brent Fox <bfox@redhat.com> 0.1.0-6
 - Rebuild for completeness
 - Fix bug in init script
