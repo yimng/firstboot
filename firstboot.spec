@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.9
-Release: 7
+Release: 8
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -63,6 +63,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Aug 13 2002 Brent Fox <bfox@redhat.com> 0.9.9-8
+- include cd.png
+
 * Tue Aug 13 2002 Brent Fox <bfox@redhat.com> 0.9.9-7
 - improved UI on additional cd screen
 
