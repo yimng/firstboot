@@ -308,7 +308,7 @@ class firstbootWindow:
             (type, value, tb) = sys.exc_info()
             list = traceback.format_exception(type, value, tb)
             text = string.joinfields(list, "")
-            exceptionWindow.ExceptionWindow(module, text)
+            exceptionWindow.ExceptionWindow(self.wm_pid, module, text)
             pass
 
         if result:

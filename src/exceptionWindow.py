@@ -13,7 +13,8 @@ gettext.textdomain ("firstboot")
 _=gettext.gettext
 
 class ExceptionWindow:
-    def __init__ (self, module, traceback):
+    def __init__ (self, wm_pid, module, traceback):
+        self.wm_pid = wm_pid
         win = gtk.Dialog()
         win.set_size_request(400, 300)
 
@@ -64,3 +65,6 @@ class ExceptionWindow:
 
     def destroy(self, *args):
         gtk.mainquit()
+        if self.wm_pid:
+            os.kill(self.wm_pid, 15)
+        os._exit(0)
