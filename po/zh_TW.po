@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
+"POT-Creation-Date: Tue Jul 30 19:51:22 2002\n"
 "PO-Revision-Date: 2002-07-26 09:11+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
@@ -31,7 +31,11 @@ msgstr "Red Hat 說明文件 CD"
 msgid "Linux Application CD"
 msgstr "Linux 應用程式 CD"
 
-#: ../src/modules/additional_cds.py:57
+#: ../src/modules/additional_cds.py:32
+msgid "Install additional software"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "If you have additional CDs from the Red Hat Linux box set, such as the Red "
 "Hat Linux Documentation CD or the Linux Applications CD, please insert the "
@@ -40,29 +44,31 @@ msgstr ""
 "假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文件 "
 "CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
 
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:95
 msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
 msgstr "這個功能尚未完成。 請不要回報關於這個按鈕的程式錯誤。"
 
-#: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
+#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
 msgid "Error"
 msgstr "錯誤"
 
 #: ../src/modules/date.py:49
-msgid "Date & Time"
+#, fuzzy
+msgid "Date and Time"
 msgstr "日期與時間"
 
 #: ../src/modules/date.py:50
-msgid "Date & Time Configuration"
+#, fuzzy
+msgid "Date and Time Configuration"
 msgstr "日期與時間設定"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr "請設定系統的日期與時間。"
 
-#: ../src/modules/date.py:111
+#: ../src/modules/date.py:109
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -78,7 +84,7 @@ msgstr "完成設定"
 msgid "Finished installation!"
 msgstr "完成系統安裝！"
 
-#: ../src/modules/finished.py:42
+#: ../src/modules/finished.py:45
 msgid ""
 "Contratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
@@ -87,117 +93,41 @@ msgstr ""
 "恭喜您！  現在您的 Red Hat Linux 系統已經設定好可以使用了。 我們期待您擁有一"
 "個愉快的全新體驗。  請點選右下角的 \"下一步\" 按鈕以繼續。"
 
-#: ../src/modules/hardware.py:27
-msgid "Configure Hardware"
-msgstr "設定硬體"
-
-#: ../src/modules/hardware.py:81
-msgid "Keyboard Map:"
-msgstr "鍵盤配置："
-
-#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
-#: ../src/modules/hardware.py:124
-msgid "Configure..."
-msgstr "設定..."
-
-#: ../src/modules/hardware.py:96
-msgid "Mouse:"
-msgstr "滑鼠："
-
-#: ../src/modules/hardware.py:118
-msgid "Sound card:"
+#: ../src/modules/soundcard_gui.py:50
+#, fuzzy
+msgid "Sound Card"
 msgstr "音效卡："
 
-#: ../src/modules/hardware.py:135
-msgid "Networking:"
-msgstr "網路連線："
+#: ../src/modules/soundcard_gui.py:51
+#, fuzzy
+msgid "Sound Card Configuration"
+msgstr "鍵盤設定"
 
-#: ../src/modules/hardware.py:144
-msgid "Display:"
-msgstr "顯示器："
-
-#: ../src/modules/hardware.py:153
-msgid "Printers:"
-msgstr "印表機："
-
-#: ../src/modules/networking.py:19
-msgid "Network check"
-msgstr "檢查網路"
-
-#: ../src/modules/networking.py:40
-msgid "Set up Networking"
-msgstr "設定網路連線"
-
-#: ../src/modules/networking.py:66
-msgid ""
-"A network connection was not detected.  Network connectivity is necessary "
-"for registering your system with RHN and for using the Red Hat Update Agent "
-"to update your system.  To set up a network connection, please click on the "
-"button below.\n"
+#: ../src/modules/soundcard_gui.py:52
+msgid "A sound card has been detected on your computer."
 msgstr ""
-"偵測不到網路連線。 需要用到網路連線以註冊您的系統到 RHN，並使用 Red Hat 更新"
-"代理程式來更新您的系統。 要設定網路連線，請點選以下的按鈕。\n"
 
-#: ../src/modules/networking.py:118
-msgid "Set up networking..."
-msgstr "設定網路連線..."
+#: ../src/modules/soundcard_gui.py:70
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
 
-#: ../src/modules/networking.py:154
-msgid "Configure using DHCP"
-msgstr "使用 DHCP 設定"
-
-#: ../src/modules/networking.py:171
-msgid "IP Address"
-msgstr "IP 位址"
-
-#: ../src/modules/networking.py:172
-msgid "Netmask"
-msgstr "網路遮罩"
-
-#: ../src/modules/networking.py:173
-msgid "Network"
-msgstr "網路"
-
-#: ../src/modules/networking.py:174
-msgid "Broadcast"
-msgstr "廣播"
-
-#: ../src/modules/networking.py:190
-msgid "%s:"
-msgstr "%s："
-
-#: ../src/modules/networking.py:231
-msgid "Gateway"
-msgstr "閘道器"
-
-#: ../src/modules/networking.py:231
-msgid "Hostname"
-msgstr "主機名稱"
-
-#: ../src/modules/networking.py:231
-msgid "Primary DNS"
-msgstr "主 DNS"
-
-#: ../src/modules/networking.py:232
-msgid "Secondary DNS"
-msgstr "次 DNS"
-
-#: ../src/modules/networking.py:232
-msgid "Ternary DNS"
-msgstr "第三個 DNS"
-
-#: ../src/modules/up2date.py:19
+#: ../src/modules/up2date.py:18
 msgid "Update Your System"
 msgstr "更新您的系統"
 
-#: ../src/modules/up2date.py:28
+#: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理程式"
 
-#: ../src/modules/up2date.py:53
+#: ../src/modules/up2date.py:55
+#, fuzzy
 msgid ""
-"Now that you are registered with Red Hat Network, you can run the Red Hat "
-"Update Agent to receive the latest software packages directly from Red Hat.  "
+"The Red Hat Update Agent will register your machine with Red Hat Network so "
+"that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
@@ -206,11 +136,11 @@ msgstr ""
 "接從 Red Hat 傳來最新的軟體套件。  使用這個工具將使您總是擁有最新的 Red Hat "
 "Linux 系統，並含有所有的安全性修補，程式錯誤修正以及軟體套件的功能強化。"
 
-#: ../src/modules/up2date.py:66
+#: ../src/modules/up2date.py:68
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "是的，我想要向 Red Hat Network 註冊我的系統"
 
-#: ../src/modules/up2date.py:67
+#: ../src/modules/up2date.py:69
 msgid "No, I do not want to register my system."
 msgstr "不，我不想要註冊我的系統。"
 
@@ -222,7 +152,7 @@ msgstr "歡迎"
 msgid "Welcome to Red Hat Linux!"
 msgstr "歡迎使用 Red Hat Linux！"
 
-#: ../src/modules/welcome.py:42
+#: ../src/modules/welcome.py:45
 msgid ""
 "Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
 "before your system is ready to use.  The Red Hat Setup Agent will now guide "
@@ -232,6 +162,78 @@ msgstr ""
 "嗨！ 歡迎使用 Red Hat 設定代理程式。  在使用您的系統之前，要先 完成幾個步"
 "驟。  Red Hat 設定代理程式現在將引導您做一些基本的設定。 請點選在右下角的 "
 "\"下一步\" 按鈕以繼續。"
+
+#~ msgid "Configure Hardware"
+#~ msgstr "設定硬體"
+
+#~ msgid "Keyboard Map:"
+#~ msgstr "鍵盤配置："
+
+#~ msgid "Configure..."
+#~ msgstr "設定..."
+
+#~ msgid "Mouse:"
+#~ msgstr "滑鼠："
+
+#~ msgid "Networking:"
+#~ msgstr "網路連線："
+
+#~ msgid "Display:"
+#~ msgstr "顯示器："
+
+#~ msgid "Printers:"
+#~ msgstr "印表機："
+
+#~ msgid "Network check"
+#~ msgstr "檢查網路"
+
+#~ msgid "Set up Networking"
+#~ msgstr "設定網路連線"
+
+#~ msgid ""
+#~ "A network connection was not detected.  Network connectivity is necessary "
+#~ "for registering your system with RHN and for using the Red Hat Update "
+#~ "Agent to update your system.  To set up a network connection, please "
+#~ "click on the button below.\n"
+#~ msgstr ""
+#~ "偵測不到網路連線。 需要用到網路連線以註冊您的系統到 RHN，並使用 Red Hat 更"
+#~ "新代理程式來更新您的系統。 要設定網路連線，請點選以下的按鈕。\n"
+
+#~ msgid "Set up networking..."
+#~ msgstr "設定網路連線..."
+
+#~ msgid "Configure using DHCP"
+#~ msgstr "使用 DHCP 設定"
+
+#~ msgid "IP Address"
+#~ msgstr "IP 位址"
+
+#~ msgid "Netmask"
+#~ msgstr "網路遮罩"
+
+#~ msgid "Network"
+#~ msgstr "網路"
+
+#~ msgid "Broadcast"
+#~ msgstr "廣播"
+
+#~ msgid "%s:"
+#~ msgstr "%s："
+
+#~ msgid "Gateway"
+#~ msgstr "閘道器"
+
+#~ msgid "Hostname"
+#~ msgstr "主機名稱"
+
+#~ msgid "Primary DNS"
+#~ msgstr "主 DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "次 DNS"
+
+#~ msgid "Ternary DNS"
+#~ msgstr "第三個 DNS"
 
 #~ msgid "Finish Installation"
 #~ msgstr "完成系統安裝"
@@ -334,9 +336,6 @@ msgstr ""
 #~ msgstr ""
 #~ "無效的連接埠： %s。  正確的格式為 'port:protocol, port:protocol'。  例"
 #~ "如，'1234:udp, 3456:tcp'"
-
-#~ msgid "Keyboard Configuration"
-#~ msgstr "鍵盤設定"
 
 #~ msgid "Please select the mouse for the system."
 #~ msgstr "請選擇系統的滑鼠。"

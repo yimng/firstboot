@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
+"POT-Creation-Date: Tue Jul 30 19:51:22 2002\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,31 +31,35 @@ msgstr ""
 msgid "Linux Application CD"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:57
+#: ../src/modules/additional_cds.py:32
+msgid "Install additional software"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:59
 msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the corresponding button below."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:95
 msgid "This feature is not yet implemented.  Please do not report bugs about this button."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
+#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
 msgid "Error"
 msgstr ""
 
 #: ../src/modules/date.py:49
-msgid "Date & Time"
+msgid "Date and Time"
 msgstr ""
 
 #: ../src/modules/date.py:50
-msgid "Date & Time Configuration"
+msgid "Date and Time Configuration"
 msgstr ""
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr ""
 
-#: ../src/modules/date.py:111
+#: ../src/modules/date.py:109
 msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
 
@@ -67,121 +71,43 @@ msgstr ""
 msgid "Finished installation!"
 msgstr ""
 
-#: ../src/modules/finished.py:42
+#: ../src/modules/finished.py:45
 msgid "Contratulations!  Your Red Hat Linux system is now set up and ready to use.  We hope that you will have a pleasant computing experience.  Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 
-#: ../src/modules/hardware.py:27
-msgid "Configure Hardware"
+#: ../src/modules/soundcard_gui.py:50
+msgid "Sound Card"
 msgstr ""
 
-#: ../src/modules/hardware.py:81
-msgid "Keyboard Map:"
+#: ../src/modules/soundcard_gui.py:51
+msgid "Sound Card Configuration"
 msgstr ""
 
-#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
-#: ../src/modules/hardware.py:124
-msgid "Configure..."
+#: ../src/modules/soundcard_gui.py:52
+msgid "A sound card has been detected on your computer."
 msgstr ""
 
-#: ../src/modules/hardware.py:96
-msgid "Mouse:"
+#: ../src/modules/soundcard_gui.py:70
+msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 
-#: ../src/modules/hardware.py:118
-msgid "Sound card:"
-msgstr ""
-
-#: ../src/modules/hardware.py:135
-msgid "Networking:"
-msgstr ""
-
-#: ../src/modules/hardware.py:144
-msgid "Display:"
-msgstr ""
-
-#: ../src/modules/hardware.py:153
-msgid "Printers:"
-msgstr ""
-
-#: ../src/modules/networking.py:19
-msgid "Network check"
-msgstr ""
-
-#: ../src/modules/networking.py:40
-msgid "Set up Networking"
-msgstr ""
-
-#: ../src/modules/networking.py:66
-msgid ""
-"A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
-msgstr ""
-
-#: ../src/modules/networking.py:118
-msgid "Set up networking..."
-msgstr ""
-
-#: ../src/modules/networking.py:154
-msgid "Configure using DHCP"
-msgstr ""
-
-#: ../src/modules/networking.py:171
-msgid "IP Address"
-msgstr ""
-
-#: ../src/modules/networking.py:172
-msgid "Netmask"
-msgstr ""
-
-#: ../src/modules/networking.py:173
-msgid "Network"
-msgstr ""
-
-#: ../src/modules/networking.py:174
-msgid "Broadcast"
-msgstr ""
-
-#: ../src/modules/networking.py:190
-msgid "%s:"
-msgstr ""
-
-#: ../src/modules/networking.py:231
-msgid "Gateway"
-msgstr ""
-
-#: ../src/modules/networking.py:231
-msgid "Hostname"
-msgstr ""
-
-#: ../src/modules/networking.py:231
-msgid "Primary DNS"
-msgstr ""
-
-#: ../src/modules/networking.py:232
-msgid "Secondary DNS"
-msgstr ""
-
-#: ../src/modules/networking.py:232
-msgid "Ternary DNS"
-msgstr ""
-
-#: ../src/modules/up2date.py:19
+#: ../src/modules/up2date.py:18
 msgid "Update Your System"
 msgstr ""
 
-#: ../src/modules/up2date.py:28
+#: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr ""
 
-#: ../src/modules/up2date.py:53
-msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements."
+#: ../src/modules/up2date.py:55
+msgid "The Red Hat Update Agent will register your machine with Red Hat Network so that you can receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements."
 msgstr ""
 
-#: ../src/modules/up2date.py:66
+#: ../src/modules/up2date.py:68
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr ""
 
-#: ../src/modules/up2date.py:67
+#: ../src/modules/up2date.py:69
 msgid "No, I do not want to register my system."
 msgstr ""
 
@@ -193,7 +119,7 @@ msgstr ""
 msgid "Welcome to Red Hat Linux!"
 msgstr ""
 
-#: ../src/modules/welcome.py:42
+#: ../src/modules/welcome.py:45
 msgid "Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take before your system is ready to use.  The Red Hat Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 

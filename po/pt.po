@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
+"POT-Creation-Date: Tue Jul 30 19:51:22 2002\n"
 "PO-Revision-Date: 2002-07-26 11:17+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -26,7 +26,11 @@ msgstr "CD de Documentação do Red Hat"
 msgid "Linux Application CD"
 msgstr "CD de Aplicações Linux"
 
-#: ../src/modules/additional_cds.py:57
+#: ../src/modules/additional_cds.py:32
+msgid "Install additional software"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:59
 msgid ""
 "If you have additional CDs from the Red Hat Linux box set, such as the Red "
 "Hat Linux Documentation CD or the Linux Applications CD, please insert the "
@@ -36,7 +40,7 @@ msgstr ""
 "do Red Hat Linux ou o CD de Aplicações Linux, insira-o agora e carregue no "
 "botão correspondente."
 
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:95
 msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
@@ -44,23 +48,25 @@ msgstr ""
 "Esta funcionalidade ainda não foi implementada.  Por favor não comunique "
 "erros acerca deste botão."
 
-#: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
+#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
 msgid "Error"
 msgstr "Erro"
 
 #: ../src/modules/date.py:49
-msgid "Date & Time"
+#, fuzzy
+msgid "Date and Time"
 msgstr "Date e Hora"
 
 #: ../src/modules/date.py:50
-msgid "Date & Time Configuration"
+#, fuzzy
+msgid "Date and Time Configuration"
 msgstr "Configuração da Data e Hora"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr "Configure a data e hora do seu computador."
 
-#: ../src/modules/date.py:111
+#: ../src/modules/date.py:109
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -77,7 +83,7 @@ msgstr "Terminar a Configuração"
 msgid "Finished installation!"
 msgstr "Instalação terminou!"
 
-#: ../src/modules/finished.py:42
+#: ../src/modules/finished.py:45
 msgid ""
 "Contratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
@@ -88,119 +94,41 @@ msgstr ""
 "agradável.  Por favor carregue no botão \"Avançar\" no canto inferior "
 "direito para continuar."
 
-#: ../src/modules/hardware.py:27
-msgid "Configure Hardware"
-msgstr "Configuração de Hardware"
-
-#: ../src/modules/hardware.py:81
-msgid "Keyboard Map:"
-msgstr "Disposição do Teclado:"
-
-#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
-#: ../src/modules/hardware.py:124
-msgid "Configure..."
-msgstr "Configurar..."
-
-#: ../src/modules/hardware.py:96
-msgid "Mouse:"
-msgstr "Rato:"
-
-#: ../src/modules/hardware.py:118
-msgid "Sound card:"
+#: ../src/modules/soundcard_gui.py:50
+#, fuzzy
+msgid "Sound Card"
 msgstr "Placa de som:"
 
-#: ../src/modules/hardware.py:135
-msgid "Networking:"
-msgstr "Rede:"
+#: ../src/modules/soundcard_gui.py:51
+#, fuzzy
+msgid "Sound Card Configuration"
+msgstr "Configuração da Data e Hora"
 
-#: ../src/modules/hardware.py:144
-msgid "Display:"
-msgstr "Ecrã:"
-
-#: ../src/modules/hardware.py:153
-msgid "Printers:"
-msgstr "Impressoras:"
-
-#: ../src/modules/networking.py:19
-msgid "Network check"
-msgstr "Verificação de rede"
-
-#: ../src/modules/networking.py:40
-msgid "Set up Networking"
-msgstr "Configurar a Rede"
-
-#: ../src/modules/networking.py:66
-msgid ""
-"A network connection was not detected.  Network connectivity is necessary "
-"for registering your system with RHN and for using the Red Hat Update Agent "
-"to update your system.  To set up a network connection, please click on the "
-"button below.\n"
+#: ../src/modules/soundcard_gui.py:52
+msgid "A sound card has been detected on your computer."
 msgstr ""
-"Não foi detectada qualquer ligação à rede. Uma ligação à rede é necessária "
-"para registrar o seu computador  na RHN e para utilizar o Agente de "
-"Actualizações da Red Hat para actualizar o seu sistema. Para configurar uma "
-"ligação à rede, carregue no botão abaixo.\n"
 
-#: ../src/modules/networking.py:118
-msgid "Set up networking..."
-msgstr "Configuração da rede..."
+#: ../src/modules/soundcard_gui.py:70
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
 
-#: ../src/modules/networking.py:154
-msgid "Configure using DHCP"
-msgstr "Configurar utilizando DHCP"
-
-#: ../src/modules/networking.py:171
-msgid "IP Address"
-msgstr "Endereço IP"
-
-#: ../src/modules/networking.py:172
-msgid "Netmask"
-msgstr "Máscada de Rede"
-
-#: ../src/modules/networking.py:173
-msgid "Network"
-msgstr "Rede"
-
-#: ../src/modules/networking.py:174
-msgid "Broadcast"
-msgstr "'Broadcast'"
-
-#: ../src/modules/networking.py:190
-msgid "%s:"
-msgstr "%s:"
-
-#: ../src/modules/networking.py:231
-msgid "Gateway"
-msgstr "'Gateway'"
-
-#: ../src/modules/networking.py:231
-msgid "Hostname"
-msgstr "Nome da Máquina"
-
-#: ../src/modules/networking.py:231
-msgid "Primary DNS"
-msgstr "DNS Primário"
-
-#: ../src/modules/networking.py:232
-msgid "Secondary DNS"
-msgstr "DNS Secundário"
-
-#: ../src/modules/networking.py:232
-msgid "Ternary DNS"
-msgstr "DNS Terciário"
-
-#: ../src/modules/up2date.py:19
+#: ../src/modules/up2date.py:18
 msgid "Update Your System"
 msgstr "Actualizar o seu Sistema"
 
-#: ../src/modules/up2date.py:28
+#: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Agente de Actualizações da Red Hat"
 
-#: ../src/modules/up2date.py:53
+#: ../src/modules/up2date.py:55
+#, fuzzy
 msgid ""
-"Now that you are registered with Red Hat Network, you can run the Red Hat "
-"Update Agent to receive the latest software packages directly from Red Hat.  "
+"The Red Hat Update Agent will register your machine with Red Hat Network so "
+"that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
@@ -211,11 +139,11 @@ msgstr ""
 "sistema Red Hat actualizado, com todas as correcções de segurança, de erros "
 "e melhorias a pacotes."
 
-#: ../src/modules/up2date.py:66
+#: ../src/modules/up2date.py:68
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Sim, quero registar-me na Red Hat Network"
 
-#: ../src/modules/up2date.py:67
+#: ../src/modules/up2date.py:69
 msgid "No, I do not want to register my system."
 msgstr "Não, não quero registar o meu sistema."
 
@@ -227,7 +155,7 @@ msgstr "Bem-vindo"
 msgid "Welcome to Red Hat Linux!"
 msgstr "Bem-vindo ao Red Hat Linux!"
 
-#: ../src/modules/welcome.py:42
+#: ../src/modules/welcome.py:45
 msgid ""
 "Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
 "before your system is ready to use.  The Red Hat Setup Agent will now guide "
@@ -239,3 +167,77 @@ msgstr ""
 "Agente de Configuração da Red Hat vai agora guiá-lo através de algumas "
 "opções básicas.  Por favor carregue no botão \"Avançar\" no canto inferior "
 "direito para continuar."
+
+#~ msgid "Configure Hardware"
+#~ msgstr "Configuração de Hardware"
+
+#~ msgid "Keyboard Map:"
+#~ msgstr "Disposição do Teclado:"
+
+#~ msgid "Configure..."
+#~ msgstr "Configurar..."
+
+#~ msgid "Mouse:"
+#~ msgstr "Rato:"
+
+#~ msgid "Networking:"
+#~ msgstr "Rede:"
+
+#~ msgid "Display:"
+#~ msgstr "Ecrã:"
+
+#~ msgid "Printers:"
+#~ msgstr "Impressoras:"
+
+#~ msgid "Network check"
+#~ msgstr "Verificação de rede"
+
+#~ msgid "Set up Networking"
+#~ msgstr "Configurar a Rede"
+
+#~ msgid ""
+#~ "A network connection was not detected.  Network connectivity is necessary "
+#~ "for registering your system with RHN and for using the Red Hat Update "
+#~ "Agent to update your system.  To set up a network connection, please "
+#~ "click on the button below.\n"
+#~ msgstr ""
+#~ "Não foi detectada qualquer ligação à rede. Uma ligação à rede é "
+#~ "necessária para registrar o seu computador  na RHN e para utilizar o "
+#~ "Agente de Actualizações da Red Hat para actualizar o seu sistema. Para "
+#~ "configurar uma ligação à rede, carregue no botão abaixo.\n"
+
+#~ msgid "Set up networking..."
+#~ msgstr "Configuração da rede..."
+
+#~ msgid "Configure using DHCP"
+#~ msgstr "Configurar utilizando DHCP"
+
+#~ msgid "IP Address"
+#~ msgstr "Endereço IP"
+
+#~ msgid "Netmask"
+#~ msgstr "Máscada de Rede"
+
+#~ msgid "Network"
+#~ msgstr "Rede"
+
+#~ msgid "Broadcast"
+#~ msgstr "'Broadcast'"
+
+#~ msgid "%s:"
+#~ msgstr "%s:"
+
+#~ msgid "Gateway"
+#~ msgstr "'Gateway'"
+
+#~ msgid "Hostname"
+#~ msgstr "Nome da Máquina"
+
+#~ msgid "Primary DNS"
+#~ msgstr "DNS Primário"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "DNS Secundário"
+
+#~ msgid "Ternary DNS"
+#~ msgstr "DNS Terciário"

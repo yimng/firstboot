@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
+"POT-Creation-Date: Tue Jul 30 19:51:22 2002\n"
 "PO-Revision-Date: 2002-07-05 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -30,7 +30,11 @@ msgstr "Red Hat dokumentations-CD"
 msgid "Linux Application CD"
 msgstr "Linux applikations-CD"
 
-#: ../src/modules/additional_cds.py:57
+#: ../src/modules/additional_cds.py:32
+msgid "Install additional software"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:59
 #, fuzzy
 msgid ""
 "If you have additional CDs from the Red Hat Linux box set, such as the Red "
@@ -41,29 +45,31 @@ msgstr ""
 "Linux Documentation CD\" eller \"Linux Applications CD\" bør du indsætte "
 "cd'en nu og klikke på knappen nedenfor."
 
-#: ../src/modules/additional_cds.py:93
+#: ../src/modules/additional_cds.py:95
 msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
+#: ../src/modules/additional_cds.py:96 ../src/modules/date.py:111
 msgid "Error"
 msgstr ""
 
 #: ../src/modules/date.py:49
-msgid "Date & Time"
+#, fuzzy
+msgid "Date and Time"
 msgstr "Dato & klokkeslet"
 
 #: ../src/modules/date.py:50
-msgid "Date & Time Configuration"
+#, fuzzy
+msgid "Date and Time Configuration"
 msgstr "Konfiguration af dato og klokkeslet"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr "Sæt dato og klokkeslet for systemet."
 
-#: ../src/modules/date.py:111
+#: ../src/modules/date.py:109
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -77,128 +83,48 @@ msgstr ""
 msgid "Finished installation!"
 msgstr ""
 
-#: ../src/modules/finished.py:42
+#: ../src/modules/finished.py:45
 msgid ""
 "Contratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 
-#: ../src/modules/hardware.py:27
+#: ../src/modules/soundcard_gui.py:50
 #, fuzzy
-msgid "Configure Hardware"
-msgstr "Konfigurér maskinel"
-
-#: ../src/modules/hardware.py:81
-msgid "Keyboard Map:"
-msgstr "Tastaturkort:"
-
-#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
-#: ../src/modules/hardware.py:124
-msgid "Configure..."
-msgstr "Konfigurér..."
-
-#: ../src/modules/hardware.py:96
-msgid "Mouse:"
-msgstr "Mus:"
-
-#: ../src/modules/hardware.py:118
-msgid "Sound card:"
+msgid "Sound Card"
 msgstr "Lydkort:"
 
-#: ../src/modules/hardware.py:135
-msgid "Networking:"
-msgstr "Netværk:"
+#: ../src/modules/soundcard_gui.py:51
+#, fuzzy
+msgid "Sound Card Configuration"
+msgstr "Konfiguration af dato og klokkeslet"
 
-#: ../src/modules/hardware.py:144
-msgid "Display:"
-msgstr "Skærm:"
-
-#: ../src/modules/hardware.py:153
-msgid "Printers:"
-msgstr "Skrivere:"
-
-#: ../src/modules/networking.py:19
-msgid "Network check"
-msgstr "Tjek af netværk"
-
-#: ../src/modules/networking.py:40
-msgid "Set up Networking"
-msgstr "Sæt netværk op"
-
-#: ../src/modules/networking.py:66
-msgid ""
-"A network connection was not detected.  Network connectivity is necessary "
-"for registering your system with RHN and for using the Red Hat Update Agent "
-"to update your system.  To set up a network connection, please click on the "
-"button below.\n"
+#: ../src/modules/soundcard_gui.py:52
+msgid "A sound card has been detected on your computer."
 msgstr ""
-"En netværksopkobling kunne ikke findes. Netværksadgang er nødvendig for at "
-"kunne registrere dit system med RHN og for at bruge Red Hats "
-"opdateringsagent for at opdatere dit system. Klik på knappen nedenunder for "
-"at konfigurere en netværksopkobling.\n"
 
-#: ../src/modules/networking.py:118
-msgid "Set up networking..."
-msgstr "Sæt netværk op..."
+#: ../src/modules/soundcard_gui.py:70
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
 
-#: ../src/modules/networking.py:154
-msgid "Configure using DHCP"
-msgstr "Konfigurer med DHCP"
-
-#: ../src/modules/networking.py:171
-msgid "IP Address"
-msgstr "IP-adresse"
-
-#: ../src/modules/networking.py:172
-msgid "Netmask"
-msgstr "Netmaske"
-
-#: ../src/modules/networking.py:173
-msgid "Network"
-msgstr "Netværk"
-
-#: ../src/modules/networking.py:174
-msgid "Broadcast"
-msgstr "Rundkastning (broadcast)"
-
-#: ../src/modules/networking.py:190
-msgid "%s:"
-msgstr "%s:"
-
-#: ../src/modules/networking.py:231
-msgid "Gateway"
-msgstr "Portner (gateway)"
-
-#: ../src/modules/networking.py:231
-msgid "Hostname"
-msgstr "Værtsnavn"
-
-#: ../src/modules/networking.py:231
-msgid "Primary DNS"
-msgstr "Primær DNS"
-
-#: ../src/modules/networking.py:232
-msgid "Secondary DNS"
-msgstr "Sekundær DNS"
-
-#: ../src/modules/networking.py:232
-msgid "Ternary DNS"
-msgstr "Tertiær DNS"
-
-#: ../src/modules/up2date.py:19
+#: ../src/modules/up2date.py:18
 msgid "Update Your System"
 msgstr ""
 
-#: ../src/modules/up2date.py:28
+#: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat opdateringsagent"
 
-#: ../src/modules/up2date.py:53
+#: ../src/modules/up2date.py:55
 #, fuzzy
 msgid ""
-"Now that you are registered with Red Hat Network, you can run the Red Hat "
-"Update Agent to receive the latest software packages directly from Red Hat.  "
+"The Red Hat Update Agent will register your machine with Red Hat Network so "
+"that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
@@ -208,12 +134,12 @@ msgstr ""
 "at bruge dette værktøj får du et altid opdateret Red Hat Linux-system med "
 "alle sikkerhedsrettelser, fejlrettelser og forbedringer af programpakker"
 
-#: ../src/modules/up2date.py:66
+#: ../src/modules/up2date.py:68
 #, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Registrér dit system hos Red Hat Network"
 
-#: ../src/modules/up2date.py:67
+#: ../src/modules/up2date.py:69
 msgid "No, I do not want to register my system."
 msgstr ""
 
@@ -225,13 +151,88 @@ msgstr "Velkommen"
 msgid "Welcome to Red Hat Linux!"
 msgstr "Velkommen til Red Hat Linux!"
 
-#: ../src/modules/welcome.py:42
+#: ../src/modules/welcome.py:45
 msgid ""
 "Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
 "before your system is ready to use.  The Red Hat Setup Agent will now guide "
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Configure Hardware"
+#~ msgstr "Konfigurér maskinel"
+
+#~ msgid "Keyboard Map:"
+#~ msgstr "Tastaturkort:"
+
+#~ msgid "Configure..."
+#~ msgstr "Konfigurér..."
+
+#~ msgid "Mouse:"
+#~ msgstr "Mus:"
+
+#~ msgid "Networking:"
+#~ msgstr "Netværk:"
+
+#~ msgid "Display:"
+#~ msgstr "Skærm:"
+
+#~ msgid "Printers:"
+#~ msgstr "Skrivere:"
+
+#~ msgid "Network check"
+#~ msgstr "Tjek af netværk"
+
+#~ msgid "Set up Networking"
+#~ msgstr "Sæt netværk op"
+
+#~ msgid ""
+#~ "A network connection was not detected.  Network connectivity is necessary "
+#~ "for registering your system with RHN and for using the Red Hat Update "
+#~ "Agent to update your system.  To set up a network connection, please "
+#~ "click on the button below.\n"
+#~ msgstr ""
+#~ "En netværksopkobling kunne ikke findes. Netværksadgang er nødvendig for "
+#~ "at kunne registrere dit system med RHN og for at bruge Red Hats "
+#~ "opdateringsagent for at opdatere dit system. Klik på knappen nedenunder "
+#~ "for at konfigurere en netværksopkobling.\n"
+
+#~ msgid "Set up networking..."
+#~ msgstr "Sæt netværk op..."
+
+#~ msgid "Configure using DHCP"
+#~ msgstr "Konfigurer med DHCP"
+
+#~ msgid "IP Address"
+#~ msgstr "IP-adresse"
+
+#~ msgid "Netmask"
+#~ msgstr "Netmaske"
+
+#~ msgid "Network"
+#~ msgstr "Netværk"
+
+#~ msgid "Broadcast"
+#~ msgstr "Rundkastning (broadcast)"
+
+#~ msgid "%s:"
+#~ msgstr "%s:"
+
+#~ msgid "Gateway"
+#~ msgstr "Portner (gateway)"
+
+#~ msgid "Hostname"
+#~ msgstr "Værtsnavn"
+
+#~ msgid "Primary DNS"
+#~ msgstr "Primær DNS"
+
+#~ msgid "Secondary DNS"
+#~ msgstr "Sekundær DNS"
+
+#~ msgid "Ternary DNS"
+#~ msgstr "Tertiær DNS"
 
 #~ msgid "Welcome to Red Hat Linux Beta!"
 #~ msgstr "Velkommen til Red Hat Linux Beta!"
@@ -275,10 +276,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Please choose the security level for the system."
 #~ msgstr "Sæt dato og klokkeslet for systemet."
-
-#, fuzzy
-#~ msgid "Keyboard Configuration"
-#~ msgstr "Konfiguration af dato og klokkeslet"
 
 #, fuzzy
 #~ msgid "Please select the mouse for the system."
