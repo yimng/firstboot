@@ -57,7 +57,7 @@ class childWindow:
                              "packages directly from Red Hat.  Using this tool will allow you "
                              "to always have the most up-to-date Red Hat Linux system "
                              "with all the security patches, bug fixes, and software "
-                             "package enhancements"))
+                             "package enhancements."))
             label.set_line_wrap(TRUE)
             label.set_size_request(400, -1)
             label.set_alignment(0.0, 0.5)
