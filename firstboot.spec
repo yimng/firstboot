@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.6
-Release: 5
+Version: 0.9.7
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -62,6 +62,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 01 2002 Brent Fox <bfox@redhat.com> 0.9.7-1
+- fix typo in finished module
+
 * Tue Jul 30 2002 Brent Fox <bfox@redhat.com> 0.9.6-5
 - merge Xresources on startup.  Fixes bug #68724
 
