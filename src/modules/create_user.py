@@ -20,6 +20,7 @@ class childWindow:
     moduleName = (_("Create A User"))
 
     def launch(self, doDebug = None):
+        self.doDebug = doDebug
         if doDebug:
             print "initializing newuser module"
 
@@ -88,14 +89,33 @@ class childWindow:
         return self.vbox, eventBox
 
     def apply(self, notebook):
+#        if self.doDebug:
+#            return 0
+
         if self.usernameEntry.get_text() == "":
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
-                                    (_("A username was not specified.  Please enter a username.")))
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_YES_NO,
+                                    (_("A user account was not created.  Are you sure that you want " \
+                                       "to continue without creating a user account?.")))
             dlg.set_position(gtk.WIN_POS_CENTER)
             dlg.set_modal(gtk.TRUE)
-            okButton = dlg.add_button('gtk-ok', 0)
             rc = dlg.run()
             dlg.destroy()
+
+            if rc == gtk.RESPONSE_YES:
+                return 0
+            else:
+                return None
+
+        if self.passwordEntry.get_text() != self.confirmEntry.get_text():
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
+                                    (_("The passwords do not match.  Please enter the password again.")))
+            dlg.set_position(gtk.WIN_POS_CENTER)
+            dlg.set_modal(gtk.TRUE)
+            rc = dlg.run()
+            dlg.destroy()
+            self.passwordEntry.set_text("")
+            self.confirmEntry.set_text("")
+            self.passwordEntry.grab_focus()
             return None
             
         return 0
