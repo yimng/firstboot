@@ -241,7 +241,7 @@ class childWindow:
 
     def isPasswordOk(self, str, widget):
         for i in str:
-            if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation and i not in whitespace:
+            if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation and i not in string.whitespace:
                 self.showErrorMessage(_("The password contains invalid characters.  "
                                         "Please use only ASCII characters.") % tag)
                 widget.set_text("")
