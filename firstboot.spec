@@ -63,7 +63,9 @@ fi
 
 %changelog
 * Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-3
-- work on race condition
+- Try to fix race condition
+- Have init script return 0 instead of 1
+- Make Forward button grab the focus
 
 * Wed Aug 07 2002 Brent Fox <bfox@redhat.com> 0.9.9-1
 - Rebuild for Jay, who is being a punk ;)
