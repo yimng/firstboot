@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 ORGANIZATION
+# pclouds <pclouds@gmx.net>, 2002.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot VERSION\n"
+"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"PO-Revision-Date: 2003-07-26 21:14+0700\n"
+"Last-Translator: pclouds <pclouds@gmx.net>\n"
+"Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+
+
+#: ../src/exceptionWindow.py:31
+msgid "An error has occurred in the %s module."
+msgstr "Lỗi trong module %s."
+
+#: ../src/exceptionWindow.py:36
+msgid ""
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
+msgstr ""
+"Vì có vấn đề với module %s,\n"
+"Trợ tá Cài đặt Red Hat sẽ không nạp module này và\n"
+"sẽ thử chạy những module còn lại."
+
+#: ../src/exceptionWindow.py:40
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
+msgstr ""
+"Vui lòng thông báo lỗi của 'firstboot' cho hệ thống dò\n"
+"lỗi Red Hat tại http://www.redhat.com/bugzilla.\n"
+"Một bản sao thông tin debug được lưu vào %s\n"
+"Nhớ gửi kèm tập tin này với bản báo cáo lỗi.\n"
+
+#: ../src/firstboot.py:93
+msgid ""
+"Firstboot has already been run once on this system.\n"
+msgstr "Firstboot đã chạy trên hệ thống này rồi.\n"
+
+#: ../src/firstboot.py:94
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Để chạy firstboot từ dòng lệnh, hãy chạy những lệnh sau:"
+
+#: ../src/firstboot.py:99
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "Để chạy firstboot khi hệ thống khởi động, hãy chạy những lệnh sau:"
+
+#: ../src/firstboot.py:120
+msgid "Firstboot does not run in runlevel 3."
+msgstr "Firstboot không chạy trong runlevel 3."
+
+#: ../src/firstbootWindow.py:258
+msgid "_Next"
+msgstr "_Tới"
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
+msgid "Additional CDs"
+msgstr "CD bổ sung"
+
+#: ../src/modules/additional_cds.py:39
+msgid "If you have any of the CDs listed below, you can install packages from them by inserting the CD and clicking the appropriate button."
+msgstr "Nếu bạn có bất cứ CD nào dưới đây, bạn có thể cài đặt các gói phần mềm từ đó bằng cách cho CD vào và nhấn nút thích hợp."
+
+#: ../src/modules/additional_cds.py:51
+msgid "Red Hat Linux Documentation CD"
+msgstr "CD Tài liệu Red Hat Linux"
+
+#: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
+#: ../src/modules/additional_cds.py:77
+msgid "Install..."
+msgstr "Cài đặt..."
+
+#: ../src/modules/additional_cds.py:62
+msgid "Red Hat Linux Installation CD"
+msgstr "CD Cài đặt Red Hat Linux"
+
+#: ../src/modules/additional_cds.py:99
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "Không tìm thấy CD-ROM. Vui lòng chèn đĩa CD-ROM vào ổ đĩa và nhấn \"Đồng ý\" để tiếp tục."
+
+#: ../src/modules/create_user.py:22
+msgid "User Account"
+msgstr "Tài khoản Người dùng"
+
+#: ../src/modules/create_user.py:47
+msgid "It is recommended that you create a personal user account for normal (non-administrative) use.  To create a personal account, provide the requested information."
+msgstr "Bạn được khuyến cáo nên tạo một tài khoản cá nhân cho những công việc bình thường (không phải những công việc quản lý hệ thống). Để tạo tài khoản cá nhân, hãy cung cấp các thông tin được yêu cầu."
+
+#: ../src/modules/create_user.py:57
+msgid "_Username:"
+msgstr "_Tên người dùng:"
+
+#: ../src/modules/create_user.py:64
+msgid "Full _Name:"
+msgstr "_Họ và tên:"
+
+#: ../src/modules/create_user.py:71
+msgid "_Password:"
+msgstr "_Mật khẩu:"
+
+#: ../src/modules/create_user.py:78
+msgid "Confir_m Password:"
+msgstr "_Xác nhận mật khẩu:"
+
+#: ../src/modules/create_user.py:94
+msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "Nếu bạn cần dùng xác thực mạng như Kerberos hay NIS, vui lòng nhấn nút Dùng Đăng nhập Mạng."
+
+#: ../src/modules/create_user.py:104
+msgid "_Use Network Login..."
+msgstr "_Dùng Đăng nhập Mạng..."
+
+#: ../src/modules/create_user.py:137
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "Bạn được khuyến cáo nên tạo một tài khoản cá nhân. Nếu bạn tiếp tục mà không có tài khoản cá nhân, bạn chỉ có thể đăng nhập với quyền root, nhưng chỉ nên dùng root cho các thao tác quản lý hệ thống mà thôi."
+
+#: ../src/modules/create_user.py:145
+msgid "_Continue"
+msgstr "_Tiếp tục"
+
+#: ../src/modules/create_user.py:146
+msgid "Create _account"
+msgstr "_Tạo tài khoản"
+
+#: ../src/modules/create_user.py:172
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Mật khẩu không khớp. Vui lòng nhập lại mật khẩu."
+
+#: ../src/modules/create_user.py:180
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Mật khẩu quá ngắn. Hãy dùng ít nhất 6 ký tự."
+
+#: ../src/modules/create_user.py:191
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "Tên người dùng '%s' được dành riêng cho hệ thống. Vui lòng dùng tên khác."
+
+#: ../src/modules/create_user.py:238
+msgid "The user name must be less than 33 characters long."
+msgstr "Tên người dùng phải ngắn hơn 33 ký tự."
+
+#: ../src/modules/create_user.py:244
+msgid "The user name may not begin with a number."
+msgstr "Tên người dùng không thể bắt đầu bằng số."
+
+#: ../src/modules/create_user.py:252
+msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
+msgstr "Tên người dùng '%s' chứa khoảng trắng. Vui lòng loại bỏ khoảng trắng."
+
+#: ../src/modules/create_user.py:259
+msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
+msgstr "Tên người dùng '%s' chứa ký tự phân cách. Vui lòng loại bỏ chúng."
+
+#: ../src/modules/create_user.py:266
+msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
+msgstr "Tên người dùng '%s' chứa chữ hoa. Vui lòng không dùng chữ hoa."
+
+#: ../src/modules/create_user.py:273
+msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Tên người dùng '%s' chứa ký tự không hợp lệ. Vui lòng chỉ dùng những ký tự ASCII."
+
+#: ../src/modules/create_user.py:283
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Mật khẩu chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự ASCII."
+
+#: ../src/modules/create_user.py:295
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Tên '%s' chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự ASCII."
+
+#: ../src/modules/date.py:51
+msgid "Date and Time"
+msgstr "Ngày giờ"
+
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr "Vui lòng đặt ngày giờ cho hệ thống."
+
+#: ../src/modules/date.py:116
+msgid "Please enter a time server."
+msgstr "Vui lòng nhập Server Thời gian."
+
+#: ../src/modules/date.py:118 ../src/modules/date.py:152
+msgid "Error"
+msgstr "Lỗi"
+
+#: ../src/modules/date.py:145
+msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
+msgstr "Không thể tạo kết nối với %s. Hoặc %s không hoạt động, hoặc kết nối NTP bị phong tỏa bởi tường lửa."
+
+#: ../src/modules/date.py:182
+msgid "Contacting NTP server.  Please wait..."
+msgstr "Đang liên lạc NTP Server. Vui lòng chờ..."
+
+#: ../src/modules/finished.py:19
+msgid "Finish Setup"
+msgstr "Hoàn tất cài đặt"
+
+#: ../src/modules/finished.py:33
+msgid "Your system is now set up and ready to use.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Hệ thống bạn đã được cài đặt xong và có thể được sử dụng. Vui lòng nhấn nút \"Tới\" ở góc phải, dưới để tiếp tục."
+
+#: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
+msgid "Sound Card"
+msgstr "Card Âm thanh"
+
+#: ../src/modules/soundcard_gui.py:51
+msgid "A sound card has been detected on your computer."
+msgstr "Tìm thấy Card Âm thanh trên máy."
+
+#: ../src/modules/soundcard_gui.py:74
+msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "Nhấn nút \"Phát âm thử\" để nghe âm thanh mẫu. Bạn sẽ nghe một loạt ba âm thanh. Âm đầu tiên bên phải, âm thứ hai bên trái, và âm thứ ba ở giữa."
+
+#: ../src/modules/up2date.py:19
+msgid "Red Hat Network"
+msgstr "Mạng Red Hat"
+
+#: ../src/modules/up2date.py:36
+msgid ""
+"This step will register your system with a complimentary Demo Account from Red Hat Network so that you can receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat Network Basic Service. To access the free trial, please refer to the product activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more information or to subscribe to Red Hat Network Basic Service. \n"
+msgstr ""
+"Bước này dùng để đăng ký hệ thống của bạn với Mạng Red Hat bằng tài khoản Demo được tặng, để bạn có thể trực tiếp nhận các gói phần mềm mới nhất từ Red Hat. Công cụ này còn cho phép bạn luôn cập nhật hệ thống với các bản cập nhật về bảo mật, sửa lỗi, và các cải tiến phần mềm.\n"
+"\n"
+"Nếu bạn mua sản phẩm này, bạn nhận được bản dùng thử miễn phí của Dịch vụ Cơ bản của Mạng Red Hat. Để truy cập, vui lòng tham khác thẻ kích hoạt sản phẩm trong hộp để biết các chỉ dẫn chi tiết.\n"
+"\n"
+"Nếu bạn không mua sản phẩm này, vui lòng ghé thăm http://rhn.redhat.com để biết thêm thông tin hoặc để đăng ký Dịch vụ Cơ bản của Mạng Red Hat.\n"
+
+#: ../src/modules/up2date.py:55
+msgid "_Yes, I want to register my system with Red Hat Network."
+msgstr "_Có, tôi muốn đăng ký hệ thống với Mạng Red Hat."
+
+#: ../src/modules/up2date.py:56
+msgid "_No, I do not want to register my system."
+msgstr "_Không, tôi không muốn đăng ký."
+
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+msgid "Welcome"
+msgstr "Chào mừng"
+
+#: ../src/modules/welcome.py:35
+msgid "There are a few more steps to take before your system is ready to use.  The Red Hat Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Bạn cần thực hiện vài bước nữa, trước khi hệ thống có thể sẵn sàng hoạt động. Bây giờ, Trợ tá Cài đặt Red Hat sẽ hướng dẫn bạn thực hiện các cấu hình cơ bản. Vui lòng nhấn nút \"Tới\" tại góc dưới, bên phải để tiếp tục."
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr "Không"
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr "Có"
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by guiding you through a series of steps.  Setup Agent requires the X Window System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose \"No\", the system will continue booting and you will never see this message again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+"Trợ tá Cài đặt Red Hat có thể hỗ trợ bạn cấu hình máy bằng cách hướng dẫn bạn qua các bước cài đặt. Trợ lý Cài đặt cần X Window System để chạy.\n"
+"\n"
+"Nếu bạn muốn chạy Trợ lý Cài đặt, vui lòng chọn \"Có\". Nếu bạn chọn \"Không\", hệ thống sẽ tiếp tục khởi động và không bao giờ hiện thông báo này nữa. Bạn có muốn chạy Trợ tá Cài đặt bây giờ không?"
+
+#: ../src/textWindow.py:24
+msgid "Red Hat Setup Agent"
+msgstr "Trợ tá Cài đặt Red Hat"
+
