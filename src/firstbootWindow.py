@@ -395,7 +395,12 @@ class firstbootWindow:
         for module in list:
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
-            exec(cmd)
+
+            try:
+                exec(cmd)
+            except:
+                print _("module import of %s failed: %s") % (module,sys.exc_type)
+                continue
 
             # if the exec fails, skip this module
             try:
