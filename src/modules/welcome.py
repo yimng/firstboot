@@ -15,7 +15,7 @@ _=gettext.gettext
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 0
+    runPriority = 10
     moduleName = (_("Welcome"))
 
     def launch(self, doDebug = None):
