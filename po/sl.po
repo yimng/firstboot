@@ -1,20 +1,23 @@
+# translation of sl.po to slovenščina
 # SLOVENIAN TRANSLATION OF FIRST BOOT.
-# Copyright (C) 2003 Free Software Foundation, Inc.
-# Roman Maurer <roman@lugos.si>, 2003.
+# Copyright (C) 2003,2004 Free Software Foundation, Inc.
 # $Id$
 # $Source$
+# Roman Maurer <roman@lugos.si>, 2003.
+# Rok Papez <rok.papez@lugos.si>, 2004
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot 9.1\n"
+"Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2003-09-18 10:23+0200\n"
-"Last-Translator: Roman Maurer <roman@lugos.si>\n"
-"Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2004-03-28 15:19+0200\n"
+"Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
+"Language-Team: slovenščina <translation-team-sl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0\n"
 
 #. # eula_strings.py
 #. #
@@ -339,58 +342,51 @@ msgstr "Dobrodošli"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Overjanje"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration"
-msgstr "_Spremeni mrežne nastavitve..."
+msgstr "Nastavitve požarnega zidu"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration"
-msgstr "_Spremeni mrežne nastavitve..."
+msgstr "Nastavitve tipkovnice"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Network configuration"
-msgstr "_Spremeni mrežne nastavitve..."
+msgstr "Omrežne nastavitve"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Printer configuration"
-msgstr "_Spremeni mrežne nastavitve..."
+msgstr "Nastavitve tiskalnika"
 
 #: ../src/textWindow.py:38
 msgid "System services"
-msgstr ""
+msgstr "Storitve Sistema"
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "Sound card configuration"
-msgstr "_Spremeni mrežne nastavitve..."
+msgstr "Nastavitev zvočne kartice"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Timezone configuration"
-msgstr "_Spremeni mrežne nastavitve..."
+msgstr "Nastavitev časovnega pasu"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr ""
+msgstr "Orodje za zagon"
 
 #: ../src/textWindow.py:42
 msgid "Exit"
-msgstr ""
+msgstr "Izhod"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Izberite kaj želite spremeniti"
 
 #: ../src/textWindow.py:50
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Nastavitveni agent Red Hat"
+msgstr "Nastavitveni agent"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -449,10 +445,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Programa autorun ni moč najti na CD. Kliknite \"V redu\" za nadaljevanje."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Programa autorun ni moč najti na CD. Kliknite \"V redu\" za nadaljevanje."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -592,17 +586,14 @@ msgstr ""
 "ASCII."
 
 #: ../src/modules/create_user.py:291
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Geslo vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -694,11 +685,11 @@ msgstr "Povezujem se s strežnikom NTP. Prosim, počakajte..."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Zaslon"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Izberite ločljivost in barvno globino"
 
 #. Add icon to the top frame
 #. #
@@ -845,15 +836,14 @@ msgid "Please set the timezone for the system."
 msgstr "Prosim, izberite časovni pas tega sistema."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Preden bo sistem pripravljen za rabo, morate narediti še nekaj korakov. "
-"Nastavitveni agent Red Hat vas bo vodil po nekaj osnovnih namestitvah. Za "
-"nadaljevanje, prosim, kliknite gumb \"Naprej\" v spodnjem desnem kotu."
+"Nastavitveni agent vas bo vodil po nekaj osnovnih nastavitvah. Za "
+"nadaljevanje kliknite gumb \"Naprej\" v spodnjem desnem kotu."
 
 #~ msgid "Firstboot has already been run once on this system.\n"
 #~ msgstr "Firstboot je bil v tem sistemu že pognan.\n"
@@ -939,3 +929,4 @@ msgstr ""
 
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "_Ne, svojega sistema ne želim registrirati."
+
