@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.9
+Version: 1.1.10
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 14 2003 Brent Fox <bfox@redhat.com> 1.1.10-1
+- allow underscores and dashes in usernames (bug #99115)
+
 * Wed Aug 13 2003 Brent Fox <bfox@redhat.com> 1.1.9-1
 - replace BuildRequires on python-tools with gettext
 
