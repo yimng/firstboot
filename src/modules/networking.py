@@ -64,7 +64,6 @@ class childWindow:
 
         self.deviceBox = gtk.HBox()
         self.deviceBox.pack_start(self.deviceSW, gtk.TRUE)
-
         
         col = gtk.TreeViewColumn(_("Network Device"), gtk.CellRendererText(), text = 0)
         self.deviceView.append_column(col)
@@ -123,116 +122,9 @@ class childWindow:
                         self.deviceStore.set_value(iter, 0, dev)
                         self.deviceStore.set_value(iter, 1, value)
 
-    def grabFocus(self):
-        self.usernameEntry.grab_focus()
-
     def apply(self, notebook):
-        if self.doDebug:
-            return 0
-
-        username = self.usernameEntry.get_text()
-        username = string.strip(username)
-        
-        if username == "":
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_NONE,
-                                    (_("It is highly recommended that a personal user account be "
-                                       "created.  If you continue without an account, you "
-                                       "can only log in with the root account, which is reserved "
-                                       "for administrative use only.")))
-
-            dlg.set_position(gtk.WIN_POS_CENTER)
-            dlg.set_modal(gtk.TRUE)
-
-            dlg.add_button(_("_Continue"), 0)
-            b = dlg.add_button(_("Create _account"), 1)
-            b.grab_focus()
-
-            rc = dlg.run()
-            dlg.destroy()
-
-            if rc == 0:
-                return 0
-            else:
-                self.usernameEntry.grab_focus()
-                return None
-
-        if not self.isUsernameOk(username, self.usernameEntry):
-            return None
-
-        password = self.passwordEntry.get_text()
-        confirm = self.confirmEntry.get_text()
-
-        #Check for ascii-only strings
-        if not self.isPasswordOk(password, self.passwordEntry):
-            return None
-        
-        if not self.isPasswordOk(confirm, self.confirmEntry):
-            return None
-
-        if password != confirm:
-            self.showErrorMessage(_("The passwords do not match.  Please enter "
-                                    "the password again."))
-            self.passwordEntry.set_text("")
-            self.confirmEntry.set_text("")
-            self.passwordEntry.grab_focus()
-            return None
-        
-        elif len (password) < 6:
-            self.showErrorMessage(_("The password is too short.  Please use at "
-                                    "least 6 characters."))
-
-            self.passwordEntry.set_text("")
-            self.confirmEntry.set_text("")
-            self.passwordEntry.grab_focus()                
-            return None
-
-        user = self.admin.lookupUserByName(username)
-
-        if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
-            self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
-                                    "specify another username." % username))
-            self.usernameEntry.set_text("")
-            self.usernameEntry.grab_focus()
-            return None
-
-        fullName = self.fullnameEntry.get_text()
-
-        #Check for ascii-only strings
-        if not self.isNameOk(fullName, self.fullnameEntry):
-            return None
-
-        #If we get to this point, all the input seems to be valid.  Let's add the user
-        if user == None:
-            #if the user doesn't already exist
-            userEnt = self.admin.initUser(username)
-        else:
-            userEnt = user
-            
-        userEnt.set(libuser.GECOS, [fullName])
-
-        groupEnt = self.admin.initGroup(username)
-        gidNumber = groupEnt.get(libuser.GIDNUMBER)[0]
-        userEnt.set(libuser.GIDNUMBER, [gidNumber])
-
-        if user == None:
-            self.admin.addUser(userEnt)
-            self.admin.addGroup(groupEnt)
-        else:
-            self.admin.modifyUser(userEnt)
-            self.admin.modifyGroup(groupEnt)            
-
-        self.admin.setpassUser(userEnt, self.passwordEntry.get_text(), 0)
-        
         return 0
 
-    def showErrorMessage(self, text):
-        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
-        dlg.set_position(gtk.WIN_POS_CENTER)
-        dlg.set_modal(gtk.TRUE)
-        rc = dlg.run()
-        dlg.destroy()
-        return None
-        
     def run_neat(self, *args):
         #Create a gtkInvisible dialog to block until up2date is complete
         i = gtk.Invisible ()
