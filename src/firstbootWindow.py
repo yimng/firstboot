@@ -81,8 +81,6 @@ class firstbootWindow:
 
         # Import each module, and filter out those
         for module in list:
-#            print module
-#sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
@@ -200,12 +198,12 @@ class firstbootWindow:
 
 
         #Accelerators aren't currently working in GTK 2.0   Grrrrrrr.
-#        group = gtk.AccelGroup()
-#        self.nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
-#                                   gtk.gdk.RELEASE_MASK, 0)
-#        self.backButton.add_accelerator('clicked', group, GDK.F11,
-#                                   GDK.RELEASE_MASK, 0)
-#        win.add_accel_group(group)
+        group = gtk.AccelGroup()
+        self.nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
+                                   gtk.gdk.RELEASE_MASK, 0)
+        self.backButton.add_accelerator('clicked', group, gtk.keysyms.F11,
+                                   gtk.gdk.RELEASE_MASK, 0)
+        win.add_accel_group(group)
 
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
@@ -237,15 +235,12 @@ class firstbootWindow:
         try:
             module.apply(self.notebook)
         except:
-            print "apply failed"
             pass
 
         gtk.mainquit()
         print "closing"
 
     def okClicked(self, *args):
-#        print self.moduleList
-#        print "we're leaving page ", self.notebook.get_current_page()
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
@@ -273,7 +268,6 @@ class firstbootWindow:
         if self.notebook.get_current_page() == 0:
             self.backButton.set_sensitive(gtk.FALSE)
 
-#        print self.bb.children()
         if self.finishButton in self.bb.children():
             self.bb.remove(self.finishButton)
             self.bb.pack_end(self.nextButton)

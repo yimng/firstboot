@@ -24,11 +24,5 @@ if not os.environ.has_key('DISPLAY'):
         args = ['--display=:1']
         os.execv(path, args)
 
-#from splashscreen import splashScreenShow
-#splashScreenShow()
-
-#from window import showWindow
-#showWindow()
-
 import firstbootWindow
 firstbootWindow.firstbootWindow()

@@ -25,6 +25,7 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
+        p = None
         try:
             p = gtk.gdk.pixbuf_new_from_file("pixmaps/boxset_standard.png")
         except:
@@ -88,11 +89,9 @@ class childWindow:
         return self.vbox, eventBox
 
     def create_button(self, image, name):
-        print image, name
         p = None
         try:
             path = string.join(["pixmaps/", image], "")
-            print path
             p = gtk.gdk.pixbuf_new_from_file(path)
         except:
             pass
@@ -113,32 +112,23 @@ class childWindow:
 
     def autorun(self, *args):
         mount = os.fork()
-        print mount
         if (not mount):
             os.execv("/bin/mount", ["mount", "/dev/cdrom"])
-            print "I'm finished"
-
-        print "Here", mount
-
 
         pid, status = os.waitpid(mount, 0)
-        print "First", pid, status
 
         if os.WIFEXITED(status) and (os.WEXITSTATUS(status) == 0):
             try:
                 os.stat('/mnt/cdrom/autorun')
-                print "CD is mounted"
 
                 win = os.fork()
                 if not win:
-                    print "launching cd installer"
                     os.execv("/mnt/cdrom/autorun", ["autorun"])
             except:
-                print "not mounted yet"
+                pass
                 
     def write_file(self):
         pass
 
     def apply(self, notebook):
-        print "nothing to do in additional_cds"
         pass
