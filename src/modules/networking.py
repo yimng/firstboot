@@ -5,10 +5,18 @@ import os
 from socket import gethostname
 from socket import gethostbyname
 
+##
+## I18N
+## 
+import gettext
+gettext.bindtextdomain ("firstboot", "/usr/share/locale")
+gettext.textdomain ("firstboot")
+_=gettext.gettext
+
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
-    moduleName = "Network check"
+    moduleName = (_("Network check"))
 
     def __init__(self):
         self.netDevs = self.networkDevices()
@@ -27,7 +35,7 @@ class childWindow:
             print "network is not functional...showing screen"
             self.mainVBox = gtk.VBox()
 
-            title = gtk.Label("Set up Networking")
+            title = gtk.Label(_("Set up Networking"))
             title.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
             titleBox = gtk.HBox()
@@ -53,10 +61,10 @@ class childWindow:
             internalVBox = gtk.VBox(gtk.FALSE, 10)
             internalVBox.set_border_width(10)
 
-            label = gtk.Label("A network connection was not detected.  Network connectivity "
+            label = gtk.Label(_("A network connection was not detected.  Network connectivity "
                              "is necessary for registering your system with RHN and for using "
                               "the Red Hat Update Agent to update your system.  "
-                              "To set up a network connection, please click on the button below.\n")
+                              "To set up a network connection, please click on the button below.\n"))
 
             label.set_line_wrap(gtk.TRUE)
             label.set_size_request(500, -1)
@@ -103,7 +111,7 @@ class childWindow:
         bb.set_layout(gtk.BUTTONBOX_END)
         bb.set_border_width(10)
 #        bb.set_spacing(10)
-        self.yesButton = gtk.Button("Set up networking...")
+        self.yesButton = gtk.Button(_("Set up networking..."))
         self.yesButton.connect("clicked", self.setupNetwork)
         bb.pack_start(self.yesButton, gtk.FALSE)
         a = gtk.Alignment()
@@ -139,7 +147,7 @@ class childWindow:
         for dev in self.netDevs:
             devbox = gtk.VBox()
             align = gtk.Alignment()
-            DHCPcb = gtk.CheckButton(("Configure using DHCP"))
+            DHCPcb = gtk.CheckButton(_("Configure using DHCP"))
 
             align.add(DHCPcb)
             devbox.pack_start(align, gtk.FALSE)
@@ -156,10 +164,10 @@ class childWindow:
 
             devbox.pack_start(gtk.HSeparator(), gtk.FALSE, padding=3)
 
-            options = [(("IP Address"), "ipaddr"),
-                       (("Netmask"),    "netmask"),
-                       (("Network"),    "network"),
-                       (("Broadcast"),  "broadcast")]
+            options = [(_("IP Address"), "ipaddr"),
+                       (_("Netmask"),    "netmask"),
+                       (_("Network"),    "network"),
+                       (_("Broadcast"),  "broadcast")]
             ipTable = gtk.Table(len(options), 2)
             # this is the iptable used for DNS, et. al
             self.ipTable = gtk.Table(len(options), 2)
@@ -175,7 +183,7 @@ class childWindow:
 #            forward = lambda widget, box=box: box.focus(DIR_TAB_FORWARD)
 
             for t in range(len(options)):
-                label = gtk.Label("%s:" %(options[t][0],))
+                label = gtk.Label(_("%s:") %(options[t][0],))
                 label.set_alignment(0.0, 0.5)
                 ipTable.attach(label, 0, 1, t, t+1, gtk.FILL, 0, 10)
                 entry = gtk.Entry(15)
@@ -216,8 +224,8 @@ class childWindow:
 #            box.pack_start(a, gtk.FALSE, padding=10)
 
 
-        options = [("Hostname"), ("Gateway"), ("Primary DNS"),
-                   ("Secondary DNS"), ("Ternary DNS")]
+        options = [(_("Hostname")), (_("Gateway")), (_("Primary DNS")),
+                   (_("Secondary DNS")), (_("Ternary DNS"))]
 
         for i in range(len(options)):
             label = gtk.Label("%s:" %(options[i],))

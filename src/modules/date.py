@@ -32,16 +32,23 @@ sys.path.append('/usr/share/dateconfig/')
 import date_gui
 import dateBackend
 
-from rhpl.translate import _, N_
 from rhpl.firstboot_gui_window import FirstbootGuiWindow
+
+##
+## I18N
+## 
+import gettext
+gettext.bindtextdomain ("firstboot", "/usr/share/locale")
+gettext.textdomain ("firstboot")
+_=gettext.gettext
 
 class TimeWindow(FirstbootGuiWindow):
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 90
-    moduleName = N_("Date & Time")
-    windowTitle = N_("Date & Time Configuration")
+    moduleName = _("Date & Time")
+    windowTitle = _("Date & Time Configuration")
     htmlTag = "time"
-    shortMessage = N_("Please set the date and time for the system.")
+    shortMessage = _("Please set the date and time for the system.")
 
     def getNext(self):
         pass

@@ -12,6 +12,7 @@ sys.path.append('/home/bfox/redhat/redhat-config-mouse/src')
 import soundcardBackend
 import rhpl.keyboard as keyboard
 
+
 ##
 ## I18N
 ## 
@@ -24,7 +25,7 @@ _=gettext.gettext
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 100
-    moduleName = "Configure hardware"
+    moduleName = (_("Configure hardware"))
 
     def launch(self, doDebug=None):
         self.doDebug = doDebug

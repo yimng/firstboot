@@ -5,10 +5,18 @@ import gobject
 import sys
 import functions
 
+##
+## I18N
+## 
+import gettext
+gettext.bindtextdomain ("firstboot", "/usr/share/locale")
+gettext.textdomain ("firstboot")
+_=gettext.gettext
+
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 0
-    moduleName = "Welcome"
+    moduleName = (_("Welcome"))
 
     def launch(self, doDebug = None):
         if doDebug:
@@ -17,7 +25,7 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        label = gtk.Label("Welcome to Red Hat Linux Beta!")
+        label = gtk.Label(_("Welcome to Red Hat Linux Beta!"))
         label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
         titleBox = gtk.HBox()

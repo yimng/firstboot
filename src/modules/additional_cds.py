@@ -5,13 +5,22 @@ import gobject
 import os
 import functions
 
+##
+## I18N
+## 
+import gettext
+gettext.bindtextdomain ("firstboot", "/usr/share/locale")
+gettext.textdomain ("firstboot")
+_=gettext.gettext
+
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 1000
-    moduleName = "Additional CDs"
+    moduleName = (_("Additional CDs"))
 
     def __init__(self):
-        self.additionalDiscs = {"Red Hat Documentation CD" : "docs.png", "Linux Application CD" : "lacd.png"}
+        self.additionalDiscs = {(_("Red Hat Documentation CD")) : "docs.png",
+                                (_("Linux Application CD")) : "lacd.png"}
                 
     def launch(self, doDebug=None):
         if doDebug:
@@ -46,10 +55,10 @@ class childWindow:
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        label = gtk.Label("If you have additional CDs from the Red Hat Linux box "
+        label = gtk.Label(_("If you have additional CDs from the Red Hat Linux box "
                           "set, such as the Red Hat Linux Documentation CD or the "
                           "Linux Applications CD, please insert the disc now and "
-                          "click the button below.")
+                          "click the button below."))
         
         label.set_line_wrap(TRUE)
         label.set_size_request(400, -1)
