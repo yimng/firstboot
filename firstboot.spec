@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.12
+Version: 1.1.1
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -72,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Jun 16 2003 Brent Fox <bfox@redhat.com> 1.1.1-1
+- create a timezone module (bug #91984)
+
 * Tue Jun 10 2003 Brent Fox <bfox@redhat.com> 1.0.12-1
 - change "Forward" button to "Next"
 
