@@ -88,4 +88,14 @@ class childWindow:
         return self.vbox, eventBox
 
     def apply(self, notebook):
-        return 1
+        if self.usernameEntry.get_text() == "":
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
+                                    (_("A username was not specified.  Please enter a username.")))
+            dlg.set_position(gtk.WIN_POS_CENTER)
+            dlg.set_modal(gtk.TRUE)
+            okButton = dlg.add_button('gtk-ok', 0)
+            rc = dlg.run()
+            dlg.destroy()
+            return None
+            
+        return 0
