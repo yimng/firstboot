@@ -10,7 +10,7 @@ if __name__ == "__main__":
     signal.signal (signal.SIGINT, signal.SIG_DFL)
 
 
-def startWindowManager(self):    
+def startWindowManager():    
     wm_pid = os.fork()
 
     if (not wm_pid):
@@ -35,7 +35,7 @@ def startWindowManager(self):
 
     return wm_pid
 
-def setRootBackground(self):
+def setRootBackground():
     root_pid = os.fork()
 
     if (not root_pid):
