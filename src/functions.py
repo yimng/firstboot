@@ -85,8 +85,11 @@ def imageFromPath(filename):
         pix.set_from_pixbuf(p)        
         return pix
 
-def start_process(path):
-    args = [path]
+def start_process(path, args = None):
+    if args == None:
+        args = [path]
+    else:
+        args = [path, args]
 
     child = os.fork()
 

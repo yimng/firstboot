@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.15
-Release: 2
+Version: 1.1.16
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Aug 29 2003 Brent Fox <bfox@redhat.com> 1.1.16-1
+- call authconfig with --firstboot flag correctly (bug #103367)
+
 * Thu Aug 28 2003 Brent Fox <bfox@bfox.devel.redhat.com> 1.1.15-2
 - bump relnum and rebuild
 
