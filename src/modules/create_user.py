@@ -75,14 +75,22 @@ class childWindow:
         internalVBox.pack_start(table, gtk.TRUE, 15)
         self.vbox.pack_start(internalVBox, gtk.FALSE, 5)
 
+        users = self.admin.enumerateUsersFull()
+        self.normalUsersList = []
+        for userEnt in users:
+            uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+            if uidNumber == 500:
+                self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+                self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
+
         return self.vbox, title_pix, msg
 
     def grabFocus(self):
         self.usernameEntry.grab_focus()
 
     def apply(self, notebook):
-        if self.doDebug:
-            return 0
+#        if self.doDebug:
+#            return 0
 
         username = self.usernameEntry.get_text()
 
