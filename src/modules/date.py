@@ -103,7 +103,7 @@ class TimeWindow(FirstbootGuiWindow):
 
                 if sysTimeServer == "":
                     #They want ntp but have not set a server
-                    text = (_("A time server was not specified"))
+                    text = (_("Please enter a time server."))
                     dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
                     dlg.set_title(_("Error"))
                     dlg.set_default_size(100, 100)
