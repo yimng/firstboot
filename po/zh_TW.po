@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "POT-Creation-Date: 2003-09-11 17:51-0400\n"
-"PO-Revision-Date: 2003-09-01 08:38+1000\n"
+"PO-Revision-Date: 2003-09-12 08:57+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -22,28 +22,27 @@ msgstr ""
 #. #
 #: ../src/eula_strings.py:10
 msgid "License Agreement"
-msgstr ""
+msgstr "授權同意書"
 
 #: ../src/eula_strings.py:11
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "是的，我同意授權同意書(_Y)"
 
 #: ../src/eula_strings.py:12
-#, fuzzy
 msgid "N_o, I do not agree"
-msgstr "不，我不想要註冊我的系統(_O)。"
+msgstr "不，我不同意(_O)"
 
 #: ../src/eula_strings.py:13
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "您想要再閱讀或再考慮一次授權同意書嗎？"
 
 #: ../src/eula_strings.py:14
 msgid "_Reread license"
-msgstr ""
+msgstr "重新閱讀授權書(_R)"
 
 #: ../src/eula_strings.py:15
 msgid "_Shut down"
-msgstr ""
+msgstr "關閉(_S)"
 
 #. !/usr/bin/python2.2
 #. #
@@ -100,13 +99,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #. Firstboot has never been run before, so start it up
@@ -343,8 +340,7 @@ msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並�
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:133
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續。"
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -473,15 +469,13 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -994,3 +988,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
+
