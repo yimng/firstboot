@@ -1,0 +1,196 @@
+# Translation of zh_TW.po to Chinese (traditional)
+# Copyright (C) 2002 Red Hat Inc.
+# Ben Wu <hpwu@redhat.com>, 2002
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"POT-Creation-Date: Wed Jun 26 12:34:52 2002\n"
+"PO-Revision-Date: 2002-06-28 15:17+1000\n"
+"Last-Translator: Ben Wu <hpwu@redhat.com>\n"
+"Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-Generator: KBabel 1.0beta1\n"
+
+#: ../src/modules/additional_cds.py:19
+msgid "Additional CDs"
+msgstr "額外的 CDs"
+
+#: ../src/modules/additional_cds.py:22
+msgid "Red Hat Documentation CD"
+msgstr "Red Hat 說明文件 CD"
+
+#: ../src/modules/additional_cds.py:23
+msgid "Linux Application CD"
+msgstr "Linux 應用程式 CD"
+
+#: ../src/modules/additional_cds.py:58
+msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
+msgstr "假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文件 CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
+
+#: ../src/modules/date.py:48
+msgid "Date & Time"
+msgstr "日期與時間"
+
+#: ../src/modules/date.py:49
+msgid "Date & Time Configuration"
+msgstr "日期與時間設定"
+
+#: ../src/modules/date.py:51
+msgid "Please set the date and time for the system."
+msgstr "請設定系統的日期與時間。"
+
+#: ../src/modules/hardware.py:28
+msgid "Configure hardware"
+msgstr "設定硬體"
+
+#: ../src/modules/hardware.py:82
+msgid "Keyboard Map:"
+msgstr "鍵盤配置："
+
+#: ../src/modules/hardware.py:88 ../src/modules/hardware.py:104
+#: ../src/modules/hardware.py:125
+msgid "Configure..."
+msgstr "設定..."
+
+#: ../src/modules/hardware.py:97
+msgid "Mouse:"
+msgstr "滑鼠："
+
+#: ../src/modules/hardware.py:119
+msgid "Sound card:"
+msgstr "音效卡："
+
+#: ../src/modules/hardware.py:136
+msgid "Networking:"
+msgstr "網路連線："
+
+#: ../src/modules/hardware.py:145
+msgid "Display:"
+msgstr "顯示器："
+
+#: ../src/modules/hardware.py:154
+msgid "Printers:"
+msgstr "印表機："
+
+#: ../src/modules/networking.py:19
+msgid "Network check"
+msgstr "檢查網路"
+
+#: ../src/modules/networking.py:38
+msgid "Set up Networking"
+msgstr "設定網路連線"
+
+#: ../src/modules/networking.py:64
+msgid "A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
+msgstr "偵測不到網路連線。 需要用到網路連線以註冊您的系統到 RHN，並使用 Red Hat 更新代理程式來更新您的系統。 要設定網路連線，請點選以下的按鈕。\n"
+
+#: ../src/modules/networking.py:114
+msgid "Set up networking..."
+msgstr "設定網路連線..."
+
+#: ../src/modules/networking.py:150
+msgid "Configure using DHCP"
+msgstr "使用 DHCP 設定"
+
+#: ../src/modules/networking.py:167
+msgid "IP Address"
+msgstr "IP 位址"
+
+#: ../src/modules/networking.py:168
+msgid "Netmask"
+msgstr "網路遮罩"
+
+#: ../src/modules/networking.py:169
+msgid "Network"
+msgstr "網路"
+
+#: ../src/modules/networking.py:170
+msgid "Broadcast"
+msgstr "廣播"
+
+#: ../src/modules/networking.py:186
+msgid "%s:"
+msgstr "%s："
+
+#: ../src/modules/networking.py:227
+msgid "Gateway"
+msgstr "閘道器"
+
+#: ../src/modules/networking.py:227
+msgid "Hostname"
+msgstr "主機名稱"
+
+#: ../src/modules/networking.py:227
+msgid "Primary DNS"
+msgstr "主 DNS"
+
+#: ../src/modules/networking.py:228
+msgid "Secondary DNS"
+msgstr "次 DNS"
+
+#: ../src/modules/networking.py:228
+msgid "Ternary DNS"
+msgstr "第三個 DNS"
+
+#: ../src/modules/register.py:21
+msgid "Register with RHN"
+msgstr "向 RHN 註冊"
+
+#: ../src/modules/register.py:30
+msgid "Register your system with Red Hat Network"
+msgstr "向 Red Hat Network 註冊您的系統"
+
+#: ../src/modules/register.py:55
+msgid ""
+"Red Hat Network is an Internet solution for managing one or more Red Hat Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts (collectively known as Errata Alerts) can be retreived directly from Red Hat. You can even have updates automatically delivered directly to your system as soon as they are released. \n"
+"\n"
+"Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
+msgstr ""
+"Red Hat Network 是用來管理一或多個 Red Hat Linux 系統的一種網際網路的解決方案。 所有的 安全性警示，程式錯誤修正警示以及功能性加強警示（集合稱為 Errata Alerts），都可以直接從 Red Hat 取得。 您甚至可以設定自動傳送新釋出的更新到您的系統。\n"
+"\n"
+"因為 Red Hat Network 追蹤 Errata 更新的釋放，並傳送您電子郵件通知，它可以："
+
+#: ../src/modules/register.py:68
+msgid ""
+" -- Reduce the time and effort required by system administrators to stay on top of the Red Hat errata list\n"
+" -- Minimize security vulnerabilities in your network by providing the patches as soon as Red Hat releases them\n"
+" -- Filter out package updates not relevant to your network\n"
+" -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
+msgstr ""
+" -- 減少系統管理員為了要保持 Red Hat errata 清單的更新，所需要的時間與精神\n"
+" -- 一旦 Red Hat 釋出修補程式便提供它們以減少網路環境中的安全性漏洞\n"
+" -- 過濾掉與您網路不相關的套件更新\n"
+" -- 排程 Errata 的更新以便套件在您需要時傳送至選定的系統"
+
+#: ../src/modules/register.py:80
+msgid "Register system now"
+msgstr "馬上註冊系統"
+
+#: ../src/modules/register.py:90
+msgid "You currently have no network connection."
+msgstr "目前您並沒有網路連線。"
+
+#: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
+msgid "Red Hat Update Agent"
+msgstr "Red Hat 更新代理程式"
+
+#: ../src/modules/up2date.py:55
+msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
+msgstr "現在您已經向 Red Hat Network 註冊，您可以執行 Red Hat 更新代理程式，以接收直接從 Red Hat 傳來最新的軟體套件。  使用這個工具將使您總是擁有最新的 Red Hat Linux 系統，並含有所有的安全性修補，程式錯誤修正以及軟體套件的功能強化。"
+
+#: ../src/modules/up2date.py:66
+msgid "Start the Red Hat Update Agent"
+msgstr "啟動 Red Hat 更新代理程式"
+
+#: ../src/modules/welcome.py:19
+msgid "Welcome"
+msgstr "歡迎"
+
+#: ../src/modules/welcome.py:28
+msgid "Welcome to Red Hat Linux Beta!"
+msgstr "歡迎使用 Red Hat Linux Beta！"
+
