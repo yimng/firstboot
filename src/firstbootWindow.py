@@ -48,7 +48,7 @@ class firstbootWindow:
             
         self.win.set_resizable(gtk.FALSE)
         self.win.set_position(gtk.WIN_POS_CENTER)
-#        self.win.set_decorated(gtk.FALSE)
+        self.win.set_decorated(gtk.FALSE)
         mainVBox = gtk.VBox()
 
         # Create the notebook.  We use a ListView to control which page in the
