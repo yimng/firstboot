@@ -42,7 +42,7 @@ class childWindow:
         eventBox.add(titleBox)
         self.vbox.pack_start(eventBox, FALSE)
 
-        label = gtk.Label(_("Contratulations!  Your Red Hat Linux system is now set up and ready to "
+        label = gtk.Label(_("Congratulations!  Your Red Hat Linux system is now set up and ready to "
                           "use.  We hope that you will have a pleasant computing experience.  Please "
                             "click the \"Forward\" button in the lower right corner to continue."))
 
