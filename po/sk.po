@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-15 13:47-0400\n"
-"PO-Revision-Date: 2004-10-06 06:15+0200\n"
+"PO-Revision-Date: 2004-10-16 16:22+0200\n"
 "Last-Translator: Marcel Telka <marcel@telka.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -194,15 +194,14 @@ msgid "System User"
 msgstr "Systémový používateľ"
 
 #: ../src/modules/create_user.py:65
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Je odporúčané, aby ste vytvorili osobný účet používateľa pre bežné (nie "
-"správcovské) použitie. Pre vytvorenie osobného účtu zadajte požadované "
-"informácie."
+"Je odporúčané, aby ste vytvorili systémové 'meno používateľa' pre bežné (nie "
+"správcovské) použitie vášho systému. Pre vytvorenie systémového 'mena "
+"používateľa', zadajte, prosím, požadované informácie nižšie."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -343,11 +342,9 @@ msgstr ""
 "tlačidlo \"Ďalej\" v pravom dolnom rohu pre pokračovanie."
 
 #: ../src/modules/finished.py:38
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Váš systém je teraz nastavený a pripravený na používanie. Prosím kliknite na "
-"tlačidlo \"Ďalej\" v pravom dolnom rohu pre pokračovanie."
+"Prosím kliknite na tlačidlo \"Ďalej\" v pravom dolnom rohu pre pokračovanie."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -410,30 +407,3 @@ msgstr ""
 "pripravený na použitie. Agent pre nastavenie vás teraz bude sprevádzať cez "
 "základnú konfiguráciu. Prosím klinite na tlačidlo \"Ďalej\" v pravom dolnom "
 "rohu pre pokračovanie."
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot nebeží v úrovni behu 3."
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Ak máte nejaké CD uvedené nižšie, môžete z nich inštalovať balíky tak, že "
-#~ "vložíte CD a kliknete na príslušné tlačidlo."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Prosím zadajte časový server."
-
-#~ msgid "Error"
-#~ msgstr "Chyba"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Spojenie s %s nemôže byť vytvorené. Buď %s nie je dostupné, alebo "
-#~ "nastavenia firewallu na vašom počítači blokuje NTP spojenia."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Spájanie s NTP serverom. Prosím čakajte..."
