@@ -46,11 +46,11 @@ fi
 #%doc COPYING
 #%doc doc/*
 %dir /usr/share/firstboot/
-/usr/share/firstboot/*
+#/usr/share/firstboot/*
 %dir /usr/share/firstboot/modules
-/usr/share/firstboot/modules/*
+#/usr/share/firstboot/modules/*
 %dir /usr/share/firstboot/pixmaps
-/usr/share/firstboot/pixmaps/*
+#/usr/share/firstboot/pixmaps/*
 #%attr(0644,root,root) %{_mandir}/man8/dateconfig*
 #%attr(0644,root,root) %{_mandir}/ja/man8/dateconfig*
 #%attr(0644,root,root) %config /etc/X11/applnk/System/redhat-config-language.desktop
