@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.3.2
-Release: 1
+Release: 2
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -29,7 +29,7 @@ Requires: redhat-config-network
 Requires: authconfig-gtk
 Requires: libuser
 Requires: up2date
-Requires: system-logos
+Requires: redhat-logos
 Requires: redhat-artwork
 Requires: xsri
 ExcludeArch: s390 s390x
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Dec  1 2003 Brent Fox <bfox@redhat.com> 1.3.2-2
+- redhat-logos hasn't been renamed to system-logos yet
+
 * Mon Nov 24 2003 Brent Fox <bfox@redhat.com> 1.3.2-1
 - make changes for Python2.3
 
