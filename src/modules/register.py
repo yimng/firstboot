@@ -16,7 +16,7 @@ class childWindow:
                 
     def launch(self):
         self.vbox = gtk.VBox()
-        self.vbox.set_usize(400, 200)
+        self.vbox.set_size_request(400, 200)
 
         label = gtk.Label("Register your system with Red Hat Network")
         label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
@@ -63,7 +63,7 @@ class childWindow:
                              "Because Red Hat Network keeps track of when Errata Updates are "
                              "released and sends you email notifications, it can:")
             label.set_line_wrap(TRUE)
-            label.set_usize(400, -1)
+            label.set_size_request(400, -1)
             label.set_alignment(0.0, 0.5)
             internalVBox.pack_start(label, FALSE, TRUE)
 
@@ -76,7 +76,7 @@ class childWindow:
                              "selected systems when you want it")
             label.set_line_wrap(TRUE)
             label.set_alignment(0.1, 0.5)
-            label.set_usize(400, -1)
+            label.set_size_request(400, -1)
 #To start using Red Hat Network today, follow these steps:
 
             internalVBox.pack_start(label, FALSE, TRUE)

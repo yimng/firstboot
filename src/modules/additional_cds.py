@@ -17,7 +17,7 @@ class childWindow:
     def launch(self):
         os.stat('/etc/sysconfig/rhn/rhn_register')
         self.vbox = gtk.VBox()
-        self.vbox.set_usize(400, 200)
+        self.vbox.set_size_request(400, 200)
 
         label = gtk.Label("Install additional software")
 
@@ -57,7 +57,7 @@ class childWindow:
                           "click the button below.")
         
         label.set_line_wrap(TRUE)
-        label.set_usize(400, -1)
+        label.set_size_request(400, -1)
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, FALSE, TRUE)
 

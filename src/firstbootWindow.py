@@ -41,8 +41,8 @@ class firstbootWindow:
 #        root.set_cursor (cursor)
 
         win = gtk.Window()
-        win.set_usize(800, 600)
-        win.set_policy(gtk.FALSE, gtk.FALSE, gtk.FALSE)
+        win.set_size_request(800, 600)
+        win.set_resizable(gtk.FALSE)
         mainVBox = gtk.VBox()
 
         p = None        
@@ -73,7 +73,7 @@ class firstbootWindow:
             list.append(file[:-3])
 
         for module in list:
-            print module
+#            print module
 #            sys.path.append('/usr/share/firstboot/modules')
             sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
@@ -96,15 +96,12 @@ class firstbootWindow:
         tmpList = self.moduleDict.keys()
         tmpList.sort()
 
-        print self.moduleDict
-        print tmpList
-
         for module in tmpList:
             self.moduleList.append(self.moduleDict[module])
 
             try:
                 if self.moduleDict[module].moduleName:
-                    print self.moduleDict[module].moduleName
+#                    print self.moduleDict[module].moduleName
                     iter = self.moduleStore.append()
                     self.moduleStore.set_value(iter, 0, self.moduleDict[module].moduleName)
 
@@ -123,13 +120,13 @@ class firstbootWindow:
         col = gtk.TreeViewColumn(None, gtk.CellRendererText(), text=0)
         self.moduleView.append_column(col)
         self.moduleView.set_property("headers-visible", gtk.FALSE)
-        self.moduleView.set_usize(200, -1)
+        self.moduleView.set_size_request(200, -1)
         self.mainHBox.pack_start(self.moduleView, gtk.FALSE)
 
 
 #########################################
         self.rightVBox = gtk.VBox()
-        self.rightVBox.set_usize(400, 200)
+        self.rightVBox.set_size_request(400, 200)
 
         eventBox = gtk.EventBox()
         self.internalVBox = gtk.VBox()

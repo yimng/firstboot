@@ -13,7 +13,7 @@ class childWindow:
                 
     def launch(self):
         self.vbox = gtk.VBox()
-        self.vbox.set_usize(400, 200)
+        self.vbox.set_size_request(400, 200)
 
 
         label = gtk.Label("Welcome to Red Hat Linux Son of Enigma!")

@@ -16,7 +16,7 @@ class childWindow:
         try:
             os.stat('/etc/sysconfig/rhn/rhn_register')
             self.vbox = gtk.VBox()
-            self.vbox.set_usize(400, 200)
+            self.vbox.set_size_request(400, 200)
 
             label = gtk.Label("Red Hat Update Agent")
             label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
@@ -59,7 +59,7 @@ class childWindow:
                              "with all the security patches, bug fixes, and software "
                              "package enhancements")
             label.set_line_wrap(TRUE)
-            label.set_usize(400, -1)
+            label.set_size_request(400, -1)
             label.set_alignment(0.0, 0.5)
             internalVBox.pack_start(label, FALSE, TRUE)
 
