@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.2
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Nov 26 2002 Brent Fox <bfox@redhat.com> 1.0.2-4
+- Mark initscript strings as internationalizable (bug 77826)
+
 * Fri Nov 22 2002 Florian La Roche <Florian.LaRoche@redhat.de>
 - exclude mainframe
 
