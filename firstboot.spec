@@ -19,11 +19,9 @@ Requires: metacity
 Requires: rhpl
 Requires: redhat-config-date
 Requires: redhat-config-language
-%ifnarch s390 s390x
 Requires: redhat-config-mouse
 Requires: redhat-config-keyboard
 Requires: redhat-config-soundcard
-%endif
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
 Requires: redhat-config-packages
