@@ -107,8 +107,8 @@ if (not doDebug):
         #Firstboot has never been run before, so start it up
         pass
 
-#Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
-#if they want to run firstboot or not.
+#Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
+#textWindow for the TUI
 
 line = os.popen('/sbin/runlevel', 'r').readline()
 line = string.strip(line)
