@@ -29,7 +29,7 @@ import sys
 import os
 import functions
 
-sys.path.append('/usr/share/dateconfig/')
+sys.path.append('/usr/share/redhat-config-date/')
 import date_gui
 import dateBackend
 
@@ -58,10 +58,12 @@ class TimeWindow(FirstbootGuiWindow):
         gtk.mainquit()
     
     def setupScreen(self):
-        self.datePage = date_gui.datePage()
-        self.datePageVBox = self.datePage.getVBox()
         #Initialize date backend
-        self.dateBackend = dateBackend.dateBackend()        
+        self.dateBackend = dateBackend.dateBackend()
+
+        #Initialize datePage and pass dateBackend into it
+        self.datePage = date_gui.datePage(self.dateBackend)
+        self.datePageVBox = self.datePage.getVBox()
 
         #Add icon to the top frame
         self.icon = functions.imageFromFile("dateconfig-icon.png")
@@ -93,7 +95,33 @@ class TimeWindow(FirstbootGuiWindow):
 
             elif ntpEnabled == gtk.TRUE:
                 sysTimeServer = self.datePage.getTimeServer()
-                self.dateBackend.writeNtpConfig(sysTimeServer)
+
+                #First, check to see if we can communicate with the requested server
+                data = os.popen("ping -c 2 %s" % sysTimeServer)
+                rc = data.close()
+
+                if rc == None:
+                    #Server was contacted, so write out the correct files and start up the service
+                    ntpServerList = self.datePage.getNtpServerList()
+                    self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList)
+                    self.dateBackend.startNtpService()
+                    self.dateBackend.syncHardwareClock()
+                else:
+                    dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
+    _("A connection with %s could not be established.  Either %s is not available or the firewall settings "
+      "on your computer are blocking NTP connections." % (sysTimeServer, sysTimeServer)))
+                    dlg.set_title(_("Error"))
+                    dlg.set_default_size(100, 100)
+                    dlg.set_position (gtk.WIN_POS_CENTER)
+                    dlg.set_border_width(2)
+                    dlg.set_modal(gtk.TRUE)
+                    rc = dlg.run()
+                    dlg.destroy()
+                    #We want to break out of the apply and not advance firstboot to the next screen
+                    return 0
+
+                ntpServersList = self.datePage.getNtpServerList()
+                self.dateBackend.writeNtpConfig(sysTimeServer, ntpServersList)
                 self.dateBackend.startNtpService()
                 self.dateBackend.syncHardwareClock()
 
