@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.4
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -25,6 +25,7 @@ Requires: redhat-config-soundcard
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
 Requires: redhat-config-packages
+Requires: libuser
 Requires: up2date
 Requires: redhat-logos
 Requires: redhat-artwork
@@ -70,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Jan 24 2003 Brent Fox <bfox@redhat.com> 1.0.4-4
+- better validity checking for user name and password
+
 * Tue Jan 21 2003 Brent Fox <bfox@redhat.com> 1.0.4-3
 - remove print statement that was causing a traceback
 
