@@ -17,6 +17,22 @@ gettext.bindtextdomain ("firstboot", "/usr/share/locale")
 gettext.textdomain ("firstboot")
 _=gettext.gettext
 
+import crypt,whrandom
+
+def cryptPassword(password, useMD5 = 1):
+    if useMD5:
+	salt = "$1$"
+	saltLen = 8
+    else:
+	salt = ""
+	saltLen = 2
+
+    for i in range(saltLen):
+	salt = salt + whrandom.choice (string.letters +
+                                       string.digits + './')
+
+    return crypt.crypt (password, salt)
+
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
@@ -214,7 +230,7 @@ class childWindow:
         args = [ "/usr/bin/chfn", "-f", fullName , username ]
         executil.execWithRedirect(args[0], args, stdout = None, stderr = None)
 
-        args = [ "/usr/sbin/usermod", "-p", password , username ]
+        args = [ "/usr/sbin/usermod", "-p", cryptPassword(password) , username ]
         executil.execWithRedirect(args[0], args, stdout = None, stderr = None)
 
         return 0
