@@ -33,7 +33,7 @@ install:
 #		sed -e s,@VERSION@,$(VERSION),g $${py} > $(INSTROOT)$(PKGDATADIR)/`basename $${py}` ; \
 #	done
 
-	cp -a firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
+	install -m 775 firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
 	install src/modules/*.py $(INSTROOT)$(PKGDATADIR)/modules
 	install src/pixmaps/*.png $(INSTROOT)$(PKGDATADIR)/pixmaps
 #	install src/${PKGNAME} $(INSTROOT)$(PKGDATADIR)/${PKGNAME}
