@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.10
+Version: 1.0.11
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -72,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri May 30 2003 Brent Fox <bfox@redhat.com> 1.0.11-1
+- fix traceback in username verification
+
 * Thu May 29 2003 Brent Fox <bfox@redhat.com> 1.0.10-1
 - updated deprecated function call in functions.py
 - don't grab the whole screen in debug mode
