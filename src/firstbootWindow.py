@@ -47,15 +47,15 @@ class firstbootWindow:
         y_screen = gtk.gdk.screen_height()        
 
         #Set the background of the window
-#        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
-        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/default.png")
-        pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
-        bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
-        gc = bgimage.new_gc()
-        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen, y_screen,
-                                  gtk.gdk.RGB_DITHER_MAX, 0, 0)
-        self.win.set_app_paintable(gtk.TRUE)
-        self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+        if pixbuf is not None:
+            pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
+            bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
+            gc = bgimage.new_gc()
+            pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
+                                      y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+            self.win.set_app_paintable(gtk.TRUE)
+            self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
 
         align = gtk.Alignment(0.5, 0.5, 0.0, 0.0)
         eb = gtk.EventBox()
