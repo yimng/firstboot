@@ -61,11 +61,12 @@
 
       <widget>
 	<class>GtkRadioButton</class>
-	<name>radiobutton1</name>
+	<name>highRadio</name>
 	<can_focus>True</can_focus>
 	<label>High</label>
 	<active>False</active>
 	<draw_indicator>True</draw_indicator>
+	<group>securityLevel</group>
 	<child>
 	  <padding>0</padding>
 	  <expand>False</expand>
@@ -75,11 +76,12 @@
 
       <widget>
 	<class>GtkRadioButton</class>
-	<name>radiobutton2</name>
+	<name>mediumRadio</name>
 	<can_focus>True</can_focus>
 	<label>Medium</label>
 	<active>False</active>
 	<draw_indicator>True</draw_indicator>
+	<group>securityLevel</group>
 	<child>
 	  <padding>0</padding>
 	  <expand>False</expand>
@@ -89,11 +91,12 @@
 
       <widget>
 	<class>GtkRadioButton</class>
-	<name>radiobutton3</name>
+	<name>noneRadio</name>
 	<can_focus>True</can_focus>
 	<label>No firewall</label>
 	<active>False</active>
 	<draw_indicator>True</draw_indicator>
+	<group>securityLevel</group>
 	<child>
 	  <padding>0</padding>
 	  <expand>False</expand>
@@ -114,11 +117,12 @@
 
     <widget>
       <class>GtkRadioButton</class>
-      <name>radiobutton4</name>
+      <name>defaultRadio</name>
       <can_focus>True</can_focus>
       <label>Use default firewall rules</label>
       <active>False</active>
       <draw_indicator>True</draw_indicator>
+      <group>useDefault</group>
       <child>
 	<padding>0</padding>
 	<expand>False</expand>
@@ -128,11 +132,12 @@
 
     <widget>
       <class>GtkRadioButton</class>
-      <name>radiobutton5</name>
+      <name>customizeRadio</name>
       <can_focus>True</can_focus>
       <label>Customize</label>
       <active>False</active>
       <draw_indicator>True</draw_indicator>
+      <group>useDefault</group>
       <child>
 	<padding>0</padding>
 	<expand>False</expand>
@@ -303,7 +308,7 @@
 
 	<widget>
 	  <class>GtkCList</class>
-	  <name>clist2</name>
+	  <name>deviceList</name>
 	  <can_focus>True</can_focus>
 	  <columns>1</columns>
 	  <column_widths>80</column_widths>
@@ -328,7 +333,7 @@
 
       <widget>
 	<class>GtkEntry</class>
-	<name>entry1</name>
+	<name>portEntry</name>
 	<can_focus>True</can_focus>
 	<editable>True</editable>
 	<text_visible>True</text_visible>
