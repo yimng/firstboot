@@ -19,7 +19,7 @@ _=gettext.gettext
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = -45
+    runPriority = 45
     moduleName = (_("Network Setup"))
     moduleClass = "reconfig"
 
