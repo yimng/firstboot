@@ -9,7 +9,7 @@ from socket import gethostname
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
-    moduleName = "Network check"
+#    moduleName = "Network check"
 
     def __init__(self):
         print "initializing network check module"
@@ -125,21 +125,57 @@ class childWindow:
         pass
 
     def apply(self, notebook):
+        print "applying network changes"
         if self.state == gtk.FALSE:
+            print "foodog"
             if self.yesRadio.get_active() == 1:
-                widget = self.page2()
+                print "here"
+                fd = open(".networkcheck.lock", "w")
+                fd.write(" ")
+                fd.close()
+#                widget = self.page2()
 
                 self.page = notebook.get_current_page()
                 notebook.insert_page(widget, gtk.Label(" "), self.page + 1)
                 notebook.show_all()
                 self.state = gtk.TRUE
+            else:
+                notebook.next_page()
         else:
+            print "hooha!"
+            print self.noRadio.get_active()
             if self.noRadio.get_active() == 1 and self.page:
-                notebook.remove_page(self.page + 1)
+#                notebook.remove_page(self.page + 1)
+                notebook.next_page()
                 notebook.show_all()
                 self.state = gtk.FALSE
                 self.page = None
                 pass
+
+
+##     def apply(self, notebook, moduleList):
+##         print "in apply"
+##         if self.state == gtk.FALSE:
+##             print "here"
+##             if self.yesRadio.get_active() == 1:
+##                 print "going live"
+## #                widget = self.page2()
+##                 newClass = page3()
+##                 print newClass
+
+##                 self.page = notebook.get_current_page()
+##                 notebook.insert_page(newClass.launch(), gtk.Label(" "), self.page + 1)
+##                 notebook.show_all()
+##                 self.state = gtk.TRUE
+##         else:
+##             if self.noRadio.get_active() == 1 and self.page:
+##                 notebook.remove_page(self.page + 1)
+##                 notebook.show_all()
+##                 self.state = gtk.FALSE
+##                 self.page = None
+##                 pass            
+
+
 
     def page2(self):
         box = gtk.VBox()
@@ -306,3 +342,17 @@ class childWindow:
 
 
         return box
+
+class page3:
+    def __init__(self):
+        print "initializing page2"
+#        self.launch()
+
+    def launch(self):
+        hbox = gtk.HBox()
+        label = gtk.Label("Hello")
+        hbox.pack_start(label)
+        return hbox
+
+    def apply (self):
+        print "applying page2"

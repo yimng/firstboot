@@ -34,6 +34,7 @@ class firstbootWindow:
         self.mainHBox = gtk.HBox()
         self.moduleList = []
         self.moduleDict = {}
+        self.moduleStore = gtk.ListStore(gobject.TYPE_STRING)
 
 #        root = _root_window ()
 #        cursor = cursor_new (GDK.LEFT_PTR)
@@ -95,18 +96,36 @@ class firstbootWindow:
         tmpList = self.moduleDict.keys()
         tmpList.sort()
 
+        print self.moduleDict
+        print tmpList
+
         for module in tmpList:
             self.moduleList.append(self.moduleDict[module])
-#            self.stepList.append([self.moduleDict[module].moduleName])
 
-##         for module in self.moduleList:
-##             box = module.launch()
-##             if box:
-##                 self.notebook.append_page(box, gtk.Label(" "))
+            try:
+                if self.moduleDict[module].moduleName:
+                    print self.moduleDict[module].moduleName
+                    iter = self.moduleStore.append()
+                    self.moduleStore.set_value(iter, 0, self.moduleDict[module].moduleName)
 
-        label = gtk.Label("Hello")
-        label.set_usize(200, -1)
-        self.mainHBox.pack_start(label, gtk.FALSE)
+            except:
+                pass
+
+        for module in self.moduleList:
+             box = module.launch()
+             if box:
+                 self.notebook.append_page(box, gtk.Label(" "))
+
+        self.moduleView = gtk.TreeView(self.moduleStore)
+#        selection = self.moduleView.get_selection()
+#        selection.connect("changed", self.selectRow)
+
+        col = gtk.TreeViewColumn(None, gtk.CellRendererText(), text=0)
+        self.moduleView.append_column(col)
+        self.moduleView.set_property("headers-visible", gtk.FALSE)
+        self.moduleView.set_usize(200, -1)
+        self.mainHBox.pack_start(self.moduleView, gtk.FALSE)
+
 
 #########################################
         self.rightVBox = gtk.VBox()
@@ -124,26 +143,29 @@ class firstbootWindow:
         a.set(0.5, 0.5, 0.9, 0.9)
         self.mainHBox.pack_start(a, gtk.TRUE)
 
-        bb = gtk.HButtonBox()
-        bb.set_layout(gtk.BUTTONBOX_END)
-        bb.set_border_width(10)
-        bb.set_spacing(10)
-        backButton = gtk.Button(stock='gtk-go-back')
-        backButton.connect('clicked', self.backClicked)
-        nextButton = gtk.Button(stock='gtk-go-forward')
+        self.bb = gtk.HButtonBox()
+        self.bb.set_layout(gtk.BUTTONBOX_END)
+        self.bb.set_border_width(10)
+        self.bb.set_spacing(10)
+        self.backButton = gtk.Button(stock='gtk-go-back')
+        self.backButton.connect('clicked', self.backClicked)
+        self.backButton.set_sensitive(gtk.FALSE)
+        self.nextButton = gtk.Button(stock='gtk-go-forward')
+        self.finishButton = gtk.Button(stock='gtk-close')
+        self.finishButton.connect('clicked', self.finishClicked)
         group = gtk.AccelGroup()
-        nextButton.connect('clicked', self.okClicked)
+        self.nextButton.connect('clicked', self.okClicked)
 
-        self.internalVBox.pack_start(bb, gtk.FALSE, 10)
+        self.internalVBox.pack_start(self.bb, gtk.FALSE, 10)
 
         #Accelerators aren't currently working in GTK 2.0   Grrrrrrr.
-#        nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
+#        self.nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
 #                                   gtk.gdk.RELEASE_MASK, 0)
-#        backButton.add_accelerator('clicked', group, GDK.F11,
+#        self.backButton.add_accelerator('clicked', group, GDK.F11,
 #                                   GDK.RELEASE_MASK, 0)
         win.add_accel_group(group)
-        bb.pack_start(backButton)
-        bb.pack_start(nextButton)
+        self.bb.pack_start(self.backButton)
+        self.bb.pack_start(self.nextButton)
 
         mainVBox.pack_start(self.mainHBox)
 
@@ -164,22 +186,38 @@ class firstbootWindow:
         p.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
         win.window.set_back_pixmap (bgimage, gtk.FALSE)
         
-        for module in self.moduleList:
-            box = module.launch()
-            if box:
-                self.notebook.append_page(box, gtk.Label(" "))
-
         win.add(mainVBox)
         win.show_all()
         gtk.main()
 
-    def okClicked(self, *args):
+    def selectRow(self, *args):
+        print "select Row"
+
+    def finishClicked(self, *args):
+        print "exiting"
+        
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
             pass
 
-#        module.apply(self.notebook)
+        #Call the apply method if it exists
+        try:
+            module.apply(self.notebook)
+        except:
+            print "apply failed"
+            pass
+
+        gtk.mainquit()
+        print "closing"
+
+    def okClicked(self, *args):
+        print self.moduleList
+        print "we're leaving page ", self.notebook.get_current_page()
+        try:
+            module = self.moduleList[self.notebook.get_current_page()]
+        except:
+            pass
 
         #Call the apply method if it exists
         try:
@@ -188,12 +226,31 @@ class firstbootWindow:
             pass
 
         self.notebook.next_page()
-#        self.stepList.select_row(self.notebook.get_current_page(), 0)
+
+        #Check to see if we're on the last page.  
+        tmp = self.notebook.get_nth_page(self.notebook.get_current_page() + 1)        
+        if not tmp:
+            self.bb.remove(self.nextButton)
+            self.bb.pack_end(self.finishButton)
+            self.bb.show_all()
+
+        self.backButton.set_sensitive(gtk.TRUE)
 
     def backClicked(self, *args):
         self.notebook.prev_page()
+        if self.notebook.get_current_page() == 0:
+            self.backButton.set_sensitive(gtk.FALSE)
+
+        print self.bb.children()
+        if self.finishButton in self.bb.children():
+            self.bb.remove(self.finishButton)
+            self.bb.pack_end(self.nextButton)
+            self.bb.show_all()
+
 #        self.stepList.select_row(self.notebook.get_current_page(), 0)
 
     def selectRow(self, list, row, col, event):
         self.notebook.set_page(row)
+
+
 

@@ -134,5 +134,5 @@ class childWindow:
         pass
 
     def apply(self, notebook):
-        print "nothing to do"
+        print "nothing to do in additional_cds"
         pass

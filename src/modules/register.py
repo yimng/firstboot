@@ -131,4 +131,5 @@ class childWindow:
             os.execv(path, [""])
 
     def apply(self, notebook):
+        print "nothing to do in register"
         pass
