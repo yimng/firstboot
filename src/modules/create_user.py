@@ -36,7 +36,7 @@ def cryptPassword(password, useMD5 = 1):
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
-    moduleName = (_("User Account"))
+    moduleName = (_("System User"))
 
     def launch(self, doDebug = None):
         self.doDebug = doDebug
