@@ -81,7 +81,7 @@ class firstbootWindow:
 ##                     self.win.set_size_request(x_screen, y_screen)
 
         #Let's draw the background
-        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+        pixbuf = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/lightrays.png")
         if pixbuf is not None:
             pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
             bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
