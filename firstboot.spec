@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.18
+Version: 1.3.19
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Aug 31 2004 Adrian Likins <alikins@redhat.com> - 1.3.19-1
+* #131308 (system-config-date changed, working to not
+  traceback, still needs more fixing)
+
 * Thu Jul 15 2004 Adrian Likins <alikins@redhat.com> - 1.3.17-1
 * allow screens to catch a signal when they are shown
 
