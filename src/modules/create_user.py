@@ -17,7 +17,7 @@ _=gettext.gettext
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 80
-    moduleName = (_("Create A User"))
+    moduleName = (_("User Account"))
 
     def launch(self, doDebug = None):
         self.doDebug = doDebug
@@ -36,15 +36,14 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        msg = (_("Create A User"))
-
         title_pix = functions.imageFromFile("create-user.png")
 
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        label = gtk.Label(_("A user account is required to use the system.  "
-                            "Create a user account by filling in the information below."))
+        label = gtk.Label(_("It is recommended that you create a personal user account for "
+                            "normal (non-administrative) use.  To create a personal account, "
+                            "provide the requested information."))
 
         label.set_line_wrap(gtk.TRUE)
         label.set_alignment(0.0, 0.5)
@@ -83,7 +82,7 @@ class childWindow:
                 self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
                 self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 
-        return self.vbox, title_pix, msg
+        return self.vbox, title_pix, self.moduleName
 
     def grabFocus(self):
         self.usernameEntry.grab_focus()
@@ -93,24 +92,33 @@ class childWindow:
             return 0
 
         username = self.usernameEntry.get_text()
-
-        if not self.isUsernameOk(username, self.usernameEntry):
-            return None
-
+        username = string.strip(username)
+        
         if username == "":
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_YES_NO,
-                                    (_("A user account was not created.  Are you sure that you want " \
-                                       "to continue without creating a user account?")))
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_NONE,
+                                    (_("It is highly recommended that a personal user account be "
+                                       "created.  If you continue without an account, you "
+                                       "can only log in with the root account, which is reserved "
+                                       "for administrative use only.")))
+
             dlg.set_position(gtk.WIN_POS_CENTER)
             dlg.set_modal(gtk.TRUE)
+
+            dlg.add_button(_("Continue"), 0)
+            b = dlg.add_button(_("Create account"), 1)
+            b.grab_focus()
+
             rc = dlg.run()
             dlg.destroy()
 
-            if rc == gtk.RESPONSE_YES:
+            if rc == 0:
                 return 0
             else:
                 self.usernameEntry.grab_focus()
                 return None
+
+        if not self.isUsernameOk(username, self.usernameEntry):
+            return None
 
         password = self.passwordEntry.get_text()
         confirm = self.confirmEntry.get_text()
