@@ -73,6 +73,7 @@ fi
 %changelog
 * Wed Jan 29 2003 Brent Fox <bfox@redhat.com> 1.0.4-7
 - don't run firstboot in runlevel 3 at all (bug #78239)
+- fix return tuple if no soundcards are found in soundcard_gui.py
 
 * Wed Jan 29 2003 Brent Fox <bfox@redhat.com> 1.0.4-6
 - give the X server 1 second to close before we exit firstboot (bug #81313)
