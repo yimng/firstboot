@@ -31,9 +31,9 @@ translate.textdomain ("firstboot")
 class TextWindow:
     def __call__(self, screen):
         toolList = [(_("Authentication"), ("/usr/sbin/authconfig")),
-                    (_("Firewall configuration "), ("/usr/bin/redhat-config-securitylevel-tui")),
-                    (_("Keyboard configuration "), ("/usr/bin/redhat-config-keyboard --text")),
-                    (_("Mouse configuration "), ("/usr/bin/redhat-config-mouse --text")),
+                    (_("Firewall configuration "), ("/usr/bin/system-config-securitylevel-tui")),
+                    (_("Keyboard configuration "), ("/usr/bin/system-config-keyboard --text")),
+                    (_("Mouse configuration "), ("/usr/bin/system-config-mouse --text")),
                     (_("Network configuration "), ("/usr/sbin/netconfig")),
                     (_("Printer configuration "), ("/usr/sbin/printconf-tui")),
                     (_("System services "), ("/usr/sbin/ntsysv")),
