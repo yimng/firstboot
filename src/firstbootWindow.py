@@ -18,6 +18,7 @@ os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
 import sys
 import gtk
 import gobject
+import functions
 
 class firstbootWindow:
     def __init__(self, wm_pid, doReconfig, doDebug):
@@ -63,7 +64,7 @@ class firstbootWindow:
         sys.path.append(path)
 
         #Code for an upper title bar like anaconda.  We may turn this on if we get some UI help
-        pix = self.imageFromFile("firstboot-header.png")
+        pix = functions.imageFromFile("firstboot-header.png")
         if pix:
             mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
             pass
@@ -102,8 +103,8 @@ class firstbootWindow:
         modulePriorityList.sort()
 
         leftVBox = gtk.VBox()
-        leftLabelVBox = gtk.VBox()
-        leftVBox.pack_start(leftLabelVBox, gtk.TRUE)
+        self.leftLabelVBox = gtk.VBox()
+        leftVBox.pack_start(self.leftLabelVBox, gtk.TRUE)
         leftVBox.set_border_width(12)
 
 	# Add the modules to the proper lists.
@@ -132,19 +133,25 @@ class firstbootWindow:
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
                     self.notebook.append_page(vbox, gtk.Label(module.moduleName))
+                    hbox = gtk.HBox(gtk.FALSE, 5)
+                    pix = functions.imageFromFile("pointer-blank.png")
                     label = gtk.Label(module.moduleName)
                     label.set_alignment(0.0, 0.5)
-                    leftLabelVBox.pack_start(label, gtk.FALSE, 5)
+                    hbox.pack_start(pix, gtk.FALSE)
+                    hbox.pack_end(label, gtk.TRUE)
+                    self.leftLabelVBox.pack_start(hbox, gtk.FALSE, 5)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
                 pages = pages + 1
 
+
         # Hook up a signal to highlight the selected page, and switch to page 0.
 #        self.notebook.connect("switch-page", self.switchPage)
         self.notebook.set_current_page(0)
+        self.setPointer(0)
 
         # Add our logo to the left box, below the TreeView.
-#        pix = self.imageFromFile("redhat-logo.png")
+#        pix = functions.imageFromFile("redhat-logo.png")
 #        if pix:
 #            leftVBox.pack_start(pix, gtk.FALSE)
 
@@ -215,7 +222,7 @@ class firstbootWindow:
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
-        pix = self.imageFromFile("bg.png")
+        pix = functions.imageFromFile("bg.png")
 	if pix:
             win.realize()
             win.set_app_paintable(gtk.TRUE)
@@ -287,6 +294,8 @@ class firstbootWindow:
         if result:
             self.notebook.next_page()
             module = self.moduleList[self.notebook.get_current_page()]
+            #Call setPointer to make the left hand pointer move to the correct pointer
+            self.setPointer(self.notebook.get_current_page())
 
             if "grabFocus" in dir(module):
                 #If the module needs to grab the focus, let it
@@ -307,6 +316,9 @@ class firstbootWindow:
 
     def backClicked(self, *args):
         self.notebook.prev_page()
+        #Call setPointer to make the left hand pointer move to the correct pointer
+        self.setPointer(self.notebook.get_current_page())
+
         if self.notebook.get_current_page() == 0:
             self.backButton.set_sensitive(gtk.FALSE)
 
@@ -321,22 +333,14 @@ class firstbootWindow:
         if (event.keyval == gtk.keysyms.F11):
             self.backClicked()
 
-    # Attempt to load a gtk.Image from a file.
-    def imageFromFile(self, filename):
-        p = None        
-        try:
-            path = "pixmaps/" + filename
-            p = gtk.gdk.pixbuf_new_from_file(path)
-        except:
-            try:
-                path = "/usr/share/firstboot/pixmaps/" + filename
-                p = gtk.gdk.pixbuf_new_from_file(path)
-            except:
-                pass
 
+    def setPointer(self, number):
+        items = self.leftLabelVBox.get_children()
 
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)        
-            return pix
-        return None
+        for i in range(len(items)):
+            pix, label = self.leftLabelVBox.get_children()[i].get_children()
+
+            if i == number:
+                pix.set_from_file("pixmaps/pointer.png")
+            else:
+                pix.set_from_file("pixmaps/pointer-blank.png")
