@@ -119,7 +119,7 @@ class childWindow:
         label = gtk.Label(_("Sound card:"))
         label.set_alignment(0.0, 0.5)
         self.table.attach(label, 1, 2, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
-        self.soundcard_label = gtk.Label(_(""))
+        self.soundcard_label = gtk.Label("")
         self.soundcard_label.set_alignment(0.0, 0.5)
         self.table.attach(self.soundcard_label, 2, 3, self.table_row, self.table_row + 1, gtk.FILL, gtk.FILL)
         self.soundcard_button = gtk.Button(_("Configure..."))
