@@ -81,6 +81,8 @@ class TimeWindow(FirstbootGuiWindow):
         dialog.hide ()
 
     def apply(self, *args):
+        self.failedFlag = None
+        
         if self.doDebug:
             print "applying date changes not available in debug mode"
         else:
@@ -129,7 +131,7 @@ class TimeWindow(FirstbootGuiWindow):
                         dlg.set_modal(gtk.TRUE)
                         rc = dlg.run()
                         dlg.destroy()
-
+                        self.failedFlag = 1
                         return
 
                     self.dateBackend.syncHardwareClock()
@@ -150,7 +152,6 @@ class TimeWindow(FirstbootGuiWindow):
 
                 os.close (write)
 
-
                 dlg = gtk.Dialog('', None, 0, (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL))
                 dlg.set_border_width(10)
                 label = gtk.Label(_("Contacting NTP server.  Please wait..."))
@@ -167,7 +168,10 @@ class TimeWindow(FirstbootGuiWindow):
                 dlg.destroy()
                 gtk.idle_remove (id)          
 
-        return 1
+        if self.failedFlag:
+            return
+        else:
+            return 1
 
 
     def stand_alone(self, doDebug = None):
