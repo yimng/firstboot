@@ -1,20 +1,22 @@
+# translation of pl.po to POLISH
 # translation of pl.po to Polish
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Grzegorz Rajda <marius@w9.pl>, 2004.
+# Tom Berner <tom@man.lodz.pl>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-10 11:21-0400\n"
-"PO-Revision-Date: 2004-08-20 16:51+0200\n"
-"Last-Translator: Grzegorz Rajda <marius@w9.pl>\n"
-"Language-Team: Polish <pl@li.org>\n"
+"PO-Revision-Date: 2004-09-12 18:07+0200\n"
+"Last-Translator: Tom Berner <tom@man.lodz.pl>\n"
+"Language-Team: POLISH <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -58,7 +60,7 @@ msgid ""
 msgstr ""
 "Odkąd jest problem z modułem %s, \n"
 "Agent Instalacji Red Hat nie może go wczytać. \n"
-"W efekcie nie porafi uruchomić pozostałych modułów."
+"W efekcie nie potrafi uruchomić pozostałych modułów."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -91,7 +93,7 @@ msgstr "Witamy"
 #: ../src/firstbootWindow.py:402
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "import modułu %s nie powiódł się: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -162,8 +164,7 @@ msgstr ""
 "kontynuować."
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Program automatycznego uruchomienia nie został znaleziony na płycie. Kliknij "
 "\"OK\" aby kontynuować."
@@ -217,7 +218,7 @@ msgid ""
 msgstr ""
 "Zalecamy utworzenie prywatnego konta. Jeśli będziesz bez niego kontynuował, "
 "będziesz mógł się zalogować tylko na konto \"root\", które jest "
-"zarezerwowane tylko do pracy administracynej."
+"zarezerwowane tylko do pracy administracyjnej."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -241,7 +242,7 @@ msgstr "Nazwa użytkownika nie może być dłuższa niż 33 znaki."
 
 #: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
-msgstr "Nazwa uzytkownika nie może rozpoczynać się cyfrą."
+msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
 
 #. Check for whitespace
 #: ../src/modules/create_user.py:291
@@ -249,16 +250,14 @@ msgstr "Nazwa uzytkownika nie może rozpoczynać się cyfrą."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
+msgstr "Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
 
 #: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
-"Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
+msgstr "Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -272,18 +271,15 @@ msgstr "Nazwa użytkownika '%s' zawiera duże litery, których nie może zawiera
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
+msgstr "Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Hasło zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nazwisko '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/date.py:47
@@ -292,7 +288,7 @@ msgstr "Data i czas"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr "Ustaw date i czas dla systemu."
+msgstr "Ustaw datę i czas dla systemu."
 
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:121
@@ -315,7 +311,7 @@ msgstr ""
 
 #: ../src/modules/date.py:204
 msgid "Contacting NTP server.  Please wait..."
-msgstr "Nawiązuje połączenie z serwerem NTP. Prosze czekać..."
+msgstr "Nawiązuje połączenie z serwerem NTP. Proszę czekać..."
 
 #: ../src/modules/display.py:45
 msgid "Display"
@@ -335,7 +331,7 @@ msgid ""
 "button in the lower right corner to continue."
 msgstr ""
 "System został zainstalowany i jest już gotowy do użycia. Kliknij \"Dalej\" w "
-"dolnym prawym rogu okna zby kontynuować."
+"dolnym prawym rogu okna żeby kontynuować."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -386,7 +382,7 @@ msgstr "Strefa czasowa"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr "Ustaw date i czas dla systemu."
+msgstr "Ustaw datę i czas dla systemu."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -396,14 +392,5 @@ msgid ""
 msgstr ""
 "Jeszcze tylko kilka kroków zanim Twój system będzie gotowy. Agent Instalacji "
 "obecnie nie posiada poradnika o podstawowej konfiguracji.Kliknij \"Dalej\" w "
-"dolnym prawym rogu okna zby kontynuować."
+"dolnym prawym rogu okna żeby kontynuować."
 
-#~ msgid "User Account"
-#~ msgstr "Konto użytkownika"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Nazwa użytkownika '%s' jest zarezerwowanym kontem systemowym. Określ inną "
-#~ "nazwę użytkownika."
