@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-10-18 00:13+0200\n"
+"PO-Revision-Date: 2003-12-05 11:47+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -349,57 +349,55 @@ msgstr "Vítejte"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Autentizace"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration "
-msgstr ""
+msgstr "Nastavení firewallu "
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration "
-msgstr ""
+msgstr "Nastavení klávesnice "
 
 #: ../src/textWindow.py:36
 msgid "Mouse configuration "
-msgstr ""
+msgstr "Nastavení myši "
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "Změnit _nastavení sítě..."
+msgstr "Nastavení sítě "
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration "
-msgstr ""
+msgstr "Nastavení tiskárny "
 
 #: ../src/textWindow.py:39
 msgid "System services "
-msgstr ""
+msgstr "Systémové služby "
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration "
-msgstr ""
+msgstr "Nastavení zvukové karty "
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration "
-msgstr ""
+msgstr "Nastavení časové zóny "
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "Spustit nástroj"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "Ukončit"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Vyberte položku, kterou chcete upravit "
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hat Setup Agent"
+msgstr "Setup Agent"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -701,11 +699,11 @@ msgstr "Spojuji se s NTP serverem. Prosím čekejte..."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Zobrazení"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Vyberte prosím rozlišení a barevnou hloubku, kterou chcete používat"
 
 #. Add icon to the top frame
 #. #
@@ -852,79 +850,8 @@ msgid "Please set the timezone for the system."
 msgstr "Nastavte prosím systémovou časovou zónu."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Před použitím vašeho systému je třeba provést ještě několik kroků. Red Hat "
-"Setup Agent vás nyní provede základním nastavením. Pokračujte prosím "
-"kliknutím na tlačítko \"Další\" v pravém dolním rohu."
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot neběží v runlevelu 3."
-
-#~ msgid "Yes"
-#~ msgstr "Ano"
-
-#~ msgid "No"
-#~ msgstr "Ne"
-
-#~ msgid ""
-#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
-#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
-#~ "System to run.  \n"
-#~ "\n"
-#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-#~ "\"No\", the system will continue booting and you will never see this "
-#~ "message again.  Do you wish to run the Setup Agent now?"
-#~ msgstr ""
-#~ "Red Hat Setup Agent Vám může pomoci nastavit váš stroj tím, že vás "
-#~ "provede několika kroky. Setup Agent pro běh vyžaduje X Window System.\n"
-#~ "\n"
-#~ "Pokud si přejete spustit Setup Agenta, zvolte prosím \"Ano\". Zvolíte-li "
-#~ "\"Ne\", systém bude pokračovat v zavádění a tuto zprávu už nikdy "
-#~ "neuvidíte. Chcete nyní spustit Setup Agenta?"
-
-#~ msgid "Red Hat Linux Documentation CD"
-#~ msgstr "Red Hat Linux CD s dokumentací"
-
-#~ msgid "Red Hat Linux Installation CD"
-#~ msgstr "Red Hat Linux instalační CD"
-
-#~ msgid "Red Hat Network"
-#~ msgstr "Red Hat Network"
-
-#~ msgid ""
-#~ "This step will register your system with a complimentary Demo Account "
-#~ "from Red Hat Network so that you can receive the latest software packages "
-#~ "directly from Red Hat.  Using this tool will allow you to always have the "
-#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
-#~ "fixes, and software enhancements. \n"
-#~ "\n"
-#~ "If you purchased this product, you are entitled to a free trial of Red "
-#~ "Hat Network Basic Service. To access the free trial, please refer to the "
-#~ "product activation card found in the box for detailed instructions. \n"
-#~ "\n"
-#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
-#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
-#~ msgstr ""
-#~ "Tento krok zaregistruje váš systém do demo účtu od Red Hat Network, takže "
-#~ "budete moci získat nejnovější balíčky software přímo od společnosti Red "
-#~ "Hat. Tento nástroj vám umožní udržovat váš systém Red Hat Linux "
-#~ "aktualizovaný se všemi bezpečnostními záplatami, opravami chyb a "
-#~ "vylepšeními balíčků software. \n"
-#~ "\n"
-#~ "Jestliže jste si tento produkt koupili, máte právo na testovací použití "
-#~ "služby Red Hat Network Basic zdarma. Pro přístup k této službě prosím "
-#~ "postupujte podle instrukcí na kartě aktivace produktu. \n"
-#~ "\n"
-#~ "Jestliže jste si tento produkt nekoupili, navštivte http://rhn.redhat.com "
-#~ "pro více informací nebo pro objednání služby Red Hat Network Basic. \n"
-
-#~ msgid "_Yes, I want to register my system with Red Hat Network."
-#~ msgstr "_Ano, chci svůj počítač zaregistrovat do Red Hat Network."
-
-#~ msgid "N_o, I do not want to register my system."
-#~ msgstr "_Ne, nechci svůj počítač zaregistrovat."
+msgstr "Před použitím vašeho systému je třeba provést ještě několik kroků. Setup Agent vás nyní provede základním nastavením. Pokračujte prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu."
