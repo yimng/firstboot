@@ -7,8 +7,7 @@ import sys
 import functions
 sys.path.append('/usr/share/redhat-config-soundcard')
 sys.path.append('/usr/share/redhat-config-keyboard')
-#sys.path.append('/usr/share/redhat-config-mouse')
-sys.path.append('/home/bfox/redhat/redhat-config-mouse/src')
+sys.path.append('/usr/share/redhat-config-mouse')
 import soundcardBackend
 import rhpl.keyboard as keyboard
 
