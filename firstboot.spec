@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.6
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -62,6 +62,11 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Jul 25 2002 Brent Fox <bfox@redhat.com> 0.9.6-4
+- change background color
+- give some padding to the icon box
+- put new splash and text on welcome and finished modules
+
 * Wed Jul 24 2002 Brent Fox <bfox@redhat.com> 0.9.6-3
 - fix Makefiles and spec files so that translations get installed
 
