@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0\n"
-"POT-Creation-Date: 2003-08-28 19:29-0400\n"
-"PO-Revision-Date: 2003-09-17 10:19+CEST\n"
+"POT-Creation-Date: 2003-09-11 17:51-0400\n"
+"PO-Revision-Date: 2003-09-26 16:28+CEST\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
@@ -11,9 +11,37 @@ msgstr ""
 "X-Generator: TransDict server\n"
 
 #. !/usr/bin/python2.2
-#. #
-#. # I18N
-#. #
+#.  #
+#.  # I18N
+#.  #
+#: ../src/eula_strings.py:10
+msgid "License Agreement"
+msgstr "Licencni ugovor"
+
+#: ../src/eula_strings.py:11
+msgid "_Yes, I agree to the License Agreement"
+msgstr "_Da, pročitao sam licencni ugovor."
+
+#: ../src/eula_strings.py:12
+msgid "N_o, I do not agree"
+msgstr "Ne, ne slažem"
+
+#: ../src/eula_strings.py:13
+msgid "Do you want to reread or reconsider the License Agreement?"
+msgstr "Želite li ponovo pročitati ili ponovo razmislici o licencnom ugovoru?"
+
+#: ../src/eula_strings.py:14
+msgid "_Reread license"
+msgstr "_Ponovno čitanje licence"
+
+#: ../src/eula_strings.py:15
+msgid "_Shut down"
+msgstr "_Gašenje sustava"
+
+#. !/usr/bin/python2.2
+#.  #
+#.  # I18N
+#.  #
 #: ../src/exceptionWindow.py:31
 #, python-format
 msgid "An error has occurred in the %s module."
@@ -44,22 +72,22 @@ msgstr ""
 "Tu datoteku prikvačite uz vaš izvještaj o grešci. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
-#. and try to complete the other steps successfully
-#. !/usr/bin/python2.2
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
-#. Turn off the firstboot init script
-#. !/usr/bin/python2.2
-#. #
-#. # I18N
-#. #
-#. Let's check to see if firstboot should be run or not
-#. If we're in debug mode, run anyway.  Even if the file exists
-#. Well first, is this even being run as root?
-#. We're not in debug mode, so do some checking
-#. First, look and see if /etc/sysconfig/firstboot exists
-#. If /etc/sysconfig/firstboot exists, parse the file
-#. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
-#. Firstboot should not be run
+#.  and try to complete the other steps successfully
+#.  !/usr/bin/python2.2
+#.  Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
+#.  Turn off the firstboot init script
+#.  !/usr/bin/python2.2
+#.  #
+#.  # I18N
+#.  #
+#.  Let's check to see if firstboot should be run or not
+#.  If we're in debug mode, run anyway.  Even if the file exists
+#.  Well first, is this even being run as root?
+#.  We're not in debug mode, so do some checking
+#.  First, look and see if /etc/sysconfig/firstboot exists
+#.  If /etc/sysconfig/firstboot exists, parse the file
+#.  If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
+#.  Firstboot should not be run
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot je već bio pokrenut na ovom sustavu.\n"
@@ -73,54 +101,54 @@ msgid "In order to run firstboot during system bootup, run the following command
 msgstr "U namjeri za pokretanjem firstboot tijekom pokretanja sustava, pokrenite sljedeće naredbe:"
 
 #. Firstboot has never been run before, so start it up
-#. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
-#. if they want to run firstboot or not.
-#. They booted the machine in runlevel 3.  Assume that they don't want to see firstboot
+#.  Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
+#.  if they want to run firstboot or not.
+#.  They booted the machine in runlevel 3.  Assume that they don't want to see firstboot
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot se ne izvršava u razini pokretanja 3."
 
 #. #-------Comment out the newt window for now.  Ran out of time for GinGin
-#. #     import textWindow
-#. #     from snack import *
-#. #     screen = SnackScreen()
-#. #     result = textWindow.TextWindow()(screen)
-#. #     if result == -1:
-#. #         #If they don't want to run firstboot, exit for good
-#. #         screen.finish()
-#. #         firstbootBackend.writeSysconfigFile(doDebug)
-#. #         os._exit(0)
-#. #     else:
-#. #         #They want to run firstboot, so let's pass on through
-#. #         screen.finish()
-#. If rhgb (graphical boot) is running, let's use it's X server
-#. However, we still need to start up metacity and merge the X resources
-#. If there's no X Server running, let's start one
-#. set the display environment variable
-#.
-#. Copyright 2001,2002 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. #
-#. # I18N
-#. #
-#. Create the initial window and a vbox to fill it with.
-#. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
-#. If rhgb isn't running, then we need to draw the background
-#. Create the notebook.  We use a ListView to control which page in the
-#. notebook is displayed.
-#. Add the box on the left to the window's HBox.
-#. Populate the right side of the window.  Add the notebook to a VBox.
-#. Now add the EventBox to the right-side VBox.
-#. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
-#. Create a button box to handle navigation.
-#. Create the "go back" button, marking it insensitive by default.
+#.  #     import textWindow
+#.  #     from snack import *
+#.  #     screen = SnackScreen()
+#.  #     result = textWindow.TextWindow()(screen)
+#.  #     if result == -1:
+#.  #         #If they don't want to run firstboot, exit for good
+#.  #         screen.finish()
+#.  #         firstbootBackend.writeSysconfigFile(doDebug)
+#.  #         os._exit(0)
+#.  #     else:
+#.  #         #They want to run firstboot, so let's pass on through
+#.  #         screen.finish()
+#.  If rhgb (graphical boot) is running, let's use it's X server
+#.  However, we still need to start up metacity and merge the X resources
+#.  If there's no X Server running, let's start one
+#.  set the display environment variable
+#. 
+#.  Copyright 2001,2002 Red Hat, Inc.
+#. 
+#.  This software may be freely redistributed under the terms of the GNU
+#.  library public license.
+#. 
+#.  You should have received a copy of the GNU Library Public License
+#.  along with this program; if not, write to the Free Software
+#.  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#. 
+#.  #
+#.  # I18N
+#.  #
+#.  Create the initial window and a vbox to fill it with.
+#.  This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
+#.  If rhgb isn't running, then we need to draw the background
+#.  Create the notebook.  We use a ListView to control which page in the
+#.  notebook is displayed.
+#.  Add the box on the left to the window's HBox.
+#.  Populate the right side of the window.  Add the notebook to a VBox.
+#.  Now add the EventBox to the right-side VBox.
+#.  Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
+#.  Create a button box to handle navigation.
+#.  Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
 msgstr "_Nazad"
@@ -131,61 +159,61 @@ msgid "_Next"
 msgstr "_Sljedeće"
 
 #. Add the button box to the bottom of the box which contains the notebook.
-#. Add the main HBox to a VBox which will sit in the window.
-#. Exit the GTK loop
-#. Kill the window manager
-#. Exit firstboot.  This should take down the X server as well
-#. Call the apply method if it exists
-#. Call exitFirstboot to do some cleanup before exiting
-#. Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
-#. Exit the GTK loop
-#. Kill the window manager
-#. Give the X server a second to exit
-#. Exit firstboot.  This should take down the X server as well
-#. Call the apply method if it exists
-#. Call setPointer to make the left hand pointer move to the correct pointer
-#. If the module needs to grab the focus, let it
-#. Something went wrong in the module.  Don't advance
-#. Check to see if we're on the last page.
-#. Call setPointer to make the left hand pointer move to the correct pointer
-#. Generate a list of all of the module files (which becomes the list of
-#. all non-hidden files in the directory with extensions other than .py.
-#. Import each module, and filter out those
-#. XXX - hack to allow firstboot to pass in the parent class into language
-#. this will allow the language module to change firstboot's current locale
-#. If the module defines a moduleClass, it has to match the mode
-#. we're starting up in, otherwise it's always used.  Add it to
-#. a dictionary keyed by the module's declared priority.
-#. Get the list of module priorities, sort them to determine a run
-#. order, and build a list with the modules in the proper order.
-#. #         self.leftLabelVBox.set_border_width(12)
-#. #         leftEventBox = gtk.EventBox()
-#. #         leftEventBox.add(self.leftLabelVBox)
-#. #         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
-#. #         self.leftVBox = gtk.VBox()
-#. #         self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
-#. Add the modules to the proper lists.
-#. Add the module to the list of modules.
-#. Launch the module's GUI.
-#. If it launched, add it to the mdoule list.
-#. If we're in 640x480 mode, remove the title bars
-#. If the module has a name, add it to the list of labels
+#.  Add the main HBox to a VBox which will sit in the window.
+#.  Exit the GTK loop
+#.  Kill the window manager
+#.  Exit firstboot.  This should take down the X server as well
+#.  Call the apply method if it exists
+#.  Call exitFirstboot to do some cleanup before exiting
+#.  Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
+#.  Exit the GTK loop
+#.  Kill the window manager
+#.  Give the X server a second to exit
+#.  Exit firstboot.  This should take down the X server as well
+#.  Call the apply method if it exists
+#.  Call setPointer to make the left hand pointer move to the correct pointer
+#.  If the module needs to grab the focus, let it
+#.  Something went wrong in the module.  Don't advance
+#.  Check to see if we're on the last page.
+#.  Call setPointer to make the left hand pointer move to the correct pointer
+#.  Generate a list of all of the module files (which becomes the list of
+#.  all non-hidden files in the directory with extensions other than .py.
+#.  Import each module, and filter out those
+#.  XXX - hack to allow firstboot to pass in the parent class into language
+#.  this will allow the language module to change firstboot's current locale
+#.  If the module defines a moduleClass, it has to match the mode
+#.  we're starting up in, otherwise it's always used.  Add it to
+#.  a dictionary keyed by the module's declared priority.
+#.  Get the list of module priorities, sort them to determine a run
+#.  order, and build a list with the modules in the proper order.
+#.  #         self.leftLabelVBox.set_border_width(12)
+#.  #         leftEventBox = gtk.EventBox()
+#.  #         leftEventBox.add(self.leftLabelVBox)
+#.  #         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
+#.  #         self.leftVBox = gtk.VBox()
+#.  #         self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
+#.  Add the modules to the proper lists.
+#.  Add the module to the list of modules.
+#.  Launch the module's GUI.
+#.  If it launched, add it to the mdoule list.
+#.  If we're in 640x480 mode, remove the title bars
+#.  If the module has a name, add it to the list of labels
 #: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Dobro došli"
 
 #. !/usr/bin/python2.2
-#. Attempt to load a gtk.Image from a file.
-#. Attempt to load a gtk.Image from a file.
-#. !/usr/bin/python2.2
-#. time.sleep(15)
-#. If they don't want to run firstboot, exit for good
-#. They want to run firstboot, so let's pass on through
-#. !/usr/bin/python
-#. #
-#. # I18N
-#. #
+#.  Attempt to load a gtk.Image from a file.
+#.  Attempt to load a gtk.Image from a file.
+#.  !/usr/bin/python2.2
+#.  time.sleep(15)
+#.  If they don't want to run firstboot, exit for good
+#.  They want to run firstboot, so let's pass on through
+#.  !/usr/bin/python
+#.  #
+#.  # I18N
+#.  #
 #: ../src/textWindow.py:15
 msgid "Yes"
 msgstr "Da"
@@ -215,60 +243,60 @@ msgid "Red Hat Setup Agent"
 msgstr "Agent Red Hat postavki"
 
 #. !/usr/bin/python2.2
-#. os.execv("test.py", [""])
-#.
-#. splashscreen.py: a quick splashscreen window that displays during ipl
-#.
-#. Matt Wilson <msw@redhat.com>
-#.
-#. Copyright 2001 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. from flags import flags
-#. #     #set the background to a dark gray
-#. #     if flags.setupFilesystems:
-#. #         path = ("/usr/X11R6/bin/xsetroot",)
-#. #         args = ("-solid", "gray45")
-#. #         child = os.fork ()
-#. #         if (child == 0):
-#. #             os.execv (path[0], path + args)
-#. #         try:
-#. #             pid, status = os.waitpid(child, 0)
-#. #         except OSError, (errno, msg):
-#. #             print __name__, "waitpid:", msg
-#. win = GtkWindow()
-#. win.set_title("popup")
-#. win.show_all()
-#. hpane = GtkHPaned()
-#. print sys.path
-#. moduleList.append(obj)
-#.
-#. xserver.py - initial xserver startup for firstboot
-#.
-#. Matt Wilson <msw@redhat.com>
-#. Brent Fox <bfox@redhat.com>
-#.
-#. Copyright 2001 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. override fontpath because xfs is not running yet!
-#. give time for the server to fail (if it is going to fail...)
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#.  os.execv("test.py", [""])
+#. 
+#.  splashscreen.py: a quick splashscreen window that displays during ipl
+#. 
+#.  Matt Wilson <msw@redhat.com>
+#. 
+#.  Copyright 2001 Red Hat, Inc.
+#. 
+#.  This software may be freely redistributed under the terms of the GNU
+#.  library public license.
+#. 
+#.  You should have received a copy of the GNU Library Public License
+#.  along with this program; if not, write to the Free Software
+#.  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#. 
+#.  from flags import flags
+#.  #     #set the background to a dark gray
+#.  #     if flags.setupFilesystems:
+#.  #         path = ("/usr/X11R6/bin/xsetroot",)
+#.  #         args = ("-solid", "gray45")
+#.  #         child = os.fork ()
+#.  #         if (child == 0):
+#.  #             os.execv (path[0], path + args)
+#.  #         try:
+#.  #             pid, status = os.waitpid(child, 0)
+#.  #         except OSError, (errno, msg):
+#.  #             print __name__, "waitpid:", msg
+#.  win = GtkWindow()
+#.  win.set_title("popup")
+#.  win.show_all()
+#.  hpane = GtkHPaned()
+#.  print sys.path
+#.  moduleList.append(obj)
+#. 
+#.  xserver.py - initial xserver startup for firstboot
+#. 
+#.  Matt Wilson <msw@redhat.com>
+#.  Brent Fox <bfox@redhat.com>
+#. 
+#.  Copyright 2001 Red Hat, Inc.
+#. 
+#.  This software may be freely redistributed under the terms of the GNU
+#.  library public license.
+#. 
+#.  You should have received a copy of the GNU Library Public License
+#.  along with this program; if not, write to the Free Software
+#.  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#. 
+#.  override fontpath because xfs is not running yet!
+#.  give time for the server to fail (if it is going to fail...)
+#.  #
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr "Dodatni CD-i"
@@ -300,22 +328,22 @@ msgid ""
 msgstr "CD-ROM nije nađen. Molim ubacite CD-ROM u vaš CD-ROM pogon i kliknite \"U redu\" za nastavak."
 
 #. Be sure to remove the focus grab if we have to return here.
-#. Otherwise, the user is stuck
-#. If there's an autorun file on the cd, run it
-#. There's no autorun on the disc, so complain
+#.  Otherwise, the user is stuck
+#.  If there's an autorun file on the cd, run it
+#.  There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:133
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Program autorun se ne može naći na cd-u. Za nastavak pritisnite \"U redu\"."
 
 #. Be sure to remove the focus grab if we have to return here.
-#. Otherwise, the user is stuck
-#. I think redhat-config-packages will do a umount, but just in case it doesn't...
-#. Yep, redhat-config-packages has already umounted the disc, so fall through and go on
-#. Remove the focus grab of the gtkInvisible widget
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#.  Otherwise, the user is stuck
+#.  I think redhat-config-packages will do a umount, but just in case it doesn't...
+#.  Yep, redhat-config-packages has already umounted the disc, so fall through and go on
+#.  Remove the focus grab of the gtkInvisible widget
+#.  #
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "Korisnički račun"
@@ -390,8 +418,8 @@ msgstr ""
 "korisnika."
 
 #. Check for ascii-only strings
-#. If we get to this point, all the input seems to be valid.  Let's add the user
-#. if the user doesn't already exist
+#.  If we get to this point, all the input seems to be valid.  Let's add the user
+#.  if the user doesn't already exist
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "Korisničko ime mora biti kraće od 33 znakova."
@@ -401,7 +429,7 @@ msgid "The user name may not begin with a number."
 msgstr "Korisničko ime ne može početi s brojem."
 
 #. specifically allow "_" and "-"
-#. Check for whitespace
+#.  Check for whitespace
 #: ../src/modules/create_user.py:256
 #, python-format
 msgid ""
@@ -441,33 +469,33 @@ msgid "The name '%s' contains invalid characters.  Please use only ASCII charact
 msgstr "Ime '%s' sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
-#. Run rhn_register so they can register with RHN
-#.
-#. date_gui.py - GUI front end code for mouse configuration
-#.
-#. Brent Fox <bfox@redhat.com>
-#.
-#. Copyright 2002 Red Hat, Inc.
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. !/usr/bin/python2.2
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#.  Run rhn_register so they can register with RHN
+#. 
+#.  date_gui.py - GUI front end code for mouse configuration
+#. 
+#.  Brent Fox <bfox@redhat.com>
+#. 
+#.  Copyright 2002 Red Hat, Inc.
+#. 
+#.  This program is free software; you can redistribute it and/or modify
+#.  it under the terms of the GNU General Public License as published by
+#.  the Free Software Foundation; either version 2 of the License, or
+#.  (at your option) any later version.
+#. 
+#.  This program is distributed in the hope that it will be useful,
+#.  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#.  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#.  GNU General Public License for more details.
+#. 
+#.  You should have received a copy of the GNU General Public License
+#.  along with this program; if not, write to the Free Software
+#.  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#. 
+#.  !/usr/bin/python2.2
+#.  #
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Datum i vrijeme"
@@ -477,11 +505,11 @@ msgid "Please set the date and time for the system."
 msgstr "Molim, postavite datum i vrijeme za sustav."
 
 #. Initialize date backend
-#. Initialize datePage and pass dateBackend into it
-#. Add icon to the top frame
-#. We're not using ntp, so stop the service
-#. set the time on the system according to what the user set it to
-#. They want ntp but have not set a server
+#.  Initialize datePage and pass dateBackend into it
+#.  Add icon to the top frame
+#.  We're not using ntp, so stop the service
+#.  set the time on the system according to what the user set it to
+#.  They want ntp but have not set a server
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
 msgstr "Molim, upišite vremenski poslužitelj."
@@ -504,10 +532,10 @@ msgid "Contacting NTP server.  Please wait..."
 msgstr "Stupam u vezu s NTP poslužiteljem. Molim, pričekajte..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#.  #
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Završi postavljanje"
@@ -519,9 +547,9 @@ msgid ""
 msgstr "Vaš sustav je podešen i spreman za uporabu. Za nastavak kliknite na gumb \"Sljedeći\" u donjem desnom kutu."
 
 #. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:23
 msgid "Network Setup"
 msgstr "Postavke mreže"
@@ -547,33 +575,33 @@ msgid "static"
 msgstr "statično"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
-#. Run rhn_register so they can register with RHN
-#.
-#. soundcard_gui.py - GUI front end code for soundcard configuration
-#.
-#. Brent Fox <bfox@redhat.com>
-#.
-#. Copyright 2002 Red Hat, Inc.
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. !/usr/bin/python2.2
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#.  Run rhn_register so they can register with RHN
+#. 
+#.  soundcard_gui.py - GUI front end code for soundcard configuration
+#. 
+#.  Brent Fox <bfox@redhat.com>
+#. 
+#.  Copyright 2002 Red Hat, Inc.
+#. 
+#.  This program is free software; you can redistribute it and/or modify
+#.  it under the terms of the GNU General Public License as published by
+#.  the Free Software Foundation; either version 2 of the License, or
+#.  (at your option) any later version.
+#. 
+#.  This program is distributed in the hope that it will be useful,
+#.  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#.  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#.  GNU General Public License for more details.
+#. 
+#.  You should have received a copy of the GNU General Public License
+#.  along with this program; if not, write to the Free Software
+#.  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#. 
+#.  !/usr/bin/python2.2
+#.  #
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Zvučna kartica"
@@ -583,7 +611,7 @@ msgid "A sound card has been detected on your computer."
 msgstr "Zvučna kartica je detektirana u vašem računalu."
 
 #. Initialize soundcard page
-#. Add icon to the top frame
+#.  Add icon to the top frame
 #: ../src/modules/soundcard_gui.py:74
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
@@ -592,32 +620,31 @@ msgid ""
 "will be in the center."
 msgstr "Kliknite na gumb \"Odvsiraj zvuk\" kako biste čuli zvuk. Trebali bi čuti niz od tri zvuka. Prvi zvuk je na desnom kanalu, drugi na lijevom kanalu, a treći u sredini."
 
-#.
 #. timezone.py - GUI front end code for mouse configuration
-#.
-#. Brent Fox <bfox@redhat.com>
-#.
-#. Copyright 2003 Red Hat, Inc.
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. !/usr/bin/python2.2
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#. 
+#.  Brent Fox <bfox@redhat.com>
+#. 
+#.  Copyright 2003 Red Hat, Inc.
+#. 
+#.  This program is free software; you can redistribute it and/or modify
+#.  it under the terms of the GNU General Public License as published by
+#.  the Free Software Foundation; either version 2 of the License, or
+#.  (at your option) any later version.
+#. 
+#.  This program is distributed in the hope that it will be useful,
+#.  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#.  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#.  GNU General Public License for more details.
+#. 
+#.  You should have received a copy of the GNU General Public License
+#.  along with this program; if not, write to the Free Software
+#.  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#. 
+#.  !/usr/bin/python2.2
+#.  #
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
 msgstr "Vremenska zona"
@@ -627,13 +654,13 @@ msgid "Please set the timezone for the system."
 msgstr "Molim, postavite vremensku zonu za sustav."
 
 #. Initialize timezone backend
-#. Initialize datePage and pass dateBackend into it
-#. Add icon to the top frame
-#. Get the timezone info from the timezone page
-#. #
-#. # I18N
-#. #
-#. You must specify a runPriority for the order in which you wish your module to run
+#.  Initialize datePage and pass dateBackend into it
+#.  Add icon to the top frame
+#.  Get the timezone info from the timezone page
+#.  #
+#.  # I18N
+#.  #
+#.  You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
 msgstr "Red Hat Network"
