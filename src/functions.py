@@ -35,6 +35,16 @@ def pixbufFromFile(filename):
 
     return pixbuf
 
+def pixbufFromPath(filename):
+    pixbuf = None
+    try:
+        path = filename
+        pixbuf = gtk.gdk.pixbuf_new_from_file(path)
+    except:
+        pass
+
+    return pixbuf
+
 # Attempt to load a gtk.Image from a file.
 def ditheredImageFromFile(filename, height = None, width = None):
     try:

@@ -40,28 +40,39 @@ class firstbootWindow:
         self.win.realize()
 
         mainVBox = gtk.VBox()
-        self.win.add(mainVBox)
+#        self.win.add(mainVBox)
 
         #This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
         self.win.set_decorated(gtk.FALSE)
-        self.win.set_size_request(800, 600)
+        x_screen = gtk.gdk.screen_width()
+        y_screen = gtk.gdk.screen_height()        
+        self.win.set_size_request(x_screen, y_screen)
         self.win.set_position(gtk.WIN_POS_CENTER)
-        self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_SPLASH",))
+        self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
 
         #Set the background of the window
-        pixbuf = functions.pixbufFromFile("bg.png")
-        bgimage = gtk.gdk.Pixmap(self.win.window, 800, 600, -1)
+        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+        pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
+        bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
         gc = bgimage.new_gc()
-        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_NORMAL, 0, 0)
+        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen, y_screen, gtk.gdk.RGB_DITHER_NORMAL, 0, 0)
         self.win.set_app_paintable(gtk.TRUE)
         self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
-        self.win.realize()
 
-        if gtk.gdk.screen_width() >= 800:            
-            mainVBox.set_size_request(800, 600)
+        align = gtk.Alignment(0.5, 0.5, 0.0, 0.0)
+        eb = gtk.EventBox()
+        eb.connect("realize", self.eb_realized)
+
+        eb.add(mainVBox)
+
+        if x_screen >= 800:            
+            eb.set_size_request(800, 600)
         else:
             mainVBox.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
             self.lowRes = 1
+
+        align.add(eb)
+        self.win.add(align)
             
         # Create the notebook.  We use a ListView to control which page in the
         # notebook is displayed.
@@ -74,7 +85,6 @@ class firstbootWindow:
             self.notebook.set_scrollable(gtk.TRUE)
             self.notebook.set_show_border(gtk.FALSE)
         else:
-            os.system('/usr/bin/xsri --scale-height=100 --scale-width=100 --set /usr/share/gdm/themes/Bluecurve/lightrays.png')
             path = ('/usr/share/firstboot/modules')
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
@@ -127,6 +137,7 @@ class firstbootWindow:
         leftEventBox = gtk.EventBox()
         leftEventBox.add(self.leftLabelVBox)
         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7383a3"))
+#        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6b87bd"))
 
         leftVBox = gtk.VBox()
         leftVBox.pack_start(leftEventBox, gtk.TRUE)
@@ -379,3 +390,11 @@ class firstbootWindow:
                 pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-white.png")
             else:
                 pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-blank.png")
+
+    def eb_realized(self, eb):
+        pixbuf = functions.pixbufFromFile("bg.png")
+        bgimage = gtk.gdk.Pixmap(eb.window, 800, 600, -1)
+        gc = bgimage.new_gc()
+        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_NORMAL, 0, 0)
+        eb.set_app_paintable(gtk.TRUE)
+        eb.window.set_back_pixmap(bgimage, gtk.FALSE)
