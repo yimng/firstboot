@@ -23,6 +23,12 @@ FILENAME=/etc/sysconfig/firstboot
 
 case "$1" in
  start)
+        if [ ! -f /etc/X11/XF86Config ] ; then
+           echo -n "X is not configured.  Running redhat-config-xfree86"
+	   /usr/bin/redhat-config-xfree86
+	   echo -n "X is now configured.  Starting Setup Agent"
+	fi
+
         if grep -i reconfig /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
 	    echo -n "Running system reconfiguration tool"
 	    /usr/sbin/firstboot --reconfig
