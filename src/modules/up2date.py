@@ -3,6 +3,7 @@ import gtk
 import gobject
 import os
 import functions
+import time
 
 ##
 ## I18N
@@ -91,23 +92,31 @@ class childWindow:
 
     def run_up2date(self, *args):
         #Run rhn_register so they can register with RHN
+        pid = self.start_process()
+
+        flag = None
+        while not flag:
+            while gtk.events_pending():
+                gtk.main_iteration_do()
+
+            child_pid, status = os.waitpid(pid, os.WNOHANG)
+            
+            if child_pid == pid:
+                flag = 1
+            else:
+                time.sleep(0.1)
+
+    def start_process(self):
+        path = "/usr/bin/up2date"
+        args = [path]
 
         child = os.fork()
 
         if not child:
-            path = "/usr/sbin/up2date"
-            args = [path]
             os.execvp(path, args)
             os._exit(1)
-
-            while gtk.events_pending():
-                gtk.mainiteration()
-            #fd = os.popen(path)
-            #foo = fd.read()
-            #fd.close()
-
-        os.waitpid(child, 0)
-        print "up2date finished"
+            
+        return child
 
     def apply(self, notebook):
         # If they want to register, then kick off rhn_register.  If not, then pass
