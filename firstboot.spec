@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.6
+Version: 1.3.7
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Mar  8 2004 Brent Fox <bfox@redhat.com> 1.3.7-1
+- drop the verbose print statements
+
 * Thu Mar  4 2004 Brent Fox <bfox@redhat.com> 1.3.6-1
 - only call chkconfig -add if /etc/sysconfig/firstboot does not exist
 
