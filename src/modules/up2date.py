@@ -86,9 +86,5 @@ class childWindow:
             path = "/usr/sbin/up2date"
             os.execv(path, [""])
             
-    def write_file(self):
-        pass
-
     def apply(self, notebook):
-        print "nothing to do in up2date"
-        pass
+        return 1
