@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
 "POT-Creation-Date: 2003-08-28 19:29-0400\n"
-"PO-Revision-Date: 2003-02-18 20:47+0100\n"
+"PO-Revision-Date: 2003-08-29 16:49+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -128,12 +128,12 @@ msgstr "Firstboot kjøres ikke i kjøringsnivå 3."
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
-msgstr ""
+msgstr "Til_bake"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
-msgstr ""
+msgstr "_Neste"
 
 #. Add the button box to the bottom of the box which contains the notebook.
 #. Add the main HBox to a VBox which will sit in the window.
@@ -316,7 +316,7 @@ msgstr ""
 #: ../src/modules/additional_cds.py:133
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+msgstr "Programmet autorun kan ikke finnes på CDen. Klikk «OK» for å fortsette."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -342,24 +342,20 @@ msgstr ""
 "personlig konto."
 
 #: ../src/modules/create_user.py:57
-#, fuzzy
 msgid "_Username:"
-msgstr "Brukernavn:"
+msgstr "Br_ukernavn:"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full Nam_e:"
-msgstr "Fullt navn:"
+msgstr "Fullt _navn:"
 
 #: ../src/modules/create_user.py:71
-#, fuzzy
 msgid "_Password:"
-msgstr "Passord:"
+msgstr "_Passord:"
 
 #: ../src/modules/create_user.py:78
-#, fuzzy
 msgid "Confir_m Password:"
-msgstr "Bekreft passord:"
+msgstr "_Bekreft passord:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:94
@@ -367,10 +363,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Hvis du trenger å bruke nettverksbasert autentisering slik som Kerberos "
+"eller NIS må du klikke på knappen «Bruk nettverkspålogging»."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Bruk nettverkspå_logging..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -383,14 +381,12 @@ msgstr ""
 "administrativ bruk."
 
 #: ../src/modules/create_user.py:145
-#, fuzzy
 msgid "_Continue"
-msgstr "Fortsett"
+msgstr "_Fortsett"
 
 #: ../src/modules/create_user.py:146
-#, fuzzy
 msgid "Create _account"
-msgstr "Opprett konto"
+msgstr "Opprett _konto"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:172
@@ -424,12 +420,13 @@ msgstr "Brukernavnet kan ikke starte med et tall."
 #. specifically allow "_" and "-"
 #. Check for whitespace
 #: ../src/modules/create_user.py:256
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Brukernavn «%s» inneholder mellomrom. Vennligst ikke bruk mellomrom i %s."
+"Brukernavn «%s» inneholder mellomrom. Vennligst ikke bruk mellomrom i "
+"brukernavnet."
 
 #: ../src/modules/create_user.py:263
 #, python-format
@@ -545,12 +542,11 @@ msgid "Finish Setup"
 msgstr "Avslutt Oppsett"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Systemet er nå satt opp og ferdig for bruk. Trykk «Fortsett»-knappen i nedre "
+"Systemet er nå satt opp og klar til bruk. Trykk på «Neste»-knappen i nedre "
 "høyre hjørne for å fortsette."
 
 #. #
@@ -559,27 +555,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:23
 msgid "Network Setup"
-msgstr ""
+msgstr "Nettverksoppsett"
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "Følgende nettverksenheter ble funnet på systemet:"
 
 #: ../src/modules/networking.py:68
 msgid "Network Device"
-msgstr ""
+msgstr "Nettverksenheter"
 
 #: ../src/modules/networking.py:70
 msgid "Boot protocol"
-msgstr ""
+msgstr "Oppstartsprotokoll"
 
 #: ../src/modules/networking.py:76
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "_Endre nettverkskonfigurasjon..."
 
 #: ../src/modules/networking.py:119
 msgid "static"
-msgstr ""
+msgstr "statisk"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -658,12 +654,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "Tidssone"
 
 #: ../src/modules/timezone.py:55
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "Vennligst oppgi dato og klokkeslett for systemet."
+msgstr "Vennligst sett tidssone for systemet."
 
 #. Initialize timezone backend
 #. Initialize datePage and pass dateBackend into it
@@ -710,17 +705,15 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Ja, jeg ønsker å registrere mitt system i Red Hat Network."
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid "N_o, I do not want to register my system."
-msgstr "_Nei, jeg ønsker ikke å registrere mitt system."
+msgstr "N_ei, jeg ønsker ikke å registrere mitt system."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Det gjenstår noen steg før systemet er klart til bruk. Red Hat Setup Agent "
-"vil nå hjelpe deg gjennom grunnleggende konfigurasjon. Trykk «Fortsett»-"
+"vil nå hjelpe deg gjennom grunnleggende konfigurasjon. Trykk på «Neste»-"
 "knappen i nedre høyre hjørne for å fortsette."
