@@ -1,6 +1,8 @@
 # translation of es.po to 
 # translation of es.po to
 # translation of es.po to
+# translation of es.po to
+# translation of es.po to
 # translation of es.po to Spanish
 # translation of es.po to Español
 # translation of es.po to
@@ -18,7 +20,7 @@ msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
-"PO-Revision-Date: 2004-11-16 08:08+1000\n"
+"PO-Revision-Date: 2004-11-17 10:34+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +51,7 @@ msgstr "¿Desea releer o reconsiderar el Acuerdo de Licencia?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr "_Releer licencia"
+msgstr "_Volver a leer licencia"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
@@ -58,7 +60,7 @@ msgstr "_Apagar"
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "Se ha producido un error en el módulo %s."
+msgstr "Ocurrió un error en el módulo %s."
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -67,9 +69,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"Existe un problema con el módulo %s,\n"
-"el Agente de configuración de Red Hat no cargará este módulo e intentará "
-"ejecutar los módulo restantes."
+"Existe un problema con el módulo %s, \n"
+"el Agente de configuración de Red Hat no cargará este \n"
+"módulo e intentará ejecutar los módulo restantes."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -79,12 +81,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Archive un error en 'firstboot' en el sistema de seguimiento de errores de "
-"Red\n"
-"Hat en http://www.redhat.com/bugzilla. Se ha guardado una copia de la salida "
-"de\n"
-"depuración para %s. Asegúrese de adjuntar ese fichero para informar de un "
-"error.\n"
+"Archive un error en 'firstboot' en el sistema de seguimiento \n"
+"de errores de Red Hat en http://www.redhat.com/bugzilla. Se \n"
+"ha guardado una copia de la salida de depuración para %s. \n"
+"Asegúrese de adjuntar ese archivo en el informe de errores.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
@@ -104,7 +104,7 @@ msgstr "Bienvenido"
 #: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr "la importación del módulo %s falló: %s"
+msgstr "Falló al importar el módulo %s: %s"
 
 #: ../src/textWindow.py:36
 msgid "Licence Aggrement"
@@ -187,20 +187,20 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:110
 msgid "Install..."
-msgstr "Instalación..."
+msgstr "Instalar..."
 
 #: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"No se ha detectado un CD-ROM. Introduzca un CD-ROM en la unidad y pulse \"OK"
-"\" para continuar."
+"No se detectó un CD-ROM. Introduzca un CD-ROM en la unidad y pulse \"Aceptar\" "
+"para continuar."
 
 #: ../src/modules/additional_cds.py:179
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
-"No se puede encontrar el programa de autorun en el cd. Pulse en  \"OK\" para "
+"No se puede encontrar el programa de autorun en el cd. Pulse en  \"Aceptar\" para "
 "continuar."
 
 #: ../src/modules/create_user.py:43
@@ -231,7 +231,7 @@ msgstr "_Contraseña:"
 
 #: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
-msgstr "Confir_me la contraseña: "
+msgstr "Confir_mar contraseña:"
 
 #: ../src/modules/create_user.py:117
 msgid ""
@@ -239,11 +239,11 @@ msgid ""
 "click the Use Network Login button."
 msgstr ""
 "Si necesita utilizar una autenticación de red tal como Kerberos o NIS, por "
-"favor pulse  en el botón Utilizar conexión a la red."
+"favor pulse en el botón Utilizar conexión de red."
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
-msgstr "Utilizar conexión a _la red..."
+msgstr "Uti_lizar conexión de red..."
 
 #: ../src/modules/create_user.py:163
 msgid ""
@@ -265,11 +265,11 @@ msgstr "Crear cuent_a"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
+msgstr "Las contraseñas no coinciden. Por favor, vuelva a introducirla."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
+msgstr "La contraseña es muy corta. Use al menos seis (6) caracteres."
 
 #: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
@@ -277,7 +277,7 @@ msgstr "El nombre de usuario debe ser menor de 33 caracteres de largo. "
 
 #: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
-msgstr "El nombre de usuario no puede comenzar con un número. "
+msgstr "El nombre de usuario no puede comenzar con un número."
 
 #. Check for whitespace
 #: ../src/modules/create_user.py:296
@@ -360,7 +360,7 @@ msgstr ""
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Por favor presione el botón \"Siguiente\" de la parte inferior derecha para "
+"Presione el botón \"Siguiente\" de la parte inferior derecha para "
 "continuar."
 
 #: ../src/modules/networking.py:42
