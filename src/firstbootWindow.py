@@ -121,10 +121,15 @@ class firstbootWindow:
         modulePriorityList = self.moduleDict.keys()
         modulePriorityList.sort()
 
-        leftVBox = gtk.VBox()
         self.leftLabelVBox = gtk.VBox()
-        leftVBox.pack_start(self.leftLabelVBox, gtk.TRUE)
-        leftVBox.set_border_width(12)
+        self.leftLabelVBox.set_border_width(12)
+        
+        leftEventBox = gtk.EventBox()
+        leftEventBox.add(self.leftLabelVBox)
+        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#000055"))
+
+        leftVBox = gtk.VBox()
+        leftVBox.pack_start(leftEventBox, gtk.TRUE)
 
 	# Add the modules to the proper lists.
         pages = 0
@@ -138,7 +143,7 @@ class firstbootWindow:
             if self.doDebug:
                 try:
                     print "calling", module.moduleName
-                    vbox, eventbox = module.launch(self.doDebug)
+                    vbox, pix, title = module.launch(self.doDebug)
                 except:
                     import exceptionWindow
                     (type, value, tb) = sys.exc_info()
@@ -148,7 +153,7 @@ class firstbootWindow:
                     pass                    
             else:
                 try:
-                    vbox, eventbox = module.launch() 
+                    vbox, pix, title = module.launch() 
                 except:
                     import exceptionWindow
                     (type, value, tb) = sys.exc_info()
@@ -158,16 +163,26 @@ class firstbootWindow:
                     pass
                     continue
 
-            if vbox and eventbox:
+            if vbox and title:
                 # If it launched, add it to the mdoule list.
                 self.moduleList.append(module)
-                # Set the background of the header to a uniform color.
-                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#758baa"))
-                # Give some vertical spacing to the window titlebar
-                eventbox.get_children()[0].set_border_width(3)
+
+                title_label = gtk.Label("")
+                title_label.set_alignment(0.0, 0.5)
+                title_label.set_markup("<span foreground='#000000' size='30000' font_family='Helvetica'><b>%s</b></span>" % title)
+
+                titleBox = gtk.HBox()
+                titleBox.pack_start(pix, gtk.FALSE)
+                titleBox.pack_start(title_label, gtk.TRUE)
+                titleBox.set_spacing(8)
+
+                vbox.pack_start(titleBox, gtk.FALSE)
+                vbox.reorder_child(titleBox, 0)
+                
                 if self.lowRes:
                     # If we're in 640x480 mode, remove the title bars
                     vbox.remove(vbox.get_children()[0])
+
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
                     self.notebook.append_page(vbox, gtk.Label(module.moduleName))
@@ -175,8 +190,6 @@ class firstbootWindow:
                     pix = functions.imageFromFile("pointer-blank.png")
                     label = gtk.Label("")
                     label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % module.moduleName)
-
-#                    label = gtk.Label(module.moduleName)
                     label.set_alignment(0.0, 0.5)
                     hbox.pack_start(pix, gtk.FALSE)
 
@@ -189,11 +202,6 @@ class firstbootWindow:
         self.notebook.set_current_page(0)
         self.setPointer(0)
 
-        # Add our logo to the left box, below the TreeView.
-#        pix = functions.imageFromFile("redhat-logo.png")
-#        if pix:
-#            leftVBox.pack_start(pix, gtk.FALSE)
-
         if not self.lowRes:
             # Add the box on the left to the window's HBox.
             self.mainHBox.pack_start(leftVBox, gtk.FALSE)
@@ -203,31 +211,19 @@ class firstbootWindow:
 
         self.internalVBox.pack_start(self.notebook, gtk.TRUE)
 
-        # Now add the VBox to an EventBox.
-        eventBox = gtk.EventBox()
-        eventBox.add(self.internalVBox)
-        eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
-
-        borderBox = gtk.VBox()
-        borderFrame = gtk.Frame()
-        borderBox.pack_start(borderFrame)
-
         # Now add the EventBox to the right-side VBox.
         self.rightVBox = gtk.VBox()
         self.rightVBox.set_size_request(400, 200)
-#        self.rightVBox.set_size_request(300, 200)
-        self.rightVBox.pack_start(eventBox)
-        borderFrame.add(self.rightVBox)
+        self.rightVBox.pack_start(self.internalVBox)
 
         # Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
         if not self.lowRes:
             alignment = gtk.Alignment()
-            alignment.add(borderBox)
+            alignment.add(self.rightVBox)
             alignment.set(0.2, 0.3, 0.8, 0.8)
-#            alignment.set(0.9, 0.1, 0.8, 0.8)
             self.mainHBox.pack_start(alignment, gtk.TRUE)
         else:
-            self.mainHBox.pack_start(borderBox)
+            self.mainHBox.pack_start(self.rightVBox)
 
         # Create a lower hbox that will contain the close button and button box
         self.lowerHBox = gtk.HBox()
