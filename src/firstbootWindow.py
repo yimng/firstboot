@@ -46,8 +46,11 @@ class firstbootWindow:
 
         # Create the initial window and a vbox to fill it with.
         win = gtk.Window()
+        win.connect("destroy", self.destroy)
         win.set_size_request(800, 600)
         win.set_resizable(gtk.FALSE)
+        win.set_position(gtk.WIN_POS_CENTER)
+        win.set_decorated(gtk.FALSE)
         mainVBox = gtk.VBox()
 
         if doDebug:
@@ -227,6 +230,14 @@ class firstbootWindow:
         win.add(mainVBox)
         win.show_all()
         gtk.main()
+
+    def destroy(self, *args):
+        #Exit the GTK loop
+        gtk.mainquit()
+        #Kill the window manager
+        os.kill(self.wm_pid, 15)
+        #Exit firstboot.  This should take down the X server as well
+        os._exit(0)
 
     def finishClicked(self, *args):
         try:
