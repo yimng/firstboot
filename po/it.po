@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Fri Jan 31 16:12:24 2003\n"
-"PO-Revision-Date: 2003-01-16 09:09+1000\n"
-"Last-Translator: Olympia Ammendola <olympia@brisbane.redhat.com>\n"
-"Language-Team: Italian <it@li.org>\n"
+"PO-Revision-Date: 2003-02-03 11:43+1000\n"
+"Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
+"Language-Team: Italian <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,21 +47,18 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot è già stato eseguito su questo sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Per eseguire firstboot durante l'avvio del sistema, eseguire i seguenti "
 "comandi:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot non puó essere eseguito nel runlevel 3."
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -98,7 +95,7 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "Account utente"
 
 #: ../src/modules/create_user.py:44
 msgid ""
@@ -106,6 +103,9 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"É consigliato creare un account utente personale per un uso (non-"
+"amministrativo) normale.  Per creare un account personale, fornire le informazioni "
+"richieste."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -129,79 +129,81 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"É fortemente consigliato creare un account utente.  Se continuate senza un "
+"account, effettuerete una registrazione con un account root, "
+"il quale é riservato solo per un uso amministrativo."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr ""
+msgstr "Continuare"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "Creare un account"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr "La password non é corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:153
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Un account con il nome dell'utente %s risulta essere giá esistente.  Si "
-"prega specificare un altro nome utente."
+"Questo nome utente '%s' é un account riservato al sistema.  Prego specificare un altro "
+"nome utente."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "Il nome utente non deve essere piú lungo di 33 caratteri."
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "Il nome utente non dovrebbe iniziare con un numero."
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
+"Il nome utente '%s' contiene degli spazi.  Prego non includere alcun spazio "
+"nel %s."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"Il nome utente '%s' contiene della punteggiatura.  Prego non usare la punteggiatura "
+"nel nome utente."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"Il nome utente '%s' contiene lettere maiuscole.  Prego non usare lettere maiuscole "
+"nel nome utente."
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Il nome utente '%s' contiene caratteri non validi.  Prego usare solo "
+"caratteri ASCII."
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "La password contiene caratteri invalidi.  Si prega di usare solo caratteri ASCII."
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri ASCII."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -237,14 +239,12 @@ msgid "Finish Setup"
 msgstr "Termina installazione"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Il sistema Red Hat Linux è stato installato correttamente.  Ci auguriamo che "
-"avrete un esperienza piacevole utilizzando questo sistema.  Fare clic sul "
-"pulsante \"Avanti\" nella parte inferiore destra per continuare."
+"Il vostro sistema á stato impostato ed é pronto per l'uso.  Si prega di fare clic sul pulsante \"Avanti\" "
+"nell'angolo basso a destra per continuare. "
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -268,10 +268,9 @@ msgstr ""
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
-msgstr ""
+msgstr "Red Hat Network"
 
 #: ../src/modules/up2date.py:36
-#, fuzzy
 msgid ""
 "This step will register your system with a complimentary Demo Account from "
 "Red Hat Network so that you can receive the latest software packages "
@@ -286,11 +285,11 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"Red Hat Update Agent esegue la registrazione con Red Hat Network, per "
-"ricevere gli ultimi pacchetti software direttamente da Red Hat. Questo tool "
-"permette di disporre di un sistema Red Hat Linux sempre aggiornato con patch "
-"per la sicurezza, risoluzioni dei bug e perfezionamenti dei pacchetti "
-"software.\n"
+"Questa fase effettuerá la registrazione del vostro sistema con un account dimostrativo "
+"supplementare di Red Hat Network, in tal modo potrete ricevere gli ultimissimi pacchetti "
+"software direttamente da Red Hat.  Usando questo tool, sarate in grado di ottenere sempre "
+"un sistema Red Hat Linux aggiornato con tutte le patch di sicurezza, bug, e "
+"miglioramenti software. \n"
 "\n"
 "Con l'acquisto del prodotto si ha diritto a una prova gratuita del servizio "
 "di base di Red Hat Network. Per maggiori informazioni, leggere la scheda "
@@ -299,12 +298,10 @@ msgstr ""
 "Se il prodotto non è stato acquistato, visitare il sito http://rhn.redhat."
 "com per ottenere ulteriori informazioni oppure sottoscrivere il servizio di "
 "base di Red Hat Network.\n"
-"\n"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid "Yes, I want to register my system with Red Hat Network."
-msgstr "Procedere con la registrazione del sistema con Red Hat Network."
+msgstr "Si, voglio procedere alla registrazione con Red Hat Network."
 
 #: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
@@ -395,3 +392,4 @@ msgstr "Red Hat Update Agent"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
+
