@@ -62,8 +62,6 @@ class TimeWindow(FirstbootGuiWindow):
         self.dateBackend = dateBackend.dateBackend()
 
         # hmm, call the hook to generate the custom widgets on datePage
-        print "date_gui: %s" % date_gui
-        print "d_g.c_w: %s" % date_gui.custom_widgets
         gtk.glade.set_custom_handler(self.custom_handler)
         
         #Initialize datePage and pass dateBackend into it
