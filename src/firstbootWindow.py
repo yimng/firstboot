@@ -74,6 +74,7 @@ class firstbootWindow:
             self.notebook.set_scrollable(gtk.TRUE)
             self.notebook.set_show_border(gtk.FALSE)
         else:
+            os.system('/usr/bin/xsri --scale-height=100 --scale-width=100 --set /usr/share/firstboot/pixmaps/bg.png')
             path = ('/usr/share/firstboot/modules')
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
