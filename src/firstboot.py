@@ -112,17 +112,7 @@ if (not doDebug):
 		    value = string.strip(value)
                     if value == "NO":
                         #Firstboot should not be run
-			print (_("Firstboot has already been run once on this system.\n"))
-			print (_("In order to run firstboot from the command line, "
-                                 "run the following commands:"))
-			print ("1) rm /etc/sysconfig/firstboot")
-			print ("2) /usr/sbin/firstboot\n")
-
-			print (_("In order to run firstboot during system bootup, run the "
-                                 "following commands:"))
-			print ("1) rm /etc/sysconfig/firstboot")
-			print ("2) chkconfig --level 5 firstboot on")
-			print ("3) reboot")
+                        firstbootBackend.chkconfigOff()
                         os._exit(0)
                     
     else:
