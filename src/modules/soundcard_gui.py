@@ -114,6 +114,6 @@ class SoundWindow:
             return self.mainVBox, eventBox
 
     def apply(self, *args):
-        return 1
+        return 0
 
 childWindow = SoundWindow

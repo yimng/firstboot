@@ -172,9 +172,9 @@ class TimeWindow(FirstbootGuiWindow):
                 self.dateBackend.chkconfigOn()
 
         if self.failedFlag:
-            return
+            return None
         else:
-            return 1
+            return 0
 
     def grabFocus(self):
         print "entering date screen"

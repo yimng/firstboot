@@ -347,7 +347,7 @@ class firstbootWindow:
             result = exceptionWindow.ExceptionWindow(module, text)
             pass
 
-        if result:
+        if result != None:
             self.notebook.next_page()
             module = self.moduleList[self.notebook.get_current_page()]
             #Call setPointer to make the left hand pointer move to the correct pointer

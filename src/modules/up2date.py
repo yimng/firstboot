@@ -114,5 +114,5 @@ class childWindow:
         if self.radioYes.get_active() == gtk.TRUE:            
             #We can ping www.redhat.com, so the network is active
             self.run_up2date()
-        return 1
+        return 0
             

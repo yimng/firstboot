@@ -62,4 +62,4 @@ class childWindow:
         return self.vbox, eventBox
 
     def apply(self, notebook):
-        return 1
+        return 0
