@@ -100,6 +100,7 @@ class childWindow:
         return self.vbox, eventBox
 
     def autorun(self, *args):
+        #Create a gtkInvisible dialog to block until the autorun is complete
         i = gtk.Invisible ()
         i.grab_add ()
 
