@@ -29,16 +29,8 @@ case "$1" in
 	    rm -f /etc/reconfigSys
 	fi
 
-#	# We don't want to run this on random runlevel changes.
-#	touch /var/lock/subsys/reconfig
-#
-#	;;
-# stop)
-# 	rm -f /var/lock/subsys/reconfig
-# 	;;
-# *)
 	/usr/sbin/firstboot
-	exit 1
+	exit 0
 	;;
 esac
 
