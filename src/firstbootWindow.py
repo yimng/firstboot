@@ -248,34 +248,10 @@ class firstbootWindow:
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
-        pix = functions.imageFromFile("bg-gray.png")
-	if pix:
-            bgimage = gtk.gdk.Pixmap(self.win.window, 800, 600, -1)
-            gc = bgimage.new_gc ()
-            pix.get_pixbuf().render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-
-            if self.doDebug:
-                self.win.realize()
-                self.win.set_app_paintable(gtk.TRUE)
-                self.win.window.set_back_pixmap (bgimage, gtk.FALSE)
-#            else:
-#                self.win.realize()
-#                eb.realize()
-#                eb.connect("expose_event", self.preventExpose)
-#                eb.window.set_back_pixmap (bgimage, gtk.FALSE)
-
-        # Show the main window and go for it.
-        if self.doDebug:
-            self.win.add(mainVBox)
-
         self.win.show_all()
         self.nextButton.grab_focus()
         gtk.main()
 
-#    def preventExpose(self, eb, event):
-#        if event.window == eb.window:
-#            return 1
-#        return 0
 
     def destroy(self, *args):
         #Exit the GTK loop
