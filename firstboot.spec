@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Nov 24 2003 Brent Fox <bfox@redhat.com> 1.3.2-1
+- make changes for Python2.3
+
 * Sun Nov 23 2003 Brent Fox <bfox@redhat.com> 1.3.2-1
 - update Requires for system-config name change
 - make changes for Python2.3
