@@ -16,7 +16,7 @@ echo "Checking redhat-config-mouse"
 cvs status 2>/dev/null| grep Status | grep -v Up
 cd ..
 cd redhat-config-rootpassword
-echo "Checking redhat-config-password"
+echo "Checking redhat-config-rootpassword"
 cvs status 2>/dev/null| grep Status | grep -v Up
 cd ..
 cd redhat-config-securitylevel
