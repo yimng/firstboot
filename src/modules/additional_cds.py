@@ -23,10 +23,12 @@ from gtk import *
 import string
 import gtk
 import gobject
+import kudzu
 import os
 import time
 import functions
 import rhpl.diskutil as diskutil
+
 
 ##
 ## I18N
@@ -130,6 +132,14 @@ class childWindow:
         return self.vbox, title_pix, self.moduleName
 
     def autorun(self, *args):
+        def getCDDev():
+            drives = kudzu.probe(kudzu.CLASS_CDROM,
+                                 kudzu.BUS_UNSPEC, kudzu.PROBE_ALL)
+            for d in drives:
+                return d.device
+            return None
+            
+            
         #Create a gtkInvisible widget to block until the autorun is complete
         i = gtk.Invisible ()
         i.grab_add ()
@@ -138,7 +148,10 @@ class childWindow:
 
         while not mountFlag:
             try:
-                diskutil.mount('/dev/cdrom', '/mnt/cdrom', fstype="iso9660", readOnly = 1)
+                dev = getCDDev()
+                if dev is None:
+                    raise Exception, "no cd drive found"
+                diskutil.mount(dev, '/mnt', fstype="iso9660", readOnly = 1)
                 mountFlag = 1
             except:
                 dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
@@ -157,9 +170,9 @@ class childWindow:
                     i.grab_remove ()
                     return
 
-        if os.access("/mnt/cdrom/autorun", os.R_OK):
+        if os.access("/mnt/autorun", os.R_OK):
             #If there's an autorun file on the cd, run it
-            pid = functions.start_process("/mnt/cdrom/autorun")
+            pid = functions.start_process("/mnt/autorun")
 
             flag = None
             while not flag:
@@ -191,7 +204,7 @@ class childWindow:
 
         #I think system-config-packages will do a umount, but just in case it doesn't...
         try:
-            diskutil.umount('/mnt/cdrom')
+            diskutil.umount('/mnt')
         except:
             #Yep, system-config-packages has already umounted the disc, so fall through and go on
             pass
