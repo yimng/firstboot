@@ -22,7 +22,7 @@ class childWindow:
         if doDebug:
             print "initializing finished module"
 
-        self.vbox = gtk.VBox()
+        self.vbox = gtk.VBox(gtk.FALSE, 10)
         self.vbox.set_size_request(400, 200)
 
         label = gtk.Label(_("Finished installation!"))
@@ -39,17 +39,17 @@ class childWindow:
         eventBox.add(titleBox)
         self.vbox.pack_start(eventBox, FALSE)
 
-        pix = functions.imageFromFile("splash.png")
+        label = gtk.Label(_("Contratulations!  Your Red Hat Linux system is now set up and ready to "
+                          "use.  We hope that you will have a pleasant computing experience.  Please "
+                            "click the \"Forward\" button in the lower right corner to continue."))
+
+        label.set_alignment(0.1, 0.5)
+        label.set_line_wrap(gtk.TRUE)
+        label.set_size_request(500, -1)
+
+        self.vbox.pack_start(label, gtk.FALSE, 5)
+        pix = functions.imageFromFile("splash-small.png")
         self.vbox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
-
-
-#        label = gtk.Label("Welcome message goes here")
-#        self.vbox.pack_start(label, TRUE)
-
-#        self.hbox = gtk.HBox()
-#        self.hbox.pack_start(self.splash, gtk.FALSE)
-#        self.hbox.pack_start(label, gtk.TRUE)
-#        self.vbox.pack_start(self.hbox, gtk.TRUE)
 
             
         return self.vbox, eventBox

@@ -22,10 +22,10 @@ class childWindow:
         if doDebug:
             print "initializing welcome module"
 
-        self.vbox = gtk.VBox()
+        self.vbox = gtk.VBox(gtk.FALSE, 10)
         self.vbox.set_size_request(400, 200)
 
-        label = gtk.Label(_("Welcome to Red Hat Linux Beta!"))
+        label = gtk.Label(_("Welcome to Red Hat Linux!"))
         label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
         titleBox = gtk.HBox()
@@ -39,18 +39,18 @@ class childWindow:
         eventBox.add(titleBox)
         self.vbox.pack_start(eventBox, FALSE)
 
-        pix = functions.imageFromFile("splash.png")
+        label = gtk.Label(_("Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to "
+                          "take before your system is ready to use.  The Red Hat Setup Agent "
+                          "will now guide you through some basic configuration.  Please click the "
+                            "\"Forward\" button in the lower right corner to continue."))
+
+        label.set_alignment(0.1, 0.5)
+        label.set_line_wrap(gtk.TRUE)
+        label.set_size_request(500, -1)
+
+        self.vbox.pack_start(label, gtk.FALSE, 5)
+        pix = functions.imageFromFile("splash-small.png")
         self.vbox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
-
-
-#        label = gtk.Label("Welcome message goes here")
-#        self.vbox.pack_start(label, TRUE)
-
-#        self.hbox = gtk.HBox()
-#        self.hbox.pack_start(self.splash, gtk.FALSE)
-#        self.hbox.pack_start(label, gtk.TRUE)
-#        self.vbox.pack_start(self.hbox, gtk.TRUE)
-
             
         return self.vbox, eventBox
 
