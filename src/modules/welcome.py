@@ -33,7 +33,7 @@ class childWindow:
         internalVBox.set_border_width(10)
 
         label = gtk.Label(_("There are a few more steps to "
-                          "take before your system is ready to use.  The Red Hat Setup Agent "
+                          "take before your system is ready to use.  The Setup Agent "
                           "will now guide you through some basic configuration.  Please click the "
                             "\"Next\" button in the lower right corner to continue."))
 

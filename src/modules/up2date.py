@@ -36,7 +36,7 @@ class childWindow:
         label = gtk.Label(_("This step will register your system with a complimentary Demo Account from "
                             "Red Hat Network so that you can receive the latest software "
                             "packages directly from Red Hat.  Using this tool will allow you "
-                            "to always have the most up-to-date Red Hat Linux system "
+                            "to always have the most up-to-date system "
                             "with all the security patches, bug fixes, and software "
                             "enhancements. \n\n"
                             "If you purchased this product, you are entitled to a free trial of Red "
