@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.1.2
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Jun 19 2003 Brent Fox <bfox@redhat.com> 1.1.2-2
+- bump number and rebuild
+
 * Thu Jun 19 2003 Brent Fox <bfox@redhat.com> 1.1.2-1
 - implement networking screen for reconfig mode (bug #91984)
 
