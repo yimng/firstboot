@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
-"PO-Revision-Date: 2004-05-03 16:00-0400\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2004-11-24 20:27+0200\n"
+"Last-Translator: Polar <webmaster@blob.co.il>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,36 +18,36 @@ msgstr ""
 
 #: ../src/constants_text.py:36
 msgid "Exit"
-msgstr ""
+msgstr "יציאה"
 
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "הסכם רשיון"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "_כן, אני מסכים עם הסכם הרשיון"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr ""
+msgstr "_לא, איני מסכים"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "האם ברצונך לקרוא מחדש או לשקול מחדש את הסכם הרשיון?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "_קרא רשיון מחדש"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "כב_ה"
 
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "שגיאה התרחשה במודול %s."
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -56,6 +56,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"מכיוון שיש בעיה עם מודול %s, \n"
+"סוכן ההתקנה של רד האט לא יטען את מודול זה \n"
+"וינסה להריץ את המודולים הנותרים."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -65,301 +68,281 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"בבקשה הגש באג כנגד 'firstboot' במערכת \n"
+"מעקב באגים של רד האט ב-http://www.redhat.com/bugzilla. \n"
+"עותק של פלט ניפוי השגיאות נשמר ל-%s \n"
+"בבקשה צרף אותו לדוח הבאג שלך. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
+#: ../src/firstbootWindowLocal.py:186
+#: ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192
+#: ../src/firstbootWindow.py:582
 msgid "_Back"
-msgstr ""
+msgstr "_הקודם"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
+#: ../src/firstbootWindowLocal.py:194
+#: ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200
+#: ../src/firstbootWindow.py:586
 msgid "_Next"
-msgstr ""
+msgstr "ה_בא"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:578
-#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
+#: ../src/firstbootWindowLocal.py:532
+#: ../src/firstbootWindow.py:578
+#: ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
 msgid "Welcome"
-msgstr ""
+msgstr "ברוך הבא"
 
 #: ../src/firstbootWindow.py:421
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "ייבוא המודול %s נכשל: %s"
 
 #: ../src/textWindow.py:36
 msgid "Licence Aggrement"
-msgstr ""
+msgstr "הסכם רשיון"
 
 #: ../src/textWindow.py:37
 msgid "Authentication"
-msgstr ""
+msgstr "אימות"
 
 #: ../src/textWindow.py:38
 msgid "Firewall configuration"
-msgstr ""
+msgstr "הגדרות חומת אש"
 
 #: ../src/textWindow.py:39
 msgid "Keyboard configuration"
-msgstr ""
+msgstr "הגדרות מקלדת"
 
 #: ../src/textWindow.py:40
 msgid "Network configuration"
-msgstr ""
+msgstr "הגדרות רשת"
 
 #: ../src/textWindow.py:41
 msgid "Printer configuration"
-msgstr ""
+msgstr "הגדרות מספדת"
 
 #: ../src/textWindow.py:42
 msgid "System services"
-msgstr ""
+msgstr "שירותי מערכת"
 
 #: ../src/textWindow.py:43
 msgid "Sound card configuration"
-msgstr ""
+msgstr "הגדרות כרטיס קול"
 
 #: ../src/textWindow.py:44
 msgid "Timezone configuration"
-msgstr ""
+msgstr "הגדרות אזור זמן"
 
 #: ../src/textWindow.py:52
 msgid "Run Tool"
-msgstr ""
+msgstr "הרץ כלי"
 
 #: ../src/textWindow.py:54
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "בחר את הפריט שברצונך לשנות"
 
 #: ../src/textWindow.py:60
 msgid "Setup Agent"
-msgstr ""
+msgstr "סוכן התקנה"
 
-#: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
+#: ../src/modules/additional_cds.py:41
+#: ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
-msgstr ""
+msgstr "דיסקים נוספים"
 
 #: ../src/modules/additional_cds.py:59
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "נא הכנס את הדיסק בעל התווית \"Red Hat Enterprise Linux Extras\" בשביל לאפשר התקנה של תוספים ותוכניות של צד שלישי. אתה יכול גם להכניס את דיסק התיעוד, או דיסק אחר שסופק ע\"י רד האט כדי להתקין תוכנות נוספות."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture, you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"כדי לאפשר תמיכה בזמן ריצה של אפליקציות 32-bit בארכיטקטורת Intel Itanium2, יש להתקין את חבילת \"Intel Execution Layer\" מדיסק התוספות כעת."
 
 #: ../src/modules/additional_cds.py:110
 msgid "Install..."
-msgstr ""
+msgstr "התקן..."
 
 #: ../src/modules/additional_cds.py:145
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "CD-ROM לא זוהה. נא הכנס CD-ROM לכונן ולחץ \"OK\" כדי להמשיך."
 
 #: ../src/modules/additional_cds.py:179
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "תוכנית ההרצה האוטומטית לא נמצאה על הדיסק. לחץ \"OK\" כדי להמשיך."
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
-msgstr ""
+msgstr "משתמש מערכת"
 
 #: ../src/modules/create_user.py:70
-msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
+msgid "It is recommended that you create a system 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
+msgstr "מומלץ ליצור 'שם משתמש' של המערכת לשימוש רגיל (לא ניהולי) במערכת. כדי ליצור 'שם משתמש' של המערכת, בבקשה ספק את המידע למטה."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
-msgstr ""
+msgstr "_שם משתמש:"
 
 #: ../src/modules/create_user.py:87
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "שם _מלא:"
 
 #: ../src/modules/create_user.py:94
 msgid "_Password:"
-msgstr ""
+msgstr "_סיסמה:"
 
 #: ../src/modules/create_user.py:101
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "_אישור סיסמה:"
 
 #: ../src/modules/create_user.py:117
-msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
+msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "אם יש לך צורך באימות רשת כמו Kerberos או NIS, בבקשה לחץ על הכפתור \"Use Network Login\""
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "הש_תמש באימות רשת..."
 
 #: ../src/modules/create_user.py:163
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "מומלץ ליצור חשבון משתמש אישי. אם תמשיך בלי ליצור חשבון, תוכל להתחבר רק עם חשבון ה-root, השמור לשימוש ניהולי בלבד."
 
 #: ../src/modules/create_user.py:171
 msgid "_Continue"
-msgstr ""
+msgstr "המש_ך"
 
 #: ../src/modules/create_user.py:172
 msgid "Create _account"
-msgstr ""
+msgstr "_צור חשבון"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "הסיסמאות לא תואמות. נא הכנס את הסיסמה שנית."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "הסיסמה קצרה מדי. נא השתמש לפחות ב-6 תווים."
 
 #: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "שם המשתמש חייב להיות קצר מ-33 תווים."
 
 #: ../src/modules/create_user.py:284
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "שם המשתמש לא יכול להתחיל במספר."
 
 #. Check for whitespace
 #: ../src/modules/create_user.py:296
 #, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
+msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
+msgstr "שם המשתמש '%s' מכיל רווח לבן. בבקשה אל תכלול רווח לבן בשם המשתמש."
 
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
+msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
+msgstr "שם המשתמש '%s' מכיל סימני פיסוק. בבקשה אל תשתמש בפיסוק בשם המשתמש."
 
 #: ../src/modules/create_user.py:310
 #, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
+msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
+msgstr "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
 
 #: ../src/modules/create_user.py:317
 #, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
+msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "שם המשתמש '%s' מכיל תווים לא חוקיים. בבקשה השתמש רק בתווי ASCII."
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "הסיסמה מכילה תווים לא חוקיים. נא השתמש רק בתווי ASCII."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "השם '%s' מכיל תווים לא חוקיים. נא השתמש רק בתווי ASCII."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
-msgstr ""
+msgstr "תאריך וזמן"
 
 #: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "נא הגדר את התאריך והזמן של המערכת."
 
 #: ../src/modules/display.py:44
 msgid "Display"
-msgstr ""
+msgstr "תצוגה"
 
 #: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "נא בחר את הרזולוציה ועומק הצבעים שברצונך להשתמש בהם"
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "סיום ההתקנה"
 
 #: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
-"button in the lower right corner to continue."
-msgstr ""
+msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
+msgstr "המערכת שלך מוכנה לשימוש. בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה בשביל להמשיך."
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
+msgstr "בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה בשביל להמשיך."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
-msgstr ""
+msgstr "התקנת רשת"
 
 #: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "ההתקנים הבאים זוהו במערכת:"
 
 #: ../src/modules/networking.py:87
 msgid "Network Device"
-msgstr ""
+msgstr "התקן רשת"
 
 #: ../src/modules/networking.py:89
 msgid "Boot protocol"
-msgstr ""
+msgstr "פרוטוקול אתחול"
 
 #: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "שנה ה_גדרות רשת..."
 
 #: ../src/modules/networking.py:138
 msgid "static"
-msgstr ""
+msgstr "סטטי"
 
-#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
+#: ../src/modules/soundcard_gui.py:45
+#: ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
-msgstr ""
+msgstr "כרטיס קול"
 
 #: ../src/modules/soundcard_gui.py:47
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "כרטיס קול זוהה במחשב שלך."
 
 #: ../src/modules/soundcard_gui.py:70
-msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
-msgstr ""
+msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "לחץ על כפתור \"Play Test Sound\" כדי לשמוע צליל דוגמה. אתה צריך לשמוע סדרה של 3 צלילים. הצליל הראשון יהיה בערוץ הימני, השני בערוץ השמאלי, והשלישי במרכז."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
-msgstr ""
+msgstr "אזור זמן"
 
 #: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "נא הגדר את אזור הזמן של המערכת."
 
 #: ../src/modules/welcome.py:34
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
-msgstr ""
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
+msgstr "ישנם עוד כמה צעדים לפני שתוכל להשתמש במערכת. סוכן ההתקנה ידריך אותך בנוגע להגדרות בסיסיות.  בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה כדי להמשיך."
+
