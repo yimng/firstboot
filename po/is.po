@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
+"POT-Creation-Date: Tue Aug 13 14:04:50 2002\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <ra@hp.is>\n"
@@ -40,41 +40,49 @@ msgstr ""
 "Afrit af villumeldingunum var vistað í %s \n"
 "Mundi að hengja hana við villutilkynninguna. \n"
 
-#: ../src/firstboot.py:83
+#: ../src/firstboot.py:87
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot hefur þegar verið keyrt á þessari vél.\n"
 
-#: ../src/firstboot.py:84
+#: ../src/firstboot.py:88
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Gefðu eftirfarandi skipanir ef þú vilt keyra firstboot úr skipanalínunni:"
 
-#: ../src/firstboot.py:89
+#: ../src/firstboot.py:93
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:21
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
 msgstr "Auka diskar"
 
-#: ../src/modules/additional_cds.py:34
+#: ../src/modules/additional_cds.py:30
 msgid "Install Additional Software"
 msgstr "Setja inn auka hugbúnað"
 
 #: ../src/modules/additional_cds.py:61
-#, fuzzy
 msgid ""
-"If you have additional CD-ROMs that you would like to install, such as the "
-"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
-"drive and click the \"Install software\" button below."
+"If you have any of the CDs listed below, you can install packages from them "
+"by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Ef þú ert með fleiri diska úr Red Hat Linux kassanum eins og til dæmis Red "
-"Hat Linux handbókardiskinn eða hugbúnaðardiskinn, settu þá í drifið og "
-"smelltu á hnappinn hér fyrir neðan."
 
-#: ../src/modules/additional_cds.py:115
+#: ../src/modules/additional_cds.py:73
+msgid "Red Hat Linux Documentation CD"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
+#: ../src/modules/additional_cds.py:99
+msgid "Install..."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:84
+msgid "Red Hat Linux Installation CD"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:117
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -170,7 +178,6 @@ msgid ""
 "\n"
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
-"\n"
 msgstr ""
 "Nú þegar þú hefur skráð vélina hjá Red Hat Network getur þú keyrt Red Hat "
 "uppfærslutólið til að sækja nýjustu hugbúnðarpakkana frá Red Hat. Með þessu "
@@ -206,3 +213,13 @@ msgstr ""
 "uppsetningarforritið mun nú leiða þig í gegnum það sem eftir er að stilla. "
 "Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra horninu hér að neðan til "
 "að halda áfram."
+
+#, fuzzy
+#~ msgid ""
+#~ "If you have additional CD-ROMs that you would like to install, such as "
+#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
+#~ "in the drive and click the \"Install software\" button below."
+#~ msgstr ""
+#~ "Ef þú ert með fleiri diska úr Red Hat Linux kassanum eins og til dæmis "
+#~ "Red Hat Linux handbókardiskinn eða hugbúnaðardiskinn, settu þá í drifið "
+#~ "og smelltu á hnappinn hér fyrir neðan."

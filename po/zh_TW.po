@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Aug 13 10:49:48 2002\n"
+"POT-Creation-Date: Tue Aug 13 14:04:50 2002\n"
 "PO-Revision-Date: 2002-08-12 10:06+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
@@ -42,39 +42,50 @@ msgstr ""
 "除錯輸出的一個複本已經儲存到 %s \n"
 "請確定有附上這個檔案到程式錯誤報告。\n"
 
-#: ../src/firstboot.py:83
+#: ../src/firstboot.py:87
 msgid "Firstboot has already been run once on this system.\n"
 msgstr ""
 
-#: ../src/firstboot.py:84
+#: ../src/firstboot.py:88
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 
-#: ../src/firstboot.py:89
+#: ../src/firstboot.py:93
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:21
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:95
 msgid "Additional CDs"
 msgstr "額外的 CDs"
 
-#: ../src/modules/additional_cds.py:34
+#: ../src/modules/additional_cds.py:30
 msgid "Install Additional Software"
 msgstr "安裝附加的軟體"
 
 #: ../src/modules/additional_cds.py:61
-#, fuzzy
 msgid ""
-"If you have additional CD-ROMs that you would like to install, such as the "
-"Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM in the "
-"drive and click the \"Install software\" button below."
+"If you have any of the CDs listed below, you can install packages from them "
+"by inserting the CD and clicking the appropriate button."
 msgstr ""
-"假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文件 "
-"CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
 
-#: ../src/modules/additional_cds.py:115
+#: ../src/modules/additional_cds.py:73
+#, fuzzy
+msgid "Red Hat Linux Documentation CD"
+msgstr "Red Hat 說明文件 CD"
+
+#: ../src/modules/additional_cds.py:77 ../src/modules/additional_cds.py:88
+#: ../src/modules/additional_cds.py:99
+msgid "Install..."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:84
+#, fuzzy
+msgid "Red Hat Linux Installation CD"
+msgstr "Red Hat 說明文件 CD"
+
+#: ../src/modules/additional_cds.py:117
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -154,6 +165,7 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理程式"
 
 #: ../src/modules/up2date.py:56
+#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -167,7 +179,6 @@ msgid ""
 "\n"
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
-"\n"
 msgstr ""
 "Red Hat 更新代理程式將會向 Red Hat Network 註冊您的機器， 如此您便可以接收直"
 "接從 Red Hat 傳來最新的軟體套件。 使用這個工具將使您總是擁有最新的 Red Hat "
@@ -207,8 +218,14 @@ msgstr ""
 "驟。  Red Hat 設定代理程式現在將引導您做一些基本的設定。 請點選在右下角的 "
 "\"下一步\" 按鈕以繼續。"
 
-#~ msgid "Red Hat Documentation CD"
-#~ msgstr "Red Hat 說明文件 CD"
+#, fuzzy
+#~ msgid ""
+#~ "If you have additional CD-ROMs that you would like to install, such as "
+#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
+#~ "in the drive and click the \"Install software\" button below."
+#~ msgstr ""
+#~ "假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文"
+#~ "件 CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
 
 #~ msgid "Linux Application CD"
 #~ msgstr "Linux 應用程式 CD"
