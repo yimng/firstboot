@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.1.0
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -21,7 +21,9 @@ Requires: redhat-config-rootpassword
 
 
 %description
-firstboot is a utility that runs once after initial installation
+The firstboot utility runs after installation or upgrade.  It 
+guides the user through a series of steps that allows for easier 
+configuration of the machine. 
 
 %prep
 %setup -q
@@ -49,8 +51,13 @@ fi
 #%doc doc/*
 %dir /usr/share/firstboot/
 /usr/share/firstboot/*
+/usr/sbin/firstboot
 
 %changelog
+* Sun May 26 2002 Brent Fox <bfox@redhat.com>
+- Get startup scripts ready to go
+- Prepare package for placement into newest tree
+
 * Tue Nov 28 2001 Brent Fox <bfox@redhat.com>
 - initial coding and packaging
 
