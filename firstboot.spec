@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.3
-Release: 3
+Version: 1.3.4
+Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -74,6 +74,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Feb 16 2004 Brent Fox <bfox@redhat.com> 1.3.4-1
+- UTF-8ify fr.po
+- make sure the root window stays on the bottom (bug #105631)
+
 * Tue Jan 27 2004 Tim Powers <timp@ragnarok.devel.redhat.com> 1.3.3-3
 - fedora-logos -> redhat-logos since redhat-logos is a virtual
   provides (used so that we can switch out redhat-logos with
