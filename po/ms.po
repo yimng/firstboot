@@ -1,13 +1,13 @@
 # Firstboot Red Hat Bahasa Melayu (Malay) (ms).
 # Copyright (C) 2003 Red Hat Inc.
-# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2003
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2003,2004
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2003-06-20 12:46+0800\n"
+"PO-Revision-Date: 2004-03-15 20:59+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -39,27 +39,27 @@ msgstr ""
 #. #
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "Perjanjian Lesen"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "_Ya, saya setuju dengan Perjanjian Lesen"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr ""
+msgstr "Tidak, saya tidak setuju"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "Adakah anda hendak membaca semula atau memikirkan Perjanjian Lesen?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "Baca semula lesen"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "Matikan"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -338,36 +338,36 @@ msgstr "Selamat Datang"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Pengesahan"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration"
-msgstr "Ubah Rangkaian Konfigurasikan."
+msgstr "Tentutetap firewall"
 
 #: ../src/textWindow.py:35
 #, fuzzy
 msgid "Keyboard configuration"
-msgstr "Ubah Rangkaian Konfigurasikan."
+msgstr "Papan Kekunci"
 
 #: ../src/textWindow.py:36
 #, fuzzy
 msgid "Network configuration"
-msgstr "Ubah Rangkaian Konfigurasikan."
+msgstr "Rangkaian"
 
 #: ../src/textWindow.py:37
 #, fuzzy
 msgid "Printer configuration"
-msgstr "Ubah Rangkaian Konfigurasikan."
+msgstr "Pencetak"
 
 #: ../src/textWindow.py:38
+#, fuzzy
 msgid "System services"
-msgstr ""
+msgstr "Sistem"
 
 #: ../src/textWindow.py:39
 #, fuzzy
 msgid "Sound card configuration"
-msgstr "Ubah Rangkaian Konfigurasikan."
+msgstr "Bunyi"
 
 #: ../src/textWindow.py:40
 #, fuzzy
@@ -379,8 +379,9 @@ msgid "Run Tool"
 msgstr ""
 
 #: ../src/textWindow.py:42
+#, fuzzy
 msgid "Exit"
-msgstr ""
+msgstr "Keluar"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
@@ -447,9 +448,9 @@ msgstr "A dalam dan OK."
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+#, fuzzy
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "on OK."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -499,8 +500,9 @@ msgid ""
 msgstr "Kerberos NIS Rangkaian."
 
 #: ../src/modules/create_user.py:105
+#, fuzzy
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Guna Rangkaian Logmasuk."
 
 #. If they've run authconfig, don't pop up messageDialog
 #: ../src/modules/create_user.py:141
@@ -511,8 +513,9 @@ msgid ""
 msgstr "pengguna dalam."
 
 #: ../src/modules/create_user.py:149
+#, fuzzy
 msgid "_Continue"
-msgstr ""
+msgstr "_Teruskan"
 
 #: ../src/modules/create_user.py:150
 msgid "Create _account"
@@ -529,10 +532,11 @@ msgstr ""
 
 #: ../src/modules/create_user.py:195
 #, python-format
+#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "s."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
@@ -578,16 +582,15 @@ msgid ""
 msgstr "pengguna."
 
 #: ../src/modules/create_user.py:291
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+#, fuzzy
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "unama s."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -677,12 +680,14 @@ msgstr ""
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
+#, fuzzy
 msgid "Display"
-msgstr ""
+msgstr "Paparan"
 
 #: ../src/modules/display.py:48
+#, fuzzy
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "dan"
 
 #. Add icon to the top frame
 #. #
@@ -699,7 +704,7 @@ msgstr "Tamat"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
-msgstr "dan Maju dalam."
+msgstr "dan Seterusnya dalam."
 
 #.
 #. networking.py - networking module for firstboot
@@ -827,8 +832,9 @@ msgid "Timezone"
 msgstr ""
 
 #: ../src/modules/timezone.py:52
+#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "for."
 
 #: ../src/modules/welcome.py:35
 #, fuzzy
@@ -836,66 +842,5 @@ msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
-msgstr "dan Maju dalam."
+msgstr "asas Seterusnya dalam."
 
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Firstboot telah pernah dilaksanakan sekali pada sistem ini.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr "Masuk:"
-
-#, fuzzy
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr "Masuk:"
-
-#, fuzzy
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "dalam."
-
-#~ msgid "Yes"
-#~ msgstr "Ya"
-
-#~ msgid "No"
-#~ msgstr "Tidak"
-
-#, fuzzy
-#~ msgid ""
-#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
-#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
-#~ "System to run.  \n"
-#~ "\n"
-#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-#~ "\"No\", the system will continue booting and you will never see this "
-#~ "message again.  Do you wish to run the Setup Agent now?"
-#~ msgstr "dalam Sistem Ya Tidak dan?"
-
-#, fuzzy
-#~ msgid "Red Hat Linux Documentation CD"
-#~ msgstr "Dokumentasi"
-
-#, fuzzy
-#~ msgid ""
-#~ "This step will register your system with a complimentary Demo Account "
-#~ "from Red Hat Network so that you can receive the latest software packages "
-#~ "directly from Red Hat.  Using this tool will allow you to always have the "
-#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
-#~ "fixes, and software enhancements. \n"
-#~ "\n"
-#~ "If you purchased this product, you are entitled to a free trial of Red "
-#~ "Hat Network Basic Service. To access the free trial, please refer to the "
-#~ "product activation card found in the box for detailed instructions. \n"
-#~ "\n"
-#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
-#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
-#~ msgstr ""
-#~ "Rangkaian dan Rangkaian Asas Kepada dalamhttp://rhn.redhat.com Rangkaian "
-#~ "Asas"
-
-#, fuzzy
-#~ msgid "_Yes, I want to register my system with Red Hat Network."
-#~ msgstr "Ya Rangkaian."
