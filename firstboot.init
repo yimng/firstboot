@@ -17,6 +17,7 @@
 
 unset LC_MESSAGES
 [ -f /etc/sysconfig/i18n ] && . /etc/sysconfig/i18n
+[ -z "${CONSOLETYPE:-}" ] && CONSOLETYPE="`/sbin/consoletype`"
 export LANG
 
 FILENAME=/etc/sysconfig/firstboot
@@ -43,6 +44,14 @@ case "$1" in
 	fi
 
 	/usr/sbin/firstboot
+	RETVAL=$?
+
+	if [ "$RETVAL" -eq 0 ]; then
+	    action "" /bin/true
+	else
+	    action "" /bin/false
+	fi
+
 	exit 0
 	;;
 esac
