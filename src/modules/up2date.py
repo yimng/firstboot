@@ -88,6 +88,9 @@ class childWindow:
         return self.vbox, eventBox
 
     def run_up2date(self, *args):
+        i = gtk.Invisible ()
+        i.grab_add ()
+
         #Run rhn_register so they can register with RHN
         pid = functions.start_process("/usr/bin/up2date")
 
@@ -102,6 +105,8 @@ class childWindow:
                 flag = 1
             else:
                 time.sleep(0.1)
+
+        i.grab_remove ()
 
     def apply(self, notebook):
         # If they want to register, then kick off rhn_register.  If not, then pass
