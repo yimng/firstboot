@@ -89,10 +89,13 @@ class childWindow:
         self.usernameEntry.grab_focus()
 
     def apply(self, notebook):
-#        if self.doDebug:
-#            return 0
+        if self.doDebug:
+            return 0
 
         username = self.usernameEntry.get_text()
+
+        if not self.isUsernameOk(username, self.usernameEntry):
+            return None
 
         if username == "":
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_YES_NO,
@@ -110,8 +113,16 @@ class childWindow:
                 return None
 
         password = self.passwordEntry.get_text()
+        confirm = self.confirmEntry.get_text()
 
-        if password != self.confirmEntry.get_text():
+        #Check for ascii-only strings
+        if not self.isPasswordOk(password, self.passwordEntry):
+            return None
+        
+        if not self.isPasswordOk(confirm, self.confirmEntry):
+            return None
+
+        if password != confirm:
             self.showErrorMessage(_("The passwords do not match.  Please enter "
                                     "the password again."))
             self.passwordEntry.set_text("")
@@ -129,26 +140,43 @@ class childWindow:
             return None
 
         user = self.admin.lookupUserByName(username)
+        print user, user.get(libuser.UIDNUMBER)[0]
 
-        if user != None:
-            self.showErrorMessage(_("An account with username %s already exists.  Please " \
+        if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+            self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
                                     "specify another username." % username))
             self.usernameEntry.set_text("")
             self.usernameEntry.grab_focus()
             return None
 
+        fullName = self.fullnameEntry.get_text()
+
+        #Check for ascii-only strings
+        if not self.isNameOk(fullName, self.fullnameEntry):
+            return None
+
         #If we get to this point, all the input seems to be valid.  Let's add the user
-        userEnt = self.admin.initUser(username)
-        userEnt.set(libuser.GECOS, [self.fullnameEntry.get_text()])
+        if user == None:
+            #if the user doesn't already exist
+            userEnt = self.admin.initUser(username)
+        else:
+            userEnt = user
+            
+        userEnt.set(libuser.GECOS, [fullName])
 
         groupEnt = self.admin.initGroup(username)
         gidNumber = groupEnt.get(libuser.GIDNUMBER)[0]
         userEnt.set(libuser.GIDNUMBER, [gidNumber])
 
+        if user == None:
+            self.admin.addUser(userEnt)
+            self.admin.addGroup(groupEnt)
+        else:
+            self.admin.modifyUser(userEnt)
+            self.admin.modifyGroup(groupEnt)
+            
 
-        self.admin.addUser(userEnt)
         self.admin.setpassUser(userEnt, self.passwordEntry.get_text(), 0)
-        self.admin.addGroup(groupEnt)
         
         return 0
 
@@ -160,3 +188,52 @@ class childWindow:
         dlg.destroy()
         return None
         
+    def isUsernameOk(self, str, widget):
+        tag = _("user name")
+        for i in str:
+            if i in string.whitespace:
+                #Check for whitespace
+                self.showErrorMessage(_("The %s '%s' contains whitespace.  "
+                                        "Please do not include whitespace in the %s.")
+                                      % (tag, str, tag))
+                widget.set_text("")
+                widget.grab_focus()
+                return None
+                
+            if i not in string.ascii_letters:
+                if i not in string.digits:
+                    self.showErrorMessage(_("The %s '%s' contains non-ASCII "
+                                            "characters.  Please use only ASCII characters.")
+                                          % (tag, str))
+                    widget.set_text("")
+                    widget.grab_focus()
+                    return None
+        return 1
+
+    def isPasswordOk(self, str, widget):
+        tag = _("password")
+        for i in str:
+            if i not in string.ascii_letters:
+                if i not in string.digits:
+                    self.showErrorMessage(_("The %s contains non-ASCII characters.  "
+                                            "Please use only ASCII characters.") % tag)
+                    widget.set_text("")
+                    widget.grab_focus()
+                    return None
+        return 1
+
+    def isNameOk(self, str, widget):
+        tag = ("name")
+        for i in str:
+            if i not in string.ascii_letters:
+                if i not in string.digits:
+                    #have to check for whitespace for gecos, since whitespace is ok
+                    if i not in string.whitespace:
+                        self.showErrorMessage(_("The %s '%s' contains non-ASCII characters.  "
+                                                "Please use only ASCII characters.")
+                                              % (tag, str))
+                        widget.set_text("")
+                        widget.grab_focus()
+                        return None
+        return 1
+
