@@ -28,8 +28,7 @@ class childWindow:
         if doDebug:
             print "launching networking module"
 
-#        network = self.networkAvailable()
-        network = None
+        network = self.networkAvailable()
 
         if network:
             print "network is functional...skipping screen"
