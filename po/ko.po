@@ -1,15 +1,13 @@
 # translation of ko.po to Korean
 # firstboot.po Korean translation.
 # Copyright (C) 2002 Red Hat, Inc.
-# Michelle Jiyeen KIM <mkim@redhat.com>, 2002.
-# Michelle Kim <mkim@brisbane.redhat.com>, 2002
 # Michelle Kim <mkim@redhat.com>, 2002
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-07-31 17:21+1000\n"
+"PO-Revision-Date: 2002-08-02 10:23+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +17,6 @@ msgstr ""
 "X-Generator: KBabel 1.0beta1\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
 msgstr "%s 모듈에서 오류가 발생했습니다."
 
@@ -29,6 +26,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+" %s 모듈에서 문제가 발생했기 때문에, \n"
+"Red Hat 설정 에이전트는 이 모듈을 로드하지 않고 \n"
+"그 외 나머지 모듈을 실행할 것입니다."
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -37,6 +37,10 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"'firstboot'에 대한 버그를 Red Hat 버그 추적 시스템인 \n"
+"http://www.redhat.com/bugzilla으로 보고해 주십시오. \n"
+"디버그 출력 결과는 /tmp/firstboot.txt에 저장되어 있습니다. \n"
+"이 파일을 버그 리포트에 첨부해 주십시오.\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -51,7 +55,6 @@ msgid "Linux Application CD"
 msgstr "Linux 응용 프로그램 CD"
 
 #: ../src/modules/additional_cds.py:32
-#, fuzzy
 msgid "Install Additional Software"
 msgstr "추가 소프트웨어 설치"
 
@@ -102,18 +105,16 @@ msgid "Finish Setup"
 msgstr "설정 완료"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
 msgstr "설치를 완료했습니다!"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"축하합니다! Red Hat Linux 시스템 설정이 이제 완료되어 사용하실 수 있습니다.  "
+"축하합니다! Red Hat Linux 시스템이 설정되어 이제 사용하실 수 있습니다.  "
 "즐겁고 유익한 컴퓨터의 세계를 경험해 보시기 바랍니다. 오른쪽 하단 모서리에 위"
 "치한 \"앞으로 (Forward)\" 버튼을 클릭하시면, 계속 진행합니다."
 
@@ -419,3 +420,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
