@@ -215,14 +215,14 @@ class firstbootWindow:
     def switchPage(self, notebook, page, page_num, *args):
         # catch the switch page signal, so we can re poke modules
         # that need a signal that they are being shown
-        print "nb: %s page: %s page_num: %s args: %s" % (notebook, page, page_num, args)
+        #print "nb: %s page: %s page_num: %s args: %s" % (notebook, page, page_num, args)
         try:
             module = self.moduleList[page_num]
         except:
-            print "THIS WAS NOT SUPPOSED TO HAPPEN"
+            print "THIS WAS NOT SUPPOSED TO HAPPEN: nb: %s page: %s page_num: %s args: %s" % (notebook, page, page_num, args)
             pass
 
-        print "module: %s" % module
+        #print "module: %s" % module
         if hasattr(module, "updatePage"):
             module.updatePage()
 
@@ -389,6 +389,12 @@ class firstbootWindow:
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
+
+            # if the exec fails, skip this module
+            try:
+                obj = obj
+            except NameError:
+                continue
 
             # XXX - hack to allow firstboot to pass in the parent class into language
             # this will allow the language module to change firstboot's current locale
