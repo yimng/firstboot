@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
-"PO-Revision-Date: 2003-06-10 09:32+1000\n"
+"PO-Revision-Date: 2003-06-23 09:26+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,15 +46,12 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
@@ -181,12 +178,10 @@ msgid "The user name may not begin with a number."
 msgstr "사용자명은 숫자로 시작해서는 안됩니다."
 
 #: ../src/modules/create_user.py:252
-#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"사용자명 '%s'에 공백이 포함되어 있습니다.  %s에 공백을 포함시키지 마십시오."
+msgstr "사용자명 '%s'에 공백이 포함되어 있습니다.  사용자명에 공백을 포함시키지 마십시오."
 
 #: ../src/modules/create_user.py:259
 msgid ""
@@ -213,14 +208,11 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -266,31 +258,28 @@ msgstr ""
 "려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
 
 #: ../src/modules/networking.py:23
-#, fuzzy
 msgid "Network Setup"
-msgstr "네트워크 검사"
+msgstr "네트워크 설정"
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "다음과 같은 네트워크 장치가 시스템에서 검색되었습니다:"
 
 #: ../src/modules/networking.py:69
-#, fuzzy
 msgid "Network Device"
-msgstr "네트워크 검사"
+msgstr "네트워크 장치"
 
 #: ../src/modules/networking.py:71
 msgid "Boot protocol"
-msgstr ""
+msgstr "부트 프로토콜"
 
 #: ../src/modules/networking.py:77
-#, fuzzy
 msgid "_Change Network Configuration..."
-msgstr "네트워크 로그인 사용(_U)..."
+msgstr "네트워크 설정 변경(_C)..."
 
 #: ../src/modules/networking.py:120
 msgid "static"
-msgstr ""
+msgstr "정적"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -313,12 +302,11 @@ msgstr ""
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "시간대"
 
 #: ../src/modules/timezone.py:55
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "시스템에 맞는 마우스를 선택해 주십시오."
+msgstr "시스템에 맞는 시간대를 선택해 주십시오."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -679,3 +667,4 @@ msgstr "Red Hat 설정 에이전트"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
