@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-13 13:16+0100\n"
+"PO-Revision-Date: 2004-03-13 13:35+0100\n"
 "Last-Translator: Grzegorz Rajda <marius@w9.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -577,7 +577,7 @@ msgstr "Hasło zawiera nieznane znaki. Używaj tylko znaków ASCII."
 #: ../src/modules/create_user.py:303
 #, python-format
 msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgstr "Nazwisko '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -607,11 +607,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:47
 msgid "Date and Time"
-msgstr ""
+msgstr "Data i czas"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Ustaw date i czas dla systemu."
 
 #. Initialize date backend
 #. Initialize datePage and pass dateBackend into it
@@ -621,12 +621,12 @@ msgstr ""
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr ""
+msgstr "Wprowadź serwer czasu."
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
 msgid "Error"
-msgstr ""
+msgstr "Błąd"
 
 #: ../src/modules/date.py:126 ../src/modules/date.py:157
 #, python-format
@@ -634,11 +634,13 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Połączenie z %s nie zostało nawiązane. Albo serwer %s jest nieosiągalny "
+"albo firewall blokuje połączenia NTP."
 
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "Nawiązuje połączenie z serwerem NTP. Prosze czekać..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -667,11 +669,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Pokaż"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Wybierz rozdzielczość i głębie kolorów, których chcesz używać."
 
 #. Add icon to the top frame
 #. #
@@ -680,13 +682,15 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "Koniec instalacji"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
+"System został zainstalowany i jest już gotowy do użycia. Kliknij \"Dalej\" "
+"w dolnym prawym rogu okna zby kontynuować."
 
 #.
 #. networking.py - networking module for firstboot
@@ -714,27 +718,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
-msgstr ""
+msgstr "Instalowanie sieci"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "W systemie znaleziono następujące posiadane urządzenia sieciowe:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr ""
+msgstr "Urządzenie sieciowe"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "Protokuł rozruchu"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "Zmień konfiguracje sie_ci..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
-msgstr ""
+msgstr "statyczny"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -764,11 +768,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
-msgstr ""
+msgstr "Karta dźwiękowa"
 
 #: ../src/modules/soundcard_gui.py:48
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "Karta dźwiękowa została wykryta w systemie."
 
 #. Initialize soundcard page
 #. Add icon to the top frame
@@ -779,6 +783,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Kliknij \"Graj dźwięk testowy\" aby usłyszeć przykładową melodie. "
+"Powinieneś usłyszeć trzy melodie. Pierwszą w prawym głośniku, "
+"drugą w lewym, a trzecią w centralnym."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -806,11 +813,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
-msgstr ""
+msgstr "Strefa czasowa"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "Ustaw date i czas dla systemu."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -818,4 +825,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
+"Jeszcze tylko kilka kroków zanim Twój system będzie gotowy. "
+"Agent Instalacji obecnie nie posiada poradnika o podstawowej konfiguracji."
+"Kliknij \"Dalej\" w dolnym prawym rogu okna zby kontynuować."
 
