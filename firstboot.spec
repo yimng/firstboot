@@ -50,11 +50,12 @@ fi
 #%doc COPYING
 #%doc doc/*
 %dir /usr/share/firstboot/
+
 /usr/share/firstboot/*
 /usr/sbin/firstboot
 
 %changelog
-* Sun May 26 2002 Brent Fox <bfox@redhat.com>
+* Sun May 26 2002 Brent Fox <bfox@redhat.com> 0.1.0-4
 - Get startup scripts ready to go
 - Prepare package for placement into newest tree
 

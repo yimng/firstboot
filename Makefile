@@ -21,7 +21,7 @@ subdirs:
 	for d in $(SUBDIRS); do make -C $$d; [ $$? = 0 ] || exit 1; done
 
 install:
-	mkdir -p $(INSTROOT)/usr/bin
+	mkdir -p $(INSTROOT)/usr/sbin
 	mkdir -p $(INSTROOT)$(PKGDATADIR)
 	mkdir -p $(INSTROOT)$(PAMD_DIR)
 	mkdir -p $(INSTROOT)$(SECURITY_DIR)
