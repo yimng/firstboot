@@ -51,89 +51,84 @@ class childWindow:
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        if self.networkAvailable() == TRUE:
-            label = gtk.Label(_("Red Hat Network is an Internet solution for managing "
-                             "one or more Red Hat Linux systems. All Security Alerts, "
-                             "Bug Fix Alerts, and Enhancement Alerts (collectively known as "
-                             "Errata Alerts) can be retreived directly from Red Hat. You can "
-                             "even have updates automatically delivered directly to your system "
-                             "as soon as they are released. \n\n"
-                             "Because Red Hat Network keeps track of when Errata Updates are "
-                             "released and sends you email notifications, it can:"))
-            label.set_line_wrap(TRUE)
-            label.set_size_request(400, -1)
-            label.set_alignment(0.0, 0.5)
-            internalVBox.pack_start(label, FALSE, TRUE)
+        label = gtk.Label(_("Red Hat Network is an Internet solution for managing "
+                         "one or more Red Hat Linux systems. All Security Alerts, "
+                         "Bug Fix Alerts, and Enhancement Alerts (collectively known as "
+                         "Errata Alerts) can be retreived directly from Red Hat. You can "
+                         "even have updates automatically delivered directly to your system "
+                         "as soon as they are released. \n\n"
+                         "Because Red Hat Network keeps track of when Errata Updates are "
+                         "released and sends you email notifications, it can:"))
+        label.set_line_wrap(TRUE)
+        label.set_size_request(400, -1)
+        label.set_alignment(0.0, 0.5)
+        internalVBox.pack_start(label, FALSE, TRUE)
 
-            label = gtk.Label(_(" -- Reduce the time and effort required by system administrators "
-                             "to stay on top of the Red Hat errata list\n"
-                             " -- Minimize security vulnerabilities in your network by providing "
-                             "the patches as soon as Red Hat releases them\n"
-                             " -- Filter out package updates not relevant to your network\n"
-                             " -- Schedule Errata Updates so that packages are delivered to "
-                             "selected systems when you want it"))
-            label.set_line_wrap(TRUE)
-            label.set_alignment(0.1, 0.5)
-            label.set_size_request(400, -1)
+        label = gtk.Label(_(" -- Reduce the time and effort required by system administrators "
+                         "to stay on top of the Red Hat errata list\n"
+                         " -- Minimize security vulnerabilities in your network by providing "
+                         "the patches as soon as Red Hat releases them\n"
+                         " -- Filter out package updates not relevant to your network\n"
+                         " -- Schedule Errata Updates so that packages are delivered to "
+                         "selected systems when you want it"))
+        label.set_line_wrap(TRUE)
+        label.set_alignment(0.1, 0.5)
+        label.set_size_request(400, -1)
 
-            internalVBox.pack_start(label, FALSE, TRUE)
+        internalVBox.pack_start(label, FALSE, TRUE)
 
-#            launchButton = gtk.Button(_("Register system now"))
+        radioBox = gtk.VBox()
 
-            radioBox = gtk.VBox()
+        self.radioYes = gtk.RadioButton(None, _("Yes, I would like to register with Red Hat Network"))
+        radioNo = gtk.RadioButton(self.radioYes, _("No, I do not want to register my system."))
 
-            radioYes = gtk.RadioButton(None, _("Yes, I would like to register with Red Hat Network"))
-            radioNo = gtk.RadioButton(radioYes, _("No, I do not want to register my system."))
+        radioBox.pack_start(self.radioYes, gtk.FALSE)
+        radioBox.pack_start(radioNo, gtk.FALSE)
 
-            radioBox.pack_start(radioYes, gtk.FALSE)
-            radioBox.pack_start(radioNo, gtk.FALSE)
-            
-            a = gtk.Alignment()
-#            a.add(launchButton)
-            a.add(radioBox)
-            a.set(0.3, 0.0, 0.3, 0.5)
-            internalVBox.pack_start(a, FALSE, padding=10)
+        a = gtk.Alignment()
+        a.add(radioBox)
+        a.set(0.3, 0.0, 0.3, 0.5)
+        internalVBox.pack_start(a, FALSE, padding=10)
 
-        else:
-            label = gtk.Label(_("You currently have no network connection."))
-            internalVBox.pack_start(label, FALSE, TRUE, 30)
-#            launchButton = GtkButton("Register system now")
-#            launchButton.connect("clicked", self.rhn_register)
-#            internalVBox.pack_start(launchButton, FALSE)
 
         self.vbox.pack_start(internalVBox)
 
         return self.vbox, eventBox
 
     def networkAvailable(self):
-        try:
-            gethostbyname(gethostname())
-            print gethostname()
-            print gethostbyname(gethostname())
-            print "network is functional"
-            return TRUE
-        except:
+        #First, check to see if we can communicate with the requested server
+        server = "www.redhat.com"
+
+        data = os.popen("ping -c 2 %s" % server)
+        rc = data.close()
+        
+        if rc == None:
+            #Server was contacted, so write out the correct files and start up the service
+            return 1
+        else:
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
+_("A connection with %s could not be established.  Either %s is not available or the firewall settings "
+  "on your computer are preventing the connections." % (server, server)))
+            dlg.set_title(_("Error"))
+            dlg.set_default_size(100, 100)
+            dlg.set_position (gtk.WIN_POS_CENTER)
+            dlg.set_border_width(2)
+            dlg.set_modal(gtk.TRUE)
+            rc = dlg.run()
+            dlg.destroy()
             print "no networking found"
-            return FALSE
+            return 0
 
     def rhn_register(self, *args):
-        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
-_("This feature is not yet implemented.  Please do not report bugs about this button."))
-        dlg.set_title(_("Error"))
-        dlg.set_default_size(100, 100)
-        dlg.set_position (gtk.WIN_POS_CENTER)
-        dlg.set_border_width(2)
-        dlg.set_modal(gtk.TRUE)
-        rc = dlg.run()
-        dlg.destroy()
-
-
-##         win = os.fork()
-
-##         if (not win):
-##             print "launching rhn_register"
-##             path = "/usr/sbin/rhn_register"
-##             os.execv(path, [""])
+        #Run rhn_register so they can register with RHN
+        path = "/usr/sbin/rhn_register"
+        fd = os.popen(path)
+        fd.close()
 
     def apply(self, notebook):
+        # If they want to register, then kick off rhn_register.  If not, then pass
+        if self.radioYes.get_active() == gtk.TRUE:            
+            if self.networkAvailable():
+                #We can ping www.redhat.com, so the network is active
+                self.rhn_register()
         return 1
