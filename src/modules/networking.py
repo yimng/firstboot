@@ -23,10 +23,13 @@ class childWindow:
         self.page = None
                 
     def launch(self, doDebug=None):
+        self.doDebug = doDebug
+        
         if doDebug:
             print "launching networking module"
 
-        network = self.networkAvailable()
+#        network = self.networkAvailable()
+        network = None
 
         if network:
             print "network is functional...skipping screen"
@@ -105,6 +108,8 @@ class childWindow:
 
     def apply(self, notebook):
          print "applying network changes"
+
+         return 1
 
     def page1(self):
         bb = gtk.HButtonBox()
