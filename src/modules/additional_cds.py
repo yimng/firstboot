@@ -20,10 +20,6 @@ class childWindow:
     runPriority = 140
     moduleName = (_("Additional CDs"))
 
-#    def __init__(self):
-#        self.additionalDiscs = {(_("Red Hat Documentation CD")) : "docs.png",
-#                                (_("Linux Application CD")) : "lacd.png"}
-                
     def launch(self, doDebug=None):
         if doDebug:
             print "initializing additional_cd module"
@@ -39,7 +35,7 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        pix = functions.imageFromFile("docs.png")
+        pix = functions.imageFromFile("lacd.png")
         titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
         titleBox.pack_start(label)
@@ -58,50 +54,56 @@ class childWindow:
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
-        label = gtk.Label(_("If you have additional CD-ROMs that you would like to install, "
-                            "such as the Red Hat Linux Docmentation CD, you may do that "
-                            "now.  Place the CD-ROM in the drive and click the "
-                            "\"Install software\" button below."))
+        table = gtk.Table(3, 2)
+        table.set_col_spacings(10)
+        table.set_row_spacings(10)
 
+        label = gtk.Label(_("If you have any of the CDs listed below, you can install "
+                            "packages from them by inserting the CD and clicking the "
+                            "appropriate button."))
 
-#        label = gtk.Label(_("If you have additional CDs from the Red Hat Linux box "
-#                          "set, such as the Red Hat Linux Documentation CD or the "
-#                          "Linux Applications CD, please insert the disc now and "
-#                          "click the corresponding button below."))
-        
         label.set_line_wrap(TRUE)
-        label.set_size_request(400, -1)
+        label.set_size_request(500, -1)
         label.set_alignment(0.0, 0.5)
         internalVBox.pack_start(label, FALSE, TRUE)
 
- #       buttons = self.additionalDiscs.keys()
- #       buttons.sort()
-##        for button in buttons:
-##             newButton = self.create_button(self.additionalDiscs[button], button)
-##             newButton.connect("clicked", self.autorun)
-##             internalVBox.pack_start(newButton, gtk.FALSE, padding=10)
+        pix = functions.imageFromFile("docs.png")
+        table.attach(pix, 0, 1, 0, 1, gtk.SHRINK)
 
-        self.installButton = self.create_button("lacd.png", "Install software")
-        self.installButton.connect("clicked", self.autorun)
-        internalVBox.pack_start(self.installButton, gtk.FALSE, padding=10)
+        label = gtk.Label(_("Red Hat Linux Documentation CD"))                            
+        label.set_alignment(0.0, 0.5)
+        table.attach(label, 1, 2, 0, 1, gtk.FILL, gtk.SHRINK)
 
+        button = gtk.Button(_("Install..."))
+        button.connect("clicked", self.autorun)
+        table.attach(button, 2, 3, 0, 1, gtk.SHRINK, gtk.SHRINK)
+ 
+        pix = functions.imageFromFile("cd.png")
+        table.attach(pix, 0, 1, 1, 2, gtk.SHRINK)
 
-        self.vbox.pack_start(internalVBox, TRUE)
+        label = gtk.Label(_("Red Hat Linux Installation CD"))                            
+        label.set_alignment(0.0, 0.5)
+        table.attach(label, 1, 2, 1, 2, gtk.FILL, gtk.SHRINK)
+
+        button = gtk.Button(_("Install..."))
+        button.connect("clicked", self.autorun)
+        table.attach(button, 2, 3, 1, 2, gtk.SHRINK, gtk.SHRINK)
+
+        pix = functions.imageFromFile("lacd.png")
+        table.attach(pix, 0, 1, 2, 3, gtk.SHRINK)
+
+        label = gtk.Label(_("Additional CDs"))                            
+        label.set_alignment(0.0, 0.5)
+        table.attach(label, 1, 2, 2, 3, gtk.FILL, gtk.SHRINK)
+
+        button = gtk.Button(_("Install..."))
+        button.connect("clicked", self.autorun)
+        table.attach(button, 2, 3, 2, 3, gtk.SHRINK, gtk.SHRINK)
+
+        internalVBox.pack_start(table, gtk.FALSE, padding=20)
+        self.vbox.pack_start(internalVBox, gtk.TRUE)
 
         return self.vbox, eventBox
-
-    def create_button(self, image, name):
-        pix = functions.imageFromFile(image)
-        box = gtk.HBox()
-        if pix:
-            box.pack_start(pix, gtk.FALSE)
-
-        label = gtk.Label(name)
-        box.pack_start(label, gtk.FALSE)
-        button = gtk.Button()
-        button.add(box)
-        return button
-
 
     def autorun(self, *args):
         mountFlag = None
