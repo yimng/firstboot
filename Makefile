@@ -26,9 +26,10 @@ install:
 	mkdir -p $(INSTROOT)$(PAMD_DIR)
 	mkdir -p $(INSTROOT)$(SECURITY_DIR)
 	mkdir -p $(INSTROOT)$(PKGDATADIR)/pixmaps
-	mkdir -p $(INSTROOT)/usr/share/firstboot
 	mkdir -p $(INSTROOT)/usr/share/firstboot/modules
 	install src/*.py $(INSTROOT)$(PKGDATADIR)
+	install src/modules/*.py $(INSTROOT)$(PKGDATADIR)/modules
+#	install src/images 
 #	install src/${PKGNAME} $(INSTROOT)$(PKGDATADIR)/${PKGNAME}
 	install ${PKGNAME}.pam $(INSTROOT)$(PAMD_DIR)/${PKGNAME}
 	install ${PKGNAME}.console $(INSTROOT)$(SECURITY_DIR)/${PKGNAME}
