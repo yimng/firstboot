@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.4
-Release: 7
+Release: 8
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,9 +71,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Wed Jan 29 2003 Brent Fox <bfox@redhat.com> 1.0.4-7
+* Wed Jan 29 2003 Brent Fox <bfox@redhat.com> 1.0.4-8
 - don't run firstboot in runlevel 3 at all (bug #78239)
 - fix return tuple if no soundcards are found in soundcard_gui.py
+- use backslash instead of forward slash in the init script
 
 * Wed Jan 29 2003 Brent Fox <bfox@redhat.com> 1.0.4-6
 - give the X server 1 second to close before we exit firstboot (bug #81313)
