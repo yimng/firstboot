@@ -1,19 +1,22 @@
+# translation of gu.po to Gujarati
 # Gujarati translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Automatically generated, 2004.
+# Ankit Patel <ankit@redhat.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-05-03 16:00-0400\n"
-"PO-Revision-Date: 2004-05-03 16:00-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2004-07-15 17:39+0530\n"
+"Last-Translator: Ankit Patel <ankit@redhat.com>\n"
+"Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #.
 #. constants_text.py: text mode constants
@@ -29,7 +32,7 @@ msgstr ""
 #.
 #: ../src/constants_text.py:36
 msgid "Exit"
-msgstr ""
+msgstr "બહાર નીકળો"
 
 #. # eula_strings.py
 #. #
@@ -54,27 +57,27 @@ msgstr ""
 #. #
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "લાયસન્સની મંજૂરી"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "હા, હું લાઈસન્સની મંજૂરી આપવા તૈયાર છું (_Y)"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr ""
+msgstr "ના હું મંજૂર નથી (_o)"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "શું તમને લાઈસન્સની મંજૂરી ફરીથી વાંચવાની અથવા ફરીથી ધ્યાનમાં લેવાની જરુર છે?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "લાઈસન્સ ફરીથી વાંચો (_R)"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "બંધ કરો (_S)"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -100,7 +103,7 @@ msgstr ""
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "%s મોડ્યુલમાં ભૂલ ઉદ્ભવી છે."
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -109,6 +112,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"ત્યાં મોડ્યુલ %s સાથે સમસ્યા હોવાના કારણે, \n"
+"રેડ હેટ સેટઅપ એજન્ટ આ મોડ્યુલને લાવશે નહિ અને \n"
+"તે બાકીના મોડ્યુલો ચલાવવાનો પ્રયત્ન કરશે."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -118,6 +124,11 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"મહેરબાની કરીને http://www.redhat.com/bugzilla જગ્યાએ \n"
+"રેડ હેટ ભૂલ શોધવાની સિસ્ટમમાં 'પ્રથમ શરુ કરો' વિરુદ્ધ \n"
+"ભૂલની ફાઈલ જમા કરો. ભૂલ શોધવાના પરિણામની નકલ \n"
+"%s માં સંગ્રહાઈ ગઈ છે. ખાતરી કરો કે ભૂલ શોધવાના \n"
+"અહેવાલની સાથે આ ફાઈલ જોડો. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -231,12 +242,12 @@ msgstr ""
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
-msgstr ""
+msgstr "પાછા જાઓ (_B)"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
-msgstr ""
+msgstr "આગળ વધો (_N)"
 
 #. Add the button box to the bottom of the box which contains the notebook.
 #. Add the main HBox to a VBox which will sit in the window.
@@ -281,7 +292,7 @@ msgstr ""
 #: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr ""
+msgstr "તમારુ સ્વાગત છે"
 
 #. Let's take some screenshots
 #. # functions.py - some helper functions
@@ -346,47 +357,47 @@ msgstr ""
 #. #
 #: ../src/textWindow.py:34
 msgid "Authentication"
-msgstr ""
+msgstr "સત્તાધિકરણ"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
-msgstr ""
+msgstr "ફાયરવોલનું રુપરેખાંકન"
 
 #: ../src/textWindow.py:36
 msgid "Keyboard configuration"
-msgstr ""
+msgstr "કીબોર્ડનું રુપરેખાંકન"
 
 #: ../src/textWindow.py:37
 msgid "Network configuration"
-msgstr ""
+msgstr "નેટવર્કનું રુપરેખાંકન"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration"
-msgstr ""
+msgstr "પ્રિન્ટરનું રુપરેખાંકન"
 
 #: ../src/textWindow.py:39
 msgid "System services"
-msgstr ""
+msgstr "સિસ્ટમની સેવાઓ"
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration"
-msgstr ""
+msgstr "ધ્વનિ કાર્ડનું રુપરેખાંકન"
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration"
-msgstr ""
+msgstr "ટાઈમઝોનનું રુપરેખાંકન"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "ચલાવવાનું સાધન"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "તમને જે વસ્તુ સુધારવાની જરુર જણાય તે પસંદ કરો"
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr ""
+msgstr "સેટઅપ એજન્ટ"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -417,17 +428,19 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr ""
+msgstr "વધારાની CD"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"જો તમારી પાસે નીચે યાદીમાં દર્શાવેલમાંની કોઈપણ CD હોય તો તમે તેમાંથી પેકેજો "
+"CD દાખલ કરીને અને યોગ્ય બટન પર ક્લિક કરીને સ્થાપિત કરી શકો છો."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
-msgstr ""
+msgstr "સ્થાપિત કરો..."
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
@@ -435,15 +448,18 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"CD-ROM હજુ સુધી શોધી શકાઈ નથી. મહેરબાની કરીને ડ્રાઈવમાં CD-ROM "
+"દાખલ કરો અને ચાલુ રાખવા માટે \"બરાબર\" બટન પર ક્લિક કરો."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
+"આપોઆપ ચલાવો કાર્યક્રમ cd માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" "
+"પર ક્લિક કરો."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -457,7 +473,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:39
 msgid "User Account"
-msgstr ""
+msgstr "વપરાશકર્તાનું ખાતુ"
 
 #. self.admin = libuser.admin()
 #: ../src/modules/create_user.py:65
@@ -466,22 +482,25 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"એ જરુરી છે કે તમે સામાન્ય (બિન-સંચાલન) કામ માટે પોતાનું ખાનગી "
+"વપરાશકર્તા ખાતુ વાપરો. ખાનગી ખાતુ બનાવવા માટે માંગેલ જાણકારી "
+"પૂરી પાડો."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
-msgstr ""
+msgstr "વપરાશકર્તાનું નામ: (_U)"
 
 #: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "પૂરુ નામ: (_e)"
 
 #: ../src/modules/create_user.py:89
 msgid "_Password:"
-msgstr ""
+msgstr "પાસવર્ડ: (_P)"
 
 #: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "ખાતરી માટેનો પાસવર્ડ: (_m)"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:112
@@ -489,10 +508,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"જો તમને નેટવર્કના સત્તાધિકરણ જેવા કે કર્બરોસ અથવા NIS વાવાપરવા મા "
+"મહેરબાની કરીને નેટવર્કમાં પ્રવેશો બટન પર ક્લિક કરો.ે "
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "નેટવર્ક પ્રવેશ વાપરો... (_L)"
 
 #. users = self.admin.enumerateUsersFull()
 #. self.normalUsersList = []
@@ -508,23 +529,26 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"એ ખૂબ જરુરી છે કે વપરાશકર્તાને પાેતાનું ખાનગી ખાતું હોવું જોઈએ. જો "
+"તમે ખાતા વગર ચાલુ રાખો તો, તમે માત્ર રુટ ખાતા સાથે જ પ્રવેશી શકો છો, "
+"કે જે સંચાલકના વપરાશ માટે જ આરક્ષિત રખાયેલ હોય છે."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
-msgstr ""
+msgstr "ચાલુ રાખાે (_C)"
 
 #: ../src/modules/create_user.py:167
 msgid "Create _account"
-msgstr ""
+msgstr "ખાતુ બનાવો (_a)"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "પાસવર્ડ બંધબેસતા નથી. મહેરબાની કરીને પાસવર્ડ ફરીથી દાખલ કરો."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "પાસવર્ડ ખૂબ નાનો છે. મહેરબાની કરીને ઓછામાં ઓછા ૬ અક્ષરો વાપરો."
 
 #. user = self.admin.lookupUserByName(username)
 #. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
@@ -540,11 +564,11 @@ msgstr ""
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "વપરાશકર્તાનું નામ ૩૩ અક્ષરો કરતાં નાનું જ હોવુ જોઈએ."
 
 #: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "વપરાશકર્તાનું નામ કોઈ અાંકડાથી શરુ થવું જોઈએ નહિ."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
@@ -554,6 +578,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
+"વપરાશકર્તાનું નામ %s ખાલી જગ્યાઓ સમાવે છે. મહેરબાની કરીને વપરાશકર્તાના "
+"નામમાં ખાલી જગ્યાઓ ઉમેરો નહિ."
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -561,6 +587,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"વપરાશકર્તાનું નામ %s વિરામ ચિહ્નો સમાવે છે. મહેરબાની કરીને વપરાશકર્તાના "
+"નામમાં વિરામ ચિહ્નો ઉમેરો નહિ."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -568,6 +596,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"વપરાશકર્તાનું નામ %s મોટા અક્ષરો સમાવે છે. મહેરબાની કરીને વપરાશકર્તાના "
+"નામમાં મોટા અક્ષરો ઉમેરો નહિ."
 
 #: ../src/modules/create_user.py:312
 #, python-format
@@ -575,18 +605,20 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"વપરાશકર્તાનું નામ %s અયોગ્ય અક્ષરો સમાવે છે. મહેરબાની કરીને ASCII "
+"અક્ષરો વાપરો."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "પાસવર્ડ અયોગ્ય અક્ષરો સમાવે છે. મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"નામ %s અયોગ્ય અક્ષરો સમાવે છે. મહેરબાની કરીને ASCII "
+"અક્ષરો વાપરો."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -616,11 +648,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:47
 msgid "Date and Time"
-msgstr ""
+msgstr "તારીખ અને સમય"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "મહેરબાની કરીને સિસ્ટમ માટે તારીખ અને સમય સુયોજિત કરો."
 
 #. Initialize date backend
 #. Initialize datePage and pass dateBackend into it
@@ -630,12 +662,12 @@ msgstr ""
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr ""
+msgstr "મહેરબાની કરીને કરીને સમય સર્વર દાખલ કરો."
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
 msgid "Error"
-msgstr ""
+msgstr "ભૂલ"
 
 #: ../src/modules/date.py:126 ../src/modules/date.py:157
 #, python-format
@@ -643,11 +675,13 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"%s સાથે સંપર્ક કરી શકાયો નથી. ક્યાંતો %s ઉપ્લબ્ધ નહિં હોય અથવા "
+"તમારા કમ્પ્યુટર પર ફાયરવોલ સુયોજનો NTP જોડાણોને અટકાવી રહ્યા હશે."
 
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "NTP સર્વરનો સંપર્ક કરી રહ્યા છીએ. મહેરબાની કરીને રાહ જુઓ..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -676,11 +710,13 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "ડિસ્પ્લે"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
+"મહેરબાની કરીને તમે જે રીઝોલ્યુશન અને રંગ વાપરવા માંગતા હોય "
+"તે પસંદ કરો."
 
 #. Add icon to the top frame
 #. #
@@ -689,13 +725,16 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "સુયોજન પૂર્ણ થયું"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
+"તમારી સિસ્ટમ હવે સુયોજિત થઈ ગઈ અને વાપરવા માટે તૈયાર છે. "
+"મહેરબાની કરીને નીચે જમણા ખૂણે ચાલુ રાખવા માટે \"આગળ વધો\" "
+"બટન પર ક્લિક કરો."
 
 #.
 #. networking.py - networking module for firstboot
@@ -723,27 +762,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
-msgstr ""
+msgstr "નેટવર્કનું સુયોજન"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "નીચેના નેટવર્ક ઉપકરણો તમારી સિસ્ટમ પર મળી આવ્યા છે:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr ""
+msgstr "નેટવર્ક ઉપકરણ"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "બુટ પ્રોટોકોલ"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "નેટવર્કની રુપરેખા બદલો... (_C)"
 
 #: ../src/modules/networking.py:140
 msgid "static"
-msgstr ""
+msgstr "સ્થાયી"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -773,11 +812,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
-msgstr ""
+msgstr "ધ્વનિ કાર્ડ"
 
 #: ../src/modules/soundcard_gui.py:48
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "તમારી સિસ્ટમ પર ધ્વનિ કાર્ડ મળી આવ્યો છે."
 
 #. Initialize soundcard page
 #. Add icon to the top frame
@@ -788,6 +827,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"નમૂનાનો અવાજ સાંભળવા માટે \"ચકાસણી ધ્વનિ વગાડો\" બટન પર ક્લિક કરો. "
+"તમે ત્રણ ધ્વનિની શ્રેણીઓ સાંભળી શકો છો. પહેલો અવાજ જમણી ચેનલમાં હશે, "
+"બીજો અવાજ ડાબી ચેનલમાં હશે, અને ત્રીજો અવાજ મધ્યમાં હશે."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -815,11 +857,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
-msgstr ""
+msgstr "ટાઈમઝોન"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "મહેરબાની કરીને સિસ્ટમ માટે ટાઈમઝોન સુયોજિત કરો."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -827,3 +869,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
+"તમારી સિસ્ટમ વાપરવા માટે તૈયાર છે કે નહિ તેના માટે ત્યાં અમુક પગલા જરુરી છે. "
+"સેટઅપ એજન્ટ તમને હવે અમુક પાયાના રુપરેખાંકન માટે મદદ કરશે. મહેરબાની "
+"કરીને નીચેના જમણા ખૂણે \"આગળ વધો\" બટન પર ક્લિક કરો."
+
