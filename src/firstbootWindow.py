@@ -32,25 +32,37 @@ class firstbootWindow:
         self.moduleDict = {}
 
         # Create the initial window and a vbox to fill it with.
+
         self.win = gtk.Window()
         self.win.connect("destroy", self.destroy)
-
         self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
+        self.win.realize()
 
-        if gtk.gdk.screen_width() >= 800:            
-            self.win.set_size_request(800, 600)
-        else:
-            self.win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
-            self.lowRes = 1
-            
-        if self.lowRes:
-            self.win.set_size_request(640, 480)
-            
-        self.win.set_resizable(gtk.FALSE)
-        self.win.set_position(gtk.WIN_POS_CENTER)
-        self.win.set_decorated(gtk.FALSE)
         mainVBox = gtk.VBox()
 
+
+        if self.doDebug:
+            #Draw the app in a 800x600 window
+            self.win.set_decorated(gtk.FALSE)
+        else:
+            #This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
+            self.win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
+            self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
+
+            al = gtk.Alignment (0.5, 0.5, 0.0, 0.0)
+            self.win.add (al)
+            self.win.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#000000"))
+            ev = gtk.EventBox ()
+            al.add(ev)
+            ev.add (mainVBox)
+
+
+        if gtk.gdk.screen_width() >= 800:            
+            mainVBox.set_size_request(800, 600)
+        else:
+            mainVBox.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
+            self.lowRes = 1
+            
         # Create the notebook.  We use a ListView to control which page in the
         # notebook is displayed.
         self.notebook = gtk.Notebook()
@@ -246,18 +258,25 @@ class firstbootWindow:
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
-        pix = functions.imageFromFile("bg-gray.png")
+        pix = functions.imageFromFile("bg-gray2.png")
 	if pix:
-            self.win.realize()
-            self.win.set_app_paintable(gtk.TRUE)
-
             bgimage = gtk.gdk.Pixmap(self.win.window, 800, 600, -1)
             gc = bgimage.new_gc ()
             pix.get_pixbuf().render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-            self.win.window.set_back_pixmap (bgimage, gtk.FALSE)
+
+            if self.doDebug:
+                self.win.realize()
+                self.win.set_app_paintable(gtk.TRUE)
+                self.win.window.set_back_pixmap (bgimage, gtk.FALSE)
+            else:
+                ev.realize()
+                ev.set_app_paintable(gtk.TRUE)
+                ev.window.set_back_pixmap (bgimage, gtk.FALSE)
 
         # Show the main window and go for it.
-        self.win.add(mainVBox)
+        if self.doDebug:
+            self.win.add(mainVBox)
+
         self.win.show_all()
         self.nextButton.grab_focus()
         gtk.main()
