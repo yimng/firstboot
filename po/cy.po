@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.cy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:09-0400\n"
+"POT-Creation-Date: 2004-09-10 11:21-0400\n"
 "PO-Revision-Date: 2004-03-01 17:42+0000\n"
 "Last-Translator: Owain Green <owaing@oceanfree.net>\n"
 "Language-Team: Cymraeg <Cy@li.org>\n"
@@ -76,19 +76,24 @@ msgstr ""
 "dadnamu yn %s. Cofiwch atodi'r ffeil hon at yr adroddiad nam. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
 msgid "_Back"
 msgstr "_Yn Ôl"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
 msgid "_Next"
 msgstr "_Nesaf"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Croeso"
+
+#: ../src/firstbootWindow.py:402
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr ""
 
 #: ../src/textWindow.py:34
 msgid "Authentication"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:09-0400\n"
+"POT-Creation-Date: 2004-09-10 11:21-0400\n"
 "PO-Revision-Date: 2004-09-08 04:05-0500\n"
 "Last-Translator: Erwien Samantha Y <erwiensamantha@sederhana.or.id>\n"
 "Language-Team: \n"
@@ -124,19 +124,24 @@ msgstr ""
 "Pastikan anda menyertakan (attach) file tersebut pada laporan bug. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
 msgid "_Back"
 msgstr "Kem_bali"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
 msgid "_Next"
 msgstr "Sela_njutnya"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Selamat Datang"
+
+#: ../src/firstbootWindow.py:402
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr ""
 
 #: ../src/textWindow.py:34
 msgid "Authentication"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-10 11:09-0400\n"
+"POT-Creation-Date: 2004-09-10 11:21-0400\n"
 "PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -77,19 +77,24 @@ msgstr ""
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
 msgid "_Back"
 msgstr "_ย้อนกลับ"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
 msgid "_Next"
 msgstr "_ถัดไป"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
+
+#: ../src/firstbootWindow.py:402
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr ""
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
