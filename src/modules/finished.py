@@ -57,7 +57,9 @@ class childWindow:
             for file in files:
                 fd = open(file, "r")
                 new_txt = fd.read()
-                self.txt = self.txt + "\n\n"
+		# markcom doesnt want the "you finished" message shown if there
+		# are any other errors
+                self.txt = "" + "\n\n"
                 self.txt = self.txt + new_txt
 
             # dont need these files anymore
