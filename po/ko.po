@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-09-13 08:23+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -73,25 +73,29 @@ msgstr ""
 "디버그 출력 결과는 %s에 저장되어 있습니다. \n"
 "이 파일을 버그 리포트에 첨부해 주십시오.\n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "뒤로(_B)"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "다음(_N)"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "%s 모듈 가져오기에 실패했습니다: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "환영합니다"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "%s 모듈 가져오기에 실패했습니다: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -137,23 +141,33 @@ msgstr "수정할 항목을 선택해 주십시오 "
 msgid "Setup Agent"
 msgstr "설정 에이전트"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "추가 CD"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"아래에 나온 CD를 가지고 계시다면, 이 CD를 삽입하신 후 적절한 버튼을 클릭하셔"
-"서 패키지를 설치하실 수 있습니다."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "설치..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -161,7 +175,7 @@ msgstr ""
 "CD-ROM이 감지되지 않았습니다.  CD-ROM을 드라이브에 삽입하신 후 \"확인\" 버튼"
 "을 클릭하여 계속 진행해 주십시오."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -365,11 +379,11 @@ msgstr ""
 "세가지 사운드가 들릴 것입니다. 첫번째 사운드는 오른쪽 채널, 두번째 사운드는 "
 "왼쪽 채널, 그리고 세번째 사운드는 중앙에서 재생됩니다."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "시간대"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "시스템에 맞는 시간대를 선택해 주십시오."
 
@@ -382,6 +396,13 @@ msgstr ""
 "몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  설정 에이전트는 이"
 "제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 것입니다. 오른쪽 하"
 "단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합니다."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "아래에 나온 CD를 가지고 계시다면, 이 CD를 삽입하신 후 적절한 버튼을 클릭하"
+#~ "셔서 패키지를 설치하실 수 있습니다."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "시간 서버를 입력해 주십시오."
@@ -427,9 +448,6 @@ msgstr ""
 #~ "commands:"
 #~ msgstr ""
 #~ "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
 
 #~ msgid "Yes"
 #~ msgstr "예"

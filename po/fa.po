@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-01-10 13:06+0330\n"
 "Last-Translator: Abbas Izad <abbasizad@hotmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -74,25 +74,29 @@ msgstr ""
 "کنید. رونوشتی از برونداد اشکال‌زدایی در %s ذخیره شده است.\n"
 "به یاد داشته باشید که آن پرونده را به گزارش اشکال ضمیمه کنید.\n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "ـعقب"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "بعدـی"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr ""
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "خوش آمدید"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr ""
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -145,23 +149,33 @@ msgstr "آیتمی را که می‌خواهید تغییر دهید انتخا�
 msgid "Setup Agent"
 msgstr "مأمور برپاسازی"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "سی‌دی‌های اضافی"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"اگر شما هر یک از سی‌دی‌های فهرست شده در زیر را دارید، می‌توانید بسته‌های بر روی "
-"آنها را توسط داخل کردن سی‌دی و کلیک بر دکمه‌ی مناسب نصب کنید."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "نصب کردن..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -169,7 +183,7 @@ msgstr ""
 "سی‌دیی شناسایی نشده است. لطفا یک سی‌دی را در دستگاه گذاشته و \"تأیید\" را برای "
 "ادامه کلیک کنید."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -374,11 +388,11 @@ msgstr ""
 "سری از سه صوت را بشنوید.  اولین صوت در کانال راست خواهد بود، دومین صوت در "
 "کانال چپ خواهد بود، و سومین صوت در مرکز خواهد بود."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "منطقه‌ی زمانی"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "لطفا منطقه‌ی زمانی را برای این سیستم تعیین کنید."
 
@@ -391,6 +405,13 @@ msgstr ""
 "چند مرحله‌ی دیگر قبل از اینکه سیستم شما آماده‌ی استفاده شود وجود دارد. مأمور "
 "برپاسازی اکنون شما را در طول چند پیکربندی پایه‌ای راهنمایی خواهد کرد. لطفا "
 "دکمه‌ی \"بعدی\" را در گوشه‌ی راست پایین برای ادامه کلیک کنید."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "اگر شما هر یک از سی‌دی‌های فهرست شده در زیر را دارید، می‌توانید بسته‌های بر "
+#~ "روی آنها را توسط داخل کردن سی‌دی و کلیک بر دکمه‌ی مناسب نصب کنید."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "لطفا یک کارگزار زمان را وارد کنید."

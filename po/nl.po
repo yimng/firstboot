@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-09-10 23:49+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -75,25 +75,29 @@ msgstr ""
 "debug-uitvoer is opgeslagen in %s Vergeet niet om dit \n"
 "bestand als bijlage te voegen bij het fout-rapport. \n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr "Firstboot kan niet in runlevel 3 worden uitgevoerd."
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Terug"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Volgende"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "importeren van module %s is mislukt: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Welkom"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "importeren van module %s is mislukt: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -141,30 +145,40 @@ msgstr "Selecteer het onderdeel dat u wilt wijzigen "
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "Extra CD's"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Als u een van de onderstaande CD's heeft, kunt u de pakketten daarvan "
-"installeren door de CD in te voeren, en op de bijbehorende knop te drukken."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Installeren..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
 "Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -369,11 +383,11 @@ msgstr ""
 "drie geluiden te horen. Het eerste geluid komt uit het rechter kanaal, het "
 "tweede uit het linker kanaal en het derde geluid zal uit het midden komen."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Tijdzone"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Stel de tijdzone in voor het systeem."
 
@@ -387,6 +401,14 @@ msgstr ""
 "gebruik. De Setup Agent zal u nu helpen met het maken van een basis- "
 "configuratie. Klik op \"Volgende\" rechts onder in het scherm om door te "
 "gaan."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Als u een van de onderstaande CD's heeft, kunt u de pakketten daarvan "
+#~ "installeren door de CD in te voeren, en op de bijbehorende knop te "
+#~ "drukken."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "Voer een tijdserver in."
@@ -435,9 +457,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Om firstboot tijdens het opstarten van het systeem uit te voeren, "
 #~ "gebruikt u de volgende opdrachten:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot kan niet in runlevel 3 worden uitgevoerd."
 
 #~ msgid "Yes"
 #~ msgstr "Ja"

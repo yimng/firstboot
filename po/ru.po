@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-09-11 20:56+1100\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
@@ -77,25 +77,29 @@ msgstr ""
 "Копия отладочной информации сохранена в %s \n"
 "Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr "Firstboot не может быть запущен на уровне запуска 3"
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Далее"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "импорт модуля %s завершился неудачно: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Добро пожаловать"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "импорт модуля %s завершился неудачно: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -141,23 +145,33 @@ msgstr "Выберите элемент, который вы хотите изм
 msgid "Setup Agent"
 msgstr "Помощник по настройке"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "Дополнительные CD"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Если у вас есть CD, перечисленные ниже, вы можете установить пакеты, вставив "
-"CD и нажав на соответствующую кнопку."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Установка..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -165,7 +179,7 @@ msgstr ""
 "CD-ROM найден.  Пожалуйста, вставьте CD-ROM в привод и нажмите \"OK\" для "
 "продолжения."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Программа autorun не найдена на cd. Найдите \"OK\" для продолжения."
@@ -367,11 +381,11 @@ msgstr ""
 "должны услышать три серии звуков.  Первая должна быть в правом канале, "
 "вторая в левом канале и третья в центре."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Часовой пояс"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Укажите часовой пояс."
 
@@ -384,6 +398,13 @@ msgstr ""
 "Осталось еще несколько шагов, после которых ваша система будет готова к "
 "работе.  В этом вам поможет Помощник по настройке.  Нажмите \"Далее\" для "
 "продолжения."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Если у вас есть CD, перечисленные ниже, вы можете установить пакеты, "
+#~ "вставив CD и нажав на соответствующую кнопку."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "Укажите сервер точного времени."
@@ -430,9 +451,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Для того, чтобы запустить firstboot в процессе загрузки, выполните "
 #~ "следующие комманды:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot не может быть запущен на уровне запуска 3"
 
 #~ msgid "Yes"
 #~ msgstr "Да"

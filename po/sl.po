@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-03-28 15:19+0200\n"
 "Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
 "Language-Team: slovenščina <translation-team-sl@lists.sourceforge.net>\n"
@@ -77,25 +77,29 @@ msgstr ""
 "izhoda se je shranil v %s. Zagotovo pripnite tudi \n"
 "to datoteko.\n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr "Firstboot ne teče v ravni teka sistema 3."
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "Na_zaj"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "Na_prej"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr ""
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Dobrodošli"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr ""
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -141,23 +145,33 @@ msgstr "Izberite kaj želite spremeniti"
 msgid "Setup Agent"
 msgstr "Nastavitveni agent"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "Dodatne plošče"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Če imate katero od spodaj naštetih plošč, lahko z nje namestite pakete tako, "
-"da vstavite ploščo in kliknete ustrezni gumb."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Namesti..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -165,7 +179,7 @@ msgstr ""
 "CD-ROM ni bil zaznan. Prosim, vstavite ploščo v pogon in kliknite \"V redu\" "
 "za nadaljevanje."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -367,11 +381,11 @@ msgstr ""
 "Slišati bi morali zaporedje treh zvokov. Prvi zvok bo v desnem kanalu, drugi "
 "v levem, tretji pa bo na sredini."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Časovni pas"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Prosim, izberite časovni pas tega sistema."
 
@@ -384,6 +398,13 @@ msgstr ""
 "Preden bo sistem pripravljen za rabo, morate narediti še nekaj korakov. "
 "Nastavitveni agent vas bo vodil po nekaj osnovnih nastavitvah. Za "
 "nadaljevanje kliknite gumb \"Naprej\" v spodnjem desnem kotu."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Če imate katero od spodaj naštetih plošč, lahko z nje namestite pakete "
+#~ "tako, da vstavite ploščo in kliknete ustrezni gumb."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "Prosim, vnesite časovni strežnik."
@@ -426,9 +447,6 @@ msgstr ""
 #~ "commands:"
 #~ msgstr ""
 #~ "Če želite pognati firstboot med zagonom sistema, poženite naslednje ukaze:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot ne teče v ravni teka sistema 3."
 
 #~ msgid "Yes"
 #~ msgstr "Da"

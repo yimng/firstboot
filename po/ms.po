@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ms\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-09-13 12:36+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -73,25 +73,29 @@ msgstr ""
 "Satu salinan keluaran debug telah disimpan di %s \n"
 "Pastikan fail tersebut dilampirkan bersama laporan pepijat. \n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Undur"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Maju"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "mengimport modul %s gagal: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Selamat Datang"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "mengimport modul %s gagal: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -137,24 +141,33 @@ msgstr "Pilih perkara yang anda hendak ubahsuai "
 msgid "Setup Agent"
 msgstr "Agen Pemasangan"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "CD Tambahan"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Jika anda mempunyai sebarang CD yang disenaraikan dibawah, anda boleh "
-"memasang pakej dari mereka dengan memasukkan CD dan menklik butang yang "
-"betul."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Pasang..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -162,7 +175,7 @@ msgstr ""
 "CD-ROM tidak dapat dikesan.  Sila masukkan CD-ROM dalam pemacu dan klik \"OK"
 "\" untuk meneruskan."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Program autorun tidak dijumpai pada cd. Klik \"OK\" untuk meneruskan."
@@ -362,11 +375,11 @@ msgstr ""
 "saluran kanan, bunyi kedua akan berada di saluran kiri, dan bunyi ketiga "
 "akan berada di tengah-tengah."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Zonmasa"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Sila tetapkan zonmasa untuk sistem."
 
@@ -379,6 +392,14 @@ msgstr ""
 "Terdapat beberapa langkah lagi sebelum sistem anda sedia untuk digunakan.  "
 "Agen Tetapan akan membantu anda melalui beberapa tetapan asas.  Sila klik "
 "butang \"Maju\" pada bahagian sudut bawah kanan untuk meneruskan."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Jika anda mempunyai sebarang CD yang disenaraikan dibawah, anda boleh "
+#~ "memasang pakej dari mereka dengan memasukkan CD dan menklik butang yang "
+#~ "betul."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "Sila masukkan pelayan masa."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2003-09-21 15:54+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -72,25 +72,29 @@ msgstr ""
 "Một bản sao thông tin debug được lưu vào %s\n"
 "Nhớ gửi kèm tập tin này với bản báo cáo lỗi.\n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr "Firstboot không chạy trong runlevel 3."
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Lùi"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Tới"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr ""
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Chào mừng"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr ""
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -143,23 +147,33 @@ msgstr ""
 msgid "Setup Agent"
 msgstr "Trợ tá Cài đặt Red Hat"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "CD bổ sung"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Nếu bạn có bất cứ CD nào dưới đây, bạn có thể cài đặt các gói phần mềm từ đó "
-"bằng cách cho CD vào và nhấn nút thích hợp."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Cài đặt..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -167,7 +181,7 @@ msgstr ""
 "Không tìm thấy CD-ROM. Vui lòng chèn đĩa CD-ROM vào ổ đĩa và nhấn \"Đồng ý\" "
 "để tiếp tục."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Không tìm thấy chương trình autorun trên CD. Nhấn \"OK\" để tiếp tục."
@@ -360,11 +374,11 @@ msgstr ""
 "Nhấn nút \"Phát âm thử\" để nghe âm thanh mẫu. Bạn sẽ nghe một loạt ba âm "
 "thanh. Âm đầu tiên bên phải, âm thứ hai bên trái, và âm thứ ba ở giữa."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Múi giờ"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Vui lòng đặt múi giờ cho hệ thống."
 
@@ -378,6 +392,13 @@ msgstr ""
 "Bạn cần thực hiện vài bước nữa, trước khi hệ thống có thể sẵn sàng hoạt "
 "động. Bây giờ, Trợ tá Cài đặt Red Hat sẽ hướng dẫn bạn thực hiện các cấu "
 "hình cơ bản. Vui lòng nhấn nút \"Tới\" tại góc dưới, bên phải để tiếp tục."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Nếu bạn có bất cứ CD nào dưới đây, bạn có thể cài đặt các gói phần mềm từ "
+#~ "đó bằng cách cho CD vào và nhấn nút thích hợp."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "Vui lòng nhập Server Thời gian."
@@ -417,9 +438,6 @@ msgstr ""
 #~ "In order to run firstboot during system bootup, run the following "
 #~ "commands:"
 #~ msgstr "Để chạy firstboot khi hệ thống khởi động, hãy chạy những lệnh sau:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot không chạy trong runlevel 3."
 
 #~ msgid "Yes"
 #~ msgstr "Có"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-07-22 18:19+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#msgstr "বাহির"
+# msgstr "বাহির"
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "প্রস্থান"
@@ -36,12 +36,12 @@ msgstr "না, আমি লাইসেন্স চুক্তি অনু�
 msgid "Do you want to reread or reconsider the License Agreement?"
 msgstr "আপনি কি লাইসেন্স চুক্তি পুনরায় পড়তে অথবা পুনর্বিবেচনা করতে চান?"
 
-#msgstr "লাইসেন্স পুনরায় পড়া (_প)"
+# msgstr "লাইসেন্স পুনরায় পড়া (_প)"
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
 msgstr "লাইসেন্স পুনরায় পড়ুন (_প)"
 
-#msgstr "বন্ধ"
+# msgstr "বন্ধ"
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
 msgstr "শাট ডাউন (_শ)"
@@ -51,7 +51,7 @@ msgstr "শাট ডাউন (_শ)"
 msgid "An error has occurred in the %s module."
 msgstr "%s মডিউলে একটি ত্রুটি দেখা দিয়েছে।"
 
-#Red Hat-->brand name
+# Red Hat-->brand name
 #: ../src/exceptionWindow.py:53
 #, python-format
 msgid ""
@@ -76,27 +76,31 @@ msgstr ""
 "এক কপি debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
 "ঐ ফাইলটি ত্রুটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "পূর্বাবস্থান (_প)"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "পরবর্তী(_র)"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "%s -এর মডিউল ইম্পোর্ট করতে ব্যর্থ: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "স্বাগতম"
 
-#msgstr "পরিচিতি যাচাই"
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "%s -এর মডিউল ইম্পোর্ট করতে ব্যর্থ: %s"
+
+# msgstr "পরিচিতি যাচাই"
 #: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "পরিচিয়-প্রমান প্রক্রিয়া"
@@ -125,7 +129,7 @@ msgstr "সিষ্টেম সার্ভিস"
 msgid "Sound card configuration"
 msgstr "সাউন্ড কার্ড কনফিগারেশন "
 
-#msgstr "সময় এলাকা কনফিগারেশন "
+# msgstr "সময় এলাকা কনফিগারেশন "
 #: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "সময়ের অঙ্চল কনফিগারেশন"
@@ -134,7 +138,7 @@ msgstr "সময়ের অঙ্চল কনফিগারেশন"
 msgid "Run Tool"
 msgstr "টুল চালান"
 
-#msgstr "আপনি যেটি পরিবর্তন করতে চান সেইটি পছন্দ করুন "
+# msgstr "আপনি যেটি পরিবর্তন করতে চান সেইটি পছন্দ করুন "
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "আপনি যে বস্তুটি পরিবর্তন করতে ইচ্ছুক তানির্বাচন করুন "
@@ -143,46 +147,55 @@ msgstr "আপনি যে বস্তুটি পরিবর্তন ক�
 msgid "Setup Agent"
 msgstr "সেটাপ এজেন্ট"
 
-#msgstr "অতিরিক্ত সিডিগুলো"
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+# msgstr "অতিরিক্ত সিডিগুলো"
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "অতিরিক্ত সিডিসমূহ"
 
-#modified by RB
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"আপনার কাছে যদি নিম্নোক্ত তালিকার সিডিগুলোর মধ্যে কোনো একটি উপস্থিত থাকে, তাহলে সেই সিডিটি "
-"প্রবেশ করিয়ে উপযুক্ত বাটন চেপে প্যকেজগুলো ইনস্টল করতে পারেন।"
 
-#modified by RB
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+# modified by RB
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "ইনস্টল করো..."
 
-#modified by RB
-#: ../src/modules/additional_cds.py:120
+# modified by RB
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"কোনো সিডি-রম পাওয়া যায় নি। অনুগ্রহ করে ড্রাইভে একটি সিডি প্রবেশ করান এবং চালানোর জন্য "
-"\"ঠিক আছে\" চাপুন।"
+"কোনো সিডি-রম পাওয়া যায় নি। অনুগ্রহ করে ড্রাইভে একটি সিডি প্রবেশ করান এবং চালানোর "
+"জন্য \"ঠিক আছে\" চাপুন।"
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "সিডিতে অটোরান প্রোগ্রামটি পাওয়া যায় নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
-#msgstr "সিষ্টেম ব্যবহারকারী"
+# msgstr "সিষ্টেম ব্যবহারকারী"
 #: ../src/modules/create_user.py:39
 msgid "System User"
 msgstr "সিস্টেম ব্যবহারকারী"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
@@ -208,7 +221,7 @@ msgstr "পাসওয়ার্ড(_প):"
 msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ডটি  নিশ্চিত করুন (_ন):"
 
-#msgstr "আপনি যদি "--old version
+# msgstr "আপনি যদি "--old version
 #: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
@@ -221,33 +234,33 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ ইন ব্যাবহার করো..."
 
-#modified by RB
+# modified by RB
 #: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"একটি ব্যক্তিগত একাউন্ট তৈরি করার কঠোর পরামর্শ দেয়া হচ্ছে। একটি অ্যাকাউন্ট উপস্থিত না থাকলে, "
-"আপনি শুধু root পরিচয়ে লগ ইন করতে সক্ষম হবেন,  যা শুধুমাত্র অ্যাডমিনিস্ট্রেটিভ ব্যাবহারের "
-"জন্য সংরক্ষিত।"
+"একটি ব্যক্তিগত একাউন্ট তৈরি করার কঠোর পরামর্শ দেয়া হচ্ছে। একটি অ্যাকাউন্ট উপস্থিত না "
+"থাকলে, আপনি শুধু root পরিচয়ে লগ ইন করতে সক্ষম হবেন,  যা শুধুমাত্র অ্যাডমিনিস্ট্রেটিভ "
+"ব্যাবহারের জন্য সংরক্ষিত।"
 
-#msgstr "_চালিয়ে যাও"
+# msgstr "_চালিয়ে যাও"
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "অগ্রসর (_গ)"
 
-#msgstr "একাউন্ট তৈরী কর"
+# msgstr "একাউন্ট তৈরী কর"
 #: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "অ্যাকাউন্ট তৈরি করুন (_ক)"
 
-#msgstr "পাসওয়ার্ডগুলো একই নয়। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
+# msgstr "পাসওয়ার্ডগুলো একই নয়। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "পাসওয়ার্ডগুলো মেলেনি। অনুগ্রহ করে পুনরায় পাসওয়ার্ড লিখুন।"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষরের পাসওয়ার্ড লিখুন।"
@@ -313,7 +326,7 @@ msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়ে
 msgid "Date and Time"
 msgstr "তারিখ এবং সময়"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
 msgstr "অনুগ্রহ করে সিস্টেমটির তারিখ এবং সময় নির্ধারণ করুন।"
@@ -322,30 +335,30 @@ msgstr "অনুগ্রহ করে সিস্টেমটির তার
 msgid "Display"
 msgstr "ডিসপ্লে"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "অনুগ্রহ করে আপনের পছন্দের রেজোলিউশন এবং রঙের গাঢ়তা সিলেক্ট করুন"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/finished.py:21
 msgid "Finish Setup"
 msgstr "সেটাপ সম্পন্ন করো"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/finished.py:35
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"আপনার সিস্টেমটি কাজের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের "
-"কোনায় অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
+"আপনার সিস্টেমটি কাজের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের কোনায় "
+"অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
 msgstr "নেটওয়ার্ক সেটাপ"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
 msgstr "নিম্নোক্ত নেটওয়ার্ক ডিভাইসগুলো সিস্টেমে সনাক্ত করা গেছে:"
@@ -374,7 +387,7 @@ msgstr "সাউন্ড কার্ড"
 msgid "A sound card has been detected on your computer."
 msgstr "আপনার কম্পিউটারে একটি সাউন্ড কার্ড পাওয়া গেছে।"
 
-#modified by RB
+# modified by RB
 #: ../src/modules/soundcard_gui.py:71
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
@@ -382,16 +395,17 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"নমুনা শব্দ শোনার জন্য \"পরীক্ষামূলক শব্দ চালাও\" বোতাম চাপুন। আপনি ক্রমানযায়ী তিনটি শব্দ "
-"শুনতে পারবেন। প্রথমটি ডানদিকের চ্যানেলে, দ্বিতীয়টি বাঁদিকে এবং তৃতীয়টি মাঝখানের চ্যানেলে।"
+"নমুনা শব্দ শোনার জন্য \"পরীক্ষামূলক শব্দ চালাও\" বোতাম চাপুন। আপনি ক্রমানযায়ী তিনটি "
+"শব্দ শুনতে পারবেন। প্রথমটি ডানদিকের চ্যানেলে, দ্বিতীয়টি বাঁদিকে এবং তৃতীয়টি "
+"মাঝখানের চ্যানেলে।"
 
-#modified by RB
-#: ../src/modules/timezone.py:48
+# modified by RB
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "সময়ের অঙ্চল"
 
-#modified by RB
-#: ../src/modules/timezone.py:52
+# modified by RB
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "অনুগ্রহ করে আপনার সিস্টেমের জন্য সময়ের অঙ্চল নির্ধারণ করুন।"
 
@@ -402,8 +416,16 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
-"সিস্টেমের কিছু মৌলিক কনফিগারেশনে সেটাপ এজেন্ট আপনাকে সাহায্য করবে। অগ্রসর "
-"হওয়ার জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+"সিস্টেমের কিছু মৌলিক কনফিগারেশনে সেটাপ এজেন্ট আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
+"জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+
+# modified by RB
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "আপনার কাছে যদি নিম্নোক্ত তালিকার সিডিগুলোর মধ্যে কোনো একটি উপস্থিত থাকে, তাহলে "
+#~ "সেই সিডিটি প্রবেশ করিয়ে উপযুক্ত বাটন চেপে প্যকেজগুলো ইনস্টল করতে পারেন।"
 
 #  They want ntp but have not set a server
 #~ msgid "Please enter a time server."

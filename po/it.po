@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-09-17 11:18+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -77,25 +77,29 @@ msgstr ""
 "Una copia del risultato dell'operazione di debug Ë stata salvata in %s.\n"
 "Accertarsi di allegare il file al report del bug. \n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr "Firstboot non pu√≥ essere eseguito nel runlevel 3."
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Precedente"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Successivo"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "l'importazione del modulo %s Ë fallita: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Benvenuti"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "l'importazione del modulo %s Ë fallita: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -141,23 +145,33 @@ msgstr "Seleziona la voce che vuoi modificare "
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "CD aggiuntivi"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Se si dispone di uno dei CD sotto elencati, Ë possibile installare i "
-"pacchetti inserendo il CD e facendo clic sul pulsante appropriato."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Installa..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -165,9 +179,11 @@ msgstr ""
 "Il CD non Ë stato rilevato. Inserire il CD nell'unit‡ e fare clic su \"OK\" "
 "per continuare."
 
-#: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Il programma autorun non Ë stato trovato sul CD. Premi \"OK\" per continuare."
+#: ../src/modules/additional_cds.py:180
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Il programma autorun non Ë stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -232,11 +248,13 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "La password non È corretta.  Si prega di riprovare ad inserire la password."
+msgstr ""
+"La password non È corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La password È troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr ""
+"La password È troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -284,14 +302,16 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -368,11 +388,11 @@ msgstr ""
 "canale destro, il secondo sar‡ nel canale sinistro e il terzo suono sar‡nel "
 "centro."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Data e Ora"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Impostare la data e l'ora del sistema."
 
@@ -386,6 +406,13 @@ msgstr ""
 "prima che il sistema sia pronto.  Red Hat Setup Agent guida l'utente nel "
 "processo di configurazione di base.  Fare clic sul pulsante \"Successivo\" "
 "nella parte inferiore destra per continuare."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Se si dispone di uno dei CD sotto elencati, Ë possibile installare i "
+#~ "pacchetti inserendo il CD e facendo clic sul pulsante appropriato."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "Inserire il nome di un server del tempo."
@@ -434,9 +461,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Per eseguire firstboot durante l'avvio del sistema, eseguire i seguenti "
 #~ "comandi:"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot non pu√≥ essere eseguito nel runlevel 3."
 
 #~ msgid "Yes"
 #~ msgstr "Si"
@@ -542,4 +566,3 @@ msgstr ""
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
-

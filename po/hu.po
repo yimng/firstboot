@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-09-14 11:55+0200\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -74,25 +74,29 @@ msgstr ""
 "A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
 "Kérjük csatolja ezt a fájlt a hibabejelentéshez. \n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Vissza"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Tovább"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "a(z) %s modul importálása nem sikerült: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Üdvözöljük"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "a(z) %s modul importálása nem sikerült: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -138,24 +142,33 @@ msgstr "Válassza ki a módosítani kívánt elemet "
 msgid "Setup Agent"
 msgstr "Telepítőügynök"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "További CD-k"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Ha rendelkezik az alábbi CD-k valamelyikével, feltelepítheti a rajtuk "
-"található csomagokat is. Ha telepíteni szeretne, helyezze be az egyik CD-t "
-"és kattintson a megfelelő gombra."
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Telepítés..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -163,7 +176,7 @@ msgstr ""
 "Nem található CD-ROM-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba "
 "és kattintson az \"OK\" gombra."
 
-#: ../src/modules/additional_cds.py:154
+#: ../src/modules/additional_cds.py:180
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -368,11 +381,11 @@ msgstr ""
 "hangminta lesz lejátszva egymás után. Az első a jobb, a második a bal "
 "csatornából szól, a harmadik pedig középről."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Időzóna"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Adja meg a rendszer időzónáját."
 
@@ -385,6 +398,14 @@ msgstr ""
 "A rendszer használatba vétele előtt még néhány lépést el kell végezni. A "
 "Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
 "kattintson a \"Tovább\" gombra a jobb alsó sarokban."
+
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Ha rendelkezik az alábbi CD-k valamelyikével, feltelepítheti a rajtuk "
+#~ "található csomagokat is. Ha telepíteni szeretne, helyezze be az egyik CD-"
+#~ "t és kattintson a megfelelő gombra."
 
 #~ msgid "Please enter a time server."
 #~ msgstr "Adja meg egy időkiszolgáló nevét."

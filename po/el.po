@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-14 20:07-0400\n"
+"POT-Creation-Date: 2004-10-05 12:40-0400\n"
 "PO-Revision-Date: 2004-09-26 16:27-0300\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team:  <nls@tux.hellug.gr>\n"
@@ -77,25 +77,29 @@ msgstr ""
 "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος φυλάχθηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
-#: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
+#: ../src/firstboot.py:135
+msgid "Firstboot does not run in runlevel 3."
+msgstr ""
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
 msgid "_Back"
 msgstr "_Πίσω"
 
-#: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:577
 msgid "_Next"
 msgstr "_Επόμενο"
 
-#: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, python-format
-msgid "module import of %s failed: %s"
-msgstr "αποτυχία εισαγωγής του αρθρώματος %s: %s"
-
-#: ../src/firstbootWindowLocal.py:553 ../src/firstbootWindow.py:553
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:569
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Καλώς ήλθατε"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "αποτυχία εισαγωγής του αρθρώματος %s: %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -141,23 +145,33 @@ msgstr "Επιλέξτε το στοιχείο που θέλετε να τροπ
 msgid "Setup Agent"
 msgstr "Εργαλείο Ρύθμισης"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:107
 msgid "Additional CDs"
 msgstr "Eπιπρόσθετα CD"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
-"Αν έχετε κάποια από τα παρακάτω CD, τότε μπορείτε να εγκαταστήσετε εφαρμογές "
-"με την εισαγωγή του CD στον οδηγό και το πάτημα του κατάλληλου κουμπιού. "
 
-#: ../src/modules/additional_cds.py:98
+#. if 1:
+#: ../src/modules/additional_cds.py:70
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:111
 msgid "Install..."
 msgstr "Εγκατάσταση..."
 
-#: ../src/modules/additional_cds.py:120
+#: ../src/modules/additional_cds.py:146
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -165,8 +179,9 @@ msgstr ""
 "Δεν εντοπίστηκε CD-ROM.  Παρακαλώ εισάγετε έναν οπτικό δίσκο στον οδηγό και "
 "πατήστε \"Εντάξει\" για να συνεχίσετε."
 
-#: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:180
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Το πρόγραμμα autorun δεν εντοπίστηκε στο cd. Πατήστε \"Εντάξει\" για να "
 "συνεχίσετε."
@@ -288,14 +303,16 @@ msgstr ""
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το συνθηματικό περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το όνομα '%s' περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο  ASCII χαρακτήρες."
@@ -372,11 +389,11 @@ msgstr ""
 "κανάλι, ο δεύτερος από το αριστερό κανάλι, και ο τρίτος θα είναι από το "
 "κεντρικό κανάλι."
 
-#: ../src/modules/timezone.py:48
+#: ../src/modules/timezone.py:47
 msgid "Timezone"
 msgstr "Ζώνη Ώρας"
 
-#: ../src/modules/timezone.py:52
+#: ../src/modules/timezone.py:51
 msgid "Please set the timezone for the system."
 msgstr "Παρακαλώ ορίσετε τη ζώνη ώρας για το σύστημα."
 
@@ -391,3 +408,10 @@ msgstr ""
 "διαμόρφωσης.  Παρακαλώ πατήστε το κουμπί  \"Επόμενο\" στην δεξιά κάτω γωνία "
 "για να συνεχίσετε. "
 
+#~ msgid ""
+#~ "If you have any of the CDs listed below, you can install packages from "
+#~ "them by inserting the CD and clicking the appropriate button."
+#~ msgstr ""
+#~ "Αν έχετε κάποια από τα παρακάτω CD, τότε μπορείτε να εγκαταστήσετε "
+#~ "εφαρμογές με την εισαγωγή του CD στον οδηγό και το πάτημα του κατάλληλου "
+#~ "κουμπιού. "
