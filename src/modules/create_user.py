@@ -243,7 +243,7 @@ class childWindow:
         for i in str:
             if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation and i not in string.whitespace:
                 self.showErrorMessage(_("The password contains invalid characters.  "
-                                        "Please use only ASCII characters.") % tag)
+                                        "Please use only ASCII characters."))
                 widget.set_text("")
                 widget.grab_focus()
                 return None
