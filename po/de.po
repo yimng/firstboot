@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
-"PO-Revision-Date: 2003-01-23 14:51+0100\n"
+"PO-Revision-Date: 2003-01-30 12:04+0100\n"
 "Last-Translator: Bernd Groh <bgroh@redhat.com>\n"
 "Language-Team: Deutsch <de@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,22 +46,20 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot wurde in diesem System bereits ein Mal ausgeführt.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Um firstboot von der Befehlszeile auszuführen, führen Sie die folgenden "
 "Befehle aus:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Um firstboot auszuführen, während das System bootet, führen Sie die "
 "folgenden Befehle aus:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot kann nicht im Runlevel 3 ausgeführt werden."
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -99,7 +97,7 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "Benutzeraccount"
 
 #: ../src/modules/create_user.py:44
 msgid ""
@@ -107,6 +105,9 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"Es wird empfohlen, dass Sie einen Benutzeraccount für normale (nicht-"
+"administrative) Benutzung erzeugen.  Um einen Benutzeraccount zu erzeugen, "
+"geben Sie die geforderten Informationen an."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -130,76 +131,85 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Es wird strengstens empfohlen einen Benutzeraccount zu erzeugen. "
+"Wenn Sie ohne eine solchen Account fortfahren, können Sie sich nur als "
+"root anmelden, was für administrative Aufgaben reserviert ist."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr ""
+msgstr "Weiter"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "Account erzeugen"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
+msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
 
 #: ../src/modules/create_user.py:142
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Das Passwort ist zu kurz.  Bitte benutzen Sie mindestens 6 Zeichen."
 
 #: ../src/modules/create_user.py:153
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Ein Account mit dem Benutzernamen %s existiert bereits.  Bitte geben Sie "
+"Der Benutzername '%s' ist ein reservierter Account.  Bitte geben Sie "
 "einen anderen Benutzernamen an."
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "Der Benutzername darf maximal 32 Zeichen haben."
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "Der Benutzername muss mit einem Buchstaben beginnen."
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
+"Der Benutzername '%s' enthält Whitespace-Zeichen.  Bitte verwenden Sie "
+"keine solchen in %s."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"Der Benutzername '%s' enthält Satzzeichen.  Bitte verwenden Sie "
+"keine solchen im Benutzernamen."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"Der Benutzername '%s' enthält Großbuchstaben.  Bitte verwenden Sie "
+"keine solchen im Benutzernamen."
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Der Benutzername '%s' enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen "
+"verwenden."
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Das Passwort ist zu kurz.  Bitte benutzen Sie mindestens 6 Zeichen."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Das Passwort enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen "
+"verwenden."
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Das Passwort ist zu kurz.  Bitte benutzen Sie mindestens 6 Zeichen."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Der Name '%s' enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen "
+"verwenden."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -235,13 +245,12 @@ msgid "Finish Setup"
 msgstr "Setup beenden"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Ihr Red Hat Linux System wurde installiert und kann nun verwendet werden. "
-"Wir wünschen Ihnen eine erfolgreiche Arbeit mit dem System. Klicken Sie auf "
+"Ihr System ist nun eingerichtet und kann verwendet werden. "
+"Klicken Sie auf "
 "die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
@@ -612,3 +621,4 @@ msgstr "Red Hat Setup Agent"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Starten Sie den Red Hat Update Agent"
+
