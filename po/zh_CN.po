@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: 2003-08-28 19:29-0400\n"
+"POT-Creation-Date: 2003-09-11 17:51-0400\n"
 "PO-Revision-Date: 2003-09-02 14:08+1000\n"
 "Last-Translator: Sarah Saiying Wang <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -18,6 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.0\n"
+
+#. !/usr/bin/python2.2
+#. #
+#. # I18N
+#. #
+#: ../src/eula_strings.py:10
+msgid "License Agreement"
+msgstr ""
+
+#: ../src/eula_strings.py:11
+msgid "_Yes, I agree to the License Agreement"
+msgstr ""
+
+#: ../src/eula_strings.py:12
+#, fuzzy
+msgid "N_o, I do not agree"
+msgstr "否，我不想注册我的系统(_O)。"
+
+#: ../src/eula_strings.py:13
+msgid "Do you want to reread or reconsider the License Agreement?"
+msgstr ""
+
+#: ../src/eula_strings.py:14
+msgid "_Reread license"
+msgstr ""
+
+#: ../src/eula_strings.py:15
+msgid "_Shut down"
+msgstr ""
 
 #. !/usr/bin/python2.2
 #. #
@@ -74,11 +103,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #. Firstboot has never been run before, so start it up
@@ -315,7 +346,8 @@ msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:133
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -442,13 +474,15 @@ msgid ""
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -943,4 +977,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-

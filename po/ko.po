@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2003-08-28 19:29-0400\n"
+"POT-Creation-Date: 2003-09-11 17:51-0400\n"
 "PO-Revision-Date: 2003-09-01 15:54+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -15,6 +15,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.0\n"
+
+#. !/usr/bin/python2.2
+#. #
+#. # I18N
+#. #
+#: ../src/eula_strings.py:10
+msgid "License Agreement"
+msgstr ""
+
+#: ../src/eula_strings.py:11
+msgid "_Yes, I agree to the License Agreement"
+msgstr ""
+
+#: ../src/eula_strings.py:12
+#, fuzzy
+msgid "N_o, I do not agree"
+msgstr "아니오, 시스템을 등록하지 않습니다.(_O)"
+
+#: ../src/eula_strings.py:13
+msgid "Do you want to reread or reconsider the License Agreement?"
+msgstr ""
+
+#: ../src/eula_strings.py:14
+msgid "_Reread license"
+msgstr ""
+
+#: ../src/eula_strings.py:15
+msgid "_Shut down"
+msgstr ""
 
 #. !/usr/bin/python2.2
 #. #
@@ -71,12 +100,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
@@ -316,8 +348,11 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:133
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시기 바랍니다."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
+"기 바랍니다."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -456,13 +491,16 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -993,4 +1031,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-
