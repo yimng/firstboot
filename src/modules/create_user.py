@@ -309,7 +309,7 @@ class childWindow:
         i.grab_add ()
 
         #Run rhn_register so they can register with RHN
-        pid = functions.start_process("/usr/bin/authconfig-gtk")
+        pid = functions.start_process("/usr/bin/authconfig-gtk --firstboot")
 
         flag = None
         while not flag:
