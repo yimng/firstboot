@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.2
-Release: 2
+Version: 1.3.3
+Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -18,6 +18,7 @@ Requires: usermode >= 1.36
 Requires: metacity
 Requires: rhpl
 Requires: system-config-date
+Requires: system-config-display
 Requires: system-config-language
 Requires: system-config-mouse
 Requires: system-config-keyboard
