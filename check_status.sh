@@ -34,3 +34,11 @@ cd ..
 cd redhat-config-samba
 echo "Checking redhat-config-samba"
 cvs status 2>/dev/null| grep Status | grep -v Up
+cd ..
+cd redhat-config-date
+echo "Checking redhat-config-date"
+cvs status 2>/dev/null| grep Status | grep -v Up
+cd ..
+cd redhat-config-kickstart
+echo "Checking redhat-config-kickstart"
+cvs status 2>/dev/null| grep Status | grep -v Up
