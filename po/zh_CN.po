@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-06-10 14:34+1000\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -47,18 +47,20 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot 不在运行级别 3 中运行。"
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr "下一步(_N)"
 
@@ -132,7 +134,7 @@ msgstr "如果您需要使用网络验证，如 Kerberos 或 NIS，请点击“�
 msgid "_Use Network Login..."
 msgstr "使用网络登录(_U)..."
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -141,23 +143,23 @@ msgstr ""
 "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
 "登录，而这个账号是为管理而保留的。"
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
 msgstr "继续(_C)"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 msgid "Create _account"
 msgstr "创建账号(_A)"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "口令不匹配。请重新输入口令。"
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "根口令太短，请至少使用 6 个字符。"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -196,11 +198,13 @@ msgid ""
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/date.py:51
@@ -241,6 +245,33 @@ msgid ""
 "button in the lower right corner to continue."
 msgstr "您的系统现已设置完毕，一切就绪。请点击右下角的“前进”按钮来继续。"
 
+#: ../src/modules/networking.py:23
+#, fuzzy
+msgid "Network Setup"
+msgstr "网络检查"
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+#, fuzzy
+msgid "Network Device"
+msgstr "网络检查"
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "使用网络登录(_U)..."
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "声卡"
@@ -258,6 +289,15 @@ msgid ""
 msgstr ""
 "点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右"
 "频；第二种声音是左频；第三种声音将会在中间。"
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "请为系统选择鼠标。"
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -397,9 +437,6 @@ msgstr "Red Hat 设置代理"
 
 #~ msgid "Update Your System"
 #~ msgstr "更新你的系统"
-
-#~ msgid "Network check"
-#~ msgstr "网络检查"
 
 #~ msgid "Set up Networking"
 #~ msgstr "设置联网"
@@ -544,9 +581,6 @@ msgstr "Red Hat 设置代理"
 #~ msgid "Other ports: (1029:tcp)"
 #~ msgstr "其它端口：(1029:tcp)"
 
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "请为系统选择鼠标。"
-
 #~ msgid "Register with RHN"
 #~ msgstr "在 RHN 注册"
 
@@ -591,4 +625,3 @@ msgstr "Red Hat 设置代理"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-

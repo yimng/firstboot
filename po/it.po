@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-06-18 14:32+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -47,11 +47,14 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot è già stato eseguito su questo sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+"Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Per eseguire firstboot durante l'avvio del sistema, eseguire i seguenti "
 "comandi:"
@@ -60,7 +63,7 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot non puó essere eseguito nel runlevel 3."
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr "_Successivo"
 
@@ -132,14 +135,15 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Se avete necessità di usare una autenticazione di rete come Kerberos o NIS, si prega "
-"di fare clic sul pulsante di registrazione di rete 'Use Network Login'."
+"Se avete necessità di usare una autenticazione di rete come Kerberos o NIS, "
+"si prega di fare clic sul pulsante di registrazione di rete 'Use Network "
+"Login'."
 
 #: ../src/modules/create_user.py:104
 msgid "_Use Network Login..."
 msgstr "_Use Network Login..."
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -149,23 +153,25 @@ msgstr ""
 "account, effettuerete una registrazione con un account root, il quale é "
 "riservato solo per un uso amministrativo."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
 msgstr "_Continuare"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 msgid "Create _account"
 msgstr "Creare un _account"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr ""
+"La password non é corretta.  Si prega di riprovare ad inserire la password."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr ""
+"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -186,8 +192,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Il nome utente '%s' contiene degli spazi.  Si prega di non includere alcuno spazio "
-"nel nome utente."
+"Il nome utente '%s' contiene degli spazi.  Si prega di non includere alcuno "
+"spazio nel nome utente."
 
 #: ../src/modules/create_user.py:259
 msgid ""
@@ -214,13 +220,15 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -266,6 +274,31 @@ msgstr ""
 "Il vostro sistema á stato impostato ed é pronto per l'uso.  Si prega di fare "
 "clic sul pulsante \"Avanti\" nell'angolo basso a destra per continuare. "
 
+#: ../src/modules/networking.py:23
+msgid "Network Setup"
+msgstr ""
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+msgid "Network Device"
+msgstr ""
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "_Use Network Login..."
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Scheda audio"
@@ -285,6 +318,15 @@ msgstr ""
 "audio. Si dovrebbe sentire una serie di tre suoni. Il primo suono sarà nel "
 "canale destro, il secondo sarà nel canale sinistro e il terzo suono sarànel "
 "centro."
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "Impostare la data e l'ora del sistema."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -321,7 +363,8 @@ msgstr ""
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr "Si, voglio procedere alla registrazione del mio sistema con Red Hat Network."
+msgstr ""
+"Si, voglio procedere alla registrazione del mio sistema con Red Hat Network."
 
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
@@ -412,4 +455,3 @@ msgstr "Red Hat Update Agent"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
-

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-02-25 22:37+1000\n"
 "Last-Translator: David Barzilay <barzilay@redhat.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot não roda no nível de execução 3."
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr ""
 
@@ -144,7 +144,7 @@ msgstr ""
 msgid "_Use Network Login..."
 msgstr ""
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -154,25 +154,25 @@ msgstr ""
 "continuar sem conta, só poderá logar com a conta root, que é reservada "
 "apenas para uso administrativo."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 #, fuzzy
 msgid "_Continue"
 msgstr "Continuar"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 #, fuzzy
 msgid "Create _account"
 msgstr "Criar conta"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "As senhas não coincidem.  Por favor insira a senha novamente."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "A senha é muito curta.  Por favor use no mínimo 6 caracteres."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -274,6 +274,31 @@ msgstr ""
 "Seu sistema agora está configurado e pronto para ser usado.  Por favor "
 "clique no botão \"Avançar\" no canto inferior direito para continuar."
 
+#: ../src/modules/networking.py:23
+msgid "Network Setup"
+msgstr ""
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+msgid "Network Device"
+msgstr ""
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "Configuração de Data e Hora"
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Placa de som"
@@ -292,6 +317,15 @@ msgstr ""
 "Clique no botão \"Testar som\" para ouvir um som de teste.  Você deverá "
 "ouviruma série de três sons.  O primeiro som tocará no canal da direita, o "
 "segundo no canal da esquerda e o terceiro tocará no centro."
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "Por favor configure a data e a hora para o computador."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -411,9 +445,6 @@ msgstr "Agente de Configuração Red Hat"
 
 #~ msgid "Red Hat Update Agent"
 #~ msgstr "Agente de Atualizações Red Hat"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "Configuração de Data e Hora"
 
 #~ msgid "Sound Card Configuration"
 #~ msgstr "Configuração da Placa de Som"

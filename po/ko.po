@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-06-10 09:32+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -46,18 +46,21 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+"시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr "다음(_N)"
 
@@ -128,14 +131,14 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, "
-"네트워크 로그인 사용 버튼을 클릭해 주십시오."
+"커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
+"을 클릭해 주십시오."
 
 #: ../src/modules/create_user.py:104
 msgid "_Use Network Login..."
 msgstr "네트워크 로그인 사용(_U)..."
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -145,23 +148,23 @@ msgstr ""
 "행하신다면, 관리자 용으로만 사용되는 루트 계정을 사용하여 로그인하셔야 합니"
 "다."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
 msgstr "계속 진행(_C)"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 msgid "Create _account"
 msgstr "계정 만들기(_A)"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -178,10 +181,12 @@ msgid "The user name may not begin with a number."
 msgstr "사용자명은 숫자로 시작해서는 안됩니다."
 
 #: ../src/modules/create_user.py:252
+#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the %s."
-msgstr "사용자명 '%s'에 공백이 포함되어 있습니다.  %s에 공백을 포함시키지 마십시오."
+"the user name."
+msgstr ""
+"사용자명 '%s'에 공백이 포함되어 있습니다.  %s에 공백을 포함시키지 마십시오."
 
 #: ../src/modules/create_user.py:259
 msgid ""
@@ -208,11 +213,14 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -257,6 +265,33 @@ msgstr ""
 "시스템 설정이 완료되어 이제 사용하실 수 있습니다.  다음 단계로 계속 진행하시"
 "려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
 
+#: ../src/modules/networking.py:23
+#, fuzzy
+msgid "Network Setup"
+msgstr "네트워크 검사"
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+#, fuzzy
+msgid "Network Device"
+msgstr "네트워크 검사"
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "네트워크 로그인 사용(_U)..."
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "사운드 카드"
@@ -275,6 +310,15 @@ msgstr ""
 "샘플 사운드를 들어보기 위하여 \"테스트 사운드 재생\" 버튼을 클릭해 주십시오. "
 "세가지 사운드가 들릴 것입니다. 첫번째 사운드는 오른쪽 채널, 두번째 사운드는 "
 "왼쪽 채널, 그리고 세번째 사운드는 중앙에서 재생됩니다."
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "시스템에 맞는 마우스를 선택해 주십시오."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -427,9 +471,6 @@ msgstr "Red Hat 설정 에이전트"
 
 #~ msgid "Update Your System"
 #~ msgstr "시스템을 업데이트 하십시오"
-
-#~ msgid "Network check"
-#~ msgstr "네트워크 검사"
 
 #~ msgid "Set up Networking"
 #~ msgstr "네트워킹 셋업"
@@ -588,9 +629,6 @@ msgstr "Red Hat 설정 에이전트"
 #~ "잘못된 포트: %s.  올바른 형식은 '포트:프로토콜, 포트:프로토콜' 입니다.  "
 #~ "예, '1234:udp, 3456:tcp'"
 
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "시스템에 맞는 마우스를 선택해 주십시오."
-
 #~ msgid "Register with RHN"
 #~ msgstr "RHN에 등록하십시오"
 
@@ -641,4 +679,3 @@ msgstr "Red Hat 설정 에이전트"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-

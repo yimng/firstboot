@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-04-03 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot kører ikke i kørselsniveau 3."
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr ""
 
@@ -144,7 +144,7 @@ msgstr ""
 msgid "_Use Network Login..."
 msgstr ""
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -154,25 +154,25 @@ msgstr ""
 "fortsætter uden en konto kan du kun logge ind med root-kontoen, som "
 "reserveret til administrativ brug."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 #, fuzzy
 msgid "_Continue"
 msgstr "Fortsæt"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 #, fuzzy
 msgid "Create _account"
 msgstr "Opret konto"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -270,6 +270,31 @@ msgstr ""
 "Dit system er nu sat op og klar til brug. Klik på 'Næste'-knappen i det "
 "nederste højre hjørne for at fortsætte."
 
+#: ../src/modules/networking.py:23
+msgid "Network Setup"
+msgstr ""
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+msgid "Network Device"
+msgstr ""
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "Konfiguration af dato og klokkeslet"
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Lydkort"
@@ -288,6 +313,15 @@ msgstr ""
 "Klik på 'Afspil lydprøve'-knappen for at høre en lydprøve. Du bør høre en "
 "serie med 3 lyde. Den første lyd skal være i den højre kanal, den anden lyd "
 "skal være i den venstre kanal, og den tredje lyd skal være i midten."
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "Sæt dato og klokkeslet for systemet."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -405,9 +439,6 @@ msgstr "Red Hat konfigurationssagent"
 
 #~ msgid "Red Hat Update Agent"
 #~ msgstr "Red Hat opdateringsagent"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "Konfiguration af dato og klokkeslet"
 
 #~ msgid "Sound Card Configuration"
 #~ msgstr "Konfiguration af lydkort"

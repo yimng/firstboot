@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-02-19 08:38GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -60,7 +60,7 @@ msgstr "システムのブート中にfirstbootを実行するには、次のコ
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstbootはランレベル3では起動しません。"
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr ""
 
@@ -141,7 +141,7 @@ msgstr ""
 msgid "_Use Network Login..."
 msgstr "ネットワーク構成を設定する..."
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -151,25 +151,25 @@ msgstr ""
 "状態で継続すると、rootアカウントでログインするしかありません。但し、 これは管"
 "理業務用のみに予約されています。"
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 #, fuzzy
 msgid "_Continue"
 msgstr "続ける"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 #, fuzzy
 msgid "Create _account"
 msgstr "アカウントを作成"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "パスワードが一致しません。再度パスワードを入力して下さい。"
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -267,6 +267,33 @@ msgstr ""
 "システムが設定できましたので使用できる状態になりました。右下隅にある「進む」 "
 "ボタンをクリックして続けてください。"
 
+#: ../src/modules/networking.py:23
+#, fuzzy
+msgid "Network Setup"
+msgstr "ネットワーク確認"
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+#, fuzzy
+msgid "Network Device"
+msgstr "ネットワーク確認"
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "ネットワーク構成を設定する..."
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "サウンドカード"
@@ -285,6 +312,15 @@ msgstr ""
 "\"Play test sound\"ボタンをクリックしてサンプルサウンドを聞いてください。 連"
 "続して3つの音が聞こえるはずです。最初の音は、右のチャンネルで 2番目の音が 左"
 "側のチャンネルです。 3番目の音は中央となります。"
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "システム用のマウスを選択して下さい。"
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -437,9 +473,6 @@ msgstr "Red Hatセットアップエージェント"
 #~ msgid "Update Your System"
 #~ msgstr "システムを更新"
 
-#~ msgid "Network check"
-#~ msgstr "ネットワーク確認"
-
 #~ msgid "Set up Networking"
 #~ msgstr "ネットワーク構成設定"
 
@@ -542,9 +575,6 @@ msgstr "Red Hatセットアップエージェント"
 
 #~ msgid "A configuration tool for the mouse"
 #~ msgstr "マウス用の設定ツール"
-
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "システム用のマウスを選択して下さい。"
 
 #~ msgid "Emulate 3 button click"
 #~ msgstr "3ボタンクリックをエミュレート(模倣)"

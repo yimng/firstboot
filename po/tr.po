@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot \n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2002-08-10 18:59+0300\n"
 "Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr ""
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr ""
 
@@ -134,30 +134,30 @@ msgstr ""
 msgid "_Use Network Login..."
 msgstr "Ağ ayarları..."
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
 msgstr ""
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 msgid "Create _account"
 msgstr ""
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr ""
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -247,6 +247,33 @@ msgstr ""
 "Sisteminizi kullandıkça deneyiminizin artacağına inanıyoruz. Devam etmek "
 "için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
 
+#: ../src/modules/networking.py:23
+#, fuzzy
+msgid "Network Setup"
+msgstr "Ağ denetimi"
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+#, fuzzy
+msgid "Network Device"
+msgstr "Ağ denetimi"
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "Ağ ayarları..."
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Ses Kartı"
@@ -265,6 +292,15 @@ msgstr ""
 "Örnek sesi duymak için \"Deneme sesi çal\" dğmesine tıklayınız. 3 seslik bir "
 "dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sağ kanaldan, üçüncü ses "
 "ise ortadan gelecek."
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "Lütfen sistem tarih ve saatini ayarlayın."
 
 #: ../src/modules/up2date.py:19
 #, fuzzy
@@ -402,9 +438,6 @@ msgstr "Red Hat Güncelleme Aracısı"
 
 #~ msgid "Update Your System"
 #~ msgstr "Sisteminizin Güncellenmesi"
-
-#~ msgid "Network check"
-#~ msgstr "Ağ denetimi"
 
 #~ msgid "Set up Networking"
 #~ msgstr "Ağ Ayarları"

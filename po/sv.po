@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-03-04 11:57+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot kör inte på körnivå 3."
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr ""
 
@@ -147,7 +147,7 @@ msgstr ""
 msgid "_Use Network Login..."
 msgstr ""
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -157,25 +157,25 @@ msgstr ""
 "fortsätter utan ett konto kan du bara logga in med rootkontot, vilket är "
 "reserverat för administrativt bruk."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 #, fuzzy
 msgid "_Continue"
 msgstr "Fortsätt"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 #, fuzzy
 msgid "Create _account"
 msgstr "Skapa konto"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -273,6 +273,30 @@ msgstr ""
 "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
 "\"Framåt\" i nedre högra hörnet för att fortsätta."
 
+#: ../src/modules/networking.py:23
+msgid "Network Setup"
+msgstr ""
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+msgid "Network Device"
+msgstr ""
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+msgid "_Change Network Configuration..."
+msgstr ""
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Ljudkort"
@@ -291,6 +315,15 @@ msgstr ""
 "Klicka på knappen \"Spela testljud\" för att höra ett testljud. Du bör då "
 "höra en serie med tre ljud. Det första ljudet kommer att vara i den högra "
 "kanalen, det andra ljudet i den vänstra och det tredje i mitten."
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "Ställ in datum och tid för systemet."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"

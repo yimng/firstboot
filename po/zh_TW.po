@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
+"POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
 "PO-Revision-Date: 2003-06-13 09:59+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
@@ -46,18 +46,20 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot 不會在執行等級 3 執行。"
 
-#: ../src/firstbootWindow.py:258
+#: ../src/firstbootWindow.py:254
 msgid "_Next"
 msgstr "下一步(_N)"
 
@@ -125,13 +127,15 @@ msgstr "密碼確認(_M)："
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "假如您需要使用例如 Kerberos 或 NIS 等的網路認證方式，請點選『使用網路登入』的按鈕。"
+msgstr ""
+"假如您需要使用例如 Kerberos 或 NIS 等的網路認證方式，請點選『使用網路登入』的"
+"按鈕。"
 
 #: ../src/modules/create_user.py:104
 msgid "_Use Network Login..."
 msgstr "使用網路登入(_U)..."
 
-#: ../src/modules/create_user.py:137
+#: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -140,23 +144,23 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號，在您建立一個帳號之前， 假如您選擇繼續，您"
 "便只能以保留做系統管理使用的 root 帳號登入。"
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
 msgstr "繼續(_C)"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 msgid "Create _account"
 msgstr "建立帳號(_A)"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "密碼不符。 請再試一次。"
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -195,11 +199,13 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:295
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:51
@@ -240,6 +246,33 @@ msgid ""
 "button in the lower right corner to continue."
 msgstr "現在您的系統已經設定好可以使用了，請點選右下角的『下一步』按鈕繼續。"
 
+#: ../src/modules/networking.py:23
+#, fuzzy
+msgid "Network Setup"
+msgstr "檢查網路"
+
+#: ../src/modules/networking.py:49
+msgid "The following network devices have been detected on the system:"
+msgstr ""
+
+#: ../src/modules/networking.py:69
+#, fuzzy
+msgid "Network Device"
+msgstr "檢查網路"
+
+#: ../src/modules/networking.py:71
+msgid "Boot protocol"
+msgstr ""
+
+#: ../src/modules/networking.py:77
+#, fuzzy
+msgid "_Change Network Configuration..."
+msgstr "使用網路登入(_U)..."
+
+#: ../src/modules/networking.py:120
+msgid "static"
+msgstr ""
+
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "音效卡"
@@ -258,6 +291,15 @@ msgstr ""
 "請點選 『播放測試音效』 的按鈕以聽取一個樣本聲音。  您應該會聽到一系列的三個"
 "聲音。  第一個聲音會是在右聲道，第二個聲音會是在左聲道，而第三個聲音會是在中"
 "間。"
+
+#: ../src/modules/timezone.py:51
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:55
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "請選擇系統的滑鼠。"
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -398,9 +440,6 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Update Your System"
 #~ msgstr "更新您的系統"
-
-#~ msgid "Network check"
-#~ msgstr "檢查網路"
 
 #~ msgid "Set up Networking"
 #~ msgstr "設定網路連線"
@@ -558,9 +597,6 @@ msgstr "Red Hat 設定代理程式"
 #~ "無效的連接埠： %s。  正確的格式為 'port:protocol, port:protocol'。  例"
 #~ "如，'1234:udp, 3456:tcp'"
 
-#~ msgid "Please select the mouse for the system."
-#~ msgstr "請選擇系統的滑鼠。"
-
 #~ msgid "Register with RHN"
 #~ msgstr "向 RHN 註冊"
 
@@ -608,4 +644,3 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-
