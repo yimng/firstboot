@@ -47,11 +47,13 @@ class firstbootWindow:
         y_screen = gtk.gdk.screen_height()        
 
         #Set the background of the window
-        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+#        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
+        pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/default.png")
         pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
         bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
         gc = bgimage.new_gc()
-        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen, y_screen, gtk.gdk.RGB_DITHER_NORMAL, 0, 0)
+        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen, y_screen,
+                                  gtk.gdk.RGB_DITHER_MAX, 0, 0)
         self.win.set_app_paintable(gtk.TRUE)
         self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
 
@@ -128,7 +130,7 @@ class firstbootWindow:
         
         leftEventBox = gtk.EventBox()
         leftEventBox.add(self.leftLabelVBox)
-        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7383a3"))
+        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
 
         leftVBox = gtk.VBox()
         leftVBox.pack_start(leftEventBox, gtk.TRUE)
@@ -387,6 +389,6 @@ class firstbootWindow:
         pixbuf = functions.pixbufFromFile("bg.png")
         bgimage = gtk.gdk.Pixmap(eb.window, 800, 600, -1)
         gc = bgimage.new_gc()
-        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_NORMAL, 0, 0)
+        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
         eb.set_app_paintable(gtk.TRUE)
         eb.window.set_back_pixmap(bgimage, gtk.FALSE)
