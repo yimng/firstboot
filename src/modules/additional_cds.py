@@ -29,8 +29,11 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        label = gtk.Label("Install additional software")
-
+        msg = (_("Install additional software"))
+#        label = gtk.Label(_("Red Hat Update Agent"))
+        label = gtk.Label("")
+        label.set_alignment(0.4, 0.5)
+        label.set_markup("<span size='x-large'>%s</span>" % msg)
         label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 
         titleBox = gtk.HBox()
