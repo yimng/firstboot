@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-08-01 19:21+0200\n"
+"PO-Revision-Date: 2002-08-01 22:15+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
 msgstr "Ett fel har inträffat i modulen %s."
 
@@ -27,6 +26,10 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Eftersom det finns ett problem med modulen %s\n"
+"kommer Red Hats konfigurationsagent inte att\n"
+"läsa in denna modul, och försöka köra resterande\n"
+"moduler."
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -35,6 +38,11 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Rapportera gärna ett fel i \"firstboot\" i Red Hats\n"
+"felrapporteringssystem på http://www.redhat.com/bugzilla.\n"
+"Skriv felrapporten på engelska. En kopia av felsökningsutdatan\n"
+"har sparats i /tmp/firstboot.txt. Försökra dig om att du\n"
+"bifogarfilen med felrapporten.\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
