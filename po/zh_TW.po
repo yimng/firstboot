@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
-"PO-Revision-Date: 2003-01-16 09:22+1000\n"
+"PO-Revision-Date: 2003-01-30 10:29+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -46,18 +46,16 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot 不會在執行等級 3 執行。"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -92,7 +90,7 @@ msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並�
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "使用者帳號"
 
 #: ../src/modules/create_user.py:44
 msgid ""
@@ -100,6 +98,8 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"強烈建議您建立一個個人的使用者帳號以做一般用途（非系統管理）， "
+"如要建立一個個人的帳號，請提供所要求的資訊。"
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -123,14 +123,16 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"強烈建議您建立一個個人的使用者帳號，在您建立一個帳號之前， "
+"假如您選擇繼續，您便只能以保留做系統管理使用的 root 帳號登入。"
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr ""
+msgstr "繼續"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "建立帳號"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
@@ -141,55 +143,50 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
 #: ../src/modules/create_user.py:153
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "使用者名稱 %s 所屬的帳號已經存在，請指定另一個使用者名稱。"
+msgstr "使用者名稱 '%s' 是保留的系統帳號，請指定另一個使用者名稱。"
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "使用者名稱的長度必須在 33 個字元以內。"
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "使用者名稱不能以數字開頭。"
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
-msgstr ""
+msgstr "使用者名稱 '%s' 含有空白，%s 中不能含有空白。"
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
+msgstr "使用者名稱 '%s' 含有標點符號，請勿使用標點符號在使用者名稱上。"
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
+msgstr "使用者名稱 '%s' 含有大寫字母，請勿使用大寫字母在使用者名稱上。"
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
+msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "密碼太短了，至少您得使用 6 個字元。"
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "密碼太短了，至少您得使用 6 個字元。"
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -224,13 +221,10 @@ msgid "Finish Setup"
 msgstr "完成設定"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
-msgstr ""
-"現在您的 Red Hat Linux 系統已經設定好可以使用了。 我們期待您擁有一個愉快的全"
-"新體驗。 請點選右下角的『下一步』按鈕繼續。"
+msgstr "現在您的系統已經設定好可以使用了，請點選右下角的『下一步』按鈕繼續。"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -602,3 +596,4 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
+
