@@ -1,3 +1,4 @@
+# translation of bn.po to bangla
 # Bengali Translation of Firstboot
 # Copyright (C) 2004 Red Hat Inc.
 # This file is distributed under the same license as the firstboot package.
@@ -6,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
-"PO-Revision-Date: 2004-11-16 11:51+0530\n"
+"PO-Revision-Date: 2004-11-17 09:06+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: bangla <redhat-translation@bengalinux.org>\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +49,7 @@ msgstr "লাইসেন্স পুনরায় পড়ুন (_প)"
 # msgstr "বন্ধ"
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr "শাট ডাউন (_শ)"
+msgstr "শাট-ডাউন (_শ)"
 
 #: ../src/exceptionWindow.py:48
 #, python-format
@@ -69,6 +70,7 @@ msgstr ""
 
 #: ../src/exceptionWindow.py:57
 #, python-format
+# modified for RHEL
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -76,14 +78,14 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 "অনুগ্রহ করে http://www.redhat.com/bugzilla ওয়েবসাইটের\n"
-"রেডহ্যাট ত্রুটি অনুসন্ধান সিস্টেমে একটি ত্রুটি প্রতিবেদন পেশ করুন।\n"
-"এক কপি debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
+"Red Hat বাগ অনুসন্ধান সিস্টেমে 'firstboot'-র জন্য একটি ত্রুটির সূচনা করুন।\n"
+"debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
 "ঐ ফাইলটি ত্রুটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:582
 msgid "_Back"
-msgstr "পূর্বাবস্থান (_প)"
+msgstr "পূর্ববর্তী (_প)"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
 #: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:586
@@ -111,11 +113,12 @@ msgstr "পরিচিয়-প্রমান প্রক্রিয়া"
 
 #: ../src/textWindow.py:38
 msgid "Firewall configuration"
-msgstr "ফায়ারওয়াল কনফিগারেশন "
+msgstr "ফায়ারওয়াল কনফিগারেশন"
 
 #: ../src/textWindow.py:39
+# modified for RHEL
 msgid "Keyboard configuration"
-msgstr "কীবোর্ড কনফিগারেশন "
+msgstr "কী-বোর্ড কনফিগারেশন "
 
 #: ../src/textWindow.py:40
 msgid "Network configuration"
