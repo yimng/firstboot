@@ -1,5 +1,5 @@
 #
-# xserver.py - initial xserver startup for GUI mode.
+# xserver.py - initial xserver startup for firstboot
 #
 # Matt Wilson <msw@redhat.com>
 # Brent Fox <bfox@redhat.com>
@@ -16,43 +16,40 @@
 
 import os
 import string
+import time
 
-serverPath = ""
+class XServer:
+    def __init__(self):
+        self.xserver_pid = None
+        self.start_existing_X()
 
-#
-# to start X server using existing XF86Config file (reconfig mode use only)
-#
-def start_existing_X():
+    def start_existing_X(self):
+        print 'in start_existing_X'
+        os.environ['DISPLAY'] = ':1'
 
-    os.environ['DISPLAY'] = ':1'
+        self.xserver_pid = os.fork()
+        
+        serverPath = "/etc/X11/X"
 
-    server = os.fork()
-    serverPath = "/etc/X11/X"
-
-    # override fontpath because xfs is not running yet!
-    if (not server):
-        print "Starting X using existing XF86Config"
-	args = [serverPath, ':1', 'vt7', '-s', '1440', '-terminate', '-dpms',
-                '-v']
-	args.append("-fp")
+        # override fontpath because xfs is not running yet!
+        if (not self.xserver_pid):
+            print "Starting X using existing XF86Config"
+            args = [serverPath, ':1', 'vt7', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
                     
-	os.execv(serverPath, args)
+            os.execv(serverPath, args)
+            self.set_value(xserver_pid)
 
-    # give time for the server to fail (if it is going to fail...)
-    # FIXME: Should find out if X server is already running
-    # otherwise with NFS installs the X server may be still being
-    # fetched from the network while we already continue to run
-    time.sleep (4)
-    status = 0
-    try:
-        pid, status = os.waitpid (server, os.WNOHANG)
-    except OSError, (errno, msg):
-        print __name__, "waitpid:", msg
+        # give time for the server to fail (if it is going to fail...)
+        time.sleep (5)
+        status = 0
+        print "about to try"
+        try:
+            pid, status = os.waitpid (self.xserver_pid, os.WNOHANG)
 
-    if status:
-        raise RuntimeError, "X server failed to start"
+        except OSError, (errno, msg):
+            print "in except"
+            print __name__, "waitpid:", msg
 
-    # startX() function above does a double-fork here, do we need to in
-    # reconfig mode?
-    
-    return (None, None)
+        if status:
+            raise RuntimeError, "X server failed to start"
+
