@@ -33,8 +33,8 @@ case "$1" in
 	    exit 0
 	fi
 
-
-	if grep -q "^id:5:initdefault:" /etc/inittab && telinit 5; then
+	runlevel=$(set -- $(runlevel); eval "echo \$$#" )
+	if grep -q "^id:5:initdefault:" /etc/inittab && [ "x$runlevel" = x5 ]; then
 	    if [ ! -f /etc/X11/XF86Config ] ; then
 		echo -n $"X is not configured.  Running redhat-config-xfree86"
 		/usr/bin/redhat-config-xfree86
