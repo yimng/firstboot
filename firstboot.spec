@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.11
+Version: 1.0.12
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -72,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Jun 10 2003 Brent Fox <bfox@redhat.com> 1.0.12-1
+- change "Forward" button to "Next"
+
 * Fri May 30 2003 Brent Fox <bfox@redhat.com> 1.0.11-1
 - fix traceback in username verification
 
