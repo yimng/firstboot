@@ -150,7 +150,7 @@ class childWindow:
         
     ############Event Handlers#############
     def keyboard_button_clicked(self, *args):
-        pass
+#        pass
 #        win = os.fork()
 
 ##         if (not win):
@@ -158,9 +158,9 @@ class childWindow:
 ##                 print "launching redhat-config-keyboard"
 ##             path = "/usr/share/redhat-config-keyboard/redhat-config-keyboard.py"
 ##             os.execv(path, [""])
-#         import keyboard_gui
-#         app = keyboard_gui.childWindow()
-#         app.stand_alone()
+        import keyboard_gui
+        app = keyboard_gui.childWindow()
+        app.stand_alone()
 
         
     def soundcard_button_clicked(self, *args):
