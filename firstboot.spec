@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.4
-Release: 2
+Version: 0.9.5
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -62,6 +62,12 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Jul 19 2002 Brent Fox <bfox@redhat.com> 0.9.5-1
+- wire up register module
+- wire up up2date module
+- fix pointer pixmap bug
+- create an exceptionWindow to capture tracebacks
+
 * Tue Jul 16 2002 Brent Fox <bfox@redhat.com> 0.9.4-2
 - bump rev num and rebuild
 
