@@ -45,7 +45,7 @@ _=gettext.gettext
 
 class SoundWindow:
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 110
+    runPriority = 120
     moduleName = _("Sound Card")
     windowTitle = _("Sound Card")
     shortMessage = _("A sound card has been detected on your computer.")

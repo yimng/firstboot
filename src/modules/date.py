@@ -47,7 +47,7 @@ _=gettext.gettext
 
 class TimeWindow(FirstbootGuiWindow):
     #You must specify a runPriority for the order in which you wish your module to run
-    runPriority = 90
+    runPriority = 100
     moduleName = _("Date and Time")
     windowTitle = moduleName
     htmlTag = "time"
