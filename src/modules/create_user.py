@@ -111,15 +111,28 @@ class childWindow:
             if rc == gtk.RESPONSE_YES:
                 return 0
             else:
+                self.usernameEntry.grab_focus()
                 return None
 
-        if self.passwordEntry.get_text() != self.confirmEntry.get_text():
-            self.showErrorMessage(_("The passwords do not match.  Please enter the password again."))
+        password = self.passwordEntry.get_text()
+
+        if password != self.confirmEntry.get_text():
+            self.showErrorMessage(_("The passwords do not match.  Please enter "
+                                    "the password again."))
             self.passwordEntry.set_text("")
             self.confirmEntry.set_text("")
             self.passwordEntry.grab_focus()
             return None
         
+        elif len (password) < 6:
+            self.showErrorMessage(_("The password is too short.  Please use at "
+                                    "least 6 characters."))
+
+            self.passwordEntry.set_text("")
+            self.confirmEntry.set_text("")
+            self.passwordEntry.grab_focus()                
+            return None
+
         user = self.admin.lookupUserByName(username)
 
         if user != None:
