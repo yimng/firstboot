@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
+"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
 "PO-Revision-Date: 2003-02-24 20:15+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
@@ -48,13 +48,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot ya ha sido ejectuado con anterioridad en este sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot desde la línea de comandos, ejecute los siguientes "
 "comandos:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para ejecutar firstboot durante el arranque del sistema, ejecute los "
 "siguientes comandos:"
@@ -96,11 +98,11 @@ msgstr ""
 "No se ha detectado un CD-ROM. Introduzca un CD-ROM en la unidad y pulse \"OK"
 "\" para continuar."
 
-#: ../src/modules/create_user.py:20
+#: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "Cuenta de usuario"
 
-#: ../src/modules/create_user.py:44
+#: ../src/modules/create_user.py:47
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -110,23 +112,37 @@ msgstr ""
 "administrativo). Para crear una cuenta personal, proporcione la información "
 "requerida. "
 
-#: ../src/modules/create_user.py:54
-msgid "Username:"
+#: ../src/modules/create_user.py:57
+#, fuzzy
+msgid "_Username:"
 msgstr "Nombre de usuario:"
 
-#: ../src/modules/create_user.py:59
-msgid "Full Name:"
+#: ../src/modules/create_user.py:64
+#, fuzzy
+msgid "Full _Name:"
 msgstr "Nombre completo:"
 
-#: ../src/modules/create_user.py:64
-msgid "Password:"
+#: ../src/modules/create_user.py:71
+#, fuzzy
+msgid "_Password:"
 msgstr "Contraseña:"
 
-#: ../src/modules/create_user.py:69
-msgid "Confirm Password:"
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Confir_m Password:"
 msgstr "Confirme la contraseña: "
 
-#: ../src/modules/create_user.py:99
+#: ../src/modules/create_user.py:94
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid "_Use Network Login..."
+msgstr ""
+
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -136,23 +152,27 @@ msgstr ""
 "una cuenta, sólo podrá conectarse como usuario root, lo cual es conveniente "
 "reservar para uso administrativo únicamente. "
 
-#: ../src/modules/create_user.py:107
-msgid "Continue"
+#: ../src/modules/create_user.py:145
+#, fuzzy
+msgid "_Continue"
 msgstr "Continuar"
 
-#: ../src/modules/create_user.py:108
-msgid "Create account"
+#: ../src/modules/create_user.py:146
+#, fuzzy
+msgid "Create _account"
 msgstr "Crear cuenta"
 
-#: ../src/modules/create_user.py:134
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
+msgstr ""
+"Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
 
-#: ../src/modules/create_user.py:142
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
+msgstr ""
+"La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
 
-#: ../src/modules/create_user.py:153
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -160,15 +180,15 @@ msgstr ""
 "El nombre de usuario '%s'  está reservado para la cuenta del sistema. Por "
 "favor especifique otro nombre."
 
-#: ../src/modules/create_user.py:200
+#: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "El nombre de usuario debe ser menor de 33 caracteres de largo. "
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
 msgstr "El nombre de usuario no puede comenzar con un número. "
 
-#: ../src/modules/create_user.py:214
+#: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
@@ -176,7 +196,7 @@ msgstr ""
 "El nombre de usuario '%s' contiene espacios en blanco.  Por favor, no "
 "incluya espacios en blanco en %s."
 
-#: ../src/modules/create_user.py:221
+#: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
@@ -184,7 +204,7 @@ msgstr ""
 "El nombre de usuario '%s' contiene caracteres de puntuación. Por favor, no "
 "use caracteres de puntuación en el nombre de usuario."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
@@ -192,7 +212,7 @@ msgstr ""
 "El nombre de usuario '%s' contiene caracteres en mayúsculas. Por favor, no "
 "use caracteres en mayúsculas en el nombre de usuario. "
 
-#: ../src/modules/create_user.py:235
+#: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
@@ -200,14 +220,16 @@ msgstr ""
 "El nombre de usuario '%s' contiene caracteres inválidos. Por favor, sólo use "
 "caracteres  ASCII."
 
-#: ../src/modules/create_user.py:245
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:283
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La contraseña contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII."
 
-#: ../src/modules/create_user.py:257
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:295
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "El nombre '%s' contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII. "
@@ -399,4 +421,3 @@ msgstr "Agente de configuración de Red Hat"
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "¡Bienvenido a Red Hat Linux!"
-

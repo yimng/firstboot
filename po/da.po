@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
+"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
 "PO-Revision-Date: 2003-04-03 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -96,11 +96,11 @@ msgstr ""
 "En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
 "for at fortsætte"
 
-#: ../src/modules/create_user.py:20
+#: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "Brugerkonto"
 
-#: ../src/modules/create_user.py:44
+#: ../src/modules/create_user.py:47
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -110,23 +110,37 @@ msgstr ""
 "administrativ) brug. For at oprette en personlig konto skal du opgive de "
 "forspurgte oplysninger."
 
-#: ../src/modules/create_user.py:54
-msgid "Username:"
+#: ../src/modules/create_user.py:57
+#, fuzzy
+msgid "_Username:"
 msgstr "Brugernavn:"
 
-#: ../src/modules/create_user.py:59
-msgid "Full Name:"
+#: ../src/modules/create_user.py:64
+#, fuzzy
+msgid "Full _Name:"
 msgstr "Fulde navn:"
 
-#: ../src/modules/create_user.py:64
-msgid "Password:"
+#: ../src/modules/create_user.py:71
+#, fuzzy
+msgid "_Password:"
 msgstr "Adgangskode:"
 
-#: ../src/modules/create_user.py:69
-msgid "Confirm Password:"
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Confir_m Password:"
 msgstr "Bekræft adgangskode:"
 
-#: ../src/modules/create_user.py:99
+#: ../src/modules/create_user.py:94
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid "_Use Network Login..."
+msgstr ""
+
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -136,23 +150,25 @@ msgstr ""
 "fortsætter uden en konto kan du kun logge ind med root-kontoen, som "
 "reserveret til administrativ brug."
 
-#: ../src/modules/create_user.py:107
-msgid "Continue"
+#: ../src/modules/create_user.py:145
+#, fuzzy
+msgid "_Continue"
 msgstr "Fortsæt"
 
-#: ../src/modules/create_user.py:108
-msgid "Create account"
+#: ../src/modules/create_user.py:146
+#, fuzzy
+msgid "Create _account"
 msgstr "Opret konto"
 
-#: ../src/modules/create_user.py:134
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 
-#: ../src/modules/create_user.py:142
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
-#: ../src/modules/create_user.py:153
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -160,22 +176,22 @@ msgstr ""
 "Brugernavnet %s er en reserveret systemkonto. Angiv venligst et andet "
 "brugernavn."
 
-#: ../src/modules/create_user.py:200
+#: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "Brugernavnet skal være mindre end 33 tegn langt."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
 msgstr "Brugernavnet må ikke begynde med et tal."
 
-#: ../src/modules/create_user.py:214
+#: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
 "Brugernavnet indeholder blanke. Lad venligst være med at bruge blanke i %s"
 
-#: ../src/modules/create_user.py:221
+#: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
@@ -183,7 +199,7 @@ msgstr ""
 "Brugernavnet '%s' indeholder specialtegn. Lad venligst være med at bruge "
 "specialtegn i brugernavnet."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
@@ -191,20 +207,20 @@ msgstr ""
 "Brugernavnet '%s' indeholder store bogstaver. Lad venligst være med at bruge "
 "store bogstaver i brugernavnet."
 
-#: ../src/modules/create_user.py:235
+#: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
 "Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
-#: ../src/modules/create_user.py:245
+#: ../src/modules/create_user.py:283
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
-#: ../src/modules/create_user.py:257
+#: ../src/modules/create_user.py:295
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Navnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
+"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
 "PO-Revision-Date: 2003-02-19 08:13+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
@@ -46,11 +46,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:120
@@ -88,11 +90,11 @@ msgid ""
 "click \"OK\" to continue."
 msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並按下『確定』以繼續。"
 
-#: ../src/modules/create_user.py:20
+#: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "使用者帳號"
 
-#: ../src/modules/create_user.py:44
+#: ../src/modules/create_user.py:47
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -101,23 +103,38 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號以做一般用途（非系統管理）， 如要建立一個個"
 "人的帳號，請提供所要求的資訊。"
 
-#: ../src/modules/create_user.py:54
-msgid "Username:"
+#: ../src/modules/create_user.py:57
+#, fuzzy
+msgid "_Username:"
 msgstr "使用者名稱："
 
-#: ../src/modules/create_user.py:59
-msgid "Full Name:"
+#: ../src/modules/create_user.py:64
+#, fuzzy
+msgid "Full _Name:"
 msgstr "全名："
 
-#: ../src/modules/create_user.py:64
-msgid "Password:"
+#: ../src/modules/create_user.py:71
+#, fuzzy
+msgid "_Password:"
 msgstr "密碼："
 
-#: ../src/modules/create_user.py:69
-msgid "Confirm Password:"
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Confir_m Password:"
 msgstr "密碼確認："
 
-#: ../src/modules/create_user.py:99
+#: ../src/modules/create_user.py:94
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+#, fuzzy
+msgid "_Use Network Login..."
+msgstr "設定網路連線..."
+
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -126,66 +143,70 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號，在您建立一個帳號之前， 假如您選擇繼續，您"
 "便只能以保留做系統管理使用的 root 帳號登入。"
 
-#: ../src/modules/create_user.py:107
-msgid "Continue"
+#: ../src/modules/create_user.py:145
+#, fuzzy
+msgid "_Continue"
 msgstr "繼續"
 
-#: ../src/modules/create_user.py:108
-msgid "Create account"
+#: ../src/modules/create_user.py:146
+#, fuzzy
+msgid "Create _account"
 msgstr "建立帳號"
 
-#: ../src/modules/create_user.py:134
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "密碼不符。 請再試一次。"
 
-#: ../src/modules/create_user.py:142
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
-#: ../src/modules/create_user.py:153
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "使用者名稱 '%s' 是保留的系統帳號，請指定另一個使用者名稱。"
 
-#: ../src/modules/create_user.py:200
+#: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "使用者名稱的長度必須在 33 個字元以內。"
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
 msgstr "使用者名稱不能以數字開頭。"
 
-#: ../src/modules/create_user.py:214
+#: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr "使用者名稱 '%s' 含有空白，%s 中不能含有空白。"
 
-#: ../src/modules/create_user.py:221
+#: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "使用者名稱 '%s' 含有標點符號，請勿使用標點符號在使用者名稱上。"
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "使用者名稱 '%s' 含有大寫字母，請勿使用大寫字母在使用者名稱上。"
 
-#: ../src/modules/create_user.py:235
+#: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
-#: ../src/modules/create_user.py:245
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:283
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
-#: ../src/modules/create_user.py:257
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:295
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:51
@@ -400,9 +421,6 @@ msgstr "Red Hat 設定代理程式"
 #~ "偵測不到網路連線。 需要用到網路連線以註冊您的系統到 RHN，並使用 Red Hat 更"
 #~ "新代理程式來更新您的系統。 要設定網路連線，請點選以下的按鈕。\n"
 
-#~ msgid "Set up networking..."
-#~ msgstr "設定網路連線..."
-
 #~ msgid "Configure using DHCP"
 #~ msgstr "使用 DHCP 設定"
 
@@ -597,4 +615,3 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-

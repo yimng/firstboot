@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
+"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
 "PO-Revision-Date: 2003-02-19 11:19+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -93,11 +93,11 @@ msgstr ""
 "Nebylo nalezeno CD-ROM. Vložte prosím do CD-ROM do jednotky a pokračujte "
 "kliknutím na \"OK\"."
 
-#: ../src/modules/create_user.py:20
+#: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "Uživatelský účet"
 
-#: ../src/modules/create_user.py:44
+#: ../src/modules/create_user.py:47
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -107,23 +107,37 @@ msgstr ""
 "uživatelský účet. Uživatelský účet vytvoříte po zadání požadovaných "
 "informací."
 
-#: ../src/modules/create_user.py:54
-msgid "Username:"
+#: ../src/modules/create_user.py:57
+#, fuzzy
+msgid "_Username:"
 msgstr "Jméno uživatele:"
 
-#: ../src/modules/create_user.py:59
-msgid "Full Name:"
+#: ../src/modules/create_user.py:64
+#, fuzzy
+msgid "Full _Name:"
 msgstr "Plné jméno:"
 
-#: ../src/modules/create_user.py:64
-msgid "Password:"
+#: ../src/modules/create_user.py:71
+#, fuzzy
+msgid "_Password:"
 msgstr "Heslo:"
 
-#: ../src/modules/create_user.py:69
-msgid "Confirm Password:"
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Confir_m Password:"
 msgstr "Potvrďte heslo:"
 
-#: ../src/modules/create_user.py:99
+#: ../src/modules/create_user.py:94
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid "_Use Network Login..."
+msgstr ""
+
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -133,23 +147,25 @@ msgstr ""
 "bez vytvoření účtu, budete se moci přihlásit jen do účtu root, který je "
 "rezervován jen pro správu systému."
 
-#: ../src/modules/create_user.py:107
-msgid "Continue"
+#: ../src/modules/create_user.py:145
+#, fuzzy
+msgid "_Continue"
 msgstr "Pokračovat"
 
-#: ../src/modules/create_user.py:108
-msgid "Create account"
+#: ../src/modules/create_user.py:146
+#, fuzzy
+msgid "Create _account"
 msgstr "Vytvořit účet"
 
-#: ../src/modules/create_user.py:134
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Hesla nesouhlasí. Zadejte heslo prosím znovu."
 
-#: ../src/modules/create_user.py:142
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
 
-#: ../src/modules/create_user.py:153
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -157,22 +173,22 @@ msgstr ""
 "Jméno uživatele '%s' je rezervovaný systémový účet. Zadejte prosím jiné "
 "jméno uživatele."
 
-#: ../src/modules/create_user.py:200
+#: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "Jméno uživatele musí být kratší než 33 znaků."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
 msgstr "Jméno uživatele nemůže začínat číslicí."
 
 # in the %s ?
-#: ../src/modules/create_user.py:214
+#: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr "Jméno uživatele '%s' obsahuje mezery. Nepoužívejte prosím mezery v %s."
 
-#: ../src/modules/create_user.py:221
+#: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
@@ -180,7 +196,7 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje interpunkci. Nepoužívejte prosím ve jménu "
 "uživatele interpunkci."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
@@ -188,7 +204,7 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje velká písmena. Nepoužívejte prosím ve jménu "
 "uživatele velká písmena."
 
-#: ../src/modules/create_user.py:235
+#: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
@@ -196,12 +212,12 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje neplatné znaky. Použijte prosím jen znaky "
 "ASCII."
 
-#: ../src/modules/create_user.py:245
+#: ../src/modules/create_user.py:283
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Heslo obsahuje neplatné znaky. Použijte prosím jen znaky ASCII."
 
-#: ../src/modules/create_user.py:257
+#: ../src/modules/create_user.py:295
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Jméno '%s' obsahuje neplatné znaky. Použijte prosím jen znaky ASCII."

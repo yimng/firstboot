@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
+"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
 "PO-Revision-Date: 2003-03-04 11:57+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -99,11 +99,11 @@ msgstr ""
 "En cd-romskiva har inte detekterats. Stoppa in en cd-romskiva i enheten och "
 "klicka på \"OK\" för att fortsätta."
 
-#: ../src/modules/create_user.py:20
+#: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "Användarkonto"
 
-#: ../src/modules/create_user.py:44
+#: ../src/modules/create_user.py:47
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -113,23 +113,37 @@ msgstr ""
 "(ickeadministrativt) bruk.  För att skapa ett personligt konto, ge den "
 "begärda informationen."
 
-#: ../src/modules/create_user.py:54
-msgid "Username:"
+#: ../src/modules/create_user.py:57
+#, fuzzy
+msgid "_Username:"
 msgstr "Användarnamn:"
 
-#: ../src/modules/create_user.py:59
-msgid "Full Name:"
+#: ../src/modules/create_user.py:64
+#, fuzzy
+msgid "Full _Name:"
 msgstr "Fullständigt namn:"
 
-#: ../src/modules/create_user.py:64
-msgid "Password:"
+#: ../src/modules/create_user.py:71
+#, fuzzy
+msgid "_Password:"
 msgstr "Lösenord:"
 
-#: ../src/modules/create_user.py:69
-msgid "Confirm Password:"
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Confir_m Password:"
 msgstr "Bekräfta lösenord:"
 
-#: ../src/modules/create_user.py:99
+#: ../src/modules/create_user.py:94
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid "_Use Network Login..."
+msgstr ""
+
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -139,23 +153,25 @@ msgstr ""
 "fortsätter utan ett konto kan du bara logga in med rootkontot, vilket är "
 "reserverat för administrativt bruk."
 
-#: ../src/modules/create_user.py:107
-msgid "Continue"
+#: ../src/modules/create_user.py:145
+#, fuzzy
+msgid "_Continue"
 msgstr "Fortsätt"
 
-#: ../src/modules/create_user.py:108
-msgid "Create account"
+#: ../src/modules/create_user.py:146
+#, fuzzy
+msgid "Create _account"
 msgstr "Skapa konto"
 
-#: ../src/modules/create_user.py:134
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:142
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:153
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -163,22 +179,22 @@ msgstr ""
 "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
 "användarnamn."
 
-#: ../src/modules/create_user.py:200
+#: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "Användarnamnet måste vara mindre än 33 tecken långt."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
 msgstr "Användarnamnet får inte börja med en siffra."
 
-#: ../src/modules/create_user.py:214
+#: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
 "Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i %s."
 
-#: ../src/modules/create_user.py:221
+#: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
@@ -186,7 +202,7 @@ msgstr ""
 "Användarnamnet \"%s\" innehåller skiljetecken.  Använd inte skiljetecken i "
 "användarnamnet."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
@@ -194,7 +210,7 @@ msgstr ""
 "Användarnamnet \"%s\" innehåller versaler.  Använd inte versaler i "
 "användarnamnet."
 
-#: ../src/modules/create_user.py:235
+#: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
@@ -202,12 +218,12 @@ msgstr ""
 "Användarnamnet \"%s\" innehåller ogiltiga tecken.  Använd endast ASCII-"
 "tecken."
 
-#: ../src/modules/create_user.py:245
+#: ../src/modules/create_user.py:283
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Lösenordet innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
 
-#: ../src/modules/create_user.py:257
+#: ../src/modules/create_user.py:295
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Namnet \"%s\" innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
@@ -307,15 +323,9 @@ msgstr ""
 msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Ja, jag vill registrera mitt system i Red Hat Network."
 
-msgid "Yes, I want to register my system with Red Hat Network."
-msgstr "Ja, jag vill registrera mitt system i Red Hat Network."
-
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
 msgstr "_Nej, jag vill inte registrera mitt system."
-
-msgid "No, I do not want to register my system."
-msgstr "Nej, jag vill inte registrera mitt system."
 
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
@@ -361,6 +371,12 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hats konfigurationsagent"
+
+#~ msgid "Yes, I want to register my system with Red Hat Network."
+#~ msgstr "Ja, jag vill registrera mitt system i Red Hat Network."
+
+#~ msgid "No, I do not want to register my system."
+#~ msgstr "Nej, jag vill inte registrera mitt system."
 
 #~ msgid "Update Agent"
 #~ msgstr "Uppdateringsagent"

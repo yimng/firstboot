@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
+"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
 "PO-Revision-Date: 2003-03-26 13:36GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -46,11 +46,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #: ../src/firstboot.py:120
@@ -88,11 +90,11 @@ msgid ""
 "click \"OK\" to continue."
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
-#: ../src/modules/create_user.py:20
+#: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "用户账号"
 
-#: ../src/modules/create_user.py:44
+#: ../src/modules/create_user.py:47
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -101,23 +103,38 @@ msgstr ""
 "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
 "信息。"
 
-#: ../src/modules/create_user.py:54
-msgid "Username:"
+#: ../src/modules/create_user.py:57
+#, fuzzy
+msgid "_Username:"
 msgstr "用户名："
 
-#: ../src/modules/create_user.py:59
-msgid "Full Name:"
+#: ../src/modules/create_user.py:64
+#, fuzzy
+msgid "Full _Name:"
 msgstr "全名："
 
-#: ../src/modules/create_user.py:64
-msgid "Password:"
+#: ../src/modules/create_user.py:71
+#, fuzzy
+msgid "_Password:"
 msgstr "口令："
 
-#: ../src/modules/create_user.py:69
-msgid "Confirm Password:"
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Confir_m Password:"
 msgstr "确认口令："
 
-#: ../src/modules/create_user.py:99
+#: ../src/modules/create_user.py:94
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+#, fuzzy
+msgid "_Use Network Login..."
+msgstr "设置联网……"
+
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -126,66 +143,70 @@ msgstr ""
 "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
 "登录，而这个账号是为管理而保留的。"
 
-#: ../src/modules/create_user.py:107
-msgid "Continue"
+#: ../src/modules/create_user.py:145
+#, fuzzy
+msgid "_Continue"
 msgstr "继续"
 
-#: ../src/modules/create_user.py:108
-msgid "Create account"
+#: ../src/modules/create_user.py:146
+#, fuzzy
+msgid "Create _account"
 msgstr "创建账号"
 
-#: ../src/modules/create_user.py:134
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "口令不匹配。请重新输入口令。"
 
-#: ../src/modules/create_user.py:142
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "根口令太短，请至少使用 6 个字符。"
 
-#: ../src/modules/create_user.py:153
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "用户名为“%s”是被保留的系统账号。请指定另一个用户名。"
 
-#: ../src/modules/create_user.py:200
+#: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "用户名长度必须小于 33 个字符。"
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
 msgstr "用户名不能以数字开头。"
 
-#: ../src/modules/create_user.py:214
+#: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr "用户名“%s”包含空格。请不要在“%s”中包含空格。"
 
-#: ../src/modules/create_user.py:221
+#: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "用户名“%s”包含标点符号字符。请不要在用户名中使用标点符号。"
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
 
-#: ../src/modules/create_user.py:235
+#: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
-#: ../src/modules/create_user.py:245
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:283
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
-#: ../src/modules/create_user.py:257
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:295
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/date.py:51
@@ -263,12 +284,12 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"这个步骤会使用一个赠送的红帽网络演示账号来注册您的系统，因此您可以直接"
-"从红帽接收到最新的软件包。使用本工具会允许您一直拥有最新的红帽"
-"Linux 系统和所有的安全补丁、错误修正、及对软件包的增进。\n"
+"这个步骤会使用一个赠送的红帽网络演示账号来注册您的系统，因此您可以直接从红帽"
+"接收到最新的软件包。使用本工具会允许您一直拥有最新的红帽Linux 系统和所有的安"
+"全补丁、错误修正、及对软件包的增进。\n"
 "\n"
-"如果您购买了该产品，您将有权得到红帽网络基本服务的免费试用。要使用该项免"
-"费服务，请参考盒内的产品激活卡来阅读详细说明。\n"
+"如果您购买了该产品，您将有权得到红帽网络基本服务的免费试用。要使用该项免费服"
+"务，请参考盒内的产品激活卡来阅读详细说明。\n"
 "\n"
 "如果您没有购买该产品，请访问 http://rhn.redhat.com 来获取详情，或者来订阅 "
 "Red Hat 网络的基本服务。\n"
@@ -397,9 +418,6 @@ msgstr "Red Hat 设置代理"
 #~ msgstr ""
 #~ "没有检测到网络连接。网络连接是在 RHN 注册你的系统及使用 Red Hat 更新代理来"
 #~ "更新系统所必需的。要设置网络连接，请点击以下按钮。\n"
-
-#~ msgid "Set up networking..."
-#~ msgstr "设置联网……"
 
 #~ msgid "Configure using DHCP"
 #~ msgstr "使用 DHCP 配置"
@@ -579,4 +597,3 @@ msgstr "Red Hat 设置代理"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-

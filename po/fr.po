@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
+"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
 "PO-Revision-Date: 2003-03-25 14:32+0100\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: french <fr@li.org>\n"
@@ -46,13 +46,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot a déjà été exécuté sur ce système.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de "
 "commande:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Exécutez les commandes suivantes pour exécuter firstboot au cours du "
 "démarrage du système:"
@@ -95,11 +97,11 @@ msgstr ""
 "Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur, "
 "puis cliquer sur \"OK\" pour continuer."
 
-#: ../src/modules/create_user.py:20
+#: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "Compte utilisateur"
 
-#: ../src/modules/create_user.py:44
+#: ../src/modules/create_user.py:47
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -109,23 +111,38 @@ msgstr ""
 "utilisations normales (non administratives). Pour créer un compte personnel, "
 "donnez les informations demandées."
 
-#: ../src/modules/create_user.py:54
-msgid "Username:"
+#: ../src/modules/create_user.py:57
+#, fuzzy
+msgid "_Username:"
 msgstr "Nom d'utilisateur:"
 
-#: ../src/modules/create_user.py:59
-msgid "Full Name:"
+#: ../src/modules/create_user.py:64
+#, fuzzy
+msgid "Full _Name:"
 msgstr "Nom et prénom:"
 
-#: ../src/modules/create_user.py:64
-msgid "Password:"
+#: ../src/modules/create_user.py:71
+#, fuzzy
+msgid "_Password:"
 msgstr "Mot de passe:"
 
-#: ../src/modules/create_user.py:69
-msgid "Confirm Password:"
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Confir_m Password:"
 msgstr "Confirmer le mot de passe:"
 
-#: ../src/modules/create_user.py:99
+#: ../src/modules/create_user.py:94
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+#, fuzzy
+msgid "_Use Network Login..."
+msgstr "Paramétrage du travail en réseau..."
+
+#: ../src/modules/create_user.py:137
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -135,23 +152,26 @@ msgstr ""
 "continuez sans compte, vous ne pouvez que vous connecter avec le compte "
 "root, qui est réservé pour les utilisations administratives, seulement."
 
-#: ../src/modules/create_user.py:107
-msgid "Continue"
+#: ../src/modules/create_user.py:145
+#, fuzzy
+msgid "_Continue"
 msgstr "Continuer"
 
-#: ../src/modules/create_user.py:108
-msgid "Create account"
+#: ../src/modules/create_user.py:146
+#, fuzzy
+msgid "Create _account"
 msgstr "Créer un compte"
 
-#: ../src/modules/create_user.py:134
+#: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Les mots de passe ne correspondent pas.  Essayez à nouveau."
 
-#: ../src/modules/create_user.py:142
+#: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr ""
+"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
-#: ../src/modules/create_user.py:153
+#: ../src/modules/create_user.py:191
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -159,15 +179,15 @@ msgstr ""
 "Le nom d'utilisateur '%s' est un compte système réservé. Veuillez spécifier "
 "un autre nom."
 
-#: ../src/modules/create_user.py:200
+#: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "Le nom d'utilisateur doit avoir moins de 33 caractères."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
 msgstr "Le nom d'utilisateur ne doit pas commencer avec un nombre."
 
-#: ../src/modules/create_user.py:214
+#: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
@@ -175,7 +195,7 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des espaces blancs. Veuillez ne pas "
 "inclure d'espaces blancs dans le %s."
 
-#: ../src/modules/create_user.py:221
+#: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
@@ -183,7 +203,7 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des caractères de ponctuation. Veuillez "
 "ne pas utiliser de ponctuation dans le nom d'utilisateur."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
@@ -191,7 +211,7 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des caractères en majuscules. Veuillez ne "
 "pas utiliser de caractères en majuscules dans le nom d'utilisateur."
 
-#: ../src/modules/create_user.py:235
+#: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
@@ -199,14 +219,16 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des caractères non valides. Veuillez "
 "n'utiliser que des caractères ASCII."
 
-#: ../src/modules/create_user.py:245
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:283
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
-#: ../src/modules/create_user.py:257
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:295
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
 "caractères ASCII."
@@ -249,8 +271,8 @@ msgid ""
 "button in the lower right corner to continue."
 msgstr ""
 "Votre système Red Hat Linux est maintenant configuré et prêt à l'emploi. "
-"Pour continuer, veuillez cliquer sur le bouton \"Suivant\" dans le coin en-bas "
-"à droite."
+"Pour continuer, veuillez cliquer sur le bouton \"Suivant\" dans le coin en-"
+"bas à droite."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -292,18 +314,18 @@ msgid ""
 msgstr ""
 "Cette étape enregistrera votre système à un compte d'essai gratuit de Red "
 "Hat Network. Vous pourrez ainsi recevoir les derniers paquetages de "
-"logiciels directement de Red Hat. En utilisant cet outil, vous aurez toujours "
-"un système Red Hat Linux équipé des derniers patchs de sécurité, correctifs "
-"de bogues et améliorations des paquetages de logiciels.\n"
+"logiciels directement de Red Hat. En utilisant cet outil, vous aurez "
+"toujours un système Red Hat Linux équipé des derniers patchs de sécurité, "
+"correctifs de bogues et améliorations des paquetages de logiciels.\n"
 "\n"
 "Si vous avez acheté ce produit, vous avez un essai gratuit de Red Hat "
 "Network Basic Service. Pour accéder à cet essai gratuit, consultez la carte "
 "d'activation du produit que vous trouverez dans la boîte: elle contient des "
 "indications plus précises.\n"
 "\n"
-"Si vous n'avez pas acheté ce produit, rendez-vous à l'adresse http://rhn.redhat.com "
-"pour de plus amples détails ou pour vous inscrire à Red Hat Network Basic "
-"Service.\n"
+"Si vous n'avez pas acheté ce produit, rendez-vous à l'adresse http://rhn."
+"redhat.com pour de plus amples détails ou pour vous inscrire à Red Hat "
+"Network Basic Service.\n"
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
@@ -325,8 +347,8 @@ msgid ""
 msgstr ""
 "Il vous reste quelques étapes avant que votre système ne soit prêt à "
 "l'emploi. L'agent de mise à jour Red Hat vous guidera dans la configuration "
-"de base. Pour continuer, cliquez sur le bouton \"Suivant\" dans le coin en bas "
-"à droite."
+"de base. Pour continuer, cliquez sur le bouton \"Suivant\" dans le coin en "
+"bas à droite."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -346,12 +368,12 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
-"L'agent de mise à jour Red Hat peut vous aider à configurer "
-"votre machine en vous guidant dans une série d'étapes. L'agent de mise à "
-"jour a besoin du système X Window pour fonctionner. \n"
+"L'agent de mise à jour Red Hat peut vous aider à configurer votre machine en "
+"vous guidant dans une série d'étapes. L'agent de mise à jour a besoin du "
+"système X Window pour fonctionner. \n"
 "\n"
-"Si vous désirez lancer l'agent de mise à jour, veuillez choisir \"Oui\". Si vous "
-"choisissez \"Non\", le système poursuivra son amorçage et ce message ne "
+"Si vous désirez lancer l'agent de mise à jour, veuillez choisir \"Oui\". Si "
+"vous choisissez \"Non\", le système poursuivra son amorçage et ce message ne "
 "réapparaîtra plus. Voulez-vous lancer l'agent de mise à jour maintenant?"
 
 #: ../src/textWindow.py:24
@@ -459,9 +481,6 @@ msgstr "Agent de mise à jour Red Hat"
 #~ "pour pouvoir utiliser Red Hat Update Agent pour mettre à jour votre "
 #~ "système. Pour établir une connexion, veuillez cliquer sur le bouton ci-"
 #~ "dessous.\n"
-
-#~ msgid "Set up networking..."
-#~ msgstr "Paramétrage du travail en réseau..."
 
 #~ msgid "Configure using DHCP"
 #~ msgstr "Configuration à l'aide de DHCP"
@@ -611,4 +630,3 @@ msgstr "Agent de mise à jour Red Hat"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Lancer l'agent de mise à jour Red Hat"
-
