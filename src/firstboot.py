@@ -9,6 +9,7 @@ import time
 x_class = None
 wm_pid = None
 doDebug = None
+doReconfig = None
 FILENAME = "/etc/sysconfig/firstboot"
 
 for arg in sys.argv:
@@ -68,21 +69,31 @@ if (not doDebug):
         lines = fd.readlines()
         fd.close()
 
+        #If /etc/sysconfig/firstboot exists, see if the value of /etc/redhat-release has been changed.
+        #If so, then they must have upgraded, so run firstboot again.
         for line in lines:            
-            print "line is", line
             line = string.strip(line)
-            if (string.find(line, "VERSION") > -1) and line[0] != "#":
+            if (string.find(line, "RUN_FIRSTBOOT") > -1) and line[0] != "#":
                 if string.find(line, "="):
                     key, value = string.split(line, "=")
-                    print key, value
-
-        print "file exists"
-        os._exit(0)
+                    if value == "NO":
+                        #Firstboot should not be run
+                        os._exit(0)
+                    
     except:
         #Firstboot has never been run before, so start it up
-        print "file doesn't exist"
+        pass
 
+#Let's see if /etc/reconfigSys exists.  If it does, we need to enter reconfig mode
+try:
+    os.stat("/etc/reconfigSys")
+    #It exists, so set reconfig mode flag to 1
+    doReconfig = 1
+except:
+    #It doesn't exist, so set reconfig mode flag to 0
+    doReconfig = 0
 
+#If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
     import xserver
     
@@ -97,7 +108,7 @@ if not os.environ.has_key('DISPLAY'):
 
 
 import firstbootWindow
-firstbootWindow.firstbootWindow(wm_pid)
+firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
 
 
 
