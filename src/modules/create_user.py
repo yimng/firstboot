@@ -306,12 +306,12 @@ class childWindow:
                 widget.grab_focus()
                 return None
 
-            if i in string.uppercase:
-                self.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
-                                                 "Please do not use uppercase characters in the user name.") % str)
-                widget.set_text("")
-                widget.grab_focus()
-                return None
+#            if i in string.uppercase:
+#                self.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
+#                                                 "Please do not use uppercase characters in the user name.") % str)
+#                widget.set_text("")
+#                widget.grab_focus()
+#                return None
                 
             if i not in string.ascii_letters and i not in string.digits:
                 self.showErrorMessage(_("The user name '%s' contains invalid "
