@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2004-02-04 20:11+0100\n"
+"PO-Revision-Date: 2004-03-03 22:42+0100\n"
 "Last-Translator: Bernd Bartmann <Bernd.Bartmann@sohanet.de>\n"
 "Language-Team: Deutsch <de@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -440,7 +440,7 @@ msgid ""
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
 "Wenn Sie eine der unten angeführten CDs besitzen, können Sie die darauf "
-"befindlichen Pakete installieren. Geben Sie hierzu die CD ein und klicken "
+"befindlichen Pakete installieren. Legen Sie hierzu die CD ein und klicken "
 "Sie auf die entsprechende Schaltfläche."
 
 #: ../src/modules/additional_cds.py:98
@@ -486,7 +486,7 @@ msgid ""
 "information."
 msgstr ""
 "Es wird empfohlen, dass Sie einen Benutzeraccount für normale (nicht-"
-"administrative) Benutzung erzeugen.  Um einen Benutzeraccount zu erzeugen, "
+"administrative) Benutzung anlegen.  Um einen Benutzeraccount zu anzulegen, "
 "geben Sie die geforderten Informationen an."
 
 #: ../src/modules/create_user.py:57
@@ -512,7 +512,7 @@ msgid ""
 "click the Use Network Login button."
 msgstr ""
 "Sollten Sie Netzwerk-Authentifizierung, wie Kerberos oder NIS, benötigen, "
-"bitte klicken Sie auf den Button 'Netzwerk Login verwenden'."
+"klicken Sie bitte auf den Button 'Netzwerk Login verwenden'."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
@@ -524,9 +524,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Es wird strengstens empfohlen einen Benutzeraccount zu erzeugen. Wenn Sie "
-"ohne eine solchen Account fortfahren, können Sie sich nur als root anmelden, "
-"was für administrative Aufgaben reserviert ist."
+"Es wird dringend empfohlen einen Benutzeraccount zu anzulegen. Wenn Sie "
+"ohne einen solchen Account fortfahren, können Sie sich nur als root anmelden. "
+"Dies ist nur für administrative Aufgaben vorgesehen."
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
@@ -583,7 +583,7 @@ msgid ""
 "punctuation in the user name."
 msgstr ""
 "Der Benutzername '%s' enthält Satzzeichen.  Bitte verwenden Sie keine "
-"solchen im Benutzernamen."
+"solchen Zeichen im Benutzernamen."
 
 #: ../src/modules/create_user.py:270
 #, python-format
@@ -592,7 +592,7 @@ msgid ""
 "uppercase characters in the user name."
 msgstr ""
 "Der Benutzername '%s' enthält Großbuchstaben.  Bitte verwenden Sie keine "
-"solchen im Benutzernamen."
+"solchen Zeichen im Benutzernamen."
 
 #: ../src/modules/create_user.py:277
 #, python-format
@@ -600,18 +600,18 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Der Benutzername '%s' enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen "
-"verwenden."
+"Der Benutzername '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur "
+"ASCII-Zeichen."
 
 #: ../src/modules/create_user.py:287
 msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Das Passwort enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen verwenden."
+msgstr "Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-Zeichen."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
 msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Der Name '%s' enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen verwenden."
+msgstr "Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-Zeichen."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -655,7 +655,7 @@ msgstr "Stellen Sie das Datum und die Uhrzeit des Systems ein."
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr "Bitte geben Sie einen Time-Server ein."
+msgstr "Bitte geben Sie einen Zeit-Server ein."
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
@@ -818,7 +818,7 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Klicken Sie auf \"Testsound abspielen\", um einen Beispiel zu hören. Dabei "
+"Klicken Sie auf \"Testsound abspielen\", um ein Beispiel zu hören. Dabei "
 "sollte eine Reihe von drei Tönen erklingen: der erste Ton im rechten Kanal,"
 "der zweite im linken Kanal und der dritte im mittleren Kanal."
 
