@@ -1,3 +1,4 @@
+# translation of ja.po to 
 # translation of ja.po to Japanese
 # firstboot ja.po Japanese Translation.
 # Copyright (C) 2002 Red Hat Inc.
@@ -11,14 +12,14 @@ msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-14 20:07-0400\n"
-"PO-Revision-Date: 2004-09-11 01:13+0900\n"
+"PO-Revision-Date: 2004-09-17 00:47+0900\n"
 "Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
-"Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
+"Language-Team:  <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.9\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -88,7 +89,7 @@ msgid "_Next"
 msgstr "次へ(_N)"
 
 #: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
-#, fuzzy, python-format
+#, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s のモジュールのインポートに失敗しました: %s"
 
@@ -166,8 +167,7 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "オートランプログラムがcd上に見つかりません。 \"OK\" をクリックして継続しま"
 "す。"
@@ -253,8 +253,7 @@ msgstr "ユーザー名は数字で始まってはいけません。"
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
+msgstr "ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -284,16 +283,13 @@ msgstr ""
 "い。"
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"名前 '%s' には無効な文字が含まれています。ASCII 文字のみを使用して下さい。"
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "名前 '%s' には無効な文字が含まれています。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -384,19 +380,3 @@ msgstr ""
 "エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
 "\"次へ\" ボタンをクリックして続けて下さい。"
 
-#~ msgid "Please enter a time server."
-#~ msgstr "タイムサーバを入力して下さい。"
-
-#~ msgid "Error"
-#~ msgstr "エラー"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "%s との接続が確立できません。%s が利用できないか又は、コンピュータのファイ"
-#~ "アウォールの設定が NTP の接続を阻止しています。"
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "NTPサーバに接続しています。お待ち下さい..."
