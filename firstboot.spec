@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.1.0
-Release: 7
+Release: 8
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -18,7 +18,7 @@ Requires: redhat-config-language
 Requires: redhat-config-keyboard
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
-
+Requires: redhat-config-soundcard
 
 %description
 The firstboot utility runs after installation or upgrade.  It 
@@ -58,9 +58,10 @@ fi
 /usr/share/firstboot/*
 /usr/sbin/firstboot
 
-
-
 %changelog
+* Thu May 30 2002 Brent Fox <bfox@redhat.com> 0.1.0-8
+- Created the beginnings of the hardware screen
+
 * Thu May 30 2002 Brent Fox <bfox@redhat.com> 0.1.0-7
 - Fixed Requires to not pull in pygnome
 
