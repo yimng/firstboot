@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.6
-Release: 2
+Release: 3
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -37,7 +37,7 @@ make
 %install
 make INSTROOT=$RPM_BUILD_ROOT install
 
-#%find_lang %name
+%find_lang %name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,8 +52,7 @@ if [ $1 = 0 ]; then
   chkconfig --del firstboot
 fi
 
-%files
-#%files -f %{name}.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
 #%doc COPYING
 #%doc doc/*
@@ -63,6 +62,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Jul 24 2002 Brent Fox <bfox@redhat.com> 0.9.6-3
+- fix Makefiles and spec files so that translations get installed
+
 * Wed Jul 24 2002 Brent Fox <bfox@redhat.com> 0.9.6-2
 - update spec file for public beta 2
 
