@@ -101,6 +101,20 @@ class TimeWindow(FirstbootGuiWindow):
             elif ntpEnabled == gtk.TRUE:
                 sysTimeServer = self.datePage.getTimeServer()
 
+                if sysTimeServer == "":
+                    #They want ntp but have not set a server
+                    text = (_("A time server was not specified"))
+                    dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
+                    dlg.set_title(_("Error"))
+                    dlg.set_default_size(100, 100)
+                    dlg.set_position (gtk.WIN_POS_CENTER_ON_PARENT)
+                    dlg.set_border_width(2)
+                    dlg.set_modal(gtk.TRUE)
+                    rc = dlg.run()
+                    dlg.destroy()
+                    self.datePage.ntpCombo.entry.grab_focus()
+                    return
+
                 ntpServerList = self.datePage.getNtpServerList()
                 self.dateBackend.writeNtpConfig(sysTimeServer, ntpServerList)
 
