@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.0
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -65,6 +65,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Aug 27 2002 Brent Fox <bfox@redhat.com> 1.0.0-4
+- fix hang on unreponsive ntp servers
+ 
 * Thu Aug 22 2002 Brent Fox <bfox@redhat.com> 1.0.0-3
 - Don't draw window decorations
 
