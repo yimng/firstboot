@@ -21,6 +21,8 @@ export LANG
 
 FILENAME=/etc/sysconfig/firstboot
 
+[ -z "$HOME" ] && export HOME=/
+
 case "$1" in
  start)
         if [ ! -f /etc/X11/XF86Config ] ; then
