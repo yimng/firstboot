@@ -1,4 +1,5 @@
 # translation of es.po to 
+# translation of es.po to
 # translation of es.po to Spanish
 # translation of es.po to Español
 # translation of es.po to
@@ -16,7 +17,7 @@ msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-15 13:47-0400\n"
-"PO-Revision-Date: 2004-09-15 15:07+1000\n"
+"PO-Revision-Date: 2004-10-19 10:04+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -159,6 +160,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Por favor inserte el disco etiquetado como \"Red Hat Enterprise Linux Extras\" para "
+"permitir la instalación de extensiones de terceros. También puede insertar "
+"el disco de Documentación u otros discos de software adicional de Red Hat "
+"para instalarlos."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -169,6 +174,11 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Para habilitar el soporte para las aplicaciones de 32 bit en tiempo de ejecución "
+"en la arquitectura Itanium2, debe instalar ahora el paquete Intel Execution Layer desde "
+"el disco de Extras."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -183,8 +193,7 @@ msgstr ""
 "\" para continuar."
 
 #: ../src/modules/additional_cds.py:180
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "No se puede encontrar el programa de autorun en el cd. Pulse en  \"OK\" para "
 "continuar."
@@ -194,15 +203,14 @@ msgid "System User"
 msgstr "Usuario del sistema"
 
 #: ../src/modules/create_user.py:65
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Se recomienda que cree una cuenta de usuario personal para uso normal (no "
-"administrativo). Para crear una cuenta personal, proporcione la información "
-"requerida. "
+"Se recomienda que cree un nombre de usuario para uso normal (no "
+"administrativo) del sistema. Para crear un nombre de usuario del sistema,"
+" proporcione la información requerida abajo."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -252,13 +260,11 @@ msgstr "Crear cuent_a"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
+msgstr "Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
+msgstr "La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -306,16 +312,14 @@ msgstr ""
 "caracteres  ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La contraseña contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "El nombre '%s' contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII. "
@@ -349,10 +353,9 @@ msgstr ""
 "el botón \"Siguiente\" de la parte inferior derecha para continuar."
 
 #: ../src/modules/finished.py:38
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Su sistema está configurado y preparado para ser usado. Por favor presione "
+"Por favor presione "
 "el botón \"Siguiente\" de la parte inferior derecha para continuar."
 
 #: ../src/modules/networking.py:44
@@ -442,3 +445,4 @@ msgstr ""
 
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "Contactar el servidor NTP.  Por favor, espere..."
+
