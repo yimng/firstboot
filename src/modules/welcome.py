@@ -57,7 +57,7 @@ class childWindow:
 
         self.vbox.pack_start(internalVBox, gtk.FALSE, 5)
         pix = functions.imageFromFile("splash-small.png")
-        self.vbox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
+        self.vbox.pack_start(pix, gtk.TRUE, gtk.TRUE, 5)
             
         return self.vbox, eventBox
 
