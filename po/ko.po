@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-15 13:47-0400\n"
-"PO-Revision-Date: 2004-09-13 08:23+1000\n"
+"PO-Revision-Date: 2004-10-18 09:47+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -148,6 +148,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"\"Red Hat Enterprise Linux 추가\" 디스크를 삽입하여 "
+"제삼자 플러그인과 응용 프로그램을 설치하실 수 있습니다. "
+"문서 자료 디스크를 설치하거나, 또는 Red Hat에서 제공한 기타 다른 디스크를 "
+"이용하여 언제든지 추가 소프트웨어를 설치 가능합니다."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -158,6 +162,10 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Intel Itanium2 아키텍쳐에서 32 비트 응용 프로그램을 런타임 지원하려면, "
+"추가 시디에서 Intel Execution Layer 패키지를 지금 설치하셔야 합니다."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -172,8 +180,7 @@ msgstr ""
 "을 클릭하여 계속 진행해 주십시오."
 
 #: ../src/modules/additional_cds.py:180
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -183,14 +190,13 @@ msgid "System User"
 msgstr "시스템 사용자"
 
 #: ../src/modules/create_user.py:65
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"(관리 목적이 아닌) 일반 작업을 수행하시기 위해 개인 사용자 계정을 만드시길 바"
-"랍니다.  개인 계정을 만드시려면, 요청된 정보를 기입해 주십시오."
+"(관리자 계정이 아닌) 일반d 사용자 계정을생성하시기길 권장합니다다."
+"시스템 '사용자 계정'을  만드시려면,아래에  요청된 정보를 기입해 주십시오."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -292,15 +298,12 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -334,11 +337,8 @@ msgstr ""
 "려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
 
 #: ../src/modules/finished.py:38
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"시스템 설정이 완료되어 이제 사용하실 수 있습니다.  다음 단계로 계속 진행하시"
-"려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
+msgstr "다음 단계로 계속 진행하시려면, 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭해 주십시오."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -778,3 +778,4 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
+
