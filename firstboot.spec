@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.0
-Release: 5
+Version: 0.9.1
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -21,7 +21,7 @@ Requires: redhat-config-rootpassword
 Requires: redhat-config-soundcard
 
 %description
-The firstboot utility runs after installation or upgrade.  It 
+The firstboot utility runs after installation.  It 
 guides the user through a series of steps that allows for easier 
 configuration of the machine. 
 
@@ -40,7 +40,7 @@ make INSTROOT=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %post
-chkconfig --add firstboot
+chkconfig --level 5 firstboot on
 
 %preun
 if [ -d /usr/share/firstboot ] ; then
@@ -60,10 +60,13 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Tue Jun 25 2002 Brent Fox <bfox@redhat.com> 0.9.4-5
+* Wed Jun 26 2002 Brent Fox <bfox@redhat.com> 0.9.1-1
+- Only run in runlevel 5
+
+* Tue Jun 25 2002 Brent Fox <bfox@redhat.com> 0.9.0-5
 - Change initscript to not start firstboot on runlevel changes
 
-* Mon Jun 24 2002 Brent Fox <bfox@redhat.com> 0.9.4-4
+* Mon Jun 24 2002 Brent Fox <bfox@redhat.com> 0.9.0-4
 - Fix spec file
 
 * Fri Jun 21 2002 Brent Fox <bfox@redhat.com> 0.9.0-3
