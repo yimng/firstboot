@@ -119,7 +119,7 @@ _("A connection with %s could not be established.  Either %s is not available or
             print "no networking found"
             return 0
 
-    def rhn_register(self, *args):
+    def run_rhn_register(self, *args):
         #Run rhn_register so they can register with RHN
         path = "/usr/sbin/rhn_register"
         fd = os.popen(path)
@@ -130,5 +130,5 @@ _("A connection with %s could not be established.  Either %s is not available or
         if self.radioYes.get_active() == gtk.TRUE:            
             if self.networkAvailable():
                 #We can ping www.redhat.com, so the network is active
-                self.rhn_register()
+                self.run_rhn_register()
         return 1
