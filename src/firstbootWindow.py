@@ -321,6 +321,9 @@ class firstbootWindow:
         if self.xserver_pid:
             os.kill(self.xserver_pid, 15)
 
+        import time
+        time.sleep(0.5)
+
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
 
