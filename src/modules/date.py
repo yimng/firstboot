@@ -27,6 +27,7 @@ import gtk
 import gobject
 import sys
 import os
+import functions
 
 sys.path.append('/usr/share/dateconfig/')
 import date_gui
@@ -63,18 +64,7 @@ class TimeWindow(FirstbootGuiWindow):
         self.dateBackend = dateBackend.dateBackend()        
 
         #Add icon to the top frame
-        p = None
-        try:
-            p = gtk.gdk.pixbuf_new_from_file("../pixmaps/dateconfig-icon.png")
-        except:
-            try:
-                p = gtk.gdk.pixbuf_new_from_file("/usr/share/dateconfig/pixmaps/dateconfig-icon.png")
-            except:
-                pass
-
-        if p:
-            self.icon = gtk.Image()
-            self.icon.set_from_pixbuf(p)
+        self.icon = functions.imageFromFile("dateconfig-icon.png")
 
         self.myVbox = self.datePageVBox
 
