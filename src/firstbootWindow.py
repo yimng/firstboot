@@ -33,7 +33,8 @@ for arg in sys.argv:
 sys.argv = sys.argv[:1]
 
 class firstbootWindow:
-    def __init__(self):
+    def __init__(self, wm_pid):
+        self.wm_pid = wm_pid
         self.mainHBox = gtk.HBox(gtk.FALSE, 10)
         self.moduleList = []
         self.moduleDict = {}
@@ -228,8 +229,6 @@ class firstbootWindow:
         gtk.main()
 
     def finishClicked(self, *args):
-        print "exiting"
-        
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
@@ -241,8 +240,12 @@ class firstbootWindow:
         except:
             pass
 
+        #Exit the GTK loop
         gtk.mainquit()
-        print "closing"
+        #Kill the window manager
+        os.kill(self.wm_pid, 15)
+        #Exit firstboot.  This should take down the X server as well
+        os._exit(0)
 
     def okClicked(self, *args):
         try:

@@ -17,12 +17,12 @@ if not os.environ.has_key('DISPLAY'):
     except:
          pass
 
-    wm = os.fork()
+    wm_pid = os.fork()
 
-    if (not wm):
+    if (not wm_pid):
         path = '/usr/bin/metacity'
         args = ['--display=:1']
         os.execv(path, args)
 
 import firstbootWindow
-firstbootWindow.firstbootWindow()
+firstbootWindow.firstbootWindow(wm_pid)
