@@ -15,11 +15,6 @@ os.environ["PYGTK_FATAL_EXCEPTIONS"] = "1"
 os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
 
 import sys
-#from gtk import *
-#from gtk import _root_window
-#import GDK
-#import gdkpixbuf
-
 import gtk
 import gobject
 
@@ -36,7 +31,8 @@ print doReconfig
 
 class firstbootWindow:
     def __init__(self):
-        self.hpane = gtk.HPaned()
+#        self.hpane = gtk.HPaned()
+        self.mainHBox = gtk.HBox()
         self.moduleList = []
         self.moduleDict = {}
         self.usedModuleList = []
@@ -54,22 +50,21 @@ class firstbootWindow:
         mainVBox = gtk.VBox()
 
         try:
-            p = gtk.gdk.pixbuf.new_from_file("images/titlebar.png")
+            p = gtk.gdk.pixbuf_new_from_file("images/titlebar.png")
         except:
             pass
 
         if p:
-#            pix = apply (GtkPixmap, p.render_pixmap_and_mask())
             pix = gtk.Image()
             pix.set_from_pixbuf(p)
-            mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
+#            mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
         
         self.notebook = gtk.Notebook()
         self.notebook.set_show_tabs(gtk.FALSE)
         self.notebook.set_show_border(gtk.FALSE)
 
 #        path = ('/usr/share/firstboot/modules')
-        path = ('/home/devel/bfox/redhat/firstboot-gtk2/src/modules')
+        path = ('/home/devel/bfox/redhat/firstboot/src/modules')
         files = os.listdir(path)
         list = []
 
@@ -84,7 +79,7 @@ class firstbootWindow:
 #            sys.path.append('./modules')
             print module
 #            sys.path.append('/usr/share/firstboot/modules')
-            sys.path.append('/home/devel/bfox/redhat/firstboot-gtk2/src/modules')
+            sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
@@ -115,7 +110,13 @@ class firstbootWindow:
             if box:
                 self.notebook.append_page(box, gtk.Label(" "))
 
+        label = gtk.Label("Hello")
+        label.set_usize(200, -1)
+#        self.hpane.add1(label)
+        self.mainHBox.pack_start(label, gtk.FALSE)
+
 #        self.hpane.add2(self.notebook)
+        self.mainHBox.pack_start(self.notebook, gtk.TRUE)
 
         bb = gtk.HButtonBox()
         bb.set_layout(gtk.BUTTONBOX_END)
@@ -132,14 +133,34 @@ class firstbootWindow:
         bb.pack_start(backButton)
         bb.pack_start(nextButton)
 
+#        self.hpane.handle_size(0)
 #        mainVBox.pack_start(self.hpane)
-        mainVBox.pack_start(self.notebook)
+        mainVBox.pack_start(self.mainHBox)
+#        mainVBox.pack_start(self.notebook)
         self.notebook.set_border_width(10)
 
 #        a = GtkAlignment()
 #        a.add(GtkHSeparator())
 #        a.set(0.0, 0.0, 0.5, 0.5)
-        mainVBox.pack_start(gtk.HSeparator(), gtk.FALSE)
+#        mainVBox.pack_start(gtk.HSeparator(), gtk.FALSE)
+
+        try:
+            p = gtk.gdk.pixbuf_new_from_file("images/bg.png")
+        except:
+            pass
+
+        if p:
+            pix = gtk.Image()
+            pix.set_from_pixbuf(p)
+
+        win.realize()
+        win.set_app_paintable(gtk.TRUE)
+
+        
+        bgimage = gtk.gdk.Pixmap(win.window, 800, 600, -1)
+        gc = bgimage.new_gc ()
+        p.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+        win.window.set_back_pixmap (bgimage, gtk.FALSE)
 
         mainVBox.pack_start(bb, gtk.FALSE, padding=10)
         win.add(mainVBox)

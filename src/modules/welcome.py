@@ -14,19 +14,40 @@ class childWindow:
     def launch(self):
         self.vbox = gtk.VBox()
         self.vbox.set_usize(400, 200)
+
+
+
+
+        ####################Title Box##############
 #        print dir(self.vbox)
         label = gtk.Label("Welcome to Red Hat Linux 8.0!")
-        white = gtk.gdk.color_parse ("white")
-        label.modify_fg(gtk.STATE_NORMAL, white)
+        label.modify_fg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("white"))
 #        label.modify_bg(gtk.STATE_NORMAL, blue)
 #        self.vbox.modify_base(gtk.STATE_NORMAL, blue)
 
+        titleBox = gtk.HBox()
+
+        try:
+            p = gtk.gdk.pixbuf_new_from_file("images/shadowman-round-48.png")
+        except:
+            pass
+
+        if p:
+            pix = gtk.Image()
+            pix.set_from_pixbuf(p)
+            titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
+
+
+        
+        titleBox.pack_start(label)
 
         eventBox = gtk.EventBox()
-        eventBox.add(label)
-        blue = gtk.gdk.color_parse ("#0000BB")
-        eventBox.modify_bg(gtk.STATE_NORMAL, blue)
+        eventBox.add(titleBox)
+        eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
+#        label.set_border_width(10)
         self.vbox.pack_start(eventBox, FALSE, 40)
+
+
 
 
 #        self.vbox.pack_start(label, FALSE, TRUE, 30)
@@ -36,9 +57,16 @@ class childWindow:
         
         self.vbox.pack_start(a, FALSE)
 
+        label = gtk.Label("Welcome message goes here")
+        eventBox = gtk.EventBox()
+        eventBox.add(label)
+        eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
+        self.vbox.pack_start(eventBox, TRUE)
+#        self.vbox.pack_start(label, TRUE)
+
         a = gtk.Alignment()
         a.add(self.vbox)
-        a.set(0.8, 0.5, 0.2, 1.0)
+        a.set(0.5, 0.5, 0.9, 0.9)
 
         return a
 #        return self.vbox
