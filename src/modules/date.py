@@ -51,14 +51,27 @@ class TimeWindow(FirstbootGuiWindow):
 
     def getNext(self):
         pass
+
+    def custom_handler (self, glade, function_name, widget_name, str1, str2, int1, int2):
+        if date_gui.custom_widgets.has_key(function_name):
+            return date_gui.custom_widgets[function_name] ()
+
     
     def setupScreen(self):
         #Initialize date backend
         self.dateBackend = dateBackend.dateBackend()
 
+        # hmm, call the hook to generate the custom widgets on datePage
+        print "date_gui: %s" % date_gui
+        print "d_g.c_w: %s" % date_gui.custom_widgets
+        gtk.glade.set_custom_handler(self.custom_handler)
+        
         #Initialize datePage and pass dateBackend into it
-        self.datePage = date_gui.datePage(self.dateBackend)
+        self.xml = gtk.glade.XML("/usr/share/system-config-date/system-config-date.glade", "vbox2", domain="system-config-date")
+        self.datePage = date_gui.datePage(self.dateBackend, self.xml)
+        # a date_gui.datePage.getVBox would be better here, but thats broken atm
         self.datePageVBox = self.datePage.getVBox()
+ 
 
         #Add icon to the top frame
         self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
