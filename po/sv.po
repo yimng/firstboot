@@ -1,0 +1,222 @@
+# Swedish messages for firstboot.
+# Copyright (C) 2002 Christian Rose
+# Christian Rose <menthos@menthos.com>, 2002.
+#
+# $Id$
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"POT-Creation-Date: Tue Jun 25 16:32:27 2002\n"
+"PO-Revision-Date: 2002-06-26 00:34+0200\n"
+"Last-Translator: Christian Rose <menthos@menthos.com>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+
+#: ../src/modules/additional_cds.py:19
+msgid "Additional CDs"
+msgstr "Ytterligare cd-skivor"
+
+#: ../src/modules/additional_cds.py:22
+msgid "Red Hat Documentation CD"
+msgstr "Red Hat Documentation CD"
+
+#: ../src/modules/additional_cds.py:23
+msgid "Linux Application CD"
+msgstr "Linux Application CD"
+
+#: ../src/modules/additional_cds.py:58
+msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
+msgstr ""
+"Om du har ytterligare cd-skivor från Red Hat Linux-lådan, exempelvis "
+"skivan \"Red Hat Linux Documentation CD\" eller \"Linux Applications CD\" "
+"bör du stoppa in skivan nu och klicka på knappen nedan."
+
+#: ../src/modules/date.py:48
+msgid "Date & Time"
+msgstr "Datum och tid"
+
+#: ../src/modules/date.py:49
+msgid "Date & Time Configuration"
+msgstr "Konfiguration av datum och tid"
+
+#: ../src/modules/date.py:51
+msgid "Please set the date and time for the system."
+msgstr "Ställ in datum och tid för systemet."
+
+#: ../src/modules/hardware.py:28
+msgid "Configure hardware"
+msgstr "Konfigurera hårdvara"
+
+#: ../src/modules/hardware.py:82
+msgid "Keyboard Map:"
+msgstr "Tangentbordstabell:"
+
+#: ../src/modules/hardware.py:88 ../src/modules/hardware.py:104
+#: ../src/modules/hardware.py:125
+msgid "Configure..."
+msgstr "Konfigurera..."
+
+#: ../src/modules/hardware.py:97
+msgid "Mouse:"
+msgstr "Mus:"
+
+#: ../src/modules/hardware.py:119
+msgid "Sound card:"
+msgstr "Ljudkort:"
+
+#: ../src/modules/hardware.py:136
+msgid "Networking:"
+msgstr "Nätverksåtkomst:"
+
+#: ../src/modules/hardware.py:145
+msgid "Display:"
+msgstr "Display:"
+
+#: ../src/modules/hardware.py:154
+msgid "Printers:"
+msgstr "Skrivare:"
+
+#: ../src/modules/networking.py:19
+msgid "Network check"
+msgstr "Nätverkskontroll"
+
+#: ../src/modules/networking.py:38
+msgid "Set up Networking"
+msgstr "Konfigurera nätverksåtkomst"
+
+#: ../src/modules/networking.py:64
+msgid ""
+"A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
+msgstr ""
+"En nätverksanslutning kunde inte hittas. Nätverksanslutning är nödvändig "
+"för att kunna registrera ditt system med RHN och för att använda Red Hats "
+"uppdateringsagent för att uppdatera ditt system. Klicka på knappen nedan "
+"för att konfigurera en nätverksanslutning.\n"
+
+#: ../src/modules/networking.py:114
+msgid "Set up networking..."
+msgstr "Konfigurera nätverksåtkomst..."
+
+#: ../src/modules/networking.py:150
+msgid "Configure using DHCP"
+msgstr "Konfigurera med hjälp av DHCP"
+
+#: ../src/modules/networking.py:167
+msgid "IP Address"
+msgstr "IP-adress"
+
+#: ../src/modules/networking.py:168
+msgid "Netmask"
+msgstr "Nätmask"
+
+#: ../src/modules/networking.py:169
+msgid "Network"
+msgstr "Nätverk"
+
+#: ../src/modules/networking.py:170
+msgid "Broadcast"
+msgstr "Broadcast"
+
+#: ../src/modules/networking.py:186
+msgid "%s:"
+msgstr "%s:"
+
+#: ../src/modules/networking.py:227
+msgid "Gateway"
+msgstr "Gateway"
+
+#: ../src/modules/networking.py:227
+msgid "Hostname"
+msgstr "Värdnamn"
+
+#: ../src/modules/networking.py:227
+msgid "Primary DNS"
+msgstr "Primär DNS"
+
+#: ../src/modules/networking.py:228
+msgid "Secondary DNS"
+msgstr "Sekundär DNS"
+
+#: ../src/modules/networking.py:228
+msgid "Ternary DNS"
+msgstr "Tertiär DNS"
+
+#: ../src/modules/register.py:21
+msgid "Register with RHN"
+msgstr "Registrera i RHN"
+
+#: ../src/modules/register.py:30
+msgid "Register your system with Red Hat Network"
+msgstr "Registrera ditt system i Red Hat Network"
+
+#: ../src/modules/register.py:55
+msgid ""
+"Red Hat Network is an Internet solution for managing one or more Red Hat Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts (collectively known as Errata Alerts) can be retreived directly from Red Hat. You can even have updates automatically delivered directly to your system as soon as they are released. \n"
+"\n"
+"Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
+msgstr ""
+"Red Hat Network är en nätverkslösning för hantering av en eller flera Red "
+"Hat Linux-system. Alla säkerhetsvarningar, felfixvarningar och "
+"förbättringsvarningar (tillsammans kallade erratavarningar) kan hämtas "
+"direkt från Red Hat. Du kan till och med få uppdateringar direkt "
+"levererade till ditt system så fort de har släppts.\n"
+"\n"
+"Eftersom Red Hat Network håller reda på när erratauppdateringar släpps "
+"skickar dig information om detta per e-post kan det:"
+
+#: ../src/modules/register.py:68
+msgid ""
+" -- Reduce the time and effort required by system administrators to stay on top of the Red Hat errata list\n"
+" -- Minimize security vulnerabilities in your network by providing the patches as soon as Red Hat releases them\n"
+" -- Filter out package updates not relevant to your network\n"
+" -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
+msgstr ""
+" -- Reducera den tid och möda som krävs av systemadministratörer för att "
+"hålla system aktuella med Red Hats erratalista\n"
+" -- Minimera säkerhetssårbarheter i ditt nätverk genom att tillhandahålla "
+"fixar så fort Red Hat släpper dem\n"
+" -- Filtrera ut paketuppdateringar som inte är relevanta för ditt "
+"nätverk\n"
+" -- Schemalägga erratauppdateringar så att paket levereras till utvalda "
+"system när du så önskar"
+
+#: ../src/modules/register.py:80
+msgid "Register system now"
+msgstr "Registrera systemet nu"
+
+#: ../src/modules/register.py:90
+msgid "You currently have no network connection."
+msgstr "Du har ingen nätverksanslutning för tillfället."
+
+#: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
+msgid "Red Hat Update Agent"
+msgstr "Red Hats uppdateringsagent"
+
+#: ../src/modules/up2date.py:55
+msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
+msgstr ""
+"Nu när du har registrerat dig i Red Hat Network kan du köra Red Hats "
+"uppdateringsagent för att få de senaste programpaketen direkt från Red "
+"Hat. Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat "
+"Linux-system med alla säkerhetsfixar, felfixar och förbättringar av "
+"programpaket"
+
+#: ../src/modules/up2date.py:66
+msgid "Start the Red Hat Update Agent"
+msgstr "Starta Red Hats uppdateringsagent"
+
+#: ../src/modules/welcome.py:19
+msgid "Welcome"
+msgstr "Välkommen"
+
+#: ../src/modules/welcome.py:28
+msgid "Welcome to Red Hat Linux Beta!"
+msgstr "Välkommen till Red Hat Linux Beta!"
+
+msgid "Welcome to Red Hat Linux!"
+msgstr "Välkommen till Red Hat Linux!"
+
