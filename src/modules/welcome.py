@@ -2,6 +2,8 @@ from gtk import *
 import string
 import gtk
 import gobject
+import sys
+import functions
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
@@ -21,7 +23,7 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        pix = self.imageFromFile("shadowman-round-48.png")
+        pix = functions.imageFromFile("shadowman-round-48.png")
         titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
         titleBox.pack_start(label)
@@ -30,7 +32,7 @@ class childWindow:
         eventBox.add(titleBox)
         self.vbox.pack_start(eventBox, FALSE)
 
-        pix = self.imageFromFile("splash.png")
+        pix = functions.imageFromFile("splash.png")
         self.vbox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
 
 
@@ -47,22 +49,3 @@ class childWindow:
 
     def apply(self, notebook):
         return 1
-
-    # Attempt to load a gtk.Image from a file.
-    def imageFromFile(self, filename):
-        p = None        
-        try:
-            path = "../pixmaps/" + filename
-            p = gtk.gdk.pixbuf_new_from_file(path)
-        except:
-            try:
-                path = "/usr/share/firstboot/pixmaps/" + filename
-                p = gtk.gdk.pixbuf_new_from_file(path)
-            except:
-                pass
-
-        if p:
-            pix = gtk.Image()
-            pix.set_from_pixbuf(p)        
-            return pix
-        return None
