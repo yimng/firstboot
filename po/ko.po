@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2003-12-12 10:11+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -132,8 +132,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -165,18 +165,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
-
-#: ../src/firstboot.py:113
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
-
-#: ../src/firstboot.py:118
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -207,6 +195,9 @@ msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 �
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -231,12 +222,12 @@ msgstr "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 �
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "뒤로(_B)"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "다음(_N)"
 
@@ -280,11 +271,12 @@ msgstr "다음(_N)"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "환영합니다"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -454,7 +446,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -472,7 +465,7 @@ msgstr ""
 msgid "User Account"
 msgstr "사용자 계정"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -481,24 +474,24 @@ msgstr ""
 "(관리 목적이 아닌) 일반 작업을 수행하시기 위해 개인 사용자 계정을 만드시길 바"
 "랍니다.  개인 계정을 만드시려면, 요청된 정보를 기입해 주십시오."
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "사용자명(_U):"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "이름(_E):"
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "암호(_P):"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "암호 확인(_M):"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -506,11 +499,12 @@ msgstr ""
 "커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
 "을 클릭해 주십시오."
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "네트워크 로그인 사용(_L)..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -520,24 +514,24 @@ msgstr ""
 "행하신다면, 관리자 용으로만 사용되는 루트 계정을 사용하여 로그인하셔야 합니"
 "다."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "계속 진행(_C)"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "계정 만들기(_A)"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -549,17 +543,17 @@ msgstr ""
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "사용자명은 33 문자를 넘어서는 안됩니다."
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "사용자명은 숫자로 시작해서는 안됩니다."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -568,7 +562,7 @@ msgstr ""
 "사용자명 '%s'에 공백이 포함되어 있습니다.  사용자명에 공백을 포함시키지 마십"
 "시오."
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -577,7 +571,7 @@ msgstr ""
 "사용자명 '%s'에 구두점이 포함되어 있습니다.  사용자명에 구두점을 사용하지 마"
 "십시오."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -586,7 +580,7 @@ msgstr ""
 "사용자명 '%s'에 대문자가 포함되어 있습니다.  사용자명에 대문자를 사용하지 마"
 "십시오."
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -595,14 +589,17 @@ msgstr ""
 "사용자명 '%s'에 잘못된 문자가 포함되어 있습니다.  사용자명에 ASCII 문자만 사"
 "용하시기 바랍니다."
 
-#: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+#: ../src/modules/create_user.py:291
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -853,10 +850,24 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  설정 에이전"
-"트는 이제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 "
-"것입니다. 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합"
-"니다."
+"몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  설정 에이전트는 이"
+"제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 것입니다. 오른쪽 하"
+"단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합니다."
+
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
@@ -1183,4 +1194,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-

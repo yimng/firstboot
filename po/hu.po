@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2004-02-26 11:11+0100\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian\n"
@@ -130,8 +130,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -163,22 +163,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "A Firstboot program egyszer már lefutott ezen a rendszeren.\n"
-
-#: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Ha parancssorból szeretné indítani a Firstboot programot, ezt kell beírni:"
-
-#: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"Ha a rendszer indulásakor szeretné indítani a Firstboot programot, ezt kell beírni:"
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -209,6 +193,9 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -233,12 +220,12 @@ msgstr ""
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "_Vissza"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "_Tovább"
 
@@ -282,11 +269,12 @@ msgstr "_Tovább"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Üdvözöljük"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -435,8 +423,9 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Ha rendelkezik az alábbi CD-k valamelyikével, feltelepítheti a rajtuk található csomagokat is. "
-"Ha telepíteni szeretne, helyezze be az egyik CD-t és kattintson a megfelelő gombra."
+"Ha rendelkezik az alábbi CD-k valamelyikével, feltelepítheti a rajtuk "
+"található csomagokat is. Ha telepíteni szeretne, helyezze be az egyik CD-t "
+"és kattintson a megfelelő gombra."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -448,8 +437,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Nem található CD-ROM-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba és kattintson az "
-"\"OK\" gombra."
+"Nem található CD-ROM-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba "
+"és kattintson az \"OK\" gombra."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -459,7 +448,8 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
-"Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az \"OK\" gombra."
+"Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
+"\"OK\" gombra."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -474,112 +464,113 @@ msgstr ""
 msgid "User Account"
 msgstr "Felhasználónév"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"Érdemes legalább egy normál (nem rendszergazdai jogú) felhasználónevet létrehozni. "
-"Új név létrehozásához be kell írni a szükséges aadatokat."
+"Érdemes legalább egy normál (nem rendszergazdai jogú) felhasználónevet "
+"létrehozni. Új név létrehozásához be kell írni a szükséges aadatokat."
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "_Felhasználónév:"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "_Teljes név:"
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "_Jelszó:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "A jelszó me_gerősítése:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Ha hálózati bejelentkeztetést szeretne használni (pl. Kerberos-t vagy NIS-t), kattintson a "
-"Hálózati bejelentkezés használata gombra."
+"Ha hálózati bejelentkeztetést szeretne használni (pl. Kerberos-t vagy NIS-"
+"t), kattintson a Hálózati bejelentkezés használata gombra."
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "Hálózati be_jelentkezés használata..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
 "Erősen ajánlott legalább egy normál felhasználónevet létrehozni. Ha enélkül "
-"lép tovább, akkor csak a root felhasználónevet használhatja, "
-"amely elsősorban rendszergazdai célokat szolgál."
+"lép tovább, akkor csak a root felhasználónevet használhatja, amely "
+"elsősorban rendszergazdai célokat szolgál."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "_Folytatás"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "Felhasználónév létreh_ozása"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "A jelszavak nem egyeznek meg. Kérem írja be a jelszót még egyszer."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "A jelszó túl rövid, legalább 6 karakter hosszúnak kell lennie."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"A(z) '%s' felhasználónevet a rendszer használja. Adjon meg egy másik nevet, mert ezt nem "
-"használhatja."
+"A(z) '%s' felhasználónevet a rendszer használja. Adjon meg egy másik nevet, "
+"mert ezt nem használhatja."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "A felhasználónév nem lehet 32 karakternél hosszabb."
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "A felhasználónév nem kezdődhet számjeggyel."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"A(z) '%s' felhasználónév üres karaktereket tartalmaz. A névben nem lehet szóközt vagy más üres karaktert "
-"használni."
+"A(z) '%s' felhasználónév üres karaktereket tartalmaz. A névben nem lehet "
+"szóközt vagy más üres karaktert használni."
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"A(z) '%s' felhasználónév központozási karaktereket tartalmaz. A névben nem lehet ilyen karaktereket "
-"használni."
+"A(z) '%s' felhasználónév központozási karaktereket tartalmaz. A névben nem "
+"lehet ilyen karaktereket használni."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -588,28 +579,30 @@ msgstr ""
 "A(z) '%s' felhasználónév nagybetűket tartalmaz. A névben nem lehet ilyen "
 "karaktereket használni."
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"A(z) '%s' felhasználónév érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet "
-"használni."
+"A(z) '%s' felhasználónév érvénytelen karaktereket tartalmaz. Csak ASCII-"
+"karaktereket lehet használni."
 
-#: ../src/modules/create_user.py:287
+#: ../src/modules/create_user.py:291
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet használni."
+"A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet "
+"használni."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet használni."
+"A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket "
+"lehet használni."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -666,8 +659,9 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Nem sikerült kapcsolatot létesíteni ezzel: %s. %s nem érhető el vagy "
-"a tűzfal beállításai olyanok, hogy a számítógép nem engedélyezi az NTP-kapcsolatot."
+"Nem sikerült kapcsolatot létesíteni ezzel: %s. %s nem érhető el vagy a "
+"tűzfal beállításai olyanok, hogy a számítógép nem engedélyezi az NTP-"
+"kapcsolatot."
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -721,8 +715,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"A rendszer telepítése befejeződött. Továbblépéshez kattintson a \"Tovább\" gombra "
-"a jobb alsó sarokban."
+"A rendszer telepítése befejeződött. Továbblépéshez kattintson a \"Tovább\" "
+"gombra a jobb alsó sarokban."
 
 #.
 #. networking.py - networking module for firstboot
@@ -815,10 +809,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Kattintson a \"Hangteszt\" gombra a hangeszköz kipróbálásához. Három hangminta "
-"lesz lejátszva egymás után. Az első a jobb, "
-"a második a bal csatornából szól, a haarmadik pedig "
-"középről."
+"Kattintson a \"Hangteszt\" gombra a hangeszköz kipróbálásához. Három "
+"hangminta lesz lejátszva egymás után. Az első a jobb, a második a bal "
+"csatornából szól, a haarmadik pedig középről."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -859,5 +852,21 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "A rendszer használatba vétele előtt még néhány lépést el kell végezni. A "
-"Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez kattintson a "
-"\"Tovább\" gombra a jobb alsó sarokban."
+"Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
+"kattintson a \"Tovább\" gombra a jobb alsó sarokban."
+
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "A Firstboot program egyszer már lefutott ezen a rendszeren.\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Ha parancssorból szeretné indítani a Firstboot programot, ezt kell beírni:"
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Ha a rendszer indulásakor szeretné indítani a Firstboot programot, ezt "
+#~ "kell beírni:"

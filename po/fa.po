@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2004-01-10 13:06+0330\n"
 "Last-Translator: Abbas Izad <abbasizad@hotmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -132,8 +132,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -165,18 +165,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "اولین‌آغاز، یک بار بر این سیستم قبلا اجرا شده است.\n"
-
-#: ../src/firstboot.py:113
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "برای اجرای اولین‌آغاز از خط فرمان، فرمان‌های بدنبال آمده را اجرا کنید:"
-
-#: ../src/firstboot.py:118
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "برای اجرای اولین‌آغاز هنگام راه‌اندازی سیستم، فرمان‌های بدنبال آمده را اجرا کنید:"
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -207,6 +195,9 @@ msgstr "برای اجرای اولین‌آغاز هنگام راه‌انداز
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -231,12 +222,12 @@ msgstr "برای اجرای اولین‌آغاز هنگام راه‌انداز
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "ـعقب"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "بعدـی"
 
@@ -280,11 +271,12 @@ msgstr "بعدـی"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "خوش آمدید"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -446,15 +438,16 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"سی‌دیی شناسایی نشده است. لطفا یک سی‌دی را در دستگاه گذاشته "
-"و \"تأیید\" را برای ادامه کلیک کنید."
+"سی‌دیی شناسایی نشده است. لطفا یک سی‌دی را در دستگاه گذاشته و \"تأیید\" را برای "
+"ادامه کلیک کنید."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "نمی‌توان برنامه‌ی اجرای‌خودکار را بر روی سی‌دی پیدا کرد. \"تأیید\" را برای ادامه "
 "کلیک کنید."
@@ -472,7 +465,7 @@ msgstr ""
 msgid "User Account"
 msgstr "حساب کاربر"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -481,24 +474,24 @@ msgstr ""
 "سفارش می‌شود که شما یک حساب کاربری شخصی برای استفاده‌ی عادی (غیر-مدیریتی) "
 "ایجاد کنید. اطلاعات خواسته شده را برای ایجاد یک حساب شخصی ارائه کنید."
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "ـ‌نام کاربر:"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "نام ـ‌کامل:"
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "ـ‌گذرواژه:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "ـ‌تصدیق گذرواژه:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -506,103 +499,107 @@ msgstr ""
 "اگر شما نیاز به تأیید هویت شبکه مانند Kerberos یا NIS دارید، لطفا دکمه‌ی "
 "استفاده از ثبت‌ورود شبکه را کلیک کنید."
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "استفاده از ـثبت‌ورود شبکه..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"بشدت سفارش می‌شود که یک حساب کاربری شخصی ایجاد گردد. اگر شما بدون "
-"چنین حسابی ادامه دهید، فقط با حساب مدیر می‌توانید ثبت ورود کنید، این"
-"حساب فقط برای استفاده‌ی مدیریتی رزرو شده است."
+"بشدت سفارش می‌شود که یک حساب کاربری شخصی ایجاد گردد. اگر شما بدون چنین حسابی "
+"ادامه دهید، فقط با حساب مدیر می‌توانید ثبت ورود کنید، اینحساب فقط برای "
+"استفاده‌ی مدیریتی رزرو شده است."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "ـ‌ادامه"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "ایجاد ـ‌حساب"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "گذرواژه‌ها مطابقت نمی‌کنند. لطفا گذرواژه را دوباره وارد کنید."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "گذرواژه کوتاه است. لطفا حداقل از ۶ نویسه استفاده کنید."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفا نام کاربری دیگری را "
-"تعیین کنید."
+"نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفا نام کاربری دیگری را تعیین "
+"کنید."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "نام کاربر باید کوتاه‌تر از ۳۳ نویسه باشد."
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "نام کاربر نباید با یک عدد شروع گردد."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "نام کاربر '%s' حاوی فاصله می‌باشد. لطفا از فاصله در نام کاربر استفاده نکنید."
+msgstr ""
+"نام کاربر '%s' حاوی فاصله می‌باشد. لطفا از فاصله در نام کاربر استفاده نکنید."
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"نام کاربر '%s' حاوی نویسه‌های نقطه‌گذاری می‌باشد. لطفا از علائم نقطه‌گذاری "
-"در نام کاربر استفاده نکنید."
+"نام کاربر '%s' حاوی نویسه‌های نقطه‌گذاری می‌باشد. لطفا از علائم نقطه‌گذاری در "
+"نام کاربر استفاده نکنید."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"نام کاربر '%s' حاوی نویسه‌های کازه بالایی می‌باشد. لطفا از نویسه‌های کازه بالایی در "
-"نام کاربر استفاده نکنید."
+"نام کاربر '%s' حاوی نویسه‌های کازه بالایی می‌باشد. لطفا از نویسه‌های کازه "
+"بالایی در نام کاربر استفاده نکنید."
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"نام کاربر '%s' حاوی نویسه‌های غیر معتبر می‌باشد. لطفا فقط از "
-"نویسه‌های ASCII استفاده کنید."
+"نام کاربر '%s' حاوی نویسه‌های غیر معتبر می‌باشد. لطفا فقط از نویسه‌های ASCII "
+"استفاده کنید."
 
-#: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:291
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"این گذرواژه حاوی نویسه‌های غیر معتبر می‌باشد. لطفا فقط از نویسه‌های ASCII استفاده "
-"کنید."
+"این گذرواژه حاوی نویسه‌های غیر معتبر می‌باشد. لطفا فقط از نویسه‌های ASCII "
+"استفاده کنید."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "نام '%s' حاوی نویسه‌های غیر معتبر می‌باشد. لطفا فقط از نویسه‌های ASCII استفاده "
 "کنید."
@@ -662,8 +659,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"اتصالی با %s نتوانست برقرار گردد. یا %s در دسترس نمی‌باشد یا تنظیمات "
-"دیوارآتش بر روی رایانه‌ی شما اتصالات NTP را سد می‌کند."
+"اتصالی با %s نتوانست برقرار گردد. یا %s در دسترس نمی‌باشد یا تنظیمات دیوارآتش "
+"بر روی رایانه‌ی شما اتصالات NTP را سد می‌کند."
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -717,8 +714,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"سیستم شما اکنون برپاسازی شده و آماده‌ی استفاده است. لطفا دکمه‌ی \"بعدی\" "
-"را در گوشه‌ی راست پایین برای ادامه کلیک کنید."
+"سیستم شما اکنون برپاسازی شده و آماده‌ی استفاده است. لطفا دکمه‌ی \"بعدی\" را در "
+"گوشه‌ی راست پایین برای ادامه کلیک کنید."
 
 #.
 #. networking.py - networking module for firstboot
@@ -811,9 +808,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"دکمه‌ی \"پخش صوت آزمایشی\" را برای شنیدن نمونه‌ی صوتی کلیک کنید. شما باید "
-"یک سری از سه صوت را بشنوید.  اولین صوت در کانال راست خواهد بود، دومین "
-"صوت در کانال چپ خواهد بود، و سومین صوت در مرکز خواهد بود."
+"دکمه‌ی \"پخش صوت آزمایشی\" را برای شنیدن نمونه‌ی صوتی کلیک کنید. شما باید یک "
+"سری از سه صوت را بشنوید.  اولین صوت در کانال راست خواهد بود، دومین صوت در "
+"کانال چپ خواهد بود، و سومین صوت در مرکز خواهد بود."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -857,3 +854,18 @@ msgstr ""
 "برپاسازی اکنون شما را در طول چند پیکربندی پایه‌ای راهنمایی خواهد کرد. لطفا "
 "دکمه‌ی \"بعدی\" را در گوشه‌ی راست پایین برای ادامه کلیک کنید."
 
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "اولین‌آغاز، یک بار بر این سیستم قبلا اجرا شده است.\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "برای اجرای اولین‌آغاز از خط فرمان، فرمان‌های بدنبال آمده را اجرا کنید:"
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "برای اجرای اولین‌آغاز هنگام راه‌اندازی سیستم، فرمان‌های بدنبال آمده را اجرا "
+#~ "کنید:"

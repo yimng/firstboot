@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2004-02-20 15:47+0100\n"
 "Last-Translator: Jean-Paul Aubry <jpaubry@redhat.com>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -133,8 +133,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -166,22 +166,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstboot a déjà  été exécuté sur ce système.\n"
-
-#: ../src/firstboot.py:113
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne de "
-"commande :"
-
-#: ../src/firstboot.py:118
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"Exécutez les commandes suivantes pour exécuter firstboot au cours du "
-"démarrage du système :"
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -212,6 +196,9 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -236,12 +223,12 @@ msgstr ""
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "_Précédent"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "_Suivant"
 
@@ -285,11 +272,12 @@ msgstr "_Suivant"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Bienvenue"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -460,7 +448,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliquer "
 "sur \"OK\" pour continuer."
@@ -478,7 +467,7 @@ msgstr ""
 msgid "User Account"
 msgstr "Compte utilisateur"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -488,24 +477,24 @@ msgstr ""
 "utilisations normales (non administratives). Pour créer un compte personnel, "
 "donnez les informations demandées."
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "Nom d'_utilisateur :"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "Nom _et prénom :"
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "Mot de _passe :"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "Confir_mer le mot de passe :"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -513,11 +502,12 @@ msgstr ""
 "Si vous devez utiliser l'authentification réseau comme Kerberos ou NIS, "
 "veuillez cliquer sur le bouton Utiliser la connexion réseau."
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "Utiliser _la connexion réseau..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -527,24 +517,25 @@ msgstr ""
 "continuez sans compte, vous ne pouvez que vous connecter avec le compte "
 "root, qui est réservé pour les utilisations administratives, seulement."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "_Continuer"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "Créer un _compte"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Les mots de passe ne correspondent pas. Essayez à  nouveau."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr ""
+"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -556,17 +547,17 @@ msgstr ""
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "Le nom d'utilisateur doit avoir moins de 33 caractères."
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "Le nom d'utilisateur ne doit pas commencer avec un nombre."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -575,7 +566,7 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des espaces blancs. Veuillez ne pas "
 "inclure d'espaces blancs dans le nom d'utilisateur."
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -584,7 +575,7 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des caractères de ponctuation. Veuillez "
 "ne pas utiliser de ponctuation dans le nom d'utilisateur."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -593,7 +584,7 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des caractères en majuscules. Veuillez ne "
 "pas utiliser de caractères en majuscules dans le nom d'utilisateur."
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -602,16 +593,18 @@ msgstr ""
 "Le nom d'utilisateur '%s' contient des caractères non valides. Veuillez "
 "n'utiliser que des caractères ASCII."
 
-#: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:291
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le nom '%s' contient des caractères non valides. Veuillez n'utiliser que des "
 "caractères ASCII."
@@ -710,7 +703,9 @@ msgstr "Affichage"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Veuillez sélectionner la résolution et la profondeur des couleurs que vous souhaitez utiliser"
+msgstr ""
+"Veuillez sélectionner la résolution et la profondeur des couleurs que vous "
+"souhaitez utiliser"
 
 #. Add icon to the top frame
 #. #
@@ -862,10 +857,27 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Il vous reste encore quelques étapes à  effectuer avant que votre système ne soit prêt à  "
-"l'emploi. L'agent de configuration Red Hat vous guidera tout au long de la configuration "
-"de base. Pour continuer, cliquez sur le bouton \"Suivant\" dans le coin en "
-"bas à  droite."
+"Il vous reste encore quelques étapes à  effectuer avant que votre système ne "
+"soit prêt à  l'emploi. L'agent de configuration Red Hat vous guidera tout au "
+"long de la configuration de base. Pour continuer, cliquez sur le bouton "
+"\"Suivant\" dans le coin en bas à  droite."
+
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "Firstboot a déjà  été exécuté sur ce système.\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Exécutez les commandes suivantes pour exécuter firstboot depuis la ligne "
+#~ "de commande :"
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Exécutez les commandes suivantes pour exécuter firstboot au cours du "
+#~ "démarrage du système :"
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot n'exÃ©cute pas en niveau d'exÃ©cution 3."
@@ -885,14 +897,14 @@ msgstr ""
 #~ "\"No\", the system will continue booting and you will never see this "
 #~ "message again.  Do you wish to run the Setup Agent now?"
 #~ msgstr ""
-#~ "L'agent de mise Ã  jour Red Hat peut vous aider Ã  configurer votre machine "
-#~ "en vous guidant dans une sÃ©rie d'Ã©tapes. L'agent de mise Ã  jour a besoin "
-#~ "du systÃšme X Window pour fonctionner. \n"
+#~ "L'agent de mise Ã  jour Red Hat peut vous aider Ã  configurer votre "
+#~ "machine en vous guidant dans une sÃ©rie d'Ã©tapes. L'agent de mise Ã  "
+#~ "jour a besoin du systÃšme X Window pour fonctionner. \n"
 #~ "\n"
-#~ "Si vous dÃ©sirez lancer l'agent de mise Ã  jour, veuillez choisir \"Oui\". "
-#~ "Si vous choisissez \"Non\", le systÃšme poursuivra son amorÃ§age et ce "
-#~ "message ne rÃ©apparaÃ®tra plus. Voulez-vous lancer l'agent de mise Ã  jour "
-#~ "maintenant ?"
+#~ "Si vous dÃ©sirez lancer l'agent de mise Ã  jour, veuillez choisir \"Oui"
+#~ "\". Si vous choisissez \"Non\", le systÃšme poursuivra son amorÃ§age et "
+#~ "ce message ne rÃ©apparaÃ®tra plus. Voulez-vous lancer l'agent de mise Ã  "
+#~ "jour maintenant ?"
 
 #~ msgid "Red Hat Linux Documentation CD"
 #~ msgstr "CD-ROM de documentation Red Hat Linux"
@@ -917,20 +929,21 @@ msgstr ""
 #~ "If you did not purchase this product, visit http://rhn.redhat.com for "
 #~ "more information or to subscribe to Red Hat Network Basic Service. \n"
 #~ msgstr ""
-#~ "Cette Ã©tape enregistrera votre systÃšme Ã  un compte d'essai gratuit de Red "
-#~ "Hat Network. Vous pourrez ainsi recevoir les derniers paquetages de "
+#~ "Cette Ã©tape enregistrera votre systÃšme Ã  un compte d'essai gratuit de "
+#~ "Red Hat Network. Vous pourrez ainsi recevoir les derniers paquetages de "
 #~ "logiciels directement de Red Hat. En utilisant cet outil, vous aurez "
-#~ "toujours un systÃšme Red Hat Linux Ã©quipÃ© des derniers patchs de sÃ©curitÃ©, "
-#~ "correctifs de bogues et amÃ©liorations des paquetages de logiciels.\n"
+#~ "toujours un systÃšme Red Hat Linux Ã©quipÃ© des derniers patchs de "
+#~ "sÃ©curitÃ©, correctifs de bogues et amÃ©liorations des paquetages de "
+#~ "logiciels.\n"
 #~ "\n"
 #~ "Si vous avez achetÃ© ce produit, vous avez un essai gratuit de Red Hat "
 #~ "Network Basic Service. Pour accÃ©der Ã  cet essai gratuit, consultez la "
 #~ "carte d'activation du produit que vous trouverez dans la boÃ®te : elle "
 #~ "contient des indications plus prÃ©cises.\n"
 #~ "\n"
-#~ "Si vous n'avez pas achetÃ© ce produit, rendez-vous Ã  l'adresse http://rhn."
-#~ "redhat.com pour de plus amples dÃ©tails ou pour vous inscrire Ã  Red Hat "
-#~ "Network Basic Service.\n"
+#~ "Si vous n'avez pas achetÃ© ce produit, rendez-vous Ã  l'adresse http://"
+#~ "rhn.redhat.com pour de plus amples dÃ©tails ou pour vous inscrire Ã  Red "
+#~ "Hat Network Basic Service.\n"
 
 #~ msgid "_Yes, I want to register my system with Red Hat Network."
 #~ msgstr "_Oui, je voudrais enregistrer mon systÃšme Ã  Red Hat Network."
@@ -951,8 +964,8 @@ msgstr ""
 #~ "A user account is required to use the system.  Create a user account by "
 #~ "filling in the information below."
 #~ msgstr ""
-#~ "Un compte utilisateur est nÃ©cessaire pour utiliser le systÃšme. CrÃ©er un "
-#~ "compte utilisateur en fournissant les informations ci-dessous."
+#~ "Un compte utilisateur est nÃ©cessaire pour utiliser le systÃšme. CrÃ©er "
+#~ "un compte utilisateur en fournissant les informations ci-dessous."
 
 #~ msgid ""
 #~ "A user account was not created.  Are you sure that you want to continue "
@@ -1025,11 +1038,11 @@ msgstr ""
 #~ "Agent to update your system.  To set up a network connection, please "
 #~ "click on the button below.\n"
 #~ msgstr ""
-#~ "Une connexion de rÃ©seau n'a pas Ã©tÃ© dÃ©tectÃ©e. Il est nÃ©cessaire de vous "
-#~ "connecter au rÃ©seau pour enregistrer votre systÃšme Ã  l'aide de RHN et "
-#~ "pour pouvoir utiliser Red Hat Update Agent pour mettre Ã  jour votre "
-#~ "systÃšme. Pour Ã©tablir une connexion, veuillez cliquer sur le bouton ci-"
-#~ "dessous.\n"
+#~ "Une connexion de rÃ©seau n'a pas Ã©tÃ© dÃ©tectÃ©e. Il est nÃ©cessaire de "
+#~ "vous connecter au rÃ©seau pour enregistrer votre systÃšme Ã  l'aide de "
+#~ "RHN et pour pouvoir utiliser Red Hat Update Agent pour mettre Ã  jour "
+#~ "votre systÃšme. Pour Ã©tablir une connexion, veuillez cliquer sur le "
+#~ "bouton ci-dessous.\n"
 
 #~ msgid "Configure using DHCP"
 #~ msgstr "Configuration Ã  l'aide de DHCP"
@@ -1074,7 +1087,8 @@ msgstr ""
 #~ msgstr "SÃ©lection de la langue"
 
 #~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "Les modifications seront appliquÃ©es lors de la prochaine connexion."
+#~ msgstr ""
+#~ "Les modifications seront appliquÃ©es lors de la prochaine connexion."
 
 #~ msgid "Mouse"
 #~ msgstr "Souris"
@@ -1129,14 +1143,14 @@ msgstr ""
 #~ "and sends you email notifications, it can:"
 #~ msgstr ""
 #~ "Red Hat Network est une solution Internet pour la gestion d'un ou "
-#~ "plusieurs systÃšmes Linux. Toutes les alertes de sÃ©curitÃ©, les alertes de "
-#~ "rÃ©paration de bogue et les alertes d'amÃ©lioration (collectivement appelÃ©s "
-#~ "Alertes Errata) peuvent Ãªtre rÃ©cupÃ©rÃ©es directement depuis Red Hat. Vous "
-#~ "pouvez obtenir directement les mises Ã  jour sur votre systÃšme dÃšs "
-#~ "qu'elles sont publiÃ©es.\n"
+#~ "plusieurs systÃšmes Linux. Toutes les alertes de sÃ©curitÃ©, les alertes "
+#~ "de rÃ©paration de bogue et les alertes d'amÃ©lioration (collectivement "
+#~ "appelÃ©s Alertes Errata) peuvent Ãªtre rÃ©cupÃ©rÃ©es directement depuis "
+#~ "Red Hat. Vous pouvez obtenir directement les mises Ã  jour sur votre "
+#~ "systÃšme dÃšs qu'elles sont publiÃ©es.\n"
 #~ "\n"
-#~ "Red Hat Network garde une trace de la publication des mises Ã  jour Errata "
-#~ "et vous envoie une note par courrier Ã©lectronique. Il peut donc :"
+#~ "Red Hat Network garde une trace de la publication des mises Ã  jour "
+#~ "Errata et vous envoie une note par courrier Ã©lectronique. Il peut donc :"
 
 #~ msgid ""
 #~ " -- Reduce the time and effort required by system administrators to stay "
@@ -1151,8 +1165,8 @@ msgstr ""
 #~ "systÃšme pour se maintenir en haut de la liste Errata de Red Hat\n"
 #~ " -- Minimiser la vulnÃ©rabilitÃ© de la sÃ©curitÃ© de votre rÃ©seau en "
 #~ "fournissant des patches dÃšs que Red Hat les publie\n"
-#~ " -- Filtrer les mises Ã  jour de paquetage qui ne sont pas utiles Ã  votre "
-#~ "rÃ©seau\n"
+#~ " -- Filtrer les mises Ã  jour de paquetage qui ne sont pas utiles Ã  "
+#~ "votre rÃ©seau\n"
 #~ " --Programmer les mises Ã  jour Errata de faÃ§on Ã  ce que les paquetages "
 #~ "soient livrÃ©s auxsystÃšmes sÃ©lectionnÃ©s lorque vous le voulez"
 
@@ -1164,4 +1178,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Lancer l'agent de mise Ã  jour Red Hat"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2004-02-11 16:25+1000\n"
 "Last-Translator: Sarah Wang <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -132,8 +132,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -165,18 +165,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "该系统上已经运行过一次 firstboot 程序。\n"
-
-#: ../src/firstboot.py:113
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "要从命令行运行 firstboot 程序，执行下列命令："
-
-#: ../src/firstboot.py:118
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -207,6 +195,9 @@ msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -231,12 +222,12 @@ msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "返回(_B)"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "下一步(_N)"
 
@@ -280,11 +271,12 @@ msgstr "下一步(_N)"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "欢迎"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -452,7 +444,8 @@ msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -468,7 +461,7 @@ msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。
 msgid "User Account"
 msgstr "用户账号"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -477,34 +470,35 @@ msgstr ""
 "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
 "信息。"
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "用户名(_U)："
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "全名(_E)："
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "口令(_P)："
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "确认口令(_M)："
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr "如果您需要使用网络验证，如 Kerberos 或 NIS，请点击“使用网络登录”按钮。"
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "使用网络登录(_L)..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -513,24 +507,24 @@ msgstr ""
 "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
 "登录，而这个账号是为管理而保留的。"
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "继续(_C)"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "创建账号(_A)"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "口令不匹配。请重新输入口令。"
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "口令太短。请至少使用 6 个字符。"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -540,52 +534,54 @@ msgstr "用户名为“%s”是被保留的系统账号。请指定另一个用�
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "用户名长度必须小于 33 个字符。"
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "用户名不能以数字开头。"
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "用户名“%s”包含空格。请不要在用户名中包含空格。"
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "用户名“%s”包含标点符号字符。请不要在用户名中使用标点符号。"
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
-#: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:291
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -831,6 +827,18 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配"
-"置。请点击右下角的“下一步”按钮来继续。"
+"在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
+"点击右下角的“下一步”按钮来继续。"
 
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "该系统上已经运行过一次 firstboot 程序。\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr "要从命令行运行 firstboot 程序，执行下列命令："
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："

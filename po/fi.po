@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2004-01-24 18:32+0200\n"
 "Last-Translator: Mikko Ikola <ikola@iki.fi>\n"
 "Language-Team: Finnish\n"
@@ -94,8 +94,8 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"Koska moduulissa %s on ongelma, Red Hat -asennusohjelma"
-"ei lataa sitä ja suorittaa jäljellä olevat moduulit."
+"Koska moduulissa %s on ongelma, Red Hat -asennusohjelmaei lataa sitä ja "
+"suorittaa jäljellä olevat moduulit."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -130,8 +130,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -163,18 +163,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstboot on jo kerran suoritettu tässä järjestelmässä.\n"
-
-#: ../src/firstboot.py:113
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Suorittaaksesi firstbootin komentoriviltä, kirjoita seuraavat komennot:"
-
-#: ../src/firstboot.py:118
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "Suorittaaksesi firstbootin järjestelmän käynnistyksessä, kirjoita seuraavat komennot:"
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -205,6 +193,9 @@ msgstr "Suorittaaksesi firstbootin järjestelmän käynnistyksessä, kirjoita se
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -229,12 +220,12 @@ msgstr "Suorittaaksesi firstbootin järjestelmän käynnistyksessä, kirjoita se
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "_Edellinen"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "_Seuraava"
 
@@ -278,11 +269,12 @@ msgstr "_Seuraava"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Tervetuloa"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -431,8 +423,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Jos sinulla on jokin alla olevista CD-levyistä, voit asentaa niistä paketteja "
-"syöttämällä CD:n sisään ja napsauttamalla asianmukaista painiketta."
+"Jos sinulla on jokin alla olevista CD-levyistä, voit asentaa niistä "
+"paketteja syöttämällä CD:n sisään ja napsauttamalla asianmukaista painiketta."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -443,14 +435,16 @@ msgstr "Asenna..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-levyä ei tunnistettu. Syötä CD-levy asemaan ja napsauta OK jatkaaksesi."
+msgstr ""
+"CD-levyä ei tunnistettu. Syötä CD-levy asemaan ja napsauta OK jatkaaksesi."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Autorun-ohjelmaa ei löydetty CD:ltä. Napsauta OK jatkaaksesi."
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -466,7 +460,7 @@ msgstr "Autorun-ohjelmaa ei löydetty CD:ltä. Napsauta OK jatkaaksesi."
 msgid "User Account"
 msgstr "Käyttäjätunnus"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -475,24 +469,24 @@ msgstr ""
 "On suositeltavaa, että luot henkilökohtaisen käyttäjätunnuksen normaaliin "
 "(ei-ylläpito) käyttöön. Luodaksesi tunnuksen syötä seuraavat tiedot."
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "_Käyttäjänimi:"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "Koko _nimi:"
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "_Salasana:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "_Varmista salasana:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -500,60 +494,61 @@ msgstr ""
 "Jos haluat käyttää verkkotunnistautumista, kuten Kerberosia tai NIS:ä, "
 "napsauta \"Käytä verkkokirjautumista\"."
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "Käytä _verkkokirjautumista..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"On erittäin suositeltavaa luoda henkilökohtainen käyttäjätunnus. "
-"Jos jätät sen luomatta, voit kirjautua vain pääkäyttäjänä, joka on varattu "
-"ainoastaan ylläpitotehtäviin."
+"On erittäin suositeltavaa luoda henkilökohtainen käyttäjätunnus. Jos jätät "
+"sen luomatta, voit kirjautua vain pääkäyttäjänä, joka on varattu ainoastaan "
+"ylläpitotehtäviin."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "_Jatka"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "_Luo tunnus"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Salasanat eivät täsmää. Syötä salasana uudelleen."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Salasana on liian lyhyt. Käytä ainakin kuusimerkkistä salasanaa."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Käyttäjänimi %s on varattu järjestelmätunnukseksi.  Käytä jotain "
-"toista käyttäjänimeä."
+"Käyttäjänimi %s on varattu järjestelmätunnukseksi.  Käytä jotain toista "
+"käyttäjänimeä."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "Käyttäjänimen tulee olla alle 33 merkkiä pitkä."
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "Käyttäjänimi ei saa alkaa numerolla."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -562,37 +557,42 @@ msgstr ""
 "Käyttäjänimi \"%s\" sisältää välilyöntejä. Älä sisällytä käyttäjänimeen "
 "välilyöntejä."
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr "Käyttäjänimi %s sisältää välimerkkejä. Älä käytä välimerkkejä käyttäjänimessä."
+msgstr ""
+"Käyttäjänimi %s sisältää välimerkkejä. Älä käytä välimerkkejä "
+"käyttäjänimessä."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr "Käyttäjänimi %s sisältää isoja kirjaimia. Älä käytä isoja kirjaimia käyttäjänimessä."
+msgstr ""
+"Käyttäjänimi %s sisältää isoja kirjaimia. Älä käytä isoja kirjaimia "
+"käyttäjänimessä."
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Käyttäjänimi %s sisältää virheellisiä merkkejä. Käytä vain "
-"ASCII-merkkejä."
+"Käyttäjänimi %s sisältää virheellisiä merkkejä. Käytä vain ASCII-merkkejä."
 
-#: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:291
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Salasana sisältää virheellisiä merkkejä. Käytä vain ASCII-merkkejä."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nimi %s sisältää virheellisiä merkkejä. Käytä vain ASCII-merkkejä."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -650,8 +650,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Yhteyttä osoitteeseen %s ei saatu muodostettua. Joko %s ei ole "
-"saatavilla tai palomuuriasetukset estävät NTP-yhteydet."
+"Yhteyttä osoitteeseen %s ei saatu muodostettua. Joko %s ei ole saatavilla "
+"tai palomuuriasetukset estävät NTP-yhteydet."
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -705,8 +705,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Järjestelmäsi on nyt asennettu ja valmiina käyttöön. Napsauta "
-"\"Seuraava\"-painiketta alhaalta oikealta jatkaaksesi."
+"Järjestelmäsi on nyt asennettu ja valmiina käyttöön. Napsauta \"Seuraava\"-"
+"painiketta alhaalta oikealta jatkaaksesi."
 
 #.
 #. networking.py - networking module for firstboot
@@ -799,9 +799,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Napsauta \"Soita testiääni\"-painiketta kuullaksesi esimerkkiäänen. "
-"Sinun tulisi kuulla kolme erilaista ääntä. Ensimmäinen ääni tulee "
-"oikeasta kanavasta, toinen vasemmasta ja kolmas keskeltä."
+"Napsauta \"Soita testiääni\"-painiketta kuullaksesi esimerkkiäänen. Sinun "
+"tulisi kuulla kolme erilaista ääntä. Ensimmäinen ääni tulee oikeasta "
+"kanavasta, toinen vasemmasta ja kolmas keskeltä."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -842,6 +842,21 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Järjestelmä on muutamaa vaihetta vaille valmis käyttöön. Asennusohjelma "
-"ohjaa sinut nyt joidenkin perusasetusten läpi. Napsauta \"Seuraava\"-painiketta "
-"alhaalta oikealta jatkaaksesi."
+"ohjaa sinut nyt joidenkin perusasetusten läpi. Napsauta \"Seuraava\"-"
+"painiketta alhaalta oikealta jatkaaksesi."
 
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "Firstboot on jo kerran suoritettu tässä järjestelmässä.\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Suorittaaksesi firstbootin komentoriviltä, kirjoita seuraavat komennot:"
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Suorittaaksesi firstbootin järjestelmän käynnistyksessä, kirjoita "
+#~ "seuraavat komennot:"

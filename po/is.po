@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <ra@ra.is>\n"
@@ -130,8 +130,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -163,23 +163,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstboot hefur þegar verið keyrt á þessari vél.\n"
-
-#: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Gefðu eftirfarandi skipanir ef þú vilt keyra firstboot úr skipanalínunni:"
-
-#: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
-"Til að keyra firstboot sjálfkrafa þegar vélin ræsir þarftu að framkvæma "
-"eftirfarandi skipanir:"
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -210,6 +193,9 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -234,12 +220,12 @@ msgstr ""
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "Til _baka"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "Á_fram"
 
@@ -283,11 +269,12 @@ msgstr "Á_fram"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Velkomin(n)"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -476,7 +463,7 @@ msgstr ""
 msgid "User Account"
 msgstr "Notandaaðgangur"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -486,24 +473,24 @@ msgstr ""
 "vinnslu. Til að búa til notandaaðgang þarftu að gefa upp umbeðnar "
 "upplýsingar."
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "_Notandanafn:"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "F_ullt nafn:"
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "_Lykilorð:"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "St_aðfesta lykilorð:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -511,11 +498,12 @@ msgstr ""
 "Ef þú þarft að nota netauðkenningu eins og til dæmis Kerberos eða NIS þarftu "
 "að haka við í nota netauðkenningu hnappinn."
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "_Nota netauðkenningu..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -525,24 +513,24 @@ msgstr ""
 "þess getur þú einungis notað vélina sem rótarnotandinn sem er eingöngu "
 "ætlaður til kerfisstjórnunar."
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "_Halda áfram"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "Búa til _notandaaðgang"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lykilorðin stemma ekki. Vinsamlegast sláðu það inn aftur."
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lykilorðið er of stutt. Vinsamlegast hafðu það amk 6 stafi."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -554,17 +542,17 @@ msgstr ""
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "Notandaheitið má ekki vera lengra en 33 stafir."
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "Notandaheitið má ekki byrja á tölu."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -573,7 +561,7 @@ msgstr ""
 "Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í "
 "notandaheitum."
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -582,7 +570,7 @@ msgstr ""
 "Notandaheitið '%s' er með púnktum eða kommum. Vinsamlegast notið ekki slík "
 "tákn í notandaheitum."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -591,7 +579,7 @@ msgstr ""
 "Notandaheitið '%s' inniheldur hástafi. Vinsamlegast notið ekki hástafi í "
 "notandaheitum."
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -600,14 +588,14 @@ msgstr ""
 "Notandaheitið '%s' inniheldur ógilda stafi.  Vinsamlegast notið eingöngu "
 "ASCII tákn."
 
-#: ../src/modules/create_user.py:287
+#: ../src/modules/create_user.py:291
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Lykilorðið inniheldur ógilda stafi.  Vinsamlegast notið eingöngu ASCII tákn."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -861,6 +849,22 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Það eru nokkur atriði sem þú þarft að fara í gegnum áður en vélin þín er "
-"tilbúin til notkunar. Uppsetningarforritið mun nú leiða þig í gegnum "
-"það sem eftir er að stilla. Vinsamlegast smelltu á \"Áfram\" hnappinn í "
-"hægra horninu hér að neðan til að halda áfram."
+"tilbúin til notkunar. Uppsetningarforritið mun nú leiða þig í gegnum það sem "
+"eftir er að stilla. Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra "
+"horninu hér að neðan til að halda áfram."
+
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "Firstboot hefur þegar verið keyrt á þessari vél.\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Gefðu eftirfarandi skipanir ef þú vilt keyra firstboot úr skipanalínunni:"
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "Til að keyra firstboot sjálfkrafa þegar vélin ræsir þarftu að framkvæma "
+#~ "eftirfarandi skipanir:"

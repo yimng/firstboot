@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-12-04 17:55-0500\n"
+"POT-Creation-Date: 2004-03-08 16:16-0500\n"
 "PO-Revision-Date: 2004-02-25 14:33GMT+10:00\n"
 "Last-Translator: Kiyoto James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -133,8 +133,8 @@ msgstr ""
 #. # You should have received a copy of the GNU General Public License
 #. # along with this program; if not, write to the Free Software
 #. # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. Turn off the firstboot init script
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
 #. !/usr/bin/python2
 #. #
 #. # firstboot.py - kickoff script for firstboot
@@ -166,18 +166,6 @@ msgstr ""
 #. If /etc/sysconfig/firstboot exists, parse the file
 #. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
 #. Firstboot should not be run
-#: ../src/firstboot.py:112
-msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
-
-#: ../src/firstboot.py:113
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
-
-#: ../src/firstboot.py:118
-msgid "In order to run firstboot during system bootup, run the following commands:"
-msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
-
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
 #. textWindow for the TUI
@@ -208,6 +196,9 @@ msgstr "システムのブート中にfirstbootを実行するには、次のコ
 #. #
 #. # I18N
 #. #
+#.
+#. Stuff for screenshots
+#.
 #. Create the initial window and a vbox to fill it with.
 #. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
 #. #         if rhgb == None:
@@ -232,12 +223,12 @@ msgstr "システムのブート中にfirstbootを実行するには、次のコ
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "戻る(_B)"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "次へ(_N)"
 
@@ -281,11 +272,12 @@ msgstr "次へ(_N)"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "ようこそ"
 
+#. Let's take some screenshots
 #. # functions.py - some helper functions
 #. #
 #. # Copyright (C) 2002, 2003 Red Hat, Inc.
@@ -455,8 +447,11 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "オートランプログラムがcd上に見つかりません。「ＯＫ」をクリックして継続します。"
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"オートランプログラムがcd上に見つかりません。「ＯＫ」をクリックして継続しま"
+"す。"
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -471,7 +466,7 @@ msgstr "オートランプログラムがcd上に見つかりません。「Ｏ�
 msgid "User Account"
 msgstr "ユーザーアカウント"
 
-#: ../src/modules/create_user.py:47
+#: ../src/modules/create_user.py:48
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -480,24 +475,24 @@ msgstr ""
 "通常(管理業務以外)の使用には、個人的なユーザーアカウントを作成される事を お勧"
 "めします。個人アカウントを作成するには、要求される情報を用意して 下さい。"
 
-#: ../src/modules/create_user.py:57
+#: ../src/modules/create_user.py:58
 msgid "_Username:"
 msgstr "ユーザー名(_U):"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
 msgstr "フルネーム(_E): "
 
-#: ../src/modules/create_user.py:71
+#: ../src/modules/create_user.py:72
 msgid "_Password:"
 msgstr "パスワード(_P):"
 
-#: ../src/modules/create_user.py:78
+#: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
 msgstr "パスワードの確認(_m):"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:95
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -505,11 +500,12 @@ msgstr ""
 "Kerberos や NIS などのネットワーク認証を使用する必要がある場合は、 ネットワー"
 "クログインを使用するボタンをクリックしてください。"
 
-#: ../src/modules/create_user.py:104
+#: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
 msgstr "ネットワークログインを使用する(_L)..."
 
-#: ../src/modules/create_user.py:137
+#. If they've run authconfig, don't pop up messageDialog
+#: ../src/modules/create_user.py:141
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -519,24 +515,24 @@ msgstr ""
 "状態で継続すると、rootアカウントでログインするしかありません。但し、 これは管"
 "理業務用のみに予約されています。"
 
-#: ../src/modules/create_user.py:145
+#: ../src/modules/create_user.py:149
 msgid "_Continue"
 msgstr "続ける(_C)"
 
-#: ../src/modules/create_user.py:146
+#: ../src/modules/create_user.py:150
 msgid "Create _account"
 msgstr "アカウントを作成(_a)"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "パスワードが一致しません。再度パスワードを入力して下さい。"
 
-#: ../src/modules/create_user.py:180
+#: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -548,24 +544,25 @@ msgstr ""
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:238
+#: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
 msgstr "ユーザー名は33文字以下でなければなりません。"
 
-#: ../src/modules/create_user.py:244
+#: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
 msgstr "ユーザー名は番号で始まってはいけません。"
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:256
+#: ../src/modules/create_user.py:260
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
+msgstr ""
+"ユーザー名'%s'には空白があります。ユーザー名に空白を入れないでください。"
 
-#: ../src/modules/create_user.py:263
+#: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -574,7 +571,7 @@ msgstr ""
 "ユーザー名'%s'には句読点があります。ユーザー名には句読点は使用しないで 下さ"
 "い。"
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -583,7 +580,7 @@ msgstr ""
 "ユーザー名'%s'には大文字が含まれています。ユーザー名には大文字を含め ないで下"
 "さい。"
 
-#: ../src/modules/create_user.py:277
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -592,15 +589,18 @@ msgstr ""
 "ユーザー名'%s'には無効な文字が含まれています。ASCII文字のみを使用して 下さ"
 "い。"
 
-#: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:291
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "パスワードは無効な文字を含んでいます。ASCII文字のみを使用して下さい。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:299
+#: ../src/modules/create_user.py:303
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -712,8 +712,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"システムが設定できましたので使用できる状態になりました。右下隅にある"
-"「次へ」ボタンをクリックして続けてください。"
+"システムが設定できましたので使用できる状態になりました。右下隅にある「次へ」"
+"ボタンをクリックして続けてください。"
 
 #.
 #. networking.py - networking module for firstboot
@@ -848,9 +848,24 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"システムが使用できるようになるまでもう少しステップがあります。セット"
-"アップエージェントはここで、基本的な設定を通してガイドしていきます。 "
-"右下隅にある「次へ」ボタンをクリックして続けて下さい。"
+"システムが使用できるようになるまでもう少しステップがあります。セットアップ"
+"エージェントはここで、基本的な設定を通してガイドしていきます。 右下隅にある"
+"「次へ」ボタンをクリックして続けて下さい。"
+
+#~ msgid "Firstboot has already been run once on this system.\n"
+#~ msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
+
+#~ msgid ""
+#~ "In order to run firstboot from the command line, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
+
+#~ msgid ""
+#~ "In order to run firstboot during system bootup, run the following "
+#~ "commands:"
+#~ msgstr ""
+#~ "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstbootはランレベル3では起動しません。"
@@ -1170,4 +1185,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-
