@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Wed Jun 26 12:34:52 2002\n"
-"PO-Revision-Date: 2002-06-28 15:17+1000\n"
+"POT-Creation-Date: Tue Jul  2 17:52:19 2002\n"
+"PO-Revision-Date: 2002-07-03 09:28+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -28,53 +28,114 @@ msgid "Linux Application CD"
 msgstr "Linux 應用程式 CD"
 
 #: ../src/modules/additional_cds.py:58
-msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
-msgstr "假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文件 CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
+msgid ""
+"If you have additional CDs from the Red Hat Linux box set, such as the Red "
+"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
+"disc now and click the corresponding button below."
+msgstr ""
+"假如您在 Red Hat Linux 的盒裝版中還有額外的 CD，例如 Red Hat Linux 說明文件 "
+"CD 或 Linux 應用程式 CD, 請將該 CD 放入光碟機，然後按下以下的按鈕。"
 
-#: ../src/modules/date.py:48
+#: ../src/modules/additional_cds.py:94 ../src/modules/register.py:113
+#: ../src/modules/up2date.py:83
+msgid ""
+"This feature is not yet implemented.  Please do not report bugs about this "
+"button."
+msgstr "這個功能尚未完成。 請不要回報關於這個按鈕的程式錯誤。"
+
+#: ../src/modules/additional_cds.py:95 ../src/modules/register.py:114
+#: ../src/modules/up2date.py:84
+msgid "Error"
+msgstr "錯誤"
+
+#: ../src/modules/date.py:49
 msgid "Date & Time"
 msgstr "日期與時間"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:50
 msgid "Date & Time Configuration"
 msgstr "日期與時間設定"
 
-#: ../src/modules/date.py:51
+#: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr "請設定系統的日期與時間。"
 
-#: ../src/modules/hardware.py:28
-msgid "Configure hardware"
+#: ../src/modules/hardware.py:27
+msgid "Configure Hardware"
 msgstr "設定硬體"
 
-#: ../src/modules/hardware.py:82
+#: ../src/modules/hardware.py:81
 msgid "Keyboard Map:"
 msgstr "鍵盤配置："
 
-#: ../src/modules/hardware.py:88 ../src/modules/hardware.py:104
-#: ../src/modules/hardware.py:125
+#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
+#: ../src/modules/hardware.py:124
 msgid "Configure..."
 msgstr "設定..."
 
-#: ../src/modules/hardware.py:97
+#: ../src/modules/hardware.py:96
 msgid "Mouse:"
 msgstr "滑鼠："
 
-#: ../src/modules/hardware.py:119
+#: ../src/modules/hardware.py:118
 msgid "Sound card:"
 msgstr "音效卡："
 
-#: ../src/modules/hardware.py:136
+#: ../src/modules/hardware.py:135
 msgid "Networking:"
 msgstr "網路連線："
 
-#: ../src/modules/hardware.py:145
+#: ../src/modules/hardware.py:144
 msgid "Display:"
 msgstr "顯示器："
 
-#: ../src/modules/hardware.py:154
+#: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "印表機："
+
+#: ../src/modules/keyboard_gui.py:39
+msgid "Keyboard"
+msgstr "鍵盤配置"
+
+#: ../src/modules/keyboard_gui.py:41
+msgid "Keyboard Configuration"
+msgstr "鍵盤設定"
+
+#: ../src/modules/keyboard_gui.py:43
+msgid "Please select the keyboard for the system."
+msgstr "請選擇系統的鍵盤。"
+
+#: ../src/modules/language.py:53
+msgid "Language Selection"
+msgstr "語系選擇"
+
+#: ../src/modules/language.py:56
+msgid "Please select the default language for the system."
+msgstr "請選擇系統預設的語言。"
+
+#: ../src/modules/language.py:160
+msgid "The changes will take effect the next time you log in."
+msgstr "所做的變更將在下次您登入時生效。"
+
+#: ../src/modules/language.py:196
+msgid "Language Configuration"
+msgstr "語系設定"
+
+#: ../src/modules/mouse_gui.py:38
+msgid "Mouse"
+msgstr "滑鼠"
+
+#: ../src/modules/mouse_gui.py:40
+msgid "Mouse Configuration"
+msgstr "滑鼠設定"
+
+#: ../src/modules/mouse_gui.py:42
+msgid "Please select the mouse for the system."
+msgstr "請選擇系統的滑鼠。"
+
+#: ../src/modules/mouse_gui.py:52
+msgid "Emulate 3 button click"
+msgstr "模擬三鍵式滑鼠 "
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -85,8 +146,14 @@ msgid "Set up Networking"
 msgstr "設定網路連線"
 
 #: ../src/modules/networking.py:64
-msgid "A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
-msgstr "偵測不到網路連線。 需要用到網路連線以註冊您的系統到 RHN，並使用 Red Hat 更新代理程式來更新您的系統。 要設定網路連線，請點選以下的按鈕。\n"
+msgid ""
+"A network connection was not detected.  Network connectivity is necessary "
+"for registering your system with RHN and for using the Red Hat Update Agent "
+"to update your system.  To set up a network connection, please click on the "
+"button below.\n"
+msgstr ""
+"偵測不到網路連線。 需要用到網路連線以註冊您的系統到 RHN，並使用 Red Hat 更新"
+"代理程式來更新您的系統。 要設定網路連線，請點選以下的按鈕。\n"
 
 #: ../src/modules/networking.py:114
 msgid "Set up networking..."
@@ -146,20 +213,31 @@ msgstr "向 Red Hat Network 註冊您的系統"
 
 #: ../src/modules/register.py:55
 msgid ""
-"Red Hat Network is an Internet solution for managing one or more Red Hat Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts (collectively known as Errata Alerts) can be retreived directly from Red Hat. You can even have updates automatically delivered directly to your system as soon as they are released. \n"
+"Red Hat Network is an Internet solution for managing one or more Red Hat "
+"Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts "
+"(collectively known as Errata Alerts) can be retreived directly from Red "
+"Hat. You can even have updates automatically delivered directly to your "
+"system as soon as they are released. \n"
 "\n"
-"Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
+"Because Red Hat Network keeps track of when Errata Updates are released and "
+"sends you email notifications, it can:"
 msgstr ""
-"Red Hat Network 是用來管理一或多個 Red Hat Linux 系統的一種網際網路的解決方案。 所有的 安全性警示，程式錯誤修正警示以及功能性加強警示（集合稱為 Errata Alerts），都可以直接從 Red Hat 取得。 您甚至可以設定自動傳送新釋出的更新到您的系統。\n"
+"Red Hat Network 是用來管理一或多個 Red Hat Linux 系統的一種網際網路的解決方"
+"案。 所有的 安全性警示，程式錯誤修正警示以及功能性加強警示（集合稱為 Errata "
+"Alerts），都可以直接從 Red Hat 取得。 您甚至可以設定自動傳送新釋出的更新到您"
+"的系統。\n"
 "\n"
 "因為 Red Hat Network 追蹤 Errata 更新的釋放，並傳送您電子郵件通知，它可以："
 
 #: ../src/modules/register.py:68
 msgid ""
-" -- Reduce the time and effort required by system administrators to stay on top of the Red Hat errata list\n"
-" -- Minimize security vulnerabilities in your network by providing the patches as soon as Red Hat releases them\n"
+" -- Reduce the time and effort required by system administrators to stay on "
+"top of the Red Hat errata list\n"
+" -- Minimize security vulnerabilities in your network by providing the "
+"patches as soon as Red Hat releases them\n"
 " -- Filter out package updates not relevant to your network\n"
-" -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
+" -- Schedule Errata Updates so that packages are delivered to selected "
+"systems when you want it"
 msgstr ""
 " -- 減少系統管理員為了要保持 Red Hat errata 清單的更新，所需要的時間與精神\n"
 " -- 一旦 Red Hat 釋出修補程式便提供它們以減少網路環境中的安全性漏洞\n"
@@ -174,13 +252,81 @@ msgstr "馬上註冊系統"
 msgid "You currently have no network connection."
 msgstr "目前您並沒有網路連線。"
 
+#: ../src/modules/rootpassword.py:56
+msgid "Root Password"
+msgstr "Root 密碼"
+
+#: ../src/modules/rootpassword.py:59
+msgid "Please set the root password for the system."
+msgstr "請設定系統的 root 密碼。"
+
+#: ../src/modules/rootpassword.py:64
+msgid "Root Password:"
+msgstr "Root 密碼："
+
+#: ../src/modules/rootpassword.py:68
+msgid "Confirm:"
+msgstr "密碼確認："
+
+#: ../src/modules/rootpassword.py:88
+msgid "Root password must be at least 6 characters in length."
+msgstr "Root 密碼的長度必須至少為 6 個字元。"
+
+#: ../src/modules/rootpassword.py:98
+msgid "Passwords do not match.  Please try again."
+msgstr "密碼不符。 請再試一次。"
+
+#: ../src/modules/securitylevel.py:35
+msgid "Security Level Configuration"
+msgstr "安全等級設定"
+
+#: ../src/modules/securitylevel.py:37
+msgid "Please choose the security level for the system."
+msgstr "請選擇系統的安全等級。"
+
+#: ../src/modules/securitylevel.py:40
+msgid "Security Level:"
+msgstr "安全等級："
+
+#: ../src/modules/securitylevel.py:47
+msgid "Use default firewall rules"
+msgstr "使用預設防火牆規則"
+
+#: ../src/modules/securitylevel.py:48
+msgid "Customize"
+msgstr "自訂"
+
+#: ../src/modules/securitylevel.py:50
+msgid "Trusted devices:"
+msgstr "信任裝置："
+
+#: ../src/modules/securitylevel.py:57
+msgid "Allow incoming:"
+msgstr "允許流入："
+
+#: ../src/modules/securitylevel.py:64
+msgid "Other ports: (1029:tcp)"
+msgstr "其他連接埠： (1029:tcp)"
+
+#: ../src/modules/securitylevel.py:249
+msgid "Firewall Configuration"
+msgstr "防火牆設定"
+
 #: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理程式"
 
 #: ../src/modules/up2date.py:55
-msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
-msgstr "現在您已經向 Red Hat Network 註冊，您可以執行 Red Hat 更新代理程式，以接收直接從 Red Hat 傳來最新的軟體套件。  使用這個工具將使您總是擁有最新的 Red Hat Linux 系統，並含有所有的安全性修補，程式錯誤修正以及軟體套件的功能強化。"
+msgid ""
+"Now that you are registered with Red Hat Network, you can run the Red Hat "
+"Update Agent to receive the latest software packages directly from Red Hat.  "
+"Using this tool will allow you to always have the most up-to-date Red Hat "
+"Linux system with all the security patches, bug fixes, and software package "
+"enhancements"
+msgstr ""
+"現在您已經向 Red Hat Network 註冊，您可以執行 Red Hat 更新代理程式，以接收直"
+"接從 Red Hat 傳來最新的軟體套件。  使用這個工具將使您總是擁有最新的 Red Hat "
+"Linux 系統，並含有所有的安全性修補，程式錯誤修正以及軟體套件的功能強化。"
 
 #: ../src/modules/up2date.py:66
 msgid "Start the Red Hat Update Agent"
