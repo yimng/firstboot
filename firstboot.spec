@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.1.15
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 28 2003 Brent Fox <bfox@bfox.devel.redhat.com> 1.1.15-2
+- bump relnum and rebuild
+
 * Thu Aug 28 2003 Brent Fox <bfox@bfox.devel.redhat.com> 1.1.15-1
 - handle network timeouts better in the date.py screen
 
