@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Feb  3 2003 Brent Fox <bfox@redhat.com> 1.0.5-2
+- notting fixed the initscript to pull in the locale
+
 * Fri Jan 31 2003 Brent Fox <bfox@redhat.com> 1.0.5-1
 - new strings in up2date module
 
