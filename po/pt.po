@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jul  2 17:52:19 2002\n"
+"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
 "PO-Revision-Date: 2002-07-09 01:04+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -10,6 +10,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 0.9.6\n"
+
+#: ../src/exceptionWindow.py:30
+msgid "An error has occured in module %s."
+msgstr ""
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -23,19 +27,25 @@ msgstr "CD de Documentação do Red Hat"
 msgid "Linux Application CD"
 msgstr "CD de Aplicações Linux"
 
-#: ../src/modules/additional_cds.py:58
-msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the corresponding button below."
+#: ../src/modules/additional_cds.py:57
+msgid ""
+"If you have additional CDs from the Red Hat Linux box set, such as the Red "
+"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
+"disc now and click the corresponding button below."
 msgstr ""
-"Se tem mais CDs do conjunto do Red hat Linux, tais como o CD de Documentação do Red Hat Linux "
-"ou o CD de Aplicações Linux, insira-o agora e carregue no botão correspondente."
+"Se tem mais CDs do conjunto do Red hat Linux, tais como o CD de Documentação "
+"do Red Hat Linux ou o CD de Aplicações Linux, insira-o agora e carregue no "
+"botão correspondente."
 
-#: ../src/modules/additional_cds.py:94 ../src/modules/register.py:113
-#: ../src/modules/up2date.py:83
-msgid "This feature is not yet implemented.  Please do not report bugs about this button."
-msgstr "Esta funcionalidade ainda não foi implementada.  Por favor não comunique erros acerca deste botão."
+#: ../src/modules/additional_cds.py:93
+msgid ""
+"This feature is not yet implemented.  Please do not report bugs about this "
+"button."
+msgstr ""
+"Esta funcionalidade ainda não foi implementada.  Por favor não comunique "
+"erros acerca deste botão."
 
-#: ../src/modules/additional_cds.py:95 ../src/modules/register.py:114
-#: ../src/modules/up2date.py:84
+#: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
 msgid "Error"
 msgstr "Erro"
 
@@ -50,6 +60,20 @@ msgstr "Configuração da Data e Hora"
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr "Configure a data e hora do seu computador."
+
+#: ../src/modules/date.py:111
+msgid ""
+"A connection with %s could not be established.  Either %s is not available "
+"or the firewall settings on your computer are blocking NTP connections."
+msgstr ""
+
+#: ../src/modules/finished.py:19
+msgid "Finish Installation"
+msgstr ""
+
+#: ../src/modules/finished.py:28
+msgid "Finished installation!"
+msgstr ""
 
 #: ../src/modules/hardware.py:27
 msgid "Configure Hardware"
@@ -84,33 +108,54 @@ msgstr "Ecrã:"
 msgid "Printers:"
 msgstr "Impressoras:"
 
-#: ../src/modules/keyboard_gui.py:39
+#: ../src/modules/keyboard_gui.py:69
 msgid "Keyboard"
 msgstr "Teclado"
 
-#: ../src/modules/keyboard_gui.py:41
+#: ../src/modules/keyboard_gui.py:71
 msgid "Keyboard Configuration"
 msgstr "Configuração do Teclado"
 
-#: ../src/modules/keyboard_gui.py:43
-msgid "Please select the keyboard for the system."
+#: ../src/modules/keyboard_gui.py:72
+msgid "A configuration tool for the system keyboard"
+msgstr ""
+
+#: ../src/modules/keyboard_gui.py:74
+#, fuzzy
+msgid "Select the appropriate keyboard for the system."
 msgstr "Escolha a disposição das teclas no seu teclado."
 
-#: ../src/modules/language.py:53
+#: ../src/modules/language.py:40
+#, fuzzy
+msgid "Language"
+msgstr "Escolha de Lingua"
+
+#: ../src/modules/language.py:42 ../src/modules/language.py:197
+msgid "Language Configuration"
+msgstr "Configuração de Lingua"
+
+#: ../src/modules/language.py:43
+#, fuzzy
+msgid "A configuration tool to set the language for the system"
+msgstr "Escolha a lingua por omissão neste computador."
+
+#: ../src/modules/language.py:55
 msgid "Language Selection"
 msgstr "Escolha de Lingua"
 
-#: ../src/modules/language.py:56
+#: ../src/modules/language.py:58
 msgid "Please select the default language for the system."
 msgstr "Escolha a lingua por omissão neste computador."
 
-#: ../src/modules/language.py:160
+#: ../src/modules/language.py:161
 msgid "The changes will take effect the next time you log in."
-msgstr "processes that hold critical resources is a classic response to priority inversion problems. Ingo's patch takes a slightly simpler approach by treating the entire kernel as such a resource. This patch will raise the priority of SCHED_BATCH processes a bit more than is strictly necessary; the approach should be robust, however, and the difference in scheduling behavior would be difficult to measure. "
-
-#: ../src/modules/language.py:196
-msgid "Language Configuration"
-msgstr "Configuração de Lingua"
+msgstr ""
+"processes that hold critical resources is a classic response to priority "
+"inversion problems. Ingo's patch takes a slightly simpler approach by "
+"treating the entire kernel as such a resource. This patch will raise the "
+"priority of SCHED_BATCH processes a bit more than is strictly necessary; the "
+"approach should be robust, however, and the difference in scheduling "
+"behavior would be difficult to measure. "
 
 #: ../src/modules/mouse_gui.py:38
 msgid "Mouse"
@@ -121,10 +166,14 @@ msgid "Mouse Configuration"
 msgstr "Configuração do Rato"
 
 #: ../src/modules/mouse_gui.py:42
+msgid "A configuration tool for the mouse"
+msgstr ""
+
+#: ../src/modules/mouse_gui.py:43
 msgid "Please select the mouse for the system."
 msgstr "Escolha o rato ligado ao computador."
 
-#: ../src/modules/mouse_gui.py:52
+#: ../src/modules/mouse_gui.py:53
 msgid "Emulate 3 button click"
 msgstr "Emular o terceiro botão"
 
@@ -132,174 +181,173 @@ msgstr "Emular o terceiro botão"
 msgid "Network check"
 msgstr "Verificação de rede"
 
-#: ../src/modules/networking.py:38
+#: ../src/modules/networking.py:40
 msgid "Set up Networking"
 msgstr "Configurar a Rede"
 
-#: ../src/modules/networking.py:64
-msgid "A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
+#: ../src/modules/networking.py:66
+msgid ""
+"A network connection was not detected.  Network connectivity is necessary "
+"for registering your system with RHN and for using the Red Hat Update Agent "
+"to update your system.  To set up a network connection, please click on the "
+"button below.\n"
 msgstr ""
-"Não foi detectada qualquer ligação à rede. Uma ligação à rede é necessária para registrar o seu computador  "
-"na RHN e para utilizar o Agente de Actualizações da Red Hat para actualizar o seu sistema. Para configurar "
-"uma ligação à rede, carregue no botão abaixo.\n"
+"Não foi detectada qualquer ligação à rede. Uma ligação à rede é necessária "
+"para registrar o seu computador  na RHN e para utilizar o Agente de "
+"Actualizações da Red Hat para actualizar o seu sistema. Para configurar uma "
+"ligação à rede, carregue no botão abaixo.\n"
 
-#: ../src/modules/networking.py:114
+#: ../src/modules/networking.py:118
 msgid "Set up networking..."
 msgstr "Configuração da rede..."
 
-#: ../src/modules/networking.py:150
+#: ../src/modules/networking.py:154
 msgid "Configure using DHCP"
 msgstr "Configurar utilizando DHCP"
 
-#: ../src/modules/networking.py:167
+#: ../src/modules/networking.py:171
 msgid "IP Address"
 msgstr "Endereço IP"
 
-#: ../src/modules/networking.py:168
+#: ../src/modules/networking.py:172
 msgid "Netmask"
 msgstr "Máscada de Rede"
 
-#: ../src/modules/networking.py:169
+#: ../src/modules/networking.py:173
 msgid "Network"
 msgstr "Rede"
 
-#: ../src/modules/networking.py:170
+#: ../src/modules/networking.py:174
 msgid "Broadcast"
 msgstr "'Broadcast'"
 
-#: ../src/modules/networking.py:186
+#: ../src/modules/networking.py:190
 msgid "%s:"
 msgstr "%s:"
 
-#: ../src/modules/networking.py:227
+#: ../src/modules/networking.py:231
 msgid "Gateway"
 msgstr "'Gateway'"
 
-#: ../src/modules/networking.py:227
+#: ../src/modules/networking.py:231
 msgid "Hostname"
 msgstr "Nome da Máquina"
 
-#: ../src/modules/networking.py:227
+#: ../src/modules/networking.py:231
 msgid "Primary DNS"
 msgstr "DNS Primário"
 
-#: ../src/modules/networking.py:228
+#: ../src/modules/networking.py:232
 msgid "Secondary DNS"
 msgstr "DNS Secundário"
 
-#: ../src/modules/networking.py:228
+#: ../src/modules/networking.py:232
 msgid "Ternary DNS"
 msgstr "DNS Terciário"
 
-#: ../src/modules/register.py:21
-msgid "Register with RHN"
-msgstr "Registar na RHN"
-
-#: ../src/modules/register.py:30
-msgid "Register your system with Red Hat Network"
-msgstr "Registrar o computador na Red Hat Network"
-
-#: ../src/modules/register.py:55
-msgid ""
-"Red Hat Network is an Internet solution for managing one or more Red Hat Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts (collectively known as Errata Alerts) can be retreived directly from Red Hat. You can even have updates automatically delivered directly to your system as soon as they are released. \n"
-"\n"
-"Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
-msgstr ""
-"A Red Hat Network é uma solução da Internet para gerir um ou mais sistemas Red Hat Linux. Todos os Alertas de Segurança, Alertas de Correcções de Erros e de Melhoramentos (conhecidos normalmente por Alertas-Errata) podem ser obtidos directamente a partir da Red Hat. Pode até ter as actualizações entregues automaticamente ao seu sistema à medida que vão sendo lançadas.\n"
-"\n"
-"Dado que a Red Hat Network mantém o registo de quando as Actualizações de Errata são lançadas e lhe envia as notificações por email, ela pode:"
-
-#: ../src/modules/register.py:68
-msgid ""
-" -- Reduce the time and effort required by system administrators to stay on top of the Red Hat errata list\n"
-" -- Minimize security vulnerabilities in your network by providing the patches as soon as Red Hat releases them\n"
-" -- Filter out package updates not relevant to your network\n"
-" -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
-msgstr ""
-" -- Reduzir o tempo e o esforço necessários pelos administradores de sistemas para se manterem a par da lista de erratas da Red Hat\n"
-" -- Minimizar as vulnerabilidades de segurança na sua rede obtendo as correcções à medida que a Red Hat as publica\n"
-" -- Filtrar as actualizações de pacotes não relevantes para a sua rede\n"
-" -- Escalonar as Actualizações de Errata de modo a que os pacotes sejam entregues quando o desejar"
-
-#: ../src/modules/register.py:80
-msgid "Register system now"
-msgstr "Registar o computador agora"
-
-#: ../src/modules/register.py:90
-msgid "You currently have no network connection."
-msgstr "Não tem actualmente qualquer ligação à rede."
-
-#: ../src/modules/rootpassword.py:56
+#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
 msgid "Root Password"
 msgstr "Senha de Root"
 
-#: ../src/modules/rootpassword.py:59
+#: ../src/modules/rootpassword.py:60
 msgid "Please set the root password for the system."
 msgstr "Escolha a senha de root para o seu computador."
 
-#: ../src/modules/rootpassword.py:64
+#: ../src/modules/rootpassword.py:65
 msgid "Root Password:"
 msgstr "Senha de Root:"
 
-#: ../src/modules/rootpassword.py:68
+#: ../src/modules/rootpassword.py:69
 msgid "Confirm:"
 msgstr "Confirmação:"
 
-#: ../src/modules/rootpassword.py:88
+#: ../src/modules/rootpassword.py:89
 msgid "Root password must be at least 6 characters in length."
 msgstr "A senha de root deve ter pelo menos 6 caracteres."
 
-#: ../src/modules/rootpassword.py:98
+#: ../src/modules/rootpassword.py:99
 msgid "Passwords do not match.  Please try again."
 msgstr "A senhas não são iguais.  Por favor repita."
 
-#: ../src/modules/securitylevel.py:35
+#: ../src/modules/securitylevel.py:22
+#, fuzzy
+msgid "Security Level"
+msgstr "Nível de Segurança"
+
+#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
+#: ../src/modules/securitylevel.py:251
 msgid "Security Level Configuration"
 msgstr "Configuração do Nível de Segurança"
 
-#: ../src/modules/securitylevel.py:37
+#: ../src/modules/securitylevel.py:25
+msgid "Configure system security level"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:39
 msgid "Please choose the security level for the system."
 msgstr "Escolha o nível de segurança do seu computador."
 
-#: ../src/modules/securitylevel.py:40
+#: ../src/modules/securitylevel.py:42
 msgid "Security Level:"
 msgstr "Nível de Segurança"
 
-#: ../src/modules/securitylevel.py:47
+#: ../src/modules/securitylevel.py:49
 msgid "Use default firewall rules"
 msgstr "Utilizar regras de 'firewall' por omissão"
 
-#: ../src/modules/securitylevel.py:48
+#: ../src/modules/securitylevel.py:50
 msgid "Customize"
 msgstr "Personalizar"
 
-#: ../src/modules/securitylevel.py:50
+#: ../src/modules/securitylevel.py:52
 msgid "Trusted devices:"
 msgstr "Dispositivos de confiança:"
 
-#: ../src/modules/securitylevel.py:57
+#: ../src/modules/securitylevel.py:59
 msgid "Allow incoming:"
 msgstr "Permitir a entrada:"
 
-#: ../src/modules/securitylevel.py:64
+#: ../src/modules/securitylevel.py:66
 msgid "Other ports: (1029:tcp)"
 msgstr "Outros portos: (1029:tcp)"
 
-#: ../src/modules/securitylevel.py:249
-msgid "Firewall Configuration"
-msgstr "Configuração da 'Firewall'"
+#: ../src/modules/securitylevel.py:196
+msgid ""
+"Invalid port given: %s.  The proper format is 'port:protocol, port:"
+"protocol'.  For example, '1234:udp, 3456:tcp'"
+msgstr ""
 
-#: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
+#: ../src/modules/up2date.py:19
+msgid "Update Your System"
+msgstr ""
+
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Agente de Actualizações da Red Hat"
 
-#: ../src/modules/up2date.py:55
-msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
-msgstr "Agora que se registou na Red Hat Network, pode executar o Agente de Actualizações da Red Hat para receber os últimos pacotes de 'software' directamente da Red Hat. Ao usar esta ferramenta poderá ter sempre o sistema Red Hat mais actualizado, com todas as correcções de segurança, de erros e de melhoramentos dos pacotes"
+#: ../src/modules/up2date.py:53
+#, fuzzy
+msgid ""
+"Now that you are registered with Red Hat Network, you can run the Red Hat "
+"Update Agent to receive the latest software packages directly from Red Hat.  "
+"Using this tool will allow you to always have the most up-to-date Red Hat "
+"Linux system with all the security patches, bug fixes, and software package "
+"enhancements."
+msgstr ""
+"Agora que se registou na Red Hat Network, pode executar o Agente de "
+"Actualizações da Red Hat para receber os últimos pacotes de 'software' "
+"directamente da Red Hat. Ao usar esta ferramenta poderá ter sempre o sistema "
+"Red Hat mais actualizado, com todas as correcções de segurança, de erros e "
+"de melhoramentos dos pacotes"
 
 #: ../src/modules/up2date.py:66
-msgid "Start the Red Hat Update Agent"
-msgstr "Iniciar o Agente de Actualizações do Red Hat"
+#, fuzzy
+msgid "Yes, I would like to register with Red Hat Network"
+msgstr "Registrar o computador na Red Hat Network"
+
+#: ../src/modules/up2date.py:67
+msgid "No, I do not want to register my system."
+msgstr ""
 
 #: ../src/modules/welcome.py:19
 msgid "Welcome"
@@ -309,3 +357,54 @@ msgstr "Bem-vindo"
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Bem-vindo ao Red Hat Linux (versão beta)!"
 
+#~ msgid "Register with RHN"
+#~ msgstr "Registar na RHN"
+
+#~ msgid ""
+#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
+#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
+#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
+#~ "from Red Hat. You can even have updates automatically delivered directly "
+#~ "to your system as soon as they are released. \n"
+#~ "\n"
+#~ "Because Red Hat Network keeps track of when Errata Updates are released "
+#~ "and sends you email notifications, it can:"
+#~ msgstr ""
+#~ "A Red Hat Network é uma solução da Internet para gerir um ou mais "
+#~ "sistemas Red Hat Linux. Todos os Alertas de Segurança, Alertas de "
+#~ "Correcções de Erros e de Melhoramentos (conhecidos normalmente por "
+#~ "Alertas-Errata) podem ser obtidos directamente a partir da Red Hat. Pode "
+#~ "até ter as actualizações entregues automaticamente ao seu sistema à "
+#~ "medida que vão sendo lançadas.\n"
+#~ "\n"
+#~ "Dado que a Red Hat Network mantém o registo de quando as Actualizações de "
+#~ "Errata são lançadas e lhe envia as notificações por email, ela pode:"
+
+#~ msgid ""
+#~ " -- Reduce the time and effort required by system administrators to stay "
+#~ "on top of the Red Hat errata list\n"
+#~ " -- Minimize security vulnerabilities in your network by providing the "
+#~ "patches as soon as Red Hat releases them\n"
+#~ " -- Filter out package updates not relevant to your network\n"
+#~ " -- Schedule Errata Updates so that packages are delivered to selected "
+#~ "systems when you want it"
+#~ msgstr ""
+#~ " -- Reduzir o tempo e o esforço necessários pelos administradores de "
+#~ "sistemas para se manterem a par da lista de erratas da Red Hat\n"
+#~ " -- Minimizar as vulnerabilidades de segurança na sua rede obtendo as "
+#~ "correcções à medida que a Red Hat as publica\n"
+#~ " -- Filtrar as actualizações de pacotes não relevantes para a sua rede\n"
+#~ " -- Escalonar as Actualizações de Errata de modo a que os pacotes sejam "
+#~ "entregues quando o desejar"
+
+#~ msgid "Register system now"
+#~ msgstr "Registar o computador agora"
+
+#~ msgid "You currently have no network connection."
+#~ msgstr "Não tem actualmente qualquer ligação à rede."
+
+#~ msgid "Firewall Configuration"
+#~ msgstr "Configuração da 'Firewall'"
+
+#~ msgid "Start the Red Hat Update Agent"
+#~ msgstr "Iniciar o Agente de Actualizações do Red Hat"

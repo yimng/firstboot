@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Tue Jun 25 16:32:27 2002\n"
+"POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
 "PO-Revision-Date: 2002-07-19 16:31+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -15,6 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
+
+#: ../src/exceptionWindow.py:30
+msgid "An error has occured in module %s."
+msgstr ""
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -28,186 +32,327 @@ msgstr "Red Hat Documentation CD"
 msgid "Linux Application CD"
 msgstr "Linux Application CD"
 
-#: ../src/modules/additional_cds.py:58
-msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
+#: ../src/modules/additional_cds.py:57
+#, fuzzy
+msgid ""
+"If you have additional CDs from the Red Hat Linux box set, such as the Red "
+"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
+"disc now and click the corresponding button below."
 msgstr ""
-"Om du har ytterligare cd-skivor från Red Hat Linux-lådan, exempelvis "
-"skivan \"Red Hat Linux Documentation CD\" eller \"Linux Applications CD\" "
-"bör du stoppa in skivan nu och klicka på knappen nedan."
+"Om du har ytterligare cd-skivor från Red Hat Linux-lådan, exempelvis skivan "
+"\"Red Hat Linux Documentation CD\" eller \"Linux Applications CD\" bör du "
+"stoppa in skivan nu och klicka på knappen nedan."
 
-#: ../src/modules/date.py:48
+#: ../src/modules/additional_cds.py:93
+msgid ""
+"This feature is not yet implemented.  Please do not report bugs about this "
+"button."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
+msgid "Error"
+msgstr ""
+
+#: ../src/modules/date.py:49
 msgid "Date & Time"
 msgstr "Datum och tid"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:50
 msgid "Date & Time Configuration"
 msgstr "Konfiguration av datum och tid"
 
-#: ../src/modules/date.py:51
+#: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
 msgstr "Ställ in datum och tid för systemet."
 
-#: ../src/modules/hardware.py:28
-msgid "Configure hardware"
+#: ../src/modules/date.py:111
+msgid ""
+"A connection with %s could not be established.  Either %s is not available "
+"or the firewall settings on your computer are blocking NTP connections."
+msgstr ""
+
+#: ../src/modules/finished.py:19
+msgid "Finish Installation"
+msgstr ""
+
+#: ../src/modules/finished.py:28
+msgid "Finished installation!"
+msgstr ""
+
+#: ../src/modules/hardware.py:27
+#, fuzzy
+msgid "Configure Hardware"
 msgstr "Konfigurera hårdvara"
 
-#: ../src/modules/hardware.py:82
+#: ../src/modules/hardware.py:81
 msgid "Keyboard Map:"
 msgstr "Tangentbordstabell:"
 
-#: ../src/modules/hardware.py:88 ../src/modules/hardware.py:104
-#: ../src/modules/hardware.py:125
+#: ../src/modules/hardware.py:87 ../src/modules/hardware.py:103
+#: ../src/modules/hardware.py:124
 msgid "Configure..."
 msgstr "Konfigurera..."
 
-#: ../src/modules/hardware.py:97
+#: ../src/modules/hardware.py:96
 msgid "Mouse:"
 msgstr "Mus:"
 
-#: ../src/modules/hardware.py:119
+#: ../src/modules/hardware.py:118
 msgid "Sound card:"
 msgstr "Ljudkort:"
 
-#: ../src/modules/hardware.py:136
+#: ../src/modules/hardware.py:135
 msgid "Networking:"
 msgstr "Nätverksåtkomst:"
 
-#: ../src/modules/hardware.py:145
+#: ../src/modules/hardware.py:144
 msgid "Display:"
 msgstr "Display:"
 
-#: ../src/modules/hardware.py:154
+#: ../src/modules/hardware.py:153
 msgid "Printers:"
 msgstr "Skrivare:"
+
+#: ../src/modules/keyboard_gui.py:69
+#, fuzzy
+msgid "Keyboard"
+msgstr "Tangentbordstabell:"
+
+#: ../src/modules/keyboard_gui.py:71
+#, fuzzy
+msgid "Keyboard Configuration"
+msgstr "Konfiguration av datum och tid"
+
+#: ../src/modules/keyboard_gui.py:72
+msgid "A configuration tool for the system keyboard"
+msgstr ""
+
+#: ../src/modules/keyboard_gui.py:74
+#, fuzzy
+msgid "Select the appropriate keyboard for the system."
+msgstr "Ställ in datum och tid för systemet."
+
+#: ../src/modules/language.py:40
+msgid "Language"
+msgstr ""
+
+#: ../src/modules/language.py:42 ../src/modules/language.py:197
+#, fuzzy
+msgid "Language Configuration"
+msgstr "Konfiguration av datum och tid"
+
+#: ../src/modules/language.py:43
+msgid "A configuration tool to set the language for the system"
+msgstr ""
+
+#: ../src/modules/language.py:55
+msgid "Language Selection"
+msgstr ""
+
+#: ../src/modules/language.py:58
+#, fuzzy
+msgid "Please select the default language for the system."
+msgstr "Ställ in datum och tid för systemet."
+
+#: ../src/modules/language.py:161
+msgid "The changes will take effect the next time you log in."
+msgstr ""
+
+#: ../src/modules/mouse_gui.py:38
+#, fuzzy
+msgid "Mouse"
+msgstr "Mus:"
+
+#: ../src/modules/mouse_gui.py:40
+#, fuzzy
+msgid "Mouse Configuration"
+msgstr "Konfiguration av datum och tid"
+
+#: ../src/modules/mouse_gui.py:42
+msgid "A configuration tool for the mouse"
+msgstr ""
+
+#: ../src/modules/mouse_gui.py:43
+#, fuzzy
+msgid "Please select the mouse for the system."
+msgstr "Ställ in datum och tid för systemet."
+
+#: ../src/modules/mouse_gui.py:53
+msgid "Emulate 3 button click"
+msgstr ""
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
 msgstr "Nätverkskontroll"
 
-#: ../src/modules/networking.py:38
+#: ../src/modules/networking.py:40
 msgid "Set up Networking"
 msgstr "Konfigurera nätverksåtkomst"
 
-#: ../src/modules/networking.py:64
+#: ../src/modules/networking.py:66
 msgid ""
-"A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
+"A network connection was not detected.  Network connectivity is necessary "
+"for registering your system with RHN and for using the Red Hat Update Agent "
+"to update your system.  To set up a network connection, please click on the "
+"button below.\n"
 msgstr ""
-"En nätverksanslutning kunde inte hittas. Nätverksanslutning är nödvändig "
-"för att kunna registrera ditt system med RHN och för att använda Red Hats "
-"uppdateringsagent för att uppdatera ditt system. Klicka på knappen nedan "
-"för att konfigurera en nätverksanslutning.\n"
+"En nätverksanslutning kunde inte hittas. Nätverksanslutning är nödvändig för "
+"att kunna registrera ditt system med RHN och för att använda Red Hats "
+"uppdateringsagent för att uppdatera ditt system. Klicka på knappen nedan för "
+"att konfigurera en nätverksanslutning.\n"
 
-#: ../src/modules/networking.py:114
+#: ../src/modules/networking.py:118
 msgid "Set up networking..."
 msgstr "Konfigurera nätverksåtkomst..."
 
-#: ../src/modules/networking.py:150
+#: ../src/modules/networking.py:154
 msgid "Configure using DHCP"
 msgstr "Konfigurera med hjälp av DHCP"
 
-#: ../src/modules/networking.py:167
+#: ../src/modules/networking.py:171
 msgid "IP Address"
 msgstr "IP-adress"
 
-#: ../src/modules/networking.py:168
+#: ../src/modules/networking.py:172
 msgid "Netmask"
 msgstr "Nätmask"
 
-#: ../src/modules/networking.py:169
+#: ../src/modules/networking.py:173
 msgid "Network"
 msgstr "Nätverk"
 
-#: ../src/modules/networking.py:170
+#: ../src/modules/networking.py:174
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: ../src/modules/networking.py:186
+#: ../src/modules/networking.py:190
 msgid "%s:"
 msgstr "%s:"
 
-#: ../src/modules/networking.py:227
+#: ../src/modules/networking.py:231
 msgid "Gateway"
 msgstr "Gateway"
 
-#: ../src/modules/networking.py:227
+#: ../src/modules/networking.py:231
 msgid "Hostname"
 msgstr "Värdnamn"
 
-#: ../src/modules/networking.py:227
+#: ../src/modules/networking.py:231
 msgid "Primary DNS"
 msgstr "Primär DNS"
 
-#: ../src/modules/networking.py:228
+#: ../src/modules/networking.py:232
 msgid "Secondary DNS"
 msgstr "Sekundär DNS"
 
-#: ../src/modules/networking.py:228
+#: ../src/modules/networking.py:232
 msgid "Ternary DNS"
 msgstr "Tertiär DNS"
 
-#: ../src/modules/register.py:21
-msgid "Register with RHN"
-msgstr "Registrera i RHN"
-
-#: ../src/modules/register.py:30
-msgid "Register your system with Red Hat Network"
-msgstr "Registrera ditt system i Red Hat Network"
-
-#: ../src/modules/register.py:55
-msgid ""
-"Red Hat Network is an Internet solution for managing one or more Red Hat Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts (collectively known as Errata Alerts) can be retreived directly from Red Hat. You can even have updates automatically delivered directly to your system as soon as they are released. \n"
-"\n"
-"Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
+#: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
+msgid "Root Password"
 msgstr ""
-"Red Hat Network är en nätverkslösning för hantering av en eller flera Red "
-"Hat Linux-system. Alla säkerhetsvarningar, felfixvarningar och "
-"förbättringsvarningar (tillsammans kallade erratavarningar) kan hämtas "
-"direkt från Red Hat. Du kan till och med få uppdateringar direkt "
-"levererade till ditt system så fort de har släppts.\n"
-"\n"
-"Eftersom Red Hat Network håller reda på när erratauppdateringar släpps "
-"skickar dig information om detta per e-post kan det:"
 
-#: ../src/modules/register.py:68
-msgid ""
-" -- Reduce the time and effort required by system administrators to stay on top of the Red Hat errata list\n"
-" -- Minimize security vulnerabilities in your network by providing the patches as soon as Red Hat releases them\n"
-" -- Filter out package updates not relevant to your network\n"
-" -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
+#: ../src/modules/rootpassword.py:60
+#, fuzzy
+msgid "Please set the root password for the system."
+msgstr "Ställ in datum och tid för systemet."
+
+#: ../src/modules/rootpassword.py:65
+msgid "Root Password:"
 msgstr ""
-" -- Reducera den tid och möda som krävs av systemadministratörer för att "
-"hålla system aktuella med Red Hats erratalista\n"
-" -- Minimera säkerhetssårbarheter i ditt nätverk genom att tillhandahålla "
-"fixar så fort Red Hat släpper dem\n"
-" -- Filtrera ut paketuppdateringar som inte är relevanta för ditt "
-"nätverk\n"
-" -- Schemalägga erratauppdateringar så att paket levereras till utvalda "
-"system när du så önskar"
 
-#: ../src/modules/register.py:80
-msgid "Register system now"
-msgstr "Registrera systemet nu"
+#: ../src/modules/rootpassword.py:69
+msgid "Confirm:"
+msgstr ""
 
-#: ../src/modules/register.py:90
-msgid "You currently have no network connection."
-msgstr "Du har ingen nätverksanslutning för tillfället."
+#: ../src/modules/rootpassword.py:89
+msgid "Root password must be at least 6 characters in length."
+msgstr ""
 
-#: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
+#: ../src/modules/rootpassword.py:99
+msgid "Passwords do not match.  Please try again."
+msgstr ""
+
+#: ../src/modules/securitylevel.py:22
+msgid "Security Level"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
+#: ../src/modules/securitylevel.py:251
+#, fuzzy
+msgid "Security Level Configuration"
+msgstr "Konfiguration av datum och tid"
+
+#: ../src/modules/securitylevel.py:25
+msgid "Configure system security level"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:39
+#, fuzzy
+msgid "Please choose the security level for the system."
+msgstr "Ställ in datum och tid för systemet."
+
+#: ../src/modules/securitylevel.py:42
+msgid "Security Level:"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:49
+msgid "Use default firewall rules"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:50
+msgid "Customize"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:52
+msgid "Trusted devices:"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:59
+msgid "Allow incoming:"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:66
+msgid "Other ports: (1029:tcp)"
+msgstr ""
+
+#: ../src/modules/securitylevel.py:196
+msgid ""
+"Invalid port given: %s.  The proper format is 'port:protocol, port:"
+"protocol'.  For example, '1234:udp, 3456:tcp'"
+msgstr ""
+
+#: ../src/modules/up2date.py:19
+msgid "Update Your System"
+msgstr ""
+
+#: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
 msgstr "Red Hats uppdateringsagent"
 
-#: ../src/modules/up2date.py:55
-msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
+#: ../src/modules/up2date.py:53
+#, fuzzy
+msgid ""
+"Now that you are registered with Red Hat Network, you can run the Red Hat "
+"Update Agent to receive the latest software packages directly from Red Hat.  "
+"Using this tool will allow you to always have the most up-to-date Red Hat "
+"Linux system with all the security patches, bug fixes, and software package "
+"enhancements."
 msgstr ""
 "Nu när du har registrerat dig i Red Hat Network kan du köra Red Hats "
-"uppdateringsagent för att få de senaste programpaketen direkt från Red "
-"Hat. Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat "
-"Linux-system med alla säkerhetsfixar, felfixar och förbättringar av "
-"programpaket"
+"uppdateringsagent för att få de senaste programpaketen direkt från Red Hat. "
+"Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat Linux-"
+"system med alla säkerhetsfixar, felfixar och förbättringar av programpaket"
 
 #: ../src/modules/up2date.py:66
-msgid "Start the Red Hat Update Agent"
-msgstr "Starta Red Hats uppdateringsagent"
+#, fuzzy
+msgid "Yes, I would like to register with Red Hat Network"
+msgstr "Registrera ditt system i Red Hat Network"
+
+#: ../src/modules/up2date.py:67
+msgid "No, I do not want to register my system."
+msgstr ""
 
 #: ../src/modules/welcome.py:19
 msgid "Welcome"
@@ -217,6 +362,54 @@ msgstr "Välkommen"
 msgid "Welcome to Red Hat Linux Beta!"
 msgstr "Välkommen till Red Hat Linux Beta!"
 
-msgid "Welcome to Red Hat Linux!"
-msgstr "Välkommen till Red Hat Linux!"
+#~ msgid "Register with RHN"
+#~ msgstr "Registrera i RHN"
 
+#~ msgid ""
+#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
+#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
+#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
+#~ "from Red Hat. You can even have updates automatically delivered directly "
+#~ "to your system as soon as they are released. \n"
+#~ "\n"
+#~ "Because Red Hat Network keeps track of when Errata Updates are released "
+#~ "and sends you email notifications, it can:"
+#~ msgstr ""
+#~ "Red Hat Network är en nätverkslösning för hantering av en eller flera Red "
+#~ "Hat Linux-system. Alla säkerhetsvarningar, felfixvarningar och "
+#~ "förbättringsvarningar (tillsammans kallade erratavarningar) kan hämtas "
+#~ "direkt från Red Hat. Du kan till och med få uppdateringar direkt "
+#~ "levererade till ditt system så fort de har släppts.\n"
+#~ "\n"
+#~ "Eftersom Red Hat Network håller reda på när erratauppdateringar släpps "
+#~ "skickar dig information om detta per e-post kan det:"
+
+#~ msgid ""
+#~ " -- Reduce the time and effort required by system administrators to stay "
+#~ "on top of the Red Hat errata list\n"
+#~ " -- Minimize security vulnerabilities in your network by providing the "
+#~ "patches as soon as Red Hat releases them\n"
+#~ " -- Filter out package updates not relevant to your network\n"
+#~ " -- Schedule Errata Updates so that packages are delivered to selected "
+#~ "systems when you want it"
+#~ msgstr ""
+#~ " -- Reducera den tid och möda som krävs av systemadministratörer för att "
+#~ "hålla system aktuella med Red Hats erratalista\n"
+#~ " -- Minimera säkerhetssårbarheter i ditt nätverk genom att tillhandahålla "
+#~ "fixar så fort Red Hat släpper dem\n"
+#~ " -- Filtrera ut paketuppdateringar som inte är relevanta för ditt "
+#~ "nätverk\n"
+#~ " -- Schemalägga erratauppdateringar så att paket levereras till utvalda "
+#~ "system när du så önskar"
+
+#~ msgid "Register system now"
+#~ msgstr "Registrera systemet nu"
+
+#~ msgid "You currently have no network connection."
+#~ msgstr "Du har ingen nätverksanslutning för tillfället."
+
+#~ msgid "Start the Red Hat Update Agent"
+#~ msgstr "Starta Red Hats uppdateringsagent"
+
+#~ msgid "Welcome to Red Hat Linux!"
+#~ msgstr "Välkommen till Red Hat Linux!"
