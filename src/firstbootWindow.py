@@ -299,10 +299,10 @@ class firstbootWindow:
             pass
 
         # record the current page as the new previous page
-        self.prevPage = self.moduleNameToNotebookIndex[module.moduleName]
+        self.prevPage = self.moduleNameToNotebookIndex[module.__module__]
 
         if result != None:
-            pgNum = self.moduleNameToNotebookIndex[module.moduleName]
+            pgNum = self.moduleNameToNotebookIndex[module.__module__]
             self.pageHistory.append(pgNum)
 #            print "self.pageHistory: %s" % self.pageHistory
 	    if self.nextPage:
@@ -532,7 +532,9 @@ class firstbootWindow:
 
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
-		    self.moduleNameToNotebookIndex[module.moduleName] = pages
+                    # we need a non tranlated name for each module so we can
+                    # jump around
+                    self.moduleNameToNotebookIndex[module.__module__] = pages
                     self.notebook.append_page(vbox, gtk.Label(_(module.moduleName)))
                     hbox = gtk.HBox(gtk.FALSE, 5)
                     pix = functions.imageFromFile("pointer-blank.png")
@@ -547,6 +549,7 @@ class firstbootWindow:
                     self.notebook.append_page(vbox, gtk.Label(" "))
 		    self.moduleNameToNotebookIndex["unamemodule-%s" % pages] = pages
                 pages = pages + 1
+
         
     def clearNotebook(self):
         for widget in self.leftLabelVBox.get_children():
