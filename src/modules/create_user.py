@@ -247,6 +247,10 @@ class childWindow:
             return None
 
         for i in str:
+        if i == "_" or i == "-":
+            #specifically allow "_" and "-"
+            return 1
+
             if i in string.whitespace:
                 #Check for whitespace
                 self.showErrorMessage(_("The user name '%s' contains whitespace.  "
