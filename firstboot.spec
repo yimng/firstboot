@@ -70,6 +70,8 @@ fi
 %changelog
 * Wed Aug 28 2002 Brent Fox <bfox@redhat.com> 1.0.1-1
 - Convert to noarch
+- Add a root window mode for firstbootWindow
+- Use a gtkInvisible dialog to block on up2date and the package screen
 
 * Wed Aug 28 2002 Karsten Hopp <karsten@redhat.de> 1.0.0-5
 - don't require config-mouse, config-keyboard, config-soundcard
