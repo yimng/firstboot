@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-29 15:38+0800\n"
+"PO-Revision-Date: 2004-03-30 16:26+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -342,7 +342,7 @@ msgstr "Pengesahan"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration"
-msgstr "Tentutetap firewall"
+msgstr "Tetapan firewall"
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration"
@@ -515,48 +515,47 @@ msgstr "Cipta _akaun"
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Katalaluan tidak sepadan.  Sila masukkan semula katalaluan."
 
 #: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "Katalaluan terlalu singkat.  Sila gunakan sekurang-kurangnya 6 aksara."
 
 #: ../src/modules/create_user.py:195
 #, python-format
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "s."
+msgstr "Katalaluan '%s' adalah akaun khas sistem.  Sila berikan namapengguna lain."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:242
-#, fuzzy
 msgid "The user name must be less than 33 characters long."
-msgstr "pengguna."
+msgstr "Nama pengguna mesti kurang dari 33 aksara panjang."
 
 #: ../src/modules/create_user.py:248
-#, fuzzy
 msgid "The user name may not begin with a number."
-msgstr "pengguna."
+msgstr "Nama pengguna tidak boleh bermula dengan nombor."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
 #: ../src/modules/create_user.py:260
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "pengguna dalam pengguna."
+msgstr "Nama pengguna '%s' mengandungi ruang.  Sila jangan masukkan ruang dalam nama pengguna."
 
 #: ../src/modules/create_user.py:267
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr "pengguna dalam pengguna."
+msgstr ""
+"Nama pengguna '%s'mengandungi aksara punctuation.  Sila jangan gunakan "
+"punctuation dalam nama pengguna."
 
 #: ../src/modules/create_user.py:274
 #, fuzzy, python-format
@@ -729,6 +728,7 @@ msgid "The following network devices have been detected on the system:"
 msgstr "on:"
 
 #: ../src/modules/networking.py:89
+#, fuzzy
 msgid "Network Device"
 msgstr "Rangkaian"
 
@@ -738,11 +738,11 @@ msgstr ""
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr "Ubah Rangkaian Konfigurasikan."
+msgstr "Ubah Konfigurasi Rangkaian..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
-msgstr ""
+msgstr "statik"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -775,9 +775,8 @@ msgid "Sound Card"
 msgstr "Kad Bunyi"
 
 #: ../src/modules/soundcard_gui.py:48
-#, fuzzy
 msgid "A sound card has been detected on your computer."
-msgstr "A on."
+msgstr "Kad bunyi telah dikesan pada komputer anda."
 
 #. Initialize soundcard page
 #. Add icon to the top frame
@@ -816,12 +815,11 @@ msgstr "dalam dalam dan dalam."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
-msgstr ""
+msgstr "Zonmasa"
 
 #: ../src/modules/timezone.py:52
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "for."
+msgstr "Sila tetapkan zonmasa untuk sistem."
 
 #: ../src/modules/welcome.py:35
 msgid ""
