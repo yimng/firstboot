@@ -509,7 +509,7 @@ class firstbootWindow:
 
         #Let's take some screenshots
         if screenshotDir is None:
-            screenshotDir = "/tmp/firstboot-screenshots"
+            screenshotDir = "/root/firstboot-screenshots"
 
             if not os.access(screenshotDir, os.R_OK):
                 try:
