@@ -83,12 +83,9 @@ class childWindow:
 
 #        launchButton.connect("clicked", self.autorun)
 
-        eventBox = gtk.EventBox()
-        eventBox.add(internalVBox)
-        eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
-        self.vbox.pack_start(eventBox, TRUE)
+        self.vbox.pack_start(internalVBox, TRUE)
 
-        return self.vbox
+        return self.vbox, eventBox
 
     def create_button(self, image, name):
         print image, name
