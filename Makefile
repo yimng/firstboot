@@ -40,9 +40,9 @@ archive:
 	@rm -rf /tmp/${PKGNAME}-$(VERSION) /tmp/${PKGNAME}
 	@CVSROOT=`cat CVS/Root`; cd /tmp; cvs -d $$CVSROOT export -r$(CVSTAG) ${PKGNAME}
 	@mv /tmp/${PKGNAME} /tmp/${PKGNAME}-$(VERSION)
-	@dir=$$PWD; cd /tmp; tar cvzf $$dir/${PKGNAME}-$(VERSION).tar.gz ${PKGNAME}-$(VERSION)
+	@dir=$$PWD; cd /tmp; tar cvjf $$dir/${PKGNAME}-$(VERSION).tar.bz2 ${PKGNAME}-$(VERSION)
 	@rm -rf /tmp/${PKGNAME}-$(VERSION)
-	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.gz"
+	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.bz2"
 
 snapsrc: create-snapshot
 	@rpmbuild -ta --nodeps $(PKGNAME)-$(VERSION).tar.bz2
@@ -69,7 +69,7 @@ local:
 	@mv /tmp/${PKGNAME} /tmp/${PKGNAME}-$(VERSION)
 	@dir=$$PWD; cd /tmp; tar --bzip2 -cSpf $$dir/${PKGNAME}-$(VERSION).tar.bz2 ${PKGNAME}-$(VERSION)
 	@rm -rf /tmp/${PKGNAME}-$(VERSION)	
-	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.gz"
+	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.bz2"
 
 clean:
 	@rm -fv *~
