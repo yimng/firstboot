@@ -341,6 +341,6 @@ class firstbootWindow:
             pix, label = self.leftLabelVBox.get_children()[i].get_children()
 
             if i == number:
-                pix.set_from_file("pixmaps/pointer.png")
+                pix.set_from_file("/usr/share/firstboot/pixmaps/pointer.png")
             else:
-                pix.set_from_file("pixmaps/pointer-blank.png")
+                pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-blank.png")
