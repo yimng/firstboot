@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.1
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -13,6 +13,7 @@ Prereq: chkconfig /etc/init.d
 Requires: pygtk2
 Requires: python
 Requires: usermode >= 1.36
+Requires: metacity
 Requires: redhat-config-language
 Requires: redhat-config-mouse
 Requires: redhat-config-keyboard
@@ -60,6 +61,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Jun 28 2002 Brent Fox <bfox@redhat.com> 0.9.1-4
+- Require metacity
+
 * Fri Jun 28 2002 Brent Fox <bfox@redhta.com> 0.9.1-3
 - Backed out some changes from init script
 - Fixed icon path in date module
