@@ -45,12 +45,6 @@ class childWindow:
         eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
         self.vbox.pack_start(eventBox, FALSE)
 
-        a = gtk.Alignment()
-        a.add(gtk.HSeparator())
-        a.set(0.5, 0.5, 1.0, 1.0)
-
-        self.vbox.pack_start(a, FALSE)
-
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
 
