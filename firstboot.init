@@ -27,16 +27,16 @@ case "$1" in
  start)
         if grep -i reconfig /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
 
-            if [ ! -f /etc/X11/XF86Config ] ; then
-               echo -n $"X is not configured.  Running redhat-config-xfree86"
-	       /usr/bin/redhat-config-xfree86
-	       echo -n $"X is now configured.  Starting Setup Agent"
-	    fi
-
 	    echo -n $"Running system reconfiguration tool"
 	    /usr/sbin/firstboot --reconfig
 	    rm -f /etc/reconfigSys
 	    exit 0
+	fi
+
+	if [ ! -f /etc/X11/XF86Config ] ; then
+	    echo -n $"X is not configured.  Running redhat-config-xfree86"
+	    /usr/bin/redhat-config-xfree86
+	    echo -n $"X is now configured.  Starting Setup Agent"
 	fi
 
 	/usr/sbin/firstboot
