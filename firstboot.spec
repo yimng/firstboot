@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.8
+Version: 0.9.9
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -62,6 +62,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 07 2002 Brent Fox <bfox@redhat.com> 0.9.9-1
+- Rebuild for Jay, who is being a punk ;)
+  
 * Fri Aug 02 2002 Brent Fox <bfox@redhat.com> 0.9.8-1
 - Make changes for new pam timestamp policy
 
