@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 16:22-0400\n"
+"POT-Creation-Date: 2004-09-10 11:09-0400\n"
 "PO-Revision-Date: 2004-07-23 13:43+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -75,16 +75,16 @@ msgstr ""
 "이 파일을 버그 리포트에 첨부해 주십시오.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
 msgid "_Back"
 msgstr "뒤로(_B)"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
 msgid "_Next"
 msgstr "다음(_N)"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "환영합니다"
@@ -299,16 +299,16 @@ msgid "Please set the date and time for the system."
 msgstr "시스템 날짜와 시간을 설정해 주십시오."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:123
+#: ../src/modules/date.py:121
 msgid "Please enter a time server."
 msgstr "시간 서버를 입력해 주십시오."
 
-#: ../src/modules/date.py:125 ../src/modules/date.py:144
-#: ../src/modules/date.py:175
+#: ../src/modules/date.py:123 ../src/modules/date.py:143
+#: ../src/modules/date.py:174
 msgid "Error"
 msgstr "오류"
 
-#: ../src/modules/date.py:137 ../src/modules/date.py:168
+#: ../src/modules/date.py:136 ../src/modules/date.py:167
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -317,7 +317,7 @@ msgstr ""
 "%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 컴퓨터에 설정된 방화벽 때"
 "문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
 
-#: ../src/modules/date.py:205
+#: ../src/modules/date.py:204
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTP 서버에 연결 중입니다.  잠시만 기다려주십시오..."
 

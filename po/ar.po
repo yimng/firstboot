@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 16:22-0400\n"
+"POT-Creation-Date: 2004-09-10 11:09-0400\n"
 "PO-Revision-Date: 2004-07-19 01:20+0300\n"
 "Last-Translator: Munzir Taha <munzir@kacst.edu.sa>\n"
 "Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
@@ -78,16 +78,16 @@ msgstr ""
 "تأكد من إرفاق هذا الملف بتقرير العلّة.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
 msgid "_Back"
 msgstr "_رجوع"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
 msgid "_Next"
 msgstr "_التالي"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "أهلاً"
@@ -297,16 +297,16 @@ msgid "Please set the date and time for the system."
 msgstr "الرّجاء إدخال الوقت و التاريخ للنظام."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:123
+#: ../src/modules/date.py:121
 msgid "Please enter a time server."
 msgstr "الرّجاء إدخال خادم للوقت."
 
-#: ../src/modules/date.py:125 ../src/modules/date.py:144
-#: ../src/modules/date.py:175
+#: ../src/modules/date.py:123 ../src/modules/date.py:143
+#: ../src/modules/date.py:174
 msgid "Error"
 msgstr "خطأ"
 
-#: ../src/modules/date.py:137 ../src/modules/date.py:168
+#: ../src/modules/date.py:136 ../src/modules/date.py:167
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -315,7 +315,7 @@ msgstr ""
 "لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح أو أن إعدادات الجدار الناري "
 "الخاص بك تعترض اتصالات NTP."
 
-#: ../src/modules/date.py:205
+#: ../src/modules/date.py:204
 msgid "Contacting NTP server.  Please wait..."
 msgstr "جاري الاتصال بخادم NTP.  الرّجاء الانتظار..."
 

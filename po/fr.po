@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 16:22-0400\n"
+"POT-Creation-Date: 2004-09-10 11:09-0400\n"
 "PO-Revision-Date: 2004-09-07 12:04+1000\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -69,22 +69,23 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Veuillez signaler le bogue concernant « firstboot » dans le Bug Tracking System\n"
+"Veuillez signaler le bogue concernant « firstboot » dans le Bug Tracking "
+"System\n"
 "de Red Hat à l'adresse suivante : http://www.redhat.com/buzilla. \n"
 "Une copie de la sortie de débogage a été sauvegardée dans %s. \n"
 "Veillez à bien joindre ce fichier au rapport de bogues.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
 msgid "_Back"
 msgstr "_Précédent"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
 msgid "_Next"
 msgstr "_Suivant"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Bienvenue"
@@ -143,8 +144,8 @@ msgid ""
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
 "Si vous disposez de l'un des CD-ROM figurant dans la liste ci-dessous, vous "
-"pouvez installer les paquetages à partir de ceux-ci en introduisant "
-"le CD-ROM et en cliquant sur le bouton approprié."
+"pouvez installer les paquetages à partir de ceux-ci en introduisant le CD-"
+"ROM et en cliquant sur le bouton approprié."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -159,7 +160,8 @@ msgstr ""
 "puis cliquer sur « OK » pour continuer."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliquer "
 "sur « OK » pour continuer."
@@ -230,7 +232,8 @@ msgstr "Les mots de passe ne correspondent pas. Essayez à nouveau."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr ""
+"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -265,8 +268,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Le nom d'utilisateur « %s » contient des caractères en majuscules. Veuillez ne "
-"pas utiliser de caractères en majuscules dans le nom d'utilisateur."
+"Le nom d'utilisateur « %s » contient des caractères en majuscules. Veuillez "
+"ne pas utiliser de caractères en majuscules dans le nom d'utilisateur."
 
 #: ../src/modules/create_user.py:312
 #, python-format
@@ -278,17 +281,19 @@ msgstr ""
 "n'utiliser que des caractères ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
 "des caractères ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"Le nom « %s » contient des caractères non valides. Veuillez n'utiliser que des "
-"caractères ASCII."
+"Le nom « %s » contient des caractères non valides. Veuillez n'utiliser que "
+"des caractères ASCII."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -299,25 +304,26 @@ msgid "Please set the date and time for the system."
 msgstr "Veuillez configurer la date et l'heure de votre système."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:123
+#: ../src/modules/date.py:121
 msgid "Please enter a time server."
 msgstr "Veuillez saisir un serveur de temps."
 
-#: ../src/modules/date.py:125 ../src/modules/date.py:144
-#: ../src/modules/date.py:175
+#: ../src/modules/date.py:123 ../src/modules/date.py:143
+#: ../src/modules/date.py:174
 msgid "Error"
 msgstr "Erreur"
 
-#: ../src/modules/date.py:137 ../src/modules/date.py:168
+#: ../src/modules/date.py:136 ../src/modules/date.py:167
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible, soit "
-"les paramètres de pare-feu de votre ordinateur bloquent la connexion NTP."
+"Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible, "
+"soit les paramètres de pare-feu de votre ordinateur bloquent la connexion "
+"NTP."
 
-#: ../src/modules/date.py:205
+#: ../src/modules/date.py:204
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Connexion au serveur NTP. Veuillez patienter..."
 
@@ -401,10 +407,9 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Il vous reste encore quelques étapes à effectuer avant que votre système ne "
-"soit prêt à l'emploi. L'agent de configuration de Red Hat vous guidera tout au "
-"long de la configuration de base. Pour continuer, cliquez sur le bouton "
+"soit prêt à l'emploi. L'agent de configuration de Red Hat vous guidera tout "
+"au long de la configuration de base. Pour continuer, cliquez sur le bouton "
 "« Suivant » dans le coin en bas à droite."
 
 #~ msgid "User Account"
 #~ msgstr "Compte utilisateur"
-

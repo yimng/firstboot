@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 16:22-0400\n"
+"POT-Creation-Date: 2004-09-10 11:09-0400\n"
 "PO-Revision-Date: 2004-07-23 11:11+0100\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian\n"
@@ -73,16 +73,16 @@ msgstr ""
 "Kérjük csatolja ezt a fájlt a hibabejelentéshez. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
 msgid "_Back"
 msgstr "_Vissza"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
 msgid "_Next"
 msgstr "_Tovább"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Üdvözöljük"
@@ -299,16 +299,16 @@ msgid "Please set the date and time for the system."
 msgstr "Állítsa be a pontos dátumot és időt."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:123
+#: ../src/modules/date.py:121
 msgid "Please enter a time server."
 msgstr "Adja meg egy időkiszolgáló nevét."
 
-#: ../src/modules/date.py:125 ../src/modules/date.py:144
-#: ../src/modules/date.py:175
+#: ../src/modules/date.py:123 ../src/modules/date.py:143
+#: ../src/modules/date.py:174
 msgid "Error"
 msgstr "Hiba"
 
-#: ../src/modules/date.py:137 ../src/modules/date.py:168
+#: ../src/modules/date.py:136 ../src/modules/date.py:167
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -318,7 +318,7 @@ msgstr ""
 "tűzfal beállításai olyanok, hogy a számítógép nem engedélyezi az NTP-"
 "kapcsolatot."
 
-#: ../src/modules/date.py:205
+#: ../src/modules/date.py:204
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Csatlakozás az NTP-kiszolgálóhoz. Egy kis türelmet kérek..."
 

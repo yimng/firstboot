@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.cy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 16:22-0400\n"
+"POT-Creation-Date: 2004-09-10 11:09-0400\n"
 "PO-Revision-Date: 2004-03-01 17:42+0000\n"
 "Last-Translator: Owain Green <owaing@oceanfree.net>\n"
 "Language-Team: Cymraeg <Cy@li.org>\n"
@@ -76,16 +76,16 @@ msgstr ""
 "dadnamu yn %s. Cofiwch atodi'r ffeil hon at yr adroddiad nam. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
+#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:545
 msgid "_Back"
 msgstr "_Yn Ôl"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
+#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:549
 msgid "_Next"
 msgstr "_Nesaf"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:541
 #: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Croeso"
@@ -301,16 +301,16 @@ msgid "Please set the date and time for the system."
 msgstr "Gosodwch y dyddiad ac amser ar gyfer y system, os gwelwch yn dda."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:123
+#: ../src/modules/date.py:121
 msgid "Please enter a time server."
 msgstr "Rhowch weinydd amser os gwelwch yn dda."
 
-#: ../src/modules/date.py:125 ../src/modules/date.py:144
-#: ../src/modules/date.py:175
+#: ../src/modules/date.py:123 ../src/modules/date.py:143
+#: ../src/modules/date.py:174
 msgid "Error"
 msgstr "Gwall"
 
-#: ../src/modules/date.py:137 ../src/modules/date.py:168
+#: ../src/modules/date.py:136 ../src/modules/date.py:167
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -319,7 +319,7 @@ msgstr ""
 "Nid oedd modd sefydlu cysylltiad â %s. Naill ai nid yw %s ar gael neu mae'r "
 "gosodiadau mur cadarn ar eich cyfrifiadur yn gwrthod cysylltiadau NTP."
 
-#: ../src/modules/date.py:205
+#: ../src/modules/date.py:204
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Yn cysylltu â'r gweinydd NTP. Arhoswch os gwelwch yn dda..."
 
