@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.1.4
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Jul  2 2003 Brent Fox <bfox@redhat.com> 1.1.4-2
+- bump relnum and rebuild
+
 * Wed Jul  2 2003 Brent Fox <bfox@redhat.com> 1.1.4-1
 - remove unneeded code from the neworking module
 
