@@ -37,7 +37,6 @@ class XServer:
             args = [serverPath, ':1', 'vt7', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
                     
             os.execv(serverPath, args)
-            self.set_value(xserver_pid)
 
         # give time for the server to fail (if it is going to fail...)
         time.sleep (5)
