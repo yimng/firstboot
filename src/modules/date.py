@@ -66,7 +66,7 @@ class TimeWindow(FirstbootGuiWindow):
         self.datePageVBox = self.datePage.getVBox()
 
         #Add icon to the top frame
-        self.icon = functions.imageFromFile("dateconfig-icon.png")
+        self.icon = functions.imageFromPath("/usr/share/redhat-config-date/pixmaps/redhat-config-date.png")
 
         self.myVbox = self.datePageVBox
 
