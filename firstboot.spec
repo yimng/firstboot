@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.3.5
-Release: 1
+Release: 2
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -20,7 +20,6 @@ Requires: rhpl
 Requires: system-config-date
 Requires: system-config-display
 Requires: system-config-language
-Requires: system-config-mouse
 Requires: system-config-keyboard
 Requires: system-config-soundcard
 Requires: system-config-securitylevel
@@ -74,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Mar  1 2004 Brent Fox <bfox@redhat.com> 1.3.5-2
+- remove Requires on system-config-mouse
+
 * Tue Feb 17 2004 Brent Fox <bfox@redhat.com> 1.3.5-1
 - call self.win.present() to allow initial keyboard input
 
