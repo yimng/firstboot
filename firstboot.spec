@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.10
+Version: 1.1.11
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Aug 15 2003 Brent Fox <bfox@redhat.com> 1.1.11-1
+- run 'chkconfig --del firstboot' when it's done
+
 * Thu Aug 14 2003 Brent Fox <bfox@redhat.com> 1.1.10-1
 - allow underscores and dashes in usernames (bug #99115)
 
