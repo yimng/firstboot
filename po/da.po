@@ -1,12 +1,13 @@
-# Norwegian (bogmål) translation of firstboot.
+# Danish translation of firstboot.
 # Copyright © 2002 Free Software Foundation.
 # Kjartan Maraas <kmaraas@gnome.org>, 2002.
+# Keld Simonsen <keld@dkuug.dk>, 2002.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-07-30 23:39+0200\n"
+"PO-Revision-Date: 2002-08-02 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -15,9 +16,8 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
-msgstr "En fejl indtraf i modul %s."
+msgstr "En fejl indtraf i %s-modulet."
 
 #: ../src/exceptionWindow.py:34
 msgid ""
@@ -25,6 +25,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Da der er et problem med %s-modulet, \n"
+"vil Red Hat Opsætningsagenten ikke indlæse dette modul, og \n"
+"den vil forsøge at køre de resterende moduler."
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -33,6 +36,10 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
+"fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
+"En kopi af fejlsøgningsuddata er gemt i /tmp/firstboot.txt \n"
+"Vør sød at vedlægge denne fil til fejlrapporten. \n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -47,7 +54,6 @@ msgid "Linux Application CD"
 msgstr "Linux applikations-CD"
 
 #: ../src/modules/additional_cds.py:32
-#, fuzzy
 msgid "Install Additional Software"
 msgstr "Installér yderligere programmel"
 
@@ -98,12 +104,10 @@ msgid "Finish Setup"
 msgstr "Færdiggør opsætning"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
 msgstr "Færdiggjorde installation!"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
@@ -265,7 +269,6 @@ msgstr ""
 #~ msgid "Keyboard"
 #~ msgstr "Tastaturkort:"
 
-#, fuzzy
 #~ msgid "Select the appropriate keyboard for the system."
 #~ msgstr "Sæt dato og klokkeslet for systemet."
 
