@@ -1,22 +1,22 @@
-# Norwegian (bokm�l) translation of firstboot.
-# Copyright � 2002 Free Software Foundation.
+# Norwegian (bokmål) translation of firstboot.
+# Copyright © 2002 Free Software Foundation.
 # Kjartan Maraas <kmaraas@gnome.org>, 2002.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
 "POT-Creation-Date: Tue Jul 23 12:13:24 2002\n"
-"PO-Revision-Date: 2002-06-28 23:39+0200\n"
+"PO-Revision-Date: 2002-07-23 18:39+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Generated-By: pygettext.py 1.4\n"
 
 #: ../src/exceptionWindow.py:30
 msgid "An error has occured in module %s."
-msgstr ""
+msgstr "En feil har oppstått i modul %s."
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -35,17 +35,17 @@ msgid ""
 "If you have additional CDs from the Red Hat Linux box set, such as the Red "
 "Hat Linux Documentation CD or the Linux Applications CD, please insert the "
 "disc now and click the corresponding button below."
-msgstr ""
+msgstr "Hvis du har tilleggs-CDer fra Red Hat Linux bokssettet, slik som Red Hat Linux dokumentasjons-CDen eller Linux Applications CDen, vennligst sett denne inn nå og klikk på den korresponderende knappen under."
 
 #: ../src/modules/additional_cds.py:93
 msgid ""
 "This feature is not yet implemented.  Please do not report bugs about this "
 "button."
-msgstr ""
+msgstr "Denne funksjonen er ikke implementert ennå. Vennligst ikke rapporter feil om denne knappen."
 
 #: ../src/modules/additional_cds.py:94 ../src/modules/date.py:113
 msgid "Error"
-msgstr ""
+msgstr "Feil"
 
 #: ../src/modules/date.py:49
 msgid "Date & Time"
@@ -63,18 +63,17 @@ msgstr "Vennligst sett dato og klokkeslett for systemet."
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
+msgstr "En tilkobling til %s kunne ikke opprettes. Enten er %s ikke tilgjengelig eller så blokkerer brannvegginnstillingene på din datamaskin NTP-tilkoblinger."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Installation"
-msgstr ""
+msgstr "Fullfør installasjonen"
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
-msgstr ""
+msgstr "Installasjonen er fullført!"
 
 #: ../src/modules/hardware.py:27
-#, fuzzy
 msgid "Configure Hardware"
 msgstr "Konfigurer maskinvare"
 
@@ -108,72 +107,64 @@ msgid "Printers:"
 msgstr "Skrivere:"
 
 #: ../src/modules/keyboard_gui.py:69
-#, fuzzy
 msgid "Keyboard"
-msgstr "Tastaturkart:"
+msgstr "Tastatur"
 
 #: ../src/modules/keyboard_gui.py:71
-#, fuzzy
 msgid "Keyboard Configuration"
-msgstr "Konfigurasjon av dato og klokkeslett"
+msgstr "Konfigurasjon av tastatur"
 
 #: ../src/modules/keyboard_gui.py:72
 msgid "A configuration tool for the system keyboard"
-msgstr ""
+msgstr "Et konfigurasjonsverktøy for systemtastaturet"
 
 #: ../src/modules/keyboard_gui.py:74
-#, fuzzy
 msgid "Select the appropriate keyboard for the system."
-msgstr "Vennligst sett dato og klokkeslett for systemet."
+msgstr "Velg riktig tastatur for systemet."
 
 #: ../src/modules/language.py:40
 msgid "Language"
-msgstr ""
+msgstr "Språk"
 
 #: ../src/modules/language.py:42 ../src/modules/language.py:197
-#, fuzzy
 msgid "Language Configuration"
-msgstr "Konfigurasjon av dato og klokkeslett"
+msgstr "Konfigurasjon av språk"
 
 #: ../src/modules/language.py:43
 msgid "A configuration tool to set the language for the system"
-msgstr ""
+msgstr "Et konfigurasjonsverktøy for å sette språket for systemet"
 
 #: ../src/modules/language.py:55
 msgid "Language Selection"
-msgstr ""
+msgstr "Språkvalg"
 
 #: ../src/modules/language.py:58
-#, fuzzy
 msgid "Please select the default language for the system."
-msgstr "Vennligst sett dato og klokkeslett for systemet."
+msgstr "Vennligst velg forvalgt språk for systemet."
 
 #: ../src/modules/language.py:161
 msgid "The changes will take effect the next time you log in."
-msgstr ""
+msgstr "Endringene vil tre i kraft neste gang du logger inn."
 
 #: ../src/modules/mouse_gui.py:38
-#, fuzzy
 msgid "Mouse"
-msgstr "Mus:"
+msgstr "Mus"
 
 #: ../src/modules/mouse_gui.py:40
-#, fuzzy
 msgid "Mouse Configuration"
-msgstr "Konfigurasjon av dato og klokkeslett"
+msgstr "Konfigurasjon av mus"
 
 #: ../src/modules/mouse_gui.py:42
 msgid "A configuration tool for the mouse"
-msgstr ""
+msgstr "Et konfigurasjonsverktøy for mus"
 
 #: ../src/modules/mouse_gui.py:43
-#, fuzzy
 msgid "Please select the mouse for the system."
-msgstr "Vennligst sett dato og klokkeslett for systemet."
+msgstr "Vennligst velg riktig mus for systemet."
 
 #: ../src/modules/mouse_gui.py:53
 msgid "Emulate 3 button click"
-msgstr ""
+msgstr "Emuler 3-knappers klikk"
 
 #: ../src/modules/networking.py:19
 msgid "Network check"
@@ -189,7 +180,7 @@ msgid ""
 "for registering your system with RHN and for using the Red Hat Update Agent "
 "to update your system.  To set up a network connection, please click on the "
 "button below.\n"
-msgstr ""
+msgstr "En nettverkstilknytning ble ikke funnet. Nettverkskonnektivitet er nødvendig for å registrere ditt system hos RHN og for å bruke Red Hat Update Agent til å oppdatere ditt system. Vennligst klikk på knappen under for å sette opp en nettverkstilknytning.\n"
 
 #: ../src/modules/networking.py:118
 msgid "Set up networking..."
@@ -229,93 +220,90 @@ msgstr "Vertsnavn"
 
 #: ../src/modules/networking.py:231
 msgid "Primary DNS"
-msgstr "Prim�r DNS"
+msgstr "Primær DNS"
 
 #: ../src/modules/networking.py:232
 msgid "Secondary DNS"
-msgstr "Sekund�r DNS"
+msgstr "Sekundær DNS"
 
 #: ../src/modules/networking.py:232
 msgid "Ternary DNS"
-msgstr "Terti�r DNS"
+msgstr "Tertiær DNS"
 
 #: ../src/modules/rootpassword.py:21 ../src/modules/rootpassword.py:57
 msgid "Root Password"
-msgstr ""
+msgstr "Root-passord"
 
 #: ../src/modules/rootpassword.py:60
-#, fuzzy
 msgid "Please set the root password for the system."
-msgstr "Vennligst sett dato og klokkeslett for systemet."
+msgstr "Vennligst sett passord for root på systemet."
 
 #: ../src/modules/rootpassword.py:65
 msgid "Root Password:"
-msgstr ""
+msgstr "Root-passord:"
 
 #: ../src/modules/rootpassword.py:69
 msgid "Confirm:"
-msgstr ""
+msgstr "Bekreft:"
 
 #: ../src/modules/rootpassword.py:89
 msgid "Root password must be at least 6 characters in length."
-msgstr ""
+msgstr "Root-passordet må være minst 6 tegn langt."
 
 #: ../src/modules/rootpassword.py:99
 msgid "Passwords do not match.  Please try again."
-msgstr ""
+msgstr "Passordene er ikke like. Vennligst prøv igjen."
 
 #: ../src/modules/securitylevel.py:22
 msgid "Security Level"
-msgstr ""
+msgstr "Sikkerhetsnivå"
 
 #: ../src/modules/securitylevel.py:24 ../src/modules/securitylevel.py:37
 #: ../src/modules/securitylevel.py:251
-#, fuzzy
 msgid "Security Level Configuration"
-msgstr "Konfigurasjon av dato og klokkeslett"
+msgstr "Konfigurasjon av sikkerhetsnivå"
 
 #: ../src/modules/securitylevel.py:25
 msgid "Configure system security level"
-msgstr ""
+msgstr "Konfigurer systemets sikkerhetsnivå"
 
 #: ../src/modules/securitylevel.py:39
-#, fuzzy
 msgid "Please choose the security level for the system."
-msgstr "Vennligst sett dato og klokkeslett for systemet."
+msgstr "Vennligst velg sikkerhetsnivå for systemet."
 
 #: ../src/modules/securitylevel.py:42
 msgid "Security Level:"
-msgstr ""
+msgstr "Sikkerhetsnivå:"
 
 #: ../src/modules/securitylevel.py:49
 msgid "Use default firewall rules"
-msgstr ""
+msgstr "Bruk forvalgte brannveggregler"
 
 #: ../src/modules/securitylevel.py:50
 msgid "Customize"
-msgstr ""
+msgstr "Tilpass"
 
 #: ../src/modules/securitylevel.py:52
 msgid "Trusted devices:"
-msgstr ""
+msgstr "Enheter vi stoler på:"
 
 #: ../src/modules/securitylevel.py:59
 msgid "Allow incoming:"
-msgstr ""
+msgstr "Tillat innkommende:"
 
 #: ../src/modules/securitylevel.py:66
 msgid "Other ports: (1029:tcp)"
-msgstr ""
+msgstr "Andre porter: (1029:tcp)"
 
 #: ../src/modules/securitylevel.py:196
 msgid ""
 "Invalid port given: %s.  The proper format is 'port:protocol, port:"
 "protocol'.  For example, '1234:udp, 3456:tcp'"
-msgstr ""
+msgstr "Ugyldig port oppgitt: %s. Riktig format er «port:protokoll, port:protokoll». For eksempel, «1234:udp, 3456:tcp»"
 
 #: ../src/modules/up2date.py:19
 msgid "Update Your System"
-msgstr ""
+msgstr "Oppdater ditt system"
 
 #: ../src/modules/up2date.py:28
 msgid "Red Hat Update Agent"
@@ -328,16 +316,15 @@ msgid ""
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
-msgstr ""
+msgstr "Nå som du har registrert deg hos Red Hat Network kan du kjøre Red Hat Update Agent for å motta de siste programvarepakkene direkte fra Red Hat. Bruk av dette verktøyet vil la deg holde ditt Red Hat Linux system oppdatert med alle sikkerhetsoppgraderinger, feilopprettinger og forbedringer i pakkene."
 
 #: ../src/modules/up2date.py:66
-#, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
-msgstr "Registrer ditt system hos Red Hat Network"
+msgstr "Ja, jeg ønsker å registrere meg hos Red Hat Network"
 
 #: ../src/modules/up2date.py:67
 msgid "No, I do not want to register my system."
-msgstr ""
+msgstr "Nei, jeg ønsker ikke å registrere mitt system."
 
 #: ../src/modules/welcome.py:19
 msgid "Welcome"
@@ -351,10 +338,10 @@ msgstr "Velkomment til Red Hat Linux Beta!"
 #~ msgstr "Registrer hos RHN"
 
 #~ msgid "Register system now"
-#~ msgstr "Registrer systemet n�"
+#~ msgstr "Registrer systemet nå"
 
 #~ msgid "You currently have no network connection."
-#~ msgstr "Du har ingen nettverkstilkobling enn�."
+#~ msgstr "Du har ingen nettverkstilkobling ennå."
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Start Red Hat oppdateringsagent"
