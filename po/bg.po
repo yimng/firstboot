@@ -3,6 +3,7 @@
 # translation of bg.po to
 # translation of bg.po to
 # translation of bg.po to
+# translation of bg.po to
 # translation of firstboot.po to
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
@@ -13,7 +14,7 @@ msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-14 20:07-0400\n"
-"PO-Revision-Date: 2004-09-10 11:56-0700\n"
+"PO-Revision-Date: 2004-09-15 11:46-0700\n"
 "Last-Translator: Николай Сърмаджиев,преносим <nikolayds@msn.com>\n"
 "Language-Team:  <bg@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,25 +32,25 @@ msgstr "Лицензионно споразумение"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr "Да, съгласен съм с лицензионното споразумение"
+msgstr "_Да, съгласен съм с лицензионното споразумение"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr "Не, не съм съгласен"
+msgstr "_Не, не съм съгласен"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
 msgstr ""
-"Бихте ли желали да прочетете отново и да преразгледате лицензионното "
+"Бихте ли желали да отново да прочетете и преразгледате лицензионното "
 "споразумение?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr "Прочитане на лиценза"
+msgstr "_Прочитане на лиценза"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr "Изключване"
+msgstr "_Изключване"
 
 #: ../src/exceptionWindow.py:48
 #, python-format
@@ -64,8 +65,8 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Тъй като има проблем с модулът %s, \n"
-"Red Hat агента за установяване ще го пропусне и\n"
-"опита да стартира останалите модули."
+"Ред Хат агента за установяване ще го пропусне и\n"
+"ще се опита да стартира останалите модули."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -75,7 +76,7 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Моля, съобщавайте за грешки в 'firstboot' на Red Hat следящата\n"
+"Моля, съобщавайте за грешки в 'firstboot' на следящата\n"
 "система за грешки на адрес http://www.redhat.com/bugzilla. \n"
 "Копие на дебъг информацията е запазен на %s.\n"
 "Моля, закачете файла към описанието на грешката.\n"
@@ -83,12 +84,12 @@ msgstr ""
 #: ../src/firstbootWindowLocal.py:187 ../src/firstbootWindowLocal.py:557
 #: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:557
 msgid "_Back"
-msgstr "Обратно"
+msgstr "_Предходен"
 
 #: ../src/firstbootWindowLocal.py:195 ../src/firstbootWindowLocal.py:561
 #: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:561
 msgid "_Next"
-msgstr "Следващ"
+msgstr "_Следващ"
 
 #: ../src/firstbootWindowLocal.py:409 ../src/firstbootWindow.py:409
 #, python-format
@@ -134,7 +135,7 @@ msgstr "Часови пояс"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr "Стартиране на инструмента"
+msgstr "Стартиране на инструмент"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
@@ -142,7 +143,7 @@ msgstr "Изберете какво да промените"
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr "Агент за Установяване"
+msgstr "Агент за установяване"
 
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
@@ -152,9 +153,7 @@ msgstr "Допълнителни дискове"
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr ""
-"Ако имате някое от CD-тата изброени по-долу, можете да инсталирате пакети от "
-"него, като поставите избрания диск в CD-то и щракнете на подходящия бутон."
+msgstr "Ако имате някое от CD-тата изброени по-долу, можете да инсталирате пакети от него, като поставите избрания диск в CD-то и щракнете на подходящия бутон."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -164,13 +163,10 @@ msgstr "Инсталиране..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
-"CD-ROM не е намерен. Моля поставете CD-ROM в устройството и натиснете \"Добре"
-"\" за продължаване."
+msgstr "CD-ROM не е намерен. Моля поставете CD-ROM в устройството и натиснете \"Добре\" за продължаване."
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Авто-стартиращата програма не може да бъде намерена на CD-то. Натиснете "
 "\"Добре\" за продължаване."
@@ -184,48 +180,40 @@ msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr ""
-"Препоръчително е да създадете личен потребителски акаунт за нормална (не-"
-"административна) работа. За да създадете личен акаунт, задайте необходимата "
-"информация."
+msgstr "Препоръчително е да създадете личен потребителски акаунт за нормална (не-административна) работа. За да създадете личен акаунт, задайте необходимата информация."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
-msgstr "Потребителско име:"
+msgstr "_Потребителско име:"
 
 #: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
-msgstr "Име:"
+msgstr "_Име:"
 
 #: ../src/modules/create_user.py:89
 msgid "_Password:"
-msgstr "Парола:"
+msgstr "П_арола:"
 
 #: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
-msgstr "Потвърждаване:"
+msgstr "По_твърждаване:"
 
 #: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
-"Ако използвате мрежова идентификация, като например Kerberos или NIS, моля "
-"натиснете бутона Използване на мрежово удостоверяване."
+msgstr "Ако използвате мрежова идентификация, като например Kerberos или NIS, моля натиснете бутона \"Използване на мрежово удостоверяване\"."
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
-msgstr "Използване на мрежово удостоверяване..."
+msgstr "Използване на _мрежово удостоверяване..."
 
 #: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
-"Горещо се препоръчва да създадете личен акаунт. Ако желаете да продължите "
-"без акаунт, може да влизате с root акаунта, които е запазен само за "
-"административно използване."
+msgstr "Горещо се препоръчва да създадете личен акаунт. Ако желаете да продължите без акаунт, може да влизате с root акаунта, които е запазен само за административно използване."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -257,18 +245,14 @@ msgstr "Потребителското име не може да започва 
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
-"Потребителското име %s съдържа whitespace. Моля, не използвайте whitespace в "
-"потребителското име."
+msgstr "Потребителското име %s съдържа whitespace. Моля, не използвайте whitespace в потребителското име."
 
 #: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
-"Потребителското име %s съдържа символи за пунктуация. Моля, не използвайте "
-"символи за пунктуация в потребителското име."
+msgstr "Потребителското име %s съдържа символи за пунктуация. Моля, не използвайте символи за пунктуация в потребителското име."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -289,21 +273,17 @@ msgstr ""
 "невалидни символи в потребителското име."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
-msgstr "Дата и Време"
+msgstr "Дата и време"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
@@ -321,15 +301,13 @@ msgstr ""
 
 #: ../src/modules/finished.py:21
 msgid "Finish Setup"
-msgstr "Завършване на установяването"
+msgstr "Приключване на установяването"
 
 #: ../src/modules/finished.py:35
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
-msgstr ""
-"Вашата система е готова за използване. Моля натиснете бутона \"Следващ\" в "
-"долния десен ъгъл за да продължите."
+msgstr "Вашата система е готова за използване. Моля натиснете бутона \"Следващ\" в долния десен ъгъл за да продължите."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -389,22 +367,5 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Още няколко стъпки са нужни за да бъде системата готова за използване. "
-"Агента за Установяване ще Ви преведе през някой базови конфигурации. Моля, "
-"натиснете бутон \"Следващ\" в долния десен ъгъл за да продължите."
+"Агента за Установяване ще Ви преведе през някой базови конфигурации. Моля, натиснете бутон \"Следващ\" в долния десен ъгъл за да продължите."
 
-#~ msgid "Please enter a time server."
-#~ msgstr "Моля, въведете времеви сървър."
-
-#~ msgid "Error"
-#~ msgstr "Грешка"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Не може да се установи връзка с %s. Или %s не е наличен или настройките "
-#~ "на защитната стена на компютъра блокират NTP връзки."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Свързване с NTP сървър. Моля изчакайте..."
