@@ -232,7 +232,7 @@ class firstbootWindow:
 
     def destroy(self, *args):
         #Exit the GTK loop
-        gtk.mainquit()
+        gtk.main_quit()
         #Kill the window manager
         if self.wm_pid:
             os.kill(self.wm_pid, 15)
@@ -263,7 +263,7 @@ class firstbootWindow:
         firstbootBackend.writeSysconfigFile(self.doDebug)
 
         #Exit the GTK loop
-        gtk.mainquit()
+        gtk.main_quit()
         if self.wm_pid:
         #Kill the window manager
             os.kill(self.wm_pid, 15)
