@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.1.13
-Release: 2
+Release: 3
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 21 2003 Brent Fox <bfox@redhat.com> 1.1.13-3
+- bump relnum and rebuild
+
 * Thu Aug 21 2003 Brent Fox <bfox@redhat.com> 1.1.13-2
 - bump relnum and rebuild
 
