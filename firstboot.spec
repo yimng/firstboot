@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.13
-Release: 3
+Version: 1.1.14
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 28 2003 Brent Fox <bfox@bfox.devel.redhat.com> 1.1.14-1
+- handle cds without autorun files better in additional_cds.py
+
 * Thu Aug 21 2003 Brent Fox <bfox@redhat.com> 1.1.13-3
 - bump relnum and rebuild
 
