@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.2.0
-Release: 2
+Release: 3
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -59,6 +59,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed June 12 2002 Brent Fox <bfox@redhat.com> 0.2.0-3
+- Fixed a string error in the welcome module
+
 * Fri May 31 2002 Brent Fox <bfox@redhat.com> 0.2.0-2
 - Some additions to hardware screen
 
