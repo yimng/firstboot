@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Sun Dec 22 11:52:36 2002\n"
+"POT-Creation-Date: Mon Dec 23 01:31:43 2002\n"
 "PO-Revision-Date: 2002-12-23 14:51+1000\n"
 "Last-Translator: David Barzilay <barzilay@redhat.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
@@ -45,11 +45,14 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "O 'firstboot' já foi executado uma vez neste sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+"Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para rodar o 'firstboot' durante o início do sistema, execute os seguintes "
 "comandos:"
@@ -127,12 +130,18 @@ msgstr ""
 "A conta de usuário não foi criada.  Tem certeza que deseja continuarsem "
 "criar um usuário?"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:120
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "As senhas não coincidem.  Por favor insira a senha novamente."
 
-#: ../src/modules/create_user.py:126
-msgid "An account with username %s already exists.  Please specify another username."
+#: ../src/modules/create_user.py:128
+#, fuzzy
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "As senhas não coincidem.  Por favor insira a senha novamente."
+
+#: ../src/modules/create_user.py:139
+msgid ""
+"An account with username %s already exists.  Please specify another username."
 msgstr ""
 "Já existe uma conta para o usuário de nome %s.  Por favor escolha outro nome "
 "de usuário."
@@ -308,4 +317,3 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Agente de Configuração Red Hat"
-
