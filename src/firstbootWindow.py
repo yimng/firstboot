@@ -255,7 +255,8 @@ class firstbootWindow:
         #Exit the GTK loop
         gtk.mainquit()
         #Kill the window manager
-        os.kill(self.wm_pid, 15)
+        if self.wm_pid:
+            os.kill(self.wm_pid, 15)
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
 
