@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug  1 12:40:43 2002\n"
+"POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
 "PO-Revision-Date: 2002-07-26 16:13+0000\n"
 "Last-Translator:  <claudia@redhat.it>\n"
 "Language-Team:  <de@li.org>\n"
@@ -15,9 +15,25 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: ../src/exceptionWindow.py:30
-msgid "An error has occured in module %s."
+#: ../src/exceptionWindow.py:31
+#, fuzzy
+msgid "An error has occured in the %s module."
 msgstr "In Modul %s ist ein Fehler aufgetreten."
+
+#: ../src/exceptionWindow.py:34
+msgid ""
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
+msgstr ""
+
+#: ../src/exceptionWindow.py:38
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to /tmp/firstboot.txt \n"
+"Be sure to attach that file to the bug report. \n"
+msgstr ""
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
