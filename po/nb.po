@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
-"POT-Creation-Date: Tue Jul 22 22:58:03 2003\n"
+"POT-Creation-Date: 2003-08-13 15:34-0400\n"
 "PO-Revision-Date: 2003-02-18 20:47+0100\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -13,11 +13,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
+#. !/usr/bin/python2.2
+#. #
+#. # I18N
+#. #
 #: ../src/exceptionWindow.py:31
+#, python-format
 msgid "An error has occurred in the %s module."
 msgstr "En feil har oppstått i modulen %s."
 
 #: ../src/exceptionWindow.py:36
+#, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
@@ -28,6 +34,7 @@ msgstr ""
 "gjenværende modulene."
 
 #: ../src/exceptionWindow.py:40
+#, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -39,6 +46,23 @@ msgstr ""
 "En kopi av feilmelding er lagret som %s - husk å legge ved denne\n"
 "i feilrapporten.\n"
 
+#. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
+#. and try to complete the other steps successfully
+#. !/usr/bin/python2.2
+#. Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
+#. Turn off the firstboot init script
+#. !/usr/bin/python2.2
+#. #
+#. # I18N
+#. #
+#. Let's check to see if firstboot should be run or not
+#. If we're in debug mode, run anyway.  Even if the file exists
+#. Well first, is this even being run as root?
+#. We're not in debug mode, so do some checking
+#. First, look and see if /etc/sysconfig/firstboot exists
+#. If /etc/sysconfig/firstboot exists, parse the file
+#. If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
+#. Firstboot should not be run
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot er allerede kjørt på dette systemet.\n"
@@ -53,23 +77,181 @@ msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr "For å kjøre firstboot ved systemstart, kjør følgende kommandoer:"
 
+#. Firstboot has never been run before, so start it up
+#. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
+#. if they want to run firstboot or not.
+#. They booted the machine in runlevel 3.  Assume that they don't want to see firstboot
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot kjøres ikke i kjøringsnivå 3."
 
+#. #-------Comment out the newt window for now.  Ran out of time for GinGin
+#. #     import textWindow
+#. #     from snack import *
+#. #     screen = SnackScreen()
+#. #     result = textWindow.TextWindow()(screen)
+#. #     if result == -1:
+#. #         #If they don't want to run firstboot, exit for good
+#. #         screen.finish()
+#. #         firstbootBackend.writeSysconfigFile(doDebug)
+#. #         os._exit(0)
+#. #     else:
+#. #         #They want to run firstboot, so let's pass on through
+#. #         screen.finish()
+#. If rhgb (graphical boot) is running, let's use it's X server
+#. However, we still need to start up metacity and merge the X resources
+#. If there's no X Server running, let's start one
+#. set the display environment variable
+#.
+#. Copyright 2001,2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. #
+#. # I18N
+#. #
+#. Create the initial window and a vbox to fill it with.
+#. This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
+#. If rhgb isn't running, then we need to draw the background
+#. Create the notebook.  We use a ListView to control which page in the
+#. notebook is displayed.
+#. Add the box on the left to the window's HBox.
+#. Populate the right side of the window.  Add the notebook to a VBox.
+#. Now add the EventBox to the right-side VBox.
+#. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
+#. Create a button box to handle navigation.
+#. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
 msgstr ""
 
+#. Create the "go forward" button.
 #: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
 msgstr ""
 
+#. Add the button box to the bottom of the box which contains the notebook.
+#. Add the main HBox to a VBox which will sit in the window.
+#. Exit the GTK loop
+#. Kill the window manager
+#. Exit firstboot.  This should take down the X server as well
+#. Call the apply method if it exists
+#. Call exitFirstboot to do some cleanup before exiting
+#. Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
+#. Exit the GTK loop
+#. Kill the window manager
+#. Give the X server a second to exit
+#. Exit firstboot.  This should take down the X server as well
+#. Call the apply method if it exists
+#. Call setPointer to make the left hand pointer move to the correct pointer
+#. If the module needs to grab the focus, let it
+#. Something went wrong in the module.  Don't advance
+#. Check to see if we're on the last page.
+#. Call setPointer to make the left hand pointer move to the correct pointer
+#. Generate a list of all of the module files (which becomes the list of
+#. all non-hidden files in the directory with extensions other than .py.
+#. Import each module, and filter out those
+#. XXX - hack to allow firstboot to pass in the parent class into language
+#. this will allow the language module to change firstboot's current locale
+#. If the module defines a moduleClass, it has to match the mode
+#. we're starting up in, otherwise it's always used.  Add it to
+#. a dictionary keyed by the module's declared priority.
+#. Get the list of module priorities, sort them to determine a run
+#. order, and build a list with the modules in the proper order.
+#. #         self.leftLabelVBox.set_border_width(12)
+#. #         leftEventBox = gtk.EventBox()
+#. #         leftEventBox.add(self.leftLabelVBox)
+#. #         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
+#. #         self.leftVBox = gtk.VBox()
+#. #         self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
+#. Add the modules to the proper lists.
+#. Add the module to the list of modules.
+#. Launch the module's GUI.
+#. If it launched, add it to the mdoule list.
+#. If we're in 640x480 mode, remove the title bars
+#. If the module has a name, add it to the list of labels
 #: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Velkommen"
 
+#. !/usr/bin/python2.2
+#. Attempt to load a gtk.Image from a file.
+#. Attempt to load a gtk.Image from a file.
+#. !/usr/bin/python
+#. #
+#. # I18N
+#. #
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr "Ja"
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr "Nei"
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+"Red Hat oppsettagent kan hjelpe deg å konfigurere din maskin ved å gaide deg "
+"gjennom en rekke steg. Oppsettagenten krever at X Windows kjører.\n"
+"\n"
+"Hvis du ønsker å kjøre oppsettagenten må du velge «Ja». Hvis du velger «Nei» "
+"vil systemet fortsette oppstart og du vil aldri se denne meldingen igjen. "
+"Vil du kjøre oppsettagenten nå?"
+
+#: ../src/textWindow.py:24
+msgid "Red Hat Setup Agent"
+msgstr "Red Hat oppsett"
+
+#.
+#. splashscreen.py: a quick splashscreen window that displays during ipl
+#.
+#. Matt Wilson <msw@redhat.com>
+#.
+#. Copyright 2001 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. from flags import flags
+#. #     #set the background to a dark gray
+#. #     if flags.setupFilesystems:
+#. #         path = ("/usr/X11R6/bin/xsetroot",)
+#. #         args = ("-solid", "gray45")
+#. #         child = os.fork ()
+#. #         if (child == 0):
+#. #             os.execv (path[0], path + args)
+#. #         try:
+#. #             pid, status = os.waitpid(child, 0)
+#. #         except OSError, (errno, msg):
+#. #             print __name__, "waitpid:", msg
+#. win = GtkWindow()
+#. win.set_title("popup")
+#. win.show_all()
+#. hpane = GtkHPaned()
+#. print sys.path
+#. moduleList.append(obj)
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
 msgstr "Tilleggs-CDer"
@@ -95,6 +277,7 @@ msgstr "Installer..."
 msgid "Red Hat Linux Installation CD"
 msgstr "Red Hat Linux installasjons-CD"
 
+#. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
@@ -103,6 +286,15 @@ msgstr ""
 "Fant ingen CD-ROM. Sett inn en CD-ROM i spilleren og trykk \"OK\" for å "
 "fortsette."
 
+#. Be sure to remove the focus grab if we have to return here.
+#. Otherwise, the user is stuck
+#. I think redhat-config-packages will do a umount, but just in case it doesn't...
+#. Yep, redhat-config-packages has already umounted the disc, so fall through and go on
+#. Remove the focus grab of the gtkInvisible widget
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
 msgid "User Account"
 msgstr "Brukerkonto"
@@ -137,6 +329,7 @@ msgstr "Passord:"
 msgid "Confir_m Password:"
 msgstr "Bekreft passord:"
 
+#. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:94
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
@@ -167,6 +360,7 @@ msgstr "Fortsett"
 msgid "Create _account"
 msgstr "Opprett konto"
 
+#. Check for ascii-only strings
 #: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Passordene er ikke like. Vennligst oppgi passordet igjen."
@@ -176,6 +370,7 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
 
 #: ../src/modules/create_user.py:191
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
@@ -183,6 +378,9 @@ msgstr ""
 "Brukernavnet «%s» er en reservert systemkonto. Vennligst oppgi et annet "
 "brukernavn."
 
+#. Check for ascii-only strings
+#. If we get to this point, all the input seems to be valid.  Let's add the user
+#. if the user doesn't already exist
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
 msgstr "Brukernavnet må ha færre enn 33 tegn."
@@ -191,8 +389,9 @@ msgstr "Brukernavnet må ha færre enn 33 tegn."
 msgid "The user name may not begin with a number."
 msgstr "Brukernavnet kan ikke starte med et tall."
 
+#. Check for whitespace
 #: ../src/modules/create_user.py:252
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
@@ -200,6 +399,7 @@ msgstr ""
 "Brukernavn «%s» inneholder mellomrom. Vennligst ikke bruk mellomrom i %s."
 
 #: ../src/modules/create_user.py:259
+#, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
@@ -208,6 +408,7 @@ msgstr ""
 "brukernavnet."
 
 #: ../src/modules/create_user.py:266
+#, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
@@ -216,6 +417,7 @@ msgstr ""
 "bokstaver i brukernavnet."
 
 #: ../src/modules/create_user.py:273
+#, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
@@ -227,11 +429,41 @@ msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Passordet inneholder ugyldige tegn. Vennligst bruk kun ASCII-tegn."
 
+#. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:295
+#, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Navnet «%s» inneholder ugyldige tegn. Vennligst bruk kun ASCII-tegn."
 
+#. Create a gtkInvisible dialog to block until up2date is complete
+#. Run rhn_register so they can register with RHN
+#.
+#. date_gui.py - GUI front end code for mouse configuration
+#.
+#. Brent Fox <bfox@redhat.com>
+#.
+#. Copyright 2002 Red Hat, Inc.
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. !/usr/bin/python2.2
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Dato & klokkeslett"
@@ -240,6 +472,12 @@ msgstr "Dato & klokkeslett"
 msgid "Please set the date and time for the system."
 msgstr "Vennligst oppgi dato og klokkeslett for systemet."
 
+#. Initialize date backend
+#. Initialize datePage and pass dateBackend into it
+#. Add icon to the top frame
+#. We're not using ntp, so stop the service
+#. set the time on the system according to what the user set it to
+#. They want ntp but have not set a server
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
 msgstr "Vennligst oppgi en tidtjener."
@@ -249,6 +487,7 @@ msgid "Error"
 msgstr "Feil"
 
 #: ../src/modules/date.py:145
+#, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -257,10 +496,16 @@ msgstr ""
 "eller så blokkerer brannvegginnstillingene på din datamaskin NTP-"
 "tilkoblinger."
 
+#. do something slow
 #: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Kontakter NTP-tjener..."
 
+#. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Avslutt Oppsett"
@@ -274,6 +519,10 @@ msgstr ""
 "Systemet er nå satt opp og ferdig for bruk. Trykk «Fortsett»-knappen i nedre "
 "høyre hjørne for å fortsette."
 
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:23
 msgid "Network Setup"
 msgstr ""
@@ -298,6 +547,34 @@ msgstr ""
 msgid "static"
 msgstr ""
 
+#. Create a gtkInvisible dialog to block until up2date is complete
+#. Run rhn_register so they can register with RHN
+#.
+#. soundcard_gui.py - GUI front end code for soundcard configuration
+#.
+#. Brent Fox <bfox@redhat.com>
+#.
+#. Copyright 2002 Red Hat, Inc.
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. !/usr/bin/python2.2
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
 msgstr "Lydkort"
@@ -306,6 +583,8 @@ msgstr "Lydkort"
 msgid "A sound card has been detected on your computer."
 msgstr "Et lydkort er funnet på ditt system."
 
+#. Initialize soundcard page
+#. Add icon to the top frame
 #: ../src/modules/soundcard_gui.py:74
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
@@ -317,6 +596,32 @@ msgstr ""
 "sere av tre lyder. Den første lyden vil være på høyre kanal, den andre på "
 "venstre kanal og den tredje i begge."
 
+#.
+#. timezone.py - GUI front end code for mouse configuration
+#.
+#. Brent Fox <bfox@redhat.com>
+#.
+#. Copyright 2003 Red Hat, Inc.
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. !/usr/bin/python2.2
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
 msgstr ""
@@ -326,6 +631,14 @@ msgstr ""
 msgid "Please set the timezone for the system."
 msgstr "Vennligst oppgi dato og klokkeslett for systemet."
 
+#. Initialize timezone backend
+#. Initialize datePage and pass dateBackend into it
+#. Add icon to the top frame
+#. Get the timezone info from the timezone page
+#. #
+#. # I18N
+#. #
+#. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
 msgstr "Red Hat Network"
@@ -377,32 +690,3 @@ msgstr ""
 "Det gjenstår noen steg før systemet er klart til bruk. Red Hat Setup Agent "
 "vil nå hjelpe deg gjennom grunnleggende konfigurasjon. Trykk «Fortsett»-"
 "knappen i nedre høyre hjørne for å fortsette."
-
-#: ../src/textWindow.py:15
-msgid "No"
-msgstr "Nei"
-
-#: ../src/textWindow.py:15
-msgid "Yes"
-msgstr "Ja"
-
-#: ../src/textWindow.py:17
-msgid ""
-"The Red Hat Setup Agent can assist you in configuring your machine by "
-"guiding you through a series of steps.  Setup Agent requires the X Window "
-"System to run.  \n"
-"\n"
-"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-"\"No\", the system will continue booting and you will never see this message "
-"again.  Do you wish to run the Setup Agent now?"
-msgstr ""
-"Red Hat oppsettagent kan hjelpe deg å konfigurere din maskin ved å gaide deg "
-"gjennom en rekke steg. Oppsettagenten krever at X Windows kjører.\n"
-"\n"
-"Hvis du ønsker å kjøre oppsettagenten må du velge «Ja». Hvis du velger «Nei» "
-"vil systemet fortsette oppstart og du vil aldri se denne meldingen igjen. "
-"Vil du kjøre oppsettagenten nå?"
-
-#: ../src/textWindow.py:24
-msgid "Red Hat Setup Agent"
-msgstr "Red Hat oppsett"
