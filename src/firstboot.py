@@ -160,7 +160,7 @@ if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
     
-     if os.access("/etc/X11/XF86Config", os.R_OK) or os.access("/etc/X11/XF86Config-4", os.R_OK):
+     if os.access("/etc/X11/xorg.conf", os.R_OK) or os.access("/etc/X11/XF86Config", os.R_OK):
           #set the display environment variable
           os.environ['DISPLAY'] = ':1'
 
