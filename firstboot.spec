@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.1
-Release: 10
+Version: 1.0.2
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -67,6 +67,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Nov 12 2002 Brent Fox <bfox@redhat.com> 1.0.2-2
+- explicitly kill X server pid
+- Latest translations
+
 * Thu Sep 05 2002 Brent Fox <bfox@redhat.com> 1.0.1-10
 - moved some pixmaps to redhat-logos package
 - added a requires for redhat-logos package
