@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
-"PO-Revision-Date: 2002-08-02 10:40+0100\n"
+"PO-Revision-Date: 2002-08-08 16:06+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,6 @@ msgstr ""
 "vai tentar executar os módulos restantes."
 
 #: ../src/exceptionWindow.py:41
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -37,7 +36,7 @@ msgid ""
 msgstr ""
 "Por favor adicione um erro no componente 'firstboot' no sistema \n"
 "de gestão de erros da Red Hat em http://www.redhat.com/bugzilla. \n"
-"Uma cópia da saída de depuração foi gravada em  /tmp/firstboot.txt \n"
+"Uma cópia da saída de depuração foi gravada em %s \n"
 "Por favor anexe este ficheiro ao relatório de erro. \n"
 
 #: ../src/modules/additional_cds.py:19
@@ -142,16 +141,14 @@ msgstr ""
 "canal da esquerda e o terceiro ao centro."
 
 #: ../src/modules/up2date.py:18
-#, fuzzy
 msgid "Update Agent"
-msgstr "Agente de Actualizações da Red Hat"
+msgstr "Agente de Actualizações "
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Agente de Actualizações da Red Hat"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -167,11 +164,11 @@ msgid ""
 "information or to subscribe to Red Hat Network Basic Service. \n"
 "\n"
 msgstr ""
-"O Agente de Actualizações da Red Hat vai agora registar a sua máquina na Red "
-"Hat Network para que possa receber os últimos pacotes de software "
-"directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu "
-"sistema Red Hat actualizado, com todas as correcções de segurança, de erros "
-"e melhorias a pacotes."
+"O Agente de Actualizações da Red Hat vai agora registar a sua máquina na Red Hat Network para que possa receber os últimos pacotes de software directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu sistema Red Hat actualizado, com todas as correcções de segurança, de erros e melhorias a pacotes.\n"
+"\n"
+"Se adquiriu este producto, tem direito a experimentar gratuitamente o Serviço Básico da Red Hat Network. Para aceder ao teste gratuito consulte as instruções detalhas presentes no cartão de activação do producto que pode encontrar na caixa.\n"
+"Se não adquiriu este producto, visite http://rhn.redhat.com para mais informações ou para subscrever o Serviço Básico da Red Hat Network. \n"
+"\n"
 
 #: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
@@ -201,6 +198,3 @@ msgstr ""
 "Agente de Configuração da Red Hat vai agora guiá-lo através de algumas "
 "opções básicas.  Por favor carregue no botão \"Avançar\" no canto inferior "
 "direito para continuar."
-
-#~ msgid "Update Your System"
-#~ msgstr "Actualizar o seu Sistema"
