@@ -53,6 +53,7 @@ class firstbootWindow:
             self.win.add (al)
             self.win.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#000000"))
             eb = gtk.EventBox ()
+            eb.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#CCCCCC"))
             al.add(eb)
             eb.add (mainVBox)
 
