@@ -1,19 +1,22 @@
+# translation of tr.po to TURKISH
 # translation of tr.po to Türkçe
 #
 # Turkish translations for firstboot messages.
-# Copyright (C) 2002,2003 Free Software Foundation, Inc
+# Copyright (C) 2002,2003, 2004 Free Software Foundation, Inc
 # $Id$
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2002,2003.
 # Erçin EKER <erc.caldera@gmx.net>, 2003.
+# Hasan Umit Ezerce <humit@tr.net>, 2004.
+# Hasan Umit Ezerce <humit@linuxmail.org>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2003-10-02 05:42+0300\n"
-"Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
-"Language-Team: Türkçe <tr@li.org>\n"
+"PO-Revision-Date: 2004-01-27 13:50-0500\n"
+"Last-Translator: Hasan Umit Ezerce <humit@linuxmail.org>\n"
+"Language-Team: TURKISH <@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,7 +46,7 @@ msgstr ""
 #. #
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr "Lisans Anlaşması"
+msgstr "Lisans Anlaşması "
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
@@ -63,7 +66,7 @@ msgstr "Lisansı _Tekrar Oku"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr "_Kapat"
+msgstr "_Sistemi Kapat"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -98,8 +101,8 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"%s modülünde bir sorun olduğundan Red Hat Ayar\n"
-"Aracısı bu modülü yüklemeden kalan modülleri\n"
+"%s modülünde bir sorun olduğundan Red Hat Kurulum\n"
+"Yardımcısı bu modülü yüklemeden kalan modülleri\n"
 "çalıştırmaya uğraşacak."
 
 #: ../src/exceptionWindow.py:57
@@ -171,19 +174,16 @@ msgstr ""
 #. Firstboot should not be run
 #: ../src/firstboot.py:112
 msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstboot zaten birkez bu sistem üzerinde çalıştırılmış.\n"
+msgstr "Firstboot bu sistem üzerinde zaten bir kez çalıştırılmış.\n"
 
 #: ../src/firstboot.py:113
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
-"Firstboot'u komut satırından çalıştırmak için, takip eden komutları kullanın:"
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Firstboot'u komut satırından çalıştırmak için, aşağıdaki komutları kullanın:"
 
 #: ../src/firstboot.py:118
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
-"Firstboot'u sistem açılışında çalıştırmak için, takip eden komutları "
+"Firstboot'u sistem açılışında çalıştırmak için, aşağıdaki komutları "
 "kullanın:"
 
 #. Firstboot has never been run before, so start it up
@@ -356,57 +356,55 @@ msgstr "Hoş Geldiniz"
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Yetkilendirme"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration "
-msgstr ""
+msgstr "Güvenlik Duvarı Ayarları"
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration "
-msgstr ""
+msgstr "Klavye Ayarları"
 
 #: ../src/textWindow.py:36
 msgid "Mouse configuration "
-msgstr ""
+msgstr "Fare Ayarları"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Network configuration "
-msgstr "Ağ Yapılandırmasını _Değiştir..."
+msgstr "Ağ Ayarları"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration "
-msgstr ""
+msgstr "Yazıcı Ayarları"
 
 #: ../src/textWindow.py:39
 msgid "System services "
-msgstr ""
+msgstr "Sistem Servisleri"
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration "
-msgstr ""
+msgstr "Ses Kartı Ayarları"
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration "
-msgstr ""
+msgstr "Zaman Dilimi Ayarları"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "Çalıştırma Aracı"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "Çıkış"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Değiştirmek istediğiniz öğeyi seçiniz "
 
 #: ../src/textWindow.py:51
-#, fuzzy
 msgid "Setup Agent"
-msgstr "Red Hat Kurulum Yardımcısı"
+msgstr "Kurulum Yardımcısı "
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -437,7 +435,7 @@ msgstr "Red Hat Kurulum Yardımcısı"
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr "Ek CDler"
+msgstr "İlave CD'ler"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
@@ -465,10 +463,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Cd'de otomatik başlama bulunamadı. Devam etmek için \"Tamam\"a tıklayın."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Cd'de otomatik başlama bulunamadı. Devam etmek için \"Tamam\"a tıklayın."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -490,7 +486,7 @@ msgid ""
 "information."
 msgstr ""
 "Günlük kullanım için (yönetimsel olmayan) kişisel bir kullanıcı hesabı "
-"açmanız şiddetle önerilir.  Kişisel bir hesap için, gereken bilgileri "
+"açmanız şiddetle tavsiye edilir.  Kişisel bir hesap için, gereken bilgileri "
 "giriniz."
 
 #: ../src/modules/create_user.py:57
@@ -515,7 +511,7 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Eğer ağ üzerinden Kerberos yada NIS gibi ibr yetkilendirme kullanmanız "
+"Eğer ağ üzerinden Kerberos yada NIS gibi bir yetkilendirme kullanmanız "
 "gerekiyorsa , lütfen Ağ Oturumu Açmayı Kullan'a tıklayın."
 
 #: ../src/modules/create_user.py:104
@@ -528,9 +524,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Kişisel bir kullanıcı hesabı oluşturmanı şiddetle önerilir.  Eğer bir hesap "
+"Kişisel bir kullanıcı hesabı oluşturmanız şiddetle tavsiye edilir.  Eğer bir hesap "
 "oluşturmadan devam ederseniz, sadece sistem yönetimi için oluşturulmuş root "
-"hesabını kullanarak sisteme girebilirsiniz."
+"hesabını kullanarak sisteme girebileceksiniz."
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
@@ -563,7 +559,7 @@ msgstr ""
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
-msgstr "Kullanıcı adı 33 karaterden daha kısa olmalıdır."
+msgstr "Kullanıcı adı 33 karakterden daha kısa olmalıdır."
 
 #: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
@@ -608,8 +604,7 @@ msgstr ""
 "karakterler kullanın."
 
 #: ../src/modules/create_user.py:287
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Parola geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterleri "
 "kullanın."
@@ -617,8 +612,7 @@ msgstr ""
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "İsim '%s' geçersiz karakter içeriyor.  Lütfen sadece ASCII karakterleri "
 "kullanın."
@@ -665,7 +659,7 @@ msgstr "Lütfen sistem tarih ve saatini ayarlayın."
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr "Lütfen bir zaman sunucusu girin."
+msgstr "Lütfen bir zaman sunucusu (NTP) girin."
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
@@ -684,7 +678,7 @@ msgstr ""
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr "NTP sunucuya bağlanılıyor.  Lütfen bekleyin..."
+msgstr "NTP sunucusuna bağlanılıyor.  Lütfen bekleyin..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -713,11 +707,11 @@ msgstr "NTP sunucuya bağlanılıyor.  Lütfen bekleyin..."
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Görüntü"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Lütfen kullanmak istediğiniz çözünürlüğü ve renk derinliğini seçiniz"
 
 #. Add icon to the top frame
 #. #
@@ -778,7 +772,7 @@ msgstr "Boot protokolü"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr "Ağ Yapılandırmasını _Değiştir..."
+msgstr "Ağ Ayarlarını _Değiştir..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
@@ -816,7 +810,7 @@ msgstr "Ses Kartı"
 
 #: ../src/modules/soundcard_gui.py:48
 msgid "A sound card has been detected on your computer."
-msgstr "Makinanızda bir ses kartı saptandı."
+msgstr "Makinanızda bir ses kartı bulundu."
 
 #. Initialize soundcard page
 #. Add icon to the top frame
@@ -827,7 +821,7 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Örnek sesi duymak için \"Deneme sesi çal\" dğmesine tıklayınız. 3 seslik bir "
+"Örnek sesi duymak için \"Deneme sesi çal\" düğmesine tıklayınız. 3 seslik bir "
 "dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sol kanaldan, üçüncü ses "
 "ise ortadan gelecek."
 
@@ -864,14 +858,13 @@ msgid "Please set the timezone for the system."
 msgstr "Lütfen sistem için zaman dilimi belirleyin."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç "
-"adım kaldı. Red Hat Kurulum Aracısı bazı temel yapılandırmalarda size "
+"adım kaldı. Kurulum Yardımcısı bazı temel yapılandırmalarda size "
 "rehberlik edecek. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine "
 "tıklayınız."
 
@@ -942,3 +935,4 @@ msgstr ""
 
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "_Hayır, sistemimi kaydettirmek istemiyorum."
+
