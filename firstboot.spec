@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.5
-Release: 13
+Version: 1.0.6
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -25,6 +25,7 @@ Requires: redhat-config-soundcard
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
 Requires: redhat-config-packages
+Requires: authconfig-gtk
 Requires: libuser
 Requires: up2date
 Requires: redhat-logos
@@ -71,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Mar 24 2003 Brent Fox <bfox@redhat.com> 1.0.6-1
+- add a button to create_user.py to launch authconfig-gtk
+
 * Fri Mar  7 2003 Brent Fox <bfox@redhat.com> 1.0.5-13
 - bump rev for 3.0E
 
