@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: 2003-08-13 15:34-0400\n"
+"POT-Creation-Date: 2003-08-28 14:39-0400\n"
 "PO-Revision-Date: 2003-07-28 12:38+1000\n"
 "Last-Translator: Bernd Groh <bgroh@redhat.com>\n"
 "Language-Team: Deutsch <de@li.org>\n"
@@ -191,6 +191,10 @@ msgstr "Willkommen"
 #. !/usr/bin/python2.2
 #. Attempt to load a gtk.Image from a file.
 #. Attempt to load a gtk.Image from a file.
+#. !/usr/bin/python2.2
+#. time.sleep(15)
+#. If they don't want to run firstboot, exit for good
+#. They want to run firstboot, so let's pass on through
 #. !/usr/bin/python
 #. #
 #. # I18N
@@ -226,6 +230,8 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Setup Agent"
 
+#. !/usr/bin/python2.2
+#. os.execv("test.py", [""])
 #.
 #. splashscreen.py: a quick splashscreen window that displays during ipl
 #.
@@ -258,6 +264,23 @@ msgstr "Red Hat Setup Agent"
 #. hpane = GtkHPaned()
 #. print sys.path
 #. moduleList.append(obj)
+#.
+#. xserver.py - initial xserver startup for firstboot
+#.
+#. Matt Wilson <msw@redhat.com>
+#. Brent Fox <bfox@redhat.com>
+#.
+#. Copyright 2001 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. override fontpath because xfs is not running yet!
+#. give time for the server to fail (if it is going to fail...)
 #. #
 #. # I18N
 #. #
@@ -296,6 +319,15 @@ msgid ""
 msgstr ""
 "Es wurde keine CD-ROM gefunden. Legen Sie eine CD-ROM in das Laufwerk ein "
 "und klicken Sie auf \"OK\" um fortzufahren."
+
+#. Be sure to remove the focus grab if we have to return here.
+#. Otherwise, the user is stuck
+#. If there's an autorun file on the cd, run it
+#. There's no autorun on the disc, so complain
+#: ../src/modules/additional_cds.py:133
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -397,8 +429,9 @@ msgstr "Der Benutzername darf maximal 32 Zeichen haben."
 msgid "The user name may not begin with a number."
 msgstr "Der Benutzername muss mit einem Buchstaben beginnen."
 
+#. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:252
+#: ../src/modules/create_user.py:256
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -407,7 +440,7 @@ msgstr ""
 "Der Benutzername '%s' enthält Whitespace-Zeichen.  Bitte verwenden Sie keine "
 "Whitespace-Zeichen im Benutzernamen."
 
-#: ../src/modules/create_user.py:259
+#: ../src/modules/create_user.py:263
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -416,7 +449,7 @@ msgstr ""
 "Der Benutzername '%s' enthält Satzzeichen.  Bitte verwenden Sie keine "
 "solchen im Benutzernamen."
 
-#: ../src/modules/create_user.py:266
+#: ../src/modules/create_user.py:270
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -425,7 +458,7 @@ msgstr ""
 "Der Benutzername '%s' enthält Großbuchstaben.  Bitte verwenden Sie keine "
 "solchen im Benutzernamen."
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:277
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -434,14 +467,14 @@ msgstr ""
 "Der Benutzername '%s' enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen "
 "verwenden."
 
-#: ../src/modules/create_user.py:283
+#: ../src/modules/create_user.py:287
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Das Passwort enthält ungültige Zeichen.  Bitte nur ASCII-Zeichen verwenden."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:295
+#: ../src/modules/create_user.py:299
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."

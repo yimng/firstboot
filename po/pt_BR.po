@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
-"POT-Creation-Date: 2003-08-13 15:34-0400\n"
+"POT-Creation-Date: 2003-08-28 14:39-0400\n"
 "PO-Revision-Date: 2003-08-26 17:07+1000\n"
 "Last-Translator: David Barzilay <barzilay@redhat.com>\n"
 "Language-Team: Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
@@ -72,11 +72,14 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "O 'firstboot' já foi executado uma vez neste sistema.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
-msgstr "Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+"Para rodar o 'firstboot' na linha de comandos, execute os seguintes comandos:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Para rodar o 'firstboot' durante o início do sistema, execute os seguintes "
 "comandos:"
@@ -187,6 +190,10 @@ msgstr "Bem-vindo"
 #. !/usr/bin/python2.2
 #. Attempt to load a gtk.Image from a file.
 #. Attempt to load a gtk.Image from a file.
+#. !/usr/bin/python2.2
+#. time.sleep(15)
+#. If they don't want to run firstboot, exit for good
+#. They want to run firstboot, so let's pass on through
 #. !/usr/bin/python
 #. #
 #. # I18N
@@ -222,6 +229,8 @@ msgstr ""
 msgid "Red Hat Setup Agent"
 msgstr "Agente de Configuração Red Hat"
 
+#. !/usr/bin/python2.2
+#. os.execv("test.py", [""])
 #.
 #. splashscreen.py: a quick splashscreen window that displays during ipl
 #.
@@ -254,6 +263,23 @@ msgstr "Agente de Configuração Red Hat"
 #. hpane = GtkHPaned()
 #. print sys.path
 #. moduleList.append(obj)
+#.
+#. xserver.py - initial xserver startup for firstboot
+#.
+#. Matt Wilson <msw@redhat.com>
+#. Brent Fox <bfox@redhat.com>
+#.
+#. Copyright 2001 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. override fontpath because xfs is not running yet!
+#. give time for the server to fail (if it is going to fail...)
 #. #
 #. # I18N
 #. #
@@ -291,6 +317,15 @@ msgid ""
 msgstr ""
 "Não foi detectado nenhum CD-ROM.  Por favor introduza um CD no 'drive' e "
 "clique \"OK\" para continuar."
+
+#. Be sure to remove the focus grab if we have to return here.
+#. Otherwise, the user is stuck
+#. If there's an autorun file on the cd, run it
+#. There's no autorun on the disc, so complain
+#: ../src/modules/additional_cds.py:133
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -391,17 +426,18 @@ msgstr "O nome de usuário deve ter menos de 33 caracteres."
 msgid "The user name may not begin with a number."
 msgstr "O nome de usuário não pode começar com um número."
 
+#. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:252
+#: ../src/modules/create_user.py:256
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"O nome do usuário '%s' contém espaço(s) em branco.  Por favor não inclua espaços no "
-"nome do usuário."
+"O nome do usuário '%s' contém espaço(s) em branco.  Por favor não inclua "
+"espaços no nome do usuário."
 
-#: ../src/modules/create_user.py:259
+#: ../src/modules/create_user.py:263
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -410,7 +446,7 @@ msgstr ""
 "O nome de usuário '%s' contém caracter(es) de pontuação.  Por favor não use "
 "pontuação no nome do usuário."
 
-#: ../src/modules/create_user.py:266
+#: ../src/modules/create_user.py:270
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -419,7 +455,7 @@ msgstr ""
 "O nome de usuário '%s' contém caracteres em caixa alta.  Por favor não use "
 "caracteres em caixa alta no nome do usuário."
 
-#: ../src/modules/create_user.py:273
+#: ../src/modules/create_user.py:277
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -428,14 +464,17 @@ msgstr ""
 "O nome de usuário '%s' contém caracter(es) inválido(s).  Por favor use "
 "apenas caracteres ASCII."
 
-#: ../src/modules/create_user.py:283
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
+#: ../src/modules/create_user.py:287
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:295
+#: ../src/modules/create_user.py:299
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "O nome '%s' contém caracteres inválidos.  Por favor use apenas caracteres "
 "ASCII."
@@ -730,4 +769,3 @@ msgstr ""
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Bem-vindo ao Red Hat Linux!"
-
