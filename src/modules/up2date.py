@@ -21,6 +21,9 @@ class childWindow:
     def launch(self, doDebug=None):
         if doDebug:
             print "launching up2date module"
+        else:
+            if os.access('/etc/sysconfig/rhn/systemid', os.F_OK):
+                return None, None
 
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
