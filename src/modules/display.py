@@ -54,47 +54,16 @@ class DisplayWindow(FirstbootGuiWindow):
         (xconfig, xconfigpath) = xf86config.readConfigFile()
         
         hardware_state = XF86HardwareState(xconfig)
-#        xconfig = generate_xconfig(hardware_state)
         vc = rhpl.videocard.VideoCardInfo()
 
         sys.path.append("/usr/share/system-config-display")
         import xConfigDialog
-        dialog = xConfigDialog.XConfigDialog(hardware_state, xconfig, vc)        
+        self.displayClass = xConfigDialog.XConfigDialog(hardware_state, xconfig, vc)        
 
-        vbox = dialog.get_display_page()
+        vbox = self.displayClass.get_display_page()
         
-
-##         self.xconfig = xf86config.readConfigFile()
-
-##         align = gtk.Alignment()
-##         frame = gtk.Frame("")
-##         frame.set_shadow_type(gtk.SHADOW_NONE)
-##         align.add(frame)
-        
-
-##         self.table = gtk.Table(3,3)
-
-##         monitorBaseImage = gtk.Image()
-##         monitorTopImage = gtk.Image()
-##         monitorLeftImage = gtk.Image()
-##         monitorRightImage = gtk.Image()
-##         screenshotArea = gtk.DrawingArea()
-
-##         monitorBaseImage.set_from_file("/usr/share/system-config-display/pixmaps/monitor-base.png")
-##         monitorTopImage.set_from_file("/usr/share/system-config-display/pixmaps/monitor-top.png")
-##         monitorLeftImage.set_from_file("/usr/share/system-config-display/pixmaps/monitor-left.png")
-##         monitorRightImage.set_from_file("/usr/share/system-config-display/pixmaps/monitor-right.png")
-
-##         self.table.attach(monitorTopImage, 0, 3, 0, 1)
-##         self.table.attach(monitorLeftImage, 0, 1, 1, 2, gtk.FILL, gtk.FILL)
-##         self.table.attach(screenshotArea, 1, 2, 1, 2, gtk.FILL|gtk.EXPAND, gtk.FILL|gtk.EXPAND)
-##         self.table.attach(monitorRightImage, 2, 3, 1, 2, gtk.FILL, gtk.FILL)
-##         self.table.attach(monitorBaseImage, 0, 3, 2, 3)
-
-##         frame.add(self.table)
-
         #Add icon to the top frame
-        self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
+        self.icon = functions.imageFromPath("/usr/share/system-config-display/pixmaps/system-config-display.png")
         self.mainVBox = gtk.VBox()
 
         internalVBox = gtk.VBox(gtk.FALSE, 10)
@@ -105,8 +74,6 @@ class DisplayWindow(FirstbootGuiWindow):
         messageLabel.set_size_request(500, -1)
         messageLabel.set_alignment(0.0, 0.5)
 
-#        internalVBox.pack_start(messageLabel, gtk.FALSE)
-#        internalVBox.pack_start(align, gtk.TRUE)
         internalVBox.pack_start(vbox, gtk.TRUE)
         self.mainVBox.pack_start(internalVBox, gtk.TRUE)
 
@@ -116,11 +83,10 @@ class DisplayWindow(FirstbootGuiWindow):
         return self.mainVBox, self.icon, self.windowTitle
 
     def apply(self, *args):
-        
         if self.doDebug:
-            print "applying date changes not available in debug mode"
+            print "applying monitor changes not available in debug mode"
         else:
-            pass
+            self.displayClass.firstboot_apply()
 
         return 0
 
