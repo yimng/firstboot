@@ -6,6 +6,7 @@ import string
 class childWindow:
     runPriority = 2
     moduleName = "Keyboard"
+    moduleClass = "reconfig"
 
     def __init__(self):
         self.clist = GtkCList()

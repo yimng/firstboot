@@ -6,6 +6,7 @@ import string
 class childWindow:
     runPriority = 1
     moduleName = "Language"
+    moduleClass = "reconfig"
 
     def __init__(self):
         self.clist = GtkCList()
@@ -60,6 +61,10 @@ class childWindow:
     def write_file(self):
         pass
 
+
+    def apply(self):
+        print "applying language"
+        pass
 
     def stand_alone(self):
         toplevel = GtkWindow()
