@@ -1,8 +1,8 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.1
+Version: 1.3.2
 Release: 1
-URL: http://www.redhat.com/
+URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -17,19 +17,19 @@ Requires: python
 Requires: usermode >= 1.36
 Requires: metacity
 Requires: rhpl
-Requires: redhat-config-date
-Requires: redhat-config-language
-Requires: redhat-config-mouse
-Requires: redhat-config-keyboard
-Requires: redhat-config-soundcard
-Requires: redhat-config-securitylevel
-Requires: redhat-config-rootpassword
+Requires: system-config-date
+Requires: system-config-language
+Requires: system-config-mouse
+Requires: system-config-keyboard
+Requires: system-config-soundcard
+Requires: system-config-securitylevel
+Requires: system-config-rootpassword
 Requires: redhat-config-packages
 Requires: redhat-config-network
 Requires: authconfig-gtk
 Requires: libuser
 Requires: up2date
-Requires: redhat-logos
+Requires: system-logos
 Requires: redhat-artwork
 Requires: xsri
 ExcludeArch: s390 s390x
@@ -73,6 +73,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Sun Nov 23 2003 Brent Fox <bfox@redhat.com> 1.3.2-1
+- update Requires for system-config name change
+- make changes for Python2.3
+
 * Mon Oct 27 2003 Brent Fox <bfox@redhat.com> 1.3.1-1
 - fix initscript for text mode
 
