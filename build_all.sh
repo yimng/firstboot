@@ -28,3 +28,9 @@ make snapsrc
 cd ..
 cd redhat-config-samba
 make snapsrc
+cd ..
+cd redhat-config-kickstart
+make snapsrc
+cd ..
+cd redhat-config-users
+make snapsrc
