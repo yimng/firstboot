@@ -24,7 +24,7 @@ class childWindow:
 
         titleBox = gtk.HBox()
 
-        pix = functions.imageFromFile("networking.png")
+        pix = functions.imageFromFile("rhn.png")
         if pix:
             titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
         titleBox.pack_start(label)
