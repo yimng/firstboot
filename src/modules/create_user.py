@@ -1,5 +1,7 @@
 from gtk import *
 import string
+import os
+import time
 import gtk
 import gobject
 import sys
@@ -40,6 +42,7 @@ class childWindow:
 
         internalVBox = gtk.VBox()
         internalVBox.set_border_width(10)
+        internalVBox.set_spacing(10)
 
         label = gtk.Label(_("It is recommended that you create a personal user account for "
                             "normal (non-administrative) use.  To create a personal account, "
@@ -72,7 +75,34 @@ class childWindow:
         table.attach(self.confirmEntry, 1, 2, 3, 4, gtk.SHRINK, gtk.FILL, 5, 5)
 
         internalVBox.pack_start(table, gtk.TRUE, 15)
-        self.vbox.pack_start(internalVBox, gtk.FALSE, 5)
+
+#        internalVBox.pack_start(gtk.HSeparator())
+
+        align = gtk.Alignment()
+        align.set(0.9, 0.5, 0.0, 1.0)
+        align.set_size_request(-1, 30)
+        internalVBox.pack_start(align, gtk.FALSE)
+
+        label = gtk.Label(_("If you need to use network authentication such as Kerberos or NIS, "
+                            "please click the Use Network Login button."))
+
+        label.set_line_wrap(gtk.TRUE)
+        label.set_alignment(0.0, 0.5)
+        label.set_size_request(500, -1)
+        internalVBox.pack_start(label, FALSE, TRUE)
+
+
+        authHBox = gtk.HBox()
+        authButton = gtk.Button(_("Use Network Login..."))
+        authButton.connect("clicked", self.run_authconfig)
+        align = gtk.Alignment()
+        align.add(authButton)
+        align.set(0.9, 0.5, 0.0, 1.0)
+        authHBox.pack_start(align, gtk.TRUE)
+        internalVBox.pack_start(authHBox, gtk.TRUE, gtk.TRUE)
+
+
+        self.vbox.pack_start(internalVBox, gtk.FALSE, 15)
 
         users = self.admin.enumerateUsersFull()
         self.normalUsersList = []
@@ -261,3 +291,26 @@ class childWindow:
                     return None
         return 1
 
+    def run_authconfig(self, *args):
+        #Create a gtkInvisible dialog to block until up2date is complete
+        i = gtk.Invisible ()
+        i.grab_add ()
+
+        #Run rhn_register so they can register with RHN
+        pid = functions.start_process("/usr/bin/authconfig-gtk")
+
+        flag = None
+        while not flag:
+            while gtk.events_pending():
+                gtk.main_iteration_do()
+
+            child_pid, status = os.waitpid(pid, os.WNOHANG)
+            
+            print child_pid, pid
+            
+            if child_pid == pid:
+                flag = 1
+            else:
+                time.sleep(0.1)
+
+        i.grab_remove ()
