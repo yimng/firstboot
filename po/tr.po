@@ -1,22 +1,24 @@
+# translation of tr.po to Turkish
 # Turkish translations for firstboot messages.
-# Copyright (C) 2002 Free Software Foundation, Inc
+# Copyright (C) 2002,2003 Free Software Foundation, Inc
+# $Id$
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2002.
+# Erçin EKER <erc.caldera@gmx.net>, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot \n"
+"Project-Id-Version: tr\n"
 "POT-Creation-Date: Thu Jun 26 17:46:43 2003\n"
-"PO-Revision-Date: 2002-08-10 18:59+0300\n"
-"Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
-"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2003-07-04 21:13+0300\n"
+"Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
+"Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.2\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occurred in the %s module."
 msgstr "%s modülünde bir hata oluştu."
 
@@ -45,29 +47,27 @@ msgstr ""
 
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "Firstboot zaten birkez bu sistem üzerinde çalıştırılmış.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot from the command line, run the following commands:"
+msgstr "Firstboot'u komut satırından çalıştırmak için, takip eden komutları kullanın:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
-msgstr ""
+msgid "In order to run firstboot during system bootup, run the following commands:"
+msgstr "Firstboot'u sistem açılışında çalıştırmak için, takip eden komutları kullanın:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstboot 3. çalışmas seviyesinde çalışmıyor."
 
 #: ../src/firstbootWindow.py:152 ../src/firstbootWindow.py:457
 msgid "_Back"
-msgstr ""
+msgstr "_Geri"
 
 #: ../src/firstbootWindow.py:160 ../src/firstbootWindow.py:461
 msgid "_Next"
-msgstr ""
+msgstr "_Sonraki"
 
 #: ../src/firstbootWindow.py:453 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
@@ -83,31 +83,33 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"Aşağıda listelenen CD'lerden herhangi birine sahipseniz, bunlardan bir yazılım "
+"yüklemek için CD'yi yerleştirin ve ilgili düğmeye basın."
 
 #: ../src/modules/additional_cds.py:51
-#, fuzzy
 msgid "Red Hat Linux Documentation CD"
-msgstr "Red Hat Belgeleri CD'si"
+msgstr "Red Hat Linux Belgeler CD'si"
 
 #: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
 #: ../src/modules/additional_cds.py:77
 msgid "Install..."
-msgstr ""
+msgstr "Kur..."
 
 #: ../src/modules/additional_cds.py:62
-#, fuzzy
 msgid "Red Hat Linux Installation CD"
-msgstr "Red Hat Belgeleri CD'si"
+msgstr "Red Hat Linux Kurulum CD'si"
 
 #: ../src/modules/additional_cds.py:99
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Bir CD-ROM algılanamadı.  Lütfen sürücüye bir CD-ROM yerleştirin ve devam "
+"etmek için \"Tamam\" düğmesine basın."
 
 #: ../src/modules/create_user.py:22
 msgid "User Account"
-msgstr ""
+msgstr "Kullanıcı Hesabı"
 
 #: ../src/modules/create_user.py:47
 msgid ""
@@ -115,33 +117,36 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"Günlük kullanım için (yönetimsel olmayan) kişisel bir kullanıcı hesabı açmanız "
+"şiddetle önerilir.  Kişisel bir hesap için, gereken bilgileri giriniz."
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
-msgstr ""
+msgstr "_Kullanıcı Adı:"
 
 #: ../src/modules/create_user.py:64
 msgid "Full _Name:"
-msgstr ""
+msgstr "Tam _İsim:"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
-msgstr ""
+msgstr "_Parola:"
 
 #: ../src/modules/create_user.py:78
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Parola _Onaylama:"
 
 #: ../src/modules/create_user.py:94
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Eğer ağ üzerinden Kerberos yada NIS gibi ibr yetkilendirme kullanmanız "
+"gerekiyorsa , lütfen Ağ Oturumu Açmayı Kullan'a tıklayın."
 
 #: ../src/modules/create_user.py:104
-#, fuzzy
 msgid "_Use Network Login..."
-msgstr "Ağ ayarları..."
+msgstr "_Ağ Oturumu Açmayı Kullan..."
 
 #: ../src/modules/create_user.py:137 ../src/modules/networking.py:138
 msgid ""
@@ -149,70 +154,79 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Kişisel bir kullanıcı hesabı oluşturmanı şiddetle önerilir.  Eğer bir hesap "
+"oluşturmadan devam ederseniz, sadece sistem yönetimi için oluşturulmuş "
+"root hesabını kullanarak sisteme girebilirsiniz."
 
 #: ../src/modules/create_user.py:145 ../src/modules/networking.py:146
 msgid "_Continue"
-msgstr ""
+msgstr "_Devam"
 
 #: ../src/modules/create_user.py:146 ../src/modules/networking.py:147
 msgid "Create _account"
-msgstr ""
+msgstr "Hesap _oluştur"
 
 #: ../src/modules/create_user.py:172 ../src/modules/networking.py:173
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Parolalar örtüşmüyor.  Lütfen parolayı tekrar giriniz."
 
 #: ../src/modules/create_user.py:180 ../src/modules/networking.py:181
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "Parolanız çok kısa.  Lütfen en az 6 karakter kullanın."
 
 #: ../src/modules/create_user.py:191 ../src/modules/networking.py:192
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"Kullanıcı adı '%s' önceden ayrılmış bir sistem hesabı.  Lütfen başka bir "
+"kullanıcı adı belirleyin."
 
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "Kullanıcı adı 33 karaterden daha kısa olmalıdır."
 
 #: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "Kullanıcı adı sayı ile başlamamalıdır."
 
 #: ../src/modules/create_user.py:252
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
+msgstr "Kullanıcı adı '%s' boşluk içeriyor.  Lütfen kullanıcı adı içinde boşluk kullanmayın."
 
 #: ../src/modules/create_user.py:259
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"Kullanıcı adı '%s' noktalama işaretleri içeriyor.  Lütfen kullanıcı adı içinde "
+"noktalama işaretleri kullanmayın."
 
 #: ../src/modules/create_user.py:266
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"Kullanıcı adı '%s' büyük harf içeriyor.  Lütfen kullanıcı adı içinde büyük "
+"harf kullanmayın."
 
 #: ../src/modules/create_user.py:273
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Kullanıcı adı '%s' geçersiz karakterler içeriyor.  Lütfen sadece ASCII "
+"karakterler kullanın."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Parola geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterleri kullanın."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "İsim '%s' geçersiz karakter içeriyor.  Lütfen sadece ASCII karakterleri kullanın."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -224,7 +238,7 @@ msgstr "Lütfen sistem tarih ve saatini ayarlayın."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
-msgstr ""
+msgstr "Lütfen bir zaman sunucusu girin."
 
 #: ../src/modules/date.py:118 ../src/modules/date.py:152
 msgid "Error"
@@ -240,14 +254,13 @@ msgstr ""
 
 #: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "NTP sunucuya bağlanılıyor.  Lütfen bekleyin..."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Son Ayar"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
@@ -257,31 +270,28 @@ msgstr ""
 "için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
 
 #: ../src/modules/networking.py:23
-#, fuzzy
 msgid "Network Setup"
-msgstr "Ağ denetimi"
+msgstr "Ağ Kurulumu"
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "Sisteminizde şu ağ aygıtı bulundu:"
 
 #: ../src/modules/networking.py:69
-#, fuzzy
 msgid "Network Device"
-msgstr "Ağ denetimi"
+msgstr "Ağ Aygıtı"
 
 #: ../src/modules/networking.py:71
 msgid "Boot protocol"
-msgstr ""
+msgstr "Boot protokolü"
 
 #: ../src/modules/networking.py:77
-#, fuzzy
 msgid "_Change Network Configuration..."
-msgstr "Ağ ayarları..."
+msgstr "Ağ Yapılandırmasını Değiştir..."
 
 #: ../src/modules/networking.py:120
 msgid "static"
-msgstr ""
+msgstr "sabit"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -299,25 +309,22 @@ msgid ""
 "will be in the center."
 msgstr ""
 "Örnek sesi duymak için \"Deneme sesi çal\" dğmesine tıklayınız. 3 seslik bir "
-"dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sağ kanaldan, üçüncü ses "
+"dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sol kanaldan, üçüncü ses "
 "ise ortadan gelecek."
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "Zaman Dilimi"
 
 #: ../src/modules/timezone.py:55
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "Lütfen sistem tarih ve saatini ayarlayın."
+msgstr "Lütfen sistem için zaman dilimi belirleyin."
 
 #: ../src/modules/up2date.py:19
-#, fuzzy
 msgid "Red Hat Network"
-msgstr "Ağ"
+msgstr "Red Hat Network"
 
 #: ../src/modules/up2date.py:36
-#, fuzzy
 msgid ""
 "This step will register your system with a complimentary Demo Account from "
 "Red Hat Network so that you can receive the latest software packages "
@@ -336,10 +343,10 @@ msgstr ""
 "Hat'tan alabilmenize olanak sağlayacak olan Red Hat Ağına (RHN) kayıt "
 "işlemine başlayacak. Bu aracıyı kullanararak, Red Hat Linux sisteminizi "
 "daima güncel tutabilecek, en son güvenlik yamalarına ve yazılımlardaki en "
-"sonyeniliklere ilk siz sahip olabileceksiniz.\n"
+"son yeniliklere ilk siz sahip olabileceksiniz.\n"
 "\n"
 "Bu ürünü siz satın aldıysanız, Red Hat Ağının Temel Servisine ücretsiz "
-"deneme üyeliğinizi başlatmak için kutudan çıkan etkinlik kartındaki "
+"deneme üyeliğinizi başlatmak için kutudan çıkan etkinleştirme kartındaki "
 "bilgileri okuyunuz.\n"
 "\n"
 "Bu ürünü siz satın almadıysanız, http://rhn.redhat.com adresini ziyaret "
@@ -347,34 +354,30 @@ msgstr ""
 "\n"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr "Evet, RHN üzerinden kaydımı yaptırmak istiyorum"
+msgstr "_Evet, sistemimi Red Hat Network'e kaydettirmek istiyorum."
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid "_No, I do not want to register my system."
-msgstr "Hayır, sistemimi kaydettirmek istemiyorum"
+msgstr "_Hayır, sistemimi kaydettirmek istemiyorum."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Selam! Red Hat Ayar Aracısına Hoş Geldiniz. Sisteminizi kullanıma hazır "
-"duruma getirmek için uygulanması gereken bir kaç adım kaldı. Red Har Ayar "
-"Aracısı bazı temel yapılandırmalarda size rehberlik edecek. Devam etmek için "
-"sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
+"Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç adım "
+"kaldı. Red Hat Kurulum Aracısı bazı temel yapılandırmalarda size rehberlik "
+"edecek. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
 
 #: ../src/textWindow.py:15
 msgid "No"
-msgstr ""
+msgstr "Hayır"
 
 #: ../src/textWindow.py:15
 msgid "Yes"
-msgstr ""
+msgstr "Evet"
 
 #: ../src/textWindow.py:17
 msgid ""
@@ -386,128 +389,15 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
+"Red Hat Kurulum Aracısı bir kaç adımda size yardımcı olarak sisteminizi "
+"kolayca yapılandırmanızı sağlayacak.  Kurulum Aracısı çalışmak için X "
+"Window Sistemini gerektirir.  \n"
+"\n"
+"Kurulum Aracısı'nı çalıştırmak için lütfen \"Evet\"i seçin.  Eğer \"Hayır\"ı "
+"secek olursanız, sisteminiz açılmaya devam edecek ve bu mesajı bir "
+"daha görmeyeceksiniz. Kurulum Aracısı'nı çalıştırmak ister misiniz?"
 
 #: ../src/textWindow.py:24
-#, fuzzy
 msgid "Red Hat Setup Agent"
-msgstr "Red Hat Güncelleme Aracısı"
+msgstr "Red Hat Kurulum Aracısı"
 
-#~ msgid "Update Agent"
-#~ msgstr "Güncelleme Aracısı"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "Ek Yazılım Kurulumu"
-
-#, fuzzy
-#~ msgid "Set Date and Time"
-#~ msgstr "Tarih ve Saat"
-
-#, fuzzy
-#~ msgid "Finished Setup!"
-#~ msgstr "Son Ayar"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hat Güncelleme Aracısı"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "Tarih ve Saat Yapılandırması"
-
-#~ msgid "Sound Card Configuration"
-#~ msgstr "Ses Kartı Yapılandırması"
-
-#~ msgid "Welcome to Red Hat Linux!"
-#~ msgstr "Red Hat Linux'a Hoş Geldiniz!"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install software\" button below."
-#~ msgstr ""
-#~ "Elinizde standart Red Hat CD'leri dışında, örneğin Red Hat Belgeleri "
-#~ "CD'si ya da Linux Uygulamaları CD'si gibi ek CDler varsa CD'yi takın ve "
-#~ "aşağıdan ilgili düğmeye tıklayın."
-
-#~ msgid "Linux Application CD"
-#~ msgstr "Linux Uygulamaları CD'si"
-
-#~ msgid ""
-#~ "This feature is not yet implemented.  Please do not report bugs about "
-#~ "this button."
-#~ msgstr ""
-#~ "henüz bu özellik gerçekleştirilemedi. Bu düğme ile ilgili olarak lütfen "
-#~ "bir hata bildiriminde bulunmayın."
-
-#~ msgid "Finished Installation!"
-#~ msgstr "Kurulum Tamamlandı!"
-
-#~ msgid "Update Your System"
-#~ msgstr "Sisteminizin Güncellenmesi"
-
-#~ msgid "Set up Networking"
-#~ msgstr "Ağ Ayarları"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "Bir ağ bağlantısı algılandı. Ağ bağlantısı RHN ile sisteminizi "
-#~ "kaydettirmek ve Red Hat Güncelleme Aracısını kullanarak sisteminizi "
-#~ "güncelleyebilmeniz için gereklidir. Ağınızı yapılandırmak istiyorsanız "
-#~ "aşağıdaki düğmeye tıklayınız.\n"
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "DHCP kullanarak Yapılandır"
-
-#~ msgid "IP Address"
-#~ msgstr "IP Adresi"
-
-#~ msgid "Netmask"
-#~ msgstr "Ağ maskesi"
-
-#~ msgid "Broadcast"
-#~ msgstr "Yayın adresi"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Gateway"
-#~ msgstr "Ağ geçidi"
-
-#~ msgid "Hostname"
-#~ msgstr "Makina adı"
-
-#~ msgid "Primary DNS"
-#~ msgstr "Birincil DNS"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "İkincil DNS"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "Üçüncül DNS"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "Donanım Yapılandırması"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "Klavye Yerleşimi:"
-
-#~ msgid "Configure..."
-#~ msgstr "Yapılandır..."
-
-#~ msgid "Mouse:"
-#~ msgstr "Fare:"
-
-#~ msgid "Networking:"
-#~ msgstr "Ağ:"
-
-#~ msgid "Display:"
-#~ msgstr "Ekran:"
-
-#~ msgid "Printers:"
-#~ msgstr "Yazıcılar:"
-
-#~ msgid "Finish Installation"
-#~ msgstr "Kurulum Sonu"
