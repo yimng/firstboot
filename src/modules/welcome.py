@@ -36,9 +36,26 @@ class childWindow:
         eventBox.add(titleBox)
         self.vbox.pack_start(eventBox, FALSE)
 
-        label = gtk.Label("Welcome message goes here")
-        self.vbox.pack_start(label, TRUE)
+        try:
+            p = gtk.gdk.pixbuf_new_from_file("images/splash.png")
+        except:
+            pass
 
+        if p:
+            self.splash = gtk.Image()
+            self.splash.set_from_pixbuf(p)
+            self.vbox.pack_start(self.splash, gtk.FALSE, gtk.TRUE, 5)
+
+
+#        label = gtk.Label("Welcome message goes here")
+#        self.vbox.pack_start(label, TRUE)
+
+#        self.hbox = gtk.HBox()
+#        self.hbox.pack_start(self.splash, gtk.FALSE)
+#        self.hbox.pack_start(label, gtk.TRUE)
+#        self.vbox.pack_start(self.hbox, gtk.TRUE)
+
+            
         return self.vbox, eventBox
 
     def apply(self, notebook):

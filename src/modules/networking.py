@@ -3,7 +3,7 @@ import gobject
 import gtk
 import os
 from socket import gethostname
-#from socket import gethostbyname
+from socket import gethostbyname
 
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
@@ -19,7 +19,7 @@ class childWindow:
         network = self.networkAvailable()
 
         if network:
-            return
+            return 
         else:
             self.mainVBox = gtk.VBox()
 

@@ -60,8 +60,8 @@ class firstbootWindow:
         self.notebook.set_show_tabs(gtk.FALSE)
         self.notebook.set_show_border(gtk.FALSE)
 
-#        path = ('/usr/share/firstboot/modules')
-        path = ('/home/devel/bfox/redhat/firstboot/src/modules')
+        path = ('/usr/share/firstboot/modules')
+#        path = ('/home/devel/bfox/redhat/firstboot/src/modules')
         files = os.listdir(path)
         list = []
 
@@ -74,8 +74,8 @@ class firstbootWindow:
 
         for module in list:
 #            print module
-#            sys.path.append('/usr/share/firstboot/modules')
-            sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
+            sys.path.append('/usr/share/firstboot/modules')
+#sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
@@ -109,10 +109,16 @@ class firstbootWindow:
                 pass
 
         for module in self.moduleList:
-             vbox, eventbox = module.launch()
-             eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
-             if vbox:
-                 self.notebook.append_page(vbox, gtk.Label(" "))
+            vbox = None
+            eventbox = None
+            data = module.launch()
+            try:
+                vbox, eventbox = data
+            except:
+                pass
+            if eventbox and vbox:
+                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
+                self.notebook.append_page(vbox, gtk.Label(" "))
 
         self.moduleView = gtk.TreeView(self.moduleStore)
 #        selection = self.moduleView.get_selection()
@@ -224,8 +230,8 @@ class firstbootWindow:
         print "closing"
 
     def okClicked(self, *args):
-        print self.moduleList
-        print "we're leaving page ", self.notebook.get_current_page()
+#        print self.moduleList
+#        print "we're leaving page ", self.notebook.get_current_page()
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
@@ -253,7 +259,7 @@ class firstbootWindow:
         if self.notebook.get_current_page() == 0:
             self.backButton.set_sensitive(gtk.FALSE)
 
-        print self.bb.children()
+#        print self.bb.children()
         if self.finishButton in self.bb.children():
             self.bb.remove(self.finishButton)
             self.bb.pack_end(self.nextButton)
