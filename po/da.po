@@ -1,5 +1,5 @@
 # Danish translation of firstboot.
-# Copyright © 2002 Free Software Foundation.
+# Copyright Â© 2002 Free Software Foundation.
 # Kjartan Maraas <kmaraas@gnome.org>, 2002.
 # Keld Simonsen <keld@dkuug.dk>, 2002-2003.
 #
@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
 "POT-Creation-Date: Tue Feb 18 14:05:25 2003\n"
-"PO-Revision-Date: 2003-02-19 23:39+0100\n"
+"PO-Revision-Date: 2003-04-03 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Generated-By: pygettext.py 1.4\n"
 
@@ -26,8 +26,8 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Da der er et problem med %s-modulet, \n"
-"vil Red Hat Opsætningsagenten ikke indlæse dette modul, og \n"
-"den vil forsøge at køre de resterende moduler."
+"vil Red Hat OpsÃ¦tningsagenten ikke indlÃ¦se dette modul, og \n"
+"den vil forsÃ¸ge at kÃ¸re de resterende moduler."
 
 #: ../src/exceptionWindow.py:40
 msgid ""
@@ -36,32 +36,32 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
-"fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
-"En kopi af fejlsøgningsuddata er gemt i /tmp/firstboot.txt \n"
-"Vør sød at vedlægge denne fil til fejlrapporten. \n"
+"VÃ¦r venlig at indsende en fejlrapport pÃ¥ 'firstboot' via Red Hats \n"
+"fejlrapporteringssystem pÃ¥ http://www.redhat.com/bugzilla. \n"
+"En kopi af fejlsÃ¸gningsuddata er gemt i /tmp/firstboot.txt \n"
+"VÃ¸r sÃ¸d at vedlÃ¦gge denne fil til fejlrapporten. \n"
 
 #: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
-msgstr "Firstboot er allerede blevet kørt en gang på dette system.\n"
+msgstr "Firstboot er allerede blevet kÃ¸rt en gang pÃ¥ dette system.\n"
 
 #: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
-"For at køre 'firstboot' fra kommandolinjen skal du køre de følgende "
+"For at kÃ¸re 'firstboot' fra kommandolinjen skal du kÃ¸re de fÃ¸lgende "
 "kommandoer:"
 
 #: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
-"For at køre 'firstboot' ved systemopstart skal du køre de følgende "
+"For at kÃ¸re 'firstboot' ved systemopstart skal du kÃ¸re de fÃ¸lgende "
 "kommandoer:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr "Firstboot kører ikke i kørselsniveau 3."
+msgstr "Firstboot kÃ¸rer ikke i kÃ¸rselsniveau 3."
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -72,8 +72,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Hvis du har nogen af cd'erne nævnt nedenfor kan du installere pakker fra dem "
-"ved at insætte cd'en ok klikke på den tilsvarende knap."
+"Hvis du har nogen af cd'erne nÃ¦vnt nedenfor kan du installere pakker fra dem "
+"ved at insÃ¦tte cd'en ok klikke pÃ¥ den tilsvarende knap."
 
 #: ../src/modules/additional_cds.py:51
 msgid "Red Hat Linux Documentation CD"
@@ -82,7 +82,7 @@ msgstr "Red Hat Linux dokumentations-CD"
 #: ../src/modules/additional_cds.py:55 ../src/modules/additional_cds.py:66
 #: ../src/modules/additional_cds.py:77
 msgid "Install..."
-msgstr "Installér..."
+msgstr "InstallÃ©r..."
 
 #: ../src/modules/additional_cds.py:62
 msgid "Red Hat Linux Installation CD"
@@ -93,8 +93,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
-"for at fortsætte"
+"En cdrom blev ikke fundet. IndsÃ¦t venligst en cdrom i drevet og klik 'O.k.' "
+"for at fortsÃ¦tte"
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
@@ -124,7 +124,7 @@ msgstr "Adgangskode:"
 
 #: ../src/modules/create_user.py:69
 msgid "Confirm Password:"
-msgstr "Bekræft adgangskode:"
+msgstr "BekrÃ¦ft adgangskode:"
 
 #: ../src/modules/create_user.py:99
 msgid ""
@@ -133,12 +133,12 @@ msgid ""
 "which is reserved for administrative use only."
 msgstr ""
 "Det anbefales varmt at der oprettes en personlig brugerkonto. Hvis du "
-"fortsætter uden en konto kan du kun logge ind med root-kontoen, som "
+"fortsÃ¦tter uden en konto kan du kun logge ind med root-kontoen, som "
 "reserveret til administrativ brug."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr "Fortsæt"
+msgstr "FortsÃ¦t"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
@@ -162,25 +162,25 @@ msgstr ""
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr "Brugernavnet skal være mindre end 33 tegn langt."
+msgstr "Brugernavnet skal vÃ¦re mindre end 33 tegn langt."
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr "Brugernavnet må ikke begynde med et tal."
+msgstr "Brugernavnet mÃ¥ ikke begynde med et tal."
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
 msgstr ""
-"Brugernavnet indeholder blanke. Lad venligst være med at bruge blanke i %s"
+"Brugernavnet indeholder blanke. Lad venligst vÃ¦re med at bruge blanke i %s"
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Brugernavnet '%s' indeholder specialtegn. Lad venligst være med at bruge "
+"Brugernavnet '%s' indeholder specialtegn. Lad venligst vÃ¦re med at bruge "
 "specialtegn i brugernavnet."
 
 #: ../src/modules/create_user.py:228
@@ -188,7 +188,7 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Brugernavnet '%s' indeholder store bogstaver. Lad venligst være med at bruge "
+"Brugernavnet '%s' indeholder store bogstaver. Lad venligst vÃ¦re med at bruge "
 "store bogstaver i brugernavnet."
 
 #: ../src/modules/create_user.py:235
@@ -211,11 +211,11 @@ msgstr "Navnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
-msgstr "Dato og klokkeslæt"
+msgstr "Dato og klokkeslÃ¦t"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr "Sæt dato og klokkeslet for systemet."
+msgstr "SÃ¦t dato og klokkeslet for systemet."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
@@ -230,8 +230,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"En forbindelse med %s kunne ikke etableres. Enten er %s ikke tilgængelig "
-"eller også blokerer brandmursindstillingerne på din maskine NTP-forbindelser."
+"En forbindelse med %s kunne ikke etableres. Enten er %s ikke tilgÃ¦ngelig "
+"eller ogsÃ¥ blokerer brandmursindstillingerne pÃ¥ din maskine NTP-forbindelser."
 
 #: ../src/modules/date.py:182
 msgid "Contacting NTP server.  Please wait..."
@@ -239,15 +239,15 @@ msgstr "Kontakter NTP-server. Vent venligst..."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr "Færdiggør opsætning"
+msgstr "FÃ¦rdiggÃ¸r opsÃ¦tning"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Dit system er nu sat op og klar til brug. Klik på 'Næste'-knappen i det "
-"nederste højre hjørne for at fortsætte."
+"Dit system er nu sat op og klar til brug. Klik pÃ¥ 'NÃ¦ste'-knappen i det "
+"nederste hÃ¸jre hjÃ¸rne for at fortsÃ¦tte."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -255,7 +255,7 @@ msgstr "Lydkort"
 
 #: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
-msgstr "Et lydkort er blevet fundet på din maskine."
+msgstr "Et lydkort er blevet fundet pÃ¥ din maskine."
 
 #: ../src/modules/soundcard_gui.py:74
 msgid ""
@@ -264,13 +264,13 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Klik på 'Afspil lydprøve'-knappen for at høre en lydprøve. Du bør høre en "
-"serie med 3 lyde. Den første lyd skal være i den højre kanal, den anden lyd "
-"skal være i den venstre kanal, og den tredje lyd skal være i midten."
+"Klik pÃ¥ 'Afspil lydprÃ¸ve'-knappen for at hÃ¸re en lydprÃ¸ve. Du bÃ¸r hÃ¸re en "
+"serie med 3 lyde. Den fÃ¸rste lyd skal vÃ¦re i den hÃ¸jre kanal, den anden lyd "
+"skal vÃ¦re i den venstre kanal, og den tredje lyd skal vÃ¦re i midten."
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
-msgstr "Red Hats Netværk"
+msgstr "Red Hats NetvÃ¦rk"
 
 #: ../src/modules/up2date.py:36
 msgid ""
@@ -288,22 +288,22 @@ msgid ""
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
 "Dette trin vil registrere dit system som en gratis demokonto fra Red Hat "
-"Network så du kan få de seneste programpakker direkte fra Red Hat. Ved at "
-"bruge dette værktøj kan du altid have de mest opdaterede Red Hat Linux-"
+"Network sÃ¥ du kan fÃ¥ de seneste programpakker direkte fra Red Hat. Ved at "
+"bruge dette vÃ¦rktÃ¸j kan du altid have de mest opdaterede Red Hat Linux-"
 "system med alle sikkerhedsrettelser, fejlrettelser og forbedringer af "
 "programpakker\n"
 "\n"
-"Hvis du købte dette produkt har du ret til en gratis prøve på Red Hat "
-"Netværks basale tjeneste. For at få adgang til den gratis prøve skal du "
+"Hvis du kÃ¸bte dette produkt har du ret til en gratis prÃ¸ve pÃ¥ Red Hat "
+"NetvÃ¦rks basale tjeneste. For at fÃ¥ adgang til den gratis prÃ¸ve skal du "
 "kigge efter produktets aktiveringskort, som findes i kassen, og som har "
 "detaljerede instruktioner. \n"
 "\n"
-"Hvis du ikke har købt dette produkt, så besøg http://rhn.redhat.com for "
-"yderligere oplysninger om at abonnere på Red Hat netværks basale tjeneste. \n"
+"Hvis du ikke har kÃ¸bt dette produkt, sÃ¥ besÃ¸g http://rhn.redhat.com for "
+"yderligere oplysninger om at abonnere pÃ¥ Red Hat netvÃ¦rks basale tjeneste. \n"
 
 #: ../src/modules/up2date.py:55
 msgid "_Yes, I want to register my system with Red Hat Network."
-msgstr "_Ja, jeg ønsker at registrere mit system hos Red Hat Network."
+msgstr "_Ja, jeg Ã¸nsker at registrere mit system hos Red Hat Network."
 
 #: ../src/modules/up2date.py:56
 msgid "_No, I do not want to register my system."
@@ -319,10 +319,10 @@ msgid ""
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
 "Please click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Der er endnu nogle enkelte trin der skal gøres før dit system er klar til "
-"brug. Red Hats opsætningsagent vil nu lede dig gennem noget grundlæggende "
-"konfigurering. Klik på 'Næste'-knappen i det nederste højre hjørne for at "
-"fortsætte."
+"Der er endnu nogle enkelte trin der skal gÃ¸res fÃ¸r dit system er klar til "
+"brug. Red Hats opsÃ¦tningsagent vil nu lede dig gennem noget grundlÃ¦ggende "
+"konfigurering. Klik pÃ¥ 'NÃ¦ste'-knappen i det nederste hÃ¸jre hjÃ¸rne for at "
+"fortsÃ¦tte."
 
 #: ../src/textWindow.py:15
 msgid "No"
@@ -342,12 +342,12 @@ msgid ""
 "\"No\", the system will continue booting and you will never see this message "
 "again.  Do you wish to run the Setup Agent now?"
 msgstr ""
-"Red Hat opsætningtagent kan hjælpe dig med at konfigurere din maskine ved at "
-"lede dig gennem en række trin. Opsætningtagenten kræver at X Windows kører.\n"
+"Red Hat opsÃ¦tningtagent kan hjÃ¦lpe dig med at konfigurere din maskine ved at "
+"lede dig gennem en rÃ¦kke trin. OpsÃ¦tningtagenten krÃ¦ver at X Windows kÃ¸rer.\n"
 "\n"
-"Hvis du ønsker at køre opsætningtagenten skal du vælge 'Ja'. Hvis du vælger "
-"'Nej' vil systemet fortsætte opstart og du vil aldrig se denne besked igen. "
-"Vil du køre opsætningtagenten nu?"
+"Hvis du Ã¸nsker at kÃ¸re opsÃ¦tningtagenten skal du vÃ¦lge 'Ja'. Hvis du vÃ¦lger "
+"'Nej' vil systemet fortsÃ¦tte opstart og du vil aldrig se denne besked igen. "
+"Vil du kÃ¸re opsÃ¦tningtagenten nu?"
 
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
@@ -357,7 +357,7 @@ msgstr "Red Hat konfigurationssagent"
 #~ msgstr "Opdateringsagent"
 
 #~ msgid "Install Additional Software"
-#~ msgstr "Installér yderligere programmel"
+#~ msgstr "InstallÃ©r yderligere programmel"
 
 #~ msgid "Create A User"
 #~ msgstr "Opret en bruger"
@@ -366,21 +366,21 @@ msgstr "Red Hat konfigurationssagent"
 #~ "A user account is required to use the system.  Create a user account by "
 #~ "filling in the information below."
 #~ msgstr ""
-#~ "En brugerkonto kræves for at bruge systemet. Opret en brugerkonto ved at "
+#~ "En brugerkonto krÃ¦ves for at bruge systemet. Opret en brugerkonto ved at "
 #~ "udfylde informationen nednfor."
 
 #~ msgid ""
 #~ "A user account was not created.  Are you sure that you want to continue "
 #~ "without creating a user account?"
 #~ msgstr ""
-#~ "En brugerkonto blev ikke oprettet. Er du sikker på at du ønsker at "
-#~ "fortsætte uden at gøre dette?"
+#~ "En brugerkonto blev ikke oprettet. Er du sikker pÃ¥ at du Ã¸nsker at "
+#~ "fortsÃ¦tte uden at gÃ¸re dette?"
 
 #~ msgid "Set Date and Time"
-#~ msgstr "Sæt dato og klokkeslæt"
+#~ msgstr "SÃ¦t dato og klokkeslÃ¦t"
 
 #~ msgid "Finished Setup!"
-#~ msgstr "Opsætning færdig!"
+#~ msgstr "OpsÃ¦tning fÃ¦rdig!"
 
 #~ msgid "Red Hat Update Agent"
 #~ msgstr "Red Hat opdateringsagent"
