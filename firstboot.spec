@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Aug 29 2002 Brent Fox <bfox@redhat.com> 1.0.1-4
+- Convert po files to UTF-8
+
 * Thu Aug 29 2002 Brent Fox <bfox@redhat.com> 1.0.1-3
 - created a flag so that failed connections to NTP servers don't advance the screens
 - Don't try to display the parent window pixmap gradient
