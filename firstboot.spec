@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.3.7
-Release: 1
+Release: 2
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Mar  9 2004 Brent Fox <bfox@redhat.com> 1.3.7-2
+- fix typo (bug #117867)
+
 * Mon Mar  8 2004 Brent Fox <bfox@redhat.com> 1.3.7-1
 - drop the verbose print statements
 
