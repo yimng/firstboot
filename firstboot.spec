@@ -25,6 +25,7 @@ Requires: redhat-config-soundcard
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
 Requires: redhat-config-packages
+Requires: redhat-config-network
 Requires: authconfig-gtk
 Requires: libuser
 Requires: up2date
