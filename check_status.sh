@@ -42,3 +42,7 @@ cd ..
 cd redhat-config-kickstart
 echo "Checking redhat-config-kickstart"
 cvs status 2>/dev/null| grep Status | grep -v Up
+cd ..
+cd redhat-config-users
+echo "Checking redhat-config-users"
+cvs status 2>/dev/null| grep Status | grep -v Up
