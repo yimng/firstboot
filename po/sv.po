@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
-"PO-Revision-Date: 2002-08-01 22:15+0200\n"
+"PO-Revision-Date: 2002-08-08 01:00+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,6 @@ msgstr ""
 "moduler."
 
 #: ../src/exceptionWindow.py:41
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
@@ -42,8 +41,8 @@ msgstr ""
 "Rapportera gärna ett fel i \"firstboot\" i Red Hats\n"
 "felrapporteringssystem på http://www.redhat.com/bugzilla.\n"
 "Skriv felrapporten på engelska. En kopia av felsökningsutdatan\n"
-"har sparats i /tmp/firstboot.txt. Försökra dig om att du\n"
-"bifogarfilen med felrapporten.\n"
+"har sparats i %s. Försäkra dig om att du bifogar\n"
+"den filen med felrapporten.\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -145,16 +144,14 @@ msgstr ""
 "kanalen, det andra ljudet i den vänstra och det tredje i mitten."
 
 #: ../src/modules/up2date.py:18
-#, fuzzy
 msgid "Update Agent"
-msgstr "Red Hats uppdateringsagent"
+msgstr "Uppdateringsagent"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hats uppdateringsagent"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -173,7 +170,16 @@ msgstr ""
 "Red Hats uppdateringsagent kommer att registrera din maskin i Red Hat "
 "Network, så att du kan få de senaste programpaketen direkt från Red Hat. "
 "Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat Linux-"
-"system med alla säkerhetsfixar, felfixar och förbättringar av programpaket."
+"system med alla säkerhetsfixar, felfixar och förbättringar av programpaket.""\n"
+"Om du köpte denna produkt har du rätt till en fri provperiod med Red Hat "
+"Networks \"Basic\"-tjänst. För att aktivera den fria provperioden behöver "
+"du följa instruktionerna som finns på produktaktiveringskortet i "
+"kartongen.\n"
+"\n"
+"Om du inte köpte denna produkt bör du besöka http://rhn.redhat.com för "
+"mer information eller för att prenumerera på Red Hat Networks "
+"\"Basic\"-tjänst.\n"
+"\n"
 
 #: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
