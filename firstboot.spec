@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.1.4
-Release: 2
+Version: 1.1.5
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Jul 18 2003 Brent Fox <bfox@redhat.com> 1.1.5-1
+- fix conficting nmemonics (bug #99279)
+
 * Wed Jul  2 2003 Brent Fox <bfox@redhat.com> 1.1.4-2
 - bump relnum and rebuild
 
