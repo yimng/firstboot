@@ -73,6 +73,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Oct 27 2003 Brent Fox <bfox@redhat.com> 1.3.1-1
+- fix initscript for text mode
+
 * Fri Oct 24 2003 Brent Fox <bfox@redhat.com> 1.3.1-1
 - bump version
 - use CVS head now for Fedora Core 2
