@@ -9,11 +9,11 @@ class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 130
     moduleName = "Red Hat Update Agent"
-
-    def __init__(self, doDebug=None):
-        print "initializing up2date module"
                 
-    def launch(self):
+    def launch(self, doDebug=None):
+        if doDebug:
+            print "launching up2date module"
+
         try:
             os.stat('/etc/sysconfig/rhn/rhn_register')
             self.vbox = gtk.VBox()

@@ -24,12 +24,11 @@ class childWindow:
     runPriority = 100
     moduleName = "Configure hardware"
 
-    def __init__(self, doDebug = None):
+    def launch(self, doDebug=None):
         self.doDebug = doDebug
         if doDebug:
-            print "initializing hardware module"
-                
-    def launch(self):
+            print "launching hardware module"
+
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 

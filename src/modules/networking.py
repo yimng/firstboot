@@ -10,13 +10,14 @@ class childWindow:
     runPriority = 110
     moduleName = "Network check"
 
-    def __init__(self, doDebug = None):
-        self.doDebug = doDebug
-        print "initializing network check module"
+    def __init__(self):
         self.netDevs = self.networkDevices()
         self.page = None
                 
-    def launch(self):
+    def launch(self, doDebug=None):
+        if doDebug:
+            print "launching networking module"
+
         network = self.networkAvailable()
 
         if network:

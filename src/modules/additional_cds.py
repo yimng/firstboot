@@ -10,11 +10,13 @@ class childWindow:
     runPriority = 1000
     moduleName = "Additional CDs"
 
-    def __init__(self, doDebug = None):
-        print "initializing additional_cd module"
+    def __init__(self):
         self.additionalDiscs = {"Red Hat Documentation CD" : "docs.png", "Linux Application CD" : "lacd.png"}
                 
-    def launch(self):
+    def launch(self, doDebug=None):
+        if doDebug:
+            print "initializing additional_cd module"
+
         os.stat('/etc/sysconfig/rhn/rhn_register')
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)

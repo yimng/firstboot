@@ -10,11 +10,10 @@ class childWindow:
     runPriority = 0
     moduleName = "Welcome"
 
-    def __init__(self, doDebug = None):
+    def launch(self, doDebug = None):
         if doDebug:
             print "initializing welcome module"
-                
-    def launch(self):
+
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 

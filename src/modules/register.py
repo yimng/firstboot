@@ -12,11 +12,10 @@ class childWindow:
     runPriority = 120
     moduleName = "Register with RHN"
 
-    def __init__(self, doDebug=None):
+    def launch(self, doDebug=None):
         if doDebug:
-            print "initializing register module"
-                
-    def launch(self):
+            print "launching register module"
+
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
