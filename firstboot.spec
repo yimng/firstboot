@@ -10,6 +10,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Source0: %{name}-%{version}.tar.bz2
 Obsoletes:anaconda-reconfig
 Prereq: chkconfig, /etc/init.d
+BuildPreReq: python-tools
 Requires: pygtk2
 Requires: python
 Requires: usermode >= 1.36
