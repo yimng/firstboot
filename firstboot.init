@@ -2,6 +2,8 @@
 #
 # firstboot:         Starts the firstboot druid if it hasn't been run before
 #
+# chkconfig: 345 06 95
+#
 # description:       Firstboot is a druid style program that runs on the first time /
 #                    a machine is booted after install.  It checks for the existence /
 #                    of an /etc/sysconfig/firstboot file.  If it doesn't find the file, /
