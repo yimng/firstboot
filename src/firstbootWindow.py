@@ -144,8 +144,6 @@ class firstbootWindow:
                 # If it launched, add it to the mdoule list.
                 self.moduleList.append(module)
                 # Set the background of the header to a uniform color.
-#                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#6d81a0"))
-#                eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e889b"))
                 eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#758baa"))
                 # Give some vertical spacing to the window titlebar
                 eventbox.get_children()[0].set_border_width(3)
@@ -249,6 +247,7 @@ class firstbootWindow:
         # Show the main window and go for it.
         self.win.add(mainVBox)
         self.win.show_all()
+        self.nextButton.grab_focus()
         gtk.main()
 
     def destroy(self, *args):
