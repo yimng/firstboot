@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Jun 19 11:27:29 2003\n"
-"PO-Revision-Date: 2003-06-13 09:59+1000\n"
+"PO-Revision-Date: 2003-06-20 09:01+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -46,13 +46,11 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:120
@@ -199,13 +197,11 @@ msgid ""
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #: ../src/modules/date.py:51
@@ -247,31 +243,28 @@ msgid ""
 msgstr "現在您的系統已經設定好可以使用了，請點選右下角的『下一步』按鈕繼續。"
 
 #: ../src/modules/networking.py:23
-#, fuzzy
 msgid "Network Setup"
-msgstr "檢查網路"
+msgstr "網路設定"
 
 #: ../src/modules/networking.py:49
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "在系統上偵測到下列的網路裝置："
 
 #: ../src/modules/networking.py:69
-#, fuzzy
 msgid "Network Device"
-msgstr "檢查網路"
+msgstr "網路裝置"
 
 #: ../src/modules/networking.py:71
 msgid "Boot protocol"
-msgstr ""
+msgstr "開機通訊協定"
 
 #: ../src/modules/networking.py:77
-#, fuzzy
 msgid "_Change Network Configuration..."
-msgstr "使用網路登入(_U)..."
+msgstr "變更網路配置(_C)..."
 
 #: ../src/modules/networking.py:120
 msgid "static"
-msgstr ""
+msgstr "靜態"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -294,12 +287,11 @@ msgstr ""
 
 #: ../src/modules/timezone.py:51
 msgid "Timezone"
-msgstr ""
+msgstr "時區"
 
 #: ../src/modules/timezone.py:55
-#, fuzzy
 msgid "Please set the timezone for the system."
-msgstr "請選擇系統的滑鼠。"
+msgstr "請設定系統的時區。"
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
@@ -644,3 +636,4 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
+
