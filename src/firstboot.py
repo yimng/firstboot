@@ -114,6 +114,7 @@ if not os.environ.has_key('DISPLAY'):
 
 	  xserver_pid = os.fork()
 
+
           if not xserver_pid:
               path = "/etc/X11/X"
               args = [path, ':1', 'vt7', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
@@ -121,15 +122,26 @@ if not os.environ.has_key('DISPLAY'):
               os.execvp(path, args)
 	      os._exit(1)
 
-          status = 0
-          try:
-               pid, status = os.waitpid (xserver_pid, os.WNOHANG)
-          except OSError, (errno, msg):
-               print __name__, "waitpid:", msg
-
-          if status:
-               raise RuntimeError, "X server failed to start"
-	    
+          count = 0
+          while count < 60:
+            sys.stdout.write(".")
+            sys.stdout.flush()
+            pid = 0
+            try:
+                pid, status = os.waitpid (xserver_pid, os.WNOHANG)
+            except OSError, (errno, msg):
+                print __name__, "waitpid:", msg
+            if pid:
+                sys.stderr.write("X SERVER FAILED")
+                raise RuntimeError, "X server failed to start"
+            try:
+                os.stat("/tmp/.X11-unix/X1")
+                break
+            except OSError:
+                pass
+            time.sleep(1)
+            count = count + 1
+    
 
      wm_pid = None
      wm_pid = startWindowManager()
