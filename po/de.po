@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-07-26 16:13+0000\n"
+"PO-Revision-Date: 2002-08-05 10:56+0000\n"
 "Last-Translator:  <claudia@redhat.it>\n"
 "Language-Team:  <de@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,6 @@ msgstr ""
 "X-Generator: KBabel 0.9.6\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
 msgstr "In Modul %s ist ein Fehler aufgetreten."
 
@@ -26,6 +25,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Es ist ein Problem mit Modul %s aufgetreten.\n"
+"Der Red Hat Setup Agent lädt dieses Modul nicht und\n"
+"versucht, die verbleibenden Module auszuführen."
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -34,6 +36,11 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Erstellen Sie einen Fehlerbericht über 'firstboot' und senden Sie ihn an "
+"das Red Hat \n"
+"Fehlererkennungssystem unter http://www.redhat.com/bugzilla.\n"
+"Eine Kopie wurde in /tmp/firstboot.txt.\n"
+"Vergewissern Sie sich, dass Sie diese Datei dem Fehlerbericht anlegen.\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -49,7 +56,7 @@ msgstr "Linux Anwendungs-CD"
 
 #: ../src/modules/additional_cds.py:32
 msgid "Install Additional Software"
-msgstr ""
+msgstr "Zusätzliche Software installieren"
 
 #: ../src/modules/additional_cds.py:59
 msgid ""
@@ -74,14 +81,12 @@ msgid "Error"
 msgstr "Fehler"
 
 #: ../src/modules/date.py:49
-#, fuzzy
 msgid "Date and Time"
-msgstr "Datum & Uhrzeit"
+msgstr "Datum und Uhrzeit"
 
 #: ../src/modules/date.py:50
-#, fuzzy
 msgid "Date and Time Configuration"
-msgstr "Konfiguration von Datum & Uhrzeit"
+msgstr "Konfiguration von Datum und Uhrzeit"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
@@ -93,43 +98,39 @@ msgid ""
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
 "Es konnte keine Verbindung mit %s hergestellt werden. Entweder ist %s nicht "
-"verfügbaroder die Firewall-Einstellungen Ihres Computers verhindern NTP-"
-"Verbindungen."
+"verfügbaroder die Firewall-Einstellungen Ihres Computers verhindern "
+"NTP-Verbindungen."
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Einstellung beenden"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
 msgstr "Installation beendet!"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Herzlichen Glückwunsch! Ihr Red Hat Linux System wurde installiert und kann "
-"nun verwendet werden.Wir wünschen Ihnen eine erfolgreiche Arbeit mit dem "
+"nun verwendet werden. Wir wünschen Ihnen eine erfolgreiche Arbeit mit dem "
 "System. Klicken Sie auf die Schaltfläche\"Weiter\" unten rechts um "
 "fortzufahren."
 
 #: ../src/modules/soundcard_gui.py:50
-#, fuzzy
 msgid "Sound Card"
-msgstr "Soundkarte:"
+msgstr "Soundkarte"
 
 #: ../src/modules/soundcard_gui.py:51
-#, fuzzy
 msgid "Sound Card Configuration"
-msgstr "Tastaturkonfiguration"
+msgstr "Soundkartenkonfiguration"
 
 #: ../src/modules/soundcard_gui.py:52
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "In Ihrem Computer wurde eine Soundkarte ermittelt."
 
 #: ../src/modules/soundcard_gui.py:70
 msgid ""
@@ -138,6 +139,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Klicken Sie auf \"Testsound abspielen\", um einen Beispiel zu hören. Dabei "
+"sollte eineReihe von drei Tönen erklingen: der erste Klang im rechten "
+"Kanal,der zweite im linken Kanal und der dritte im mittleren Kanal."
 
 #: ../src/modules/up2date.py:18
 msgid "Update Your System"
@@ -148,7 +152,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -156,11 +159,11 @@ msgid ""
 "Linux system with all the security patches, bug fixes, and software package "
 "enhancements."
 msgstr ""
-"Sie sind nun bei Red Hat Network registriert und können damit den Red Hat "
-"Update Agent ausführen, um die aktuellen Software-Pakete direkt von Red Hat "
-"herunterzuladen. Der Red Hat Update Agent liefert Ihnen das jeweils jüngste "
-"Red Hat Linux System mit sämtlichen neuen Sicherheits-Patches, "
-"Fehlerlösungen und Erweiterungen."
+"Über den Red Hat Update Agent ist Ihr Computer bei Red Hat Network "
+"registriert, und Sie können nun die aktuellen Software-Pakete direkt von "
+"Red Hat herunterladen.Der Red Hat Update Agent liefert Ihnen das jeweils "
+"jüngste Red Hat Linux System mit sämtlichen neuen Sicherheits-Patches, "
+"Fehlerlösungen und Software-Erweiterungen."
 
 #: ../src/modules/up2date.py:68
 msgid "Yes, I would like to register with Red Hat Network"
@@ -190,6 +193,27 @@ msgstr ""
 "dabeidurch die Basiskonfiguration. Klicken Sie auf \"Weiter\" unten rechts, "
 "um fortzufahren."
 
+#~ msgid "Configure Hardware"
+#~ msgstr "Hardware konfigurieren"
+
+#~ msgid "Keyboard Map:"
+#~ msgstr "Tastaturbelegung:"
+
+#~ msgid "Configure..."
+#~ msgstr "Konfigurieren..."
+
+#~ msgid "Mouse:"
+#~ msgstr "Maus:"
+
+#~ msgid "Networking:"
+#~ msgstr "Netzwerk:"
+
+#~ msgid "Display:"
+#~ msgstr "Anzeige:"
+
+#~ msgid "Printers:"
+#~ msgstr "Drucker:"
+
 #~ msgid "Network check"
 #~ msgstr "Netzwerk-Kontrolle"
 
@@ -198,15 +222,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
+#~ "for registering your system with RHN and for using the Red Hat Update Agent "
+#~ "to update your system.  To set up a network connection, please click on the "
+#~ "button below.\n"
 #~ msgstr ""
-#~ "Es konnte keine Netzwerkverbindung ermittelt werden. Eine solche "
-#~ "Verbindung ist jedoch notwendig, um Ihr System für RHN registrieren zu "
-#~ "lassen und damit der Red Hat Update Agent Ihr System aktualisieren kann. "
-#~ "Klicken Sie auf die Schaltfläche unten, um eine Netzwerkverbindung "
-#~ "einzustellen.\n"
+#~ "Es konnte keine Netzwerkverbindung ermittelt werden. Eine solche Verbindung "
+#~ "ist jedoch notwendig, um Ihr System für RHN registrieren zu lassen und "
+#~ "damit der Red Hat Update Agent Ihr System aktualisieren kann. Klicken Sie "
+#~ "auf die Schaltfläche unten, um eine Netzwerkverbindung einzustellen.\n"
 
 #~ msgid "Set up networking..."
 #~ msgstr "Netzwerk einstellen..."
@@ -243,27 +266,6 @@ msgstr ""
 
 #~ msgid "Ternary DNS"
 #~ msgstr "Ternärer DNS"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "Hardware konfigurieren"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "Tastaturbelegung:"
-
-#~ msgid "Configure..."
-#~ msgstr "Konfigurieren..."
-
-#~ msgid "Mouse:"
-#~ msgstr "Maus:"
-
-#~ msgid "Networking:"
-#~ msgstr "Netzwerk:"
-
-#~ msgid "Display:"
-#~ msgstr "Anzeige:"
-
-#~ msgid "Printers:"
-#~ msgstr "Drucker:"
 
 #~ msgid "Keyboard"
 #~ msgstr "Tastatur"
@@ -355,41 +357,40 @@ msgstr ""
 
 #~ msgid ""
 #~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
+#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts "
+#~ "(collectively known as Errata Alerts) can be retreived directly from Red "
+#~ "Hat. You can even have updates automatically delivered directly to your "
+#~ "system as soon as they are released. \n"
 #~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
+#~ "Because Red Hat Network keeps track of when Errata Updates are released and "
+#~ "sends you email notifications, it can:"
 #~ msgstr ""
 #~ "Red Hat Network ist eine Internet-Lösung für das Verwalten von einem oder "
 #~ "mehreren Linux-Systemen. Alle Alerts in Bezug auf Sicherheitsfragen, "
-#~ "Fehlerbehebungen, Erweiterungen (allgemein bekannt als Errata Alerts) "
-#~ "stehen direkt bei Red Hat zur Verfügung. Darüber hinaus können Updates "
+#~ "Fehlerbehebungen, Erweiterungen (allgemein bekannt als Errata Alerts) stehen "
+#~ "direkt bei Red Hat zur Verfügung. Darüber hinaus können Updates "
 #~ "automatisch an Ihr System geliefert werden, sobald sie freigegeben sind.\n"
 #~ "\n"
 #~ "Dabei zeichnet Red Hat Network die Freigabe von Errata Updates auf und "
-#~ "sendet Ihnen entsprechende Mitteilungen per E-Mail. Dies bedeutet "
-#~ "folgende Vorteile:"
+#~ "sendet Ihnen entsprechende Mitteilungen per E-Mail. Dies bedeutet folgende "
+#~ "Vorteile:"
 
 #~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
+#~ " -- Reduce the time and effort required by system administrators to stay on "
+#~ "top of the Red Hat errata list\n"
 #~ " -- Minimize security vulnerabilities in your network by providing the "
 #~ "patches as soon as Red Hat releases them\n"
 #~ " -- Filter out package updates not relevant to your network\n"
 #~ " -- Schedule Errata Updates so that packages are delivered to selected "
 #~ "systems when you want it"
 #~ msgstr ""
-#~ " -- Reduzieren des Zeit- und Arbeitsaufwands der Systemadministratoren, "
-#~ "um\n"
+#~ " -- Reduzieren des Zeit- und Arbeitsaufwands der Systemadministratoren, um\n"
 #~ "die Red Hat Errata-Liste auf dem aktuellen Stand zu halten\n"
 #~ " -- Verbessern der Sicherheit Ihres Netzwerks über die Lieferungvon "
 #~ "Patches, sobald sie von Red Hat freigegeben sind\n"
 #~ " -- Herausfiltern von für Ihr System nicht relevanten Paket-Updates\n"
-#~ " -- Planen von Errata-Updates, um Pakete an bestimmte Systeme zu liefern,"
-#~ "wenn Sie dies wünschen."
+#~ " -- Planen von Errata-Updates, um Pakete an bestimmte Systeme zu "
+#~ "liefern,wenn Sie dies wünschen."
 
 #~ msgid "Register system now"
 #~ msgstr "System jetzt registrieren"

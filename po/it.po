@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
-"PO-Revision-Date: 2002-07-26 15:23GMT\n"
+"PO-Revision-Date: 2002-08-05 10:17GMT\n"
 "Last-Translator: Marisa <marisa@redhat.it>\n"
 "Language-Team:  <it@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,6 @@ msgstr ""
 "X-Generator: KBabel 0.9.5\n"
 
 #: ../src/exceptionWindow.py:31
-#, fuzzy
 msgid "An error has occured in the %s module."
 msgstr "Si è verificato un errore nel modulo %s."
 
@@ -26,6 +25,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"A causa di un problema nel modulo %s, \n"
+"Red Hat Setup Agent non caricherà questo modulo e \n"
+"tenterà di eseguire gli altri."
 
 #: ../src/exceptionWindow.py:38
 msgid ""
@@ -34,6 +36,12 @@ msgid ""
 "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Stilare un report del bug relativo a 'firstboot' nel sistema di segnalazione "
+"\n"
+"dei bug di Red Hat all'indirizzo http://www.redhat.com/bugzilla. \n"
+"Una copia del risultato dell'operazione di debug è stata salvata in "
+"/tmp/firstboot.txt \n"
+"Accertarsi di allegare il file al report dei bug. \n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -49,7 +57,7 @@ msgstr "Linux Application CD"
 
 #: ../src/modules/additional_cds.py:32
 msgid "Install Additional Software"
-msgstr ""
+msgstr "Installa software aggiuntivo"
 
 #: ../src/modules/additional_cds.py:59
 msgid ""
@@ -74,14 +82,12 @@ msgid "Error"
 msgstr "Errore"
 
 #: ../src/modules/date.py:49
-#, fuzzy
 msgid "Date and Time"
-msgstr "Data & Ora"
+msgstr "Data e Ora"
 
 #: ../src/modules/date.py:50
-#, fuzzy
 msgid "Date and Time Configuration"
-msgstr "Configurazione Data & Ora"
+msgstr "Configurazione Data e Ora"
 
 #: ../src/modules/date.py:52
 msgid "Please set the date and time for the system."
@@ -101,34 +107,30 @@ msgid "Finish Setup"
 msgstr "Termina installazione"
 
 #: ../src/modules/finished.py:28
-#, fuzzy
 msgid "Finished Installation!"
 msgstr "Installazione completata!"
 
 #: ../src/modules/finished.py:45
-#, fuzzy
 msgid ""
 "Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Contratulazioni! Il sistema Red Hat Linux è stato installato correttamente. "
+"Congratulazioni! Il sistema Red Hat Linux è stato installato correttamente. "
 "Ci auguriamo che il suo utilizzo possa offrire grandi vantaggi. Fare clic "
-"sulpulsante \"Avanti\" nella parte inferiore destra per continuare."
+"sul pulsante \"Avanti\" nella parte inferiore destra per continuare."
 
 #: ../src/modules/soundcard_gui.py:50
-#, fuzzy
 msgid "Sound Card"
-msgstr "Scheda audio:"
+msgstr "Scheda audio"
 
 #: ../src/modules/soundcard_gui.py:51
-#, fuzzy
 msgid "Sound Card Configuration"
-msgstr "Configurazione Data & Ora"
+msgstr "Configurazione scheda audio"
 
 #: ../src/modules/soundcard_gui.py:52
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "Sul computer è stata rilevata una scheda audio."
 
 #: ../src/modules/soundcard_gui.py:70
 msgid ""
@@ -137,6 +139,10 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Fare clic sul pulsante \"Riproduci test audio\" per ascoltare un campione "
+"audio. Si dovrebbe sentire una serie di tre suoni. Il primo suono sarà nel "
+"canale destro, il secondo sarà nel canale sinistro e il terzo suono "
+"sarànel centro."
 
 #: ../src/modules/up2date.py:18
 msgid "Update Your System"
@@ -147,7 +153,6 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
@@ -188,77 +193,3 @@ msgstr ""
 "che il sistema sia pronto. Red Hat Setup Agent guida l'utentenel processo di "
 "configurazione di base. Fare clic sul pulsante \"Avanti\" nella parte "
 "inferiore destra per continuare."
-
-#~ msgid "Network check"
-#~ msgstr "Controllo di rete"
-
-#~ msgid "Set up Networking"
-#~ msgstr "Configurazione della rete"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "La connessione di rete non è stata rilevata. La connettività di rete è "
-#~ "necessaria per registrare il sistema con RHN e utilizzare Red Hat Update "
-#~ "Agent per aggiornare il sistema. Per configurare la connessione di rete, "
-#~ "fare clic sulpulsante sotto.\n"
-
-#~ msgid "Set up networking..."
-#~ msgstr "Configurazione della rete..."
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "Configurazione mediante DHCP"
-
-#~ msgid "IP Address"
-#~ msgstr "Indirizzo IP"
-
-#~ msgid "Netmask"
-#~ msgstr "Maschera di rete"
-
-#~ msgid "Network"
-#~ msgstr "Rete"
-
-#~ msgid "Broadcast"
-#~ msgstr "Trasmissione"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Gateway"
-#~ msgstr "Gateway"
-
-#~ msgid "Hostname"
-#~ msgstr "Hostname"
-
-#~ msgid "Primary DNS"
-#~ msgstr "DNS primario"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "DNS secondario"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "DNS terziario"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "Configurazione dell'hardware"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "Mappa della tastiera:"
-
-#~ msgid "Configure..."
-#~ msgstr "Configura..."
-
-#~ msgid "Mouse:"
-#~ msgstr "Mouse:"
-
-#~ msgid "Networking:"
-#~ msgstr "Connessione in rete:"
-
-#~ msgid "Display:"
-#~ msgstr "Schermo:"
-
-#~ msgid "Printers:"
-#~ msgstr "Stampanti:"
