@@ -19,6 +19,7 @@
 
 from snack import *
 import os
+from constants_text import *
 
 ##
 ## I18N
@@ -39,7 +40,7 @@ class TextWindow:
                     (_("Sound card configuration"), ("/usr/sbin/sndconfig")),
                     (_("Timezone configuration"), ("/usr/sbin/timeconfig"))]
 
-        bb = ButtonBar(screen, [_("Run Tool"), _("Exit")])
+        bb = ButtonBar(screen, [_("Run Tool"), TEXT_EXIT_BUTTON])
 
         textbox = TextboxReflowed(50, _("Select the item that you wish to modify "))
         self.listbox = Listbox(8, scroll=1, returnExit=0)
@@ -63,7 +64,7 @@ class TextWindow:
 
         button = bb.buttonPressed(answer)
 
-        if button == "exit":
+        if button == TEXT_EXIT_CHECK:
             return -1
         else:
             #They've selected to run a config tool.  Lauch it now
