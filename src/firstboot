@@ -108,9 +108,13 @@ if not os.environ.has_key('DISPLAY'):
     wm_pid = startWindowManager()
     setRootBackground()
 
+#Hack to make sure the X server has started before importing gtk
+finished = 0
+while not finished:
+    try:	
+        import firstbootWindow
+        finished = 1
+    except:
+        time.sleep(1)
 
-import firstbootWindow
 firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
-
-
-
