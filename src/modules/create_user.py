@@ -6,7 +6,7 @@ import gtk
 import gobject
 import sys
 import functions
-import libuser
+#import libuser
 import rhpl.executil as executil
 
 ##
@@ -24,7 +24,7 @@ class childWindow:
 
     def launch(self, doDebug = None):
         self.doDebug = doDebug
-        self.admin = libuser.admin()
+#        self.admin = libuser.admin()
         self.nisFlag = None
 
         if doDebug:
@@ -113,13 +113,13 @@ class childWindow:
 
         self.vbox.pack_start(internalVBox, gtk.FALSE, 15)
 
-        users = self.admin.enumerateUsersFull()
-        self.normalUsersList = []
-        for userEnt in users:
-            uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
-            if uidNumber == 500:
-                self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
-                self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
+#         users = self.admin.enumerateUsersFull()
+#         self.normalUsersList = []
+#         for userEnt in users:
+#             uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#             if uidNumber == 500:
+#                 self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#                 self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 
         return self.vbox, title_pix, self.moduleName
 
@@ -190,14 +190,14 @@ class childWindow:
             self.passwordEntry.grab_focus()                
             return None
 
-        user = self.admin.lookupUserByName(username)
+#         user = self.admin.lookupUserByName(username)
 
-        if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
-            self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
-                                    "specify another username." % username))
-            self.usernameEntry.set_text("")
-            self.usernameEntry.grab_focus()
-            return None
+#         if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#             self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
+#                                     "specify another username." % username))
+#             self.usernameEntry.set_text("")
+#             self.usernameEntry.grab_focus()
+#             return None
 
         fullName = self.fullnameEntry.get_text()
 

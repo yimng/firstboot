@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.8
+Version: 1.3.9
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,8 +76,12 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Mar 17 2004 Jeremy Katz <katzj@redhat.com> 1.3.9-1
+- more workarounds for selinux (don't use libuser at all for create_user.py 
+  for right now)
+
 * Wed Mar 17 2004 Brent Fox <bfox@redhat.com> 1.3.8-1
-- workaround crashing libuser - patch from jeremy
+- workaround selinux - patch from jeremy
 
 * Tue Mar  9 2004 Brent Fox <bfox@redhat.com> 1.3.7-2
 - fix typo (bug #117867)
