@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-12-14 16:44-0500\n"
-"PO-Revision-Date: 2006-09-10 15:15+0300\n"
+"PO-Revision-Date: 2005-01-26 15:15+0300\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -147,7 +147,11 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-
+"Вставте диск с надписом \"Red Hat Enterprise Linux Extras\" для "
+"встановлення програм та додаткових модулів (plug-in) третіх фірм.  Ви "
+"також можете вставити диск з документацією або інший диск, "
+"що постачається компанією Red Hat, для встановлення додаткового програмного "
+"забезпечення на цьому етапі."
 #. if 1:
 #: ../src/modules/additional_cds.py:71
 msgid ""
@@ -157,6 +161,11 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Для виконання 32-бітних програм на архітектурі Intel Itanium2, "
+"необхідно додатково встановити пакет Intel Execution Layer з диска "
+"додаткового програмного забезпечення (Extras)."
 
 #: ../src/modules/additional_cds.py:112
 msgid "Install..."
@@ -181,13 +190,12 @@ msgid "System User"
 msgstr "Користувач системи"
 
 #: ../src/modules/create_user.py:70
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Для звичайного використання (не адміністративного) рекомендується створити "
+"Для повсякденного використання (не адміністративного) рекомендується створити "
 "персональний обліковий запис. Для створення облікового запису введіть "
 "необхідну інформацію."
 
@@ -323,11 +331,8 @@ msgstr ""
 "\" у правому нижньому куті."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Ваша система налаштована та готова до роботи. Щоб продовжити натисніть \"Далі"
-"\" у правому нижньому куті."
+msgstr "Щоб продовжити натисніть \"Далі\" у правому нижньому куті."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -389,38 +394,3 @@ msgstr ""
 "Лишилось ще декілька кроків, після чого ваша система буде готова до роботи. "
 "Агент налаштовування допоможе вам з настроюванням. Натисніть \"Далі\" для "
 "продовження."
-
-#, fuzzy
-#~ msgid "Licence Aggrement"
-#~ msgstr "Ліцензійна угода"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Ім'я користувача '%s' містить символ у верхньому регістрі. Не "
-#~ "використовуйте символи у верхньому регістрі у імені користувача."
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Якщо у вас є перелічені нижче додаткові CD, ви можете встановити х них "
-#~ "пакети, якщо вставите CD та натиснете відповідну кнопку."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Вкажіть сервер точного часу."
-
-#~ msgid "Error"
-#~ msgstr "Помилка"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Неможливо встановити з'єднання з %s. Ймовірно %s недоступний, або "
-#~ "брандмауер вашого комп'ютера блокує NTP-з'єднання."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "З'єднання з NTP сервером. Будь ласка, зачекайте..."
