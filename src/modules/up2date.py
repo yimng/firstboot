@@ -16,7 +16,7 @@ _=gettext.gettext
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 130
-    moduleName = (_("Red Hat Update Agent"))
+    moduleName = (_("Update Your System"))
                 
     def launch(self, doDebug=None):
         if doDebug:
