@@ -21,7 +21,6 @@ import gobject
 
 class firstbootWindow:
     def __init__(self, wm_pid, doReconfig, doDebug):
-        print "starting firstbootWindow", doReconfig, doDebug
         self.wm_pid = wm_pid
         self.doReconfig = doReconfig
         self.doDebug = doDebug
@@ -48,6 +47,7 @@ class firstbootWindow:
         self.notebook = gtk.Notebook()
 
         if self.doDebug:
+            print "starting firstbootWindow", doReconfig, doDebug                    
             path = ('modules/')
             self.notebook.set_scrollable(gtk.TRUE)
         else:
