@@ -20,6 +20,9 @@ cd ..
 cd redhat-config-soundcard
 make snapsrc
 cd ..
+cd redhat-config-date
+make snapsrc
+cd ..
 cd redhat-config-nfs
 make snapsrc
 cd ..
