@@ -10,5 +10,5 @@ def writeSysconfigFile(doDebug):
         fd.close()
 
         #Turn off the firstboot init script
-        path = "/sbin/chkconfig --level 35 firstboot off"
+        path = "/sbin/chkconfig --del firstboot"
         os.system(path)
