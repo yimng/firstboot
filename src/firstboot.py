@@ -55,9 +55,51 @@ def startWindowManager():
     return wm_pid
 
 def mergeXresources():
-    path = "/etc/X11/Xresources"
-    if os.access(path, os.R_OK):
-	os.system("xrdb -merge %s" % path)
+    path = "/usr/X11R6/bin/xrdb"
+
+    merge_pid = os.fork()
+
+    if not merge_pid:
+        args = ['-merge /etc/X11/Xresources']
+        os.execvp(path, args)
+
+    status = 0
+    try:
+        pid, status = os.waitpid (merge_pid, os.WNOHANG)
+        
+    except OSError, (errno, msg):
+        print __name__, "waitpid:", msg
+
+    if status:
+        raise RuntimeError, "Failed to merge Xresources"
+
+
+def fork_off_server(xconfig =None):
+#    tmp_config = tempfile.mktemp("xf86config")
+#    verbose(_("Writing temporary config file to %s") % tmp_config)
+#    xconfig.write(tmp_config)
+    os.environ["DISPLAY"]=":1.0"
+    args = ["/usr/X11R6/bin/XFree86", ':1', 'vt7', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']    
+
+    serverpid = os.fork()
+    if serverpid == 0: #child
+        logFile = "/tmp/X-Test.log"
+        try:
+            err = os.open(logFile, os.O_RDWR | os.O_CREAT)
+            if err < 0:
+                sys.stderr.write(_("error opening /tmp/X.log\n"))
+            else:
+                os.dup2(err, 2)
+                os.close(err)
+        except:
+            # oh well
+            pass
+        
+        os.execv(args[0], args)
+        sys.exit (1)
+            
+#    return (serverpid, tmp_config)
+    return serverpid
 
 
 #Let's check to see if firstboot should be run or not
@@ -114,32 +156,62 @@ if (not doDebug):
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
     
-     if os.access("/etc/X11/XF86Config", os.R_OK) or os.access("/etc/X11/XF86Config-4", os.R_OK):
+     if os.access("/etc/X11/XF86Config", os.R_OK):
           #set the display environment variable
           os.environ['DISPLAY'] = ':1'
 
-	  xserver_pid = os.fork()
+         try:
+             server = fork_off_server()
+         except:
+             import traceback
+             server = None
+             (type, value, tb) = sys.exc_info()
+             list = traceback.format_exception (type, value, tb)
+             text = string.joinfields (list, "")
+             print text
 
-          if not xserver_pid:
-              path = "/etc/X11/X"
-              args = [path, ':1', 'vt7', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
+         if not server:
+             print "X server failed"
+             raise RuntimeError, "X server failed to start"
 
-              os.execvp(path, args)
-	      os._exit(1)
+         count = 0
 
-          status = 0
-          try:
-               pid, status = os.waitpid (xserver_pid, os.WNOHANG)
-          except OSError, (errno, msg):
-               print __name__, "waitpid:", msg
+         sys.stdout.write(_("Waiting for X server to start...log located in /tmp/X.log\n"))
+         sys.stdout.flush()
 
-          if status:
-               raise RuntimeError, "X server failed to start"
-	    
+         for i in range(5):
+             time.sleep(1)
+             sys.stdout.write("%s..." % (i+1))
+             sys.stdout.flush()
+             
+         while count < 10:
+             sys.stdout.write(".")
+             sys.stdout.flush()
+
+             pid = 0
+             try:
+                 pid, status = os.waitpid(server, os.WNOHANG)
+             except OSError, (errno, msg):
+                 print __name__, "waitpid:", msg
+
+             if pid:
+                 raise RuntimeError, "X server failed to start"
+             try:
+                 os.stat("/tmp/.X11-unix/X1")
+                 break
+             except OSError:
+                 pass
+             time.sleep(1)
+             count = count + 1
+
 
      wm_pid = None
      wm_pid = startWindowManager()
      mergeXresources()
 
-import firstbootWindow
-firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
+if count < 10:
+    import firstbootWindow
+    firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
+else:
+    print "Firstboot cannot start because of a problem with the X server."
+    sys.exit(0)
