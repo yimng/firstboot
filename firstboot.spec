@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.3
-Release: 4
+Release: 5
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Jan  9 2003 Brent Fox <bfox@redhat.com> 1.0.3-5
+- sleep .5 sec on exit (bug #81313)
+
 * Mon Dec 23 2002 Brent Fox <bfox@redhat.com> 1.0.3-4
 - enforce 6 char user passwords
 
