@@ -96,6 +96,7 @@ class TimeWindow(FirstbootGuiWindow):
                 #set the time on the system according to what the user set it to
                 self.dateBackend.writeDateConfig(sysDate, sysTime)
                 self.dateBackend.syncHardwareClock()
+                self.dateBackend.chkconfigOff()
 
             elif ntpEnabled == gtk.TRUE:
                 sysTimeServer = self.datePage.getTimeServer()
@@ -167,6 +168,8 @@ class TimeWindow(FirstbootGuiWindow):
                 gtk.mainloop()
                 dlg.destroy()
                 gtk.idle_remove (id)          
+
+                self.dateBackend.chkconfigOn()
 
         if self.failedFlag:
             return
