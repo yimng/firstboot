@@ -2,6 +2,7 @@
 
 from gtk import *
 import string
+import gdkpixbuf
 from socket import gethostname
 #from socket import gethostbyname
 
@@ -24,14 +25,49 @@ class childWindow:
         else:
             print "set up networking now"
 
-            self.vbox = GtkVBox()
-            label = GtkLabel("A network connection was not detected.  A network connection is necessary for registering with RHN and for using up2date to update your system.")
+            self.vbox = GtkVBox(FALSE)
+            hbox = GtkHBox(FALSE, 10)
+            label = GtkLabel("A network connection was not detected.  A network connection "
+                             "is necessary for registering with RHN and for using up2date "
+                             "to update your system.\n\n ")
             label.set_line_wrap(TRUE)
-            self.vbox.pack_start(label, FALSE, TRUE, 30)
+            label.set_usize(500, -1)
+            label.set_alignment(0.0, 0.5)
+
+            p = None
+            try:
+                p = gdkpixbuf.new_from_file("images/networking.png")
+            except:
+                pass
+
+            if p:
+                pix = apply (GtkPixmap, p.render_pixmap_and_mask())
+                align = GtkAlignment()
+                align.add(pix)
+                align.set(0.0, 0.0, 0.0, 0.0)
+                hbox.pack_start(align, FALSE, TRUE, 0)
+
+
+            hbox.pack_start(label, FALSE, TRUE)
+
+            self.vbox.pack_start(hbox, FALSE, TRUE)
+#            self.vbox.pack_start(label, FALSE, TRUE, 30)
             label = GtkLabel("Would you like to set up networking now?")
             label.set_line_wrap(TRUE)
-            self.vbox.pack_start(label, FALSE, TRUE, 30)
+            label.set_alignment(0.1, 0.5)
+            self.vbox.pack_start(label, FALSE, TRUE)
 #            return self.vbox
+
+            radioVbox = GtkVBox()
+            yesRadio = GtkRadioButton(None, "Yes")
+            noRadio = GtkRadioButton(yesRadio, "No")
+            radioVbox.pack_start(yesRadio, FALSE)
+            radioVbox.pack_start(noRadio, FALSE)
+            a = GtkAlignment()
+            a.add(radioVbox)
+            a.set(0.2, 0.5, 0.5, 1.0)
+            self.vbox.pack_start(a, FALSE, TRUE)
+
 
             notebook = GtkNotebook()
 #            self.vbox.pack_start(notebook, FALSE, FALSE)
@@ -113,7 +149,10 @@ class childWindow:
                 devbox.show_all()
                 notebook.append_page(devbox, GtkLabel(dev))
 
-            self.vbox.pack_start(GtkHSeparator(), FALSE, padding=10)
+#            a = GtkAlignment()
+#            a.add(GtkHSeparator())
+#            a.set(0.0, 0.0, 0.5, 0.5)
+#            self.vbox.pack_start(a, FALSE, padding=10)
 
 
         options = [("Hostname"), ("Gateway"), ("Primary DNS"),
@@ -191,3 +230,5 @@ class childWindow:
     def apply(self):
         print "applying template changes"
         pass
+
+
