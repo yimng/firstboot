@@ -4,20 +4,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Abd el rahman Ghareeb <king_abdo@yahoo.com>, 2004.
 # Ossama M. Khayat <okhayat@yahoo.com>, 2004.
-# Mohamed Eldesoky <mohamed@eldesoky.net>, 2004
+# Mohamed Eldesoky <mohamed@eldesoky.net>, 2004.
+# Munzir Taha <munzir@kacst.edu.sa>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-07-15 15:04-0400\n"
-"PO-Revision-Date: 2004-07-16 15:02+0300\n"
-"Last-Translator: Mohamed Eldesoky <mohamed@eldesoky.net>\n"
+"PO-Revision-Date: 2004-07-19 01:20+0300\n"
+"Last-Translator: Munzir Taha <munzir@kacst.edu.sa>\n"
 "Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.3\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -33,15 +34,15 @@ msgstr "_نعم، أوافق على شروط اتفاقية التّرخيص"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr "لا، لا أ_وافق"
+msgstr "_لا، لا أوافق"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "هل تريد إعادة قرائة أو إعادة التفكير في اتفاقية التّرخيص؟"
+msgstr "هل تريد إعادة قراءة أو إعادة التفكير في اتفاقية التّرخيص؟"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr "إ_عادة قرائة التّرخيص"
+msgstr "إ_عادة قراءة التّرخيص"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
@@ -60,7 +61,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "حيث أنّه حدث خطأ في الوحدة '%s'\n"
-"سوف يقوم عميل التثبيت الخاص برد هات بعدم تشغيل هذه الوحدة\n"
+"فسوف يقوم عميل التثبيت الخاص برد هات بعدم تشغيل هذه الوحدة\n"
 "و سيحاول تشغيل الوحدات المتبقية."
 
 #: ../src/exceptionWindow.py:57
@@ -73,7 +74,7 @@ msgid ""
 msgstr ""
 "الرجاء تقرير العلّة مقابل 'firstboot' في نظام تعقّب العلل\n"
 "الخاص برد هات على http://www.redhat.com/bugzilla \n"
-"تم حفظ نسخه من مُخرج إزالة العلّة في '%s' \n"
+"تم حفظ نسخه من خرج أداة تصحيح الأخطاء في '%s' \n"
 "تأكد من إرفاق هذا الملف بتقرير العلّة.\n"
 
 #: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
@@ -95,19 +96,19 @@ msgstr "التّوثيق"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
-msgstr "تهيئة الجدار الناري"
+msgstr "إعداد الجدار الناري"
 
 #: ../src/textWindow.py:36
 msgid "Keyboard configuration"
-msgstr "تنسيق لوحة المفاتيح"
+msgstr "إعداد لوحة المفاتيح"
 
 #: ../src/textWindow.py:37
 msgid "Network configuration"
-msgstr "تهيئة الشبكة"
+msgstr "إعداد الشبكة"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration"
-msgstr "تهيئة الطابعة"
+msgstr "إعداد الطابعة"
 
 #: ../src/textWindow.py:39
 msgid "System services"
@@ -115,11 +116,11 @@ msgstr "خدمات النظام"
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration"
-msgstr "تهيئة بطاقة الصوت"
+msgstr "إعداد بطاقة الصوت"
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration"
-msgstr "تهيئة المنطقة الزّمنيّة"
+msgstr "إعداد المنطقة الزّمنيّة"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
@@ -127,7 +128,7 @@ msgstr "أداة التشغيل"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr "حدد العنصر الذي تريد تعديلة."
+msgstr "حدد العنصر الذي تريد تعديله"
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
@@ -142,7 +143,7 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"إذا كان لديك أي من الأقراص مُدمجة التالية يمكنك تثبيت حزم البرامج منها بإدخال "
+"إذا كان لديك أي من الأقراص المُدمجة التالية يمكنك تثبيت حزم البرامج منها بإدخال "
 "القُرص المُدمج والضّغط على الزر المناسب."
 
 #: ../src/modules/additional_cds.py:98
@@ -154,8 +155,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في الالقارئ و اضغط "
-"\"موافق\" للإستمرار."
+"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ و اضغط "
+"\"موافق\" للاستمرار."
 
 #: ../src/modules/additional_cds.py:154
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
@@ -172,9 +173,7 @@ msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr ""
-"يُستحسن إنشاء حساب شخصي للإستخدام العادي (لغير أغراض الإدارة).  لإنشاء حساب "
-"شخصي، أدخل البيانات المطلوبة."
+msgstr "يُستحسن إنشاء حساب شخصي للاستخدام العادي (لغير أغراض الإدارة).  لإنشاء حساب شخصي، أدخل البيانات المطلوبة."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -197,7 +196,7 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"إذا كنت تحتاج استخدام توثيق الشبكة مثل كِرْبِروس أو NIS، رجاء اضغط على زرّ "
+"إذا كنت تحتاج استخدام توثيق الشبكة مثل Kerberos أو NIS، رجاء اضغط على زرّ "
 "استخدام تسجيل الدّخول الشّبكي."
 
 #: ../src/modules/create_user.py:122
@@ -209,9 +208,7 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
-"يُستحسن إنشاء حساب شخصي، إذا استمريت بدون حساب، يمكنك تسجيل الدخول فقط بحساب "
-"root، والذي هو مُخصّص للاستخدام الإداريّ فقط."
+msgstr "يُستحسن إنشاء حساب شخصي، إذا استمررت بدون حساب، يمكنك تسجيل الدخول فقط بحساب root، والذي هو مُخصّص للاستخدام الإداريّ فقط."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -244,7 +241,7 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"اسم المستخدم'%s' يحتوي على مسافات. برجاء عدم استخدام المسافات في "
+"اسم المستخدم'%s' يحتوي على مسافات. الرجاء عدم استخدام المسافات في "
 "اسم المستخدم."
 
 #: ../src/modules/create_user.py:298
@@ -252,9 +249,7 @@ msgstr ""
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
-"اسم المستخدم '%s' يحتوي على حروف تنقيط . برجاء عدم استخدام حروف تنقيط أو "
-"فواصل في اسم المستخدم."
+msgstr "اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم أو فواصل في اسم المستخدم."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -270,16 +265,16 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "اسم المستخدم '%s' يحتوي على حروف خطأ. الرجاء استخدام حروف ASCII فقط."
+msgstr "اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:322
 msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "كلمة المرور تحتوي على حروف خطأ. الرجاء استخدام حروف ASCII فقط."
+msgstr "كلمة المرور تحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:334
 #, python-format
 msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "الاسم '%s' يحتوي على حروف خطأ. الرّجاء استخدام حروف ASCII فقط."
+msgstr "الاسم '%s' يحتوي على حروف غير صالحة. الرّجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -304,9 +299,7 @@ msgstr "خطأ"
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح أو أن إعدادات الجدار "
-"الناري الخاص بك تعترض إتصالات NTP."
+msgstr "لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح أو أن إعدادات الجدار الناري الخاص بك تعترض اتصالات NTP."
 
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
@@ -329,8 +322,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"تم إعداد نظامك و هو جاهز الآن للإستخدام. رجاء اضغظ زر \"التالي\" في الركن "
-"الأيمن للإستمرار."
+"تم إعداد نظامك و هو جاهز الآن للاستخدام. رجاء اضغظ زر \"التالي\" في الركن "
+"الأيمن للاستمرار."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -350,7 +343,7 @@ msgstr "بروتوكول الإقلاع"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr "_تغيير تهيئة الشبكة..."
+msgstr "_تغيير إعداد الشبكة..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
@@ -370,9 +363,7 @@ msgid ""
 "hear a series of three sounds.  The first sound will be in the right "
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
-msgstr ""
-"اضغط زر \"تشغيل صوت تجريبي\" لتسمع نموذج للصوت. يجب أن تسمع ثلاثة أصوات. "
-"الأول في القناة اليمنى و الثاني في القناة اليسرى و الثالث في المنتصف."
+msgstr "اضغط زر \"تشغيل صوت تجريبي\" لتسمع نموذج للصوت. يجب أن تسمع ثلاثة أصوات: الأول في القناة اليمنى و الثاني في القناة اليسرى و الثالث في المنتصف."
 
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
@@ -380,7 +371,7 @@ msgstr "المنطقة الزمنية"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr "برجاء تحديد المنطقة الزمنية للنظام."
+msgstr "الرجاء تحديد المنطقة الزمنية للنظام."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -388,10 +379,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"بقي بعض الخطوات الأخيرة ليصبح النظام جاهز للإستعمال. برنامج التثبيت سوف يقوم "
-"بإرشادك خلال بعض التّهيئة الأساسية. رجاء اضغط زرّ \"التالي\" في الركن الأيمن "
+"بقي بعض الخطوات الأخيرة ليصبح النظام جاهزاً للاستعمال. برنامج التثبيت سوف يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في الركن الأيمن"
 "للمتابعة."
-
-#~ msgid "User Account"
-#~ msgstr "حساب المستخدم"
 
