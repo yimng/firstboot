@@ -11,10 +11,9 @@ sys.path.append("/usr/share/firstboot")
 ##
 ## I18N
 ## 
-import gettext
-gettext.bindtextdomain ("firstboot", "/usr/share/locale")
-gettext.textdomain ("firstboot")
-_=gettext.gettext
+from rhpl.translate import _, N_
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
 
 wm_pid = None
 doDebug = None
