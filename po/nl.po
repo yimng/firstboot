@@ -5,15 +5,15 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Firstboot RH8.1\n"
+"Project-Id-Version: firstboot-1.1.6-1\n"
 "POT-Creation-Date: Tue Jul 22 22:58:03 2003\n"
-"PO-Revision-Date: 2003-06-27 01:04+0200\n"
+"PO-Revision-Date: 2003-07-27 12:34+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.0.1\n"
 
 #: ../src/exceptionWindow.py:31
 msgid "An error has occurred in the %s module."
@@ -48,18 +48,16 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot is al eens uitgevoerd op dit systeem.\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Om firstboot vanaf de opdrachtregel uit te voeren, gebruikt u de volgende "
 "opdrachten:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
-"Om firstboot tijdens het opstarten van het systeem uit te voeren, gebruikt u "
-"de volgende opdrachten:"
+"Om firstboot tijdens het opstarten van het systeem uit te voeren, gebruikt "
+"u de volgende opdrachten:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
@@ -107,8 +105,7 @@ msgstr "Red Hat Linux Installatie CD"
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
-"Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
+msgstr "Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
 
 #: ../src/modules/create_user.py:22
 msgid "User Account"
@@ -129,7 +126,6 @@ msgid "_Username:"
 msgstr "_Gebruikersnaam:"
 
 #: ../src/modules/create_user.py:64
-#, fuzzy
 msgid "Full Nam_e:"
 msgstr "_Volledige naam:"
 
@@ -150,7 +146,6 @@ msgstr ""
 "op de Gebruik Netwerk Login knop."
 
 #: ../src/modules/create_user.py:104
-#, fuzzy
 msgid "Use Network _Login..."
 msgstr "Gebruik _Netwerk Login..."
 
@@ -230,17 +225,14 @@ msgstr ""
 "ASCII-tekens."
 
 #: ../src/modules/create_user.py:283
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Het wachtwoord bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-"
 "tekens."
 
 #: ../src/modules/create_user.py:295
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"De naam '%s' bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-tekens."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "De naam '%s' bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-tekens."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -277,7 +269,6 @@ msgstr "Setup voltooien"
 
 # BUG: Forward is verwarrend, moet Continue zijn of Next
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
@@ -374,12 +365,10 @@ msgid "_Yes, I want to register my system with Red Hat Network."
 msgstr "_Ja, ik wil mijn systeem bij Red Hat Network laten registreren."
 
 #: ../src/modules/up2date.py:56
-#, fuzzy
 msgid "N_o, I do not want to register my system."
 msgstr "_Nee, ik wil mijn systeem niet laten registreren."
 
 #: ../src/modules/welcome.py:35
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Red Hat Setup Agent will now guide you through some basic configuration.  "
@@ -419,3 +408,4 @@ msgstr ""
 #: ../src/textWindow.py:24
 msgid "Red Hat Setup Agent"
 msgstr "Red Hat Setup Agent"
+
