@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
 "PO-Revision-Date: 2002-08-30 11:16GMT\n"
 "Last-Translator: Marisa <marisa@redhat.it>\n"
 "Language-Team:  <it@li.org>\n"
@@ -42,17 +42,17 @@ msgstr ""
 "Una copia del risultato dell'operazione di debug è stata salvata in %s.\n"
 "Accertarsi di allegare il file al report dei bug. \n"
 
-#: ../src/firstboot.py:91
+#: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot è già stato eseguito su questo sistema.\n"
 
-#: ../src/firstboot.py:92
+#: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Per eseguire firstboot dalla linea di comando, eseguire i seguenti comandi:"
 
-#: ../src/firstboot.py:97
+#: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
@@ -93,8 +93,49 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Il CD non è stato rilevato. Inserire il CD nell'unità e fare clic su "
-"\"OK\" per continuare."
+"Il CD non è stato rilevato. Inserire il CD nell'unità e fare clic su \"OK\" "
+"per continuare."
+
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr ""
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr ""
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr ""
+
+#: ../src/modules/create_user.py:78
+msgid "Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:83
+msgid "Confirm Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?."
+msgstr ""
+
+#: ../src/modules/create_user.py:117
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -108,7 +149,7 @@ msgstr "Configurazione Data e Ora"
 msgid "Please set the date and time for the system."
 msgstr "Impostare la data e l'ora del sistema."
 
-#: ../src/modules/date.py:120
+#: ../src/modules/date.py:121
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -117,11 +158,11 @@ msgstr ""
 "disponibileo che le impostazione del firewall del computer blocchino le "
 "connessioni NTP."
 
-#: ../src/modules/date.py:127
+#: ../src/modules/date.py:128
 msgid "Error"
 msgstr "Errore"
 
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:158
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Tentativo di contattare il server NTP. Attendere..."
 
@@ -155,7 +196,7 @@ msgstr "Configurazione scheda audio"
 msgid "A sound card has been detected on your computer."
 msgstr "Sul computer è stata rilevata una scheda audio."
 
-#: ../src/modules/soundcard_gui.py:93
+#: ../src/modules/soundcard_gui.py:91
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -164,8 +205,8 @@ msgid ""
 msgstr ""
 "Fare clic sul pulsante \"Riproduci test audio\" per ascoltare un campione "
 "audio. Si dovrebbe sentire una serie di tre suoni. Il primo suono sarà nel "
-"canale destro, il secondo sarà nel canale sinistro e il terzo suono "
-"sarànel centro."
+"canale destro, il secondo sarà nel canale sinistro e il terzo suono sarànel "
+"centro."
 
 #: ../src/modules/up2date.py:19
 msgid "Update Agent"
@@ -200,9 +241,9 @@ msgstr ""
 "di base di Red Hat Network. Per maggiori informazioni, leggere la scheda "
 "dell'attivazione del prodotto disponibile nella confezione.\n"
 "\n"
-"Se il prodotto non è stato acquistato, visitare il sito "
-"http://rhn.redhat.com per ottenere ulteriori informazioni oppure "
-"sottoscrivere il servizio di base di Red Hat Network.\n"
+"Se il prodotto non è stato acquistato, visitare il sito http://rhn.redhat."
+"com per ottenere ulteriori informazioni oppure sottoscrivere il servizio di "
+"base di Red Hat Network.\n"
 "\n"
 
 #: ../src/modules/up2date.py:72
@@ -232,3 +273,27 @@ msgstr ""
 "che il sistema sia pronto. Red Hat Setup Agent guida l'utentenel processo di "
 "configurazione di base. Fare clic sul pulsante \"Avanti\" nella parte "
 "inferiore destra per continuare."
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr ""
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr ""
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+
+#: ../src/textWindow.py:24
+#, fuzzy
+msgid "Red Hat Setup Agent"
+msgstr "Red Hat Update Agent"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0.1\n"
-"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
 "PO-Revision-Date: 2002-08-30 23:39+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -41,18 +41,18 @@ msgstr ""
 "En kopi af fejlsøgningsuddata er gemt i /tmp/firstboot.txt \n"
 "Vør sød at vedlægge denne fil til fejlrapporten. \n"
 
-#: ../src/firstboot.py:91
+#: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot er allerede blevet kørt en gang på dette system.\n"
 
-#: ../src/firstboot.py:92
+#: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "For at køre 'firstboot' fra kommandolinjen skal du køre de følgende "
 "kommandoer:"
 
-#: ../src/firstboot.py:97
+#: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
@@ -96,6 +96,47 @@ msgstr ""
 "En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
 "for at fortsætte"
 
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr ""
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr ""
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr ""
+
+#: ../src/modules/create_user.py:78
+msgid "Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:83
+msgid "Confirm Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?."
+msgstr ""
+
+#: ../src/modules/create_user.py:117
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
+
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Dato og klokkeslet"
@@ -108,7 +149,7 @@ msgstr "Konfiguration af dato og klokkeslet"
 msgid "Please set the date and time for the system."
 msgstr "Sæt dato og klokkeslet for systemet."
 
-#: ../src/modules/date.py:120
+#: ../src/modules/date.py:121
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -116,11 +157,11 @@ msgstr ""
 "En forbindelse med %s kunne ikke etableres. Enten er %s ikke tilgængelig "
 "eller også blokerer brandmursindstillingerne på din maskine NTP-forbindelser."
 
-#: ../src/modules/date.py:127
+#: ../src/modules/date.py:128
 msgid "Error"
 msgstr "Fejl"
 
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:158
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Kontakter NTP-server. Vent venligst..."
 
@@ -154,7 +195,7 @@ msgstr "Konfiguration af lydkort"
 msgid "A sound card has been detected on your computer."
 msgstr "Et lydkort er blevet fundet på din maskine."
 
-#: ../src/modules/soundcard_gui.py:93
+#: ../src/modules/soundcard_gui.py:91
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -227,6 +268,30 @@ msgstr ""
 "der skal gøres før dit system er klar til brug. Red Hats opsætningsagent vil "
 "nu lede dig gennem noget grundlæggende konfigurering. Klik på 'Næste'-"
 "knappen i det nederste højre hjørne for at fortsætte."
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr ""
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr ""
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+
+#: ../src/textWindow.py:24
+#, fuzzy
+msgid "Red Hat Setup Agent"
+msgstr "Red Hat opdateringsagent"
 
 #~ msgid ""
 #~ "If you have additional CD-ROMs that you would like to install, such as "

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <ra@hp.is>\n"
@@ -40,17 +40,17 @@ msgstr ""
 "Afrit af villumeldingunum var vistað í %s \n"
 "Mundi að hengja hana við villutilkynninguna. \n"
 
-#: ../src/firstboot.py:91
+#: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot hefur þegar verið keyrt á þessari vél.\n"
 
-#: ../src/firstboot.py:92
+#: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Gefðu eftirfarandi skipanir ef þú vilt keyra firstboot úr skipanalínunni:"
 
-#: ../src/firstboot.py:97
+#: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
@@ -94,6 +94,47 @@ msgstr ""
 "Geisladiskur fannst ekki. Vinsamlegast settu geisladisk í drifið og veldu "
 "\"Í lagi\" til að halda áfram."
 
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr ""
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr ""
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr ""
+
+#: ../src/modules/create_user.py:78
+msgid "Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:83
+msgid "Confirm Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?."
+msgstr ""
+
+#: ../src/modules/create_user.py:117
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
+
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Dagsettning og tími"
@@ -106,7 +147,7 @@ msgstr "Stillingar dagsettningar og tíma"
 msgid "Please set the date and time for the system."
 msgstr "Vinsamlegast settu dagsetningu og tíma vélarinnar."
 
-#: ../src/modules/date.py:120
+#: ../src/modules/date.py:121
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -114,11 +155,11 @@ msgstr ""
 "Ekki tókst að tengjast %s. Annaðhvort er %s ekki til staðar eða "
 "eldveggjarstillingar velarinnar þinnar leyfa ekki NTP tengingar."
 
-#: ../src/modules/date.py:127
+#: ../src/modules/date.py:128
 msgid "Error"
 msgstr "Villa"
 
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:158
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Tengist NTP þjóninum.  Vinsamlegast bíðið..."
 
@@ -152,7 +193,7 @@ msgstr "Stillingar hljóðkorts"
 msgid "A sound card has been detected on your computer."
 msgstr "Hljóðkort fannst í vélinni þinni."
 
-#: ../src/modules/soundcard_gui.py:93
+#: ../src/modules/soundcard_gui.py:91
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -226,3 +267,27 @@ msgstr ""
 "uppsetningarforritið mun nú leiða þig í gegnum það sem eftir er að stilla. "
 "Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra horninu hér að neðan til "
 "að halda áfram."
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr ""
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr ""
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+
+#: ../src/textWindow.py:24
+#, fuzzy
+msgid "Red Hat Setup Agent"
+msgstr "Red Hat uppfærsluálfurinn"

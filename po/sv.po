@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
 "PO-Revision-Date: 2002-09-07 23:23+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -44,17 +44,17 @@ msgstr ""
 "har sparats i %s. Försäkra dig om att du bifogar\n"
 "den filen med felrapporten.\n"
 
-#: ../src/firstboot.py:91
+#: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot har redan körts en gång på detta system.\n"
 
-#: ../src/firstboot.py:92
+#: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "För att kunna köra firstboot från kommandoraden kör du följande kommandon:"
 
-#: ../src/firstboot.py:97
+#: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
@@ -98,6 +98,50 @@ msgstr ""
 "En cd-romskiva har inte detekterats. Stoppa in en cd-romskiva i enheten och "
 "klicka på \"OK\" för att fortsätta."
 
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr ""
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr ""
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr ""
+
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Password:"
+msgstr "Rootlösenord:"
+
+#: ../src/modules/create_user.py:83
+#, fuzzy
+msgid "Confirm Password:"
+msgstr "Rootlösenord:"
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?."
+msgstr ""
+
+#: ../src/modules/create_user.py:117
+#, fuzzy
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Lösenorden stämmer inte överens. Försök igen."
+
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
+
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "Datum och tid"
@@ -110,7 +154,7 @@ msgstr "Konfiguration av datum och tid"
 msgid "Please set the date and time for the system."
 msgstr "Ställ in datum och tid för systemet."
 
-#: ../src/modules/date.py:120
+#: ../src/modules/date.py:121
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -118,11 +162,11 @@ msgstr ""
 "En anslutning med %s kunde inte etableras. Antingen är %s inte tillgänglig "
 "eller så blockerar brandväggsinställningarna på din dator NTP-anslutningar."
 
-#: ../src/modules/date.py:127
+#: ../src/modules/date.py:128
 msgid "Error"
 msgstr "Fel"
 
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:158
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Kontaktar NTP-server. Var vänlig vänta..."
 
@@ -156,7 +200,7 @@ msgstr "Ljudkortskonfiguration"
 msgid "A sound card has been detected on your computer."
 msgstr "Ett ljudkort har hittats på din dator."
 
-#: ../src/modules/soundcard_gui.py:93
+#: ../src/modules/soundcard_gui.py:91
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -229,6 +273,30 @@ msgstr ""
 "konfigurationsagent kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Framåt\" i nedre högra hörnet för att "
 "fortsätta."
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr ""
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr ""
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+
+#: ../src/textWindow.py:24
+#, fuzzy
+msgid "Red Hat Setup Agent"
+msgstr "Red Hats uppdateringsagent"
 
 #~ msgid ""
 #~ "If you have additional CD-ROMs that you would like to install, such as "
@@ -393,17 +461,11 @@ msgstr ""
 #~ msgid "Please set the root password for the system."
 #~ msgstr "Ställ in rootlösenordet för systemet."
 
-#~ msgid "Root Password:"
-#~ msgstr "Rootlösenord:"
-
 #~ msgid "Confirm:"
 #~ msgstr "Bekräfta:"
 
 #~ msgid "Root password must be at least 6 characters in length."
 #~ msgstr "Rootlösenordet måste vara minst 6 tecken långt."
-
-#~ msgid "Passwords do not match.  Please try again."
-#~ msgstr "Lösenorden stämmer inte överens. Försök igen."
 
 #~ msgid "Security Level"
 #~ msgstr "Säkerhetsnivå"

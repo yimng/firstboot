@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
 "PO-Revision-Date: 2002-09-04 09:22GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -41,16 +41,18 @@ msgstr ""
 "调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
 
-#: ../src/firstboot.py:91
+#: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "该系统上已经运行过一次 firstboot 程序。\n"
 
-#: ../src/firstboot.py:92
-msgid "In order to run firstboot from the command line, run the following commands:"
+#: ../src/firstboot.py:94
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "要从命令行运行 firstboot 程序，执行下列命令："
 
-#: ../src/firstboot.py:97
-msgid "In order to run firstboot during system bootup, run the following commands:"
+#: ../src/firstboot.py:99
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
@@ -65,7 +67,9 @@ msgstr "安装额外软件"
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr "如果您有任何下面列出的光盘，您可以通过插入光盘，再点击恰当的按钮来安装软件包。"
+msgstr ""
+"如果您有任何下面列出的光盘，您可以通过插入光盘，再点击恰当的按钮来安装软件"
+"包。"
 
 #: ../src/modules/additional_cds.py:67
 msgid "Red Hat Linux Documentation CD"
@@ -86,6 +90,50 @@ msgid ""
 "click \"OK\" to continue."
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr ""
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr ""
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr ""
+
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Password:"
+msgstr "根口令："
+
+#: ../src/modules/create_user.py:83
+#, fuzzy
+msgid "Confirm Password:"
+msgstr "根口令："
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?."
+msgstr ""
+
+#: ../src/modules/create_user.py:117
+#, fuzzy
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "口令不匹配。请再试。"
+
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
+
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "日期和时间"
@@ -98,7 +146,7 @@ msgstr "日期和时间配置"
 msgid "Please set the date and time for the system."
 msgstr "请为系统设置日期和时间。"
 
-#: ../src/modules/date.py:120
+#: ../src/modules/date.py:121
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -106,11 +154,11 @@ msgstr ""
 "无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙设"
 "置堵塞了 NTP 连接。"
 
-#: ../src/modules/date.py:127
+#: ../src/modules/date.py:128
 msgid "Error"
 msgstr "错误"
 
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:158
 msgid "Contacting NTP server.  Please wait..."
 msgstr "正在联系 NTP 服务器。请稍候..."
 
@@ -128,8 +176,8 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"祝贺您！您的 Red Hat Linux 系统现已设置完毕，一切就绪。我们希望您喜欢该系"
-"统。请点击右下角的“前进”按钮来继续。"
+"祝贺您！您的 Red Hat Linux 系统现已设置完毕，一切就绪。我们希望您喜欢该系统。"
+"请点击右下角的“前进”按钮来继续。"
 
 #: ../src/modules/soundcard_gui.py:49
 msgid "Sound Card"
@@ -143,15 +191,15 @@ msgstr "声卡配置"
 msgid "A sound card has been detected on your computer."
 msgstr "在您的计算机上检测到声卡。"
 
-#: ../src/modules/soundcard_gui.py:93
+#: ../src/modules/soundcard_gui.py:91
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"点击“播放测试声音”按钮来试听声音示例。您应该听到三种声音系列。第一种声音是"
-"右频；第二种声音是左频；第三种声音将会在中间。"
+"点击“播放测试声音”按钮来试听声音示例。您应该听到三种声音系列。第一种声音是右"
+"频；第二种声音是左频；第三种声音将会在中间。"
 
 #: ../src/modules/up2date.py:19
 msgid "Update Agent"
@@ -183,8 +231,8 @@ msgstr ""
 "如果您购买了该产品，您将有权得到 Red Hat 网络基本服务的免费试用。要使用该项免"
 "费服务，请参考盒内的产品激活卡来阅读详细指令。\n"
 "\n"
-"如果您没有购买该产品，请访问 http://rhn.redhat.com 来获取详情，或者来订阅 Red "
-"Hat 网络的基本服务。\n"
+"如果您没有购买该产品，请访问 http://rhn.redhat.com 来获取详情，或者来订阅 "
+"Red Hat 网络的基本服务。\n"
 
 #: ../src/modules/up2date.py:72
 msgid "Yes, I would like to register with Red Hat Network"
@@ -209,8 +257,32 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
-"嗨！欢迎使用 Red Hat 设置代理。在您的系统一切就绪前要执行几个步骤。Red Hat "
-"设置代理将会引导您通过一些基本配置。请点击右下角的“前进”按钮来继续。"
+"嗨！欢迎使用 Red Hat 设置代理。在您的系统一切就绪前要执行几个步骤。Red Hat 设"
+"置代理将会引导您通过一些基本配置。请点击右下角的“前进”按钮来继续。"
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr ""
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr ""
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+
+#: ../src/textWindow.py:24
+#, fuzzy
+msgid "Red Hat Setup Agent"
+msgstr "Red Hat 更新代理"
 
 #, fuzzy
 #~ msgid ""
@@ -356,17 +428,11 @@ msgstr ""
 #~ msgid "Please set the root password for the system."
 #~ msgstr "请为系统设置根口令。"
 
-#~ msgid "Root Password:"
-#~ msgstr "根口令："
-
 #~ msgid "Confirm:"
 #~ msgstr "确认："
 
 #~ msgid "Root password must be at least 6 characters in length."
 #~ msgstr "根口令至少应有六个字符。"
-
-#~ msgid "Passwords do not match.  Please try again."
-#~ msgstr "口令不匹配。请再试。"
 
 #, fuzzy
 #~ msgid "Security Level"
@@ -443,4 +509,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-

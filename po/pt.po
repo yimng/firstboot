@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
 "PO-Revision-Date: 2002-11-07 12:31+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -39,19 +39,23 @@ msgstr ""
 "Uma cópia da saída de depuração foi gravada em %s \n"
 "Por favor anexe este ficheiro ao relatório de erro. \n"
 
-#: ../src/firstboot.py:91
+#: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "O 'firstboot' já foi executado uma vez neste sistema.\n"
 
-#: ../src/firstboot.py:92
+#: ../src/firstboot.py:94
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
-msgstr "Para correr o 'firstboot' na linha de comandos, execute os seguintes comandos:"
+msgstr ""
+"Para correr o 'firstboot' na linha de comandos, execute os seguintes "
+"comandos:"
 
-#: ../src/firstboot.py:97
+#: ../src/firstboot.py:99
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
-msgstr "Para correr o 'firstboot' no arranque do sistema, execute os seguintes comandos:"
+msgstr ""
+"Para correr o 'firstboot' no arranque do sistema, execute os seguintes "
+"comandos:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
 msgid "Additional CDs"
@@ -65,7 +69,9 @@ msgstr "Instalar Software Adicional"
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr "Se tiver algum dos CDs indicados em baixo, pode instalar os seus pacotes introduzindo o CD e carregando no botão apropriado."
+msgstr ""
+"Se tiver algum dos CDs indicados em baixo, pode instalar os seus pacotes "
+"introduzindo o CD e carregando no botão apropriado."
 
 #: ../src/modules/additional_cds.py:67
 msgid "Red Hat Linux Documentation CD"
@@ -84,7 +90,50 @@ msgstr "CD de Instalação do Red Hat Linux"
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "Não foi detectado nenhum CD-ROM. Introduza por favor um CD na 'drive' e carregue em \"OK\" para continuar."
+msgstr ""
+"Não foi detectado nenhum CD-ROM. Introduza por favor um CD na 'drive' e "
+"carregue em \"OK\" para continuar."
+
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr ""
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr ""
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr ""
+
+#: ../src/modules/create_user.py:78
+msgid "Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:83
+msgid "Confirm Password:"
+msgstr ""
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?."
+msgstr ""
+
+#: ../src/modules/create_user.py:117
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -98,7 +147,7 @@ msgstr "Configuração da Data e Hora"
 msgid "Please set the date and time for the system."
 msgstr "Configure a data e hora do seu computador."
 
-#: ../src/modules/date.py:120
+#: ../src/modules/date.py:121
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -107,11 +156,11 @@ msgstr ""
 "ou\n"
 "a configuração da 'firewall' no seu computador está a bloquear ligações NTP."
 
-#: ../src/modules/date.py:127
+#: ../src/modules/date.py:128
 msgid "Error"
 msgstr "Erro"
 
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:158
 msgid "Contacting NTP server.  Please wait..."
 msgstr "A contactar o servidor de NTP.  Aguarde um momento..."
 
@@ -146,7 +195,7 @@ msgstr "Configuração da Placa de Som"
 msgid "A sound card has been detected on your computer."
 msgstr "Foi detectada uma placa de som no seu computador."
 
-#: ../src/modules/soundcard_gui.py:93
+#: ../src/modules/soundcard_gui.py:91
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -180,11 +229,19 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"O Agente de Actualizações da Red Hat vai agora registar a sua máquina na Red Hat Network para que possa receber os últimos pacotes de software directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu sistema Red Hat actualizado, com todas as correcções de segurança, de erros e melhorias a pacotes.\n"
+"O Agente de Actualizações da Red Hat vai agora registar a sua máquina na Red "
+"Hat Network para que possa receber os últimos pacotes de software "
+"directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu "
+"sistema Red Hat actualizado, com todas as correcções de segurança, de erros "
+"e melhorias a pacotes.\n"
 "\n"
-"Se adquiriu este produto, tem direito a experimentar gratuitamente o Serviço Básico da Red Hat Network. Para aceder ao teste gratuito consulte as instruções detalhas presentes no cartão de activação do producto que pode encontrar na caixa.\n"
+"Se adquiriu este produto, tem direito a experimentar gratuitamente o Serviço "
+"Básico da Red Hat Network. Para aceder ao teste gratuito consulte as "
+"instruções detalhas presentes no cartão de activação do producto que pode "
+"encontrar na caixa.\n"
 "\n"
-"Se não adquiriu este produto, visite http://rhn.redhat.com para mais informações ou para subscrever o Serviço Básico da Red Hat Network. \n"
+"Se não adquiriu este produto, visite http://rhn.redhat.com para mais "
+"informações ou para subscrever o Serviço Básico da Red Hat Network. \n"
 "\n"
 
 #: ../src/modules/up2date.py:72
@@ -215,3 +272,27 @@ msgstr ""
 "Agente de Configuração da Red Hat vai agora guiá-lo através de algumas "
 "opções básicas.  Por favor carregue no botão \"Avançar\" no canto inferior "
 "direito para continuar."
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr ""
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr ""
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+
+#: ../src/textWindow.py:24
+#, fuzzy
+msgid "Red Hat Setup Agent"
+msgstr "Agente de Actualizações da Red Hat"

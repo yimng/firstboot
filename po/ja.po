@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
-"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"POT-Creation-Date: Mon Dec  2 16:13:54 2002\n"
 "PO-Revision-Date: 2002-08-30 10:25GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -42,16 +42,18 @@ msgstr ""
 "デバッグ出力のコピーは%sに保存してあります。\n"
 "バグ報告には必ず、このファイルを添付して下さい。\n"
 
-#: ../src/firstboot.py:91
+#: ../src/firstboot.py:93
 msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
-#: ../src/firstboot.py:92
-msgid "In order to run firstboot from the command line, run the following commands:"
+#: ../src/firstboot.py:94
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
-#: ../src/firstboot.py:97
-msgid "In order to run firstboot during system bootup, run the following commands:"
+#: ../src/firstboot.py:99
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
@@ -91,6 +93,50 @@ msgstr ""
 "CD-ROMは検出されませんでした。 CD-ROMをドライブに挿入して\"OK\"を クリックし"
 "て続けて下さい。"
 
+#: ../src/modules/create_user.py:20 ../src/modules/create_user.py:39
+msgid "Create A User"
+msgstr ""
+
+#: ../src/modules/create_user.py:59
+msgid ""
+"A user account is required to use the system.  Create a user account by "
+"filling in the information below."
+msgstr ""
+
+#: ../src/modules/create_user.py:68
+msgid "Username:"
+msgstr ""
+
+#: ../src/modules/create_user.py:73
+msgid "Full Name:"
+msgstr ""
+
+#: ../src/modules/create_user.py:78
+#, fuzzy
+msgid "Password:"
+msgstr "ルートパスワード："
+
+#: ../src/modules/create_user.py:83
+#, fuzzy
+msgid "Confirm Password:"
+msgstr "ルートパスワード："
+
+#: ../src/modules/create_user.py:104
+msgid ""
+"A user account was not created.  Are you sure that you want to continue "
+"without creating a user account?."
+msgstr ""
+
+#: ../src/modules/create_user.py:117
+#, fuzzy
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "パスワードが一致しません。再度入力して下さい。"
+
+#: ../src/modules/create_user.py:126
+msgid ""
+"An account with username %s already exists.  Please specify another username."
+msgstr ""
+
 #: ../src/modules/date.py:51
 msgid "Date and Time"
 msgstr "日付 と 時刻"
@@ -103,7 +149,7 @@ msgstr "日付 と 時刻 の設定"
 msgid "Please set the date and time for the system."
 msgstr "システム用に日付と時刻を設定して下さい。"
 
-#: ../src/modules/date.py:120
+#: ../src/modules/date.py:121
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
@@ -111,11 +157,11 @@ msgstr ""
 "%sとの接続が確立できません。 %sが利用できないか又は、コンピュータの ファイ"
 "ヤーウォールの設定がNTP の接続を阻止しています。"
 
-#: ../src/modules/date.py:127
+#: ../src/modules/date.py:128
 msgid "Error"
 msgstr "エラー"
 
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:158
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTPサーバに接続しています。お待ち下さい..."
 
@@ -149,7 +195,7 @@ msgstr "サウンドカードの設定"
 msgid "A sound card has been detected on your computer."
 msgstr "コンピュータ上にサウンドカードが検出されました。"
 
-#: ../src/modules/soundcard_gui.py:93
+#: ../src/modules/soundcard_gui.py:91
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -222,6 +268,30 @@ msgstr ""
 "で もう少しステップがあります。Red Hat セットアップエージェントはここで、基本"
 "的な 設定を通してガイドをしていきます。 右下の隅にある「前」ボタンをクリック"
 "して 続けて下さい。"
+
+#: ../src/textWindow.py:15
+msgid "No"
+msgstr ""
+
+#: ../src/textWindow.py:15
+msgid "Yes"
+msgstr ""
+
+#: ../src/textWindow.py:17
+msgid ""
+"The Red Hat Setup Agent can assist you in configuring your machine by "
+"guiding you through a series of steps.  Setup Agent requires the X Window "
+"System to run.  \n"
+"\n"
+"If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
+"\"No\", the system will continue booting and you will never see this message "
+"again.  Do you wish to run the Setup Agent now?"
+msgstr ""
+
+#: ../src/textWindow.py:24
+#, fuzzy
+msgid "Red Hat Setup Agent"
+msgstr "Red Hat 更新エージェント"
 
 #, fuzzy
 #~ msgid ""
@@ -373,17 +443,11 @@ msgstr ""
 #~ msgid "Please set the root password for the system."
 #~ msgstr "システム用のルートパスワードをセットして下さい。"
 
-#~ msgid "Root Password:"
-#~ msgstr "ルートパスワード："
-
 #~ msgid "Confirm:"
 #~ msgstr "確認："
 
 #~ msgid "Root password must be at least 6 characters in length."
 #~ msgstr "ルートパスワードは最低6文字の長さである必要があります。"
-
-#~ msgid "Passwords do not match.  Please try again."
-#~ msgstr "パスワードが一致しません。再度入力して下さい。"
 
 #~ msgid "Security Level"
 #~ msgstr "セキュリティレベル"
@@ -468,4 +532,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-
