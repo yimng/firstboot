@@ -21,6 +21,8 @@ class childWindow:
 
     def launch(self, doDebug = None):
         self.doDebug = doDebug
+        self.admin = libuser.admin()
+
         if doDebug:
             print "initializing newuser module"
 
@@ -88,11 +90,16 @@ class childWindow:
 
         return self.vbox, eventBox
 
-    def apply(self, notebook):
-#        if self.doDebug:
-#            return 0
+    def grabFocus(self):
+        self.usernameEntry.grab_focus()
 
-        if self.usernameEntry.get_text() == "":
+    def apply(self, notebook):
+        if self.doDebug:
+            return 0
+
+        username = self.usernameEntry.get_text()
+
+        if username == "":
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_YES_NO,
                                     (_("A user account was not created.  Are you sure that you want " \
                                        "to continue without creating a user account?.")))
@@ -107,15 +114,41 @@ class childWindow:
                 return None
 
         if self.passwordEntry.get_text() != self.confirmEntry.get_text():
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
-                                    (_("The passwords do not match.  Please enter the password again.")))
-            dlg.set_position(gtk.WIN_POS_CENTER)
-            dlg.set_modal(gtk.TRUE)
-            rc = dlg.run()
-            dlg.destroy()
+            self.showErrorMessage(_("The passwords do not match.  Please enter the password again."))
             self.passwordEntry.set_text("")
             self.confirmEntry.set_text("")
             self.passwordEntry.grab_focus()
             return None
-            
+        
+        user = self.admin.lookupUserByName(username)
+
+        if user != None:
+            self.showErrorMessage(_("An account with username %s already exists.  Please " \
+                                    "specify another username." % username))
+            self.usernameEntry.set_text("")
+            self.usernameEntry.grab_focus()
+            return None
+
+        #If we get to this point, all the input seems to be valid.  Let's add the user
+        userEnt = self.admin.initUser(username)
+        userEnt.set(libuser.GECOS, [self.fullnameEntry.get_text()])
+
+        groupEnt = self.admin.initGroup(username)
+        gidNumber = groupEnt.get(libuser.GIDNUMBER)[0]
+        userEnt.set(libuser.GIDNUMBER, [gidNumber])
+
+
+        self.admin.addUser(userEnt)
+        self.admin.setpassUser(userEnt, self.passwordEntry.get_text(), 0)
+        self.admin.addGroup(groupEnt)
+        
         return 0
+
+    def showErrorMessage(self, text):
+        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
+        dlg.set_position(gtk.WIN_POS_CENTER)
+        dlg.set_modal(gtk.TRUE)
+        rc = dlg.run()
+        dlg.destroy()
+        return None
+        
