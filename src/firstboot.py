@@ -5,7 +5,7 @@ import os
 import string
 import signal
 import time
-import functions
+import firstbootBackend
 
 sys.path.append("/usr/share/firstboot")
 
@@ -115,7 +115,7 @@ line = string.strip(line)
 tokens = string.split(line)
 runlevel = int(tokens[-1])
 
-if runlevel == 5:
+if runlevel == 3:
     import textWindow
     from snack import *
     
@@ -124,10 +124,12 @@ if runlevel == 5:
     result = textWindow.TextWindow()(screen)
 
     if result == -1:
+        #If they don't want to run firstboot, exit for good
         screen.finish()
-        functions.writeSysconfigFile(doDebug)
+        firstbootBackend.writeSysconfigFile(doDebug)
         os._exit(0)
     else:
+        #They want to run firstboot, so let's pass on through
         screen.finish()
 
 

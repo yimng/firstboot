@@ -20,6 +20,7 @@ import sys
 import gtk
 import gobject
 import functions
+import firstbootBackend
 
 class firstbootWindow:
     def __init__(self, xserver_pid, wm_pid, doReconfig, doDebug, lowRes):
@@ -309,7 +310,7 @@ class firstbootWindow:
 
     def exitFirstboot(self, *args):
         #Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
-        functions.writeSysconfigFile(self.doDebug)
+        firstbootBackend.writeSysconfigFile(self.doDebug)
 
         #Exit the GTK loop
         gtk.mainquit()
