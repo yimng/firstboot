@@ -20,12 +20,14 @@ class TextWindow:
         g.add(t, 0, 0)
         g.add(bb, 0, 3, growx = 1)
 
+        g.setTimer(20000)
+        
         rc = g.runOnce()
 
         button = bb.buttonPressed(rc)
 
-        if button == "no":
-            return -1
-        else:
+        if button == "yes":
             return 0
+        else:
+            return -1
 
