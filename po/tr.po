@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot \n"
-"POT-Creation-Date: Tue Jul 23 22:07:36 2002\n"
+"POT-Creation-Date: Thu Jul 25 17:31:36 2002\n"
 "PO-Revision-Date: 2002-07-25 11:28+0300\n"
 "Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
@@ -32,14 +32,19 @@ msgid "Linux Application CD"
 msgstr "Linux Uygulamaları CD'si"
 
 #: ../src/modules/additional_cds.py:57
-msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the corresponding button below."
+msgid ""
+"If you have additional CDs from the Red Hat Linux box set, such as the Red "
+"Hat Linux Documentation CD or the Linux Applications CD, please insert the "
+"disc now and click the corresponding button below."
 msgstr ""
 "Elinizde standart Red Hat CD'leri dışında, örneğin Red Hat Belgeleri CD'si "
 "ya da Linux Uygulamaları CD'si gibi ek CDler varsa CD'yi takın ve aşağıdan "
 "ilgili düğmeye tıklayın."
 
 #: ../src/modules/additional_cds.py:93
-msgid "This feature is not yet implemented.  Please do not report bugs about this button."
+msgid ""
+"This feature is not yet implemented.  Please do not report bugs about this "
+"button."
 msgstr ""
 "henüz bu özellik gerçekleştirilemedi. Bu düğme ile ilgili olarak lütfen bir "
 "hata bildiriminde bulunmayın."
@@ -61,18 +66,27 @@ msgid "Please set the date and time for the system."
 msgstr "Lütfen sistem tarih ve saatini ayarlayın."
 
 #: ../src/modules/date.py:111
-msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
+msgid ""
+"A connection with %s could not be established.  Either %s is not available "
+"or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
 "%s ile bir bağlantı sağlanamadı. Ya %s hizmet dışı ya da güvenlik duvarı "
 "ayarlarınız bu NTP sunucusuna erişime engel oluyor."
 
 #: ../src/modules/finished.py:19
-msgid "Finish Installation"
-msgstr "Kurulum Sonu"
+msgid "Finish Setup"
+msgstr ""
 
 #: ../src/modules/finished.py:28
 msgid "Finished installation!"
 msgstr "Kurulum Tamamlandı!"
+
+#: ../src/modules/finished.py:42
+msgid ""
+"Contratulations!  Your Red Hat Linux system is now set up and ready to use.  "
+"We hope that you will have a pleasant computing experience.  Please click "
+"the \"Forward\" button in the lower right corner to continue."
+msgstr ""
 
 #: ../src/modules/hardware.py:27
 msgid "Configure Hardware"
@@ -116,11 +130,16 @@ msgid "Set up Networking"
 msgstr "Ağ Ayarları"
 
 #: ../src/modules/networking.py:66
-msgid "A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
+msgid ""
+"A network connection was not detected.  Network connectivity is necessary "
+"for registering your system with RHN and for using the Red Hat Update Agent "
+"to update your system.  To set up a network connection, please click on the "
+"button below.\n"
 msgstr ""
-"Bir ağ bağlantısı algılandı. Ağ bağlantısı RHN ile sisteminizi kaydettirmek ve "
-"Red Hat Güncelleme Aracısını kullanarak sisteminizi güncelleyebilmeniz için "
-"gereklidir. Ağınızı yapılandırmak istiyorsanız aşağıdaki düğmeye tıklayınız.\n"
+"Bir ağ bağlantısı algılandı. Ağ bağlantısı RHN ile sisteminizi kaydettirmek "
+"ve Red Hat Güncelleme Aracısını kullanarak sisteminizi güncelleyebilmeniz "
+"için gereklidir. Ağınızı yapılandırmak istiyorsanız aşağıdaki düğmeye "
+"tıklayınız.\n"
 
 #: ../src/modules/networking.py:118
 msgid "Set up networking..."
@@ -179,13 +198,18 @@ msgid "Red Hat Update Agent"
 msgstr "Red Hat Güncelleme Aracısı"
 
 #: ../src/modules/up2date.py:53
-msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements."
+msgid ""
+"Now that you are registered with Red Hat Network, you can run the Red Hat "
+"Update Agent to receive the latest software packages directly from Red Hat.  "
+"Using this tool will allow you to always have the most up-to-date Red Hat "
+"Linux system with all the security patches, bug fixes, and software package "
+"enhancements."
 msgstr ""
 "RHN üzerinden kayıt işleminiz tamamlandı. Artık yazılım paketlerinin son "
 "çıkan sürümlerini Rad Hat Güncelleme Aracısını kullanarak Red Hat'tan "
 "alabilirsiniz. Bu aracıyı kullanararak, Red Hat Linux sisteminizi daima "
-"güncel tutabilecek, en son güvenlik yamalarına ve yazılımlardaki en son"
-"yeniliklere ilk siz sahip olabileceksiniz."
+"güncel tutabilecek, en son güvenlik yamalarına ve yazılımlardaki en "
+"sonyeniliklere ilk siz sahip olabileceksiniz."
 
 #: ../src/modules/up2date.py:66
 msgid "Yes, I would like to register with Red Hat Network"
@@ -200,6 +224,17 @@ msgid "Welcome"
 msgstr "Hoş Geldiniz"
 
 #: ../src/modules/welcome.py:28
-msgid "Welcome to Red Hat Linux Beta!"
+#, fuzzy
+msgid "Welcome to Red Hat Linux!"
 msgstr "Red Hat Linux Beta'ya Hoş Geldiniz!"
 
+#: ../src/modules/welcome.py:42
+msgid ""
+"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
+"before your system is ready to use.  The Red Hat Setup Agent will now guide "
+"you through some basic configuration.  Please click the \"Forward\" button "
+"in the lower right corner to continue."
+msgstr ""
+
+#~ msgid "Finish Installation"
+#~ msgstr "Kurulum Sonu"
