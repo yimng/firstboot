@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.1.1
-Release: 1
+Release: 2
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -72,6 +72,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Jun 16 2003 Brent Fox <bfox@redhat.com> 1.1.1-2
+- bump number and rebuild
+
 * Mon Jun 16 2003 Brent Fox <bfox@redhat.com> 1.1.1-1
 - create a timezone module (bug #91984)
 
