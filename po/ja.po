@@ -1,0 +1,196 @@
+# firstboot ja.po Japanese Translation.
+# Copyright (C) 2002 Red Hat Inc.
+# James Hashida <khashida@redhat.com>,2002
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"POT-Creation-Date: Wed Jun 26 12:34:52 2002\n"
+"PO-Revision-Date: 2002-06-28 16:25GMT+10:00\n"
+"Last-Translator: James Hashida <khashida@redhat.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-Generator: KBabel 0.9.6\n"
+
+#: ../src/modules/additional_cds.py:19
+msgid "Additional CDs"
+msgstr "追加のCD"
+
+#: ../src/modules/additional_cds.py:22
+msgid "Red Hat Documentation CD"
+msgstr "Red HatドキュメントCD"
+
+#: ../src/modules/additional_cds.py:23
+msgid "Linux Application CD"
+msgstr "LinuxアプリケーションCD"
+
+#: ../src/modules/additional_cds.py:58
+msgid "If you have additional CDs from the Red Hat Linux box set, such as the Red Hat Linux Documentation CD or the Linux Applications CD, please insert the disc now and click the button below."
+msgstr "Red Hat LinuxドキュメントCD又はLinuxアプリケーションCDなどのRed Hat Linuxボックスセットからの追加のCDをお持ちの場合は、そのディスクを挿入して下のボタンをクリックして下さい。"
+
+#: ../src/modules/date.py:48
+msgid "Date & Time"
+msgstr "日付と時刻"
+
+#: ../src/modules/date.py:49
+msgid "Date & Time Configuration"
+msgstr "日付と時刻の設定"
+
+#: ../src/modules/date.py:51
+msgid "Please set the date and time for the system."
+msgstr "システム用に日付と時刻を設定して下さい。"
+
+#: ../src/modules/hardware.py:28
+msgid "Configure hardware"
+msgstr "ハードウェアの設定"
+
+#: ../src/modules/hardware.py:82
+msgid "Keyboard Map:"
+msgstr "キーボードマップ"
+
+#: ../src/modules/hardware.py:88 ../src/modules/hardware.py:104
+#: ../src/modules/hardware.py:125
+msgid "Configure..."
+msgstr "...設定"
+
+#: ../src/modules/hardware.py:97
+msgid "Mouse:"
+msgstr "マウス"
+
+#: ../src/modules/hardware.py:119
+msgid "Sound card:"
+msgstr "サウンドカード"
+
+#: ../src/modules/hardware.py:136
+msgid "Networking:"
+msgstr "ネットワーク構成："
+
+#: ../src/modules/hardware.py:145
+msgid "Display:"
+msgstr "ディスプレー："
+
+#: ../src/modules/hardware.py:154
+msgid "Printers:"
+msgstr "プリンター："
+
+#: ../src/modules/networking.py:19
+msgid "Network check"
+msgstr "ネットワーク確認"
+
+#: ../src/modules/networking.py:38
+msgid "Set up Networking"
+msgstr "ネットワーク構成設定"
+
+#: ../src/modules/networking.py:64
+msgid "A network connection was not detected.  Network connectivity is necessary for registering your system with RHN and for using the Red Hat Update Agent to update your system.  To set up a network connection, please click on the button below.\n"
+msgstr "ネットワークの接続が認知できませんでした。システムのRHNへの登録と更新の為にRed Hat Update Agentを使用する為にはネットワークの接続が必要です。ネットワーク接続を設定するには下のボタンをクリックして下さい。\n"
+
+#: ../src/modules/networking.py:114
+msgid "Set up networking..."
+msgstr "ネットワーク構成を設定する..."
+
+#: ../src/modules/networking.py:150
+msgid "Configure using DHCP"
+msgstr "DHCPを使用して設定"
+
+#: ../src/modules/networking.py:167
+msgid "IP Address"
+msgstr "IPアドレス"
+
+#: ../src/modules/networking.py:168
+msgid "Netmask"
+msgstr "ネットマスク"
+
+#: ../src/modules/networking.py:169
+msgid "Network"
+msgstr "ネットワーク"
+
+#: ../src/modules/networking.py:170
+msgid "Broadcast"
+msgstr "ブロードキャスト"
+
+#: ../src/modules/networking.py:186
+msgid "%s:"
+msgstr "%s:"
+
+#: ../src/modules/networking.py:227
+msgid "Gateway"
+msgstr "ゲートウェイ"
+
+#: ../src/modules/networking.py:227
+msgid "Hostname"
+msgstr "ホスト名"
+
+#: ../src/modules/networking.py:227
+msgid "Primary DNS"
+msgstr "1番目のDNS"
+
+#: ../src/modules/networking.py:228
+msgid "Secondary DNS"
+msgstr "2番目のDNS"
+
+#: ../src/modules/networking.py:228
+msgid "Ternary DNS"
+msgstr "3番目のDNS"
+
+#: ../src/modules/register.py:21
+msgid "Register with RHN"
+msgstr "RHNへの登録"
+
+#: ../src/modules/register.py:30
+msgid "Register your system with Red Hat Network"
+msgstr "システムをRed Hat Networkへ登録"
+
+#: ../src/modules/register.py:55
+msgid ""
+"Red Hat Network is an Internet solution for managing one or more Red Hat Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts (collectively known as Errata Alerts) can be retreived directly from Red Hat. You can even have updates automatically delivered directly to your system as soon as they are released. \n"
+"\n"
+"Because Red Hat Network keeps track of when Errata Updates are released and sends you email notifications, it can:"
+msgstr ""
+"Red Hat Networkは、1つ又はそれ以上のRed Hat Linuxシステムを管理する為のインターネットソリューションです。全てのセキュリティ通知、バグ修正通知、及び拡張通知(まとめてErrata通知と呼びます)は Red Hatから直接取り込めます。さらに更新が発表され次第自動的に登録したシステムに受け取ることが出来ます。\n"
+"\n"
+"Red Hat Networkは、いつErrataの更新が発行されるかチェックしてemailで通知を送りますので、更新が出来るわけです。"
+
+#: ../src/modules/register.py:68
+msgid ""
+" -- Reduce the time and effort required by system administrators to stay on top of the Red Hat errata list\n"
+" -- Minimize security vulnerabilities in your network by providing the patches as soon as Red Hat releases them\n"
+" -- Filter out package updates not relevant to your network\n"
+" -- Schedule Errata Updates so that packages are delivered to selected systems when you want it"
+msgstr ""
+" --- Red Hat errataリストの最新状態を保持してシステム管理者に求められる時間と労力を節約。\n "
+" ----Red Hatが発行次第、パッチを装備してネットワークのセキュリティ問題を最小限に維持。\n "
+" ----使用ネットワークに関連しないパッケージの更新をフィルターにかける。\n  "
+" ----希望の時間に選択したシステムにErrata更新が送信されるようにスケジュールする。"
+
+#: ../src/modules/register.py:80
+msgid "Register system now"
+msgstr "システムを今登録する"
+
+#: ../src/modules/register.py:90
+msgid "You currently have no network connection."
+msgstr "現在、ネットワークの接続はありません。"
+
+#: ../src/modules/up2date.py:19 ../src/modules/up2date.py:30
+msgid "Red Hat Update Agent"
+msgstr "Red Hat Update Agent"
+
+#: ../src/modules/up2date.py:55
+msgid "Now that you are registered with Red Hat Network, you can run the Red Hat Update Agent to receive the latest software packages directly from Red Hat.  Using this tool will allow you to always have the most up-to-date Red Hat Linux system with all the security patches, bug fixes, and software package enhancements"
+msgstr "Red Hat Networkに登録されました。Red Hat Update Agentを使用して最新のソフトウェアパッケージを直接、Red Hatから取り込むことが出来ます。このツールを使用すれば、セキュリティパッチ、バグ修正、ソフトウェアパッケージ拡張などで最新のRed Hat Linuxを持つことができます。"
+
+#: ../src/modules/up2date.py:66
+msgid "Start the Red Hat Update Agent"
+msgstr "Red Hat Update Agentを開始"
+
+#: ../src/modules/welcome.py:19
+msgid "Welcome"
+msgstr "ようこそ"
+
+#: ../src/modules/welcome.py:28
+msgid "Welcome to Red Hat Linux Beta!"
+msgstr "Red Hat Linux Beta版へようこそ!"
+
