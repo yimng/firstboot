@@ -22,10 +22,11 @@ import gobject
 import functions
 
 class firstbootWindow:
-    def __init__(self, wm_pid, doReconfig, doDebug):
+    def __init__(self, wm_pid, doReconfig, doDebug, lowRes):
         self.wm_pid = wm_pid
         self.doReconfig = doReconfig
         self.doDebug = doDebug
+        self.lowRes = lowRes
         self.mainHBox = gtk.HBox(gtk.FALSE, 10)
         self.moduleList = []
         self.moduleDict = {}
@@ -35,16 +36,19 @@ class firstbootWindow:
         self.win.connect("destroy", self.destroy)
 
         self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
-        print "Screen width is", gtk.gdk.screen_width()
 
         if gtk.gdk.screen_width() >= 800:            
             self.win.set_size_request(800, 600)
         else:
             self.win.set_size_request(gtk.gdk.screen_width(), gtk.gdk.screen_height())
+            self.lowRes = 1
+            
+        if self.lowRes:
+            self.win.set_size_request(640, 480)
             
         self.win.set_resizable(gtk.FALSE)
         self.win.set_position(gtk.WIN_POS_CENTER)
-        self.win.set_decorated(gtk.FALSE)
+#        self.win.set_decorated(gtk.FALSE)
         mainVBox = gtk.VBox()
 
         # Create the notebook.  We use a ListView to control which page in the
@@ -64,11 +68,12 @@ class firstbootWindow:
 
         sys.path.append(path)
 
-        #Code for an upper title bar like anaconda.  We may turn this on if we get some UI help
-        pix = functions.imageFromFile("firstboot-header.png")
-        if pix:
-            mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
-            pass
+        if not self.lowRes:
+            #Code for an upper title bar like anaconda.  We may turn this on if we get some UI help
+            pix = functions.imageFromFile("firstboot-header.png")
+            if pix:
+                mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
+                pass
 
         # Generate a list of all of the module files (which becomes the list of
         # all non-hidden files in the directory with extensions other than .py.
@@ -147,6 +152,9 @@ class firstbootWindow:
                 eventbox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#758baa"))
                 # Give some vertical spacing to the window titlebar
                 eventbox.get_children()[0].set_border_width(3)
+                if self.lowRes:
+                    # If we're in 640x480 mode, remove the title bars
+                    vbox.remove(vbox.get_children()[0])
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
                     self.notebook.append_page(vbox, gtk.Label(module.moduleName))
@@ -170,8 +178,9 @@ class firstbootWindow:
 #        if pix:
 #            leftVBox.pack_start(pix, gtk.FALSE)
 
-        # Add the box on the left to the window's HBox.
-        self.mainHBox.pack_start(leftVBox, gtk.FALSE)
+        if not self.lowRes:
+            # Add the box on the left to the window's HBox.
+            self.mainHBox.pack_start(leftVBox, gtk.FALSE)
 
         # Populate the right side of the window.  Add the notebook to a VBox.
         self.internalVBox = gtk.VBox()
@@ -194,10 +203,13 @@ class firstbootWindow:
         borderFrame.add(self.rightVBox)
 
         # Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
-        alignment = gtk.Alignment()
-        alignment.add(borderBox)
-        alignment.set(0.2, 0.2, 0.8, 0.9)
-        self.mainHBox.pack_start(alignment, gtk.TRUE)
+        if not self.lowRes:
+            alignment = gtk.Alignment()
+            alignment.add(borderBox)
+            alignment.set(0.2, 0.2, 0.8, 0.9)
+            self.mainHBox.pack_start(alignment, gtk.TRUE)
+        else:
+            self.mainHBox.pack_start(borderBox)
 
         # Create a lower hbox that will contain the close button and button box
         self.lowerHBox = gtk.HBox()

@@ -19,6 +19,7 @@ _=gettext.gettext
 wm_pid = None
 doDebug = None
 doReconfig = None
+lowRes = None
 FILENAME = "/etc/sysconfig/firstboot"
 
 for arg in sys.argv:
@@ -28,6 +29,9 @@ for arg in sys.argv:
     if arg == '--debug':
         print "starting with debugging options"
         doDebug = 1
+    if arg == '--lowres':
+        print "starting in lowres mode"
+        lowRes = 1
 
 if __name__ == "__main__":
     signal.signal (signal.SIGINT, signal.SIG_DFL)
@@ -133,4 +137,4 @@ if not os.environ.has_key('DISPLAY'):
      mergeXresources()
 
 import firstbootWindow
-firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug)
+firstbootWindow.firstbootWindow(wm_pid, doReconfig, doDebug, lowRes)
