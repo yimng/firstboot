@@ -2,20 +2,21 @@
 # Copyright (C) 2004 Red Hat Inc.
 # This file is distributed under the same license as the firstboot package.
 # Ashabul Yeameen <ayeameen@yahoo.com>, 2003.
+# Runa Bhattacharjee <runab@redhat.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Firstboot\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-11-10 16:47-0500\n"
-"PO-Revision-Date: 2004-10-19 08:52+0600\n"
-"Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
+"PO-Revision-Date: 2004-11-16 11:51+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: bangla <redhat-translation@bengalinux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "\n"
 
 # msgstr "বাহির"
@@ -100,7 +101,6 @@ msgid "module import of %s failed: %s"
 msgstr "%s -এর মডিউল ইম্পোর্ট করতে ব্যর্থ: %s"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Licence Aggrement"
 msgstr "লাইসেন্স চুক্তি"
 
@@ -147,15 +147,17 @@ msgstr "টুল চালান"
 msgid "Select the item that you wish to modify "
 msgstr "আপনি যে বস্তুটি পরিবর্তন করতে ইচ্ছুক তানির্বাচন করুন "
 
+# modified for RHEL
 #: ../src/textWindow.py:60
 msgid "Setup Agent"
-msgstr "সেটাপ এজেন্ট"
+msgstr "Setup Agent"
 
 # msgstr "অতিরিক্ত সিডিগুলো"
 #: ../src/modules/additional_cds.py:41 ../src/modules/additional_cds.py:106
 msgid "Additional CDs"
 msgstr "অতিরিক্ত সিডিসমূহ"
 
+# modified for RHEL
 #: ../src/modules/additional_cds.py:59
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
@@ -163,12 +165,13 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"তৃতীশ-পক্ষের প্তাগ-ইন এবং অ্যাপ্লিকেশন ইনস্টল করবার জন্য \"Red Hat Enterprise Linux "
-"Extras\" নামক ডিস্কটি অনুগ্রহ করে প্রবেশ করান।  অতিরিক্ত সফ্টওয়ের ইনস্টল করবার জন্য "
+"স্বতন্ত্র প্লাগ-ইন এবং অ্যাপ্লিকেশন ইনস্টল করার জন্য \"Red Hat Enterprise Linux "
+"Extras\" নামক ডিস্কটি অনুগ্রহ করে প্রবেশ করান।  অতিরিক্ত সফ্টওয়ের ইনস্টল করার জন্য "
 "আপনি এইবার ডকুমেন্টেশন ডিস্ক, অথবা Red-Hat-র উপলব্ধ করা অন্যান্য ডিস্কও প্রবেশ করাতে "
 "পারন।"
 
 #. if 1:
+# modified for RHEL
 #: ../src/modules/additional_cds.py:69
 msgid ""
 "\n"
@@ -180,7 +183,7 @@ msgstr ""
 "\n"
 "\n"
 "Intel Itanium2 আর্কিটেকচারের উপর ৩২-বিট অ্যাপ্লিকেশনের জন্য সমর্থন সক্রিয় সক্রিয় "
-"করবার জন্য, Extras ডিস্কটি থেকে Intel Execution Layer  প্যাকেজটি আপনার ইনস্টল "
+"করার জন্য, Extras ডিস্কটি থেকে Intel Execution Layer  প্যাকেজটি আপনার ইনস্টল "
 "করা আবশ্যক।"
 
 # modified by RB
@@ -188,27 +191,25 @@ msgstr ""
 msgid "Install..."
 msgstr "ইনস্টল করো..."
 
-# modified by RB
+# modified for RHEL
 #: ../src/modules/additional_cds.py:145
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"কোনো সিডি-রম পাওয়া যায় নি। অনুগ্রহ করে ড্রাইভে একটি সিডি প্রবেশ করান এবং চালানোর "
+"কোনো সিডি-রম পাওয়া যায়নি। অনুগ্রহ করে ড্রাইভে একটি সিডি প্রবেশ করান এবং চালানোর "
 "জন্য \"ঠিক আছে\" চাপুন।"
 
 #: ../src/modules/additional_cds.py:179
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"সিডিতে অটোরান প্রোগ্রামটি পাওয়া যায় নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "সিডিতে অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
 #: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "সিস্টেম ব্যবহারকারী"
 
-# modified by RB
+# modified for RHEL
 #: ../src/modules/create_user.py:70
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -248,7 +249,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ ইন ব্যাবহার করো..."
 
-# modified by RB
+# modified for RHEL
 #: ../src/modules/create_user.py:163
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
@@ -326,14 +327,12 @@ msgstr ""
 "মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/date.py:46
@@ -439,3 +438,4 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে সেটাপ এজেন্ট আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+
