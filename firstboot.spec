@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.9
-Release: 9
+Release: 10
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -63,8 +63,12 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Aug 13 2002 Brent Fox <bfox@redhat.com> 0.9.9-10
+- If there's no XF86Config file, start redhat-config-xfree86 first
+
 * Tue Aug 13 2002 Brent Fox <bfox@redhat.com> 0.9.9-9
 - only start in runlevel 5
+
 * Tue Aug 13 2002 Brent Fox <bfox@redhat.com> 0.9.9-8
 - include cd.png
 
