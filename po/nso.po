@@ -1,0 +1,373 @@
+# Northern Sotho translation of firstboot.
+# Copyright (C) 2005 Zuza Software Foundation (Translate.org.za)
+# This file is distributed under the same license as the firstboot package.
+# Translate.org.za <info@translate.org.za>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"PO-Revision-Date: 2005-01-18 12:23+0200\n"
+"Last-Translator: Translate.org.za <info@translate.org.za>\n"
+"Language-Team: Northern Sotho <translate-discuss-nso@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "Etšwa"
+
+#: ../src/eula_strings.py:27
+msgid "License Agreement"
+msgstr "Tumelelano ya Laesense"
+
+#: ../src/eula_strings.py:28
+msgid "_Yes, I agree to the License Agreement"
+msgstr "_Ee, ke dumela Tumelelano ya Laesense"
+
+#: ../src/eula_strings.py:29
+msgid "N_o, I do not agree"
+msgstr "A_owa, ga ke dumele"
+
+#: ../src/eula_strings.py:30
+msgid "Do you want to reread or reconsider the License Agreement?"
+msgstr "Na o nyaka go bala Laesense ya Tumelelano gape goba go e gopodišiša?"
+
+#: ../src/eula_strings.py:31
+msgid "_Reread license"
+msgstr "_Bala laesense gape"
+
+#: ../src/eula_strings.py:32
+msgid "_Shut down"
+msgstr "_Tima"
+
+#: ../src/exceptionWindow.py:48
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "Go tšweletše phošo karolong ya %s."
+
+#: ../src/exceptionWindow.py:53
+#, python-format
+msgid ""
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
+msgstr ""
+"Ka ge go na le bothata karolong ya %s, \n"
+"Moemedi wa Peakanyo ya Red Hat a ka se laiše karolo ye e bile \n"
+"o tla leka go diriša dikarolo tše šetšego."
+
+#: ../src/exceptionWindow.py:57
+#, python-format
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
+msgstr ""
+"Hle tsenya faele ya ditwatši kgahlanong le 'go thoma ga mathomo' \n"
+"tshepedišong ya go latedišiša ditwatši ya Red Hat go http://www.redhat.com/bugzilla. \n"
+"Kopi ya tshedimošo e tšweleditšwego ke khomphuthara ka ga phokotšo ya diphošo e bolokilwe go %s \n"
+"Kgonthišetša go tsenya faele yeo pegong ya twatši. \n"
+
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+msgid "_Back"
+msgstr "_Morago"
+
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+msgid "_Next"
+msgstr "_Latelago"
+
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "O a amogelwa"
+
+#: ../src/firstbootWindow.py:420
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "kamogelo ya tša ntle ya karolo ya %s go paletšwe: %s"
+
+#: ../src/textWindow.py:34
+msgid "Authentication"
+msgstr "Tiišetšo"
+
+#: ../src/textWindow.py:35
+msgid "Firewall configuration"
+msgstr "Go fetola sebopego sa sešireletši sa tsebišo"
+
+#: ../src/textWindow.py:36
+msgid "Keyboard configuration"
+msgstr "Go fetola sebopego sa boroto ya dinotlelo"
+
+#: ../src/textWindow.py:37
+msgid "Network configuration"
+msgstr "Go fetola sebopego sa neteweke"
+
+#: ../src/textWindow.py:38
+msgid "Printer configuration"
+msgstr "Go fetola sebopego sa segatiši"
+
+#: ../src/textWindow.py:39
+msgid "System services"
+msgstr "Ditirelo tša tshepedišo"
+
+#: ../src/textWindow.py:40
+msgid "Sound card configuration"
+msgstr "Go fetola sebopego sa karata ya modumo"
+
+#: ../src/textWindow.py:41
+msgid "Timezone configuration"
+msgstr "Go fetola sebopego sa lefelo la nako"
+
+#: ../src/textWindow.py:43
+msgid "Run Tool"
+msgstr "Sedirišwa sa go diriša"
+
+#: ../src/textWindow.py:45
+msgid "Select the item that you wish to modify "
+msgstr "Kgetha selo seo o ratago go se mpshafatša "
+
+#: ../src/textWindow.py:51
+msgid "Setup Agent"
+msgstr "Moemedi wa Peakanyo"
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+msgid "Additional CDs"
+msgstr "Di-CD tše Dingwe"
+
+#: ../src/modules/additional_cds.py:61
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr "Hle tsenya tisiki yeo e nago le leswao la \"Red Hat Enterprise Linux Extras\" "
+"bakeng sa go dumelela go tsenya ga go kopanya le ditirišo tša motho wa boraro.  O ka "
+"tsenya gape le tisiki ya Ditokumente, goba ditisiki tše dingwe tša Red Hat tšeo di "
+"filwego bakeng sa go tsenya lenaneo le oketšegilego leo le dirišwago khomphuthareng mo nakong ye."
+
+#. if 1:
+#: ../src/modules/additional_cds.py:71
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"Bakeng sa go kgontšha thekgo ya go šoma ga ditirišo tša 32-bit go thutaboagi "
+"bja Intel Itanium2 architecture, o swanetše go tsenya sephuthelwana sa Intel "
+"Execution Layer go tšwa tisiking ya Tše Oketšegilego gona bjale."
+
+#: ../src/modules/additional_cds.py:112
+msgid "Install..."
+msgstr "Tsenya..."
+
+#: ../src/modules/additional_cds.py:158
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr "Go utolotšwe CD-ROM.  Hle tsenya CD-ROM ka draeveng gomme go kgotle \"Go Lokile\" gore o tšwele pele."
+
+#: ../src/modules/additional_cds.py:192
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Lenaneo la go diriša mo go itiragalelago ga le hwetšwe go cd. Kgotla \"Go Lokile\" gore o tšwele pele."
+
+#: ../src/modules/create_user.py:43
+msgid "System User"
+msgstr "Modiriši wa Tshepedišo"
+
+#: ../src/modules/create_user.py:70
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Go eletšwa gore o hlame 'leina la modiriši' la tshepedišo bakeng sa tirišo "
+"e tlwaelegilego (yeo e sego ya taolo) ya tshepedišo ya gago. Bakeng sa go "
+"hlama 'leina la modiriši' la tshepedišo, hle fana ka tshedimošo yeo e "
+"kgopetšwego ka mo tlase."
+
+#: ../src/modules/create_user.py:80
+msgid "_Username:"
+msgstr "_Leina la modiriši:"
+
+#: ../src/modules/create_user.py:87
+msgid "Full Nam_e:"
+msgstr "Leina ka Botlal_o:"
+
+#: ../src/modules/create_user.py:94
+msgid "_Password:"
+msgstr "_Lentšuphetišo:"
+
+#: ../src/modules/create_user.py:101
+msgid "Confir_m Password:"
+msgstr "Tiišetš_a Lentšuphetišo:"
+
+#: ../src/modules/create_user.py:117
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr "Ge eba o nyaka go diriša tiišetšo ya neteweke bjalo ka Kerberos goba NIS, hle kgotla konope ya Diriša go Tsena ga Neteweke."
+
+#: ../src/modules/create_user.py:127
+msgid "Use Network _Login..."
+msgstr "Diriša go Tsena ga _Neteweke..."
+
+#: ../src/modules/create_user.py:163
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr "Go eletšwa kudu gore go hlangwe akhaonto ya modiriši ya motho ka noši. Ge eba o tšwela pele ka ntle le akhaonto, o ka tsena feela ka akhaonto ya modu, yeo e boloketšwego feela tirišo ya taolo."
+
+#: ../src/modules/create_user.py:171
+msgid "_Continue"
+msgstr "_Tšwela pele"
+
+#: ../src/modules/create_user.py:172
+msgid "Create _account"
+msgstr "Hlama _akhaonto"
+
+#: ../src/modules/create_user.py:198
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Mantšuphetišo ga a swane. Hle tsenya lentšuphetišo gape."
+
+#: ../src/modules/create_user.py:206
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Lentšuphetišo ke le lekopana kudu. Hle diriša bonyenyane ditlhaka tše 6."
+
+#: ../src/modules/create_user.py:278
+msgid "The user name must be less than 33 characters long."
+msgstr "Leina la modiriši le swanetše go ba ka tlase ga botelele bja ditlhaka tše 33."
+
+#: ../src/modules/create_user.py:284
+msgid "The user name may not begin with a number."
+msgstr "Leina la modiriši le ka se thome ka nomoro."
+
+#. Check for whitespace
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
+msgstr "Leina la modiriši la '%s' le na le sekgoba se se nago selo.  Hle o seke wa akaretša sekgoba se se nago selo leineng la modiriši."
+
+#: ../src/modules/create_user.py:303
+#, python-format
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr "Leina la modiriši la '%s' le na le ditlhaka tša maswao a makalo. Hle o seke wa diriša maswao a makalo leineng la modiriši."
+
+#: ../src/modules/create_user.py:317
+#, python-format
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr "Leina la modiriši la '%s' le na le ditlhaka tšeo e sego tša kgonthe.  Hle diriša feela ditlhaka tša ASCII."
+
+#: ../src/modules/create_user.py:327
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Lentšuphetišo le na le ditlhaka tšeo e sego tša kgonthe. Hle diriša feela ditlhaka tša ASCII."
+
+#: ../src/modules/create_user.py:339
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "Leina la '%s' le na le ditlhaka tšeo e sego tša kgonthe. Hle diriša feela ditlhaka tša ASCII."
+
+#: ../src/modules/date.py:46
+msgid "Date and Time"
+msgstr "Letšatši-kgwedi le Nako"
+
+#: ../src/modules/date.py:49
+msgid "Please set the date and time for the system."
+msgstr "Hle beakanya letšatši-kgwedi le nako bakeng sa tshepedišo."
+
+#: ../src/modules/display.py:44
+msgid "Display"
+msgstr "Bonagatša"
+
+#: ../src/modules/display.py:47
+msgid "Please select the resolution and color depth that you wish to use"
+msgstr "Hle kgetha maikemišetšo le botebo bja mmala tšeo o ratago go di diriša"
+
+#: ../src/modules/finished.py:19
+msgid "Finish Setup"
+msgstr "Fetša Peakanyo"
+
+#: ../src/modules/finished.py:33
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr "Tshepedišo ya gago bjale e beakantšwe e bile e loketše go dirišwa. Hle kgotla konope ya \"Latelago\" ka sekhutlong sa lagoja kua tlasana gore o tšwele pele."
+
+#: ../src/modules/finished.py:36
+msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgstr "Hle kgotla konope ya \"Latelago\" sekhutlwaneng sa lagoja kua tlasana gore o tšwele pele."
+
+#: ../src/modules/networking.py:42
+msgid "Network Setup"
+msgstr "Peakanyo ya Neteweke"
+
+#: ../src/modules/networking.py:68
+msgid "The following network devices have been detected on the system:"
+msgstr "Go utolotšwe didirišwa tše latelago tša neteweke tshepedišong:"
+
+#: ../src/modules/networking.py:87
+msgid "Network Device"
+msgstr "Sedirišwa sa Neteweke"
+
+#: ../src/modules/networking.py:89
+msgid "Boot protocol"
+msgstr "Porotokole ya go thoma"
+
+#: ../src/modules/networking.py:95
+msgid "_Change Network Configuration..."
+msgstr "_Fetola go Fetola Sebopego ga Neteweke..."
+
+#: ../src/modules/networking.py:138
+msgid "static"
+msgstr "segalo sa lentšu"
+
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
+msgid "Sound Card"
+msgstr "Karata ya Modumo"
+
+#: ../src/modules/soundcard_gui.py:47
+msgid "A sound card has been detected on your computer."
+msgstr "Go utolotšwe karata ya modumo khomphuthareng ya gago."
+
+#: ../src/modules/soundcard_gui.py:70
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr "Kgotla konope ya \"Bapala modumo o lekwago\" bakeng sa go kwa modumo wa mohlala.  O swanetše go kwa tatelano ya medumo e meraro.  Modumo wa mathomo o tla ba kanaleng ya lagoja, modumo wa bobedi o tla ba kanaleng ya lanngele, gomme modumo wa boraro o tla ba magareng."
+
+#: ../src/modules/timezone.py:46
+msgid "Timezone"
+msgstr "Lefelo la nako"
+
+#: ../src/modules/timezone.py:50
+msgid "Please set the timezone for the system."
+msgstr "Hle beakanya lefelo la nako bakeng sa tshepedišo."
+
+#: ../src/modules/welcome.py:34
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr "Go na le megato e mmalwa yeo o swanetšego go e dira pele ga ge tshepedišo ya gago e loketše go dirišwa. Moemedi wa Peakanyo o tla go hlahla ka go fetola sebopego go gongwe ga motheo. Hle kgotla konope ya \"Latelago\" sekhutlwaneng sa lagoja kua tlasana gore o tšwele pele."
+
