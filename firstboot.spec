@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 4
+Release: 5
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Feb 12 2003 Brent Fox <bfox@redhat.com> 1.0.5-5
+- only launch r-c-xfree86 if in runlevel 3 and XF86Config does not exist (bug #84135)
+
 * Tue Feb 11 2003 Brent Fox <bfox@redhat.com> 1.0.5-4
 - fix bug #84068
 
