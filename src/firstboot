@@ -55,7 +55,7 @@ def setRootBackground():
 
     if (not root_pid):
         path = '/usr/bin/X11/xsetroot'
-        args = [path, '-solid', 'midnightblue']
+        args = [path, '-solid', 'midnightblue', '-display', ':1']
         os.execv(path, args)
 
 
