@@ -1,19 +1,21 @@
-# Punjabi translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Punjabi translations for pa package.
+# Copyright (C) 2004 THE pa'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the pa package.
 # Automatically generated, 2004.
-#
+# Automatically generated <punjablinux@netscape.net>, 2004.
+# 
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: pa VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-03-08 16:31-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2004-03-29 19:49+0530\n"
+"Last-Translator: Punjab Linux Technology <punjablinux@netscape.net>\n"
+"Language-Team: Punjabi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #. # eula_strings.py
 #. #
@@ -38,27 +40,27 @@ msgstr ""
 #. #
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "ਲਾੲਿਸੈਸ ਸਮਝੌਤਾ"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "ਹ੾, ਮੈ ਲਾੲਿਸੈਸ ਸਮਝੌਤੇ ਨਾਲ ਸਹਿਮਤ ਹ੾"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr ""
+msgstr "ਨਹੀ, ਮੈ ਸਹਿਮਤ ਨਹੀ"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀ ਲਾੲਿਸੈਸ ਸਮਝੌਤਾ ਨੰੂ ਮੁੜ-ਪੜ੏ਨਾ ਚਾਹੋਗੇ ਜ੾ ਮੁੜ-ਵਿਚਾਰਨਾ ਚਾਹੋਗੇ ?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "ਲਾੲੀਸੈਸ ਮੁੜ-ਪੜੋ੏"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "ਬੰਦ ਕਰੋ"
 
 #. # exceptionWindow.py - the UI to display traceback information
 #. #
@@ -84,7 +86,7 @@ msgstr ""
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "ਮੈਡੀੳੂਲ %s ਵਿੱਚ ਗਲਤੀ ਅਾੲੀ ਹੈ ੤"
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -93,6 +95,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"ਕਿੳੁਕਿ ਮੈਡੀੳੂਲ %s ਵਿੱਚ ਗਲਤੀ ਹੈ, \n"
+"ਰੈਗ-ਹੈਟ ਸੈਟਅਪ ੲੇਜੰਟ ੲਿਸ ਮੈਡੀੳੂਲ ਨੰੂ ਲੋਡ ਨਹੀ ਕਰ ਸਕਿਅਾ ਅਤੇ\n"
+"ਬਾਕੀ ਮੈਡੀੳੂਲ੾ ਨੰੂ ਚਲਾੳੁਣ ਦੀ ਕੋਸ਼ਿਸ ਕਰੇਗਾ ੤"
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -102,6 +107,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"ਕਿਰਪਾ ਕਰਕੇ  'firstboot'  ਵਿੱਚ ਬੱਗ ਦੀ ਜਾਣਕਾਰੀ ਰੈਗ-ਹੈਟ\n"
+"ਬੱਗ ਟਰੈਕਿੰਗ ਸਿਸਟਮ ਜੋ ਕਿ http://www.redhat.com/bugzilla ਵਿਖੇ ਹੈ,ਦਿੳੁ ੤ \n"
+"ਡੀਬੱਗ ਅਾੳੁਟਪੁੱਟ ਦੀ ੲਿੱਕ ਨਕਲ ਨੰੂ %s ਵਿੱਚ ਸੰਭਾਲੀ ਜਾਵੇ ਅਤੇ \n"
+"ਯਕੀਨੀ ਕਰ ਲਵੋ ਕਿ ੲਿਹ ਬੱਗ ਰਿਪੋਰਟ ਵਿੱਚ ਜ਼ਰੂਰ ਦਿੱਤੀ ਜਾਵੇ ੤\n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -215,12 +224,12 @@ msgstr ""
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
 msgid "_Back"
-msgstr ""
+msgstr "ਪਿੱਛੇ"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
 msgid "_Next"
-msgstr ""
+msgstr "ਅੱਗੇ"
 
 #. Add the button box to the bottom of the box which contains the notebook.
 #. Add the main HBox to a VBox which will sit in the window.
@@ -265,7 +274,7 @@ msgstr ""
 #: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr ""
+msgstr "ਜੀ ਅਾੲਿਅਾ ਨੰੂ"
 
 #. Let's take some screenshots
 #. # functions.py - some helper functions
@@ -330,51 +339,51 @@ msgstr ""
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "ਪ੍ਮਾਣਕਿਤਾ"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration"
-msgstr ""
+msgstr "ਫਾੲਿਰਵਾਲ ਸੰਰਚਨਾ"
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration"
-msgstr ""
+msgstr "ਕੀ-ਬੋਰਡ ਸੰਰਚਨਾ"
 
 #: ../src/textWindow.py:36
 msgid "Network configuration"
-msgstr ""
+msgstr "ਨੈਟਵਰਕ ਸੰਰਚਨਾ"
 
 #: ../src/textWindow.py:37
 msgid "Printer configuration"
-msgstr ""
+msgstr "ਪਿ੍ੰਟਰ ਸੰਰਚਨਾ"
 
 #: ../src/textWindow.py:38
 msgid "System services"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਸੇਵਾਵ੾"
 
 #: ../src/textWindow.py:39
 msgid "Sound card configuration"
-msgstr ""
+msgstr "ਸਾੳੂਡ-ਕਾਰਡ ਸੰਰਚਨਾ"
 
 #: ../src/textWindow.py:40
 msgid "Timezone configuration"
-msgstr ""
+msgstr "ਸਮ੾-ਖੇਤਰ ਸੰਰਚਨਾ"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr ""
+msgstr "ਸੰਦ ਚਲਾੳੁ"
 
 #: ../src/textWindow.py:42
 msgid "Exit"
-msgstr ""
+msgstr "ਬਾਹਰ"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "ੲਿਕਾੲੀ ਜੋ ਕਿ ਤੁਸੀ ਸੋਧਣੀ ਚਾਹੁੰਦੇ ਦੀ ਚੋਣ ਕਰੋ"
 
 #: ../src/textWindow.py:50
 msgid "Setup Agent"
-msgstr ""
+msgstr "ਸੈਟਅੱਪ ੲੇਜੰਟ"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -405,17 +414,19 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr ""
+msgstr "ਵਧੀਕ ਸੀਡੀ"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਹੇਠ ਦਿੱਤੀਅ੾ ਸੀਡੀਅ੾ ਵਿੱਚੋ ਕੋੲੀ ਵੀ ਹੈ ਤ੾ ਤੁਸੀ ਪੈਕੇਜ ਸੀਡੀ ਪਾਕੇ ਅਤੇ"
+"ਅਨੁਸਾਰੀ ਬਟਨ ਦਬਾਕੇ ੳੁਹਨ੾ ਤੋ ੲਿੰਸਟਾਲ ਕਰ ਸਕਦੇ ਹੋ"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
-msgstr ""
+msgstr "ੲਿੰਸਟਾਲ਼਼਼"
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
@@ -423,6 +434,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"ਸੀਡੀ-ਰੋਮ ਨੰੂ ਖੋਜਿਅਾ ਨਹੀ ਜਾ ਸਕਿਅਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ਡਰਾੲਿਵ ਵਿੱਚ ਸੀਡੀ-ਰੋਮ ਵਿੱਚ ਸੀਡੀ ਪਾੳੁ ਅਤੇ"
+"\"ਠੀਕ ਹੈ\" ਨੰੂ ਦਬਾੳੁ ੤"
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -432,6 +445,7 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
+"ਸੀਡੀ ਤੇ ਸਵੈ-ਚਾਲਤ ਕਾਰਜ ਨਹੀ ਲੱਭਿਅਾ ਜਾ ਸਕਿਅਾ ੤ ਜਾਰੀ ਰੱਖਣ ਲੲੀ \"ਠੀਕ ਹੈ\" ਨੰੂ ਦਬਾੳੁ ੤"
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -444,7 +458,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
 msgid "User Account"
-msgstr ""
+msgstr "ੳੁਪਭੋਗਤਾ ਖਾਤਾ"
 
 #: ../src/modules/create_user.py:48
 msgid ""
@@ -452,22 +466,24 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"ੲਿਸ ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ਤੁਸੀ ਸਧਾਰਨ(ਨਾ-ਪ੍ਬੰਧਕੀ) ਵਰਤੋ ਲੲੀ ੲਿੱਕ ਨਿੱਜੀ ੳੁੋਪਭੋਗਤਾ ਖਾਤਾ ਬਣਾੳੁ ੤"
+"ਨਿੱਜੀ ਖਾਤੇ ਲੲੀ ਲੋੜੀਦੀ ਜਾਣਕਾਰੀ ਦਿੳੁ ੤"
 
 #: ../src/modules/create_user.py:58
 msgid "_Username:"
-msgstr ""
+msgstr "ੳੁਪਭੋਗਤਾ-ਨਾੳੁਃ"
 
 #: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "ਪੂਰਾ ਨਾੳੁਃ"
 
 #: ../src/modules/create_user.py:72
 msgid "_Password:"
-msgstr ""
+msgstr "ਗੁਪਤ-ਕੋਡਃ"
 
 #: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "ਪੁਸ਼ਟੀ ਗੁਪਤ-ਕੋਡਃ"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:95
@@ -475,10 +491,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"ਜੇਕਰ ਤੁਹਾਨੰੂ ਨੈਟਵਰਕ ਪ੍ਮਾਣਕਿਤਾ ਕਿਵੇ ਕਿ ਕਰਬੋਸ ਜ੾  NIS ਵਰਤਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ ਤ੾ ਕਿਰਪਾ ਕਰਕੇ"
+"ਨੈਟਵਰਕ ਲਾਗੲਿੰਨ ਵਰਤੋ ਬਟਨ ਨੰੂ ਦਬਾੳੁ ੤"
 
 #: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "ਨੈਟਵਰਕ ਲਾਗੲਿੰਨ ਵਰਤੋ"
 
 #. If they've run authconfig, don't pop up messageDialog
 #: ../src/modules/create_user.py:141
@@ -487,23 +505,28 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"ੲਿਸ ਦੀ ਪੁਰਜ਼ੋਰ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ੲਿੱਕ ਨਿੱਜੀ ੳੁੋਪਭੋਗਤਾ ਖਾਤਾ ਬਣਾੲਿਅਾ ਜਾਵੇ ੤ ਜੇਕਰ ਤੁਸੀ ਖਾਤੇ"
+"ਬਿਨ੾ ਹੀ ਜਾਰੀ ਰਹੇ ਤ੾, ਤੁਸੀ ਕੇਵਲ ਰੂਟ(root) ਖਾਤੇ ਨਾਲ ਹੀ ਲਾਗੲਿੰਨ ਕਰ ਸਕਦੇ ਹੋ, ਜੋ ਕਿ ਸਿਰਫ਼"
+"ਪ੍ਬੰਧਕੀ ਵਰਤੋ ਲੲੀ ਹੈ"
+""
+""
 
 #: ../src/modules/create_user.py:149
 msgid "_Continue"
-msgstr ""
+msgstr "ਜਾਰੀ"
 
 #: ../src/modules/create_user.py:150
 msgid "Create _account"
-msgstr ""
+msgstr "ਖਾਤਾ ਬਣਾੳੁ"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "ਗੁਪਤ-ਕੋਡ ਮੇਲ ਨਹੀ ਖਾ ਰਿਹਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ਗੁਪਤ-ਕੋਡ ਮੁੜ ਭਰੋ ੤"
 
 #: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "ਗੁਪਤ-ਕੋਡ ਬਹੁਤ ਛੋਟਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ  6 ਅੱਖਰ੾ ਤੋ ਵੱਧ ਵਰਤੋ ੤"
 
 #: ../src/modules/create_user.py:195
 #, python-format
@@ -511,17 +534,19 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ੳੁਲਟ ਸਿਸਟਮ ਖਾਤਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਨਿਰਧਾਰਿਤ "
+"ਕਰੋ ੤"
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "ੳੁਪਭੋਗਤਾ-ਨਾੳੁ 33 ਅੱਖਰ੾ ਤੋ ਘੱਟ ਲੰਮਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ੤"
 
 #: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਅੰਕ ਨਾਲ ਅਾਰੰਭ ਨਹੀ ਹੋ ਸਕਦਾ ਹੈ ੤"
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
@@ -531,6 +556,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਖਾਲੀ ਥ੾ ਰੱਖਦਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚ ਖਾਲੀ"
+"ਥ੾ ਨਾ ਦਿੳੁ ੤"
 
 #: ../src/modules/create_user.py:267
 #, python-format
@@ -538,6 +565,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਵਿੱਚ ਵਿਸ਼ਰਾਮ ਚਿੰਨ੏ ਨਹੀ ਹੋ ਸਕਦੇ ਹਨ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚ"
+"ਵਿਸ਼ਰਾਮ ਚਿੰਨ੏ ਦੀ ਵਰਤੋ ਨਾ ਕਰੋ ੤"
 
 #: ../src/modules/create_user.py:274
 #, python-format
@@ -545,6 +574,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਅੰਗਰੇਜ਼ੀ ਵਰਣਮਾਲਾ ਦੇ ਵੱਡੇ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚ"
+"ਵੱਡੇ ਅੱਖਰ ਨਾ ਵਰਤੋ ੤"
 
 #: ../src/modules/create_user.py:281
 #, python-format
@@ -552,11 +583,14 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ "
+"ਵਰਤੋ ੤"
 
 #: ../src/modules/create_user.py:291
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"ਗੁਪਤ-ਕੋਡ ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ ਵਰਤੋ ੤"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
@@ -564,6 +598,7 @@ msgstr ""
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"ਨਾੳੁ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ ਵਰਤੋ ੤"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -593,11 +628,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:47
 msgid "Date and Time"
-msgstr ""
+msgstr "ਮਿਤੀ ਤੇ ਸਮ੾"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਿਸਟਮ ਦੀ ਮਿਤੀ ਅਤੇ ਸਮ੾ ਨਿਰਧਾਰਨ ਕਰੋ"
 
 #. Initialize date backend
 #. Initialize datePage and pass dateBackend into it
@@ -607,12 +642,12 @@ msgstr ""
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr ""
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਮ੾-ਸਰਵਰ ਭਰੋ"
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
 msgid "Error"
-msgstr ""
+msgstr "ਗਲਤੀ"
 
 #: ../src/modules/date.py:126 ../src/modules/date.py:157
 #, python-format
@@ -620,11 +655,13 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"%s ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਬਣਾੲਿਅਾ ਨਹੀ ਜਾ ਸਕਿਅਾ ਹੈ ੤ ਜ੾ ਤ੾ %s ੳੁਪਲੱਬਧ ਨਹੀ ਹੈ"
+"ਜ੾ ਤੁਹਾਡਾ ਕੰਪਿੳੂਟਰ ਦੇ ਫਾੲਿਰਵਾਲ ਨਿਰਧਰਨ ਨੇ NTP ਕੁਨੈਕਸ਼ਨ ਨੰੂ ਬੰਦ ਕੀਤਾ ਹੋੲਿਅਾ ਹੈ ੤"
 
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "NTP ਸਰਵਰ ਨਾਲ ਜੁੜ ਰਿਹਾ ਹੈ , ਕਿਰਪਾ ਕਰਕੇ ੳੁਡੀਕ ਕਰੋ਼਼਼"
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -653,11 +690,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "ਦਰਿਸ਼"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ੳੁਹ ਰੈਜ਼ੋਲੇਸ਼ਨ ਤੇ ਰੰਗ ਗਹਿਰਾੲੀ ਜੋ ਤੁਸੀ ਵਰਤਣੀ ਚਾਹੁੰਦੇ ਹੋ ਦੀ ਚੋਣ ਕਰੋ "
 
 #. Add icon to the top frame
 #. #
@@ -666,13 +703,16 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "ਨਿਰਧਾਰਨ ਸਮਾਪਤ"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
+"ਤੁਹਾਡਾ ਸਿਸਟਮ ੲਿਸ ਸਮੇ ਨਿਰਧਾਰਿਤ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਵਰਤਣ ਲੲੀ ਤਿਅਾਰ ਹੈ ੤ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ"
+"ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੰੂ ਜਾਰੀ ਰਹਿਣ ਲੲੀ ਦਬਾੳੁ ੤"
+""
 
 #.
 #. networking.py - networking module for firstboot
@@ -700,27 +740,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
-msgstr ""
+msgstr "ਨੈਟਵਰਕ ਨਿਰਧਾਰਨ"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਸਿਸਟਮ ਤੇ ਹੇਠ ਲਿਖਿਅਾ ਨੈਟਵਰਕ ਯੰਤਰ ਖੋਜਿਅਾ ਗਿਅਾ ਹੈਃ"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr ""
+msgstr "ਨੈਟਵਰਕ ਯੰਤਰ"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "ਬੂਟ-ਪਰੋਟੋਕੋਲ"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "ਨੈਟਵਰਕ ਸੰਰਚਨਾ ਤਬਦੀਲ਼਼਼"
 
 #: ../src/modules/networking.py:140
 msgid "static"
-msgstr ""
+msgstr "ਸਥਿਰ"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -750,11 +790,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
-msgstr ""
+msgstr "ਸਾੳੂਡ-ਕਾਰਡ"
 
 #: ../src/modules/soundcard_gui.py:48
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਸਿਸਟਮ ਤੇ ਸਾੳੂਡ-ਕਾਰਡ ਖੋਜਿਅਾ ਗਿਅਾ ਹੈ ੤"
 
 #. Initialize soundcard page
 #. Add icon to the top frame
@@ -765,6 +805,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"ਅਾਮ ਅਾਵਾਜ਼ ਸੁਣਨ ਲੲੀ\"ਅਾਵਾਜ਼ ਚਲਾੳੁ\" ਬਟਨ ਨੰੂ ਦਬਾੳੁ ੤ ਤੁਸੀ ੲਿੱਕ ਕ੍ਮ ਦੀਅ੾ ਤਿੰਨ ਅਾਵਾਜ਼ਾ"
+"ਸੁਣੋੋਗੇ ੤ ਪਹਿਲੀ ਸੱਜੇ ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋ, ਦੂਜੀ ਖੱਬੇ ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋ ਅਤੇ ਤੀਜੀ ਅਾਵਾਜ਼ ਕੇਦਰੀ"
+"ਚੈਨਲ ਵਿੱਚੋ ਅਾਵੇਗੀ ੤"
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -792,11 +835,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
-msgstr ""
+msgstr "ਸਮ੾-ਖੇਤਰ"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਿਸਟਮ ਲੲੀ ਸਮ੾-ਖੇਤਰ ਨਿਰਧਾਰਿਤ ਕਰੋ ੤"
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -804,3 +847,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
+"ੲਿਸ ਤੋ ਪਹਿਲ੾ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲੲੀ ਤਿਅਾਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ ਬਾਕੀ ਹਨ ੤"
+"ਸੈਟਅੱਪ ੲੇਜੰਟ ਤੁਹਾਨੰੂ ੲਿੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ ੤ ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ"
+"ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੰੂ ਜਾਰੀ ਰਹਿਣ ਲੲੀ ਦਬਾੳੁ ੤"
+
