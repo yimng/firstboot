@@ -5,6 +5,7 @@ import os
 import string
 import signal
 import time
+import functions
 
 sys.path.append("/usr/share/firstboot")
 
@@ -105,6 +106,30 @@ if (not doDebug):
     else:
         #Firstboot has never been run before, so start it up
         pass
+
+#Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's ask the user
+#if they want to run firstboot or not.
+
+line = os.popen('/sbin/runlevel', 'r').readline()
+line = string.strip(line)
+tokens = string.split(line)
+runlevel = int(tokens[-1])
+
+if runlevel == 5:
+    import textWindow
+    from snack import *
+    
+    screen = SnackScreen()
+
+    result = textWindow.TextWindow()(screen)
+
+    if result == -1:
+        screen.finish()
+        functions.writeSysconfigFile(doDebug)
+        os._exit(0)
+    else:
+        screen.finish()
+
 
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
