@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-07-20 12:56+0200\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team:  <ru@li.org>\n"
@@ -76,16 +76,18 @@ msgstr ""
 "Копия отладочной информации сохранена в %s \n"
 "Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_Далее"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Добро пожаловать"
 
@@ -297,16 +299,16 @@ msgid "Please set the date and time for the system."
 msgstr "Установите дату и время."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "Укажите сервер точного времени."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "Ошибка"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -315,7 +317,7 @@ msgstr ""
 "Соединение с %s невозможно.  Вероятно, %s недоступен или брандмауэр на вашем "
 "компьютере блокирует NTP-соединения."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Соединение с сервером NTP.  Пожалуйста, подождите..."
 

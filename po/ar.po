@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-07-19 01:20+0300\n"
 "Last-Translator: Munzir Taha <munzir@kacst.edu.sa>\n"
 "Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
@@ -77,16 +77,18 @@ msgstr ""
 "تم حفظ نسخه من خرج أداة تصحيح الأخطاء في '%s' \n"
 "تأكد من إرفاق هذا الملف بتقرير العلّة.\n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_رجوع"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_التالي"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "أهلاً"
 
@@ -143,8 +145,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"إذا كان لديك أي من الأقراص المُدمجة التالية يمكنك تثبيت حزم البرامج منها بإدخال "
-"القُرص المُدمج والضّغط على الزر المناسب."
+"إذا كان لديك أي من الأقراص المُدمجة التالية يمكنك تثبيت حزم البرامج منها "
+"بإدخال القُرص المُدمج والضّغط على الزر المناسب."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -155,11 +157,12 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ و اضغط "
-"\"موافق\" للاستمرار."
+"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ و اضغط \"موافق"
+"\" للاستمرار."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
@@ -173,7 +176,9 @@ msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr "يُستحسن إنشاء حساب شخصي للاستخدام العادي (لغير أغراض الإدارة).  لإنشاء حساب شخصي، أدخل البيانات المطلوبة."
+msgstr ""
+"يُستحسن إنشاء حساب شخصي للاستخدام العادي (لغير أغراض الإدارة).  لإنشاء حساب "
+"شخصي، أدخل البيانات المطلوبة."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -208,7 +213,9 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "يُستحسن إنشاء حساب شخصي، إذا استمررت بدون حساب، يمكنك تسجيل الدخول فقط بحساب root، والذي هو مُخصّص للاستخدام الإداريّ فقط."
+msgstr ""
+"يُستحسن إنشاء حساب شخصي، إذا استمررت بدون حساب، يمكنك تسجيل الدخول فقط بحساب "
+"root، والذي هو مُخصّص للاستخدام الإداريّ فقط."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -241,15 +248,17 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"اسم المستخدم'%s' يحتوي على مسافات. الرجاء عدم استخدام المسافات في "
-"اسم المستخدم."
+"اسم المستخدم'%s' يحتوي على مسافات. الرجاء عدم استخدام المسافات في اسم "
+"المستخدم."
 
 #: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr "اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم أو فواصل في اسم المستخدم."
+msgstr ""
+"اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم أو "
+"فواصل في اسم المستخدم."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -265,15 +274,18 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
+msgstr ""
+"اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "كلمة المرور تحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "الاسم '%s' يحتوي على حروف غير صالحة. الرّجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/date.py:47
@@ -285,23 +297,25 @@ msgid "Please set the date and time for the system."
 msgstr "الرّجاء إدخال الوقت و التاريخ للنظام."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "الرّجاء إدخال خادم للوقت."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "خطأ"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
-msgstr "لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح أو أن إعدادات الجدار الناري الخاص بك تعترض اتصالات NTP."
+msgstr ""
+"لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح أو أن إعدادات الجدار الناري "
+"الخاص بك تعترض اتصالات NTP."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "جاري الاتصال بخادم NTP.  الرّجاء الانتظار..."
 
@@ -363,7 +377,9 @@ msgid ""
 "hear a series of three sounds.  The first sound will be in the right "
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
-msgstr "اضغط زر \"تشغيل صوت تجريبي\" لتسمع نموذج للصوت. يجب أن تسمع ثلاثة أصوات: الأول في القناة اليمنى و الثاني في القناة اليسرى و الثالث في المنتصف."
+msgstr ""
+"اضغط زر \"تشغيل صوت تجريبي\" لتسمع نموذج للصوت. يجب أن تسمع ثلاثة أصوات: "
+"الأول في القناة اليمنى و الثاني في القناة اليسرى و الثالث في المنتصف."
 
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
@@ -379,6 +395,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"بقي بعض الخطوات الأخيرة ليصبح النظام جاهزاً للاستعمال. برنامج التثبيت سوف يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في الركن الأيمن"
-"للمتابعة."
-
+"بقي بعض الخطوات الأخيرة ليصبح النظام جاهزاً للاستعمال. برنامج التثبيت سوف "
+"يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في "
+"الركن الأيمنللمتابعة."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-05-03 16:00-0400\n"
 "Last-Translator: Tomislav Markovski\n"
 "Language-Team: Macedonian\n"
@@ -76,16 +76,18 @@ msgstr ""
 "Копија од излезот на грешката е зачуван во %s \n"
 "Пратете ја таа датотека заедно со извештајот. \n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "На_зад"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_Напред"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Добродојдовте"
 
@@ -246,7 +248,8 @@ msgstr "Корисничкото име мора да почнува со бук
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "Корисничкот име '%s' содржи празни места. Ваквите карактери не се дозволени."
+msgstr ""
+"Корисничкот име '%s' содржи празни места. Ваквите карактери не се дозволени."
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -289,7 +292,6 @@ msgstr ""
 "Името '%s' содржи непознати карактери.  Користете само латинични (ASCII) "
 "карактери."
 
-
 #: ../src/modules/date.py:47
 msgid "Date and Time"
 msgstr "Датум и време"
@@ -299,16 +301,16 @@ msgid "Please set the date and time for the system."
 msgstr "Наместете го датумот и времето на вашиот систем."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "Внесете сервер за време."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "Грешка"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -317,7 +319,7 @@ msgstr ""
 "Не можам да се врзам со %s. Можеби %s е недостапен или подесувањата за огнен "
 "ѕид (firewall) на вашиот систем блокираат НТП врски."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Врзување со НТП серверот. Ве молам причекајте..."
 
@@ -405,4 +407,3 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "Корисник"
-

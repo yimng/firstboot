@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -76,16 +76,18 @@ msgstr ""
 "ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_ย้อนกลับ"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_ถัดไป"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
 
@@ -141,7 +143,8 @@ msgstr "แผ่นซีดีเสริม"
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
-msgstr "ถ้าคุณมีซีดีดังที่แสดงข้างล่างนี้ คุณสามารถติดตั้งแพกเกจจากมันได้ โดยใส่ซีดีเข้าไป แล้วคลิกปุ่มที่เหมาะสม"
+msgstr ""
+"ถ้าคุณมีซีดีดังที่แสดงข้างล่างนี้ คุณสามารถติดตั้งแพกเกจจากมันได้ โดยใส่ซีดีเข้าไป แล้วคลิกปุ่มที่เหมาะสม"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -154,7 +157,8 @@ msgid ""
 msgstr "ตรวจไม่พบซีดีรอม กรุณาใส่แผ่นซีดีแล้วคลิก \"ตกลง\""
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
 
 #: ../src/modules/create_user.py:39
@@ -190,7 +194,9 @@ msgstr "_ยืนยันรหัสผ่าน :"
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "ถ้าคุณจำเป็นต้องใช้การอนุญาตสิทธิผ่านเครือข่าย เช่น Kerberos หรือ  NIS ให้คลิกที่ปุ่ม ล็อกอินผ่านเครือข่าย"
+msgstr ""
+"ถ้าคุณจำเป็นต้องใช้การอนุญาตสิทธิผ่านเครือข่าย เช่น Kerberos หรือ  NIS ให้คลิกที่ปุ่ม "
+"ล็อกอินผ่านเครือข่าย"
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
@@ -259,12 +265,14 @@ msgid ""
 msgstr "ชื่อผู้ใช้ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "รหัสผ่านมีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "ชื่อ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
 #: ../src/modules/date.py:47
@@ -276,16 +284,16 @@ msgid "Please set the date and time for the system."
 msgstr "กรุณาตั้งค่าวันที่และเวลาของระบบ"
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "กรุณาป้อนเซิร์ฟเวอร์เวลา"
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "ผิดพลาด"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -294,7 +302,7 @@ msgstr ""
 "การเชื่อมต่อกับ %s ไม่สามารถกระทำได้  อาจเนื่องจาก %s ไม่พร้อมให้บริการหรือ  "
 "ไฟร์วอลล์บนเครื่องของคุณกั้นการเชื่อมต่อ NTP เอาไว้"
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "กำลังติดต่อ เซิร์ฟเวอร์ NTP กรุณารอสักครู่ ..."
 
@@ -314,7 +322,9 @@ msgstr "ติดตั้งเสร็จแล้ว"
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
-msgstr "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป\" ด้านล่างขวาเพื่อทำงานต่อไป"
+msgstr ""
+"ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
+"\" ด้านล่างขวาเพื่อทำงานต่อไป"
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -376,4 +386,3 @@ msgstr ""
 "ต่อไปนี้จะเป็นขั้นตอนสั้นๆ ที่ต้องตั้งค่า ก่อนจะใช้งานระบบของคุณ "
 "ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
 "ที่มุมล่างขวาเพื่อทำงานต่อ"
-

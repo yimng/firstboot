@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-07-17 11:26-0700\n"
 "Last-Translator: Николай Сърмаджиев,преносим <nikolayds@msn.com>\n"
 "Language-Team:  <bg@li.org>\n"
@@ -78,16 +78,18 @@ msgstr ""
 "Копие на дебъг информацията е запазен на %s.\n"
 "Моля, закачете файла към описанието на грешката.\n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "Обратно"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "Следващ"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Добре дошли"
 
@@ -160,10 +162,11 @@ msgstr ""
 "\" за продължаване."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
-"Авто-стартиращата програма не може да бъде намерена на CD-то. Натиснете \"Добре"
-"\" за продължаване."
+"Авто-стартиращата програма не може да бъде намерена на CD-то. Натиснете "
+"\"Добре\" за продължаване."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -279,13 +282,17 @@ msgstr ""
 "невалидни символи в потребителското име."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Паролата съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Името %s съдържа невалидни символи. Моля, използвайте само ASCII символи."
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -296,16 +303,16 @@ msgid "Please set the date and time for the system."
 msgstr "Моля, установете дата и времето на системата."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "Моля, въведете времеви сървър."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "Грешка"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -314,7 +321,7 @@ msgstr ""
 "Не може да се установи връзка с %s. Или %s не е наличен или настройките на "
 "защитната стена на компютъра блокират NTP връзки."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Свързване с NTP сървър. Моля изчакайте..."
 
@@ -400,4 +407,3 @@ msgstr ""
 "Още няколко стъпки са нужни за да бъде системата готова за използване. "
 "Агента за Установяване ще Ви преведе през някой базови конфигурации. Моля, "
 "натиснете бутон \"Следващ\" в долния десен ъгъл за да продължите."
-

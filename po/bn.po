@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot VERSION\n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-07-22 18:19+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -71,19 +72,18 @@ msgstr ""
 "এক কপি debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
 "ঐ ফাইলটি ত্রুটি অনুসন্ধান সিস্টেমে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
-#: ../src/firstbootWindow.py:186
-#: ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_পূর্ববর্তী"
 
-#: ../src/firstbootWindow.py:194
-#: ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_পরবর্তী"
 
-#: ../src/firstbootWindow.py:519
-#: ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "স্বাগতম"
 
@@ -131,34 +131,48 @@ msgstr "আপনি যেটি পরিবর্তন করতে চা�
 msgid "Setup Agent"
 msgstr "সেটাপ এজেন্ট"
 
-#: ../src/modules/additional_cds.py:42
-#: ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
 msgstr "অতিরিক্ত সিডিগুলো"
 
 #: ../src/modules/additional_cds.py:60
-msgid "If you have any of the CDs listed below, you can install packages from them by inserting the CD and clicking the appropriate button."
-msgstr "আপনার কাছে যদি নিচের সিডিগুলোর কোনো একটি থাকে, তাহলে সেই সিডিটি প্রবেশ করিয়ে উপযুক্ত বাটন চেপে প্যকেজগুলো ইনস্টল করতে পারেন।"
+msgid ""
+"If you have any of the CDs listed below, you can install packages from them "
+"by inserting the CD and clicking the appropriate button."
+msgstr ""
+"আপনার কাছে যদি নিচের সিডিগুলোর কোনো একটি থাকে, তাহলে সেই সিডিটি প্রবেশ করিয়ে "
+"উপযুক্ত বাটন চেপে প্যকেজগুলো ইনস্টল করতে পারেন।"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
 msgstr "ইনস্টল..."
 
 #: ../src/modules/additional_cds.py:120
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "কোনো সিডি-রম পাওয়া যায়নি। অনুগ্রহ করে একটি সিডি প্রবেশ করান এবং চালানোর জন্য \"ঠিক আছে\" চাপুন।"
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"কোনো সিডি-রম পাওয়া যায়নি। অনুগ্রহ করে একটি সিডি প্রবেশ করান এবং চালানোর জন্য "
+"\"ঠিক আছে\" চাপুন।"
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "সিডিতে অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"সিডিতে অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
 msgstr "সিষ্টেম ব্যবহারকারী"
 
 #: ../src/modules/create_user.py:65
-msgid "It is recommended that you create a personal user account for normal (non-administrative) use.  To create a personal account, provide the requested information."
-msgstr "সাধারন কাজে ব্যবহার (non-administrative) করার জন্য ব্যক্তিগত একাউন্ট তৈরি করার উপদেশ দেয়া হচ্ছে।ব্যক্তিগত একাউন্ট তৈরি করার জন্য দরকারি তথ্য গুলো দিন।"
+msgid ""
+"It is recommended that you create a personal user account for normal (non-"
+"administrative) use.  To create a personal account, provide the requested "
+"information."
+msgstr ""
+"সাধারন কাজে ব্যবহার (non-administrative) করার জন্য ব্যক্তিগত একাউন্ট তৈরি করার "
+"উপদেশ দেয়া হচ্ছে।ব্যক্তিগত একাউন্ট তৈরি করার জন্য দরকারি তথ্য গুলো দিন।"
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -177,7 +191,9 @@ msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ডটি _আবার নিশ্চিত করুন:"
 
 #: ../src/modules/create_user.py:112
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
 msgstr "আপনি যদি "
 
 #: ../src/modules/create_user.py:122
@@ -185,8 +201,14 @@ msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ ইন ব্যাবহার কর..."
 
 #: ../src/modules/create_user.py:158
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "একটি ব্যক্তিগত একাউন্ট তৈরী করার জন্য জোরালভাবে পরামর্শ দেয়া হচ্ছে। নতুবা আপনি শুধু রুট ব্যাবহারকারী হিসেবে লগ ইন করতে পারবেন যেটি শুধুমাত্র এ্যডমিনিস্ট্রেটিভ ব্যাবহারের জন্য সংরক্ষিত।"
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"একটি ব্যক্তিগত একাউন্ট তৈরী করার জন্য জোরালভাবে পরামর্শ দেয়া হচ্ছে। নতুবা আপনি শুধু "
+"রুট ব্যাবহারকারী হিসেবে লগ ইন করতে পারবেন যেটি শুধুমাত্র এ্যডমিনিস্ট্রেটিভ ব্যাবহারের "
+"জন্য সংরক্ষিত।"
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -213,33 +235,52 @@ msgid "The user name may not begin with a number."
 msgstr "ব্যাবহারকারীর নাম কোনো সংখ্যা দিয়ে শুরু হতে পারবে না।"
 
 #  Check for whitespace
+#. Check for whitespace
 #: ../src/modules/create_user.py:291
 #, python-format
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
-msgstr "ব্যাবহারকারীর নাম '%s' এর মাঝে ফাঁকা স্হান রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর নামের মধ্যে কোনো শূন্যস্হান রাখবেন না।"
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
+msgstr ""
+"ব্যাবহারকারীর নাম '%s' এর মাঝে ফাঁকা স্হান রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর নামের "
+"মধ্যে কোনো শূন্যস্হান রাখবেন না।"
 
 #: ../src/modules/create_user.py:298
 #, python-format
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
-msgstr "ব্যাবহারকারীর নাম '%s' এর মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর নামের মধ্যে কোনো বিরাম চিহ্ন রাখবেন না।"
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+"ব্যাবহারকারীর নাম '%s' এর মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর নামের "
+"মধ্যে কোনো বিরাম চিহ্ন রাখবেন না।"
 
 #: ../src/modules/create_user.py:305
 #, python-format
-msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
-msgstr "ব্যাবহারকারীর নাম '%s' এর মাঝে বড় হাতের অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর নামের মধ্যে কোনো বড় হাতের অক্ষর রাখবেন না।"
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"ব্যাবহারকারীর নাম '%s' এর মাঝে বড় হাতের অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর "
+"নামের মধ্যে কোনো বড় হাতের অক্ষর রাখবেন না।"
 
 #: ../src/modules/create_user.py:312
 #, python-format
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "ব্যাবহারকারীর নাম '%s' এর মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর নামের মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+"ব্যাবহারকারীর নাম '%s' এর মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর নামের "
+"মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/date.py:47
@@ -251,23 +292,26 @@ msgid "Please set the date and time for the system."
 msgstr "অনুগ্রহ করে সিস্টেমটির জন্য তারিখ এবং সময় নির্ধারন করে দিন।"
 
 #  They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#. They want ntp but have not set a server
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "একটি সময় সার্ভার এর নাম দিন।"
 
-#: ../src/modules/date.py:114
-#: ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "সমস্যা"
 
-#: ../src/modules/date.py:126
-#: ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
-msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
-msgstr "%s এর সাথে সংযোগ স্হাপন সম্ভব হয়নি। হয় %s নেই অথবা আপনার কম্পিউটারের ফায়ারওয়ালের নিয়ম-কানুন এনটিপি সংযোগগুলোকে বাধা দিচ্ছে।"
+msgid ""
+"A connection with %s could not be established.  Either %s is not available "
+"or the firewall settings on your computer are blocking NTP connections."
+msgstr ""
+"%s এর সাথে সংযোগ স্হাপন সম্ভব হয়নি। হয় %s নেই অথবা আপনার কম্পিউটারের "
+"ফায়ারওয়ালের নিয়ম-কানুন এনটিপি সংযোগগুলোকে বাধা দিচ্ছে।"
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "এনটিপি সার্ভারের সাথে সংযোগ স্হাপন করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন..."
 
@@ -284,8 +328,11 @@ msgid "Finish Setup"
 msgstr "সেটাপ শেষ কর"
 
 #: ../src/modules/finished.py:35
-msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "আপনার সিস্টেমটি কাজের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য \"পরবর্তী\" বাটন চাপুন।"
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr ""
+"আপনার সিস্টেমটি কাজের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য \"পরবর্তী\" বাটন চাপুন।"
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -311,8 +358,7 @@ msgstr "_নেটওয়ার্ক কনফিগারেশন পরিব
 msgid "static"
 msgstr "স্টাটিক"
 
-#: ../src/modules/soundcard_gui.py:46
-#: ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
 msgstr "সাউন্ড কার্ড"
 
@@ -321,8 +367,14 @@ msgid "A sound card has been detected on your computer."
 msgstr "আপনার কম্পিউটারে একটি সাউন্ড কার্ড পাওয়া গেছে।"
 
 #: ../src/modules/soundcard_gui.py:71
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "নমুনা শব্দ শোনার জন্য \"পরীক্ষামূলক শব্দ চালাও\" বোতাম চাপুন। আপনার পরপর তিনটি শব্দ শোনার কথা।প্রথমটি ডানদিকের চ্যানেলে, দ্বিতীয়টি বামে এবং তৃতীয়টি মাঝখানের চ্যানেলে।"
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"নমুনা শব্দ শোনার জন্য \"পরীক্ষামূলক শব্দ চালাও\" বোতাম চাপুন। আপনার পরপর তিনটি শব্দ "
+"শোনার কথা।প্রথমটি ডানদিকের চ্যানেলে, দ্বিতীয়টি বামে এবং তৃতীয়টি মাঝখানের চ্যানেলে।"
 
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
@@ -333,6 +385,11 @@ msgid "Please set the timezone for the system."
 msgstr "অনুগ্রহ করে আপনার সিস্টেমের জন্য সময় এলাকা নির্ধারন করুন"
 
 #: ../src/modules/welcome.py:35
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার সিস্টেমের কিছু মৌলিক কনফিগারেশনে সেটাপ এজেন্ট আপনাকে সাহায্য করবে। চালিয়ে যাবার জন্য নিচে ডানদিকের \"পরবর্তী\" বোতামটি চাপুন।"
-
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
+"সিস্টেমের কিছু মৌলিক কনফিগারেশনে সেটাপ এজেন্ট আপনাকে সাহায্য করবে। চালিয়ে যাবার "
+"জন্য নিচে ডানদিকের \"পরবর্তী\" বোতামটি চাপুন।"

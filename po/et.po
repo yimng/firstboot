@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: et\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-08-11 23:10+0300\n"
 "Last-Translator: Allan Sims <allsi@eau.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -76,16 +76,18 @@ msgstr ""
 "Silumise väljundi koopia salvestati faili %s \n"
 "Lisa see fail kindlasti rapordile. \n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_Tagasi"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_Edasi"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Tere tulemast"
 
@@ -158,8 +160,10 @@ msgstr ""
 "Olgu"
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -249,29 +253,35 @@ msgstr "Kasutaja nimi '%s' sisaldab tühikut. Palun ära kasuta nimes tühikut."
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr "Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
+msgstr ""
+"Kasutaja nimi '%s' sisaldab kirjavahemärke. Palun ära kasuta kirjavahemärke."
 
 #: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr "Kasutaja nimi '%s' sisaldab suuri tähti. Palun kasuta nimes ainult väikseid tähti."
+msgstr ""
+"Kasutaja nimi '%s' sisaldab suuri tähti. Palun kasuta nimes ainult väikseid "
+"tähti."
 
 #: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
+msgstr ""
+"Kasutaja nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Parool sisaldab valesid märke. Kasuta ainult ASCII märke."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "Nimi '%s' sisaldab vigaseid märke. Palun kasuta ainult ASCII märke."
 
 #: ../src/modules/date.py:47
@@ -283,16 +293,16 @@ msgid "Please set the date and time for the system."
 msgstr "Palun sea kuupäev ja aeg süsteemile."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "Sisesta palun ajaserver."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "Viga"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -301,7 +311,7 @@ msgstr ""
 "Ühendust %s ei saa rajada.  Kas %s ei ole kättesaadav või tulemüür takistab "
 "ühenduse ajaserverisse."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Ühendan ajaserveriga. Palun oota..."
 
@@ -384,4 +394,3 @@ msgid ""
 msgstr ""
 "Lõpuni on jäänud vaid mõned sammud veel.  Seadistusagent juhatab sind "
 "peamiste seadete panemisel. Jätkamiseks vajuta \"Edasi\"."
-

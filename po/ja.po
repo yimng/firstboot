@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-07-17 16:31+0900\n"
 "Last-Translator: Tadashi Jokagi <fedora@elf.no-ip.org>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -76,16 +76,18 @@ msgstr ""
 "デバッグ出力のコピーは%sに保存してあります。\n"
 "バグ報告には必ず、このファイルを添付して下さい。\n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "戻る(_B)"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "次へ(_N)"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "ようこそ"
 
@@ -142,8 +144,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"以下に表示してある CD のどれかを所有している場合、その CD を挿入して必要なボタン"
-"を押すことによりパッケージをインストールできます。"
+"以下に表示してある CD のどれかを所有している場合、その CD を挿入して必要なボ"
+"タンを押すことによりパッケージをインストールできます。"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -158,7 +160,8 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "オートランプログラムがcd上に見つかりません。 \"OK\" をクリックして継続しま"
 "す。"
@@ -173,8 +176,8 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"通常(管理業務以外)の使用には、個人的なユーザーアカウントを作成される事を"
-"お勧めします。個人アカウントを作成するには、要求される情報を用意して下さい。"
+"通常(管理業務以外)の使用には、個人的なユーザーアカウントを作成される事をお勧"
+"めします。個人アカウントを作成するには、要求される情報を用意して下さい。"
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -197,8 +200,8 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Kerberos や NIS などのネットワーク認証を使用する必要がある場合は、"
-"ネットワークログインを使用するボタンをクリックしてください。"
+"Kerberos や NIS などのネットワーク認証を使用する必要がある場合は、ネットワー"
+"クログインを使用するボタンをクリックしてください。"
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
@@ -210,10 +213,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"個人のユーザーアカウントの作成が強く推奨されます。"
-"このようなアカウントがない状態で継続すると、"
-"rootアカウントでログインするしかありません。"
-"但し、これは管理業務用のみに予約されています。"
+"個人のユーザーアカウントの作成が強く推奨されます。このようなアカウントがない"
+"状態で継続すると、rootアカウントでログインするしかありません。但し、これは管"
+"理業務用のみに予約されています。"
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -245,7 +247,8 @@ msgstr "ユーザー名は数字で始まってはいけません。"
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
+msgstr ""
+"ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -253,8 +256,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"ユーザー名 '%s' には句読点があります。"
-"ユーザー名には句読点は使用しないで下さい。"
+"ユーザー名 '%s' には句読点があります。ユーザー名には句読点は使用しないで下さ"
+"い。"
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -262,8 +265,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"ユーザー名 '%s' には大文字が含まれています。"
-"ユーザー名には大文字を含めないで下さい。"
+"ユーザー名 '%s' には大文字が含まれています。ユーザー名には大文字を含めないで"
+"下さい。"
 
 #: ../src/modules/create_user.py:312
 #, python-format
@@ -271,21 +274,20 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"ユーザー名 '%s' には無効な文字が含まれています。"
-"ASCII文字のみを使用して下さい。"
+"ユーザー名 '%s' には無効な文字が含まれています。ASCII文字のみを使用して下さ"
+"い。"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"パスワードは無効な文字を含んでいます。"
-"ASCII 文字のみを使用して下さい。"
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "パスワードは無効な文字を含んでいます。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
-"名前 '%s' には無効な文字が含まれています。"
-"ASCII 文字のみを使用して下さい。"
+"名前 '%s' には無効な文字が含まれています。ASCII 文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:47
 msgid "Date and Time"
@@ -296,25 +298,25 @@ msgid "Please set the date and time for the system."
 msgstr "システム用に日付と時刻を設定して下さい。"
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "タイムサーバを入力して下さい。"
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "エラー"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"%s との接続が確立できません。%s が利用できないか又は、"
-"コンピュータのファイアウォールの設定が NTP の接続を阻止しています。"
+"%s との接続が確立できません。%s が利用できないか又は、コンピュータのファイア"
+"ウォールの設定が NTP の接続を阻止しています。"
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTPサーバに接続しています。お待ち下さい..."
 
@@ -335,8 +337,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"システムが設定できましたので使用できる状態になりました。"
-"右下隅にある \"次へ\" ボタンをクリックして続けてください。"
+"システムが設定できましたので使用できる状態になりました。右下隅にある \"次へ"
+"\" ボタンをクリックして続けてください。"
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -377,9 +379,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"\"Play test sound\"ボタンをクリックしてサンプルサウンドを聞いてください。"
-"連続して 3 つの音が聞こえるはずです。最初の音は、右のチャンネルで"
-"2 番目の音が左側のチャンネルです。3 番目の音は中央となります。"
+"\"Play test sound\"ボタンをクリックしてサンプルサウンドを聞いてください。連続"
+"して 3 つの音が聞こえるはずです。最初の音は、右のチャンネルで2 番目の音が左側"
+"のチャンネルです。3 番目の音は中央となります。"
 
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
@@ -396,8 +398,8 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "システムが使用できるようになるまでもう少しステップがあります。セットアップ"
-"エージェントはここで、基本的な設定を通してガイドしていきます。"
-"右下隅にある \"次へ\" ボタンをクリックして続けて下さい。"
+"エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
+"\"次へ\" ボタンをクリックして続けて下さい。"
 
 #~ msgid "User Account"
 #~ msgstr "ユーザーアカウント"
@@ -745,4 +747,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-

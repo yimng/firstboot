@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-08-19 10:40+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -77,16 +77,18 @@ msgstr ""
 "Una copia del risultato dell'operazione di debug è stata salvata in %s.\n"
 "Accertarsi di allegare il file al report del bug. \n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_Precedente"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_Successivo"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Benvenuti"
 
@@ -159,8 +161,10 @@ msgstr ""
 "per continuare."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -225,11 +229,13 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr ""
+"La password non é corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr ""
+"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -277,14 +283,16 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -298,16 +306,16 @@ msgid "Please set the date and time for the system."
 msgstr "Impostare la data e l'ora del sistema."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "Inserire il nome di un server del tempo."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "Errore"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -317,7 +325,7 @@ msgstr ""
 "disponibile o che le impostazione del firewall del computer blocchino le "
 "connessioni NTP."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Tentativo di contattare il server NTP. Attendere..."
 
@@ -401,8 +409,8 @@ msgid ""
 msgstr ""
 "Benvenuti a Red Hat Setup Agent.  Ci sono alcune operazioni da compiere "
 "prima che il sistema sia pronto.  Red Hat Setup Agent guida l'utente nel "
-"processo di configurazione di base.  Fare clic sul pulsante \"Successivo\" nella "
-"parte inferiore destra per continuare."
+"processo di configurazione di base.  Fare clic sul pulsante \"Successivo\" "
+"nella parte inferiore destra per continuare."
 
 #~ msgid "User Account"
 #~ msgstr "Account utente"
@@ -541,4 +549,3 @@ msgstr ""
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
-

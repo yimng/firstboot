@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-08-05 01:10+0300\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team:  <nls@tux.hellug.gr>\n"
@@ -76,16 +76,18 @@ msgstr ""
 "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος φυλάχθηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_Πίσω"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_Επόμενο"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Καλώς ήλθατε"
 
@@ -158,8 +160,11 @@ msgstr ""
 "πατήστε \"Εντάξει\" για να συνεχίσετε."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Το πρόγραμμα autorun δεν εντοπίστηκε στο cd. Πατήστε \"Εντάξει\" για να συνεχίσετε."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Το πρόγραμμα autorun δεν εντοπίστηκε στο cd. Πατήστε \"Εντάξει\" για να "
+"συνεχίσετε."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -278,14 +283,16 @@ msgstr ""
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το συνθηματικό περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το όνομα '%s' περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο  ASCII χαρακτήρες."
@@ -299,16 +306,16 @@ msgid "Please set the date and time for the system."
 msgstr "Παρακαλώ ορίσετε ημερομηνία και ώρα για το σύστημα."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "Παρακαλώ εισάγετε ένα εξυπηρετητή ώρας."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "Σφάλμα"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -317,7 +324,7 @@ msgstr ""
 "Δεν στάθηκε δυνατή η σύνδεση με τον %s.  'Η ο %s δεν είναι διαθέσιμος ή οι "
 "ρυθμίσεις firewall του υπολογιστή σας δεν επιτρέπουν συνδέσεις NTP."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Επικοινωνία με τον εξυπηρετητή NTP.  Παρακαλώ περιμένετε..."
 
@@ -403,4 +410,3 @@ msgstr ""
 "σύστημα.  Το Εργαλείο Ρύθμισης θα σας οδηγήσει στην εκτέλεση μιας βασικής "
 "διαμόρφωσης.  Παρακαλώ πατήστε το κουμπί  \"Επόμενο\" στην δεξιά κάτω γωνία "
 "για να συνεχίσετε. "
-

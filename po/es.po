@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-07-23 12:11+0200\n"
 "Last-Translator: Luis Mayoral <mayoral@linuxadicto.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -83,16 +83,18 @@ msgstr ""
 "depuración para %s. Asegúrese de adjuntar ese fichero para informar de un "
 "error.\n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "_Atrás"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "_Adelante"
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "Bienvenido"
 
@@ -165,7 +167,8 @@ msgstr ""
 "\" para continuar."
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "No se puede encontrar el programa de autorun en el cd. Pulse en  \"OK\" para "
 "continuar."
@@ -232,11 +235,13 @@ msgstr "Crear cuent_a"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
+msgstr ""
+"Las contraseñas no coinciden. Por favor vuelva a ingresar la contraseña."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
+msgstr ""
+"La contraseña es muy corta. Por favor use al menos seis (6) caracteres."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -284,14 +289,16 @@ msgstr ""
 "caracteres  ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La contraseña contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "El nombre '%s' contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII. "
@@ -305,16 +312,16 @@ msgid "Please set the date and time for the system."
 msgstr "Configure la fecha y la hora para el sistema."
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "Por favor ingrese un servidor horario."
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "Error"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -324,7 +331,7 @@ msgstr ""
 "configuración del firewall de su ordenador está bloqueando las conexiones "
 "NTP."
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Contactar el servidor NTP.  Por favor, espere..."
 
@@ -410,4 +417,3 @@ msgstr ""
 "para ser utilizado. El Agente del configuración de Red Hat le guiará a "
 "través de algunos elementos básicos de configuración. Pulse el botón "
 "\"Adelante\" en la esquina inferior derecha para continuar."
-

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-15 15:04-0400\n"
+"POT-Creation-Date: 2004-08-31 16:22-0400\n"
 "PO-Revision-Date: 2004-08-06 14:48+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <Indlinux-hindi@lists.sourceforge.net>\n"
@@ -72,16 +72,18 @@ msgstr ""
 "निर्गत की एक छायाप्रति, %s में सुरक्षित किया गया। उस संचिका\n"
 " को दोष सूचना के साथ भेजना न भूलें।\n"
 
-#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:523
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:186 ../src/firstbootWindow.py:529
 msgid "_Back"
 msgstr "पीछे"
 
-#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:527
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:194 ../src/firstbootWindow.py:533
 msgid "_Next"
 msgstr "अगला "
 
-#: ../src/firstbootWindow.py:519 ../src/modules/welcome.py:19
-#: ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:525
+#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "स्वागत"
 
@@ -154,8 +156,11 @@ msgstr ""
 "के लिए दबाएँ।"
 
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "सीडी पर स्वतःकार्य प्रोग्राम नहीं पाया जा सकता है. जारी रखने के लिए \"OK\" को क्लिक करें."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"सीडी पर स्वतःकार्य प्रोग्राम नहीं पाया जा सकता है. जारी रखने के लिए \"OK\" को क्लिक "
+"करें."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -264,15 +269,18 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "'%s' उपयोगकर्तानाम में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
+msgstr ""
+"'%s' उपयोगकर्तानाम में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "शब्दकूट में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "'%s' नाम में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
 #: ../src/modules/date.py:47
@@ -284,16 +292,16 @@ msgid "Please set the date and time for the system."
 msgstr "कृपया आपके तंञ के लिए दिनांक और समय जमाएँ।"
 
 #. They want ntp but have not set a server
-#: ../src/modules/date.py:112
+#: ../src/modules/date.py:123
 msgid "Please enter a time server."
 msgstr "कृपया एक समय परिसेवक प्रवेशित करें।"
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
-#: ../src/modules/date.py:164
+#: ../src/modules/date.py:125 ../src/modules/date.py:144
+#: ../src/modules/date.py:175
 msgid "Error"
 msgstr "दोष"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:137 ../src/modules/date.py:168
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -302,7 +310,7 @@ msgstr ""
 "%s के साथ संबंधन नहीं हो सका। या %s उपलबध नहीं है या आपके संगणक पर सुरक्षादीवार जमावटें "
 "NTP संबंधनों को बाधित कर रहा है।"
 
-#: ../src/modules/date.py:194
+#: ../src/modules/date.py:205
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTP परिसेवक को संपर्क कर रहा है। कृपया प्रतीक्षा करें..."
 
@@ -383,6 +391,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"आपके सिस्टम को प्रयोग के लिए तैयार करने के लिए कुछ ओर चरण है.  व्यवस्था प्रतिनिधि अब आपको "
-"कुछ मौलिक विन्यास के माध्यम से आपका मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दांयें कोने में \"अगला\" बटन दबाकर कर सतत करें."
-
+"आपके सिस्टम को प्रयोग के लिए तैयार करने के लिए कुछ ओर चरण है.  व्यवस्था प्रतिनिधि अब "
+"आपको कुछ मौलिक विन्यास के माध्यम से आपका मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे "
+"दांयें कोने में \"अगला\" बटन दबाकर कर सतत करें."
