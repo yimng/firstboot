@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.1
-Release: 5
+Release: 6
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -68,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Aug 30 2002 Brent Fox <bfox@redhat.com> 1.0.1-6
+- run chkconfig on starting/stopping ntpd
+
 * Thu Aug 29 2002 Brent Fox <bfox@redhat.com> 1.0.1-5
 - Make the date screen update the time widgets when the screen is entered
 
