@@ -21,6 +21,7 @@ Requires: redhat-config-keyboard
 Requires: redhat-config-securitylevel
 Requires: redhat-config-rootpassword
 Requires: redhat-config-soundcard
+Requires: up2date
 
 %description
 The firstboot utility runs after installation.  It 
