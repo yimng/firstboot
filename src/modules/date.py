@@ -56,9 +56,6 @@ class TimeWindow(FirstbootGuiWindow):
     def getNext(self):
         pass
     
-#    def destroy(self, args):
-#        gtk.mainquit()
-    
     def setupScreen(self):
         #Initialize date backend
         self.dateBackend = dateBackend.dateBackend()
@@ -84,7 +81,6 @@ class TimeWindow(FirstbootGuiWindow):
         dialog.hide ()
 
     def apply(self, *args):
-        self.doDebug = None
         if self.doDebug:
             print "applying date changes not available in debug mode"
         else:
