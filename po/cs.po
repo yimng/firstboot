@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"POT-Creation-Date: Thu Aug 29 19:28:03 2002\n"
+"PO-Revision-Date: 2002-09-05 20:43+0200\n"
+"Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+
+#: ../src/exceptionWindow.py:31
+msgid "An error has occurred in the %s module."
+msgstr "V modulu %s nastala chyba."
+
+#: ../src/exceptionWindow.py:36
+msgid ""
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
+msgstr ""
+"Protože s modulem %s se vyskytl problém, \n"
+"Red Hat Setup Agent tento modul nenahraje \n"
+"a pokusí se spustit ostatní moduly."
+
+#: ../src/exceptionWindow.py:40
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
+msgstr ""
+"Prosím ohlaste chybu v 'firstboot' v systému sledování \n"
+"chyb Red Hat na http://www.redhat.com/bugzilla. \n"
+"Kopie ladicího výpisu byla uložena do %s \n"
+"Připojte tento soubor k hlášení chyby. \n"
+
+#: ../src/firstboot.py:91
+msgid "Firstboot has already been run once on this system.\n"
+msgstr "Na tomto počítači již byl firstboot spuštěn.\n"
+
+#: ../src/firstboot.py:92
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
+msgstr ""
+"Pro spuštění programu firstboot z příkazového řádku spusťte následující "
+"příkazy:"
+
+#: ../src/firstboot.py:97
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
+msgstr ""
+"Pro spuštění programu firstboot při startu systému spusťte následující "
+"příkazy:"
+
+#: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
+msgid "Additional CDs"
+msgstr "Další CD"
+
+#: ../src/modules/additional_cds.py:30
+msgid "Install Additional Software"
+msgstr "Instalace dalšího software"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"If you have any of the CDs listed below, you can install packages from them "
+"by inserting the CD and clicking the appropriate button."
+msgstr ""
+"Máte-li některé z CD vypsaných níže, můžete z nich nainstalovat balíčky "
+"vložením CD a kliknutím na odpovídající tlačítko."
+
+#: ../src/modules/additional_cds.py:67
+msgid "Red Hat Linux Documentation CD"
+msgstr "Red Hat Linux CD s dokumentací"
+
+#: ../src/modules/additional_cds.py:71 ../src/modules/additional_cds.py:82
+#: ../src/modules/additional_cds.py:93
+msgid "Install..."
+msgstr "Instalovat..."
+
+#: ../src/modules/additional_cds.py:78
+msgid "Red Hat Linux Installation CD"
+msgstr "Red Hat Linux instalační CD"
+
+#: ../src/modules/additional_cds.py:115
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Nebylo nalezeno CD-ROM. Vložte prosím do CD-ROM do jednotky a pokračujte "
+"kliknutím na \"OK\"."
+
+#: ../src/modules/date.py:51
+msgid "Date and Time"
+msgstr "Datum a čas"
+
+#: ../src/modules/date.py:52
+msgid "Date and Time Configuration"
+msgstr "Nastavení data a času"
+
+#: ../src/modules/date.py:54
+msgid "Please set the date and time for the system."
+msgstr "Prosím nastavte datum a čas."
+
+#: ../src/modules/date.py:120
+msgid ""
+"A connection with %s could not be established.  Either %s is not available "
+"or the firewall settings on your computer are blocking NTP connections."
+msgstr ""
+"Nebylo možné se spojit s %s. Buď je %s nedostupný, nebo nastavení firewallu "
+"blokují spojení NTP."
+
+#: ../src/modules/date.py:127
+msgid "Error"
+msgstr "Chyba"
+
+#: ../src/modules/date.py:157
+msgid "Contacting NTP server.  Please wait..."
+msgstr "Spojuji se s NTP serverem. Prosím čekejte..."
+
+#: ../src/modules/finished.py:19
+msgid "Finish Setup"
+msgstr "Konec nastavení"
+
+#: ../src/modules/finished.py:28
+msgid "Finished Setup!"
+msgstr "Nastavení hotovo!"
+
+#: ../src/modules/finished.py:48
+msgid ""
+"Congratulations!  Your Red Hat Linux system is now set up and ready to use.  "
+"We hope that you will have a pleasant computing experience.  Please click "
+"the \"Forward\" button in the lower right corner to continue."
+msgstr ""
+"Blahopřejeme! Váš systém Red Hat Linux je nyní nastaven a připraven k "
+"použijí. Doufáme, že Vaše práce bude příjemná. Pokračujte prosím kliknutím "
+"na tlačítko \"Vpřed\" v pravém dolním rohu."
+
+#: ../src/modules/soundcard_gui.py:49
+msgid "Sound Card"
+msgstr "Zvuková karta"
+
+#: ../src/modules/soundcard_gui.py:50
+msgid "Sound Card Configuration"
+msgstr "Nastavení zvukové karty"
+
+#: ../src/modules/soundcard_gui.py:51
+msgid "A sound card has been detected on your computer."
+msgstr "Na vašem počítači byla nalezena zvuková karta."
+
+#: ../src/modules/soundcard_gui.py:93
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Po kliknutí na tlačítko \"Přehrát testovací zvuk\" uslyšíte ukázkový zvuk. "
+"Měli byste slyšet sérii tří zvuků. První zvuk bude z pravého kanálu, druhý z "
+"levého kanálu a třetí z obou."
+
+#: ../src/modules/up2date.py:19
+msgid "Update Agent"
+msgstr "Update Agent"
+
+#: ../src/modules/up2date.py:31
+msgid "Red Hat Update Agent"
+msgstr "Red Hat Update Agent"
+
+#: ../src/modules/up2date.py:53
+msgid ""
+"The Red Hat Update Agent will register your machine with Red Hat Network so "
+"that you can receive the latest software packages directly from Red Hat.  "
+"Using this tool will allow you to always have the most up-to-date Red Hat "
+"Linux system with all the security patches, bug fixes, and software package "
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+msgstr ""
+"Red Hat Update Agent zaregistruje Váš počítač u Red Hat Network, takže "
+"budete moci získat nejnovější balíčky software přímo od společnosti Red Hat. "
+"Tento nástroj Vám umožní udržovat Váš systém Red Hat Linux aktualizovaný s "
+"všemi bezpečnostními záplatami, opravami chyb a vylepšeními balíčků "
+"software. \n"
+"\n"
+"Jestliže jste si tento produkt koupili, máte právo na testovací použití "
+"služby Red Hat Network Basic zdarma. Pro přístup k této službě prosím "
+"postupujte podle instrukcí na kartě aktivace produktu. \n"
+"\n"
+"Jestliže jste si tento produkt nekoupili, navštivte http://rhn.redhat.com "
+"pro více informací nebo pro objednání služby Red Hat Network Basic. \n"
+
+#: ../src/modules/up2date.py:72
+msgid "Yes, I would like to register with Red Hat Network"
+msgstr "Ano, chci se zaregistrovat u Red Hat Network"
+
+#: ../src/modules/up2date.py:73
+msgid "No, I do not want to register my system."
+msgstr "Ne, nechci svůj počítač zaregistrovat."
+
+#: ../src/modules/welcome.py:19
+msgid "Welcome"
+msgstr "Vítejte"
+
+#: ../src/modules/welcome.py:28
+msgid "Welcome to Red Hat Linux!"
+msgstr "Vítejte v systému Red Hat Linux!"
+
+#: ../src/modules/welcome.py:48
+msgid ""
+"Hi!  Welcome to the Red Hat Setup Agent.  There are a few more steps to take "
+"before your system is ready to use.  The Red Hat Setup Agent will now guide "
+"you through some basic configuration.  Please click the \"Forward\" button "
+"in the lower right corner to continue."
+msgstr ""
+"Vítejte do programu Red Hat Setup Agent. Před použitím Vašeho systému je "
+"třeba provést ještě několik kroků. Red Hat Setup Agent Vás nyní provede "
+"základním nastavením. Prosím pokračujte kliknutím na tlačítko \"Pokračovat\" "
+"v pravém dolním rohu."
