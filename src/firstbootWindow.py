@@ -74,7 +74,7 @@ class firstbootWindow:
             self.notebook.set_scrollable(gtk.TRUE)
             self.notebook.set_show_border(gtk.FALSE)
         else:
-            os.system('/usr/bin/xsri --scale-height=100 --scale-width=100 --set /usr/share/firstboot/pixmaps/bg.png')
+            os.system('/usr/bin/xsri --scale-height=100 --scale-width=100 --set /usr/share/gdm/themes/Bluecurve/lightrays.png')
             path = ('/usr/share/firstboot/modules')
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_show_border(gtk.FALSE)
@@ -126,7 +126,7 @@ class firstbootWindow:
         
         leftEventBox = gtk.EventBox()
         leftEventBox.add(self.leftLabelVBox)
-        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#000055"))
+        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7383a3"))
 
         leftVBox = gtk.VBox()
         leftVBox.pack_start(leftEventBox, gtk.TRUE)
