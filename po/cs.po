@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-15 13:47-0400\n"
-"PO-Revision-Date: 2004-10-05 21:38+0200\n"
+"PO-Revision-Date: 2004-10-16 04:03+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -188,15 +188,11 @@ msgid "System User"
 msgstr "Uživatel systému"
 
 #: ../src/modules/create_user.py:65
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
-"Doporučuje se pro normální použití (ne správu systému) vytvořit osobní "
-"uživatelský účet. Uživatelský účet vytvoříte po zadání požadovaných "
-"informací."
+msgstr "Doporučuje se pro normální používání (ne správu systému) vytvořit systémové 'jméno uživatele'. Systémové 'jméno uživatele' vytvoříte po zadání požadovaných informací."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -337,11 +333,8 @@ msgstr ""
 "kliknutím na tlačítko \"Další\" v pravém dolním rohu."
 
 #: ../src/modules/finished.py:38
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Váš systém je nyní nastaven a připraven k použití. Pokračujte prosím "
-"kliknutím na tlačítko \"Další\" v pravém dolním rohu."
+msgstr "Pokračujte prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu."
 
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
@@ -403,43 +396,3 @@ msgstr ""
 "Před použitím vašeho systému je třeba provést ještě několik kroků. Setup "
 "Agent vás nyní provede základním nastavením. Pokračujte prosím kliknutím na "
 "tlačítko \"Další\" v pravém dolním rohu."
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot neběží v runlevelu 3."
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Máte-li některé z CD vypsaných níže, můžete z nich nainstalovat balíčky "
-#~ "vložením CD a kliknutím na odpovídající tlačítko."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Zadejte prosím server času."
-
-#~ msgid "Error"
-#~ msgstr "Chyba"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Nebylo možné se spojit s %s. Buď je %s nedostupný, nebo nastavení "
-#~ "firewallu blokují spojení NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Spojuji se s NTP serverem. Prosím čekejte..."
-
-#~ msgid "User Account"
-#~ msgstr "Uživatelský účet"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Jméno uživatele '%s' je rezervovaný systémový účet. Zadejte prosím jiné "
-#~ "jméno uživatele."
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Na tomto počítači již byl firstboot spuštěn.\n"
