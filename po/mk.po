@@ -109,6 +109,10 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Поради грешка во %s модулот, РедХет агентот за\n"
+"инсталација ќе го прескокне овој модул и \n"
+"ќе се обиде да ги изврши останатите модули."
+
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -118,6 +122,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Пратете извештај за бубачка на 'firstboot' на системот \n"
+"за следење на бубачки на Ред Хет (http://www.redhat.com/bugzilla). \n"
+"Копија од излезот на грешката е зачуван во %s \n"
+"Пратете ја таа датотека заедно со извештајот. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -386,7 +394,7 @@ msgstr "Одберете го предметот што сакате да го �
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr "Агент за подесување"
+msgstr "Агент за инсталација"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -437,6 +445,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Не можам да пронајдам цд-де. Ве молам ставете го цд-дето во машината "
+"и кликнете „Во ред“ за понатаму."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -446,6 +456,7 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
+"Програмата за автоматско извршување не е пронајдена. Кликнете на „Во ред“ за понатаму."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -515,6 +526,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Строго препорачливо е да креирате корисник за лична употреба. Доолку "
+"продолжите без ваков корисник, може да се најавите само привилегирано (root), "
+"кој е резервиран само за административна употреба."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -547,7 +561,7 @@ msgstr "Лозинката е премногу кратка. Мора да им�
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
-msgstr "Корисничкото може да има најмногу 32 карактери."
+msgstr "Корисничкото име може да има најмногу 32 карактери."
 
 #: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
@@ -561,6 +575,7 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
+"Корисничкот име '%s' содржи празни места. Ваквите карактери не се дозволени."
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -568,6 +583,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"Корисничкото име '%s' содржи интерпункциски знаци. Ваквите знаци не се "
+"дозволени."
 
 #: ../src/modules/create_user.py:305
 #, python-format
@@ -575,6 +592,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"Корисничкото име '%s' содржи големи бикву. Ваквите знаци не се дозволени."
+
 
 #: ../src/modules/create_user.py:312
 #, python-format
@@ -582,11 +601,15 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"Корисничкото име '%s' содржи непознати карактери. Ваквите знаци не се "
+"дозволени."
+
 
 #: ../src/modules/create_user.py:322
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"Лозинката содржи непознати карактери.  Користете само латинични (ASCII) карактери."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:334
@@ -594,6 +617,7 @@ msgstr ""
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"Името '%s' содржи непознати карактери.  Користете само латинични (ASCII) карактери."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -637,7 +661,7 @@ msgstr "Наместете го датумот и времето на вашио
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr ""
+msgstr "Внесете сервер за време."
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
@@ -650,11 +674,13 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Не можам да се врзам со %s. Можеби %s е недостапен или подесувањата за "
+"огнен ѕид (firewall) на вашиот систем блокираат НТП врски."
 
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "Врзување со НТП серверот. Ве молам причекајте..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -683,11 +709,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Дисплеј"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Одберете ја резолуцијата и длабочината на бои што сакате да ги користите"
 
 #. Add icon to the top frame
 #. #
@@ -696,13 +722,15 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "Заврши со подесување"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
+"Вашиот систем е наместен и спремен за употреба. Одберете „Следно“ за "
+"да продолжите."
 
 #.
 #. networking.py - networking module for firstboot
@@ -730,27 +758,27 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/networking.py:44
 msgid "Network Setup"
-msgstr ""
+msgstr "Подесување за мрежа"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "Следните уреди за мрежа се пронајдени на вашиот систем."
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
-msgstr ""
+msgstr "Мрежен уред"
 
 #: ../src/modules/networking.py:91
 msgid "Boot protocol"
-msgstr ""
+msgstr "Бут протокол"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "_Промени ги мрежните подесувања..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
-msgstr ""
+msgstr "статична"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -795,6 +823,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Кликнете на „Пишти го звукот за тест“ копчето за да слушнете звук.  Треба "
+"да слушнете серија од три звуци. Првиот звук ќе биде на десниот канал, "
+"вториот ќе биде на левиот канал, а третиот ќе биде во центарот."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -826,7 +857,7 @@ msgstr "Временска зона"
 
 #: ../src/modules/timezone.py:52
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "Наместете ја временската зона на системот."
 
 #: ../src/modules/welcome.py:35
 msgid ""
@@ -834,3 +865,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
+"Има уште неколку чекори пред првата употреба на вашиот систем.  Агентот "
+"за инсталација ќе ве води низ некои основни конфигурации.  Кликнете "
+"на копчето „Следно“ во десниот долен агол за понатаму."
