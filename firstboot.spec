@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.38
+Version: 1.3.39
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,8 +76,11 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Dec 14 2004 Adrian Likins <alikins@redhat.com> - 1.3.39-1
+- really fix #138727 (was looking for cdroms in the wrong place)
+
 * Fri Dec 14 2004 Adrian Likins <alikins@redhat.com> - 1.3.38-1
-- fix #138727
+- fix #138727 (patch from katzj)
 - latest translations
 
 * Fri Nov 12 2004 Adrian Likins <alikins@redhat.com> - 1.3.37-2
