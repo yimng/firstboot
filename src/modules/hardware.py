@@ -118,8 +118,6 @@ class childWindow:
         self.table.attach(self.soundcard_button, 3, 4, self.table_row, self.table_row + 1, gtk.EXPAND, gtk.SHRINK)
         self.table_row = self.table_row + 1
 
-#        self.device, self.module, self.description = self.soundcardBackend.getData(cards[0])
-#        maker, model = string.split(self.description, "|")
         self.soundcard_label.set_text(self.model)
 
     def configureNetworking(self):
