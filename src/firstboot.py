@@ -75,7 +75,8 @@ if (not doDebug):
         lines = fd.readlines()
         fd.close()
 
-        #If /etc/sysconfig/firstboot exists, don't run again
+        #If /etc/sysconfig/firstboot exists, parse the file
+        #If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run firstboot
         for line in lines:            
             line = string.strip(line)
             if (string.find(line, "RUN_FIRSTBOOT") > -1) and line[0] != "#":
