@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "POT-Creation-Date: Wed Jan 29 14:45:55 2003\n"
-"PO-Revision-Date: 2003-01-15 18:35GMT+10:00\n"
+"PO-Revision-Date: 2003-01-30 08:45GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0beta2\n"
+"X-Generator: KBabel 0.9.6\n"
 
 #: ../src/exceptionWindow.py:31
 msgid "An error has occurred in the %s module."
@@ -47,18 +47,16 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstbootはこのシステム上で既に一度実行されています。\n"
 
 #: ../src/firstboot.py:94
-msgid ""
-"In order to run firstboot from the command line, run the following commands:"
+msgid "In order to run firstboot from the command line, run the following commands:"
 msgstr "コマンドラインからfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:99
-msgid ""
-"In order to run firstboot during system bootup, run the following commands:"
+msgid "In order to run firstboot during system bootup, run the following commands:"
 msgstr "システムのブート中にfirstbootを実行するには、次のコマンドを実行します:"
 
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "Firstbootはランレベル3では起動しません。"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -95,7 +93,7 @@ msgstr ""
 
 #: ../src/modules/create_user.py:20
 msgid "User Account"
-msgstr ""
+msgstr "ユーザーアカウント"
 
 #: ../src/modules/create_user.py:44
 msgid ""
@@ -103,6 +101,9 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"通常(管理業務以外)の使用には、個人的なユーザーアカウントを作成される事を "
+"お勧めします。個人アカウントを作成するには、要求される情報を用意して "
+"下さい。"
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -126,14 +127,17 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"個人のユーザーアカウントの作成が強く推奨されます。このようなアカウントが "
+"ない状態で継続すると、rootアカウントでログインするしかありません。但し、 "
+"これは管理業務用のみに予約されています。"
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
-msgstr ""
+msgstr "続ける"
 
 #: ../src/modules/create_user.py:108
 msgid "Create account"
-msgstr ""
+msgstr "アカウントを作成"
 
 #: ../src/modules/create_user.py:134
 msgid "The passwords do not match.  Please enter the password again."
@@ -144,56 +148,58 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
 
 #: ../src/modules/create_user.py:153
-#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"ユーザー名%sのアカウントはすでに存在します。別のユーザー名を指定して下さい。"
+"ユーザー名%sのアカウントは予約されたシステムアカウントです。別のユーザー "
+"を指定して下さい。"
 
 #: ../src/modules/create_user.py:200
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "ユーザー名は33文字以下でなければなりません。"
 
 #: ../src/modules/create_user.py:206
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "ユーザー名は番号で始まってはいけません。"
 
 #: ../src/modules/create_user.py:214
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
-msgstr ""
+msgstr "ユーザー名'%s'には空白があります。%sには空白を含めないで下さい。"
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"ユーザー名'%s'には句読点があります。ユーザー名には句読点は使用しないで "
+"下さい。"
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"ユーザー名'%s'には大文字が含まれています。ユーザー名には大文字を含め "
+"ないで下さい。"
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"ユーザー名'%s'には無効な文字が含まれています。ASCII文字のみを使用して "
+"下さい。"
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "パスワードは無効な文字を含んでいます。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "パスワードが短すぎます。  最低6文字を使用して下さい。"
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr "名前'%s'には無効な文字が含まれています。ASCII文字のみを使用して下さい。"
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -228,14 +234,12 @@ msgid "Finish Setup"
 msgstr "セットアップを終了"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Red Hat Linux システムが設定できましたので、使用できる状態です。楽しい コン"
-"ピュータの世界をお楽しみ下さい。右下の隅にある 「前」ボタンをクリックして続け"
-"てください。"
+"システムが設定できましたので使用できる状態になりました。右下隅にある「前」 "
+"ボタンをクリックして続けてください。"
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -613,3 +617,4 @@ msgstr "Red Hatセットアップエージェント"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
+
