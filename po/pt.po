@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "POT-Creation-Date: Fri Jan 31 16:12:24 2003\n"
-"PO-Revision-Date: 2003-01-05 19:48+0000\n"
+"PO-Revision-Date: 2003-02-02 17:58+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -103,7 +103,7 @@ msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
-msgstr ""
+msgstr "Recomenda-se que crie uma conta de utilizador pessoal para o uso normal (não-administrativo). Para criar uma conta pessoal, indique a informação pedida."
 
 #: ../src/modules/create_user.py:54
 msgid "Username:"
@@ -126,7 +126,7 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "É fortemente recomendado que seja criada uma conta de utilizador pessoal. Se continuar sem essa conta, só se poderá ligar com a conta 'root', a qual é reservada apenas para o uso administrativo."
 
 #: ../src/modules/create_user.py:107
 msgid "Continue"
@@ -164,37 +164,35 @@ msgstr "O nome do utilizador não pode começar por um número."
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the %s."
-msgstr ""
+msgstr "O utilizador '%s' contém  espaços. Por favor, não inclua espaços no %s."
 
 #: ../src/modules/create_user.py:221
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
+msgstr "O utilizador '%s' contém símbolos de pontuação. Por favor, não inclua esses símbolos no nome do utilizador."
 
 #: ../src/modules/create_user.py:228
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
+msgstr "O utilizador '%s' contém caracteres maiúsculos. Por favor não use caracteres maiúsculos no nome do utilizador."
 
 #: ../src/modules/create_user.py:235
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
+msgstr "O utilizador '%s' contém caracteres inválidos. Utilize por favor apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:245
-#, fuzzy
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "A senha é demasiado curta.  Por favor insira pelo menos 6 caracteres."
+msgstr "A senha contém caracteres inválidos. Utilize por favor apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:257
-#, fuzzy
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "A senha é demasiado curta.  Por favor insira pelo menos 6 caracteres."
+msgstr "O nome '%s' contém caracteres inválidos. Utilize por favor apenas caracteres ASCII."
 
 #: ../src/modules/date.py:51
 msgid "Date and Time"
@@ -202,7 +200,7 @@ msgstr "Data e Hora"
 
 #: ../src/modules/date.py:54
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Indique por favor a data e a hora do sistema."
 
 #: ../src/modules/date.py:116
 msgid "Please enter a time server."
@@ -230,14 +228,10 @@ msgid "Finish Setup"
 msgstr "Terminar a Configuração"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Forward\" "
 "button in the lower right corner to continue."
-msgstr ""
-"O seu sistema Red Hat Linux está agora configurado e pronto a utilizar.  "
-"Esperamos que tenha com ele uma experiência computacional agradável.  Por "
-"favor carregue no botão \"Avançar\" no canto inferior direito para continuar."
+msgstr "O seu sistema está agora configurado e pronto a utilizar.  Por favor carregue no botão \"Avançar\" no canto inferior direito para continuar."
 
 #: ../src/modules/soundcard_gui.py:49 ../src/modules/soundcard_gui.py:50
 msgid "Sound Card"
@@ -260,10 +254,9 @@ msgstr ""
 
 #: ../src/modules/up2date.py:19
 msgid "Red Hat Network"
-msgstr ""
+msgstr "Red Hat Network"
 
 #: ../src/modules/up2date.py:36
-#, fuzzy
 msgid ""
 "This step will register your system with a complimentary Demo Account from "
 "Red Hat Network so that you can receive the latest software packages "
@@ -278,25 +271,15 @@ msgid ""
 "If you did not purchase this product, visit http://rhn.redhat.com for more "
 "information or to subscribe to Red Hat Network Basic Service. \n"
 msgstr ""
-"O Agente de Actualizações da Red Hat vai agora registar a sua máquina na Red "
-"Hat Network para que possa receber os últimos pacotes de software "
-"directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu "
-"sistema Red Hat actualizado, com todas as correcções de segurança, de erros "
-"e melhorias a pacotes.\n"
+"Este passo vai agora registar a sua máquina com uma conta de demonstração complementar na Red Hat Network para que possa receber os últimos pacotes de software directamente da Red Hat.  Ao usar esta ferramenta poderá ter sempre o seu sistema Red Hat actualizado, com todas as correcções de segurança, de erros e melhorias a pacotes.\n"
 "\n"
-"Se adquiriu este produto, tem direito a experimentar gratuitamente o Serviço "
-"Básico da Red Hat Network. Para aceder ao teste gratuito consulte as "
-"instruções detalhas presentes no cartão de activação do producto que pode "
-"encontrar na caixa.\n"
+"Se adquiriu este produto, tem direito a experimentar gratuitamente o Serviço Básico da Red Hat Network. Para aceder ao teste gratuito consulte as instruções detalhas presentes no cartão de activação do producto que pode encontrar na caixa.\n"
 "\n"
-"Se não adquiriu este produto, visite http://rhn.redhat.com para mais "
-"informações ou para subscrever o Serviço Básico da Red Hat Network. \n"
-"\n"
+"Se não adquiriu este produto, visite http://rhn.redhat.com para mais informações ou para subscrever o Serviço Básico da Red Hat Network. \n"
 
 #: ../src/modules/up2date.py:55
-#, fuzzy
 msgid "Yes, I want to register my system with Red Hat Network."
-msgstr "Sim, quero registar-me na Red Hat Network."
+msgstr "Sim, quero registar o meu sistema na Red Hat Network."
 
 #: ../src/modules/up2date.py:56
 msgid "No, I do not want to register my system."
