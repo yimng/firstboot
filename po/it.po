@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-05 12:40-0400\n"
-"PO-Revision-Date: 2004-09-17 11:18+1000\n"
+"PO-Revision-Date: 2004-10-11 10:32+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -156,6 +156,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Inserite il disco \"Red Hat Enterprise Linux Extra\" per permettere l'installazione delle "
+"applicazioni e dei plug-in di terzi. Potete inserire anche il disco di Documentazione, o "
+"altri dischi di Red Hat, per poter installare del software aggiuntivo."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -166,6 +169,10 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Per abilitare il supporto 'runtime' delle applicazioni a 32-bit sull'architettura Intel Itanium2, "
+"installate ora il pacchetto Intel Execution Layer contenuto nel disco Extra."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -180,10 +187,8 @@ msgstr ""
 "per continuare."
 
 #: ../src/modules/additional_cds.py:180
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:39
 msgid "System User"
@@ -248,13 +253,11 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr "La password non é corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
@@ -302,16 +305,14 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -566,3 +567,4 @@ msgstr ""
 
 #~ msgid "Welcome to Red Hat Linux!"
 #~ msgstr "Benvenuti a Red Hat Linux!"
+
