@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.3.10
-Release: 1
+Release: 2
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Apr  7 2004 Brent Fox <bfox@redhat.com> 1.3.10-2
+- allow for correct text mode button translations (bug #120087)
+
 * Wed Mar 17 2004 Jeremy Katz <katzj@redhat.com> 1.3.10-1
 - fix password to be encrypted properly
 
