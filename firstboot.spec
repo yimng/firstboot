@@ -74,6 +74,7 @@ fi
 * Tue Jan 28 2003 Brent Fox <bfox@redhat.com> 1.0.4-5
 - don't use Yes/No dialogs in create_user.py (bug #82680)
 - only use root window mode in non-debug mode
+- make module titles consistent with each other
 
 * Fri Jan 24 2003 Brent Fox <bfox@redhat.com> 1.0.4-4
 - better validity checking for user name and password
