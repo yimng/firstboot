@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2004-03-09 14:42+0800\n"
 "Last-Translator: Simos Xenitellis <simos74@gmx.net>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -18,6 +18,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0.2\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "Έξοδος"
 
 #. # eula_strings.py
 #. #
@@ -340,51 +356,47 @@ msgstr "Καλώς ήλθατε"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "Έλεγχος αυθεντικότητας"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 msgid "Firewall configuration"
 msgstr "Ρυθμίσεις firewall"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 msgid "Keyboard configuration"
 msgstr "Ρυθμίσεις πληκτρολογίου"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 msgid "Network configuration"
 msgstr "Ρυθμίσεις δικτύου"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 msgid "Printer configuration"
 msgstr "Ρυθμίσεις εκτυπωτών"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr "Υπηρεσίες συστήματος"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 msgid "Sound card configuration"
 msgstr "Ρυθμίσεις κάρτας ήχου"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Ρυθμίσεις ζώνης ώρας"
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr "Εκτέλεση Εργαλείου"
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr "Έξοδος"
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "Επιλέξτε το στοιχείο που θέλετε να τροποποιήσετε "
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "Εργαλείο Εγκατάστασης"
 
@@ -437,31 +449,36 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Δεν εντοπίστηκε CD-ROM.  Παρακαλώ εισάγετε έναν οπτικό δίσκο στον οδηγό και πατήστε "
-"\"Εντάξει\" για να συνεχίσετε."
+"Δεν εντοπίστηκε CD-ROM.  Παρακαλώ εισάγετε έναν οπτικό δίσκο στον οδηγό και "
+"πατήστε \"Εντάξει\" για να συνεχίσετε."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Το πρόγραμμα autorun δεν εντοπίστηκε στον οδηγό οπτικού δίσκου. Πατήστε \"Εντάξει\" για να συνεχίσετε."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Το πρόγραμμα autorun δεν εντοπίστηκε στον οδηγό οπτικού δίσκου. Πατήστε "
+"\"Εντάξει\" για να συνεχίσετε."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "Λογαριασμός Χρήστη"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -471,35 +488,44 @@ msgstr ""
 "(όχι διαχείριση) χρήση.  Για να δημιουργήσετε ένα προσωπικό λογαριασμό, "
 "δώστε τις πληροφορίες που θα σας ζητηθούν."
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "_Όνομα χρήστη:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "Ο_νοματεπώνυμο:"
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "_Συνθηματικό:"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "Επι_βεβαίωση Συνθηματικού:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "Αν χρειάζεται να χρησιμοποιήσετε έλεγχο αυθεντικότητας δικτύου όπως Kerberos ή NIS, παρακαλώ πατήστε το κουμπί Χρήση Σύνδεση Μέσω Δικτύου."
+msgstr ""
+"Αν χρειάζεται να χρησιμοποιήσετε έλεγχο αυθεντικότητας δικτύου όπως Kerberos "
+"ή NIS, παρακαλώ πατήστε το κουμπί Χρήση Σύνδεση Μέσω Δικτύου."
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "Χρήση Σύνδεσης Μέσω _Δικτύου..."
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -510,48 +536,48 @@ msgstr ""
 "λογαριασμό (root) ο οποίος είναι προορισμένος μόνο για τη διαχείριση του "
 "συστήματος."
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "_Συνέχεια"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "Δημιουργία _λογαριασμού"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Τα συνθηματικά δε ταιριάζουν.  Παρακαλώ εισάγετε το συνθηματικό ξανά."
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 "Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
 "χαρακτήρες."
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Ο λογαριασμός με όνομα χρήστη '%s' είναι δεσμευμένος απο το σύστημα.  "
-"Παρακαλώ ορίστε ένα διαφορετικό όνομα χρήστη."
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "Το όνομα χρήστη πρέπει να έχει μέγεθος μικρότερο από 33 χαρακτήρες."
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "Το όνομα χρήστη δε μπορεί να αρχίζει με αριθμό."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -560,7 +586,7 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει κενό διάστημα.  Παρακαλώ να μη συμπεριλάβετε "
 "κενό διάστημα το όνομα χρήστη."
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -569,7 +595,7 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει χαρακτήρες που είναι σημεία στίξης.  Παρακαλώ "
 "να μη χρησιμοποιείσετε σημεία στίξης στο όνομα χρήστη."
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -578,7 +604,7 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει κεφαλαίους χαρακτήρες.  Παρακαλώ να μη "
 "χρησιμοποιείσετε κεφαλαίους χαρακτήρες στο όνομα χρήστη."
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -587,16 +613,18 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
-#: ../src/modules/create_user.py:291
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:322
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το συνθηματικό περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το όνομα '%s' περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο  ASCII χαρακτήρες."
@@ -849,9 +877,16 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "Υπάρχουν μερικά βήματα που πρέπει να ακολουθήσετε πριν χρησιμοποιείσετε το "
-"σύστημα.  Το εργαλείο Ρύθμισης θα σας οδηγήσει στην εκτέλεση "
-"μιας βασικής διαμόρφωσης.  Παρακαλώ πατήστε το κουμπί  \"Μπροστά\" στην "
-"δεξιά κάτω γωνία για να συνεχίσετε. "
+"σύστημα.  Το εργαλείο Ρύθμισης θα σας οδηγήσει στην εκτέλεση μιας βασικής "
+"διαμόρφωσης.  Παρακαλώ πατήστε το κουμπί  \"Μπροστά\" στην δεξιά κάτω γωνία "
+"για να συνεχίσετε. "
+
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr ""
+#~ "Ο λογαριασμός με όνομα χρήστη '%s' είναι δεσμευμένος απο το σύστημα.  "
+#~ "Παρακαλώ ορίστε ένα διαφορετικό όνομα χρήστη."
 
 #~ msgid "Firstboot has already been run once on this system.\n"
 #~ msgstr "Το Firstboot έχει ήδη εκτελεστεί μια φορά σε αυτό το σύστημα.\n"
@@ -940,4 +975,3 @@ msgstr ""
 
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "Ό_χι, δε θέλω να καταχωρήσω το σύστημα μου."
-

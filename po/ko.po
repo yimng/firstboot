@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2004-03-25 16:50+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -16,6 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.0\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "종료"
 
 #. # eula_strings.py
 #. #
@@ -337,51 +353,47 @@ msgstr "환영합니다"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "인증"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 msgid "Firewall configuration"
 msgstr "방화벽 설정 "
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 msgid "Keyboard configuration"
 msgstr "키보드 설정"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 msgid "Network configuration"
 msgstr "네트워크 설정 "
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 msgid "Printer configuration"
 msgstr "프린터 설정"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr "시스템 서비스"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 msgid "Sound card configuration"
 msgstr "사운드 카드 설정"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "시간대 설정"
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr "도구 실행"
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr "종료"
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "수정할 항목을 선택해 주십시오 "
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "설정 에이전트"
 
@@ -442,7 +454,8 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -452,15 +465,17 @@ msgstr ""
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "사용자 계정"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -469,24 +484,24 @@ msgstr ""
 "(관리 목적이 아닌) 일반 작업을 수행하시기 위해 개인 사용자 계정을 만드시길 바"
 "랍니다.  개인 계정을 만드시려면, 요청된 정보를 기입해 주십시오."
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "사용자명(_U):"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "이름(_E):"
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "암호(_P):"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "암호 확인(_M):"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -494,12 +509,19 @@ msgstr ""
 "커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
 "을 클릭해 주십시오."
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "네트워크 로그인 사용(_L)..."
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -509,46 +531,46 @@ msgstr ""
 "행하신다면, 관리자 용으로만 사용되는 루트 계정을 사용하여 로그인하셔야 합니"
 "다."
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "계속 진행(_C)"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "계정 만들기(_A)"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"사용자명 '%s'은 시스템 계정 용으로 보존되어 있습니다. 다른 사용자명을 지정해 "
-"주십시오."
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "사용자명은 33 문자를 넘어서는 안됩니다."
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "사용자명은 숫자로 시작해서는 안됩니다."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -557,7 +579,7 @@ msgstr ""
 "사용자명 '%s'에 공백이 포함되어 있습니다.  사용자명에 공백을 포함시키지 마십"
 "시오."
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -566,7 +588,7 @@ msgstr ""
 "사용자명 '%s'에 구두점이 포함되어 있습니다.  사용자명에 구두점을 사용하지 마"
 "십시오."
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -575,7 +597,7 @@ msgstr ""
 "사용자명 '%s'에 대문자가 포함되어 있습니다.  사용자명에 대문자를 사용하지 마"
 "십시오."
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -584,14 +606,17 @@ msgstr ""
 "사용자명 '%s'에 잘못된 문자가 포함되어 있습니다.  사용자명에 ASCII 문자만 사"
 "용하시기 바랍니다."
 
-#: ../src/modules/create_user.py:291
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+#: ../src/modules/create_user.py:322
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -845,6 +870,13 @@ msgstr ""
 "몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  설정 에이전트는 이"
 "제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 것입니다. 오른쪽 하"
 "단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합니다."
+
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr ""
+#~ "사용자명 '%s'은 시스템 계정 용으로 보존되어 있습니다. 다른 사용자명을 지정"
+#~ "해 주십시오."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "마우스 설정 "
@@ -1189,4 +1221,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-

@@ -9,13 +9,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2004-03-29 19:49+0530\n"
 "Last-Translator: Punjab Linux Technology <punjablinux@netscape.net>\n"
 "Language-Team: Punjabi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "ਬਾਹਰ"
 
 #. # eula_strings.py
 #. #
@@ -337,51 +353,47 @@ msgstr "ਜੀ ਅਾੲਿਅਾ ਨੰੂ"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "ਪ੍ਮਾਣਕਿਤਾ"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 msgid "Firewall configuration"
 msgstr "ਫਾੲਿਰਵਾਲ ਸੰਰਚਨਾ"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 msgid "Keyboard configuration"
 msgstr "ਕੀ-ਬੋਰਡ ਸੰਰਚਨਾ"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 msgid "Network configuration"
 msgstr "ਨੈਟਵਰਕ ਸੰਰਚਨਾ"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 msgid "Printer configuration"
 msgstr "ਪਿ੍ੰਟਰ ਸੰਰਚਨਾ"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr "ਸਿਸਟਮ ਸੇਵਾਵ੾"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 msgid "Sound card configuration"
 msgstr "ਸਾੳੂਡ-ਕਾਰਡ ਸੰਰਚਨਾ"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "ਸਮ੾-ਖੇਤਰ ਸੰਰਚਨਾ"
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr "ਸੰਦ ਚਲਾੳੁ"
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr "ਬਾਹਰ"
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "ੲਿਕਾੲੀ ਜੋ ਕਿ ਤੁਸੀ ਸੋਧਣੀ ਚਾਹੁੰਦੇ ਦੀ ਚੋਣ ਕਰੋ"
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "ਸੈਟਅੱਪ ੲੇਜੰਟ"
 
@@ -421,8 +433,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਹੇਠ ਦਿੱਤੀਅ੾ ਸੀਡੀਅ੾ ਵਿੱਚੋ ਕੋੲੀ ਵੀ ਹੈ ਤ੾ ਤੁਸੀ ਪੈਕੇਜ ਸੀਡੀ ਪਾਕੇ ਅਤੇ"
-"ਅਨੁਸਾਰੀ ਬਟਨ ਦਬਾਕੇ ੳੁਹਨ੾ ਤੋ ੲਿੰਸਟਾਲ ਕਰ ਸਕਦੇ ਹੋ"
+"ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਹੇਠ ਦਿੱਤੀਅ੾ ਸੀਡੀਅ੾ ਵਿੱਚੋ ਕੋੲੀ ਵੀ ਹੈ ਤ੾ ਤੁਸੀ ਪੈਕੇਜ ਸੀਡੀ ਪਾਕੇ ਅਤੇਅਨੁਸਾਰੀ ਬਟਨ "
+"ਦਬਾਕੇ ੳੁਹਨ੾ ਤੋ ੲਿੰਸਟਾਲ ਕਰ ਸਕਦੇ ਹੋ"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -452,153 +464,155 @@ msgstr ""
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "ੳੁਪਭੋਗਤਾ ਖਾਤਾ"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"ੲਿਸ ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ਤੁਸੀ ਸਧਾਰਨ(ਨਾ-ਪ੍ਬੰਧਕੀ) ਵਰਤੋ ਲੲੀ ੲਿੱਕ ਨਿੱਜੀ ੳੁੋਪਭੋਗਤਾ ਖਾਤਾ ਬਣਾੳੁ ੤"
-"ਨਿੱਜੀ ਖਾਤੇ ਲੲੀ ਲੋੜੀਦੀ ਜਾਣਕਾਰੀ ਦਿੳੁ ੤"
+"ੲਿਸ ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ਤੁਸੀ ਸਧਾਰਨ(ਨਾ-ਪ੍ਬੰਧਕੀ) ਵਰਤੋ ਲੲੀ ੲਿੱਕ ਨਿੱਜੀ ੳੁੋਪਭੋਗਤਾ "
+"ਖਾਤਾ ਬਣਾੳੁ ੤ਨਿੱਜੀ ਖਾਤੇ ਲੲੀ ਲੋੜੀਦੀ ਜਾਣਕਾਰੀ ਦਿੳੁ ੤"
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "ੳੁਪਭੋਗਤਾ-ਨਾੳੁਃ"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "ਪੂਰਾ ਨਾੳੁਃ"
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "ਗੁਪਤ-ਕੋਡਃ"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "ਪੁਸ਼ਟੀ ਗੁਪਤ-ਕੋਡਃ"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"ਜੇਕਰ ਤੁਹਾਨੰੂ ਨੈਟਵਰਕ ਪ੍ਮਾਣਕਿਤਾ ਕਿਵੇ ਕਿ ਕਰਬੋਸ ਜ੾  NIS ਵਰਤਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ ਤ੾ ਕਿਰਪਾ ਕਰਕੇ"
-"ਨੈਟਵਰਕ ਲਾਗੲਿੰਨ ਵਰਤੋ ਬਟਨ ਨੰੂ ਦਬਾੳੁ ੤"
+"ਜੇਕਰ ਤੁਹਾਨੰੂ ਨੈਟਵਰਕ ਪ੍ਮਾਣਕਿਤਾ ਕਿਵੇ ਕਿ ਕਰਬੋਸ ਜ੾  NIS ਵਰਤਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ ਤ੾ ਕਿਰਪਾ ਕਰਕੇਨੈਟਵਰਕ "
+"ਲਾਗੲਿੰਨ ਵਰਤੋ ਬਟਨ ਨੰੂ ਦਬਾੳੁ ੤"
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "ਨੈਟਵਰਕ ਲਾਗੲਿੰਨ ਵਰਤੋ"
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"ੲਿਸ ਦੀ ਪੁਰਜ਼ੋਰ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ੲਿੱਕ ਨਿੱਜੀ ੳੁੋਪਭੋਗਤਾ ਖਾਤਾ ਬਣਾੲਿਅਾ ਜਾਵੇ ੤ ਜੇਕਰ ਤੁਸੀ ਖਾਤੇ"
-"ਬਿਨ੾ ਹੀ ਜਾਰੀ ਰਹੇ ਤ੾, ਤੁਸੀ ਕੇਵਲ ਰੂਟ(root) ਖਾਤੇ ਨਾਲ ਹੀ ਲਾਗੲਿੰਨ ਕਰ ਸਕਦੇ ਹੋ, ਜੋ ਕਿ ਸਿਰਫ਼"
-"ਪ੍ਬੰਧਕੀ ਵਰਤੋ ਲੲੀ ਹੈ"
-""
-""
+"ੲਿਸ ਦੀ ਪੁਰਜ਼ੋਰ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ੲਿੱਕ ਨਿੱਜੀ ੳੁੋਪਭੋਗਤਾ ਖਾਤਾ ਬਣਾੲਿਅਾ ਜਾਵੇ ੤ ਜੇਕਰ ਤੁਸੀ "
+"ਖਾਤੇਬਿਨ੾ ਹੀ ਜਾਰੀ ਰਹੇ ਤ੾, ਤੁਸੀ ਕੇਵਲ ਰੂਟ(root) ਖਾਤੇ ਨਾਲ ਹੀ ਲਾਗੲਿੰਨ ਕਰ ਸਕਦੇ ਹੋ, ਜੋ ਕਿ "
+"ਸਿਰਫ਼ਪ੍ਬੰਧਕੀ ਵਰਤੋ ਲੲੀ ਹੈ"
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "ਜਾਰੀ"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "ਖਾਤਾ ਬਣਾੳੁ"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ਗੁਪਤ-ਕੋਡ ਮੇਲ ਨਹੀ ਖਾ ਰਿਹਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ਗੁਪਤ-ਕੋਡ ਮੁੜ ਭਰੋ ੤"
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "ਗੁਪਤ-ਕੋਡ ਬਹੁਤ ਛੋਟਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ  6 ਅੱਖਰ੾ ਤੋ ਵੱਧ ਵਰਤੋ ੤"
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ੳੁਲਟ ਸਿਸਟਮ ਖਾਤਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਨਿਰਧਾਰਿਤ "
-"ਕਰੋ ੤"
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "ੳੁਪਭੋਗਤਾ-ਨਾੳੁ 33 ਅੱਖਰ੾ ਤੋ ਘੱਟ ਲੰਮਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ੤"
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਅੰਕ ਨਾਲ ਅਾਰੰਭ ਨਹੀ ਹੋ ਸਕਦਾ ਹੈ ੤"
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਖਾਲੀ ਥ੾ ਰੱਖਦਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚ ਖਾਲੀ"
-"ਥ੾ ਨਾ ਦਿੳੁ ੤"
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਖਾਲੀ ਥ੾ ਰੱਖਦਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚ ਖਾਲੀਥ੾ ਨਾ ਦਿੳੁ ੤"
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਵਿੱਚ ਵਿਸ਼ਰਾਮ ਚਿੰਨ੏ ਨਹੀ ਹੋ ਸਕਦੇ ਹਨ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚ"
-"ਵਿਸ਼ਰਾਮ ਚਿੰਨ੏ ਦੀ ਵਰਤੋ ਨਾ ਕਰੋ ੤"
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਵਿੱਚ ਵਿਸ਼ਰਾਮ ਚਿੰਨ੏ ਨਹੀ ਹੋ ਸਕਦੇ ਹਨ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ "
+"ਵਿੱਚਵਿਸ਼ਰਾਮ ਚਿੰਨ੏ ਦੀ ਵਰਤੋ ਨਾ ਕਰੋ ੤"
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਅੰਗਰੇਜ਼ੀ ਵਰਣਮਾਲਾ ਦੇ ਵੱਡੇ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚ"
-"ਵੱਡੇ ਅੱਖਰ ਨਾ ਵਰਤੋ ੤"
+"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਅੰਗਰੇਜ਼ੀ ਵਰਣਮਾਲਾ ਦੇ ਵੱਡੇ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਵਿੱਚਵੱਡੇ "
+"ਅੱਖਰ ਨਾ ਵਰਤੋ ੤"
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
-"ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ "
-"ਵਰਤੋ ੤"
+msgstr "ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ ਵਰਤੋ ੤"
 
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:322
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"ਗੁਪਤ-ਕੋਡ ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ ਵਰਤੋ ੤"
+msgstr "ਗੁਪਤ-ਕੋਡ ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ ਵਰਤੋ ੤"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"ਨਾੳੁ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ ਵਰਤੋ ੤"
+msgstr "ਨਾੳੁ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ ੤  ਕਿਰਪਾ ਕਰਕੇ ASCII  ਅੱਖਰ ਹੀ ਵਰਤੋ ੤"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -655,8 +669,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"%s ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਬਣਾੲਿਅਾ ਨਹੀ ਜਾ ਸਕਿਅਾ ਹੈ ੤ ਜ੾ ਤ੾ %s ੳੁਪਲੱਬਧ ਨਹੀ ਹੈ"
-"ਜ੾ ਤੁਹਾਡਾ ਕੰਪਿੳੂਟਰ ਦੇ ਫਾੲਿਰਵਾਲ ਨਿਰਧਰਨ ਨੇ NTP ਕੁਨੈਕਸ਼ਨ ਨੰੂ ਬੰਦ ਕੀਤਾ ਹੋੲਿਅਾ ਹੈ ੤"
+"%s ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਬਣਾੲਿਅਾ ਨਹੀ ਜਾ ਸਕਿਅਾ ਹੈ ੤ ਜ੾ ਤ੾ %s ੳੁਪਲੱਬਧ ਨਹੀ ਹੈਜ੾ ਤੁਹਾਡਾ ਕੰਪਿੳੂਟਰ ਦੇ "
+"ਫਾੲਿਰਵਾਲ ਨਿਰਧਰਨ ਨੇ NTP ਕੁਨੈਕਸ਼ਨ ਨੰੂ ਬੰਦ ਕੀਤਾ ਹੋੲਿਅਾ ਹੈ ੤"
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -710,9 +724,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"ਤੁਹਾਡਾ ਸਿਸਟਮ ੲਿਸ ਸਮੇ ਨਿਰਧਾਰਿਤ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਵਰਤਣ ਲੲੀ ਤਿਅਾਰ ਹੈ ੤ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ"
-"ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੰੂ ਜਾਰੀ ਰਹਿਣ ਲੲੀ ਦਬਾੳੁ ੤"
-""
+"ਤੁਹਾਡਾ ਸਿਸਟਮ ੲਿਸ ਸਮੇ ਨਿਰਧਾਰਿਤ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਵਰਤਣ ਲੲੀ ਤਿਅਾਰ ਹੈ ੤ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇਵਿੱਚ \"ਅੱਗੇ"
+"\" ਬਟਨ ਨੰੂ ਜਾਰੀ ਰਹਿਣ ਲੲੀ ਦਬਾੳੁ ੤"
 
 #.
 #. networking.py - networking module for firstboot
@@ -805,9 +818,8 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"ਅਾਮ ਅਾਵਾਜ਼ ਸੁਣਨ ਲੲੀ\"ਅਾਵਾਜ਼ ਚਲਾੳੁ\" ਬਟਨ ਨੰੂ ਦਬਾੳੁ ੤ ਤੁਸੀ ੲਿੱਕ ਕ੍ਮ ਦੀਅ੾ ਤਿੰਨ ਅਾਵਾਜ਼ਾ"
-"ਸੁਣੋੋਗੇ ੤ ਪਹਿਲੀ ਸੱਜੇ ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋ, ਦੂਜੀ ਖੱਬੇ ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋ ਅਤੇ ਤੀਜੀ ਅਾਵਾਜ਼ ਕੇਦਰੀ"
-"ਚੈਨਲ ਵਿੱਚੋ ਅਾਵੇਗੀ ੤"
+"ਅਾਮ ਅਾਵਾਜ਼ ਸੁਣਨ ਲੲੀ\"ਅਾਵਾਜ਼ ਚਲਾੳੁ\" ਬਟਨ ਨੰੂ ਦਬਾੳੁ ੤ ਤੁਸੀ ੲਿੱਕ ਕ੍ਮ ਦੀਅ੾ ਤਿੰਨ ਅਾਵਾਜ਼ਾਸੁਣੋੋਗੇ ੤ "
+"ਪਹਿਲੀ ਸੱਜੇ ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋ, ਦੂਜੀ ਖੱਬੇ ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋ ਅਤੇ ਤੀਜੀ ਅਾਵਾਜ਼ ਕੇਦਰੀਚੈਨਲ ਵਿੱਚੋ ਅਾਵੇਗੀ ੤"
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -847,7 +859,12 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"ੲਿਸ ਤੋ ਪਹਿਲ੾ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲੲੀ ਤਿਅਾਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ ਬਾਕੀ ਹਨ ੤"
-"ਸੈਟਅੱਪ ੲੇਜੰਟ ਤੁਹਾਨੰੂ ੲਿੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ ੤ ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ"
-"ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੰੂ ਜਾਰੀ ਰਹਿਣ ਲੲੀ ਦਬਾੳੁ ੤"
+"ੲਿਸ ਤੋ ਪਹਿਲ੾ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲੲੀ ਤਿਅਾਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ ਬਾਕੀ ਹਨ ੤ਸੈਟਅੱਪ ੲੇਜੰਟ "
+"ਤੁਹਾਨੰੂ ੲਿੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ ੤ ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੰੂ "
+"ਜਾਰੀ ਰਹਿਣ ਲੲੀ ਦਬਾੳੁ ੤"
 
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr ""
+#~ "ੳੁਪਭੋਗਤਾ-ਨਾੳੁ '%s' ੳੁਲਟ ਸਿਸਟਮ ਖਾਤਾ ਹੈ ੤ ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ੳੁਪਭੋਗਤਾ-ਨਾੳੁ ਨਿਰਧਾਰਿਤ ਕਰੋ ੤"

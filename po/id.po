@@ -7,13 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2004-03-23 19:39+0700\n"
 "Last-Translator: Teguh DC <dheche@brawijaya.ac.id>\n"
 "Language-Team: LDP Indonesia <http://www.linux.or.id>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "Keluar"
 
 #. # eula_strings.py
 #. #
@@ -50,7 +66,9 @@ msgstr "Tidak, Saya tidak setuju"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Apakah anda ingin membaca ulang atau mempertimbangkan kembali Persetujuan Lisensi?"
+msgstr ""
+"Apakah anda ingin membaca ulang atau mempertimbangkan kembali Persetujuan "
+"Lisensi?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -335,51 +353,47 @@ msgstr "Selamat Datang"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "Otentikasi"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 msgid "Firewall configuration"
 msgstr "Konfigurasi Firewall"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 msgid "Keyboard configuration"
 msgstr "Konfigurasi Keyboard"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 msgid "Network configuration"
 msgstr "Konfigurasi Jaringan"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 msgid "Printer configuration"
 msgstr "Konfigurasi Printer"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr "Layanan sistem"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 msgid "Sound card configuration"
 msgstr "Konfigurasi sound card"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Konfigurasi zona waktu"
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr "Jalankan Alat bantu"
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr "Keluar"
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "Pilih item yang ingin anda modifikasi"
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
@@ -419,8 +433,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"Jika anda memiliki CD seperti yang terlihat di bawah ini, anda dapat menginstal "
-"paket dengan cara memasukkan CD dan menekan tombol yang sesuai."
+"Jika anda memiliki CD seperti yang terlihat di bawah ini, anda dapat "
+"menginstal paket dengan cara memasukkan CD dan menekan tombol yang sesuai."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -432,8 +446,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan "
-"tekan \"OK\" untuk melanjutkan."
+"Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan \"OK"
+"\" untuk melanjutkan."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -443,109 +457,121 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
-"program autorun tidak dapat ditemukan pada cd. Tekan \"OK\" untuk melanjutkan."
+"program autorun tidak dapat ditemukan pada cd. Tekan \"OK\" untuk "
+"melanjutkan."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "Account User"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"Disarankan agar anda membuat account user personal untuk penggunaan normal (non-"
-"administratif). Untuk membuat account personal, sediakan informasi yang diminta."
+"Disarankan agar anda membuat account user personal untuk penggunaan normal "
+"(non-administratif). Untuk membuat account personal, sediakan informasi yang "
+"diminta."
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "Nama_user:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "Nama L_engkap:"
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "_Password:"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "Konfir_masi Password:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Jika anda membutuhkan otentikasi jaringan seperti Kerberos atau NIS, silahkan"
-"klik tombol Pergunakan Login Jaringan"
+"Jika anda membutuhkan otentikasi jaringan seperti Kerberos atau NIS, "
+"silahkanklik tombol Pergunakan Login Jaringan"
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "Gunakan _Login Jaringan..."
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "Sangat disarankan agar anda membuat account user personal.  Jika "
-"anda ingin melanjutkan tanpanya, anda hanya akan dapat masuk dengan account "
-"root dimana account ini disiapkan hanya untuk keperluan administratif."
+msgstr ""
+"Sangat disarankan agar anda membuat account user personal.  Jika anda ingin "
+"melanjutkan tanpanya, anda hanya akan dapat masuk dengan account root dimana "
+"account ini disiapkan hanya untuk keperluan administratif."
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "Lanjutkan"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "Buat _account"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Password tidak cocok. Masukkan password kembali."
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Password terlalu pendek. Pergunakan paling tidak 6 karakter."
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Nama user '%s' merupakan account yang dipersiapkan untuk sistem. Silahkan "
-"pilih nama user yang lain."
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "Nama user harus kurang dari 33 karakter."
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "Nama user tidak boleh dimulai dengan angka."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -554,7 +580,7 @@ msgstr ""
 "Nama user '%s' mengandung whitespace. Jangan memasukkan whitespace pada nama "
 "user"
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -563,16 +589,16 @@ msgstr ""
 "Nama user '%s' mengandung karakter tanda baca. Jangan mempergunakan tanda "
 "baca pada nama user."
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Nama user '%s' mengandung huruf besar. Jangan mempergunakan huruf besar "
-"pada nama user"
+"Nama user '%s' mengandung huruf besar. Jangan mempergunakan huruf besar pada "
+"nama user"
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -581,7 +607,7 @@ msgstr ""
 "Nama user '%s' mengandung karakter yang tidak valid. Pergunakan hanya "
 "karakter ASCII."
 
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:322
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
@@ -589,7 +615,7 @@ msgstr ""
 "ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -652,8 +678,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"Koneksi dengan %s tidak dapat terjalin. Kemungkinan %s tidak tersedia "
-"atau setting firewall pada komputer anda menghalangi koneksi NTP."
+"Koneksi dengan %s tidak dapat terjalin. Kemungkinan %s tidak tersedia atau "
+"setting firewall pada komputer anda menghalangi koneksi NTP."
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -707,8 +733,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Sekarang sistem anda telah siap dipergunakan. Klik tombol \"Lanjutkan\" "
-"yang ada di pojok kanan bawah untuk melanjutkan."
+"Sekarang sistem anda telah siap dipergunakan. Klik tombol \"Lanjutkan\" yang "
+"ada di pojok kanan bawah untuk melanjutkan."
 
 #.
 #. networking.py - networking module for firstboot
@@ -848,3 +874,9 @@ msgstr ""
 "dipergunakan. Setup Agent akan memandu anda melakukan beberapa konfigurasi "
 "dasar. Tekan tombol \"Lanjutkan\" pada pojok kanan bawah untuk melanjutkan."
 
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr ""
+#~ "Nama user '%s' merupakan account yang dipersiapkan untuk sistem. Silahkan "
+#~ "pilih nama user yang lain."

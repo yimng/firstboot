@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2004-03-09 09:50+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <fedora-trans-zh_tw@redhat.com>\n"
@@ -16,6 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.3\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "離開"
 
 #. # eula_strings.py
 #. #
@@ -337,51 +353,47 @@ msgstr "歡迎"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "認證"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 msgid "Firewall configuration"
 msgstr "防火牆設定"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 msgid "Keyboard configuration"
 msgstr "鍵盤設定"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 msgid "Network configuration"
 msgstr "網路設定"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 msgid "Printer configuration"
 msgstr "印表機設定"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr "系統服務"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 msgid "Sound card configuration"
 msgstr "音效卡設定"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "時區設定"
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr "執行工具"
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr "離開"
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "請選擇您想要修改的項目 "
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "設定代理程式"
 
@@ -440,7 +452,8 @@ msgstr "偵測不到任何光碟片。  請放入光碟片到光碟機中，並�
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續。"
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -448,15 +461,17 @@ msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續�
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "使用者帳號"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -465,24 +480,24 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號以做一般用途（非系統管理）， 如要建立一個個"
 "人的帳號，請提供所要求的資訊。"
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "使用者名稱(_U)："
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "全名(_E)："
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "密碼(_P)："
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "密碼確認(_M)："
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -490,12 +505,19 @@ msgstr ""
 "假如您需要使用例如 Kerberos 或 NIS 等的網路認證方式，請點選『使用網路登入』的"
 "按鈕。"
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "使用網路登入(_L)..."
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -504,79 +526,83 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號，在您建立一個帳號之前， 假如您選擇繼續，您"
 "便只能以保留做系統管理使用的 root 帳號登入。"
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "繼續(_C)"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "建立帳號(_A)"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "密碼不符。 請再試一次。"
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr "使用者名稱 '%s' 是保留的系統帳號，請指定另一個使用者名稱。"
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "使用者名稱的長度必須在 33 個字元以內。"
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "使用者名稱不能以數字開頭。"
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "使用者名稱 '%s' 含有空白，使用者名稱中不能含有空白。"
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "使用者名稱 '%s' 含有標點符號，請勿使用標點符號在使用者名稱上。"
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "使用者名稱 '%s' 含有大寫字母，請勿使用大寫字母在使用者名稱上。"
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
-#: ../src/modules/create_user.py:291
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:322
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -825,6 +851,11 @@ msgid ""
 msgstr ""
 "在使用您的系統之前，要先完成幾個步驟。 設定代理程式現在將引導您做一些基本的設"
 "定。 請點選在右下角的 『下一步』 按鈕以繼續。"
+
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr "使用者名稱 '%s' 是保留的系統帳號，請指定另一個使用者名稱。"
 
 #~ msgid "Mouse configuration "
 #~ msgstr "滑鼠設定 "
@@ -1153,4 +1184,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-

@@ -6,13 +6,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2001-12-25 06:58+0530\n"
 "Last-Translator: Jatin Nansi <jnansi@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr ""
 
 #. # eula_strings.py
 #. #
@@ -334,57 +350,53 @@ msgstr "स्वागत"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr ""
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 #, fuzzy
 msgid "Firewall configuration"
 msgstr "जालक्रम विन्यास बदलें..."
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 #, fuzzy
 msgid "Keyboard configuration"
 msgstr "जालक्रम विन्यास बदलें..."
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 #, fuzzy
 msgid "Network configuration"
 msgstr "जालक्रम विन्यास बदलें..."
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 #, fuzzy
 msgid "Printer configuration"
 msgstr "जालक्रम विन्यास बदलें..."
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr ""
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 #, fuzzy
 msgid "Sound card configuration"
 msgstr "जालक्रम विन्यास बदलें..."
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 #, fuzzy
 msgid "Timezone configuration"
 msgstr "जालक्रम विन्यास बदलें..."
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr ""
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr ""
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr ""
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 #, fuzzy
 msgid "Setup Agent"
 msgstr "रेड हेट व्यवस्था प्रतिनिधि"
@@ -455,15 +467,17 @@ msgstr ""
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "उपयोगकर्ता लेखा"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -472,24 +486,24 @@ msgstr ""
 "यह अनुमोदित है कि आप साधारण (अप्रशासनिक) प्रयोग के लिए एक व्यक्तिगत उपयोगकर्ता लेखा "
 "बनाएँ। एक व्यक्तिगत लेखा बनाने के लिए, माँगी गई जानकारी को दें।"
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "उपयोगकर्तानाम:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "पूरा नामः"
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "शब्दकूट:"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "शब्दकूट निश्चित करेंः"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -497,12 +511,19 @@ msgstr ""
 "यदि आप करबरोस या NIS जैसे जालक्रम प्रमाणिकता का प्रयोग करना चाहते हैं, कृपया 'जालक्रम "
 "सञारंभ का प्रयोग करें' बटन दबाएँ।"
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "जालक्रम सञारंभ का प्रयोग करें..."
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -511,44 +532,46 @@ msgstr ""
 "यह अनुमोदित है कि एक व्यक्तिगत उपयोगकर्ता लेखा बनाएँ। अगर आप एक लेखा के बिना आगे जाएँगे, "
 "आपको सिर्फ root लेखा में ही सञारंभ कर सकते है, जो केवल प्रशासनिक प्रयोगों के लिए होते हैं।"
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "सतत"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "लेखा बनाएँ"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "शब्दकूट मिलते नहीं हैं। कृपया शब्दकूट पुनःप्रवेशित करें।"
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "शब्दकूट बहुत छोटा है। कृपया कम से कम ६ अक्षरों का प्रयोग करें।"
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr "'%s' उपयोगकर्तानाम एक संरक्षित तंञ लेखा है। कृपया अन्य उपयोगकर्तानाम विशिष्ट करें।"
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "उपयोगकर्ता नाम की लंबाई ३३ अक्षरों से कम होना चाहिए।"
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "उपयोगकर्तानाम एक अंक से आरंभ नहीं हो सकता।"
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -557,7 +580,7 @@ msgstr ""
 "'%s' उपयोगकर्ता नाम में रिक्त-स्थान समाहित हैं। कृपया उपयोगकर्तानाम में रिक्त-स्थान का "
 "प्रयोग न करें।"
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -566,7 +589,7 @@ msgstr ""
 "'%s' उपयोगकर्तानाम में विराम चिन्ह अक्षरों समाहित हैं। कृपया उपयोगकर्तानाम में विराम "
 "चिन्ह का प्रयोग न करें।"
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -575,7 +598,7 @@ msgstr ""
 "'%s' उपयोगकर्तानाम में अप्परकेस अक्षरों समाहित हैं। कृपया उपयोगकर्तानाम में अप्परकेस अक्षरों "
 "का प्रयोग न करें।"
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -583,13 +606,13 @@ msgid ""
 msgstr ""
 "'%s' उपयोगकर्तानाम में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:322
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "शब्दकूट में अनुचित अक्षरों समाहित हैं। कृपया सिर्फ ASCII अक्षरों का प्रयोग करें।"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -845,6 +868,12 @@ msgstr ""
 "आपके तंञ को प्रयोग योग्य करने के लिए कुछ कदम ओर भी हैं। रेड हेट जमावट प्रतिनिधि अब आपको "
 "कुछ मौलिक विन्यासों के माध्यम से आपका मार्गदर्शन करेगा।कृपया निचे दाँयें कोने में  \"अगला\" "
 "बटन दबाकर कर सतत करें।"
+
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr ""
+#~ "'%s' उपयोगकर्तानाम एक संरक्षित तंञ लेखा है। कृपया अन्य उपयोगकर्तानाम विशिष्ट करें।"
 
 #~ msgid "Firstboot has already been run once on this system.\n"
 #~ msgstr "प्रथमबूट पहले से इस तंञ पर एक बार चलाया जा चुका है।\n"

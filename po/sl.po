@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2004-03-28 15:19+0200\n"
 "Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
 "Language-Team: slovenščina <translation-team-sl@lists.sourceforge.net>\n"
@@ -18,6 +18,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "Izhod"
 
 #. # eula_strings.py
 #. #
@@ -340,51 +356,47 @@ msgstr "Dobrodošli"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr "Overjanje"
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 msgid "Firewall configuration"
 msgstr "Nastavitve požarnega zidu"
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 msgid "Keyboard configuration"
 msgstr "Nastavitve tipkovnice"
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 msgid "Network configuration"
 msgstr "Omrežne nastavitve"
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 msgid "Printer configuration"
 msgstr "Nastavitve tiskalnika"
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr "Storitve Sistema"
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 msgid "Sound card configuration"
 msgstr "Nastavitev zvočne kartice"
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Nastavitev časovnega pasu"
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr "Orodje za zagon"
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr "Izhod"
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr "Izberite kaj želite spremeniti"
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "Nastavitveni agent"
 
@@ -445,23 +457,27 @@ msgstr ""
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Programa autorun ni moč najti na CD. Kliknite \"V redu\" za nadaljevanje."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Programa autorun ni moč najti na CD. Kliknite \"V redu\" za nadaljevanje."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "Uporabniški račun"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -470,24 +486,24 @@ msgstr ""
 "Priporoča se, da ustvarite osebni uporabniški račun za običajno (ne-"
 "skrbniško) rabo. Za to podajte zahtevane podatke."
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "_Uporabniško ime:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "_Polno ime:"
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "_Geslo:"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "Po_trdite geslo:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -495,12 +511,19 @@ msgstr ""
 "Če morate uporabljati omrežno avtentikacijo kot je Kerberos ali NIS, prosim, "
 "kliknite gumb Uporabi omrežno prijavo."
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "Uporabi _omrežno prijavo..."
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -510,46 +533,46 @@ msgstr ""
 "računa, se boste lahko prijavili le kot root, ki pa je rezerviran zgolj za "
 "skrbniško rabo."
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "_Nadaljuj"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "Izdelaj _račun"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Gesli se razlikujeta. Prosim, znova vnesite geslo."
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Geslo je prekratko. Prosim, uporabite vsaj 6 znakov."
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Uporabniško ime '%s' je že ime rezerviranega sistemskega računa. Prosim, "
-"določite novo uporabniško ime."
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "Uporabniško ime mora biti dolgo manj kot 33 znakov."
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "Uporabniško ime se ne sme začeti s številko."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -558,7 +581,7 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje prazne znake. Prosim, ne vključujte praznih "
 "znakov v uporabniško ime."
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -567,7 +590,7 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje ločila. Prosim, ne vključujte ločil v "
 "uporabniško ime."
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -576,7 +599,7 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje velike črke. Prosim, ne uporabljajte velikih "
 "črk v uporabniškem imenu."
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -585,15 +608,18 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake "
 "ASCII."
 
-#: ../src/modules/create_user.py:291
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:322
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Geslo vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -845,6 +871,13 @@ msgstr ""
 "Nastavitveni agent vas bo vodil po nekaj osnovnih nastavitvah. Za "
 "nadaljevanje kliknite gumb \"Naprej\" v spodnjem desnem kotu."
 
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr ""
+#~ "Uporabniško ime '%s' je že ime rezerviranega sistemskega računa. Prosim, "
+#~ "določite novo uporabniško ime."
+
 #~ msgid "Firstboot has already been run once on this system.\n"
 #~ msgstr "Firstboot je bil v tem sistemu že pognan.\n"
 
@@ -929,4 +962,3 @@ msgstr ""
 
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "_Ne, svojega sistema ne želim registrirati."
-

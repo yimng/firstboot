@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"POT-Creation-Date: 2004-04-07 16:48-0400\n"
 "PO-Revision-Date: 2003-09-21 15:54+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -14,6 +14,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
+
+#.
+#. constants_text.py: text mode constants
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr ""
 
 #. # eula_strings.py
 #. #
@@ -335,57 +351,53 @@ msgstr "Chào mừng"
 #. #
 #. # I18N
 #. #
-#: ../src/textWindow.py:33
+#: ../src/textWindow.py:34
 msgid "Authentication"
 msgstr ""
 
-#: ../src/textWindow.py:34
+#: ../src/textWindow.py:35
 #, fuzzy
 msgid "Firewall configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:35
+#: ../src/textWindow.py:36
 #, fuzzy
 msgid "Keyboard configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:36
+#: ../src/textWindow.py:37
 #, fuzzy
 msgid "Network configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:37
+#: ../src/textWindow.py:38
 #, fuzzy
 msgid "Printer configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:38
+#: ../src/textWindow.py:39
 msgid "System services"
 msgstr ""
 
-#: ../src/textWindow.py:39
+#: ../src/textWindow.py:40
 #, fuzzy
 msgid "Sound card configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:40
+#: ../src/textWindow.py:41
 #, fuzzy
 msgid "Timezone configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:42
+#: ../src/textWindow.py:43
 msgid "Run Tool"
 msgstr ""
 
-#: ../src/textWindow.py:42
-msgid "Exit"
-msgstr ""
-
-#: ../src/textWindow.py:44
+#: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
 msgstr ""
 
-#: ../src/textWindow.py:50
+#: ../src/textWindow.py:51
 #, fuzzy
 msgid "Setup Agent"
 msgstr "Trợ tá Cài đặt Red Hat"
@@ -456,15 +468,17 @@ msgstr "Không tìm thấy chương trình autorun trên CD. Nhấn \"OK\" để
 #. I think system-config-packages will do a umount, but just in case it doesn't...
 #. Yep, system-config-packages has already umounted the disc, so fall through and go on
 #. Remove the focus grab of the gtkInvisible widget
+#. import libuser
 #. #
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/create_user.py:22
+#: ../src/modules/create_user.py:39
 msgid "User Account"
 msgstr "Tài khoản Người dùng"
 
-#: ../src/modules/create_user.py:48
+#. self.admin = libuser.admin()
+#: ../src/modules/create_user.py:65
 msgid ""
 "It is recommended that you create a personal user account for normal (non-"
 "administrative) use.  To create a personal account, provide the requested "
@@ -474,24 +488,24 @@ msgstr ""
 "thường (không phải những công việc quản lý hệ thống). Để tạo tài khoản cá "
 "nhân, hãy cung cấp các thông tin được yêu cầu."
 
-#: ../src/modules/create_user.py:58
+#: ../src/modules/create_user.py:75
 msgid "_Username:"
 msgstr "_Tên người dùng:"
 
-#: ../src/modules/create_user.py:65
+#: ../src/modules/create_user.py:82
 msgid "Full Nam_e:"
 msgstr "_Họ và tên:"
 
-#: ../src/modules/create_user.py:72
+#: ../src/modules/create_user.py:89
 msgid "_Password:"
 msgstr "_Mật khẩu:"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:96
 msgid "Confir_m Password:"
 msgstr "_Xác nhận mật khẩu:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:112
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -499,12 +513,19 @@ msgstr ""
 "Nếu bạn cần dùng xác thực mạng như Kerberos hay NIS, vui lòng nhấn nút Dùng "
 "Đăng nhập Mạng."
 
-#: ../src/modules/create_user.py:105
+#: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
 msgstr "_Dùng Đăng nhập Mạng..."
 
+#. users = self.admin.enumerateUsersFull()
+#. self.normalUsersList = []
+#. for userEnt in users:
+#. uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+#. if uidNumber == 500:
+#. self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+#. self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 #. If they've run authconfig, don't pop up messageDialog
-#: ../src/modules/create_user.py:141
+#: ../src/modules/create_user.py:158
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -514,66 +535,67 @@ msgstr ""
 "có tài khoản cá nhân, bạn chỉ có thể đăng nhập với quyền root, nhưng chỉ nên "
 "dùng root cho các thao tác quản lý hệ thống mà thôi."
 
-#: ../src/modules/create_user.py:149
+#: ../src/modules/create_user.py:166
 msgid "_Continue"
 msgstr "_Tiếp tục"
 
-#: ../src/modules/create_user.py:150
+#: ../src/modules/create_user.py:167
 msgid "Create _account"
 msgstr "_Tạo tài khoản"
 
 #. Check for ascii-only strings
-#: ../src/modules/create_user.py:176
+#: ../src/modules/create_user.py:193
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Mật khẩu không khớp. Vui lòng nhập lại mật khẩu."
 
-#: ../src/modules/create_user.py:184
+#: ../src/modules/create_user.py:201
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Mật khẩu quá ngắn. Hãy dùng ít nhất 6 ký tự."
 
-#: ../src/modules/create_user.py:195
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Tên người dùng '%s' được dành riêng cho hệ thống. Vui lòng dùng tên khác."
-
+#. user = self.admin.lookupUserByName(username)
+#. if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+#. self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " #. "specify another username." % username))
+#. self.usernameEntry.set_text("")
+#. self.usernameEntry.grab_focus()
+#. return None
 #. Check for ascii-only strings
+#. XXX: using libuser means that we get killed by selinux so for now
+#. let's just exec useradd, etc.  this is a hack that we need to
+#. back off of for the FC2 release
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
-#: ../src/modules/create_user.py:242
+#: ../src/modules/create_user.py:273
 msgid "The user name must be less than 33 characters long."
 msgstr "Tên người dùng phải ngắn hơn 33 ký tự."
 
-#: ../src/modules/create_user.py:248
+#: ../src/modules/create_user.py:279
 msgid "The user name may not begin with a number."
 msgstr "Tên người dùng không thể bắt đầu bằng số."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
-#: ../src/modules/create_user.py:260
+#: ../src/modules/create_user.py:291
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "Tên người dùng '%s' chứa khoảng trắng. Vui lòng loại bỏ khoảng trắng."
 
-#: ../src/modules/create_user.py:267
+#: ../src/modules/create_user.py:298
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "Tên người dùng '%s' chứa ký tự phân cách. Vui lòng loại bỏ chúng."
 
-#: ../src/modules/create_user.py:274
+#: ../src/modules/create_user.py:305
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "Tên người dùng '%s' chứa chữ hoa. Vui lòng không dùng chữ hoa."
 
-#: ../src/modules/create_user.py:281
+#: ../src/modules/create_user.py:312
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -582,13 +604,13 @@ msgstr ""
 "Tên người dùng '%s' chứa ký tự không hợp lệ. Vui lòng chỉ dùng những ký tự "
 "ASCII."
 
-#: ../src/modules/create_user.py:291
+#: ../src/modules/create_user.py:322
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Mật khẩu chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:334
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -843,6 +865,12 @@ msgstr ""
 "Bạn cần thực hiện vài bước nữa, trước khi hệ thống có thể sẵn sàng hoạt "
 "động. Bây giờ, Trợ tá Cài đặt Red Hat sẽ hướng dẫn bạn thực hiện các cấu "
 "hình cơ bản. Vui lòng nhấn nút \"Tới\" tại góc dưới, bên phải để tiếp tục."
+
+#~ msgid ""
+#~ "The username '%s' is a reserved system account.  Please specify another "
+#~ "username."
+#~ msgstr ""
+#~ "Tên người dùng '%s' được dành riêng cho hệ thống. Vui lòng dùng tên khác."
 
 #~ msgid "Firstboot has already been run once on this system.\n"
 #~ msgstr "Firstboot đã chạy trên hệ thống này rồi.\n"
