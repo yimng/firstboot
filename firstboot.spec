@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.5
-Release: 5
+Release: 6
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Feb 18 2003 Brent Fox <bfox@redhat.com> 1.0.5-6
+- add mnemonics to up2date.py (bug #84487)
+
 * Wed Feb 12 2003 Brent Fox <bfox@redhat.com> 1.0.5-5
 - only launch r-c-xfree86 if in runlevel 3 and XF86Config does not exist (bug #84135)
 
