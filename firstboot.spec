@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.26
+Version: 1.3.27
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -17,7 +17,7 @@ Requires: python
 Requires: usermode >= 1.36
 Requires: metacity
 Requires: rhpl
-Requires: system-config-date
+Requires: system-config-date >= 1.7.9
 Requires: system-config-display
 Requires: system-config-language
 Requires: system-config-keyboard
@@ -76,6 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Sep 28 2004 Nils Philippsen <nphilipp@redhat.com> - 1.3.27-1
+- let timezone only be configured on --reconfig (#133748)
+- require system-config-date >= 1.7.9
+
 * Thu Sep 23 2004 Adrian Likins <alikins@redhat.com> - 1.3.26-1
 - applied patch from #132736
 
