@@ -7,14 +7,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: 2004-04-15 12:18-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-03 16:00-0400\n"
 "PO-Revision-Date: 2004-05-01 20:06+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.0.2\n"
 
 #.
@@ -433,8 +433,8 @@ msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
-"إذا كان لديك أي من الأقراص مُدمجة التالية يمكنك تثبيت حزم البرامج منها "
-"بإدخال القُرص المُدمج والضّغط على الزر المناسب."
+"إذا كان لديك أي من الأقراص مُدمجة التالية يمكنك تثبيت حزم البرامج منها بإدخال "
+"القُرص المُدمج والضّغط على الزر المناسب."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -446,15 +446,16 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في الالقارئ و "
-"اضغط \"موافق\" للإستمرار."
+"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في الالقارئ و اضغط "
+"\"موافق\" للإستمرار."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
@@ -480,9 +481,8 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
-"يُستحسن إنشاء حساب شخصي للإستخدام العادي (لغير أغراض "
-"الإدارة).  لإنشاء حساب شخصي، أدخل البيانات "
-"المطلوبة."
+"يُستحسن إنشاء حساب شخصي للإستخدام العادي (لغير أغراض الإدارة).  لإنشاء حساب "
+"شخصي، أدخل البيانات المطلوبة."
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -506,8 +506,8 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"إذا كنت تحتاج استخدام توثيق الشبكة مثل كِرْبِروس أو NIS، رجاء اضغط على "
-"زرّ استخدام تسجيل الدّخول الشّبكي."
+"إذا كنت تحتاج استخدام توثيق الشبكة مثل كِرْبِروس أو NIS، رجاء اضغط على زرّ "
+"استخدام تسجيل الدّخول الشّبكي."
 
 #: ../src/modules/create_user.py:122
 msgid "Use Network _Login..."
@@ -527,9 +527,8 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"يُستحسن إنشاء حساب شخصي، إذا "
-"استمريت بدون حساب، يمكنك تسجيل الدخول فقط بحساب root، "
-"والذي هو مُخصّص للاستخدام الإداريّ فقط."
+"يُستحسن إنشاء حساب شخصي، إذا استمريت بدون حساب، يمكنك تسجيل الدخول فقط بحساب "
+"root، والذي هو مُخصّص للاستخدام الإداريّ فقط."
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -576,8 +575,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"اسم المستخدم'%s' يحتوي على حروف مسافيّة. برجاء عدم استخدام الحروف المسافيّة "
-"في اسم المستخدم."
+"اسم المستخدم'%s' يحتوي على حروف مسافيّة. برجاء عدم استخدام الحروف المسافيّة في "
+"اسم المستخدم."
 
 #: ../src/modules/create_user.py:298
 #, python-format
@@ -594,8 +593,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"اسم المستخدم '%s' يحتوي على حروف استهلاليّة. الرجاء عدم استخدام "
-"حروف استهلاليّة في اسم المستخدم."
+"اسم المستخدم '%s' يحتوي على حروف استهلاليّة. الرجاء عدم استخدام حروف "
+"استهلاليّة في اسم المستخدم."
 
 #: ../src/modules/create_user.py:312
 #, python-format
@@ -605,13 +604,15 @@ msgid ""
 msgstr "اسم المستخدم '%s' يحتوي على حروف خطأ. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:322
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "كلمة المرور تحتوي على حروف خطأ. الرجاء استخدام حروف ASCII فقط."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "الاسم '%s' يحتوي على حروف خطأ. الرّجاء استخدام حروف ASCII فقط."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -669,8 +670,8 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
-"لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح متوفّر أو أن "
-"إعدادات الجدار الناري الخاص بك تعترض بإتصالات NTP."
+"لم يتم الاتصال مع '%s'. إمّا أن '%s' غير متاح متوفّر أو أن إعدادات الجدار "
+"الناري الخاص بك تعترض بإتصالات NTP."
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -724,8 +725,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"تم إعداد نظامك و هو جاهز الآن للإستخدام. رجاء اضغظ زر \"التالي\" "
-"في الركن الأيمن للإستمرار."
+"تم إعداد نظامك و هو جاهز الآن للإستخدام. رجاء اضغظ زر \"التالي\" في الركن "
+"الأيمن للإستمرار."
 
 #.
 #. networking.py - networking module for firstboot
@@ -859,7 +860,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"بقي بعض الخطوات الأخيرة ليصبح النظام جاهز للإستعمال. "
-"عميل التثبيت سوف يقوم بإرشادك خلال بعض التّهيئة الأساسية. رجاء "
-"اضغط زرّ \"التالي\" في الركن الأيمن للمتابعة."
-
+"بقي بعض الخطوات الأخيرة ليصبح النظام جاهز للإستعمال. عميل التثبيت سوف يقوم "
+"بإرشادك خلال بعض التّهيئة الأساسية. رجاء اضغط زرّ \"التالي\" في الركن الأيمن "
+"للمتابعة."
