@@ -12,10 +12,14 @@ import rhpl.executil as executil
 ##
 ## I18N
 ## 
-import gettext
-gettext.bindtextdomain ("firstboot", "/usr/share/locale")
-gettext.textdomain ("firstboot")
-_=gettext.gettext
+#import gettext
+#gettext.bindtextdomain ("firstboot", "/usr/share/locale")
+#gettext.textdomain ("firstboot")
+#_=gettext.gettext
+
+from rhpl.translate import _, N_
+from rhpl import translate
+translate.textdomain("firstboot")
 
 import crypt,whrandom
 
@@ -36,7 +40,8 @@ def cryptPassword(password, useMD5 = 1):
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
-    moduleName = (_("System User"))
+    moduleName = _("System User")
+    windowName = moduleName
 
     def launch(self, doDebug = None):
         self.doDebug = doDebug

@@ -33,11 +33,9 @@ import kudzu
 ##
 ## I18N
 ## 
-import gettext
-gettext.bindtextdomain ("firstboot", "/usr/share/locale")
-gettext.textdomain ("firstboot")
-_=gettext.gettext
-
+from rhpl.translate import _, N_
+from rhpl import translate
+translate.textdomain("firstboot")
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 45
