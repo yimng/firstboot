@@ -112,8 +112,5 @@ class childWindow:
             except:
                 pass
                 
-    def write_file(self):
-        pass
-
     def apply(self, notebook):
-        pass
+        return 1
