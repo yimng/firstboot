@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.4
-Release: 8
+Version: 1.0.5
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -71,6 +71,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Jan 31 2003 Brent Fox <bfox@redhat.com> 1.0.5-1
+- new strings in up2date module
+
 * Wed Jan 29 2003 Brent Fox <bfox@redhat.com> 1.0.4-8
 - don't run firstboot in runlevel 3 at all (bug #78239)
 - fix return tuple if no soundcards are found in soundcard_gui.py
