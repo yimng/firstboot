@@ -165,7 +165,7 @@ class firstbootWindow:
         self.bb.pack_start(self.nextButton)
 	# Add the button box to the bottom of the box which contains the notebook.
 
-        self.internalVBox.pack_start(self.bb, gtk.TRUE)
+        self.internalVBox.pack_start(self.bb, gtk.FALSE)
 
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
