@@ -75,6 +75,8 @@ class firstbootWindow:
         self.winHandler = self.win.connect ("key-release-event", self.keyRelease)
         self.win.realize()
 
+        self.pageHistory = []
+
         mainVBox = gtk.VBox()
 
         #This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
@@ -131,9 +133,9 @@ class firstbootWindow:
         self.notebook = gtk.Notebook()
         if self.doDebug:
             print "starting firstbootWindow", doReconfig, doDebug                    
-            self.modulePath = ('modules/')
+            #self.modulePath = ('modules/')
 	    #self.modulePath = ('/usr/src/rhn/up2date/firstboot')
-	    #self.modulePath = ('/usr/share/firstboot/modules')
+	    self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)            
             self.notebook.set_show_tabs(gtk.FALSE)
             self.notebook.set_scrollable(gtk.TRUE)
@@ -295,6 +297,8 @@ class firstbootWindow:
 
         # record the current page as the new previous page
         self.prevPage = self.moduleNameToNotebookIndex[module.moduleName]
+        self.pageHistory.append(self.moduleNameToNotebookIndex[module.moduleName])
+        
         if result != None:
 	    if self.nextPage:
 		self.notebook.set_current_page(self.nextPage)
@@ -325,12 +329,12 @@ class firstbootWindow:
         self.backButton.set_sensitive(gtk.TRUE)
 
     def backClicked(self, *args):
-        if self.prevPage:
-            self.notebook.set_current_page(self.prevPage)
-            module = self.moduleList[self.prevPage]
-            self.prevPage = None
+        if len(self.pageHistory):
+            self.notebook.set_current_page(self.pageHistory[-1])
+            del self.pageHistory[-1]
         else:
             self.notebook.prev_page()
+            
         #Call setPointer to make the left hand pointer move to the correct pointer
         self.setPointer(self.notebook.get_current_page())
 
