@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
+"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
 "PO-Revision-Date: 2003-03-04 11:57+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -65,6 +65,10 @@ msgstr ""
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot kör inte på körnivå 3."
+
+#: ../src/firstbootWindow.py:258
+msgid "_Next"
+msgstr ""
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -188,9 +192,10 @@ msgid "The user name may not begin with a number."
 msgstr "Användarnamnet får inte börja med en siffra."
 
 #: ../src/modules/create_user.py:252
+#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the %s."
+"the user name."
 msgstr ""
 "Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i %s."
 

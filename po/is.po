@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
+"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <ra@ra.is>\n"
@@ -60,6 +60,10 @@ msgstr ""
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot keyrir ekki í keyrslustigi 3."
+
+#: ../src/firstbootWindow.py:258
+msgid "_Next"
+msgstr ""
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -183,9 +187,10 @@ msgid "The user name may not begin with a number."
 msgstr "Notandaheitið má ekki byrja á tölu."
 
 #: ../src/modules/create_user.py:252
+#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the %s."
+"the user name."
 msgstr ""
 "Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í %s."
 

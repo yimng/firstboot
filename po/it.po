@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
+"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
 "PO-Revision-Date: 2003-02-25 08:55+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -62,6 +62,10 @@ msgstr ""
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot non puó essere eseguito nel runlevel 3."
+
+#: ../src/firstbootWindow.py:258
+msgid "_Next"
+msgstr ""
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -187,9 +191,10 @@ msgid "The user name may not begin with a number."
 msgstr "Il nome utente non dovrebbe iniziare con un numero."
 
 #: ../src/modules/create_user.py:252
+#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the %s."
+"the user name."
 msgstr ""
 "Il nome utente '%s' contiene degli spazi.  Prego non includere alcun spazio "
 "nel %s."

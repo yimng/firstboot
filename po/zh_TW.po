@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Fri May 16 14:47:13 2003\n"
+"POT-Creation-Date: Mon Jun  9 15:00:58 2003\n"
 "PO-Revision-Date: 2003-02-19 08:13+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
@@ -58,6 +58,10 @@ msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 #: ../src/firstboot.py:120
 msgid "Firstboot does not run in runlevel 3."
 msgstr "Firstboot 不會在執行等級 3 執行。"
+
+#: ../src/firstbootWindow.py:258
+msgid "_Next"
+msgstr ""
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:73
 msgid "Additional CDs"
@@ -176,9 +180,10 @@ msgid "The user name may not begin with a number."
 msgstr "使用者名稱不能以數字開頭。"
 
 #: ../src/modules/create_user.py:252
+#, fuzzy
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the %s."
+"the user name."
 msgstr "使用者名稱 '%s' 含有空白，%s 中不能含有空白。"
 
 #: ../src/modules/create_user.py:259

@@ -22,6 +22,13 @@ import gobject
 import functions
 import firstbootBackend
 
+##
+## I18N
+## 
+from rhpl.translate import _, N_
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
+
 class firstbootWindow:
     def __init__(self, xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb):
         self.xserver_pid = xserver_pid
@@ -247,6 +254,10 @@ class firstbootWindow:
         self.bb.pack_start(self.backButton)
         # Create the "go forward" button.
         self.nextButton = gtk.Button(stock='gtk-go-forward')
+        label = self.nextButton.get_children()[0].get_children()[0].get_children()[1]
+        label.set_text(_("_Next"))
+        label.set_property("use_underline", gtk.TRUE)
+        
         self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
 
         self.bb.pack_start(self.nextButton)
