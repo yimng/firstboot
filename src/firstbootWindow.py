@@ -228,16 +228,6 @@ class firstbootWindow:
         # Create a lower hbox that will contain the close button and button box
         self.lowerHBox = gtk.HBox()
 
-        # Create an exit button
-        self.left_bb = gtk.HButtonBox()
-        self.left_bb.set_layout(gtk.BUTTONBOX_START)
-        self.left_bb.set_border_width(10)
-        self.left_bb.set_spacing(10)
-        self.exitButton = gtk.Button(stock='gtk-quit')
-        self.exitButton.connect("clicked", self.writeSysconfigFile)
-        self.left_bb.pack_start(self.exitButton)
-        self.lowerHBox.pack_start(self.left_bb, gtk.FALSE)
-        
         # Create a button box to handle navigation.
         self.bb = gtk.HButtonBox()
         self.bb.set_layout(gtk.BUTTONBOX_END)
