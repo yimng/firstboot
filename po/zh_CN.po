@@ -6,16 +6,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-08 16:31-0500\n"
-"PO-Revision-Date: 2004-02-11 16:25+1000\n"
-"Last-Translator: Sarah Wang <sarahs@redhat.com>\n"
+"PO-Revision-Date: 2004-03-11 09:50+0800\n"
+"Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0\n"
 
 #. # eula_strings.py
 #. #
@@ -222,12 +219,14 @@ msgstr ""
 #. Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
 #. Create a button box to handle navigation.
 #. Create the "go back" button, marking it insensitive by default.
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:493
+#: ../src/firstbootWindow.py:182
+#: ../src/firstbootWindow.py:493
 msgid "_Back"
 msgstr "返回(_B)"
 
 #. Create the "go forward" button.
-#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:497
+#: ../src/firstbootWindow.py:190
+#: ../src/firstbootWindow.py:497
 msgid "_Next"
 msgstr "下一步(_N)"
 
@@ -271,7 +270,8 @@ msgstr "下一步(_N)"
 #. If it launched, add it to the mdoule list.
 #. If we're in 640x480 mode, remove the title bars
 #. If the module has a name, add it to the list of labels
-#: ../src/firstbootWindow.py:489 ../src/modules/welcome.py:19
+#: ../src/firstbootWindow.py:489
+#: ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "欢迎"
@@ -342,37 +342,30 @@ msgid "Authentication"
 msgstr "验证"
 
 #: ../src/textWindow.py:34
-#, fuzzy
 msgid "Firewall configuration"
 msgstr "防火墙配置"
 
 #: ../src/textWindow.py:35
-#, fuzzy
 msgid "Keyboard configuration"
 msgstr "键盘配置"
 
 #: ../src/textWindow.py:36
-#, fuzzy
 msgid "Network configuration"
 msgstr "网络配置"
 
 #: ../src/textWindow.py:37
-#, fuzzy
 msgid "Printer configuration"
 msgstr "打印机配置"
 
 #: ../src/textWindow.py:38
-#, fuzzy
 msgid "System services"
 msgstr "系统服务"
 
 #: ../src/textWindow.py:39
-#, fuzzy
 msgid "Sound card configuration"
 msgstr "声卡配置"
 
 #: ../src/textWindow.py:40
-#, fuzzy
 msgid "Timezone configuration"
 msgstr "时区配置"
 
@@ -419,17 +412,14 @@ msgstr "设置代理"
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42
+#: ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
 msgstr "额外光盘"
 
 #: ../src/modules/additional_cds.py:60
-msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
-msgstr ""
-"如果您有任何下面列出的光盘，您可以通过插入光盘，再点击恰当的按钮来安装软件"
-"包。"
+msgid "If you have any of the CDs listed below, you can install packages from them by inserting the CD and clicking the appropriate button."
+msgstr "如果您有任何下面列出的光盘，您可以通过插入光盘，再点击恰当的按钮来安装软件包。"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
@@ -437,9 +427,7 @@ msgstr "安装..."
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -447,8 +435,7 @@ msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #. Be sure to remove the focus grab if we have to return here.
@@ -465,13 +452,8 @@ msgid "User Account"
 msgstr "用户账号"
 
 #: ../src/modules/create_user.py:48
-msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
-msgstr ""
-"建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
-"信息。"
+msgid "It is recommended that you create a personal user account for normal (non-administrative) use.  To create a personal account, provide the requested information."
+msgstr "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需信息。"
 
 #: ../src/modules/create_user.py:58
 msgid "_Username:"
@@ -491,9 +473,7 @@ msgstr "确认口令(_M)："
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:95
-msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
-"click the Use Network Login button."
+msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
 msgstr "如果您需要使用网络验证，如 Kerberos 或 NIS，请点击“使用网络登录”按钮。"
 
 #: ../src/modules/create_user.py:105
@@ -502,13 +482,8 @@ msgstr "使用网络登录(_L)..."
 
 #. If they've run authconfig, don't pop up messageDialog
 #: ../src/modules/create_user.py:141
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
-"登录，而这个账号是为管理而保留的。"
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来登录，而这个账号是为管理而保留的。"
 
 #: ../src/modules/create_user.py:149
 msgid "_Continue"
@@ -529,9 +504,7 @@ msgstr "口令太短。请至少使用 6 个字符。"
 
 #: ../src/modules/create_user.py:195
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
+msgid "The username '%s' is a reserved system account.  Please specify another username."
 msgstr "用户名为“%s”是被保留的系统账号。请指定另一个用户名。"
 
 #. Check for ascii-only strings
@@ -549,42 +522,32 @@ msgstr "用户名不能以数字开头。"
 #. Check for whitespace
 #: ../src/modules/create_user.py:260
 #, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
+msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
 msgstr "用户名“%s”包含空格。请不要在用户名中包含空格。"
 
 #: ../src/modules/create_user.py:267
 #, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
+msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
 msgstr "用户名“%s”包含标点符号字符。请不要在用户名中使用标点符号。"
 
 #: ../src/modules/create_user.py:274
 #, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
+msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
 msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
 
 #: ../src/modules/create_user.py:281
 #, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
+msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:291
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #. Create a gtkInvisible dialog to block until up2date is complete
@@ -631,19 +594,17 @@ msgstr "请为系统设置日期和时间。"
 msgid "Please enter a time server."
 msgstr "请输入一个时间服务器。"
 
-#: ../src/modules/date.py:114 ../src/modules/date.py:133
+#: ../src/modules/date.py:114
+#: ../src/modules/date.py:133
 #: ../src/modules/date.py:164
 msgid "Error"
 msgstr "错误"
 
-#: ../src/modules/date.py:126 ../src/modules/date.py:157
+#: ../src/modules/date.py:126
+#: ../src/modules/date.py:157
 #, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙设"
-"置堵塞了 NTP 连接。"
+msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
+msgstr "无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙设置堵塞了 NTP 连接。"
 
 #. do something slow
 #: ../src/modules/date.py:194
@@ -693,9 +654,7 @@ msgid "Finish Setup"
 msgstr "结束设置"
 
 #: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
-"button in the lower right corner to continue."
+msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
 msgstr "您的系统现已设置完毕，一切就绪。请点击右下角的“下一步”按钮来继续。"
 
 #.
@@ -772,7 +731,8 @@ msgstr "静态"
 #. # I18N
 #. #
 #. You must specify a runPriority for the order in which you wish your module to run
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:46
+#: ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
 msgstr "声卡"
 
@@ -783,14 +743,8 @@ msgstr "在您的计算机上检测到声卡。"
 #. Initialize soundcard page
 #. Add icon to the top frame
 #: ../src/modules/soundcard_gui.py:71
-msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
-msgstr ""
-"点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右"
-"频；第二种声音是左频；第三种声音将会在中间。"
+msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右频；第二种声音是左频；第三种声音将会在中间。"
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -825,26 +779,6 @@ msgid "Please set the timezone for the system."
 msgstr "请为系统设置时区。"
 
 #: ../src/modules/welcome.py:35
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
-"点击右下角的“下一步”按钮来继续。"
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
+msgstr "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请点击右下角的“下一步”按钮来继续。"
 
-#~ msgid "Mouse configuration "
-#~ msgstr "鼠标配置"
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "该系统上已经运行过一次 firstboot 程序。\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr "要从命令行运行 firstboot 程序，执行下列命令："
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr "要在系统启动时运行 firstboot 程序，执行下列命令："
