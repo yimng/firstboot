@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-07-27 09:57+0300\n"
 "Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
@@ -527,11 +527,12 @@ msgstr "Lütfen sistem tarih ve saatini ayarlayın."
 msgid "Please enter a time server."
 msgstr "Lütfen bir zaman sunucusu girin."
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "Hata"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -541,7 +542,7 @@ msgstr ""
 "ayarlarınız bu NTP sunucusuna erişime engel oluyor."
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTP sunucuya bağlanılıyor.  Lütfen bekleyin..."
 

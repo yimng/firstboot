@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-07-24 09:04+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
@@ -501,11 +501,12 @@ msgstr "請設定系統的日期與時間。"
 msgid "Please enter a time server."
 msgstr "請輸入一個時間伺服器。"
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "錯誤"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -515,7 +516,7 @@ msgstr ""
 "線。"
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "連線 NTP 伺服器中。  請稍後..."
 

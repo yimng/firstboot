@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-07-24 09:47+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
@@ -520,11 +520,12 @@ msgstr "시스템 날짜와 시간을 설정해 주십시오."
 msgid "Please enter a time server."
 msgstr "시간 서버를 입력해 주십시오."
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "오류"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -534,7 +535,7 @@ msgstr ""
 "문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTP 서버에 연결 중입니다.  잠시만 기다려주십시오..."
 

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-08-25 17:23+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -521,11 +521,12 @@ msgstr "Indique por favor a data e a hora do sistema."
 msgid "Please enter a time server."
 msgstr "Por favor insira o servidor horário."
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "Erro"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -536,7 +537,7 @@ msgstr ""
 "NTP."
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "A contactar o servidor de NTP.  Aguarde um momento..."
 

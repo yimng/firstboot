@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-08-20 13:31+0300\n"
 "Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team:  <ru@li.org>\n"
@@ -522,11 +522,12 @@ msgstr "Установите дату и время."
 msgid "Please enter a time server."
 msgstr "Укажите сервер точного времени."
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "Ошибка"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -536,7 +537,7 @@ msgstr ""
 "компьютере блокирует NTP-соединения."
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Соединение с сервером NTP.  Пожалуйста, подождите..."
 

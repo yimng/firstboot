@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 9.1\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-08-17 18:35+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -519,11 +519,12 @@ msgstr "Prosim, nastavite sistemski datum in čas."
 msgid "Please enter a time server."
 msgstr "Prosim, vnesite časovni strežnik."
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "Napaka"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -533,7 +534,7 @@ msgstr ""
 "nastavitve požarnega zidu v vašem računalniku preprečujejo povezave NTP."
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Povezujem se s strežnikom NTP. Prosim, počakajte..."
 

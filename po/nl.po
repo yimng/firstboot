@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot-1.1.6-1\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-08-28 20:54+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -72,13 +72,15 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "Firstboot is al eens uitgevoerd op dit systeem.\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr ""
 "Om firstboot vanaf de opdrachtregel uit te voeren, gebruikt u de volgende "
 "opdrachten:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
 "Om firstboot tijdens het opstarten van het systeem uit te voeren, gebruikt u "
 "de volgende opdrachten:"
@@ -312,14 +314,16 @@ msgstr "Red Hat Linux Installatie CD"
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
+msgstr ""
+"Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
 #. If there's an autorun file on the cd, run it
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:133
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Het 'autorun' programma kan niet worden gevonden op de CD. Klik op \"OK\" om "
 "door te gaan."
@@ -466,7 +470,8 @@ msgstr ""
 "ASCII-tekens."
 
 #: ../src/modules/create_user.py:287
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Het wachtwoord bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-"
 "tekens."
@@ -474,8 +479,10 @@ msgstr ""
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "De naam '%s' bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-tekens."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"De naam '%s' bevat ongeldige tekens. Gebruik alstublieft alleen ASCII-tekens."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -523,11 +530,12 @@ msgstr "Stel de datum en de tijd in voor het systeem."
 msgid "Please enter a time server."
 msgstr "Voer een tijdserver in."
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "Fout"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -538,7 +546,7 @@ msgstr ""
 "verbinding met een NTP-server."
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "Verbinding maken met NTP-server.  Een ogenblik alstublieft..."
 
@@ -730,4 +738,3 @@ msgstr ""
 "gebruik. De Red Hat Setup Agent zal u nu helpen met het maken van een "
 "basisconfiguratie. Klik op \"Volgende\" rechtsonder in het scherm om door te "
 "gaan."
-

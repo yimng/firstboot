@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
-"POT-Creation-Date: 2003-08-28 14:39-0400\n"
+"POT-Creation-Date: 2003-08-28 19:29-0400\n"
 "PO-Revision-Date: 2003-06-30 10:18+1000\n"
 "Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
 "Language-Team: Japanese <kdeveloper@kde.gr.jp>\n"
@@ -519,11 +519,12 @@ msgstr "システム用に日付と時刻を設定して下さい。"
 msgid "Please enter a time server."
 msgstr "タイムサーバを入力して下さい。"
 
-#: ../src/modules/date.py:118 ../src/modules/date.py:152
+#: ../src/modules/date.py:118 ../src/modules/date.py:137
+#: ../src/modules/date.py:168
 msgid "Error"
 msgstr "エラー"
 
-#: ../src/modules/date.py:145
+#: ../src/modules/date.py:130 ../src/modules/date.py:161
 #, python-format
 msgid ""
 "A connection with %s could not be established.  Either %s is not available "
@@ -533,7 +534,7 @@ msgstr ""
 "ヤーウォールの設定がNTP の接続を阻止しています。"
 
 #. do something slow
-#: ../src/modules/date.py:182
+#: ../src/modules/date.py:198
 msgid "Contacting NTP server.  Please wait..."
 msgstr "NTPサーバに接続しています。お待ち下さい..."
 
