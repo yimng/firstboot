@@ -1,12 +1,13 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.0.0
-Release: 5
+Version: 1.0.1
+Release: 1
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
 Group: System Environment/Base
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
+BuildArch: noarch
 Source0: %{name}-%{version}.tar.bz2
 Obsoletes:anaconda-reconfig
 Prereq: chkconfig, /etc/init.d
@@ -67,6 +68,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 28 2002 Brent Fox <bfox@redhat.com> 1.0.1-1
+- Convert to noarch
+
 * Wed Aug 28 2002 Karsten Hopp <karsten@redhat.de> 1.0.0-5
 - don't require config-mouse, config-keyboard, config-soundcard
   on S390
