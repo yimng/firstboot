@@ -40,6 +40,10 @@ install:
 	install ${PKGNAME}.pam $(INSTROOT)$(PAMD_DIR)/${PKGNAME}
 	install ${PKGNAME}.console $(INSTROOT)$(SECURITY_DIR)/${PKGNAME}
 	install -m 755 src/firstboot $(INSTROOT)/usr/sbin/firstboot
+	for d in $(SUBDIRS); do \
+	(cd $$d; $(MAKE) INSTROOT=$(INSTROOT) MANDIR=$(MANDIR) install) \
+		|| case "$(MFLAGS)" in *k*) fail=yes;; *) exit 1;; esac; \
+	done && test -z "$$fail"
 
 archive:
 	cvs tag -cFR $(CVSTAG) .
