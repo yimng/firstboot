@@ -33,6 +33,8 @@ def startWindowManager(self):
     if status:
         raise RuntimeError, "Window manager failed to start"
 
+    return wm_pid
+
 def setRootBackground(self):
     root_pid = os.fork()
 
@@ -52,7 +54,7 @@ if not os.environ.has_key('DISPLAY'):
     except:
         pass
     
-    startWindowManager()
+    wm_pid = startWindowManager()
     setRootBackground()
 
 
