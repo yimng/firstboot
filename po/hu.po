@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-05 12:40-0400\n"
-"PO-Revision-Date: 2004-09-14 11:55+0200\n"
+"PO-Revision-Date: 2004-10-06 11:55+0200\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../src/firstboot.py:135
 msgid "Firstboot does not run in runlevel 3."
-msgstr ""
+msgstr "A Firstboot program nem fut le 3-as futási szinten."
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:573
@@ -153,6 +153,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Kérem helyezze be a \"Red Hat Enterprise Linux Extras\" feliratú lemezt "
+"a más gyártótól származó bővítőmodulok és alkalmazások telepítéséhez. Más telepítési "
+"lemez is megadható (például a dokumentáció vagy a Red Hat által készített valamilyen más "
+"szoftver lemeze)."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:70
@@ -163,6 +167,11 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Ha engedélyezni szeretné a 32 bites alkalmazások futásidejű támogatását Intel Itanium2 "
+"rendszeren, akkor most telepítse fel az Intel Execution Layer csomagot "
+"az Extras lemezről."
 
 #: ../src/modules/additional_cds.py:111
 msgid "Install..."
@@ -399,28 +408,3 @@ msgstr ""
 "Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
 "kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Ha rendelkezik az alábbi CD-k valamelyikével, feltelepítheti a rajtuk "
-#~ "található csomagokat is. Ha telepíteni szeretne, helyezze be az egyik CD-"
-#~ "t és kattintson a megfelelő gombra."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Adja meg egy időkiszolgáló nevét."
-
-#~ msgid "Error"
-#~ msgstr "Hiba"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Nem sikerült kapcsolatot létesíteni ezzel: %s. %s nem érhető el vagy a "
-#~ "tűzfal beállításai olyanok, hogy a számítógép nem engedélyezi az NTP-"
-#~ "kapcsolatot."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Csatlakozás az NTP-kiszolgálóhoz. Egy kis türelmet kérek..."
