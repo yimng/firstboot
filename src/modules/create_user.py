@@ -250,7 +250,7 @@ class childWindow:
             if i in string.whitespace:
                 #Check for whitespace
                 self.showErrorMessage(_("The user name '%s' contains whitespace.  "
-                                        "Please do not include whitespace in the %s.") % str)
+                                        "Please do not include whitespace in the user name.") % str)
                 widget.set_text("")
                 widget.grab_focus()
                 return None
