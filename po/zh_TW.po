@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Mon Dec 23 01:31:43 2002\n"
+"POT-Creation-Date: Fri Jan  3 15:50:50 2003\n"
 "PO-Revision-Date: 2002-12-23 16:52+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
@@ -46,11 +46,13 @@ msgid "Firstboot has already been run once on this system.\n"
 msgstr "firstboot 已經在這部系統上執行過一次。\n"
 
 #: ../src/firstboot.py:94
-msgid "In order to run firstboot from the command line, run the following commands:"
+msgid ""
+"In order to run firstboot from the command line, run the following commands:"
 msgstr "為了要在命令列執行 firstboot，請執行下列指令:"
 
 #: ../src/firstboot.py:99
-msgid "In order to run firstboot during system bootup, run the following commands:"
+msgid ""
+"In order to run firstboot during system bootup, run the following commands:"
 msgstr "為了要在系統開機時執行 firstboot，請執行下列指令:"
 
 #: ../src/modules/additional_cds.py:21 ../src/modules/additional_cds.py:89
@@ -118,7 +120,8 @@ msgstr "密碼確認："
 msgid ""
 "A user account was not created.  Are you sure that you want to continue "
 "without creating a user account?"
-msgstr "並未建立一個使用者帳號。 在建立一個使用者帳號之前，您確定您想要繼續嗎？"
+msgstr ""
+"並未建立一個使用者帳號。 在建立一個使用者帳號之前，您確定您想要繼續嗎？"
 
 #: ../src/modules/create_user.py:120
 msgid "The passwords do not match.  Please enter the password again."
@@ -129,7 +132,8 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
 #: ../src/modules/create_user.py:139
-msgid "An account with username %s already exists.  Please specify another username."
+msgid ""
+"An account with username %s already exists.  Please specify another username."
 msgstr "使用者名稱 %s 所屬的帳號已經存在，請指定另一個使用者名稱。"
 
 #: ../src/modules/date.py:51
@@ -238,7 +242,8 @@ msgstr ""
 "Red Hat Network Basic Service。\n"
 
 #: ../src/modules/up2date.py:72
-msgid "Yes, I would like to register with Red Hat Network"
+#, fuzzy
+msgid "Yes, I would like to register with Red Hat Network."
 msgstr "是的，我想要向 Red Hat Network 註冊我的系統"
 
 #: ../src/modules/up2date.py:73
@@ -530,4 +535,3 @@ msgstr "Red Hat 設定代理程式"
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "啟動 Red Hat 更新代理程式"
-
