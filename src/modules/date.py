@@ -1,9 +1,8 @@
 #
-# date_gui.py - GUI front end code for mouse configuration
+# date.py - GUI front end code for date, time and ntp configuration
 #
-# Brent Fox <bfox@redhat.com>
-#
-# Copyright 2002 Red Hat, Inc.
+# Copyright 2002, 2003 Red Hat, Inc.
+# Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,8 +19,6 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 
-#!/usr/bin/python2.2
-
 import string
 import gtk
 import gobject
@@ -31,7 +28,7 @@ import signal
 import time
 import functions
 
-sys.path.append('/usr/share/redhat-config-date/')
+sys.path.append('/usr/share/system-config-date/')
 import date_gui
 import dateBackend
 
@@ -65,7 +62,7 @@ class TimeWindow(FirstbootGuiWindow):
         self.datePageVBox = self.datePage.getVBox()
 
         #Add icon to the top frame
-        self.icon = functions.imageFromPath("/usr/share/redhat-config-date/pixmaps/redhat-config-date.png")
+        self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
         self.mainVBox = gtk.VBox()
 
         internalVBox = gtk.VBox(gtk.FALSE, 10)

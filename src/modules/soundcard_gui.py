@@ -1,9 +1,8 @@
 #
 # soundcard_gui.py - GUI front end code for soundcard configuration
 #
-# Brent Fox <bfox@redhat.com>
-#
-# Copyright 2002 Red Hat, Inc.
+# Copyright 2002, 2003 Red Hat, Inc.
+# Copyright 2002, 2003 Brent Fox <bfox@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,8 +19,6 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 
-#!/usr/bin/python2.2
-
 import string
 import gtk
 import gobject
@@ -29,7 +26,7 @@ import sys
 import os
 import functions
 
-sys.path.append('/usr/share/redhat-config-soundcard/')
+sys.path.append('/usr/share/system-config-soundcard/')
 import soundcard
 import soundcardBackend
 
