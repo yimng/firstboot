@@ -227,7 +227,7 @@ class firstbootWindow:
 
         # Now add the EventBox to the right-side VBox.
         self.rightVBox = gtk.VBox()
-        self.rightVBox.set_size_request(400, 200)
+        self.rightVBox.set_size_request(400, -1)
         self.rightVBox.pack_start(self.internalVBox)
 
         # Add an Alignment widget to the top-level HBox, and place the right-side VBox into it.
@@ -239,13 +239,9 @@ class firstbootWindow:
         else:
             self.mainHBox.pack_start(self.rightVBox)
 
-        # Create a lower hbox that will contain the close button and button box
-        self.lowerHBox = gtk.HBox()
-
         # Create a button box to handle navigation.
         self.bb = gtk.HButtonBox()
         self.bb.set_layout(gtk.BUTTONBOX_END)
-        self.bb.set_border_width(10)
         self.bb.set_spacing(10)
         # Create the "go back" button, marking it insensitive by default.
         self.backButton = gtk.Button(stock='gtk-go-back')
@@ -262,8 +258,8 @@ class firstbootWindow:
 
         self.bb.pack_start(self.nextButton)
 	# Add the button box to the bottom of the box which contains the notebook.
-        self.lowerHBox.pack_start(self.bb, gtk.TRUE)        
-        self.internalVBox.pack_start(self.lowerHBox, gtk.FALSE, 10)
+
+        self.internalVBox.pack_start(self.bb, gtk.TRUE)
 
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
