@@ -74,7 +74,6 @@ fi
 %changelog
 * Thu May 22 2003 Brent Fox <bfox@redhat.com> 1.0.8-1
 - pass rhgb status into firstbootWindow.py
-- make mainwindow a popup window type 
 - don't draw background if rhgb isn't running
 
 * Mon May 19 2003 Brent Fox <bfox@redhat.com> 1.0.7-1
