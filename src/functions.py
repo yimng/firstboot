@@ -20,3 +20,15 @@ def imageFromFile(filename):
         pix.set_from_pixbuf(p)        
         return pix
 
+def imageFromPath(filename):
+    p = None        
+    try:
+        path = filename
+        p = gtk.gdk.pixbuf_new_from_file(path)
+    except:
+        pass
+
+    if p:
+        pix = gtk.Image()
+        pix.set_from_pixbuf(p)        
+        return pix
