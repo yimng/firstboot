@@ -21,6 +21,20 @@ def imageFromFile(filename):
         pix.set_from_pixbuf(p)        
         return pix
 
+def pixbufFromFile(filename):
+    pixbuf = None
+    try:
+        path = "pixmaps/" + filename
+        pixbuf = gtk.gdk.pixbuf_new_from_file(path)
+    except:
+        try:
+            path = "/usr/share/firstboot/pixmaps/" + filename
+            pixbuf = gtk.gdk.pixbuf_new_from_file(path)
+        except:
+            pass
+
+    return pixbuf
+
 # Attempt to load a gtk.Image from a file.
 def ditheredImageFromFile(filename, height = None, width = None):
     try:
