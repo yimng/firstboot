@@ -81,12 +81,12 @@ class firstbootWindow:
 
         sys.path.append(path)
 
-        if not self.lowRes:
-            #Code for an upper title bar like anaconda.  We may turn this on if we get some UI help
-            pix = functions.imageFromFile("firstboot-header.png")
-            if pix:
-                mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
-                pass
+#        if not self.lowRes:
+#            #Code for an upper title bar like anaconda.  We may turn this on if we get some UI help
+#            pix = functions.imageFromFile("firstboot-header.png")
+#            if pix:
+#                mainVBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 0)
+#                pass
 
         # Generate a list of all of the module files (which becomes the list of
         # all non-hidden files in the directory with extensions other than .py.
@@ -173,7 +173,10 @@ class firstbootWindow:
                     self.notebook.append_page(vbox, gtk.Label(module.moduleName))
                     hbox = gtk.HBox(gtk.FALSE, 5)
                     pix = functions.imageFromFile("pointer-blank.png")
-                    label = gtk.Label(module.moduleName)
+                    label = gtk.Label("")
+                    label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % module.moduleName)
+
+#                    label = gtk.Label(module.moduleName)
                     label.set_alignment(0.0, 0.5)
                     hbox.pack_start(pix, gtk.FALSE)
 
@@ -212,6 +215,7 @@ class firstbootWindow:
         # Now add the EventBox to the right-side VBox.
         self.rightVBox = gtk.VBox()
         self.rightVBox.set_size_request(400, 200)
+#        self.rightVBox.set_size_request(300, 200)
         self.rightVBox.pack_start(eventBox)
         borderFrame.add(self.rightVBox)
 
@@ -219,7 +223,8 @@ class firstbootWindow:
         if not self.lowRes:
             alignment = gtk.Alignment()
             alignment.add(borderBox)
-            alignment.set(0.2, 0.2, 0.8, 0.9)
+            alignment.set(0.2, 0.3, 0.8, 0.8)
+#            alignment.set(0.9, 0.1, 0.8, 0.8)
             self.mainHBox.pack_start(alignment, gtk.TRUE)
         else:
             self.mainHBox.pack_start(borderBox)
@@ -375,6 +380,6 @@ class firstbootWindow:
             pix, label = self.leftLabelVBox.get_children()[i].get_children()
 
             if i == number:
-                pix.set_from_file("/usr/share/firstboot/pixmaps/pointer.png")
+                pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-white.png")
             else:
                 pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-blank.png")
