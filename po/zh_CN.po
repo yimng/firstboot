@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-09-10 11:21-0400\n"
-"PO-Revision-Date: 2004-07-20 21:56+1000\n"
-"Last-Translator: Sarah Wang <sarahs@redhat.com>\n"
+"PO-Revision-Date: 2004-09-11 16:21+0800\n"
+"Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"
 "Language-Team: zh_CN <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,25 +74,31 @@ msgstr ""
 "调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:529
-#: ../src/firstbootWindow.py:187 ../src/firstbootWindow.py:550
+#: ../src/firstbootWindowLocal.py:186
+#: ../src/firstbootWindowLocal.py:529
+#: ../src/firstbootWindow.py:187
+#: ../src/firstbootWindow.py:550
 msgid "_Back"
 msgstr "返回(_B)"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:533
-#: ../src/firstbootWindow.py:195 ../src/firstbootWindow.py:554
+#: ../src/firstbootWindowLocal.py:194
+#: ../src/firstbootWindowLocal.py:533
+#: ../src/firstbootWindow.py:195
+#: ../src/firstbootWindow.py:554
 msgid "_Next"
 msgstr "下一步(_N)"
 
-#: ../src/firstbootWindowLocal.py:525 ../src/firstbootWindow.py:546
-#: ../src/modules/welcome.py:19 ../src/modules/welcome.py:28
+#: ../src/firstbootWindowLocal.py:525
+#: ../src/firstbootWindow.py:546
+#: ../src/modules/welcome.py:19
+#: ../src/modules/welcome.py:28
 msgid "Welcome"
 msgstr "欢迎"
 
 #: ../src/firstbootWindow.py:402
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "模块 %s 导入错误： %s"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -138,31 +144,25 @@ msgstr "选择您想修改的项目"
 msgid "Setup Agent"
 msgstr "设置代理"
 
-#: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
+#: ../src/modules/additional_cds.py:42
+#: ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
 msgstr "额外光盘"
 
 #: ../src/modules/additional_cds.py:60
-msgid ""
-"If you have any of the CDs listed below, you can install packages from them "
-"by inserting the CD and clicking the appropriate button."
-msgstr ""
-"如果您有任何下面列出的光盘，您可以通过插入光盘，再点击恰当的按钮来安装软件"
-"包。"
+msgid "If you have any of the CDs listed below, you can install packages from them by inserting the CD and clicking the appropriate button."
+msgstr "如果您有任何下面列出的光盘，您可以通过插入光盘，再点击恰当的按钮来安装软件包。"
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
 msgstr "安装..."
 
 #: ../src/modules/additional_cds.py:120
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
 #: ../src/modules/additional_cds.py:154
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #: ../src/modules/create_user.py:39
@@ -170,13 +170,8 @@ msgid "System User"
 msgstr "系统用户"
 
 #: ../src/modules/create_user.py:65
-msgid ""
-"It is recommended that you create a personal user account for normal (non-"
-"administrative) use.  To create a personal account, provide the requested "
-"information."
-msgstr ""
-"建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
-"信息。"
+msgid "It is recommended that you create a personal user account for normal (non-administrative) use.  To create a personal account, provide the requested information."
+msgstr "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需信息。"
 
 #: ../src/modules/create_user.py:75
 msgid "_Username:"
@@ -195,9 +190,7 @@ msgid "Confir_m Password:"
 msgstr "确认口令(_M)："
 
 #: ../src/modules/create_user.py:112
-msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
-"click the Use Network Login button."
+msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
 msgstr "如果您需要使用网络验证，如 Kerberos 或 NIS，请点击“使用网络登录”按钮。"
 
 #: ../src/modules/create_user.py:122
@@ -205,13 +198,8 @@ msgid "Use Network _Login..."
 msgstr "使用网络登录(_L)..."
 
 #: ../src/modules/create_user.py:158
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
-"登录，而这个账号是为管理而保留的。"
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来登录，而这个账号是为管理而保留的。"
 
 #: ../src/modules/create_user.py:166
 msgid "_Continue"
@@ -240,41 +228,31 @@ msgstr "用户名不能以数字开头。"
 #. Check for whitespace
 #: ../src/modules/create_user.py:291
 #, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
+msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
 msgstr "用户名“%s”包含空格。请不要在用户名中包含空格。"
 
 #: ../src/modules/create_user.py:298
 #, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
+msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
 msgstr "用户名“%s”包含标点符号字符。请不要在用户名中使用标点符号。"
 
 #: ../src/modules/create_user.py:305
 #, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
+msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
 msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
 
 #: ../src/modules/create_user.py:312
 #, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
+msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:322
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:334
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/date.py:47
@@ -290,19 +268,17 @@ msgstr "请为系统设置日期和时间。"
 msgid "Please enter a time server."
 msgstr "请输入一个时间服务器。"
 
-#: ../src/modules/date.py:123 ../src/modules/date.py:143
+#: ../src/modules/date.py:123
+#: ../src/modules/date.py:143
 #: ../src/modules/date.py:174
 msgid "Error"
 msgstr "错误"
 
-#: ../src/modules/date.py:136 ../src/modules/date.py:167
+#: ../src/modules/date.py:136
+#: ../src/modules/date.py:167
 #, python-format
-msgid ""
-"A connection with %s could not be established.  Either %s is not available "
-"or the firewall settings on your computer are blocking NTP connections."
-msgstr ""
-"无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙设"
-"置堵塞了 NTP 连接。"
+msgid "A connection with %s could not be established.  Either %s is not available or the firewall settings on your computer are blocking NTP connections."
+msgstr "无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙设置堵塞了 NTP 连接。"
 
 #: ../src/modules/date.py:204
 msgid "Contacting NTP server.  Please wait..."
@@ -321,9 +297,7 @@ msgid "Finish Setup"
 msgstr "结束设置"
 
 #: ../src/modules/finished.py:35
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
-"button in the lower right corner to continue."
+msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
 msgstr "您的系统现已设置完毕，一切就绪。请点击右下角的“下一步”按钮来继续。"
 
 #: ../src/modules/networking.py:44
@@ -350,7 +324,8 @@ msgstr "改变网络配置(_C)..."
 msgid "static"
 msgstr "静态"
 
-#: ../src/modules/soundcard_gui.py:46 ../src/modules/soundcard_gui.py:47
+#: ../src/modules/soundcard_gui.py:46
+#: ../src/modules/soundcard_gui.py:47
 msgid "Sound Card"
 msgstr "声卡"
 
@@ -359,14 +334,8 @@ msgid "A sound card has been detected on your computer."
 msgstr "在您的计算机上检测到声卡。"
 
 #: ../src/modules/soundcard_gui.py:71
-msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
-msgstr ""
-"点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右"
-"频；第二种声音是左频；第三种声音将会在中间。"
+msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右频；第二种声音是左频；第三种声音将会在中间。"
 
 #: ../src/modules/timezone.py:48
 msgid "Timezone"
@@ -377,18 +346,6 @@ msgid "Please set the timezone for the system."
 msgstr "请为系统设置时区。"
 
 #: ../src/modules/welcome.py:35
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
-"点击右下角的“下一步”按钮来继续。"
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
+msgstr "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请点击右下角的“下一步”按钮来继续。"
 
-#~ msgid "User Account"
-#~ msgstr "用户账号"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr "用户名为“%s”是被保留的系统账号。请指定另一个用户名。"
