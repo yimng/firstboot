@@ -2,6 +2,7 @@
 
 import gtk
 import os
+import time
 
 ##
 ## I18N
@@ -31,14 +32,16 @@ class ExceptionWindow:
         label = gtk.Label(_("An error has occured in the %s module." % module.moduleName))
         label.set_alignment(0.0, 0.5)
 
+        path = "/root/firstboot.%s" % time.time()
+
         explanation = (_("Since there is a problem with the %s module, \n"
                      "Red Hat Setup Agent will not load this module and \n"
                      "will attempt to run the remaining modules." % module.moduleName))
 
         bugzilla = (_("Please file a bug against 'firstboot' in the Red Hat \n"
                       "bug tracking system at http://www.redhat.com/bugzilla. \n"
-                      "A copy of the debug output has been saved to /tmp/firstboot.txt \n"
-                      "Be sure to attach that file to the bug report. \n"))
+                      "A copy of the debug output has been saved to %s \n"
+                      "Be sure to attach that file to the bug report. \n" %path))
 
         text = traceback + "\n\n" + explanation + "\n\n" + bugzilla
 
@@ -48,7 +51,7 @@ class ExceptionWindow:
         win.vbox.pack_start(label, gtk.FALSE)
         win.vbox.pack_start(text_scroll, gtk.TRUE)
 
-        fd = open('/tmp/firstboot.txt', "w")
+        fd = open(path, "w")
         fd.write(traceback)
         fd.close()
         
