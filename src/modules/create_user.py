@@ -102,7 +102,7 @@ class childWindow:
         if username == "":
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_YES_NO,
                                     (_("A user account was not created.  Are you sure that you want " \
-                                       "to continue without creating a user account?.")))
+                                       "to continue without creating a user account?")))
             dlg.set_position(gtk.WIN_POS_CENTER)
             dlg.set_modal(gtk.TRUE)
             rc = dlg.run()
