@@ -78,6 +78,7 @@ fi
 %changelog
 * Fri Dec 14 2004 Adrian Likins <alikins@redhat.com> - 1.3.38-1
 - fix #138727
+- latest translations
 
 * Fri Nov 12 2004 Adrian Likins <alikins@redhat.com> - 1.3.37-2
 - fix #139060
