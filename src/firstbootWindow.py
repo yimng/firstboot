@@ -45,9 +45,12 @@ class firstbootWindow:
         win.set_resizable(gtk.FALSE)
         mainVBox = gtk.VBox()
 
+        path = ('/usr/share/firstboot/modules')
+        sys.path.append(path)
+
         p = None        
         try:
-            p = gtk.gdk.pixbuf_new_from_file("images/titlebar.png")
+            p = gtk.gdk.pixbuf_new_from_file("pixmaps/titlebar.png")
         except:
             pass
 
@@ -60,9 +63,8 @@ class firstbootWindow:
         self.notebook.set_show_tabs(gtk.FALSE)
         self.notebook.set_show_border(gtk.FALSE)
 
-        path = ('/usr/share/firstboot/modules')
-#        path = ('/home/devel/bfox/redhat/firstboot/src/modules')
         files = os.listdir(path)
+
         list = []
 
         for file in files:
@@ -74,7 +76,6 @@ class firstbootWindow:
 
         for module in list:
 #            print module
-            sys.path.append('/usr/share/firstboot/modules')
 #sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
@@ -124,19 +125,20 @@ class firstbootWindow:
 #        selection = self.moduleView.get_selection()
 #        selection.connect("changed", self.selectRow)
 
+        leftVBox = gtk.VBox()
+        leftVBox.pack_start(self.moduleView, gtk.TRUE)
+
+
         p = None        
         try:
-            p = gtk.gdk.pixbuf_new_from_file("images/redhat-logo.png")
+            p = gtk.gdk.pixbuf_new_from_file("pixmaps/redhat-logo.png")
         except:
             pass
 
         if p:
             pix = gtk.Image()
-            pix.set_from_pixbuf(p)
-            
-        leftVBox = gtk.VBox()
-        leftVBox.pack_start(self.moduleView, gtk.TRUE)
-        leftVBox.pack_start(pix, gtk.FALSE)
+            pix.set_from_pixbuf(p)        
+            leftVBox.pack_start(pix, gtk.FALSE)
 
         col = gtk.TreeViewColumn(None, gtk.CellRendererText(), text=0)
         self.moduleView.append_column(col)
@@ -188,7 +190,7 @@ class firstbootWindow:
         mainVBox.pack_start(self.mainHBox)
 
         try:
-            p = gtk.gdk.pixbuf_new_from_file("images/bg.png")
+            p = gtk.gdk.pixbuf_new_from_file("pixmaps/bg.png")
         except:
             pass
 
