@@ -21,7 +21,6 @@
 
 import string
 import gtk
-import gobject
 import sys
 import os
 import signal
