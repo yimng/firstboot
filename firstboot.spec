@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.0.2
-Release: 1
+Release: 3
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -67,6 +67,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Nov 13 2002 Brent Fox <bfox@redhat.com> 1.0.2-3
+- fix soundcard and mouse problem
+
 * Tue Nov 12 2002 Brent Fox <bfox@redhat.com> 1.0.2-2
 - explicitly kill X server pid
 - Latest translations
