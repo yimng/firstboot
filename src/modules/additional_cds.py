@@ -151,7 +151,7 @@ class childWindow:
                 dev = getCDDev()
                 if dev is None:
                     raise Exception, "no cd drive found"
-                diskutil.mount(dev, '/mnt', fstype="iso9660", readOnly = 1)
+                diskutil.mount("/dev/%s" % (dev,) , '/mnt', fstype="iso9660", readOnly = 1)
                 mountFlag = 1
             except:
                 dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
