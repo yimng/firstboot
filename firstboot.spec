@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 0.9.5
+Version: 0.9.6
 Release: 1
 URL: http://www.redhat.com/
 License: GPL
@@ -63,6 +63,11 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Jul 23 2002 Brent Fox <bfox@redhat.com> 0.9.6-1
+- removed register module
+- added a finished module
+- pulled in new icons
+
 * Fri Jul 19 2002 Brent Fox <bfox@redhat.com> 0.9.5-1
 - wire up register module
 - wire up up2date module
