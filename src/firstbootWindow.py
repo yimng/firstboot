@@ -339,7 +339,6 @@ class firstbootWindow:
 #        self.stepList.select_row(self.notebook.get_current_page(), 0)
 
     def keyRelease(self, window, event):
-        print "calling", window, event
         if (event.keyval == gtk.keysyms.F12):
             self.nextClicked()
         if (event.keyval == gtk.keysyms.F11):
