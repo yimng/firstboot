@@ -31,24 +31,20 @@ print doReconfig
 
 class firstbootWindow:
     def __init__(self):
-#        self.hpane = gtk.HPaned()
         self.mainHBox = gtk.HBox()
         self.moduleList = []
         self.moduleDict = {}
-        self.usedModuleList = []
 
 #        root = _root_window ()
 #        cursor = cursor_new (GDK.LEFT_PTR)
 #        root.set_cursor (cursor)
 
-#        width = screen_width()
-        p = None
-        
         win = gtk.Window()
         win.set_usize(800, 600)
         win.set_policy(gtk.FALSE, gtk.FALSE, gtk.FALSE)
         mainVBox = gtk.VBox()
 
+        p = None        
         try:
             p = gtk.gdk.pixbuf_new_from_file("images/titlebar.png")
         except:
@@ -64,7 +60,7 @@ class firstbootWindow:
         self.notebook.set_show_border(gtk.FALSE)
 
 #        path = ('/usr/share/firstboot/modules')
-        path = ('/home/devel/bfox/redhat/firstboot/src/modules')
+        path = ('/home/bfox/redhat/firstboot/src/modules')
         files = os.listdir(path)
         list = []
 
@@ -76,14 +72,12 @@ class firstbootWindow:
             list.append(file[:-3])
 
         for module in list:
-#            sys.path.append('./modules')
             print module
 #            sys.path.append('/usr/share/firstboot/modules')
-            sys.path.append('/home/devel/bfox/redhat/firstboot/src/modules')
+            sys.path.append('/home/bfox/redhat/firstboot/src/modules')
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
             exec(cmd)
-
             
             if doReconfig == 1:
                 try:
@@ -105,39 +99,62 @@ class firstbootWindow:
             self.moduleList.append(self.moduleDict[module])
 #            self.stepList.append([self.moduleDict[module].moduleName])
 
-        for module in self.moduleList:
-            box = module.launch()
-            if box:
-                self.notebook.append_page(box, gtk.Label(" "))
+##         for module in self.moduleList:
+##             box = module.launch()
+##             if box:
+##                 self.notebook.append_page(box, gtk.Label(" "))
 
         label = gtk.Label("Hello")
         label.set_usize(200, -1)
-#        self.hpane.add1(label)
         self.mainHBox.pack_start(label, gtk.FALSE)
 
-#        self.hpane.add2(self.notebook)
-        self.mainHBox.pack_start(self.notebook, gtk.TRUE)
+#########################################
+        self.rightVBox = gtk.VBox()
+        self.rightVBox.set_usize(400, 200)
+
+        eventBox = gtk.EventBox()
+
+        self.internalVBox = gtk.VBox()
+        self.internalVBox.pack_start(self.notebook, gtk.TRUE)
+
+        eventBox.add(self.internalVBox)
+        eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#EEEEEE"))
+        self.rightVBox.pack_start(eventBox, gtk.TRUE)
+#        self.rightVBox.pack_start(label, TRUE)
+
+        a = gtk.Alignment()
+        a.add(self.rightVBox)
+        a.set(0.5, 0.5, 0.9, 0.9)
+        self.mainHBox.pack_start(a, gtk.TRUE)
+
 
         bb = gtk.HButtonBox()
         bb.set_layout(gtk.BUTTONBOX_END)
+        bb.set_border_width(10)
+        bb.set_spacing(10)
         backButton = gtk.Button("Back")
         backButton.connect('clicked', self.backClicked)
         nextButton = gtk.Button("Next")
-        nextButton.connect('clicked', self.okClicked)
         group = gtk.AccelGroup()
-#        nextButton.add_accelerator('clicked', group, GDK.F12,
-#                                   GDK.RELEASE_MASK, 0)
+        nextButton.add_accelerator('clicked', group, gtk.keysyms.F12,
+                                   gtk.gdk.RELEASE_MASK, 0)
+        nextButton.connect('clicked', self.okClicked)
+
+        self.internalVBox.pack_start(bb, gtk.FALSE, 10)
+
 #        backButton.add_accelerator('clicked', group, GDK.F11,
 #                                   GDK.RELEASE_MASK, 0)
         win.add_accel_group(group)
         bb.pack_start(backButton)
         bb.pack_start(nextButton)
 
+#        self.notebook.set_usize(300, -1)
 #        self.hpane.handle_size(0)
 #        mainVBox.pack_start(self.hpane)
         mainVBox.pack_start(self.mainHBox)
 #        mainVBox.pack_start(self.notebook)
-        self.notebook.set_border_width(10)
+#        self.notebook.set_border_width(10)
+
 
 #        a = GtkAlignment()
 #        a.add(GtkHSeparator())
@@ -162,7 +179,13 @@ class firstbootWindow:
         p.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
         win.window.set_back_pixmap (bgimage, gtk.FALSE)
 
-        mainVBox.pack_start(bb, gtk.FALSE, padding=10)
+        for module in self.moduleList:
+            box = module.launch()
+            if box:
+                self.notebook.append_page(box, gtk.Label(" "))
+#                self.setTitle(module.title)
+                
+#        mainVBox.pack_start(bb, gtk.FALSE, padding=10)
         win.add(mainVBox)
         win.show_all()
 #        self.notebook.set_page(0)
@@ -170,12 +193,13 @@ class firstbootWindow:
         gtk.main()
 
     def okClicked(self, *args):
-        module = self.moduleList[self.notebook.get_current_page()]
+
+#        module = self.moduleList[self.notebook.get_current_page()]
         #Call the apply method if it exists
-        try:
-            module.apply()
-        except:
-            pass
+#        try:
+#            module.apply()
+#        except:
+#            pass
         self.notebook.next_page()
 #        self.stepList.select_row(self.notebook.get_current_page(), 0)
 
