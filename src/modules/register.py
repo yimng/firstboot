@@ -77,15 +77,23 @@ class childWindow:
             label.set_size_request(400, -1)
 
             internalVBox.pack_start(label, FALSE, TRUE)
-            launchButton = gtk.Button(_("Register system now"))
 
+#            launchButton = gtk.Button(_("Register system now"))
+
+            radioBox = gtk.VBox()
+
+            radioYes = gtk.RadioButton(None, _("Yes, I would like to register with Red Hat Network"))
+            radioNo = gtk.RadioButton(radioYes, _("No, I do not want to register my system."))
+
+            radioBox.pack_start(radioYes, gtk.FALSE)
+            radioBox.pack_start(radioNo, gtk.FALSE)
+            
             a = gtk.Alignment()
-            a.add(launchButton)
+#            a.add(launchButton)
+            a.add(radioBox)
             a.set(0.3, 0.0, 0.3, 0.5)
             internalVBox.pack_start(a, FALSE, padding=10)
 
-            launchButton.connect("clicked", self.rhn_register)
-#            internalVBox.pack_start(launchButton, FALSE, FALSE)
         else:
             label = gtk.Label(_("You currently have no network connection."))
             internalVBox.pack_start(label, FALSE, TRUE, 30)
