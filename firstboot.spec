@@ -64,6 +64,8 @@ fi
 %changelog
 * Thu Aug 01 2002 Brent Fox <bfox@redhat.com> 0.9.7-1
 - fix typo in finished module
+- create better text in the exception screen
+- save traceback info in /tmp/firstboot.txt
 
 * Tue Jul 30 2002 Brent Fox <bfox@redhat.com> 0.9.6-5
 - merge Xresources on startup.  Fixes bug #68724
