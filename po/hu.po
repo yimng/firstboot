@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-12-04 17:55-0500\n"
-"PO-Revision-Date: 2004-02-10 11:11+0100\n"
+"PO-Revision-Date: 2004-02-26 11:11+0100\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgstr "_Nem, nem fogadom el"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "Át szeretné még egyszer tanulmányozni a licencegyezményt?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -84,7 +84,7 @@ msgstr "_Leállítás"
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Hiba történt a(z) %s modulban."
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -93,6 +93,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Hiba történt a(z) %s modulban, \n"
+"ezért a Red Hat Setup Agent nem fogja azt betölteni,\n"
+"hanem folytatja a többi modul betöltését."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -102,6 +105,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Kérjük jelentse be a hibát a 'firstboot' szekcióba a Red Hat \n"
+"hibakövető rendszerben, ezen a címen: http://www.redhat.com/bugzilla. \n"
+"A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
+"Kérjük csatolja ezt a fájlt a hibabejelentéshez. \n"
 
 #. Ok, we've displayed the traceback.  Return 1 so firstboot can go to the next screen
 #. and try to complete the other steps successfully
@@ -158,17 +165,19 @@ msgstr ""
 #. Firstboot should not be run
 #: ../src/firstboot.py:112
 msgid "Firstboot has already been run once on this system.\n"
-msgstr ""
+msgstr "A Firstboot program egyszer már lefutott ezen a rendszeren.\n"
 
 #: ../src/firstboot.py:113
 msgid ""
 "In order to run firstboot from the command line, run the following commands:"
 msgstr ""
+"Ha parancssorból szeretné indítani a Firstboot programot, ezt kell beírni:"
 
 #: ../src/firstboot.py:118
 msgid ""
 "In order to run firstboot during system bootup, run the following commands:"
 msgstr ""
+"Ha a rendszer indulásakor szeretné indítani a Firstboot programot, ezt kell beírni:"
 
 #. Firstboot has never been run before, so start it up
 #. Let's check to see if we're in runlevel 5.  If we're in runlevel 3, let's call
@@ -226,12 +235,12 @@ msgstr ""
 #. Create the "go back" button, marking it insensitive by default.
 #: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:479
 msgid "_Back"
-msgstr ""
+msgstr "_Vissza"
 
 #. Create the "go forward" button.
 #: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:483
 msgid "_Next"
-msgstr ""
+msgstr "_Tovább"
 
 #. Add the button box to the bottom of the box which contains the notebook.
 #. Add the main HBox to a VBox which will sit in the window.
@@ -276,7 +285,7 @@ msgstr ""
 #: ../src/firstbootWindow.py:475 ../src/modules/welcome.py:19
 #: ../src/modules/welcome.py:28
 msgid "Welcome"
-msgstr ""
+msgstr "Üdvözöljük"
 
 #. # functions.py - some helper functions
 #. #
@@ -340,55 +349,55 @@ msgstr ""
 #. #
 #: ../src/textWindow.py:33
 msgid "Authentication"
-msgstr ""
+msgstr "Felhasználóazonosítás"
 
 #: ../src/textWindow.py:34
 msgid "Firewall configuration "
-msgstr ""
+msgstr "Tűzfalbeállítás "
 
 #: ../src/textWindow.py:35
 msgid "Keyboard configuration "
-msgstr ""
+msgstr "Billentyűzetbeállítás"
 
 #: ../src/textWindow.py:36
 msgid "Mouse configuration "
-msgstr ""
+msgstr "Egérbeállítás "
 
 #: ../src/textWindow.py:37
 msgid "Network configuration "
-msgstr ""
+msgstr "Hálózati beállítások "
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration "
-msgstr ""
+msgstr "Nyomtatóbeállítás "
 
 #: ../src/textWindow.py:39
 msgid "System services "
-msgstr ""
+msgstr "Rendszerszolgáltatások "
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration "
-msgstr ""
+msgstr "Hangkártya-beállítások "
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration "
-msgstr ""
+msgstr "Időzóna-beállítások "
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr ""
+msgstr "Futtatási eszköz"
 
 #: ../src/textWindow.py:43
 msgid "Exit"
-msgstr ""
+msgstr "Kilépés"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Válassza ki a módosítani kívánt elemet "
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr ""
+msgstr "Telepítőügynök"
 
 #. Set a timeout limit so that firstboot won't hang around forever on headless machines
 #. We've reached the timeout limit.  Let's return -1
@@ -419,17 +428,19 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/additional_cds.py:42 ../src/modules/additional_cds.py:94
 msgid "Additional CDs"
-msgstr ""
+msgstr "További CD-k"
 
 #: ../src/modules/additional_cds.py:60
 msgid ""
 "If you have any of the CDs listed below, you can install packages from them "
 "by inserting the CD and clicking the appropriate button."
 msgstr ""
+"Ha rendelkezik az alábbi CD-k valamelyikével, feltelepítheti a rajtuk található csomagokat is. "
+"Ha telepíteni szeretne, helyezze be az egyik CD-t és kattintson a megfelelő gombra."
 
 #: ../src/modules/additional_cds.py:98
 msgid "Install..."
-msgstr ""
+msgstr "Telepítés..."
 
 #. Create a gtkInvisible widget to block until the autorun is complete
 #: ../src/modules/additional_cds.py:120
@@ -437,6 +448,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Nem található CD-ROM-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba és kattintson az "
+"\"OK\" gombra."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -446,6 +459,7 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
+"Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az \"OK\" gombra."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -458,7 +472,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
 msgid "User Account"
-msgstr ""
+msgstr "Felhasználónév"
 
 #: ../src/modules/create_user.py:47
 msgid ""
@@ -466,22 +480,24 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"Érdemes legalább egy normál (nem rendszergazdai jogú) felhasználónevet létrehozni. "
+"Új név létrehozásához be kell írni a szükséges aadatokat."
 
 #: ../src/modules/create_user.py:57
 msgid "_Username:"
-msgstr ""
+msgstr "_Felhasználónév:"
 
 #: ../src/modules/create_user.py:64
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "_Teljes név:"
 
 #: ../src/modules/create_user.py:71
 msgid "_Password:"
-msgstr ""
+msgstr "_Jelszó:"
 
 #: ../src/modules/create_user.py:78
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "A jelszó me_gerősítése:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:94
@@ -489,10 +505,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Ha hálózati bejelentkeztetést szeretne használni (pl. Kerberos-t vagy NIS-t), kattintson a "
+"Hálózati bejelentkezés használata gombra."
 
 #: ../src/modules/create_user.py:104
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Hálózati be_jelentkezés használata..."
 
 #: ../src/modules/create_user.py:137
 msgid ""
@@ -500,23 +518,26 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Erősen ajánlott legalább egy normál felhasználónevet létrehozni. Ha enélkül "
+"lép tovább, akkor csak a root felhasználónevet használhatja, "
+"amely elsősorban rendszergazdai célokat szolgál."
 
 #: ../src/modules/create_user.py:145
 msgid "_Continue"
-msgstr ""
+msgstr "_Folytatás"
 
 #: ../src/modules/create_user.py:146
 msgid "Create _account"
-msgstr ""
+msgstr "Felhasználónév létreh_ozása"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:172
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "A jelszavak nem egyeznek meg. Kérem írja be a jelszót még egyszer."
 
 #: ../src/modules/create_user.py:180
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "A jelszó túl rövid, legalább 6 karakter hosszúnak kell lennie."
 
 #: ../src/modules/create_user.py:191
 #, python-format
@@ -524,17 +545,19 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"A(z) '%s' felhasználónevet a rendszer használja. Adjon meg egy másik nevet, mert ezt nem "
+"használhatja."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:238
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "A felhasználónév nem lehet 32 karakternél hosszabb."
 
 #: ../src/modules/create_user.py:244
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "A felhasználónév nem kezdődhet számjeggyel."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
@@ -544,6 +567,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
+"A(z) '%s' felhasználónév üres karaktereket tartalmaz. A névben nem lehet szóközt vagy más üres karaktert "
+"használni."
 
 #: ../src/modules/create_user.py:263
 #, python-format
@@ -551,6 +576,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
+"A(z) '%s' felhasználónév központozási karaktereket tartalmaz. A névben nem lehet ilyen karaktereket "
+"használni."
 
 #: ../src/modules/create_user.py:270
 #, python-format
@@ -558,6 +585,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
+"A(z) '%s' felhasználónév nagybetűket tartalmaz. A névben nem lehet ilyen "
+"karaktereket használni."
 
 #: ../src/modules/create_user.py:277
 #, python-format
@@ -565,11 +594,14 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
+"A(z) '%s' felhasználónév érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet "
+"használni."
 
 #: ../src/modules/create_user.py:287
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet használni."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:299
@@ -577,6 +609,7 @@ msgstr ""
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
+"A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet használni."
 
 #. Create a gtkInvisible dialog to block until up2date is complete
 #. Run rhn_register so they can register with RHN
@@ -606,11 +639,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/date.py:47
 msgid "Date and Time"
-msgstr ""
+msgstr "Dátum és idő"
 
 #: ../src/modules/date.py:50
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Állítsa be a pontos dátumot és időt."
 
 #. Initialize date backend
 #. Initialize datePage and pass dateBackend into it
@@ -620,12 +653,12 @@ msgstr ""
 #. They want ntp but have not set a server
 #: ../src/modules/date.py:112
 msgid "Please enter a time server."
-msgstr ""
+msgstr "Adja meg egy időkiszolgáló nevét."
 
 #: ../src/modules/date.py:114 ../src/modules/date.py:133
 #: ../src/modules/date.py:164
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 #: ../src/modules/date.py:126 ../src/modules/date.py:157
 #, python-format
@@ -633,11 +666,13 @@ msgid ""
 "A connection with %s could not be established.  Either %s is not available "
 "or the firewall settings on your computer are blocking NTP connections."
 msgstr ""
+"Nem sikerült kapcsolatot létesíteni ezzel: %s. %s nem érhető el vagy "
+"a tűzfal beállításai olyanok, hogy a számítógép nem engedélyezi az NTP-kapcsolatot."
 
 #. do something slow
 #: ../src/modules/date.py:194
 msgid "Contacting NTP server.  Please wait..."
-msgstr ""
+msgstr "Csatlakozás az NTP-kiszolgálóhoz. Egy kis türelmet kérek..."
 
 #. work around http://bugzilla.gnome.org/show_bug.cgi?id=72333 )-;
 #.
@@ -666,11 +701,11 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/display.py:45
 msgid "Display"
-msgstr ""
+msgstr "Képernyő"
 
 #: ../src/modules/display.py:48
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Válassza ki a kívánt felbontást és színmélységet"
 
 #. Add icon to the top frame
 #. #
@@ -679,13 +714,15 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "A telepítés befejezése"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
+"A rendszer telepítése befejeződött. Továbblépéshez kattintson a \"Tovább\" gombra "
+"a jobb alsó sarokban."
 
 #.
 #. networking.py - networking module for firstboot
@@ -717,7 +754,7 @@ msgstr "Hálózati beállítások"
 
 #: ../src/modules/networking.py:70
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "A következő hálózati eszközök találhatók a rendszerben:"
 
 #: ../src/modules/networking.py:89
 msgid "Network Device"
@@ -729,7 +766,7 @@ msgstr "Rendszerindítási protokoll"
 
 #: ../src/modules/networking.py:97
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "A _hálózati beállítások módosítása..."
 
 #: ../src/modules/networking.py:140
 msgid "static"
@@ -767,7 +804,7 @@ msgstr "Hangkártya"
 
 #: ../src/modules/soundcard_gui.py:48
 msgid "A sound card has been detected on your computer."
-msgstr ""
+msgstr "Hangkártyát találtam a rendszerben."
 
 #. Initialize soundcard page
 #. Add icon to the top frame
@@ -778,6 +815,10 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
+"Kattintson a \"Hangteszt\" gombra a hangeszköz kipróbálásához. Három hangminta "
+"lesz lejátszva egymás után. Az első a jobb, "
+"a második a bal csatornából szól, a haarmadik pedig "
+"középről."
 
 #.
 #. timezone.py - GUI front end code for mouse configuration
@@ -817,3 +858,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
+"A rendszer használatba vétele előtt még néhány lépést el kell végezni. A "
+"Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez kattintson a "
+"\"Tovább\" gombra a jobb alsó sarokban."
