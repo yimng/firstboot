@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 0.9.9
-Release: 3
+Release: 4
 URL: http://www.redhat.com/
 License: GPL
 ExclusiveOS: Linux
@@ -62,7 +62,7 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-3
+* Mon Aug 12 2002 Brent Fox <bfox@redhat.com> 0.9.9-4
 - Try to fix race condition
 - Have init script return 0 instead of 1
 - Make Forward button grab the focus
