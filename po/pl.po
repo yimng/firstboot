@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-08 16:31+0100\n"
-"PO-Revision-Date: 2004-03-13 11:40+0100\n"
+"POT-Creation-Date: 2004-03-08 16:31-0500\n"
+"PO-Revision-Date: 2004-03-13 13:16+0100\n"
 "Last-Translator: Grzegorz Rajda <marius@w9.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -440,7 +440,7 @@ msgstr "Płyta CD-ROM nie została wykryta. Włóż ją do napędu i kliknij \"O
 #. There's no autorun on the disc, so complain
 #: ../src/modules/additional_cds.py:154
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+msgstr "Program automatycznego uruchomienia nie został znaleziony na płycie. Kliknij \"OK\" aby kontynuować."
 
 #. Be sure to remove the focus grab if we have to return here.
 #. Otherwise, the user is stuck
@@ -453,7 +453,7 @@ msgstr ""
 #. You must specify a runPriority for the order in which you wish your module to run
 #: ../src/modules/create_user.py:22
 msgid "User Account"
-msgstr ""
+msgstr "Konto użytkownika"
 
 #: ../src/modules/create_user.py:48
 msgid ""
@@ -461,22 +461,24 @@ msgid ""
 "administrative) use.  To create a personal account, provide the requested "
 "information."
 msgstr ""
+"Zalecamy stworzenie prywatnego konta (nie administratora) do codziennej pracy. "
+"Aby stworzyć prywatne konto, podaj wymagane informacje."
 
 #: ../src/modules/create_user.py:58
 msgid "_Username:"
-msgstr ""
+msgstr "Nazwa _użytkownika:"
 
 #: ../src/modules/create_user.py:65
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Imię i nazwisko:"
 
 #: ../src/modules/create_user.py:72
 msgid "_Password:"
-msgstr ""
+msgstr "_Hasło:"
 
 #: ../src/modules/create_user.py:79
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "_Potwierdzenie hasła:"
 
 #. internalVBox.pack_start(gtk.HSeparator())
 #: ../src/modules/create_user.py:95
@@ -484,10 +486,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Jeśli potrzebujesz użycia autoryzacji sieci takiego jak Kerberos czy NIS, "
+"kliknij na przycisku \"Użyj autoryzacji sieci\"."
 
 #: ../src/modules/create_user.py:105
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Użyj _autoryzacji sieci"
 
 #. If they've run authconfig, don't pop up messageDialog
 #: ../src/modules/create_user.py:141
@@ -496,41 +500,44 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Zalecamy utworzenie prywatnego konta. Jeśli będziesz bez niego kontynuował, "
+"będziesz mógł się zalogować tylko na konto \"root\", które jest zarezerwowane "
+"tylko do pracy administracynej."
 
 #: ../src/modules/create_user.py:149
 msgid "_Continue"
-msgstr ""
+msgstr "_Kontynuacja"
 
 #: ../src/modules/create_user.py:150
 msgid "Create _account"
-msgstr ""
+msgstr "U_twórz konto"
 
 #. Check for ascii-only strings
 #: ../src/modules/create_user.py:176
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Podane hasła nie są identyczne. Wpisz je ponownie."
 
 #: ../src/modules/create_user.py:184
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "Hasło jest za krótkie. Użyj minimum 6 znaków."
 
 #: ../src/modules/create_user.py:195
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "Nazwa użytkownika '%s' jest zarezerwowanym kontem systemowym. Określ inną nazwę użytkownika."
 
 #. Check for ascii-only strings
 #. If we get to this point, all the input seems to be valid.  Let's add the user
 #. if the user doesn't already exist
 #: ../src/modules/create_user.py:242
 msgid "The user name must be less than 33 characters long."
-msgstr ""
+msgstr "Nazwa użytkownika nie może być dłuższa niż 33 znaki."
 
 #: ../src/modules/create_user.py:248
 msgid "The user name may not begin with a number."
-msgstr ""
+msgstr "Nazwa uzytkownika nie może rozpoczynać się cyfrą."
 
 #. specifically allow "_" and "-"
 #. Check for whitespace
@@ -539,32 +546,32 @@ msgstr ""
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr ""
+msgstr "Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
 
 #: ../src/modules/create_user.py:267
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr ""
+msgstr "Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
 
 #: ../src/modules/create_user.py:274
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
+msgstr "Nazwa użytkownika '%s' zawiera duże litery, których nie może zawierać."
 
 #: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr ""
+msgstr "Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:291
 msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
+msgstr "Hasło zawiera nieznane znaki. Używaj tylko znaków ASCII."
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/modules/create_user.py:303
