@@ -138,11 +138,15 @@ if runlevel == 3:
 ##         #They want to run firstboot, so let's pass on through
 ##         screen.finish()
 
-#If there's no X Server running, let's start one
-
+#If rhgb (graphical boot) is running, let's use it's X server
 if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin/rhgb-client --ping") == 0):
     os.environ["DISPLAY"] = "127.0.0.1:0"
-    
+    #However, we still need to start up metacity and merge the X resources
+    wm_pid = None
+    wm_pid = startWindowManager()
+    mergeXresources()
+
+#If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
     
      if os.access("/etc/X11/XF86Config", os.R_OK) or os.access("/etc/X11/XF86Config-4", os.R_OK):
