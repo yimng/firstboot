@@ -272,6 +272,14 @@ class firstbootWindow:
             fd.write("RUN_FIRSTBOOT=NO\n")
             fd.close()
 
+#            pid = os.fork()
+#
+#            #Remove the firstboot init script
+#            if (not pid):
+#                path = '/sbin/chkconfig'
+#                args = ['--delete', 'firstboot']
+#                os.execv(path, args)
+
         #Exit the GTK loop
         gtk.mainquit()
         if self.wm_pid:
