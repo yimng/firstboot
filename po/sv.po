@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
+"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
 "PO-Revision-Date: 2002-08-01 22:15+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 
-#: ../src/exceptionWindow.py:31
+#: ../src/exceptionWindow.py:32
 msgid "An error has occured in the %s module."
 msgstr "Ett fel har inträffat i modulen %s."
 
-#: ../src/exceptionWindow.py:34
+#: ../src/exceptionWindow.py:37
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
@@ -31,11 +31,12 @@ msgstr ""
 "läsa in denna modul, och försöka köra resterande\n"
 "moduler."
 
-#: ../src/exceptionWindow.py:38
+#: ../src/exceptionWindow.py:41
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
-"A copy of the debug output has been saved to /tmp/firstboot.txt \n"
+"A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 "Rapportera gärna ett fel i \"firstboot\" i Red Hats\n"
@@ -120,19 +121,19 @@ msgstr ""
 "användning. Vi hoppas att du kommer att ha en trevlig datorupplevelse. Tryck "
 "på knappen \"Framåt\" i nedre högra hörnet för att fortsätta."
 
-#: ../src/modules/soundcard_gui.py:50
+#: ../src/modules/soundcard_gui.py:49
 msgid "Sound Card"
 msgstr "Ljudkort"
 
-#: ../src/modules/soundcard_gui.py:51
+#: ../src/modules/soundcard_gui.py:50
 msgid "Sound Card Configuration"
 msgstr "Ljudkortskonfiguration"
 
-#: ../src/modules/soundcard_gui.py:52
+#: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "Ett ljudkort har hittats på din dator."
 
-#: ../src/modules/soundcard_gui.py:70
+#: ../src/modules/soundcard_gui.py:93
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -144,31 +145,41 @@ msgstr ""
 "kanalen, det andra ljudet i den vänstra och det tredje i mitten."
 
 #: ../src/modules/up2date.py:18
-msgid "Update Your System"
-msgstr "Uppdatera ditt system"
+#, fuzzy
+msgid "Update Agent"
+msgstr "Red Hats uppdateringsagent"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hats uppdateringsagent"
 
 #: ../src/modules/up2date.py:55
+#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
-"enhancements."
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+"\n"
 msgstr ""
 "Red Hats uppdateringsagent kommer att registrera din maskin i Red Hat "
 "Network, så att du kan få de senaste programpaketen direkt från Red Hat. "
 "Genom att använda detta verktyg får du ett alltid uppdaterat Red Hat Linux-"
 "system med alla säkerhetsfixar, felfixar och förbättringar av programpaket."
 
-#: ../src/modules/up2date.py:68
+#: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Ja, jag vill registrera mitt system i Red Hat Network"
 
-#: ../src/modules/up2date.py:69
+#: ../src/modules/up2date.py:75
 msgid "No, I do not want to register my system."
 msgstr "Nej, jag vill inte registrera mitt system."
 
@@ -192,6 +203,9 @@ msgstr ""
 "konfigurationsagent kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Framåt\" i nedre högra hörnet för att "
 "fortsätta."
+
+#~ msgid "Update Your System"
+#~ msgstr "Uppdatera ditt system"
 
 #~ msgid "Network check"
 #~ msgstr "Nätverkskontroll"

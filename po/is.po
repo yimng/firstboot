@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
-"POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
+"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
 "PO-Revision-Date: 2002-07-25 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <ra@hp.is>\n"
@@ -14,22 +14,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 
-#: ../src/exceptionWindow.py:31
+#: ../src/exceptionWindow.py:32
 msgid "An error has occured in the %s module."
 msgstr "Villa kom upp í reklinum %s."
 
-#: ../src/exceptionWindow.py:34
+#: ../src/exceptionWindow.py:37
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
 
-#: ../src/exceptionWindow.py:38
+#: ../src/exceptionWindow.py:41
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
-"A copy of the debug output has been saved to /tmp/firstboot.txt \n"
+"A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
@@ -113,21 +113,21 @@ msgstr ""
 "notkunar.  Við vonum að þú njótir reynslunnar af Red Hat Linux. Vinsamlegast "
 "smelltu á \"Áfram\" hnappinn í hægra horninu hér að neðan til að halda áfram."
 
-#: ../src/modules/soundcard_gui.py:50
+#: ../src/modules/soundcard_gui.py:49
 #, fuzzy
 msgid "Sound Card"
 msgstr "Hljóðkort:"
 
-#: ../src/modules/soundcard_gui.py:51
+#: ../src/modules/soundcard_gui.py:50
 #, fuzzy
 msgid "Sound Card Configuration"
 msgstr "Stillingar dagsettningar og tíma"
 
-#: ../src/modules/soundcard_gui.py:52
+#: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr ""
 
-#: ../src/modules/soundcard_gui.py:70
+#: ../src/modules/soundcard_gui.py:93
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -136,8 +136,9 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/up2date.py:18
-msgid "Update Your System"
-msgstr "Uppfæra vélina þína"
+#, fuzzy
+msgid "Update Agent"
+msgstr "Red Hat uppfærsluálfurinn"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
@@ -150,7 +151,15 @@ msgid ""
 "that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
-"enhancements."
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+"\n"
 msgstr ""
 "Nú þegar þú hefur skráð vélina hjá Red Hat Network getur þú keyrt Red Hat "
 "uppfærslutólið til að sækja nýjustu hugbúnðarpakkana frá Red Hat. Með þessu "
@@ -158,11 +167,11 @@ msgstr ""
 "útgáfum af húgbúnaði og með öllum öryggisuppfærslum, villuleiðréttingum og "
 "viðbótum"
 
-#: ../src/modules/up2date.py:68
+#: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Já ég vil skrá vélina hjá Red Hat Network"
 
-#: ../src/modules/up2date.py:69
+#: ../src/modules/up2date.py:75
 msgid "No, I do not want to register my system."
 msgstr "Nei ég vil ekki skrá vélina hjá Red Hat Network"
 
@@ -186,3 +195,6 @@ msgstr ""
 "uppsetningarforritið mun nú leiða þig í gegnum það sem eftir er að stilla. "
 "Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra horninu hér að neðan til "
 "að halda áfram."
+
+#~ msgid "Update Your System"
+#~ msgstr "Uppfæra vélina þína"

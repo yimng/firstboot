@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
+"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
 "PO-Revision-Date: 2002-08-02 10:23+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.0beta1\n"
 
-#: ../src/exceptionWindow.py:31
+#: ../src/exceptionWindow.py:32
 msgid "An error has occured in the %s module."
 msgstr "%s 모듈에서 오류가 발생했습니다."
 
-#: ../src/exceptionWindow.py:34
+#: ../src/exceptionWindow.py:37
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
@@ -30,11 +30,12 @@ msgstr ""
 "Red Hat 설정 에이전트는 이 모듈을 로드하지 않고 \n"
 "그 외 나머지 모듈을 실행할 것입니다."
 
-#: ../src/exceptionWindow.py:38
+#: ../src/exceptionWindow.py:41
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
-"A copy of the debug output has been saved to /tmp/firstboot.txt \n"
+"A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 "'firstboot'에 대한 버그를 Red Hat 버그 추적 시스템인 \n"
@@ -114,23 +115,23 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"축하합니다! Red Hat Linux 시스템이 설정되어 이제 사용하실 수 있습니다.  "
-"즐겁고 유익한 컴퓨터의 세계를 경험해 보시기 바랍니다. 오른쪽 하단 모서리에 위"
-"치한 \"앞으로 (Forward)\" 버튼을 클릭하시면, 계속 진행합니다."
+"축하합니다! Red Hat Linux 시스템이 설정되어 이제 사용하실 수 있습니다.  즐겁"
+"고 유익한 컴퓨터의 세계를 경험해 보시기 바랍니다. 오른쪽 하단 모서리에 위치"
+"한 \"앞으로 (Forward)\" 버튼을 클릭하시면, 계속 진행합니다."
 
-#: ../src/modules/soundcard_gui.py:50
+#: ../src/modules/soundcard_gui.py:49
 msgid "Sound Card"
 msgstr "사운드 카드"
 
-#: ../src/modules/soundcard_gui.py:51
+#: ../src/modules/soundcard_gui.py:50
 msgid "Sound Card Configuration"
 msgstr "사운드 카드 설정"
 
-#: ../src/modules/soundcard_gui.py:52
+#: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "사운드 카드가 검색되었습니다."
 
-#: ../src/modules/soundcard_gui.py:70
+#: ../src/modules/soundcard_gui.py:93
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -142,20 +143,30 @@ msgstr ""
 "왼쪽 채널, 그리고 세번째 사운드는 중앙에서 재생됩니다."
 
 #: ../src/modules/up2date.py:18
-msgid "Update Your System"
-msgstr "시스템을 업데이트 하십시오"
+#, fuzzy
+msgid "Update Agent"
+msgstr "Red Hat 업데이트 에이전트"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 업데이트 에이전트"
 
 #: ../src/modules/up2date.py:55
+#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
-"enhancements."
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+"\n"
 msgstr ""
 "Red Hat 업데이트 에이전트는 이제 여러분의 컴퓨터를 Red Hat Network에 등록할 "
 "것입니다. 등록하시면 Red Hat에서 직접 최신 소프트웨어 패키지를 다운로드 받으"
@@ -163,11 +174,11 @@ msgstr ""
 "그 수정과 개선된 소프트웨어 패키지를 갖춘 최신의 Red Hat Linux 시스템을 사용"
 "하실 수 있습니다."
 
-#: ../src/modules/up2date.py:68
+#: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "네, Red Hat Network에 시스템을 등록합니다."
 
-#: ../src/modules/up2date.py:69
+#: ../src/modules/up2date.py:75
 msgid "No, I do not want to register my system."
 msgstr "아니오, 시스템을 등록하지 않습니다."
 
@@ -191,6 +202,9 @@ msgstr ""
 "트는 이제 몇가지 기본적인 설정 과정을 여러가지 단계를 통해 길잡이를 해드릴 것"
 "입니다. 오른쪽 하단 모서리에 위치한 \"앞으로 (Forward)\" 버튼을 클릭하시면, "
 "계속 진행합니다."
+
+#~ msgid "Update Your System"
+#~ msgstr "시스템을 업데이트 하십시오"
 
 #~ msgid "Network check"
 #~ msgstr "네트워크 검사"
@@ -420,4 +434,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat 업데이트 에이전트 시작"
-

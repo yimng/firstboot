@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
+"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
 "PO-Revision-Date: 2002-07-17 11:12GMT\n"
 "Last-Translator: Nuria Soriano <nuria@redhat.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -15,22 +15,22 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 0.9.5\n"
 
-#: ../src/exceptionWindow.py:31
+#: ../src/exceptionWindow.py:32
 msgid "An error has occured in the %s module."
 msgstr ""
 
-#: ../src/exceptionWindow.py:34
+#: ../src/exceptionWindow.py:37
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
 
-#: ../src/exceptionWindow.py:38
+#: ../src/exceptionWindow.py:41
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
-"A copy of the debug output has been saved to /tmp/firstboot.txt \n"
+"A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
@@ -107,21 +107,21 @@ msgid ""
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 
-#: ../src/modules/soundcard_gui.py:50
+#: ../src/modules/soundcard_gui.py:49
 #, fuzzy
 msgid "Sound Card"
 msgstr "Tarjeta de sonido:"
 
-#: ../src/modules/soundcard_gui.py:51
+#: ../src/modules/soundcard_gui.py:50
 #, fuzzy
 msgid "Sound Card Configuration"
 msgstr "Configuración del teclado"
 
-#: ../src/modules/soundcard_gui.py:52
+#: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr ""
 
-#: ../src/modules/soundcard_gui.py:70
+#: ../src/modules/soundcard_gui.py:93
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -130,8 +130,9 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/up2date.py:18
-msgid "Update Your System"
-msgstr ""
+#, fuzzy
+msgid "Update Agent"
+msgstr "Agente de actualización de Red Hat"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
@@ -144,7 +145,15 @@ msgid ""
 "that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
-"enhancements."
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+"\n"
 msgstr ""
 "En el momento en que se ha registrado con Red Hat Network, puede ejecutar "
 "elagente de actualización de Red Hat para recibir los últimos paquetes de "
@@ -152,12 +161,12 @@ msgstr ""
 "poseer elsistema Red Hat Linux más actualizado con todos los parches de "
 "seguridad, parches a erratas y mejoras del paquete de software"
 
-#: ../src/modules/up2date.py:68
+#: ../src/modules/up2date.py:74
 #, fuzzy
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "Registrar su sistema con Red Hat Network"
 
-#: ../src/modules/up2date.py:69
+#: ../src/modules/up2date.py:75
 msgid "No, I do not want to register my system."
 msgstr ""
 
@@ -207,14 +216,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update Agent "
-#~ "to update your system.  To set up a network connection, please click on the "
-#~ "button below.\n"
+#~ "for registering your system with RHN and for using the Red Hat Update "
+#~ "Agent to update your system.  To set up a network connection, please "
+#~ "click on the button below.\n"
 #~ msgstr ""
-#~ "No se ha detectado la conexión de red. Es necesaria la conectividad de red "
-#~ "para registrar su sistema con RHN y para usar el Red Hat Update Agent para "
-#~ "actualizar su sistema. Para configurar la red, pulse el botón de la parte "
-#~ "inferior.\n"
+#~ "No se ha detectado la conexión de red. Es necesaria la conectividad de "
+#~ "red para registrar su sistema con RHN y para usar el Red Hat Update Agent "
+#~ "para actualizar su sistema. Para configurar la red, pulse el botón de la "
+#~ "parte inferior.\n"
 
 #~ msgid "Set up networking..."
 #~ msgstr "Configuración de la red..."
@@ -342,27 +351,27 @@ msgstr ""
 
 #~ msgid ""
 #~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement Alerts "
-#~ "(collectively known as Errata Alerts) can be retreived directly from Red "
-#~ "Hat. You can even have updates automatically delivered directly to your "
-#~ "system as soon as they are released. \n"
+#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
+#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
+#~ "from Red Hat. You can even have updates automatically delivered directly "
+#~ "to your system as soon as they are released. \n"
 #~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released and "
-#~ "sends you email notifications, it can:"
+#~ "Because Red Hat Network keeps track of when Errata Updates are released "
+#~ "and sends you email notifications, it can:"
 #~ msgstr ""
 #~ "Red Hat Network es una solución de Internet para gestionar uno o más "
 #~ "sistemas Red Hat Linux. Todas las alerta de seguridad, alertas de "
 #~ "resolución de errores y mejoras de alertas (conocidas colectivamente como "
-#~ "alertas de errata) pueden ser recuperadas directamente desde Red Hat. Puede "
-#~ "obtener actualizaciones entregadas directamente para su sistema tan pronto "
-#~ "como éste sea entregado.\n"
+#~ "alertas de errata) pueden ser recuperadas directamente desde Red Hat. "
+#~ "Puede obtener actualizaciones entregadas directamente para su sistema tan "
+#~ "pronto como éste sea entregado.\n"
 #~ "\n"
-#~ "Red Hat Network sigue la huella de las actualizaciones de erratas entregadas "
-#~ "y envía las notificaciones de correo electrónico, puede:"
+#~ "Red Hat Network sigue la huella de las actualizaciones de erratas "
+#~ "entregadas y envía las notificaciones de correo electrónico, puede:"
 
 #~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay on "
-#~ "top of the Red Hat errata list\n"
+#~ " -- Reduce the time and effort required by system administrators to stay "
+#~ "on top of the Red Hat errata list\n"
 #~ " -- Minimize security vulnerabilities in your network by providing the "
 #~ "patches as soon as Red Hat releases them\n"
 #~ " -- Filter out package updates not relevant to your network\n"
@@ -370,10 +379,11 @@ msgstr ""
 #~ "systems when you want it"
 #~ msgstr ""
 #~ " -- Reduce el tiempo y el esfuerzo que necesitan los administradores del "
-#~ "sistema para conservar el primer puesto en la lista de erratas de Red Hat\n"
-#~ " -- Minimizar las vulnerabilidades de su red al proporcionar los parches tan "
-#~ "pronto como Red Hat los entregue  -- Filtrar las actualizaciones del paquete "
-#~ "que no sean relevantes para su red\n"
+#~ "sistema para conservar el primer puesto en la lista de erratas de Red "
+#~ "Hat\n"
+#~ " -- Minimizar las vulnerabilidades de su red al proporcionar los parches "
+#~ "tan pronto como Red Hat los entregue  -- Filtrar las actualizaciones del "
+#~ "paquete que no sean relevantes para su red\n"
 #~ " -- Planificar actualizaciones de erratas para que los paquetes sean "
 #~ "entregados\n"
 #~ "a sistemas seleccionados cuando los desee. "

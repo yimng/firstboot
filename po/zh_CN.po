@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
+"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
 "PO-Revision-Date: 2002-08-05 01:29+1000\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -15,11 +15,11 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: ../src/exceptionWindow.py:31
+#: ../src/exceptionWindow.py:32
 msgid "An error has occured in the %s module."
 msgstr "模块 %s 中出现错误。"
 
-#: ../src/exceptionWindow.py:34
+#: ../src/exceptionWindow.py:37
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
@@ -29,11 +29,12 @@ msgstr ""
 "Red Hat 设置代理无法载入该模块\n"
 "它将会试图运行剩余的模块。"
 
-#: ../src/exceptionWindow.py:38
+#: ../src/exceptionWindow.py:41
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
-"A copy of the debug output has been saved to /tmp/firstboot.txt \n"
+"A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 "请向 Red Hat 的错误跟踪系统报告关于“firstboot”\n"
@@ -110,58 +111,66 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"祝贺你！你的 Red Hat Linux 系统现已设置完毕，一切就绪。 "
-"我们希望你喜欢该系统。请点击右下角的“向前”按钮来继续。"
+"祝贺你！你的 Red Hat Linux 系统现已设置完毕，一切就绪。 我们希望你喜欢该系"
+"统。请点击右下角的“向前”按钮来继续。"
 
-#: ../src/modules/soundcard_gui.py:50
+#: ../src/modules/soundcard_gui.py:49
 msgid "Sound Card"
 msgstr "声卡"
 
-#: ../src/modules/soundcard_gui.py:51
+#: ../src/modules/soundcard_gui.py:50
 msgid "Sound Card Configuration"
 msgstr "声卡配置"
 
-#: ../src/modules/soundcard_gui.py:52
+#: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "在你的计算机上检测到声卡。"
 
-#: ../src/modules/soundcard_gui.py:70
+#: ../src/modules/soundcard_gui.py:93
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"点击“播放测试声音”按钮来试听声音示例。 "
-"你应该听到三种声音系列。第一种声音是 "
-"右频；第二种声音是左频；第三种声音将 "
-"会在中间。"
+"点击“播放测试声音”按钮来试听声音示例。 你应该听到三种声音系列。第一种声音是 "
+"右频；第二种声音是左频；第三种声音将 会在中间。"
 
 #: ../src/modules/up2date.py:18
-msgid "Update Your System"
-msgstr "更新你的系统"
+#, fuzzy
+msgid "Update Agent"
+msgstr "Red Hat 更新代理"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat 更新代理"
 
 #: ../src/modules/up2date.py:55
+#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
-"enhancements."
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+"\n"
 msgstr ""
-"Red Hat 更新代理将会在 Red Hat 网络上注册你的机器，因此你可以直接从 Red Hat 检索"
-"最新的软件包。使用本工具会允许你一直拥有最新的 Red Hat Linux 系统和所有的安全"
-"补丁、错误修正、及对软件包的增进。"
+"Red Hat 更新代理将会在 Red Hat 网络上注册你的机器，因此你可以直接从 Red Hat "
+"检索最新的软件包。使用本工具会允许你一直拥有最新的 Red Hat Linux 系统和所有的"
+"安全补丁、错误修正、及对软件包的增进。"
 
-#: ../src/modules/up2date.py:68
+#: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "是，我想在 Red Hat 网络注册"
 
-#: ../src/modules/up2date.py:69
+#: ../src/modules/up2date.py:75
 msgid "No, I do not want to register my system."
 msgstr "否，我不想注册我的系统。"
 
@@ -180,9 +189,11 @@ msgid ""
 "you through some basic configuration.  Please click the \"Forward\" button "
 "in the lower right corner to continue."
 msgstr ""
-"嗨！欢迎使用 Red Hat 设置代理。在你的系统一切就绪前要执行几个步骤。 "
-"Red Hat 设置代理将会引导你通过一些基本配置。请点击右下角的“向前” "
-"按钮来继续。"
+"嗨！欢迎使用 Red Hat 设置代理。在你的系统一切就绪前要执行几个步骤。 Red Hat "
+"设置代理将会引导你通过一些基本配置。请点击右下角的“向前” 按钮来继续。"
+
+#~ msgid "Update Your System"
+#~ msgstr "更新你的系统"
 
 #~ msgid "Network check"
 #~ msgstr "网络检查"
@@ -392,4 +403,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "启动 Red Hat 更新代理"
-

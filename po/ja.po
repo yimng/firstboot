@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
-"POT-Creation-Date: Thu Aug  1 15:31:19 2002\n"
+"POT-Creation-Date: Wed Aug  7 12:48:32 2002\n"
 "PO-Revision-Date: 2002-08-02 09:02GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -16,31 +16,32 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.0beta1\n"
 
-#: ../src/exceptionWindow.py:31
+#: ../src/exceptionWindow.py:32
 msgid "An error has occured in the %s module."
 msgstr "%sモジュールにエラーが発生しました。"
 
-#: ../src/exceptionWindow.py:34
+#: ../src/exceptionWindow.py:37
 msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"%sモジュールに問題がありますので、\n "
-"Red Hat Setup Agentはこのモジュールをロードしません。\n "
-"そして残りのモジュールの実行を試みます。"
+"%sモジュールに問題がありますので、\n"
+" Red Hat Setup Agentはこのモジュールをロードしません。\n"
+" そして残りのモジュールの実行を試みます。"
 
-#: ../src/exceptionWindow.py:38
+#: ../src/exceptionWindow.py:41
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
-"A copy of the debug output has been saved to /tmp/firstboot.txt \n"
+"A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 "http://www.redhat.com/bugzillaで Red Hatバグ追跡システムの中の \n"
-"'firstboot'へバグ報告を提出して下さい。\n "
-"デバッグ出力のコピーは/tmp/firstboot.txt に保存してあります。\n "
-"バグ報告には必ず、このファイルを添付して下さい。\n"
+"'firstboot'へバグ報告を提出して下さい。\n"
+" デバッグ出力のコピーは/tmp/firstboot.txt に保存してあります。\n"
+" バグ報告には必ず、このファイルを添付して下さい。\n"
 
 #: ../src/modules/additional_cds.py:19
 msgid "Additional CDs"
@@ -114,23 +115,23 @@ msgid ""
 "We hope that you will have a pleasant computing experience.  Please click "
 "the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"おめでとうございます!  Red Hat Linux システムが設定できましたので、使用の "
-"準備ができました。楽しいコンピュータの世界をお楽しみ下さい。右下の隅にある "
+"おめでとうございます!  Red Hat Linux システムが設定できましたので、使用の 準"
+"備ができました。楽しいコンピュータの世界をお楽しみ下さい。右下の隅にある "
 "\"Forward\"ボタンをクリックして続けてください。"
 
-#: ../src/modules/soundcard_gui.py:50
+#: ../src/modules/soundcard_gui.py:49
 msgid "Sound Card"
 msgstr "サウンド カード"
 
-#: ../src/modules/soundcard_gui.py:51
+#: ../src/modules/soundcard_gui.py:50
 msgid "Sound Card Configuration"
 msgstr "サウンド カードの設定"
 
-#: ../src/modules/soundcard_gui.py:52
+#: ../src/modules/soundcard_gui.py:51
 msgid "A sound card has been detected on your computer."
 msgstr "コンピュータ上にサウンドカードが検出されました。"
 
-#: ../src/modules/soundcard_gui.py:70
+#: ../src/modules/soundcard_gui.py:93
 msgid ""
 "Click the \"Play test sound\" button to hear a sample sound.  You should "
 "hear a series of three sounds.  The first sound will be in the right "
@@ -142,31 +143,41 @@ msgstr ""
 "側のチャンネルです。 3番目の音は 中央となります。"
 
 #: ../src/modules/up2date.py:18
-msgid "Update Your System"
-msgstr "システムを更新"
+#, fuzzy
+msgid "Update Agent"
+msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:27
 msgid "Red Hat Update Agent"
 msgstr "Red Hat Update Agent"
 
 #: ../src/modules/up2date.py:55
+#, fuzzy
 msgid ""
 "The Red Hat Update Agent will register your machine with Red Hat Network so "
 "that you can receive the latest software packages directly from Red Hat.  "
 "Using this tool will allow you to always have the most up-to-date Red Hat "
 "Linux system with all the security patches, bug fixes, and software package "
-"enhancements."
+"enhancements. \n"
+"\n"
+"If you purchased this product, you are entitled to a free trial of Red Hat "
+"Network Basic Service. To access the free trial, please refer to the product "
+"activation card found in the box for detailed instructions. \n"
+"\n"
+"If you did not purchase this product, visit http://rhn.redhat.com for more "
+"information or to subscribe to Red Hat Network Basic Service. \n"
+"\n"
 msgstr ""
 "Red Hat Update Agentは、マシンをRed Hat Networkに登録しますので、 Red Hatから"
 "直接最新のソフトウェアパッケージを受け取ることができます。 このツールの使用す"
 "れば、セキュリティパッチ、バグ修正、 ソフトウェアパッケージ拡張などをいつも最"
 "新の状態にしてRed Hat Linuxシステムを 所有することができます。"
 
-#: ../src/modules/up2date.py:68
+#: ../src/modules/up2date.py:74
 msgid "Yes, I would like to register with Red Hat Network"
 msgstr "はい、システムをRed Hat Networkへ登録します。"
 
-#: ../src/modules/up2date.py:69
+#: ../src/modules/up2date.py:75
 msgid "No, I do not want to register my system."
 msgstr "いいえ、システムを登録しません。"
 
@@ -189,6 +200,9 @@ msgstr ""
 "で もう少しステップがあります。Red Hat セットアップエージェントはここで、基本"
 "的な 設定を通してガイドをしていきます。 右下の隅にある\"Forward\"ボタンをク"
 "リックして 続けて下さい。"
+
+#~ msgid "Update Your System"
+#~ msgstr "システムを更新"
 
 #~ msgid "Network check"
 #~ msgstr "ネットワーク確認"
@@ -409,4 +423,3 @@ msgstr ""
 
 #~ msgid "Start the Red Hat Update Agent"
 #~ msgstr "Red Hat Update Agentを開始"
-
