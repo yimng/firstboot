@@ -39,6 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 %preun
 if [ -d /usr/share/firstboot ] ; then
   rm -rf /usr/share/firstboot/*.pyc
+  rm -rf /usr/share/firstboot/modules/*.pyc
 fi
 
 %files -f %{name}.lang
@@ -46,18 +47,7 @@ fi
 #%doc COPYING
 #%doc doc/*
 %dir /usr/share/firstboot/
-#/usr/share/firstboot/*
-%dir /usr/share/firstboot/modules
-#/usr/share/firstboot/modules/*
-%dir /usr/share/firstboot/pixmaps
-#/usr/share/firstboot/pixmaps/*
-#%attr(0644,root,root) %{_mandir}/man8/dateconfig*
-#%attr(0644,root,root) %{_mandir}/ja/man8/dateconfig*
-#%attr(0644,root,root) %config /etc/X11/applnk/System/redhat-config-language.desktop
-#%attr(0644,root,root) %config /etc/X11/sysconfig/dateconfig.desktop
-#%attr(0644,root,root) %config /usr/share/pixmaps/dateconfig.png
-#%attr(0644,root,root) %config /etc/security/console.apps/redhat-config-language
-#%attr(0644,root,root) %config /etc/pam.d/redhat-config-language
+/usr/share/firstboot/*
 
 %changelog
 * Tue Nov 28 2001 Brent Fox <bfox@redhat.com>
