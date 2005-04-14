@@ -3,19 +3,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Tamas Szanto <tszanto@mol.hu>, 2004.
 # Széll Tamás <tomi@digiflex.hu>, 2004.
+# Arpad Biro <biro_arpad@yahoo.com>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-12-14 16:44-0500\n"
-"PO-Revision-Date: 2004-10-06 11:55+0200\n"
-"Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
-"Language-Team: Hungarian <hu@li.org>\n"
+"PO-Revision-Date: 2005-04-14 17:24+0200\n"
+"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
+"Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3\n"
+"X-Generator: KBabel 1.9\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -182,8 +183,7 @@ msgstr ""
 "és kattintson az \"OK\" gombra."
 
 #: ../src/modules/additional_cds.py:192
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "\"OK\" gombra."
@@ -193,7 +193,6 @@ msgid "System User"
 msgstr "Rendszerfelhasználó"
 
 #: ../src/modules/create_user.py:70
-#, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -293,16 +292,14 @@ msgstr ""
 "karaktereket lehet használni."
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet "
 "használni."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket "
 "lehet használni."
@@ -336,11 +333,8 @@ msgstr ""
 "gombra a jobb alsó sarokban."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"A rendszer telepítése befejeződött. Továbblépéshez kattintson a \"Tovább\" "
-"gombra a jobb alsó sarokban."
+msgstr "Továbblépéshez kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -416,3 +410,4 @@ msgstr ""
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "A Firstboot program nem fut le 3-as futási szinten."
+
