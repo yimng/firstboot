@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2004-11-18 13:34+0100\n"
 "Last-Translator: Marek Garbaczewski <mrgary@fic.uni.lodz.pl>\n"
 "Language-Team: POLISH <pl@li.org>\n"
@@ -76,16 +76,16 @@ msgstr ""
 "Upewnij się, czy załączyłeś ten plik do raportu. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "_Wstecz"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "_Dalej"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Witamy"
@@ -139,7 +139,7 @@ msgstr "Zaznacz pozycję, którą chcesz zmodyfikować "
 msgid "Setup Agent"
 msgstr "Agent instalacji"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "Dodatkowe płyty"
 
@@ -155,8 +155,12 @@ msgstr ""
 "dysk z dokumentacją lub inny dostarczony przez Red Hat, aby zainstalować "
 "dodatkowe oprogramowanie."
 
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
+
 #. if 1:
-#: ../src/modules/additional_cds.py:71
+#: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
@@ -170,11 +174,11 @@ msgstr ""
 "Itanium 2 trzeba zainstalować pakiet Intel Execution Layer z dysku z "
 "dodatkami (Extras) do systemu."
 
-#: ../src/modules/additional_cds.py:112
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "Instalacja..."
 
-#: ../src/modules/additional_cds.py:158
+#: ../src/modules/additional_cds.py:160
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -182,7 +186,7 @@ msgstr ""
 "Płyta CD-ROM nie została wykryta. Włóż ją do napędu i kliknij \"OK\", aby "
 "kontynuować."
 
-#: ../src/modules/additional_cds.py:192
+#: ../src/modules/additional_cds.py:194
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -199,9 +203,9 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Zalecamy stworzenie prywatnego konta użytkownika do zwykłego (nie"
-"administracyjnego) używania systemu. Aby stworzyć prywatne "
-"konto, wpisz potrzebne informacje poniżej."
+"Zalecamy stworzenie prywatnego konta użytkownika do zwykłego "
+"(nieadministracyjnego) używania systemu. Aby stworzyć prywatne konto, wpisz "
+"potrzebne informacje poniżej."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -224,8 +228,8 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Jeśli potrzebujesz użycia uwierzytelniania sieciowego takiego jak Kerberos czy NIS, "
-"kliknij na przycisku \"Użyj uwierzytelniania sieciowego\"."
+"Jeśli potrzebujesz użycia uwierzytelniania sieciowego takiego jak Kerberos "
+"czy NIS, kliknij na przycisku \"Użyj uwierzytelniania sieciowego\"."
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
@@ -390,9 +394,9 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Zostało jeszcze tylko kilka kroków zanim twój system będzie gotowy. Agent instalacji "
-"obecnie nie posiada poradnika o podstawowej konfiguracji. Kliknij \"Dalej\" w "
-"dolnym prawym rogu okna, aby kontynuować."
+"Zostało jeszcze tylko kilka kroków zanim twój system będzie gotowy. Agent "
+"instalacji obecnie nie posiada poradnika o podstawowej konfiguracji. Kliknij "
+"\"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
 
 #~ msgid "Licence Aggrement"
 #~ msgstr "Warunki licencji"
@@ -401,5 +405,5 @@ msgstr ""
 #~ "The user name '%s' contains uppercase characters.  Please do not use "
 #~ "uppercase characters in the user name."
 #~ msgstr ""
-#~ "Nazwa użytkownika '%s' zawiera duże litery. Proszę nie używać "
-#~ "dużych znaków w nazwie użytkownika."
+#~ "Nazwa użytkownika '%s' zawiera duże litery. Proszę nie używać dużych "
+#~ "znaków w nazwie użytkownika."

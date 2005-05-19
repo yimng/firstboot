@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2005-01-26 15:15+0300\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -73,16 +73,16 @@ msgstr ""
 "Переконайтесь, що ви приєднали цей файл до повідомлення про помилку.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "_Назад"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "_Далі"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Ласкаво просимо"
@@ -136,7 +136,7 @@ msgstr "Виберіть пункт, який ви бажаєте змінити
 msgid "Setup Agent"
 msgstr "Агент налаштовування"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "Додаткові CD"
 
@@ -147,13 +147,17 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Вставте диск с надписом \"Red Hat Enterprise Linux Extras\" для "
-"встановлення програм та додаткових модулів (plug-in) третіх фірм.  Ви "
-"також можете вставити диск з документацією або інший диск, "
-"що постачається компанією Red Hat, для встановлення додаткового програмного "
-"забезпечення на цьому етапі."
+"Вставте диск с надписом \"Red Hat Enterprise Linux Extras\" для встановлення "
+"програм та додаткових модулів (plug-in) третіх фірм.  Ви також можете "
+"вставити диск з документацією або інший диск, що постачається компанією Red "
+"Hat, для встановлення додаткового програмного забезпечення на цьому етапі."
+
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
+
 #. if 1:
-#: ../src/modules/additional_cds.py:71
+#: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
@@ -163,15 +167,15 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Для виконання 32-бітних програм на архітектурі Intel Itanium2, "
-"необхідно додатково встановити пакет Intel Execution Layer з диска "
-"додаткового програмного забезпечення (Extras)."
+"Для виконання 32-бітних програм на архітектурі Intel Itanium2, необхідно "
+"додатково встановити пакет Intel Execution Layer з диска додаткового "
+"програмного забезпечення (Extras)."
 
-#: ../src/modules/additional_cds.py:112
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "Встановлення..."
 
-#: ../src/modules/additional_cds.py:158
+#: ../src/modules/additional_cds.py:160
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -179,7 +183,7 @@ msgstr ""
 "CD-ROM не знайдено. Вставте CD-ROM у пристрій та натисніть \"Гаразд\" для "
 "продовження."
 
-#: ../src/modules/additional_cds.py:192
+#: ../src/modules/additional_cds.py:194
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -195,9 +199,9 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Для повсякденного використання (не адміністративного) рекомендується створити "
-"персональний обліковий запис. Для створення облікового запису введіть "
-"необхідну інформацію."
+"Для повсякденного використання (не адміністративного) рекомендується "
+"створити персональний обліковий запис. Для створення облікового запису "
+"введіть необхідну інформацію."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2005-04-14 17:24+0200\n"
 "Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
 "Language-Team: Hungarian\n"
@@ -76,16 +76,16 @@ msgstr ""
 "Kérjük csatolja ezt a fájlt a hibabejelentéshez. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "_Vissza"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "_Tovább"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Üdvözöljük"
@@ -139,7 +139,7 @@ msgstr "Válassza ki a módosítani kívánt elemet "
 msgid "Setup Agent"
 msgstr "Telepítőügynök"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "További CD-k"
 
@@ -155,8 +155,12 @@ msgstr ""
 "telepítési lemez is megadható (például a dokumentáció vagy a Red Hat által "
 "készített valamilyen más szoftver lemeze)."
 
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
+
 #. if 1:
-#: ../src/modules/additional_cds.py:71
+#: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
@@ -170,11 +174,11 @@ msgstr ""
 "Intel Itanium2 rendszeren, akkor most telepítse fel az Intel Execution Layer "
 "csomagot az Extras lemezről."
 
-#: ../src/modules/additional_cds.py:112
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "Telepítés..."
 
-#: ../src/modules/additional_cds.py:158
+#: ../src/modules/additional_cds.py:160
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -182,8 +186,9 @@ msgstr ""
 "Nem található CD-ROM-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba "
 "és kattintson az \"OK\" gombra."
 
-#: ../src/modules/additional_cds.py:192
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:194
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "\"OK\" gombra."
@@ -292,14 +297,16 @@ msgstr ""
 "karaktereket lehet használni."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet "
 "használni."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket "
 "lehet használni."
@@ -410,4 +417,3 @@ msgstr ""
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "A Firstboot program nem fut le 3-as futási szinten."
-

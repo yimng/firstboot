@@ -11,14 +11,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
-"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2005-02-21 01:27+0300\n"
 "Last-Translator: Munzir Taha <munzirtaha@newhorizons.com.sa>\n"
 "Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.9.1\n"
 
 #: ../src/constants_text.py:36
@@ -79,16 +79,16 @@ msgstr ""
 "تأكد من إرفاق هذا الملف بتقرير العلّة.\n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "_رجوع"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "_التالي"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "أهلاً"
@@ -142,7 +142,7 @@ msgstr "حدد العنصر الذي تريد تعديله"
 msgid "Setup Agent"
 msgstr "عميل الإعداد"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "أقراص مُدمجة إضافية"
 
@@ -157,8 +157,12 @@ msgstr ""
 "الوظائف الإضافيّة والبرامج من طرف ثالث. يمكنك أيضاً إدخال قرص الوثائق، أو "
 "الأقراص الأخرى من Red Hat لتثبيت برامج إضافيّة الآن."
 
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
+
 #. if 1:
-#: ../src/modules/additional_cds.py:71
+#: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
@@ -171,18 +175,21 @@ msgstr ""
 "لتمكين دعم التطبيقات ذات 32-بت  على هيكليّة معالج Intel Itanium2، كما يجب "
 "عليك تثبيت حزمة Intel Execution Layer من قرص Extras الآن."
 
-#: ../src/modules/additional_cds.py:112
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "تثبيت..."
 
-#: ../src/modules/additional_cds.py:158
+#: ../src/modules/additional_cds.py:160
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ واضغط \"موافق\" للاستمرار."
+msgstr ""
+"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ واضغط \"موافق"
+"\" للاستمرار."
 
-#: ../src/modules/additional_cds.py:192
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:194
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
@@ -285,15 +292,18 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
+msgstr ""
+"اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "كلمة المرور تحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "الاسم '%s' يحتوي على حروف غير صالحة. الرّجاء استخدام حروف ASCII فقط."
 
 #: ../src/modules/date.py:46
@@ -387,4 +397,3 @@ msgstr ""
 "بقي بعض الخطوات الأخيرة ليصبح النظام جاهزاً للاستعمال. برنامج التثبيت سوف "
 "يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في "
 "الركن الأيمنللمتابعة."
-

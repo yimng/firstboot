@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2005-04-17 14:34+0200\n"
 "Last-Translator: Bahadır Yağan <bahadir.yagan@mht.com.tr>\n"
 "Language-Team: Turkish <fedora-trans-tr@redhat.com>\n"
@@ -83,24 +83,18 @@ msgstr ""
 "bir koyası %s olarak kaydedilmiştir. Bu dosyayı hata\n"
 "raporunuza eklemeyi unutmayınız.\n"
 
-#: ../src/firstbootWindowLocal.py:186
-#: ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192
-#: ../src/firstbootWindow.py:580
+#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "_Geri"
 
-#: ../src/firstbootWindowLocal.py:194
-#: ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200
-#: ../src/firstbootWindow.py:584
+#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "_İleri"
 
-#: ../src/firstbootWindowLocal.py:532
-#: ../src/firstbootWindow.py:576
-#: ../src/modules/welcome.py:18
-#: ../src/modules/welcome.py:27
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
+#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Hoş Geldiniz"
 
@@ -153,45 +147,72 @@ msgstr "Değiştirmek istediğiniz öğeyi seçiniz "
 msgid "Setup Agent"
 msgstr "Kurulum Yardımcısı "
 
-#: ../src/modules/additional_cds.py:43
-#: ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "İlave CD'ler"
 
 #: ../src/modules/additional_cds.py:61
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "3. parti uygulamaları ve eklentileri yüklemek için lütfen \"Red Hat Enterprise Linux Extras\" isimli CD'yi yerleştirin. Ayrıca belgelendirme CD'si yada Red Hat tarafından sağlanan diğer program cdlerini de bu aşamada yerleştirebilirsiniz."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"3. parti uygulamaları ve eklentileri yüklemek için lütfen \"Red Hat "
+"Enterprise Linux Extras\" isimli CD'yi yerleştirin. Ayrıca belgelendirme "
+"CD'si yada Red Hat tarafından sağlanan diğer program cdlerini de bu aşamada "
+"yerleştirebilirsiniz."
+
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:71
+#: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture, you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 mimarisinde 32-bit uygulamara çalışma zamanı desteğini etkinleştirmek için, şimdi \"Extralar\" CD'sinden Intel Execution Layer paketini yüklemeniz gerekmektedir."
+"Intel Itanium2 mimarisinde 32-bit uygulamara çalışma zamanı desteğini "
+"etkinleştirmek için, şimdi \"Extralar\" CD'sinden Intel Execution Layer "
+"paketini yüklemeniz gerekmektedir."
 
-#: ../src/modules/additional_cds.py:112
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "Kur..."
 
-#: ../src/modules/additional_cds.py:158
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Bir CD-ROM algılanamadı.  Lütfen sürücüye bir CD-ROM yerleştirin ve devam etmek için \"Tamam\" düğmesine basın."
+#: ../src/modules/additional_cds.py:160
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Bir CD-ROM algılanamadı.  Lütfen sürücüye bir CD-ROM yerleştirin ve devam "
+"etmek için \"Tamam\" düğmesine basın."
 
-#: ../src/modules/additional_cds.py:192
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Cd'de otomatik başlama bulunamadı. Devam etmek için \"Tamam\"a tıklayın."
+#: ../src/modules/additional_cds.py:194
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Cd'de otomatik başlama bulunamadı. Devam etmek için \"Tamam\"a tıklayın."
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "Sistem Kullanıcısı"
 
 #: ../src/modules/create_user.py:70
-msgid "It is recommended that you create a system 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "Günlük kullanım için (yönetimsel olmayan) kişisel bir kullanıcı hesabı açmanız şiddetle tavsiye edilir.  Kişisel bir hesap içinaçmak için lütfen gereken bilgileri giriniz."
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Günlük kullanım için (yönetimsel olmayan) kişisel bir kullanıcı hesabı "
+"açmanız şiddetle tavsiye edilir.  Kişisel bir hesap içinaçmak için lütfen "
+"gereken bilgileri giriniz."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -210,16 +231,26 @@ msgid "Confir_m Password:"
 msgstr "Parola _Onaylama:"
 
 #: ../src/modules/create_user.py:117
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Eğer ağ üzerinden Kerberos yada NIS gibi bir yetkilendirme kullanmanız gerekiyorsa , lütfen Ağ Oturumu Açmayı Kullan'a tıklayın."
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Eğer ağ üzerinden Kerberos yada NIS gibi bir yetkilendirme kullanmanız "
+"gerekiyorsa , lütfen Ağ Oturumu Açmayı Kullan'a tıklayın."
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "Ağ _Oturumu Açmayı Kullan..."
 
 #: ../src/modules/create_user.py:163
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Kişisel bir kullanıcı hesabı oluşturmanız şiddetle tavsiye edilir.  Eğer bir hesap oluşturmadan devam ederseniz, sadece sistem yönetimi için oluşturulmuş root hesabını kullanarak sisteme girebileceksiniz."
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"Kişisel bir kullanıcı hesabı oluşturmanız şiddetle tavsiye edilir.  Eğer bir "
+"hesap oluşturmadan devam ederseniz, sadece sistem yönetimi için oluşturulmuş "
+"root hesabını kullanarak sisteme girebileceksiniz."
 
 #: ../src/modules/create_user.py:171
 msgid "_Continue"
@@ -248,27 +279,45 @@ msgstr "Kullanıcı adı sayı ile başlamamalıdır."
 #. Check for whitespace
 #: ../src/modules/create_user.py:296
 #, python-format
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
-msgstr "Kullanıcı adı '%s' boşluk içeriyor.  Lütfen kullanıcı adı içinde boşluk kullanmayın."
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Kullanıcı adı '%s' boşluk içeriyor.  Lütfen kullanıcı adı içinde boşluk "
+"kullanmayın."
 
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
-msgstr "Kullanıcı adı '%s' noktalama işaretleri içeriyor.  Lütfen kullanıcı adı içinde noktalama işaretleri kullanmayın."
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+"Kullanıcı adı '%s' noktalama işaretleri içeriyor.  Lütfen kullanıcı adı "
+"içinde noktalama işaretleri kullanmayın."
 
 #: ../src/modules/create_user.py:317
 #, python-format
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Kullanıcı adı '%s' geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterler kullanın."
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+"Kullanıcı adı '%s' geçersiz karakterler içeriyor.  Lütfen sadece ASCII "
+"karakterler kullanın."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Parola geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterleri kullanın."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Parola geçersiz karakterler içeriyor.  Lütfen sadece ASCII karakterleri "
+"kullanın."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "İsim '%s' geçersiz karakter içeriyor.  Lütfen sadece ASCII karakterleri kullanın."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"İsim '%s' geçersiz karakter içeriyor.  Lütfen sadece ASCII karakterleri "
+"kullanın."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -291,8 +340,12 @@ msgid "Finish Setup"
 msgstr "Kurulumu Bitir"
 
 #: ../src/modules/finished.py:33
-msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Sisteminiz ayarlandı ve artık kullanıma hazır. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr ""
+"Sisteminiz ayarlandı ve artık kullanıma hazır. Devam etmek için sağ alt "
+"köşedeki \"İleri\" düğmesine tıklayınız."
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
@@ -322,8 +375,7 @@ msgstr "Ağ Ayarlarını _Değiştir..."
 msgid "static"
 msgstr "sabit"
 
-#: ../src/modules/soundcard_gui.py:45
-#: ../src/modules/soundcard_gui.py:46
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "Ses Kartı"
 
@@ -332,8 +384,15 @@ msgid "A sound card has been detected on your computer."
 msgstr "Makinanızda bir ses kartı bulundu."
 
 #: ../src/modules/soundcard_gui.py:70
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Örnek sesi duymak için \"Deneme sesi çal\" düğmesine tıklayınız. 3 seslik bir dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sol kanaldan, üçüncü ses ise ortadan gelecek."
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Örnek sesi duymak için \"Deneme sesi çal\" düğmesine tıklayınız. 3 seslik "
+"bir dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sol kanaldan, üçüncü "
+"ses ise ortadan gelecek."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -344,30 +403,42 @@ msgid "Please set the timezone for the system."
 msgstr "Lütfen sistem için zaman dilimi belirleyin."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç adım kaldı. Kurulum Yardımcısı bazı temel yapılandırmalarda size rehberlik edecek. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç "
+"adım kaldı. Kurulum Yardımcısı bazı temel yapılandırmalarda size rehberlik "
+"edecek. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
 
 #, fuzzy
 #~ msgid "Licence Aggrement"
 #~ msgstr "Lisans Anlaşması "
+
 #~ msgid ""
 #~ "The user name '%s' contains uppercase characters.  Please do not use "
 #~ "uppercase characters in the user name."
 #~ msgstr ""
 #~ "Kullanıcı adı '%s' büyük harf içeriyor.  Lütfen kullanıcı adı içinde "
 #~ "büyük harf kullanmayın."
+
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot 3. çalışmas seviyesinde çalışmıyor."
+
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
 #~ msgstr ""
 #~ "Aşağıda listelenen CD'lerden herhangi birine sahipseniz, bunlardan bir "
 #~ "yazılım yüklemek için CD'yi yerleştirin ve ilgili düğmeye basın."
+
 #~ msgid "Please enter a time server."
 #~ msgstr "Lütfen bir zaman sunucusu (NTP) girin."
+
 #~ msgid "Error"
 #~ msgstr "Hata"
+
 #~ msgid ""
 #~ "A connection with %s could not be established.  Either %s is not "
 #~ "available or the firewall settings on your computer are blocking NTP "
@@ -375,36 +446,46 @@ msgstr "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bi
 #~ msgstr ""
 #~ "%s ile bir bağlantı sağlanamadı. Ya %s hizmet dışı ya da güvenlik duvarı "
 #~ "ayarlarınız bu NTP sunucusuna erişime engel oluyor."
+
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "NTP sunucusuna bağlanılıyor.  Lütfen bekleyin..."
+
 #~ msgid "User Account"
 #~ msgstr "Kullanıcı Hesabı"
+
 #~ msgid ""
 #~ "The username '%s' is a reserved system account.  Please specify another "
 #~ "username."
 #~ msgstr ""
 #~ "Kullanıcı adı '%s' önceden ayrılmış bir sistem hesabı.  Lütfen başka bir "
 #~ "kullanıcı adı belirleyin."
+
 #~ msgid "Mouse configuration "
 #~ msgstr "Fare Ayarları"
+
 #~ msgid "Firstboot has already been run once on this system.\n"
 #~ msgstr "Firstboot bu sistem üzerinde zaten bir kez çalıştırılmış.\n"
+
 #~ msgid ""
 #~ "In order to run firstboot from the command line, run the following "
 #~ "commands:"
 #~ msgstr ""
 #~ "Firstboot'u komut satırından çalıştırmak için, aşağıdaki komutları "
 #~ "kullanın:"
+
 #~ msgid ""
 #~ "In order to run firstboot during system bootup, run the following "
 #~ "commands:"
 #~ msgstr ""
 #~ "Firstboot'u sistem açılışında çalıştırmak için, aşağıdaki komutları "
 #~ "kullanın:"
+
 #~ msgid "Yes"
 #~ msgstr "Evet"
+
 #~ msgid "No"
 #~ msgstr "Hayır"
+
 #~ msgid ""
 #~ "The Red Hat Setup Agent can assist you in configuring your machine by "
 #~ "guiding you through a series of steps.  Setup Agent requires the X Window "
@@ -421,12 +502,16 @@ msgstr "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bi
 #~ "Kurulum Aracısı'nı çalıştırmak için lütfen \"Evet\"i seçin.  Eğer \"Hayır"
 #~ "\"ı secek olursanız, sisteminiz açılmaya devam edecek ve bu mesajı bir "
 #~ "daha görmeyeceksiniz. Kurulum Aracısı'nı çalıştırmak ister misiniz?"
+
 #~ msgid "Red Hat Linux Documentation CD"
 #~ msgstr "Red Hat Linux Belgeler CD'si"
+
 #~ msgid "Red Hat Linux Installation CD"
 #~ msgstr "Red Hat Linux Kurulum CD'si"
+
 #~ msgid "Red Hat Network"
 #~ msgstr "Red Hat Network"
+
 #~ msgid ""
 #~ "This step will register your system with a complimentary Demo Account "
 #~ "from Red Hat Network so that you can receive the latest software packages "
@@ -453,8 +538,9 @@ msgstr "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bi
 #~ "\n"
 #~ "Bu ürünü siz satın almadıysanız, http://rhn.redhat.com adresini ziyaret "
 #~ "ederek bu servise üyelik hakkında ayrıntılı bilgi edinebilirsiniz.\n"
+
 #~ msgid "_Yes, I want to register my system with Red Hat Network."
 #~ msgstr "_Evet, sistemimi Red Hat Network'e kaydettirmek istiyorum."
+
 #~ msgid "N_o, I do not want to register my system."
 #~ msgstr "_Hayır, sistemimi kaydettirmek istemiyorum."
-

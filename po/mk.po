@@ -11,13 +11,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2005-04-24 23:12+0200\n"
 "Last-Translator: Tomislav Markovski <tome@users.ossm.org.mk>\n"
 "Language-Team: Macedonian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -77,16 +77,16 @@ msgstr ""
 "Пратете ја таа датотека заедно со извештајот. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "_Назад"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "_Напред"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Добродојдовте"
@@ -140,7 +140,7 @@ msgstr "Одберете го предметот што сакате да го �
 msgid "Setup Agent"
 msgstr "Агент за инсталација"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "Дополнителни CD-иња"
 
@@ -156,8 +156,12 @@ msgstr ""
 "внесете и дискот со документација или пак некој друг диск добиен од Red Hat "
 "за да инсталирате додатен софтвер."
 
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
+
 #. if 1:
-#: ../src/modules/additional_cds.py:71
+#: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
@@ -171,11 +175,11 @@ msgstr ""
 "архитектура, морате веднаш да го инсталирате пакетот со Intel Execution "
 "Layer од додатниот диск."
 
-#: ../src/modules/additional_cds.py:112
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "Инсталирај..."
 
-#: ../src/modules/additional_cds.py:158
+#: ../src/modules/additional_cds.py:160
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -183,7 +187,7 @@ msgstr ""
 "Не можам да го пронајдам CD-то. Ве молам ставете го CD-то во машината и "
 "кликнете „Во ред“ за понатаму."
 
-#: ../src/modules/additional_cds.py:192
+#: ../src/modules/additional_cds.py:194
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
@@ -398,8 +402,9 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"За да го подготвите системот за употреба треба да поминете уште неколку чекори.  Агентот за инсталација ќе Ве води низ процесот за конфигурација.  Кликнете на копчето "
-"„Напред“ во десниот долен агол за да продолжите."
+"За да го подготвите системот за употреба треба да поминете уште неколку "
+"чекори.  Агентот за инсталација ќе Ве води низ процесот за конфигурација.  "
+"Кликнете на копчето „Напред“ во десниот долен агол за да продолжите."
 
 #, fuzzy
 #~ msgid "Licence Aggrement"

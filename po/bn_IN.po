@@ -15,14 +15,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
-"POT-Creation-Date: 2004-12-14 16:44-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2005-04-27 19:08+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla (INDIA) <redhat-translation@bengalinux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.9.1\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
@@ -91,16 +91,16 @@ msgstr ""
 "ঐ ফাইলটি ত্রুটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "পূর্ববর্তী (_B)"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "পরবর্তী(_N)"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "স্বাগতম"
@@ -160,7 +160,7 @@ msgid "Setup Agent"
 msgstr "Setup Agent"
 
 # msgstr "অতিরিক্ত সিডিগুলো"
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "অতিরিক্ত CD"
 
@@ -177,9 +177,13 @@ msgstr ""
 "আপনি Documentation ডিস্ক, অথবা Red-Hat-র উপলব্ধ করা অন্যান্য ডিস্কও প্রবেশ করাতে "
 "পারেন।"
 
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
+
 # modified for RHEL
 #. if 1:
-#: ../src/modules/additional_cds.py:71
+#: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
@@ -189,17 +193,17 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 আর্কিটেকচারের উপর ৩২-বিট অ্যাপ্লিকেশনের জন্য সমর্থন সক্রিয় "
-"করার জন্য, Extras ডিস্কটি থেকে Intel Execution Layer  প্যাকেজটি আপনার ইনস্টল করা "
+"Intel Itanium2 আর্কিটেকচারের উপর ৩২-বিট অ্যাপ্লিকেশনের জন্য সমর্থন সক্রিয় করার "
+"জন্য, Extras ডিস্কটি থেকে Intel Execution Layer  প্যাকেজটি আপনার ইনস্টল করা "
 "আবশ্যক।"
 
 # modified by RB
-#: ../src/modules/additional_cds.py:112
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "ইনস্টল করুন..."
 
 # modified for RHEL
-#: ../src/modules/additional_cds.py:158
+#: ../src/modules/additional_cds.py:160
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -207,8 +211,9 @@ msgstr ""
 "কোনো CD-ROM পাওয়া যায়নি। অনুগ্রহ করে ড্রাইভে একটি সিডি প্রবেশ করান এবং চালানোর "
 "জন্য \"ঠিক আছে\" চাপুন।"
 
-#: ../src/modules/additional_cds.py:192
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:194
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "CD অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
@@ -223,9 +228,8 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"অপ্রশাসনিক কাজে ব্যবহারের জন্য ব্যক্তিগত সিস্টেম 'username' "
-"তৈরি করার উপদেশ দেওয়া হচ্ছে। সিস্টেম 'username' তৈরি করার জন্য সকল প্রয়োজনীয় তথ্য "
-"উপলব্ধ করুন।"
+"অপ্রশাসনিক কাজে ব্যবহারের জন্য ব্যক্তিগত সিস্টেম 'username' তৈরি করার উপদেশ দেওয়া "
+"হচ্ছে। সিস্টেম 'username' তৈরি করার জন্য সকল প্রয়োজনীয় তথ্য উপলব্ধ করুন।"
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -263,8 +267,8 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"একটি ব্যক্তিগত অ্যাকাউন্ট তৈরি করার কঠোর পরামর্শ দেয়া হচ্ছে। একটি অ্যাকাউন্ট উপস্থিত না "
-"থাকলে, আপনি শুধু root পরিচয়ে লগ ইন করতে সক্ষম হবেন,  যা শুধুমাত্র প্রশাসনিক "
+"একটি ব্যক্তিগত অ্যাকাউন্ট তৈরি করার কঠোর পরামর্শ দেয়া হচ্ছে। একটি অ্যাকাউন্ট উপস্থিত "
+"না থাকলে, আপনি শুধু root পরিচয়ে লগ ইন করতে সক্ষম হবেন,  যা শুধুমাত্র প্রশাসনিক "
 "ব্যবহারের জন্য সংরক্ষিত।"
 
 # msgstr "_চালিয়ে যাও"
@@ -325,12 +329,14 @@ msgstr ""
 "মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/date.py:46
@@ -362,8 +368,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"আপনার সিস্টেমটি ব্যবহারের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের কোনায় "
-"অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
+"আপনার সিস্টেমটি ব্যবহারের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের "
+"কোনায় অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
 
 # modified by RB
 #: ../src/modules/finished.py:36
@@ -436,4 +442,3 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
-

@@ -1,11 +1,12 @@
 # Translations into the Amharic Language.
 # Copyright (C) 2002 Free Software Foundation, Inc.
 # This file is distributed under the same license as the firstboot package.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
-"POT-Creation-Date: 2004-12-14 16:44:00+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-19 15:52-0400\n"
 "PO-Revision-Date: 2005-01-16 23:08:00+EDTE\n"
 "Last-Translator: Daniel Yacob <yacob@geez.org>\n"
 "Language-Team: Amharic <am-translate@geez.org>\n"
@@ -26,7 +27,8 @@ msgid "_Yes, I agree to the License Agreement"
 msgstr "አዎን። በፈቃዱ ስምምነት ተስማምቻለሁ (_Y)"
 
 #: ../src/eula_strings.py:29
-msgid "No, I do not agree"
+#, fuzzy
+msgid "N_o, I do not agree"
 msgstr "አይ። አልተስማማሁም"
 
 #: ../src/eula_strings.py:30
@@ -42,43 +44,51 @@ msgid "_Shut down"
 msgstr "አጥፉ (_S)"
 
 #: ../src/exceptionWindow.py:48
+#, python-format
 msgid "An error has occurred in the %s module."
 msgstr "በ%s ክፍል ውስጥ ስሕተት ተከስቷል።"
 
 #: ../src/exceptionWindow.py:53
-msgid "Since there is a problem with the %s module, \n"
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
-"will attempt to run the remaining modules.\n"
-msgstr "በ%s ክፍል ውስጥ ስሕተት እስካለ ድረስ የ\n"
+"will attempt to run the remaining modules."
+msgstr ""
+"በ%s ክፍል ውስጥ ስሕተት እስካለ ድረስ የ\n"
 "ሬድ ሀት መስሪያ ተወካይ ይህንን ክፍል አይጭንም እና \n"
 "ቀሪዎቹን ክፍሎች ለማስኬድ ይሞክራል።\n"
 
 #: ../src/exceptionWindow.py:57
-msgid "Please file a bug against 'firstboot' in the Red Hat \n"
+#, python-format
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
-msgstr "እባክዎን ስሕተት በ`መጀመሪያ ማስጀመሪያ` ላይ በሬድ ሀት \n"
+msgstr ""
+"እባክዎን ስሕተት በ`መጀመሪያ ማስጀመሪያ` ላይ በሬድ ሀት \n"
 "የማዳመጫ መሣሪያ መከታተያ ሲስተም በhttp://www.redhat.com/bugzilla ውስጥ ፋይል ያድርጉ። \n"
-"የማስተካከያው መረጃ ቅጂ ለ%s \n ተቀምጧል"
-"ያንን ፋይል ለስሕተቱ ሀተታ መያያዙን እርግጠኛ ይሁኑ። \n"
+"የማስተካከያው መረጃ ቅጂ ለ%s \n"
+" ተቀምጧልያንን ፋይል ለስሕተቱ ሀተታ መያያዙን እርግጠኛ ይሁኑ። \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:580
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
 msgid "_Back"
 msgstr "ወደኋላ (_B)"
 
 #: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
 msgid "_Next"
 msgstr "የሚቀጥለው (_N)"
 
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:576
+#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
 #: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "እንኳን ደህና መጡ"
 
 #: ../src/firstbootWindow.py:420
+#, python-format
 msgid "module import of %s failed: %s"
 msgstr "ከ%s የመጣው ክፍል ውድቅ ሆኗል፦ %s"
 
@@ -119,35 +129,60 @@ msgid "Run Tool"
 msgstr "መሣሪያውን አስኪድ"
 
 #: ../src/textWindow.py:45
-msgid "Select the item that you wish to modify"
+#, fuzzy
+msgid "Select the item that you wish to modify "
 msgstr "ከዝርዝር ውስጥ አንዱን ማሻሻል የሚፈልጉትን ይምረጡ"
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
 msgstr "የተወካይ አቀማመጥ"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:108
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "ተጨማሪ CDዎች"
 
 #: ../src/modules/additional_cds.py:61
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "እባክዎን «Red Hat Enterprise Linux Extras» ተብሎ የተሰየመውን ዲስክ የሦስተኛ ወገን ተጨማሪ ፕሮግራሞች እና መጠቀሚያ ፕሮግራሞችን ለማስገባት ያስችላል። የመረጃውን ዲስክም ማስገባት ወይንም ሌላ በሬድ ሀት የቀረቡ ዲስኮችን ተጨማሪ ሶፍትዌር ለማስገባት በዚህ ጊዜ ይችላሉ።"
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"እባክዎን «Red Hat Enterprise Linux Extras» ተብሎ የተሰየመውን ዲስክ የሦስተኛ ወገን ተጨማሪ "
+"ፕሮግራሞች እና መጠቀሚያ ፕሮግራሞችን ለማስገባት ያስችላል። የመረጃውን ዲስክም ማስገባት ወይንም ሌላ በሬድ ሀት የቀረቡ "
+"ዲስኮችን ተጨማሪ ሶፍትዌር ለማስገባት በዚህ ጊዜ ይችላሉ።"
 
-#: ../src/modules/additional_cds.py:71
-msgid "\n\nTo enable runtime support of 32-bit applications on the Intel Itanium2 architecture, you must install the Intel Execution Layer package from the Extras disc now."
-msgstr "\n\nየ32-ቢት መጠቀሚያ ፕሮግራሞች በIntel Itanium2 ንድፍ ላይ  የመሄጃ ሰዓት መደገፊያን ለማስቻል ከትርፎቹ ዲስክ ላይ የIntel Execution Layer ጥቅልን አሁን ማስገባት አለብዎት።"
+#: ../src/modules/additional_cds.py:67
+msgid "Please insert any additionional software install cds at this time."
+msgstr ""
 
-#: ../src/modules/additional_cds.py:112
+#. if 1:
+#: ../src/modules/additional_cds.py:73
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"የ32-ቢት መጠቀሚያ ፕሮግራሞች በIntel Itanium2 ንድፍ ላይ  የመሄጃ ሰዓት መደገፊያን ለማስቻል ከትርፎቹ ዲስክ "
+"ላይ የIntel Execution Layer ጥቅልን አሁን ማስገባት አለብዎት።"
+
+#: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "አስገባ..."
 
-#: ../src/modules/additional_cds.py:158
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:160
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr "CD-ROM አልተገኘም። እባክዎን CD-ROM በድራይቩ ውስጥ ያስገቡ እና ለመቀጠል «እሺ» ላይ  ያቃጭሉ።"
 
-#: ../src/modules/additional_cds.py:192
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:194
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "የአዎቶማቲክ ማስኬጃው ፕሮግራም በcd ላይ ሊገኝ አልተቻለም። ለመቀጠል «እሺ» ላይ ያቃጭሉ።"
 
 #: ../src/modules/create_user.py:43
@@ -155,8 +190,13 @@ msgid "System User"
 msgstr "የሲስተም ተጠቃሚ"
 
 #: ../src/modules/create_user.py:70
-msgid "It is recommended that you create a system 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "የሲስተም ‹ተጠቃሚ ስም› ለተለመደው (አስተዳዳሪ ያልሆነ) የሲስተምዎት መጠቀሚያ እንዲፈጥሩ ይመከራል። የሲስተም ‹መጠቀሚያ ስም› ለመፍጠር እባክዎን ከሥር ያለውን የሚያስፈልገውን መረቻ ያቅርቡ።"
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"የሲስተም ‹ተጠቃሚ ስም› ለተለመደው (አስተዳዳሪ ያልሆነ) የሲስተምዎት መጠቀሚያ እንዲፈጥሩ ይመከራል። የሲስተም "
+"‹መጠቀሚያ ስም› ለመፍጠር እባክዎን ከሥር ያለውን የሚያስፈልገውን መረቻ ያቅርቡ።"
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -175,16 +215,25 @@ msgid "Confir_m Password:"
 msgstr "ሚስጢራዊ ቃሉን ያረጋግጡ (_M)፦"
 
 #: ../src/modules/create_user.py:117
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "እንደ Kerberos ወይንም NIS ያሉትን የአውታር ማረጋገጫ ለመጠቀም ከፈለጉ እባክዎን የመጠቀሚያ አውታር ማስጀመሪያ ቁልፍ ይጫኑ።"
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"እንደ Kerberos ወይንም NIS ያሉትን የአውታር ማረጋገጫ ለመጠቀም ከፈለጉ እባክዎን የመጠቀሚያ አውታር ማስጀመሪያ "
+"ቁልፍ ይጫኑ።"
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "የአውታሩን ማስጀመሪያ ይጠቀሙ... (_L)"
 
 #: ../src/modules/create_user.py:163
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "የግል የተጠቃሚ መግለጫ እንዲፈጠር በከፍተኛ ይመከራል። ያለመግለጫ የሚቀጥሉ ከሆነ ለአስተዳደሩ መጠቀሚያ ብቻ የተቀመጠ የዋናው መግለጫ ጋር ብቻ ነው መጀመር የሚችሉት።"
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"የግል የተጠቃሚ መግለጫ እንዲፈጠር በከፍተኛ ይመከራል። ያለመግለጫ የሚቀጥሉ ከሆነ ለአስተዳደሩ መጠቀሚያ ብቻ የተቀመጠ "
+"የዋናው መግለጫ ጋር ብቻ ነው መጀመር የሚችሉት።"
 
 #: ../src/modules/create_user.py:171
 msgid "_Continue"
@@ -210,26 +259,38 @@ msgstr "የተጠቃሚው ስም አኃዞች ርዝመት ከ33 አኃዞች �
 msgid "The user name may not begin with a number."
 msgstr "የተጠቃሚው ስም በቁጥር ባይጀምር ጥሩ ነው።"
 
+#. Check for whitespace
 #: ../src/modules/create_user.py:296
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
 msgstr "የተጠቃሚው ስም ‹%s› ባዶ ቦታ ይዟል። እባክዎን በተጠቃሚው ስም ውስጥ ባዶ ቦታ አያድርጉ።"
 
 #: ../src/modules/create_user.py:303
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
+#, python-format
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
 msgstr "የተጠቃሚው ስም ‹%s› ሥርዐተ ነጥቦችን ያጠቃልላል። እባክዎን ሥርዐተ ነጥብ በመጠቀሚያ ስም ውስጥ አይጠቀሙ።"
 
 #: ../src/modules/create_user.py:317
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
+#, python-format
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
 msgstr "የመጠቀሚያው ስም ‹%s› ተቀባይነት የሌላቸውን አኃዞች ያጠቃልላል። እባክዎን ASCII አኃዞችን ብቻ የጠቀሙ።"
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "የሚስጢሩ ስም ተቀባይነት የሌላቸውን አኃዞች ይዟል። እባክዎን ASCII አኃዞችን ብቻ ይጠቀሙ።"
 
 #: ../src/modules/create_user.py:339
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "‹%s› የሚለው ስም ተቀባይነት የሌላቸውን አኃዞችን ይዟል። እባክዎን ASCII አኃዞችን ብቻ ይጠቀሙ። "
-
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -252,8 +313,12 @@ msgid "Finish Setup"
 msgstr "አቀማመጡን ይጨርሱ"
 
 #: ../src/modules/finished.py:33
-msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "ሲስተምዎት አሁን ተስተካክሎ እና ለመጠቀም ዝግጁ ሆኗል። እባክዎን «የሚቀጥለው» የሚለውን በቀኝ ዝቅ ብሎ በጥግ በኩል የሚገኘውን ቁልፍ ያቃጭሉ።"
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr ""
+"ሲስተምዎት አሁን ተስተካክሎ እና ለመጠቀም ዝግጁ ሆኗል። እባክዎን «የሚቀጥለው» የሚለውን በቀኝ ዝቅ ብሎ በጥግ በኩል "
+"የሚገኘውን ቁልፍ ያቃጭሉ።"
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
@@ -292,5 +357,31 @@ msgid "A sound card has been detected on your computer."
 msgstr "የድምጽ ካርድ ኮምፒውተርዎት ላይ ተገኝቷል"
 
 #: ../src/modules/soundcard_gui.py:70
-msgid " Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right \"channel, the second sound will be in the left chan"
-msgstr "«የሙከራ ድምጹን አጫውት» የሚለውን ቁልፍ የድምጽ ናሙና ለመስማት ያቃጭሉ። ሦስት ተከታታይ ድምጾችን ይሰማሉ። የመጀመሪያው ድምጽ በቀኝ «በኩል ይሆናል፣ ሁለተኛው ድምጽ በግራ በኩል ይሆናል"
+#, fuzzy
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"«የሙከራ ድምጹን አጫውት» የሚለውን ቁልፍ የድምጽ ናሙና ለመስማት ያቃጭሉ። ሦስት ተከታታይ ድምጾችን ይሰማሉ። "
+"የመጀመሪያው ድምጽ በቀኝ «በኩል ይሆናል፣ ሁለተኛው ድምጽ በግራ በኩል ይሆናል"
+
+#: ../src/modules/timezone.py:46
+msgid "Timezone"
+msgstr ""
+
+#: ../src/modules/timezone.py:50
+#, fuzzy
+msgid "Please set the timezone for the system."
+msgstr "እባክዎን ለሲስተሙ ቀን እና ሰዓት ያስገቡለት"
+
+#: ../src/modules/welcome.py:34
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"ሲስተምዎት አሁን ተስተካክሎ እና ለመጠቀም ዝግጁ ሆኗል። እባክዎን «የሚቀጥለው» የሚለውን በቀኝ ዝቅ ብሎ በጥግ በኩል "
+"የሚገኘውን ቁልፍ ያቃጭሉ።"
