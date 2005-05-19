@@ -58,12 +58,14 @@ class childWindow:
         table.set_col_spacings(10)
         table.set_row_spacings(10)
 
-        cd_label = _("""Please insert the disc labeled "Red Hat Enterprise Linux """
-                     """Extras" to allow for installation of third-party plug-ins and """
-                     """applications.  You may also insert the Documentation disc, or """
-                     """other Red Hat-provided discs to install additional software at """
-                     """this time.""")
+        cd_label_rhel = _("""Please insert the disc labeled "Red Hat Enterprise Linux """
+                          """Extras" to allow for installation of third-party plug-ins and """
+                          """applications.  You may also insert the Documentation disc, or """
+                    	  """other Red Hat-provided discs to install additional software at """
+                          """this time.""")
 
+	cd_label = _("""Please insert any additionional software install cds """
+		     """at this time.""")
 
 
         if os.uname()[4] == "ia64":
