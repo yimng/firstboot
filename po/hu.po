@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-19 15:52-0400\n"
-"PO-Revision-Date: 2005-04-14 17:24+0200\n"
+"PO-Revision-Date: 2005-05-21 12:54+0200\n"
 "Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Hiba történt a(z) %s modulban, \n"
-"ezért a Red Hat Setup Agent nem fogja azt betölteni,\n"
+"ezért a Red Hat Telepítőügynök nem fogja azt betölteni, \n"
 "hanem folytatja a többi modul betöltését."
 
 #: ../src/exceptionWindow.py:57
@@ -73,7 +73,7 @@ msgstr ""
 "Kérjük jelentse be a hibát a 'firstboot' szekcióba a Red Hat \n"
 "hibakövető rendszerben, ezen a címen: http://www.redhat.com/bugzilla. \n"
 "A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
-"Kérjük csatolja ezt a fájlt a hibabejelentéshez. \n"
+"Kérjük, csatolja ezt a fájlt a hibabejelentéshez. \n"
 
 #: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
 #: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
@@ -150,14 +150,14 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Kérem helyezze be a \"Red Hat Enterprise Linux Extras\" feliratú lemezt a "
+"Helyezze be a \"Red Hat Enterprise Linux Extras\" feliratú lemezt a "
 "más gyártótól származó bővítőmodulok és alkalmazások telepítéséhez. Más "
 "telepítési lemez is megadható (például a dokumentáció vagy a Red Hat által "
 "készített valamilyen más szoftver lemeze)."
 
 #: ../src/modules/additional_cds.py:67
 msgid "Please insert any additionional software install cds at this time."
-msgstr ""
+msgstr "Ha rendelkezik további szoftvertelepítési lemezzel, helyezze be azt."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
@@ -183,12 +183,11 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Nem található CD-ROM-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba "
+"Nem található CD-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba "
 "és kattintson az \"OK\" gombra."
 
 #: ../src/modules/additional_cds.py:194
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "\"OK\" gombra."
@@ -254,7 +253,7 @@ msgstr "Felhasználónév létreh_ozása"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "A jelszavak nem egyeznek meg. Kérem írja be a jelszót még egyszer."
+msgstr "A jelszavak nem egyeznek meg. Írja be a jelszót még egyszer."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
@@ -297,16 +296,14 @@ msgstr ""
 "karaktereket lehet használni."
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket lehet "
 "használni."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket "
 "lehet használni."
@@ -401,7 +398,7 @@ msgid ""
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
 "A rendszer használatba vétele előtt még néhány lépést el kell végezni. A "
-"Setup Agent végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
+"Telepítőügynök végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
 "kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
 #, fuzzy
@@ -417,3 +414,4 @@ msgstr ""
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "A Firstboot program nem fut le 3-as futási szinten."
+
