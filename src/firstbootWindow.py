@@ -435,6 +435,15 @@ class firstbootWindow:
 #                obj.passInParent(self)
 
 
+             
+            # if a module decides not to run, skip it first before trying any
+            # of the other hooks. bz #158095
+	    if hasattr(obj, "skipme"):
+		# the module itself has decided for some reason that
+                # that it should not be shown, so skip it
+		continue
+
+
 	    # if the module needs network access, and we dont have it, skip
             # the module
 	    if hasattr(obj, "needsnetwork"):
@@ -444,11 +453,6 @@ class firstbootWindow:
                     if hasattr(obj, "noNetwork"):
                         obj.noNetwork()
 		    continue
-
-	    if hasattr(obj, "skipme"):
-		# the module itself has decided for some reason that
-                # that it should not be shown, so skip it
-		continue
 
             # If the module defines a moduleClass, it has to match the mode
             # we're starting up in, otherwise it's always used.  Add it to
