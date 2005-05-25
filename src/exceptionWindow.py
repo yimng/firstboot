@@ -41,7 +41,7 @@ class ExceptionWindow:
         text_scroll.set_shadow_type(gtk.SHADOW_ETCHED_IN)
         
         text_view = gtk.TextView()
-        text_view.set_editable(gtk.FALSE)
+        text_view.set_editable(False)
         text_buf = gtk.TextBuffer(None)
         text_scroll.add(text_view)
 
@@ -64,8 +64,8 @@ class ExceptionWindow:
         text_buf.set_text(text)
         text_view.set_buffer(text_buf)
 
-        win.vbox.pack_start(label, gtk.FALSE)
-        win.vbox.pack_start(text_scroll, gtk.TRUE)
+        win.vbox.pack_start(label, False)
+        win.vbox.pack_start(text_scroll, True)
 
         try:
             fd = open(path, "w")

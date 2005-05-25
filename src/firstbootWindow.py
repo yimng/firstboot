@@ -56,7 +56,7 @@ class firstbootWindow:
         self.doDebug = doDebug
         self.lowRes = lowRes
         self.autoscreenshot = autoscreenshot
-        self.mainHBox = gtk.HBox(gtk.FALSE, 10)
+        self.mainHBox = gtk.HBox(False, 10)
         self.leftLabelVBox = gtk.VBox()
 
         self.leftLabelVBox.set_border_width(12)
@@ -66,7 +66,7 @@ class firstbootWindow:
         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
 
         self.leftVBox = gtk.VBox()
-        self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
+        self.leftVBox.pack_start(leftEventBox, True)
 
         self.moduleList = []
         self.moduleDict = {}
@@ -83,7 +83,7 @@ class firstbootWindow:
         mainVBox = gtk.VBox()
 
         #This isn't debug mode, so jump through some hoops to go into fullscreen/root window mode
-        self.win.set_decorated(gtk.FALSE)
+        self.win.set_decorated(False)
         x_screen = gtk.gdk.screen_width()
         y_screen = gtk.gdk.screen_height()        
 
@@ -96,8 +96,8 @@ class firstbootWindow:
 ##                 gc = bgimage.new_gc()
 ##                 pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
 ##                                           y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-##                 self.win.set_app_paintable(gtk.TRUE)
-##                 self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+##                 self.win.set_app_paintable(True)
+##                 self.win.window.set_back_pixmap(bgimage, False)
 
 ##                 if not self.doDebug:
 ##                     self.win.set_size_request(x_screen, y_screen)
@@ -110,8 +110,8 @@ class firstbootWindow:
             gc = bgimage.new_gc()
             pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
                                       y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-            self.win.set_app_paintable(gtk.TRUE)
-            self.win.window.set_back_pixmap(bgimage, gtk.FALSE)
+            self.win.set_app_paintable(True)
+            self.win.window.set_back_pixmap(bgimage, False)
 
             if not self.doDebug:
                 self.win.set_size_request(x_screen, y_screen)
@@ -140,15 +140,15 @@ class firstbootWindow:
 	    #self.modulePath = ('/usr/src/rhn/up2date/firstboot')
 	    self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)            
-            self.notebook.set_show_tabs(gtk.FALSE)
-            self.notebook.set_scrollable(gtk.TRUE)
-            self.notebook.set_show_border(gtk.FALSE)
+            self.notebook.set_show_tabs(False)
+            self.notebook.set_scrollable(True)
+            self.notebook.set_show_border(False)
         else:
             self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)
             self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
-            self.notebook.set_show_tabs(gtk.FALSE)
-            self.notebook.set_show_border(gtk.FALSE)
+            self.notebook.set_show_tabs(False)
+            self.notebook.set_show_border(False)
 
         self.notebook.connect("switch-page", self.switchPage)
 
@@ -161,12 +161,12 @@ class firstbootWindow:
 
         if not self.lowRes:
             # Add the box on the left to the window's HBox.
-            self.mainHBox.pack_start(self.leftVBox, gtk.FALSE)
+            self.mainHBox.pack_start(self.leftVBox, False)
 
         # Populate the right side of the window.  Add the notebook to a VBox.
         self.internalVBox = gtk.VBox()
 
-        self.internalVBox.pack_start(self.notebook, gtk.TRUE)
+        self.internalVBox.pack_start(self.notebook, True)
 
         # Now add the EventBox to the right-side VBox.
         self.rightVBox = gtk.VBox()
@@ -178,7 +178,7 @@ class firstbootWindow:
             alignment = gtk.Alignment()
             alignment.add(self.rightVBox)
             alignment.set(0.2, 0.3, 0.8, 0.8)
-            self.mainHBox.pack_start(alignment, gtk.TRUE)
+            self.mainHBox.pack_start(alignment, True)
         else:
             self.mainHBox.pack_start(self.rightVBox)
 
@@ -190,22 +190,22 @@ class firstbootWindow:
         self.backButton = gtk.Button(stock='gtk-go-back')
         label = self.backButton.get_children()[0].get_children()[0].get_children()[1]
         label.set_text(_("_Back"))
-        label.set_property("use_underline", gtk.TRUE)
+        label.set_property("use_underline", True)
         self.backButton.connect('clicked', self.backClicked)
-        self.backButton.set_sensitive(gtk.FALSE)
+        self.backButton.set_sensitive(False)
         self.bb.pack_start(self.backButton)
         # Create the "go forward" button.
         self.nextButton = gtk.Button(stock='gtk-go-forward')
         label = self.nextButton.get_children()[0].get_children()[0].get_children()[1]
         label.set_text(_("_Next"))
-        label.set_property("use_underline", gtk.TRUE)
+        label.set_property("use_underline", True)
         
         self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
 
         self.bb.pack_start(self.nextButton)
 	# Add the button box to the bottom of the box which contains the notebook.
 
-        self.internalVBox.pack_start(self.bb, gtk.FALSE)
+        self.internalVBox.pack_start(self.bb, False)
 
 	# Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
@@ -331,7 +331,7 @@ class firstbootWindow:
             self.win.disconnect(self.winHandler)
             self.winHandler = self.win.connect ("key-release-event", self.closeRelease)
 
-        self.backButton.set_sensitive(gtk.TRUE)
+        self.backButton.set_sensitive(True)
 
     def backClicked(self, *args):
 #        print "back: %s" % self.pageHistory
@@ -345,7 +345,7 @@ class firstbootWindow:
         self.setPointer(self.notebook.get_current_page())
 
         if self.notebook.get_current_page() == 0:
-            self.backButton.set_sensitive(gtk.FALSE)
+            self.backButton.set_sensitive(False)
 
         self.nextButton.disconnect(self.nextHandler)
         self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
@@ -382,8 +382,8 @@ class firstbootWindow:
         bgimage = gtk.gdk.Pixmap(eb.window, 800, 600, -1)
         gc = bgimage.new_gc()
         pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-        eb.set_app_paintable(gtk.TRUE)
-        eb.window.set_back_pixmap(bgimage, gtk.FALSE)
+        eb.set_app_paintable(True)
+        eb.window.set_back_pixmap(bgimage, False)
 
     def checkNetwork(self):
 	# see if we have a non loopback interface up
@@ -478,7 +478,7 @@ class firstbootWindow:
 ##         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
 
 ##         self.leftVBox = gtk.VBox()
-##         self.leftVBox.pack_start(leftEventBox, gtk.TRUE)
+##         self.leftVBox.pack_start(leftEventBox, True)
 
 	# Add the modules to the proper lists.
         pages = 0
@@ -523,11 +523,11 @@ class firstbootWindow:
 
                 titleBox = gtk.HBox()
                 if pix:
-                    titleBox.pack_start(pix, gtk.FALSE)
-                titleBox.pack_start(title_label, gtk.TRUE)
+                    titleBox.pack_start(pix, False)
+                titleBox.pack_start(title_label, True)
                 titleBox.set_spacing(8)
 
-                vbox.pack_start(titleBox, gtk.FALSE)
+                vbox.pack_start(titleBox, False)
                 vbox.reorder_child(titleBox, 0)
                 
                 if self.lowRes:
@@ -540,15 +540,15 @@ class firstbootWindow:
                     # jump around
                     self.moduleNameToNotebookIndex[module.__module__] = pages
                     self.notebook.append_page(vbox, gtk.Label(_(module.moduleName)))
-                    hbox = gtk.HBox(gtk.FALSE, 5)
+                    hbox = gtk.HBox(False, 5)
                     pix = functions.imageFromFile("pointer-blank.png")
                     label = gtk.Label("")
                     label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % (_(module.moduleName)))
                     label.set_alignment(0.0, 0.5)
-                    hbox.pack_start(pix, gtk.FALSE)
+                    hbox.pack_start(pix, False)
 
-                    hbox.pack_end(label, gtk.TRUE)
-                    self.leftLabelVBox.pack_start(hbox, gtk.FALSE, gtk.TRUE, 3)
+                    hbox.pack_end(label, True)
+                    self.leftLabelVBox.pack_start(hbox, False, True, 3)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
 		    self.moduleNameToNotebookIndex["unamemodule-%s" % pages] = pages
@@ -582,11 +582,11 @@ class firstbootWindow:
         # Change the locale on the buttons.
         label = self.backButton.get_children()[0].get_children()[0].get_children()[1]
         label.set_text(_("_Back"))
-        label.set_property("use_underline", gtk.TRUE)
+        label.set_property("use_underline", True)
 
         label = self.nextButton.get_children()[0].get_children()[0].get_children()[1]
         label.set_text(_("_Next"))
-        label.set_property("use_underline", gtk.TRUE)
+        label.set_property("use_underline", True)
         
         self.clearNotebook()
         self.loadModules()
@@ -615,7 +615,7 @@ class firstbootWindow:
         src_x = (screen_width - 800) / 2
         src_y = (screen_height - 600) / 2
 
-        screenshot = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, gtk.FALSE, 8,
+        screenshot = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, False, 8,
                                     800, 600)
 
         screenshot.get_from_drawable(gtk.gdk.get_default_root_window(),

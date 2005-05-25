@@ -41,13 +41,13 @@ class childWindow:
 
         pix = functions.imageFromFile("hwbrowser.png")
         if pix:
-            titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
+            titleBox.pack_start(pix, False, True, 5)
 
         titleBox.pack_start(label)
 
         eventBox = gtk.EventBox()
         eventBox.add(titleBox)
-        self.vbox.pack_start(eventBox, FALSE)
+        self.vbox.pack_start(eventBox, False)
 
         self.table = gtk.Table(3, 4)
         self.table.set_border_width(6)

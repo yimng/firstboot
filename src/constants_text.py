@@ -36,6 +36,3 @@ class Translator:
 TEXT_EXIT_STR = N_("Exit")
 TEXT_EXIT_CHECK  = "exit"
 TEXT_EXIT_BUTTON = Translator(TEXT_EXIT_STR, TEXT_EXIT_CHECK)
-
-TRUE = 1
-FALSE = 0

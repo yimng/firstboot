@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.41
-Release: 4 
+Version: 1.3.42
+Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed May 25 2005 Jeremy Katz <katzj@redhat.com> - 1.3.42-1
+- Stop using deprecated gtk.{TRUE,FALSE} (#153033)
+
 * Tue May 24 2005 Adrian Likins <alikins@redhat.com> - 1.3.41
 - fix #158095 - Subscription Alert (on first login) on non network installs
 

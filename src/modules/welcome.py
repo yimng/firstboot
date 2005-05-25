@@ -36,14 +36,14 @@ class childWindow:
                           "will now guide you through some basic configuration.  Please click the "
                             "\"Next\" button in the lower right corner to continue."))
 
-        label.set_line_wrap(gtk.TRUE)
+        label.set_line_wrap(True)
         label.set_alignment(0.0, 0.5)
         label.set_size_request(500, -1)
-        internalVBox.pack_start(label, FALSE, TRUE)
+        internalVBox.pack_start(label, False, True)
 
-        self.vbox.pack_start(internalVBox, gtk.FALSE, 5)
+        self.vbox.pack_start(internalVBox, False, 5)
         pix = functions.ditheredImageFromFile("splash-small.png")
-        self.vbox.pack_start(pix, gtk.TRUE, gtk.TRUE, 5)
+        self.vbox.pack_start(pix, True, True, 5)
             
         return self.vbox, title_pix, msg
 

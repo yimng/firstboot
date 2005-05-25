@@ -52,9 +52,9 @@ class childWindow:
         self.usernameEntry = gtk.Entry()
         self.fullnameEntry = gtk.Entry()
         self.passwordEntry = gtk.Entry()
-        self.passwordEntry.set_visibility(gtk.FALSE)
+        self.passwordEntry.set_visibility(False)
         self.confirmEntry = gtk.Entry()
-        self.confirmEntry.set_visibility(gtk.FALSE)
+        self.confirmEntry.set_visibility(False)
         
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
@@ -67,10 +67,10 @@ class childWindow:
 
         label = gtk.Label(_("The following network devices have been detected on the system:"))
 
-        label.set_line_wrap(gtk.TRUE)
+        label.set_line_wrap(True)
         label.set_alignment(0.0, 0.5)
         label.set_size_request(500, -1)
-        internalVBox.pack_start(label, FALSE, TRUE)
+        internalVBox.pack_start(label, False, True)
 
         self.deviceStore = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
         self.deviceView = gtk.TreeView()
@@ -82,14 +82,14 @@ class childWindow:
         self.deviceSW.add(self.deviceView)
 
         self.deviceBox = gtk.HBox()
-        self.deviceBox.pack_start(self.deviceSW, gtk.TRUE)
+        self.deviceBox.pack_start(self.deviceSW, True)
         
         col = gtk.TreeViewColumn(_("Network Device"), gtk.CellRendererText(), text = 0)
         self.deviceView.append_column(col)
         col = gtk.TreeViewColumn(_("Boot protocol"), gtk.CellRendererText(), text = 1)        
         self.deviceView.append_column(col)
         
-        internalVBox.pack_start(self.deviceBox, gtk.FALSE)
+        internalVBox.pack_start(self.deviceBox, False)
         self.updateLabels()
 
         networkButton = gtk.Button(_("_Change Network Configuration..."))
@@ -99,9 +99,9 @@ class childWindow:
         align.add(networkButton)
         align.set(1.0, 0.5, 0.1, 1.0)
                              
-        internalVBox.pack_start(align, gtk.FALSE)
+        internalVBox.pack_start(align, False)
 
-        self.vbox.pack_start(internalVBox, gtk.FALSE, 15)
+        self.vbox.pack_start(internalVBox, False, 15)
 
         users = self.admin.enumerateUsersFull()
         self.normalUsersList = []

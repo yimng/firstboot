@@ -61,17 +61,17 @@ class TimeWindow(FirstbootGuiWindow):
         self.icon = functions.imageFromPath("/usr/share/system-config-date/pixmaps/system-config-date.png")
         self.mainVBox = gtk.VBox()
 
-        internalVBox = gtk.VBox(gtk.FALSE, 10)
+        internalVBox = gtk.VBox(False, 10)
         internalVBox.set_border_width(10)
 
         messageLabel = gtk.Label(_(self.shortMessage))
-        messageLabel.set_line_wrap(gtk.TRUE)
+        messageLabel.set_line_wrap(True)
         messageLabel.set_size_request(500, -1)
         messageLabel.set_alignment(0.0, 0.5)
 
-        internalVBox.pack_start(messageLabel, gtk.FALSE)
-        internalVBox.pack_start(self.timezoneWidget, gtk.TRUE)
-        self.mainVBox.pack_start(internalVBox, gtk.TRUE)
+        internalVBox.pack_start(messageLabel, False)
+        internalVBox.pack_start(self.timezoneWidget, True)
+        self.mainVBox.pack_start(internalVBox, True)
 
     def launch(self, doDebug=None):
         self.doDebug = doDebug

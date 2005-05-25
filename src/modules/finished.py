@@ -36,14 +36,14 @@ class childWindow:
 	self.post_txt = _("Please click the \"Next\" button in the lower right corner to continue.")
         self.label = gtk.Label(self.txt)
             
-        self.label.set_line_wrap(gtk.TRUE)
+        self.label.set_line_wrap(True)
         self.label.set_alignment(0.0, 0.5)
         self.label.set_size_request(500, -1)
-        internalVBox.pack_start(self.label, FALSE, TRUE)
+        internalVBox.pack_start(self.label, False, True)
         
-        self.vbox.pack_start(internalVBox, gtk.FALSE, 5)
+        self.vbox.pack_start(internalVBox, False, 5)
         pix = functions.ditheredImageFromFile("splash-small.png")
-        self.vbox.pack_start(pix, gtk.TRUE, gtk.TRUE, 5)
+        self.vbox.pack_start(pix, True, True, 5)
 
         return self.vbox, title_pix, self.moduleName
 

@@ -51,16 +51,16 @@ class childWindow:
             if p:
                 pix = gtk.Image()
                 pix.set_from_pixbuf(p)
-                titleBox.pack_start(pix, gtk.FALSE, gtk.TRUE, 5)
+                titleBox.pack_start(pix, False, True, 5)
 
             titleBox.pack_start(title)
 
             eventBox = gtk.EventBox()
             eventBox.add(titleBox)
             eventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse ("#cc0000"))
-            self.mainVBox.pack_start(eventBox, gtk.FALSE)
+            self.mainVBox.pack_start(eventBox, False)
 
-            internalVBox = gtk.VBox(gtk.FALSE, 10)
+            internalVBox = gtk.VBox(False, 10)
             internalVBox.set_border_width(10)
 
             label = gtk.Label(_("A network connection was not detected.  Network connectivity "
@@ -68,12 +68,12 @@ class childWindow:
                               "the Red Hat Update Agent to update your system.  "
                               "To set up a network connection, please click on the button below.\n"))
 
-            label.set_line_wrap(gtk.TRUE)
+            label.set_line_wrap(True)
             label.set_size_request(500, -1)
             label.set_alignment(0.0, 0.5)
 
-            self.mainVBox.pack_start(internalVBox, gtk.FALSE)
-            internalVBox.pack_start(label, gtk.FALSE, gtk.TRUE)
+            self.mainVBox.pack_start(internalVBox, False)
+            internalVBox.pack_start(label, False, True)
 
 
             internalVBox.pack_start(self.page1())
@@ -98,9 +98,9 @@ class childWindow:
     def networkAvailable(self):
         try:
             gethostbyname(gethostname())
-            return gtk.TRUE
+            return True
         except:
-            return gtk.FALSE
+            return False
 
     def write_file(self):
         pass
@@ -117,14 +117,14 @@ class childWindow:
 #        bb.set_spacing(10)
         self.yesButton = gtk.Button(_("Set up networking..."))
         self.yesButton.connect("clicked", self.setupNetwork)
-        bb.pack_start(self.yesButton, gtk.FALSE)
+        bb.pack_start(self.yesButton, False)
         a = gtk.Alignment()
         a.add(bb)
         a.set(0.1, 0.0, 0.1, 1.0)
 
         box = gtk.VBox() 
-#        box.pack_start(label, gtk.FALSE, gtk.TRUE)
-        box.pack_start(a, gtk.FALSE)
+#        box.pack_start(label, False, True)
+        box.pack_start(a, False)
         return box
 
     def page2(self):
@@ -137,14 +137,14 @@ class childWindow:
         align.add(notebook)
 
         internalVBox = gtk.VBox()
-        internalVBox.pack_start(align, gtk.FALSE, gtk.FALSE)
+        internalVBox.pack_start(align, False, False)
 
         align = gtk.Alignment(0.0, 0.5, 0.6, 1.0)
         align.add(gtk.HSeparator())
-        internalVBox.pack_start(align, gtk.FALSE, gtk.FALSE, 10)
+        internalVBox.pack_start(align, False, False, 10)
         internalVBox.set_border_width(10)
         
-        box.pack_start(internalVBox, gtk.FALSE)
+        box.pack_start(internalVBox, False)
 
 
 
@@ -154,7 +154,7 @@ class childWindow:
             DHCPcb = gtk.CheckButton(_("Configure using DHCP"))
 
             align.add(DHCPcb)
-            devbox.pack_start(align, gtk.FALSE)
+            devbox.pack_start(align, False)
 
             align = gtk.Alignment()
             bootcb = gtk.CheckButton(("Activate on boot"))
@@ -164,9 +164,9 @@ class childWindow:
 #                               or onboot == "yes")
             align.add(bootcb)
 
-            devbox.pack_start(align, gtk.FALSE)
+            devbox.pack_start(align, False)
 
-            devbox.pack_start(gtk.HSeparator(), gtk.FALSE, padding=3)
+            devbox.pack_start(gtk.HSeparator(), False, padding=3)
 
             options = [(_("IP Address"), "ipaddr"),
                        (_("Netmask"),    "netmask"),
@@ -217,7 +217,7 @@ class childWindow:
 ##             options[2].connect("focus_out_event", self.focusOutNW, devs[i])
 ##             options[3].connect("focus_out_event", self.focusOutBC, devs[i])
 
-            devbox.pack_start(ipTable, gtk.FALSE, gtk.FALSE, 5)
+            devbox.pack_start(ipTable, False, False, 5)
 
             devbox.show_all()
             notebook.append_page(devbox, gtk.Label(dev))
@@ -225,7 +225,7 @@ class childWindow:
 #            a = GtkAlignment()
 #            a.add(GtkHSeparator())
 #            a.set(0.0, 0.0, 0.5, 0.5)
-#            box.pack_start(a, gtk.FALSE, padding=10)
+#            box.pack_start(a, False, padding=10)
 
 
         options = [(_("Hostname")), (_("Gateway")), (_("Primary DNS")),
@@ -264,7 +264,7 @@ class childWindow:
 
         self.ns3 = options[4]
 #        self.ns3.set_text(self.network.ternaryNS)
-        box.pack_start(self.ipTable, gtk.FALSE, gtk.FALSE, 5)
+        box.pack_start(self.ipTable, False, False, 5)
 
 
         return box

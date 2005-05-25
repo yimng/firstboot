@@ -54,9 +54,9 @@ class childWindow:
         self.usernameEntry = gtk.Entry()
         self.fullnameEntry = gtk.Entry()
         self.passwordEntry = gtk.Entry()
-        self.passwordEntry.set_visibility(gtk.FALSE)
+        self.passwordEntry.set_visibility(False)
         self.confirmEntry = gtk.Entry()
-        self.confirmEntry.set_visibility(gtk.FALSE)
+        self.confirmEntry.set_visibility(False)
         
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
@@ -71,56 +71,56 @@ class childWindow:
 			    "(non-administrative) use of your system. To create a system 'username,' "
 			    "please provide the information requested below."))
 
-        label.set_line_wrap(gtk.TRUE)
+        label.set_line_wrap(True)
         label.set_alignment(0.0, 0.5)
         label.set_size_request(500, -1)
-        internalVBox.pack_start(label, FALSE, TRUE)
+        internalVBox.pack_start(label, False, True)
 
         table = gtk.Table(2, 4)
         label = gtk.Label(_("_Username:"))
-        label.set_use_underline(gtk.TRUE)
+        label.set_use_underline(True)
         label.set_mnemonic_widget(self.usernameEntry)
         label.set_alignment(0.0, 0.5)
         table.attach(label, 0, 1, 0, 1, gtk.FILL)
         table.attach(self.usernameEntry, 1, 2, 0, 1, gtk.SHRINK, gtk.FILL, 5, 5)
 
         label = gtk.Label(_("Full Nam_e:"))
-        label.set_use_underline(gtk.TRUE)
+        label.set_use_underline(True)
         label.set_mnemonic_widget(self.fullnameEntry)
         label.set_alignment(0.0, 0.5)
         table.attach(label, 0, 1, 1, 2, gtk.FILL)
         table.attach(self.fullnameEntry, 1, 2, 1, 2, gtk.SHRINK, gtk.FILL, 5, 5)
 
         label = gtk.Label(_("_Password:"))
-        label.set_use_underline(gtk.TRUE)
+        label.set_use_underline(True)
         label.set_mnemonic_widget(self.passwordEntry)
         label.set_alignment(0.0, 0.5)
         table.attach(label, 0, 1, 2, 3, gtk.FILL)
         table.attach(self.passwordEntry, 1, 2, 2, 3, gtk.SHRINK, gtk.FILL, 5, 5)
 
         label = gtk.Label(_("Confir_m Password:"))
-        label.set_use_underline(gtk.TRUE)
+        label.set_use_underline(True)
         label.set_mnemonic_widget(self.confirmEntry)
         label.set_alignment(0.0, 0.5)
         table.attach(label, 0, 1, 3, 4, gtk.FILL)
         table.attach(self.confirmEntry, 1, 2, 3, 4, gtk.SHRINK, gtk.FILL, 5, 5)
 
-        internalVBox.pack_start(table, gtk.TRUE, 15)
+        internalVBox.pack_start(table, True, 15)
 
 #        internalVBox.pack_start(gtk.HSeparator())
 
         align = gtk.Alignment()
         align.set(0.9, 0.5, 0.0, 1.0)
         align.set_size_request(-1, 30)
-        internalVBox.pack_start(align, gtk.FALSE)
+        internalVBox.pack_start(align, False)
 
         label = gtk.Label(_("If you need to use network authentication such as Kerberos or NIS, "
                             "please click the Use Network Login button."))
 
-        label.set_line_wrap(gtk.TRUE)
+        label.set_line_wrap(True)
         label.set_alignment(0.0, 0.5)
         label.set_size_request(500, -1)
-        internalVBox.pack_start(label, FALSE, TRUE)
+        internalVBox.pack_start(label, False, True)
 
 
         authHBox = gtk.HBox()
@@ -129,10 +129,10 @@ class childWindow:
         align = gtk.Alignment()
         align.add(authButton)
         align.set(0.9, 0.5, 0.0, 1.0)
-        authHBox.pack_start(align, gtk.TRUE)
-        internalVBox.pack_start(authHBox, gtk.TRUE, gtk.TRUE)
+        authHBox.pack_start(align, True)
+        internalVBox.pack_start(authHBox, True, True)
 
-        self.vbox.pack_start(internalVBox, gtk.FALSE, 15)
+        self.vbox.pack_start(internalVBox, False, 15)
 
 #         users = self.admin.enumerateUsersFull()
 #         self.normalUsersList = []
@@ -166,7 +166,7 @@ class childWindow:
                                        "for administrative use only.")))
 
             dlg.set_position(gtk.WIN_POS_CENTER)
-            dlg.set_modal(gtk.TRUE)
+            dlg.set_modal(True)
 
             dlg.add_button(_("_Continue"), 0)
             b = dlg.add_button(_("Create _account"), 1)
@@ -268,7 +268,7 @@ class childWindow:
     def showErrorMessage(self, text):
         dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
         dlg.set_position(gtk.WIN_POS_CENTER)
-        dlg.set_modal(gtk.TRUE)
+        dlg.set_modal(True)
         rc = dlg.run()
         dlg.destroy()
         return None

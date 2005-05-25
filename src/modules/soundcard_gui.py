@@ -63,7 +63,7 @@ class SoundWindow:
             #Add icon to the top frame
             self.icon = functions.imageFromFile("multimedia.png")
 
-            internalVBox = gtk.VBox(gtk.FALSE, 10)
+            internalVBox = gtk.VBox(False, 10)
             internalVBox.set_border_width(10)
 
 
@@ -72,23 +72,23 @@ class SoundWindow:
                                 "hear a series of three sounds.  The first sound will be in the "
                                 "right channel, the second sound will be in the left channel, "
                                 "and the third sound will be in the center."))
-            label.set_line_wrap(gtk.TRUE)
+            label.set_line_wrap(True)
             label.set_size_request(500, -1)
             label.set_alignment(0.0, 0.5)
 
             messageLabel = gtk.Label(_(self.shortMessage))
-            messageLabel.set_line_wrap(gtk.TRUE)
+            messageLabel.set_line_wrap(True)
             messageLabel.set_size_request(500, -1)
             messageLabel.set_alignment(0.0, 0.5)
 
-            self.mainVBox.pack_start(internalVBox, gtk.FALSE)
-            internalVBox.pack_start(messageLabel, gtk.FALSE)
-            internalVBox.pack_start(label, gtk.FALSE)
+            self.mainVBox.pack_start(internalVBox, False)
+            internalVBox.pack_start(messageLabel, False)
+            internalVBox.pack_start(label, False)
 
             hbox = gtk.HBox()
-            hbox.pack_start(self.soundcardBox, gtk.FALSE)
+            hbox.pack_start(self.soundcardBox, False)
             
-            internalVBox.pack_start(hbox, gtk.FALSE)
+            internalVBox.pack_start(hbox, False)
 
             return self.mainVBox, self.icon, self.windowTitle
 

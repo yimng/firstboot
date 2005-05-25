@@ -77,10 +77,10 @@ class childWindow:
 
             
         label = gtk.Label(cd_label)
-        label.set_line_wrap(TRUE)
+        label.set_line_wrap(True)
         label.set_size_request(500, -1)
         label.set_alignment(0.0, 0.5)
-        internalVBox.pack_start(label, FALSE, TRUE)
+        internalVBox.pack_start(label, False, True)
 
 #        pix = functions.imageFromFile("docs.png")
 #        table.attach(pix, 0, 1, 0, 1, gtk.SHRINK)
@@ -128,8 +128,8 @@ class childWindow:
 #        table.attach(button, 2, 3, 3, 4, gtk.SHRINK, gtk.SHRINK)
 
 
-        internalVBox.pack_start(table, gtk.FALSE, padding=20)
-        self.vbox.pack_start(internalVBox, gtk.TRUE)
+        internalVBox.pack_start(table, False, padding=20)
+        self.vbox.pack_start(internalVBox, True)
 
         return self.vbox, title_pix, self.moduleName
 
@@ -160,7 +160,7 @@ class childWindow:
                                         (_("A CD-ROM has not been detected.  Please insert "
                                            "a CD-ROM in the drive and click \"OK\" to continue.")))
                 dlg.set_position(gtk.WIN_POS_CENTER)
-                dlg.set_modal(gtk.TRUE)
+                dlg.set_modal(True)
                 cancelButton = dlg.add_button('gtk-cancel', 0)
                 okButton = dlg.add_button('gtk-ok', 1)
                 rc = dlg.run()
@@ -194,7 +194,7 @@ class childWindow:
                                     (_("The autorun program cannot be found on the cd. "
                                        "Click \"OK\" to continue.")))
             dlg.set_position(gtk.WIN_POS_CENTER)
-            dlg.set_modal(gtk.TRUE)
+            dlg.set_modal(True)
             okButton = dlg.add_button('gtk-ok', 0)
             rc = dlg.run()
             dlg.destroy()
