@@ -1,20 +1,21 @@
 # translation of ko.po to Korean
 # Copyright (C) 2002 Red Hat, Inc.
 # Michelle J Kim <mkim@redhat.com>, 2003,2004.
+# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-19 15:52-0400\n"
-"PO-Revision-Date: 2004-11-11 09:11+1000\n"
-"Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
-"Language-Team:  <ko@li.org>\n"
+"PO-Revision-Date: 2005-06-16 14:49+1000\n"
+"Last-Translator: Michelle Ji Yeen Kim <mkim@redhat.com>\n"
+"Language-Team: Korean\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -155,7 +156,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:67
 msgid "Please insert any additionional software install cds at this time."
-msgstr ""
+msgstr "추가 소프트웨어 설치 시디를 지금 삽입해주십시오."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
@@ -184,8 +185,7 @@ msgstr ""
 "을 클릭하여 계속 진행해 주십시오."
 
 #: ../src/modules/additional_cds.py:194
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -294,15 +294,12 @@ msgstr ""
 "용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니"
 "다."
@@ -402,390 +399,3 @@ msgstr ""
 "제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 것입니다. 오른쪽 하"
 "단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합니다."
 
-#~ msgid "Licence Aggrement"
-#~ msgstr "사용 계약서"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "사용자명 '%s'에 대문자가 포함되어 있습니다.  사용자명에 대문자를 사용하지 "
-#~ "마십시오."
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot은 런레벨 3에서 실행되지 않습니다."
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "아래에 나온 CD를 가지고 계시다면, 이 CD를 삽입하신 후 적절한 버튼을 클릭하"
-#~ "셔서 패키지를 설치하실 수 있습니다."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "시간 서버를 입력해 주십시오."
-
-#~ msgid "Error"
-#~ msgstr "오류"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "%s에 연결하지 못했습니다. %s(을)를 사용할 수 없거나 컴퓨터에 설정된 방화"
-#~ "벽 때문에 NTP 연결이 되지 않을 수 있으니 확인해 보십시오. "
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "NTP 서버에 연결 중입니다.  잠시만 기다려주십시오..."
-
-#~ msgid "User Account"
-#~ msgstr "사용자 계정"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "사용자명 '%s'은 시스템 계정 용으로 보존되어 있습니다. 다른 사용자명을 지정"
-#~ "해 주십시오."
-
-#~ msgid "Mouse configuration "
-#~ msgstr "마우스 설정 "
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Firstboot은 이 시스템 상에서 이미 한번 실행되었습니다.\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "명령행에서 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "시스템 부팅시 firstboot을 실행하시려면, 다음과 같은 명령을 실행하십시오:"
-
-#~ msgid "Yes"
-#~ msgstr "예"
-
-#~ msgid "No"
-#~ msgstr "아니오"
-
-#~ msgid ""
-#~ "The Red Hat Setup Agent can assist you in configuring your machine by "
-#~ "guiding you through a series of steps.  Setup Agent requires the X Window "
-#~ "System to run.  \n"
-#~ "\n"
-#~ "If you wish to run the Setup Agent, please choose \"Yes\".  If you choose "
-#~ "\"No\", the system will continue booting and you will never see this "
-#~ "message again.  Do you wish to run the Setup Agent now?"
-#~ msgstr ""
-#~ "Red Hat 설정 에이전트는 단계별로 여러분의 기계를 설정하실 수 있도록 도와드"
-#~ "립니다.  설정 에이전트를 사용하시려면 X 윈도우 시스템이 실행 중이어야 합니"
-#~ "다. \n"
-#~ "\n"
-#~ "설정 에이전트를 실행하시려면, \"예\"를 선택해 주십시오. \"아니오\"를 선택"
-#~ "하시면, 시스템이 계속 부팅되며 이 메시지가 다시는 나타나지 않을 것입니다. "
-#~ "지금 설정 에이전트를 실행하시겠습니까?"
-
-#~ msgid "Red Hat Linux Documentation CD"
-#~ msgstr "Red Hat Linux 문서 자료 CD"
-
-#~ msgid "Red Hat Linux Installation CD"
-#~ msgstr "Red Hat Linux 설치 CD"
-
-#~ msgid "Red Hat Network"
-#~ msgstr "Red Hat 네트워크"
-
-#~ msgid ""
-#~ "This step will register your system with a complimentary Demo Account "
-#~ "from Red Hat Network so that you can receive the latest software packages "
-#~ "directly from Red Hat.  Using this tool will allow you to always have the "
-#~ "most up-to-date Red Hat Linux system with all the security patches, bug "
-#~ "fixes, and software enhancements. \n"
-#~ "\n"
-#~ "If you purchased this product, you are entitled to a free trial of Red "
-#~ "Hat Network Basic Service. To access the free trial, please refer to the "
-#~ "product activation card found in the box for detailed instructions. \n"
-#~ "\n"
-#~ "If you did not purchase this product, visit http://rhn.redhat.com for "
-#~ "more information or to subscribe to Red Hat Network Basic Service. \n"
-#~ msgstr ""
-#~ "Red Hat 업데이트 에이전트는 이제 여러분의 컴퓨터를 무료 데모 계좌로 Red "
-#~ "Hat Network에 등록할 것입니다. 등록하시면 Red Hat에서 직접 최신 소프트웨"
-#~ "어 패키지를 다운로드 받으실 수 있습니다. Red Hat 업데이트 에이전트를 사용"
-#~ "함으로써 항상 보안 패치, 버그 수정과 개선된 소프트웨어 패키지를 갖춘 최신"
-#~ "의 Red Hat Linux 시스템을 사용하실 수 있습니다.\n"
-#~ "\n"
-#~ "이 제품을 구입하시면 Red Hat 네트워크 기본 서비스를 무료로 사용하실 수 있"
-#~ "는 기회를 드립니다. 무료 사용을 신청하시려면, 제품 상자에 들어있는 제품 활"
-#~ "성화 카드에 적힌 상세한 지시 사항을 따르시기 바랍니다. \n"
-#~ "\n"
-#~ "이 제품을 구입하지 않으셨다면, http://rhn.redhat.com 사이트를 방문하셔서 "
-#~ "Red Hat 네트워크 기본 서비스에 등록하셔서 보다 많은 정보를 얻으실 수 있습"
-#~ "니다.\n"
-
-#~ msgid "_Yes, I want to register my system with Red Hat Network."
-#~ msgstr "네, Red Hat Network에 시스템을 등록합니다.(_Y)"
-
-#~ msgid "N_o, I do not want to register my system."
-#~ msgstr "아니오, 시스템을 등록하지 않습니다.(_O)"
-
-#~ msgid "Update Agent"
-#~ msgstr "업데이트 에이전트"
-
-#~ msgid "Install Additional Software"
-#~ msgstr "추가 소프트웨어 설치"
-
-#~ msgid "Create A User"
-#~ msgstr "사용자 생성하기"
-
-#~ msgid ""
-#~ "A user account is required to use the system.  Create a user account by "
-#~ "filling in the information below."
-#~ msgstr ""
-#~ "시스템을 사용하시려면 사용자 계정이 필요합니다. 아래쪽 정보를 기입하셔서 "
-#~ "사용자 계정을 생성하시기 바랍니다."
-
-#~ msgid ""
-#~ "A user account was not created.  Are you sure that you want to continue "
-#~ "without creating a user account?"
-#~ msgstr ""
-#~ "사용자 계정이 생성되지 않았습니다.  사용자 계정을 생성하지 않고 계속 진행"
-#~ "하시겠습니까?"
-
-#~ msgid "Set Date and Time"
-#~ msgstr "날짜와 시간 설정"
-
-#~ msgid "Finished Setup!"
-#~ msgstr "설정 완료!"
-
-#~ msgid "Red Hat Update Agent"
-#~ msgstr "Red Hat 업데이트 에이전트"
-
-#~ msgid "Date and Time Configuration"
-#~ msgstr "날짜와 시간 설정"
-
-#~ msgid "Welcome to Red Hat Linux!"
-#~ msgstr "Red Hat Linux에 오신것을 환영합니다!"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you have additional CD-ROMs that you would like to install, such as "
-#~ "the Red Hat Linux Docmentation CD, you may do that now.  Place the CD-ROM "
-#~ "in the drive and click the \"Install software\" button below."
-#~ msgstr ""
-#~ "만일 Red Hat Linux 박스 정품에 Red Hat 문서 자료 CD나 Linux 응용 프로그램 "
-#~ "CD와 같은 추가 CD가 들어있다면, 지금 디스크를 삽입하고 아래의 해당 버튼을 "
-#~ "클릭해 주십시오. "
-
-#~ msgid "Linux Application CD"
-#~ msgstr "Linux 응용 프로그램 CD"
-
-#~ msgid ""
-#~ "This feature is not yet implemented.  Please do not report bugs about "
-#~ "this button."
-#~ msgstr ""
-#~ "이 기능은 아직 실행되지 않습니다.  이 버튼과 관련된 버그는 보고하지 말아 "
-#~ "주십시오."
-
-#~ msgid "Finished Installation!"
-#~ msgstr "설치를 완료했습니다!"
-
-#~ msgid "Update Your System"
-#~ msgstr "시스템을 업데이트 하십시오"
-
-#~ msgid "Set up Networking"
-#~ msgstr "네트워킹 셋업"
-
-#~ msgid ""
-#~ "A network connection was not detected.  Network connectivity is necessary "
-#~ "for registering your system with RHN and for using the Red Hat Update "
-#~ "Agent to update your system.  To set up a network connection, please "
-#~ "click on the button below.\n"
-#~ msgstr ""
-#~ "네트워크 연결을 감지할 수 없습니다.  네트워크 연결 없이는 RHN에 시스템 등"
-#~ "록하기와 Red Hat Update Agent를 사용한 시스템 업데이트가 불가능합니다.  네"
-#~ "트워크 연결을 설정하기 위해서는 아래 버튼을 클릭해 주십시오.\n"
-
-#~ msgid "Configure using DHCP"
-#~ msgstr "DHCP를 사용한 설정"
-
-#~ msgid "IP Address"
-#~ msgstr "IP 주소"
-
-#~ msgid "Netmask"
-#~ msgstr "넷마스크"
-
-#~ msgid "Broadcast"
-#~ msgstr "브로드캐스트"
-
-#~ msgid "%s:"
-#~ msgstr "%s:"
-
-#~ msgid "Gateway"
-#~ msgstr "게이트웨이"
-
-#~ msgid "Hostname"
-#~ msgstr "호스트명"
-
-#~ msgid "Primary DNS"
-#~ msgstr "기본 DNS"
-
-#~ msgid "Secondary DNS"
-#~ msgstr "제2의 DNS"
-
-#~ msgid "Ternary DNS"
-#~ msgstr "제3의 DNS"
-
-#~ msgid "Configure Hardware"
-#~ msgstr "하드웨어 설정"
-
-#~ msgid "Keyboard Map:"
-#~ msgstr "키보드 맵:"
-
-#~ msgid "Configure..."
-#~ msgstr "설정..."
-
-#~ msgid "Mouse:"
-#~ msgstr "마우스:"
-
-#~ msgid "Networking:"
-#~ msgstr "네트워킹:"
-
-#~ msgid "Printers:"
-#~ msgstr "프린터:"
-
-#~ msgid "Finish Installation"
-#~ msgstr "설치 완료"
-
-#~ msgid "Keyboard"
-#~ msgstr "키보드"
-
-#, fuzzy
-#~ msgid "Configure the system keyboard"
-#~ msgstr "시스템 키보드를 설정하는 도구"
-
-#~ msgid "Select the appropriate keyboard for the system."
-#~ msgstr "시스템에 맞는 키보드를 선택해 주십시오."
-
-#~ msgid "Language"
-#~ msgstr "언어"
-
-#~ msgid "Language Configuration"
-#~ msgstr "언어 설정"
-
-#~ msgid "A configuration tool to set the language for the system"
-#~ msgstr "시스템에 사용할 언어를 설정하는 도구"
-
-#~ msgid "Language Selection"
-#~ msgstr "언어 선택"
-
-#~ msgid "The changes will take effect the next time you log in."
-#~ msgstr "다음에 로그인 하시면 변경 사항이 나타날 것입니다."
-
-#~ msgid "Mouse"
-#~ msgstr "마우스"
-
-#~ msgid "A configuration tool for the mouse"
-#~ msgstr "마우스 설정 도구"
-
-#, fuzzy
-#~ msgid "Select the appropriate mouse for the system."
-#~ msgstr "시스템에 맞는 키보드를 선택해 주십시오."
-
-#~ msgid "Emulate 3 button click"
-#~ msgstr "3 버튼 마우스 클릭처럼 사용하기"
-
-#~ msgid "Root Password"
-#~ msgstr "루트 암호"
-
-#~ msgid "Please set the root password for the system."
-#~ msgstr "시스템 루트 암호를 설정해 주십시오."
-
-#~ msgid "Confirm:"
-#~ msgstr "확인:"
-
-#~ msgid "Security Level"
-#~ msgstr "보안 수준"
-
-#~ msgid "Security Level Configuration"
-#~ msgstr "보안 수준 설정"
-
-#~ msgid "Configure system security level"
-#~ msgstr "시스템 보안 수준 설정"
-
-#~ msgid "Please choose the security level for the system."
-#~ msgstr "시스템의 보안 수준을 선택해 주십시오."
-
-#~ msgid "Security Level:"
-#~ msgstr "보안 수준:"
-
-#~ msgid "Use default firewall rules"
-#~ msgstr "기본 방화벽 규칙 사용"
-
-#~ msgid "Customize"
-#~ msgstr "사용자 정의"
-
-#~ msgid "Allow incoming:"
-#~ msgstr "허용할 서비스:"
-
-#~ msgid "Other ports: (1029:tcp)"
-#~ msgstr "그 외의 포트: (1029:tcp)"
-
-#~ msgid ""
-#~ "Invalid port given: %s.  The proper format is 'port:protocol, port:"
-#~ "protocol'.  For example, '1234:udp, 3456:tcp'"
-#~ msgstr ""
-#~ "잘못된 포트: %s.  올바른 형식은 '포트:프로토콜, 포트:프로토콜' 입니다.  "
-#~ "예, '1234:udp, 3456:tcp'"
-
-#~ msgid "Register with RHN"
-#~ msgstr "RHN에 등록하십시오"
-
-#~ msgid ""
-#~ "Red Hat Network is an Internet solution for managing one or more Red Hat "
-#~ "Linux systems. All Security Alerts, Bug Fix Alerts, and Enhancement "
-#~ "Alerts (collectively known as Errata Alerts) can be retreived directly "
-#~ "from Red Hat. You can even have updates automatically delivered directly "
-#~ "to your system as soon as they are released. \n"
-#~ "\n"
-#~ "Because Red Hat Network keeps track of when Errata Updates are released "
-#~ "and sends you email notifications, it can:"
-#~ msgstr ""
-#~ "Red Hat Network는 한개나 그 이상의 Red Hat Linux 시스템을 관리하는 인터넷 "
-#~ "솔루션입니다. Red Hat에서 직접 모든 보안 경고와 버그 수정 경고, 그리고 강"
-#~ "화 경고 (종합적으로 에라타 경고)를 보내드립니다. 또한 새로운 소프트웨어가 "
-#~ "배포될 때마다 바로 사용자의 시스템을 자동으로 업데이트합니다. \n"
-#~ "Red Hat Network는 Errata 업데이트가 이루어진 시기를 계속적으로 기록하여 사"
-#~ "용자의 이메일로 통보하며 따라서 Red Hat Network는 다음과 같은 기능을 갖추"
-#~ "고 있습니다: "
-
-#~ msgid ""
-#~ " -- Reduce the time and effort required by system administrators to stay "
-#~ "on top of the Red Hat errata list\n"
-#~ " -- Minimize security vulnerabilities in your network by providing the "
-#~ "patches as soon as Red Hat releases them\n"
-#~ " -- Filter out package updates not relevant to your network\n"
-#~ " -- Schedule Errata Updates so that packages are delivered to selected "
-#~ "systems when you want it"
-#~ msgstr ""
-#~ " -- 항상 Red Hat 에라타 목록을 확인해야 하는 시스템 관리자의 시간과 노력"
-#~ "을 절약해줍니다.\n"
-#~ " -- Red Hat에서 새로운 패치가 나올때마다 사용자의 시스템에 제공되므로 보"
-#~ "안 위험을 최소화합니다.\n"
-#~ " -- 사용자의 네트워크에 필요하지 않은 패키지 업데이트는 실행하지 않습니"
-#~ "다\n"
-#~ " -- 선택된 시스템으로 원하는 시간에 패키지가 업데이트될 수 있도록 에라타 "
-#~ "업데이트를 계획할 수 있습니다."
-
-#~ msgid "Register system now"
-#~ msgstr "지금 바로 시스템을 등록하십시오"
-
-#~ msgid "You currently have no network connection."
-#~ msgstr "현재 네트워크가 연결되어 있지 않습니다."
-
-#~ msgid "Start the Red Hat Update Agent"
-#~ msgstr "Red Hat 업데이트 에이전트 시작"
