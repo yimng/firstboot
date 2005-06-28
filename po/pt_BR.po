@@ -1,3 +1,4 @@
+# translation of pt_BR.po to Português Brasil
 # translation of pt_BR.po to Brazilian Portuguese
 # translation of pt_BR.po to Portuguese
 # Brazilian Portuguese localization of Red Hat Linux
@@ -7,21 +8,23 @@
 # Daniel Brooke Peig <daniel@brookepeig.com>, 2004.
 # David Barzilay <barzilay@redhat.com>, 2003, 2004.
 # Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>, 2004.
+# Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>, 2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-19 15:52-0400\n"
-"PO-Revision-Date: 2004-11-15 11:16+1000\n"
-"Last-Translator: David Barzilay <barzilay@redhat.com>\n"
-"Language-Team: Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
+"PO-Revision-Date: 2005-06-28 21:04-0300\n"
+"Last-Translator: Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>\n"
+"Language-Team: Português Brasil\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "br>\n"
 "Fedora Brasil\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.10.1\n"
+"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -162,7 +165,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:67
 msgid "Please insert any additionional software install cds at this time."
-msgstr ""
+msgstr "Por favor, insira todos os cds de instalação de softwares adicionais agora."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
@@ -192,8 +195,7 @@ msgstr ""
 "clique \"OK\" para continuar."
 
 #: ../src/modules/additional_cds.py:194
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "O programa autorun não pode ser encontrado no CD. Clique em \"OK\" para "
 "continuar."
@@ -303,15 +305,12 @@ msgstr ""
 "apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:327
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "A senha contém caracteres inválidos.  Por favor use apenas caracteres ASCII."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "O nome '%s' contém caracteres inválidos.  Por favor use apenas caracteres "
 "ASCII."
@@ -330,8 +329,7 @@ msgstr "Display"
 
 #: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
-"Por favor selecione a resolução e profundidade de cor que deseja utilizar"
+msgstr "Por favor selecione a resolução e profundidade de cor que deseja utilizar"
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
@@ -413,40 +411,3 @@ msgstr ""
 "através de algumas configurações básicas.  Por favor clique no botão "
 "\"Próximo\" no canto inferior direito para continuar."
 
-#~ msgid "Licence Aggrement"
-#~ msgstr "Acordo de Licença"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "O nome de usuário '%s' contém caracteres em caixa alta.  Por favor não "
-#~ "use caracteres em caixa alta no nome do usuário."
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "O firstboot não roda no nível de execução 3."
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Se você tiver algum dos CDs listados abaixo, pode instalar os seus "
-#~ "pacotes introduzindo o CD e clicando o botão apropriado."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Por favor indique a hora do servidor."
-
-#~ msgid "Error"
-#~ msgstr "Erro"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Não foi possível estabelecer uma conexão com %s.  O %s não está "
-#~ "disponível ou a configuração do 'firewall' no seu computador está "
-#~ "bloqueando conexões NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Contactando o servidor NTP.  Por favor aguarde..."
