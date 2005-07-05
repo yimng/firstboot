@@ -33,7 +33,7 @@ class childWindow:
         self.txt = _("Your system is now set up and ready to use.  Please "
                             "click the \"Next\" button in the lower right corner to continue.")
 
-	self.post_txt = _("Please click the \"Next\" button in the lower right corner to continue.")
+        self.post_txt = _("Please click the \"Next\" button in the lower right corner to continue.")
         self.label = gtk.Label(self.txt)
             
         self.label.set_line_wrap(True)
@@ -56,11 +56,11 @@ class childWindow:
             for file in files:
                 fd = open(file, "r")
                 new_txt = fd.read()
-		# markcom doesnt want the "you finished" message shown if there
-		# are any other errors
+                # markcom doesnt want the "you finished" message shown if there
+                # are any other errors
                 self.txt = "" + "\n\n"
                 self.txt = self.txt + new_txt
-		self.txt = self.txt + "\n\n" + self.post_txt
+                self.txt = self.txt + "\n\n" + self.post_txt
 
             # dont need these files anymore
             for file in files:

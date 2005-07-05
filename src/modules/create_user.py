@@ -25,15 +25,15 @@ import crypt,whrandom
 
 def cryptPassword(password, useMD5 = 1):
     if useMD5:
-	salt = "$1$"
-	saltLen = 8
+        salt = "$1$"
+        saltLen = 8
     else:
-	salt = ""
-	saltLen = 2
+        salt = ""
+        saltLen = 2
 
     for i in range(saltLen):
-	salt = salt + whrandom.choice (string.letters +
-                                       string.digits + './')
+        salt = salt + whrandom.choice (string.letters +
+                                           string.digits + './')
 
     return crypt.crypt (password, salt)
 
@@ -67,9 +67,9 @@ class childWindow:
         internalVBox.set_border_width(10)
         internalVBox.set_spacing(10)
 
-	label = gtk.Label(_("It is recommended that you create a system 'username' for regular "
-			    "(non-administrative) use of your system. To create a system 'username,' "
-			    "please provide the information requested below."))
+        label = gtk.Label(_("It is recommended that you create a system 'username' for regular "
+                            "(non-administrative) use of your system. To create a system 'username,' "
+                            "please provide the information requested below."))
 
         label.set_line_wrap(True)
         label.set_alignment(0.0, 0.5)

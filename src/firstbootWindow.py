@@ -71,7 +71,7 @@ class firstbootWindow:
         self.moduleList = []
         self.moduleDict = {}
 
-	self.nextPage = None
+        self.nextPage = None
         # Create the initial window and a vbox to fill it with.
         self.win = gtk.Window()
         self.win.connect("destroy", self.destroy)
@@ -137,8 +137,8 @@ class firstbootWindow:
         if self.doDebug:
             print "starting firstbootWindow", doReconfig, doDebug                    
             #self.modulePath = ('modules/')
-	    #self.modulePath = ('/usr/src/rhn/up2date/firstboot')
-	    self.modulePath = ('/usr/share/firstboot/modules')
+            #self.modulePath = ('/usr/src/rhn/up2date/firstboot')
+            self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)            
             self.notebook.set_show_tabs(False)
             self.notebook.set_scrollable(True)
@@ -203,11 +203,11 @@ class firstbootWindow:
         self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
 
         self.bb.pack_start(self.nextButton)
-	# Add the button box to the bottom of the box which contains the notebook.
+        # Add the button box to the bottom of the box which contains the notebook.
 
         self.internalVBox.pack_start(self.bb, False)
 
-	# Add the main HBox to a VBox which will sit in the window.
+        # Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
         self.win.show_all()
@@ -216,7 +216,7 @@ class firstbootWindow:
         gtk.main()
 
     def setPage(self, modulename):
-	self.nextPage = self.moduleNameToNotebookIndex[modulename]
+        self.nextPage = self.moduleNameToNotebookIndex[modulename]
 
     def switchPage(self, notebook, page, page_num, *args):
         # catch the switch page signal, so we can re poke modules
@@ -305,12 +305,12 @@ class firstbootWindow:
             pgNum = self.moduleNameToNotebookIndex[module.__module__]
             self.pageHistory.append(pgNum)
 #            print "self.pageHistory: %s" % self.pageHistory
-	    if self.nextPage:
-		self.notebook.set_current_page(self.nextPage)
-		module = self.moduleList[self.nextPage]
-		self.nextPage = None
-	    else:
-		self.notebook.next_page()
+            if self.nextPage:
+                self.notebook.set_current_page(self.nextPage)
+                module = self.moduleList[self.nextPage]
+                self.nextPage = None
+            else:
+                self.notebook.next_page()
                 module = self.moduleList[self.notebook.get_current_page()]
             #Call setPointer to make the left hand pointer move to the correct pointer
             self.setPointer(self.notebook.get_current_page())
@@ -386,12 +386,12 @@ class firstbootWindow:
         eb.window.set_back_pixmap(bgimage, False)
 
     def checkNetwork(self):
-	# see if we have a non loopback interface up
-	intfs = ethtool.get_active_devices()
+        # see if we have a non loopback interface up
+        intfs = ethtool.get_active_devices()
         for intf in intfs:
-	    if intf != "lo":
-		return 1
-	return 0		
+            if intf != "lo":
+                return 1
+        return 0
 
 
     def loadModules(self):
@@ -428,31 +428,31 @@ class firstbootWindow:
 
             # XXX - hack to allow firstboot to pass in the parent class into language
             # this will allow the language module to change firstboot's current locale
-	    if module == "language" or hasattr(obj, "needsparent"):
-		obj.passInParent(self)
+            if module == "language" or hasattr(obj, "needsparent"):
+                obj.passInParent(self)
 #            if module in ["language", "rhn_login_gui", "rhn_optout_gui",
-#			 "rhn_activate_gui", "rhn_newaccount_gui"]:
+#                          "rhn_activate_gui", "rhn_newaccount_gui"]:
 #                obj.passInParent(self)
 
 
              
             # if a module decides not to run, skip it first before trying any
             # of the other hooks. bz #158095
-	    if hasattr(obj, "skipme"):
-		# the module itself has decided for some reason that
+            if hasattr(obj, "skipme"):
+                # the module itself has decided for some reason that
                 # that it should not be shown, so skip it
-		continue
+                continue
 
 
-	    # if the module needs network access, and we dont have it, skip
+            # if the module needs network access, and we dont have it, skip
             # the module
-	    if hasattr(obj, "needsnetwork"):
-		if not self.checkNetwork():
+            if hasattr(obj, "needsnetwork"):
+                if not self.checkNetwork():
                     # we need a way to run some stuff from the modules
                     # if they have no network
                     if hasattr(obj, "noNetwork"):
                         obj.noNetwork()
-		    continue
+                    continue
 
             # If the module defines a moduleClass, it has to match the mode
             # we're starting up in, otherwise it's always used.  Add it to
@@ -467,7 +467,7 @@ class firstbootWindow:
 
 
         # Get the list of module priorities, sort them to determine a run
-	# order, and build a list with the modules in the proper order.
+        # order, and build a list with the modules in the proper order.
         modulePriorityList = self.moduleDict.keys()
         modulePriorityList.sort()
 
@@ -480,9 +480,9 @@ class firstbootWindow:
 ##         self.leftVBox = gtk.VBox()
 ##         self.leftVBox.pack_start(leftEventBox, True)
 
-	# Add the modules to the proper lists.
+        # Add the modules to the proper lists.
         pages = 0
-	self.moduleNameToNotebookIndex = {}
+        self.moduleNameToNotebookIndex = {}
         for priority in modulePriorityList:
             # Add the module to the list of modules.
             module = self.moduleDict[priority]
@@ -551,7 +551,7 @@ class firstbootWindow:
                     self.leftLabelVBox.pack_start(hbox, False, True, 3)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
-		    self.moduleNameToNotebookIndex["unamemodule-%s" % pages] = pages
+                    self.moduleNameToNotebookIndex["unamemodule-%s" % pages] = pages
                 pages = pages + 1
 
         

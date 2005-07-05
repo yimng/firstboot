@@ -89,7 +89,7 @@ def startWindowManager():
 def mergeXresources():
     path = "/etc/X11/Xresources"
     if os.access(path, os.R_OK):
-	os.system("xrdb -merge %s" % path)
+       os.system("xrdb -merge %s" % path)
 
 #Let's check to see if firstboot should be run or not
 #If we're in debug mode, run anyway.  Even if the file exists
@@ -113,7 +113,7 @@ if (not doDebug):
             if (string.find(line, "RUN_FIRSTBOOT") > -1) and line[0] != "#":
                 if string.find(line, "="):
                     key, value = string.split(line, "=")
-		    value = string.strip(value)
+                    value = string.strip(value)
                     if value == "NO":
                         #Firstboot should not be run
                         firstbootBackend.chkconfigOff()
@@ -174,14 +174,14 @@ if not os.environ.has_key('DISPLAY'):
           #set the display environment variable
           os.environ['DISPLAY'] = ':1'
 
-	  xserver_pid = os.fork()
+          xserver_pid = os.fork()
 
           if not xserver_pid:
               path = "/etc/X11/X"
               args = [path, ':1', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
 
               os.execvp(path, args)
-	      os._exit(1)
+              os._exit(1)
 
           count = 0
           while count < 60:
