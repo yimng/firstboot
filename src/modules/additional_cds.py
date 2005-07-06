@@ -64,7 +64,7 @@ class childWindow:
                           """other Red Hat-provided discs to install additional software at """
                           """this time.""")
 
-        cd_label = _("""Please insert any additionional software install cds """
+        cd_label = _("""Please insert any additional software install cds """
                      """at this time.""")
 
 
