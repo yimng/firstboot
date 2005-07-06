@@ -18,7 +18,9 @@ Requires: usermode >= 1.36
 Requires: metacity
 Requires: rhpl
 Requires: system-config-date >= 1.7.9
+%ifnarch ppc64
 Requires: system-config-display
+%endif
 Requires: system-config-language
 Requires: system-config-keyboard
 Requires: system-config-soundcard
@@ -31,7 +33,6 @@ Requires: libuser
 Requires: up2date >= 4.3.38
 Requires: redhat-logos
 Requires: redhat-artwork
-Requires: xsri
 ExcludeArch: s390 s390x
 
 %description
