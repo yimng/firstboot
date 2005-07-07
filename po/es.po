@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-19 15:52-0400\n"
+"POT-Creation-Date: 2005-07-07 10:43-0400\n"
 "PO-Revision-Date: 2005-06-09 16:43+1000\n"
 "Last-Translator: Manuel Ospina <mospina@redhat.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -87,25 +87,23 @@ msgstr ""
 "ha guardado una copia de la salida de depuración para %s. \n"
 "Asegúrese de adjuntar ese archivo en el informe de errores.\n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
 msgid "_Back"
 msgstr "_Atrás"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
 msgid "_Next"
 msgstr "_Siguiente"
-
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
-#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
-msgid "Welcome"
-msgstr "Bienvenido"
 
 #: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "Falló al importar el módulo %s: %s"
+
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "Bienvenido"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -168,8 +166,11 @@ msgstr ""
 "Red Hat para instalarlos."
 
 #: ../src/modules/additional_cds.py:67
-msgid "Please insert any additionional software install cds at this time."
-msgstr "Por favor inserte cualquier cd de instalación de software adicional en este momento."
+#, fuzzy
+msgid "Please insert any additional software install cds at this time."
+msgstr ""
+"Por favor inserte cualquier cd de instalación de software adicional en este "
+"momento."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
@@ -199,7 +200,8 @@ msgstr ""
 "\" para continuar."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "No se puede encontrar el programa de autorun en el cd. Pulse en  \"Aceptar\" "
 "para continuar."
@@ -309,14 +311,16 @@ msgstr ""
 "caracteres  ASCII."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La contraseña contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "El nombre '%s' contiene caracteres inválidos. Por favor sólo use caracteres "
 "ASCII. "
@@ -351,7 +355,8 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Presione el botón \"Siguiente\" de la parte inferior derecha para continuar."
+msgstr ""
+"Presione el botón \"Siguiente\" de la parte inferior derecha para continuar."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -450,4 +455,3 @@ msgstr ""
 
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "Contactar el servidor NTP.  Por favor, espere..."
-

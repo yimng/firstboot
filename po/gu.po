@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-19 15:52-0400\n"
+"POT-Creation-Date: 2005-07-07 10:43-0400\n"
 "PO-Revision-Date: 2005-05-31 19:11+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <gu@li.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -81,25 +82,23 @@ msgstr ""
 "%s માં સંગ્રહાઈ ગઈ છે. ખાતરી કરો કે ભૂલ શોધવાના \n"
 "અહેવાલની સાથે આ ફાઈલ જોડો. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
 msgid "_Back"
 msgstr "પાછા જાઓ (_B)"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
 msgid "_Next"
 msgstr "આગળ વધો (_N)"
-
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
-#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
-msgid "Welcome"
-msgstr "તમારુ સ્વાગત છે"
 
 #: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s નું મોડ્યુલ આયાત કરવામાં નિષ્ફળ: %s"
+
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "તમારુ સ્વાગત છે"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -162,7 +161,8 @@ msgstr ""
 "Hat દ્વારા પૂરી પાડવામાં આવેલ અન્ય ડિસ્ક પણ વાપરી શકો છો."
 
 #: ../src/modules/additional_cds.py:67
-msgid "Please insert any additionional software install cds at this time."
+#, fuzzy
+msgid "Please insert any additional software install cds at this time."
 msgstr "મહેરબાની કરીને આ સમયે કોઈપણ વધારાની સોફ્ટવેર સ્થાપન cd દાખલ કરો."
 
 #. if 1:
@@ -192,7 +192,8 @@ msgstr ""
 "રાખવા માટે \"બરાબર\" બટન પર ક્લિક કરો."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "આપોઆપ ચલાવો કાર્યક્રમ cd માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક "
 "કરો."
@@ -297,15 +298,18 @@ msgstr ""
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "વપરાશકર્તાનું નામ %s અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
+msgstr ""
+"વપરાશકર્તાનું નામ %s અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "પાસવર્ડ અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "નામ %s અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
 
 #: ../src/modules/date.py:46
@@ -400,4 +404,3 @@ msgstr ""
 "તમારી સિસ્ટમ વાપરવા માટે તૈયાર છે કે નહિ તેના માટે ત્યાં અમુક પગલા જરુરી છે. સેટઅપ એજન્ટ "
 "તમને હવે અમુક પાયાના રુપરેખાંકન માટે મદદ કરશે. મહેરબાની કરીને ચાલુ રાખવા માટે નીચેના જમણા "
 "ખૂણે \"આગળ વધો\" બટન પર ક્લિક કરો."
-

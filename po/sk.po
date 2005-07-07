@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-19 15:52-0400\n"
+"POT-Creation-Date: 2005-07-07 10:43-0400\n"
 "PO-Revision-Date: 2005-06-10 21:04+0200\n"
 "Last-Translator: Marcel Telka <marcel@telka.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -75,25 +75,23 @@ msgstr ""
 "Kópia ladiaceho výstupu bola uložená do %s \n"
 "Prosím, nezabudnite pripojiť tento súbor k hláseniu o chybe. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
 msgid "_Back"
 msgstr "_Späť"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
 msgid "_Next"
 msgstr "Ď_alej"
-
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
-#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
-msgid "Welcome"
-msgstr "Vitajte"
 
 #: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import modulu %s zlyhal: %s"
+
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "Vitajte"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -157,7 +155,8 @@ msgstr ""
 "softvér."
 
 #: ../src/modules/additional_cds.py:67
-msgid "Please insert any additionional software install cds at this time."
+#, fuzzy
+msgid "Please insert any additional software install cds at this time."
 msgstr "Prosím, vložte teraz prípadné ďalšie inštalačné CD so softvérom."
 
 #. if 1:

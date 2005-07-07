@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-19 15:52-0400\n"
+"POT-Creation-Date: 2005-07-07 10:43-0400\n"
 "PO-Revision-Date: 2005-06-19 02:08+0300\n"
 "Last-Translator: Doncho N. Gunchev <mr700@globalnet.bg>\n"
 "Language-Team: Bulgarian <Bulgarian Translators' Team <dict@fsa-bg.org>>\n"
@@ -36,7 +36,8 @@ msgstr "_Не, не съм съгласен"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Бихте ли желали да препрочетете или преразгледате лицензионното споразумение?"
+msgstr ""
+"Бихте ли желали да препрочетете или преразгледате лицензионното споразумение?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -75,25 +76,23 @@ msgstr ""
 "Копие на debug изхода е запазен в %s. \n"
 "Моля прикачете файла към рапорта за грешката. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
 msgid "_Next"
 msgstr "_Следващ"
-
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
-#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
-msgid "Welcome"
-msgstr "Добре дошли"
 
 #: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "импорта на модул %s се провали: %s"
+
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "Добре дошли"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -156,7 +155,8 @@ msgstr ""
 "за да инсталирате допълнителен софтуер сега."
 
 #: ../src/modules/additional_cds.py:67
-msgid "Please insert any additionional software install cds at this time."
+#, fuzzy
+msgid "Please insert any additional software install cds at this time."
 msgstr "Моля поставете всички допълнителни инсталационни CD дискове сега."
 
 #. if 1:
@@ -187,8 +187,10 @@ msgstr ""
 "\"Добре\" за продължение."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Няма авто-стартиращата програма на CD-то. Натиснете \"Добре\" за продължение."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Няма авто-стартиращата програма на CD-то. Натиснете \"Добре\" за продължение."
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
@@ -295,13 +297,17 @@ msgstr ""
 "символи."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Паролата съдържа невалидни символи.  Моля ползвайте само ASCII символи."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Паролата съдържа невалидни символи.  Моля ползвайте само ASCII символи."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Името %s съдържа невалидни символи.  Моля ползвайте само ASCII символи."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Името %s съдържа невалидни символи.  Моля ползвайте само ASCII символи."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -395,4 +401,3 @@ msgstr ""
 "Има още няколко стъпки преди системата Ви да бъде готова за работа.  Агента "
 "за настройка ще Ви преведе през някои базови настройки.  Моля натиснете "
 "бутон \"Следващ\" в долния десен ъгъл за да продължите."
-

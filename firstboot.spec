@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.42
+Version: 1.3.43
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -77,6 +77,12 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Jul 07 2005 Chris Lumens <clumens@redhat.com> 1.3.43-1
+- Remove dependancy on xsri (#145807).
+- Fix typo in "additional" (#158435).
+- Tabs vs. spaces consistency (#156456).
+- Don't require system-config-display on ppc64.
+
 * Wed May 25 2005 Jeremy Katz <katzj@redhat.com> - 1.3.42-1
 - Stop using deprecated gtk.{TRUE,FALSE} (#153033)
 

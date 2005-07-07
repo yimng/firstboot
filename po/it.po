@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-19 15:52-0400\n"
+"POT-Creation-Date: 2005-07-07 10:43-0400\n"
 "PO-Revision-Date: 2005-05-27 07:37+0200\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team:  <it@li.org>\n"
@@ -82,25 +82,23 @@ msgstr ""
 "Una copia del risultato dell'operazione di debug è stata salvata in %s.\n"
 "Accertarsi di allegare il file al report del bug. \n"
 
-#: ../src/firstbootWindowLocal.py:186 ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:581
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
 msgid "_Back"
 msgstr "_Precedente"
 
-#: ../src/firstbootWindowLocal.py:194 ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:585
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
 msgid "_Next"
 msgstr "_Successivo"
-
-#: ../src/firstbootWindowLocal.py:532 ../src/firstbootWindow.py:577
-#: ../src/modules/welcome.py:18 ../src/modules/welcome.py:27
-msgid "Welcome"
-msgstr "Benvenuti"
 
 #: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "l'importazione del modulo %s è fallita: %s"
+
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "Benvenuti"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -163,8 +161,11 @@ msgstr ""
 "installare del software aggiuntivo."
 
 #: ../src/modules/additional_cds.py:67
-msgid "Please insert any additionional software install cds at this time."
-msgstr "Siete pregati di inserire qualsiasi altro cd per l'installazione di software addizionale in questo momento."
+#, fuzzy
+msgid "Please insert any additional software install cds at this time."
+msgstr ""
+"Siete pregati di inserire qualsiasi altro cd per l'installazione di software "
+"addizionale in questo momento."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
@@ -194,8 +195,10 @@ msgstr ""
 "per continuare."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
@@ -260,11 +263,13 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr ""
+"La password non é corretta.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr ""
+"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
@@ -303,14 +308,16 @@ msgstr ""
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Il nome '%s' contiene caratteri invalidi.  Si prega di usare solo caratteri "
 "ASCII."
@@ -411,4 +418,3 @@ msgstr ""
 "prima che il sistema sia pronto.  Red Hat Setup Agent guida l'utente nel "
 "processo di configurazione di base.  Fare clic sul pulsante \"Successivo\" "
 "nella parte inferiore destra per continuare."
-

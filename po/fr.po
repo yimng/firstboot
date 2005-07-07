@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-19 15:52-0400\n"
+"POT-Creation-Date: 2005-07-07 10:43-0400\n"
 "PO-Revision-Date: 2005-05-20 07:17+0100\n"
 "Last-Translator: Philippe Villiers <philippe.villiers@wanadoo.fr>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -69,36 +69,29 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Veuillez signaler le bogue concernant « firstboot » dans le Bug Tracking System\n"
+"Veuillez signaler le bogue concernant « firstboot » dans le Bug Tracking "
+"System\n"
 "de Red Hat à l'adresse suivante : http://www.redhat.com/buzilla. \n"
 "Une copie de la sortie de débogage a été sauvegardée dans %s. \n"
 "Veillez à bien joindre ce fichier au rapport de bogues.\n"
 
-#: ../src/firstbootWindowLocal.py:186
-#: ../src/firstbootWindowLocal.py:536
-#: ../src/firstbootWindow.py:192
-#: ../src/firstbootWindow.py:581
+#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
 msgid "_Back"
 msgstr "_Précédent"
 
-#: ../src/firstbootWindowLocal.py:194
-#: ../src/firstbootWindowLocal.py:540
-#: ../src/firstbootWindow.py:200
-#: ../src/firstbootWindow.py:585
+#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
 msgid "_Next"
 msgstr "_Suivant"
-
-#: ../src/firstbootWindowLocal.py:532
-#: ../src/firstbootWindow.py:577
-#: ../src/modules/welcome.py:18
-#: ../src/modules/welcome.py:27
-msgid "Welcome"
-msgstr "Bienvenue"
 
 #: ../src/firstbootWindow.py:420
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "L'importation de module de %s a échoué : %s"
+
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "Bienvenue"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -144,49 +137,77 @@ msgstr "Choisissez l'élément que vous souhaitez modifier"
 msgid "Setup Agent"
 msgstr "Agent de configuration"
 
-#: ../src/modules/additional_cds.py:43
-#: ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "CD-ROM supplémentaires"
 
 #: ../src/modules/additional_cds.py:61
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Veuillez insérer le disque libellé \"Red Hat Enterprise Linux Paquetages Supplémentaires\" pour permettre l'installation de plug-ins et applications tiers.  Vous souhaiterez peut-être également insérer le disque de Documentation ou tout autre disque fourni par Red Hat afin d'installer des logiciels supplémentaires à ce moment-là. "
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Veuillez insérer le disque libellé \"Red Hat Enterprise Linux Paquetages "
+"Supplémentaires\" pour permettre l'installation de plug-ins et applications "
+"tiers.  Vous souhaiterez peut-être également insérer le disque de "
+"Documentation ou tout autre disque fourni par Red Hat afin d'installer des "
+"logiciels supplémentaires à ce moment-là. "
 
 #: ../src/modules/additional_cds.py:67
-msgid "Please insert any additionional software install cds at this time."
-msgstr "Veuillez insérer les cd d'installation de logiciels additionnels maintenant."
+#, fuzzy
+msgid "Please insert any additional software install cds at this time."
+msgstr ""
+"Veuillez insérer les cd d'installation de logiciels additionnels maintenant."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture, you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Pour permettre la prise en charge à l'exécution, d'applications 32 bits sur l'architecture Intel Itanium2, vous devez installer maintenant le packetage Intel Execution Layer qui se trouve sur le disque libellé Paquetages Supplémentaires."
+"Pour permettre la prise en charge à l'exécution, d'applications 32 bits sur "
+"l'architecture Intel Itanium2, vous devez installer maintenant le packetage "
+"Intel Execution Layer qui se trouve sur le disque libellé Paquetages "
+"Supplémentaires."
 
 #: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "Installation..."
 
 #: ../src/modules/additional_cds.py:160
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur, puis cliquer sur « OK » pour continuer."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Aucun CD-ROM n'a été détecté. Veuillez insérer un CD-ROM dans le lecteur, "
+"puis cliquer sur « OK » pour continuer."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr "Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliquer sur « OK » pour continuer."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr ""
+"Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliquer "
+"sur « OK » pour continuer."
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
 msgstr "Utilisateur du système"
 
 #: ../src/modules/create_user.py:70
-msgid "It is recommended that you create a system 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "Il est conseillé de créer un nom d'utilisateur système pour les utilisations normales (non administratives) de votre système. Pour ce faire, donnez les informations requises ci-dessous."
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Il est conseillé de créer un nom d'utilisateur système pour les utilisations "
+"normales (non administratives) de votre système. Pour ce faire, donnez les "
+"informations requises ci-dessous."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -205,16 +226,26 @@ msgid "Confir_m Password:"
 msgstr "Confir_mer le mot de passe :"
 
 #: ../src/modules/create_user.py:117
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Si vous devez utiliser l'authentification réseau comme Kerberos ou NIS, veuillez cliquer sur le bouton « Utiliser la connexion réseau »."
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Si vous devez utiliser l'authentification réseau comme Kerberos ou NIS, "
+"veuillez cliquer sur le bouton « Utiliser la connexion réseau »."
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "Utiliser _la connexion réseau..."
 
 #: ../src/modules/create_user.py:163
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Il est vivement conseillé de créer un compte utilisateur personnel. Si vous poursuivez sans compte utilisateur, vous ne pourrez vous connecter qu'avec le compte root, qui est réservé uniquement aux utilisations administratives."
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"Il est vivement conseillé de créer un compte utilisateur personnel. Si vous "
+"poursuivez sans compte utilisateur, vous ne pourrez vous connecter qu'avec "
+"le compte root, qui est réservé uniquement aux utilisations administratives."
 
 #: ../src/modules/create_user.py:171
 msgid "_Continue"
@@ -230,7 +261,8 @@ msgstr "Les mots de passe ne correspondent pas. Essayez à nouveau."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr ""
+"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
 #: ../src/modules/create_user.py:278
 msgid "The user name must be less than 33 characters long."
@@ -243,27 +275,45 @@ msgstr "Le nom d'utilisateur ne doit pas commencer avec un nombre."
 #. Check for whitespace
 #: ../src/modules/create_user.py:296
 #, python-format
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
-msgstr "Le nom d'utilisateur « %s » contient des espaces blancs. Veuillez ne pas inclure d'espaces blancs dans le nom d'utilisateur."
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Le nom d'utilisateur « %s » contient des espaces blancs. Veuillez ne pas "
+"inclure d'espaces blancs dans le nom d'utilisateur."
 
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
-msgstr "Le nom d'utilisateur « %s » contient des caractères de ponctuation. Veuillez ne pas utiliser de ponctuation dans le nom d'utilisateur."
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+"Le nom d'utilisateur « %s » contient des caractères de ponctuation. Veuillez "
+"ne pas utiliser de ponctuation dans le nom d'utilisateur."
 
 #: ../src/modules/create_user.py:317
 #, python-format
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Le nom d'utilisateur « %s » contient des caractères non valides. Veuillez n'utiliser que des caractères ASCII."
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+"Le nom d'utilisateur « %s » contient des caractères non valides. Veuillez "
+"n'utiliser que des caractères ASCII."
 
 #: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Le mot de passe contient des caractères non valides. Veuillez n'utiliser que des caractères ASCII."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Le mot de passe contient des caractères non valides. Veuillez n'utiliser que "
+"des caractères ASCII."
 
 #: ../src/modules/create_user.py:339
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Le nom « %s » contient des caractères non valides. Veuillez n'utiliser que des caractères ASCII."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Le nom « %s » contient des caractères non valides. Veuillez n'utiliser que "
+"des caractères ASCII."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -279,19 +329,27 @@ msgstr "Affichage"
 
 #: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Veuillez sélectionner la résolution et la profondeur des couleurs que vous souhaitez utiliser"
+msgstr ""
+"Veuillez sélectionner la résolution et la profondeur des couleurs que vous "
+"souhaitez utiliser"
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
 msgstr "Fin de la configuration"
 
 #: ../src/modules/finished.py:33
-msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Votre système est maintenant configuré et prêt à l'emploi. Pour continuer, veuillez cliquer sur le bouton « Suivant » dans le coin en bas à droite."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr ""
+"Votre système est maintenant configuré et prêt à l'emploi. Pour continuer, "
+"veuillez cliquer sur le bouton « Suivant » dans le coin en bas à droite."
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Pour continuer, cliquez sur le bouton « Suivant » dans le coin en bas à droite."
+msgstr ""
+"Pour continuer, cliquez sur le bouton « Suivant » dans le coin en bas "
+"à droite."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -317,8 +375,7 @@ msgstr "_Changer la configuration réseau..."
 msgid "static"
 msgstr "statique"
 
-#: ../src/modules/soundcard_gui.py:45
-#: ../src/modules/soundcard_gui.py:46
+#: ../src/modules/soundcard_gui.py:45 ../src/modules/soundcard_gui.py:46
 msgid "Sound Card"
 msgstr "Carte son"
 
@@ -327,8 +384,15 @@ msgid "A sound card has been detected on your computer."
 msgstr "Une carte son a été détectée sur votre ordinateur."
 
 #: ../src/modules/soundcard_gui.py:70
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Cliquez sur le bouton « Tester le son » pour écouter un échantillon sonore. Vous devriez entendre une série de trois sons. Le premier sera sur le canal de droite, le second sur celui de gauche et le troisième au centre."
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Cliquez sur le bouton « Tester le son » pour écouter un échantillon sonore. "
+"Vous devriez entendre une série de trois sons. Le premier sera sur le canal "
+"de droite, le second sur celui de gauche et le troisième au centre."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -339,11 +403,19 @@ msgid "Please set the timezone for the system."
 msgstr "Veuillez sélectionner le fuseau horaire de votre système."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Il vous reste encore quelques étapes à effectuer avant que votre système ne soit prêt à l'emploi. L'agent de configuration de Red Hat vous guidera tout au long de la configuration de base. Pour continuer, cliquez sur le bouton « Suivant » dans le coin en bas à droite."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Il vous reste encore quelques étapes à effectuer avant que votre système ne "
+"soit prêt à l'emploi. L'agent de configuration de Red Hat vous guidera tout "
+"au long de la configuration de base. Pour continuer, cliquez sur le bouton "
+"« Suivant » dans le coin en bas à droite."
 
 #~ msgid "Licence Aggrement"
 #~ msgstr "Contrat de licence"
+
 #~ msgid ""
 #~ "The user name '%s' contains uppercase characters.  Please do not use "
 #~ "uppercase characters in the user name."
@@ -351,8 +423,10 @@ msgstr "Il vous reste encore quelques étapes à effectuer avant que votre syst
 #~ "Le nom d'utilisateur « %s » contient des caractères en majuscules. "
 #~ "Veuillez ne pas utiliser de caractères en majuscules dans le nom "
 #~ "d'utilisateur."
+
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot ne tourne pas au niveau d'exécution 3."
+
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
@@ -360,10 +434,13 @@ msgstr "Il vous reste encore quelques étapes à effectuer avant que votre syst
 #~ "Si vous disposez de l'un des CD-ROM figurant dans la liste ci-dessous, "
 #~ "vous pouvez installer les paquetages à partir de ceux-ci en introduisant "
 #~ "le CD-ROM et en cliquant sur le bouton approprié."
+
 #~ msgid "Please enter a time server."
 #~ msgstr "Veuillez saisir un serveur de temps."
+
 #~ msgid "Error"
 #~ msgstr "Erreur"
+
 #~ msgid ""
 #~ "A connection with %s could not be established.  Either %s is not "
 #~ "available or the firewall settings on your computer are blocking NTP "
@@ -372,8 +449,9 @@ msgstr "Il vous reste encore quelques étapes à effectuer avant que votre syst
 #~ "Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible, "
 #~ "soit les paramètres de pare-feu de votre ordinateur bloquent la connexion "
 #~ "NTP."
+
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "Connexion au serveur NTP. Veuillez patienter..."
+
 #~ msgid "User Account"
 #~ msgstr "Compte utilisateur"
-
