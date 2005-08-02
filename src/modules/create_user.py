@@ -6,7 +6,7 @@ import gtk
 import gobject
 import sys
 import functions
-#import libuser
+import libuser
 import rhpl.executil as executil
 
 ##
@@ -45,7 +45,7 @@ class childWindow:
 
     def launch(self, doDebug = None):
         self.doDebug = doDebug
-#        self.admin = libuser.admin()
+        self.admin = libuser.admin()
         self.nisFlag = None
 
         if doDebug:
@@ -134,13 +134,13 @@ class childWindow:
 
         self.vbox.pack_start(internalVBox, False, 15)
 
-#         users = self.admin.enumerateUsersFull()
-#         self.normalUsersList = []
-#         for userEnt in users:
-#             uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
-#             if uidNumber == 500:
-#                 self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
-#                 self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
+        users = self.admin.enumerateUsersFull()
+        self.normalUsersList = []
+        for userEnt in users:
+            uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
+            if uidNumber == 500:
+                self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
+                self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
 
         return self.vbox, title_pix, self.moduleName
 
@@ -211,14 +211,14 @@ class childWindow:
             self.passwordEntry.grab_focus()                
             return None
 
-#         user = self.admin.lookupUserByName(username)
+        user = self.admin.lookupUserByName(username)
 
-#         if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
-#             self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
-#                                     "specify another username." % username))
-#             self.usernameEntry.set_text("")
-#             self.usernameEntry.grab_focus()
-#             return None
+        if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+            self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
+                                    "specify another username." % username))
+            self.usernameEntry.set_text("")
+            self.usernameEntry.grab_focus()
+            return None
 
         fullName = self.fullnameEntry.get_text()
 
@@ -226,20 +226,6 @@ class childWindow:
         if not self.isNameOk(fullName, self.fullnameEntry):
             return None
 
-        # XXX: using libuser means that we get killed by selinux so for now
-        # let's just exec useradd, etc.  this is a hack that we need to
-        # back off of for the FC2 release
-        args = [ "/usr/sbin/useradd", username ]
-        executil.execWithRedirect(args[0], args, stdout = None, stderr = None)
-
-        args = [ "/usr/bin/chfn", "-f", fullName , username ]
-        executil.execWithRedirect(args[0], args, stdout = None, stderr = None)
-
-        args = [ "/usr/sbin/usermod", "-p", cryptPassword(password) , username ]
-        executil.execWithRedirect(args[0], args, stdout = None, stderr = None)
-
-        return 0
-        
         #If we get to this point, all the input seems to be valid.  Let's add the user
         if user == None:
             #if the user doesn't already exist
@@ -306,12 +292,12 @@ class childWindow:
                 widget.grab_focus()
                 return None
 
-#            if i in string.uppercase:
-#                self.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
-#                                                 "Please do not use uppercase characters in the user name.") % str)
-#                widget.set_text("")
-#                widget.grab_focus()
-#                return None
+            if i in string.uppercase:
+                self.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
+                                                 "Please do not use uppercase characters in the user name.") % str)
+                widget.set_text("")
+                widget.grab_focus()
+                return None
                 
             if i not in string.ascii_letters and i not in string.digits:
                 self.showErrorMessage(_("The user name '%s' contains invalid "
