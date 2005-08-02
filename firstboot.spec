@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.43
+Version: 1.3.44
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -77,6 +77,14 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Aug 02 2005 Chris Lumens <clumens@redhat.com> 1.3.44-1
+- Allow modules to specify that the system should be rebooted after
+  firstboot has run via the needsReboot module attribute.
+- Enable checking for capital letters in usernames again to be consistent
+  with system-config-users (#164852).
+- Use libuser for adding users again (#164160).
+- Rebuilt translations.
+
 * Thu Jul 07 2005 Chris Lumens <clumens@redhat.com> 1.3.43-1
 - Remove dependancy on xsri (#145807).
 - Fix typo in "additional" (#158435).
