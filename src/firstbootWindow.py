@@ -1,4 +1,4 @@
-2## firstbootWindow.py - the main firstboot UI and framework.py
+## firstbootWindow.py - the main firstboot UI and framework.py
 ##
 ## Copyright (C) 2002, 2003 Red Hat, Inc.
 ## Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
@@ -24,9 +24,6 @@ os.environ["PYGTK_DISABLE_THREADS"] = "1"
 os.environ["PYGTK_FATAL_EXCEPTIONS"] = "1"
 os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
 
-
-
-
 import sys
 import gtk
 import gobject
@@ -50,6 +47,7 @@ screenshotIndex = 0
 
 class firstbootWindow:
     def __init__(self, xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb, autoscreenshot):
+        self.needsReboot = False
         self.xserver_pid = xserver_pid
         self.wm_pid = wm_pid
         self.doReconfig = doReconfig
@@ -226,7 +224,6 @@ class firstbootWindow:
         except:
             pass
 
-        #print "module: %s" % module
         if hasattr(module, "updatePage"):
             module.updatePage()
 
@@ -275,8 +272,17 @@ class firstbootWindow:
         import time
         time.sleep(1)
 
-        #Exit firstboot.  This should take down the X server as well
-        os._exit(0)
+        if self.needsReboot == True:
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
+                                    _("The system must now reboot for some of your selections to take effect."))
+            dlg.set_position(gtk.WIN_POS_CENTER)
+            dlg.show_all()
+            rc = dlg.run()
+            dlg.destroy()
+            os.system("/sbin/reboot")
+        else:
+            #Exit firstboot.  This should take down the X server as well
+            os._exit(0)
 
     def nextClicked(self, *args):
         try:
@@ -297,6 +303,9 @@ class firstbootWindow:
             text = string.joinfields(list, "")
             result = exceptionWindow.ExceptionWindow(module, text)
             pass
+
+        if hasattr(module, "needsReboot") and module.needsReboot == True:
+            self.needsReboot = True
 
         # record the current page as the new previous page
         self.prevPage = self.moduleNameToNotebookIndex[module.__module__]
@@ -393,7 +402,6 @@ class firstbootWindow:
                 return 1
         return 0
 
-
     def loadModules(self):
         self.moduleList = []
         self.moduleDict = {}
@@ -434,15 +442,12 @@ class firstbootWindow:
 #                          "rhn_activate_gui", "rhn_newaccount_gui"]:
 #                obj.passInParent(self)
 
-
-             
             # if a module decides not to run, skip it first before trying any
             # of the other hooks. bz #158095
             if hasattr(obj, "skipme"):
                 # the module itself has decided for some reason that
                 # that it should not be shown, so skip it
                 continue
-
 
             # if the module needs network access, and we dont have it, skip
             # the module
@@ -464,7 +469,6 @@ class firstbootWindow:
                     self.moduleDict[int(obj.runPriority)] = obj
             else:
                 self.moduleDict[int(obj.runPriority)] = obj
-
 
         # Get the list of module priorities, sort them to determine a run
         # order, and build a list with the modules in the proper order.
@@ -554,7 +558,6 @@ class firstbootWindow:
                     self.moduleNameToNotebookIndex["unamemodule-%s" % pages] = pages
                 pages = pages + 1
 
-        
     def clearNotebook(self):
         for widget in self.leftLabelVBox.get_children():
             self.leftLabelVBox.remove(widget)
