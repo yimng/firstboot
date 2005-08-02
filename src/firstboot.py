@@ -35,6 +35,8 @@ from rhpl.translate import _, N_
 import rhpl.translate as translate
 translate.textdomain ("firstboot")
 
+from rhpl import keyboard
+
 wm_pid = None
 xserver_pid = None
 doDebug = None
@@ -90,6 +92,13 @@ def mergeXresources():
     path = "/etc/X11/Xresources"
     if os.access(path, os.R_OK):
        os.system("xrdb -merge %s" % path)
+
+
+def setKeyboard():
+    kb = keyboard.Keyboard()
+    kb.read()
+    kb.activate()
+
 
 #Let's check to see if firstboot should be run or not
 #If we're in debug mode, run anyway.  Even if the file exists
@@ -166,6 +175,7 @@ if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin
     wm_pid = startWindowManager()
     mergeXresources()
     rhgb = 1
+    setKeyboard()
 
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
@@ -206,6 +216,8 @@ if not os.environ.has_key('DISPLAY'):
      wm_pid = None
      wm_pid = startWindowManager()
      mergeXresources()
+
+     setKeyboard()
 
 import firstbootWindow
 firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb, autoscreenshot)
