@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2004-11-11 09:31+0000\n"
 "Last-Translator: Dafydd Walters <dwalters@dragontechnology.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -77,20 +77,24 @@ msgstr ""
 "http://www.redhat.com/bugzilla. Cadwyd copi o'r allbwn \n"
 "dadnamu yn %s. Cofiwch atodi'r ffeil hon at yr adroddiad nam. \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Yn Ôl"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Nesaf"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "methu llwytho modiwl %s: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Croeso"
@@ -260,16 +264,24 @@ msgstr "Nid yw'r cyfrineiriau yn cydweddu. Rhowch y cyfrifinair eto."
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Mae'r cyfrinair yn rhy fyr. Defnyddiwch o leiaf 6 nod."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Mae'r enw defnyddiwr '%s' yn gyfrif system neilltuedig. Penodwch un arall."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Rhaid i'r enw defnyddiwr fod yn llai na 33 nod o hyd."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Ni chaiff yr enw defnyddiwr ddechrau â rhif."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -278,7 +290,7 @@ msgstr ""
 "Mae'r enw defnyddiwr '%s' yn cynnwys bylchnodau. Peidiwch â chynnwys "
 "bylchnodau yn yr enw defnyddiwr."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -287,7 +299,16 @@ msgstr ""
 "Mae'r enw defnyddiwr '%s' yn cynnwys atalnodau. Peidiwch â chynnwys "
 "atalnodau yn yr enw defnyddiwr."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Mae'r enw defnyddiwr '%s' yn cynnwys nodau bras. Peidiwch â chynnwys nodau "
+"bras yn yr enw defnyddiwr."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -296,14 +317,14 @@ msgstr ""
 "Mae'r enw defnyddiwr '%s' yn cynnwys nodau annilys. Defnyddiwch nodau ASCII "
 "yn unig os gwelwch yn dda."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Mae'r cyfrinair yn cynnwys nodau annilys. Defnyddiwch nodau ASCII yn unig os "
 "gwelwch yn dda."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -408,13 +429,6 @@ msgstr ""
 #~ msgid "Licence Aggrement"
 #~ msgstr "Cytundeb Trwydded"
 
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Mae'r enw defnyddiwr '%s' yn cynnwys nodau bras. Peidiwch â chynnwys "
-#~ "nodau bras yn yr enw defnyddiwr."
-
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Nid yw firstboot yn rhedeg yn runlevel 3."
 
@@ -445,12 +459,6 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "Cyfrif Ddefnyddiwr"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Mae'r enw defnyddiwr '%s' yn gyfrif system neilltuedig. Penodwch un arall."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "Cyfluniad llygoden"

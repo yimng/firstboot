@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-03-29 16:20+0300\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team:  <nls@tux.hellug.gr>\n"
@@ -76,20 +76,24 @@ msgstr ""
 "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος φυλάχθηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Πίσω"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Επόμενο"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "αποτυχία εισαγωγής του αρθρώματος %s: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Καλώς ήλθατε"
@@ -264,16 +268,25 @@ msgstr ""
 "Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
 "χαρακτήρες."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, fuzzy, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Το όνομα χρήστη '%s' περιέχει κεφαλαίους χαρακτήρες.  Παρακαλώ να μη "
+"χρησιμοποιείσετε κεφαλαίους χαρακτήρες στο όνομα χρήστη."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Το όνομα χρήστη πρέπει να έχει μέγεθος μικρότερο από 33 χαρακτήρες."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Το όνομα χρήστη δε μπορεί να αρχίζει με αριθμό."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -282,7 +295,7 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει κενό διάστημα.  Παρακαλώ να μη συμπεριλάβετε "
 "κενό διάστημα στο όνομα χρήστη."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -291,7 +304,16 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει χαρακτήρες που είναι σημεία στίξης.  Παρακαλώ "
 "να μη χρησιμοποιείσετε σημεία στίξης στο όνομα χρήστη."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Το όνομα χρήστη '%s' περιέχει κεφαλαίους χαρακτήρες.  Παρακαλώ να μη "
+"χρησιμοποιείσετε κεφαλαίους χαρακτήρες στο όνομα χρήστη."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -300,14 +322,14 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Το συνθηματικό περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
 "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -415,13 +437,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Licence Aggrement"
 #~ msgstr "Άδεια Χρήσης"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Το όνομα χρήστη '%s' περιέχει κεφαλαίους χαρακτήρες.  Παρακαλώ να μη "
-#~ "χρησιμοποιείσετε κεφαλαίους χαρακτήρες στο όνομα χρήστη."
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

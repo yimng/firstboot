@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-07-11 23:36+0400\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
@@ -77,20 +77,24 @@ msgstr ""
 "Копия отладочной информации сохранена в %s \n"
 "Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Далее"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "импорт модуля %s завершился неудачно: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Добро пожаловать"
@@ -260,16 +264,24 @@ msgstr "Введенные пароли не совпадают.  Введите
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Пароль слишком короткий.  Используйте пароли не меньше 6 символов."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Имя пользователя '%s' зарезервировано.  Укажите другое имя пользователя."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Имя пользователя должно быть меньше чем 33 символа."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Имя пользователя не должно начинаться с цифры."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -278,7 +290,7 @@ msgstr ""
 "Имя пользователя '%s' содержит пробельный символ.  Не используйте пробельные "
 "символы в имени пользователя."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -287,7 +299,16 @@ msgstr ""
 "Имя пользователя '%s' содержит символ пунктуации.  Не используйте символы "
 "пунктуации."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Имя пользователя '%s' содержит заглавные символы.  Не используйте заглавные "
+"символы."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -296,13 +317,13 @@ msgstr ""
 "Имя пользователя '%s' содержит некорректный символ.  Используйте только "
 "символы ASCII."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Пароль содержит некорректные символы.  Используйте только символы ASCII."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -405,13 +426,6 @@ msgstr ""
 #~ msgid "Licence Aggrement"
 #~ msgstr "Лицензионное соглашение"
 
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Имя пользователя '%s' содержит заглавные символы.  Не используйте "
-#~ "заглавные символы."
-
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot не может быть запущен на уровне запуска 3"
 
@@ -441,12 +455,6 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "Учетная запись"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Имя пользователя '%s' зарезервировано.  Укажите другое имя пользователя."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "Настройка мыши "

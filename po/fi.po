@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-02-12 19:42+0200\n"
 "Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Finnish\n"
@@ -71,20 +71,24 @@ msgstr ""
 "Kopio vianjäljitystulosteesta on tallennettu tiedostoon %s.\n"
 "Muista liittää tämä tiedosto vikailmoitukseen.\n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Edellinen"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Seuraava"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "moduulin %s tuominen epäonnistui: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Tervetuloa"
@@ -252,16 +256,25 @@ msgstr "Salasanat eivät täsmää. Syötä salasana uudelleen."
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Salasana on liian lyhyt. Käytä ainakin kuusimerkkistä salasanaa."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Käyttäjänimi %s on varattu järjestelmätunnukseksi.  Käytä jotain toista "
+"käyttäjänimeä."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Käyttäjänimen tulee olla alle 33 merkkiä pitkä."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Käyttäjänimi ei saa alkaa numerolla."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -270,7 +283,7 @@ msgstr ""
 "Käyttäjänimi \"%s\" sisältää välilyöntejä. Älä sisällytä käyttäjänimeen "
 "välilyöntejä."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -279,7 +292,16 @@ msgstr ""
 "Käyttäjänimi %s sisältää välimerkkejä. Älä käytä välimerkkejä "
 "käyttäjänimessä."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Käyttäjänimi %s sisältää isoja kirjaimia. Älä käytä isoja kirjaimia "
+"käyttäjänimessä."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -287,12 +309,12 @@ msgid ""
 msgstr ""
 "Käyttäjänimi %s sisältää virheellisiä merkkejä. Käytä vain ASCII-merkkejä."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Salasana sisältää virheellisiä merkkejä. Käytä vain ASCII-merkkejä."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -395,13 +417,6 @@ msgstr ""
 #~ msgstr "Lisenssisopimus"
 
 #~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Käyttäjänimi %s sisältää isoja kirjaimia. Älä käytä isoja kirjaimia "
-#~ "käyttäjänimessä."
-
-#~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
 #~ msgstr ""
@@ -428,13 +443,6 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "Käyttäjätunnus"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Käyttäjänimi %s on varattu järjestelmätunnukseksi.  Käytä jotain toista "
-#~ "käyttäjänimeä."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "Hiiriasetukset "

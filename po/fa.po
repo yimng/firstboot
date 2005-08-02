@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-04-14 13:06+0430\n"
 "Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -74,20 +74,24 @@ msgstr ""
 "نسخه‌ای از خروجی اشکال‌زدایی در %s ذخیره شده است.\n"
 "به یاد داشته باشید که آن پرونده را به گزارش اشکال پیوست کنید.\n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_عقب"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_بعدی"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "وارد کردن پیمانه‌ی %s شکست خورد: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "خوش آمدید"
@@ -248,16 +252,25 @@ msgstr "گذرواژه‌ها مطابقت نمی‌کنند.  لطفاً گذر
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "گذرواژه کوتاه است. لطفاً حداقل از ۶ نویسه استفاده کنید."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفاً نام کاربری دیگری را تعیین "
+"کنید."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "نام کاربر باید کوتاه‌تر از ۳۳ نویسه باشد."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "نام کاربر نباید با یک عدد شروع شود."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -265,7 +278,7 @@ msgid ""
 msgstr ""
 "نام کاربر «%s» حاوی فاصله است. لطفاً در نام کاربری از فاصله استفاده نکنید."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -274,7 +287,16 @@ msgstr ""
 "نام کاربر «%s» حاوی نویسه‌های نقطه‌گذاری است. لطفاً از علائم نقطه‌گذاری در نام "
 "کاربر استفاده نکنید."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"نام کاربر '%s' حاوی نویسه‌های کازه بالایی می‌باشد. لطفاً از نویسه‌های کازه "
+"بالایی در نام کاربر استفاده نکنید."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -283,14 +305,14 @@ msgstr ""
 "نام کاربر «%s» حاوی نویسه‌های نامعتبر است. لطفاً فقط از نویسه‌های ASCII استفاده "
 "کنید."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "این گذرواژه حاوی نویسه‌های نامعتبر است. لطفاً فقط از نویسه‌های ASCII استفاده "
 "کنید."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -396,13 +418,6 @@ msgstr ""
 #~ msgstr "توافق‌نامه‌ی جواز"
 
 #~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "نام کاربر '%s' حاوی نویسه‌های کازه بالایی می‌باشد. لطفاً از نویسه‌های کازه "
-#~ "بالایی در نام کاربر استفاده نکنید."
-
-#~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
 #~ msgstr ""
@@ -428,13 +443,6 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "حساب کاربر"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفاً نام کاربری دیگری را تعیین "
-#~ "کنید."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "پیکربندی موشی"

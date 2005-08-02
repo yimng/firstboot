@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2004-12-15 06:49+0100\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -72,20 +72,24 @@ msgstr ""
 "S'ha desat una còpia de la sortida de depuració a %s. \n"
 "Assegureu-vos que adjunteu aquest fitxer a l'informe d'errors. \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Anterior"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "Següe_nt"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "No s'ha pogut importar el mòdul %s: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Benvinguts"
@@ -256,16 +260,25 @@ msgstr "Les contrasenyes són diferents. Introduïu la contrasenya de nou."
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "La contrasenya és massa curta. Feu servir almenys 6 caràcters."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"El nom d'usuari '%s' és un compte de sistema reservat. Especifiqueu un altre "
+"nom d'usuari."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "El nom d'usuari ha de tenir menys de 33 caràcters."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "El nom d'usuari no pot començar amb una xifra."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -274,7 +287,7 @@ msgstr ""
 "El nom d'usuari '%s' conté espais en blanc. No escriviu caràcters en blanc "
 "en el nom d'usuari."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -283,7 +296,16 @@ msgstr ""
 "El nom d'usuari '%s' conté caràcters de puntuació. No feu servir puntuació "
 "en el nom d'usuari."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"El nom d'usuari '%s' conté caràcters en majúscula. No feu servir caràcters "
+"en majúscula en el nom d'usuari."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -292,13 +314,13 @@ msgstr ""
 "El nom d'usuari '%s' conté caràcters invàlids. Feu servir només caràcters "
 "ASCII."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "La contrasenya conté caràcters invàlids. Feu servir només caràcters ASCII."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -403,13 +425,6 @@ msgstr ""
 #~ msgstr "Acord de llicència"
 
 #~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "El nom d'usuari '%s' conté caràcters en majúscula. No feu servir "
-#~ "caràcters en majúscula en el nom d'usuari."
-
-#~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
 #~ msgstr ""
@@ -436,13 +451,6 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "Compte d'usuari"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "El nom d'usuari '%s' és un compte de sistema reservat. Especifiqueu un "
-#~ "altre nom d'usuari."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "Configuració del ratolí "

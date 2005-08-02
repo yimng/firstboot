@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -76,20 +76,24 @@ msgstr ""
 "ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_ย้อนกลับ"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_ถัดไป"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
@@ -246,42 +250,56 @@ msgstr "รหัสผ่านของคุณไม่ตรงกัน �
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "รหัสผ่านของคุณสั้นเกินไป กรุณาใช้รหัสความยาวอย่างน้อย 6 ตัวอักษร"
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, fuzzy, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "ชื่อผู้ใช้ต้องยาวไม่เกิน 33 ตัวอักษร"
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "ชื่อผู้ใช้ ต้องไม่ขึ้นต้นด้วยตัวเลข"
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "ชื่อผู้ใช้ %s มีช่องว่างอยู่ กรุณาอย่าใส่ช่องว่างในชื่อ"
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "ชื่อผู้ใช้ %s เครื่องหมายวรรคตอนอยู่ กรุณาอย่าใช้เครื่องหมายใดๆ ในชื่อ"
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "ชื่อผู้ใช้ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "รหัสผ่านมีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -386,11 +404,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Licence Aggrement"
 #~ msgstr "การยอมรับสัญญาอนุญาต"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
 
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "

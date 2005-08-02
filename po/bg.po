@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-06-19 02:08+0300\n"
 "Last-Translator: Doncho N. Gunchev <mr700@globalnet.bg>\n"
 "Language-Team: Bulgarian <Bulgarian Translators' Team <dict@fsa-bg.org>>\n"
@@ -76,20 +76,24 @@ msgstr ""
 "Копие на debug изхода е запазен в %s. \n"
 "Моля прикачете файла към рапорта за грешката. \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Следващ"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "импорта на модул %s се провали: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Добре дошли"
@@ -260,16 +264,25 @@ msgstr "Паролите не съвпадат.  Моля въведете па�
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Паролата е много къса.  Моля използвайте поне 6 символа."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, fuzzy, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Потребителското име %s съдържа пунктуационни символи.  Моля не ги ползвайте "
+"в потребителското име."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Потребителското име трябва да бъде по-късо от 33 символа."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Потребителското име не може да започва с цифра."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -278,7 +291,7 @@ msgstr ""
 "Потребителското име %s съдържа празни символи.  Моля не ги ползвайте в "
 "потребителското име."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -287,7 +300,16 @@ msgstr ""
 "Потребителското име %s съдържа пунктуационни символи.  Моля не ги ползвайте "
 "в потребителското име."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, fuzzy, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Потребителското име %s съдържа пунктуационни символи.  Моля не ги ползвайте "
+"в потребителското име."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -296,13 +318,13 @@ msgstr ""
 "Потребителското име %s съдържа невалидни символи.  Моля ползвайте само ASCII "
 "символи."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Паролата съдържа невалидни символи.  Моля ползвайте само ASCII символи."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."

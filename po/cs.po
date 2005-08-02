@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-07-13 23:43+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -72,20 +72,24 @@ msgstr ""
 "Kopie ladicího výpisu byla uložena do %s \n"
 "Připojte tento soubor k hlášení chyby. \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Zpět"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Další"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import modulu %s selhal: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Vítejte"
@@ -253,16 +257,25 @@ msgstr "Hesla nesouhlasí. Zadejte heslo prosím znovu."
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, fuzzy, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Jméno uživatele '%s' obsahuje velká písmena. Nepoužívejte prosím ve jménu "
+"uživatele velká písmena."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Jméno uživatele musí být kratší než 33 znaků."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Jméno uživatele nemůže začínat číslicí."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -271,7 +284,7 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje mezery. Nepoužívejte prosím mezery ve jménu "
 "uživatele."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -280,7 +293,16 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje interpunkci. Nepoužívejte prosím ve jménu "
 "uživatele interpunkci."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Jméno uživatele '%s' obsahuje velká písmena. Nepoužívejte prosím ve jménu "
+"uživatele velká písmena."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -289,12 +311,12 @@ msgstr ""
 "Jméno uživatele '%s' obsahuje neplatné znaky. Použijte prosím jen znaky "
 "ASCII."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Heslo obsahuje neplatné znaky. Použijte prosím jen znaky ASCII."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -396,10 +418,3 @@ msgstr ""
 
 #~ msgid "Licence Aggrement"
 #~ msgstr "Licenční smlouva"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Jméno uživatele '%s' obsahuje velká písmena. Nepoužívejte prosím ve jménu "
-#~ "uživatele velká písmena."

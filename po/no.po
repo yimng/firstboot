@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2004-08-24 17:11+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -71,20 +71,24 @@ msgstr ""
 "En kopi av feilmelding er lagret som %s - husk å legge ved denne\n"
 "i feilrapporten.\n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "Til_bake"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Neste"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkommen"
@@ -246,16 +250,25 @@ msgstr "Passordene er ikke like. Vennligst oppgi passordet igjen."
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Brukernavnet «%s» er en reservert systemkonto. Vennligst oppgi et annet "
+"brukernavn."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Brukernavnet må ha færre enn 33 tegn."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Brukernavnet kan ikke starte med et tall."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -264,7 +277,7 @@ msgstr ""
 "Brukernavn «%s» inneholder mellomrom. Vennligst ikke bruk mellomrom i "
 "brukernavnet."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -273,7 +286,16 @@ msgstr ""
 "Brukernavnet «%s» inneholder skilletegn. Vennligst ikke bruk skilletegn i "
 "brukernavnet."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Brukernavnet «%s» inneholder store bokstaver. Vennligst ikke bruk store "
+"bokstaver i brukernavnet."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -281,12 +303,12 @@ msgid ""
 msgstr ""
 "Brukernavnet «%s» inneholder ugyldige tegn. Vennligst bruk kun ASCII-tegn."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Passordet inneholder ugyldige tegn. Vennligst bruk kun ASCII-tegn."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -393,13 +415,6 @@ msgstr ""
 #~ msgstr "Lisensbetingelser"
 
 #~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Brukernavnet «%s» inneholder store bokstaver. Vennligst ikke bruk store "
-#~ "bokstaver i brukernavnet."
-
-#~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
 #~ msgstr ""
@@ -426,10 +441,3 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "Brukerkonto"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Brukernavnet «%s» er en reservert systemkonto. Vennligst oppgi et annet "
-#~ "brukernavn."

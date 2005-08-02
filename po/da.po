@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2004-10-23 13:21+0200\n"
 "Last-Translator: Martin Willemoes Hansen <mwh@sysrq.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -77,20 +77,24 @@ msgstr ""
 "En kopi af fejlsøgningsuddata er gemt i %s. \n"
 "Vær sød at vedlægge denne fil til fejlrapporten. \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Tilbage"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Næste"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimportering af %s mislykkedes: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkommen"
@@ -261,16 +265,25 @@ msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, fuzzy, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Brugernavnet '%s' indeholder store bogstaver. Lad venligst være med at bruge "
+"store bogstaver i brugernavnet."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Brugernavnet skal være mindre end 33 tegn langt."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Brugernavnet må ikke begynde med et tal."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -279,7 +292,7 @@ msgstr ""
 "Brugernavnet '%s' indeholder blanke. Lad venligst være med at bruge blanke i "
 "brugernavnet."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -288,7 +301,16 @@ msgstr ""
 "Brugernavnet '%s' indeholder specialtegn. Lad venligst være med at bruge "
 "specialtegn i brugernavnet."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Brugernavnet '%s' indeholder store bogstaver. Lad venligst være med at bruge "
+"store bogstaver i brugernavnet."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -296,13 +318,13 @@ msgid ""
 msgstr ""
 "Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -406,13 +428,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Licence Aggrement"
 #~ msgstr "Licensaftale"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Brugernavnet '%s' indeholder store bogstaver. Lad venligst være med at "
-#~ "bruge store bogstaver i brugernavnet."
 
 #~ msgid "Firstboot does not run in runlevel 3."
 #~ msgstr "Firstboot kører ikke i kørselsnineau 3."

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2003-12-15 22:29+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -71,20 +71,24 @@ msgstr ""
 "Kopija izlaza je spremljena u %s \n"
 "Tu datoteku prikvačite uz vaš izvještaj o grešci. \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "_Nazad"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "_Sljedeći"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Dobrodošli"
@@ -254,16 +258,25 @@ msgstr "Lozinka ne odgovara. Molim, ponovo unesite lozinku."
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lozinka je prekratka. Molim, koristite najmanje 6 znakova."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Ime korisnika '%s' je rezervirani sustavski račun. Molim navedite drugo ime "
+"korisnika."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "Korisničko ime mora biti kraće od 33 znakova."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "Korisničko ime ne može početi s brojem."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -272,7 +285,7 @@ msgstr ""
 "Ime korisnika '%s' sadrži razmake. Nemojte koristiti razmake u imenu "
 "korisnika."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -281,7 +294,16 @@ msgstr ""
 "Ime korisnika '%s' sadrži punkcijske znakove. Nemojte koristiti punkcijske "
 "znakove u imenu korisnika."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Ime korisnika '%s' sadrži velika slova. Nemojte koristiti velika slova u "
+"imenu korisnika."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -290,13 +312,13 @@ msgstr ""
 "Ime korisnika '%s' sadrži nedozvoljene znakove. Molim koristite samo ASCII "
 "znakove."
 
-#: ../src/modules/create_user.py:327
+#: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Lozinka sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
@@ -405,13 +427,6 @@ msgstr ""
 #~ msgstr "Licencni dogovor"
 
 #~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Ime korisnika '%s' sadrži velika slova. Nemojte koristiti velika slova u "
-#~ "imenu korisnika."
-
-#~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
 #~ msgstr ""
@@ -437,13 +452,6 @@ msgstr ""
 
 #~ msgid "User Account"
 #~ msgstr "Korisnički račun"
-
-#~ msgid ""
-#~ "The username '%s' is a reserved system account.  Please specify another "
-#~ "username."
-#~ msgstr ""
-#~ "Ime korisnika '%s' je rezervirani sustavski račun. Molim navedite drugo "
-#~ "ime korisnika."
 
 #~ msgid "Mouse configuration "
 #~ msgstr "Postavke miša "

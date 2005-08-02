@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-07-13 12:19+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla (INDIA) <redhat-translation@bengalinux.org>\n"
@@ -91,20 +91,24 @@ msgstr ""
 "debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
 "ঐ ফাইলটি ত্রুটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "পূর্ববর্তী (_B)"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "পরবর্তী(_N)"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s-র মডিউল ইম্পোর্ট করতে ব্যর্থ: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "স্বাগতম"
@@ -211,7 +215,8 @@ msgstr ""
 "জন্য \"ঠিক আছে\" চাপুন।"
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "CD অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
@@ -289,17 +294,26 @@ msgstr "পাসওয়ার্ডগুলি মেলেনি। অনু�
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষরের পাসওয়ার্ড লিখুন।"
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, fuzzy, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
+"মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "ব্যবহারকারীর নামটি ৩৩-টি অক্ষরের মধ্যে সীমাবদ্ধ রাখা আবশ্যক।"
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "ব্যবহারকারীর নাম কোনো সংখ্যা দিয়ে শুরু করা যাবে না।"
 
 #  Check for whitespace
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -308,7 +322,7 @@ msgstr ""
 "ব্যবহারকারীর নাম '%s'-র মাঝে ফাঁকা স্থান রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
 "মধ্যে কোনো শূণ্যস্থান লিখবেন না।"
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -317,7 +331,16 @@ msgstr ""
 "ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
 "মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, fuzzy, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
+"মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -326,13 +349,15 @@ msgstr ""
 "ব্যবহারকারীর নাম '%s'-র মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
 "মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
 
-#: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:313
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/date.py:46
@@ -438,4 +463,3 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
-

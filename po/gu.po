@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 10:43-0400\n"
+"POT-Creation-Date: 2005-08-02 16:16-0400\n"
 "PO-Revision-Date: 2005-07-11 18:09+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <gu@li.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -82,20 +83,24 @@ msgstr ""
 "%s માં સંગ્રહાઈ ગઈ છે. ખાતરી કરો કે ભૂલ શોધવાના \n"
 "અહેવાલની સાથે આ ફાઈલ જોડો. \n"
 
-#: ../src/firstbootWindow.py:192 ../src/firstbootWindow.py:584
+#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
 msgstr "પાછા જાઓ (_B)"
 
-#: ../src/firstbootWindow.py:200 ../src/firstbootWindow.py:588
+#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
 msgid "_Next"
 msgstr "આગળ વધો (_N)"
 
-#: ../src/firstbootWindow.py:420
+#: ../src/firstbootWindow.py:277
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+
+#: ../src/firstbootWindow.py:428
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s નું મોડ્યુલ આયાત કરવામાં નિષ્ફળ: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "તમારુ સ્વાગત છે"
@@ -191,7 +196,8 @@ msgstr ""
 "રાખવા માટે \"બરાબર\" બટન પર ક્લિક કરો."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "આપોઆપ ચલાવો કાર્યક્રમ cd માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક "
 "કરો."
@@ -264,16 +270,25 @@ msgstr "પાસવર્ડ બંધબેસતા નથી.  મહેર�
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "પાસવર્ડ ખૂબ નાનો છે.  મહેરબાની કરીને ઓછામાં ઓછા ૬ અક્ષરો વાપરો."
 
-#: ../src/modules/create_user.py:278
+#: ../src/modules/create_user.py:217
+#, fuzzy, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"વપરાશકર્તાનું નામ %s વિરામ ચિહ્નો સમાવે છે.  મહેરબાની કરીને વપરાશકર્તાના નામમાં વિરામ "
+"ચિહ્નો ઉમેરો નહિ."
+
+#: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
 msgstr "વપરાશકર્તાનું નામ ૩૩ અક્ષરો કરતાં નાનું જ હોવુ જોઈએ."
 
-#: ../src/modules/create_user.py:284
+#: ../src/modules/create_user.py:270
 msgid "The user name may not begin with a number."
 msgstr "વપરાશકર્તાનું નામ કોઈ આંકડાથી શરુ થવું જોઈએ નહિ."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -282,7 +297,7 @@ msgstr ""
 "વપરાશકર્તાનું નામ %s ખાલી જગ્યાઓ સમાવે છે.  મહેરબાની કરીને વપરાશકર્તાના નામમાં ખાલી "
 "જગ્યાઓ ઉમેરો નહિ."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:289
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -291,20 +306,32 @@ msgstr ""
 "વપરાશકર્તાનું નામ %s વિરામ ચિહ્નો સમાવે છે.  મહેરબાની કરીને વપરાશકર્તાના નામમાં વિરામ "
 "ચિહ્નો ઉમેરો નહિ."
 
-#: ../src/modules/create_user.py:317
+#: ../src/modules/create_user.py:296
+#, fuzzy, python-format
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"વપરાશકર્તાનું નામ %s વિરામ ચિહ્નો સમાવે છે.  મહેરબાની કરીને વપરાશકર્તાના નામમાં વિરામ "
+"ચિહ્નો ઉમેરો નહિ."
+
+#: ../src/modules/create_user.py:303
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "વપરાશકર્તાનું નામ %s અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
+msgstr ""
+"વપરાશકર્તાનું નામ %s અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
 
-#: ../src/modules/create_user.py:327
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:313
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "પાસવર્ડ અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
 
-#: ../src/modules/create_user.py:339
+#: ../src/modules/create_user.py:325
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "નામ %s અયોગ્ય અક્ષરો સમાવે છે.  મહેરબાની કરીને માત્ર ASCII અક્ષરો વાપરો."
 
 #: ../src/modules/date.py:46
@@ -399,4 +426,3 @@ msgstr ""
 "તમારી સિસ્ટમ વાપરવા માટે તૈયાર છે કે નહિ તેના માટે ત્યાં અમુક પગલા જરુરી છે. સેટઅપ એજન્ટ "
 "તમને હવે અમુક પાયાના રુપરેખાંકન માટે મદદ કરશે. મહેરબાની કરીને ચાલુ રાખવા માટે નીચેના જમણા "
 "ખૂણે \"આગળ વધો\" બટન પર ક્લિક કરો."
-
