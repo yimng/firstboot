@@ -125,7 +125,10 @@ class childWindow:
         
         for dev in module_dict.keys():
             path = '/etc/sysconfig/network-scripts/ifcfg-%s' % dev
-            lines = open(path).readlines()
+            try:
+                lines = open(path).readlines()
+            except:
+                continue
             bootproto = None
             for line in lines:
                 if string.strip(line[:9]) == "BOOTPROTO":
