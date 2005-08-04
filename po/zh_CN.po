@@ -1,22 +1,24 @@
+# translation of zh_CN.po to Chinese, Simplified
 # translation of zh_CN.po to zh_CN
 # translation of zh_CN.po to Simplified Chinese
 # Simplified Chinese Version of firstboot.
 # Copyright (C) 2002 Red Hat, Inc.
 # Sarah Wang <sarahs@redhat.com>, 2003,2004.
 # Tony Fu <tfu@redhat.com>, 2004.
+# Leah Liu <weliu@redhat.com>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-02 16:16-0400\n"
-"PO-Revision-Date: 2004-11-16 15:34+1000\n"
-"Last-Translator: Tony Fu <tfu@redhat.com>\n"
-"Language-Team: Simplified Chinese <i18n@redhat.com>\n"
+"PO-Revision-Date: 2005-08-04 15:51+1000\n"
+"Last-Translator: Leah Liu <weliu@redhat.com>\n"
+"Language-Team: Chinese, Simplified <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -85,7 +87,7 @@ msgstr "下一步(_N)"
 
 #: ../src/firstbootWindow.py:277
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "因为你做了某些调整,系统将重启。"
 
 #: ../src/firstbootWindow.py:428
 #, python-format
@@ -157,7 +159,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:67
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "现在请插入附带的软件安装盘"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
@@ -184,8 +186,7 @@ msgid ""
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
 #: ../src/modules/additional_cds.py:194
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #: ../src/modules/create_user.py:43
@@ -253,11 +254,11 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "口令太短。请至少使用 6 个字符。"
 
 #: ../src/modules/create_user.py:217
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
+msgstr "用户名'%s'是一个系统预留帐户。  请选择其它用户名。"
 
 #: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
@@ -297,14 +298,12 @@ msgid ""
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:313
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:325
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/date.py:46
@@ -396,32 +395,3 @@ msgstr ""
 "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
 "点击右下角的“下一步”按钮来继续。"
 
-#~ msgid "Licence Aggrement"
-#~ msgstr "许可协议"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot 不在运行级别3中运行。"
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "如果您有任何下面列出的光盘，您可以通过插入光盘，再点击恰当的按钮来安装软件"
-#~ "包。"
-
-#~ msgid "Please enter a time server."
-#~ msgstr "请输入一个时间服务器。"
-
-#~ msgid "Error"
-#~ msgstr "错误"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "无法建立和 %s 的连接。或许是由于 %s 不可用，或许是由于您的计算机上的防火墙"
-#~ "设置堵塞了 NTP 连接。"
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "正在联系 NTP 服务器。请稍候..."
