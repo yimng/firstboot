@@ -1,3 +1,4 @@
+# translation of de.po to German / Deutsch
 # translation of de.po to
 # translation of de.po to German
 # translation of firstboot.po to Deutsch
@@ -10,20 +11,22 @@
 # Andreas Müller <redhat@andreas-mueller.com>, 2004.
 # Verena <vfuehrer@redhat.com>, 2004.
 # Thomas Ritter <thomas@dhcppc1>, 2005.
+# Severin Heiniger <severinheiniger@gmail.com>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-02 16:16-0400\n"
-"PO-Revision-Date: 2005-05-26 12:08+0200\n"
-"Last-Translator: Thomas Ritter <thomas@dhcppc1>\n"
-"Language-Team:  <de@li.org>\n"
+"PO-Revision-Date: 2005-08-07 18:32+0200\n"
+"Last-Translator: Severin Heiniger <severinheiniger@gmail.com>\n"
+"Language-Team: German / Deutsch <fedora-i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.10\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -91,8 +94,9 @@ msgid "_Next"
 msgstr "_Weiter"
 
 #: ../src/firstbootWindow.py:277
+#, fuzzy
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Damit einige Ihrer Einstellungen wirksam werden, muss Ihr System nun neugestartet werden."
 
 #: ../src/firstbootWindow.py:428
 #, python-format
@@ -199,8 +203,7 @@ msgstr ""
 "und klicken Sie auf \"OK\" um fortzufahren."
 
 #: ../src/modules/additional_cds.py:194
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Kann das Autorun-Programm nicht auf der CD finden. Klicken Sie \"OK\", um "
 "fortzufahren."
@@ -267,21 +270,19 @@ msgstr "_Account erzeugen"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
+msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Das Passwort ist zu kurz.  Bitte benutzen Sie mindestens 6 Zeichen."
 
 #: ../src/modules/create_user.py:217
-#, fuzzy, python-format
+#, python-format
+#, fuzzy
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"Der Benutzername '%s' enthält Satzzeichen.  Bitte verwenden Sie keine "
-"solchen Zeichen im Benutzernamen."
+msgstr "Der Benutzername '%s' ist ein reserviertes Systemkonto. Bitte wählen Sie einen anderen Benutzernamen."
 
 #: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
@@ -311,13 +312,12 @@ msgstr ""
 "solchen Zeichen im Benutzernamen."
 
 #: ../src/modules/create_user.py:296
-#, fuzzy, python-format
+#, python-format
+#, fuzzy
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr ""
-"Der Benutzername '%s' enthält Satzzeichen.  Bitte verwenden Sie keine "
-"solchen Zeichen im Benutzernamen."
+msgstr "Der Benutzername '%s' enthält Grossbuchstaben.  Bitte verwenden Sie keine Grossbuchstaben im Benutzernamen."
 
 #: ../src/modules/create_user.py:303
 #, python-format
@@ -329,16 +329,14 @@ msgstr ""
 "ASCII-Zeichen."
 
 #: ../src/modules/create_user.py:313
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
 "Zeichen."
 
 #: ../src/modules/create_user.py:325
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
 "Zeichen."
@@ -373,8 +371,7 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
-"Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
+msgstr "Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -436,3 +433,4 @@ msgstr ""
 "Nur noch ein paar Schritte, und Sie können Ihr System verwenden.  Der Setup "
 "Agent führt Sie dabei durch die Basiskonfiguration.  Klicken Sie auf \"Weiter"
 "\" unten rechts, um fortzufahren."
+
