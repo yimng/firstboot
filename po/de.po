@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-02 16:16-0400\n"
-"PO-Revision-Date: 2005-08-07 18:32+0200\n"
+"PO-Revision-Date: 2005-08-07 18:45+0200\n"
 "Last-Translator: Severin Heiniger <severinheiniger@gmail.com>\n"
 "Language-Team: German / Deutsch <fedora-i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -68,8 +68,8 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"Es ist ein Problem mit Modul %s aufgetreten.\n"
-"Der Red Hat Setup Agent lädt dieses Modul nicht und\n"
+"Es ist ein Problem mit Modul %s aufgetreten. \n"
+"Der Red Hat Setup Agent lädt dieses Modul nicht und \n"
 "versucht, die verbleibenden Module auszuführen."
 
 #: ../src/exceptionWindow.py:57
@@ -80,10 +80,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Erstellen Sie einen Fehlerbericht über 'firstboot' und senden Sie diesen an "
-"das Red Hat Bug Tracking System unter http://www.redhat.com/bugzilla.\n"
-"Eine Kopie der Debug-Meldung wurde in %s gespeichert.\n"
-"Vergewissern Sie sich, dass Sie diese Datei dem Fehlerbericht anlegen.\n"
+"Erstellen Sie einen Fehlerbericht über 'firstboot' und senden Sie diesen an das \n"
+"Red Hat Bug Tracking System unter http://www.redhat.com/bugzilla. \n"
+"Eine Kopie der Debug-Meldung wurde in %s gespeichert. \n"
+"Vergewissern Sie sich, dass Sie diese Datei dem Fehlerbericht anlegen. \n"
 
 #: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
@@ -146,7 +146,7 @@ msgstr "Tool starten"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr "Wählen Sie den Eintrag den Sie ändern möchten "
+msgstr "Wählen Sie den Eintrag, den Sie ändern möchten "
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
@@ -165,7 +165,7 @@ msgid ""
 msgstr ""
 "Bitte legen Sie die CD \"Red Hat Enterprise Linux Extras\" zur Installation "
 "von Programmen und Plugins anderer Anbieter ein. Sie können auch die "
-"Dokumentations-CD oder andere von Red Hat gelieferte CDs einlegen um jetzt "
+"Dokumentations-CD oder andere von Red Hat gelieferte CDs einlegen, um jetzt "
 "zusätzliche Software zu installieren."
 
 #: ../src/modules/additional_cds.py:67
@@ -191,6 +191,7 @@ msgstr ""
 "Extras-CD installieren."
 
 #: ../src/modules/additional_cds.py:114
+#, fuzzy
 msgid "Install..."
 msgstr "Installation..."
 
@@ -218,8 +219,8 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Es wird empfohlen, dass Sie einen Benutzeraccount für normale (nicht-"
-"administrative) Benutzung anlegen.  Um einen Benutzeraccount anzulegen, "
+"Es wird empfohlen, dass Sie ein Benutzerkonto für die normale (nicht-"
+"administrative) Benutzung anlegen.  Um ein Benutzerkonto anzulegen, "
 "geben Sie die geforderten Informationen an."
 
 #: ../src/modules/create_user.py:80
@@ -243,7 +244,7 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Sollten Sie Netzwerk-Authentifizierung, wie Kerberos oder NIS, benötigen, "
+"Sollten Sie Netzwerk-Authentifizierung wie Kerberos oder NIS benötigen, "
 "klicken Sie bitte auf den Button 'Netzwerk Login verwenden'."
 
 #: ../src/modules/create_user.py:127
@@ -256,8 +257,8 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Es wird dringend empfohlen einen Benutzeraccount zu anzulegen. Wenn Sie ohne "
-"einen solchen Account fortfahren, können Sie sich nur als root anmelden. "
+"Es wird dringend empfohlen ein Benutzerkonto zu anzulegen. Wenn Sie ohne "
+"ein solches Konto fortfahren, können Sie sich nur als root anmelden. "
 "Dies ist nur für administrative Aufgaben vorgesehen."
 
 #: ../src/modules/create_user.py:171
@@ -266,7 +267,7 @@ msgstr "_Weiter"
 
 #: ../src/modules/create_user.py:172
 msgid "Create _account"
-msgstr "_Account erzeugen"
+msgstr "_Konto anlegen"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
@@ -330,16 +331,12 @@ msgstr ""
 
 #: ../src/modules/create_user.py:313
 msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
-"Zeichen."
+msgstr "Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-Zeichen."
 
 #: ../src/modules/create_user.py:325
 #, python-format
 msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
-"Zeichen."
+msgstr "Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-Zeichen."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
