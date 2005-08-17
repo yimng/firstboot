@@ -144,7 +144,6 @@ class firstbootWindow:
         else:
             self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)
-            self.win.window.property_change ("_NET_WM_WINDOW_TYPE", "ATOM", 32, gtk.gdk.PROP_MODE_REPLACE, ("_NET_WM_WINDOW_TYPE_DESKTOP",))
             self.notebook.set_show_tabs(False)
             self.notebook.set_show_border(False)
 
