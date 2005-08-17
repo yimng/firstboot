@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.44
+Version: 1.3.45
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -77,6 +77,11 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Aug 17 2005 Chris Lumens <clumens@redhat.com> 1.3.45-1
+- Don't fail if no ifcfg script exists for a NIC found in modprobe.conf
+  (#164874).
+- Restore focus after closing dialogs (#143388, #143711).
+
 * Tue Aug 02 2005 Chris Lumens <clumens@redhat.com> 1.3.44-1
 - Allow modules to specify that the system should be rebooted after
   firstboot has run via the needsReboot module attribute.
