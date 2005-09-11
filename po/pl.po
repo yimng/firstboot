@@ -1,7 +1,4 @@
-# translation of pl.po to POLISH
 # translation of pl.po to Polish
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Grzegorz Rajda <marius@w9.pl>, 2004.
 # Tom Berner <tom@man.lodz.pl>, 2004.
 #
@@ -10,9 +7,9 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-02 16:16-0400\n"
-"PO-Revision-Date: 2004-11-18 13:34+0100\n"
+"PO-Revision-Date: 2005-09-10 00:49+0200\n"
 "Last-Translator: Marek Garbaczewski <mrgary@fic.uni.lodz.pl>\n"
-"Language-Team: POLISH <pl@li.org>\n"
+"Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,11 +21,11 @@ msgstr "Zakończ"
 
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr "Licencja"
+msgstr "Umowa licencyjna"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr "_Tak, akceptuję warunki licencji"
+msgstr "_Tak, akceptuję umowę licencyjną"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
@@ -40,16 +37,16 @@ msgstr "Czy chcesz ponownie przeczytać licencję i podjąć decyzję?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr "P_rzeczytaj licencję"
+msgstr "Ponownie p_rzeczytaj licencję"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr "_Zamknij"
+msgstr "_Wyłącz"
 
 #: ../src/exceptionWindow.py:48
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "Wystąpił nieokreślony błąd w module %s."
+msgstr "Wystąpił błąd w module %s."
 
 #: ../src/exceptionWindow.py:53
 #, python-format
@@ -59,8 +56,8 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Odkąd jest problem z modułem %s, \n"
-"Agent instalacji Red Hat nie może go wczytać. \n"
-"W efekcie nie potrafi uruchomić pozostałych modułów."
+"Agent instalacji Red Hat nie może go wczytać i w \n"
+"efekcie nie potrafi uruchomić pozostałych modułów."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -73,7 +70,7 @@ msgstr ""
 "Wyślij informacje o błędzie do systemu śledzenia błędów \n"
 "firmy Red Hat (http://www.redhat.com/bugzilla. \n"
 "Kopia informacji o błędzie została zapisana do %s \n"
-"Upewnij się, czy załączyłeś ten plik do raportu. \n"
+"Upewnij się, że załączyłeś ten plik do raportu. \n"
 
 #: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
 msgid "_Back"
@@ -86,6 +83,8 @@ msgstr "_Dalej"
 #: ../src/firstbootWindow.py:277
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
+"System musi zostać teraz ponownie uruchomiony, aby wprowadzione zmiany "
+"zostały uwzględnione."
 
 #: ../src/firstbootWindow.py:428
 #, python-format
@@ -95,7 +94,7 @@ msgstr "import modułu %s nie powiódł się: %s"
 #: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
-msgstr "Witamy"
+msgstr "Witaj"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -103,7 +102,7 @@ msgstr "Uwierzytelnianie"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
-msgstr "Konfiguracja zapory ogniowej"
+msgstr "Konfiguracja zapory sieciowej"
 
 #: ../src/textWindow.py:36
 msgid "Keyboard configuration"
@@ -152,17 +151,15 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Aby zainstalować aplikacje i wtyczki innych producentów proszę włożyć dysk "
-"opisany jako  \"Red Hat Enterprise Linux Extras\".  Można również włożyć "
-"dysk z dokumentacją lub inny dostarczony przez Red Hat, aby zainstalować "
-"dodatkowe oprogramowanie."
+"Aby zainstalować aplikacje i wtyczki innych producentów włóż płytę opisaną "
+"jako \"Red Hat Enterprise Linux Extras\". Można również włożyć płytę z "
+"dokumentacją lub inną dostarczoną przez Red Hata, aby zainstalować dodatkowe "
+"oprogramowanie."
 
 #: ../src/modules/additional_cds.py:67
-#, fuzzy
 msgid "Please insert any additional software install cds at this time."
-msgstr "Teraz proszę włożyć dowolny dysk z dodatkowym oprogramowaniem."
+msgstr "Włóż dowolną płytę z dodatkowym oprogramowaniem."
 
-#. if 1:
 #: ../src/modules/additional_cds.py:73
 msgid ""
 "\n"
@@ -173,9 +170,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Aby włączyć wsparcie wykonywania aplikacji 32-bitowych w architekturze Intel "
-"Itanium 2 trzeba zainstalować pakiet Intel Execution Layer z dysku z "
-"dodatkami (Extras) do systemu."
+"Aby włączyć obsługę aplikacji 32-bitowych w architekturze Intel Itanium 2 "
+"musisz zainstalować pakiet Intel Execution Layer z płyty z dodatkami (Extras) "
+"do systemu."
 
 #: ../src/modules/additional_cds.py:114
 msgid "Install..."
@@ -186,14 +183,14 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Płyta CD-ROM nie została wykryta. Włóż ją do napędu i kliknij \"OK\", aby "
+"Płyta CD-ROM nie została wykryta. Włóż ją do napędu i naciśnij \"OK\", aby "
 "kontynuować."
 
 #: ../src/modules/additional_cds.py:194
 msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
-"Program automatycznego uruchomienia nie został znaleziony na płycie. Kliknij "
+"Program automatycznego uruchamiania nie został znaleziony na płycie. Naciśnij "
 "\"OK\", aby kontynuować."
 
 #: ../src/modules/create_user.py:43
@@ -206,8 +203,8 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Zalecamy stworzenie prywatnego konta użytkownika do zwykłego "
-"(nieadministracyjnego) używania systemu. Aby stworzyć prywatne konto, wpisz "
+"Zalecane jest utworzenie prywatnego konta użytkownika do zwykłego "
+"(nieadministracyjnego) używania systemu. Aby utworzyć prywatne konto, podaj "
 "potrzebne informacje poniżej."
 
 #: ../src/modules/create_user.py:80
@@ -231,12 +228,12 @@ msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Jeśli potrzebujesz użycia uwierzytelniania sieciowego takiego jak Kerberos "
-"czy NIS, kliknij na przycisku \"Użyj uwierzytelniania sieciowego\"."
+"Jeśli potrzebujesz użyć uwierzytelniania sieciowego, takiego jak Kerberos "
+"czy NIS, naciśnij przycisk \"Użyj uwierzytelniania sieciowego\"."
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
-msgstr "Użyj uwierzytelni_ania sieciowego"
+msgstr "Użyj uwierzytelni_ania sieciowego..."
 
 #: ../src/modules/create_user.py:163
 msgid ""
@@ -244,13 +241,13 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Zalecamy utworzenie prywatnego konta. Jeśli będziesz bez niego kontynuował, "
-"będziesz mógł się zalogować tylko na konto \"root\", które jest "
+"Utworzenie prywatnego konta jest bardzo zalecane. Jeśli będziesz bez niego "
+"kontynuował, będziesz mógł się zalogować tylko na konto roota, które jest "
 "zarezerwowane tylko do pracy administracyjnej."
 
 #: ../src/modules/create_user.py:171
 msgid "_Continue"
-msgstr "_Kontynuacja"
+msgstr "_Dalej"
 
 #: ../src/modules/create_user.py:172
 msgid "Create _account"
@@ -258,20 +255,20 @@ msgstr "U_twórz konto"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Podane hasła nie są identyczne. Wpisz je ponownie."
+msgstr "Podane hasła różnią się. Wpisz je ponownie."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Hasło jest za krótkie. Użyj minimum 6 znaków."
+msgstr "Hasło jest za krótkie. Użyj co najmniej 6 znaków."
 
 #: ../src/modules/create_user.py:217
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Nazwa użytkownika '%s' zawiera duże litery. Proszę nie używać dużych znaków "
-"w nazwie użytkownika."
+"Nazwa użytkownika '%s' jest zarezerwowanym kontem systemowym. Podaj inną "
+"nazwę użytkownika."
 
 #: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
@@ -281,7 +278,6 @@ msgstr "Nazwa użytkownika nie może być dłuższa niż 33 znaki."
 msgid "The user name may not begin with a number."
 msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
 
-#. Check for whitespace
 #: ../src/modules/create_user.py:282
 #, python-format
 msgid ""
@@ -296,7 +292,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Nazwa użytkownika '%s' zawiera znaki przestankowe, których nie może zawierać."
+"Nazwa użytkownika '%s' zawiera znaki interpunkcyjne, których nie może "
+"zawierać."
 
 #: ../src/modules/create_user.py:296
 #, python-format
@@ -304,8 +301,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Nazwa użytkownika '%s' zawiera duże litery. Proszę nie używać dużych znaków "
-"w nazwie użytkownika."
+"Nazwa użytkownika '%s' zawiera duże litery. Używaj tylko małe znaki w nazwie "
+"użytkownika."
 
 #: ../src/modules/create_user.py:303
 #, python-format
@@ -318,13 +315,13 @@ msgstr ""
 #: ../src/modules/create_user.py:313
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Hasło zawiera nieznane znaki. Używaj tylko znaków ASCII."
+msgstr "Hasło zawiera nieprawidłowe znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:325
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Nazwisko '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
+msgstr "Nazwa '%s' zawiera nieprawidłowe znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -336,7 +333,7 @@ msgstr "Ustaw datę i czas dla systemu."
 
 #: ../src/modules/display.py:44
 msgid "Display"
-msgstr "Pokaż"
+msgstr "Wyświetl"
 
 #: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
@@ -351,12 +348,12 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
-"System został zainstalowany i jest już gotowy do użycia. Kliknij \"Dalej\" w "
+"System został zainstalowany i jest już gotowy do użycia. Naciśnij \"Dalej\" w "
 "prawym dolnym rogu okna, aby kontynuować."
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Kliknij przycisk \"Dalej\" w prawym dolnym rogu, aby kontynuować."
+msgstr "Naciśnij przycisk \"Dalej\" w prawym dolnym rogu, aby kontynuować."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -372,7 +369,7 @@ msgstr "Urządzenie sieciowe"
 
 #: ../src/modules/networking.py:89
 msgid "Boot protocol"
-msgstr "Protokół startu"
+msgstr "Protokół uruchamiania"
 
 #: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
@@ -397,9 +394,9 @@ msgid ""
 "channel, the second sound will be in the left channel, and the third sound "
 "will be in the center."
 msgstr ""
-"Kliknij \"Graj dźwięk próbny\", aby usłyszeć przykładową melodię. Powinieneś "
-"usłyszeć trzy melodie. Pierwszą w prawym głośniku, drugą w lewym, a trzecią "
-"w centrum."
+"Naciśnij na \"Odtwórz dźwięk próbny\", aby usłyszeć przykładową melodię. "
+"Powinieneś usłyszeć trzy dźwięki. Pierwszą w prawym głośniku, drugą w lewym, "
+"a trzecią w centrum."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -415,9 +412,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Zostało jeszcze tylko kilka kroków zanim twój system będzie gotowy. Agent "
-"instalacji obecnie nie posiada poradnika o podstawowej konfiguracji. Kliknij "
-"\"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
-
-#~ msgid "Licence Aggrement"
-#~ msgstr "Warunki licencji"
+"Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do użytku. "
+"Agent instalacji obecnie nie posiada poradnika o podstawowej konfiguracji. "
+"Naciśnij \"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
