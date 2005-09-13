@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-02 16:16-0400\n"
+"POT-Creation-Date: 2005-09-13 14:48-0400\n"
 "PO-Revision-Date: 2005-08-04 15:51+1000\n"
 "Last-Translator: Leah Liu <weliu@redhat.com>\n"
 "Language-Team: Chinese, Simplified <zh@li.org>\n"
@@ -77,24 +77,24 @@ msgstr ""
 "调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
 
-#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
+#: ../src/firstbootWindow.py:189 ../src/firstbootWindow.py:586
 msgid "_Back"
 msgstr "返回(_B)"
 
-#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
+#: ../src/firstbootWindow.py:197 ../src/firstbootWindow.py:590
 msgid "_Next"
 msgstr "下一步(_N)"
 
-#: ../src/firstbootWindow.py:277
+#: ../src/firstbootWindow.py:276
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "因为你做了某些调整,系统将重启。"
 
-#: ../src/firstbootWindow.py:428
+#: ../src/firstbootWindow.py:427
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "模块 %s 导入错误： %s"
 
-#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:582 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "欢迎"
@@ -186,7 +186,8 @@ msgid ""
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
 #: ../src/modules/create_user.py:43
@@ -298,12 +299,14 @@ msgid ""
 msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:313
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/create_user.py:325
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
 msgstr "名称“%s”中包含非法字符。请仅使用 ASCII 字符。"
 
 #: ../src/modules/date.py:46
@@ -356,7 +359,7 @@ msgstr "引导协议"
 msgid "_Change Network Configuration..."
 msgstr "改变网络配置(_C)..."
 
-#: ../src/modules/networking.py:138
+#: ../src/modules/networking.py:141
 msgid "static"
 msgstr "静态"
 
@@ -394,4 +397,3 @@ msgid ""
 msgstr ""
 "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
 "点击右下角的“下一步”按钮来继续。"
-

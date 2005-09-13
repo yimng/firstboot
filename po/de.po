@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-02 16:16-0400\n"
+"POT-Creation-Date: 2005-09-13 14:48-0400\n"
 "PO-Revision-Date: 2005-08-07 18:45+0200\n"
 "Last-Translator: Severin Heiniger <severinheiniger@gmail.com>\n"
 "Language-Team: German / Deutsch <fedora-i18n-list@redhat.com>\n"
@@ -80,30 +80,33 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Erstellen Sie einen Fehlerbericht über 'firstboot' und senden Sie diesen an das \n"
+"Erstellen Sie einen Fehlerbericht über 'firstboot' und senden Sie diesen an "
+"das \n"
 "Red Hat Bug Tracking System unter http://www.redhat.com/bugzilla. \n"
 "Eine Kopie der Debug-Meldung wurde in %s gespeichert. \n"
 "Vergewissern Sie sich, dass Sie diese Datei dem Fehlerbericht anlegen. \n"
 
-#: ../src/firstbootWindow.py:190 ../src/firstbootWindow.py:587
+#: ../src/firstbootWindow.py:189 ../src/firstbootWindow.py:586
 msgid "_Back"
 msgstr "_Zurück"
 
-#: ../src/firstbootWindow.py:198 ../src/firstbootWindow.py:591
+#: ../src/firstbootWindow.py:197 ../src/firstbootWindow.py:590
 msgid "_Next"
 msgstr "_Weiter"
 
-#: ../src/firstbootWindow.py:277
+#: ../src/firstbootWindow.py:276
 #, fuzzy
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Damit einige Ihrer Einstellungen wirksam werden, muss Ihr System nun neugestartet werden."
+msgstr ""
+"Damit einige Ihrer Einstellungen wirksam werden, muss Ihr System nun "
+"neugestartet werden."
 
-#: ../src/firstbootWindow.py:428
+#: ../src/firstbootWindow.py:427
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "Modulimport von %s fehlgeschlagen: %s"
 
-#: ../src/firstbootWindow.py:583 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:582 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Willkommen"
@@ -204,7 +207,8 @@ msgstr ""
 "und klicken Sie auf \"OK\" um fortzufahren."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Kann das Autorun-Programm nicht auf der CD finden. Klicken Sie \"OK\", um "
 "fortzufahren."
@@ -220,8 +224,8 @@ msgid ""
 "provide the information requested below."
 msgstr ""
 "Es wird empfohlen, dass Sie ein Benutzerkonto für die normale (nicht-"
-"administrative) Benutzung anlegen.  Um ein Benutzerkonto anzulegen, "
-"geben Sie die geforderten Informationen an."
+"administrative) Benutzung anlegen.  Um ein Benutzerkonto anzulegen, geben "
+"Sie die geforderten Informationen an."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -257,9 +261,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"Es wird dringend empfohlen ein Benutzerkonto zu anzulegen. Wenn Sie ohne "
-"ein solches Konto fortfahren, können Sie sich nur als root anmelden. "
-"Dies ist nur für administrative Aufgaben vorgesehen."
+"Es wird dringend empfohlen ein Benutzerkonto zu anzulegen. Wenn Sie ohne ein "
+"solches Konto fortfahren, können Sie sich nur als root anmelden. Dies ist "
+"nur für administrative Aufgaben vorgesehen."
 
 #: ../src/modules/create_user.py:171
 msgid "_Continue"
@@ -271,19 +275,21 @@ msgstr "_Konto anlegen"
 
 #: ../src/modules/create_user.py:198
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
+msgstr ""
+"Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
 
 #: ../src/modules/create_user.py:206
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Das Passwort ist zu kurz.  Bitte benutzen Sie mindestens 6 Zeichen."
 
 #: ../src/modules/create_user.py:217
-#, python-format
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "Der Benutzername '%s' ist ein reserviertes Systemkonto. Bitte wählen Sie einen anderen Benutzernamen."
+msgstr ""
+"Der Benutzername '%s' ist ein reserviertes Systemkonto. Bitte wählen Sie "
+"einen anderen Benutzernamen."
 
 #: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
@@ -313,12 +319,13 @@ msgstr ""
 "solchen Zeichen im Benutzernamen."
 
 #: ../src/modules/create_user.py:296
-#, python-format
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr "Der Benutzername '%s' enthält Grossbuchstaben.  Bitte verwenden Sie keine Grossbuchstaben im Benutzernamen."
+msgstr ""
+"Der Benutzername '%s' enthält Grossbuchstaben.  Bitte verwenden Sie keine "
+"Grossbuchstaben im Benutzernamen."
 
 #: ../src/modules/create_user.py:303
 #, python-format
@@ -330,13 +337,19 @@ msgstr ""
 "ASCII-Zeichen."
 
 #: ../src/modules/create_user.py:313
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-Zeichen."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
+"Zeichen."
 
 #: ../src/modules/create_user.py:325
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-Zeichen."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
+"Zeichen."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -368,7 +381,8 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
+msgstr ""
+"Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -390,7 +404,7 @@ msgstr "Boot-Protokoll"
 msgid "_Change Network Configuration..."
 msgstr "Netzwerk-Konfiguration  ä_ndern..."
 
-#: ../src/modules/networking.py:138
+#: ../src/modules/networking.py:141
 msgid "static"
 msgstr "Statisch"
 
@@ -430,4 +444,3 @@ msgstr ""
 "Nur noch ein paar Schritte, und Sie können Ihr System verwenden.  Der Setup "
 "Agent führt Sie dabei durch die Basiskonfiguration.  Klicken Sie auf \"Weiter"
 "\" unten rechts, um fortzufahren."
-
