@@ -35,7 +35,8 @@ from rhpl.translate import _, N_
 import rhpl.translate as translate
 translate.textdomain ("firstboot")
 
-from rhpl import keyboard
+import rhpl.keyboard as keyboard
+import rhpl
 
 wm_pid = None
 xserver_pid = None
@@ -66,11 +67,10 @@ for arg in sys.argv:
 if __name__ == "__main__":
     signal.signal (signal.SIGINT, signal.SIG_DFL)
 
-
 def startWindowManager():    
     wm_pid = os.fork()
 
-    if (not wm_pid):
+    if not wm_pid:
         path = '/usr/bin/metacity'
         args = ['--display=:1']
         os.execvp(path, args)
@@ -93,12 +93,10 @@ def mergeXresources():
     if os.access(path, os.R_OK):
        os.system("xrdb -merge %s" % path)
 
-
 def setKeyboard():
     kb = keyboard.Keyboard()
     kb.read()
     kb.activate()
-
 
 #Let's check to see if firstboot should be run or not
 #If we're in debug mode, run anyway.  Even if the file exists
@@ -140,12 +138,6 @@ line = string.strip(line)
 tokens = string.split(line)
 runlevel = int(tokens[-1])
 
-#if runlevel == 3:
-#    print (_("Firstboot does not run in runlevel 3."))
-#    firstbootBackend.writeSysconfigFile(doDebug)
-#    os._exit(0)
-
-    
 if runlevel == 3 and forcegui == None:
     import textWindow
     from snack import *
@@ -164,7 +156,7 @@ if runlevel == 3 and forcegui == None:
         firstbootBackend.writeSysconfigFile(doDebug)
         os._exit(0)
 
-#If rhgb (graphical boot) is running, let's use it's X server
+#If rhgb (graphical boot) is running, let's use its X server
 if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin/rhgb-client --ping") == 0):
     try:
         os.environ["DISPLAY"] = open(DISPLAY_FILE, "r").read()
@@ -179,45 +171,53 @@ if os.access("/usr/bin/rhgb-client", os.R_OK| os.X_OK) and (os.system ("/usr/bin
 
 #If there's no X Server running, let's start one
 if not os.environ.has_key('DISPLAY'):
-    
-     if os.access("/etc/X11/xorg.conf", os.R_OK) or os.access("/etc/X11/XF86Config", os.R_OK):
-          #set the display environment variable
-          os.environ['DISPLAY'] = ':1'
+    import rhpl.xserver as xserver
+    import rhpl.xhwstate as xhwstate
 
-          xserver_pid = os.fork()
+    kbd = keyboard.Keyboard()
+    (videohw, monitorhw, mousehw) = xserver.probeHW(skipDDCProbe=0,
+                                                    skipMouseProbe=0)
 
-          if not xserver_pid:
-              path = "/etc/X11/X"
-              args = [path, ':1', '-s', '1440', '-terminate', '-dpms', '-v', '-quiet']
+    if lowRes:
+        runres = "640x480"
+    else:
+        runres = "800x600"
 
-              os.execvp(path, args)
-              os._exit(1)
+    if rhpl.getPPCMachine() == "PMac":
+        runres = xhwstate.get_valid_resolution(videohw, monitorhw, runres,
+                                               onPMac=True)
+    else:
+        runres = xhwstate.get_valid_resolution(videohw, monitorhw, runres)
 
-          count = 0
-          while count < 60:
-            sys.stdout.write(".")
-            sys.stdout.flush()
-            pid = 0
-            try:
-                pid, status = os.waitpid (xserver_pid, os.WNOHANG)
-            except OSError, (errno, msg):
-                print __name__, "waitpid:", msg
-            if pid:
-                sys.stderr.write("X SERVER FAILED")
-                raise RuntimeError, "X server failed to start"
-            try:
-                os.stat("/tmp/.X11-unix/X1")
-                break
-            except OSError:
-                pass
-            time.sleep(1)
-            count = count + 1
+    xsetup_failed = False
+    try:
+        xcfg = xserver.startX(runres, videohw, monitorhw, mousehw, kbd)
+    except RuntimeError:
+        xsetup_failed = True
 
-     wm_pid = None
-     wm_pid = startWindowManager()
-     mergeXresources()
+    if xsetup_failed:
+        sys.stderr.write("X SERVER FAILED TO START")
+        raise RuntimeError, "X server failed to start"
 
-     setKeyboard()
+    # Init GTK to connect to the X server, then write a token on a pipe to
+    # tell our parent process that we're ready to start metacity.
+    (rd, wr) = os.pipe()
+    xserver_pid = os.fork()
+    if not xserver_pid:
+        import gtk
+        os.write(wr, "#")
+
+    # Block on read of token
+    os.read(rd, 1)
+    os.close(rd)
+    os.close(wr)
+
+    wm_pid = None
+    wm_pid = startWindowManager()
+    mergeXresources()
+
+    setKeyboard()
 
 import firstbootWindow
-firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb, autoscreenshot)
+firstbootWindow.firstbootWindow(xserver_pid, wm_pid, doReconfig, doDebug,
+                                lowRes, rhgb, autoscreenshot)

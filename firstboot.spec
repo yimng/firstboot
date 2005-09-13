@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.45
+Version: 1.3.46
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -30,7 +30,6 @@ Requires: system-config-packages
 Requires: system-config-network
 Requires: authconfig-gtk
 Requires: libuser
-Requires: up2date >= 4.3.38
 Requires: redhat-logos
 Requires: redhat-artwork
 ExcludeArch: s390 s390x
@@ -77,6 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Sep 13 2005 Chris Lumens <clumens@redhat.com> 1.3.46-1
+- Remove dependancy on up2date (#167663).
+- Use rhpl's X startup code instead of using something different.
+
 * Wed Aug 17 2005 Chris Lumens <clumens@redhat.com> 1.3.45-1
 - Don't fail if no ifcfg script exists for a NIC found in modprobe.conf
   (#164874).
