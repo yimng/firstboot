@@ -29,7 +29,7 @@ import xf86config
 from rhpl.xhwstate import *
 
 
-from rhpl.firstboot_gui_window import FirstbootGuiWindow
+from firstboot_gui_window import FirstbootGuiWindow
 
 ##
 ## I18N

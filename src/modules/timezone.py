@@ -31,7 +31,7 @@ import functions
 sys.path.append('/usr/share/system-config-date/')
 import mainWindow
 
-from rhpl.firstboot_gui_window import FirstbootGuiWindow
+from firstboot_gui_window import FirstbootGuiWindow
 
 ##
 ## I18N

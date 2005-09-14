@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.46
+Version: 1.3.47
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Sep 14 2005 Chris Lumens <clumens@redhat.com> 1.3.47-1
+- Moved firstboot_gui_window here from rhpl.
+
 * Tue Sep 13 2005 Chris Lumens <clumens@redhat.com> 1.3.46-1
 - Remove dependancy on up2date (#167663).
 - Use rhpl's X startup code instead of using something different.
