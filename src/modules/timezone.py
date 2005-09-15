@@ -31,7 +31,7 @@ import functions
 sys.path.append('/usr/share/system-config-date/')
 import mainWindow
 
-from firstboot_gui_window import FirstbootGuiWindow
+from firstboot_module_window import FirstbootModuleWindow
 
 ##
 ## I18N
@@ -40,7 +40,7 @@ from rhpl.translate import _, N_
 from rhpl import translate
 translate.textdomain("firstboot")
 
-class TimeWindow(FirstbootGuiWindow):
+class TimeWindow(FirstbootModuleWindow):
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 89
     moduleName = _("Timezone")

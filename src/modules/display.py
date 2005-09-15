@@ -29,7 +29,7 @@ import xf86config
 from rhpl.xhwstate import *
 
 
-from firstboot_gui_window import FirstbootGuiWindow
+from firstboot_module_window import FirstbootModuleWindow
 
 ##
 ## I18N
@@ -38,7 +38,7 @@ from rhpl.translate import _, N_
 from rhpl import translate
 translate.textdomain("system-config-display")
 
-class DisplayWindow(FirstbootGuiWindow):
+class DisplayWindow(FirstbootModuleWindow):
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 105
     moduleName = _("Display")

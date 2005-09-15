@@ -1,5 +1,5 @@
 #
-# firstboot_gui_window.py - GUI parent class for firstboot/anaconda modules
+# firstboot_module_window.py - GUI parent class for firstboot/anaconda modules
 #
 # Copyright 2002 Red Hat, Inc.
 #
@@ -21,7 +21,7 @@
 import gtk
 from rhpl.translate import _, N_
 
-class FirstbootGuiWindow:
+class FirstbootModuleWindow:
     moduleName = None
     htmlTag = None
     windowTitle = None

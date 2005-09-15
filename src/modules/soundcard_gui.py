@@ -30,8 +30,6 @@ sys.path.append('/usr/share/system-config-soundcard/')
 import soundcard
 import soundcardBackend
 
-from firstboot_gui_window import FirstbootGuiWindow
-
 ##
 ## I18N
 ## 
