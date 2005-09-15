@@ -76,8 +76,11 @@ fi
 /usr/sbin/firstboot
 
 %changelog
-* Wed Sep 14 2005 Chris Lumens <clumens@redhat.com> 1.3.47-1
-- Moved firstboot_gui_window here from rhpl.
+* Thu Sep 15 2005 Chris Lumens <clumens@redhat.com> 1.3.47-1
+- Moved firstboot_gui_window here from rhpl and renamed it to
+  firstboot_module_window.
+- Converted /usr/sbin/firstboot into a python script.
+- Converted the rest of firstboot into a module suitable for importing.
 
 * Tue Sep 13 2005 Chris Lumens <clumens@redhat.com> 1.3.46-1
 - Remove dependancy on up2date (#167663).
