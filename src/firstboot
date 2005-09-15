@@ -1,4 +1,93 @@
-#!/bin/sh
+#!/usr/bin/python2
+#
+# firstboot - Script to run the firstboot system configuration program.
+#
+# Copyright (C) 2002, 2003, 2005 Red Hat, Inc.
+# Copyright (C) 2002, 2003 Brent Fox <bfox@redhat.com>
+# Copyright (C) 2005 Chris Lumens <clumens@redhat.com>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-export PYTHONPATH=/usr/share/firstboot
-/usr/bin/python2 /usr/share/firstboot/firstboot.py $*
+import os
+import signal
+import string
+import sys
+
+sys.path.append("/usr/share/firstboot")
+from firstboot import Firstboot
+
+def getRunlevel():
+    line = os.popen('/sbin/runlevel', 'r').readline()
+    line = string.strip(line)
+    tokens = string.split(line)
+    return int(tokens[-1])
+
+def rhgbIsRunning():
+    return os.access("/usr/bin/rhgb-client", os.R_OK|os.X_OK) and os.system("/usr/bin/rhgb-client --ping") == 0
+
+# Since X may be starting up immediately after firstboot crashes, we might
+# not have any way to see the traceback.  This lets it be logged somewhere
+# useful.
+def defaultExnHandler(type, value, tb):
+    import traceback
+    f = open("/tmp/firstboot-crash.log", "w")
+    traceback.print_exception(type, value, tb, None, f)
+    f.close()
+
+    # Also, print on stderr still just in case we have time to see the
+    # problem.
+    traceback.print_tb(tb)
+
+sys.excepthook = defaultExnHandler
+
+if __name__ == "__main__":
+
+    fb = Firstboot()
+
+    for arg in sys.argv:
+        if arg == '--reconfig':
+            print "starting reconfig mode"
+            fb.doReconfig = True
+        if arg == '--debug':
+            print "starting with debugging options"
+            fb.doDebug = True
+        if arg == '--lowres':
+            print "starting in lowres mode"
+            fb.lowRes = True
+        if arg == '--autoscreenshot':
+            fb.autoscreenshot = True
+        if arg == '--forcegui':
+            fb.forcegui = True
+
+    signal.signal (signal.SIGINT, signal.SIG_DFL)
+
+    if not fb.mayRun():
+        os.exit(0)
+
+    # Check to see if we're in runlevel 3.  If so, call text UI.  Otherwise,
+    # we set up a graphical UI - take over rhgb's X server if it's running or
+    # create our own if not.
+    if getRunlevel() == 3 and not fb.forcegui:
+        fb.runTextUI()
+    elif rhgbIsRunning():
+        fb.startRhgbUI()
+        from firstbootWindow import firstbootWindow
+        firstbootWindow(fb)
+    elif not os.environ.has_key("DISPLAY"):
+        fb.startGraphicalUI()
+        from firstbootWindow import firstbootWindow
+        firstbootWindow(fb)
+    else:
+        raise RuntimeError, "Could not start any firstboot interface"

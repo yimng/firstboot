@@ -29,6 +29,7 @@ import gtk
 import gobject
 import functions
 import firstbootBackend
+from firstboot import Firstboot
 from rhpl.translate import cat
 from rhpl import ethtool
 
@@ -46,14 +47,14 @@ screenshotDir = None
 screenshotIndex = 0
 
 class firstbootWindow:
-    def __init__(self, xserver_pid, wm_pid, doReconfig, doDebug, lowRes, rhgb, autoscreenshot):
+    def __init__(self, fb):
         self.needsReboot = False
-        self.xserver_pid = xserver_pid
-        self.wm_pid = wm_pid
-        self.doReconfig = doReconfig
-        self.doDebug = doDebug
-        self.lowRes = lowRes
-        self.autoscreenshot = autoscreenshot
+        self.xserver_pid = fb.xserver_pid
+        self.wm_pid = fb.wm_pid
+        self.doReconfig = fb.doReconfig
+        self.doDebug = fb.doDebug
+        self.lowRes = fb.lowRes
+        self.autoscreenshot = fb.autoscreenshot
         self.mainHBox = gtk.HBox(False, 10)
         self.leftLabelVBox = gtk.VBox()
 
@@ -84,21 +85,6 @@ class firstbootWindow:
         self.win.set_decorated(False)
         x_screen = gtk.gdk.screen_width()
         y_screen = gtk.gdk.screen_height()        
-
-##         if rhgb == None:
-##             #If rhgb isn't running, then we need to draw the background
-##             pixbuf = functions.pixbufFromPath("/usr/share/gdm/themes/Bluecurve/lightrays.png")
-##             if pixbuf is not None:
-##                 pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
-##                 bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
-##                 gc = bgimage.new_gc()
-##                 pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
-##                                           y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
-##                 self.win.set_app_paintable(True)
-##                 self.win.window.set_back_pixmap(bgimage, False)
-
-##                 if not self.doDebug:
-##                     self.win.set_size_request(x_screen, y_screen)
 
         #Let's draw the background
         pixbuf = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/lightrays.png")
@@ -437,9 +423,6 @@ class firstbootWindow:
             # this will allow the language module to change firstboot's current locale
             if module == "language" or hasattr(obj, "needsparent"):
                 obj.passInParent(self)
-#            if module in ["language", "rhn_login_gui", "rhn_optout_gui",
-#                          "rhn_activate_gui", "rhn_newaccount_gui"]:
-#                obj.passInParent(self)
 
             # if a module decides not to run, skip it first before trying any
             # of the other hooks. bz #158095
@@ -473,15 +456,6 @@ class firstbootWindow:
         # order, and build a list with the modules in the proper order.
         modulePriorityList = self.moduleDict.keys()
         modulePriorityList.sort()
-
-##         self.leftLabelVBox.set_border_width(12)
-        
-##         leftEventBox = gtk.EventBox()
-##         leftEventBox.add(self.leftLabelVBox)
-##         leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
-
-##         self.leftVBox = gtk.VBox()
-##         self.leftVBox.pack_start(leftEventBox, True)
 
         # Add the modules to the proper lists.
         pages = 0
