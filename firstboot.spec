@@ -32,7 +32,7 @@ Requires: authconfig-gtk
 Requires: libuser
 Requires: redhat-logos
 Requires: redhat-artwork
-ExcludeArch: s390 s390x
+ExcludeArch: s390 s390x ppc64
 
 %description
 The firstboot utility runs after installation.  It 
