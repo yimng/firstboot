@@ -318,16 +318,17 @@ class childWindow:
         return 1
 
     def isNameOk(self, str, widget):
-        for i in str:
-            if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation:
-                #have to check for whitespace for gecos, since whitespace is ok
-                if i not in string.whitespace:
-                    self.showErrorMessage(_("The name '%s' contains invalid characters.  "
-                                            "Please use only ASCII characters.") % str)
-                    widget.set_text("")
-                    widget.grab_focus()
-                    return None
-        return 1
+        import re
+        if re.search("^[\w\s]+$", str, re.UNICODE) == None:
+            self.showErrorMessage(_("The name '%s' contains invalid "
+                                    "characters.  Please use only letters, "
+                                    "numbers, whitespace and the underscore "
+                                    "character.") % str)
+            widget.set_text("")
+            widget.grab_focus()
+            return None
+        else:
+            return 1
 
     def run_authconfig(self, *args):
         self.nisFlag = 1
