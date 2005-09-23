@@ -275,7 +275,7 @@ class firstbootWindow:
         except:
             pass
 
-        if self.autoscreenshot != None:
+	if self.autoscreenshot:
             self.takeScreenShot()
         result = None
         #Call the apply method if it exists
