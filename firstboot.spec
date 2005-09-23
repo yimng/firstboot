@@ -18,9 +18,7 @@ Requires: usermode >= 1.36
 Requires: metacity
 Requires: rhpl
 Requires: system-config-date >= 1.7.9
-%ifnarch ppc64
 Requires: system-config-display
-%endif
 Requires: system-config-language
 Requires: system-config-keyboard
 Requires: system-config-soundcard
@@ -79,6 +77,10 @@ fi
 * Fri Sep 23 2005 Chris Lumens <clumens@redhat.com> 1.3.48-1
 - Fix autoscreenshot test (#169102).
 - Allow unicode letters in full user names (#169043).
+
+* Thu Sep 15 2005 Jeremy Katz <katzj@redhat.com> - 1.3.47-2
+- exclude arch ppc64 to stop from being included in ppc64 compose where 
+  we don't have X
 
 * Thu Sep 15 2005 Chris Lumens <clumens@redhat.com> 1.3.47-1
 - Moved firstboot_gui_window here from rhpl and renamed it to
