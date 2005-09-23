@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.47
+Version: 1.3.48
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Sep 23 2005 Chris Lumens <clumens@redhat.com> 1.3.48-1
+- Fix autoscreenshot test (#169102).
+- Allow unicode letters in full user names (#169043).
+
 * Thu Sep 15 2005 Chris Lumens <clumens@redhat.com> 1.3.47-1
 - Moved firstboot_gui_window here from rhpl and renamed it to
   firstboot_module_window.

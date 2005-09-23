@@ -222,7 +222,7 @@ class childWindow:
 
         fullName = self.fullnameEntry.get_text()
 
-        #Check for ascii-only strings
+        #Check for valid strings
         if not self.isNameOk(fullName, self.fullnameEntry):
             return None
 
