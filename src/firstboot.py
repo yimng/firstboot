@@ -83,8 +83,8 @@ class Firstboot:
     # Initializes the UI for firstboot by starting up an X server and
     # window manager, but returns control to the caller to proceed.
     def startGraphicalUI(self):
-        import rhpl.xserver as xserver
-        import rhpl.xhwstate as xhwstate
+        import rhpxl.xserver as xserver
+        import rhpxl.xhwstate as xhwstate
 
         kbd = keyboard.Keyboard()
         (videohw, monitorhw, mousehw) = xserver.probeHW(skipDDCProbe=0,

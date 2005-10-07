@@ -26,7 +26,7 @@ import sys
 import os
 import functions
 import xf86config
-from rhpl.xhwstate import *
+from rhpxl.xhwstate import *
 
 
 from firstboot_module_window import FirstbootModuleWindow
@@ -53,7 +53,7 @@ class DisplayWindow(FirstbootModuleWindow):
         (xconfig, xconfigpath) = xf86config.readConfigFile()
         
         hardware_state = XF86HardwareState(xconfig)
-        vc = rhpl.videocard.VideoCardInfo()
+        vc = rhpxl.videocard.VideoCardInfo()
 
         sys.path.append("/usr/share/system-config-display")
         import xConfigDialog

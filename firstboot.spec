@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.48
+Version: 1.3.49
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -17,6 +17,7 @@ Requires: python
 Requires: usermode >= 1.36
 Requires: metacity
 Requires: rhpl
+Requires: rhpxl
 Requires: system-config-date >= 1.7.9
 Requires: system-config-display
 Requires: system-config-language
@@ -74,6 +75,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Oct 07 2005 Chris Lumens <clumens@redhat.com> 1.3.49-1
+- Use rhpxl instead of rhpl for X stuff.
+
 * Fri Sep 23 2005 Chris Lumens <clumens@redhat.com> 1.3.48-1
 - Fix autoscreenshot test (#169102).
 - Allow unicode letters in full user names (#169043).
