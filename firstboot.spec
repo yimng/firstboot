@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.49
+Version: 1.3.50
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -75,6 +75,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Tue Oct 11 2005 Chris Lumens <clumens@redhat.com> 1.3.50-1
+- Decrease blank space on finished screen (#144496).
+- Fix import of rhpxl.videocard.
+
 * Fri Oct 07 2005 Chris Lumens <clumens@redhat.com> 1.3.49-1
 - Use rhpxl instead of rhpl for X stuff.
 
