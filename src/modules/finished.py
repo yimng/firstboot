@@ -58,9 +58,9 @@ class childWindow:
                 new_txt = fd.read()
                 # markcom doesnt want the "you finished" message shown if there
                 # are any other errors
-                self.txt = "" + "\n\n"
+                self.txt = "" + "\n"
                 self.txt = self.txt + new_txt
-                self.txt = self.txt + "\n\n" + self.post_txt
+                self.txt = self.txt + "\n" + self.post_txt
 
             # dont need these files anymore
             for file in files:
