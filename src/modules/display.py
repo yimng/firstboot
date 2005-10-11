@@ -27,8 +27,7 @@ import os
 import functions
 import xf86config
 from rhpxl.xhwstate import *
-
-
+import rhpxl.videocard
 from firstboot_module_window import FirstbootModuleWindow
 
 ##
