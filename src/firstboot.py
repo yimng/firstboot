@@ -74,6 +74,8 @@ class Firstboot:
             else:
                 #Firstboot has never been run before, so start it up
                 return True
+        else:
+            return True
 
     def mergeXresources(self):
         path = "/etc/X11/Xresources"
