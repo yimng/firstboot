@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: hy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-07 10:44-0400\n"
-"PO-Revision-Date: 2005-10-14 02:04+0500\n"
+"PO-Revision-Date: 2005-10-17 22:25+0500\n"
 "Last-Translator: root <xeon@4you.am>\n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -58,6 +58,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Քանի որ %s մոդուլի հետ պրոբլեմներ են առաջացել,\n"
+"Red Hat տեղադրման օգնականը չի աշխատեցնի այդ մոդուլը\n"
+"և կփորձի բացել մյուս մոդուլները։"
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -78,7 +81,7 @@ msgstr "_Առաջ"
 
 #: ../src/firstbootWindow.py:262
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Համակարգը պետք է վերաբեռնվի ձեր ընտրություններից մի քանիսի աշխատելու համար։"
 
 #: ../src/firstbootWindow.py:413
 #, python-format
@@ -92,23 +95,23 @@ msgstr "Բարի գալուստ։"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
-msgstr ""
+msgstr "Աուտենֆիկացիա"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
-msgstr ""
+msgstr "Firewall–ի կոնֆիգուրացիա"
 
 #: ../src/textWindow.py:36
 msgid "Keyboard configuration"
-msgstr ""
+msgstr "Ստեղնաշարի կոնֆիգուրացիա"
 
 #: ../src/textWindow.py:37
 msgid "Network configuration"
-msgstr ""
+msgstr "Ցանցի կոնֆիգուրացիա"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration"
-msgstr ""
+msgstr "Պրինտերի կոնֆիգուրացիա"
 
 #: ../src/textWindow.py:39
 msgid "System services"
@@ -116,11 +119,11 @@ msgstr "Համակարգի ծառայություններ"
 
 #: ../src/textWindow.py:40
 msgid "Sound card configuration"
-msgstr ""
+msgstr "Ձայնային քարտի կոնֆիգուրացիա"
 
 #: ../src/textWindow.py:41
 msgid "Timezone configuration"
-msgstr ""
+msgstr "Ժամային գօտու կոնֆիգուրացիա"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
@@ -128,11 +131,11 @@ msgstr ""
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Ընտրեք, թե ինչն եք ցանկանում փոփոխել"
 
 #: ../src/textWindow.py:51
 msgid "Setup Agent"
-msgstr ""
+msgstr "Տեղադրման օգնական"
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
@@ -144,11 +147,11 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr ""
+msgstr "Դրեք \"Red Hat Enterprise Linux Extras\" վերնագրով դիսկը, որպեսզի հնարավոր լինի տեղադրել հավելյալ ծրագրեր և հնարավորություններ։ Նաև կարող եք դնել դոկումենտացիայի կամ «Red Hat–ի» կողմից տրամադրված որևէ այլ դիսկ։"
 
 #: ../src/modules/additional_cds.py:67
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Տեղադրեք հավելյալ ծրագրերի դիսկերը (եթե կան)։"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
@@ -159,10 +162,14 @@ msgid ""
 "architecture, you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Որպեսզի թույլատրել 32 բիթանի ծրագրերի աշխատանքը Intel Itanium2 "
+"համակարգերի վրա, դուք պետք է տեղադրեք Intel Execution Layer փաթեթը հավելյալ ծրագրերի դիսկից։"
 
 #: ../src/modules/additional_cds.py:114
 msgid "Install..."
-msgstr ""
+msgstr "Տեղադրում…"
 
 #: ../src/modules/additional_cds.py:160
 msgid ""
@@ -172,7 +179,7 @@ msgstr "CD-ROM–ը չկա։ Այն դրեք սարգի մեջ և սեղմեք \
 
 #: ../src/modules/additional_cds.py:194
 msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
+msgstr "Դիսկի վրա ավտորան ծրագիր չկա։ Շարունակելու համար սեղմեք \"OK\"։"
 
 #: ../src/modules/create_user.py:43
 msgid "System User"
@@ -299,7 +306,7 @@ msgstr "Ամիս–ամսաթիվ"
 
 #: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Ուղղեք համակարգի ամիս–ամսաթիվը։"
 
 #: ../src/modules/display.py:44
 msgid "Display"
@@ -311,21 +318,21 @@ msgstr ""
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
-msgstr ""
+msgstr "Ավարտել տեղադրումը"
 
 #: ../src/modules/finished.py:33
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
-msgstr ""
+msgstr "Այժմ համակարգը տեղադրված է և պատրաստ է օգտագործման։ Սեղմեք ներքևի աջ անկյունի \"Next\" կոճակը, որպեսզի շարունակել։"
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr ""
+msgstr "Սեղմեք ներքևի աջ անկյունի \"Next\" կոճակը, որպեսզի շարունակել։"
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
-msgstr ""
+msgstr "Ցանցի տեղադրում"
 
 #: ../src/modules/networking.py:68
 msgid "The following network devices have been detected on the system:"
@@ -333,7 +340,7 @@ msgstr "Համակարգչում հայտնաբերվել են հետևյալ ց
 
 #: ../src/modules/networking.py:87
 msgid "Network Device"
-msgstr ""
+msgstr "Ցանցային սարք"
 
 #: ../src/modules/networking.py:89
 msgid "Boot protocol"
@@ -341,7 +348,7 @@ msgstr ""
 
 #: ../src/modules/networking.py:95
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "_Փոխել ցանցային կոնֆիգուրացիան…"
 
 #: ../src/modules/networking.py:141
 msgid "static"
