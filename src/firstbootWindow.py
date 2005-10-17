@@ -179,9 +179,9 @@ class firstbootWindow:
         self.bb.pack_start(self.backButton)
         # Create the "go forward" button.
         self.nextButton = gtk.Button(stock='gtk-go-forward')
-        label = self.nextButton.get_children()[0].get_children()[0].get_children()[1]
-        label.set_text(_("_Next"))
-        label.set_property("use_underline", True)
+        self.nextLabel = self.nextButton.get_children()[0].get_children()[0].get_children()[1]
+        self.nextLabel.set_text(_("_Next"))
+        self.nextLabel.set_property("use_underline", True)
         
         self.nextHandler = self.nextButton.connect('clicked', self.nextClicked)
 
@@ -322,6 +322,8 @@ class firstbootWindow:
         if not tmp:
             self.nextButton.disconnect(self.nextHandler)
             self.nextHandler = self.nextButton.connect('clicked', self.finishClicked)
+            self.nextLabel.set_text(_("_Finish"))
+            self.nextLabel.set_property("use_underline", True)
             self.win.disconnect(self.winHandler)
             self.winHandler = self.win.connect ("key-release-event", self.closeRelease)
 

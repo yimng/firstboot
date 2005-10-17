@@ -31,9 +31,9 @@ class childWindow:
         internalVBox.set_border_width(10)
 
         self.txt = _("Your system is now set up and ready to use.  Please "
-                            "click the \"Next\" button in the lower right corner to continue.")
+                            "click the \"Finish\" button in the lower right corner to continue.")
 
-        self.post_txt = _("Please click the \"Next\" button in the lower right corner to continue.")
+        self.post_txt = _("Please click the \"Finish\" button in the lower right corner to continue.")
         self.label = gtk.Label(self.txt)
             
         self.label.set_line_wrap(True)
