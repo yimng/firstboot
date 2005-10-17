@@ -81,9 +81,9 @@ def ditheredImageFromFile(filename, height = None, width = None):
                                      gtk.gdk.INTERP_BILINEAR)
 
     (pixmap, mask) = pixbuf.render_pixmap_and_mask()
-    pixbuf.render_to_drawable(pixmap, gtk.gdk.GC(pixmap), 0, 0, 0, 0,
-                              pixbuf.get_width(), pixbuf.get_height(),
-                              gtk.gdk.RGB_DITHER_MAX, 0, 0)
+    pixmap.draw_pixbuf(gtk.gdk.GC(pixmap), pixbuf, 0, 0, 0, 0,
+                       pixbuf.get_width(), pixbuf.get_height(),
+                       gtk.gdk.RGB_DITHER_MAX, 0, 0)
 
     pix = gtk.Image()
     pix.set_from_pixmap(pixmap, mask)

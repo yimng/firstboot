@@ -91,9 +91,8 @@ class firstbootWindow:
         if pixbuf is not None:
             pixbuf = pixbuf.scale_simple(x_screen, y_screen, gtk.gdk.INTERP_BILINEAR)
             bgimage = gtk.gdk.Pixmap(self.win.window, x_screen, y_screen, -1)
-            gc = bgimage.new_gc()
-            pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, x_screen,
-                                      y_screen, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+            bgimage.draw_pixbuf(gtk.gdk.GC(bgimage), pixbuf, 0, 0, 0, 0,
+                                x_screen, y_screen)
             self.win.set_app_paintable(True)
             self.win.window.set_back_pixmap(bgimage, False)
 
@@ -378,8 +377,8 @@ class firstbootWindow:
     def eb_realized(self, eb):
         pixbuf = functions.pixbufFromFile("bg.png")
         bgimage = gtk.gdk.Pixmap(eb.window, 800, 600, -1)
-        gc = bgimage.new_gc()
-        pixbuf.render_to_drawable(bgimage, gc, 0, 0, 0, 0, 800, 600, gtk.gdk.RGB_DITHER_MAX, 0, 0)
+        bgimage.draw_pixbuf(gtk.gdk.GC(bgimage), pixbuf, 0, 0, 0, 0, 800,
+                            600, gtk.gdk.RGB_DITHER_MAX)
         eb.set_app_paintable(True)
         eb.window.set_back_pixmap(bgimage, False)
 
