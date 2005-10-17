@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.50
+Version: 1.3.51
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -75,6 +75,11 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Oct 17 2005 Chris Lumens <clumens@redhat.com> 1.3.51-1
+- Fix whrandom deprecation warnings.
+- Fix render_to_drawable deprecation warnings.
+- Change "Next" button on last page to "Finish".
+
 * Tue Oct 11 2005 Chris Lumens <clumens@redhat.com> 1.3.50-1
 - Decrease blank space on finished screen (#144496).
 - Fix import of rhpxl.videocard.
