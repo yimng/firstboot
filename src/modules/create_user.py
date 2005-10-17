@@ -21,7 +21,7 @@ from rhpl.translate import _, N_
 from rhpl import translate
 translate.textdomain("firstboot")
 
-import crypt,whrandom
+import crypt,random
 
 def cryptPassword(password, useMD5 = 1):
     if useMD5:
@@ -32,8 +32,7 @@ def cryptPassword(password, useMD5 = 1):
         saltLen = 2
 
     for i in range(saltLen):
-        salt = salt + whrandom.choice (string.letters +
-                                           string.digits + './')
+        salt = salt + random.choice (string.letters + string.digits + './')
 
     return crypt.crypt (password, salt)
 
