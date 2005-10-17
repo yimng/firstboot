@@ -73,27 +73,26 @@ msgstr ""
 "Satu salinan keluaran debug telah disimpan di %s \n"
 "Pastikan fail tersebut dilampirkan bersama laporan pepijat. \n"
 
-#: ../src/firstbootWindow.py:175
-#: ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
 msgid "_Back"
 msgstr "_Undur"
 
-#: ../src/firstbootWindow.py:183
-#: ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
 msgid "_Next"
 msgstr "_Maju"
 
 #: ../src/firstbootWindow.py:262
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Sistem mesti mengulangboot sekarang untuk sebahagian dari pilihan anda berfungsi."
+msgstr ""
+"Sistem mesti mengulangboot sekarang untuk sebahagian dari pilihan anda "
+"berfungsi."
 
 #: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "mengimport modul %s gagal: %s"
 
-#: ../src/firstbootWindow.py:556
-#: ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Selamat Datang"
@@ -142,14 +141,21 @@ msgstr "Pilih perkara yang anda hendak ubahsuai "
 msgid "Setup Agent"
 msgstr "Agen Pemasangan"
 
-#: ../src/modules/additional_cds.py:43
-#: ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
 msgid "Additional CDs"
 msgstr "CD Tambahan"
 
 #: ../src/modules/additional_cds.py:61
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Sila masukkan cakera berlabel \"Red Hat Enterprise Linux Extras\" untuk membenarkan pemasangan plug-in dan aplikasi pihak-ketiga.  Anda juga boleh memasukkan cakera Dokumentasi, atau cakera yang disediakan oleh Red Hat untuk memasang perisian tambahan pada masa ini."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Sila masukkan cakera berlabel \"Red Hat Enterprise Linux Extras\" untuk "
+"membenarkan pemasangan plug-in dan aplikasi pihak-ketiga.  Anda juga boleh "
+"memasukkan cakera Dokumentasi, atau cakera yang disediakan oleh Red Hat "
+"untuk memasang perisian tambahan pada masa ini."
 
 #: ../src/modules/additional_cds.py:67
 msgid "Please insert any additional software install cds at this time."
@@ -160,22 +166,31 @@ msgstr "Sila masukkan sebarang cd pemasangan perisian tambahan pada masa ini."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture, you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture, you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Untuk menghidupkan sokongan pelaksanaan aplikasi 32-bit pada rekabentuk Intel Itanium2, anda mesti memasang pakej Intel Execution Layer daripada cakera Extra sekarang."
+"Untuk menghidupkan sokongan pelaksanaan aplikasi 32-bit pada rekabentuk "
+"Intel Itanium2, anda mesti memasang pakej Intel Execution Layer daripada "
+"cakera Extra sekarang."
 
 #: ../src/modules/additional_cds.py:114
 msgid "Install..."
 msgstr "Pasang..."
 
 #: ../src/modules/additional_cds.py:160
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "CD-ROM tidak dapat dikesan.  Sila masukkan CD-ROM dalam pemacu dan klik \"OK\" untuk meneruskan."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ROM tidak dapat dikesan.  Sila masukkan CD-ROM dalam pemacu dan klik \"OK"
+"\" untuk meneruskan."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Program autorun tidak dijumpai pada cd. Klik \"OK\" untuk meneruskan."
 
 #: ../src/modules/create_user.py:43
@@ -183,8 +198,14 @@ msgid "System User"
 msgstr "Pengguna Sistem"
 
 #: ../src/modules/create_user.py:70
-msgid "It is recommended that you create a system 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "Adalah disyorkan anda mencipta 'nama pengguna' sistem untuk kegunaan biasa 'bukan pentadbiran' bagi sistem anda. Untuk mencipta 'nama pengguna' sistem, sila berikan maklumat yang diminta dibawah."
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Adalah disyorkan anda mencipta 'nama pengguna' sistem untuk kegunaan biasa "
+"'bukan pentadbiran' bagi sistem anda. Untuk mencipta 'nama pengguna' sistem, "
+"sila berikan maklumat yang diminta dibawah."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -203,15 +224,22 @@ msgid "Confir_m Password:"
 msgstr "Pastikan Katalaluan:"
 
 #: ../src/modules/create_user.py:117
-msgid "If you need to use network authentication such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Jika anda hendak menggunakan pengesahan rangkaian seperti Kerberos atau NIS, sila klik pada butang Guna Logmasuk Rangkaian."
+msgid ""
+"If you need to use network authentication such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Jika anda hendak menggunakan pengesahan rangkaian seperti Kerberos atau NIS, "
+"sila klik pada butang Guna Logmasuk Rangkaian."
 
 #: ../src/modules/create_user.py:127
 msgid "Use Network _Login..."
 msgstr "Guna _Logmasuk Rangkaian..."
 
 #: ../src/modules/create_user.py:163
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 msgstr "pengguna dalam."
 
 #: ../src/modules/create_user.py:171
@@ -232,8 +260,12 @@ msgstr "Katalaluan terlalu singkat.  Sila gunakan sekurang-kurangnya 6 aksara."
 
 #: ../src/modules/create_user.py:217
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Nama pengguna '%s' adalah akaun sistem dikhaskan. Sila nyatakan nama pengguna lain."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Nama pengguna '%s' adalah akaun sistem dikhaskan. Sila nyatakan nama "
+"pengguna lain."
 
 #: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
@@ -246,32 +278,54 @@ msgstr "Nama pengguna tidak boleh bermula dengan nombor."
 #. Check for whitespace
 #: ../src/modules/create_user.py:282
 #, python-format
-msgid "The user name '%s' contains whitespace.  Please do not include whitespace in the user name."
-msgstr "Nama pengguna '%s' mengandungi ruang.  Sila jangan masukkan ruang dalam nama pengguna."
+msgid ""
+"The user name '%s' contains whitespace.  Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Nama pengguna '%s' mengandungi ruang.  Sila jangan masukkan ruang dalam nama "
+"pengguna."
 
 #: ../src/modules/create_user.py:289
 #, python-format
-msgid "The user name '%s' contains punctuation characters.  Please do not use punctuation in the user name."
-msgstr "Nama pengguna '%s' mengandungi aksara punctuation.  Sila jangan gunakan punctuation dalam nama pengguna."
+msgid ""
+"The user name '%s' contains punctuation characters.  Please do not use "
+"punctuation in the user name."
+msgstr ""
+"Nama pengguna '%s' mengandungi aksara punctuation.  Sila jangan gunakan "
+"punctuation dalam nama pengguna."
 
 #: ../src/modules/create_user.py:296
 #, python-format
-msgid "The user name '%s' contains uppercase characters.  Please do not use uppercase characters in the user name."
-msgstr "Nama pengguna '%s' mengandungi aksara huruf besar.  Sila jangan guna aksara huruf besar dalam nama pengguna."
+msgid ""
+"The user name '%s' contains uppercase characters.  Please do not use "
+"uppercase characters in the user name."
+msgstr ""
+"Nama pengguna '%s' mengandungi aksara huruf besar.  Sila jangan guna aksara "
+"huruf besar dalam nama pengguna."
 
 #: ../src/modules/create_user.py:303
 #, python-format
-msgid "The user name '%s' contains invalid characters.  Please use only ASCII characters."
-msgstr "Nama pengguna.'%s' mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
+msgid ""
+"The user name '%s' contains invalid characters.  Please use only ASCII "
+"characters."
+msgstr ""
+"Nama pengguna.'%s' mengandungi aksara tidak sah.  Sila gunakan hanya aksara "
+"ASCII."
 
 #: ../src/modules/create_user.py:313
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Kata laluan mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Kata laluan mengandungi aksara tidak sah.  Sila gunakan hanya aksara ASCII."
 
 #: ../src/modules/create_user.py:323
 #, python-format
-msgid "The name '%s' contains invalid characters.  Please use only letters, numbers, whitespace and the underscore character."
-msgstr "Nama '%s' mengandungi aksara tidak sah.  Sila gunakan hanya huruf, nombor, ruang dan aksara garisbawah."
+msgid ""
+"The name '%s' contains invalid characters.  Please use only letters, "
+"numbers, whitespace and the underscore character."
+msgstr ""
+"Nama '%s' mengandungi aksara tidak sah.  Sila gunakan hanya huruf, nombor, "
+"ruang dan aksara garisbawah."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -294,8 +348,12 @@ msgid "Finish Setup"
 msgstr "Tetapan Tamat"
 
 #: ../src/modules/finished.py:33
-msgid "Your system is now set up and ready to use.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Sistem anda telah ditetapkan dan sedia untuk diguna.  Sila klik butang \"Maju\" pada bucu kanan bawah untuk meneruskan."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
+"button in the lower right corner to continue."
+msgstr ""
+"Sistem anda telah ditetapkan dan sedia untuk diguna.  Sila klik butang \"Maju"
+"\" pada bucu kanan bawah untuk meneruskan."
 
 #: ../src/modules/finished.py:36
 msgid "Please click the \"Next\" button in the lower right corner to continue."
@@ -325,8 +383,7 @@ msgstr "Ubah Konfigurasi Rangkaian..."
 msgid "static"
 msgstr "statik"
 
-#: ../src/modules/soundcard_gui.py:43
-#: ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Kad Bunyi"
 
@@ -335,8 +392,16 @@ msgid "A sound card has been detected on your computer."
 msgstr "Kad bunyi telah dikesan pada komputer anda."
 
 #: ../src/modules/soundcard_gui.py:68
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Klik butang \"Mainkan ujian bunyi\" untuk mendengar contoh bunyi.  Anda sepatutnya mendengar rangkaian tiga bunyi.  Bunyi pertama akan berada di saluran kanan, bunyi kedua akan berada di saluran kiri, dan bunyi ketiga akan berada di tengah-tengah."
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Klik butang \"Mainkan ujian bunyi\" untuk mendengar contoh bunyi.  Anda "
+"sepatutnya mendengar rangkaian tiga bunyi.  Bunyi pertama akan berada di "
+"saluran kanan, bunyi kedua akan berada di saluran kiri, dan bunyi ketiga "
+"akan berada di tengah-tengah."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -347,6 +412,11 @@ msgid "Please set the timezone for the system."
 msgstr "Sila tetapkan zonmasa untuk sistem."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Terdapat beberapa langkah lagi sebelum sistem anda sedia untuk digunakan.  Agen Tetapan akan membantu anda melalui beberapa tetapan asas.  Sila klik butang \"Maju\" pada bahagian sudut bawah kanan untuk meneruskan."
-
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Terdapat beberapa langkah lagi sebelum sistem anda sedia untuk digunakan.  "
+"Agen Tetapan akan membantu anda melalui beberapa tetapan asas.  Sila klik "
+"butang \"Maju\" pada bahagian sudut bawah kanan untuk meneruskan."
