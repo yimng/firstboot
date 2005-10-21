@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-07 10:44-0400\n"
-"PO-Revision-Date: 2005-09-10 00:49+0200\n"
+"PO-Revision-Date: 2005-10-08 11:37+0200\n"
 "Last-Translator: Marek Garbaczewski <mrgary@fic.uni.lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -67,10 +67,11 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Wyślij informacje o błędzie do systemu śledzenia błędów \n"
-"firmy Red Hat (http://www.redhat.com/bugzilla. \n"
-"Kopia informacji o błędzie została zapisana do %s \n"
-"Upewnij się, że załączyłeś ten plik do raportu. \n"
+"Wyślij informacje o błędzie w narzędziu \"firstboot\" \n"
+"do systemu śledzenia błędów firmy Red Hat na \n"
+"http://www.redhat.com/bugzilla. Kopia informacji o \n"
+"błędzie została zapisana do %s. Upewnij się, że \n"
+"załączyłeś ten plik do raportu. \n"
 
 #: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
 msgid "_Back"
@@ -172,8 +173,8 @@ msgstr ""
 "\n"
 "\n"
 "Aby włączyć obsługę aplikacji 32-bitowych w architekturze Intel Itanium 2 "
-"musisz zainstalować pakiet Intel Execution Layer z płyty z dodatkami "
-"(Extras) do systemu."
+"musisz zainstalować pakiet Intel Execution Layer z płyty z dodatkami (Extras) "
+"do systemu."
 
 #: ../src/modules/additional_cds.py:114
 msgid "Install..."
@@ -206,7 +207,7 @@ msgid ""
 msgstr ""
 "Zalecane jest utworzenie prywatnego konta użytkownika do zwykłego "
 "(nieadministracyjnego) używania systemu. Aby utworzyć prywatne konto, podaj "
-"potrzebne informacje poniżej."
+"wymagane informacje poniżej."
 
 #: ../src/modules/create_user.py:80
 msgid "_Username:"
@@ -268,7 +269,7 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Nazwa użytkownika '%s' jest zarezerwowanym kontem systemowym. Podaj inną "
+"Nazwa użytkownika \"%s\" jest zarezerwowanym kontem systemowym. Podaj inną "
 "nazwę użytkownika."
 
 #: ../src/modules/create_user.py:264
@@ -286,7 +287,8 @@ msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Nazwa użytkownika '%s' zawiera niewidoczne znaki, których nie może zawierać."
+"Nazwa użytkownika \"%s\" zawiera biały znak. Nie umieszczaj białych znaków w "
+"nazwie użytkownika."
 
 #: ../src/modules/create_user.py:289
 #, python-format
@@ -294,8 +296,8 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Nazwa użytkownika '%s' zawiera znaki interpunkcyjne, których nie może "
-"zawierać."
+"Nazwa użytkownika \"%s\" zawiera znaki interpunkcyjne. Nie umieszczaj znaków "
+"interpunkcyjnych w nazwie użytkownika."
 
 #: ../src/modules/create_user.py:296
 #, python-format
@@ -303,8 +305,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Nazwa użytkownika '%s' zawiera duże litery. Używaj tylko małe znaki w nazwie "
-"użytkownika."
+"Nazwa użytkownika \"%s\" zawiera duże litery. Używaj tylko małych znaków w "
+"nazwie użytkownika."
 
 #: ../src/modules/create_user.py:303
 #, python-format
@@ -312,7 +314,8 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Nazwa użytkownika '%s' zawiera nieznane znaki. Używaj tylko znaków ASCII."
+"Nazwa użytkownika \"%s\" zawiera nieprawidłowe znaki. Używaj tylko znaków "
+"ASCII."
 
 #: ../src/modules/create_user.py:313
 msgid ""
@@ -320,11 +323,13 @@ msgid ""
 msgstr "Hasło zawiera nieprawidłowe znaki. Używaj tylko znaków ASCII."
 
 #: ../src/modules/create_user.py:323
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
 "numbers, whitespace and the underscore character."
-msgstr "Nazwa '%s' zawiera nieprawidłowe znaki. Używaj tylko znaków ASCII."
+msgstr ""
+"Nazwa \"%s\" zawiera nieprawidłowe znaki. Używaj tylko liter, liczb, białych "
+"znaków i podkreślników."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -336,7 +341,7 @@ msgstr "Ustaw datę i czas dla systemu."
 
 #: ../src/modules/display.py:44
 msgid "Display"
-msgstr "Wyświetl"
+msgstr "Ekran"
 
 #: ../src/modules/display.py:47
 msgid "Please select the resolution and color depth that you wish to use"
