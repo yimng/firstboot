@@ -6,6 +6,7 @@
 # translation of bn_IN.po to Bangla (INDIA)
 # translation of bn_IN.po to Bangla (INDIA)
 # translation of bn_IN.po to Bangla (INDIA)
+# translation of bn_IN.po to Bangla (INDIA)
 # translation of bn.po to bangla
 # Bengali Translation of Firstboot
 # Copyright (C) 2004 Red Hat Inc.
@@ -18,7 +19,7 @@ msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-07 10:44-0400\n"
-"PO-Revision-Date: 2005-07-13 12:19+0530\n"
+"PO-Revision-Date: 2005-10-24 09:49+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla (INDIA) <redhat-translation@bengalinux.org>\n"
 "MIME-Version: 1.0\n"
@@ -101,7 +102,7 @@ msgstr "পরবর্তী(_N)"
 
 #: ../src/firstbootWindow.py:262
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "আপনার পরিবর্তনগুলি প্রয়োগ করার জন্য সিস্টেম পুনরায় আরম্ভ করা হবে।"
 
 #: ../src/firstbootWindow.py:413
 #, python-format
@@ -215,8 +216,7 @@ msgstr ""
 "জন্য \"ঠিক আছে\" চাপুন।"
 
 #: ../src/modules/additional_cds.py:194
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "CD অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
@@ -295,13 +295,11 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষরের পাসওয়ার্ড লিখুন।"
 
 #: ../src/modules/create_user.py:217
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
-"মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
+msgstr "'%s' ব্যবহারকারীর নাম একটি সিস্টেম অ্যাকাউন্টের জন্য সংরক্ষিত। অনুগ্রহ করে অন্য ব্যবহারকারীর নাম উল্লেখ করুন।"
 
 #: ../src/modules/create_user.py:264
 msgid "The user name must be less than 33 characters long."
@@ -332,13 +330,13 @@ msgstr ""
 "মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
 
 #: ../src/modules/create_user.py:296
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
-"মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
+"ব্যবহারকারীর নাম '%s'-র মধ্য বড় ছাঁদের হরফ উপস্থিত রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
+"মধ্যে কোনো বড় ছাঁদের হরফ প্রয়োগ করবেন না।"
 
 #: ../src/modules/create_user.py:303
 #, python-format
@@ -350,16 +348,15 @@ msgstr ""
 "মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
 
 #: ../src/modules/create_user.py:313
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
 #: ../src/modules/create_user.py:323
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
 "numbers, whitespace and the underscore character."
-msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
+msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু অক্ষর, সংখ্যা, শূণ্যস্থান ও আন্ডারস্কোর ব্যবহার করুন।"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -464,3 +461,4 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+
