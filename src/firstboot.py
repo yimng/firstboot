@@ -22,6 +22,7 @@
 
 import os
 import string
+import signal
 import sys
 import rhpl.keyboard as keyboard
 import rhpl
@@ -82,6 +83,9 @@ class Firstboot:
         if os.access(path, os.R_OK):
            os.system("xrdb -merge %s" % path)
 
+    def alarmHandler(signum, frame):
+        raise IOError
+
     # Initializes the UI for firstboot by starting up an X server and
     # window manager, but returns control to the caller to proceed.
     def startGraphicalUI(self):
@@ -122,7 +126,15 @@ class Firstboot:
             os.write(wr, "#")
 
         # Block on read of token
-        os.read(rd, 1)
+        signal.signal(signal.SIGALRM, alarmHandler)
+        signal.alarm(10)
+
+        try:
+            os.read(rd, 1)
+        except IOError:
+            raise RuntimeError, "Couldn't communicate with window manager"
+
+        signal.alarm(0)
         os.close(rd)
         os.close(wr)
 
