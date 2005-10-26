@@ -83,7 +83,7 @@ class Firstboot:
         if os.access(path, os.R_OK):
            os.system("xrdb -merge %s" % path)
 
-    def alarmHandler(signum, frame):
+    def alarmHandler(self, signum, frame):
         raise IOError
 
     # Initializes the UI for firstboot by starting up an X server and
@@ -126,7 +126,7 @@ class Firstboot:
             os.write(wr, "#")
 
         # Block on read of token
-        signal.signal(signal.SIGALRM, alarmHandler)
+        signal.signal(signal.SIGALRM, self.alarmHandler)
         signal.alarm(10)
 
         try:
@@ -187,7 +187,7 @@ class Firstboot:
 
         if not self.wm_pid:
             path = '/usr/bin/metacity'
-            args = ['--display=:1']
+            args = [path, '--display=:1']
             os.execvp(path, args)
 
         status = 0
