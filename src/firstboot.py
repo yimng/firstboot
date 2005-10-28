@@ -140,7 +140,6 @@ class Firstboot:
 
         self.wm_pid = self.startWindowManager()
         self.mergeXresources()
-        self.setKeyboard()
 
     # Initializes the UI for firstboot via rhgb, but returns control to
     # the caller to proceed.
@@ -154,7 +153,6 @@ class Firstboot:
         self.wm_pid = self.startWindowManager()
         self.mergeXresources()
         self.rhgb = True
-        self.setKeyboard()
 
     # Sets up the text UI and assumes control.  The caller will never be
     # returned to and firstboot will exit from within here.
@@ -175,11 +173,6 @@ class Firstboot:
             firstbootBackend.writeSysconfigFile(self.doDebug)
             os._exit(0)
 
-    def setKeyboard(self):
-        kb = keyboard.Keyboard()
-        kb.read()
-        kb.activate()
-
     # Attempt to start up the window manager.  Check the value of self.wm_pid
     # afterwards to see if this succeeded.
     def startWindowManager(self):    
@@ -187,7 +180,7 @@ class Firstboot:
 
         if not self.wm_pid:
             path = '/usr/bin/metacity'
-            args = [path, '--display=:1']
+            args = [path, '--display=%s' % os.environ["DISPLAY"]]
             os.execvp(path, args)
 
         status = 0

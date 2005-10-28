@@ -192,6 +192,14 @@ class firstbootWindow:
         # Add the main HBox to a VBox which will sit in the window.
         mainVBox.pack_start(self.mainHBox)
 
+        # This should really be in firstboot.py, but something about
+        # importing all the modules screws the keyboard up only when we
+        # start from rhgb.  So here it is.
+	from rhpl.keyboard import Keyboard
+	kbd = Keyboard()
+	kbd.read()
+	kbd.activate()
+
         self.win.show_all()
         self.win.present()
         self.nextButton.grab_focus()
