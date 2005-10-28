@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-10-10 13:48+1000\n"
 "Last-Translator: Waika Liu <wliu@redhat.com>\n"
 "Language-Team:  <zh@li.org>\n"
@@ -82,24 +82,30 @@ msgstr ""
 "除錯輸出的一個複本已經儲存到 %s \n"
 "請確定有附上這個檔案到程式錯誤報告。\n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "上一步(_B)"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "下一步(_N)"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "為了讓一些您所選擇的程式生效,系統現在必須重新啟動。"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "完成設定"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "匯入模組 %s 失敗：%s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "歡迎"
@@ -196,11 +202,11 @@ msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式，請點選 『確定』 以繼續。"
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "系統使用者"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -209,23 +215,23 @@ msgstr ""
 "強烈建議您建立一個系統「使用者」帳號，以做一般用途（非系統管理）。要建立一個"
 "系統「使用者」，請在底下提供所要求的資訊。"
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "使用者名稱(_U)："
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "全名(_E)："
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "密碼(_P)："
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "密碼確認(_M)："
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -233,11 +239,11 @@ msgstr ""
 "假如您需要使用例如 Kerberos 或 NIS 等的網路認證方式，請點選『使用網路登入』的"
 "按鈕。"
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "使用網路登入(_L)..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -246,72 +252,72 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號，在您建立一個帳號之前， 假如您選擇繼續，您"
 "便只能以保留做系統管理使用的 root 帳號登入。"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "繼續(_C)"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "建立帳號(_A)"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "密碼不符。 請再試一次。"
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短了，至少您得使用 6 個字元。"
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "使用者名稱 '%s' 是系統的保留帳號,請指定另一個使用名稱。"
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "使用者名稱的長度必須在 33 個字元以內。"
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "使用者名稱不能以數字開頭。"
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "使用者名稱 '%s' 含有空白，使用者名稱中不能含有空白。"
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "使用者名稱 '%s' 含有標點符號，請勿使用標點符號在使用者名稱上。"
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "使用者名稱 '%s' 含有大寫字元，請勿使用大寫字在使用者名稱上。"
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -326,11 +332,11 @@ msgstr "日期與時間"
 msgid "Please set the date and time for the system."
 msgstr "請設定系統的日期與時間。"
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "顯示器"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "請選擇您想要使用的螢幕解析度與彩度"
 
@@ -339,13 +345,16 @@ msgid "Finish Setup"
 msgstr "完成設定"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr "現在您的系統已經設定好可以使用了，請點選右下角的『下一步』按鈕繼續。"
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "請點選右下角的『下一步』按鈕繼續。"
 
 #: ../src/modules/networking.py:42

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-10-11 23:27+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -75,26 +75,32 @@ msgstr ""
 "debug-uitvoer is opgeslagen in %s Vergeet niet om dit \n"
 "bestand als bijlage te voegen bij het fout-rapport. \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "_Terug"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "_Volgende"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Het systeem wordt nu herstart om sommige keuzes die u hebt gemaakt door te "
 "voeren."
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Setup voltooien"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "importeren van module %s is mislukt: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Welkom"
@@ -197,11 +203,11 @@ msgstr ""
 "Het 'autorun' programma kan niet worden gevonden op de CD. Klik op \"OK\" om "
 "door te gaan."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "Systeemgebruiker"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -211,24 +217,24 @@ msgstr ""
 "(dus geen systeembeheer) een persoonlijk account aan te maken. Om een "
 "persoonlijk account aan te maken, moet u de gevraagde informatie leveren."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_Gebruikersnaam:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "_Volledige naam:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Wachtwoord:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "Wachtwoord _bevestigen:"
 
 # de 'X' knop is niet mooi: beter: de knop 'X'
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -236,11 +242,11 @@ msgstr ""
 "Als u netwerk authenticatie wilt gebruiken, zoals Kerberos of NIS, klik dan "
 "op de knop: Netwerk login gebruiken."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "_Netwerk login gebruiken..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -250,23 +256,23 @@ msgstr ""
 "doorgaat zonder account, kunt u zich alleen aanmelden met het root-account "
 "hetgeen alleen bedoeld is voor systeembeheer."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Doorgaan"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "_Account aanmaken"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "De wachtwoorden komen niet overeen. Voer het wachtwoord nogmaals in."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Het wachtwoord is te kort. Gebruik minimaal 6 tekens."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -275,17 +281,17 @@ msgstr ""
 "De gebruikersnaam '%s' is een gereserveerd systeem-account. Geef een andere "
 "gebruikersnaam."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "De gebruikersnaam moet korter zijn dan 33 tekens."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "De gebruikersnaam mag niet met een getal beginnen."
 
 # BUG: ? in the %s ?
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -294,7 +300,7 @@ msgstr ""
 "De gebruikersnaam '%s' bevat spaties of tabs. Gebruik deze niet in de "
 "gebruikersnaam."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -303,7 +309,7 @@ msgstr ""
 "De gebruikersnaam '%s' bevat leestekens. Gebruik geen leestekens in de "
 "gebruikersnaam."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -312,7 +318,7 @@ msgstr ""
 "De gebruikersnaam '%s' bevat hoofdletters. Gebruik geen hoofdletters in de "
 "gebruikersnaam."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -320,12 +326,12 @@ msgid ""
 msgstr ""
 "De gebruikersnaam '%s' bevat ongeldige tekens. Gebruik alleen ASCII-tekens."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Het wachtwoord bevat ongeldige tekens. Gebruik alleen ASCII-tekens."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -342,11 +348,11 @@ msgstr "Datum en tijd"
 msgid "Please set the date and time for the system."
 msgstr "Stel de datum en de tijd in voor het systeem."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Beeldscherm"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Selecteer de resolutie en de kleurdiepte die u wilt gebruiken"
 
@@ -356,8 +362,9 @@ msgstr "Setup voltooien"
 
 # BUG: Forward is verwarrend, moet Continue zijn of Next
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Uw systeem is nu ingesteld en klaar voor gebruik. Klik op de \"Volgende\" "
@@ -365,7 +372,9 @@ msgstr ""
 
 # BUG: Forward is verwarrend, moet Continue zijn of Next
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "Klik op de \"Volgende\" knop rechts onder in het scherm om door te gaan."
 

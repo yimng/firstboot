@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-04-24 23:12+0200\n"
 "Last-Translator: Tomislav Markovski <tome@users.ossm.org.mk>\n"
 "Language-Team: Macedonian <i18n-nb@lister.ping.uio.no>\n"
@@ -76,24 +76,30 @@ msgstr ""
 "Копија од излезот на грешката е зачуван во %s \n"
 "Пратете ја таа датотека заедно со извештајот. \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "_Напред"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Заврши со поставување"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "увезувањето на модулот %s не успеа: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Добродојдовте"
@@ -196,11 +202,11 @@ msgstr ""
 "Програмата за автоматско извршување не е пронајдена. Кликнете на „Во ред“ за "
 "понатаму."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "Системски корисник"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -210,23 +216,23 @@ msgstr ""
 "За да креирате нов корисник, внесете ги потребните информации во формата "
 "подолу."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_Корисничко име:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "Име и _презиме:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Лозинка"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "Потврд_ете ја лозинката:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -234,11 +240,11 @@ msgstr ""
 "Доколку имате потреба од мрежна авторизација како Керберос или НИС, "
 "одберетего копчето „Користи мрежна најава“."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "Користи мрежна _најава..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -248,23 +254,23 @@ msgstr ""
 "продолжите без ваков корисник, може да се најавите само привилегирано "
 "(root), кој е резервиран само за административна употреба."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Продолжи"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "Креирај _корисник"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Лозинките не се исти. Внесете ги повторно."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Лозинката е премногу кратка. Мора да има барем 6 букви или бројки."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -272,16 +278,16 @@ msgid ""
 msgstr ""
 "Корисничкото име '%s' содржи големи бикву. Ваквите знаци не се дозволени."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "Корисничкото име може да има најмногу 32 карактери."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "Корисничкото име мора да почнува со буква."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -289,7 +295,7 @@ msgid ""
 msgstr ""
 "Корисничкото име '%s' содржи празни места. Ваквите карактери не се дозволени."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -298,7 +304,7 @@ msgstr ""
 "Корисничкото име '%s' содржи интерпункциски знаци. Ваквите знаци не се "
 "дозволени."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -306,7 +312,7 @@ msgid ""
 msgstr ""
 "Корисничкото име '%s' содржи големи бикву. Ваквите знаци не се дозволени."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -315,14 +321,14 @@ msgstr ""
 "Корисничкото име '%s' содржи непознати карактери. Ваквите знаци не се "
 "дозволени."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Лозинката содржи непознати карактери.  Користете само латинични (ASCII) "
 "карактери."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, fuzzy, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -339,11 +345,11 @@ msgstr "Датум и време"
 msgid "Please set the date and time for the system."
 msgstr "Наместете го датумот и времето на вашиот систем."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Приказ"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 "Одберете ја резолуцијата и длабочината на бои што сакате да ги користите"
@@ -353,15 +359,18 @@ msgid "Finish Setup"
 msgstr "Заврши со поставување"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Вашиот систем е наместен и спремен за употреба. Одберете „Следно“ за да "
 "продолжите."
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "Одберете го копчето „Следно“ во долниот десен агол за понатаму."
 
 #: ../src/modules/networking.py:42

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2004-03-28 15:19+0200\n"
 "Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
 "Language-Team: slovenščina <translation-team-sl@lists.sourceforge.net>\n"
@@ -77,24 +77,30 @@ msgstr ""
 "izhoda se je shranil v %s. Zagotovo pripnite tudi \n"
 "to datoteko.\n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "Na_zaj"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "Na_prej"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Končaj nastavitev"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Dobrodošli"
@@ -187,12 +193,12 @@ msgid ""
 msgstr ""
 "Programa autorun ni moč najti na CD. Kliknite \"V redu\" za nadaljevanje."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 #, fuzzy
 msgid "System User"
 msgstr "Storitve Sistema"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -202,23 +208,23 @@ msgstr ""
 "Priporoča se, da ustvarite osebni uporabniški račun za običajno (ne-"
 "skrbniško) rabo. Za to podajte zahtevane podatke."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_Uporabniško ime:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "_Polno ime:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Geslo:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "Po_trdite geslo:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -226,11 +232,11 @@ msgstr ""
 "Če morate uporabljati omrežno avtentikacijo kot je Kerberos ali NIS, prosim, "
 "kliknite gumb Uporabi omrežno prijavo."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "Uporabi _omrežno prijavo..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -240,23 +246,23 @@ msgstr ""
 "računa, se boste lahko prijavili le kot root, ki pa je rezerviran zgolj za "
 "skrbniško rabo."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Nadaljuj"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "Izdelaj _račun"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Gesli se razlikujeta. Prosim, znova vnesite geslo."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Geslo je prekratko. Prosim, uporabite vsaj 6 znakov."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -265,16 +271,16 @@ msgstr ""
 "Uporabniško ime '%s' je že ime rezerviranega sistemskega računa. Prosim, "
 "določite novo uporabniško ime."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "Uporabniško ime mora biti dolgo manj kot 33 znakov."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "Uporabniško ime se ne sme začeti s številko."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -283,7 +289,7 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje prazne znake. Prosim, ne vključujte praznih "
 "znakov v uporabniško ime."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -292,7 +298,7 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje ločila. Prosim, ne vključujte ločil v "
 "uporabniško ime."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -301,7 +307,7 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje velike črke. Prosim, ne uporabljajte velikih "
 "črk v uporabniškem imenu."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -310,12 +316,12 @@ msgstr ""
 "Uporabniško ime '%s' vsebuje neveljavne znake. Prosim, uporabljajte le znake "
 "ASCII."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Geslo vsebuje neveljavne znake. Prosim, uporabljajte le znake ASCII."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, fuzzy, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -331,11 +337,11 @@ msgstr "Datum in čas"
 msgid "Please set the date and time for the system."
 msgstr "Prosim, nastavite sistemski datum in čas."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Zaslon"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Izberite ločljivost in barvno globino"
 
@@ -344,8 +350,9 @@ msgid "Finish Setup"
 msgstr "Končaj nastavitev"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite gumb "
@@ -353,7 +360,8 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 #, fuzzy
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite gumb "
 "\"Naprej\" v spodnjem desnem kotu."

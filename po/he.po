@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-08-07 00:31+0200\n"
 "Last-Translator: David R <ddady1@gmail.com>\n"
 "Language-Team: none\n"
@@ -73,24 +73,30 @@ msgstr ""
 "עותק של פלט ניפוי השגיאות נשמר ל-%s \n"
 "בבקשה צרף אותו לדוח הבאג שלך. \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "_הקודם"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "ה_בא"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "המערכת צריכה לבצע איתחול בכדי שהשינויים שבחרת יתקבלו"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "סיום ההתקנה"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "ייבוא המודול %s נכשל: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ברוך הבא"
@@ -187,11 +193,11 @@ msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "תוכנית ההרצה האוטומטית לא נמצאה על הדיסק. לחץ \"OK\" כדי להמשיך."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "משתמש מערכת"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -200,23 +206,23 @@ msgstr ""
 "מומלץ ליצור 'שם משתמש' של המערכת לשימוש רגיל (לא ניהולי) במערכת. כדי ליצור "
 "'שם משתמש' של המערכת, בבקשה ספק את המידע למטה."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_שם משתמש:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "שם _מלא:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_סיסמה:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "_אישור סיסמה:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -224,11 +230,11 @@ msgstr ""
 "אם יש לך צורך באימות רשת כמו Kerberos או NIS, בבקשה לחץ על הכפתור \"Use "
 "Network Login\""
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "הש_תמש באימות רשת..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -237,23 +243,23 @@ msgstr ""
 "מומלץ ליצור חשבון משתמש אישי. אם תמשיך בלי ליצור חשבון, תוכל להתחבר רק עם "
 "חשבון ה-root, השמור לשימוש ניהולי בלבד."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "המש_ך"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "_צור חשבון"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "הסיסמאות לא תואמות. נא הכנס את הסיסמה שנית."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "הסיסמה קצרה מדי. נא השתמש לפחות ב-6 תווים."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -261,30 +267,30 @@ msgid ""
 msgstr ""
 "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "שם המשתמש חייב להיות קצר מ-33 תווים."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "שם המשתמש לא יכול להתחיל במספר."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "שם המשתמש '%s' מכיל רווח לבן. בבקשה אל תכלול רווח לבן בשם המשתמש."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "שם המשתמש '%s' מכיל סימני פיסוק. בבקשה אל תשתמש בפיסוק בשם המשתמש."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -292,19 +298,19 @@ msgid ""
 msgstr ""
 "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "שם המשתמש '%s' מכיל תווים לא חוקיים. בבקשה השתמש רק בתווי ASCII."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "הסיסמה מכילה תווים לא חוקיים. נא השתמש רק בתווי ASCII."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, fuzzy, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -319,11 +325,11 @@ msgstr "תאריך וזמן"
 msgid "Please set the date and time for the system."
 msgstr "נא הגדר את התאריך והזמן של המערכת."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "תצוגה"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "נא בחר את הרזולוציה ועומק הצבעים שברצונך להשתמש בהם"
 
@@ -332,15 +338,18 @@ msgid "Finish Setup"
 msgstr "סיום ההתקנה"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "המערכת שלך מוכנה לשימוש. בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה "
 "בשביל להמשיך."
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה בשביל להמשיך."
 
 #: ../src/modules/networking.py:42

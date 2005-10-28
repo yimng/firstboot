@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-10-24 09:49+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla (INDIA) <redhat-translation@bengalinux.org>\n"
@@ -92,24 +92,31 @@ msgstr ""
 "debug তথ্য %s ফাইল এ রাখা হয়েছে \n"
 "ঐ ফাইলটি ত্রুটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "পূর্ববর্তী (_B)"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "পরবর্তী(_N)"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "আপনার পরিবর্তনগুলি প্রয়োগ করার জন্য সিস্টেম পুনরায় আরম্ভ করা হবে।"
 
-#: ../src/firstbootWindow.py:413
+# modified by RB
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "সেট-আপ সম্পন্ন করুন"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s-র মডিউল ইম্পোর্ট করতে ব্যর্থ: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "স্বাগতম"
@@ -216,16 +223,17 @@ msgstr ""
 "জন্য \"ঠিক আছে\" চাপুন।"
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "CD অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "সিস্টেম ব্যবহারকারী"
 
 # modified for RHEL
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -234,24 +242,24 @@ msgstr ""
 "অপ্রশাসনিক কাজে ব্যবহারের জন্য ব্যক্তিগত সিস্টেম 'username' তৈরি করার উপদেশ দেওয়া "
 "হচ্ছে। সিস্টেম 'username' তৈরি করার জন্য সকল প্রয়োজনীয় তথ্য উপলব্ধ করুন।"
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "ব্যবহারকারীর নাম(_U):"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "সম্পূর্ণ নাম(_e):"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "পাসওয়ার্ড(_P):"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ডটি নিশ্চায়ন (_m):"
 
 # msgstr "আপনি যদি "--old version
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -259,12 +267,12 @@ msgstr ""
 "আপনি যদি কোনো নেটওয়ার্ক পরিচয়-প্রমান প্রক্রিয়া যমন Kerberos অথবা NIS ব্যবহার করতে "
 "ইচ্ছুক থাকেন, তাহলে অনুগ্রহ করে নেটওয়ার্ক লগ-ইন ব্যাবহার করো বাটনটিতে ক্লিক করুন।"
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ ইন ব্যবহার করা হবে (_L)..."
 
 # modified for RHEL
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -275,43 +283,45 @@ msgstr ""
 "ব্যবহারের জন্য সংরক্ষিত।"
 
 # msgstr "_চালিয়ে যাও"
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "অগ্রসর (_C)"
 
 # msgstr "একাউন্ট তৈরী কর"
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "অ্যাকাউন্ট তৈরি করুন (_a)"
 
 # msgstr "পাসওয়ার্ডগুলো একই নয়। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "পাসওয়ার্ডগুলি মেলেনি। অনুগ্রহ করে পুনরায় পাসওয়ার্ড লিখুন।"
 
 # modified by RB
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষরের পাসওয়ার্ড লিখুন।"
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "'%s' ব্যবহারকারীর নাম একটি সিস্টেম অ্যাকাউন্টের জন্য সংরক্ষিত। অনুগ্রহ করে অন্য ব্যবহারকারীর নাম উল্লেখ করুন।"
+msgstr ""
+"'%s' ব্যবহারকারীর নাম একটি সিস্টেম অ্যাকাউন্টের জন্য সংরক্ষিত। অনুগ্রহ করে অন্য "
+"ব্যবহারকারীর নাম উল্লেখ করুন।"
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "ব্যবহারকারীর নামটি ৩৩-টি অক্ষরের মধ্যে সীমাবদ্ধ রাখা আবশ্যক।"
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "ব্যবহারকারীর নাম কোনো সংখ্যা দিয়ে শুরু করা যাবে না।"
 
 #  Check for whitespace
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -320,7 +330,7 @@ msgstr ""
 "ব্যবহারকারীর নাম '%s'-র মাঝে ফাঁকা স্থান রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
 "মধ্যে কোনো শূণ্যস্থান লিখবেন না।"
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -329,16 +339,16 @@ msgstr ""
 "ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
 "মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"ব্যবহারকারীর নাম '%s'-র মধ্য বড় ছাঁদের হরফ উপস্থিত রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
-"মধ্যে কোনো বড় ছাঁদের হরফ প্রয়োগ করবেন না।"
+"ব্যবহারকারীর নাম '%s'-র মধ্য বড় ছাঁদের হরফ উপস্থিত রয়েছে। অনুগ্রহ করে ব্যবহারকারীর "
+"নামের মধ্যে কোনো বড় ছাঁদের হরফ প্রয়োগ করবেন না।"
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -347,16 +357,19 @@ msgstr ""
 "ব্যবহারকারীর নাম '%s'-র মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
 "মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
 
-#: ../src/modules/create_user.py:313
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:312
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
 "numbers, whitespace and the underscore character."
-msgstr "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু অক্ষর, সংখ্যা, শূণ্যস্থান ও আন্ডারস্কোর ব্যবহার করুন।"
+msgstr ""
+"'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু অক্ষর, সংখ্যা, শূণ্যস্থান ও "
+"আন্ডারস্কোর ব্যবহার করুন।"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -367,12 +380,12 @@ msgstr "তারিখ এবং সময়"
 msgid "Please set the date and time for the system."
 msgstr "অনুগ্রহ করে সিস্টেমের তারিখ এবং সময় নির্ধারণ করুন।"
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "ডিসপ্লে"
 
 # modified by RB
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "অনুগ্রহ করে আপনের পছন্দের রেজলিউশন এবং রঙের গাঢ়তা সিলেক্ট করুন"
 
@@ -383,8 +396,9 @@ msgstr "সেট-আপ সম্পন্ন করুন"
 
 # modified by RB
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "আপনার সিস্টেমটি ব্যবহারের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের "
@@ -392,7 +406,9 @@ msgstr ""
 
 # modified by RB
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "পরবর্তী ধাপে যাওয়ার জন্য অনুগ্রহ করে নীচে ডানদিকের কোণায় অবস্থিত \"পরবর্তী\" "
 "বাটনটি চাপুন।"
@@ -461,4 +477,3 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
-

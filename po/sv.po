@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-10-19 23:01+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -77,24 +77,30 @@ msgstr ""
 "har sparats i %s. Försäkra dig om att du bifogar\n"
 "den filen med felrapporten.\n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "_Bakåt"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "_Nästa"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Systemet måste nu starta om för att dina val ska börja gälla."
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Slutför konfiguration"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimport av %s misslyckades: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Välkommen"
@@ -199,11 +205,11 @@ msgstr ""
 "Autorun-programmet kan inte hittas på cd-skivan. Klicka på \"OK\" för att "
 "fortsätta."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "Systemanvändare"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -213,23 +219,23 @@ msgstr ""
 "(ickeadministrativt) bruk.  För att skapa ett \"systemanvändarnamn\" anger "
 "du den information som begärs nedan."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_Användarnamn:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "Fullständigt na_mn:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Lösenord:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "_Bekräfta lösenord:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -237,11 +243,11 @@ msgstr ""
 "Om du måste använda nätverksautentisering som exempelvis Kerberos eller NIS "
 "bör du klicka på knappen Använd nätverksinloggning."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "Använd nätverksinloggning..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -251,23 +257,23 @@ msgstr ""
 "fortsätter utan ett konto kan du bara logga in med rootkontot, vilket är "
 "reserverat för administrativt bruk."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Fortsätt"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "Skapa _konto"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -276,16 +282,16 @@ msgstr ""
 "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
 "användarnamn."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "Användarnamnet måste vara mindre än 33 tecken långt."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "Användarnamnet får inte börja med en siffra."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -294,7 +300,7 @@ msgstr ""
 "Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i "
 "användarnamnet."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -303,7 +309,7 @@ msgstr ""
 "Användarnamnet \"%s\" innehåller skiljetecken.  Använd inte skiljetecken i "
 "användarnamnet."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -312,7 +318,7 @@ msgstr ""
 "Användarnamnet \"%s\" innehåller versaler.  Använd inte versaler i "
 "användarnamnet."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -321,12 +327,12 @@ msgstr ""
 "Användarnamnet \"%s\" innehåller ogiltiga tecken.  Använd endast ASCII-"
 "tecken."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "Lösenordet innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -343,11 +349,11 @@ msgstr "Datum och tid"
 msgid "Please set the date and time for the system."
 msgstr "Ställ in datum och tid för systemet."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Display"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Välj den upplösning och det färgdjup som du vill använda"
 
@@ -356,15 +362,18 @@ msgid "Finish Setup"
 msgstr "Slutför konfiguration"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
 "\"Nästa\" i nedre högra hörnet för att fortsätta."
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "Tryck på knappen \"Nästa\" i nedre högra hörnet för att fortsätta."
 
 #: ../src/modules/networking.py:42

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-10-20 22:53+0000\n"
 "Last-Translator: Thomas Ritter <nethad@gmx.net>\n"
 "Language-Team: Deutsch <fedora-trans-de@redhat.com>\n"
@@ -87,26 +87,32 @@ msgstr ""
 "Eine Kopie der Debug-Meldung wurde in %s gespeichert. \n"
 "Vergewissern Sie sich, dass Sie diese Datei dem Fehlerbericht anlegen. \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "_Zurück"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "_Weiter"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Damit einige Ihrer Einstellungen wirksam werden, muss Ihr System nun "
 "neugestartet werden."
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Setup beenden"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "Modulimport von %s fehlgeschlagen: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Willkommen"
@@ -205,16 +211,17 @@ msgstr ""
 "und klicken Sie auf \"OK\" um fortzufahren."
 
 #: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr ""
 "Kann das Autorun-Programm nicht auf der CD finden. Klicken Sie \"OK\", um "
 "fortzufahren."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "Systembenutzer"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -224,23 +231,23 @@ msgstr ""
 "administrative) Benutzung anlegen.  Um ein Benutzerkonto anzulegen, geben "
 "Sie die geforderten Informationen an."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "Ben_utzername:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "Vollständiger Nam_e:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Passwort:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "Passwort _bestätigen:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -248,11 +255,11 @@ msgstr ""
 "Sollten Sie Netzwerk-Authentifizierung wie Kerberos oder NIS benötigen, "
 "klicken Sie bitte auf den Button 'Netzwerk Login verwenden'."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "Netzwerk _Login verwenden..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -262,23 +269,24 @@ msgstr ""
 "solches Konto fortfahren, können Sie sich nur als root anmelden. Dies ist "
 "nur für administrative Aufgaben vorgesehen."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Weiter"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "_Konto anlegen"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
+msgstr ""
+"Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Das Passwort ist zu kurz.  Bitte benutzen Sie mindestens 6 Zeichen."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -287,16 +295,16 @@ msgstr ""
 "Der Benutzername '%s' ist ein reserviertes Systemkonto. Bitte wählen Sie "
 "einen anderen Benutzernamen."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "Der Benutzername darf maximal 32 Zeichen haben."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "Der Benutzername muss mit einem Buchstaben beginnen."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -305,7 +313,7 @@ msgstr ""
 "Der Benutzername '%s' enthält Leerzeichen.  Bitte verwenden Sie keine "
 "Leerzeichen im Benutzernamen."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -314,7 +322,7 @@ msgstr ""
 "Der Benutzername '%s' enthält Satzzeichen.  Bitte verwenden Sie keine "
 "solchen Zeichen im Benutzernamen."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -323,7 +331,7 @@ msgstr ""
 "Der Benutzername '%s' enthält Grossbuchstaben.  Bitte verwenden Sie keine "
 "Grossbuchstaben im Benutzernamen."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -332,18 +340,21 @@ msgstr ""
 "Der Benutzername '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur "
 "ASCII-Zeichen."
 
-#: ../src/modules/create_user.py:313
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/modules/create_user.py:312
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
 "Zeichen."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
 "numbers, whitespace and the underscore character."
-msgstr "Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur Buchstaben, Zahlen, Leerzeichen und den Unterstrich."
+msgstr ""
+"Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur "
+"Buchstaben, Zahlen, Leerzeichen und den Unterstrich."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -353,11 +364,11 @@ msgstr "Datum und Uhrzeit"
 msgid "Please set the date and time for the system."
 msgstr "Stellen Sie das Datum und die Uhrzeit des Systems ein."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Anzeige"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Wählen Sie die Auflösung und Farbtiefe die Sie verwenden möchten"
 
@@ -366,16 +377,20 @@ msgid "Finish Setup"
 msgstr "Setup beenden"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Ihr System ist nun eingerichtet und kann verwendet werden.  Klicken Sie auf "
 "die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
+msgstr ""
+"Klicken Sie auf die Schaltfläche \"Weiter\" unten rechts um fortzufahren."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -437,4 +452,3 @@ msgstr ""
 "Nur noch ein paar Schritte, und Sie können Ihr System verwenden.  Der Setup "
 "Agent führt Sie dabei durch die Basiskonfiguration.  Klicken Sie auf \"Weiter"
 "\" unten rechts, um fortzufahren."
-

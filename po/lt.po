@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2004-06-04 21:18+0300\n"
 "Last-Translator: Robertas Dereškevičius <roberto@mikrovisata.net>\n"
 "Language-Team: Lithuanian\n"
@@ -74,24 +74,30 @@ msgstr ""
 "Kopija debug išeities išsaugota į %s \n"
 "Neužmirškite prijungti bylą pranešime. \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "_Atgal"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "Pirmy_n"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Baigti Nustatymus"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Sveiki"
@@ -182,12 +188,12 @@ msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "Autorun programa nerasta cd diske. Spauskite \"GERAI\"."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 #, fuzzy
 msgid "System User"
 msgstr "Sisteminės tarnybos"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -197,23 +203,23 @@ msgstr ""
 "Rekomenduojama sukurti paprastą(be adminstr. teisių) vartotoją  darbui. "
 "Norint sukurti, įveskite reikalingą informaciją."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_Vartotojo vardas:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "Pilnas Var_das:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Slaptažodis:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "Pakarto_ti Slaptažodį:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -221,11 +227,11 @@ msgstr ""
 "Jei jums reikia tinklo autentifikacijos (pvz.: Kerberos ar NIS), prašome "
 "spausti Naudoti Tinklo Prisijungimo klavišą."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "Naudoti Tink_linį Prisijungimą..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -235,60 +241,60 @@ msgstr ""
 "nesukūrę, jūs galėsite prisijungti tik root vartotoju, kuris skirtas tik "
 "administravimui."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Tęsti"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "Sukurti _vartotoją"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Slaptažodžiai nesutampa. Prašome pervesti."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Slaptažodis per trumpas. Jis turi būti minimum 6 simbolių."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "Vartotojo vardas '%s' turi didžiąsias raides. Prašau nenaudoti jų."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "Vartotojo vardas turi būti maksimum 33 simbolių ilgio."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "Vartoto vardas negali prasidėti skaičiumi."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "Vartotojo vardas '%s' turi tarpų. Prašau įvesti be tarpų."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr "Vartotojo vardas '%s' turi papildomų simbolių. Prašau įveskite be jų."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr "Vartotojo vardas '%s' turi didžiąsias raides. Prašau nenaudoti jų."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -297,13 +303,13 @@ msgstr ""
 "Vartotojojo vardas '%s' turi negalimus simbolius. Prašome naudoti tik ASCII "
 "simbolius."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Slaptažodis turi negalimus simbolius. Prašome naudoti tik ASCII simbolius."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, fuzzy, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -319,11 +325,11 @@ msgstr "Data ir Laikas"
 msgid "Please set the date and time for the system."
 msgstr "Prašome nustatyti sistemos datą ir laiką."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Ekranas"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Prašome pasirinkti rezoliuciją ir spalvų tankį, kokį jūs naudosite"
 
@@ -332,8 +338,9 @@ msgid "Finish Setup"
 msgstr "Baigti Nustatymus"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Jūsų sistema sukonfiguruota naudojimui.  Prašau spausti \"Pirmyn\" klavišą "
@@ -341,7 +348,8 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 #, fuzzy
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "Jūsų sistema sukonfiguruota naudojimui.  Prašau spausti \"Pirmyn\" klavišą "
 "apačios dešiniam kampe, kad pratęsti."

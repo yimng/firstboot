@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2004-09-25 16:08+0300\n"
 "Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
 "Language-Team: Belorussian\n"
@@ -74,24 +74,30 @@ msgstr ""
 "была захавана ў файл %s. Далучыце гэты файл да \n"
 "паведамленьня. \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "На_зад"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "На_перад"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Завершыць наладку"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "збой імпарту модуля %s: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Шчыра вітаем!"
@@ -184,11 +190,11 @@ msgid ""
 msgstr ""
 "Праграма аўтазапуку ня знойдзена на дыске. Пстрыкніце \"Добра\" для працягу."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "Сыстэмны карыстальнік"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -199,23 +205,23 @@ msgstr ""
 "(неадміністратыўнага) выкарыстаньня. Каб стварыць уласны рахунак,паведаміце "
 "неабходныя зьвесткі."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_Уліковае імя:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "Імя й прозьві_шча:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Пароль:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "Па_цьверджаньне пароля:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -223,11 +229,11 @@ msgstr ""
 "Калі ваб неабходна сеткавая аўтэнтіфікацыя, накшталт Kerberos альбо NIS,калі "
 "ласка, пстрыкніце кнопку \"Уваход праз сетку...\"."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "Уваход праз _сетку..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -237,23 +243,23 @@ msgstr ""
 "здолееце ўвайсьці толькі як root, але гэты рахунак прызначаны толькі для "
 "адміністратыўнага выкарыстаньня."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Працяг"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "Стварыць _рахунак"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Паролі не супадаюць. Калі ласка, паўтарыце пароль."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Пароль надта кароткі. Пароль мусіць быць ня меншым за 6 знакаў."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -262,16 +268,16 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае заглаўныя літары. Калі ласка, не ўжывайце "
 "заглаўныя літары ва-ўліковых імёнах."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "Уліковае імя павінна быць меншым за 33 знакі."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "Уліковае імя ня можа пачынацца з лічбаў."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -280,7 +286,7 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае прагал. Калі ласка, не ўжывайце прагалы ва-"
 "ўліковых імёнах."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -289,7 +295,7 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае знакі прыпынку. Калі ласка, не ўжывайце знакі "
 "прыпынку ва-ўліковых імёнах."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -298,7 +304,7 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае заглаўныя літары. Калі ласка, не ўжывайце "
 "заглаўныя літары ва-ўліковых імёнах."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -307,13 +313,13 @@ msgstr ""
 "Уліковае імя \"%s\" утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце "
 "толькі ASCII знакі."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Пароль утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце толькі ASCII знакі."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, fuzzy, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -330,11 +336,11 @@ msgstr "Дата і час"
 msgid "Please set the date and time for the system."
 msgstr "Калі ласка, выстаўце дату й час для вашае сыстэмы."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Дысплэй"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 "Калі ласка, вылучыце разрозьненьне й глыбіню колераў, якую вы жадаеце "
@@ -345,8 +351,9 @@ msgid "Finish Setup"
 msgstr "Завершыць наладку"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Вашая сыстэма наладжана й падрыхтавана для выкарыстаньня. Калі ласка,"
@@ -354,7 +361,8 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 #, fuzzy
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "Вашая сыстэма наладжана й падрыхтавана для выкарыстаньня. Калі ласка,"
 "пстрыкніце кнопку \"Наперад\" у левым ніжнім куце для працягу."

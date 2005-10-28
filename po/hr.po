@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2003-12-15 22:29+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -71,24 +71,30 @@ msgstr ""
 "Kopija izlaza je spremljena u %s \n"
 "Tu datoteku prikvačite uz vaš izvještaj o grešci. \n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "_Nazad"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "_Sljedeći"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "Završi postavljanje"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Dobrodošli"
@@ -188,12 +194,12 @@ msgid ""
 msgstr ""
 "Program autorun se ne može naći na cd-u. Za nastavak pritisnite \"U redu\"."
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 #, fuzzy
 msgid "System User"
 msgstr "Servisi sustava "
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -204,23 +210,23 @@ msgstr ""
 "administrativnu) uporabu. Da biste stvorili osobni račun, morate "
 "datiodgovarajuće podatke."
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "_Korisničko ime:"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "Puno im_e:"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "_Lozinka:"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "_Potvrdi lozinku:"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -228,11 +234,11 @@ msgstr ""
 "Ako trebate koristiti mrežnu autentifikaciju poput Kerberosa ili NISa, molim "
 "kliknite na gumb Koristi mrežnu prijavu."
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "Koristi _mrežnu prijavu..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -242,23 +248,23 @@ msgstr ""
 "računa, moći ćete se prijaviti samo sa root korisničkim računom, a on je "
 "rezerviran samoo za administrativnu uporabu."
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "_Nastavi"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "Stvori _korisnički račun"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lozinka ne odgovara. Molim, ponovo unesite lozinku."
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lozinka je prekratka. Molim, koristite najmanje 6 znakova."
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -267,16 +273,16 @@ msgstr ""
 "Ime korisnika '%s' je rezervirani sustavski račun. Molim navedite drugo ime "
 "korisnika."
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "Korisničko ime mora biti kraće od 33 znakova."
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "Korisničko ime ne može početi s brojem."
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
@@ -285,7 +291,7 @@ msgstr ""
 "Ime korisnika '%s' sadrži razmake. Nemojte koristiti razmake u imenu "
 "korisnika."
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -294,7 +300,7 @@ msgstr ""
 "Ime korisnika '%s' sadrži punkcijske znakove. Nemojte koristiti punkcijske "
 "znakove u imenu korisnika."
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -303,7 +309,7 @@ msgstr ""
 "Ime korisnika '%s' sadrži velika slova. Nemojte koristiti velika slova u "
 "imenu korisnika."
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
@@ -312,13 +318,13 @@ msgstr ""
 "Ime korisnika '%s' sadrži nedozvoljene znakove. Molim koristite samo ASCII "
 "znakove."
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr ""
 "Lozinka sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, fuzzy, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -334,11 +340,11 @@ msgstr "Datum i vrijeme"
 msgid "Please set the date and time for the system."
 msgstr "Molim, postavite datum i vrijeme za sustav."
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "Prikaz"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Molime, označite razlućivost i kvalitetu boja koju želite koristiti"
 
@@ -347,8 +353,9 @@ msgid "Finish Setup"
 msgstr "Završi postavljanje"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Vaš sustav je podešen i spreman za uporabu. Za nastavak kliknite na gumb "
@@ -356,7 +363,8 @@ msgstr ""
 
 #: ../src/modules/finished.py:36
 #, fuzzy
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "Vaš sustav je podešen i spreman za uporabu. Za nastavak kliknite na gumb "
 "\"Sljedeći\" u donjem desnom kutu."

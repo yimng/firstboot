@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 10:44-0400\n"
+"POT-Creation-Date: 2005-10-28 14:43-0400\n"
 "PO-Revision-Date: 2005-08-03 05:11+0530\n"
 "Last-Translator: Amanpreet Singh Alam <amanpreetalam@yahoo.com>\n"
 "Language-Team: Punjabi <fedora-transa-pa@redhat.com>\n"
@@ -104,24 +104,30 @@ msgstr ""
 "ਡੀਬੱਗ ਆਉਟਪੁੱਟ ਦੀ ਇੱਕ ਨਕਲ ਨੂੰ %s ਵਿੱਚ ਸੰਭਾਲੀ ਜਾਵੇ ਅਤੇ\n"
 "ਯਕੀਨੀ ਕਰ ਲਵੋ ਕਿ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਵਿੱਚ ਜ਼ਰੂਰ ਦਿੱਤੀ ਜਾਵੇ।\n"
 
-#: ../src/firstbootWindow.py:175 ../src/firstbootWindow.py:560
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "ਪਿੱਛੇ(_B)"
 
-#: ../src/firstbootWindow.py:183 ../src/firstbootWindow.py:564
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "ਅੱਗੇ(_N)"
 
-#: ../src/firstbootWindow.py:262
+#: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "ਸਿਸਟਮ ਹੁਣ ਤੁਹਾਡੇ ਰਾਹੀਂ ਕੀਤੀਆਂ ਗਈਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ ਪਰਭਾਵੀ ਬਣਾਉਣ ਲਈ ਮੁੜ ਚਾਲੂ ਹੋਵੇਗਾ।"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:332
+#, fuzzy
+msgid "_Finish"
+msgstr "ਸੈਟਅੱਪ ਮੁਕੰਮਲ"
+
+#: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s ਦੇ ਮੈਡੀਊਲ ਦਾ ਆਯਾਤ ਅਸਫਲ: %s"
 
-#: ../src/firstbootWindow.py:556 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ਜੀ ਆਇਆਂ ਨੂੰ"
@@ -220,11 +226,11 @@ msgid ""
 "The autorun program cannot be found on the cd. Click \"OK\" to continue."
 msgstr "ਸੀਡੀ ਤੇ ਸਵੈ-ਚਾਲਤ ਕਾਰਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
 
-#: ../src/modules/create_user.py:43
+#: ../src/modules/create_user.py:42
 msgid "System User"
 msgstr "ਸਿਸਟਮ ਉਪਭੋਗੀ"
 
-#: ../src/modules/create_user.py:70
+#: ../src/modules/create_user.py:69
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -233,23 +239,23 @@ msgstr ""
 "ਇਸ ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ਤੁਸੀਂ ਸਧਾਰਨ(ਨਾ-ਪਰਬੰਧਕੀ) ਵਰਤੋ ਲਈ ਇੱਕ ਸਿਸਟਮ 'username' "
 "ਉਪਭੋਗੀ ਖਾਤਾ ਬਣਾਉ। ਇੱਕ ਸਿਸਟਮ 'username' ਬਣਾਉਣ ਲਈ ਹੇਠਾਂ ਲੋਡ਼ੀਂਦੀ ਜਾਣਕਾਰੀ ਦਿਉ।"
 
-#: ../src/modules/create_user.py:80
+#: ../src/modules/create_user.py:79
 msgid "_Username:"
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ(_U):"
 
-#: ../src/modules/create_user.py:87
+#: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
 msgstr "ਪੂਰਾ ਨਾਂ(_E):"
 
-#: ../src/modules/create_user.py:94
+#: ../src/modules/create_user.py:93
 msgid "_Password:"
 msgstr "ਗੁਪਤ-ਕੋਡ(_P):"
 
-#: ../src/modules/create_user.py:101
+#: ../src/modules/create_user.py:100
 msgid "Confir_m Password:"
 msgstr "ਗੁਪਤ-ਕੋਡ ਪੁਸ਼ਟੀ(_M):"
 
-#: ../src/modules/create_user.py:117
+#: ../src/modules/create_user.py:116
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -257,11 +263,11 @@ msgstr ""
 "ਜੇਕਰ ਤੁਹਾਨੂੰ ਨੈੱਟਵਰਕ ਪਰਮਾਣਕਿਤਾ, ਜਿਵੇਂ ਕਿ ਕੀਰਬੀਰੋਸ ਜਾਂ NIS ਵਰਤਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ "
 "ਨੈੱਟਵਰਕ ਲਾਗਿੰਨ ਵਰਤੋਂ, ਬਟਨ ਨੂੰ ਦਬਾਉ।"
 
-#: ../src/modules/create_user.py:127
+#: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
 msgstr "ਨੈੱਟਵਰਕ ਲਾਗਿੰਨ ਵਰਤੋਂ(_L)..."
 
-#: ../src/modules/create_user.py:163
+#: ../src/modules/create_user.py:162
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -271,46 +277,46 @@ msgstr ""
 "ਬਿਨਾਂ ਹੀ ਜਾਰੀ ਰਹੇ ਤਾਂ, ਤੁਸੀ ਕੇਵਲ ਪਰਬੰਧਕ(root) ਖਾਤੇ ਨਾਲ ਹੀ ਲਾਗਿੰਨ ਕਰ ਸਕਦੇ ਹੋ, ਜੋ ਕਿ ਸਿਰਫ਼ "
 "ਪਰਬੰਧਕੀ ਵਰਤੋਂ ਲਈ ਹੈ।"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:170
 msgid "_Continue"
 msgstr "ਜਾਰੀ ਰੱਖੋ(_C)"
 
-#: ../src/modules/create_user.py:172
+#: ../src/modules/create_user.py:171
 msgid "Create _account"
 msgstr "ਖਾਤਾ ਬਣਾਓ(_a)"
 
-#: ../src/modules/create_user.py:198
+#: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ਗੁਪਤ-ਕੋਡ ਮੇਲ ਨਹੀਂ ਖਾ ਰਿਹਾ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਗੁਪਤ-ਕੋਡ ਮੁਡ਼ ਭਰੋ।"
 
-#: ../src/modules/create_user.py:206
+#: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "ਗੁਪਤ-ਕੋਡ ਬਹੁਤ ਛੋਟਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ 6 ਅੱਖਰਾਂ ਤੋਂ ਵੱਧ ਵਰਤੋਂ।"
 
-#: ../src/modules/create_user.py:217
+#: ../src/modules/create_user.py:216
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਸਿਸਟਮ ਖਾਤੇ ਲਈ ਰਾਖਵਾਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ ਨਾਂ ਦਿਉ।"
 
-#: ../src/modules/create_user.py:264
+#: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ 33 ਅੱਖਰਾਂ ਤੋਂ ਘੱਟ ਲੰਮਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
-#: ../src/modules/create_user.py:270
+#: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ ਅੰਕ ਨਾਲ ਆਰੰਭ ਨਹੀਂ ਹੋ ਸਕਦਾ ਹੈ।"
 
 #. Check for whitespace
-#: ../src/modules/create_user.py:282
+#: ../src/modules/create_user.py:281
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਖਾਲੀ ਥਾਂ ਰੱਖਦਾ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਉਪਭੋਗੀ-ਨਾਂ ਵਿੱਚ ਖਾਲੀ ਥਾਂ ਨਾ ਦਿਉ।"
 
-#: ../src/modules/create_user.py:289
+#: ../src/modules/create_user.py:288
 #, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
@@ -319,7 +325,7 @@ msgstr ""
 "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਵਿੱਚ ਵਿਰਾਮ ਚਿੰਨ ਨਹੀਂ ਹੋ ਸਕਦੇ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਉਪਭੋਗੀ-ਨਾਂ ਵਿੱਚ ਵਿਰਾਮ ਚਿੰਨ "
 "ਦੀ ਵਰਤੋ ਨਾ ਕਰੋ।"
 
-#: ../src/modules/create_user.py:296
+#: ../src/modules/create_user.py:295
 #, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
@@ -327,19 +333,19 @@ msgid ""
 msgstr ""
 "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਵਿੱਚ ਵੱਡੇ ਅੱਖਰ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਉਪਭੋਗੀ-ਨਾਂ ਵਿੱਚ ਵੱਡੇ ਅੱਖਰਾਂ ਦੀ ਵਰਤੋਂ ਨਾ ਕਰੋ।"
 
-#: ../src/modules/create_user.py:303
+#: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ASCII ਅੱਖਰ ਹੀ ਵਰਤੋਂ।"
 
-#: ../src/modules/create_user.py:313
+#: ../src/modules/create_user.py:312
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
 msgstr "ਗੁਪਤ-ਕੋਡ ਗਲਤ ਅੱਖਰ ਰੱਖਦਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ASCII ਅੱਖਰ ਹੀ ਵਰਤੋ।"
 
-#: ../src/modules/create_user.py:323
+#: ../src/modules/create_user.py:322
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
@@ -356,11 +362,11 @@ msgstr "ਮਿਤੀ ਅਤੇ ਸਮਾਂ"
 msgid "Please set the date and time for the system."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਿਸਟਮ ਦੀ ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਦਿਓ।"
 
-#: ../src/modules/display.py:44
+#: ../src/modules/display.py:43
 msgid "Display"
 msgstr "ਝਲਕ"
 
-#: ../src/modules/display.py:47
+#: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਰੈਜ਼ੋਲੇਸ਼ਨ ਅਤੇ ਰੰਗ ਗਹਿਰਾਈ, ਜੋ ਤੁਸੀ ਇਸਤੇਮਾਲ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ, ਦੀ ਚੋਣ ਕਰੋ।"
 
@@ -369,15 +375,18 @@ msgid "Finish Setup"
 msgstr "ਸੈਟਅੱਪ ਮੁਕੰਮਲ"
 
 #: ../src/modules/finished.py:33
+#, fuzzy
 msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "ਤੁਹਾਡੇ ਸਿਸਟਮ ਦਾ ਇਸ ਸਮੇਂ ਸੈਟਅੱਪ ਮੁਕੰਮਲ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੈ। ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ"
 "\" ਬਟਨ ਨੂੰ ਜਾਰੀ ਰਹਿਣ ਲਈ ਦਬਾਓ।"
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Next\" button in the lower right corner to continue."
+#, fuzzy
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਜਾਰੀ ਰਹਿਣ ਲਈ ਦਬਾਓ।"
 
 #: ../src/modules/networking.py:42
