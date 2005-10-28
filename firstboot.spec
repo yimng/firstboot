@@ -75,6 +75,12 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Fri Oct 28 2005 Chris Lumens <clumens@redhat.com> 1.3.51-1
+- Set a timeout on waiting for the window manager to start.
+- Correct ps output.
+- Move keyboard initialization to after the modules have been loaded
+  (#133074, #157870).
+
 * Mon Oct 17 2005 Chris Lumens <clumens@redhat.com> 1.3.51-1
 - Fix whrandom deprecation warnings.
 - Fix render_to_drawable deprecation warnings.
