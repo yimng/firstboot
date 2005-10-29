@@ -1,13 +1,7 @@
 # translation of  it to italian
-# translation of it.po to
-# translation of it.po to
-# translation of it.po to
-# translation of it.po to
-# translation of it.po to
 # translation of it.po to Italian
 # Copyright (C) 2004 ORGANIZATION.
 # Francesco Valente <fvalen@redhat.com>, 2003, 2004.
-# Paolo Dona' <vik@3jv.com>, 2004.
 # Paolo Dona' <vik@3jv.com>, 2004.
 # Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004.
 # Francesco Tombolini <tombo@adamantio.net>, 2005.
@@ -18,7 +12,7 @@ msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-28 14:43-0400\n"
-"PO-Revision-Date: 2005-10-16 19:31+0200\n"
+"PO-Revision-Date: 2005-10-29 11:46+0200\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italiano <Fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -79,11 +73,11 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Inviate un report del bug relativo a 'firstboot' nel sistema di "
+"Inviate un report d'errore relativo a 'firstboot' nel sistema di "
 "segnalazione\n"
 "dei bug di Red Hat all'indirizzo http://www.redhat.com/bugzilla. \n"
-"Una copia del risultato dell'operazione di debug è stata salvata in %s.\n"
-"Accertarsi di allegare il file al report del bug. \n"
+"Una copia dell'output di debug è stata salvata in %s.\n"
+"Accertatevi di allegare il file al report d'errore. \n"
 
 #: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
@@ -96,14 +90,11 @@ msgstr "_Successivo"
 
 #: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"Per confermare le selezioni da voi eseguite è necessario riavviare il "
-"sistema."
+msgstr "Il sistema deve essere ora riavviato per rendere effettive alcune delle vostre scelte."
 
 #: ../src/firstbootWindow.py:332
-#, fuzzy
 msgid "_Finish"
-msgstr "Termina installazione"
+msgstr "_Fine"
 
 #: ../src/firstbootWindow.py:424
 #, python-format
@@ -149,7 +140,7 @@ msgstr "Configurazione del fuso orario"
 
 #: ../src/textWindow.py:43
 msgid "Run Tool"
-msgstr "Esegui Strumento"
+msgstr "Strumento Esegui"
 
 #: ../src/textWindow.py:45
 msgid "Select the item that you wish to modify "
@@ -205,14 +196,12 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Il CD non è stato rilevato. Inserire il CD nell'unità e fare clic su \"OK\" "
+"Il CD-ROM non é stato rilevato.  Inserire il CD-ROM nell'unità e fare clic su \"OK\" "
 "per continuare."
 
 #: ../src/modules/additional_cds.py:194
-msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
-msgstr ""
-"Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
+msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+msgstr "Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:42
 msgid "System User"
@@ -224,17 +213,17 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"É consigliato creare un account utente personale per un uso (non-"
-"amministrativo) normale. Per creare un account personale, fornire le "
-"informazioni richieste."
+"É consigliata la creazione di un account utente personale per un uso normale (non-"
+"amministrativo) del vostro sistema. Per creare un account utente, siete pregati di "
+"fornire le informazioni richieste."
 
 #: ../src/modules/create_user.py:79
 msgid "_Username:"
-msgstr "_Nome utente:"
+msgstr "Nome _utente:"
 
 #: ../src/modules/create_user.py:86
 msgid "Full Nam_e:"
-msgstr "Nome _completo:"
+msgstr "Nome compl_eto:"
 
 #: ../src/modules/create_user.py:93
 msgid "_Password:"
@@ -250,12 +239,11 @@ msgid ""
 "click the Use Network Login button."
 msgstr ""
 "Se avete necessità di usare una autenticazione di rete come Kerberos o NIS, "
-"si prega di fare clic sul pulsante di registrazione di rete 'Use Network "
-"Login'."
+"si prega di fare clic sul pulsante Usa Network Login."
 
 #: ../src/modules/create_user.py:126
 msgid "Use Network _Login..."
-msgstr "_Use Network Login..."
+msgstr "Usa Network _Login..."
 
 #: ../src/modules/create_user.py:162
 msgid ""
@@ -263,9 +251,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"É fortemente consigliato creare un account utente.  Se continuate senza un "
-"account, effettuerete una registrazione con un account root, il quale é "
-"riservato solo per un uso amministrativo."
+"É fortemente consigliata la creazione di un account utente personale.  Se "
+"continuate senza un account, potrete accedere al sistema con il solo account di root, "
+"che é riservato solo ad uso amministrativo."
 
 #: ../src/modules/create_user.py:170
 msgid "_Continue"
@@ -277,13 +265,11 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:197
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"La password non é corretta.  Si prega di riprovare ad inserire la password."
+msgstr "Le passwords non coincidono.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:205
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:216
 #, python-format
@@ -291,8 +277,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Il nome utente '%s' risulta essere un acount del sistema riservato.  Prego "
-"specificare un altro nome utente."
+"Il nome utente '%s' risulta essere un acount di sistema riservato.  Sei pregato "
+"di specificare un altro nome utente."
 
 #: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
@@ -318,7 +304,7 @@ msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
 msgstr ""
-"Il nome utente '%s' contiene della punteggiatura.  Prego non usare la "
+"Il nome utente '%s' contiene della punteggiatura.  Si prega di non usare la "
 "punteggiatura nel nome utente."
 
 #: ../src/modules/create_user.py:295
@@ -327,8 +313,8 @@ msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
 msgstr ""
-"Il nome utente '%s' contiene delle lettere maiuscole.  Prego non utilizzare "
-"lettere maiuscole con questo nome utente."
+"Il nome utente '%s' contiene delle lettere maiuscole.  Si prega di non utilizzare "
+"lettere maiuscole nel nome utente."
 
 #: ../src/modules/create_user.py:302
 #, python-format
@@ -336,15 +322,12 @@ msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
 msgstr ""
-"Il nome utente '%s' contiene caratteri non validi.  Prego usare solo "
+"Il nome utente '%s' contiene caratteri non validi.  Si prega di usare solo "
 "caratteri ASCII."
 
 #: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"La password contiene caratteri invalidi.  Si prega di usare solo caratteri "
-"ASCII."
+msgid "The password contains invalid characters.  Please use only ASCII characters."
+msgstr "La password contiene caratteri non validi.  Si prega di usare solo caratteri ASCII."
 
 #: ../src/modules/create_user.py:322
 #, python-format
@@ -376,21 +359,16 @@ msgid "Finish Setup"
 msgstr "Termina installazione"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Il vostro sistema á stato impostato ed é pronto per l'uso.  Si prega di fare "
-"clic sul pulsante \"Avanti\" nell'angolo basso a destra per continuare. "
+"Il vostro sistema é stato impostato ed é pronto per l'uso.  Si prega di fare "
+"clic sul pulsante \"Fine\" nell'angolo basso a destra per continuare. "
 
 #: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"Il vostro sistema á stato impostato ed é pronto per l'uso. Si prega di fare "
-"clic sul pulsante \"Avanti\" nell'angolo basso a destra per continuare. "
+msgid "Please click the \"Finish\" button in the lower right corner to continue."
+msgstr "Si prega di fare clic sul pulsante \"Fine\" nell'angolo basso a destra per continuare."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -454,3 +432,4 @@ msgstr ""
 "prima che il sistema sia pronto.  Red Hat Setup Agent guida l'utente nel "
 "processo di configurazione di base.  Fare clic sul pulsante \"Successivo\" "
 "nella parte inferiore destra per continuare."
+
