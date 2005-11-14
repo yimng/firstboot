@@ -42,6 +42,9 @@ class childWindow:
     runPriority = 140
     moduleName = (_("Additional CDs"))
 
+    # Turned off for now.
+    skipme = True
+
     def launch(self, doDebug=None):
         if doDebug:
             print "initializing additional_cd module"
