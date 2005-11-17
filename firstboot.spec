@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.52
+Version: 1.3.53
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -75,6 +75,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Nov 16 2005 Chris Lumens <clumens@redhat.com> 1.3.53-1
+- Disable Additional CDs module for now.
+
 * Fri Oct 28 2005 Chris Lumens <clumens@redhat.com> 1.3.52-1
 - Set a timeout on waiting for the window manager to start.
 - Correct ps output.
