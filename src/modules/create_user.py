@@ -1,21 +1,16 @@
+import sys
+sys.path.append('/usr/share/system-config-users/')
+
 from gtk import *
 import string
 import os
 import time
 import gtk
 import gobject
-import sys
 import functions
 import libuser
 import rhpl.executil as executil
-
-##
-## I18N
-## 
-#import gettext
-#gettext.bindtextdomain ("firstboot", "/usr/share/locale")
-#gettext.textdomain ("firstboot")
-#_=gettext.gettext
+import userGroupCheck
 
 from rhpl.translate import _, N_
 from rhpl import translate
@@ -186,11 +181,8 @@ class childWindow:
         password = self.passwordEntry.get_text()
         confirm = self.confirmEntry.get_text()
 
-        #Check for ascii-only strings
-        if not self.isPasswordOk(password, self.passwordEntry):
-            return None
-        
-        if not self.isPasswordOk(confirm, self.confirmEntry):
+        if not userGroupCheck.isPasswordOk(password, self.passwordEntry) or \
+           not userGroupCheck.isPasswordOk(confirm, self.confirmEntry):
             return None
 
         if password != confirm:
@@ -222,7 +214,7 @@ class childWindow:
         fullName = self.fullnameEntry.get_text()
 
         #Check for valid strings
-        if not self.isNameOk(fullName, self.fullnameEntry):
+        if not userGroupCheck.isNameOk(fullName, self.fullnameEntry):
             return None
 
         #If we get to this point, all the input seems to be valid.  Let's add the user
@@ -245,7 +237,6 @@ class childWindow:
             self.admin.modifyUser(userEnt)
             self.admin.modifyGroup(groupEnt)
             
-
         self.admin.setpassUser(userEnt, self.passwordEntry.get_text(), 0)
         
         return 0
@@ -257,77 +248,6 @@ class childWindow:
         rc = dlg.run()
         dlg.destroy()
         return None
-        
-    def isUsernameOk(self, str, widget):
-        if len(str) > 32:
-            self.showErrorMessage(_("The user name must be less than 33 characters long."))
-            widget.set_text("")
-            widget.grab_focus()
-            return None  
-
-        if str[0] in string.digits:
-            self.showErrorMessage(_("The user name may not begin with a number."))
-            widget.set_text("")
-            widget.grab_focus()
-            return None
-
-        for i in str:
-            if i == "_" or i == "-":
-                #specifically allow "_" and "-"
-                continue
-
-            if i in string.whitespace:
-                #Check for whitespace
-                self.showErrorMessage(_("The user name '%s' contains whitespace.  "
-                                        "Please do not include whitespace in the user name.") % str)
-                widget.set_text("")
-                widget.grab_focus()
-                return None
-
-            if i in string.punctuation:
-                self.showErrorMessage(_("The user name '%s' contains punctuation characters.  "
-                                                 "Please do not use punctuation in the user name.") % str)
-                widget.set_text("")
-                widget.grab_focus()
-                return None
-
-            if i in string.uppercase:
-                self.showErrorMessage(_("The user name '%s' contains uppercase characters.  "
-                                                 "Please do not use uppercase characters in the user name.") % str)
-                widget.set_text("")
-                widget.grab_focus()
-                return None
-                
-            if i not in string.ascii_letters and i not in string.digits:
-                self.showErrorMessage(_("The user name '%s' contains invalid "
-                                        "characters.  Please use only ASCII characters.") % str)
-                widget.set_text("")
-                widget.grab_focus()
-                return None
-        return 1
-
-    def isPasswordOk(self, str, widget):
-        for i in str:
-            if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation and i not in string.whitespace:
-                self.showErrorMessage(_("The password contains invalid characters.  "
-                                        "Please use only ASCII characters."))
-                widget.set_text("")
-                widget.grab_focus()
-                return None
-        return 1
-
-    def isNameOk(self, str, widget):
-        import re
-        if re.search("^[\w\s]+$", str, re.UNICODE) == None:
-            self.showErrorMessage(_("The name '%s' contains invalid "
-                                    "characters.  Please use only letters, "
-                                    "numbers, whitespace and the underscore "
-                                    "character.") % str)
-            widget.set_text("")
-            widget.grab_focus()
-            return None
-        else:
-            return 1
 
     def run_authconfig(self, *args):
         self.nisFlag = 1
