@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.53
+Version: 1.3.54
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -27,6 +27,7 @@ Requires: system-config-securitylevel
 Requires: system-config-rootpassword
 Requires: system-config-packages
 Requires: system-config-network
+Requires: system-config-users
 Requires: authconfig-gtk
 Requires: libuser
 Requires: redhat-logos
@@ -75,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Wed Nov 30 2005 Chris Lumens <clumens@redhat.com> 1.3.54-1
+- Use system-config-users for user/group/password validation (#174255).
+
 * Wed Nov 16 2005 Chris Lumens <clumens@redhat.com> 1.3.53-1
 - Disable Additional CDs module for now.
 
