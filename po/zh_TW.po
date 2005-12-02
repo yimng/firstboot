@@ -174,6 +174,7 @@ msgstr "現在，請插入任何額外的軟體安裝光碟。"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:73
+#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -231,6 +232,7 @@ msgid "Confir_m Password:"
 msgstr "密碼確認(_M)："
 
 #: ../src/modules/create_user.py:116
+#, fuzzy
 msgid ""
 "If you need to use network authentication such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -276,52 +278,53 @@ msgstr "使用者名稱 '%s' 是系統的保留帳號,請指定另一個使用�
 
 #: ../src/modules/create_user.py:263
 msgid "The user name must be less than 33 characters long."
-msgstr "使用者名稱的長度必須在 33 個字元以內。"
+msgstr ""
 
 #: ../src/modules/create_user.py:269
 msgid "The user name may not begin with a number."
-msgstr "使用者名稱不能以數字開頭。"
+msgstr ""
 
 #. Check for whitespace
 #: ../src/modules/create_user.py:281
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The user name '%s' contains whitespace.  Please do not include whitespace in "
 "the user name."
-msgstr "使用者名稱 '%s' 含有空白，使用者名稱中不能含有空白。"
+msgstr "使用者名稱 '%s' 是系統的保留帳號,請指定另一個使用名稱。"
 
 #: ../src/modules/create_user.py:288
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The user name '%s' contains punctuation characters.  Please do not use "
 "punctuation in the user name."
-msgstr "使用者名稱 '%s' 含有標點符號，請勿使用標點符號在使用者名稱上。"
+msgstr "使用者名稱 '%s' 是系統的保留帳號,請指定另一個使用名稱。"
 
 #: ../src/modules/create_user.py:295
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The user name '%s' contains uppercase characters.  Please do not use "
 "uppercase characters in the user name."
-msgstr "使用者名稱 '%s' 含有大寫字元，請勿使用大寫字在使用者名稱上。"
+msgstr "使用者名稱 '%s' 是系統的保留帳號,請指定另一個使用名稱。"
 
 #: ../src/modules/create_user.py:302
 #, python-format
 msgid ""
 "The user name '%s' contains invalid characters.  Please use only ASCII "
 "characters."
-msgstr "使用者名稱 '%s' 含有無效的字元，只能使用 ASCII 字元。"
+msgstr ""
 
 #: ../src/modules/create_user.py:312
+#, fuzzy
 msgid ""
 "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "密碼中含有無效的字元，只能使用 ASCII 字元。"
+msgstr "密碼太短了，至少您得使用 6 個字元。"
 
 #: ../src/modules/create_user.py:322
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only letters, "
 "numbers, whitespace and the underscore character."
-msgstr "名稱 '%s' 含有無效的字元，請使用只有字母、數字、空白及底線字元。"
+msgstr ""
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -383,6 +386,7 @@ msgid "Sound Card"
 msgstr "音效卡"
 
 #: ../src/modules/soundcard_gui.py:45
+#, fuzzy
 msgid "A sound card has been detected on your computer."
 msgstr "在您的電腦有偵測到一個音效卡。"
 
