@@ -108,7 +108,7 @@ class childWindow:
         align.set_size_request(-1, 30)
         internalVBox.pack_start(align, False)
 
-        label = gtk.Label(_("If you need to use network authentication such as Kerberos or NIS, "
+        label = gtk.Label(_("If you need to use network authentication, such as Kerberos or NIS, "
                             "please click the Use Network Login button."))
 
         label.set_line_wrap(True)

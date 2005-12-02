@@ -74,7 +74,7 @@ class childWindow:
         if os.uname()[4] == "ia64":
 #        if 1:
             cd_label = cd_label + _("""\n\nTo enable runtime support of 32-bit applications on the Intel """
-                                    """Itanium2 architecture, you must install the Intel Execution """
+                                    """Itanium2 architecture you must install the Intel Execution """
                                     """Layer package from the Extras disc now.""")
 
 
@@ -194,7 +194,7 @@ class childWindow:
         else:
             #There's no autorun on the disc, so complain
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
-                                    (_("The autorun program cannot be found on the cd. "
+                                    (_("The autorun program cannot be found on the CD. "
                                        "Click \"OK\" to continue.")))
             dlg.set_position(gtk.WIN_POS_CENTER)
             dlg.set_modal(True)
