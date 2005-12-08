@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.54
+Version: 1.3.55
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Dec 08 2005 Chris Lumens <clumens@redhat.com> 1.3.55-1
+- Fix grammar problems (#143953).
+- Fix traceback on user screen (#175227).
+
 * Wed Nov 30 2005 Chris Lumens <clumens@redhat.com> 1.3.54-1
 - Use system-config-users for user/group/password validation (#174255).
 
