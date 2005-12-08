@@ -175,7 +175,7 @@ class childWindow:
                 self.usernameEntry.grab_focus()
                 return None
 
-        if not self.isUsernameOk(username, self.usernameEntry):
+        if not userGroupCheck.isUsernameOk(username, self.usernameEntry):
             return None
 
         password = self.passwordEntry.get_text()
