@@ -1,6 +1,6 @@
 # Swedish messages for firstboot.
-# Copyright (C) 2002, 2003, 2004, 2005 Christian Rose
-# Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+# Copyright (C) 2002, 2003, 2004, 2005, 2006 Christian Rose.
+# Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005, 2006.
 # Göran Uddeborg <goeran@uddeborg.pp.se>, 2003.
 #
 # $Id$
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-28 14:43-0400\n"
-"PO-Revision-Date: 2005-10-19 23:01+0200\n"
+"PO-Revision-Date: 2006-01-03 00:03+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -91,9 +91,8 @@ msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Systemet måste nu starta om för att dina val ska börja gälla."
 
 #: ../src/firstbootWindow.py:332
-#, fuzzy
 msgid "_Finish"
-msgstr "Slutför konfiguration"
+msgstr "_Slutför"
 
 #: ../src/firstbootWindow.py:424
 #, python-format
@@ -362,18 +361,27 @@ msgid "Finish Setup"
 msgstr "Slutför konfiguration"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Finish\" "
+"button in the lower right corner to continue."
+msgstr ""
+"Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
+"\"Slutför\" i nedre högra hörnet för att fortsätta."
+
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Next\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
 "\"Nästa\" i nedre högra hörnet för att fortsätta."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
 msgid ""
 "Please click the \"Finish\" button in the lower right corner to continue."
+msgstr "Tryck på knappen \"Slutför\" i nedre högra hörnet för att fortsätta."
+
+msgid ""
+"Please click the \"Nästa\" button in the lower right corner to continue."
 msgstr "Tryck på knappen \"Nästa\" i nedre högra hörnet för att fortsätta."
 
 #: ../src/modules/networking.py:42
