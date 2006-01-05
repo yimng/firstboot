@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.55
+Version: 1.3.56
 Release: 1.1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -76,6 +76,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Thu Jan 05 2006 Chris Lumens <clumens@redhat.com> 1.3.56-1.1
+- Increase timeout on waiting for X to start (#176782).
+
 * Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com>
 - rebuilt
 

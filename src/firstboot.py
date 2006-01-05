@@ -127,7 +127,7 @@ class Firstboot:
 
         # Block on read of token
         signal.signal(signal.SIGALRM, self.alarmHandler)
-        signal.alarm(10)
+        signal.alarm(15)
 
         try:
             os.read(rd, 1)
