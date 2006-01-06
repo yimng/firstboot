@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-08-07 00:31+0200\n"
 "Last-Translator: David R <ddady1@gmail.com>\n"
 "Language-Team: none\n"
@@ -145,11 +145,11 @@ msgstr "בחר את הפריט שברצונך לשנות"
 msgid "Setup Agent"
 msgstr "סוכן התקנה"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "דיסקים נוספים"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -160,17 +160,18 @@ msgstr ""
 "התקנה של תוספים ותוכניות של צד שלישי. אתה יכול גם להכניס את דיסק התיעוד, או "
 "דיסק אחר שסופק ע\"י רד האט כדי להתקין תוכנות נוספות."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "אנא הכנס כעת את דיסק ההתקנה של התכונות הנוספות"
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -178,26 +179,27 @@ msgstr ""
 "כדי לאפשר תמיכה בזמן ריצה של אפליקציות 32-bit בארכיטקטורת Intel Itanium2, יש "
 "להתקין את חבילת \"Intel Execution Layer\" מדיסק התוספות כעת."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "התקן..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "CD-ROM לא זוהה. נא הכנס CD-ROM לכונן ולחץ \"OK\" כדי להמשיך."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "תוכנית ההרצה האוטומטית לא נמצאה על הדיסק. לחץ \"OK\" כדי להמשיך."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "משתמש מערכת"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -206,35 +208,36 @@ msgstr ""
 "מומלץ ליצור 'שם משתמש' של המערכת לשימוש רגיל (לא ניהולי) במערכת. כדי ליצור "
 "'שם משתמש' של המערכת, בבקשה ספק את המידע למטה."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "_שם משתמש:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "שם _מלא:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_סיסמה:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "_אישור סיסמה:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "אם יש לך צורך באימות רשת כמו Kerberos או NIS, בבקשה לחץ על הכפתור \"Use "
 "Network Login\""
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "הש_תמש באימות רשת..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -243,79 +246,29 @@ msgstr ""
 "מומלץ ליצור חשבון משתמש אישי. אם תמשיך בלי ליצור חשבון, תוכל להתחבר רק עם "
 "חשבון ה-root, השמור לשימוש ניהולי בלבד."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "המש_ך"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "_צור חשבון"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "הסיסמאות לא תואמות. נא הכנס את הסיסמה שנית."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "הסיסמה קצרה מדי. נא השתמש לפחות ב-6 תווים."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
 "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "שם המשתמש חייב להיות קצר מ-33 תווים."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "שם המשתמש לא יכול להתחיל במספר."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr "שם המשתמש '%s' מכיל רווח לבן. בבקשה אל תכלול רווח לבן בשם המשתמש."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr "שם המשתמש '%s' מכיל סימני פיסוק. בבקשה אל תשתמש בפיסוק בשם המשתמש."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr "שם המשתמש '%s' מכיל תווים לא חוקיים. בבקשה השתמש רק בתווי ASCII."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "הסיסמה מכילה תווים לא חוקיים. נא השתמש רק בתווי ASCII."
-
-#: ../src/modules/create_user.py:322
-#, fuzzy, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr "השם '%s' מכיל תווים לא חוקיים. נא השתמש רק בתווי ASCII."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -381,7 +334,8 @@ msgid "Sound Card"
 msgstr "כרטיס קול"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "כרטיס קול זוהה במחשב שלך."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -410,6 +364,45 @@ msgid ""
 msgstr ""
 "ישנם עוד כמה צעדים לפני שתוכל להשתמש במערכת. סוכן ההתקנה ידריך אותך בנוגע "
 "להגדרות בסיסיות.  בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה כדי להמשיך."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "שם המשתמש חייב להיות קצר מ-33 תווים."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "שם המשתמש לא יכול להתחיל במספר."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr "שם המשתמש '%s' מכיל רווח לבן. בבקשה אל תכלול רווח לבן בשם המשתמש."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr "שם המשתמש '%s' מכיל סימני פיסוק. בבקשה אל תשתמש בפיסוק בשם המשתמש."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם "
+#~ "המשתמש."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "שם המשתמש '%s' מכיל תווים לא חוקיים. בבקשה השתמש רק בתווי ASCII."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "הסיסמה מכילה תווים לא חוקיים. נא השתמש רק בתווי ASCII."
+
+#, fuzzy
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr "השם '%s' מכיל תווים לא חוקיים. נא השתמש רק בתווי ASCII."
 
 #~ msgid "Licence Aggrement"
 #~ msgstr "הסכם רשיון"

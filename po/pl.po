@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-12-03 15:54+0200\n"
 "Last-Translator: Marek Garbaczewski <mrgary@fic.uni.lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -146,11 +146,11 @@ msgstr "Zaznacz pozycję, którą chcesz zmodyfikować "
 msgid "Setup Agent"
 msgstr "Agent instalacji"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "Dodatkowe płyty"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -162,16 +162,18 @@ msgstr ""
 "dokumentacją lub inną dostarczoną przez Red Hata, aby zainstalować dodatkowe "
 "oprogramowanie."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "Włóż dowolną płytę z dodatkowym oprogramowaniem."
 
-#: ../src/modules/additional_cds.py:73
+#. if 1:
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -180,11 +182,11 @@ msgstr ""
 "musisz zainstalować pakiet Intel Execution Layer z płyty z dodatkami "
 "(Extras) do systemu."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Instalacja..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -192,18 +194,19 @@ msgstr ""
 "Płyta CD-ROM nie została wykryta. Włóż ją do napędu i naciśnij \"OK\", aby "
 "kontynuować."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Program automatycznego uruchamiania nie został znaleziony na płycie. "
 "Naciśnij \"OK\", aby kontynuować."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "Użytkownik systemowy"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -213,35 +216,36 @@ msgstr ""
 "(nieadministracyjnego) używania systemu. Aby utworzyć prywatne konto, podaj "
 "wymagane informacje poniżej."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "Nazwa _użytkownika:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "Imię i _nazwisko:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_Hasło:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "_Potwierdź hasło:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Jeśli potrzebujesz użyć uwierzytelniania sieciowego, takiego jak Kerberos "
 "czy NIS, naciśnij przycisk \"Użyj uwierzytelniania sieciowego\"."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "Użyj uwierzytelni_ania sieciowego..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -251,23 +255,23 @@ msgstr ""
 "kontynuował, będziesz mógł się zalogować tylko na konto roota, które jest "
 "zarezerwowane tylko do pracy administracyjnej."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "_Dalej"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "U_twórz konto"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Podane hasła różnią się. Wpisz je ponownie."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Hasło jest za krótkie. Użyj co najmniej 6 znaków."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -275,64 +279,6 @@ msgid ""
 msgstr ""
 "Nazwa użytkownika \"%s\" jest zarezerwowanym kontem systemowym. Podaj inną "
 "nazwę użytkownika."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "Nazwa użytkownika nie może być dłuższa niż 33 znaki."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
-
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"Nazwa użytkownika \"%s\" zawiera biały znak. Nie umieszczaj białych znaków w "
-"nazwie użytkownika."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"Nazwa użytkownika \"%s\" zawiera znaki interpunkcyjne. Nie umieszczaj znaków "
-"interpunkcyjnych w nazwie użytkownika."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"Nazwa użytkownika \"%s\" zawiera duże litery. Używaj tylko małych znaków w "
-"nazwie użytkownika."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"Nazwa użytkownika \"%s\" zawiera nieprawidłowe znaki. Używaj tylko znaków "
-"ASCII."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Hasło zawiera nieprawidłowe znaki. Używaj tylko znaków ASCII."
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"Nazwa \"%s\" zawiera nieprawidłowe znaki. Używaj tylko liter, liczb, białych "
-"znaków i podkreślników."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -359,8 +305,8 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
-"System został zainstalowany i jest już gotowy do użycia. Naciśnij \"Zakończ\" "
-"w prawym dolnym rogu okna, aby kontynuować."
+"System został zainstalowany i jest już gotowy do użycia. Naciśnij \"Zakończ"
+"\" w prawym dolnym rogu okna, aby kontynuować."
 
 #: ../src/modules/finished.py:36
 msgid ""
@@ -396,7 +342,8 @@ msgid "Sound Card"
 msgstr "Karta dźwiękowa"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "Karta dźwiękowa została wykryta w systemie."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -427,3 +374,49 @@ msgstr ""
 "Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do użytku. "
 "Agent instalacji obecnie nie posiada poradnika o podstawowej konfiguracji. "
 "Naciśnij \"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "Nazwa użytkownika nie może być dłuższa niż 33 znaki."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "Nazwa użytkownika \"%s\" zawiera biały znak. Nie umieszczaj białych "
+#~ "znaków w nazwie użytkownika."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "Nazwa użytkownika \"%s\" zawiera znaki interpunkcyjne. Nie umieszczaj "
+#~ "znaków interpunkcyjnych w nazwie użytkownika."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "Nazwa użytkownika \"%s\" zawiera duże litery. Używaj tylko małych znaków "
+#~ "w nazwie użytkownika."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Nazwa użytkownika \"%s\" zawiera nieprawidłowe znaki. Używaj tylko znaków "
+#~ "ASCII."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "Hasło zawiera nieprawidłowe znaki. Używaj tylko znaków ASCII."
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "Nazwa \"%s\" zawiera nieprawidłowe znaki. Używaj tylko liter, liczb, "
+#~ "białych znaków i podkreślników."

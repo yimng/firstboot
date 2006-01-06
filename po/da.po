@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-11-09 15:57+0100\n"
 "Last-Translator: Keld Simonsen <keld@rap.dk>\n"
 "Language-Team:  <da@li.org>\n"
@@ -152,11 +152,11 @@ msgstr "Vælg det objekt som du vil ændre "
 msgid "Setup Agent"
 msgstr "Konfigurationshjælper"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "Yderligere CDer"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -168,17 +168,18 @@ msgstr ""
 "indsætte Dokumentationsskiven, eller andre Red Hat-leverede disketter for at "
 "installere flere programmer på dette tidspunkt."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "Indsæt andre yderligere programinstallations-cd'er nu."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -187,11 +188,11 @@ msgstr ""
 "Itanium2 arkitekturen skal du installere Intel Execution Layer-pakken fra "
 "Extra-skiven nu."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Installér..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -199,18 +200,19 @@ msgstr ""
 "En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
 "for at fortsætte"
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Autorun-programmet kan ikke findes på cd-skiven. Klik på \"O.k.\" for at "
 "fortsætte."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "System-bruger"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -220,35 +222,36 @@ msgstr ""
 "administrativ) brug. For at oprette et system-\"brugernavn\" skal du opgive "
 "de nedenfor forespurgte oplysninger."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "_Brugernavn:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "_Fulde navn:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_Adgangskode:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "_Bekræft adgangskode:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Hvis du skal bruge netværksautentisering som eksempelvis Kerberos eller NIS "
 "skal du klikke på knappen Brug netværksindlogning."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "Brug netværksindlogning..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -258,23 +261,23 @@ msgstr ""
 "fortsætter uden en konto kan du kun logge ind med root-kontoen, som "
 "reserveret til administrativ brug."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "_Fortsæt"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "Opret _konto"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -282,65 +285,6 @@ msgid ""
 msgstr ""
 "Brugernavnet '%s' er en reserveret systemkonto. Angiv venligst et andet "
 "brugernavn."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "Brugernavnet skal være mindre end 33 tegn langt."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "Brugernavnet må ikke begynde med et tal."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"Brugernavnet '%s' indeholder blanke. Lad venligst være med at bruge blanke i "
-"brugernavnet."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"Brugernavnet '%s' indeholder specialtegn. Lad venligst være med at bruge "
-"specialtegn i brugernavnet."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"Brugernavnet '%s' indeholder store bogstaver. Lad venligst være med at bruge "
-"store bogstaver i brugernavnet."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"Navnet '%s' indeholder ugyldige tegn. Brug venligst kun bogstaver, cifre, "
-"blanktegn og understregnings-tegnet."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -406,7 +350,8 @@ msgid "Sound Card"
 msgstr "Lydkort"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "Et lydkort er blevet fundet på din maskine."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -438,6 +383,52 @@ msgstr ""
 "brug. Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
 "konfigurering. Klik på 'Næste'-knappen i det nederste højre hjørne for at "
 "fortsætte."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "Brugernavnet skal være mindre end 33 tegn langt."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "Brugernavnet må ikke begynde med et tal."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "Brugernavnet '%s' indeholder blanke. Lad venligst være med at bruge "
+#~ "blanke i brugernavnet."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "Brugernavnet '%s' indeholder specialtegn. Lad venligst være med at bruge "
+#~ "specialtegn i brugernavnet."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "Brugernavnet '%s' indeholder store bogstaver. Lad venligst være med at "
+#~ "bruge store bogstaver i brugernavnet."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Brugernavnet '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Adgangskoden '%s' indeholder ugyldige tegn. Brug venligst kun ascii-tegn."
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "Navnet '%s' indeholder ugyldige tegn. Brug venligst kun bogstaver, cifre, "
+#~ "blanktegn og understregnings-tegnet."
 
 #, fuzzy
 #~ msgid "Licence Aggrement"

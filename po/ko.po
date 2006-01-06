@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-11-29 11:50+1000\n"
 "Last-Translator: Michelle Ji Yeen Kim <mkim@redhat.com>\n"
 "Language-Team: Korean\n"
@@ -145,11 +145,11 @@ msgstr "수정할 항목을 선택해 주십시오 "
 msgid "Setup Agent"
 msgstr "설정 에이전트"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "추가 CD"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -161,17 +161,18 @@ msgstr ""
 "서 제공한 기타 다른 디스크를 이용하여 언제든지 추가 소프트웨어를 설치 가능합"
 "니다."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "추가 소프트웨어 설치 시디를 지금 삽입해주십시오."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -179,11 +180,11 @@ msgstr ""
 "Intel Itanium2 아키텍쳐에서 32 비트 응용 프로그램을 런타임 지원하려면, 추가 "
 "시디에서 Intel Execution Layer 패키지를 지금 설치하셔야 합니다."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "설치..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -191,18 +192,19 @@ msgstr ""
 "CD-ROM이 감지되지 않았습니다.  CD-ROM을 드라이브에 삽입하신 후 \"확인\" 버튼"
 "을 클릭하여 계속 진행해 주십시오."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램은 cd에서 찾을 수 없습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "시스템 사용자"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -211,35 +213,36 @@ msgstr ""
 "(관리자 계정이 아닌) 일반d 사용자 계정을생성하시기길 권장합니다다.시스템 '사"
 "용자 계정'을  만드시려면,아래에  요청된 정보를 기입해 주십시오."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "사용자명(_U):"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "이름(_E):"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "암호(_P):"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "암호 확인(_M):"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
 "을 클릭해 주십시오."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "네트워크 로그인 사용(_L)..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -249,88 +252,28 @@ msgstr ""
 "행하신다면, 관리자 용으로만 사용되는 루트 계정을 사용하여 로그인하셔야 합니"
 "다."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "계속 진행(_C)"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "계정 만들기(_A)"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다.  다시 입력해 주십시오."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자 이상이어야 합니다."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "사용자명 '%s'은 시스템 계정입니다.  다른 사용자명을 지정해주십시오."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "사용자명은 33 문자를 넘어서는 안됩니다."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "사용자명은 숫자로 시작해서는 안됩니다."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"사용자명 '%s'에 공백이 포함되어 있습니다.  사용자명에 공백을 포함시키지 마십"
-"시오."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"사용자명 '%s'에 구두점이 포함되어 있습니다.  사용자명에 구두점을 사용하지 마"
-"십시오."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"사용자명 '%s'에 대문자가 포함되어 있습니다.  사용자명에 대문자를 사용하지 마"
-"십시오."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"사용자명 '%s'에 잘못된 문자가 포함되어 있습니다.  사용자명에 ASCII 문자만 사"
-"용하시기 바랍니다."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"이름 '%s'에 잘못된 문자가 포함되어 있습니다. 글자, 숫자, 공백, 밑줄만 사용하"
-"시기 바랍니다."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -396,7 +339,8 @@ msgid "Sound Card"
 msgstr "사운드 카드"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "사운드 카드가 검색되었습니다."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -427,3 +371,50 @@ msgstr ""
 "몇가지 단계를 더 거치시면 시스템이 사용 준비될 것입니다.  설정 에이전트는 이"
 "제 몇가지 기본적인 설정 과정을 단계별로 길잡이를 해드릴 것입니다. 오른쪽 하"
 "단 모서리에 위치한 \"다음\" 버튼을 클릭하시면, 계속 진행합니다."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "사용자명은 33 문자를 넘어서는 안됩니다."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "사용자명은 숫자로 시작해서는 안됩니다."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "사용자명 '%s'에 공백이 포함되어 있습니다.  사용자명에 공백을 포함시키지 마"
+#~ "십시오."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "사용자명 '%s'에 구두점이 포함되어 있습니다.  사용자명에 구두점을 사용하지 "
+#~ "마십시오."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "사용자명 '%s'에 대문자가 포함되어 있습니다.  사용자명에 대문자를 사용하지 "
+#~ "마십시오."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "사용자명 '%s'에 잘못된 문자가 포함되어 있습니다.  사용자명에 ASCII 문자만 "
+#~ "사용하시기 바랍니다."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하시기 바랍니다."
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "이름 '%s'에 잘못된 문자가 포함되어 있습니다. 글자, 숫자, 공백, 밑줄만 사용"
+#~ "하시기 바랍니다."

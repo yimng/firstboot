@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2003-12-15 22:29+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -150,11 +150,11 @@ msgstr "Označite stavku koju želite izmijeniti "
 msgid "Setup Agent"
 msgstr "Agent postavki"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "Dodatni CD-i"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -162,25 +162,25 @@ msgid ""
 "additional software at this time."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Instaliraj..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -188,18 +188,19 @@ msgstr ""
 "CD-ROM nije nađen. Molim ubacite CD-ROM u vaš CD-ROM pogon i kliknite \"U "
 "redu\" za nastavak."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Program autorun se ne može naći na cd-u. Za nastavak pritisnite \"U redu\"."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 #, fuzzy
 msgid "System User"
 msgstr "Servisi sustava "
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -210,35 +211,36 @@ msgstr ""
 "administrativnu) uporabu. Da biste stvorili osobni račun, morate "
 "datiodgovarajuće podatke."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "_Korisničko ime:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "Puno im_e:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_Lozinka:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "_Potvrdi lozinku:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Ako trebate koristiti mrežnu autentifikaciju poput Kerberosa ili NISa, molim "
 "kliknite na gumb Koristi mrežnu prijavu."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "Koristi _mrežnu prijavu..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -248,23 +250,23 @@ msgstr ""
 "računa, moći ćete se prijaviti samo sa root korisničkim računom, a on je "
 "rezerviran samoo za administrativnu uporabu."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "_Nastavi"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "Stvori _korisnički račun"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lozinka ne odgovara. Molim, ponovo unesite lozinku."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lozinka je prekratka. Molim, koristite najmanje 6 znakova."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -272,65 +274,6 @@ msgid ""
 msgstr ""
 "Ime korisnika '%s' je rezervirani sustavski račun. Molim navedite drugo ime "
 "korisnika."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "Korisničko ime mora biti kraće od 33 znakova."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "Korisničko ime ne može početi s brojem."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"Ime korisnika '%s' sadrži razmake. Nemojte koristiti razmake u imenu "
-"korisnika."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"Ime korisnika '%s' sadrži punkcijske znakove. Nemojte koristiti punkcijske "
-"znakove u imenu korisnika."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"Ime korisnika '%s' sadrži velika slova. Nemojte koristiti velika slova u "
-"imenu korisnika."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"Ime korisnika '%s' sadrži nedozvoljene znakove. Molim koristite samo ASCII "
-"znakove."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Lozinka sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
-
-#: ../src/modules/create_user.py:322
-#, fuzzy, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"Ime '%s' sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -398,7 +341,8 @@ msgid "Sound Card"
 msgstr "Zvučna kartica"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "Zvučna kartica je detektirana u vašem računalu."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -430,6 +374,53 @@ msgstr ""
 "spreman za uporabu. Pomoćnik za postavljajne sustava će vas voditi kroz "
 "osnovne postavke. Molim, za na stavak pritisnite gumb \"Sljedeće\" u donjem "
 "lijevom kutu."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "Korisničko ime mora biti kraće od 33 znakova."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "Korisničko ime ne može početi s brojem."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "Ime korisnika '%s' sadrži razmake. Nemojte koristiti razmake u imenu "
+#~ "korisnika."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "Ime korisnika '%s' sadrži punkcijske znakove. Nemojte koristiti "
+#~ "punkcijske znakove u imenu korisnika."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "Ime korisnika '%s' sadrži velika slova. Nemojte koristiti velika slova u "
+#~ "imenu korisnika."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Ime korisnika '%s' sadrži nedozvoljene znakove. Molim koristite samo "
+#~ "ASCII znakove."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Lozinka sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
+
+#, fuzzy
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "Ime '%s' sadrži neispravne znakove. Molim, koristite samo ASCII znakove."
 
 #, fuzzy
 #~ msgid "Licence Aggrement"

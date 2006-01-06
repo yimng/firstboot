@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-11-18 19:32+0100\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -157,11 +157,11 @@ msgstr "Seleccioneu l'element que vulgueu modificar "
 msgid "Setup Agent"
 msgstr "Agent de la configuració"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "CD addicionals"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -173,17 +173,18 @@ msgstr ""
 "el disc de documentació, o altres discs proporcionats per Red Hat per "
 "instal·lar programari ara."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "Inseriu ara qualsevol CD de programari addicional que tingueu."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -192,11 +193,11 @@ msgstr ""
 "l'arquitectura Intel Itanium2, heu d'instal·lar el paquet Intel Execution "
 "Layer del disc d'extres."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Instal·la..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -204,18 +205,19 @@ msgstr ""
 "No s'ha trobat cap disc CD-ROM. Inseriu un CD-ROM en el dispositiu i feu "
 "clic a \"D'acord\" per continuar."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "No s'ha trobat el programa autorun en el CD. Feu clic a \"D'acord\" per "
 "continuar."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "Usuari del sistema"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -225,35 +227,36 @@ msgstr ""
 "normal (és a dir, per a tasques no administratives). Per crear el compte "
 "personal 'username', proporcioneu la informació demanada."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "Nom d'_usuari:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "Nom compl_et:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_Contrasenya:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "Confir_meu contrasenya:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Si heu de fer servir autenticació en xarxa com Kerberos o NIS, feu clic al "
 "botó d'\"Usa entrada a xarxa\"."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "Usa entrada a _xarxa..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -263,23 +266,23 @@ msgstr ""
 "sense un compte d'usuari, només podreu entrar amb el compte de superusuari, "
 "que està reservat només per a ús administratiu."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "_Continua"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "Cre_a un compte"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Les contrasenyes són diferents. Introduïu la contrasenya de nou."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "La contrasenya és massa curta. Feu servir almenys 6 caràcters."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -287,66 +290,6 @@ msgid ""
 msgstr ""
 "El nom d'usuari '%s' és un compte de sistema reservat. Especifiqueu un altre "
 "nom d'usuari."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "El nom d'usuari ha de tenir menys de 33 caràcters."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "El nom d'usuari no pot començar amb una xifra."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"El nom d'usuari '%s' conté espais en blanc. No escriviu caràcters en blanc "
-"en el nom d'usuari."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"El nom d'usuari '%s' conté caràcters de puntuació. No feu servir puntuació "
-"en el nom d'usuari."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"El nom d'usuari '%s' conté caràcters en majúscula. No feu servir caràcters "
-"en majúscula en el nom d'usuari."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"El nom d'usuari '%s' conté caràcters invàlids. Feu servir només caràcters "
-"ASCII."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"La contrasenya conté caràcters invàlids. Feu servir només caràcters ASCII."
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"El nom '%s' conté caràcters invàlids. Feu servir només lletres, nombres, "
-"espais en blanc i el caràcter de subratllat."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -411,7 +354,8 @@ msgid "Sound Card"
 msgstr "Targeta de so"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "S'ha detectat una targeta de so en aquest ordinador."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -442,6 +386,53 @@ msgstr ""
 "S'han de seguir uns passos més abans que aquest sistema estigui llest. "
 "L'agent de la configuració us guiarà a través d'una configuració bàsica. Feu "
 "clic al botó \"Següent\" en el cantó inferior dret per continuar."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "El nom d'usuari ha de tenir menys de 33 caràcters."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "El nom d'usuari no pot començar amb una xifra."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "El nom d'usuari '%s' conté espais en blanc. No escriviu caràcters en "
+#~ "blanc en el nom d'usuari."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "El nom d'usuari '%s' conté caràcters de puntuació. No feu servir "
+#~ "puntuació en el nom d'usuari."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "El nom d'usuari '%s' conté caràcters en majúscula. No feu servir "
+#~ "caràcters en majúscula en el nom d'usuari."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "El nom d'usuari '%s' conté caràcters invàlids. Feu servir només caràcters "
+#~ "ASCII."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "La contrasenya conté caràcters invàlids. Feu servir només caràcters ASCII."
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "El nom '%s' conté caràcters invàlids. Feu servir només lletres, nombres, "
+#~ "espais en blanc i el caràcter de subratllat."
 
 #~ msgid "Licence Aggrement"
 #~ msgstr "Acord de llicència"

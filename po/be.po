@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2004-09-25 16:08+0300\n"
 "Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
 "Language-Team: Belorussian\n"
@@ -146,11 +146,11 @@ msgstr "Вылучыце элемэнт, які вы жадаеце зьмяні
 msgid "Setup Agent"
 msgstr "Агент наладкі"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "Дадатковыя CD дыскі"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -158,25 +158,25 @@ msgid ""
 "additional software at this time."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Усталёўваньне..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -184,17 +184,18 @@ msgstr ""
 "Дыск ня быў вызначаны. Калі ласка, устаўце дыск у прыладу йпстрыкніце \"Добра"
 "\" для працягу."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Праграма аўтазапуку ня знойдзена на дыске. Пстрыкніце \"Добра\" для працягу."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "Сыстэмны карыстальнік"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 #, fuzzy
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
@@ -205,35 +206,36 @@ msgstr ""
 "(неадміністратыўнага) выкарыстаньня. Каб стварыць уласны рахунак,паведаміце "
 "неабходныя зьвесткі."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "_Уліковае імя:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "Імя й прозьві_шча:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_Пароль:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "Па_цьверджаньне пароля:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Калі ваб неабходна сеткавая аўтэнтіфікацыя, накшталт Kerberos альбо NIS,калі "
 "ласка, пстрыкніце кнопку \"Уваход праз сетку...\"."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "Уваход праз _сетку..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -243,23 +245,23 @@ msgstr ""
 "здолееце ўвайсьці толькі як root, але гэты рахунак прызначаны толькі для "
 "адміністратыўнага выкарыстаньня."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "_Працяг"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "Стварыць _рахунак"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Паролі не супадаюць. Калі ласка, паўтарыце пароль."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Пароль надта кароткі. Пароль мусіць быць ня меншым за 6 знакаў."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -267,66 +269,6 @@ msgid ""
 msgstr ""
 "Уліковае імя \"%s\" утрымлівае заглаўныя літары. Калі ласка, не ўжывайце "
 "заглаўныя літары ва-ўліковых імёнах."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "Уліковае імя павінна быць меншым за 33 знакі."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "Уліковае імя ня можа пачынацца з лічбаў."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"Уліковае імя \"%s\" утрымлівае прагал. Калі ласка, не ўжывайце прагалы ва-"
-"ўліковых імёнах."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"Уліковае імя \"%s\" утрымлівае знакі прыпынку. Калі ласка, не ўжывайце знакі "
-"прыпынку ва-ўліковых імёнах."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"Уліковае імя \"%s\" утрымлівае заглаўныя літары. Калі ласка, не ўжывайце "
-"заглаўныя літары ва-ўліковых імёнах."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"Уліковае імя \"%s\" утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце "
-"толькі ASCII знакі."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Пароль утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце толькі ASCII знакі."
-
-#: ../src/modules/create_user.py:322
-#, fuzzy, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"Назва \"%s\" утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце толькі ASCII "
-"знакі."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -396,7 +338,8 @@ msgid "Sound Card"
 msgstr "Гукавая картка"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "У сыстэме знойдзена гукавая картка."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -427,6 +370,55 @@ msgstr ""
 "Застолося яшчэ некалько крокаў, перш чым сыстэма будзе падрыхтавана для "
 "выкарыстаньня. Агент наладкі правядзе вас праз гэтую наладку. Калі ласка, "
 "пстрыкніце кнопку \"Наперад\" у левым ніжнім куце для працягу."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "Уліковае імя павінна быць меншым за 33 знакі."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "Уліковае імя ня можа пачынацца з лічбаў."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "Уліковае імя \"%s\" утрымлівае прагал. Калі ласка, не ўжывайце прагалы ва-"
+#~ "ўліковых імёнах."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "Уліковае імя \"%s\" утрымлівае знакі прыпынку. Калі ласка, не ўжывайце "
+#~ "знакі прыпынку ва-ўліковых імёнах."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "Уліковае імя \"%s\" утрымлівае заглаўныя літары. Калі ласка, не ўжывайце "
+#~ "заглаўныя літары ва-ўліковых імёнах."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Уліковае імя \"%s\" утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце "
+#~ "толькі ASCII знакі."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Пароль утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце толькі ASCII "
+#~ "знакі."
+
+#, fuzzy
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "Назва \"%s\" утрымлівае нерэчаісныя знакі. Калі ласка, ужывайце толькі "
+#~ "ASCII знакі."
 
 #, fuzzy
 #~ msgid "Licence Aggrement"

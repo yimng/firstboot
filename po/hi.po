@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-12-26 11:59+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "<<<<<<< hi.poPOT-Creation-Date: 2004-08-31 16:22-0400\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 
@@ -148,11 +149,11 @@ msgstr "उस मद को चुनें जिसे आप रूपां
 msgid "Setup Agent"
 msgstr "व्यवस्था प्रतिनिधि"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "अतिरिक्त CDs"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -163,17 +164,18 @@ msgstr ""
 "Enterprise Linux Extras\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त साफ्टवेयर "
 "के अधिष्ठापन के लिए दस्तावेज डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "कृपया किसी अतिरिक्त सॉफ्टवेयर सीडी को इस समय डालें."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -181,11 +183,11 @@ msgstr ""
 "Intel Itanium2 आर्किटेक्चर पर 32-बिट अनुप्रयोग के लिए, आप अब अतिरिक्त डिस्क से अवश्य "
 "Intel निष्पादन स्तर संकुल अधिष्ठापित करें."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "अधिष्ठापित करें..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -193,17 +195,19 @@ msgstr ""
 "CD-ROM खोजा नहीं गया है. कृपया एक CD-ROM को ड्राइव में डालें और \"ठीक\" को जारी रखने "
 "के लिए दबाएँ."
 
-#: ../src/modules/additional_cds.py:194
-msgid "The autorun program cannot be found on the cd. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "सीडी पर स्वतः कार्यान्वयन प्रोग्राम नहीं पाया जा सकता है. जारी रखने के लिए \"सही\" को "
 "क्लिक करें."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "सिस्टम उपयोक्ता"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -212,35 +216,36 @@ msgstr ""
 "यह अनुशंसा की जाती है कि आप नियमित (अप्रशासनिक) प्रयोग के लिए एक व्यक्तिगत 'उपयोक्ता' "
 "खाता बनाएँ. एक सिस्टम 'उपयोक्ता' बनाने के लिए, नीचे माँगी गई जानकारी को दें."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "उपयोक्तानाम (_U):"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "पूरा नाम(_e):"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "शब्दकूट (_P):"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "शब्दकूट सुनिश्चित करें (_m):"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "यदि आप करबरोस या NIS जैसे संजाल सत्यापन का प्रयोग करना चाहते हैं, कृपया संजाल लॉगिन का "
 "प्रयोग करें बटन दबाएँ."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "संजाल लॉगिन का प्रयोग करें (_L)..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -250,80 +255,29 @@ msgstr ""
 "जारी रखते हैं, तो आप सिर्फ रूट खाता में ही लॉग कर सकते है, जो केवल प्रशासनिक प्रयोगों के "
 "लिए होते हैं."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "जारी रखें (_C)"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "खाता बनाएँ (_a)"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "शब्दकूट मेल नहीं खाता है. कृपया शब्दकूट पुनः दाखिल करें."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "शब्दकूट बहुत छोटा है. कृपया कम से कम 6 संप्रतीकों का प्रयोग करें."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "'%s' उपयोक्तानाम एक संरक्षित सिस्टम खाता है. कृपया अन्य उपयोक्तानाम निर्दिष्ट करें."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "उपयोक्ता नाम की लंबाई 33 संप्रतीकों से कम होनी चाहिए."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "उपयोक्ता नाम एक अंक से आरंभ नहीं हो सकता."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
 msgstr ""
-"'%s' उपयोक्ता नाम में रिक्त-स्थान समाहित हैं. कृपया उपयोक्तानाम में रिक्त-स्थान शामिल न "
-"करें."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"'%s' उपयोक्तानाम में विराम चिन्ह संप्रतीक समाहित हैं. कृपया उपयोक्तानाम में विराम चिन्ह "
-"का प्रयोग न करें."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr "'%s' उपयोक्तानाम अपरकेस संप्रतीक समाहित हैं. कृपया उपयोक्तानाम में अपरकेस का प्रयोग न करें."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr "'%s' उपयोक्तानाम में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ ASCII अक्षरों का प्रयोग करें."
-
-#: ../src/modules/create_user.py:312
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "शब्दकूट में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ ASCII अक्षरों का प्रयोग करें."
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr "'%s' नाम में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ अक्षरों, संख्या, खाली स्थान और अंडरस्कोर संप्रतीक का प्रयोग करें."
+"'%s' उपयोक्तानाम एक संरक्षित सिस्टम खाता है. कृपया अन्य उपयोक्तानाम निर्दिष्ट करें."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -350,11 +304,12 @@ msgid ""
 "Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
-"आपका सिस्टम अब व्यवस्थित है और उपयोग के लिए तैयार है. कृपया नीचे दाँयें कोने में  "
-"\"समाप्त\" बटन जारी रखने के लिये दबायें."
+"आपका सिस्टम अब व्यवस्थित है और उपयोग के लिए तैयार है. कृपया नीचे दाँयें कोने में  \"समाप्त\" "
+"बटन जारी रखने के लिये दबायें."
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Finish\" button in the lower right corner to continue."
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "कृपया नीचे दाँयें कोने में जारी रखने के लिए \"समाप्त\" बटन क्लिक करें."
 
 #: ../src/modules/networking.py:42
@@ -386,7 +341,8 @@ msgid "Sound Card"
 msgstr "ध्वनि कार्ड"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "आपके कंप्यूटर पर एक ध्वनि कार्ड खोजा गया है."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -418,3 +374,48 @@ msgstr ""
 "मौलिक विन्यास के माध्यम से आपका मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दांयें कोने "
 "में जारी रखने के लिए \"आगे\" बटन दबाएं."
 
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "उपयोक्ता नाम की लंबाई 33 संप्रतीकों से कम होनी चाहिए."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "उपयोक्ता नाम एक अंक से आरंभ नहीं हो सकता."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "'%s' उपयोक्ता नाम में रिक्त-स्थान समाहित हैं. कृपया उपयोक्तानाम में रिक्त-स्थान शामिल "
+#~ "न करें."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "'%s' उपयोक्तानाम में विराम चिन्ह संप्रतीक समाहित हैं. कृपया उपयोक्तानाम में विराम "
+#~ "चिन्ह का प्रयोग न करें."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "'%s' उपयोक्तानाम अपरकेस संप्रतीक समाहित हैं. कृपया उपयोक्तानाम में अपरकेस का प्रयोग न "
+#~ "करें."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "'%s' उपयोक्तानाम में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ ASCII अक्षरों का प्रयोग "
+#~ "करें."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "शब्दकूट में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ ASCII अक्षरों का प्रयोग करें."
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "'%s' नाम में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ अक्षरों, संख्या, खाली स्थान और "
+#~ "अंडरस्कोर संप्रतीक का प्रयोग करें."

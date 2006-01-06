@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-08-04 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <ra@ra.is>\n"
@@ -143,11 +143,11 @@ msgstr "Veldu þann lið sem þú vilt breyta "
 msgid "Setup Agent"
 msgstr "Uppsetningarálfurinn"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "Auka diskar"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -159,17 +159,18 @@ msgstr ""
 "sett inn handbókardiskinn eða aðra diska frá Red Hat til að setja upp meiri "
 "hugbúnað."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "Ef þú hefur diska með aukahugbúnaði láttu þá í drifið núna."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -177,11 +178,11 @@ msgstr ""
 "Ef þú vilt virkja stuðning við 32 bita forrit á Intel Itanium2 vélum skaltu "
 "setja inn \"Intel Execution Layer\" pakkann af aukaefnis disknum núna."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Setja upp..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -189,18 +190,19 @@ msgstr ""
 "Geisladiskur fannst ekki. Vinsamlegast settu geisladisk í drifið og veldu "
 "\"Í lagi\" til að halda áfram."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Forritið autorun var ekki á geisladisknum.  Smelltu á \"Í lagi\" til að "
 "halda áfram."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "Kerfisnotandi"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -210,35 +212,36 @@ msgstr ""
 "vinnslu. Til að búa til notandaaðgang þarftu að gefa upp umbeðnar "
 "upplýsingar."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "_Notandanafn:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "F_ullt nafn:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_Lykilorð:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "St_aðfesta lykilorð:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Ef þú þarft að nota netauðkenningu eins og til dæmis Kerberos eða NIS þarftu "
 "að haka við í nota netauðkenningu hnappinn."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "_Nota netauðkenningu..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -248,23 +251,23 @@ msgstr ""
 "þess getur þú einungis notað vélina sem rótarnotandinn sem er eingöngu "
 "ætlaður til kerfisstjórnunar."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "_Halda áfram"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "Búa til _notandaaðgang"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lykilorðin stemma ekki. Vinsamlegast sláðu það inn aftur."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lykilorðið er of stutt. Vinsamlegast hafðu það amk 6 stafi."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -272,66 +275,6 @@ msgid ""
 msgstr ""
 "Notandaheitið '%s' er frátekið fyrir kerfisnotanda. Vinsamlega veldu annað "
 "notandaheiti."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "Notandaheitið má ekki vera lengra en 33 stafir."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "Notandaheitið má ekki byrja á tölu."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í "
-"notandaheitum."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"Notandaheitið '%s' er með púnktum eða kommum. Vinsamlegast notið ekki slík "
-"tákn í notandaheitum."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"Notandaheitið '%s' er með hástöfum. Vinsamlegast notið ekki hástafi í "
-"notandaheitum."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"Notandaheitið '%s' inniheldur ógilda stafi.  Vinsamlegast notið eingöngu "
-"ASCII tákn."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"Lykilorðið inniheldur ógilda stafi.  Vinsamlegast notið eingöngu ASCII tákn."
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"Heitið '%s' inniheldur ógilda stafi.  Vinsamlegast notið eingöngu bókstafi, "
-"tölustafi, orðabil og undirstrik táknið."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -397,7 +340,8 @@ msgid "Sound Card"
 msgstr "Hljóðkort"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "Hljóðkort fannst í vélinni þinni."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -429,3 +373,51 @@ msgstr ""
 "tilbúin til notkunar. Uppsetningarforritið mun nú leiða þig í gegnum það sem "
 "eftir er að stilla. Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra "
 "horninu hér að neðan til að halda áfram."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "Notandaheitið má ekki vera lengra en 33 stafir."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "Notandaheitið má ekki byrja á tölu."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í "
+#~ "notandaheitum."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "Notandaheitið '%s' er með púnktum eða kommum. Vinsamlegast notið ekki "
+#~ "slík tákn í notandaheitum."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "Notandaheitið '%s' er með hástöfum. Vinsamlegast notið ekki hástafi í "
+#~ "notandaheitum."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Notandaheitið '%s' inniheldur ógilda stafi.  Vinsamlegast notið eingöngu "
+#~ "ASCII tákn."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Lykilorðið inniheldur ógilda stafi.  Vinsamlegast notið eingöngu ASCII "
+#~ "tákn."
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "Heitið '%s' inniheldur ógilda stafi.  Vinsamlegast notið eingöngu "
+#~ "bókstafi, tölustafi, orðabil og undirstrik táknið."

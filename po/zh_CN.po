@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-11-14 11:32+1000\n"
 "Last-Translator: \n"
 "Language-Team:  <zh@li.org>\n"
@@ -149,11 +149,11 @@ msgstr "选择您想修改的项目"
 msgid "Setup Agent"
 msgstr "设置代理"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "额外光盘"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -163,17 +163,18 @@ msgstr ""
 "请插入“红帽企业 Linux 附加光盘”来进行安装第三方插件和应用程序。此时，您还可以"
 "插入文档光盘，或其它由红帽提供的光盘来安装额外软件。"
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "现在请插入附带的软件安装盘"
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -181,26 +182,27 @@ msgstr ""
 "要在 Intel Itanium2 体系上启用对32位应用程序的运行时间支持，您必须即刻从附加"
 "光盘安装 Intel Execution Layer 软件包。"
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "安装..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”来继续。"
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "系统用户"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -209,33 +211,34 @@ msgstr ""
 "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
 "信息。"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "用户名(_U)："
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "全名(_E)："
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "口令(_P)："
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "确认口令(_M)："
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr "如果您需要使用网络验证，如 Kerberos 或 NIS，请点击“使用网络登录”按钮。"
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "使用网络登录(_L)..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -244,77 +247,28 @@ msgstr ""
 "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
 "登录，而这个账号是为管理而保留的。"
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "继续(_C)"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "创建账号(_A)"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "口令不匹配。请重新输入口令。"
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "口令太短。请至少使用 6 个字符。"
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "用户名'%s'是一个系统预留帐户。  请选择其它用户名。"
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "用户名长度必须小于 33 个字符。"
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "用户名不能以数字开头。"
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr "用户名“%s”包含空格。请不要在用户名中包含空格。"
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr "用户名“%s”包含标点符号字符。请不要在用户名中使用标点符号。"
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr "名称“%s”中包含非法字符。请仅使用字母、数字、空格和下划线。"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -376,7 +330,8 @@ msgid "Sound Card"
 msgstr "声卡"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "在您的计算机上检测到声卡。"
 
 #: ../src/modules/soundcard_gui.py:68
@@ -405,3 +360,39 @@ msgid ""
 msgstr ""
 "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
 "点击右下角的“下一步”按钮来继续。"
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "用户名长度必须小于 33 个字符。"
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "用户名不能以数字开头。"
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr "用户名“%s”包含空格。请不要在用户名中包含空格。"
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr "用户名“%s”包含标点符号字符。请不要在用户名中使用标点符号。"
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr "名称“%s”中包含非法字符。请仅使用字母、数字、空格和下划线。"

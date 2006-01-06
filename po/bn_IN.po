@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2005-11-11 12:34+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla (INDIA) <redhat-translation@bengalinux.org>\n"
@@ -172,12 +172,12 @@ msgid "Setup Agent"
 msgstr "Setup Agent"
 
 # msgstr "অতিরিক্ত সিডিগুলো"
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "অতিরিক্ত CD"
 
 # modified for RHEL
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -189,18 +189,19 @@ msgstr ""
 "আপনি Documentation ডিস্ক, অথবা Red-Hat-র উপলব্ধ করা অন্যান্য ডিস্কও প্রবেশ করাতে "
 "পারেন।"
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr "অতিরিক্ত কোনো সফ্টওয়্যার ইনস্টেলশনের উদ্দেশ্যে এই সময়ে cd প্রবেশ করান।"
 
 # modified for RHEL
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -210,12 +211,12 @@ msgstr ""
 "আবশ্যক।"
 
 # modified by RB
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "ইনস্টল করুন..."
 
 # modified for RHEL
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -223,18 +224,19 @@ msgstr ""
 "কোনো CD-ROM পাওয়া যায়নি। অনুগ্রহ করে ড্রাইভে একটি সিডি প্রবেশ করান এবং চালানোর "
 "জন্য \"ঠিক আছে\" চাপুন।"
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CD অটোরান প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "সিস্টেম ব্যবহারকারী"
 
 # modified for RHEL
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -243,37 +245,38 @@ msgstr ""
 "অপ্রশাসনিক কাজে ব্যবহারের জন্য ব্যক্তিগত সিস্টেম 'username' তৈরি করার উপদেশ দেওয়া "
 "হচ্ছে। সিস্টেম 'username' তৈরি করার জন্য সকল প্রয়োজনীয় তথ্য উপলব্ধ করুন।"
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "ব্যবহারকারীর নাম(_U):"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "সম্পূর্ণ নাম(_e):"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "পাসওয়ার্ড(_P):"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ডটি নিশ্চায়ন (_m):"
 
 # msgstr "আপনি যদি "--old version
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "আপনি যদি কোনো নেটওয়ার্ক পরিচয়-প্রমান প্রক্রিয়া যমন Kerberos অথবা NIS ব্যবহার করতে "
 "ইচ্ছুক থাকেন, তাহলে অনুগ্রহ করে নেটওয়ার্ক লগ-ইন ব্যাবহার করো বাটনটিতে ক্লিক করুন।"
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ ইন ব্যবহার করা হবে (_L)..."
 
 # modified for RHEL
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -284,26 +287,26 @@ msgstr ""
 "ব্যবহারের জন্য সংরক্ষিত।"
 
 # msgstr "_চালিয়ে যাও"
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "অগ্রসর (_C)"
 
 # msgstr "একাউন্ট তৈরী কর"
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "অ্যাকাউন্ট তৈরি করুন (_a)"
 
 # msgstr "পাসওয়ার্ডগুলো একই নয়। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "পাসওয়ার্ডগুলি মেলেনি। অনুগ্রহ করে পুনরায় পাসওয়ার্ড লিখুন।"
 
 # modified by RB
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষরের পাসওয়ার্ড লিখুন।"
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -311,66 +314,6 @@ msgid ""
 msgstr ""
 "'%s' ব্যবহারকারীর নাম একটি সিস্টেম অ্যাকাউন্টের জন্য সংরক্ষিত। অনুগ্রহ করে অন্য "
 "ব্যবহারকারীর নাম উল্লেখ করুন।"
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "ব্যবহারকারীর নামটি ৩৩-টি অক্ষরের মধ্যে সীমাবদ্ধ রাখা আবশ্যক।"
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "ব্যবহারকারীর নাম কোনো সংখ্যা দিয়ে শুরু করা যাবে না।"
-
-#  Check for whitespace
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"ব্যবহারকারীর নাম '%s'-র মাঝে ফাঁকা স্থান রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
-"মধ্যে কোনো শূণ্যস্থান লিখবেন না।"
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
-"মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"ব্যবহারকারীর নাম '%s'-র মধ্য বড় ছাঁদের হরফ উপস্থিত রয়েছে। অনুগ্রহ করে ব্যবহারকারীর "
-"নামের মধ্যে কোনো বড় ছাঁদের হরফ প্রয়োগ করবেন না।"
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"ব্যবহারকারীর নাম '%s'-র মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
-"মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু অক্ষর, সংখ্যা, শূণ্যস্থান ও "
-"আন্ডারস্কোর ব্যবহার করুন।"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -442,7 +385,8 @@ msgid "Sound Card"
 msgstr "সাউন্ড কার্ড"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "আপনার কম্পিউটারে একটি সাউন্ড কার্ড পাওয়া গেছে।"
 
 # modified by RB
@@ -476,3 +420,51 @@ msgstr ""
 "আর কয়েকটি ধাপের মধ্যে আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "ব্যবহারকারীর নামটি ৩৩-টি অক্ষরের মধ্যে সীমাবদ্ধ রাখা আবশ্যক।"
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "ব্যবহারকারীর নাম কোনো সংখ্যা দিয়ে শুরু করা যাবে না।"
+
+#  Check for whitespace
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "ব্যবহারকারীর নাম '%s'-র মাঝে ফাঁকা স্থান রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
+#~ "মধ্যে কোনো শূণ্যস্থান লিখবেন না।"
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "ব্যবহারকারীর নাম '%s'-র মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
+#~ "মধ্যে কোনো বিরাম চিহ্ন লিখবেন না।"
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "ব্যবহারকারীর নাম '%s'-র মধ্য বড় ছাঁদের হরফ উপস্থিত রয়েছে। অনুগ্রহ করে "
+#~ "ব্যবহারকারীর নামের মধ্যে কোনো বড় ছাঁদের হরফ প্রয়োগ করবেন না।"
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "ব্যবহারকারীর নাম '%s'-র মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামের "
+#~ "মধ্যে কোনো অবৈধ অক্ষর অক্ষর রাখবেন না।"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষর ব্যবহার করুন।"
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু অক্ষর, সংখ্যা, শূণ্যস্থান ও "
+#~ "আন্ডারস্কোর ব্যবহার করুন।"

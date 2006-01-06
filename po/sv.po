@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-28 14:43-0400\n"
+"POT-Creation-Date: 2006-01-06 11:02-0500\n"
 "PO-Revision-Date: 2006-01-03 00:03+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -148,11 +148,11 @@ msgstr "Välj det objekt som du vill ändra "
 msgid "Setup Agent"
 msgstr "Konfigurationsagent"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "Ytterligare cd-skivor"
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:64
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -165,18 +165,19 @@ msgstr ""
 "andra skivor som tillhandahållits från Red Hat för att installera "
 "ytterligare programvara nu."
 
-#: ../src/modules/additional_cds.py:67
+#: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 "Stoppa in eventuella ytterligare installationsskivor med programvara nu."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:76
+#, fuzzy
 msgid ""
 "\n"
 "\n"
 "To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture, you must install the Intel Execution Layer package from the "
+"architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
 "\n"
@@ -185,11 +186,11 @@ msgstr ""
 "arkitekturen måste du installera paketet Intel Execution Layer från Extras-"
 "skivan nu."
 
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Installera..."
 
-#: ../src/modules/additional_cds.py:160
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -197,18 +198,19 @@ msgstr ""
 "En cd-romskiva har inte detekterats. Stoppa in en cd-romskiva i enheten och "
 "klicka på \"OK\" för att fortsätta."
 
-#: ../src/modules/additional_cds.py:194
+#: ../src/modules/additional_cds.py:197
+#, fuzzy
 msgid ""
-"The autorun program cannot be found on the cd. Click \"OK\" to continue."
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Autorun-programmet kan inte hittas på cd-skivan. Klicka på \"OK\" för att "
 "fortsätta."
 
-#: ../src/modules/create_user.py:42
+#: ../src/modules/create_user.py:37
 msgid "System User"
 msgstr "Systemanvändare"
 
-#: ../src/modules/create_user.py:69
+#: ../src/modules/create_user.py:64
 msgid ""
 "It is recommended that you create a system 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -218,35 +220,36 @@ msgstr ""
 "(ickeadministrativt) bruk.  För att skapa ett \"systemanvändarnamn\" anger "
 "du den information som begärs nedan."
 
-#: ../src/modules/create_user.py:79
+#: ../src/modules/create_user.py:74
 msgid "_Username:"
 msgstr "_Användarnamn:"
 
-#: ../src/modules/create_user.py:86
+#: ../src/modules/create_user.py:81
 msgid "Full Nam_e:"
 msgstr "Fullständigt na_mn:"
 
-#: ../src/modules/create_user.py:93
+#: ../src/modules/create_user.py:88
 msgid "_Password:"
 msgstr "_Lösenord:"
 
-#: ../src/modules/create_user.py:100
+#: ../src/modules/create_user.py:95
 msgid "Confir_m Password:"
 msgstr "_Bekräfta lösenord:"
 
-#: ../src/modules/create_user.py:116
+#: ../src/modules/create_user.py:111
+#, fuzzy
 msgid ""
-"If you need to use network authentication such as Kerberos or NIS, please "
+"If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Om du måste använda nätverksautentisering som exempelvis Kerberos eller NIS "
 "bör du klicka på knappen Använd nätverksinloggning."
 
-#: ../src/modules/create_user.py:126
+#: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "Använd nätverksinloggning..."
 
-#: ../src/modules/create_user.py:162
+#: ../src/modules/create_user.py:157
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -256,23 +259,23 @@ msgstr ""
 "fortsätter utan ett konto kan du bara logga in med rootkontot, vilket är "
 "reserverat för administrativt bruk."
 
-#: ../src/modules/create_user.py:170
+#: ../src/modules/create_user.py:165
 msgid "_Continue"
 msgstr "_Fortsätt"
 
-#: ../src/modules/create_user.py:171
+#: ../src/modules/create_user.py:166
 msgid "Create _account"
 msgstr "Skapa _konto"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:189
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:205
+#: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:216
+#: ../src/modules/create_user.py:208
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -280,65 +283,6 @@ msgid ""
 msgstr ""
 "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
 "användarnamn."
-
-#: ../src/modules/create_user.py:263
-msgid "The user name must be less than 33 characters long."
-msgstr "Användarnamnet måste vara mindre än 33 tecken långt."
-
-#: ../src/modules/create_user.py:269
-msgid "The user name may not begin with a number."
-msgstr "Användarnamnet får inte börja med en siffra."
-
-#. Check for whitespace
-#: ../src/modules/create_user.py:281
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace.  Please do not include whitespace in "
-"the user name."
-msgstr ""
-"Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i "
-"användarnamnet."
-
-#: ../src/modules/create_user.py:288
-#, python-format
-msgid ""
-"The user name '%s' contains punctuation characters.  Please do not use "
-"punctuation in the user name."
-msgstr ""
-"Användarnamnet \"%s\" innehåller skiljetecken.  Använd inte skiljetecken i "
-"användarnamnet."
-
-#: ../src/modules/create_user.py:295
-#, python-format
-msgid ""
-"The user name '%s' contains uppercase characters.  Please do not use "
-"uppercase characters in the user name."
-msgstr ""
-"Användarnamnet \"%s\" innehåller versaler.  Använd inte versaler i "
-"användarnamnet."
-
-#: ../src/modules/create_user.py:302
-#, python-format
-msgid ""
-"The user name '%s' contains invalid characters.  Please use only ASCII "
-"characters."
-msgstr ""
-"Användarnamnet \"%s\" innehåller ogiltiga tecken.  Använd endast ASCII-"
-"tecken."
-
-#: ../src/modules/create_user.py:312
-msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Lösenordet innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
-
-#: ../src/modules/create_user.py:322
-#, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only letters, "
-"numbers, whitespace and the underscore character."
-msgstr ""
-"Namnet \"%s\" innehåller ogiltiga tecken.  Använd endast bokstäver, siffror, "
-"blanksteg och understreck."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -368,21 +312,10 @@ msgstr ""
 "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
 "\"Slutför\" i nedre högra hörnet för att fortsätta."
 
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Next\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
-"\"Nästa\" i nedre högra hörnet för att fortsätta."
-
 #: ../src/modules/finished.py:36
 msgid ""
 "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "Tryck på knappen \"Slutför\" i nedre högra hörnet för att fortsätta."
-
-msgid ""
-"Please click the \"Nästa\" button in the lower right corner to continue."
-msgstr "Tryck på knappen \"Nästa\" i nedre högra hörnet för att fortsätta."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -413,7 +346,8 @@ msgid "Sound Card"
 msgstr "Ljudkort"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected on your computer."
+#, fuzzy
+msgid "A sound card has been detected in your computer."
 msgstr "Ett ljudkort har hittats på din dator."
 
 #: ../src/modules/soundcard_gui.py:68
@@ -445,6 +379,63 @@ msgstr ""
 "Konfigurationsagenten kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Nästa\" i nedre högra hörnet för att "
 "fortsätta."
+
+#~ msgid "The user name must be less than 33 characters long."
+#~ msgstr "Användarnamnet måste vara mindre än 33 tecken långt."
+
+#~ msgid "The user name may not begin with a number."
+#~ msgstr "Användarnamnet får inte börja med en siffra."
+
+#~ msgid ""
+#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
+#~ "in the user name."
+#~ msgstr ""
+#~ "Användarnamnet \"%s\" innehåller blanktecken.  Använd inte blanktecken i "
+#~ "användarnamnet."
+
+#~ msgid ""
+#~ "The user name '%s' contains punctuation characters.  Please do not use "
+#~ "punctuation in the user name."
+#~ msgstr ""
+#~ "Användarnamnet \"%s\" innehåller skiljetecken.  Använd inte skiljetecken "
+#~ "i användarnamnet."
+
+#~ msgid ""
+#~ "The user name '%s' contains uppercase characters.  Please do not use "
+#~ "uppercase characters in the user name."
+#~ msgstr ""
+#~ "Användarnamnet \"%s\" innehåller versaler.  Använd inte versaler i "
+#~ "användarnamnet."
+
+#~ msgid ""
+#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Användarnamnet \"%s\" innehåller ogiltiga tecken.  Använd endast ASCII-"
+#~ "tecken."
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "Lösenordet innehåller ogiltiga tecken.  Använd endast ASCII-tecken."
+
+#~ msgid ""
+#~ "The name '%s' contains invalid characters.  Please use only letters, "
+#~ "numbers, whitespace and the underscore character."
+#~ msgstr ""
+#~ "Namnet \"%s\" innehåller ogiltiga tecken.  Använd endast bokstäver, "
+#~ "siffror, blanksteg och understreck."
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Next\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
+#~ "\"Nästa\" i nedre högra hörnet för att fortsätta."
+
+#~ msgid ""
+#~ "Please click the \"Nästa\" button in the lower right corner to continue."
+#~ msgstr "Tryck på knappen \"Nästa\" i nedre högra hörnet för att fortsätta."
 
 #~ msgid "Please insert any additionional software install cds at this time."
 #~ msgstr ""
