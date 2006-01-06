@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-12-03 15:54+0200\n"
+"PO-Revision-Date: 2006-01-06 22:14+0200\n"
 "Last-Translator: Marek Garbaczewski <mrgary@fic.uni.lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -148,7 +148,7 @@ msgstr "Agent instalacji"
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
-msgstr "Dodatkowe płyty"
+msgstr "Dodatkowe CD"
 
 #: ../src/modules/additional_cds.py:64
 msgid ""
@@ -164,11 +164,10 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
-msgstr "Włóż dowolną płytę z dodatkowym oprogramowaniem."
+msgstr "Włóż dowolny CD z dodatkowym oprogramowaniem."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -178,13 +177,13 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Aby włączyć obsługę aplikacji 32-bitowych w architekturze Intel Itanium 2 "
-"musisz zainstalować pakiet Intel Execution Layer z płyty z dodatkami "
-"(Extras) do systemu."
+"Aby włączyć obsługę wykonywania aplikacji 32-bitowych w architekturze Intel "
+"Itanium 2 musisz teraz zainstalować pakiet Intel Execution Layer z płyty z "
+"dodatkami (Extras)."
 
 #: ../src/modules/additional_cds.py:117
 msgid "Install..."
-msgstr "Instalacja..."
+msgstr "Zainstaluj..."
 
 #: ../src/modules/additional_cds.py:163
 msgid ""
@@ -195,12 +194,11 @@ msgstr ""
 "kontynuować."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"Program automatycznego uruchamiania nie został znaleziony na płycie. "
-"Naciśnij \"OK\", aby kontynuować."
+"Program autoodtwarzania nie został znaleziony na CD. Naciśnij \"OK\", "
+"aby kontynuować."
 
 #: ../src/modules/create_user.py:37
 msgid "System User"
@@ -233,17 +231,16 @@ msgid "Confir_m Password:"
 msgstr "_Potwierdź hasło:"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 "Jeśli potrzebujesz użyć uwierzytelniania sieciowego, takiego jak Kerberos "
-"czy NIS, naciśnij przycisk \"Użyj uwierzytelniania sieciowego\"."
+"lub NIS, naciśnij przycisk Użyj logowania sieciowego."
 
 #: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
-msgstr "Użyj uwierzytelni_ania sieciowego..."
+msgstr "Użyj _logowania sieciowego..."
 
 #: ../src/modules/create_user.py:157
 msgid ""
@@ -342,9 +339,8 @@ msgid "Sound Card"
 msgstr "Karta dźwiękowa"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
-msgstr "Karta dźwiękowa została wykryta w systemie."
+msgstr "Karta dźwiękowa została wykryta w komputerze."
 
 #: ../src/modules/soundcard_gui.py:68
 msgid ""
@@ -371,52 +367,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do użytku. "
-"Agent instalacji obecnie nie posiada poradnika o podstawowej konfiguracji. "
-"Naciśnij \"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Nazwa użytkownika nie może być dłuższa niż 33 znaki."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Nazwa użytkownika nie może rozpoczynać się cyfrą."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Nazwa użytkownika \"%s\" zawiera biały znak. Nie umieszczaj białych "
-#~ "znaków w nazwie użytkownika."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Nazwa użytkownika \"%s\" zawiera znaki interpunkcyjne. Nie umieszczaj "
-#~ "znaków interpunkcyjnych w nazwie użytkownika."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Nazwa użytkownika \"%s\" zawiera duże litery. Używaj tylko małych znaków "
-#~ "w nazwie użytkownika."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Nazwa użytkownika \"%s\" zawiera nieprawidłowe znaki. Używaj tylko znaków "
-#~ "ASCII."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "Hasło zawiera nieprawidłowe znaki. Używaj tylko znaków ASCII."
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Nazwa \"%s\" zawiera nieprawidłowe znaki. Używaj tylko liter, liczb, "
-#~ "białych znaków i podkreślników."
+"Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do używania. "
+"Agent instalacji przeprowadzi cię przez podstawową konfigurację. Naciśnij "
+"\"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
