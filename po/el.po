@@ -11,12 +11,12 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-03-29 16:20+0300\n"
+"PO-Revision-Date: 2006-01-08 18:05+0200\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.forthnet.gr>\n"
 "Language-Team:  <nls@tux.hellug.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -58,9 +58,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"Καθώς υπάρχει πρόβλημα με το άρθρωμα %s, \n"
-"το Εργαλείο Ρύθμισης της Red Hat δε θα φορτώσει αυτό το άρθρωμα \n"
-"και θα δοκιμάσει να τρέξει τα υπόλοιπα αρθρώματα."
+"Καθώς υπάρχει πρόβλημα στη λειτουργική μονάδα  %s, \n"
+"το Εργαλείο Ρύθμισης της Red Hat δε θα φορτώσει αυτή τη λειτουργική μονάδα \n"
+"και θα δοκιμάσει να τρέξει τις υπόλοιπες λειτουργικές μονάδες."
 
 #: ../src/exceptionWindow.py:57
 #, python-format
@@ -73,7 +73,7 @@ msgstr ""
 "Παρακαλούμε στείλτε μιά αναφορά σφάλματος για το 'firstboot' στο σύστημα \n"
 "καταγραφής σφαλμάτων της Red Hat στη σελίδα  http://www.redhat.com/"
 "bugzilla. \n"
-"Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος φυλάχθηκε στο %s \n"
+"Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος αποθηκεύτηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
 #: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
@@ -87,17 +87,16 @@ msgstr "_Επόμενο"
 
 #: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Για να εφαρμοστούν κάποιες από τις επιλογές που έχετε κάνει πρέπει να γίνει τώρα επανεκκίνηση του συστήματος."
 
 #: ../src/firstbootWindow.py:332
-#, fuzzy
 msgid "_Finish"
-msgstr "Τέλος Ρύθμισης"
+msgstr "_Τέλος"
 
 #: ../src/firstbootWindow.py:424
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr "αποτυχία εισαγωγής του αρθρώματος %s: %s"
+msgstr "αποτυχία εισαγωγής του λειτουργικής μονάδας  %s: %s"
 
 #: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -160,18 +159,17 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Παρακαλώ εισάγετε το δίσκο με την ετικέτα \"Red Hat Enterprise Linux Extras"
-"\" για ναδώσετε την δυνατότητα εγκατάστασης εφαρμογών και πρόσθετων "
+"\" για να δώσετε την δυνατότητα εγκατάστασης εφαρμογών και πρόσθετων "
 "λειτουργιών από τρίτους κατασκευαστές. Μπορείτε επίσης να εισάγετε το δίσκο "
 "Τεκμηρίωσης, ή άλλους δίσκους που παρέχονται από την Red Hat για να "
-"εγκταστήσετε επιπλέονλογισμικό."
+"εγκαταστήσετε επιπλέον λογισμικό."
 
 #: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Παρακαλώ εισάγετε τώρα  όποια πρόσθετα cd εγκατάστασης λογισμικού διαθέτετε."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -181,7 +179,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Για να ενεργοποιήσετε υποστήριξη εφαρμογών 32-bit πάνω σε αεχιτεκτονικήIntel "
+"Για να ενεργοποιήσετε υποστήριξη εφαρμογών 32-bit πάνω σε αρχιτεκτονική Intel "
 "Itanium2, πρέπει να εγκαταστήσετε τώρα το πακέτο Intel Execution Layer από "
 "το δίσκο Extras."
 
@@ -194,15 +192,14 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Δεν εντοπίστηκε CD-ROM.  Παρακαλώ εισάγετε έναν οπτικό δίσκο στον οδηγό και "
+"Δεν εντοπίστηκε CD-ROM.  Παρακαλώ εισάγετε ένα  CD-ROM στον οδηγό και "
 "πατήστε \"Εντάξει\" για να συνεχίσετε."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"Το πρόγραμμα autorun δεν εντοπίστηκε στο cd. Πατήστε \"Εντάξει\" για να "
+"Το πρόγραμμα autorun δεν εντοπίστηκε στο CD. Πατήστε \"Εντάξει\" για να "
 "συνεχίσετε."
 
 #: ../src/modules/create_user.py:37
@@ -236,12 +233,11 @@ msgid "Confir_m Password:"
 msgstr "Επι_βεβαίωση Συνθηματικού:"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Αν χρειάζεται να χρησιμοποιήσετε έλεγχο αυθεντικότητας δικτύου όπως Kerberos "
+"Αν χρειάζεται να χρησιμοποιήσετε έλεγχο αυθεντικότητας μέσω δικτύου όπως Kerberos "
 "ή NIS, παρακαλώ πατήστε το κουμπί Χρήση Σύνδεση Μέσω Δικτύου."
 
 #: ../src/modules/create_user.py:121
@@ -278,13 +274,13 @@ msgstr ""
 "χαρακτήρες."
 
 #: ../src/modules/create_user.py:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Το όνομα χρήστη '%s' περιέχει κεφαλαίους χαρακτήρες.  Παρακαλώ να μη "
-"χρησιμοποιείσετε κεφαλαίους χαρακτήρες στο όνομα χρήστη."
+"Το όνομα χρήστη '%s' είναι δεσμευμένο  από λογαριασμό του συστήματος.  Παρακαλώ προσδιορίστε"
+"ένα άλλο  όνομα χρήστη."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -307,20 +303,18 @@ msgid "Finish Setup"
 msgstr "Τέλος Ρύθμισης"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
 "Το σύστημα σας έχει ρυθμιστεί και είναι έτοιμο για χρήση.  Παρακαλώ κάντε "
-"κλικ το κουμπί  \"Επόμενο\" στην κάτω δεξιά γωνία για να συνεχίσετε."
+"κλικ το κουμπί  \"Τέλος\" στην κάτω δεξιά γωνία για να συνεχίσετε."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
 msgid ""
 "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
-"Παρακαλώ κάνετε κλικ στο κουμπί \"Επόμενο\" στην δεξιά κάτω γωνία για να "
+"Παρακαλώ κάνετε κλικ στο κουμπί \"Τέλος\" στην δεξιά κάτω γωνία για να "
 "συνεχίσετε."
 
 #: ../src/modules/networking.py:42
@@ -352,7 +346,6 @@ msgid "Sound Card"
 msgstr "Κάρτα Ήχου"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
 msgstr "Μια κάρτα ήχου εντοπίστηκε στον υπολογιστή σας."
 
@@ -382,10 +375,10 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
 msgstr ""
-"Υπάρχουν μερικά βήματα που πρέπει να ακολουθήσετε πριν χρησιμοποιείσετε το "
+"Υπάρχουν μερικά βήματα που πρέπει να ακολουθήσετε πριν χρησιμοποιήσετε το "
 "σύστημα.  Το Εργαλείο Ρύθμισης θα σας οδηγήσει στην εκτέλεση μιας βασικής "
 "διαμόρφωσης.  Παρακαλώ πατήστε το κουμπί  \"Επόμενο\" στην δεξιά κάτω γωνία "
-"για να συνεχίσετε. "
+"για να συνεχίσετε."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "Το όνομα χρήστη πρέπει να έχει μέγεθος μικρότερο από 33 χαρακτήρες."
