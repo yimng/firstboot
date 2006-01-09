@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.56
-Release: 2
+Version: 1.3.57
+Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -75,6 +75,10 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Jan 09 2006 Chris Lumens <clumens@redhat.com> 1.3.57-1
+- Use scdMainWindow instead of mainWindow to fix random python import
+  tracebacks.
+
 * Mon Jan 09 2006 Chris Lumens <clumens@redhat.com> 1.3.56-2
 - Remove dependancy on system-config-packages.
 

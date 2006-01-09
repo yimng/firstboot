@@ -29,7 +29,7 @@ import time
 import functions
 
 sys.path.append('/usr/share/system-config-date/')
-import mainWindow
+import scdMainWindow
 
 from firstboot_module_window import FirstbootModuleWindow
 
@@ -53,7 +53,7 @@ class TimeWindow(FirstbootModuleWindow):
         pass
 
     def setupScreen(self):
-        self.timezoneWindow = mainWindow.mainWindow (firstboot = True, showPages = ["timezone"])
+        self.timezoneWindow = scdMainWindow.scdMainWindow (firstboot = True, showPages = ["timezone"])
 
         self.timezoneWidget = self.timezoneWindow.firstboot_widget ()
 
