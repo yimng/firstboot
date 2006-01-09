@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.3.56
-Release: 1
+Release: 2
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -25,7 +25,6 @@ Requires: system-config-keyboard
 Requires: system-config-soundcard
 Requires: system-config-securitylevel
 Requires: system-config-rootpassword
-Requires: system-config-packages
 Requires: system-config-network
 Requires: system-config-users
 Requires: authconfig-gtk
@@ -76,6 +75,9 @@ fi
 /usr/sbin/firstboot
 
 %changelog
+* Mon Jan 09 2006 Chris Lumens <clumens@redhat.com> 1.3.56-2
+- Remove dependancy on system-config-packages.
+
 * Thu Jan 09 2006 Chris Lumens <clumens@redhat.com> 1.3.56-1
 - Increase timeout on waiting for X to start (#176782).
 - Update translations.
