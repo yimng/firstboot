@@ -1,22 +1,23 @@
+# translation of fr.po to 
 # translation of fr.po to French
 # Copyright (C) 2004 Free Software Foundation
 # Audrey Simons <asimons@redhat.com>, 2003, 2004.
 # Jean-Paul Aubry <jpaubry@redhat.com>, 2003,2004.
 # Stephane Raimbault <stephane.raimbault@free.fr>, 2004.
-# Samuel Mutel <samuel.mutel@free.fr>, 2005.
+# Samuel Mutel <samuel.mutel@free.fr>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-11-02 11:44-0500\n"
-"Last-Translator: Daniel Cote <dcote@uottawa.ca>\n"
-"Language-Team: French <fr@li.org>\n"
+"PO-Revision-Date: 2006-01-09 15:38+1000\n"
+"Last-Translator: \n"
+"Language-Team:  <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -172,7 +173,6 @@ msgstr "Veuillez maintenant insérer les cédéroms additionnels d'installation.
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -182,8 +182,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Pour permettre la prise en charge à l'exécution, d'applications 32 bits sur "
-"l'architecture Intel Itanium2, vous devez installer maintenant le packetage "
+"Pour permettre la prise en charge à l'exécution d'applications 32 bit sur "
+"l'architecture Intel Itanium2, vous devez installer maintenant le paquetage "
 "Intel Execution Layer qui se trouve sur le disque libellé Paquetages "
 "Supplémentaires."
 
@@ -200,9 +200,7 @@ msgstr ""
 "puis cliquer sur « OK » pour continuer."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliquer "
 "sur « OK » pour continuer."
@@ -238,7 +236,6 @@ msgid "Confir_m Password:"
 msgstr "Confir_mer le mot de passe :"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -274,8 +271,7 @@ msgstr "Les mots de passe ne correspondent pas. Essayez à nouveau."
 
 #: ../src/modules/create_user.py:197
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
+msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères."
 
 #: ../src/modules/create_user.py:208
 #, python-format
@@ -317,8 +313,7 @@ msgstr ""
 "veuillez cliquer sur le bouton « Terminé » dans le coin en bas à droite."
 
 #: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
+msgid "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "Pour continuer, cliquez sur le bouton « Terminé » dans le coin en bas "
 "à droite."
@@ -352,7 +347,6 @@ msgid "Sound Card"
 msgstr "Carte son"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
 msgstr "Une carte son a été détectée sur votre ordinateur."
 
@@ -386,87 +380,3 @@ msgstr ""
 "au long de la configuration de base. Pour continuer, cliquez sur le bouton "
 "« Suivant » dans le coin en bas à droite."
 
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Le nom d'utilisateur doit avoir moins de 33 caractères."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Le nom d'utilisateur ne doit pas commencer avec un nombre."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Le nom d'utilisateur « %s » contient des espaces blancs. Veuillez ne pas "
-#~ "inclure d'espaces blancs dans le nom d'utilisateur."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Le nom d'utilisateur « %s » contient des caractères de ponctuation. "
-#~ "Veuillez ne pas utiliser de ponctuation dans le nom d'utilisateur."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Le nom d'utilisateur « %s » contient des caractères en majuscules. "
-#~ "Veuillez ne pas utiliser de caractères en majuscules dans le nom "
-#~ "d'utilisateur."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Le nom d'utilisateur « %s » contient des caractères non valides. Veuillez "
-#~ "n'utiliser que des caractères ASCII."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Le mot de passe contient des caractères non valides. Veuillez n'utiliser "
-#~ "que des caractères ASCII."
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Le nom « %s » contient des caractères non valides. Veuillez n'utiliser "
-#~ "que des lettres, des chiffres, des espaces blancs et le charactère de "
-#~ "soulignement."
-
-#~ msgid "Licence Aggrement"
-#~ msgstr "Contrat de licence"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot ne tourne pas au niveau d'exécution 3."
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Si vous disposez de l'un des CD-ROM figurant dans la liste ci-dessous, "
-#~ "vous pouvez installer les paquetages à partir de ceux-ci en introduisant "
-#~ "le CD-ROM et en cliquant sur le bouton approprié."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Veuillez saisir un serveur de temps."
-
-#~ msgid "Error"
-#~ msgstr "Erreur"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Impossible d'établir la connexion avec %s. Soit %s n'est pas disponible, "
-#~ "soit les paramètres de pare-feu de votre ordinateur bloquent la connexion "
-#~ "NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Connexion au serveur NTP. Veuillez patienter..."
-
-#~ msgid "User Account"
-#~ msgstr "Compte utilisateur"
