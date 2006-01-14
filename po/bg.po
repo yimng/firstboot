@@ -1,22 +1,23 @@
 # translation of bg.po to Bulgarian
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
 # Николай Сърмаджиев,преносим <nikolayds@msn.com>, 2004.
 # Николай Сърмаджиев <nikolayd@sarmadzhiev.tk>, 2004.
 # Doncho N. Gunchev <mr700@globalnet.bg>, 2004, 2005.
-#
+# Doncho N. Gunchev <gunchev@gmail.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-11-23 18:36+0200\n"
-"Last-Translator: Doncho N. Gunchev <mr700@globalnet.bg>\n"
+"PO-Revision-Date: 2006-01-14 04:55+0200\n"
+"Last-Translator: Doncho N. Gunchev <gunchev@gmail.com>\n"
 "Language-Team: Bulgarian <Bulgarian Translators' Team <dict@fsa-bg.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -36,8 +37,7 @@ msgstr "_Не, не съм съгласен"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
-"Бихте ли желали да препрочетете или преразгледате лицензионното споразумение?"
+msgstr "Бихте ли желали да препрочетете или преразгледате лицензионното споразумение?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -169,7 +169,6 @@ msgstr "Моля поставете допълнителните инстала�
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -180,8 +179,8 @@ msgstr ""
 "\n"
 "\n"
 "За да включите поддръжка за 32-битови приложения на Intel Itanium2 "
-"архитектури, трябва да инсталирате пакета Intel Execution Layer от диска с "
-"добавки(Extras) сега."
+"архитектури, сега трябва да инсталирате пакета Intel Execution Layer от "
+"диска с добавки(Extras)."
 
 #: ../src/modules/additional_cds.py:117
 msgid "Install..."
@@ -196,11 +195,8 @@ msgstr ""
 "\"Добре\" за продължение."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Няма авто-стартиращата програма на CD-то. Натиснете \"Добре\" за продължение."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Няма авто-стартиращата програма на този CD. Натиснете \"Добре\" за да продължите."
 
 #: ../src/modules/create_user.py:37
 msgid "System User"
@@ -233,13 +229,12 @@ msgid "Confir_m Password:"
 msgstr "Потвърж_дение:"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Ако използвате мрежово удостоверяване, като например Kerberos или NIS, моля "
-"натиснете бутона \"Ползване на мрежово удостоверяване\"."
+"За да ползвате мрежово удостоверяване, като например Kerberos или "
+"NIS, моля натиснете бутона \"Ползване на мрежово удостоверяване\"."
 
 #: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
@@ -309,8 +304,7 @@ msgstr ""
 "долния десен ъгъл за продължение."
 
 #: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
+msgid "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "Моля натиснете бутона \"Край\" в долния десен ъгъл за продължение."
 
 #: ../src/modules/networking.py:42
@@ -342,9 +336,8 @@ msgid "Sound Card"
 msgstr "Звукова карта"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
-msgstr "На Вашия компютър е открита звукова карта."
+msgstr "На Вашия компютър бе открита звукова карта."
 
 #: ../src/modules/soundcard_gui.py:68
 msgid ""
@@ -375,49 +368,3 @@ msgstr ""
 "за настройка ще Ви преведе през някои базови настройки.  Моля натиснете "
 "бутон \"Следващ\" в долния десен ъгъл за да продължите."
 
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Потребителското име трябва да бъде по-късо от 33 символа."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Потребителското име не може да започва с цифра."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Потребителското име %s съдържа празни символи.  Моля не ги ползвайте в "
-#~ "потребителското име."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Потребителското име %s съдържа пунктуационни символи.  Моля не ги "
-#~ "ползвайте в потребителското име."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Потребителското име %s съдържа главни букви.  Моля не ползвайте такива в "
-#~ "потребителското име."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Потребителското име %s съдържа невалидни символи.  Моля ползвайте само "
-#~ "ASCII символи."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Паролата съдържа невалидни символи.  Моля ползвайте само ASCII символи."
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Името %s съдържа невалидни символи.  Моля ползвайте букви, цифри, "
-#~ "интервали и символа за подчерта."
