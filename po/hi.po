@@ -1,14 +1,14 @@
 # translation of hi.po to
 # translation of hi.po to Hindi
 # Copyright (C) YEAR ORGANIZATION.
-# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005.
+# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-12-26 11:59+0530\n"
+"PO-Revision-Date: 2006-01-18 16:29+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "<<<<<<< hi.poPOT-Creation-Date: 2004-08-31 16:22-0400\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -170,7 +170,6 @@ msgstr "कृपया किसी अतिरिक्त सॉफ्टव
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -180,8 +179,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 आर्किटेक्चर पर 32-बिट अनुप्रयोग के लिए, आप अब अतिरिक्त डिस्क से अवश्य "
-"Intel निष्पादन स्तर संकुल अधिष्ठापित करें."
+"32-बिट अनुप्रयोग के रनटाइम को समर्थ करने के लिये Intel Itanium2 "
+"ऑर्किटेक्चर पर, आपको Intel निष्पादन स्तर संकुल को अब एक्स्ट्रा से जरूर अधिष्ठापित करना चाहिये."
 
 #: ../src/modules/additional_cds.py:117
 msgid "Install..."
@@ -196,12 +195,8 @@ msgstr ""
 "के लिए दबाएँ."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"सीडी पर स्वतः कार्यान्वयन प्रोग्राम नहीं पाया जा सकता है. जारी रखने के लिए \"सही\" को "
-"क्लिक करें."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "ऑटोरन प्रोग्राम CD पर नहीं पाया जा सकता है. \"ठीक\" को जारी रखने के लिये क्लिक करें."
 
 #: ../src/modules/create_user.py:37
 msgid "System User"
@@ -233,13 +228,10 @@ msgid "Confir_m Password:"
 msgstr "शब्दकूट सुनिश्चित करें (_m):"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
-"यदि आप करबरोस या NIS जैसे संजाल सत्यापन का प्रयोग करना चाहते हैं, कृपया संजाल लॉगिन का "
-"प्रयोग करें बटन दबाएँ."
+msgstr "अगर आप संजाल सत्यापन का प्रयोग करना चाहते हैं, जैसे कि करबरोस या NIS, कृपया संजाल लॉगिन बटन का प्रयोग करें पर क्लिक करें."
 
 #: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
@@ -276,8 +268,7 @@ msgstr "शब्दकूट बहुत छोटा है. कृपया 
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"'%s' उपयोक्तानाम एक संरक्षित सिस्टम खाता है. कृपया अन्य उपयोक्तानाम निर्दिष्ट करें."
+msgstr "'%s' उपयोक्तानाम एक संरक्षित सिस्टम खाता है. कृपया अन्य उपयोक्तानाम निर्दिष्ट करें."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -308,8 +299,7 @@ msgstr ""
 "बटन जारी रखने के लिये दबायें."
 
 #: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
+msgid "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "कृपया नीचे दाँयें कोने में जारी रखने के लिए \"समाप्त\" बटन क्लिक करें."
 
 #: ../src/modules/networking.py:42
@@ -341,7 +331,6 @@ msgid "Sound Card"
 msgstr "ध्वनि कार्ड"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
 msgstr "आपके कंप्यूटर पर एक ध्वनि कार्ड खोजा गया है."
 
@@ -374,48 +363,3 @@ msgstr ""
 "मौलिक विन्यास के माध्यम से आपका मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दांयें कोने "
 "में जारी रखने के लिए \"आगे\" बटन दबाएं."
 
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "उपयोक्ता नाम की लंबाई 33 संप्रतीकों से कम होनी चाहिए."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "उपयोक्ता नाम एक अंक से आरंभ नहीं हो सकता."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "'%s' उपयोक्ता नाम में रिक्त-स्थान समाहित हैं. कृपया उपयोक्तानाम में रिक्त-स्थान शामिल "
-#~ "न करें."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "'%s' उपयोक्तानाम में विराम चिन्ह संप्रतीक समाहित हैं. कृपया उपयोक्तानाम में विराम "
-#~ "चिन्ह का प्रयोग न करें."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "'%s' उपयोक्तानाम अपरकेस संप्रतीक समाहित हैं. कृपया उपयोक्तानाम में अपरकेस का प्रयोग न "
-#~ "करें."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "'%s' उपयोक्तानाम में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ ASCII अक्षरों का प्रयोग "
-#~ "करें."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "शब्दकूट में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ ASCII अक्षरों का प्रयोग करें."
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "'%s' नाम में अनुचित संप्रतीक समाहित हैं. कृपया सिर्फ अक्षरों, संख्या, खाली स्थान और "
-#~ "अंडरस्कोर संप्रतीक का प्रयोग करें."
