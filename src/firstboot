@@ -26,7 +26,6 @@ import string
 import sys
 
 sys.path.append("/usr/share/firstboot")
-from firstboot import Firstboot
 
 def getRunlevel():
     line = os.popen('/sbin/runlevel', 'r').readline()
@@ -54,7 +53,17 @@ sys.excepthook = defaultExnHandler
 
 if __name__ == "__main__":
 
-    fb = Firstboot()
+    # First, check to see whether this is installed on a system with X or not.
+    # We do this by trying to import something that only exists in the
+    # graphical firstboot package.
+    try:
+        from xfirstboot import XFirstboot
+        noX = False
+        fb = XFirstboot()
+    except ImportError:
+        from firstboot import Firstboot
+        noX = True
+        fb = Firstboot()
 
     for arg in sys.argv:
         if arg == '--reconfig':
@@ -79,7 +88,7 @@ if __name__ == "__main__":
     # Check to see if we're in runlevel 3.  If so, call text UI.  Otherwise,
     # we set up a graphical UI - take over rhgb's X server if it's running or
     # create our own if not.
-    if getRunlevel() == 3 and not fb.forcegui:
+    if (getRunlevel() == 3 and not fb.forcegui) or noX == True:
         fb.runTextUI()
     elif rhgbIsRunning():
         fb.startRhgbUI()

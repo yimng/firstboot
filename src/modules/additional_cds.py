@@ -28,6 +28,7 @@ import os
 import time
 import functions
 import rhpl.diskutil as diskutil
+from firstboot import start_process
 
 
 ##
@@ -177,7 +178,7 @@ class childWindow:
 
         if os.access("/mnt/autorun", os.R_OK):
             #If there's an autorun file on the cd, run it
-            pid = functions.start_process("/mnt/autorun")
+            pid = start_process("/mnt/autorun")
 
             flag = None
             while not flag:

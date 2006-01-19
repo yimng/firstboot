@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.3.57
+Version: 1.4.0
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -13,30 +13,45 @@ Obsoletes: anaconda-reconfig
 Prereq: chkconfig, /etc/init.d
 BuildPreReq: gettext
 Requires: pygtk2
-Requires: python
-Requires: usermode >= 1.36
 Requires: metacity
-Requires: rhpl
 Requires: rhpxl
-Requires: system-config-date >= 1.7.9
 Requires: system-config-display
 Requires: system-config-language
-Requires: system-config-keyboard
 Requires: system-config-soundcard
 Requires: system-config-securitylevel
-Requires: system-config-rootpassword
 Requires: system-config-network
 Requires: system-config-users
 Requires: authconfig-gtk
 Requires: libuser
 Requires: redhat-logos
 Requires: redhat-artwork
+Requires: firstboot-tui
 ExcludeArch: s390 s390x ppc64
 
 %description
-The firstboot utility runs after installation.  It 
-guides the user through a series of steps that allows for easier 
+The firstboot utility runs after installation.  It guides the
+user through a series of steps that allows for easier 
 configuration of the machine. 
+
+%package tui
+Summary: A text interface for firstboot
+Group: System Environment/Base
+Prereq: chkconfig, /etc/init.d
+BuildPreReq: gettext
+Requires: python
+Requires: usermode >= 1.36
+Requires: rhpl
+Requires: system-config-date >= 1.7.9
+Requires: system-config-keyboard
+Requires: system-config-securitylevel-tui
+Requires: system-config-rootpassword
+Requires: netconfig
+Requires: system-config-printer
+Requires: ntsysv
+Requires: authconfig
+
+%description tui
+firstboot-tui is a text interface for initial system configuration.
 
 %prep
 %setup -q
@@ -52,7 +67,7 @@ make INSTROOT=$RPM_BUILD_ROOT install
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
+%post tui
 if ! [ -f /etc/sysconfig/firstboot ]
 then
   chkconfig --add firstboot
@@ -62,19 +77,42 @@ fi
 if [ $1 = 0 ]; then
   rm -rf /usr/share/firstboot/*.pyc
   rm -rf /usr/share/firstboot/modules/*.pyc
+fi
+
+%preun tui
+if [ $1 = 0 ]; then
   chkconfig --del firstboot
 fi
 
 %files -f %{name}.lang
 %defattr(-,root,root)
-#%doc COPYING
-#%doc doc/*
+%dir /usr/share/firstboot/
+%dir /usr/share/firstboot/modules/
+%dir /usr/share/firstboot/pixmaps/
+/usr/share/firstboot/exceptionWindow.py*
+/usr/share/firstboot/firstbootWindow.py*
+/usr/share/firstboot/firstboot_module_window.py*
+/usr/share/firstboot/xfirstboot.py*
+/usr/share/firstboot/modules/*
+/usr/share/firstboot/pixmaps/*
+
+%files -f %{name}.lang tui
+%defattr(-,root,root)
 %config /etc/rc.d/init.d/firstboot
 %dir /usr/share/firstboot/
-/usr/share/firstboot/*
 /usr/sbin/firstboot
+/usr/share/firstboot/constants_text.py*
+/usr/share/firstboot/eula_strings.py*
+/usr/share/firstboot/firstboot.py*
+/usr/share/firstboot/firstbootBackend.py*
+/usr/share/firstboot/functions.py*
+/usr/share/firstboot/textWindow.py*
+
 
 %changelog
+* Thu Jan 19 2006 Chris Lumens <clumens@redhat.com> 1.4.0-1
+- Split into separate packages for X and no X (#178216).
+
 * Mon Jan 09 2006 Chris Lumens <clumens@redhat.com> 1.3.57-1
 - Use scdMainWindow instead of mainWindow to fix random python import
   tracebacks.

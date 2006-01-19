@@ -29,6 +29,7 @@ import sys
 import functions
 import libuser
 import kudzu
+from firstboot import start_process
 
 ##
 ## I18N
@@ -153,7 +154,7 @@ class childWindow:
         i.grab_add ()
 
         #Run rhn_register so they can register with RHN
-        pid = functions.start_process("/usr/bin/system-config-network")
+        pid = start_process("/usr/bin/system-config-network")
 
         flag = None
         while not flag:

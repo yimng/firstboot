@@ -31,13 +31,12 @@ translate.textdomain ("firstboot")
 
 class TextWindow:
     def __call__(self, screen):
-        toolList = [(_("Authentication"), ("/usr/sbin/authconfig")),
+        toolList = [(_("Authentication"), ("/usr/sbin/authconfig-tui")),
                     (_("Firewall configuration"), ("/usr/bin/system-config-securitylevel-tui")),
                     (_("Keyboard configuration"), ("/usr/bin/system-config-keyboard --text")),
                     (_("Network configuration"), ("/usr/sbin/netconfig")),
                     (_("Printer configuration"), ("/usr/sbin/printconf-tui")),
                     (_("System services"), ("/usr/sbin/ntsysv")),
-                    (_("Sound card configuration"), ("/usr/sbin/sndconfig")),
                     (_("Timezone configuration"), ("/usr/sbin/timeconfig"))]
 
         bb = ButtonBar(screen, [_("Run Tool"), TEXT_EXIT_BUTTON])
