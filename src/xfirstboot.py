@@ -110,25 +110,6 @@ class XFirstboot (Firstboot):
         self.mergeXresources()
         self.rhgb = True
 
-    # Sets up the text UI and assumes control.  The caller will never be
-    # returned to and firstboot will exit from within here.
-    def runTextUI(self):
-        import textWindow
-        
-        screen = snack.SnackScreen()
-        result = 0
-
-        while result != -1:
-           #Keep running the program until either the timer has expired or the user pressed Exit
-            screen = snack.SnackScreen()
-            result = textWindow.TextWindow()(screen)
-
-        if result == -1:
-            #They're done with firstboot.  Exit for good.
-            screen.finish()
-            firstbootBackend.writeSysconfigFile(self.doDebug)
-            os._exit(0)
-
     # Attempt to start up the window manager.  Check the value of self.wm_pid
     # afterwards to see if this succeeded.
     def startWindowManager(self):    
