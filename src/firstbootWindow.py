@@ -118,8 +118,6 @@ class firstbootWindow:
         # notebook is displayed.
         self.notebook = gtk.Notebook()
         if self.doDebug:
-            print "starting firstbootWindow", doReconfig, doDebug                    
-            #self.modulePath = ('modules/')
             #self.modulePath = ('/usr/src/rhn/up2date/firstboot')
             self.modulePath = ('/usr/share/firstboot/modules')
             self.win.set_position(gtk.WIN_POS_CENTER)            
@@ -195,10 +193,11 @@ class firstbootWindow:
         # This should really be in firstboot.py, but something about
         # importing all the modules screws the keyboard up only when we
         # start from rhgb.  So here it is.
-	from rhpl.keyboard import Keyboard
-	kbd = Keyboard()
-	kbd.read()
-	kbd.activate()
+        if not fb.doDebug:
+            from rhpl.keyboard import Keyboard
+            kbd = Keyboard()
+            kbd.read()
+            kbd.activate()
 
         self.win.show_all()
         self.win.present()
