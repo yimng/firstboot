@@ -62,7 +62,7 @@ class firstbootWindow:
         
         leftEventBox = gtk.EventBox()
         leftEventBox.add(self.leftLabelVBox)
-        leftEventBox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#7e8ea0"))
+        leftEventBox.connect("realize", self.leb_realized)
 
         self.leftVBox = gtk.VBox()
         self.leftVBox.pack_start(leftEventBox, True)
@@ -101,7 +101,6 @@ class firstbootWindow:
 
         align = gtk.Alignment(0.5, 0.5, 0.0, 0.0)
         eb = gtk.EventBox()
-        eb.connect("realize", self.eb_realized)
 
         eb.add(mainVBox)
 
@@ -221,11 +220,12 @@ class firstbootWindow:
     def destroy(self, *args):
         #Exit the GTK loop
         gtk.main_quit()
+
         #Kill the window manager
-        if self.wm_pid:
+        if self.wm_pid and not self.doDebug:
             os.kill(self.wm_pid, 15)
 
-        if self.xserver_pid:
+        if self.xserver_pid and not self.doDebug:
             os.kill(self.xserver_pid, 15)
 
         #Exit firstboot.  This should take down the X server as well
@@ -252,18 +252,19 @@ class firstbootWindow:
 
         #Exit the GTK loop
         gtk.main_quit()
-        if self.wm_pid:
+
+        if self.wm_pid and not self.doDebug:
         #Kill the window manager
             os.kill(self.wm_pid, 15)
 
-        if self.xserver_pid:
+        if self.xserver_pid and not self.doDebug:
             os.kill(self.xserver_pid, 15)
 
         #Give the X server a second to exit
         import time
         time.sleep(1)
 
-        if self.needsReboot == True:
+        if self.needsReboot == True and not self.doDebug:
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
                                     _("The system must now reboot for some of your selections to take effect."))
             dlg.set_position(gtk.WIN_POS_CENTER)
@@ -381,10 +382,10 @@ class firstbootWindow:
             else:
                 pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-blank.png")
 
-    def eb_realized(self, eb):
-        pixbuf = functions.pixbufFromFile("bg.png")
-        bgimage = gtk.gdk.Pixmap(eb.window, 800, 600, -1)
-        bgimage.draw_pixbuf(gtk.gdk.GC(bgimage), pixbuf, 0, 0, 0, 0, 800,
+    def leb_realized(self, eb):
+        pixbuf = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/firstboot-left.png")
+        bgimage = gtk.gdk.Pixmap(eb.window, 160, 600, -1)
+        bgimage.draw_pixbuf(gtk.gdk.GC(bgimage), pixbuf, 0, 0, 0, 0, 160,
                             600, gtk.gdk.RGB_DITHER_MAX)
         eb.set_app_paintable(True)
         eb.window.set_back_pixmap(bgimage, False)
