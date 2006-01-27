@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.1
+Version: 1.4.2
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -110,6 +110,10 @@ fi
 
 
 %changelog
+* Fri Jan 27 2006 Chris Lumens <clumens@redhat.com> 1.4.2-1
+- Layout cleanups and simplification.
+- Use GTK styles to display the new artwork in non-debug mode.
+
 * Wed Jan 25 2006 Chris Lumens <clumens@redhat.com> 1.4.1-1
 - Fix debug mode.
 - Use the new bubbly artwork (#178106).
