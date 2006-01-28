@@ -1,19 +1,23 @@
+# translation of cs.po to Czech
 # Copyright (C) 2002, 2003, 2004, 2005 firstboot'S COPYRIGHT HOLDER
 # Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>
 # Miloslav Trmac <mitr@volny.cz>, 2002 - 2005.
+# Nikola Štohanzl <niko@srnet.cz>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot VERSION\n"
+"Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-11-02 22:23+0100\n"
-"Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
-"Language-Team: Czech <cs@li.org>\n"
+"PO-Revision-Date: 2006-01-28 16:53+0100\n"
+"Last-Translator: Nikola Štohanzl <niko@srnet.cz>\n"
+"Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -164,7 +168,6 @@ msgstr "Teď prosím vložte případná další instalační CD software."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -191,9 +194,7 @@ msgstr ""
 "kliknutím na \"OK\"."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Na cd nebyl nalezen program autorun. Pokračujte kliknutím na \"OK\"."
 
 #: ../src/modules/create_user.py:37
@@ -227,7 +228,6 @@ msgid "Confir_m Password:"
 msgstr "_Potvrďte heslo:"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -303,10 +303,8 @@ msgstr ""
 "kliknutím na tlačítko \"Dokončit\" v pravém dolním rohu."
 
 #: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"Pokračujte prosím kliknutím na tlačítko \"Dokončit\" v pravém dolním rohu."
+msgid "Please click the \"Finish\" button in the lower right corner to continue."
+msgstr "Pokračujte prosím kliknutím na tlačítko \"Dokončit\" v pravém dolním rohu."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -337,7 +335,6 @@ msgid "Sound Card"
 msgstr "Zvuková karta"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
 msgstr "Na vašem počítači byla nalezena zvuková karta."
 
@@ -370,51 +367,3 @@ msgstr ""
 "Agent vás nyní provede základním nastavením. Pokračujte prosím kliknutím na "
 "tlačítko \"Další\" v pravém dolním rohu."
 
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Jméno uživatele musí být kratší než 33 znaků."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Jméno uživatele nemůže začínat číslicí."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Jméno uživatele '%s' obsahuje mezery. Nepoužívejte prosím mezery ve jménu "
-#~ "uživatele."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Jméno uživatele '%s' obsahuje interpunkci. Nepoužívejte prosím ve jménu "
-#~ "uživatele interpunkci."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Jméno uživatele '%s' obsahuje velká písmena. Nepoužívejte prosím ve jménu "
-#~ "uživatele velká písmena."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Jméno uživatele '%s' obsahuje neplatné znaky. Použijte prosím jen znaky "
-#~ "ASCII."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "Heslo obsahuje neplatné znaky. Použijte prosím jen znaky ASCII."
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Jméno '%s' obsahuje neplatné znaky. Použijte prosím jen písmena, číslice, "
-#~ "mezery a podtržítko."
-
-#~ msgid "Licence Aggrement"
-#~ msgstr "Licenční smlouva"
