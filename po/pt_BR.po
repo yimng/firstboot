@@ -1,29 +1,27 @@
-# translation of pt_BR.po to Português Brasil
 # translation of pt_BR.po to Brazilian Portuguese
-# translation of pt_BR.po to Portuguese
+# Daniel Brooke Peig <daniel@brookepeig.com>, 2004.
+# David Barzilay <barzilay@redhat.com>, 2003, 2004.
+# Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>, 2004.
+# Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>, 2005, 2006.
 # Brazilian Portuguese localization of Red Hat Linux
 # Originated from the Portuguese translation by
 # Pedro Morais <morais@kde.org>
 # José Nuno Pires <jncp@netcabo.pt>
-# Daniel Brooke Peig <daniel@brookepeig.com>, 2004.
-# David Barzilay <barzilay@redhat.com>, 2003, 2004.
-# Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>, 2004.
-# Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>, 2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-10-29 15:43-0200\n"
+"PO-Revision-Date: 2006-01-31 14:38-0200\n"
 "Last-Translator: Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>\n"
-"Language-Team: Português Brasil\n"
+"Language-Team: Brazilian Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "br>\n"
 "Fedora Brasil\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11\n"
 "Plural-Forms:  nplurals=2; plural=(n > 1);\n"
 
 #: ../src/constants_text.py:36
@@ -94,8 +92,7 @@ msgstr "_Próximo"
 
 #: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"O sistema deve ser reiniciado agora para que as suas seleções tenham efeito."
+msgstr "O sistema deve ser reiniciado agora para que as suas seleções tenham efeito."
 
 #: ../src/firstbootWindow.py:332
 msgid "_Finish"
@@ -173,12 +170,10 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"Introduza por favor qualquer cd de software adicional a ser instalado agora."
+msgstr "Introduza por favor qualquer cd de software adicional a ser instalado agora."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -188,8 +183,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Para permitir o suporte da execução de aplicações de 32 bits na arquitetura "
-"Itanium2 da Intel, você deve instalar o pacote Execution Layer da Intel do "
+"Para habilitar o suporte a execução de aplicações de 32 bits na arquitetura "
+"Itanium2 da Intel você deve instalar o pacote Execution Layer da Intel do "
 "disco Extras agora."
 
 #: ../src/modules/additional_cds.py:117
@@ -205,12 +200,8 @@ msgstr ""
 "clique \"OK\" para continuar."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"O programa autorun não pode ser encontrado no CD. Clique em \"OK\" para "
-"continuar."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "O programa autorun não pode ser encontrado no CD. Clique em \"OK\" para continuar."
 
 #: ../src/modules/create_user.py:37
 msgid "System User"
@@ -243,13 +234,12 @@ msgid "Confir_m Password:"
 msgstr "Confirm_ar Senha:"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Se você precisa usar autenticação de rede como Kerberos ou NIS, por favor "
-"clique no botão Usar Autenticação de Rede (Use Network Login)."
+"Se você precisa usar autenticação de rede, como Kerberos ou NIS, por favor "
+"clique no botão Usar Autenticação de Rede."
 
 #: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
@@ -304,8 +294,7 @@ msgstr "Display"
 
 #: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
-"Por favor selecione a resolução e profundidade de cor que deseja utilizar"
+msgstr "Por favor selecione a resolução e profundidade de cor que deseja utilizar"
 
 #: ../src/modules/finished.py:19
 msgid "Finish Setup"
@@ -320,8 +309,7 @@ msgstr ""
 "clique no botão \"Terminar\" no canto inferior direito para continuar."
 
 #: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
+msgid "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr ""
 "Por favor clique no botão \"Terminar\" no canto inferior direito para "
 "continuar."
@@ -355,9 +343,8 @@ msgid "Sound Card"
 msgstr "Placa de som"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
-msgstr "Foi detectada uma placa de som no seu computador."
+msgstr "Uma placa de som foi detectada no seu computador."
 
 #: ../src/modules/soundcard_gui.py:68
 msgid ""
@@ -436,3 +423,4 @@ msgstr ""
 #~ msgstr ""
 #~ "O nome '%s' contém caracteres inválidos.  Por favor use apenas letras, "
 #~ "números, espaços e o caractere sublinhado."
+
