@@ -1,22 +1,24 @@
+# translation of hu.po to hungarian
 # translation of hu.po to Hungarian
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Tamas Szanto <tszanto@mol.hu>, 2004.
 # Széll Tamás <tomi@digiflex.hu>, 2004.
 # Arpad Biro <biro_arpad@yahoo.com>, 2005.
+# Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-06 11:02-0500\n"
-"PO-Revision-Date: 2005-05-21 12:54+0200\n"
-"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
-"Language-Team: Hungarian\n"
+"PO-Revision-Date: 2006-01-31 23:44+0100\n"
+"Last-Translator: Szentiványi Gábor <szentivanyi.gabor@ulx.hu>\n"
+"Language-Team: hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9\n"
+"X-Generator: KBabel 1.10.2\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -86,12 +88,11 @@ msgstr "_Tovább"
 
 #: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "A változások érvénybe léptetéséhez most újra kell indítani a rendszert."
 
 #: ../src/firstbootWindow.py:332
-#, fuzzy
 msgid "_Finish"
-msgstr "A telepítés befejezése"
+msgstr "_Befejezés"
 
 #: ../src/firstbootWindow.py:424
 #, python-format
@@ -164,13 +165,11 @@ msgstr ""
 "készített valamilyen más szoftver lemeze)."
 
 #: ../src/modules/additional_cds.py:70
-#, fuzzy
 msgid "Please insert any additional software install cds at this time."
-msgstr "Ha rendelkezik további szoftvertelepítési lemezzel, helyezze be azt."
+msgstr "Ha rendelkezik további szoftvertelepítési CD-vel, most helyezze be azt."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -181,7 +180,7 @@ msgstr ""
 "\n"
 "\n"
 "Ha engedélyezni szeretné a 32 bites alkalmazások futásidejű támogatását "
-"Intel Itanium2 rendszeren, akkor most telepítse fel az Intel Execution Layer "
+"Intel Itanium2 rendszeren, akkor most telepítenie kell az Intel Execution Layer "
 "csomagot az Extras lemezről."
 
 #: ../src/modules/additional_cds.py:117
@@ -197,9 +196,7 @@ msgstr ""
 "kattintson az \"OK\" gombra."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "\"OK\" gombra."
@@ -234,13 +231,12 @@ msgid "Confir_m Password:"
 msgstr "A jelszó me_gerősítése:"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Ha hálózati bejelentkeztetést szeretne használni (pl. Kerberos-t vagy NIS-"
-"t), kattintson a Hálózati bejelentkezés használata gombra."
+"Ha hálózati bejelentkezést szeretne használni (pl. Kerberos vagy NIS), "
+"kattintson a Hálózati bejelentkezés használata gombra."
 
 #: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
@@ -273,13 +269,13 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "A jelszó túl rövid, legalább 6 karakter hosszúnak kell lennie."
 
 #: ../src/modules/create_user.py:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"A(z) '%s' felhasználónév nagybetűket tartalmaz. A névben nem lehet ilyen "
-"karaktereket használni."
+"A(z) '%s' felhasználónév fentartott név a rendszer számára. Adjon meg "
+"másik nevet."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -302,7 +298,6 @@ msgid "Finish Setup"
 msgstr "A telepítés befejezése"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
@@ -311,9 +306,7 @@ msgstr ""
 "gombra a jobb alsó sarokban."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
+msgid "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "Továbblépéshez kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
 #: ../src/modules/networking.py:42
@@ -345,7 +338,6 @@ msgid "Sound Card"
 msgstr "Hangkártya"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
 msgstr "A telepítő hangkártyát talált a rendszerben."
 
@@ -378,58 +370,3 @@ msgstr ""
 "Telepítőügynök végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
 "kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "A felhasználónév nem lehet 32 karakternél hosszabb."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "A felhasználónév nem kezdődhet számjeggyel."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "A(z) '%s' felhasználónév üres karaktereket tartalmaz. A névben nem lehet "
-#~ "szóközt vagy más üres karaktert használni."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "A(z) '%s' felhasználónév központozási karaktereket tartalmaz. A névben "
-#~ "nem lehet ilyen karaktereket használni."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "A(z) '%s' felhasználónév nagybetűket tartalmaz. A névben nem lehet ilyen "
-#~ "karaktereket használni."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "A(z) '%s' felhasználónév érvénytelen karaktereket tartalmaz. Csak ASCII-"
-#~ "karaktereket lehet használni."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "A jelszó érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket "
-#~ "lehet használni."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "A(z) '%s' név érvénytelen karaktereket tartalmaz. Csak ASCII-karaktereket "
-#~ "lehet használni."
-
-#, fuzzy
-#~ msgid "Licence Aggrement"
-#~ msgstr "Licencegyezmény"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "A Firstboot program nem fut le 3-as futási szinten."
