@@ -71,13 +71,11 @@ msgstr ""
 "En kopi av feilmelding er lagret som %s - husk å legge ved denne\n"
 "i feilrapporten.\n"
 
-#: ../src/firstbootWindow.py:174
-#: ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "Til_bake"
 
-#: ../src/firstbootWindow.py:182
-#: ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
 #: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "_Neste"
@@ -95,8 +93,7 @@ msgstr "Fullfør"
 msgid "module import of %s failed: %s"
 msgstr "modulimport av %s feilet: %s"
 
-#: ../src/firstbootWindow.py:567
-#: ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkommen"
@@ -145,14 +142,21 @@ msgstr "Velg oppføringen du ønsker å endre "
 msgid "Setup Agent"
 msgstr "Agent for oppsett"
 
-#: ../src/modules/additional_cds.py:43
-#: ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "Tilleggs-CDer"
 
 #: ../src/modules/additional_cds.py:64
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Vennligst sett in cden merket \"Red Hat Enterprice Linux Extras\" for å installere tredjeparts programmer og program-tillegg. Du kan også sette inn dokumentasjonsdisken, eller andre Red Hat-cder for å installere ytterligere programmer."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Vennligst sett in cden merket \"Red Hat Enterprice Linux Extras\" for å "
+"installere tredjeparts programmer og program-tillegg. Du kan også sette inn "
+"dokumentasjonsdisken, eller andre Red Hat-cder for å installere ytterligere "
+"programmer."
 
 #: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
@@ -163,22 +167,31 @@ msgstr "Har du flere ekstra programvarecder så sett de inn nå."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"For å kople inn kjørestøtte for 23-biters programmer på Intel Itanium2-arkitekturen må du installere Intel Execution Layer-pakken fra ekstra-disken nå."
+"For å kople inn kjørestøtte for 23-biters programmer på Intel Itanium2-"
+"arkitekturen må du installere Intel Execution Layer-pakken fra ekstra-disken "
+"nå."
 
 #: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "Installer..."
 
 #: ../src/modules/additional_cds.py:163
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Fant ingen CD-ROM. Sett inn en CD-ROM i spilleren og trykk \"OK\" for å fortsette."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Fant ingen CD-ROM. Sett inn en CD-ROM i spilleren og trykk \"OK\" for å "
+"fortsette."
 
 #: ../src/modules/additional_cds.py:197
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Autokjør-programmet finnes ikke på CDen. Klikk \"OK\" for å fortsette."
 
 #: ../src/modules/create_user.py:37
@@ -186,8 +199,14 @@ msgid "System User"
 msgstr "Systembruker"
 
 #: ../src/modules/create_user.py:64
-msgid "It is recommended that you create a system 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "Det anbefales at du oppretter en personlig brukerkonto for normal (ikke-administrativ) bruk. Full inn feltene under for å opprette en slik bruekrkonto."
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Det anbefales at du oppretter en personlig brukerkonto for normal (ikke-"
+"administrativ) bruk. Full inn feltene under for å opprette en slik "
+"bruekrkonto."
 
 #: ../src/modules/create_user.py:74
 msgid "_Username:"
@@ -206,16 +225,26 @@ msgid "Confir_m Password:"
 msgstr "_Bekreft passord:"
 
 #: ../src/modules/create_user.py:111
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Hvis du trenger å bruke nettverksbasert autentisering slik som Kerberos eller NIS klikker du på knappen \"Bruk nettverkspålogging\"."
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Hvis du trenger å bruke nettverksbasert autentisering slik som Kerberos "
+"eller NIS klikker du på knappen \"Bruk nettverkspålogging\"."
 
 #: ../src/modules/create_user.py:121
 msgid "Use Network _Login..."
 msgstr "Bruk nettverkspå_logging..."
 
 #: ../src/modules/create_user.py:157
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Det anbefales på det sterkeste at du oppretter en personlig brukerkonto. Hvis du fortsetter uten en konto må du bruke root-kontoen som er forbeholdt administrativ bruk."
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"Det anbefales på det sterkeste at du oppretter en personlig brukerkonto. "
+"Hvis du fortsetter uten en konto må du bruke root-kontoen som er forbeholdt "
+"administrativ bruk."
 
 #: ../src/modules/create_user.py:165
 msgid "_Continue"
@@ -235,8 +264,12 @@ msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
 
 #: ../src/modules/create_user.py:208
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Brukernavnet «%s» er en reservert systemkonto. Vennligst oppgi et annet brukernavn."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Brukernavnet «%s» er en reservert systemkonto. Vennligst oppgi et annet "
+"brukernavn."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -259,12 +292,18 @@ msgid "Finish Setup"
 msgstr "Avslutt Oppsett"
 
 #: ../src/modules/finished.py:33
-msgid "Your system is now set up and ready to use.  Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "Systemet er nå satt opp og klar til bruk. Trykk på \"Neste\"-knappen i hjørnet nederst til høyre for å fortsette."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
+"button in the lower right corner to continue."
+msgstr ""
+"Systemet er nå satt opp og klar til bruk. Trykk på \"Neste\"-knappen i "
+"hjørnet nederst til høyre for å fortsette."
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "Trykk på \"Neste\"-knappen i hjørnet nederst til høyre for å fortsette."
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
+msgstr ""
+"Trykk på \"Neste\"-knappen i hjørnet nederst til høyre for å fortsette."
 
 #: ../src/modules/networking.py:42
 msgid "Network Setup"
@@ -290,8 +329,7 @@ msgstr "_Endre nettverkskonfigurasjon..."
 msgid "static"
 msgstr "statisk"
 
-#: ../src/modules/soundcard_gui.py:43
-#: ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Lydkort"
 
@@ -300,8 +338,15 @@ msgid "A sound card has been detected in your computer."
 msgstr "Et lydkort er oppdaget på ditt system."
 
 #: ../src/modules/soundcard_gui.py:68
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Trykk på \"Spill testlyd\"-knappen for å høre en testlyd. Du bør høre en sere av tre lyder. Den første lyden vil være på høyre kanal, den andre på venstre kanal og den tredje i begge."
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"Trykk på \"Spill testlyd\"-knappen for å høre en testlyd. Du bør høre en "
+"sere av tre lyder. Den første lyden vil være på høyre kanal, den andre på "
+"venstre kanal og den tredje i begge."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -312,36 +357,48 @@ msgid "Please set the timezone for the system."
 msgstr "Vennligst sett tidssone for systemet."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "Det gjenstår noen steg før systemet er klart til bruk. Oppsettagenten vil nå hjelpe deg gjennom grunnleggende konfigurasjon. Trykk på «Neste»-knappen i nedre høyre hjørne for å fortsette."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"Det gjenstår noen steg før systemet er klart til bruk. Oppsettagenten vil nå "
+"hjelpe deg gjennom grunnleggende konfigurasjon. Trykk på «Neste»-knappen i "
+"nedre høyre hjørne for å fortsette."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "Brukernavnet må ha færre enn 33 tegn."
+
 #~ msgid "The user name may not begin with a number."
 #~ msgstr "Brukernavnet kan ikke starte med et tall."
+
 #~ msgid ""
 #~ "The user name '%s' contains whitespace.  Please do not include whitespace "
 #~ "in the user name."
 #~ msgstr ""
 #~ "Brukernavn «%s» inneholder mellomrom. Vennligst ikke bruk mellomrom i "
 #~ "brukernavnet."
+
 #~ msgid ""
 #~ "The user name '%s' contains punctuation characters.  Please do not use "
 #~ "punctuation in the user name."
 #~ msgstr ""
 #~ "Brukernavnet «%s» inneholder skilletegn. Vennligst ikke bruk skilletegn i "
 #~ "brukernavnet."
+
 #~ msgid ""
 #~ "The user name '%s' contains uppercase characters.  Please do not use "
 #~ "uppercase characters in the user name."
 #~ msgstr ""
 #~ "Brukernavnet «%s» inneholder store bokstaver. Vennligst ikke bruk store "
 #~ "bokstaver i brukernavnet."
+
 #~ msgid ""
 #~ "The user name '%s' contains invalid characters.  Please use only ASCII "
 #~ "characters."
 #~ msgstr ""
 #~ "Brukernavnet «%s» inneholder ugyldige tegn. Vennligst bruk kun ASCII-tegn."
+
 #~ msgid ""
 #~ "The password contains invalid characters.  Please use only ASCII "
 #~ "characters."
@@ -357,16 +414,20 @@ msgstr "Det gjenstår noen steg før systemet er klart til bruk. Oppsettagenten 
 #, fuzzy
 #~ msgid "Licence Aggrement"
 #~ msgstr "Lisensbetingelser"
+
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
 #~ msgstr ""
 #~ "Hvis du har noen av CDene listet under kan du installere pakker fra dem "
 #~ "ved å sette inn CDen og trykke knappen."
+
 #~ msgid "Please enter a time server."
 #~ msgstr "Vennligst oppgi en tidtjener."
+
 #~ msgid "Error"
 #~ msgstr "Feil"
+
 #~ msgid ""
 #~ "A connection with %s could not be established.  Either %s is not "
 #~ "available or the firewall settings on your computer are blocking NTP "
@@ -375,8 +436,9 @@ msgstr "Det gjenstår noen steg før systemet er klart til bruk. Oppsettagenten 
 #~ "En tilkobling til %s kunne ikke opprettes. Enten er %s ikke tilgjengelig "
 #~ "eller så blokkerer brannvegginnstillingene på din datamaskin NTP-"
 #~ "tilkoblinger."
+
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "Kontakter NTP-tjener..."
+
 #~ msgid "User Account"
 #~ msgstr "Brukerkonto"
-

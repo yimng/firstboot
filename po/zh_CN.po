@@ -78,13 +78,11 @@ msgstr ""
 "调试输出的副本已被保存在 %s， \n"
 "请在提交错误时确定附带该文件。\n"
 
-#: ../src/firstbootWindow.py:174
-#: ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
 msgid "_Back"
 msgstr "返回(_B)"
 
-#: ../src/firstbootWindow.py:182
-#: ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
 #: ../src/firstbootWindow.py:575
 msgid "_Next"
 msgstr "下一步(_N)"
@@ -102,8 +100,7 @@ msgstr "完成(_F)"
 msgid "module import of %s failed: %s"
 msgstr "模块 %s 导入错误： %s"
 
-#: ../src/firstbootWindow.py:567
-#: ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "欢迎"
@@ -152,14 +149,19 @@ msgstr "选择您想修改的项目"
 msgid "Setup Agent"
 msgstr "设置代理"
 
-#: ../src/modules/additional_cds.py:43
-#: ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
 msgid "Additional CDs"
 msgstr "额外光盘"
 
 #: ../src/modules/additional_cds.py:64
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "请插入“红帽企业 Linux 附加光盘”来进行安装第三方插件和应用程序。此时，您还可以插入文档光盘，或其它由红帽提供的光盘来安装额外软件。"
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"请插入“红帽企业 Linux 附加光盘”来进行安装第三方插件和应用程序。此时，您还可以"
+"插入文档光盘，或其它由红帽提供的光盘来安装额外软件。"
 
 #: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
@@ -170,22 +172,28 @@ msgstr "现在请插入附带的软件安装盘"
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"要使 Intel Itanium2 构架支持运行32位应用程序，您必须即刻从附加光盘安装 Intel Execution Layer 软件包。"
+"要使 Intel Itanium2 构架支持运行32位应用程序，您必须即刻从附加光盘安装 Intel "
+"Execution Layer 软件包。"
 
 #: ../src/modules/additional_cds.py:117
 msgid "Install..."
 msgstr "安装..."
 
 #: ../src/modules/additional_cds.py:163
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
 
 #: ../src/modules/additional_cds.py:197
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”继续。"
 
 #: ../src/modules/create_user.py:37
@@ -193,8 +201,13 @@ msgid "System User"
 msgstr "系统用户"
 
 #: ../src/modules/create_user.py:64
-msgid "It is recommended that you create a system 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需信息。"
+msgid ""
+"It is recommended that you create a system 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"建议您创建一个用于常规使用（非管理）的个人用户账号。要创建个人账号，提供所需"
+"信息。"
 
 #: ../src/modules/create_user.py:74
 msgid "_Username:"
@@ -213,7 +226,9 @@ msgid "Confir_m Password:"
 msgstr "确认口令(_M)："
 
 #: ../src/modules/create_user.py:111
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
 msgstr "如果您需要使用网络认证，如 Kerberos 或 NIS，请点击“使用网络登录”按钮。"
 
 #: ../src/modules/create_user.py:121
@@ -221,8 +236,13 @@ msgid "Use Network _Login..."
 msgstr "使用网络登录(_L)..."
 
 #: ../src/modules/create_user.py:157
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来登录，而这个账号是为管理而保留的。"
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"极力推荐您创建个人用户账号。如果您不创建这个账号而继续，您将只能使用根账号来"
+"登录，而这个账号是为管理而保留的。"
 
 #: ../src/modules/create_user.py:165
 msgid "_Continue"
@@ -242,7 +262,9 @@ msgstr "口令太短。请至少使用 6 个字符。"
 
 #: ../src/modules/create_user.py:208
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
 msgstr "用户名'%s'是一个系统预留帐户。  请选择其它用户名。"
 
 #: ../src/modules/date.py:46
@@ -266,11 +288,14 @@ msgid "Finish Setup"
 msgstr "结束设置"
 
 #: ../src/modules/finished.py:33
-msgid "Your system is now set up and ready to use.  Please click the \"Finish\" button in the lower right corner to continue."
+msgid ""
+"Your system is now set up and ready to use.  Please click the \"Finish\" "
+"button in the lower right corner to continue."
 msgstr "您的系统现已设置完毕，一切就绪。请点击右下角的“下一步”按钮来继续。"
 
 #: ../src/modules/finished.py:36
-msgid "Please click the \"Finish\" button in the lower right corner to continue."
+msgid ""
+"Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "请点击右下角的“完成”按钮来继续。"
 
 #: ../src/modules/networking.py:42
@@ -297,8 +322,7 @@ msgstr "改变网络配置(_C)..."
 msgid "static"
 msgstr "静态"
 
-#: ../src/modules/soundcard_gui.py:43
-#: ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "声卡"
 
@@ -307,8 +331,14 @@ msgid "A sound card has been detected in your computer."
 msgstr "在您的计算机上检测到声卡。"
 
 #: ../src/modules/soundcard_gui.py:68
-msgid "Click the \"Play test sound\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右频；第二种声音是左频；第三种声音将会在中间。"
+msgid ""
+"Click the \"Play test sound\" button to hear a sample sound.  You should "
+"hear a series of three sounds.  The first sound will be in the right "
+"channel, the second sound will be in the left channel, and the third sound "
+"will be in the center."
+msgstr ""
+"点击“播放测试声音”按钮来试听声音样品。您应该听到三种声音系列。第一种声音是右"
+"频；第二种声音是左频；第三种声音将会在中间。"
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -319,35 +349,46 @@ msgid "Please set the timezone for the system."
 msgstr "请为系统设置时区。"
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Next\" button in the lower right corner to continue."
-msgstr "在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请点击右下角的“下一步”按钮来继续。"
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Next\" button in the lower right corner to continue."
+msgstr ""
+"在您的系统一切就绪前还要执行几个步骤。设置代理将会引导您进行一些基本配置。请"
+"点击右下角的“下一步”按钮来继续。"
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "用户名长度必须小于 33 个字符。"
+
 #~ msgid "The user name may not begin with a number."
 #~ msgstr "用户名不能以数字开头。"
+
 #~ msgid ""
 #~ "The user name '%s' contains whitespace.  Please do not include whitespace "
 #~ "in the user name."
 #~ msgstr "用户名“%s”包含空格。请不要在用户名中包含空格。"
+
 #~ msgid ""
 #~ "The user name '%s' contains punctuation characters.  Please do not use "
 #~ "punctuation in the user name."
 #~ msgstr "用户名“%s”包含标点符号字符。请不要在用户名中使用标点符号。"
+
 #~ msgid ""
 #~ "The user name '%s' contains uppercase characters.  Please do not use "
 #~ "uppercase characters in the user name."
 #~ msgstr "用户名“%s”包含大写字符。请不要在用户名中使用大写字符。"
+
 #~ msgid ""
 #~ "The user name '%s' contains invalid characters.  Please use only ASCII "
 #~ "characters."
 #~ msgstr "用户名“%s”中包含非法字符。请仅使用 ASCII 字符。"
+
 #~ msgid ""
 #~ "The password contains invalid characters.  Please use only ASCII "
 #~ "characters."
 #~ msgstr "口令包含非法字符。请仅使用 ASCII 字符。"
+
 #~ msgid ""
 #~ "The name '%s' contains invalid characters.  Please use only letters, "
 #~ "numbers, whitespace and the underscore character."
 #~ msgstr "名称“%s”中包含非法字符。请仅使用字母、数字、空格和下划线。"
-
