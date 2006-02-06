@@ -74,13 +74,13 @@ class firstbootWindow:
 
         # leftVBox holds the labels for the various modules.
         self.leftVBox = gtk.VBox()
-        self.leftVBox.set_border_width(12)
+        self.leftVBox.set_border_width(5)
 
         # leftEventBox exists only so we have somewhere to paint an image.
         self.leftEventBox = gtk.EventBox()
         self.leftEventBox.add(self.leftVBox)
         self.leftEventBox.connect("realize", self.leb_realized)
-        self.leftEventBox.set_size_request(160, 600)
+        self.leftEventBox.set_size_request(165, 600)
 
         # rightVBox holds the notebook and the button box.
         self.rightVBox = gtk.VBox()
@@ -88,7 +88,7 @@ class firstbootWindow:
         # If we're in low res mode, grow the right hand box to take up the
         # entire window.
         if x_screen >= 800:            
-            self.rightVBox.set_size_request(640, 600)
+            self.rightVBox.set_size_request(635, 600)
             self.win.set_size_request(800, 600)
         else:
             self.rightVBox.set_size_request(x_screen, y_screen)
@@ -340,7 +340,8 @@ class firstbootWindow:
         items = self.leftVBox.get_children()
 
         for i in range(len(items)):
-            pix, label = self.leftVBox.get_children()[i].get_children()
+            alignment, label = self.leftVBox.get_children()[i].get_children()
+            pix = alignment.get_children()[0]
 
             if i == number:
                 pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-white.png")
@@ -494,12 +495,22 @@ class firstbootWindow:
                     # jump around
                     self.moduleNameToNotebookIndex[module.__module__] = pages
                     self.notebook.append_page(vbox, gtk.Label(_(module.moduleName)))
+
                     hbox = gtk.HBox(False, 5)
                     pix = functions.imageFromFile("pointer-blank.png")
                     label = gtk.Label("")
                     label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % (_(module.moduleName)))
                     label.set_alignment(0.0, 0.5)
-                    hbox.pack_start(pix, False)
+
+                    # Wrap the lines if they're too long
+                    label.set_line_wrap(True)
+                    (w, h) = self.leftEventBox.get_size_request()
+                    label.set_size_request((int)(w*0.8), -1)
+
+                    # Make sure the arrow is at the top of any wrapped line
+                    alignment = gtk.Alignment(yalign=0.2)
+                    alignment.add(pix)
+                    hbox.pack_start(alignment, False)
 
                     hbox.pack_end(label, True)
                     self.leftVBox.pack_start(hbox, False, True, 3)
