@@ -21,6 +21,8 @@ Requires: system-config-soundcard
 Requires: system-config-securitylevel
 Requires: system-config-network
 Requires: system-config-users
+Requires: system-config-date >= 1.7.9
+Requires: system-config-keyboard
 Requires: authconfig-gtk
 Requires: libuser
 Requires: redhat-logos
@@ -41,12 +43,8 @@ BuildPreReq: gettext
 Requires: python
 Requires: usermode >= 1.36
 Requires: rhpl
-Requires: system-config-date >= 1.7.9
-Requires: system-config-keyboard
 Requires: system-config-securitylevel-tui
-Requires: system-config-rootpassword
 Requires: netconfig
-Requires: system-config-printer
 Requires: ntsysv
 Requires: authconfig
 
