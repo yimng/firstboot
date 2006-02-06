@@ -24,12 +24,15 @@ export LANG
 . /etc/init.d/functions
 
 FILENAME=/etc/sysconfig/firstboot
+LOCKFILE=/var/lock/subsys/firstboot
 
 [ -z "$HOME" ] && export HOME=/
 
 case "$1" in
  start)
 	action=run
+
+   [ -f "$LOCKFILE" ] && exit 0
 
 	if [ -f "$FILENAME" ] && ! grep -q '^RUN_FIRSTBOOT=YES' "$FILENAME"; then
 	    action=skip
@@ -57,6 +60,7 @@ case "$1" in
 	    exit 0
 	fi
 
+   touch $LOCKFILE
 	/usr/sbin/firstboot
 	RETVAL=$?
 
@@ -68,6 +72,10 @@ case "$1" in
 
 	exit 0
 	;;
+
+ stop)
+   rm -f $LOCKFILE
+   ;;
 esac
 
 exit $RETVAL
