@@ -48,7 +48,7 @@ screenshotIndex = 0
 
 class firstbootWindow:
     def __init__(self, fb):
-        self.needsReboot = False
+        self.needsReboot = []
         self.xserver_pid = fb.xserver_pid
         self.wm_pid = fb.wm_pid
         self.doReconfig = fb.doReconfig
@@ -228,7 +228,7 @@ class firstbootWindow:
         import time
         time.sleep(1)
 
-        if self.needsReboot == True and not self.doDebug:
+        if len(self.needsReboot) > 0 and not self.doDebug:
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
                                     _("The system must now reboot for some of your selections to take effect."))
             dlg.set_position(gtk.WIN_POS_CENTER)
@@ -260,8 +260,16 @@ class firstbootWindow:
             result = exceptionWindow.ExceptionWindow(module, text)
             pass
 
+        # Store the name of every module that requires a reboot.  This allows
+        # us to remove a single module if the user moves back and forth through
+        # the UI while still knowing that other modules still require reboot.
         if hasattr(module, "needsReboot") and module.needsReboot == True:
-            self.needsReboot = True
+            print "adding needsReboot for %s" % module.moduleName
+            self.needsReboot.append(module.moduleName)
+        elif hasattr(module, "needsReboot") and module.needsReboot == False:
+            if module.moduleName in self.needsReboot:
+                print "removing needsReboot for %s" % module.moduleName
+                self.needsReboot.remove(module.moduleName)
 
         # record the current page as the new previous page
         self.prevPage = self.moduleNameToNotebookIndex[module.__module__]
