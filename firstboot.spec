@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.3
+Version: 1.4.4
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,10 @@ fi
 
 
 %changelog
+* Wed Feb 08 2006 Chris Lumens <clumens@redhat.com> 1.4.4-1
+- Get rid of chkconfig --off calls.
+- Smarter checking for if we need to reboot or not.
+
 * Mon Feb 06 2006 Chris Lumens <clumens@redhat.com> 1.4.3-1
 - Tweak firstboot-tui requires to not require X (#180046).
 - Wrap left side labels if they're too long.
