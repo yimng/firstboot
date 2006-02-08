@@ -19,11 +19,6 @@
 
 import os
 
-def chkconfigOff():
-        #Turn off the firstboot init script
-        path = "/sbin/chkconfig --del firstboot"
-        os.system(path)
-
 def writeSysconfigFile(doDebug):
     #Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
     if (not doDebug):

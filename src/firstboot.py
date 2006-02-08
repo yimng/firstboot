@@ -79,7 +79,6 @@ class Firstboot:
                             value = string.strip(value)
                             if value == "NO":
                                 #Firstboot should not be run
-                                firstbootBackend.chkconfigOff()
                                 return False
                             
             else:
