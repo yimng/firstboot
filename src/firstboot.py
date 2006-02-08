@@ -20,6 +20,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
+import rhpl.Conf
 import os
 import string
 import sys
@@ -54,7 +55,7 @@ class Firstboot:
         self.forcegui = False
 
     #Let's check to see if firstboot should be run or not
-    #If we're in debug mode, run anyway.  Even if the file exists
+    #If we're in debug mode, run anyway even if the file exists.
     def mayRun(self):
         if not self.doDebug:
             #Well first, is this even being run as root?
@@ -65,27 +66,16 @@ class Firstboot:
             #We're not in debug mode, so do some checking
             #First, look and see if /etc/sysconfig/firstboot exists
             if os.access(FILENAME, os.R_OK):
-                fd = open(FILENAME, 'r')
-                lines = fd.readlines()
-                fd.close()
+                conf = Conf.ConfShellVar(FILENAME)
 
-                #If /etc/sysconfig/firstboot exists, parse the file
-                #If we find 'RUN_FIRSTBOOT=NO' in the file, then don't run
-                for line in lines:            
-                    line = string.strip(line)
-                    if string.find(line, "RUN_FIRSTBOOT") > -1 and line[0] != "#":
-                        if string.find(line, "="):
-                            key, value = string.split(line, "=")
-                            value = string.strip(value)
-                            if value == "NO":
-                                #Firstboot should not be run
-                                return False
-                            
-            else:
-                #Firstboot has never been run before, so start it up
-                return True
-        else:
-            return True
+                if conf.has_key("RUN_FIRSTBOOT"):
+                    if conf["RUN_FIRSTBOOT"].upper() == "NO":
+                        # Firstboot should not be run
+                        return False
+
+        # If we're in debug mode, or the file doesn't exist, or RUN_FIRSTBOOT
+        # isn't in it, or RUN_FIRSTBOOT isn't NO, run.
+        return True
 
     # Sets up the text UI and assumes control.  The caller will never be
     # returned to and firstboot will exit from within here.
