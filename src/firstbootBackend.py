@@ -25,5 +25,3 @@ def writeSysconfigFile(doDebug):
         fd = open("/etc/sysconfig/firstboot", "w")
         fd.write("RUN_FIRSTBOOT=NO\n")
         fd.close()
-
-        chkconfigOff()
