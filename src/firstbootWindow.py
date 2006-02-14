@@ -26,7 +26,6 @@ os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
 
 import sys
 import gtk
-import gobject
 import functions
 import firstbootBackend
 from firstboot import Firstboot
@@ -63,6 +62,7 @@ class firstbootWindow:
 
         # Create the initial window and a vbox to fill it with.
         self.win = gtk.Window()
+        self.win.set_keep_below(True)
         self.win.set_position(gtk.WIN_POS_CENTER)
         self.win.set_decorated(False)
 
@@ -233,7 +233,7 @@ class firstbootWindow:
                                     _("The system must now reboot for some of your selections to take effect."))
             dlg.set_position(gtk.WIN_POS_CENTER)
             dlg.show_all()
-            rc = dlg.run()
+            dlg.run()
             dlg.destroy()
             os.system("/sbin/reboot")
         else:
@@ -254,19 +254,19 @@ class firstbootWindow:
             result = module.apply(self.notebook)
         except:
             import exceptionWindow
-            (type, value, tb) = sys.exc_info()
-            list = traceback.format_exception(type, value, tb)
-            text = string.joinfields(list, "")
+            (ty, value, tb) = sys.exc_info()
+            lst = traceback.format_exception(ty, value, tb)
+            text = string.joinfields(lst, "")
             result = exceptionWindow.ExceptionWindow(module, text)
             pass
 
         # Store the name of every module that requires a reboot.  This allows
         # us to remove a single module if the user moves back and forth through
         # the UI while still knowing that other modules still require reboot.
-        if hasattr(module, "needsReboot") and module.needsReboot == True:
+        if hasattr(module, "needsReboot") and module.needsReboot:
             print "adding needsReboot for %s" % module.moduleName
             self.needsReboot.append(module.moduleName)
-        elif hasattr(module, "needsReboot") and module.needsReboot == False:
+        elif hasattr(module, "needsReboot") and not module.needsReboot:
             if module.moduleName in self.needsReboot:
                 print "removing needsReboot for %s" % module.moduleName
                 self.needsReboot.remove(module.moduleName)
@@ -380,16 +380,16 @@ class firstbootWindow:
         # Generate a list of all of the module files (which becomes the list of
         # all non-hidden files in the directory with extensions other than .py.
         files = os.listdir(self.modulePath)
-        list = []
-        for file in files:
-            if file[0] == '.':
+        lst = []
+        for f in files:
+            if f[0] == '.':
                 continue
-            if file[-3:] != ".py":
+            if f[-3:] != ".py":
                 continue
-            list.append(file[:-3])
+            lst.append(f[:-3])
 
         # Import each module, and filter out those
-        for module in list:
+        for module in lst:
             cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
                    "obj = %s.childWindow()") % (module, module, module)
 
@@ -451,7 +451,6 @@ class firstbootWindow:
             module = self.moduleDict[priority]
             # Launch the module's GUI.
             vbox = None
-            eventbox = None
 
             if self.doDebug:
                 try:
@@ -459,9 +458,9 @@ class firstbootWindow:
                     vbox, pix, title = module.launch(self.doDebug)
                 except:
                     import exceptionWindow
-                    (type, value, tb) = sys.exc_info()
-                    list = traceback.format_exception(type, value, tb)
-                    text = string.joinfields(list, "")
+                    (ty, value, tb) = sys.exc_info()
+                    lst = traceback.format_exception(ty, value, tb)
+                    text = string.joinfields(lst, "")
                     exceptionWindow.ExceptionWindow(module, text)
                     pass                    
             else:
@@ -469,9 +468,9 @@ class firstbootWindow:
                     vbox, pix, title = module.launch() 
                 except:
                     import exceptionWindow
-                    (type, value, tb) = sys.exc_info()
-                    list = traceback.format_exception(type, value, tb)
-                    text = string.joinfields(list, "")
+                    (ty, value, tb) = sys.exc_info()
+                    lst = traceback.format_exception(ty, value, tb)
+                    text = string.joinfields(lst, "")
                     exceptionWindow.ExceptionWindow(module, text)
                     pass
                     continue
@@ -534,7 +533,7 @@ class firstbootWindow:
         pageNum = len(self.notebook.get_children())
         for i in range(pageNum):
             self.notebook.hide()
-            self.notebook.remove_page(0)
+            self.notebook.remove_page(i)
             
     def changeLocale(self, lang, fullName):
         lc, encoding = string.split(lang, ".")
