@@ -17,8 +17,6 @@
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-import os
-
 def writeSysconfigFile(doDebug):
     #Write the /etc/sysconfig/firstboot file to tell firstboot not to run again
     if (not doDebug):

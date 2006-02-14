@@ -21,7 +21,6 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 import os
-import string
 import signal
 import sys
 import rhpl.keyboard as keyboard
@@ -65,7 +64,7 @@ class XFirstboot (Firstboot):
 
         xsetup_failed = False
         try:
-            xcfg = xserver.startX(runres, videohw, monitorhw, mousehw, kbd)
+            xserver.startX(runres, videohw, monitorhw, mousehw, kbd)
         except RuntimeError:
             xsetup_failed = True
 

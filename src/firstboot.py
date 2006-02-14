@@ -22,8 +22,6 @@
 
 import rhpl.Conf
 import os
-import string
-import sys
 import snack
 import firstbootBackend
 
@@ -66,7 +64,7 @@ class Firstboot:
             #We're not in debug mode, so do some checking
             #First, look and see if /etc/sysconfig/firstboot exists
             if os.access(FILENAME, os.R_OK):
-                conf = Conf.ConfShellVar(FILENAME)
+                conf = rhpl.Conf.ConfShellVar(FILENAME)
 
                 if conf.has_key("RUN_FIRSTBOOT"):
                     if conf["RUN_FIRSTBOOT"].upper() == "NO":

@@ -73,7 +73,6 @@ class FirstbootModuleWindow:
             iconBox.pack_start(self.icon, False)
         iconBox.pack_start(msgLabel)
         toplevel.pack_start(iconBox, False)
-        toplevel.pack_start(self.myVbox, True)
 
         return toplevel
 
@@ -100,8 +99,6 @@ class FirstbootModuleWindow:
             msgLabel.set_line_wrap(True)
             msgLabel.set_alignment(0.0, 0.5)
             internalVBox.pack_start(msgLabel, False)
-
-        internalVBox.pack_start(self.myVbox, True)
 
         toplevel = gtk.VBox()
         toplevel.pack_start(internalVBox, True)
@@ -137,7 +134,6 @@ class FirstbootModuleWindow:
         iconBox.pack_start(msgLabel)
 
         toplevel.pack_start(iconBox, False)
-        toplevel.pack_start(self.myVbox, True)
 
         #Remove the hsep from the dialog.  It's ugly
         hsep = self.mainWindow.get_children()[0].get_children()[0]
@@ -178,7 +174,6 @@ class FirstbootModuleWindow:
         iconBox.pack_start(msgLabel)
 
         toplevel.pack_start(iconBox, False)
-        toplevel.pack_start(self.myVbox, True)
 
         #Remove the hsep from the dialog.  It's ugly
         hsep = self.mainWindow.get_children()[0].get_children()[0]
