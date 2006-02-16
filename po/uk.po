@@ -83,12 +83,11 @@ msgstr "_Далі"
 
 #: ../src/firstbootWindow.py:269
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Систему треба перезавантажити, перж ніж деякі зроблені зміни наберуть сили."
 
 #: ../src/firstbootWindow.py:332
-#, fuzzy
 msgid "_Finish"
-msgstr "Завершення налаштовування"
+msgstr "_Завершити"
 
 #: ../src/firstbootWindow.py:424
 #, python-format
@@ -162,11 +161,10 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:70
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Вставте диск з додатковим програмним забезпеченням."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:76
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -193,11 +191,10 @@ msgstr ""
 "продовження."
 
 #: ../src/modules/additional_cds.py:197
-#, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"Програму autorun не знайдено на cd. Натисніть \"Гаразд\" для продовження."
+"Програму autorun не знайдено на CD. Натисніть \"Гаразд\", щоб продовжити."
 
 #: ../src/modules/create_user.py:37
 msgid "System User"
@@ -230,7 +227,6 @@ msgid "Confir_m Password:"
 msgstr "Під_твердження паролю:"
 
 #: ../src/modules/create_user.py:111
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -270,13 +266,12 @@ msgstr ""
 "Пароль надто короткий. Використовуйте паролі довжиною не менше 6 символів."
 
 #: ../src/modules/create_user.py:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Ім'я користувача '%s' містить символ пунктуації. Не використовуйте символи "
-"пунктуації у імені користувача."
+"Ім'я '%s' зарезервоване для системи. Вкажіть іншу назву облікового разунку."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -299,16 +294,14 @@ msgid "Finish Setup"
 msgstr "Завершення налаштовування"
 
 #: ../src/modules/finished.py:33
-#, fuzzy
 msgid ""
 "Your system is now set up and ready to use.  Please click the \"Finish\" "
 "button in the lower right corner to continue."
 msgstr ""
-"Ваша система налаштована та готова до роботи. Щоб продовжити натисніть \"Далі"
+"Ваша система налаштована та готова до роботи. Щоб продовжити, натисніть \"Далі"
 "\" у правому нижньому куті."
 
 #: ../src/modules/finished.py:36
-#, fuzzy
 msgid ""
 "Please click the \"Finish\" button in the lower right corner to continue."
 msgstr "Щоб продовжити натисніть \"Далі\" у правому нижньому куті."
@@ -342,7 +335,6 @@ msgid "Sound Card"
 msgstr "Звукова карта"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "A sound card has been detected in your computer."
 msgstr "У вашому комп'ютері виявлено звукову карту."
 
@@ -374,51 +366,3 @@ msgstr ""
 "Лишилось ще декілька кроків, після чого ваша система буде готова до роботи. "
 "Агент налаштовування допоможе вам з настроюванням. Натисніть \"Далі\" для "
 "продовження."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Довжина імені користувача не повинна перевищувати 33 символів."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Ім'я користувача не повинно починатись з цифри."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Ім'я користувача '%s' містить символ пробілу. Не використовуйте пробіл у "
-#~ "імені користувача."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Ім'я користувача '%s' містить символ пунктуації. Не використовуйте "
-#~ "символи пунктуації у імені користувача."
-
-#, fuzzy
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Ім'я користувача '%s' містить символ пунктуації. Не використовуйте "
-#~ "символи пунктуації у імені користувача."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Ім'я користувача '%s' містить неправильний символ. Використовуйте лише "
-#~ "ASCII символи у імені користувача."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Пароль містить некоректні символи. Використовуйте лише ASCII символи."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Ім'я '%s' містить некоректні символи. Використовуйте лише ASCII символи."
