@@ -21,7 +21,6 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 import os
-import signal
 import sys
 import rhpl.keyboard as keyboard
 import rhpl
@@ -37,9 +36,6 @@ class XFirstboot (Firstboot):
         path = "/etc/X11/Xresources"
         if os.access(path, os.R_OK):
            os.system("xrdb -merge %s" % path)
-
-    def alarmHandler(self, signum, frame):
-        raise IOError
 
     # Initializes the UI for firstboot by starting up an X server and
     # window manager, but returns control to the caller to proceed.
@@ -81,15 +77,7 @@ class XFirstboot (Firstboot):
             os.write(wr, "#")
 
         # Block on read of token
-        signal.signal(signal.SIGALRM, self.alarmHandler)
-        signal.alarm(15)
-
-        try:
-            os.read(rd, 1)
-        except IOError:
-            raise RuntimeError, "Couldn't communicate with window manager"
-
-        signal.alarm(0)
+        os.read(rd, 1)
         os.close(rd)
         os.close(wr)
 
