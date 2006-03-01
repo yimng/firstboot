@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.4
+Version: 1.4.5
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -14,6 +14,7 @@ Prereq: chkconfig, /etc/init.d
 BuildPreReq: gettext
 Requires: pygtk2
 Requires: metacity
+Requires: rhpl
 Requires: rhpxl
 Requires: system-config-display
 Requires: system-config-language
@@ -108,6 +109,11 @@ fi
 
 
 %changelog
+* Wed Mar 01 2006 Chris Lumens <clumens@redhat.com> 1.4.5-1
+- Run if RUN_FIRSTBOOT != "NO" (#180520).
+- Don't let dialog windows hide behind the main window.
+- Remove timeout waiting for server to start.
+
 * Wed Feb 08 2006 Chris Lumens <clumens@redhat.com> 1.4.4-1
 - Get rid of chkconfig --off calls.
 - Smarter checking for if we need to reboot or not.
