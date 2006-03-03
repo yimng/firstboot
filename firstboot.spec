@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.5
+Version: 1.4.6
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -109,6 +109,9 @@ fi
 
 
 %changelog
+* Fri Mar 03 2006 Chris Lumens <clumens@redhat.com> 1.4.6-1
+- Revert UI changes that broke s-c-keyboard (#183718).
+
 * Wed Mar 01 2006 Chris Lumens <clumens@redhat.com> 1.4.5-1
 - Run if RUN_FIRSTBOOT != "NO" (#180520).
 - Don't let dialog windows hide behind the main window.
