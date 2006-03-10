@@ -42,7 +42,7 @@ class SoundWindow:
     runPriority = 120
     moduleName = _("Sound Card")
     windowTitle = _("Sound Card")
-    shortMessage = _("A sound card has been detected in your computer.")
+    shortMessage = _("An audio device has been detected in your computer.")
     
     def __init__(self):
         #Initialize soundcard page
