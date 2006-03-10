@@ -35,7 +35,7 @@ def cryptPassword(password, useMD5 = 1):
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 110
-    moduleName = _("System User")
+    moduleName = _("Create User")
     windowName = moduleName
 
     def launch(self, doDebug = None):
@@ -62,7 +62,7 @@ class childWindow:
         internalVBox.set_border_width(10)
         internalVBox.set_spacing(10)
 
-        label = gtk.Label(_("It is recommended that you create a system 'username' for regular "
+        label = gtk.Label(_("It is recommended that you create a 'username' for regular "
                             "(non-administrative) use of your system. To create a system 'username,' "
                             "please provide the information requested below."))
 
