@@ -34,7 +34,7 @@ class childWindow:
         label = gtk.Label(_("There are a few more steps to "
                           "take before your system is ready to use.  The Setup Agent "
                           "will now guide you through some basic configuration.  Please click the "
-                            "\"Next\" button in the lower right corner to continue."))
+                          "\"Forward\" button in the lower right corner to continue."))
 
         label.set_line_wrap(True)
         label.set_alignment(0.0, 0.5)
