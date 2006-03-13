@@ -4,6 +4,7 @@ sys.path.append('/usr/share/system-config-users/')
 from gtk import *
 import string
 import os
+import os.path
 import time
 import gtk
 import gobject
@@ -206,8 +207,9 @@ class childWindow:
         user = self.admin.lookupUserByName(username)
 
         if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
-            self.showErrorMessage(_("The username '%s' is a reserved system account.  Please " \
-                                    "specify another username." % username))
+            self.showErrorMessage(_("The username '%s' is a reserved system "
+                                    "account.  Please specify another username."
+                                    % username))
             self.usernameEntry.set_text("")
             self.usernameEntry.grab_focus()
             return None
@@ -218,7 +220,22 @@ class childWindow:
         if not userGroupCheck.isNameOk(fullName, self.fullnameEntry):
             return None
 
-        #If we get to this point, all the input seems to be valid.  Let's add the user
+        # Shouldn't create a user if there's already a home directory with
+        # their name.
+        try:
+            os.path.stat("/home/%s" % username)
+
+            self.showErrorMessage(_("A home directory for the username '%s' "
+                                    "already exists.  Please specify another "
+                                    "username." % username))
+            self.usernameEntry.set_text("")
+            self.usernameEntry.grab_focus()
+            return None
+        except:
+            pass
+
+        #If we get to this point, all the input seems to be valid.
+        #Let's add the user.
         if user == None:
             #if the user doesn't already exist
             userEnt = self.admin.initUser(username)
