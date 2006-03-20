@@ -13,25 +13,26 @@
 # Thomas Ritter <thomas@dhcppc1>, 2005.
 # Severin Heiniger <severinheiniger@gmail.com>, 2005.
 # Thomas Ritter <nethad@gmx.net>, 2005.
+# Nadine Reissle <nreissle@redhat.com>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-02-24 21:26+0100\n"
-"Last-Translator: Ronny Buchmann <ronny-vlug@vlugnet.org>\n"
-"Language-Team: Deutsch <fedora-trans-de@redhat.com>\n"
+"PO-Revision-Date: 2006-03-21 09:56+1000\n"
+"Last-Translator: Nadine Reissle <nreissle@redhat.com>\n"
+"Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
-msgstr "Ende"
+msgstr "Beenden"
 
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
@@ -93,7 +94,7 @@ msgstr "_Zurück"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Vorwärts"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -205,27 +206,24 @@ msgstr ""
 "und klicken Sie auf \"OK\" um fortzufahren."
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Kann das Autorun-Programm nicht auf der CD finden. Klicken Sie \"OK\" um "
 "fortzufahren."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Systembenutzer"
+msgstr "Benutzer erstellen"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Es wird empfohlen, dass Sie ein Benutzerkonto für die normale (nicht-"
-"administrative) Benutzung anlegen.  Um ein Benutzerkonto anzulegen, geben "
-"Sie die geforderten Informationen an."
+"Es wird empfohlen, dass Sie einen 'Benutzernamen' für die normale (nicht-"
+"administrative) Benutzung Ihres Systems anlegen. Um ein System-'Benutzernamen' anzulegen, bitte geben "
+"Sie die geforderten Informationen unten an."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -275,8 +273,7 @@ msgstr "Benutzer_konto anlegen"
 
 #: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
+msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie diese erneut ein."
 
 #: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
@@ -292,12 +289,12 @@ msgstr ""
 "einen anderen Benutzernamen."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Der Benutzername '%s' ist ein reserviertes Systemkonto. Bitte wählen Sie "
+"Es gibt bereits ein Home-Verzeichnis für den Benutzernamen '%s'.  Bitte wählen Sie "
 "einen anderen Benutzernamen."
 
 #: ../src/modules/date.py:46
@@ -345,19 +342,17 @@ msgid "Sound Card"
 msgstr "Soundkarte"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "In Ihrem Computer wurde eine Soundkarte ermittelt."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Klicken Sie auf \"Testton abspielen\", um ein Beispiel zu hören. Dabei "
-"sollte eine Reihe von drei Tönen erklingen: der erste Ton im rechten Kanal,"
+"Klicken Sie auf den \"Abspielen\" Button um ein Testbeispiel zu hören. Dabei "
+"sollten Sie eine Reihe von drei Tönen hören.  Der erste Ton im rechten Kanal,"
 "der zweite im linken Kanal und der dritte im mittleren Kanal."
 
 #: ../src/modules/timezone.py:46
@@ -369,82 +364,12 @@ msgid "Please set the timezone for the system."
 msgstr "Wählen Sie die Zeitzone für das System."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Nur noch ein paar Schritte, und Sie können Ihr System verwenden.  Der Setup "
-"Agent führt Sie dabei durch die Basiskonfiguration.  Klicken Sie auf \"Vor\" "
+"Agent führt Sie jetzt durch einige Basiskonfigurationen.  Klicken Sie auf \"Vor\" "
 "unten rechts, um fortzufahren."
 
-#~ msgid "_Next"
-#~ msgstr "_Weiter"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Soundkartenkonfiguration"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Setup beenden"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Ihr System ist nun eingerichtet und kann verwendet werden.  Klicken Sie "
-#~ "auf die Schaltfläche \"Fertigstellen\" unten rechts um fortzufahren."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Klicken Sie auf die Schaltfläche \"Fertigstellen\" unten rechts um "
-#~ "fortzufahren."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Der Benutzername darf maximal 32 Zeichen haben."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Der Benutzername muss mit einem Buchstaben beginnen."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Der Benutzername '%s' enthält Leerzeichen.  Bitte verwenden Sie keine "
-#~ "Leerzeichen im Benutzernamen."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Der Benutzername '%s' enthält Satzzeichen.  Bitte verwenden Sie keine "
-#~ "solchen Zeichen im Benutzernamen."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Der Benutzername '%s' enthält Grossbuchstaben.  Bitte verwenden Sie keine "
-#~ "Grossbuchstaben im Benutzernamen."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Der Benutzername '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur "
-#~ "ASCII-Zeichen."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Das Passwort enthält ungültige Zeichen.  Bitte verwenden Sie nur ASCII-"
-#~ "Zeichen."
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Der Name '%s' enthält ungültige Zeichen.  Bitte verwenden Sie nur "
-#~ "Buchstaben, Zahlen, Leerzeichen und den Unterstrich."
