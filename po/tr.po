@@ -2,7 +2,7 @@
 # translation of tr.po to Turkish
 # translation of tr.po to TURKISH
 # translation of tr.po to Türkçe
-#
+# 
 # Turkish translations for firstboot messages.
 # Copyright (C) 2002,2003, 2004, 2006 Free Software Foundation, Inc
 # $Id$
@@ -11,12 +11,12 @@
 # Hasan Umit Ezerce <humit@tr.net>, 2004.
 # Hasan Umit Ezerce <humit@linuxmail.org>, 2004.
 # Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004, 2006.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot_tr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-02-05 20:17+0200\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -53,12 +53,12 @@ msgstr "Lisansı _Tekrar Oku"
 msgid "_Shut down"
 msgstr "_Sistemi Kapat"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "%s modülünde bir hata oluştu."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -69,7 +69,7 @@ msgstr ""
 "Yardımcısı bu modülü yüklemeden kalan modülleri\n"
 "çalıştırmaya uğraşacak."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -83,29 +83,28 @@ msgstr ""
 "bir koyası %s olarak kaydedilmiştir. Bu dosyayı hata\n"
 "raporunuza eklemeyi unutmayınız.\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Geri"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_İleri"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Bazı seçimlerinizin etkin olabilmesi için sistem yeniden başalatılmalı"
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Kurulumu Bitir"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s modülü yüklenirken bir hata oluştu: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Hoş Geldiniz"
@@ -135,30 +134,26 @@ msgid "System services"
 msgstr "Sistem servisleri"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Ses kartı ayarları"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Zaman Dilimi ayarları"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Çalıştırma Aracı"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Değiştirmek istediğiniz öğeyi seçiniz "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Kurulum Yardımcısı "
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "İlave CD'ler"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -170,12 +165,12 @@ msgstr ""
 "CD'si yada Red Hat tarafından sağlanan diğer program cdlerini de bu aşamada "
 "yerleştirebilirsiniz."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "Diğer ilave yazılım CDlerini lütfen bu aşamada yükleyiniz."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -189,11 +184,11 @@ msgstr ""
 "etkinleştirmek için, şimdi \"Extralar\" CD'sinden Intel Execution Layer "
 "paketini yüklemeniz gerekmektedir."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Kur..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -201,17 +196,22 @@ msgstr ""
 "Bir CD-ROM algılanamadı.  Lütfen sürücüye bir CD-ROM yerleştirin ve devam "
 "etmek için \"Tamam\" düğmesine basın."
 
-#: ../src/modules/additional_cds.py:197
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "Otomaik başlama programı CD'de  bulunamadı. Devam etmek için \"Tamam\"a tıklayın."
+#: ../src/modules/additional_cds.py:198
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Otomaik başlama programı CD'de  bulunamadı. Devam etmek için \"Tamam\"a "
+"tıklayın."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Sistem Kullanıcısı"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -219,23 +219,23 @@ msgstr ""
 "açmanız şiddetle tavsiye edilir.  Kişisel bir hesap içinaçmak için lütfen "
 "gereken bilgileri giriniz."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Kullanıcı Adı:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "_Adı ve Soyadı:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Parola:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "Parola _Onaylama:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -243,11 +243,11 @@ msgstr ""
 "Eğer ağ üzerinden Kerberos ya da NIS gibi bir yetkilendirme kullanmanız "
 "gerekiyorsa , lütfen \"Ağ Oturumu Aç\" düğesine tıklayın."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Ağ _Oturumu Açmayı Kullan..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -257,27 +257,36 @@ msgstr ""
 "hesap oluşturmadan devam ederseniz, sadece sistem yönetimi için oluşturulmuş "
 "root hesabını kullanarak sisteme girebileceksiniz."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Devam"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "Hesap _oluştur"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Parolalar örtüşmüyor.  Lütfen parolayı tekrar giriniz."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Parolanız çok kısa.  Lütfen en az 6 karakter kullanın."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"Kullanıcı adı '%s' önceden ayrılmış bir sistem hesabı.  Lütfen başka bir "
+"kullanıcı adı belirleyin."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "Kullanıcı adı '%s' önceden ayrılmış bir sistem hesabı.  Lütfen başka bir "
 "kullanıcı adı belirleyin."
@@ -298,43 +307,27 @@ msgstr "Görüntü"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Lütfen kullanmak istediğiniz çözünürlüğü ve renk derinliğini seçiniz"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Kurulumu Bitir"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Sisteminiz ayarlandı ve artık kullanıma hazır. Devam etmek için sağ alt "
-"köşedeki \"Bitir\" düğmesine tıklayınız."
-
-#: ../src/modules/finished.py:36
-msgid "Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Ağ Kurulumu"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "Sisteminizde algılanan ağ aygıtları:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Ağ Aygıtı"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Boot protokolü"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "Ağ Ayarlarını _Değiştir..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "sabit"
 
@@ -343,15 +336,16 @@ msgid "Sound Card"
 msgstr "Ses Kartı"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "Makinanızda bir ses kartı bulundu."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Örnek sesi duymak için \"Deneme sesi çal\" düğmesine tıklayınız. 3 seslik "
 "bir dizi duyacaksınız. İlk ses sağ kanaldan, ikincisi sol kanaldan, üçüncü "
@@ -366,12 +360,32 @@ msgid "Please set the timezone for the system."
 msgstr "Lütfen sistem için zaman dilimi belirleyin."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç "
 "adım kaldı. Kurulum Yardımcısı bazı temel yapılandırmalarda size rehberlik "
 "edecek. Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
 
+#~ msgid "_Next"
+#~ msgstr "_İleri"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Ses kartı ayarları"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Kurulumu Bitir"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Sisteminiz ayarlandı ve artık kullanıma hazır. Devam etmek için sağ alt "
+#~ "köşedeki \"Bitir\" düğmesine tıklayınız."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr "Devam etmek için sağ alt köşedeki \"İleri\" düğmesine tıklayınız."

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-01-08 18:24+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -46,12 +46,12 @@ msgstr "_Läs licensavtalet igen"
 msgid "_Shut down"
 msgstr "_Stäng ner"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "Ett fel har inträffat i modulen %s."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -63,7 +63,7 @@ msgstr ""
 "läsa in denna modul, och försöker istället köra\n"
 "resterande moduler."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -77,29 +77,28 @@ msgstr ""
 "har sparats i %s. Försäkra dig om att du bifogar\n"
 "den filen med felrapporten.\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Bakåt"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_Nästa"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Systemet måste nu starta om för att dina val ska börja gälla."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Slutför"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimport av %s misslyckades: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Välkommen"
@@ -129,30 +128,26 @@ msgid "System services"
 msgstr "Systemtjänster"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Ljudkortskonfiguration"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Tidszonskonfiguration"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Kör verktyg"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Välj det objekt som du vill ändra "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Konfigurationsagent"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Ytterligare cd-skivor"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -165,13 +160,13 @@ msgstr ""
 "andra skivor som tillhandahållits från Red Hat för att installera "
 "ytterligare programvara nu."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 "Stoppa in eventuella ytterligare installationsskivor med programvara nu."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -185,11 +180,11 @@ msgstr ""
 "arkitekturen måste du installera paketet Intel Execution Layer från Extras-"
 "skivan nu."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Installera..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -197,20 +192,22 @@ msgstr ""
 "En cd-romskiva har inte hittats. Stoppa in en cd-romskiva i enheten och "
 "klicka på \"OK\" för att fortsätta."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Autorun-programmet kan inte hittas på cd-skivan. Klicka på \"OK\" för att "
 "fortsätta."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Systemanvändare"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -218,23 +215,23 @@ msgstr ""
 "(ickeadministrativt) bruk.  För att skapa ett \"systemanvändarnamn\" anger "
 "du den information som begärs nedan."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Användarnamn:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "Fullständigt na_mn:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Lösenord:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "_Bekräfta lösenord:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -242,11 +239,11 @@ msgstr ""
 "Om du måste använda nätverksautentisering som exempelvis Kerberos eller NIS "
 "bör du klicka på knappen Använd nätverksinloggning."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Använd nätverksinloggning..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -256,27 +253,36 @@ msgstr ""
 "fortsätter utan ett konto kan du bara logga in med rootkontot, vilket är "
 "reserverat för administrativt bruk."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Fortsätt"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "Skapa _konto"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
+"användarnamn."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
 "användarnamn."
@@ -297,44 +303,27 @@ msgstr "Display"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Välj den upplösning och det färgdjup som du vill använda"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Slutför konfiguration"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
-"\"Slutför\" i nedre högra hörnet för att fortsätta."
-
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "Tryck på knappen \"Slutför\" i nedre högra hörnet för att fortsätta."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Nätverkskonfiguration"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "Följande nätverksenheter har hittats på systemet:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Nätverksenhet"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Startprotokoll"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Ändra nätverkskonfiguration..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "statisk"
 
@@ -343,15 +332,16 @@ msgid "Sound Card"
 msgstr "Ljudkort"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "Ett ljudkort har hittats i din dator."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Klicka på knappen \"Spela testljud\" för att höra ett testljud. Du bör då "
 "höra en serie med tre ljud. Det första ljudet kommer att vara i den högra "
@@ -366,12 +356,34 @@ msgid "Please set the timezone for the system."
 msgstr "Ställ in tidszonen för systemet."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Det är ytterligare några steg kvar innan ditt system är redo för användning. "
 "Konfigurationsagenten kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Nästa\" i nedre högra hörnet för att "
 "fortsätta."
+
+#~ msgid "_Next"
+#~ msgstr "_Nästa"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Ljudkortskonfiguration"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Slutför konfiguration"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Ditt system är nu konfigurerat och redo för användning.  Tryck på knappen "
+#~ "\"Slutför\" i nedre högra hörnet för att fortsätta."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Tryck på knappen \"Slutför\" i nedre högra hörnet för att fortsätta."

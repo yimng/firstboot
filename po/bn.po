@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2005-04-23 15:02+0600\n"
 "Last-Translator: Samia Niamatullah <mailsamia2001@yahoo.com>\n"
 "Language-Team: Bengali <redhat-translation@bengalinux.org>\n"
@@ -49,7 +49,7 @@ msgstr "লাইসেন্স পুনরায় পড়ুন (_প)"
 msgid "_Shut down"
 msgstr "বন্ধ করো (_ব)"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "%s মডিউলে একটি ত্রুটি দেখা দিয়েছে।"
@@ -59,7 +59,7 @@ msgstr "%s মডিউলে একটি ত্রুটি দেখা দ�
 # যেহেতু %s মডিউলে একটি সমস্যা রয়েছে, Red Hat\n
 # Setup Agent এই মডিউলটি বাদ দিয়ে বাকি\n
 # মডিউলগুলো লোড করার চেষ্টা করবে।
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -71,7 +71,7 @@ msgstr ""
 "মডিউলগুলো লোড করার চেষ্টা করছে।"
 
 # modified for RHEL
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -84,31 +84,30 @@ msgstr ""
 "debug তথ্য %s ফাইলে রাখা হয়েছে \n"
 "ঐ ফাইলটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "পূর্ববর্তী (_প)"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "পরবর্তী (_র)"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
 # modified by RB
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 #, fuzzy
 msgid "_Finish"
 msgstr "সেটআপ সম্পন্ন করো"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s -এর মডিউল ইম্পোর্ট করতে ব্যর্থ: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "স্বাগতম"
@@ -143,36 +142,32 @@ msgstr "প্রিন্টার কনফিগারেশন "
 msgid "System services"
 msgstr "সিস্টেম সার্ভিস"
 
-#: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "সাউন্ড কার্ড কনফিগারেশন "
-
 # sam:
-#: ../src/textWindow.py:41
+#: ../src/textWindow.py:40
 msgid "Timezone configuration"
 msgstr "সময়ের অঞ্চল কনফিগারেশন"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "টুল চালান"
 
 # sam:
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "আপনি যেটি পরিবর্তন করতে চান সেটি নির্বাচন করুন"
 
 # modified for RHEL
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "সেটআপ এজেন্ট"
 
 # msgstr "অতিরিক্ত সিডিগুলো"
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "অতিরিক্ত সিডিসমূহ"
 
 # modified for RHEL
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -183,13 +178,13 @@ msgstr ""
 "Extras\" নামক ডিস্কটি অনুগ্রহ করে প্রবেশ করান।  অতিরিক্ত সফ্টওয়্যার ইনস্টল করার জন্য "
 "আপনি এইবার ডকুমেন্টেশন ডিস্ক, অথবা Red-Hat সরবরাহকৃত অন্যান্য ডিস্কও দিতে পারেন।"
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 # modified for RHEL
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 #, fuzzy
 msgid ""
 "\n"
@@ -204,12 +199,12 @@ msgstr ""
 "আপনাকে Extras ডিস্কটি থেকে Intel Execution Layer প্যাকেজটি ইনস্টল করতে হবে।"
 
 # modified by RB
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "ইনস্টল করো..."
 
 # modified for RHEL
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -217,7 +212,7 @@ msgstr ""
 "কোনো CD-ROM পাওয়া যায়নি। অনুগ্রহ করে ড্রাইভে একটি CD-ROM প্রবেশ করান এবং চালানোর "
 "জন্য \"ঠিক আছে\" চাপুন।"
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -225,14 +220,16 @@ msgstr ""
 "সিডিতে autorun প্রোগ্রামটি পাওয়া যায়নি। চালিয়ে যাওয়ার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "সিস্টেম ব্যবহারকারী"
 
 # modified for RHEL
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -240,26 +237,26 @@ msgstr ""
 "'username' তৈরি করার পরামর্শ দেওয়া হচ্ছে। সিস্টেম 'username' তৈরি করার জন্য সকল "
 "প্রয়োজনীয় তথ্য সরবরাহ করুন।"
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "ব্যবহারকারীর নাম (_ব):"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "সম্পূর্ণ নাম (_ন):"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "পাসওয়ার্ড (_প):"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ডটি নিশ্চিত করুন (_ন):"
 
 # msgstr "আপনি যদি "--old version
 # sam:
 # পরিচয়-প্রমান প্রক্রিয়া or অনুমোদন প্রক্রিয়া?
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -268,13 +265,13 @@ msgstr ""
 "আপনার যদি কোনো নেটওয়ার্ক পরিচয়-প্রমান প্রক্রিয়া যেমন কারবেরোস অথবা NIS ব্যবহার "
 "করার প্রয়োজন হয়, তাহলে অনুগ্রহ করে নেটওয়ার্ক লগ-ইন ব্যবহার করো বাটনটি ক্লিক করুন।"
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ-ইন ব্যবহার করো... (_ল)"
 
 # modified for RHEL
 # sam:
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -285,30 +282,39 @@ msgstr ""
 "জন্য সংরক্ষিত।"
 
 # msgstr "_চালিয়ে যাও"
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "অগ্রসর হও (_গ)"
 
 # msgstr "একাউন্ট তৈরী কর"
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "অ্যাকাউন্ট তৈরি করো (_ক)"
 
 # msgstr "পাসওয়ার্ডগুলো একই নয়। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "পাসওয়ার্ডগুলো মেলেনি। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
 
 # modified by RB
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষরের পাসওয়ার্ড লিখুন।"
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"ব্যাবহারকারীর নাম '%s' এর মাঝে বড় হাতের অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর "
+"নামের মধ্যে কোনো বড় হাতের অক্ষর রাখবেন না।"
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "ব্যাবহারকারীর নাম '%s' এর মাঝে বড় হাতের অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর "
 "নামের মধ্যে কোনো বড় হাতের অক্ষর রাখবেন না।"
@@ -331,53 +337,29 @@ msgstr "ডিসপ্লে"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "অনুগ্রহ করে আপনার পছন্দের রেজোলিউশন এবং রঙের গাঢ়তা নির্বাচন করুন"
 
-# modified by RB
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "সেটআপ সম্পন্ন করো"
-
-# modified by RB
-#: ../src/modules/finished.py:33
-#, fuzzy
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"আপনার সিস্টেমটি ব্যবহারের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের "
-"কোনায় অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
-
-# modified by RB
-#: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"পরবর্তী ধাপে যাওয়ার জন্য অনুগ্রহ করে নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" "
-"বাটনটি চাপুন।"
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "নেটওয়ার্ক সেটআপ"
 
 # modified by RB
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "সিস্টেমে নিম্নোক্ত নেটওয়ার্ক ডিভাইসগুলো সনাক্ত করা হয়েছে:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "নেটওয়ার্ক ডিভাইস"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "বুট প্রটোকল"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "নেটওয়ার্ক কনফিগারেশন পরিবর্তন করুন (_প)..."
 
 # স্থির
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "স্ট্যাটিক"
 
@@ -387,16 +369,16 @@ msgstr "সাউন্ড কার্ড"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "আপনার কম্পিউটারে একটি সাউন্ড কার্ড পাওয়া গেছে।"
 
 # modified by RB
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "নমুনা শব্দ শোনার জন্য \"পরীক্ষামূলক শব্দ বাজাও\" বাটনটি চাপুন। আপনি পরপর তিনটি শব্দ "
 "শুনতে পারবেন। প্রথমটি ডানদিকের চ্যানেলে, দ্বিতীয়টি বাঁদিকে এবং তৃতীয়টি মাঝখানের "
@@ -411,14 +393,42 @@ msgid "Please set the timezone for the system."
 msgstr "অনুগ্রহ করে আপনার সিস্টেমের জন্য সময়ের অঞ্চল নির্ধারণ করুন।"
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "আর কয়েকটি ধাপের পর আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। এখন আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনের জন্য সেটআপ এজেন্ট আপনাকে সাহায্য করবে। অগ্রসর "
 "হওয়ার জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+
+#~ msgid "_Next"
+#~ msgstr "পরবর্তী (_র)"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "সাউন্ড কার্ড কনফিগারেশন "
+
+# modified by RB
+#~ msgid "Finish Setup"
+#~ msgstr "সেটআপ সম্পন্ন করো"
+
+# modified by RB
+#, fuzzy
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "আপনার সিস্টেমটি ব্যবহারের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের "
+#~ "কোনায় অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
+
+# modified by RB
+#, fuzzy
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "পরবর্তী ধাপে যাওয়ার জন্য অনুগ্রহ করে নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" "
+#~ "বাটনটি চাপুন।"
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "ব্যাবহারকারীর নামটি অবশ্যই ৩৩ অক্ষরের কম হতে হবে।"

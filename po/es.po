@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-01-16 10:30+1000\n"
 "Last-Translator: Manuel Ospina <mospina@redhat.com>\n"
 "Language-Team: Spanish <en@li.org>\n"
@@ -58,12 +58,12 @@ msgstr "_Volver a leer licencia"
 msgid "_Shut down"
 msgstr "_Apagar"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "Ocurrió un error en el módulo %s."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -74,7 +74,7 @@ msgstr ""
 "el Agente de configuración de Red Hat no cargará este \n"
 "módulo e intentará ejecutar los módulo restantes."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -87,31 +87,30 @@ msgstr ""
 "ha guardado una copia de la salida de depuración para %s. \n"
 "Asegúrese de adjuntar ese archivo en el informe de errores.\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Atrás"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_Siguiente"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "El sistema necesita ser reiniciado para que algunas de las opciones elegidas "
 "surtan efecto."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Finalizar"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "Falló al importar el módulo %s: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Bienvenido"
@@ -141,30 +140,26 @@ msgid "System services"
 msgstr "Servicios del sistema"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Configuración de la tarjeta de sonido"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Configuración de la zona horaria"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Ejecutar Herramienta"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Seleccione el elemento que desea modificar"
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Agente de Configuración"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "CDs adicionales"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -176,14 +171,14 @@ msgstr ""
 "insertar el disco de Documentación u otros discos de software adicional de "
 "Red Hat para instalarlos."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 "Por favor inserte cualquier cd de instalación de software adicional en este "
 "momento."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -197,11 +192,11 @@ msgstr ""
 "bit en la arquitectura Intel Itanium2, debe instalar ahora el paquete Intel "
 "Execution Layer desde el disco de Extras."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Instalar..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -209,20 +204,22 @@ msgstr ""
 "No se detectó un CD-ROM. Introduzca un CD-ROM en la unidad y pulse \"Aceptar"
 "\" para continuar."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "El programa autorun no se encontró en el CD. haga clic en \"Aceptar\" para "
 "continuar."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Usuario del sistema"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -230,23 +227,23 @@ msgstr ""
 "administrativo) del sistema. Para crear un nombre de usuario del sistema, "
 "proporcione la información requerida abajo."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "Nombre de _usuario:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "Nombr_e completo:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Contraseña:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "Confir_mar contraseña:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -254,11 +251,11 @@ msgstr ""
 "Si necesita utilizar una autenticación de red tal como Kerberos o NIS, por "
 "favor pulse en el botón Utilizar conexión de red."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Uti_lizar conexión de red..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -268,27 +265,36 @@ msgstr ""
 "una cuenta, sólo podrá conectarse como usuario root, lo cual es conveniente "
 "reservar para uso administrativo únicamente. "
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Continuar"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "Crear cuent_a"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Las contraseñas no coinciden. Por favor, vuelva a introducirla."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "La contraseña es muy corta. Use al menos seis (6) caracteres."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"El nombre de usuario '%s' es una cuenta de sistema reservada. Por favor "
+"especifique otro nombre de usuario."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "El nombre de usuario '%s' es una cuenta de sistema reservada. Por favor "
 "especifique otro nombre de usuario."
@@ -309,46 +315,27 @@ msgstr "Pantalla"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Seleccione la resolución y profundidad de color que desea utilizar"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Finalizar la configuración"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Su sistema está configurado y listo para usar. Por favor presione \"Finalizar"
-"\" en la esquina inferior derecha para continuar."
-
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"Presione el botón \"Finalizar\" de la esquina inferior derecha para "
-"continuar."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Configuración de la red"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "Se han detectado los siguientes dispositivos de red en el sistema:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Dispositivo de red"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Protocolo de arranque"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Cambiar configuración de la red..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "estático"
 
@@ -357,15 +344,16 @@ msgid "Sound Card"
 msgstr "Tarjeta de sonido"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "Se ha detectado una tarjeta de sonido en su máquina."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Pulse el botón \"Realice una prueba de sonido\" para escuchar un sonido de "
 "prueba. Debería oír series de tres sonidos. El primero estará en el canal de "
@@ -381,12 +369,35 @@ msgid "Please set the timezone for the system."
 msgstr "Configure la zona horaria para el sistema."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Hay algunos pasos más que debe realizar antes de que su sistema esté listo "
 "para ser utilizado. El Agente del configuración de Red Hat le guiará a "
 "través de algunos elementos básicos de configuración. Pulse el botón "
 "\"Siguiente\" en la esquina inferior derecha para continuar."
+
+#~ msgid "_Next"
+#~ msgstr "_Siguiente"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Configuración de la tarjeta de sonido"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Finalizar la configuración"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Su sistema está configurado y listo para usar. Por favor presione "
+#~ "\"Finalizar\" en la esquina inferior derecha para continuar."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Presione el botón \"Finalizar\" de la esquina inferior derecha para "
+#~ "continuar."

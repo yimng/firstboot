@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-01-06 21:11+0100\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -45,12 +45,12 @@ msgstr "Overeenkomst _herlezen"
 msgid "_Shut down"
 msgstr "A_fsluiten"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "Er was een fout in de %s module."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -61,7 +61,7 @@ msgstr ""
 "Red Hat Setup Agent deze module niet laden maar zal \n"
 "het wel proberen de overige modules uit te voeren."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -75,31 +75,30 @@ msgstr ""
 "debug-uitvoer is opgeslagen in %s Vergeet niet om dit \n"
 "bestand als bijlage te voegen bij het fout-rapport. \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Terug"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_Volgende"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Het systeem wordt nu herstart om sommige keuzes die u hebt gemaakt door te "
 "voeren."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Voltooien"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "importeren van module %s is mislukt: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Welkom"
@@ -129,31 +128,27 @@ msgid "System services"
 msgstr "Systeem voorzieningen"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Geluidskaart configuratie"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Tijdzone configuratie"
 
 # vertaling (?)
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Start programma"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Selecteer het onderdeel dat u wilt wijzigen "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Additionele CD's"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -165,12 +160,12 @@ msgstr ""
 "CD of andere CD's geleverd door Red Hat invoeren om additionele software te "
 "installeren."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "U kunt op dit moment additionele software-installatie CD's invoeren."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -184,31 +179,33 @@ msgstr ""
 "te zetten dient u het Intel Execution Layer pakket te installeren dat op de "
 "'Extras' CD staat."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Installeren..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
 "Er is geen CD gedetecteerd. Voer de CD in, en klik \"OK\" om door te gaan."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Het 'autorun' programma kan niet worden gevonden op de CD. Klik op \"OK\" om "
 "door te gaan."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Systeemgebruiker"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -216,24 +213,24 @@ msgstr ""
 "(dus geen systeembeheer) een persoonlijk account aan te maken. Om een "
 "persoonlijk account aan te maken, moet u de gevraagde informatie leveren."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Gebruikersnaam:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "_Volledige naam:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Wachtwoord:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "Wachtwoord _bevestigen:"
 
 # de 'X' knop is niet mooi: beter: de knop 'X'
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -241,11 +238,11 @@ msgstr ""
 "Als u netwerk authenticatie wilt gebruiken, zoals Kerberos of NIS, klik dan "
 "op de knop: Netwerk login gebruiken."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "_Netwerk login gebruiken..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -255,27 +252,36 @@ msgstr ""
 "doorgaat zonder account, kunt u zich alleen aanmelden met het root-account "
 "hetgeen alleen bedoeld is voor systeembeheer."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Doorgaan"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "_Account aanmaken"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "De wachtwoorden komen niet overeen. Voer het wachtwoord nogmaals in."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Het wachtwoord is te kort. Gebruik minimaal 6 tekens."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"De gebruikersnaam '%s' is een gereserveerd systeem-account. Geef een andere "
+"gebruikersnaam."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "De gebruikersnaam '%s' is een gereserveerd systeem-account. Geef een andere "
 "gebruikersnaam."
@@ -296,47 +302,28 @@ msgstr "Beeldscherm"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Selecteer de resolutie en de kleurdiepte die u wilt gebruiken"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Setup voltooien"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Uw systeem is nu ingesteld en klaar voor gebruik. Klik op de \"Voltooien\" "
-"knop rechts onder in het scherm om door te gaan."
-
-# BUG: Forward is verwarrend, moet Continue zijn of Next
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"Klik op de \"Voltooien\" knop rechts onder in het scherm om door te gaan."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Netwerk instellingen"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "De volgende netwerkapparaten zijn op uw systeem gevonden:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Netwerkapparaat"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Opstart protocol"
 
 # aanpassen ipv veranderen misschien beter?
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "Netwerk_configuratie veranderen..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "statisch"
 
@@ -345,15 +332,16 @@ msgid "Sound Card"
 msgstr "Geluidskaart"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "Er is een geluidskaart gedetecteerd in uw computer."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Klik op \"Testgeluid afspelen\" om uw geluidskaart te testen.  U krijgt dan "
 "drie geluiden te horen. Het eerste geluid komt uit het rechter kanaal, het "
@@ -368,12 +356,35 @@ msgid "Please set the timezone for the system."
 msgstr "Stel de tijdzone in voor het systeem."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Er zijn nog een aantal taken te verrichten voordat uw systeem klaar is voor "
 "gebruik. De Setup Agent zal u nu helpen met het maken van een basis- "
 "configuratie. Klik op \"Volgende\" rechts onder in het scherm om door te "
 "gaan."
+
+#~ msgid "_Next"
+#~ msgstr "_Volgende"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Geluidskaart configuratie"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Setup voltooien"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Uw systeem is nu ingesteld en klaar voor gebruik. Klik op de \"Voltooien"
+#~ "\" knop rechts onder in het scherm om door te gaan."
+
+# BUG: Forward is verwarrend, moet Continue zijn of Next
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Klik op de \"Voltooien\" knop rechts onder in het scherm om door te gaan."

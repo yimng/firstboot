@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-03-05 15:44+0100\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -55,12 +55,12 @@ msgstr "To_rna a llegir la llicència"
 msgid "_Shut down"
 msgstr "_Atura"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "S'ha produït un error en el mòdul %s."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -71,7 +71,7 @@ msgstr ""
 "l'agent de configuració de Red Hat no carregarà aquest mòdul i \n"
 "intentarà executar la resta de mòduls."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -84,31 +84,30 @@ msgstr ""
 "S'ha desat una còpia de la sortida de depuració a %s. \n"
 "Assegureu-vos que adjunteu aquest fitxer a l'informe d'errors. \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Anterior"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "Següe_nt"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Per tal que algunes de les seleccions que heu fet tinguin efecte, el sistema "
 "ha d'arrencar de nou."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Finalitza"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "No s'ha pogut importar el mòdul %s: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Benvinguts"
@@ -138,30 +137,26 @@ msgid "System services"
 msgstr "Serveis del sistema"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Configuració de la targeta de so"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Configuració del fus horari"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Executa l'eina"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Seleccioneu l'element que vulgueu modificar "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Agent de la configuració"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "CD addicionals"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -173,12 +168,12 @@ msgstr ""
 "el disc de documentació, o altres discs proporcionats per Red Hat per "
 "instal·lar programari ara."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "Inseriu ara qualsevol CD de programari addicional que tingueu."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -192,11 +187,11 @@ msgstr ""
 "l'arquitectura Intel Itanium2, heu d'instal·lar el paquet Intel Execution "
 "Layer del disc d'extres."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Instal·la..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -204,20 +199,22 @@ msgstr ""
 "No s'ha trobat cap disc CD-ROM. Inseriu un CD-ROM en el dispositiu i feu "
 "clic a \"D'acord\" per continuar."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "No s'ha trobat el programa autorun en el CD. Feu clic a \"D'acord\" per "
 "continuar."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Usuari del sistema"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -225,23 +222,23 @@ msgstr ""
 "normal (és a dir, per a tasques no administratives). Per crear el compte "
 "personal 'username', proporcioneu la informació demanada."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "Nom d'_usuari:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "Nom compl_et:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Contrasenya:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "Confir_meu contrasenya:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -249,11 +246,11 @@ msgstr ""
 "Si heu de fer servir autenticació en xarxa com ara Kerberos o NIS, feu clic "
 "al botó «Usa entrada a xarxa»."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Usa entrada a _xarxa..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -263,27 +260,36 @@ msgstr ""
 "sense un compte d'usuari, només podreu entrar amb el compte de superusuari, "
 "que està reservat només per a ús administratiu."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Continua"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "Cre_a un compte"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Les contrasenyes són diferents. Introduïu la contrasenya de nou."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "La contrasenya és massa curta. Feu servir almenys 6 caràcters."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"El nom d'usuari '%s' és un compte de sistema reservat. Especifiqueu un altre "
+"nom d'usuari."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "El nom d'usuari '%s' és un compte de sistema reservat. Especifiqueu un altre "
 "nom d'usuari."
@@ -305,44 +311,27 @@ msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 "Seleccioneu la resolució i la profunditat de color que vulgueu fer servir"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Finalitza la configuració"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Aquest sistema ja està configurat i llest per ser usat. Feu clic al botó "
-"\"Finalitza\" al cantó inferior dret per a continuar."
-
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "Feu clic al botó \"Finalitza\" al cantó inferior dret per a continuar."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Configuració de la xarxa"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "S'han detectat els següents dispositius de xarxa en aquest sistema:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Dispositiu de xarxa"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Protocol d'arrencada"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Canvia la configuració de la xarxa..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "estàtica"
 
@@ -351,16 +340,20 @@ msgid "Sound Card"
 msgstr "Targeta de so"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "S'ha detectat una targeta de so en aquest ordinador."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
-msgstr "Feu clic al botó de «Reproduir el so» per escoltar un so de prova. Hauríeu de sentir tres sons consecutius. El primer estarà en el canal dret, el segon en el canal esquerre, i el tercer al centre."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
+msgstr ""
+"Feu clic al botó de «Reproduir el so» per escoltar un so de prova. Hauríeu "
+"de sentir tres sons consecutius. El primer estarà en el canal dret, el segon "
+"en el canal esquerre, i el tercer al centre."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -371,11 +364,36 @@ msgid "Please set the timezone for the system."
 msgstr "Especifiqueu el fus horari del sistema."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
-msgstr "S'han de seguir uns passos més abans que aquest sistema estigui llest. L'agent de la configuració us guiarà a través d'una configuració bàsica. Feu clic al botó «Següent» en el cantó inferior dret per continuar."
+"click the \"Forward\" button in the lower right corner to continue."
+msgstr ""
+"S'han de seguir uns passos més abans que aquest sistema estigui llest. "
+"L'agent de la configuració us guiarà a través d'una configuració bàsica. Feu "
+"clic al botó «Següent» en el cantó inferior dret per continuar."
+
+#~ msgid "_Next"
+#~ msgstr "Següe_nt"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Configuració de la targeta de so"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Finalitza la configuració"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Aquest sistema ja està configurat i llest per ser usat. Feu clic al botó "
+#~ "\"Finalitza\" al cantó inferior dret per a continuar."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Feu clic al botó \"Finalitza\" al cantó inferior dret per a continuar."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "El nom d'usuari ha de tenir menys de 33 caràcters."

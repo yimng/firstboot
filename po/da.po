@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-03-13 21:41+0100\n"
 "Last-Translator: Keld Simonsen <keld@rap.dk>\n"
 "Language-Team:  <da@li.org>\n"
@@ -52,12 +52,12 @@ msgstr "_Læs licensaftalen igen"
 msgid "_Shut down"
 msgstr "_Luk ned"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "En fejl indtraf i %s-modulet."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -68,7 +68,7 @@ msgstr ""
 "vil Red Hat Opsætningsagenten ikke indlæse dette modul, og \n"
 "den vil forsøge at køre de resterende moduler."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -81,29 +81,28 @@ msgstr ""
 "En kopi af fejlsøgningsuddata er gemt i %s. \n"
 "Vær sød at vedlægge denne fil til fejlrapporten. \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Tilbage"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_Næste"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "System skal nu genstartes for at nogle af dine valg kan få virkning."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Færdiggør"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimportering af %s mislykkedes: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkommen"
@@ -133,30 +132,26 @@ msgid "System services"
 msgstr "Systemtjenester"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Konfiguration af lydkort"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Konfiguration af tidszone"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Kør værktøj"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Vælg det objekt som du vil ændre "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Konfigurationshjælper"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Yderligere CDer"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -168,12 +163,12 @@ msgstr ""
 "indsætte Dokumentationsskiven, eller andre Red Hat-leverede disketter for at "
 "installere flere programmer på dette tidspunkt."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "Indsæt andre yderligere programinstallations-cd'er nu."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -187,11 +182,11 @@ msgstr ""
 "Itanium2-arkitekturen skal du installere Intel Execution Layer-pakken fra "
 "Extra-skiven nu."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Installér..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -199,19 +194,22 @@ msgstr ""
 "En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
 "for at fortsætte"
 
-#: ../src/modules/additional_cds.py:197
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:198
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Autorun-programmet kan ikke findes på cd'en. Klik på \"O.k.\" for at "
 "fortsætte."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "System-bruger"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -219,23 +217,23 @@ msgstr ""
 "administrativ) brug. For at oprette et system-\"brugernavn\" skal du opgive "
 "de nedenfor forespurgte oplysninger."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Brugernavn:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "_Fulde navn:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Adgangskode:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "_Bekræft adgangskode:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -243,11 +241,11 @@ msgstr ""
 "Hvis du skal bruge netværksautentisering som eksempelvis Kerberos eller NIS "
 "skal du klikke på knappen Brug netværksindlogning."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Brug netværksindlogning..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -257,27 +255,36 @@ msgstr ""
 "fortsætter uden en konto kan du kun logge ind med root-kontoen, som "
 "reserveret til administrativ brug."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Fortsæt"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "Opret _konto"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"Brugernavnet '%s' er en reserveret systemkonto. Angiv venligst et andet "
+"brugernavn."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "Brugernavnet '%s' er en reserveret systemkonto. Angiv venligst et andet "
 "brugernavn."
@@ -298,45 +305,27 @@ msgstr "Display"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Vælg den opløsning og den farvedybde som du vil bruge"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Færdiggør opsætning"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Dit system er nu sat op og klar til brug. Klik på 'Færdiggør'-knappen i det "
-"nederste højre hjørne for at fortsætte."
-
-#: ../src/modules/finished.py:36
-msgid "Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"Klik venligst på \"Færdiggør\"-knappen i nederste højre hjørne for at "
-"fortsætte."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Netværkskonfiguration"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "De følgende netværksenheder er fundet på systemet:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Netværksenhed"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Opstartsprotokol"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Ændr netværkskonfiguration..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "statisk"
 
@@ -345,15 +334,16 @@ msgid "Sound Card"
 msgstr "Lydkort"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "Et lydkort er blevet fundet på din maskine."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Klik på 'Afspil lydprøve'-knappen for at høre en lydprøve. Du bør høre en "
 "serie med 3 lyde. Den første lyd skal være i den højre kanal, den anden lyd "
@@ -368,13 +358,35 @@ msgid "Please set the timezone for the system."
 msgstr "Indstil tidszone for systemet."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Der er endnu nogle enkelte trin der skal gøres før dit system er klar til "
 "brug. Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
 "konfigurering. Klik på 'Næste'-knappen i det nederste højre hjørne for at "
 "fortsætte."
 
+#~ msgid "_Next"
+#~ msgstr "_Næste"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Konfiguration af lydkort"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Færdiggør opsætning"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Dit system er nu sat op og klar til brug. Klik på 'Færdiggør'-knappen i "
+#~ "det nederste højre hjørne for at fortsætte."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Klik venligst på \"Færdiggør\"-knappen i nederste højre hjørne for at "
+#~ "fortsætte."

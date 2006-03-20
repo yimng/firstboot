@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2005-01-16 23:08:00+EDTE\n"
 "Last-Translator: Daniel Yacob <yacob@geez.org>\n"
 "Language-Team: Amharic <am-translate@geez.org>\n"
@@ -43,12 +43,12 @@ msgstr "እንደገና ፈቃዱን አንብቡ (_R)"
 msgid "_Shut down"
 msgstr "አጥፉ (_S)"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "በ%s ክፍል ውስጥ ስሕተት ተከስቷል።"
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -59,7 +59,7 @@ msgstr ""
 "ሬድ ሀት መስሪያ ተወካይ ይህንን ክፍል አይጭንም እና \n"
 "ቀሪዎቹን ክፍሎች ለማስኬድ ይሞክራል።\n"
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -72,30 +72,29 @@ msgstr ""
 "የማስተካከያው መረጃ ቅጂ ለ%s \n"
 " ተቀምጧልያንን ፋይል ለስሕተቱ ሀተታ መያያዙን እርግጠኛ ይሁኑ። \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "ወደኋላ (_B)"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "የሚቀጥለው (_N)"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 #, fuzzy
 msgid "_Finish"
 msgstr "አቀማመጡን ይጨርሱ"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "ከ%s የመጣው ክፍል ውድቅ ሆኗል፦ %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "እንኳን ደህና መጡ"
@@ -125,31 +124,27 @@ msgid "System services"
 msgstr "የሲስተም አገልግሎቶች"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "የድምጽ ካርድ ማስተካከያ"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "የሰዓት ክልል ማስተካከያ"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "መሣሪያውን አስኪድ"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 #, fuzzy
 msgid "Select the item that you wish to modify "
 msgstr "ከዝርዝር ውስጥ አንዱን ማሻሻል የሚፈልጉትን ይምረጡ"
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "የተወካይ አቀማመጥ"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "ተጨማሪ CDዎች"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -160,12 +155,12 @@ msgstr ""
 "ፕሮግራሞች እና መጠቀሚያ ፕሮግራሞችን ለማስገባት ያስችላል። የመረጃውን ዲስክም ማስገባት ወይንም ሌላ በሬድ ሀት የቀረቡ "
 "ዲስኮችን ተጨማሪ ሶፍትዌር ለማስገባት በዚህ ጊዜ ይችላሉ።"
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 #, fuzzy
 msgid ""
 "\n"
@@ -179,52 +174,54 @@ msgstr ""
 "የ32-ቢት መጠቀሚያ ፕሮግራሞች በIntel Itanium2 ንድፍ ላይ  የመሄጃ ሰዓት መደገፊያን ለማስቻል ከትርፎቹ ዲስክ "
 "ላይ የIntel Execution Layer ጥቅልን አሁን ማስገባት አለብዎት።"
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "አስገባ..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "CD-ROM አልተገኘም። እባክዎን CD-ROM በድራይቩ ውስጥ ያስገቡ እና ለመቀጠል «እሺ» ላይ  ያቃጭሉ።"
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "የአዎቶማቲክ ማስኬጃው ፕሮግራም በcd ላይ ሊገኝ አልተቻለም። ለመቀጠል «እሺ» ላይ ያቃጭሉ።"
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "የሲስተም ተጠቃሚ"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "የሲስተም ‹ተጠቃሚ ስም› ለተለመደው (አስተዳዳሪ ያልሆነ) የሲስተምዎት መጠቀሚያ እንዲፈጥሩ ይመከራል። የሲስተም "
 "‹መጠቀሚያ ስም› ለመፍጠር እባክዎን ከሥር ያለውን የሚያስፈልገውን መረቻ ያቅርቡ።"
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "የተጠቃሚ ስም (U)፦"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "ሙሉ ስም (_E)"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "ሚስጢራዊ ቃል (_P)፦"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "ሚስጢራዊ ቃሉን ያረጋግጡ (_M)፦"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -233,11 +230,11 @@ msgstr ""
 "እንደ Kerberos ወይንም NIS ያሉትን የአውታር ማረጋገጫ ለመጠቀም ከፈለጉ እባክዎን የመጠቀሚያ አውታር ማስጀመሪያ "
 "ቁልፍ ይጫኑ።"
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "የአውታሩን ማስጀመሪያ ይጠቀሙ... (_L)"
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -246,27 +243,34 @@ msgstr ""
 "የግል የተጠቃሚ መግለጫ እንዲፈጠር በከፍተኛ ይመከራል። ያለመግለጫ የሚቀጥሉ ከሆነ ለአስተዳደሩ መጠቀሚያ ብቻ የተቀመጠ "
 "የዋናው መግለጫ ጋር ብቻ ነው መጀመር የሚችሉት።"
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "ቀጥል (_C)"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "መግለጫ ፍጠር"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ሚስጢራዊ ቃሎቹ አይመሳሰሉም። እባክዎን ሚስጢራዊ ቃሉን እንደገና ያስገቡ።"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "ሚስጢራዊ ቃሉ በጣም አጭር ነው። እባክዎን በትንሹ 6 አኃዞች ይጠቀሙ።"
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr "የተጠቃሚው ስም ‹%s› ሥርዐተ ነጥቦችን ያጠቃልላል። እባክዎን ሥርዐተ ነጥብ በመጠቀሚያ ስም ውስጥ አይጠቀሙ።"
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr "የተጠቃሚው ስም ‹%s› ሥርዐተ ነጥቦችን ያጠቃልላል። እባክዎን ሥርዐተ ነጥብ በመጠቀሚያ ስም ውስጥ አይጠቀሙ።"
 
 #: ../src/modules/date.py:46
@@ -285,46 +289,27 @@ msgstr "አሳይ"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "እባክዎን መጠቀም የሚፈልጉትን ውሳኔ እና የቀለም ጥልቀቱን ይምረጡ "
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "አቀማመጡን ይጨርሱ"
-
-#: ../src/modules/finished.py:33
-#, fuzzy
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"ሲስተምዎት አሁን ተስተካክሎ እና ለመጠቀም ዝግጁ ሆኗል። እባክዎን «የሚቀጥለው» የሚለውን በቀኝ ዝቅ ብሎ በጥግ በኩል "
-"የሚገኘውን ቁልፍ ያቃጭሉ።"
-
-#: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "እባክዎን ለመቀጠል «የሚቀጥለው» የሚለውን ቁልፍ ዝቅ ብሎ በጥግ በኩል ያለውን ያቃጭሉ"
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "የመረብ ቅንጅት"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "የሚከተለው የአውታሩ መሣሪያውች ሲስተሙ ላይ አልተገኙም፦"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "የአውታር መሥሪያ"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "የማስጀመሪያው መንገድ"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "የአውታሩን ማስተካከያ ለውጥ... (_C)"
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "የማይንቀሳቀስ"
 
@@ -334,16 +319,15 @@ msgstr "የድምጽ ካርድ"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "የድምጽ ካርድ ኮምፒውተርዎት ላይ ተገኝቷል"
 
 #: ../src/modules/soundcard_gui.py:68
 #, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "«የሙከራ ድምጹን አጫውት» የሚለውን ቁልፍ የድምጽ ናሙና ለመስማት ያቃጭሉ። ሦስት ተከታታይ ድምጾችን ይሰማሉ። "
 "የመጀመሪያው ድምጽ በቀኝ «በኩል ይሆናል፣ ሁለተኛው ድምጽ በግራ በኩል ይሆናል"
@@ -362,10 +346,32 @@ msgstr "እባክዎን ለሲስተሙ ቀን እና ሰዓት ያስገቡለ�
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "ሲስተምዎት አሁን ተስተካክሎ እና ለመጠቀም ዝግጁ ሆኗል። እባክዎን «የሚቀጥለው» የሚለውን በቀኝ ዝቅ ብሎ በጥግ በኩል "
 "የሚገኘውን ቁልፍ ያቃጭሉ።"
+
+#~ msgid "_Next"
+#~ msgstr "የሚቀጥለው (_N)"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "የድምጽ ካርድ ማስተካከያ"
+
+#~ msgid "Finish Setup"
+#~ msgstr "አቀማመጡን ይጨርሱ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "ሲስተምዎት አሁን ተስተካክሎ እና ለመጠቀም ዝግጁ ሆኗል። እባክዎን «የሚቀጥለው» የሚለውን በቀኝ ዝቅ ብሎ በጥግ "
+#~ "በኩል የሚገኘውን ቁልፍ ያቃጭሉ።"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr "እባክዎን ለመቀጠል «የሚቀጥለው» የሚለውን ቁልፍ ዝቅ ብሎ በጥግ በኩል ያለውን ያቃጭሉ"
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "የተጠቃሚው ስም አኃዞች ርዝመት ከ33 አኃዞች በታች መሆን አለበት።"

@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.6
+Version: 1.4.7
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -109,6 +109,9 @@ fi
 
 
 %changelog
+* Mon Mar 20 2006 Martin Stransky <stransky@redhat.com> 1.4.7-1
+- replaced "Play test button" by "Play" button for s-c-s (#185931)
+
 * Fri Mar 03 2006 Chris Lumens <clumens@redhat.com> 1.4.6-1
 - Revert UI changes that broke s-c-keyboard (#183718).
 

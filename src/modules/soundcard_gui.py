@@ -66,7 +66,7 @@ class SoundWindow:
 
 
             label = gtk.Label(_("Click the "
-                                "\"Play test sound\" button to hear a sample sound.  You should "
+                                "\"Play\" button to hear a sample sound.  You should "
                                 "hear a series of three sounds.  The first sound will be in the "
                                 "right channel, the second sound will be in the left channel, "
                                 "and the third sound will be in the center."))

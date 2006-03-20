@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2005-04-14 13:06+0430\n"
 "Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -45,12 +45,12 @@ msgstr "_‌بازخوانی مجوز"
 msgid "_Shut down"
 msgstr "خا_‌موش کردن"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "‌خطایی در پیمانه‌ی %s رخ داده است."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -61,7 +61,7 @@ msgstr ""
 "برپاسازی ردهت این پیمانه را بار نمی‌کند و برای\n"
 "اجرای پیمانه‌های باقیمانده اقدام خواهد کرد."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -74,30 +74,29 @@ msgstr ""
 "نسخه‌ای از خروجی اشکال‌زدایی در %s ذخیره شده است.\n"
 "به یاد داشته باشید که آن پرونده را به گزارش اشکال پیوست کنید.\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_عقب"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_بعدی"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 #, fuzzy
 msgid "_Finish"
 msgstr "پایان برپاسازی"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "وارد کردن پیمانه‌ی %s شکست خورد: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "خوش آمدید"
@@ -127,30 +126,26 @@ msgid "System services"
 msgstr "سرویس‌های سیستم"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "پیکربندی کارت صوتی"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "پیکربندی منطقه‌ی زمانی"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "ابزار اجرا"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "موردی را که می‌خواهید تغییر دهید انتخاب کنید"
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "مأمور برپاسازی"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "سی‌دی‌های اضافی"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -158,12 +153,12 @@ msgid ""
 "additional software at this time."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -172,11 +167,11 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "نصب..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -184,7 +179,7 @@ msgstr ""
 "سی‌دی تشخیص داده نشده است. لطفاً یک سی‌دی را در دستگاه گذاشته و برای ادامه روی "
 "«تأیید» کلیک کنید."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -192,36 +187,38 @@ msgstr ""
 "نمی‌توان برنامه‌ی اجرای‌خودکار را در سی‌دی پیدا کرد. برای ادامه روی «تأیید» کلیک "
 "کنید."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "کاربر سیستم"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "توصیه می‌شود که یک نام کاربری برای استفاده‌ی عادی (غیر-مدیریتی) از سیستم ایجاد "
 "کنید. برای ایجاد نام کاربری، لطفاً‌ اطلاعات خواسته شده در زیر را ارائه کنید."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_نام کاربری:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "نام _‌کامل:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_گذرواژه:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "_تصدیق گذرواژه:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -230,11 +227,11 @@ msgstr ""
 "اگر نیاز به استفاده از تأیید هویت شبکه‌ای مانند Kerberos یا NIS دارید، لطفاً "
 "روی دکمه‌ی «استفاده از ورود به شبکه» کلیک کنید."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "استفاده از _ورود به شبکه..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -244,27 +241,36 @@ msgstr ""
 "ادامه دهید، فقط با  root می‌توانید وارد سیستم شوید، که تنها برای استفاده‌ی "
 "مدیریتی رزرو شده است."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_ادامه"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "ایجاد _حساب"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "گذرواژه‌ها مطابقت نمی‌کنند.  لطفاً گذرواژه را دوباره وارد کنید."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "گذرواژه کوتاه است. لطفاً حداقل از ۶ نویسه استفاده کنید."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفاً نام کاربری دیگری را تعیین "
+"کنید."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفاً نام کاربری دیگری را تعیین "
 "کنید."
@@ -285,46 +291,27 @@ msgstr "نمایش"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "لطفاً تفکیک‌پذیری و عمق رنگی را که مایلید به کار ببرید انتخاب کنید"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "پایان برپاسازی"
-
-#: ../src/modules/finished.py:33
-#, fuzzy
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"سیستم شما اکنون برپاسازی شده و آماده‌ی استفاده است. برای ادامه لطفاً روی دکمه‌ی "
-"«بعدی» در گوشه‌ی پایین و راست کلیک کنید."
-
-#: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "برای ادامه لطفاً روی دکمه‌ی «بعدی» در گوشه‌ی پایین و راست کلیک کنید."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "برپاسازی شبکه"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "دستگاه‌های شبکه‌ای زیر بر روی سیستم شناسایی شده‌اند:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "دستگاه شبکه"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "قرارداد راه‌اندازی"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "تغییر _پیکربندی شبکه..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "ایستا"
 
@@ -334,15 +321,15 @@ msgstr "کارت صوتی"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "یک کارت صوتی بر روی رایانه‌ی شما تشخیص داده شده است."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "برای شنیدن نمونه‌ی صوتی روی دکمه‌ی «پخش صوت آزمایشی» کلیک کنید. باید دنباله‌ای "
 "از سه صوت را بشنوید.  اولین صوت در کانال راست، دومین صوت در کانال چپ، و "
@@ -357,14 +344,37 @@ msgid "Please set the timezone for the system."
 msgstr "لطفاً منطقه‌ی زمانی سیستم را تعیین کنید."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "قبل از اینکه سیستم شما آماده‌ی استفاده شود، چند مرحله‌ی دیگر وجود دارد. اکنون "
 "مأمور برپاسازی شما را در انجام چند پیکربندی پایه‌ای راهنمایی خواهد کرد. لطفاً "
 "دکمه‌ی «بعدی» را در گوشه‌ی پایین و راست کلیک کنید."
+
+#~ msgid "_Next"
+#~ msgstr "_بعدی"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "پیکربندی کارت صوتی"
+
+#~ msgid "Finish Setup"
+#~ msgstr "پایان برپاسازی"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "سیستم شما اکنون برپاسازی شده و آماده‌ی استفاده است. برای ادامه لطفاً روی "
+#~ "دکمه‌ی «بعدی» در گوشه‌ی پایین و راست کلیک کنید."
+
+#, fuzzy
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr "برای ادامه لطفاً روی دکمه‌ی «بعدی» در گوشه‌ی پایین و راست کلیک کنید."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "نام کاربر باید کوتاه‌تر از ۳۳ نویسه باشد."

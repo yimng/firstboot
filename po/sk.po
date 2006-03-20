@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2005-10-30 11:45+0100\n"
 "Last-Translator: Marcel Telka <marcel@telka.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -46,12 +46,12 @@ msgstr "Opätovne _prečítať licenciu"
 msgid "_Shut down"
 msgstr "_Vypnúť"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "Vyskytla sa chyba v module %s."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -62,7 +62,7 @@ msgstr ""
 "agent nastavenia Red Hat nebude načítavať tento modul \n"
 "a pokúsi sa spustiť zostávajúce moduly."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -75,30 +75,29 @@ msgstr ""
 "Kópia ladiaceho výstupu bola uložená do %s \n"
 "Prosím, nezabudnite pripojiť tento súbor k hláseniu o chybe. \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Späť"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "Ď_alej"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Systém musí byť reštartovaný, aby sa prejavili niektoré z vašich výberov."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Dokončiť"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import modulu %s zlyhal: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Vitajte"
@@ -128,30 +127,26 @@ msgid "System services"
 msgstr "Systémové služby"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Konfigurácia zvukovej karty"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Konfigurácia časovej zóny"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Spustiť nástroj"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Vyberte položku, ktorú chcete upraviť "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Agent pre nastavenie"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Prídavné CD"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -164,12 +159,12 @@ msgstr ""
 "disky, ktoré vám poskytol Red Hat, aby ste si teraz nainštalovali prídavný "
 "softvér."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "Prosím, vložte teraz prípadné ďalšie inštalačné CD so softvérom."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 #, fuzzy
 msgid ""
 "\n"
@@ -184,11 +179,11 @@ msgstr ""
 "Itanium2, musíte teraz nainštalovať balík Intel Execution Layer z disku "
 "Extras."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Inštalovať..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -196,20 +191,22 @@ msgstr ""
 "CD-ROM nebol zdetekovaný. Prosím vložte CD-ROM do mechaniky a kliknite na "
 "\"Ok\" pre pokračovanie."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Program autorun nebol nájdený na CD. Kliknite na \"Ok\" pre pokračovanie."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Systémový používateľ"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -217,23 +214,23 @@ msgstr ""
 "správcovské) použitie vášho systému. Pre vytvorenie systémového 'mena "
 "používateľa', zadajte, prosím, požadované informácie nižšie."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Meno používateľa:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "Celé m_eno:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Heslo:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "Po_tvrdiť heslo:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -242,11 +239,11 @@ msgstr ""
 "Ak potrebujete použiť sieťové overenie totožnosti, ako napr. Kerberos alebo "
 "NIS, prosím kliknite na tlačidlo Použiť sieťové prihlásenie."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Použiť sieťové _prihlásenie..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -256,27 +253,36 @@ msgstr ""
 "pokračovať bez účtu, budete sa môcť prihlásiť len s účtom správcu, ktorý je "
 "vyhradený len pre účely správy."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Pokračovať"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "Vytvoriť úč_et"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Heslá sa nezhodujú. Prosím zadajte heslo znova."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Heslo je príliš krátke. Prosím použite aspoň 6 znakov."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"Používateľské meno '%s' je rezervovaný systémový účet. Prosím zadajte iné "
+"používateľské meno."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "Používateľské meno '%s' je rezervovaný systémový účet. Prosím zadajte iné "
 "používateľské meno."
@@ -297,46 +303,27 @@ msgstr "Displej"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Prosím zvoľte rozlíšenie a farebnú hĺbku, ktoré chcete používať"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Ukončenie nastavovania"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Váš systém je teraz nastavený a pripravený na používanie. Prosím kliknite na "
-"tlačidlo \"Dokončiť\" v pravom dolnom rohu pre pokračovanie."
-
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"Prosím, kliknite na tlačidlo \"Dokončiť\" v pravom dolnom rohu pre "
-"pokračovanie."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Nastavenie siete"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "Nasledujúce sieťové zariadenia boli zdetekované v systéme."
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Sieťové zariadenie"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Zavádzací protokol"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Zmeniť konfiguráciu siete..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "statický"
 
@@ -346,15 +333,15 @@ msgstr "Zvuková karta"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "Zvuková karta bola zdetekovaná vo vašom počítači."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Kliknite na tlačidlo \"Zahrať zvuk\" a vypočute si ukážkový zvuk. Mali by "
 "ste počuť sériu troch zvukov. Prvý zvuk bude v pravom kanále, druhý bude v "
@@ -369,15 +356,38 @@ msgid "Please set the timezone for the system."
 msgstr "Prosím, nastavte časovú zónu pre systém."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Je potrebné urobiť trochu viac krokov predtým, ako bude váš systém "
 "pripravený na použitie. Agent pre nastavenie vás teraz bude sprevádzať cez "
 "základnú konfiguráciu. Prosím klinite na tlačidlo \"Ďalej\" v pravom dolnom "
 "rohu pre pokračovanie."
+
+#~ msgid "_Next"
+#~ msgstr "Ď_alej"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Konfigurácia zvukovej karty"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Ukončenie nastavovania"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Váš systém je teraz nastavený a pripravený na používanie. Prosím kliknite "
+#~ "na tlačidlo \"Dokončiť\" v pravom dolnom rohu pre pokračovanie."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Prosím, kliknite na tlačidlo \"Dokončiť\" v pravom dolnom rohu pre "
+#~ "pokračovanie."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "Používateľské meno musí byť kratšie ako 33 znakov."

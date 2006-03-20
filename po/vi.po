@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2003-09-21 15:54+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -43,12 +43,12 @@ msgstr "Đọ_c lại giấy phép"
 msgid "_Shut down"
 msgstr "_Tắt"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "Lỗi trong module %s."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -59,7 +59,7 @@ msgstr ""
 "Trợ tá Cài đặt Red Hat sẽ không nạp module này và\n"
 "sẽ thử chạy những module còn lại."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -72,30 +72,29 @@ msgstr ""
 "Một bản sao thông tin debug được lưu vào %s\n"
 "Nhớ gửi kèm tập tin này với bản báo cáo lỗi.\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Lùi"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_Tới"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 #, fuzzy
 msgid "_Finish"
 msgstr "Hoàn tất cài đặt"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Chào mừng"
@@ -130,32 +129,27 @@ msgstr ""
 
 #: ../src/textWindow.py:40
 #, fuzzy
-msgid "Sound card configuration"
-msgstr "_Hiệu chỉnh Cấu hình Mạng..."
-
-#: ../src/textWindow.py:41
-#, fuzzy
 msgid "Timezone configuration"
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr ""
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr ""
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 #, fuzzy
 msgid "Setup Agent"
 msgstr "Trợ tá Cài đặt Red Hat"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "CD bổ sung"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -163,12 +157,12 @@ msgid ""
 "additional software at this time."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -177,11 +171,11 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Cài đặt..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -189,20 +183,20 @@ msgstr ""
 "Không tìm thấy CD-ROM. Vui lòng chèn đĩa CD-ROM vào ổ đĩa và nhấn \"Đồng ý\" "
 "để tiếp tục."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Không tìm thấy chương trình autorun trên CD. Nhấn \"OK\" để tiếp tục."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+msgid "Create User"
 msgstr ""
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
 #, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -210,23 +204,23 @@ msgstr ""
 "thường (không phải những công việc quản lý hệ thống). Để tạo tài khoản cá "
 "nhân, hãy cung cấp các thông tin được yêu cầu."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Tên người dùng:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "_Họ và tên:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Mật khẩu:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "_Xác nhận mật khẩu:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -235,11 +229,11 @@ msgstr ""
 "Nếu bạn cần dùng xác thực mạng như Kerberos hay NIS, vui lòng nhấn nút Dùng "
 "Đăng nhập Mạng."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "_Dùng Đăng nhập Mạng..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -249,27 +243,35 @@ msgstr ""
 "có tài khoản cá nhân, bạn chỉ có thể đăng nhập với quyền root, nhưng chỉ nên "
 "dùng root cho các thao tác quản lý hệ thống mà thôi."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Tiếp tục"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "_Tạo tài khoản"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Mật khẩu không khớp. Vui lòng nhập lại mật khẩu."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Mật khẩu quá ngắn. Hãy dùng ít nhất 6 ký tự."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"Tên người dùng '%s' được dành riêng cho hệ thống. Vui lòng dùng tên khác."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "Tên người dùng '%s' được dành riêng cho hệ thống. Vui lòng dùng tên khác."
 
@@ -289,48 +291,27 @@ msgstr ""
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Hoàn tất cài đặt"
-
-#: ../src/modules/finished.py:33
-#, fuzzy
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Hệ thống bạn đã được cài đặt xong và có thể được sử dụng. Vui lòng nhấn nút "
-"\"Tới\" ở góc phải, dưới để tiếp tục."
-
-#: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"Hệ thống bạn đã được cài đặt xong và có thể được sử dụng. Vui lòng nhấn nút "
-"\"Tới\" ở góc phải, dưới để tiếp tục."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Thiết lập Mạng"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "Tìm thấy những thiết bị mạng sau trên hệ thống:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Thiết bị Mạng"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Giao thức Khởi động"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Hiệu chỉnh Cấu hình Mạng..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "tĩnh"
 
@@ -340,15 +321,15 @@ msgstr "Card Âm thanh"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "Tìm thấy Card Âm thanh trên máy."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Nhấn nút \"Phát âm thử\" để nghe âm thanh mẫu. Bạn sẽ nghe một loạt ba âm "
 "thanh. Âm đầu tiên bên phải, âm thứ hai bên trái, và âm thứ ba ở giữa."
@@ -366,8 +347,33 @@ msgstr "Vui lòng đặt múi giờ cho hệ thống."
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Bạn cần thực hiện vài bước nữa, trước khi hệ thống có thể sẵn sàng hoạt "
 "động. Bây giờ, Trợ tá Cài đặt Red Hat sẽ hướng dẫn bạn thực hiện các cấu "
 "hình cơ bản. Vui lòng nhấn nút \"Tới\" tại góc dưới, bên phải để tiếp tục."
+
+#~ msgid "_Next"
+#~ msgstr "_Tới"
+
+#, fuzzy
+#~ msgid "Sound card configuration"
+#~ msgstr "_Hiệu chỉnh Cấu hình Mạng..."
+
+#~ msgid "Finish Setup"
+#~ msgstr "Hoàn tất cài đặt"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Hệ thống bạn đã được cài đặt xong và có thể được sử dụng. Vui lòng nhấn "
+#~ "nút \"Tới\" ở góc phải, dưới để tiếp tục."
+
+#, fuzzy
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Hệ thống bạn đã được cài đặt xong và có thể được sử dụng. Vui lòng nhấn "
+#~ "nút \"Tới\" ở góc phải, dưới để tiếp tục."

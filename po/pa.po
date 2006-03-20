@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-01-07 10:57+0530\n"
 "Last-Translator: Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -77,12 +77,12 @@ msgstr "ਲਾਈਸੈਂਸ ਮੁਡ਼-ਵੇਖੋ(_R)"
 msgid "_Shut down"
 msgstr "ਬੰਦ ਕਰੋ(_S)"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "ਮੈਡੀਊਲ %s ਵਿੱਚ ਗਲਤੀ ਆਈ ਹੈ।"
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -93,7 +93,7 @@ msgstr ""
 "Red Hat ਸੈੱਟਅੱਪ ਏਜੰਟ ਇਸ ਮੈਡੀਊਲ ਨੂੰ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕਿਆ ਅਤੇ\n"
 "ਬਾਕੀ ਮੈਡੀਊਲਾਂ ਨੂੰ ਚਲਾਉਣ ਦੀ ਕੋਸ਼ਿਸ ਕਰੇਗਾ।"
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -106,29 +106,28 @@ msgstr ""
 "ਡੀਬੱਗ ਆਉਟਪੁੱਟ ਦੀ ਇੱਕ ਨਕਲ ਨੂੰ %s ਵਿੱਚ ਸੰਭਾਲੀ ਜਾਵੇ ਅਤੇ\n"
 "ਯਕੀਨੀ ਕਰ ਲਵੋ ਕਿ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਵਿੱਚ ਜ਼ਰੂਰ ਦਿੱਤੀ ਜਾਵੇ।\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "ਪਿੱਛੇ(_B)"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "ਅੱਗੇ(_N)"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "ਸਿਸਟਮ ਹੁਣ ਤੁਹਾਡੇ ਰਾਹੀਂ ਕੀਤੀਆਂ ਗਈਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ ਪਰਭਾਵੀ ਬਣਾਉਣ ਲਈ ਮੁੜ ਚਾਲੂ ਹੋਵੇਗਾ।"
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "ਮੁਕੰਮਲ(_F)"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s ਦੇ ਮੈਡੀਊਲ ਦਾ ਆਯਾਤ ਅਸਫਲ: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ਜੀ ਆਇਆਂ ਨੂੰ"
@@ -158,30 +157,26 @@ msgid "System services"
 msgstr "ਸਿਸਟਮ ਸੇਵਾਵਾਂ"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "ਸਾਊਂਡ-ਕਾਰਡ ਸੰਰਚਨਾ"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "ਸਮਾਂ-ਖੇਤਰ ਸੰਰਚਨਾ"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "ਸੰਦ ਚਲਾਓ"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "ਇਕਾਈ, ਜੋ ਕਿ ਤੁਸੀਂ ਤਬਦੀਲ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ, ਦੀ ਚੋਣ ਕਰੋ"
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "ਸੈਟਅੱਪ ਏਜੰਟ"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "ਵਧੀਕ CD"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -192,12 +187,12 @@ msgstr ""
 "ਕਾਰਜ ਇੰਸਟਾਲੇਸ਼ਨ ਲਈ ਪਾਓ। ਤੁਸੀਂ ਦਸਤਾਵੇਜ਼ ਸੀਡੀ, ਜਾਂ Red Hat-ਵਲੋਂ ਉਪਲੱਬਧ ਡਿਸਕ ਨੂੰ ਇਸ ਸਮੇਂ ਵਾਧੂ "
 "ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪਾ ਸਕਦੇ ਹੋ।"
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਹੁਣ ਕੋਈ ਵੀ ਵਾਧੂ ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ CD ਪਾਓ।"
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -210,11 +205,11 @@ msgstr ""
 "ntel Itanium2 ਢਾਂਚੇ ਤੇ 32-ਬਿੱਟ ਕਾਰਜ ਦਾ ਰੰਨਟਾਈਮ ਸਹਿਯੋਗ ਯੋਗ ਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ ਵਾਧੂ ਡਿਸਕ ਤੋਂ "
 "Intel Execution Layer ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇਗਾ।"
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "ਇੰਸਟਾਲ..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -222,41 +217,43 @@ msgstr ""
 "ਸੀਡੀ-ਰੋਮ ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਡਰਾਈਵ ਵਿੱਚ ਸੀਡੀ-ਰੋਮ ਵਿੱਚ ਸੀਡੀ ਪਾਉ ਅਤੇ"
 "\"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ਸੀਡੀ ਤੇ ਸਵੈ-ਚਾਲਤ ਕਾਰਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ। ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "ਸਿਸਟਮ ਉਪਭੋਗੀ"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "ਇਸ ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਦੀ ਹੈ ਕਿ ਤੁਸੀਂ ਸਧਾਰਨ(ਨਾ-ਪਰਬੰਧਕੀ) ਵਰਤੋ ਲਈ ਇੱਕ ਸਿਸਟਮ 'username' "
 "ਉਪਭੋਗੀ ਖਾਤਾ ਬਣਾਉ। ਇੱਕ ਸਿਸਟਮ 'username' ਬਣਾਉਣ ਲਈ ਹੇਠਾਂ ਲੋਡ਼ੀਂਦੀ ਜਾਣਕਾਰੀ ਦਿਉ।"
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ(_U):"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "ਪੂਰਾ ਨਾਂ(_E):"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "ਗੁਪਤ-ਕੋਡ(_P):"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "ਗੁਪਤ-ਕੋਡ ਪੁਸ਼ਟੀ(_M):"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -264,11 +261,11 @@ msgstr ""
 "ਜੇਕਰ ਤੁਹਾਨੂੰ ਨੈੱਟਵਰਕ ਪਰਮਾਣਕਿਤਾ, ਜਿਵੇਂ ਕਿ ਕੀਰਬੀਰੋਸ ਜਾਂ NIS ਵਰਤਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ "
 "ਨੈੱਟਵਰਕ ਲਾਗਿੰਨ ਵਰਤੋਂ, ਬਟਨ ਨੂੰ ਦਬਾਉ।"
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "ਨੈੱਟਵਰਕ ਲਾਗਿੰਨ ਵਰਤੋਂ(_L)..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -278,27 +275,34 @@ msgstr ""
 "ਬਿਨਾਂ ਹੀ ਜਾਰੀ ਰਹੇ ਤਾਂ, ਤੁਸੀ ਕੇਵਲ ਪਰਬੰਧਕ(root) ਖਾਤੇ ਨਾਲ ਹੀ ਲਾਗਿੰਨ ਕਰ ਸਕਦੇ ਹੋ, ਜੋ ਕਿ ਸਿਰਫ਼ "
 "ਪਰਬੰਧਕੀ ਵਰਤੋਂ ਲਈ ਹੈ।"
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "ਜਾਰੀ ਰੱਖੋ(_C)"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "ਖਾਤਾ ਬਣਾਓ(_a)"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ਗੁਪਤ-ਕੋਡ ਮੇਲ ਨਹੀਂ ਖਾ ਰਿਹਾ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਗੁਪਤ-ਕੋਡ ਮੁਡ਼ ਭਰੋ।"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "ਗੁਪਤ-ਕੋਡ ਬਹੁਤ ਛੋਟਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ 6 ਅੱਖਰਾਂ ਤੋਂ ਵੱਧ ਵਰਤੋਂ।"
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਸਿਸਟਮ ਖਾਤੇ ਲਈ ਰਾਖਵਾਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ ਨਾਂ ਦਿਉ।"
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਸਿਸਟਮ ਖਾਤੇ ਲਈ ਰਾਖਵਾਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ ਨਾਂ ਦਿਉ।"
 
 #: ../src/modules/date.py:46
@@ -317,44 +321,27 @@ msgstr "ਝਲਕ"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਰੈਜ਼ੋਲੇਸ਼ਨ ਅਤੇ ਰੰਗ ਗਹਿਰਾਈ, ਜੋ ਤੁਸੀ ਇਸਤੇਮਾਲ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ, ਦੀ ਚੋਣ ਕਰੋ।"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "ਸੈਟਅੱਪ ਮੁਕੰਮਲ"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"ਤੁਹਾਡੇ ਸਿਸਟਮ ਦਾ ਇਸ ਸਮੇਂ ਸੈਟਅੱਪ ਮੁਕੰਮਲ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੈ। ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ"
-"\" ਬਟਨ ਨੂੰ ਜਾਰੀ ਰਹਿਣ ਲਈ ਦਬਾਓ।"
-
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਜਾਰੀ ਰਹਿਣ ਲਈ ਦਬਾਓ।"
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "ਨੈੱਟਵਰਕ ਸੈਟਅੱਪ"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "ਤੁਹਾਡੇ ਸਿਸਟਮ ਉਤੇ ਹੇਠ ਲਿਖਿਆ ਨੈੱਟਵਰਕ ਜੰਤਰ ਖੋਜਿਆ ਗਿਆ ਹੈ:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "ਨੈੱਟਵਰਕ ਜੰਤਰ"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "ਬੂਟ ਪਰੋਟੋਕਾਲ"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "ਨੈੱਟਵਰਕ ਸੰਰਚਨਾ ਤਬਦੀਲ(_C)..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "ਸਥਿਰ"
 
@@ -363,15 +350,16 @@ msgid "Sound Card"
 msgstr "ਸਾਊਂਡ-ਕਾਰਡ"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਵਿੱਚ ਸਾਊਂਡ-ਕਾਰਡ ਖੋਜਿਆ ਗਿਆ ਹੈ।"
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "ਆਮ ਆਵਾਜ਼ ਸੁਣਨ ਲਈ\"ਆਵਾਜ਼ ਚਲਾਉ\" ਬਟਨ ਨੂੰ ਦਬਾਉ। ਤੁਸੀ ਤਿੰਨ ਆਵਾਜ਼ਾਂ ਲੜੀਬੱਧ ਸੁਣੋਗੇ, ਪਹਿਲੀ ਸੱਜੇ "
 "ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋਂ, ਦੂਜੀ ਖੱਬੇ ਪਾਸੇ ਦੇ ਚੈਨਲ ਤੋਂ ਅਤੇ ਤੀਜੀ ਆਵਾਜ਼ ਕੇਂਦਰੀ ਚੈਨਲ ਵਿੱਚੋਂ ਆਵੇਗੀ।"
@@ -385,11 +373,32 @@ msgid "Please set the timezone for the system."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਿਸਟਮ ਲਈ ਸਮਾਂ-ਖੇਤਰ ਸੈਟ ਕਰੋ।"
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "ਇਸ ਤੋ ਪਹਿਲਾਂ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ਼ ਬਾਕੀ ਹਨ। ਸੈੱਟਅੱਪ ਏਜੰਟ ਤੁਹਾਨੂੰ "
 "ਇੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ। ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਜਾਰੀ "
 "ਰਹਿਣ ਲਈ ਦਬਾਉ।"
+
+#~ msgid "_Next"
+#~ msgstr "ਅੱਗੇ(_N)"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "ਸਾਊਂਡ-ਕਾਰਡ ਸੰਰਚਨਾ"
+
+#~ msgid "Finish Setup"
+#~ msgstr "ਸੈਟਅੱਪ ਮੁਕੰਮਲ"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "ਤੁਹਾਡੇ ਸਿਸਟਮ ਦਾ ਇਸ ਸਮੇਂ ਸੈਟਅੱਪ ਮੁਕੰਮਲ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੈ। ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ "
+#~ "\"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਜਾਰੀ ਰਹਿਣ ਲਈ ਦਬਾਓ।"
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਜਾਰੀ ਰਹਿਣ ਲਈ ਦਬਾਓ।"

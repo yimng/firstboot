@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: et\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2005-11-04 08:27+0200\n"
 "Last-Translator: Allan Sims <allan.sims@eau.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -43,12 +43,12 @@ msgstr "_Loe uuesti litsensi"
 msgid "_Shut down"
 msgstr "_Seiska"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "Moodulis %s esines viga ."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -59,7 +59,7 @@ msgstr ""
 "Red Hat Setup Agent ei lae seda moodulit kuid\n"
 " üritab käivitada ülejäänud moodulid."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -72,29 +72,28 @@ msgstr ""
 "Silumise väljundi koopia salvestati faili %s \n"
 "Lisa see fail kindlasti rapordile. \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Tagasi"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_Edasi"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Mõningate valikute aktiveerimiseks on vajalik arvuti taaskäivitamine."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Lõpetus"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "mooduli %s importimine ebaõnnestus: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Tere tulemast"
@@ -124,30 +123,26 @@ msgid "System services"
 msgstr "Süsteemi teenused"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Helikaardi seaded"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Ajavööndi seaded"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Käivita vahend"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Vali element, mida soovid muuta "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Seadistusagent"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Täiendavad CD-d"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -159,13 +154,13 @@ msgstr ""
 "sisestada Dokumentatsiooni ketta või teisi Red-Hat-i poolt välja antud "
 "tarkvara plaate."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "Sisesta palun kõik muud tarkvara CD-d."
 
 #  if 1:
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 #, fuzzy
 msgid ""
 "\n"
@@ -180,11 +175,11 @@ msgstr ""
 "arhitektuurile pead sa installeerima Intel Execution Layer paketi kettalt "
 "Extras."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Installeerimine..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -192,43 +187,45 @@ msgstr ""
 "CD-ketast ei leitud. Palun sisesta CD-ketas lugejasse ja jätkamiseks vajuta "
 "Olgu"
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Automaatse käivituse programmi ei leitud CD-lt. Jätkamiseks vajuta Olgu."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Süsteemi kasutaja"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "On tugevalt soovitatud luua süsteemi 'kasutaja' konto normaalseks "
 "kasutamiseks. Süsteemi 'kasutaja' konto loomiseks on vaja mõningast teavet."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Kasutaja nimi:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "_Täisnimi:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Parool:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "_Kinnita parool:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -237,11 +234,11 @@ msgstr ""
 "Kui sul on vaja kasutada tuvastamist võrgus nagu Kerberos või NIS, palun "
 "vajuta Kasuta võrgu logimise nuppu."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Kasuta võrgu sisse logimist..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -251,27 +248,36 @@ msgstr ""
 "saad sa logida sisse ainult juurkasutajana (root), kes on reserveeritud "
 "süsteemi haldamiseks."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Jätka"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "_Loo konto"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Paroolid ei ühti. Palun sisesta parool uuesti."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Parool on liiga lühike. Parool peab olema vähemalt 6 tähemärki."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"Kasutaja nimi '%s' on reserveeritud süsteemi poolt. Palun kasuta mõnda teist "
+"kasutajanime."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "Kasutaja nimi '%s' on reserveeritud süsteemi poolt. Palun kasuta mõnda teist "
 "kasutajanime."
@@ -292,44 +298,27 @@ msgstr "Ekraan"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Vali punkti tihedus ja värvi sügavus, mida soovid kasutada"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Seadistus lõpetatud"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Süsteem on üles seatud ja valmis kasutamiseks. Jätkamiseks vajuta palun "
-"\"Lõpetus\" nuppu paremal all nurgas."
-
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "Jätkamiseks vajuta palun all paremas nurgas olevat nuppu \"Lõpetus\"."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Võrgu seadistus"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "Leiti järgnevad võrguseadmed:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Võrguseade"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Käivitus protokoll"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Muuda võrgu seadeid..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "püsiv"
 
@@ -339,15 +328,15 @@ msgstr "Helikaart"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "Arvutist leiti helikaart."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Vajuta nuppu \"Mängi test heli\" näidis heli kuulamiseks.  Sa peaks kuulma "
 "kolme heli seeriat.  Esimene tuleb paremast kõlarist, teine vasakust ja "
@@ -362,13 +351,35 @@ msgid "Please set the timezone for the system."
 msgstr "Seadista palun ajavöönd."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Lõpuni on jäänud veel vaid mõned sammud.  Seadistusagent juhatab sind "
 "seadistamisel. Jätkamiseks vajuta \"Edasi\"."
+
+#~ msgid "_Next"
+#~ msgstr "_Edasi"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Helikaardi seaded"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Seadistus lõpetatud"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Süsteem on üles seatud ja valmis kasutamiseks. Jätkamiseks vajuta palun "
+#~ "\"Lõpetus\" nuppu paremal all nurgas."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Jätkamiseks vajuta palun all paremas nurgas olevat nuppu \"Lõpetus\"."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "Kasutaja nimi peab olema väiksem kui 33 tähemärki."

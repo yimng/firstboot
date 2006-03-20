@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2005-02-21 01:27+0300\n"
 "Last-Translator: Munzir Taha <munzirtaha@newhorizons.com.sa>\n"
 "Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
@@ -49,12 +49,12 @@ msgstr "إ_عادة قراءة التّرخيص"
 msgid "_Shut down"
 msgstr "إ_يقاف التّشغيل"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "حدث خطأ في وحدة '%s'."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -65,7 +65,7 @@ msgstr ""
 "فسوف يقوم عميل التثبيت الخاص برد هات بعدم تشغيل هذه الوحدة\n"
 "و سيحاول تشغيل الوحدات المتبقية."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -78,30 +78,29 @@ msgstr ""
 "تم حفظ نسخه من خرج أداة تصحيح الأخطاء في '%s' \n"
 "تأكد من إرفاق هذا الملف بتقرير العلّة.\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_رجوع"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_التالي"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 #, fuzzy
 msgid "_Finish"
 msgstr "إنهاء الإعداد"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "فشل استيراد الوحدة %s: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "أهلاً"
@@ -131,30 +130,26 @@ msgid "System services"
 msgstr "خدمات النظام"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "إعداد بطاقة الصوت"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "إعداد المنطقة الزّمنيّة"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "أداة التشغيل"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "حدد العنصر الذي تريد تعديله"
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "عميل الإعداد"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "أقراص مُدمجة إضافية"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -165,12 +160,12 @@ msgstr ""
 "الوظائف الإضافيّة والبرامج من طرف ثالث. يمكنك أيضاً إدخال قرص الوثائق، أو "
 "الأقراص الأخرى من Red Hat لتثبيت برامج إضافيّة الآن."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 #, fuzzy
 msgid ""
 "\n"
@@ -184,11 +179,11 @@ msgstr ""
 "لتمكين دعم التطبيقات ذات 32-بت  على هيكليّة معالج Intel Itanium2، كما يجب "
 "عليك تثبيت حزمة Intel Execution Layer من قرص Extras الآن."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "تثبيت..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -196,7 +191,7 @@ msgstr ""
 "لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ واضغط \"موافق"
 "\" للاستمرار."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -204,36 +199,38 @@ msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "مستخدم للنظام"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "يُستحسن إنشاء حساب شخصي للاستخدام العادي (لغير أغراض الإدارة) لنظامك.  لإنشاء "
 "حساب شخصي، أدخل البيانات المطلوبة أدناه."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_اسم المستخدم:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "الاسم ال_كامل:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_كلمة المرور:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "تأكيد كلمة المرور:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -242,11 +239,11 @@ msgstr ""
 "إذا كنت تحتاج استخدام توثيق الشبكة مثل Kerberos أو NIS، رجاء اضغط على زرّ "
 "استخدام تسجيل الدّخول الشّبكي."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "ا_ستخدام تسجيل الدّخول الشّبكي..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -255,27 +252,36 @@ msgstr ""
 "يُستحسن إنشاء حساب شخصي، إذا استمررت بدون حساب، يمكنك تسجيل الدخول فقط بحساب "
 "root، والذي هو مُخصّص للاستخدام الإداريّ فقط."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "ا_ستمرار"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "إنشاء _حساب"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "كلمات المرور غير متطابقة.  الرجاء إدخال كلمة المرور مرة أخرى."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "كلمة المرور قصيرة جدّاً.  رجاء استخدم على الأقلّ 6 أحرف."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم أو "
+"فواصل في اسم المستخدم."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم أو "
 "فواصل في اسم المستخدم."
@@ -296,46 +302,27 @@ msgstr "عرض"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "الرّجاء تحديد دقّة الوضوح و عمق الألوان الذي تود استخدامه"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "إنهاء الإعداد"
-
-#: ../src/modules/finished.py:33
-#, fuzzy
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"تم إعداد نظامك و هو جاهز الآن للاستخدام. رجاء اضغظ زر \"التالي\" في الركن "
-"الأيمن للاستمرار."
-
-#: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "رجاء اضغظ زر \"التالي\" في الركن أسفل اليمين للاستمرار."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "إعداد الشبكة"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "أجهزة الشبكة التالية تم اكتشافها على النظام:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "جهاز الشبكة"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "بروتوكول الإقلاع"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_تغيير إعداد الشبكة..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "ثابت"
 
@@ -345,15 +332,15 @@ msgstr "بطاقة الصّوت"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "تم الكشف عن بطاقة صوت على جهازك."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "اضغط زر \"تشغيل صوت تجريبي\" لتسمع نموذج للصوت. يجب أن تسمع ثلاثة أصوات: "
 "الأول في القناة اليمنى و الثاني في القناة اليسرى و الثالث في المنتصف."
@@ -367,14 +354,37 @@ msgid "Please set the timezone for the system."
 msgstr "الرجاء تحديد المنطقة الزمنية للنظام."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "بقي بعض الخطوات الأخيرة ليصبح النظام جاهزاً للاستعمال. برنامج التثبيت سوف "
 "يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في "
 "الركن الأيمنللمتابعة."
+
+#~ msgid "_Next"
+#~ msgstr "_التالي"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "إعداد بطاقة الصوت"
+
+#~ msgid "Finish Setup"
+#~ msgstr "إنهاء الإعداد"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "تم إعداد نظامك و هو جاهز الآن للاستخدام. رجاء اضغظ زر \"التالي\" في الركن "
+#~ "الأيمن للاستمرار."
+
+#, fuzzy
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr "رجاء اضغظ زر \"التالي\" في الركن أسفل اليمين للاستمرار."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "يجب أن يكون اسم المستخدم أقل من 33 حرف."

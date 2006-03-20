@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2006-01-13 09:51+1000\n"
 "Last-Translator: Yuliya Poyarkova <ypoyarko@brisbane.redhat.com>\n"
 "Language-Team:  <ru@li.org>\n"
@@ -53,12 +53,12 @@ msgstr "_Перечитать лицензию"
 msgid "_Shut down"
 msgstr "_Выключить"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "Произошла ошибка в модуле %s."
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -69,7 +69,7 @@ msgstr ""
 "Red Hat Setup Agent не загрузит этот модуль \n"
 "и попробует запустить остальные модули."
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -82,29 +82,28 @@ msgstr ""
 "Копия отладочной информации сохранена в %s \n"
 "Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_Далее"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Чтобы установки вступили в силу, необходим перезапуск системы."
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 msgid "_Finish"
 msgstr "_Готово"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "импорт модуля %s завершился неудачно: %s"
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Добро пожаловать"
@@ -134,30 +133,26 @@ msgid "System services"
 msgstr "Системные службы"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "Настройка звуковой карты"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "Настройка часового пояса"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "Запустить утилиту"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "Выберите элемент, который вы хотите изменить "
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "Помощник по настройке"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Дополнительные CD"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -170,12 +165,12 @@ msgstr ""
 "поставляемый компанией Red Hat, для установки дополнительного программного "
 "обеспечения на данном этапе."
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "Пожалуйста, вставьте диск с дополнительным программным обеспечением."
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -189,11 +184,11 @@ msgstr ""
 "необходимо дополнительно установить пакет Intel Execution Layer с диска с "
 "дополнительным программным обеспечением (Extras)."
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Установка..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -201,19 +196,21 @@ msgstr ""
 "CD-ROM найден.  Пожалуйста, вставьте CD-ROM в привод и нажмите \"OK\" для "
 "продолжения."
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Программа autorun не может быть найдена на CD Нажмите \"OK\" для продолжения."
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "Пользователь системы"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
+#, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
@@ -221,23 +218,23 @@ msgstr ""
 "создать вашу персональную учетную запись. Для создания учетной записи "
 "введите требуемую информацию."
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "_Имя пользователя:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "П_олное имя:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_Пароль:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "По_дтвердите пароль:"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -245,11 +242,11 @@ msgstr ""
 "Если вам необходимо использовать проверку подлинности по сети, например "
 "Kerberos или NIS, нажмите кнопку \"Проверка подлинности по сети\"."
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Проверка подлинности по _сети"
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -259,27 +256,35 @@ msgstr ""
 "откажетесь, вы сможете войти в систему только как пользователь root, который "
 "зарезервирован только для административных целей."
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_Продолжить"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "Создать _учетную запись"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Введенные пароли не совпадают.  Повторите ввод пароля."
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Пароль слишком короткий.  Используйте пароли не меньше 6 символов."
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr ""
+"Имя пользователя '%s' зарезервировано.  Укажите другое имя пользователя."
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 "Имя пользователя '%s' зарезервировано.  Укажите другое имя пользователя."
 
@@ -299,44 +304,27 @@ msgstr "Дисплей"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Выберите желаемые разрешение и глубину цвета"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "Завершение настройки"
-
-#: ../src/modules/finished.py:33
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"Ваша система настроена и готова к работе.  Нажмите \"Готово\" в правом "
-"нижнем углу для продолжения."
-
-#: ../src/modules/finished.py:36
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr "Нажмите \"Готово\" в правом нижнем углу для продолжения."
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "Настройка сети"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "В вашей системе были обнаружены следующие сетевые устройства:"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "Сетевое устройство:"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "Протокол загрузки"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "_Изменить настройку сети..."
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "статический"
 
@@ -345,15 +333,16 @@ msgid "Sound Card"
 msgstr "Звуковая карта"
 
 #: ../src/modules/soundcard_gui.py:45
-msgid "A sound card has been detected in your computer."
+#, fuzzy
+msgid "An audio device has been detected in your computer."
 msgstr "На вашем компьютере обнаружена звуковая карта."
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Нажмите кнопку \"Проиграть образец звука\" для проверки звуковой карты.  Вы "
 "должны услышать три серии звуков.  Первая должна быть в правом канале, "
@@ -368,11 +357,32 @@ msgid "Please set the timezone for the system."
 msgstr "Укажите часовой пояс."
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Осталось еще несколько шагов, после которых ваша система будет готова к "
 "работе.  В этом вам поможет Помощник по настройке.  Нажмите \"Далее\" для "
 "продолжения."
+
+#~ msgid "_Next"
+#~ msgstr "_Далее"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "Настройка звуковой карты"
+
+#~ msgid "Finish Setup"
+#~ msgstr "Завершение настройки"
+
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "Ваша система настроена и готова к работе.  Нажмите \"Готово\" в правом "
+#~ "нижнем углу для продолжения."
+
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr "Нажмите \"Готово\" в правом нижнем углу для продолжения."

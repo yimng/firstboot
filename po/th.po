@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:02-0500\n"
+"POT-Creation-Date: 2006-03-20 11:11+0100\n"
 "PO-Revision-Date: 2004-07-29 00:37+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -47,12 +47,12 @@ msgstr "_อ่านสัญญาอนุญาตซ้ำ"
 msgid "_Shut down"
 msgstr "_ปิดเครื่อง"
 
-#: ../src/exceptionWindow.py:48
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับโมดูล %s"
 
-#: ../src/exceptionWindow.py:53
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
 "Since there is a problem with the %s module, \n"
@@ -63,7 +63,7 @@ msgstr ""
 "ตัวติดตั้งเรดแฮทจะไม่โหลดโมดูลนี้ \n"
 "และจะพยายามโหลดโมดูลที่ยังเหลืออยู่ต่อไป"
 
-#: ../src/exceptionWindow.py:57
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
@@ -76,30 +76,29 @@ msgstr ""
 "ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
-#: ../src/firstbootWindow.py:174 ../src/firstbootWindow.py:571
+#: ../src/firstbootWindow.py:105
 msgid "_Back"
 msgstr "_ย้อนกลับ"
 
-#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
-#: ../src/firstbootWindow.py:575
-msgid "_Next"
-msgstr "_ถัดไป"
+#: ../src/firstbootWindow.py:114
+msgid "_Forward"
+msgstr ""
 
-#: ../src/firstbootWindow.py:269
+#: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:332
+#: ../src/firstbootWindow.py:304
 #, fuzzy
 msgid "_Finish"
 msgstr "ติดตั้งเสร็จแล้ว"
 
-#: ../src/firstbootWindow.py:424
+#: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:567 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
@@ -129,30 +128,26 @@ msgid "System services"
 msgstr "การให้บริการ"
 
 #: ../src/textWindow.py:40
-msgid "Sound card configuration"
-msgstr "ตั้งค่าการ์ดเสียง"
-
-#: ../src/textWindow.py:41
 msgid "Timezone configuration"
 msgstr "ตั้งค่าเขตเวลา"
 
-#: ../src/textWindow.py:43
+#: ../src/textWindow.py:42
 msgid "Run Tool"
 msgstr "เรียกใช้เครื่องมือ"
 
-#: ../src/textWindow.py:45
+#: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
 msgstr "เลือกไอเทมที่ต้องการแก้ไข"
 
-#: ../src/textWindow.py:51
+#: ../src/textWindow.py:52
 msgid "Setup Agent"
 msgstr "ตัวติดตั้ง"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:113
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "แผ่นซีดีเสริม"
 
-#: ../src/modules/additional_cds.py:64
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -160,12 +155,12 @@ msgid ""
 "additional software at this time."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:70
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
 #. if 1:
-#: ../src/modules/additional_cds.py:76
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -174,53 +169,54 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:117
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "ติดตั้ง..."
 
-#: ../src/modules/additional_cds.py:163
+#: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "ตรวจไม่พบซีดีรอม กรุณาใส่แผ่นซีดีแล้วคลิก \"ตกลง\""
 
-#: ../src/modules/additional_cds.py:197
+#: ../src/modules/additional_cds.py:198
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
 
-#: ../src/modules/create_user.py:37
-msgid "System User"
+#: ../src/modules/create_user.py:39
+#, fuzzy
+msgid "Create User"
 msgstr "ผู้ใช้ระบบ"
 
-#: ../src/modules/create_user.py:64
+#: ../src/modules/create_user.py:66
 #, fuzzy
 msgid ""
-"It is recommended that you create a system 'username' for regular (non-"
+"It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "ขอแนะนำให้คุณสร้างบัญชีผู้ใช้ส่วนตัว สำหรับใช้ในงานทั่วไป (ที่ไม่เกี่ยวกับการบริหารระบบ) "
 "สำหรับการสร้างบัญชีผู้ใช้ส่วนตัว ให้กรอกข้อมูลที่จำเป็นเหล่านี้"
 
-#: ../src/modules/create_user.py:74
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
 msgstr "ชื่อ_ผู้ใช้:"
 
-#: ../src/modules/create_user.py:81
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
 msgstr "ชื่อเ_ต็ม:"
 
-#: ../src/modules/create_user.py:88
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
 msgstr "_รหัสผ่าน:"
 
-#: ../src/modules/create_user.py:95
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
 msgstr "_ยืนยันรหัสผ่าน :"
 
-#: ../src/modules/create_user.py:111
+#: ../src/modules/create_user.py:113
 #, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
@@ -229,11 +225,11 @@ msgstr ""
 "ถ้าคุณจำเป็นต้องใช้การอนุญาตสิทธิผ่านเครือข่าย เช่น Kerberos หรือ  NIS ให้คลิกที่ปุ่ม "
 "ล็อกอินผ่านเครือข่าย"
 
-#: ../src/modules/create_user.py:121
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "_ล็อกอินผ่านเครือข่าย..."
 
-#: ../src/modules/create_user.py:157
+#: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -242,27 +238,34 @@ msgstr ""
 "ขอแนะนำเป็นอย่างยิ่งว่า ควรสร้าง บัญชีผู้ใช้ส่วนตัวมิฉะนั้น ถ้าคุณผ่านขั้นตอนนี้ไปโดยไม่สร้าง บัญชีผู้ใช้ "
 "คุณจะล็อกอินได้เฉพาะบัญชีชื่อ root  ซึ่งเป็นบัญชีที่สงวนไว้สำหรับการจัดการระบบเท่านั้น"
 
-#: ../src/modules/create_user.py:165
+#: ../src/modules/create_user.py:167
 msgid "_Continue"
 msgstr "_ทำต่อไป"
 
-#: ../src/modules/create_user.py:166
+#: ../src/modules/create_user.py:168
 msgid "Create _account"
 msgstr "สร้าง_บัญชีผู้ใช้"
 
-#: ../src/modules/create_user.py:189
+#: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "รหัสผ่านของคุณไม่ตรงกัน กรุณากรอกใหม่อีกครั้ง"
 
-#: ../src/modules/create_user.py:197
+#: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "รหัสผ่านของคุณสั้นเกินไป กรุณาใช้รหัสความยาวอย่างน้อย 6 ตัวอักษร"
 
-#: ../src/modules/create_user.py:208
+#: ../src/modules/create_user.py:210
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
+msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
+
+#: ../src/modules/create_user.py:228
+#, fuzzy, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
 
 #: ../src/modules/date.py:46
@@ -281,48 +284,27 @@ msgstr "การแสดงผล"
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "กรุณาเลือกความละเอียดและความลึกสีที่คุณต้องการใช้"
 
-#: ../src/modules/finished.py:19
-msgid "Finish Setup"
-msgstr "ติดตั้งเสร็จแล้ว"
-
-#: ../src/modules/finished.py:33
-#, fuzzy
-msgid ""
-"Your system is now set up and ready to use.  Please click the \"Finish\" "
-"button in the lower right corner to continue."
-msgstr ""
-"ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
-"\" ด้านล่างขวาเพื่อทำงานต่อไป"
-
-#: ../src/modules/finished.py:36
-#, fuzzy
-msgid ""
-"Please click the \"Finish\" button in the lower right corner to continue."
-msgstr ""
-"ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม \"ถัดไป"
-"\" ด้านล่างขวาเพื่อทำงานต่อไป"
-
-#: ../src/modules/networking.py:42
+#: ../src/modules/networking.py:43
 msgid "Network Setup"
 msgstr "ตั้งค่าเน็ตเวิร์ก"
 
-#: ../src/modules/networking.py:68
+#: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
 msgstr "อุปกรณ์เครือข่ายเหล่านี้ ถูกตรวจสอบพบว่ามีอยู่ในระบบ"
 
-#: ../src/modules/networking.py:87
+#: ../src/modules/networking.py:88
 msgid "Network Device"
 msgstr "อุปกรณ์เครือข่าย"
 
-#: ../src/modules/networking.py:89
+#: ../src/modules/networking.py:90
 msgid "Boot protocol"
 msgstr "โพรโตคอลบูต"
 
-#: ../src/modules/networking.py:95
+#: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
 msgstr "เปลี่ยนแปลงการตั้งค่าเน็ตเวิร์ค"
 
-#: ../src/modules/networking.py:141
+#: ../src/modules/networking.py:142
 msgid "static"
 msgstr "ค่าแน่นอน"
 
@@ -332,15 +314,15 @@ msgstr "การ์ดเสียง"
 
 #: ../src/modules/soundcard_gui.py:45
 #, fuzzy
-msgid "A sound card has been detected in your computer."
+msgid "An audio device has been detected in your computer."
 msgstr "ได้ตรวจพบการ์ดเสียงบนระบบของคุณ"
 
 #: ../src/modules/soundcard_gui.py:68
+#, fuzzy
 msgid ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the center."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "คลิกปุ่ม \"Play test sound\" แล้วจะได้ยินตัวอย่างเสียง คุณจะได้ยินเสียง 3 เสียง "
 "อันแรกเป็นเสียงจากลำโพงด้านขวา อันที่สองเป็นเสียงจากลำโพงด้านซ้าย และสุดท้ายเป็นเสียง "
@@ -355,14 +337,39 @@ msgid "Please set the timezone for the system."
 msgstr "กรุณาตั้งค่าเขตเวลาให้ระบบของคุณ"
 
 #: ../src/modules/welcome.py:34
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "ต่อไปนี้จะเป็นขั้นตอนสั้นๆ ที่ต้องตั้งค่า ก่อนจะใช้งานระบบของคุณ "
 "ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
 "ที่มุมล่างขวาเพื่อทำงานต่อ"
+
+#~ msgid "_Next"
+#~ msgstr "_ถัดไป"
+
+#~ msgid "Sound card configuration"
+#~ msgstr "ตั้งค่าการ์ดเสียง"
+
+#~ msgid "Finish Setup"
+#~ msgstr "ติดตั้งเสร็จแล้ว"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
+#~ "button in the lower right corner to continue."
+#~ msgstr ""
+#~ "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม "
+#~ "\"ถัดไป\" ด้านล่างขวาเพื่อทำงานต่อไป"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please click the \"Finish\" button in the lower right corner to continue."
+#~ msgstr ""
+#~ "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม "
+#~ "\"ถัดไป\" ด้านล่างขวาเพื่อทำงานต่อไป"
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "ชื่อผู้ใช้ต้องยาวไม่เกิน 33 ตัวอักษร"
