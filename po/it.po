@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-02-22 17:14+0100\n"
+"PO-Revision-Date: 2006-03-20 19:51+0100\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -84,7 +84,7 @@ msgstr "_Precedente"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Avanti"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -196,25 +196,21 @@ msgstr ""
 "su \"OK\" per continuare."
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Utente del sistema"
+msgstr "Crea un utente"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"É consigliata la creazione di un account utente personale per un uso normale "
-"(non-amministrativo) del vostro sistema. Per creare un account utente, siete "
+"É consigliata la creazione di un utente per un uso normale (non- "
+"amministrativo) del sistema. Per creare un account utente, siete "
 "pregati di fornire le informazioni richieste."
 
 #: ../src/modules/create_user.py:76
@@ -265,13 +261,11 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Le passwords non coincidono.  Si prega di riprovare ad inserire la password."
+msgstr "Le passwords non coincidono.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:210
 #, python-format
@@ -283,12 +277,12 @@ msgstr ""
 "pregato di specificare un altro nome utente."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Il nome utente '%s' risulta essere un acount di sistema riservato.  Sei "
+"Esiste già un home directory per Il nome utente '%s'.  Sei "
 "pregato di specificare un altro nome utente."
 
 #: ../src/modules/date.py:46
@@ -336,20 +330,18 @@ msgid "Sound Card"
 msgstr "Scheda audio"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "Sul computer é stata rilevata una scheda audio."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Fare clic sul pulsante \"Riproduci test audio\" per ascoltare un campione "
+"Fare clic sul pulsante \"Riproduci\" per ascoltare un campione "
 "audio. Si dovrebbe sentire una serie di tre suoni. Il primo suono sarà nel "
-"canale destro, il secondo sarà nel canale sinistro e il terzo suono sarànel "
+"canale destro, il secondo sarà nel canale sinistro e il terzo suono sarà nel "
 "centro."
 
 #: ../src/modules/timezone.py:46
@@ -361,36 +353,12 @@ msgid "Please set the timezone for the system."
 msgstr "Impostare la data e l'ora del sistema."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Benvenuti nel Red Hat Setup Agent.  Ci sono alcune operazioni da compiere "
-"prima che il sistema sia pronto.  Red Hat Setup Agent guida l'utente nel "
-"processo di configurazione di base.  Fare clic sul pulsante \"Avanti\" in "
-"basso a destra per continuare."
+"Ci sono alcune operazioni da compiere prima che il sistema sia pronto all'uso.  Il "
+"Setup Agent vi guiderà nel processo di configurazione di base.  Premere il "
+"pulsante \"Avanti\" nell'angolo in basso a destra per continuare."
 
-#~ msgid "_Next"
-#~ msgstr "_Avanti"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Configurazione della scheda audio"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Termina installazione"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Il vostro sistema é stato impostato ed é pronto per l'uso.  Si prega di "
-#~ "fare clic sul pulsante \"Fine\" nell'angolo basso a destra per "
-#~ "continuare. "
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Si prega di fare clic sul pulsante \"Fine\" nell'angolo basso a destra "
-#~ "per continuare."
