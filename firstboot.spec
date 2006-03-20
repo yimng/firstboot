@@ -111,6 +111,11 @@ fi
 %changelog
 * Mon Mar 20 2006 Martin Stransky <stransky@redhat.com> 1.4.7-1
 - replaced "Play test button" by "Play" button for s-c-s (#185931)
+- Fix soundcard string (#177425).
+- Fix label inconsistency on welcome screen (#183899).
+- Rework "System User" string (#177940).
+- Don't create a user if a homedir with that username already exists
+  (#143150).
 
 * Fri Mar 03 2006 Chris Lumens <clumens@redhat.com> 1.4.6-1
 - Revert UI changes that broke s-c-keyboard (#183718).
