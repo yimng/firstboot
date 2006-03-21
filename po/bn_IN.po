@@ -15,6 +15,8 @@
 # translation of bn_IN.po to Bangla (INDIA)
 # translation of bn_IN.po to Bangla (INDIA)
 # translation of bn_IN.po to Bangla (INDIA)
+# translation of bn_IN.po to Bangla (INDIA)
+# translation of bn_IN.po to Bangla (INDIA)
 # translation of bn.po to bangla
 # Bengali Translation of Firstboot
 # Copyright (C) 2004 Red Hat Inc.
@@ -27,7 +29,7 @@ msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-01-17 15:42+0530\n"
+"PO-Revision-Date: 2006-03-21 15:09+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla (INDIA) <redhat-translation@bengalinux.org>\n"
 "MIME-Version: 1.0\n"
@@ -106,7 +108,7 @@ msgstr "পূর্ববর্তী (_B)"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "পরবর্তী (_F)"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -225,26 +227,21 @@ msgstr ""
 "জন্য \"ঠিক আছে\" চাপুন।"
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CD'র মধ্যে অটোরান প্রোগ্রাম পাওয়া যায়নি। এগিয়ে চলার জন্য \"ঠিক আছে\" চাপুন।"
 
 # msgstr "সিষ্টেম ব্যবহারকারী"
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "সিস্টেম ব্যবহারকারী"
+msgstr "ব্যবহারকারীর অ্যাকাউন্ট নির্মাণ"
 
 # modified for RHEL
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
-"অপ্রশাসনিক কাজে ব্যবহারের জন্য ব্যক্তিগত সিস্টেম 'username' তৈরি করার উপদেশ দেওয়া "
-"হচ্ছে। সিস্টেম 'username' তৈরি করার জন্য সকল প্রয়োজনীয় তথ্য উপলব্ধ করুন।"
+msgstr "অপ্রশাসনিক কাজে ব্যবহারের জন্য ব্যক্তিগত সিস্টেম 'username' নির্মাণ করা বাঞ্ছনীয়। সিস্টেম 'username' তৈরি করার জন্য সকল প্রয়োজনীয় তথ্য উল্লেখ করুন।"
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -304,8 +301,7 @@ msgstr "পাসওয়ার্ডে গরমিল।  অনুগ্রহ
 # modified by RB
 #: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"পাসওয়ার্ড অত্যান্ত ছোট।  অনুগ্রহ করে অন্তত ৬-টি অক্ষর ব্যবহার করে পাসওয়ার্ড লিখুন।"
+msgstr "পাসওয়ার্ড অত্যান্ত ছোট।  অনুগ্রহ করে অন্তত ৬-টি অক্ষর ব্যবহার করে পাসওয়ার্ড লিখুন।"
 
 #: ../src/modules/create_user.py:210
 #, python-format
@@ -317,13 +313,11 @@ msgstr ""
 "নাম উল্লেখ করুন।"
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr ""
-"'%s' নাম একটি সিস্টেম অ্যাকাউন্টের জন্য সংরক্ষিত। অনুগ্রহ করে ব্যবহারকারীর জন্য অন্য "
-"নাম উল্লেখ করুন।"
+msgstr "'%s' নামক ব্যবহারকারীর ব্যক্তিগত (home) ডিরেক্টরি বর্তমানে উপস্থিত রয়েছে। অনুগ্রহ করে ব্যবহারকারীর জন্য অন্য নাম উল্লেখ করুন।"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -373,21 +367,18 @@ msgid "Sound Card"
 msgstr "সাউন্ড কার্ড"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "আপনার কম্পিউটারের মধ্যে একটি সাউন্ড-কার্ড পাওয়া গেছে।"
+msgstr "আপনার কম্পিউটারের মধ্যে একটি অডিও ডিভাইস পাওয়া গেছে।"
 
 # modified by RB
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"নমুনা শব্দ শোনার জন্য \"পরীক্ষামূলক শব্দ বাজান\" বোতাম চাপুন। আপনি ক্রমানযায়ী তিনটি "
-"শব্দ শুনতে পারবেন। প্রথমটি ডানদিকের চ্যানেলে, দ্বিতীয়টি বাঁদিকে এবং তৃতীয়টি "
-"মাঝখানের চ্যানেলে।"
+"শব্দের নমূনা শোনার জন্য \"পরীক্ষামূলক শব্দ বাজান\" বোতাম চাপুন। আপনি ক্রমানযায়ী তিনটি শব্দ শুনতে পারবেন। প্রথমটি ডানদিকের চ্যানেলে, দ্বিতীয়টি বাঁদিকে এবং তৃতীয়টি "
+"মাঝখানের চ্যানেলে বাজবে।"
 
 # modified by RB
 #: ../src/modules/timezone.py:46
@@ -400,37 +391,12 @@ msgid "Please set the timezone for the system."
 msgstr "অনুগ্রহ করে আপনার সিস্টেমের জন্য সময়ের অঞ্চল নির্ধারণ করুন।"
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"আপনার কম্পিউটার সম্পূর্ণরূপে প্রস্তুত করার জন্য অতিরিক্ত কয়েকটি ধাপের কর্ম সমাপ্ত করা "
+"আপনার কম্পিউটার সম্পূর্ণরূপে প্রস্তুত করার জন্য অতিরিক্ত কয়েকটি ধাপ সমাপ্ত করা "
 "প্রয়োজন। সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর "
 "হওয়ার জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
 
-#~ msgid "_Next"
-#~ msgstr "পরবর্তী(_N)"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "সাউন্ড কার্ড কনফিগারেশন "
-
-# modified by RB
-#~ msgid "Finish Setup"
-#~ msgstr "সেট-আপ কর্ম সমাপ্তি"
-
-# modified by RB
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "আপনার সিস্টেম বর্তমানে ব্যবহারের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে "
-#~ "ডানদিকের কোনায় অবস্থিত \"সমাপ্তি\" বাটনটি চাপুন।"
-
-# modified by RB
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "পরবর্তী ধাপে যাওয়ার জন্য অনুগ্রহ করে নীচে ডানদিকের কোণায় অবস্থিত \"সমাপ্তি\" "
-#~ "বাটনটি চাপুন।"
