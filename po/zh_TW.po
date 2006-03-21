@@ -1,3 +1,4 @@
+# translation of zh_TW.po to Chinese, Traditional
 # translation of zh_TW.po to Chinese Traditional
 # Translation of firstboot to Traditional Chinese
 # Copyright (C) 2002 Red Hat Inc.
@@ -11,9 +12,9 @@ msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-01-11 14:41+1000\n"
+"PO-Revision-Date: 2006-03-21 12:04+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
-"Language-Team: Chinese Traditional <zh_TW@li.org>\n"
+"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -83,7 +84,7 @@ msgstr "上一步(_B)"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "下一步(_F)"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -187,17 +188,14 @@ msgid ""
 msgstr "偵測不到光碟片。請放入光碟片到光碟機中，並按下「確定」以繼續。"
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式。請點選「確定」以繼續。"
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "系統使用者"
+msgstr "建立使用者"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -226,8 +224,7 @@ msgstr "密碼確認(_M)："
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
-"假如您需要使用網路認證，如 Kerberos 或 NIS，請點選「使用網路登入」按鈕。"
+msgstr "假如您需要使用網路認證，如 Kerberos 或 NIS，請點選「使用網路登入」按鈕。"
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
@@ -266,11 +263,11 @@ msgid ""
 msgstr "使用者名稱 '%s' 是系統的保留帳號。請指定另一個使用名稱。"
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr "使用者名稱 '%s' 是系統的保留帳號。請指定另一個使用名稱。"
+msgstr "使用者 '%s' 的家目錄已經存在。請指定另一個使用者名稱。"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -317,18 +314,16 @@ msgid "Sound Card"
 msgstr "音效卡"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "在您的電腦上偵測到一張音效卡。"
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"請點選「播放測試音效」的按鈕以聽取一個樣本聲音。您應該會聽到三個連續的聲音。"
+"請點選「播放測試音效」的按鈕以聽取範例音效。您應該會聽到三個連續的聲音。"
 "第一個聲音在右聲道，第二個聲音在左聲道，第三個聲音在中間。"
 
 #: ../src/modules/timezone.py:46
@@ -340,30 +335,9 @@ msgid "Please set the timezone for the system."
 msgstr "請設定系統的時區。"
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
-"在使用您的系統之前，要先完成幾個步驟。設定代理程式現在將引導您做一些基本的設"
-"定。請點選在右下角的「下一步」按鈕以繼續。"
+msgstr "在使用您的系統之前，要先完成幾個步驟。現在「設定代理程式」將引導您做一些基本設定。請點選右下角的「下一步」按鈕以繼續。"
 
-#~ msgid "_Next"
-#~ msgstr "下一步(_N)"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "音效卡設定"
-
-#~ msgid "Finish Setup"
-#~ msgstr "完成設定"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "現在您的系統已經設定好，可以使用。請點選右下角的「下一步」按鈕繼續。"
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "請點選右下角的「下一步」按鈕繼續。"
