@@ -1,21 +1,21 @@
 # Dutch translation of firstboot.
-# Copyright (C) 2003 The Free Software Foundation, In.
+# Copyright (C) 2003 The Free Software Foundation, Inc.
+#
 # Tino Meinen <a.t.meinen@chello.nl>, 2003.
 # Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006.
 # Sjoerd Smink <sjoerdsmink@hotmail.com>, 2004.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-01-06 21:11+0100\n"
+"PO-Revision-Date: 2006-03-23 22:40+0100\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11\n"
+"X-Generator: KBabel 1.11.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -81,7 +81,7 @@ msgstr "_Terug"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Volgende"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -198,20 +198,18 @@ msgstr ""
 "door te gaan."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Systeemgebruiker"
+msgstr "Gebruiker aanmaken"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
 "Het wordt aanbevolen om voor het normale dagelijkse gebruik van de computer "
-"(dus geen systeembeheer) een persoonlijk account aan te maken. Om een "
-"persoonlijk account aan te maken, moet u de gevraagde informatie leveren."
+"(dus geen systeembeheer) een gebruikersnaam aan te maken. Om een "
+"gebruikersnaam aan te maken, moet u de gevraagde informatie leveren."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -278,13 +276,13 @@ msgstr ""
 "gebruikersnaam."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"De gebruikersnaam '%s' is een gereserveerd systeem-account. Geef een andere "
-"gebruikersnaam."
+"Er bestaat al een persoonlijke map voor de gebruikersnaam '%s'. Geef een "
+"andere gebruikersnaam op."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -332,20 +330,18 @@ msgid "Sound Card"
 msgstr "Geluidskaart"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "Er is een geluidskaart gedetecteerd in uw computer."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Klik op \"Testgeluid afspelen\" om uw geluidskaart te testen.  U krijgt dan "
-"drie geluiden te horen. Het eerste geluid komt uit het rechter kanaal, het "
-"tweede uit het linker kanaal en het derde geluid zal uit het midden komen."
+"Klik op de knop \"Afspelen\" om uw geluidskaart te testen. U krijgt dan drie "
+"geluiden te horen. Het eerste geluid komt uit het rechter kanaal, het tweede "
+"uit het linker kanaal en het derde geluid zal uit het midden komen."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -356,16 +352,15 @@ msgid "Please set the timezone for the system."
 msgstr "Stel de tijdzone in voor het systeem."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Er zijn nog een aantal taken te verrichten voordat uw systeem klaar is voor "
-"gebruik. De Setup Agent zal u nu helpen met het maken van een basis- "
-"configuratie. Klik op \"Volgende\" rechts onder in het scherm om door te "
-"gaan."
+"gebruik. De Setup Agent zal u nu helpen met het maken van een basis-"
+"configuratie. Klik op de knop \"Volgende\" rechts onderin het scherm om door "
+"te gaan."
 
 #~ msgid "_Next"
 #~ msgstr "_Volgende"
