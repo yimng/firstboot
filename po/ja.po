@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-02-04 20:19+0900\n"
+"PO-Revision-Date: 2006-03-25 07:56+0900\n"
 "Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -84,7 +84,7 @@ msgstr "戻る(_B)"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "進む(_F)"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -200,18 +200,16 @@ msgstr ""
 "す。"
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "システムユーザー"
+msgstr "ユーザーの作成"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"通常 (管理業務以外) の使用にはシステムの 'username' を作成されることをお薦め"
+"通常(管理業務以外)の使用には 'username' を作成されることをお薦め"
 "します。システムの 'username' を作成するには、以下の要求される情報を準備して"
 "ください。"
 
@@ -279,13 +277,13 @@ msgstr ""
 "定してください。"
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"ユーザー名 '%s' はシステムアカウント用に保留されています。別のユーザー名を指"
-"定してください。"
+"ユーザー名 '%s' のホームディレクトリは既に存在します。"
+"別のユーザー名を指定してください。"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -332,20 +330,19 @@ msgid "Sound Card"
 msgstr "サウンドカード"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "コンピュータ上にサウンドカードが検出されました。"
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"\"Play test sound\"ボタンをクリックしてサンプルサウンドを聞いてください。連続"
-"して 3 つの音が聞こえるはずです。最初の音は、右のチャンネルで2 番目の音が左側"
-"のチャンネルです。3 番目の音は中央となります。"
+"\"再生\"ボタンをクリックしてサンプルサウンドを聞いてください。"
+"連続して 3 つの音が聞こえるはずです。最初の音は、"
+"右のチャンネルで 2 番目の音が左側のチャンネルです。"
+"3 番目の音は中央となります。"
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -356,7 +353,6 @@ msgid "Please set the timezone for the system."
 msgstr "システムのタイムゾーンを設定してください。"
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -364,7 +360,7 @@ msgid ""
 msgstr ""
 "システムが使用できるようになるまでもう少しステップがあります。セットアップ"
 "エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
-"\"次へ\" ボタンをクリックして続けて下さい。"
+"\"進む\" ボタンをクリックして続けて下さい。"
 
 #~ msgid "_Next"
 #~ msgstr "次へ(_N)"
