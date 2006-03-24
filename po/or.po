@@ -1,53 +1,54 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of or.po to Oriya
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Subhransu Behera <sbehera@redhat.com>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2006-03-24 14:22+0530\n"
+"Last-Translator: Subhransu Behera <sbehera@redhat.com>\n"
+"Language-Team: Oriya <oriya-group@lists.sarovar.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
-msgstr ""
+msgstr "ପ୍ରସ୍ଥାନ"
 
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "ଲାଇସେନ୍ସ ରାଜିନାମା"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "ହଁ (_Y), ମ୍ୁଁ ଏହି ଲାଇସେନ୍ସ ରାଜିନାମା ରେ ରାଜି ଅଛି "
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr ""
+msgstr "ନାଁ (_o), ମୁଁ ରାଜି ନୁହଁ"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "ଆପଣ ଲାଇସେନ୍ସ ରାଜିନାମା ଟି କୁ ଆଉଥରେ ପଢିବା ପାଇଁ କିମ୍ଭା ବିଚାର କରିବା ପାଇଁ ଚାହଁୁଛନ୍ତି କି?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr ""
+msgstr "ଲାଇସେନ୍ସ ଟି କୁ ଆଉଥରେ ପଢନ୍ତୁ (_R)"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
-msgstr ""
+msgstr "ବନ୍ଦ କର (_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "%s ଏକକାଂଶ ରେ ଗୋଟିଏ ତ୍ରୁଟି ପରିଲିକ୍ଷିତ ହେଲା"
 
 #: ../src/exceptionWindow.py:52
 #, python-format
@@ -56,6 +57,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"ଯେହେତୁ %s ଏକକାଂଶ ରେ ଗୋଟିଏ ତ୍ରୁଟି ଅଛି,\n"
+"Red Hat ର ବିନ୍ଯାସ ପ୍ରତିନିଧୀ ଏହି ଏକକାଂଶ ଟି କୁ ଧାରଣ କରିବେ ନାହିଁ ଏବଂ \n"
+"ବଳକା ଏକକାଂଶ ଗୁଡିକୁ ଚଳାଇବା ପାଇଁ ପ୍ରଚେଷ୍ଟା କରିବ"
 
 #: ../src/exceptionWindow.py:56
 #, python-format
@@ -65,76 +69,92 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"'firstboot' ବିରୋଧ ରେ ଗୋଟିଏ ତ୍ରୁଟି କୁ Red Hat ତ୍ରୁଟି ଅନୁସରଣ ପ୍ରଣାଳୀ\n"
+"ନିକଟ ରେ http://www.redhat.com/bugzilla ଜଣାଅ \n"
+"ତ୍ରୁଟିମୁକ୍ତ ନିର୍ଗମ ର ଗୋଟିଏ ନକଲ %s ରେ ସଂରକ୍ଷିତ ହେଲା \n"
+"ତ୍ରୁଟି ବିବରଣୀ ରେ ସେହି ଫାଇଲ ଟି କୁ ସଂଲଗ୍ନ କରିବାକୁ ନିଶ୍ଚିତ ହୁଅ \n"
 
 #: ../src/firstbootWindow.py:105
 msgid "_Back"
-msgstr ""
+msgstr "ପୂର୍ବବର୍ତ୍ତୀ (_B)"
+
+
+#: ../src/firstbootWindow.py:182 ../src/firstbootWindow.py:355
+#: ../src/firstbootWindow.py:575
+#msgid "_Next"
+#msgstr "ପରବର୍ତ୍ତୀ (_N)"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
 msgstr ""
 
+
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "ଆପଣଙ୍କ ଚୟନ ମଦ୍ଧ୍ଯ ରୁ କିଛି କୁ ପ୍ରଭାବିତ କରିବା ପାଇଁ ତନ୍ତ୍ର ଟି ରି-ବୁଟ୍ ହେବା ଆବଶ୍ଯକ"
 
 #: ../src/firstbootWindow.py:304
 msgid "_Finish"
-msgstr ""
+msgstr "ସମାପ୍ତ (_F)"
 
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "%s ର ଏକକାଂଶ ଆମଦାନୀ ଅସଫଳ: %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
-msgstr ""
+msgstr "ସ୍ବାଗତମ"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
-msgstr ""
+msgstr "ବୈଧିକରଣ"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
-msgstr ""
+msgstr "ଅଗ୍ନିରକ୍ଷକ ର ବିନ୍ଯାସ"
 
 #: ../src/textWindow.py:36
 msgid "Keyboard configuration"
-msgstr ""
+msgstr "କି ବୋର୍ଡ ର ବିନ୍ଯାସ"
 
 #: ../src/textWindow.py:37
 msgid "Network configuration"
-msgstr ""
+msgstr "ନେଟଓ୍ବାର୍କ ର ବିନ୍ଯାସ"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration"
-msgstr ""
+msgstr "ମୂଦ୍ରଣୀ ର ବିନ୍ଯାସ"
 
 #: ../src/textWindow.py:39
 msgid "System services"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ର ସେବା"
 
 #: ../src/textWindow.py:40
+
+#msgid "Sound card configuration"
+#msgstr "ସାଉଣ୍ଡ କାର୍ଡ ର ବିନ୍ଯାସ"
+
+#: ../src/textWindow.py:41
 msgid "Timezone configuration"
-msgstr ""
+msgstr "ସମୟ ମଣ୍ଡଳ ର ବିନ୍ଯାସ"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr ""
+msgstr "ଚାଳକ ଉପକରଣ"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "ଆପଣ ଅଦ୍ଯତନ କରିବାକୁ ଚାହଁୁଥିବା ବସ୍ତୁ ର ଚୟନ କର"
 
 #: ../src/textWindow.py:52
 msgid "Setup Agent"
-msgstr ""
+msgstr "ବିନ୍ଯାସ ପ୍ରତିନିଧୀ"
 
 #: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
-msgstr ""
+msgstr "ଅତିରିକ୍ତ ସି.ଡି."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -143,10 +163,14 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"ତ୍ରୁତୀୟ-ବ୍ଯକ୍ତି ପ୍ଲୋଗ୍-ଇନ୍ସ ଏବଂ ପ୍ରୟୋଗ ର ବିନ୍ଯାସ କୁ ଅନୁମତି ପ୍ରଦାନ କରିବା ପାଇଁ ଦୟାକରି"
+"\"Red Hat Enterprise Linux Extras\" ଦ୍ବାରା ଲେବଲ ହୋଇଥିବା ଡିସ୍କ କୁ ଭର୍ତ୍ତି କର | ଏହି ସମୟ ରେ"
+"ଆପଣ ମଦ୍ଧ୍ଯ ଅତିରିକ୍ତ ସଫ୍ଟଓ୍ବେର କୁ ବିନ୍ଯାସ କରିବା ପାଇଁ ଦଲିଲ ଜନିତ ଡିସ୍କ, କିମ୍ବା Red Hat ଦ୍ବାରା ବିରରିତ"
+"ଅନ୍ଯାନ୍ଯ ଡିସ୍କ କୁ ଭର୍ତ୍ତି କରି ପାରିବେ"
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "ଦୟାକରି ଏହି ସମୟ ରେ କୌଣସି ଅତିରିକ୍ତ ସଫ୍ଟଓ୍ବେର ର ବିନ୍ଯାସ ସି.ଡି. କୁ ଭର୍ତ୍ତି କରନ୍ତୁ"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -157,25 +181,38 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Intel Itanium୨ ସ୍ଥାପତ୍ଯ ରେ ୩୨-ବିଟ୍ ପ୍ରୟୋଗ ର ଚଳନ୍ତି ସମୟ ସହାୟକ କୁ ସକ୍ରିୟ କରିବା ପାଇଁ"
+"ଆପଣ Intel Execution Layer ପ୍ଯାକେଜ କୁ ବର୍ତ୍ତମାନ ଅତିରିକ୍ତ ଡିସ୍କ ରୁ ବିନ୍ଯାସ କରିବା ଉଚିତ"
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
-msgstr ""
+msgstr "ବିନ୍ଯାସ..."
 
 #: ../src/modules/additional_cds.py:164
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"ଗୋଟିଏ ସିଡି-ରମ୍ କୁ ଖୋଜି ପାରିଲା ନାହିଁ | ଦୟାକରି ଡ୍ରାଇଭ ରେ ଗୋଟିଏ ସିଡି-ରମ୍ କୁ ଭର୍ତ୍ତି କର ଏବଂ ଆଗକୁ ବଢିବା ପାଇଁ"
+"\"OK\" ଦବାଅ"
+
 
 #: ../src/modules/additional_cds.py:198
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
+msgstr "ଅଟୋରନ ପ୍ରୋଗ୍ରାମ ଟି ସିଡି ରେ ମିଳି ପାରିବ ନାହିଁ | ଆଗକୁ ବଢିବା ପାଇଁ \"OK\" ଦବାଅ"
+
+
+#: ../src/modules/create_user.py:37
+#msgid "System User"
+#msgstr "ତନ୍ତ୍ର ଚାଳକ"
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
 msgstr ""
+
 
 #: ../src/modules/create_user.py:66
 msgid ""
@@ -183,32 +220,36 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"ତନ୍ତ୍ର ର ନିୟମିତ (ଅପ୍ରଶାସନୀୟ) ବ୍ଯବହାର ପାଇଁ ଆପଣଙ୍କୁ ଗୋଟିଏ 'ଚାଳକ ନାମ' ସ୍ରୁଷ୍ଟି କରିବା ପାଇଁ ସୁପାରିଶ କରି ଯାଉଛି"
+"ତନ୍ତ୍ର ରେ ଗୋଟିଏ ଚାଳକ ନାମ' ସ୍ରୁଷ୍ଟି କରିବା ପାଇଁ, ଦୟାକରି ନିମ୍ନ ରେ ଅନୁରୋଧ କରା ଯାଇଥିବା ସୂଚନା କୁ ପ୍ରଦାନ କର"
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
-msgstr ""
+msgstr "ଚାଳକ ର ନାମ (_U):"
 
 #: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "ପୁରା ନାମ (_e):"
 
 #: ../src/modules/create_user.py:90
 msgid "_Password:"
-msgstr ""
+msgstr "ପ୍ରବେଶ ସଂଙ୍କେତ (_P):"
 
 #: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "ପ୍ରବେଶ ସଂଙ୍କେତ କୁ ନିଶ୍ଚିତନ (_m) କର:"
 
 #: ../src/modules/create_user.py:113
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"କେର୍ବେରୋଶ୍ କିମ୍ବା ଏନ.ଆଇ.ଏସ. ଭଳି, ନେଟଓ୍ବାର୍କ ବୈଧିକରଣ କୁ ଯଦି ଆପଣ ବ୍ଯବହାର କରିବା ପାଇଁ ଚାହଁୁଛନ୍ତି ତାହା ହେଲେ,"
+"ଦୟାକରି ବ୍ଯବହାର୍ଯ୍ଯ ନେଟଓ୍ବାର୍କ ଲଗଇନ୍ ବଟନ୍ କୁ ଦବାନ୍ତୁ"
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "ନେଟଓ୍ବାର୍କ ଲଗଇନ୍ (_L) କୁ ବ୍ଯବହାର କର..."
 
 #: ../src/modules/create_user.py:159
 msgid ""
@@ -216,22 +257,25 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"ନିଜସ୍ବ ହିସାବ ଖାତା ତିଆରି କରିବା ପାଇଁ ବିଶେଷ ଭାବରେ ସୁପାରିଶ କରାଯାଉଛି | ଆପଣ ଯଦି ବିନା ଖାତା ରେ ଆଗକୁ ଯାଆନ୍ତି"
+"ତାହା ହେଲେ, ଆପଣ କେବଳ ମୂଖ୍ଯ ଚାଳକ ଭାବରେ ଲଗଇନ୍ କରି ପାରିବେ, ଯାହାକି କେବଳ ପ୍ରଶାସନୀୟ ବ୍ଯବହାର ପାଇଁ"
+"ସଂରକ୍ଷିତ ଅଛି"
 
 #: ../src/modules/create_user.py:167
 msgid "_Continue"
-msgstr ""
+msgstr "ଆଗକୁ ବଢ"
 
 #: ../src/modules/create_user.py:168
 msgid "Create _account"
-msgstr ""
+msgstr "ହିସାବ ଖାତା (_a) ସ୍ରୁଷ୍ଟି କର"
 
 #: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "ପ୍ରବେଶ ସଙ୍କେତ ଟି ମେଳ ହେଉ ନାହଁି | ଦୟାକରି ପ୍ରବେଶ ସଙ୍କେତ ଟି କୁ ଆଉଥରେ ଲେଖ"
 
 #: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "ପ୍ରବେଶ ସଙ୍କେତ ଟି ବହୁତ ଛୋଟ | ଦୟାକରି ଅତି କମ ରେ ୬ ଟି ଅକ୍ଷର ବ୍ଯବହାର କର"
 
 #: ../src/modules/create_user.py:210
 #, python-format
@@ -239,6 +283,7 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"%s ଚାଳକ ନାମ ଟି ଗୋଟିଏ ଗୋଟିଏ ସଂରକ୍ଷିତ ନାମ | ଦୟାକରି ଆଉ ଗୋଟିଏ ଚାଳକ ନାମ ଉଲ୍ଲେକ୍ଷିତ କରନ୍ତୁ"
 
 #: ../src/modules/create_user.py:228
 #, python-format
@@ -249,51 +294,75 @@ msgstr ""
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
-msgstr ""
+msgstr "ତାରିଖ ଏବଂ ସମୟ"
 
 #: ../src/modules/date.py:49
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "ଦୟାକରି ତନ୍ତ୍ର ଟି ପାଇଁ ତାରିଖ ଏବଂ ସମୟ କୁ ସେଟ ତରନ୍ତୁ"
 
 #: ../src/modules/display.py:43
 msgid "Display"
-msgstr ""
+msgstr "ପ୍ରଦର୍ଶନ"
 
 #: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "ଦୟାକରି ଆପଣ ବ୍ଯବହାର କରିବାକୁ ଚାହଁୁଥିବା ବିଭେଦନ ଏବଂ ରଙ୍ଗ ର ସ୍ବଚ୍ଛତା ର ଚୟନ କରନ୍ତୁ"
+
+#: ../src/modules/finished.py:19
+#msgid "Finish Setup"
+#msgstr "ବିନ୍ଯାସ ସମାପ୍ତ ହେଲା"
+
+#: ../src/modules/finished.py:33
+#msgid ""
+#"Your system is now set up and ready to use.  Please click the \"Finish\" "
+#"button in the lower right corner to continue."
+#msgstr ""
+#"ବର୍ତ୍ତମାନ ଆପଣଙ୍କ ତନ୍ତ୍ରଟି ର ବିନ୍ଯାସ ସମାପ୍ତ ହୋଇ ସାରିଛି ଏବଂ ଏହା ବ୍ଯବହାର ପାଇଁ ପ୍ରସ୍ତୁତ | ଆଗକୁ ବଢିବା ପାଇଁ ଦୟାକରି"
+#"ଦକ୍ଷିଣ ପାର୍ଶ୍ବ ର ତଳ କେଣ ରେ ଥିବା \"Finish\" ବଟନ୍ କୁ ଦବାନ୍ତୁ"
+
+##: ../src/modules/finished.py:36
+#msgid "Please click the \"Finish\" button in the lower right corner to continue."
+#msgstr "ଆଗକୁ ବଢିବା ପାଇଁ ଦୟାକର ଦକ୍ଷିଣ ପାର୍ଶ୍ବ ର ତଳ କେଣ ରେ ଥିବା \"Finish\" ବଟନ୍ କୁ ଦବାନ୍ତୁ"
+
+##: ../src/modules/networking.py:42
 
 #: ../src/modules/networking.py:43
+
 msgid "Network Setup"
-msgstr ""
+msgstr "ନେଟଓ୍ବାର୍କ ର ବିନ୍ଯାସ"
 
 #: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ଟି ରେ ନିମ୍ନଲିଖିତ ନେଟଓ୍ବାର୍କ ଉପକରଣ ଗୁଡିକ ଖୋଜା ହେଲା:"
 
 #: ../src/modules/networking.py:88
 msgid "Network Device"
-msgstr ""
+msgstr "ନେଟଓ୍ବାର୍କ ଉପକରଣ"
 
 #: ../src/modules/networking.py:90
 msgid "Boot protocol"
-msgstr ""
+msgstr "ବୁଟ୍ ପ୍ରୋଟୋକଲ"
 
 #: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
-msgstr ""
+msgstr "ନେଟଓ୍ବାର୍କ ର ବିନ୍ଯାସ କୁ ପରିବର୍ତ୍ତନ କର...(_C)"
 
 #: ../src/modules/networking.py:142
 msgid "static"
-msgstr ""
+msgstr "ସ୍ଥିର"
 
 #: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
-msgstr ""
+msgstr "ସାଉଣ୍ଡ କାର୍ଡ୍"
 
 #: ../src/modules/soundcard_gui.py:45
+
+#msgid "A sound card has been detected in your computer."
+#msgstr "ଆପଣଙ୍କ କମ୍ପୁଟର ରେ ଗୋଟିଏ ସାଉଣ୍ଡ କାର୍ଡ୍ ଖୋଜା ହେଲା"
+
 msgid "An audio device has been detected in your computer."
 msgstr ""
+
 
 #: ../src/modules/soundcard_gui.py:68
 msgid ""
@@ -301,14 +370,16 @@ msgid ""
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
+"ସାଉଣ୍ଡ ର ନମୁନା ଶୁଣିବା ପାଇଁ \"Play test sound\" ବଟନ କୁ ଦବାନ୍ତୁ | ଆପଣ ତିନି ଟି କ୍ରମନୟ ଶୁଣି ପାରିବା ଉଚିତ"
+"ପ୍ରଥମ ସାଉଣ୍ଡ ଟି ଦକ୍ଷିଣ ଉପପଥ ରେ ଥିବ, ଦ୍ବାତୀୟ ସାଉଣ୍ଡ ଟି ବାମ ଉପପଥ ରେ ଥିବ, ଏବଂ ତ୍ରୁତୀୟ ସାଉଣ୍ଡ ଟି କେନ୍ଦ୍ର ରେ ଥିବ"
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
-msgstr ""
+msgstr "ସମୟ ମଣ୍ଡଳ"
 
 #: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
-msgstr ""
+msgstr "ଦୟାକରି ତନ୍ତ୍ର ଟି ପାଇଁ ସମୟ ମଣ୍ଡଳ କୁ ସେଟ କର"
 
 #: ../src/modules/welcome.py:34
 msgid ""
@@ -316,3 +387,5 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
+"ଆପଣଙ୍କ ତନ୍ତ୍ର ଟି ବ୍ଯବହ୍ରୁତ ହେବା ପୂର୍ବ ରୁ ସେଠାରେ ଆଉ ଅଲ୍ପ କିଛି ସୋପାନ ବାକି ଅଛି | ବିନ୍ଯାସ ପ୍ରତିନିଧୀ ଟି ଆପଣଙ୍କୁ କିଛି ମୌଳିକ"
+"ବିନ୍ଯାସ ପ୍ରକ୍ରିୟା ରେ ସାହାଯ୍ଯ କରିବ | ଆଗକୁ ବଢିବା ପାଇଁ ଦୟାକର ଦକ୍ଷିଣ ପାର୍ଶ୍ବ ର ତଳ କେଣ ରେ ଥିବା \"Next\" ବଟନ୍ କୁ ଦବାନ୍ତୁ"
