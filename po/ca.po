@@ -1,5 +1,5 @@
 # Catalan translations for firstboot package.
-# Copyright (C) 2004 Free Software Foundation
+# Copyright (C) 2004, 2006 Free Software Foundation
 # This file is distributed under the same license as the firstboot package.
 # Xavier Conde Rueda <xavi.conde@gmail.com>, 2003, 2004, 2005, 2006.
 #
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-03-05 15:44+0100\n"
+"PO-Revision-Date: 2006-03-25 11:35+0100\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +90,7 @@ msgstr "_Anterior"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Següent"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -105,7 +105,7 @@ msgstr "_Finalitza"
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr "No s'ha pogut importar el mòdul %s: %s"
+msgstr "no s'ha pogut importar el mòdul %s: %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -207,20 +207,15 @@ msgstr ""
 "continuar."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Usuari del sistema"
+msgstr "Crea un usuari"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
-"És recomanable que creeu un compte personal d'usuari 'username' per a ús "
-"normal (és a dir, per a tasques no administratives). Per crear el compte "
-"personal 'username', proporcioneu la informació demanada."
+msgstr "És recomanable que creeu un compte personal d'usuari 'username' per a ús normal (és a dir, per a tasques no administratives). Per crear el compte personal 'username', proporcioneu la informació demanada."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -286,13 +281,11 @@ msgstr ""
 "nom d'usuari."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr ""
-"El nom d'usuari '%s' és un compte de sistema reservat. Especifiqueu un altre "
-"nom d'usuari."
+msgstr "El directori per a l'usuari «%s» ja existeix. Entreu un altre nom d'usuari."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -340,20 +333,15 @@ msgid "Sound Card"
 msgstr "Targeta de so"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "S'ha detectat una targeta de so en aquest ordinador."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
-"Feu clic al botó de «Reproduir el so» per escoltar un so de prova. Hauríeu "
-"de sentir tres sons consecutius. El primer estarà en el canal dret, el segon "
-"en el canal esquerre, i el tercer al centre."
+msgstr "Feu clic al botó de «Reproduir» per a sentir un so de prova. Hauríeu de sentir tres sons consecutius. El primer des del canal dret, el segon des del canal esquerre, i el tercer des del centre."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -364,15 +352,11 @@ msgid "Please set the timezone for the system."
 msgstr "Especifiqueu el fus horari del sistema."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
-"S'han de seguir uns passos més abans que aquest sistema estigui llest. "
-"L'agent de la configuració us guiarà a través d'una configuració bàsica. Feu "
-"clic al botó «Següent» en el cantó inferior dret per continuar."
+msgstr "S'han de seguir uns passos més abans que aquest sistema estigui llest. L'auxiliar de la configuració us guiarà a través d'una configuració bàsica. Feu clic al botó «Següent» de la part inferior dreta per a continuar."
 
 #~ msgid "_Next"
 #~ msgstr "Següe_nt"
