@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-01-28 16:53+0100\n"
+"PO-Revision-Date: 2006-03-26 23:34+0200\n"
 "Last-Translator: Nikola Štohanzl <niko@srnet.cz>\n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -83,7 +82,7 @@ msgstr "_Zpět"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Další"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -190,25 +189,19 @@ msgstr ""
 "kliknutím na \"OK\"."
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Na cd nebyl nalezen program autorun. Pokračujte kliknutím na \"OK\"."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Uživatel systému"
+msgstr "Vytvořit uživatele"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
-"Doporučuje se pro normální používání (ne správu systému) vytvořit systémové "
-"'jméno uživatele'. Systémové 'jméno uživatele' vytvoříte po zadání "
-"požadovaných informací."
+msgstr "Pro normální používání (ne správu systému) se doporučuje vytvořit 'jméno uživatele'. Pro vytvoření prosím zadejte informace požadované níže."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -274,12 +267,12 @@ msgstr ""
 "uživatele."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Jméno uživatele '%s' je rezervovaný účet systému. Zadejte prosím jiné jméno "
+"Domovský adresář uživatele '%s' již existuje. Zadejte prosím jiné jméno "
 "uživatele."
 
 #: ../src/modules/date.py:46
@@ -327,18 +320,16 @@ msgid "Sound Card"
 msgstr "Zvuková karta"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "Na vašem počítači byla nalezena zvuková karta."
+msgstr "Na vašem počítači bylo nalezeno zvukové zařízení."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Po kliknutí na tlačítko \"Přehrát testovací zvuk\" uslyšíte ukázkový zvuk. "
+"Klikněte na tlačítko \"Přehrát testovací zvuk\" a uslyšíte ukázkový zvuk. "
 "Měli byste slyšet sérii tří zvuků. První zvuk bude z pravého kanálu, druhý z "
 "levého kanálu a třetí z obou."
 
@@ -351,33 +342,12 @@ msgid "Please set the timezone for the system."
 msgstr "Nastavte prosím systémovou časovou zónu."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Před použitím vašeho systému je třeba provést ještě několik kroků. Setup "
+"Je třeba provést ještě několik kroků, než bude Váš systém připraven k použití. Setup "
 "Agent vás nyní provede základním nastavením. Pokračujte prosím kliknutím na "
 "tlačítko \"Další\" v pravém dolním rohu."
 
-#~ msgid "_Next"
-#~ msgstr "_Další"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Nastavení zvukové karty"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Konec nastavení"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Váš systém je nyní nastaven a připraven k použití. Pokračujte prosím "
-#~ "kliknutím na tlačítko \"Dokončit\" v pravém dolním rohu."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Pokračujte prosím kliknutím na tlačítko \"Dokončit\" v pravém dolním rohu."
