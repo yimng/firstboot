@@ -78,7 +78,7 @@ msgstr "_Назад"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Далі"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -193,12 +193,10 @@ msgstr ""
 "Програму autorun не знайдено на CD. Натисніть \"Гаразд\", щоб продовжити."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Користувач системи"
+msgstr "Створення облікового запису користувача"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -269,15 +267,15 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Ім'я '%s' зарезервоване для системи. Вкажіть іншу назву облікового разунку."
+"Ім'я '%s' зарезервоване для системи. Вкажіть іншу назву облікового рахунку."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Ім'я '%s' зарезервоване для системи. Вкажіть іншу назву облікового разунку."
+"Домашній каталог користувача '%s' вже існує. Вкажіть іншу назву облікового рахунку."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -324,18 +322,16 @@ msgid "Sound Card"
 msgstr "Звукова карта"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "У вашому комп'ютері виявлено звукову карту."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Для перевірки звуку натисніть кнопку \"Програти взірець звуку\". Ви повинні "
+"Для перевірки звуку натисніть кнопку \"Відтворити пробний звук\". Ви повинні "
 "почути серію з трьох звуків. Перший повинен бути у правому каналі, другий у "
 "лівому каналі, та третій по центру."
 
@@ -348,32 +344,11 @@ msgid "Please set the timezone for the system."
 msgstr "Вкажіть часовий пояс"
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Лишилось ще декілька кроків, після чого ваша система буде готова до роботи. "
-"Агент налаштовування допоможе вам з настроюванням. Натисніть \"Далі\" для "
-"продовження."
-
-#~ msgid "_Next"
-#~ msgstr "_Далі"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Налаштовування звукової карти"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Завершення налаштовування"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Ваша система налаштована та готова до роботи. Щоб продовжити, натисніть "
-#~ "\"Далі\" у правому нижньому куті."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "Щоб продовжити натисніть \"Далі\" у правому нижньому куті."
+"Помічник налаштовування допоможе вам з налаштовуванням. Для продовження натисніть \"Далі\""
+"у лівому нижньому куті."
