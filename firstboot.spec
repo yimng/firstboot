@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.7
+Version: 1.4.8
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -15,7 +15,7 @@ BuildPreReq: gettext
 Requires: pygtk2
 Requires: metacity
 Requires: rhpl
-Requires: rhpxl
+Requires: rhpxl >= 0.19
 Requires: system-config-display
 Requires: system-config-language
 Requires: system-config-soundcard
@@ -109,6 +109,10 @@ fi
 
 
 %changelog
+* Tue Apr 04 2006 Chris Lumens <clumens@redhat.com> 1.4.8-1
+- Allow firstboot to run in kadischi (#186870).
+- Updated for rhpxl changes.
+
 * Mon Mar 20 2006 Martin Stransky <stransky@redhat.com> 1.4.7-1
 - replaced "Play test button" by "Play" button for s-c-s (#185931)
 - Fix soundcard string (#177425).
