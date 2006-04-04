@@ -42,6 +42,9 @@ class XFirstboot (Firstboot):
     def startGraphicalUI(self):
         import rhpxl.xserver as xserver
         import rhpxl.xhwstate as xhwstate
+        import rhpxl.monitor
+
+        modes = rhpxl.monitor.Modes()
 
         kbd = keyboard.Keyboard()
         (videohw, monitorhw, mousehw) = xserver.probeHW(skipDDCProbe=0,
@@ -54,9 +57,10 @@ class XFirstboot (Firstboot):
 
         if rhpl.getPPCMachine() == "PMac":
             runres = xhwstate.get_valid_resolution(videohw, monitorhw, runres,
-                                                   onPMac=True)
+                                                   modes, onPMac=True)
         else:
-            runres = xhwstate.get_valid_resolution(videohw, monitorhw, runres)
+            runres = xhwstate.get_valid_resolution(videohw, monitorhw, runres,
+                                                   modes)
 
         xsetup_failed = False
         try:
