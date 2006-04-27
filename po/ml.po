@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-03-23 02:11+0530\n"
+"PO-Revision-Date: 2006-04-27 11:12+0530\n"
 "Last-Translator: Ani Peter <apeter@redhat.com>\n"
 "Language-Team: Malayalam\n"
 "MIME-Version: 1.0\n"
@@ -69,6 +69,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
 
 #: ../src/firstbootWindow.py:105
 msgid "_Back"
@@ -89,7 +93,7 @@ msgstr "അവസാനിച്ചു(_F)"
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "%sന്‍റ മൊഡ്യൂള്‍ ഇംപോറ്‍ട്ട് പരാജയപ്പെട്ടു: %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -147,6 +151,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -163,6 +171,11 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
@@ -188,6 +201,9 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -210,6 +226,8 @@ msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Kerberos അല്ലെന്കില്‍ NIS, എന്നീ നെറ്റവറ്‍ക്ക് ഒഥന്‍റിക്കേഷന്‍ നിങ്ങള്‍ക്ക് "
+"ഉപയോഗിക്കണമെന്‍കില്‍ ദയവായി യൂസ് നെറ്റവറ്‍ക്ക് ലോഗിന്‍ എന്ന ബട്ടണ്‍ അമറ്‍ത്തുക."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
@@ -221,6 +239,9 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 
 #: ../src/modules/create_user.py:167
 msgid "_Continue"
@@ -306,6 +327,9 @@ msgid ""
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -321,4 +345,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue."
 
