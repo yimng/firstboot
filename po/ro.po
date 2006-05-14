@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Răzvan Corneliu C.R. VILT <razvan.vilt@linux360.ro>, 2004.
 # , fuzzy
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2004-06-23 13:52+0300\n"
-"Last-Translator: Răzvan Corneliu C.R. VILT <razvan.vilt@linux360.ro>\n"
+"PO-Revision-Date: 2006-05-14 22:45+0200\n"
+"Last-Translator: Felix Kerekes <StTwister@yahoo.com>\n"
 "Language-Team: Romanian <ro-team@linux360.ro>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -71,8 +71,7 @@ msgid ""
 msgstr ""
 "Vă rugăm scrieţi un raport de incident pentru componenta \n"
 "'firstboot' în sitemul Red Hat de urmărire a bug-urilor la adresa \n"
-"http://www.redhat.com/bugzilla.O copie a mesajelor de diagnosticare a fost "
-"salvată în %s \n"
+"http://www.redhat.com/bugzilla.O copie a mesajelor de diagnosticare a fost salvată în %s \n"
 "Aveţi grijă să ataşaţi acest fişier la raportul d-voastră. \n"
 
 #: ../src/firstbootWindow.py:105
@@ -81,23 +80,23 @@ msgstr "_Înapoi"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "Înainte"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Sistemul se va restarta pentru ca unele din selecţii să ia efect."
 
 #: ../src/firstbootWindow.py:304
-#, fuzzy
 msgid "_Finish"
-msgstr "Terminaţi configurarea"
+msgstr "_Termină"
 
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "importarea modulului %s a esuatŞ %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:551
+#: ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Bine aţi venit"
@@ -142,67 +141,49 @@ msgstr "Selectaţi elementul care doriţi să-l modificaţi "
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "CD-uri Adiţionale"
 
 #: ../src/modules/additional_cds.py:65
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "Vă rugăm inseraţi discul etichetat \"Red Hat Enterprise Linux Extras\" pentru a permite instalarea altor programe si plug-in-uri. Puteţi de asemenea să inseraţi discul Documentaţie, sau orice alt disc Red Hat pentru a instala programe suplimentare."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Vă rugăm inseraţi discul de instalare pentru orice program suplimentar."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Pentru a permite suport in tim de rulare pentru aplicatiile pe 32 de biti pe arhitectura Intel Itanium2, trebuie să instalaţi pachetul Intel Execution Lazer de pe discul Extras."
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Instalaţi..."
 
 #: ../src/modules/additional_cds.py:164
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
-"Un CD-ROM nu a fost detectat.  Vă rog introduceţi un CD-ROM în unitate şi "
-"daţi click pe \"OK\" pentru a continua."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "Un CD-ROM nu a fost detectat.  Vă rog introduceţi un CD-ROM în unitate şi daţi click pe \"OK\" pentru a continua."
 
 #: ../src/modules/additional_cds.py:198
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Programul autorun nu a putut fii localizat pe cd. Click pe \"OK\" pentru a "
-"continua."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Programul autorun nu a putut fii localizat pe cd. Click pe \"OK\" pentru a continua."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Serviciile sistemului"
+msgstr "Crează Utilizator"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
-"Este recomandat să creaţi un cont de utilizator normal (non-administrator) "
-"pentruuz personal.  Pentru a creea un astfel de cont, introduceţi "
-"informaţiile cerute."
+msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
+msgstr "Este recomandat să creaţi un cont de utilizator normal (non-administrator) pentru uz personal.  Pentru a creea un astfel de cont, introduceţi informaţiile cerute."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -221,27 +202,16 @@ msgid "Confir_m Password:"
 msgstr "Confir_maţi Parola:"
 
 #: ../src/modules/create_user.py:113
-#, fuzzy
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Dacă aveţi nevoie să utilizaţi servicii de autentificare cum ar fi Kerberos "
-"sau NIS, vă rugăm daţi click pe \"Utilizaţi Autentificare de Reţea\"."
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "Dacă aveţi nevoie să utilizaţi servicii de autentificare cum ar fi Kerberos sau NIS, vă rugăm daţi click pe \"Utilizaţi Autentificare de Reţea\"."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Uti_lizaţi autentificare de reţea..."
 
 #: ../src/modules/create_user.py:159
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"Este foarte recomandat să creaţi un cont personal de utilizator.  Dacă "
-"continuaţi fărăun astfel de cont, veţi putea să vă autentificaţi numai cu "
-"utilizatorul 'root', care este rezervat doar pentru scopuri administrative."
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "Este foarte recomandat să creaţi un cont personal de utilizator.  Dacă continuaţi fărăun astfel de cont, veţi putea să vă autentificaţi numai cu utilizatorul 'root', care este rezervat doar pentru scopuri administrative."
 
 #: ../src/modules/create_user.py:167
 msgid "_Continue"
@@ -260,22 +230,14 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Parola este prea mică.  Vă rog utilizaţi una de cel puţin 6 caractere."
 
 #: ../src/modules/create_user.py:210
-#, fuzzy, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Numele de utilizator '%s' conţine litere mari.  Vă rugăm nu utilizaţi litere "
-"mari în numele de utilizator."
+#, python-format
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "Numele de utilizator '%s' este unul rezervat de sistem.  Vă rugăm specificaţi alt nume de utilizator."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
-msgid ""
-"A home directory for the username '%s' already exists.  Please specify "
-"another username."
-msgstr ""
-"Numele de utilizator '%s' conţine litere mari.  Vă rugăm nu utilizaţi litere "
-"mari în numele de utilizator."
+#, python-format
+msgid "A home directory for the username '%s' already exists.  Please specify another username."
+msgstr "Un director Home pentru utilizatorul '%s' există deja. Vă rugăm specificaţi alt nume de utilizator."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -291,9 +253,7 @@ msgstr "Monitor"
 
 #: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
-"Vă rugăm selectaţi rezoluţia şi adâncimea de culoare pe care doriţi să o "
-"utilizaţi"
+msgstr "Vă rugăm selectaţi rezoluţia şi adâncimea de culoare pe care doriţi să o utilizaţi"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -319,25 +279,18 @@ msgstr "S_chimbă Configurarea Reţelei..."
 msgid "static"
 msgstr "static"
 
-#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43
+#: ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Placă de Sunet"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "O placă de sunet a fost detectată pe sistemul d-voastră."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
-msgid ""
-"Click the \"Play\" button to hear a sample sound.  You should hear a series "
-"of three sounds.  The first sound will be in the right channel, the second "
-"sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
-"Apăsaţi butonul \"Play test sound\" pentru a asculta mostra de sunet.  Ar "
-"trebui să auziţio serie de trei sunete.  Primul ar trebui să fie pe canal-ul "
-"din dreapta, al doilea pe cel din stânga,şi al treilea pe cel din centru."
+msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "Apăsaţi butonul \"Play test sound\" pentru a asculta mostra de sunet.  Ar trebui să auziţio serie de trei sunete.  Primul ar trebui să fie pe canal-ul din dreapta, al doilea pe cel din stânga,şi al treilea pe cel din centru."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -348,23 +301,13 @@ msgid "Please set the timezone for the system."
 msgstr "Vă rugăm configuraţi fusul orar pentru acest sistem."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
-"Mai sunt câţiva paşi de luat până sistemul d-voastră este gata de "
-"utilizare.  Programul de Configurare vă va ajuta acum pentru a efectua "
-"aceste configurări de bază.  Vă rugăm apăsaţi pe butonul \"Înainte\" din "
-"colţul dreapta jos pentru a continua."
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Mai sunt câţiva paşi de luat până sistemul d-voastră este gata de utilizare.  Programul de Configurare vă va ajuta acum pentru a efectua aceste configurări de bază.  Vă rugăm apăsaţi pe butonul \"Înainte\" din colţul dreapta jos pentru a continua."
 
 #~ msgid "_Next"
 #~ msgstr "Î_nainte"
-
 #~ msgid "Sound card configuration"
 #~ msgstr "Configurarea plăcii de reţea"
-
 #~ msgid "Finish Setup"
 #~ msgstr "Terminaţi configurarea"
 
@@ -382,42 +325,35 @@ msgstr ""
 #~ msgstr ""
 #~ "Sistemul d-voastră este acum gata pentru utilizare.  Vă rugăm daţi click "
 #~ "pe butonul \"Next\" din colţul dreapta jos pentru a continua."
-
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr ""
 #~ "Numele de utilizator trebuie să fie de cel mult 33 de caractere lungime."
-
 #~ msgid "The user name may not begin with a number."
 #~ msgstr "Numele de utilizator nu poate să înceapă cu un număr."
-
 #~ msgid ""
 #~ "The user name '%s' contains whitespace.  Please do not include whitespace "
 #~ "in the user name."
 #~ msgstr ""
 #~ "Numele de utilizator '%s' conţine spaţii libere.  Vă rog nu includeţi "
 #~ "spaţii libere în numele de utilizator."
-
 #~ msgid ""
 #~ "The user name '%s' contains punctuation characters.  Please do not use "
 #~ "punctuation in the user name."
 #~ msgstr ""
 #~ "Numele de utilizator '%s' conţine caractere de punctuaţie.  Vă rugăm nu "
 #~ "utilizaţi caractere de punctuaţie în numele de utilizator."
-
 #~ msgid ""
 #~ "The user name '%s' contains uppercase characters.  Please do not use "
 #~ "uppercase characters in the user name."
 #~ msgstr ""
 #~ "Numele de utilizator '%s' conţine litere mari.  Vă rugăm nu utilizaţi "
 #~ "litere mari în numele de utilizator."
-
 #~ msgid ""
 #~ "The user name '%s' contains invalid characters.  Please use only ASCII "
 #~ "characters."
 #~ msgstr ""
 #~ "Numele de utilizator '%s' conţine caractere invalide.  Vă rugăm folosiţi "
 #~ "doar caractere ASCII."
-
 #~ msgid ""
 #~ "The password contains invalid characters.  Please use only ASCII "
 #~ "characters."
@@ -436,7 +372,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Licence Aggrement"
 #~ msgstr "Licenţă"
-
 #~ msgid ""
 #~ "If you have any of the CDs listed below, you can install packages from "
 #~ "them by inserting the CD and clicking the appropriate button."
@@ -444,13 +379,10 @@ msgstr ""
 #~ "Dacă aveţi oricare dintre CD-urile menţionate mai jos, puteţi să "
 #~ "instalaţi pachetede pe ele, dacă le introduceţi şi daţi click pe butonul "
 #~ "corespunzător."
-
 #~ msgid "Please enter a time server."
 #~ msgstr "Vă rugăm introduceţi un server NTP."
-
 #~ msgid "Error"
 #~ msgstr "Eroare"
-
 #~ msgid ""
 #~ "A connection with %s could not be established.  Either %s is not "
 #~ "available or the firewall settings on your computer are blocking NTP "
@@ -458,9 +390,8 @@ msgstr ""
 #~ msgstr ""
 #~ "O conexiune cu %s nu a putut fi realizată. Ori %s nu este disponibil "
 #~ "orifirewall-ul d-voastră blochează conexiunile NTP."
-
 #~ msgid "Contacting NTP server.  Please wait..."
 #~ msgstr "Contactez server-ul NTP.  Vă rugăm aşteptaţi..."
-
 #~ msgid "User Account"
 #~ msgstr "Cont de Utilizator"
+
