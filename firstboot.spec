@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.4.8
-Release: 1
+Release: 2
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -26,8 +26,7 @@ Requires: system-config-date >= 1.7.9
 Requires: system-config-keyboard
 Requires: authconfig-gtk
 Requires: libuser
-Requires: redhat-logos
-Requires: redhat-artwork
+Requires: system-logos
 Requires: firstboot-tui
 ExcludeArch: s390 s390x ppc64
 
@@ -109,6 +108,9 @@ fi
 
 
 %changelog
+* Mon May 15 2006 Chris Lumens <clumens@redhat.com> 1.4.8-2
+- Require system-logos instead of an OS-specific package (#191407).
+
 * Tue Apr 04 2006 Chris Lumens <clumens@redhat.com> 1.4.8-1
 - Allow firstboot to run in kadischi (#186870).
 - Updated for rhpxl changes.
