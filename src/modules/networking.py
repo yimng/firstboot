@@ -118,9 +118,19 @@ class childWindow:
         module_dict = {}
         lines = open("/etc/modprobe.conf").readlines()
         for line in lines:
+            #  Skip empty lines and comments.
+            if line.isspace() or (line != "" and line.lstrip()[0] == '#'):
+                continue
+
             tokens = string.split(line)
-            if string.strip(tokens[0]) == "alias" and string.strip(tokens[1][:3]) == "eth":
-                module_dict[tokens[1]] = tokens[2]
+
+            # If the line isn't formed just like we like it, don't explode.
+            try:
+                if string.strip(tokens[0]) == "alias" and \
+                   string.strip(tokens[1][:3]) == "eth":
+                    module_dict[tokens[1]] = tokens[2]
+            except IndexError:
+                pass
 
         self.deviceStore.clear()
         
