@@ -1,18 +1,20 @@
 # translation of firstboot to Persian
 # Copyright (C) 2003, 2004 Abbas Izad.
-# Copyright (C) 2005 Sharif FarsiWeb, Inc.
+# Copyright (C) 2005, 2006 Sharif FarsiWeb, Inc.
 # Abbas Izad <abbasizad@hotmail.com>, 2003, 2004.
 # Hamed Malek <hamed@bamdad.org>, 2005
-# Meelad Zakaria <meelad@farsiweb.info>, 2005.
+# Meelad Zakaria <meelad@farsiweb.info>, 2005, 2006.
+# Roozbeh Pournader <roozbeh@farsiweb.info>, 2006.
+# Elnaz Sarbar <elnaz@farsiweb.info>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: firstboot 1.3.42\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2005-04-14 13:06+0430\n"
-"Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
-"Language-Team: Persian <fa@li.org>\n"
+"PO-Revision-Date: 2006-05-03 21:17+0330\n"
+"Last-Translator: ٍElnaz Sarbar <elnaz@farsiweb.info>\n"
+"Language-Team: Persian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,11 +25,11 @@ msgstr "خروج"
 
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr "توافق‌نامه‌ی مجوز"
+msgstr "توافق‌نامهٔ مجوز"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr "_بله، من این توافق‌نامه‌ی مجوز را می‌پذیرم"
+msgstr "_بله، من این توافق‌نامهٔ مجوز را می‌پذیرم"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
@@ -35,11 +37,13 @@ msgstr "‌_خیر، نمی‌پذیرم"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "آیا می‌خواهید که توافق‌نامه‌ی مجوز را دوباره خوانده یا تجدید نظر نمایید؟"
+msgstr ""
+"آیا می‌خواهید توافق‌نامهٔ مجوز را دوباره بخوانید یا در پذیرش آن تجدید نظر "
+"نمایید؟"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
-msgstr "_‌بازخوانی مجوز"
+msgstr "_‌خواندن مجدد مجوز"
 
 #: ../src/eula_strings.py:32
 msgid "_Shut down"
@@ -48,7 +52,7 @@ msgstr "خا_‌موش کردن"
 #: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "‌خطایی در پیمانه‌ی %s رخ داده است."
+msgstr "‌خطایی در پیمانهٔ %s رخ داده است."
 
 #: ../src/exceptionWindow.py:52
 #, python-format
@@ -57,9 +61,6 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"از آنجا که پیمانه‌ی %s مشکلی دارد، مأمور \n"
-"برپاسازی ردهت این پیمانه را بار نمی‌کند و برای\n"
-"اجرای پیمانه‌های باقیمانده اقدام خواهد کرد."
 
 #: ../src/exceptionWindow.py:56
 #, python-format
@@ -69,10 +70,6 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"لطفاً یک اشکال تحت «firstboot» در سیستم پی‌گیری اشکال رِدهت\n"
-"به نشانی http://www.redhat.com/bugzilla ارسال کنید.\n"
-"نسخه‌ای از خروجی اشکال‌زدایی در %s ذخیره شده است.\n"
-"به یاد داشته باشید که آن پرونده را به گزارش اشکال پیوست کنید.\n"
 
 #: ../src/firstbootWindow.py:105
 msgid "_Back"
@@ -87,14 +84,13 @@ msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
 #: ../src/firstbootWindow.py:304
-#, fuzzy
 msgid "_Finish"
-msgstr "پایان برپاسازی"
+msgstr ""
 
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr "وارد کردن پیمانه‌ی %s شکست خورد: %s"
+msgstr "وارد کردن پیمانهٔ %s شکست خورد: %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -127,7 +123,7 @@ msgstr "سرویس‌های سیستم"
 
 #: ../src/textWindow.py:40
 msgid "Timezone configuration"
-msgstr "پیکربندی منطقه‌ی زمانی"
+msgstr "پیکربندی منطقهٔ زمانی"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
@@ -152,6 +148,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"لطفاً دیسکی را که برچسب «اضافات لینوکس انترپرایز رِدهَت» دارد وارد کنید تا نصب "
+"متصل‌شونده‌ها و برنامه‌های طرف سوم ممکن شود. همچنین می‌توانید دیسک مستندات یا "
+"دیسک‌های دیگر ارائه شده توسط رِدهَت را وارد کنید تا نرم‌افزارهای اضافی نصب شوند."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -180,27 +179,20 @@ msgstr ""
 "«تأیید» کلیک کنید."
 
 #: ../src/modules/additional_cds.py:198
-#, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"نمی‌توان برنامه‌ی اجرای‌خودکار را در سی‌دی پیدا کرد. برای ادامه روی «تأیید» کلیک "
-"کنید."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "کاربر سیستم"
+msgstr ""
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"توصیه می‌شود که یک نام کاربری برای استفاده‌ی عادی (غیر-مدیریتی) از سیستم ایجاد "
-"کنید. برای ایجاد نام کاربری، لطفاً‌ اطلاعات خواسته شده در زیر را ارائه کنید."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -208,7 +200,7 @@ msgstr "_نام کاربری:"
 
 #: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
-msgstr "نام _‌کامل:"
+msgstr "نام و نام _خانوادگی:"
 
 #: ../src/modules/create_user.py:90
 msgid "_Password:"
@@ -216,20 +208,17 @@ msgstr "_گذرواژه:"
 
 #: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
-msgstr "_تصدیق گذرواژه:"
+msgstr "_تکرار گذرواژه:"
 
 #: ../src/modules/create_user.py:113
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"اگر نیاز به استفاده از تأیید هویت شبکه‌ای مانند Kerberos یا NIS دارید، لطفاً "
-"روی دکمه‌ی «استفاده از ورود به شبکه» کلیک کنید."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
-msgstr "استفاده از _ورود به شبکه..."
+msgstr "‌استفاده از _ورود به سیستم شبکه‌ای..."
 
 #: ../src/modules/create_user.py:159
 msgid ""
@@ -237,13 +226,13 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"به شدت توصیه می‌شود که یک حساب کاربری شخصی ایجاد گردد. اگر بدون چنین حسابی "
-"ادامه دهید، فقط با  root می‌توانید وارد سیستم شوید، که تنها برای استفاده‌ی "
+"به شدت توصیه می‌شود که یک حساب کاربری شخصی ایجاد کنید. اگر بدون چنین حسابی "
+"ادامه دهید، فقط با حساب root می‌توانید وارد سیستم شوید، که تنها برای استفادهٔ "
 "مدیریتی رزرو شده است."
 
 #: ../src/modules/create_user.py:167
 msgid "_Continue"
-msgstr "_ادامه"
+msgstr "ا_دامه"
 
 #: ../src/modules/create_user.py:168
 msgid "Create _account"
@@ -251,7 +240,7 @@ msgstr "ایجاد _حساب"
 
 #: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "گذرواژه‌ها مطابقت نمی‌کنند.  لطفاً گذرواژه را دوباره وارد کنید."
+msgstr "گذرواژه‌ها مطابقت نمی‌کنند. لطفاً گذرواژه را دوباره وارد کنید."
 
 #: ../src/modules/create_user.py:199
 msgid "The password is too short.  Please use at least 6 characters."
@@ -263,17 +252,15 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفاً نام کاربری دیگری را تعیین "
+"نام کاربر '%s' یک حساب سیستم رزرو شده است. لطفاً نام کاربری دیگری را تعیین "
 "کنید."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"نام کاربر '%s' یک حساب سیستم رزرو شده‌ است. لطفاً نام کاربری دیگری را تعیین "
-"کنید."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -317,159 +304,31 @@ msgstr "ایستا"
 
 #: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
-msgstr "کارت صوتی"
+msgstr "کارت صدا"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "یک کارت صوتی بر روی رایانه‌ی شما تشخیص داده شده است."
+msgstr ""
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"برای شنیدن نمونه‌ی صوتی روی دکمه‌ی «پخش صوت آزمایشی» کلیک کنید. باید دنباله‌ای "
-"از سه صوت را بشنوید.  اولین صوت در کانال راست، دومین صوت در کانال چپ، و "
-"سومین صوت در مرکز خواهد بود."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
-msgstr "منطقه‌ی زمانی"
+msgstr "منطقهٔ زمانی"
 
 #: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
-msgstr "لطفاً منطقه‌ی زمانی سیستم را تعیین کنید."
+msgstr "لطفاً منطقهٔ زمانی سیستم را تعیین کنید."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"قبل از اینکه سیستم شما آماده‌ی استفاده شود، چند مرحله‌ی دیگر وجود دارد. اکنون "
-"مأمور برپاسازی شما را در انجام چند پیکربندی پایه‌ای راهنمایی خواهد کرد. لطفاً "
-"دکمه‌ی «بعدی» را در گوشه‌ی پایین و راست کلیک کنید."
 
-#~ msgid "_Next"
-#~ msgstr "_بعدی"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "پیکربندی کارت صوتی"
-
-#~ msgid "Finish Setup"
-#~ msgstr "پایان برپاسازی"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "سیستم شما اکنون برپاسازی شده و آماده‌ی استفاده است. برای ادامه لطفاً روی "
-#~ "دکمه‌ی «بعدی» در گوشه‌ی پایین و راست کلیک کنید."
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "برای ادامه لطفاً روی دکمه‌ی «بعدی» در گوشه‌ی پایین و راست کلیک کنید."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "نام کاربر باید کوتاه‌تر از ۳۳ نویسه باشد."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "نام کاربر نباید با یک عدد شروع شود."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "نام کاربر «%s» حاوی فاصله است. لطفاً در نام کاربری از فاصله استفاده نکنید."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "نام کاربر «%s» حاوی نویسه‌های نقطه‌گذاری است. لطفاً از علائم نقطه‌گذاری در "
-#~ "نام کاربر استفاده نکنید."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "نام کاربر '%s' حاوی نویسه‌های کازه بالایی می‌باشد. لطفاً از نویسه‌های کازه "
-#~ "بالایی در نام کاربر استفاده نکنید."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "نام کاربر «%s» حاوی نویسه‌های نامعتبر است. لطفاً فقط از نویسه‌های ASCII "
-#~ "استفاده کنید."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "این گذرواژه حاوی نویسه‌های نامعتبر است. لطفاً فقط از نویسه‌های ASCII استفاده "
-#~ "کنید."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "نام «%s» حاوی نویسه‌های غیر معتبر است. لطفاً فقط از نویسه‌های ASCII استفاده "
-#~ "کنید."
-
-#, fuzzy
-#~ msgid "Licence Aggrement"
-#~ msgstr "توافق‌نامه‌ی جواز"
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "اگر شما هر یک از سی‌دی‌های فهرست شده در زیر را دارید، می‌توانید بسته‌های بر "
-#~ "روی آنها را توسط داخل کردن سی‌دی و کلیک بر دکمه‌ی مناسب نصب کنید."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "لطفاً یک کارگزار زمان را وارد کنید."
-
-#~ msgid "Error"
-#~ msgstr "خطا"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "اتصالی با %s نتوانست برقرار گردد. یا %s در دسترس نمی‌باشد یا تنظیمات "
-#~ "دیوارآتش بر روی رایانه‌ی شما اتصالات NTP را سد می‌کند."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "در حال تماس با کارگزار NTP. لطفاً صبر کنید..."
-
-#~ msgid "User Account"
-#~ msgstr "حساب کاربر"
-
-#~ msgid "Mouse configuration "
-#~ msgstr "پیکربندی موشی"
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "اولین‌آغاز، یک بار بر این سیستم قبلا اجرا شده است.\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "برای اجرای اولین‌آغاز از خط فرمان، فرمان‌های بدنبال آمده را اجرا کنید:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "برای اجرای اولین‌آغاز هنگام راه‌اندازی سیستم، فرمان‌های بدنبال آمده را اجرا "
-#~ "کنید:"
