@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.8
-Release: 2
+Version: 1.4.9
+Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -108,6 +108,10 @@ fi
 
 
 %changelog
+* Fri May 19 2006 Chris Lumens <clumens@redhat.com> 1.4.9-1
+- Make /etc/modprobe.conf reading more robust (#191819).
+- Don't try to call readHTML from anaconda's ICS.
+
 * Mon May 15 2006 Chris Lumens <clumens@redhat.com> 1.4.8-2
 - Require system-logos instead of an OS-specific package (#191407).
 
