@@ -42,7 +42,6 @@ class DisplayWindow(FirstbootModuleWindow):
     runPriority = 105
     moduleName = _("Display")
     windowTitle = moduleName
-    htmlTag = "display"
     shortMessage = _("Please select the resolution and color depth that you wish to use")
 
     def getNext(self):

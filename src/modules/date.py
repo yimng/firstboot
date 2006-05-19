@@ -45,7 +45,6 @@ class TimeWindow(FirstbootModuleWindow):
     runPriority = 100
     moduleName = _("Date and Time")
     windowTitle = moduleName
-    htmlTag = "time"
     shortMessage = _("Please set the date and time for the system.")
 
     def getNext(self):

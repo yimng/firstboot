@@ -23,7 +23,6 @@ from rhpl.translate import _, N_
 
 class FirstbootModuleWindow:
     moduleName = None
-    htmlTag = None
     windowTitle = None
     shortMessage = None
     icon = None
@@ -39,8 +38,6 @@ class FirstbootModuleWindow:
     def setupICS(self):
         """Sets up anaconda install interface."""
 
-        if self.htmlTag:
-            self.ics.readHTML(self.htmlTag)
         if self.windowTitle:
             self.ics.setTitle(_(self.windowTitle))
 

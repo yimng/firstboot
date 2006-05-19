@@ -46,7 +46,6 @@ class TimeWindow(FirstbootModuleWindow):
     moduleName = _("Timezone")
     windowTitle = moduleName
     moduleClass = "reconfig"
-    htmlTag = "timezone"
     shortMessage = _("Please set the timezone for the system.")
 
     def getNext(self):
