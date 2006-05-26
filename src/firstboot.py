@@ -55,7 +55,7 @@ class Firstboot:
     #Let's check to see if firstboot should be run or not
     #If we're in debug mode, run anyway even if the file exists.
     def mayRun(self):
-        if not self.doDebug:
+        if not self.doDebug and not self.doReconfig:
             #Well first, is this even being run as root?
             if os.getuid() > 0 or os.geteuid() > 0:
                print "You must be root to run firstboot."
