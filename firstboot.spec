@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.9
+Version: 1.4.10
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,9 @@ fi
 
 
 %changelog
+* Fri May 26 2006 Chris Lumens <clumens@redhat.com> 1.4.10-1
+- Fix reconfig mode.
+
 * Fri May 19 2006 Chris Lumens <clumens@redhat.com> 1.4.9-1
 - Make /etc/modprobe.conf reading more robust (#191819).
 - Don't try to call readHTML from anaconda's ICS.
