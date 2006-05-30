@@ -98,7 +98,12 @@ class FirstbootModuleWindow:
             msgLabel.set_alignment(0.0, 0.5)
             internalVBox.pack_start(msgLabel, False)
 
-        internalVBox.pack_start(self.myVbox, True)
+        # Some modules don't have a myVbox defined, so don't raise a
+        # traceback window here.
+        try:
+            internalVBox.pack_start(self.myVbox, True)
+        except:
+            return None
 
         toplevel = gtk.VBox()
         toplevel.pack_start(internalVBox, True)

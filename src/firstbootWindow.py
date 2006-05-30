@@ -62,9 +62,11 @@ class firstbootWindow:
 
         # Create the initial window and a vbox to fill it with.
         self.win = gtk.Window()
-        self.win.set_keep_below(True)
         self.win.set_position(gtk.WIN_POS_CENTER)
         self.win.set_decorated(False)
+
+        if not self.doReconfig:
+            self.win.set_keep_below(True)
 
         x_screen = gtk.gdk.screen_width()
         y_screen = gtk.gdk.screen_height()
@@ -455,7 +457,12 @@ class firstbootWindow:
             if self.doDebug:
                 try:
                     print "calling", module.moduleName
-                    vbox, pix, title = module.launch(self.doDebug)
+                    result = module.launch(self.doDebug)
+
+                    if result is None:
+                        continue
+                    else:
+                        vbox, pix, title = result
                 except:
                     import exceptionWindow
                     (ty, value, tb) = sys.exc_info()
@@ -465,7 +472,12 @@ class firstbootWindow:
                     pass                    
             else:
                 try:
-                    vbox, pix, title = module.launch() 
+                    result = module.launch()
+
+                    if result is None:
+                        continue
+                    else:
+                        vbox, pix, title = result
                 except:
                     import exceptionWindow
                     (ty, value, tb) = sys.exc_info()
