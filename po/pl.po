@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-01-06 22:14+0200\n"
+"PO-Revision-Date: 2006-04-18 19:21+0200\n"
 "Last-Translator: Marek Garbaczewski <mrgary@fic.uni.lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -79,7 +79,7 @@ msgstr "_Wstecz"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Dalej"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -196,20 +196,18 @@ msgstr ""
 "kontynuować."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Użytkownik systemowy"
+msgstr "Utwórz użytkownika"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Zalecane jest utworzenie prywatnego konta użytkownika do zwykłego "
-"(nieadministracyjnego) używania systemu. Aby utworzyć prywatne konto, podaj "
-"wymagane informacje poniżej."
+"Zalecane jest utworzenie \"nazwy użytkownika\" do zwykłego "
+"(nieadministracyjnego) używania systemu. Aby utworzyć systemową \"nazwę "
+"użytkownika\", podaj wymagane informacje poniżej."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -275,13 +273,13 @@ msgstr ""
 "nazwę użytkownika."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Nazwa użytkownika \"%s\" jest zarezerwowanym kontem systemowym. Podaj inną "
-"nazwę użytkownika."
+"Folder domowy dla nazwy użytkownika \"%s\" już istnieje. Podaj inną nazwę "
+"użytkownika."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -328,20 +326,17 @@ msgid "Sound Card"
 msgstr "Karta dźwiękowa"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "Karta dźwiękowa została wykryta w komputerze."
+msgstr "Urządzenie dźwiękowe zostało wykryte w komputerze."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Naciśnij na \"Odtwórz dźwięk próbny\", aby usłyszeć przykładową melodię. "
-"Powinieneś usłyszeć trzy dźwięki. Pierwszą w prawym głośniku, drugą w lewym, "
-"a trzecią w centrum."
+"Naciśnij \"Odtwórz\", aby usłyszeć przykładowy dźwięk. Powinieneś usłyszeć "
+"trzy dźwięki. Pierwszą w prawym głośniku, drugą w lewym, a trzecią w centrum."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -352,7 +347,6 @@ msgid "Please set the timezone for the system."
 msgstr "Ustaw strefę czasową dla systemu."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -361,24 +355,3 @@ msgstr ""
 "Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do używania. "
 "Agent instalacji przeprowadzi cię przez podstawową konfigurację. Naciśnij "
 "\"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
-
-#~ msgid "_Next"
-#~ msgstr "_Dalej"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Konfiguracja karty dźwiękowej"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Koniec instalacji"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "System został zainstalowany i jest już gotowy do użycia. Naciśnij "
-#~ "\"Zakończ\" w prawym dolnym rogu okna, aby kontynuować."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Naciśnij przycisk \"Zakończ\" w prawym dolnym rogu, aby kontynuować."
