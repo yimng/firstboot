@@ -94,7 +94,7 @@ if __name__ == "__main__":
     # Check to see if we're in runlevel 3.  If so, call text UI.  Otherwise,
     # we set up a graphical UI - take over rhgb's X server if it's running or
     # create our own if not.
-    if fb.doDebug or fb.doReconfig:
+    if fb.doDebug:
         from firstbootWindow import firstbootWindow
         firstbootWindow(fb)
     elif (getRunlevel() == 3 and not fb.forcegui) or noX == True:
