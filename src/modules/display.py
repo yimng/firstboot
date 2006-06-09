@@ -76,7 +76,14 @@ class DisplayWindow(FirstbootModuleWindow):
 
     def launch(self, doDebug=None):
         self.doDebug = doDebug
-        self.setupScreen()
+
+        # Don't traceback on the no video card case, since it doesn't look
+        # like s-c-display is ever going to fix it.
+        try:
+            self.setupScreen()
+        except AttributeError:
+            return None
+
         return self.mainVBox, self.icon, self.windowTitle
 
     def apply(self, *args):
