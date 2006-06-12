@@ -83,7 +83,7 @@ class Firstboot:
         screen = snack.SnackScreen()
         result = 0
 
-        while result != -1:
+        while result >= 0:
             # Keep running the program until either the timer has expired or
             # the user pressed Exit
             screen = snack.SnackScreen()
@@ -93,4 +93,15 @@ class Firstboot:
             # They're done with firstboot.  Exit for good.
             screen.finish()
             firstbootBackend.writeSysconfigFile(self.doDebug)
+
+            if self.doReconfig:
+                try:
+                    os.unlink("/etc/reconfigSys")
+                except:
+                    pass
+
+            os._exit(0)
+        elif result == -2:
+            # Timer expired.  Don't remove the reconfig file if it exists.
+            screen.finish()
             os._exit(0)

@@ -61,7 +61,7 @@ class TextWindow:
 
         if answer == "TIMER":
             #We've reached the timeout limit.  Let's return -1
-            return -1
+            return -2
 
         button = bb.buttonPressed(answer)
 

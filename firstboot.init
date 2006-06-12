@@ -32,7 +32,7 @@ case "$1" in
  start)
 	action=run
 
-   [ -f "$LOCKFILE" ] && exit 0
+	[ -f "$LOCKFILE" ] && exit 0
 
 	if [ -f "$FILENAME" ] && ! grep -q '^RUN_FIRSTBOOT=YES' "$FILENAME"; then
 	    action=skip
@@ -56,11 +56,10 @@ case "$1" in
 	if [ $action = reconfig ]; then
 	    echo -n $"Running system reconfiguration tool"
 	    /usr/sbin/firstboot --reconfig
-	    rm -f /etc/reconfigSys
 	    exit 0
 	fi
 
-   touch $LOCKFILE
+	touch $LOCKFILE
 	/usr/sbin/firstboot
 	RETVAL=$?
 
