@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.10
+Version: 1.4.11
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,11 @@ fi
 
 
 %changelog
+* Mon Jun 12 2006 Chris Lumens <clumens@redhat.com> 1.4.11-1
+- Don't traceback on the display module if there's no display hardware
+  (#142522).
+- Don't forget about reconfig mode if the timer expires (#170609).
+
 * Fri May 26 2006 Chris Lumens <clumens@redhat.com> 1.4.10-1
 - Fix reconfig mode.
 
