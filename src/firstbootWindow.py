@@ -223,7 +223,7 @@ class firstbootWindow:
         #Kill the window manager
             os.kill(self.wm_pid, 15)
 
-        if self.fb.doReconfig:
+        if self.doReconfig:
             try:
                 os.unlink("/etc/reconfigSys")
             except:
