@@ -49,6 +49,11 @@ class DisplayWindow(FirstbootModuleWindow):
     
     def setupScreen(self):
         (xconfig, xconfigpath) = xf86config.readConfigFile()
+
+        # If there is no X config file, xf86config gives us back a None.
+        # This could happen in the headless case.
+        if not xconfig:
+            return None
         
         hardware_state = XF86HardwareState(xconfig)
         vc = rhpxl.videocard.VideoCardInfo()
@@ -74,17 +79,15 @@ class DisplayWindow(FirstbootModuleWindow):
         internalVBox.pack_start(vbox, True)
         self.mainVBox.pack_start(internalVBox, True)
 
+        return True
+
     def launch(self, doDebug=None):
         self.doDebug = doDebug
 
-        # Don't traceback on the no video card case, since it doesn't look
-        # like s-c-display is ever going to fix it.
-        try:
-            self.setupScreen()
-        except AttributeError:
+        if not self.setupScreen():
             return None
-
-        return self.mainVBox, self.icon, self.windowTitle
+        else:
+            return self.mainVBox, self.icon, self.windowTitle
 
     def apply(self, *args):
         if self.doDebug:
