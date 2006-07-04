@@ -6,20 +6,21 @@
 # Noriko Mizumoto <noriko@redhat.com>, 2003, 2005.
 # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004.
 # Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2004, 2005, 2006.
+# Kiyoto James Hashida <khashida@redhat.com>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-03-25 07:56+0900\n"
-"Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
-"Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
+"PO-Revision-Date: 2006-07-04 14:04\n"
+"Last-Translator: Kiyoto James Hashida <khashida@redhat.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -88,8 +89,7 @@ msgstr "進む(_F)"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"行われた選択を有効にするためにはここでシステムを再起動する必要があります。"
+msgstr "行われた選択を有効にするためにはここでシステムを再起動する必要があります。"
 
 #: ../src/firstbootWindow.py:304
 msgid "_Finish"
@@ -177,7 +177,7 @@ msgstr ""
 "\n"
 "\n"
 "Intel の Itanium2 アーキテクチャーで 32-bit アプリケーションのランタイムを有"
-"効にするため、追加ディスクから Intel Execution Layer パッケージをインストール"
+"効にするため、エクストラディスクから Intel Execution Layer パッケージをインストール"
 "してください。"
 
 #: ../src/modules/additional_cds.py:118
@@ -193,8 +193,7 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "オートランプログラムが CD 上に見つかりません。 \"OK\" をクリックして継続しま"
 "す。"
@@ -209,8 +208,8 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"通常(管理業務以外)の使用には 'username' を作成されることをお薦め"
-"します。システムの 'username' を作成するには、以下の要求される情報を準備して"
+"通常(管理業務以外)の使用には 「ユーザー名」 を作成されることをお薦め"
+"します。システムの 「ユーザー名」 を作成するには、以下の要求される情報を準備して"
 "ください。"
 
 #: ../src/modules/create_user.py:76
@@ -341,7 +340,7 @@ msgid ""
 msgstr ""
 "\"再生\"ボタンをクリックしてサンプルサウンドを聞いてください。"
 "連続して 3 つの音が聞こえるはずです。最初の音は、"
-"右のチャンネルで 2 番目の音が左側のチャンネルです。"
+"右のチャンネルで 2 番目の音が左のチャンネルです。"
 "3 番目の音は中央となります。"
 
 #: ../src/modules/timezone.py:46
@@ -362,68 +361,3 @@ msgstr ""
 "エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
 "\"進む\" ボタンをクリックして続けて下さい。"
 
-#~ msgid "_Next"
-#~ msgstr "次へ(_N)"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "サウンドカード設定"
-
-#~ msgid "Finish Setup"
-#~ msgstr "セットアップを終了"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "システムが設定できましたので使用できる状態になりました。右下隅にある \"終"
-#~ "了\" ボタンをクリックして続けてください。"
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "右下隅にある \"終了\" ボタンをクリックして続けてください。"
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "ユーザー名は 33 文字以下でなければなりません。"
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "ユーザー名は数字で始まってはいけません。"
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "ユーザー名 '%s' には空白があります。ユーザー名に空白を入れないでください。"
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "ユーザー名 '%s' には句読点があります。ユーザー名には句読点は使用しないで下"
-#~ "さい。"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "ユーザー名 '%s' には大文字が含まれています。ユーザー名には大文字を含めない"
-#~ "で下さい。"
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "ユーザー名 '%s' には無効な文字が含まれています。ASCII文字のみを使用して下"
-#~ "さい。"
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "パスワードは無効な文字を含んでいます。ASCII 文字のみを使用して下さい。"
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "名前 '%s' には無効な文字が含まれています。文字、数字、空白とアンダースコア"
-#~ "の文字のみを使用してください。"
