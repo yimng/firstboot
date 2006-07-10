@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.12
+Version: 1.4.13
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,9 @@ fi
 
 
 %changelog
+* Fri Jul 10 2006 Chris Lumens <clumens@redhat.com> 1.4.13-1
+- Better fix for the no display hardware case (#192808).
+
 * Wed Jun 21 2006 Chris Lumens <clumens@redhat.com> 1.4.12-1
 - Update translation files (#195010).
 - Fix traceback on exiting (#196128).
