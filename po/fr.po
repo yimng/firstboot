@@ -1,6 +1,7 @@
 # translation of fr.po to 
 # translation of fr.po to
 # translation of fr.po to
+# translation of fr.po to
 # translation of fr.po to French
 # Copyright (C) 2004 Free Software Foundation
 # Audrey Simons <asimons@redhat.com>, 2003, 2004.
@@ -13,7 +14,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-07-14 13:35+1000\n"
+"PO-Revision-Date: 2006-07-17 13:59+1000\n"
 "Last-Translator: \n"
 "Language-Team:  <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +63,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Un problème s'étant produit dans le module %s, \n"
-"l'agent de mise à jour Red Hat ne le chargera pas et \n"
+"l'agent de mise à jour de Red Hat ne le chargera pas et \n"
 "essaiera d'exécuter les autres modules."
 
 #: ../src/exceptionWindow.py:56
@@ -73,8 +74,9 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Veuillez signaler le bogue concernant « firstboot » dans le Bug Tracking System\n"
-"de Red Hat à l'adresse suivante : http://www.redhat.com/buzilla. \n"
+"Veuillez signaler le bogue concernant « firstboot » dans le système\n"
+"de suivi de bogues de Red Hat à l'adresse suivante : \n"
+"http://www.redhat.com/buzilla. \n"
 "Une copie de la sortie de débogage a été sauvegardée dans %s. \n"
 "Veillez à bien joindre ce fichier au rapport de bogues.\n"
 
@@ -92,7 +94,7 @@ msgstr "Le système doit maintenant redémarrer pour prendre en compte certaines
 
 #: ../src/firstbootWindow.py:304
 msgid "_Finish"
-msgstr "_Terminé"
+msgstr "_Terminer"
 
 #: ../src/firstbootWindow.py:399
 #, python-format
@@ -152,11 +154,11 @@ msgstr "CD-ROM supplémentaires"
 
 #: ../src/modules/additional_cds.py:65
 msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Veuillez insérer le disque libellé \"Red Hat Enterprise Linux Paquetages Supplémentaires\" pour permettre l'installation de plug-ins et applications tiers.  Vous souhaiterez peut-être également insérer le disque de Documentation ou tout autre disque fourni par Red Hat afin d'installer des logiciels supplémentaires à ce moment-là. "
+msgstr "Veuillez insérer le disque libellé \"Red Hat Enterprise Linux Paquetages Supplémentaires\" pour permettre l'installation de plug-ins et d'applications tiers.  Vous souhaiterez peut-être également insérer le disque de Documentation ou tout autre disque fourni par Red Hat afin d'installer des logiciels supplémentaires à ce moment-là. "
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "Veuillez maintenant insérer les cédéroms additionnels d'installation."
+msgstr "Veuillez maintenant insérer les CD-ROM additionnels d'installation."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -183,7 +185,7 @@ msgstr "Impossible de trouver le programme autorun sur le CD-ROM. Veuillez cliqu
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
-msgstr "Créer l'utilisateur"
+msgstr "Créer un utilisateur"
 
 #: ../src/modules/create_user.py:66
 msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
@@ -236,12 +238,12 @@ msgstr "Le mot de passe est trop court. Il doit comporter au moins 6 caractères
 #: ../src/modules/create_user.py:210
 #, python-format
 msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Le nom d'utilisateur '%s' est un compte système réservé. Veuillez s'il vous plaît en spécifier un autre."
+msgstr "Le nom d'utilisateur '%s' est un compte système réservé. Veuillez en spécifier un autre."
 
 #: ../src/modules/create_user.py:228
 #, python-format
 msgid "A home directory for the username '%s' already exists.  Please specify another username."
-msgstr "Un répertoire personnel correspondant à l'utilisateur '%s' existe déjà. Veuillez s'il vous plaît spécifier un autre nom d'utilisateur."
+msgstr "Un répertoire personnel correspondant à l'utilisateur '%s' existe déjà. Veuillez spécifier un autre nom d'utilisateur."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -261,7 +263,7 @@ msgstr "Veuillez sélectionner la résolution et la profondeur des couleurs que 
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
-msgstr "Configuration du réseau "
+msgstr "Configuration réseau "
 
 #: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
