@@ -45,7 +45,7 @@ class DisplayWindow(FirstbootModuleWindow):
     shortMessage = _("Please select the resolution and color depth that you wish to use")
 
     # Disabled for now.
-    skipMe = True
+    skipme = True
 
     def getNext(self):
         pass
