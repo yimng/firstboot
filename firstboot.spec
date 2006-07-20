@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.14
+Version: 1.4.15
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,9 @@ fi
 
 
 %changelog
+* Thu Jul 20 2006 Chris Lumens <clumens@redhat.com> 1.4.15-1
+- Really disable the display module.
+
 * Wed Jul 19 2006 Chris Lumens <clumens@redhat.com> 1.4.14-1
 - Disable the display module for now.
 
