@@ -51,7 +51,7 @@ class SoundWindow:
         self.soundcardBackend = soundcardBackend.soundcardBackend()
         
     def launch(self, doDebug = None):
-        cards = self.soundcardBackend.probeCards()
+        cards = self.soundcardBackend.getCardArray()
 
         if cards == []:
             return None, None, None
