@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.15
+Version: 1.4.16
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,11 @@ fi
 
 
 %changelog
+* Mon Jul 24 2006 Chris Lumens <clumens@redhat.com> 1.4.16-1
+- Fix system-config-soundcard API change.
+- Make sure firstboot starts after HAL (#199899).
+- Fix X startup race condition (Charlotte Richardson).
+
 * Thu Jul 20 2006 Chris Lumens <clumens@redhat.com> 1.4.15-1
 - Really disable the display module.
 
