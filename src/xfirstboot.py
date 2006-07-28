@@ -40,35 +40,34 @@ class XFirstboot (Firstboot):
     # Initializes the UI for firstboot by starting up an X server and
     # window manager, but returns control to the caller to proceed.
     def startGraphicalUI(self):
-        import rhpxl.xserver as xserver
+        import rhpxl.xserver
         import rhpxl.xhwstate as xhwstate
         import rhpxl.monitor
 
-        modes = rhpxl.monitor.Modes()
-
-        kbd = keyboard.Keyboard()
-        (videohw, monitorhw, mousehw) = xserver.probeHW(skipDDCProbe=0,
-                                                        skipMouseProbe=0)
+        xserver = rhpxl.xserver.XServer()
+        xserver.probeHW(skipDDCProbe=0, skipMouseProbe=0)
+        xserver.setHWState()
+        xserver.keyboard = keyboard.Keyboard()
 
         if self.lowRes:
-            runres = "640x480"
+            xserver.resolution = "640x480"
         else:
-            runres = "800x600"
+            xserver.resolution = "800x600"
+
+        modes = rhpxl.monitor.Modes()
 
         if rhpl.getPPCMachine() == "PMac":
-            runres = xhwstate.get_valid_resolution(videohw, monitorhw, runres,
-                                                   modes, onPMac=True)
+            runres = xhwstate.get_valid_resolution(xserver, modes, onPMac=True)
         else:
-            runres = xhwstate.get_valid_resolution(videohw, monitorhw, runres,
-                                                   modes)
+            runres = xhwstate.get_valid_resolution(xserver, modes)
 
-        xsetup_failed = False
         try:
-            xserver.startX(runres, videohw, monitorhw, mousehw, kbd)
+            xserver.generateConfig()
+            xserver.defaultdepth = 16
+            xserver.addExtraScreen("Firstboot")
+            xserver.serverflags.extend(["-screen", "Firstboot"])
+            xserver.startX()
         except RuntimeError:
-            xsetup_failed = True
-
-        if xsetup_failed:
             sys.stderr.write("X SERVER FAILED TO START")
             raise RuntimeError, "X server failed to start"
 
