@@ -494,7 +494,7 @@ class firstbootWindow:
                     continue
 
             if vbox and title:
-                # If it launched, add it to the mdoule list.
+                # If it launched, add it to the module list.
                 self.moduleList.append(module)
 
                 title_label = gtk.Label("")
