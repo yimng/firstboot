@@ -45,7 +45,7 @@ class XFirstboot (Firstboot):
         import rhpxl.monitor
 
         xserver = rhpxl.xserver.XServer()
-        xserver.probeHW(skipDDCProbe=0, skipMouseProbe=0)
+        xserver.probeHW(skipMouseProbe=0)
         xserver.setHWState()
         xserver.keyboard = keyboard.Keyboard()
 
@@ -54,12 +54,7 @@ class XFirstboot (Firstboot):
         else:
             xserver.resolution = "800x600"
 
-        modes = rhpxl.monitor.Modes()
-
-        if rhpl.getPPCMachine() == "PMac":
-            runres = xhwstate.get_valid_resolution(xserver, modes, onPMac=True)
-        else:
-            runres = xhwstate.get_valid_resolution(xserver, modes)
+        xhwstate.get_valid_resolution(xserver)
 
         try:
             xserver.generateConfig()
