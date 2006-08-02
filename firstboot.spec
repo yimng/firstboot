@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.17
+Version: 1.4.18
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,9 @@ fi
 
 
 %changelog
+* Wed Aug 02 2006 Chris Lumens <clumens@redhat.com> 1.4.18-1
+- Remove ddc probe support that rhpxl no longer provides.
+
 * Fri Jul 28 2006 Chris Lumens <clumens@redhat.com> 1.4.17-1
 - Pick up new or_IN translation (#200210).
 - Use new rhpxl X startup code.
