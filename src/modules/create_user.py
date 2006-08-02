@@ -130,14 +130,6 @@ class childWindow:
 
         self.vbox.pack_start(internalVBox, False, 15)
 
-        users = self.admin.enumerateUsersFull()
-        self.normalUsersList = []
-        for userEnt in users:
-            uidNumber = int(userEnt.get(libuser.UIDNUMBER)[0])
-            if uidNumber == 500:
-                self.usernameEntry.set_text(userEnt.get(libuser.USERNAME)[0])
-                self.fullnameEntry.set_text(userEnt.get(libuser.GECOS)[0])
-
         return self.vbox, title_pix, self.moduleName
 
     def grabFocus(self):
