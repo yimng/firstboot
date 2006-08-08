@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.18
+Version: 1.4.19
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,10 @@ fi
 
 
 %changelog
+* Tue Aug 08 2006 Chris Lumens <clumens@redhat.com> 1.4.19-1
+- Don't fill in the Create User UI with whatever user happens to have
+  UID 500 (#200695).
+
 * Wed Aug 02 2006 Chris Lumens <clumens@redhat.com> 1.4.18-1
 - Remove ddc probe support that rhpxl no longer provides.
 
