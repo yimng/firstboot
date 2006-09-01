@@ -1,24 +1,24 @@
-# translation of hu.po to hungarian
-# translation of hu.po to Hungarian
+# translation of hu.po to hu
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
 # Tamas Szanto <tszanto@mol.hu>, 2004.
 # Széll Tamás <tomi@digiflex.hu>, 2004.
 # Arpad Biro <biro_arpad@yahoo.com>, 2005.
 # Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
-#
+# Gábor Szentiványi <szenti@ulx.hu>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-01-31 23:44+0100\n"
-"Last-Translator: Szentiványi Gábor <szentivanyi.gabor@ulx.hu>\n"
-"Language-Team: hungarian\n"
+"PO-Revision-Date: 2006-09-01 10:30+0200\n"
+"Last-Translator: Gábor Szentiványi <szenti@ulx.hu>\n"
+"Language-Team: hu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -83,12 +83,11 @@ msgstr "_Vissza"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Tovább"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"A változások érvénybe léptetéséhez most újra kell indítani a rendszert."
+msgstr "A változások érvénybe léptetéséhez most újra kell indítani a rendszert."
 
 #: ../src/firstbootWindow.py:304
 msgid "_Finish"
@@ -162,8 +161,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"Ha rendelkezik további szoftvertelepítési CD-vel, most helyezze be azt."
+msgstr "Ha rendelkezik további szoftvertelepítési CD-vel, most helyezze be azt."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -193,26 +191,23 @@ msgstr ""
 "kattintson az \"OK\" gombra."
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "\"OK\" gombra."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Rendszerfelhasználó"
+msgstr "Felhasználó létrehozása"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Érdemes legalább egy normál (nem rendszergazdai jogú) felhasználónevet "
-"létrehozni. Új név létrehozásához be kell írni a szükséges adatokat."
+"Ajánlott legalább egy szokványos (nem rendszergazdai jogú) felhasználót "
+"létrehozni. Új felhasználó létrehozásához kérem be írja be a szükséges adatokat."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -278,13 +273,13 @@ msgstr ""
 "nevet."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"A(z) '%s' felhasználónév fentartott név a rendszer számára. Adjon meg másik "
-"nevet."
+"A(z) '%s' felhasználó számára már létezik sajátkönyvtár. Kérem, adjon "
+"meg egy másik nevet."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -331,19 +326,17 @@ msgid "Sound Card"
 msgstr "Hangkártya"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "A telepítő hangkártyát talált a rendszerben."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 "Kattintson a \"Hangteszt\" gombra a hangeszköz kipróbálásához. Három "
-"hangminta lesz lejátszva egymás után. Az első a jobb, a második a bal "
+"hangmintát hall majd egymás után. Az első a jobb, a második a bal "
 "csatornából szól, a harmadik pedig középről."
 
 #: ../src/modules/timezone.py:46
@@ -355,32 +348,12 @@ msgid "Please set the timezone for the system."
 msgstr "Adja meg a rendszer időzónáját."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"A rendszer használatba vétele előtt még néhány lépést el kell végezni. A "
-"Telepítőügynök végigvezeti Önt a beállítási lépéseken. Továbblépéshez "
+"A rendszer használatba vétele előtt még néhány lépést el kell végeznie. A "
+"telepítő végigvezeti Önt a beállítási lépéseken. A továbblépéshez "
 "kattintson a \"Tovább\" gombra a jobb alsó sarokban."
 
-#~ msgid "_Next"
-#~ msgstr "_Tovább"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Hangkártyabeállítás"
-
-#~ msgid "Finish Setup"
-#~ msgstr "A telepítés befejezése"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "A rendszer telepítése befejeződött. Továbblépéshez kattintson a \"Tovább"
-#~ "\" gombra a jobb alsó sarokban."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "Továbblépéshez kattintson a \"Tovább\" gombra a jobb alsó sarokban."
