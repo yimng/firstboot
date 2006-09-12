@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.19
+Version: 1.4.20
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,10 @@ fi
 
 
 %changelog
+* Tue Sep 12 2006 Chris Lumens <clumens@redhat.com> 1.4.20-1
+- Don't specify a default color depth.
+- Pull in new translations (#199090).
+
 * Tue Aug 08 2006 Chris Lumens <clumens@redhat.com> 1.4.19-1
 - Don't fill in the Create User UI with whatever user happens to have
   UID 500 (#200695).
