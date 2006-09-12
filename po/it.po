@@ -1,23 +1,25 @@
+# translation of it.po to 
+# translation of it.po to
 # translation of it.po to Italiano
 # Copyright (C) 2004 ORGANIZATION.
-#
-#
 # Francesco Valente <fvalen@redhat.com>, 2003, 2004.
 # Paolo Dona' <vik@3jv.com>, 2004.
 # Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004.
 # Francesco Tombolini <tombo@adamantio.net>, 2005, 2006.
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2006-03-20 19:51+0100\n"
-"Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
-"Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
+"PO-Revision-Date: 2006-09-12 02:38+0200\n"
+"Last-Translator: \n"
+"Language-Team:  <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.1\n"
+"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/constants_text.py:36
@@ -34,7 +36,7 @@ msgstr "_Si, accetto i termini della Licenza"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr "_No, non voglio procedere alla registrazione del sistema."
+msgstr "N_o, non accetto."
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
@@ -72,15 +74,14 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Inviate un report d'errore relativo a 'firstboot' nel sistema di "
-"segnalazione\n"
+"Inviate un report d'errore relativo a 'firstboot' nel sistema di segnalazione\n"
 "dei bug di Red Hat all'indirizzo http://www.redhat.com/bugzilla. \n"
 "Una copia dell'output di debug è stata salvata in %s.\n"
-"Accertatevi di allegare il file al report d'errore. \n"
+"Accertatevi di allegare il file al bug report. \n"
 
 #: ../src/firstbootWindow.py:105
 msgid "_Back"
-msgstr "_Precedente"
+msgstr "_Indietro"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
@@ -88,9 +89,7 @@ msgstr "_Avanti"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"Il sistema deve essere ora riavviato per rendere effettive alcune delle "
-"vostre scelte."
+msgstr "Il sistema deve essere ora riavviato per rendere effettive alcune delle vostre scelte."
 
 #: ../src/firstbootWindow.py:304
 msgid "_Finish"
@@ -136,7 +135,7 @@ msgstr "Configurazione del fuso orario"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr "Strumento Esegui"
+msgstr "Esegui Strumento"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
@@ -164,9 +163,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"Per ulteriori installazioni di software, inserite ora qualsiasi altro cd "
-"aggiuntivo."
+msgstr "Per ulteriori installazioni di software, inserite ora qualsiasi altro cd aggiuntivo."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -209,8 +206,8 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"É consigliata la creazione di un utente per un uso normale (non- "
-"amministrativo) del sistema. Per creare un account utente, siete "
+"É consigliata la creazione di un 'nome utente' per un uso normale (non- "
+"amministrativo) del sistema. Per creare un 'nome utente' del sistema, siete "
 "pregati di fornire le informazioni richieste."
 
 #: ../src/modules/create_user.py:76
@@ -249,7 +246,7 @@ msgid ""
 msgstr ""
 "É fortemente consigliata la creazione di un account utente personale.  Se "
 "continuate senza un account, potrete accedere al sistema con il solo account "
-"di root, che é riservato solo ad uso amministrativo."
+"di root, il quale é riservato solo ad uso amministrativo."
 
 #: ../src/modules/create_user.py:167
 msgid "_Continue"
@@ -282,7 +279,7 @@ msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Esiste già un home directory per Il nome utente '%s'.  Sei "
+"Esiste già una home directory per Il nome utente '%s'.  Sei "
 "pregato di specificare un altro nome utente."
 
 #: ../src/modules/date.py:46
@@ -331,7 +328,7 @@ msgstr "Scheda audio"
 
 #: ../src/modules/soundcard_gui.py:45
 msgid "An audio device has been detected in your computer."
-msgstr "Sul computer é stata rilevata una scheda audio."
+msgstr "Sul computer é stato rilevato un dispositivo audio."
 
 #: ../src/modules/soundcard_gui.py:68
 msgid ""
@@ -346,11 +343,11 @@ msgstr ""
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
-msgstr "Data e Ora"
+msgstr "Fuso orario"
 
 #: ../src/modules/timezone.py:50
 msgid "Please set the timezone for the system."
-msgstr "Impostare la data e l'ora del sistema."
+msgstr "Impostare il fuso orario del sistema."
 
 #: ../src/modules/welcome.py:34
 msgid ""
