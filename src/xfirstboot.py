@@ -58,7 +58,6 @@ class XFirstboot (Firstboot):
 
         try:
             xserver.generateConfig()
-            xserver.defaultdepth = 16
             xserver.addExtraScreen("Firstboot")
             xserver.serverflags.extend(["-screen", "Firstboot"])
             xserver.startX()
