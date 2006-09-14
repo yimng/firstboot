@@ -44,9 +44,6 @@ class FirstbootModuleWindow:
     def getICS(self):
         return self.ics
 
-    def getNext(self, *args):
-        pass
-
     def getPrev(self, *args):
         pass
 

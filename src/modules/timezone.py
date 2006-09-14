@@ -48,9 +48,6 @@ class TimeWindow(FirstbootModuleWindow):
     moduleClass = "reconfig"
     shortMessage = _("Please set the timezone for the system.")
 
-    def getNext(self):
-        pass
-
     def setupScreen(self):
         self.timezoneWindow = scdMainWindow.scdMainWindow (firstboot = True, showPages = ["timezone"])
 

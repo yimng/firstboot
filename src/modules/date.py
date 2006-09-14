@@ -47,9 +47,6 @@ class TimeWindow(FirstbootModuleWindow):
     windowTitle = moduleName
     shortMessage = _("Please set the date and time for the system.")
 
-    def getNext(self):
-        pass
-
     def setupScreen(self):
         self.dateWindow = scdMainWindow.scdMainWindow (firstboot = True, showPages = ["datetime", "ntp"])
 

@@ -47,9 +47,6 @@ class DisplayWindow(FirstbootModuleWindow):
     # Disabled for now.
     skipme = True
 
-    def getNext(self):
-        pass
-    
     def setupScreen(self):
         (xconfig, xconfigpath) = xf86config.readConfigFile()
 
