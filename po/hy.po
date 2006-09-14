@@ -1,22 +1,24 @@
+# translation of hy.po to Armenian
 # translation of hy.po to
 # Armenian translations for PACKAGE package.
 # Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+#
 # Automatically generated, 2005.
 # root <xeon@4you.am>, 2005.
-#
+# Suren Karapetyan <surenkarapetyan@gmail.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: hy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2005-10-17 22:25+0500\n"
-"Last-Translator: root <xeon@4you.am>\n"
-"Language-Team:  <en@li.org>\n"
+"PO-Revision-Date: 2006-09-14 18:16+0500\n"
+"Last-Translator: Suren Karapetyan <surenkarapetyan@gmail.com>\n"
+"Language-Team: Armenian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -70,6 +72,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
+"Պրոբլեմի մասին տեղեկացրեք «Red Hatի» \n"
+"սխալների հայտնաբերման համակարգում՝ http://www.redhat.com/bugzilla. \n"
+"Սխալի մասին ինֆորմացիայի պատճեն է պահվել՝ %s\n"
+"Այդ ֆայլը միացրեք պրոբլեմի հայտին։ \n"
 
 #: ../src/firstbootWindow.py:105
 msgid "_Back"
@@ -77,22 +83,20 @@ msgstr "_Ետ"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Առաջ"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"Համակարգը պետք է վերաբեռնվի ձեր ընտրություններից մի քանիսի աշխատելու համար։"
+msgstr "Համակարգը պետք է վերաբեռնվի ձեր ընտրություններից մի քանիսի աշխատելու համար։"
 
 #: ../src/firstbootWindow.py:304
-#, fuzzy
 msgid "_Finish"
-msgstr "Ավարտել տեղադրումը"
+msgstr "_Ավարտել"
 
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "%sի մոդուլի ներմուծումը տապալվեց. %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -129,7 +133,7 @@ msgstr "Ժամային գօտու կոնֆիգուրացիա"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr ""
+msgstr "Կանչերի գործիք"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
@@ -160,7 +164,6 @@ msgstr "Տեղադրեք հավելյալ ծրագրերի դիսկերը (եթ�
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -185,21 +188,19 @@ msgid ""
 msgstr "CD-ROM–ը չկա։ Այն դրեք սարգի մեջ և սեղմեք \"OK\" շարունակելու համար։"
 
 #: ../src/modules/additional_cds.py:198
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Դիսկի վրա ավտորան ծրագիր չկա։ Շարունակելու համար սեղմեք \"OK\"։"
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
-msgstr ""
+msgstr "Օգտագործող ստեղծել"
 
 #: ../src/modules/create_user.py:66
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "Խորհուրդ է տրվում սովորական օգտագործման համար օգտագործող ստեղծեք։ Դրա համար տվեք պահանջվող տեղեկությունները։"
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -221,18 +222,18 @@ msgstr "_Հաստատել ծածկագիրը՝"
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "Եթե դուք կարիք ունեք ցանցային վավերացման, ինչպիսին են Kerb_erosը կամ NISը, սեղմեք «Ցանցով _միանալ» կոճակը։"
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Ցանցով _միանալ"
 
 #: ../src/modules/create_user.py:159
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "Խորհուրդ է տրվում ամպայման ստեղծել անձնական հաշիվ։ Այլապես կկարողանաք աշխատել միայն որպես ռութ ինչը ռեզերվավորված է միայն ադմինիստրատիվ օգտագործման համար։"
 
 #: ../src/modules/create_user.py:167
 msgid "_Continue"
@@ -240,7 +241,7 @@ msgstr "_Շարունակել"
 
 #: ../src/modules/create_user.py:168
 msgid "Create _account"
-msgstr ""
+msgstr "Հաշիվ _ստեղծել"
 
 #: ../src/modules/create_user.py:191
 msgid "The passwords do not match.  Please enter the password again."
@@ -258,11 +259,11 @@ msgid ""
 msgstr "'%s'–ը նախապես գրանցված հատուկ անուն է։ Ընտրեք մեկ ուրիշը։"
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr "'%s'–ը նախապես գրանցված հատուկ անուն է։ Ընտրեք մեկ ուրիշը։"
+msgstr "«%sի» անունով սկզբնական պանակ արդեն կա։ Ընտրեք մեկ այլ անուն։"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -278,7 +279,7 @@ msgstr "Դիսպլեյ"
 
 #: ../src/modules/display.py:46
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+msgstr "Ընտրեք էկրանի չափերը և գույների խորությունը։"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -294,7 +295,7 @@ msgstr "Ցանցային սարք"
 
 #: ../src/modules/networking.py:90
 msgid "Boot protocol"
-msgstr ""
+msgstr "Բեռնման պրոտոկոլ"
 
 #: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
@@ -309,7 +310,6 @@ msgid "Sound Card"
 msgstr "Ձայնային քարտ"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
 msgstr "Համակարչում ձայնային քարտ է հայտնաբերվել։"
 
@@ -318,7 +318,7 @@ msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
+msgstr "Սեղմեք \"Երգել\" կոճակը փորձնական ձայն լսելու համար։  Դուք պետք է լսեք երեք ձայների հաջորդականություն։  Առաջին ձայնը կլինի աջ կանալից, երկրորդը՝ ձախից, իսկ երրորդը՝ մեջտեղից։"
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -329,71 +329,11 @@ msgid "Please set the timezone for the system."
 msgstr "Ընտրեք համակարգի ժամային գոտին։"
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Այժմ համակարգը տեղադրված է և պատրաստ է օգտագործման։ Սեղմեք ներքևի աջ "
-"անկյունի \"Next\" կոճակը, որպեսզի շարունակել։"
+"Մինչև համակարգի պատրաստ լինելը մնաց էլի մի քանի քայլ։ Տեղադրման գործակալը ձեզ կտանի կոնֆիգուրացիայի որոշ քայլերի միջով։ Սեղմեք ներքևի աջ "
+"անկյունի \"Առաջ\" կոճակը, որպեսզի շարունակել։"
 
-#~ msgid "_Next"
-#~ msgstr "_Առաջ"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Ձայնային քարտի կոնֆիգուրացիա"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Ավարտել տեղադրումը"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "Սեղմեք ներքևի աջ անկյունի \"Next\" կոճակը, որպեսզի շարունակել։"
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Մականունը պետք է լինի 33 նիշից կարճ։"
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Մականունը չի կարող սկսել թվով։"
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr "'%s' մականունը պարունակում է դատարկ սիմվոլներ։ Դա չի թույլատրվում։"
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "'%s' մականունը պարունակում է կետադրական նշաններ։ Մականվան մեջ կետադրական "
-#~ "նշաններ մի՛ օգտագործեք։"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "'%s' մականունը պարունակում է մեծատառեր։Մականվան մեջ մեծատառեր մի՛ "
-#~ "օգտագործեք։"
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "'%s' մականունը պարունակում է անթույլատրելի սիմվոլներ։ Օգտագործեք միայն "
-#~ "ASCII սիմվոլներ։"
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Ձեր ծածկագիրը պարունակում է անթույլատրելի սիմվոլներ։ Օգտագործեք միայն "
-#~ "ASCII սիմվոլներ։"
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "'%s' անունը պարունակում է անթույլատրելի սիմվոլներ։ Օգտագործեք միայն "
-#~ "տառեր, թվեր, սփեյսեր և _ սիմվոլը։"
