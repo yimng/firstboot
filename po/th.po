@@ -1,23 +1,22 @@
-# translation of firstboot.po to Thai
 # translation of th.po to Thai
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
 # Supphachoke Suntiwichaya <mrchoke@opentle.org>, 2003, 2004.
 # Surichat Sumrit <nook@opentle.org>, 2004.
-# Kamthorn Krairaksa <kamthorn_k@yahoo.com>, 2004.
-#
+# Kamthorn Krairaksa <kamthorn_k@yahoo.com>, 2004, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2004-07-29 00:37+0700\n"
+"PO-Revision-Date: 2006-09-16 00:35+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -29,7 +28,7 @@ msgstr "การยอมรับสัญญาอนุญาต"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr "ใ_ช่ ข้าพเจ้ายอมรับสัญญาอนุญาต"
+msgstr "ใ_ช่ ข้าพเจ้ายอมรับสัญญาอนุญาตนี้"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
@@ -50,7 +49,7 @@ msgstr "_ปิดเครื่อง"
 #: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับโมดูล %s"
+msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับมอดูล %s"
 
 #: ../src/exceptionWindow.py:52
 #, python-format
@@ -59,9 +58,9 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
-"เนื่องจากเกิดปัญหากับโมดูล %s \n"
-"ตัวติดตั้งเรดแฮทจะไม่โหลดโมดูลนี้ \n"
-"และจะพยายามโหลดโมดูลที่ยังเหลืออยู่ต่อไป"
+"เนื่องจากเกิดปัญหากับมอดูล %s \n"
+"ตัวติดตั้งเรดแฮทจะไม่โหลดมอดูลนี้ \n"
+"และจะพยายามโหลดมอดูลที่ยังเหลืออยู่ต่อไป"
 
 #: ../src/exceptionWindow.py:56
 #, python-format
@@ -82,21 +81,20 @@ msgstr "_ย้อนกลับ"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "ถัดไ_ป"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "จำเป็นต้องเริ่มการทำงานของระบบใหม่เพื่อให้บางส่วนที่คุณเลือกทำงานได้ถูกต้อง"
 
 #: ../src/firstbootWindow.py:304
-#, fuzzy
 msgid "_Finish"
 msgstr "ติดตั้งเสร็จแล้ว"
 
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "การนำเข้ามอดูล %s ล้มเหลว: %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -153,11 +151,11 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr ""
+msgstr "กรุณาใส่แผ่นดิสก์ที่ชื่อว่า \"Red Hat Enterprise Linux Extras\" เพื่อให้สามารถติดตั้งปลั๊กอินและโปรแกรมจากผู้ผลิตรายอื่น คุณอาจจะใส่แผ่นดิสก์คู่มือการใช้งาน หรือแผ่นดิสก์ที่เรดแฮทได้ให้มาด้วย เพื่อติดตั้งโปรแกรมเพิ่มเติมในตอนนี้ทันที"
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "กรุณาใส่ซีดีติดตั้งโปรแกรมเพิ่มเติมได้แล้ว"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -168,6 +166,9 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"เพื่อรองรับการทำงานของโปรแกรม 32-bit ให้สามารถรันบนสถาปัตยกรรมอินเทล Itanium2 ได้ คุณต้องติดตั้งแพกเกจ Intel Execution Layer จากแผ่นดิสก์พิเศษเดี๋ยวนี้"
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
@@ -180,18 +181,14 @@ msgid ""
 msgstr "ตรวจไม่พบซีดีรอม กรุณาใส่แผ่นซีดีแล้วคลิก \"ตกลง\""
 
 #: ../src/modules/additional_cds.py:198
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "ผู้ใช้ระบบ"
+msgstr "สร้างผู้ใช้"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -217,7 +214,6 @@ msgid "Confir_m Password:"
 msgstr "_ยืนยันรหัสผ่าน :"
 
 #: ../src/modules/create_user.py:113
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -255,18 +251,18 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "รหัสผ่านของคุณสั้นเกินไป กรุณาใช้รหัสความยาวอย่างน้อย 6 ตัวอักษร"
 
 #: ../src/modules/create_user.py:210
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
+msgstr "ชื่อผู้ใช้ %s เป็นชื่อที่สงวนไว้สำหรับบัญชีของระบบ กรุณาเลือกชื่ออื่นแทน"
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
+msgstr "พบว่ามีไดเรกทอรีบ้าน สำหรับผู้ใช้ '%s' อยู่แล้ว กรุณาตั้งชื่ออื่นแทน"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -313,18 +309,16 @@ msgid "Sound Card"
 msgstr "การ์ดเสียง"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "ได้ตรวจพบการ์ดเสียงบนระบบของคุณ"
+msgstr "ตรวจพบการ์ดเสียงในคอมพิวเตอร์ของคุณ"
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"คลิกปุ่ม \"Play test sound\" แล้วจะได้ยินตัวอย่างเสียง คุณจะได้ยินเสียง 3 เสียง "
+"คลิกปุ่ม \"Play\" แล้วจะได้ยินตัวอย่างเสียง คุณจะได้ยินเสียง 3 เสียง "
 "อันแรกเป็นเสียงจากลำโพงด้านขวา อันที่สองเป็นเสียงจากลำโพงด้านซ้าย และสุดท้ายเป็นเสียง "
 "ที่ตำแหน่งกลาง"
 
@@ -337,7 +331,6 @@ msgid "Please set the timezone for the system."
 msgstr "กรุณาตั้งค่าเขตเวลาให้ระบบของคุณ"
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -347,91 +340,3 @@ msgstr ""
 "ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
 "ที่มุมล่างขวาเพื่อทำงานต่อ"
 
-#~ msgid "_Next"
-#~ msgstr "_ถัดไป"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "ตั้งค่าการ์ดเสียง"
-
-#~ msgid "Finish Setup"
-#~ msgstr "ติดตั้งเสร็จแล้ว"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม "
-#~ "\"ถัดไป\" ด้านล่างขวาเพื่อทำงานต่อไป"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "ขณะนี้ระบบของคุณ ได้ทำการติดตั้งเสร็จเรียบร้อย และ พร้อมสำหรับการใช้งาน กรุณา คลิก ปุ่ม "
-#~ "\"ถัดไป\" ด้านล่างขวาเพื่อทำงานต่อไป"
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "ชื่อผู้ใช้ต้องยาวไม่เกิน 33 ตัวอักษร"
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "ชื่อผู้ใช้ ต้องไม่ขึ้นต้นด้วยตัวเลข"
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr "ชื่อผู้ใช้ %s มีช่องว่างอยู่ กรุณาอย่าใส่ช่องว่างในชื่อ"
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr "ชื่อผู้ใช้ %s เครื่องหมายวรรคตอนอยู่ กรุณาอย่าใช้เครื่องหมายใดๆ ในชื่อ"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr "ชื่อผู้ใช้ %s มีตัวอักษรตัวพิมพ์ใหญ่อยู่ กรุณาอย่าใช้อักษรตัวพิมพ์ใหญ่ในชื่อ"
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "ชื่อผู้ใช้ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "รหัสผ่านมีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr "ชื่อ %s มีตัวอักษรที่ใช้ไม่ได้อยู่ กรุณาใช้เฉพาะรหัสแอสกีเท่านั้น"
-
-#, fuzzy
-#~ msgid "Licence Aggrement"
-#~ msgstr "การยอมรับสัญญาอนุญาต"
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "ถ้าคุณมีซีดีดังที่แสดงข้างล่างนี้ คุณสามารถติดตั้งแพกเกจจากมันได้ โดยใส่ซีดีเข้าไป "
-#~ "แล้วคลิกปุ่มที่เหมาะสม"
-
-#~ msgid "Please enter a time server."
-#~ msgstr "กรุณาป้อนเซิร์ฟเวอร์เวลา"
-
-#~ msgid "Error"
-#~ msgstr "ผิดพลาด"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "การเชื่อมต่อกับ %s ไม่สามารถกระทำได้  อาจเนื่องจาก %s ไม่พร้อมให้บริการหรือ  "
-#~ "ไฟร์วอลล์บนเครื่องของคุณกั้นการเชื่อมต่อ NTP เอาไว้"
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "กำลังติดต่อ เซิร์ฟเวอร์ NTP กรุณารอสักครู่ ..."
