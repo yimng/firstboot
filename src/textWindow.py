@@ -34,7 +34,7 @@ class TextWindow:
         toolList = [(_("Authentication"), ("/usr/sbin/authconfig-tui"), ("")),
                     (_("Firewall configuration"), ("/usr/bin/system-config-securitylevel-tui"), ("")),
                     (_("Keyboard configuration"), ("/usr/bin/system-config-keyboard"), ("--text")),
-                    (_("Network configuration"), ("/usr/sbin/netconfig"), ("")),
+                    (_("Network configuration"), ("/usr/sbin/system-config-network-tui"), ("")),
                     (_("Printer configuration"), ("/usr/sbin/printconf-tui"), ("")),
                     (_("System services"), ("/usr/sbin/ntsysv"), ("")),
                     (_("Timezone configuration"), ("/usr/sbin/timeconfig"), (""))]

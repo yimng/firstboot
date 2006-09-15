@@ -44,7 +44,7 @@ Requires: python
 Requires: usermode >= 1.36
 Requires: rhpl
 Requires: system-config-securitylevel-tui
-Requires: netconfig
+Requires: system-config-network-tui
 Requires: ntsysv
 Requires: authconfig
 
