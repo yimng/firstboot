@@ -1,23 +1,23 @@
-# translation of sl.po to slovenščina
+# translation of sl.po to Slovenian
 # SLOVENIAN TRANSLATION OF FIRST BOOT.
-# Copyright (C) 2003,2004 Free Software Foundation, Inc.
+# Copyright (C) 2003,2004, 2006 Free Software Foundation, Inc.
 # $Id$
 # $Source$
-# Roman Maurer <roman@lugos.si>, 2003.
-# Rok Papez <rok.papez@lugos.si>, 2004
 #
+# Roman Maurer <roman@lugos.si>, 2003.
+# Rok Papez <rok.papez@lugos.si>, 2004, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2004-03-28 15:19+0200\n"
+"PO-Revision-Date: 2006-09-16 15:08+0200\n"
 "Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
-"Language-Team: slovenščina <translation-team-sl@lists.sourceforge.net>\n"
+"Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -83,21 +83,20 @@ msgstr "Na_zaj"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_Naprej"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Sistem se mora ponovno zagnati, da se lahko uveljavi nekatere izmed sprememb."
 
 #: ../src/firstbootWindow.py:304
-#, fuzzy
 msgid "_Finish"
-msgstr "Končaj nastavitev"
+msgstr "_Končaj"
 
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "napaka pri vnosu modula %s: %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -154,11 +153,11 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr ""
+msgstr "Da bi namestili dodatno programje in vtičnike, ki so jih pripravili drugi, vstavite sedaj medij z imenom \"Red Hat Enterprise Linux Extras\". Vstavite lahko tudi medij z dokumentacijo ali kak drug medij z dodatnim programjem, ki ga je priskrbel Red Hat."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Sedaj vstavite medije z dodatnim programjem."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -169,6 +168,10 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Da bi omočili izvajanje 32-bitnih aplikacij na arhitekturi Intel Iranium2 morate "
+"sedaj namestiti paket \"Intel Execution Layer\" z medija \"Extras\"."
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
@@ -183,26 +186,21 @@ msgstr ""
 "za nadaljevanje."
 
 #: ../src/modules/additional_cds.py:198
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Programa autorun ni moč najti na CD. Kliknite \"V redu\" za nadaljevanje."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Programa \"autorun\" ni moč najti na mediju. Kliknite \"Naprej\" za nadaljevanje."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Storitve Sistema"
+msgstr "Ustvari uporabnika"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Priporoča se, da ustvarite osebni uporabniški račun za običajno (ne-"
-"skrbniško) rabo. Za to podajte zahtevane podatke."
+"Priporočeno je, da si ustvarite osebni uporabniški račun za običajno (ne-"
+"skrbniško) rabo. če želite izdelati račun vnesite zahtevane podatke."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -221,12 +219,11 @@ msgid "Confir_m Password:"
 msgstr "Po_trdite geslo:"
 
 #: ../src/modules/create_user.py:113
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Če morate uporabljati omrežno avtentikacijo kot je Kerberos ali NIS, prosim, "
+"Če uporabljate preverjanje istovetnosti preko omrežja z Kerberos ali NIS,"
 "kliknite gumb Uporabi omrežno prijavo."
 
 #: ../src/modules/create_user.py:123
@@ -269,13 +266,11 @@ msgstr ""
 "določite novo uporabniško ime."
 
 #: ../src/modules/create_user.py:228
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr ""
-"Uporabniško ime '%s' je že ime rezerviranega sistemskega računa. Prosim, "
-"določite novo uporabniško ime."
+msgstr "Uporabniško ime '%s' že obstaja. Izberite drugo uporabniško ime."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -322,20 +317,15 @@ msgid "Sound Card"
 msgstr "Zvočna kartica"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "V računalniku je bila zaznana zvočna kartica."
+msgstr "V računalniku je bila zaznana zvočna naprava."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
-"Kliknite gumb \"Predvajaj preskusni zvok\", da slišite preskusni zvok. "
-"Slišati bi morali zaporedje treh zvokov. Prvi zvok bo v desnem kanalu, drugi "
-"v levem, tretji pa bo na sredini."
+msgstr "Kliknite gumb \"Predvajaj\", za predvajanje preskusnega zvoka. Slišati morate zaporedje treh zvokov. Prvi zvok bo desno, drugi levo, tretji pa bo na sredini."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -346,36 +336,12 @@ msgid "Please set the timezone for the system."
 msgstr "Prosim, izberite časovni pas tega sistema."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Preden bo sistem pripravljen za rabo, morate narediti še nekaj korakov. "
-"Nastavitveni agent vas bo vodil po nekaj osnovnih nastavitvah. Za "
+"Nastavitveni agent vas bo vodil skozi nekaj osnovnih nastavitvah. Za "
 "nadaljevanje kliknite gumb \"Naprej\" v spodnjem desnem kotu."
 
-#~ msgid "_Next"
-#~ msgstr "Na_prej"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Nastavitev zvočne kartice"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Končaj nastavitev"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite "
-#~ "gumb \"Naprej\" v spodnjem desnem kotu."
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Sistem je zdaj pripravljen za rabo. Za nadaljevanje, prosim, kliknite "
-#~ "gumb \"Naprej\" v spodnjem desnem kotu."
