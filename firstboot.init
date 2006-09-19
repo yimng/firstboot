@@ -75,6 +75,10 @@ case "$1" in
  stop)
    rm -f $LOCKFILE
    ;;
+
+ *)
+   echo $"Usage: $0 {start|stop}"
+   RETVAL=1
 esac
 
 exit $RETVAL
