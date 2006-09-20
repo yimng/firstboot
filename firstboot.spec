@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.21
+Version: 1.4.22
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,11 @@ fi
 
 
 %changelog
+* Wed Sep 20 2006 Chris Lumens <clumens@redhat.com> 1.4.22-1
+- Add help output to /etc/init.d/firstboot (#207043).
+- Fix a window manager warning (#206369).
+- Don't start up in English on CJKI installs (#206600).
+
 * Fri Sep 15 2006 Chris Lumens <clumens@redhat.com> 1.4.21-1
 - Use system-config-network-tui instead of netconfig in the text
   interface.
