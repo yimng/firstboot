@@ -4,19 +4,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Automatically generated, 2004.
-# George Machitidze <giomac@gmail.com>, 2005.
+# George Machitidze <giomac@gmail.com>, 2005, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: ka\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-20 11:11+0100\n"
-"PO-Revision-Date: 2005-12-13 01:14+0300\n"
+"PO-Revision-Date: 2006-09-27 01:10+0400\n"
 "Last-Translator: George Machitidze <giomac@gmail.com>\n"
-"Language-Team: Georgian Internet Alliance <guiasher@mes.gov.ge>\n"
+"Language-Team: Georgian <guiasher@mes.gov.ge>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -74,7 +75,7 @@ msgstr "_უკან"
 
 #: ../src/firstbootWindow.py:114
 msgid "_Forward"
-msgstr ""
+msgstr "_წინ"
 
 #: ../src/firstbootWindow.py:233
 msgid "The system must now reboot for some of your selections to take effect."
@@ -87,7 +88,7 @@ msgstr "_დასრულება"
 #: ../src/firstbootWindow.py:399
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr ""
+msgstr "%s-ის მოდულის იმპორტი ვერ მოხერხდა: %s"
 
 #: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
@@ -132,7 +133,7 @@ msgstr "აირჩიეთ ელემენტი, რომლის შ�
 
 #: ../src/textWindow.py:52
 msgid "Setup Agent"
-msgstr ""
+msgstr "გამართვის ოსტატი"
 
 #: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
@@ -148,7 +149,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "გთხოვთ მოათავსოთ ხელმისაწვდომი დამატებითი პროგრამების ნებისმიერი დისკები."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -171,8 +172,7 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 
 #: ../src/modules/create_user.py:39
@@ -241,14 +241,14 @@ msgstr "პაროლი ძალიან მოკლეა. გთხო�
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "მომხმარებელი '%s' არის რეზერვირებული სისეტმური მომხმარებელი.  გთხოვთ შეიყვანოთ სხვა სახელი."
 
 #: ../src/modules/create_user.py:228
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr ""
+msgstr "სათაო დირექტორია მომხმარებლისთვის '%s' უკვე არსებობს.  გთხოვთ მიუთითოთ სხვა მომხმარებლის სახელი."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -320,25 +320,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
+"მანამ სანამ თქვენ სისტემის გამოყენებას დაიწყებთ საჭიროა ორიოდე ეტაპის გავლა. "
+"გამართვის ოსტატი დაგეხმარებათ ძირითადი პარამეტრების დაყენებაში.  გასაგრძელებლად გთხოვთ დაწკაპოთ ქვედა მარჯევნა კუთხეში ღილაკს \"წინ\"."
 
-#~ msgid "_Next"
-#~ msgstr "_წინ"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "აუდიოდაფის კონფიგურაცია"
-
-#~ msgid "Finish Setup"
-#~ msgstr "დასრულება"
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "მომხმარებლის სახელი უნდა შედგებოდეს 33-ზე ნაკლები სიმბოლოსგან."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "მომხმარებლის სახელი არ უნდა იწყებოდეს ციფრით."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "პაროლი შეიცავს მიუღებელ სიმბოლოებს.  გთხოვთ გამოიყენოთ მხოლოდ ASCII "
-#~ "სიმბოლოები."
