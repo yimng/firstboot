@@ -440,11 +440,11 @@ class firstbootWindow:
             # a dictionary keyed by the module's declared priority.
             if hasattr(obj, "moduleClass"):
                 if (self.doReconfig and (obj.moduleClass == "reconfig")):
-                    self.moduleDict[int(obj.runPriority)] = obj
+                    self.moduleDict[float(obj.runPriority)] = obj
                 elif (not self.doReconfig and (obj.moduleClass != "reconfig")):
-                    self.moduleDict[int(obj.runPriority)] = obj
+                    self.moduleDict[float(obj.runPriority)] = obj
             else:
-                self.moduleDict[int(obj.runPriority)] = obj
+                self.moduleDict[float(obj.runPriority)] = obj
 
         # Get the list of module priorities, sort them to determine a run
         # order, and build a list with the modules in the proper order.
