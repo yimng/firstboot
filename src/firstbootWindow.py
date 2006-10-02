@@ -91,7 +91,7 @@ class firstbootWindow:
         # entire window.
         if x_screen >= 800:            
             self.rightVBox.set_size_request(635, 600)
-            self.win.fullscreen()
+            self.win.set_size_request(800, 600)
         else:
             self.rightVBox.set_size_request(x_screen, y_screen)
             self.win.set_size_request(x_screen, y_screen)
