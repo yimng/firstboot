@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.22
+Version: 1.4.23
 Release: 1
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,11 @@ fi
 
 
 %changelog
+* Mon Oct 02 2006 Chris Lumens <clumens@redhat.com> - 1.4.23-1
+- runPriority can now be a float.
+- Pick up new translations (#208867).
+- Set window to 800x600 instead of fullscreening (#208331, #208620).
+
 * Wed Sep 20 2006 Chris Lumens <clumens@redhat.com> 1.4.22-1
 - Add help output to /etc/init.d/firstboot (#207043).
 - Fix a window manager warning (#206369).
