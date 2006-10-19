@@ -69,7 +69,7 @@ install: $(MOFILES)
 .PHONY: missing depend report
 
 I18N_LANGS = ja ko zh_CN zh_TW pt_BR es de fr it hi bn_IN gu pa ta ru te \
-             mr ur ka mk or as
+             mr ur ka ml or as
 
 report:
 	@for lang in $(I18N_LANGS); do \
