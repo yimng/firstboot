@@ -170,7 +170,7 @@ class firstbootWindow:
         gtk.main()
 
     def setPage(self, modulename):
-        self.nextPage = self.moduleNameToNotebookIndex[modulename]
+        self.nextPage = self.moduleNameToIndex[modulename][0]
 
     def switchPage(self, notebook, page, page_num, *args):
         # catch the switch page signal, so we can re poke modules
@@ -280,10 +280,10 @@ class firstbootWindow:
                 self.needsReboot.remove(module.moduleName)
 
         # record the current page as the new previous page
-        self.prevPage = self.moduleNameToNotebookIndex[module.__module__]
+        self.prevPage = self.moduleNameToIndex[module.__module__][0]
 
         if result != None:
-            pgNum = self.moduleNameToNotebookIndex[module.__module__]
+            pgNum = self.moduleNameToIndex[module.__module__][0]
             self.pageHistory.append(pgNum)
 #            print "self.pageHistory: %s" % self.pageHistory
             if self.nextPage:
@@ -293,8 +293,9 @@ class firstbootWindow:
             else:
                 self.notebook.next_page()
                 module = self.moduleList[self.notebook.get_current_page()]
+
             #Call setPointer to make the left hand pointer move to the correct pointer
-            self.setPointer(self.notebook.get_current_page())
+            self.setPointer(self.moduleNameToIndex[module.__module__][1])
 
             if "grabFocus" in dir(module):
                 #If the module needs to grab the focus, let it
@@ -323,9 +324,14 @@ class firstbootWindow:
             del self.pageHistory[-1]
         else:
             self.notebook.prev_page()
+
+        try:
+            module = self.moduleList[self.notebook.get_current_page()]
+        except:
+            pass
             
         #Call setPointer to make the left hand pointer move to the correct pointer
-        self.setPointer(self.notebook.get_current_page())
+        self.setPointer(self.moduleNameToIndex[module.__module__][1])
 
         if self.notebook.get_current_page() == 0:
             self.backButton.set_sensitive(False)
@@ -453,7 +459,8 @@ class firstbootWindow:
 
         # Add the modules to the proper lists.
         pages = 0
-        self.moduleNameToNotebookIndex = {}
+        sidebarIndex = -1
+        self.moduleNameToIndex = {}
         for priority in modulePriorityList:
             # Add the module to the list of modules.
             module = self.moduleDict[priority]
@@ -516,33 +523,37 @@ class firstbootWindow:
 
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
+                    if not hasattr(module, "noSidebar") or getattr(module, "noSidebar") == False:
+                        hbox = gtk.HBox(False, 5)
+                        pix = functions.imageFromFile("pointer-blank.png")
+                        label = gtk.Label("")
+                        label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % (_(module.moduleName)))
+                        label.set_alignment(0.0, 0.5)
+
+                        # Wrap the lines if they're too long
+                        label.set_line_wrap(True)
+                        (w, h) = self.leftEventBox.get_size_request()
+                        label.set_size_request((int)(w*0.8), -1)
+
+                        # Make sure the arrow is at the top of any wrapped line
+                        alignment = gtk.Alignment(yalign=0.2)
+                        alignment.add(pix)
+                        hbox.pack_start(alignment, False)
+
+                        hbox.pack_end(label, True)
+                        self.leftVBox.pack_start(hbox, False, True, 3)
+
+                        sidebarIndex += 1
+
                     # we need a non tranlated name for each module so we can
                     # jump around
-                    self.moduleNameToNotebookIndex[module.__module__] = pages
+                    self.moduleNameToIndex[module.__module__] = (pages, sidebarIndex)
                     self.notebook.append_page(vbox, gtk.Label(_(module.moduleName)))
-
-                    hbox = gtk.HBox(False, 5)
-                    pix = functions.imageFromFile("pointer-blank.png")
-                    label = gtk.Label("")
-                    label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % (_(module.moduleName)))
-                    label.set_alignment(0.0, 0.5)
-
-                    # Wrap the lines if they're too long
-                    label.set_line_wrap(True)
-                    (w, h) = self.leftEventBox.get_size_request()
-                    label.set_size_request((int)(w*0.8), -1)
-
-                    # Make sure the arrow is at the top of any wrapped line
-                    alignment = gtk.Alignment(yalign=0.2)
-                    alignment.add(pix)
-                    hbox.pack_start(alignment, False)
-
-                    hbox.pack_end(label, True)
-                    self.leftVBox.pack_start(hbox, False, True, 3)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
-                    self.moduleNameToNotebookIndex["unamemodule-%s" % pages] = pages
-                pages = pages + 1
+                    self.moduleNameToIndex["unamemodule-%s" % pages] = (pages, sidebarIndex)
+
+                pages += 1
 
     def clearNotebook(self):
         for widget in self.leftVBox.get_children():
@@ -621,4 +632,3 @@ class firstbootWindow:
 
             screenshot.save (screenshotDir + '/' + sname, "png")
             screenshotIndex = screenshotIndex + 1
-    
