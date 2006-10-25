@@ -3,7 +3,8 @@
 
 PKGNAME=firstboot
 VERSION=$(shell awk '/Version:/ { print $$2 }' ${PKGNAME}.spec)
-CVSTAG=r$(subst .,-,$(VERSION))
+RELEASE=$(shell awk '/Release:/ { print $$2 }' ${PKGNAME}.spec | sed -e 's|%.*$$||g')
+CVSTAG=r$(subst .,_,$(VERSION)-$(RELEASE))
 SUBDIRS=po
 
 MANDIR=/usr/share/man
