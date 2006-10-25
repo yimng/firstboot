@@ -18,11 +18,6 @@
 # Source function library.
 . /etc/init.d/functions
 
-unset LC_MESSAGES
-[ -f /etc/sysconfig/i18n ] && . /etc/sysconfig/i18n
-[ -z "${CONSOLETYPE:-}" ] && CONSOLETYPE="`/sbin/consoletype`"
-export LANG
-
 FILENAME=/etc/sysconfig/firstboot
 LOCKFILE=/var/lock/subsys/firstboot
 
