@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.23
-Release: 1
+Version: 1.4.24
+Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -108,6 +108,12 @@ fi
 
 
 %changelog
+* Wed Oct 25 2006 Chris Lumens <clumens@redhat.com> 1.4.24-1
+- Pick up new si_LK translation (#200532).
+- Support noSidebar value for modules (#210697).
+- Fix release number.
+- Do start up in English on CJKI installs in text mode (#211936).
+
 * Mon Oct 02 2006 Chris Lumens <clumens@redhat.com> - 1.4.23-1
 - runPriority can now be a float.
 - Pick up new translations (#208867).
