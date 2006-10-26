@@ -41,6 +41,7 @@ case "$1" in
 
 	runlevel=$(set -- $(runlevel); eval "echo \$$#" )
 	if grep -q "^id:5:initdefault:" /etc/inittab && [ "x$runlevel" = x5 ]; then
+	    . /etc/sysconfig/i18n
 	    if [ ! -f /etc/X11/xorg.conf -a ! -f /etc/X11/XF86Config ] ; then
 		echo -n $"X is not configured.  Running system-config-display"
 		/usr/bin/system-config-display
