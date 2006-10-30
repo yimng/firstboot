@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.24
+Version: 1.4.25
 Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -27,7 +27,7 @@ Requires: system-config-keyboard
 Requires: authconfig-gtk
 Requires: libuser
 Requires: system-logos
-Requires: firstboot-tui
+Requires: firstboot-tui = %{version}
 ExcludeArch: s390 s390x ppc64
 
 %description
@@ -108,6 +108,10 @@ fi
 
 
 %changelog
+* Thu Oct 26 2006 Chris Lumens <clumens@redhat.com> 1.4.25-1
+- Require matching versions of firstboot and firstboot-tui.
+- Fix language in non-rhgb graphical case (notting).
+
 * Wed Oct 25 2006 Chris Lumens <clumens@redhat.com> 1.4.24-1
 - Pick up new si_LK translation (#200532).
 - Support noSidebar value for modules (#210697).
