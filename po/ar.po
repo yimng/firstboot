@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2005-02-21 01:27+0300\n"
 "Last-Translator: Munzir Taha <munzirtaha@newhorizons.com.sa>\n"
 "Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
@@ -78,29 +78,29 @@ msgstr ""
 "تم حفظ نسخه من خرج أداة تصحيح الأخطاء في '%s' \n"
 "تأكد من إرفاق هذا الملف بتقرير العلّة.\n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_رجوع"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 #, fuzzy
 msgid "_Finish"
 msgstr "إنهاء الإعداد"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "فشل استيراد الوحدة %s: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "أهلاً"
@@ -243,7 +243,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "ا_ستخدام تسجيل الدّخول الشّبكي..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -252,23 +252,23 @@ msgstr ""
 "يُستحسن إنشاء حساب شخصي، إذا استمررت بدون حساب، يمكنك تسجيل الدخول فقط بحساب "
 "root، والذي هو مُخصّص للاستخدام الإداريّ فقط."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "ا_ستمرار"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "إنشاء _حساب"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "كلمات المرور غير متطابقة.  الرجاء إدخال كلمة المرور مرة أخرى."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "كلمة المرور قصيرة جدّاً.  رجاء استخدم على الأقلّ 6 أحرف."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -277,7 +277,7 @@ msgstr ""
 "اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم أو "
 "فواصل في اسم المستخدم."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -290,7 +290,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "الوقت و التاريخ"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "الرّجاء إدخال الوقت و التاريخ للنظام."
 
@@ -298,7 +298,7 @@ msgstr "الرّجاء إدخال الوقت و التاريخ للنظام."
 msgid "Display"
 msgstr "عرض"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "الرّجاء تحديد دقّة الوضوح و عمق الألوان الذي تود استخدامه"
 
@@ -322,7 +322,7 @@ msgstr "بروتوكول الإقلاع"
 msgid "_Change Network Configuration..."
 msgstr "_تغيير إعداد الشبكة..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "ثابت"
 
@@ -349,7 +349,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "المنطقة الزمنية"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "الرجاء تحديد المنطقة الزمنية للنظام."
 

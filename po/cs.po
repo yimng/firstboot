@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-03-26 23:34+0200\n"
 "Last-Translator: Nikola Štohanzl <niko@srnet.cz>\n"
 "Language-Team: Czech\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -76,28 +77,28 @@ msgstr ""
 "Kopie ladicího výpisu byla uložena do %s \n"
 "Připojte tento soubor k hlášení chyby. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Zpět"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_Další"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Aby se některé vaše volby projevily, musí se teď systém restartovat."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Dokončit"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import modulu %s selhal: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Vítejte"
@@ -189,7 +190,8 @@ msgstr ""
 "kliknutím na \"OK\"."
 
 #: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Na cd nebyl nalezen program autorun. Pokračujte kliknutím na \"OK\"."
 
 #: ../src/modules/create_user.py:39
@@ -201,7 +203,9 @@ msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "Pro normální používání (ne správu systému) se doporučuje vytvořit 'jméno uživatele'. Pro vytvoření prosím zadejte informace požadované níže."
+msgstr ""
+"Pro normální používání (ne správu systému) se doporučuje vytvořit 'jméno "
+"uživatele'. Pro vytvoření prosím zadejte informace požadované níže."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -231,7 +235,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Používat _síťové přihlašování..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -241,23 +245,23 @@ msgstr ""
 "bez vytvoření účtu, budete se moci přihlásit jen do účtu root, který je "
 "rezervován jen pro správu systému."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Pokračovat"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "_Vytvořit účet"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Hesla nesouhlasí. Zadejte heslo prosím znovu."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -266,7 +270,7 @@ msgstr ""
 "Jméno uživatele '%s' je rezervovaný účet systému. Zadejte prosím jiné jméno "
 "uživatele."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -279,7 +283,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "Datum a čas"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Nastavte prosím systémové datum a čas."
 
@@ -287,7 +291,7 @@ msgstr "Nastavte prosím systémové datum a čas."
 msgid "Display"
 msgstr "Zobrazení"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Vyberte prosím rozlišení a barevnou hloubku, kterou chcete používat"
 
@@ -311,7 +315,7 @@ msgstr "Zaváděcí protokol"
 msgid "_Change Network Configuration..."
 msgstr "Změnit _nastavení sítě..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "statický"
 
@@ -337,7 +341,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Časová zóna"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Nastavte prosím systémovou časovou zónu."
 
@@ -347,7 +351,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-"Je třeba provést ještě několik kroků, než bude Váš systém připraven k použití. Setup "
-"Agent vás nyní provede základním nastavením. Pokračujte prosím kliknutím na "
-"tlačítko \"Další\" v pravém dolním rohu."
-
+"Je třeba provést ještě několik kroků, než bude Váš systém připraven k "
+"použití. Setup Agent vás nyní provede základním nastavením. Pokračujte "
+"prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu."

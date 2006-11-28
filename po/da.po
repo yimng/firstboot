@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-10-01 02:32+0200\n"
 "Last-Translator: Keld Simonsen <keld@rap.dk>\n"
 "Language-Team:  <da@li.org>\n"
@@ -81,28 +81,28 @@ msgstr ""
 "En kopi af fejlsøgningsuddata er gemt i %s. \n"
 "Vær sød at vedlægge denne fil til fejlrapporten. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Tilbage"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_Fremad"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "System skal nu genstartes for at nogle af dine valg kan få virkning."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Færdiggør"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimportering af %s mislykkedes: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkommen"
@@ -195,7 +195,8 @@ msgstr ""
 "for at fortsætte"
 
 #: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Autorun-programmet kan ikke findes på cd'en. Klik på \"O.k.\" for at "
 "fortsætte."
@@ -242,7 +243,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Brug netværksindlogning..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -252,23 +253,23 @@ msgstr ""
 "fortsætter uden en konto kan du kun logge ind med root-kontoen, som "
 "reserveret til administrativ brug."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Fortsæt"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Opret _konto"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -277,20 +278,20 @@ msgstr ""
 "Brugernavnet '%s' er en reserveret systemkonto. Angiv venligst et andet "
 "brugernavn."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Et hjemmekatalog for brugernavnet '%s' eksisterer allerede. Angiv venligst et andet "
-"brugernavn."
+"Et hjemmekatalog for brugernavnet '%s' eksisterer allerede. Angiv venligst "
+"et andet brugernavn."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Dato og klokkeslæt"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Sæt dato og klokkeslet for systemet."
 
@@ -298,7 +299,7 @@ msgstr "Sæt dato og klokkeslet for systemet."
 msgid "Display"
 msgstr "Display"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Vælg den opløsning og den farvedybde som du vil bruge"
 
@@ -322,7 +323,7 @@ msgstr "Opstartsprotokol"
 msgid "_Change Network Configuration..."
 msgstr "_Ændr netværkskonfiguration..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "statisk"
 
@@ -340,15 +341,15 @@ msgid ""
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Klik på 'Afspil'-knappen for at høre en lydprøve. Du bør høre en "
-"serie med 3 lyde. Den første lyd skal være i den højre kanal, den anden lyd "
-"skal være i den venstre kanal, og den tredje lyd skal være i midten."
+"Klik på 'Afspil'-knappen for at høre en lydprøve. Du bør høre en serie med 3 "
+"lyde. Den første lyd skal være i den højre kanal, den anden lyd skal være i "
+"den venstre kanal, og den tredje lyd skal være i midten."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Tidszone"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Indstil tidszone for systemet."
 
@@ -362,4 +363,3 @@ msgstr ""
 "brug. Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
 "konfigurering. Klik på 'Fremad'-knappen i det nederste højre hjørne for at "
 "fortsætte."
-

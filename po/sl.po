@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-09-16 15:08+0200\n"
 "Last-Translator: Rok Papez <rok.papez@lugos.si>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
@@ -77,28 +77,29 @@ msgstr ""
 "izhoda se je shranil v %s. Zagotovo pripnite tudi \n"
 "to datoteko.\n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "Na_zaj"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_Naprej"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Sistem se mora ponovno zagnati, da se lahko uveljavi nekatere izmed sprememb."
+msgstr ""
+"Sistem se mora ponovno zagnati, da se lahko uveljavi nekatere izmed sprememb."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Končaj"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "napaka pri vnosu modula %s: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Dobrodošli"
@@ -153,7 +154,11 @@ msgid ""
 "for installation of third-party plug-ins and applications.  You may also "
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
-msgstr "Da bi namestili dodatno programje in vtičnike, ki so jih pripravili drugi, vstavite sedaj medij z imenom \"Red Hat Enterprise Linux Extras\". Vstavite lahko tudi medij z dokumentacijo ali kak drug medij z dodatnim programjem, ki ga je priskrbel Red Hat."
+msgstr ""
+"Da bi namestili dodatno programje in vtičnike, ki so jih pripravili drugi, "
+"vstavite sedaj medij z imenom \"Red Hat Enterprise Linux Extras\". Vstavite "
+"lahko tudi medij z dokumentacijo ali kak drug medij z dodatnim programjem, "
+"ki ga je priskrbel Red Hat."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -170,8 +175,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Da bi omočili izvajanje 32-bitnih aplikacij na arhitekturi Intel Iranium2 morate "
-"sedaj namestiti paket \"Intel Execution Layer\" z medija \"Extras\"."
+"Da bi omočili izvajanje 32-bitnih aplikacij na arhitekturi Intel Iranium2 "
+"morate sedaj namestiti paket \"Intel Execution Layer\" z medija \"Extras\"."
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
@@ -186,8 +191,11 @@ msgstr ""
 "za nadaljevanje."
 
 #: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "Programa \"autorun\" ni moč najti na mediju. Kliknite \"Naprej\" za nadaljevanje."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Programa \"autorun\" ni moč najti na mediju. Kliknite \"Naprej\" za "
+"nadaljevanje."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
@@ -230,7 +238,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Uporabi _omrežno prijavo..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -240,23 +248,23 @@ msgstr ""
 "računa, se boste lahko prijavili le kot root, ki pa je rezerviran zgolj za "
 "skrbniško rabo."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Nadaljuj"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Izdelaj _račun"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Gesli se razlikujeta. Prosim, znova vnesite geslo."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Geslo je prekratko. Prosim, uporabite vsaj 6 znakov."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -265,7 +273,7 @@ msgstr ""
 "Uporabniško ime '%s' je že ime rezerviranega sistemskega računa. Prosim, "
 "določite novo uporabniško ime."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -276,7 +284,7 @@ msgstr "Uporabniško ime '%s' že obstaja. Izberite drugo uporabniško ime."
 msgid "Date and Time"
 msgstr "Datum in čas"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Prosim, nastavite sistemski datum in čas."
 
@@ -284,7 +292,7 @@ msgstr "Prosim, nastavite sistemski datum in čas."
 msgid "Display"
 msgstr "Zaslon"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Izberite ločljivost in barvno globino"
 
@@ -308,7 +316,7 @@ msgstr "Zagonski protokol"
 msgid "_Change Network Configuration..."
 msgstr "_Spremeni mrežne nastavitve..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "statična"
 
@@ -325,13 +333,16 @@ msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
-msgstr "Kliknite gumb \"Predvajaj\", za predvajanje preskusnega zvoka. Slišati morate zaporedje treh zvokov. Prvi zvok bo desno, drugi levo, tretji pa bo na sredini."
+msgstr ""
+"Kliknite gumb \"Predvajaj\", za predvajanje preskusnega zvoka. Slišati "
+"morate zaporedje treh zvokov. Prvi zvok bo desno, drugi levo, tretji pa bo "
+"na sredini."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Časovni pas"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Prosim, izberite časovni pas tega sistema."
 
@@ -344,4 +355,3 @@ msgstr ""
 "Preden bo sistem pripravljen za rabo, morate narediti še nekaj korakov. "
 "Nastavitveni agent vas bo vodil skozi nekaj osnovnih nastavitvah. Za "
 "nadaljevanje kliknite gumb \"Naprej\" v spodnjem desnem kotu."
-

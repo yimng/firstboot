@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2004-03-11 19:00+0200\n"
 "Last-Translator: Thobile Mhlongo <thobile@obsidian.co.za>\n"
 "Language-Team: Zulu <zulu@translate.org.za>\n"
@@ -75,29 +75,29 @@ msgstr ""
 "Ikhophi lomphumela wokukhipha igciwane ligcinwe kwi-%s \n"
 "Qiniseka ukunamathisela ifayela lalo mbiko. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Emuva"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 #, fuzzy
 msgid "_Finish"
 msgstr "Qeda Umiso"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Wamukelekile"
@@ -233,7 +233,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Sebenzisa Ukungena _Ngaphakatho Kuxhumano..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -243,25 +243,25 @@ msgstr ""
 "kwe-akhawunti, ungakwazi ukungena ngaphakathi nge-akhawunti yempande, leyo "
 "emiselwe kuphela ukusetshenziswa abazokuphatha."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Qhubeka"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Dala _i-akhawunti"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Amagama okudlula awafani.  Siza ungenisa kabusha igama lokudlula."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 "Igama lokudlula limfushane kakhulu.  Siza usebenzise okungenani izimpawu "
 "ezingu-6."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -270,7 +270,7 @@ msgstr ""
 "Igama lomsebenzisi '%s' limiselwe i-akhawunti yesistimu.  Siza ucacise "
 "elinye igama lomsebenzisi."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -283,7 +283,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "Usuku kanye Nesikhathi"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Siza umise usuku kanye nesikhathi sesistimu."
 
@@ -291,7 +291,7 @@ msgstr "Siza umise usuku kanye nesikhathi sesistimu."
 msgid "Display"
 msgstr "Veza"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Siza ukhethe isixazululo kanye nokujula kombala ofuna ukuwusebenzisa"
 
@@ -315,7 +315,7 @@ msgstr "Umthetho olandelwayo Wokulayisha"
 msgid "_Change Network Configuration..."
 msgstr "_Shintsha Inhlanganiselo Yoxhumano..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "kumile"
 
@@ -344,7 +344,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Ukwahluka kwezikhathi"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Siza umise ukwahluka kwezikhathi kwesistimu."
 
@@ -359,111 +359,3 @@ msgstr ""
 "yakho ikulungele ukusebenza.  Ummeli Womiso uzokudlulisa kwinhlanganiselo "
 "elula.  Siza ucofe inkinobho \"Okulandelayo\" ngasekhoneni "
 "langakwesokudla'ukuze uqhubeke."
-
-#~ msgid "_Next"
-#~ msgstr "_Okulandelayo"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Inhlanganiselo yekhadi lomsindo"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Qeda Umiso"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Isistimu yakho manje isimisiwe futhi isilungele ukusetshenziswa.  Siza "
-#~ "ucofe inkinobho \"Okulandelayo\" ezansi kwasekhoneni langakwesokudla "
-#~ "ukuze uqhubeke."
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Isistimu yakho manje isimisiwe futhi isilungele ukusetshenziswa.  Siza "
-#~ "ucofe inkinobho \"Okulandelayo\" ezansi kwasekhoneni langakwesokudla "
-#~ "ukuze uqhubeke."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr ""
-#~ "Igama lomsebenzisi kumele ubude balo bube izimpawu ezingaphansi kuka-33."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Igama lomsebenzisi akumele liqale ngenombolo."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Igama lomsebenzisi '%s' liqukethe isikhala esingenalutho.  Siza ungafaki "
-#~ "isikhala esingenalutho egameni lomsebenzisi."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Igama lomsebenzisi '%s' liqukethe izimpawu zokugcizelela.  Siza "
-#~ "ungasebenzisi okokugcizelela egameni lomsebenzisi."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Igama lomsebenzis '%s' liqukethe amagama aphezulu.  Siza ungasebenzisi "
-#~ "'amagama aphezulu egameni lomsebenzisi."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Igama lomsebenzisi '%s' liqukethe izimpawu ezingasebenzi.  Siza "
-#~ "usebenzise kuphela izimpawu ze-ASCII."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Igama lokudlula liqukethe izimpawu ezingasebenzi.  Siza usebenzise "
-#~ "kuphela izimpawu ze-ASCII."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Igama '%s' liqukethe izimpawu ezingasebenzi.  Siza usebenzise kuphela "
-#~ "izimpawu ze-ASCII."
-
-#, fuzzy
-#~ msgid "Licence Aggrement"
-#~ msgstr "Isivumelwano Selayisensi"
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Uma unawo ama-CDs abalwe ngezansi, ungafaa amaphakethe asuka kuwona "
-#~ "ngokufak i-CD ebese ucofa inkinobho elungile."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Siza ungenise isikhathi somlekeleli."
-
-#~ msgid "Error"
-#~ msgstr "Iphutha"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Uxhumano nge-%s alusungulwanga.  Mhlawumbe i-%s ayikho noma "
-#~ "izilungiselelo zodonga lomlilo'kwikhomputha yakho zivimba izixhumaniso ze-"
-#~ "NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Ithintana nomlekeleli we-NTP.  Siza ulinde..."
-
-#~ msgid "User Account"
-#~ msgstr "I-akhawunti Yomsebenzisi"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2005-01-26 15:15+0300\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -72,29 +72,29 @@ msgstr ""
 "Копію налагоджувальної інформації збережено у %s \n"
 "Переконайтесь, що ви приєднали цей файл до повідомлення про помилку.\n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_Далі"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Систему треба перезавантажити, перж ніж деякі зроблені зміни наберуть сили."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Завершити"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "помилка при імпорті модуля %s: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Ласкаво просимо"
@@ -234,7 +234,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Автентифікація по _мережі..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -244,24 +244,24 @@ msgstr ""
 "відмовитесь ви зможете ввійти у систему лише як користувач root, який "
 "зарезервований лише для адміністрування."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Продовжити"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Створити _обліковий запис"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Паролі не співпадають. Введіть пароль знову."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 "Пароль надто короткий. Використовуйте паролі довжиною не менше 6 символів."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -269,19 +269,20 @@ msgid ""
 msgstr ""
 "Ім'я '%s' зарезервоване для системи. Вкажіть іншу назву облікового рахунку."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Домашній каталог користувача '%s' вже існує. Вкажіть іншу назву облікового рахунку."
+"Домашній каталог користувача '%s' вже існує. Вкажіть іншу назву облікового "
+"рахунку."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Дата та час"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Встановіть дату та час."
 
@@ -289,7 +290,7 @@ msgstr "Встановіть дату та час."
 msgid "Display"
 msgstr "Дисплей"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Виберіть роздільну здатність та якість передачі кольору"
 
@@ -313,7 +314,7 @@ msgstr "Протокол завантаження"
 msgid "_Change Network Configuration..."
 msgstr "_Змінити конфігурацію мережі..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "статична"
 
@@ -339,7 +340,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Часовий пояс"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Вкажіть часовий пояс"
 
@@ -350,5 +351,5 @@ msgid ""
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Лишилось ще декілька кроків, після чого ваша система буде готова до роботи. "
-"Помічник налаштовування допоможе вам з налаштовуванням. Для продовження натисніть \"Далі\""
-"у лівому нижньому куті."
+"Помічник налаштовування допоможе вам з налаштовуванням. Для продовження "
+"натисніть \"Далі\"у лівому нижньому куті."

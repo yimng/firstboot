@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-09-24 06:18+0100\n"
 "Last-Translator: Renato Pavicic <renato@translator-shop.org>\n"
 "Language-Team: Renato Pavicic <renato@translator-shop.org>\n"
@@ -70,29 +70,29 @@ msgstr ""
 "Kopija izlaznih podataka nedostatka spremljena je u %s.\n"
 "Ovu datoteku pridodajte uz vaš izvještaj o nedostatku.\n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Povratak"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_Naprijed"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Da bi neki od vaših odabira dobili učinak sustav će biti ponovo pokrenut."
+msgstr ""
+"Da bi neki od vaših odabira dobili učinak sustav će biti ponovo pokrenut."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Završetak"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "uvoz modula %s nije uspio: %s"
 
-#: ../src/firstbootWindow.py:551
-#: ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Dobrodošli"
@@ -137,14 +137,21 @@ msgstr "Označite stavku koju želite izmijeniti "
 msgid "Setup Agent"
 msgstr "Agent postavki"
 
-#: ../src/modules/additional_cds.py:44
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Dodatni CD-i"
 
 #: ../src/modules/additional_cds.py:65
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Za instalaciju dodataka i aplikacija trećih proizvođača umetnite disk označen \"Red Hat Enterprise Linux Extras\".  Možete umetnuti i disk s dokumentacijom ili druge diskove iz Red Hat distribucije ako želite u ovom trenutku instalirati još neki dodatni softver."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Za instalaciju dodataka i aplikacija trećih proizvođača umetnite disk "
+"označen \"Red Hat Enterprise Linux Extras\".  Možete umetnuti i disk s "
+"dokumentacijom ili druge diskove iz Red Hat distribucije ako želite u ovom "
+"trenutku instalirati još neki dodatni softver."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -155,31 +162,47 @@ msgstr "Umetnite disk za instalaciju dodatnog softvera."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Da biste  na Intel Itanium2 arhitekturi omogućili podršku 32-bitnih aplikacija potrebno je u ovom trenutku instalirati paket Intel Execution Layer s CD-a 'Extras'."
+"Da biste  na Intel Itanium2 arhitekturi omogućili podršku 32-bitnih "
+"aplikacija potrebno je u ovom trenutku instalirati paket Intel Execution "
+"Layer s CD-a 'Extras'."
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Instaliraj..."
 
 #: ../src/modules/additional_cds.py:164
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "CD-ROM nije pronađen. Umetnite CD u vaš CD-ROM uređaj i kliknite \"U redu\" za nastavak."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ROM nije pronađen. Umetnite CD u vaš CD-ROM uređaj i kliknite \"U redu\" "
+"za nastavak."
 
 #: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "Program autorun nije moguće pronaći na CD-u. Za nastavak kliknite \"U redu\"."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Program autorun nije moguće pronaći na CD-u. Za nastavak kliknite \"U redu\"."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
 msgstr "Izrada korisnika"
 
 #: ../src/modules/create_user.py:66
-msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "Preporučuje se izrada osobnog korisničkog naloga za normalnu (ne-administrativnu) upotrebu. Za izradu osobnog naloga morate dati sljedeće potraživan podatke."
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Preporučuje se izrada osobnog korisničkog naloga za normalnu (ne-"
+"administrativnu) upotrebu. Za izradu osobnog naloga morate dati sljedeće "
+"potraživan podatke."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -198,48 +221,66 @@ msgid "Confir_m Password:"
 msgstr "_Potvrda lozinke:"
 
 #: ../src/modules/create_user.py:113
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Ako je potrebno upotrijebiti mrežnu provjeru autentičnosti poput Kerberos ili NIS, kliknite gumb 'Uz mrežnu prijavu'."
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Ako je potrebno upotrijebiti mrežnu provjeru autentičnosti poput Kerberos "
+"ili NIS, kliknite gumb 'Uz mrežnu prijavu'."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Upotrijebi _mrežnu prijavu..."
 
-#: ../src/modules/create_user.py:159
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Snažno se preporučuje izrada osobnog korisničkog naloga. Ako nastavite bez naloga moći ćete se prijaviti samo s korijenskim nalogom, koji je rezerviran samo za administrativnu upotrebu."
+#: ../src/modules/create_user.py:151
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"Snažno se preporučuje izrada osobnog korisničkog naloga. Ako nastavite bez "
+"naloga moći ćete se prijaviti samo s korijenskim nalogom, koji je rezerviran "
+"samo za administrativnu upotrebu."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Nastavi"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Izradi _nalog"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lozinka se ne poklapaju. Ponovo unesite lozinku."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lozinka je prekratka. Upotrijebite najmanje 6 znakova."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Korisničko ime '%s' rezervirani je nalog sustava. Navedite drugo korisničko ime."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Korisničko ime '%s' rezervirani je nalog sustava. Navedite drugo korisničko "
+"ime."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
-msgid "A home directory for the username '%s' already exists.  Please specify another username."
-msgstr "Korisnička mapa za korisničko ime '%s' već postoji. Odredite drugo korisničko ime."
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
+msgstr ""
+"Korisnička mapa za korisničko ime '%s' već postoji. Odredite drugo "
+"korisničko ime."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Datum i vrijeme"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Postavite datum i vrijeme u sustavu."
 
@@ -247,7 +288,7 @@ msgstr "Postavite datum i vrijeme u sustavu."
 msgid "Display"
 msgstr "Zaslon"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Odaberite rezoluciju i dubinu boja koju želite upotrebljavati."
 
@@ -271,12 +312,11 @@ msgstr "Pokretački protokol"
 msgid "_Change Network Configuration..."
 msgstr "_Izmjena mrežne konfiguracije..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "statično"
 
-#: ../src/modules/soundcard_gui.py:43
-#: ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Zvučna kartica"
 
@@ -285,18 +325,30 @@ msgid "An audio device has been detected in your computer."
 msgstr "U vašem je računalu otkrivena zvučna kartica."
 
 #: ../src/modules/soundcard_gui.py:68
-msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Da biste poslušali zvuk kliknite gumb \"Pokreni\". Trebali bi ste ćuti niz od tri zvuka. Prvi je zvuk na desnom kanalu, drugi na lijevom, a treći u sredini."
+msgid ""
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
+msgstr ""
+"Da biste poslušali zvuk kliknite gumb \"Pokreni\". Trebali bi ste ćuti niz "
+"od tri zvuka. Prvi je zvuk na desnom kanalu, drugi na lijevom, a treći u "
+"sredini."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Vremenska zona"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Postavite vremensku zonu za sustav."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
-msgstr "Prije nego što vaš sustav postane spreman za upotrebu potrebno je učiniti još nekoliko koraka. Agent podešavanja sustava vodit će vas kroz neka osnovna konfiguriranja. Za nastavak kliknite gumb \"Naprijed\" u donjem desnom kutu."
-
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue."
+msgstr ""
+"Prije nego što vaš sustav postane spreman za upotrebu potrebno je učiniti "
+"još nekoliko koraka. Agent podešavanja sustava vodit će vas kroz neka "
+"osnovna konfiguriranja. Za nastavak kliknite gumb \"Naprijed\" u donjem "
+"desnom kutu."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-09-23 01:11+0600\n"
 "Last-Translator: Mahay Alam Khan (মাহে আলম) <makl10n@yahoo.com>\n"
 "Language-Team: Bengali <redhat-translation@bengalinux.org>\n"
@@ -85,29 +85,29 @@ msgstr ""
 "debug তথ্য %s ফাইলে রাখা হয়েছে \n"
 "ঐ ফাইলটি বাগ রিপোর্টে সংযুক্ত করে দিতে ভুলবেন না। \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "পূর্ববর্তী (_প)"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "সামনে (‍‍_F)"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "আপনার কিছু নির্বাচন বাস্তবায়ন করতে হলে, সিস্টেমকে এখন রিবুট করতে হবে।"
 
 # modified by RB
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "সম্পন্ন (_F)"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s -এর মডিউল ইম্পোর্ট করতে ব্যর্থ: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "স্বাগতম"
@@ -264,7 +264,7 @@ msgstr "নেটওয়ার্ক লগ-ইন ব্যবহার কর�
 
 # modified for RHEL
 # sam:
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -275,26 +275,26 @@ msgstr ""
 "জন্য সংরক্ষিত।"
 
 # msgstr "_চালিয়ে যাও"
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "অগ্রসর হও (_গ)"
 
 # msgstr "একাউন্ট তৈরী কর"
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "অ্যাকাউন্ট তৈরি করো (_ক)"
 
 # msgstr "পাসওয়ার্ডগুলো একই নয়। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "পাসওয়ার্ডগুলো মেলেনি। অনুগ্রহ করে আরেকবার পাসওয়ার্ড দিন।"
 
 # modified by RB
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "পাসওয়ার্ডটি খুবই ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষরের পাসওয়ার্ড লিখুন।"
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -302,7 +302,7 @@ msgid ""
 msgstr ""
 "'%s' নামটি সিস্টেম একাউন্ট হিসাবে সংরক্ষিত আছে। অনুগ্রহ করে অন্য একটি নাম দিন।"
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -314,7 +314,7 @@ msgid "Date and Time"
 msgstr "তারিখ এবং সময়"
 
 # modified by RB
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "অনুগ্রহ করে সিস্টেমটির তারিখ এবং সময় নির্ধারণ করুন।"
 
@@ -323,7 +323,7 @@ msgid "Display"
 msgstr "ডিসপ্লে"
 
 # modified by RB
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "অনুগ্রহ করে আপনার পছন্দের রেজোলিউশন এবং রঙের গাঢ়তা নির্বাচন করুন"
 
@@ -349,7 +349,7 @@ msgid "_Change Network Configuration..."
 msgstr "নেটওয়ার্ক কনফিগারেশন পরিবর্তন করুন (_প)..."
 
 # স্থির
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "স্ট্যাটিক"
 
@@ -374,7 +374,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "সময়ের অঞ্চল"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "অনুগ্রহ করে আপনার সিস্টেমের জন্য সময়ের অঞ্চল নির্ধারণ করুন।"
 
@@ -387,81 +387,3 @@ msgstr ""
 "আর কয়েকটি ধাপের পর আপনার কম্পিউটারটি ব্যাবহারের জন্য প্রস্তুত হবে। এখন আপনার "
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনের জন্য সেটআপ এজেন্ট আপনাকে সাহায্য করবে। অগ্রসর "
 "হওয়ার জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
-
-#~ msgid "_Next"
-#~ msgstr "পরবর্তী (_র)"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "সাউন্ড কার্ড কনফিগারেশন "
-
-# modified by RB
-#~ msgid "Finish Setup"
-#~ msgstr "সেটআপ সম্পন্ন করো"
-
-# modified by RB
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "আপনার সিস্টেমটি ব্যবহারের জন্য প্রস্তুত। পরবর্তী ধাপে যাওয়ার জন্য নীচে ডানদিকের "
-#~ "কোনায় অবস্থিত \"পরবর্তী\" বাটনটি চাপুন।"
-
-# modified by RB
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "পরবর্তী ধাপে যাওয়ার জন্য অনুগ্রহ করে নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" "
-#~ "বাটনটি চাপুন।"
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "ব্যাবহারকারীর নামটি অবশ্যই ৩৩ অক্ষরের কম হতে হবে।"
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "ব্যাবহারকারীর নাম কোনো সংখ্যা দিয়ে শুরু হতে পারবে না।"
-
-#  Check for whitespace
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "ব্যাবহারকারীর নাম '%s' এর মাঝে ফাঁকা স্থান রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর "
-#~ "নামের মধ্যে কোনো শূন্যস্থান রাখবেন না।"
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "ব্যাবহারকারীর নাম '%s' এর মাঝে বিরাম চিহ্ন রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর "
-#~ "নামের মধ্যে কোনো বিরাম চিহ্ন রাখবেন না।"
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "ব্যাবহারকারীর নাম '%s' এর মাঝে বড় হাতের অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর "
-#~ "নামের মধ্যে কোনো বড় হাতের অক্ষর রাখবেন না।"
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "ব্যাবহারকারীর নাম '%s' এর মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে ব্যাবহারকারীর "
-#~ "নামের মধ্যে কোনো অবৈধ অক্ষর রাখবেন না।"
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "পাসওয়ার্ডটির মধ্যে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষরমালা ব্যবহার করুন।"
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "'%s' নামের মাঝে অবৈধ অক্ষর রয়েছে। অনুগ্রহ করে শুধু ASCII অক্ষরমালা ব্যবহার করুন।"
-
-#~ msgid "Licence Aggrement"
-#~ msgstr "লাইসেন্স চুক্তি"

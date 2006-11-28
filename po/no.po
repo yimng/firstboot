@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-01-18 15:27+0100\n"
 "Last-Translator: guru <215487@gmail.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -71,28 +71,28 @@ msgstr ""
 "En kopi av feilmelding er lagret som %s - husk å legge ved denne\n"
 "i feilrapporten.\n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "Til_bake"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Systemet må nå starte på nytt for at dine valg skal bli gjeldende."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "Fullfør"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimport av %s feilet: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkommen"
@@ -233,7 +233,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Bruk nettverkspå_logging..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -243,23 +243,23 @@ msgstr ""
 "Hvis du fortsetter uten en konto må du bruke root-kontoen som er forbeholdt "
 "administrativ bruk."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Fortsett"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Opprett _konto"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Passordene er ikke like. Vennligst oppgi passordet igjen."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -268,7 +268,7 @@ msgstr ""
 "Brukernavnet «%s» er en reservert systemkonto. Vennligst oppgi et annet "
 "brukernavn."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -281,7 +281,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "Dato og klokkeslett"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Vennligst oppgi dato og klokkeslett for systemet."
 
@@ -289,7 +289,7 @@ msgstr "Vennligst oppgi dato og klokkeslett for systemet."
 msgid "Display"
 msgstr "Skjerm"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Vennligst velg oppløsning og fargedybde du ønsker å bruke"
 
@@ -313,7 +313,7 @@ msgstr "Oppstartsprotokoll"
 msgid "_Change Network Configuration..."
 msgstr "_Endre nettverkskonfigurasjon..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "statisk"
 
@@ -341,7 +341,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Tidssone"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Vennligst sett tidssone for systemet."
 

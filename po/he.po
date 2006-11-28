@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2005-08-07 00:31+0200\n"
 "Last-Translator: David R <ddady1@gmail.com>\n"
 "Language-Team: none\n"
@@ -73,29 +73,29 @@ msgstr ""
 "עותק של פלט ניפוי השגיאות נשמר ל-%s \n"
 "בבקשה צרף אותו לדוח הבאג שלך. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_הקודם"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "המערכת צריכה לבצע איתחול בכדי שהשינויים שבחרת יתקבלו"
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 #, fuzzy
 msgid "_Finish"
 msgstr "סיום ההתקנה"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "ייבוא המודול %s נכשל: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ברוך הבא"
@@ -234,7 +234,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "הש_תמש באימות רשת..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -243,23 +243,23 @@ msgstr ""
 "מומלץ ליצור חשבון משתמש אישי. אם תמשיך בלי ליצור חשבון, תוכל להתחבר רק עם "
 "חשבון ה-root, השמור לשימוש ניהולי בלבד."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "המש_ך"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "_צור חשבון"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "הסיסמאות לא תואמות. נא הכנס את הסיסמה שנית."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "הסיסמה קצרה מדי. נא השתמש לפחות ב-6 תווים."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -267,7 +267,7 @@ msgid ""
 msgstr ""
 "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -279,7 +279,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "תאריך וזמן"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "נא הגדר את התאריך והזמן של המערכת."
 
@@ -287,7 +287,7 @@ msgstr "נא הגדר את התאריך והזמן של המערכת."
 msgid "Display"
 msgstr "תצוגה"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "נא בחר את הרזולוציה ועומק הצבעים שברצונך להשתמש בהם"
 
@@ -311,7 +311,7 @@ msgstr "פרוטוקול אתחול"
 msgid "_Change Network Configuration..."
 msgstr "שנה ה_גדרות רשת..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "סטטי"
 
@@ -338,7 +338,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "אזור זמן"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "נא הגדר את אזור הזמן של המערכת."
 

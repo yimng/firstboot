@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-05-10 01:02+0700\n"
 "Last-Translator: Teguh DC <dheche@brawijaya.ac.id>\n"
 "Language-Team: Linux Indonesia <http://linux.or.id>\n"
@@ -123,28 +123,28 @@ msgstr ""
 "Salinan dari output debug telah disimpan di %s \n"
 "Pastikan anda menyertakan (attach) file tersebut pada laporan bug. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "Kem_bali"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "Lanjutkan"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Sekarang sistem harus direboot agar beberapa pilihan anda berlaku."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "Selesai"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import dari %s modul gagal: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Selamat Datang"
@@ -286,7 +286,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Gunakan _Login Jaringan..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -296,23 +296,23 @@ msgstr ""
 "melanjutkan tanpanya, anda hanya akan dapat masuk dengan account root dimana "
 "account ini disiapkan hanya untuk keperluan administratif."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "Lanjutkan"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Buat _account"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Password tidak cocok. Masukkan password kembali."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Password terlalu pendek. Pergunakan paling tidak 6 karakter."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -321,20 +321,18 @@ msgstr ""
 "Nama user '%s' merupakan account yang telah dicadangkan untuk sistem. Pilih "
 "username lainnya."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr ""
-"Direktori home untuk username '%s' sudah ada. Pilih "
-"username lainnya."
+msgstr "Direktori home untuk username '%s' sudah ada. Pilih username lainnya."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Tanggal dan Waktu"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Set tanggal dan waktu untuk sistem."
 
@@ -342,7 +340,7 @@ msgstr "Set tanggal dan waktu untuk sistem."
 msgid "Display"
 msgstr "Tampilan"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Pilih resolusi dan kedalaman warna yang ingin anda pergunakan"
 
@@ -366,7 +364,7 @@ msgstr "Protokol Boot"
 msgid "_Change Network Configuration..."
 msgstr "Ubah Konfigurasi Jaringan..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "statik"
 
@@ -384,16 +382,16 @@ msgid ""
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Klik tombol \"Play\" untuk mendengarkan contoh suara. Anda "
-"seharusnya mendengar tiga rangkaian suara. Suara pertama akan muncul di "
-"kanal sebelah kanan, suara kedua akan muncul di kanal sebelah kiri, dan "
-"suara ketiga akan muncul di tengah."
+"Klik tombol \"Play\" untuk mendengarkan contoh suara. Anda seharusnya "
+"mendengar tiga rangkaian suara. Suara pertama akan muncul di kanal sebelah "
+"kanan, suara kedua akan muncul di kanal sebelah kiri, dan suara ketiga akan "
+"muncul di tengah."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Zona Waktu"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Silahkan set zona waktu untuk sistem"
 

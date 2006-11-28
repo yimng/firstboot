@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gu1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-09-12 17:23+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
@@ -90,28 +90,28 @@ msgstr ""
 "%s માં સંગ્રહાઈ ગઈ છે. ખાતરી કરો કે ભૂલ શોધવાના \n"
 "અહેવાલની સાથે આ ફાઈલ જોડો. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "પાછળ (_B)"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "આગળ (_F)"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "તમારી અમુક પસંદગીઓની અસર લાવવા માટે સિસ્ટમ હવે રીબુટ થવી જ જોઈએ."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "સમાપ્ત (_F)"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s નું મોડ્યુલ આયાત કરવામાં નિષ્ફળ: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "સ્વાગત"
@@ -250,7 +250,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "નેટવર્ક પ્રવેશ વાપરો (_L)..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -260,23 +260,23 @@ msgstr ""
 "તો તમે માત્ર રુટ ખાતા સાથે જ પ્રવેશી શકો છો, કે જે સંચાલકના વપરાશ માટે જ આરક્ષિત રખાયેલ "
 "હોય છે."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "ચાલુ રાખો (_C)"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "ખાતું બનાવો (_a)"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "પાસવર્ડો બંધબેસતા નથી.  મહેરબાની કરીને પાસવર્ડ ફરીથી દાખલ કરો."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "પાસવર્ડ ખૂબ નાનો છે.  મહેરબાની કરીને ઓછામાં ઓછા ૬ અક્ષરો વાપરો."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -285,7 +285,7 @@ msgstr ""
 "વપરાશકર્તાનામ '%s' એ સિસ્ટમ ખાતાથી આરક્ષિત છે.  મહેરબાની કરીને અન્ય વપરાશકર્તાનામ "
 "સ્પષ્ટ કરો."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -298,7 +298,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "તારીખ અને સમય"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "મહેરબાની કરીને સિસ્ટમ માટે તારીખ અને સમય સુયોજિત કરો."
 
@@ -306,7 +306,7 @@ msgstr "મહેરબાની કરીને સિસ્ટમ માટે
 msgid "Display"
 msgstr "ડિસ્પ્લે"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "મહેરબાની કરીને તમે જે રીઝોલ્યુશન અને રંગ વાપરવા માંગતા હોય તે પસંદ કરો"
 
@@ -330,7 +330,7 @@ msgstr "બુટ પ્રોટોકોલ"
 msgid "_Change Network Configuration..."
 msgstr "નેટવર્ક રુપરેખાંકન બદલો (_C)..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "સ્ટેટિક"
 
@@ -356,7 +356,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "ટાઈમઝોન"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "મહેરબાની કરીને સિસ્ટમ માટે ટાઈમઝોન સુયોજિત કરો."
 

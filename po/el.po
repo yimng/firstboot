@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-10-02 19:30+0100\n"
 "Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
@@ -81,30 +81,30 @@ msgstr ""
 "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος αποθηκεύτηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Πίσω"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_Μπροστά"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Για να εφαρμοστούν κάποιες από τις επιλογές που έχετε κάνει πρέπει να γίνει "
 "τώρα επανεκκίνηση του συστήματος."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Τέλος"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "αποτυχία εισαγωγής της λειτουργικής μονάδας  %s: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Καλώς ήλθατε"
@@ -168,7 +168,8 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "Παρακαλώ εισάγετε τώρα  όποια πρόσθετα cd εγκατάστασης λογισμικού διαθέτετε."
+msgstr ""
+"Παρακαλώ εισάγετε τώρα  όποια πρόσθετα cd εγκατάστασης λογισμικού διαθέτετε."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -198,7 +199,8 @@ msgstr ""
 "πατήστε \"Εντάξει\" για να συνεχίσετε."
 
 #: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Το πρόγραμμα autorun δεν εντοπίστηκε στο CD. Πατήστε \"Εντάξει\" για να "
 "συνεχίσετε."
@@ -245,7 +247,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Χρήση σύνδεσης μέσω _δικτύου..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -256,25 +258,25 @@ msgstr ""
 "λογαριασμό υπερχρήστη ο οποίος είναι προορισμένος μόνο για τη διαχείριση του "
 "συστήματος."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Συνέχεια"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Δημιουργία _λογαριασμού"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Τα συνθηματικά δε ταιριάζουν.  Παρακαλώ εισάγετε το συνθηματικό ξανά."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 "Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
 "χαρακτήρες."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -283,7 +285,7 @@ msgstr ""
 "Το όνομα χρήστη '%s' είναι δεσμευμένο  από λογαριασμό του συστήματος.  "
 "Παρακαλώ προσδιορίστεένα άλλο  όνομα χρήστη."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -296,7 +298,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "Ημερομηνία και ώρα"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Παρακαλώ ορίστε ημερομηνία και ώρα για το σύστημα."
 
@@ -304,7 +306,7 @@ msgstr "Παρακαλώ ορίστε ημερομηνία και ώρα για 
 msgid "Display"
 msgstr "Οθόνη"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Παρακαλώ επιλέξτε την ανάλυση και αριθμό χρωμάτων που επιθυμείτε"
 
@@ -328,7 +330,7 @@ msgstr "Πρωτόκολλο εκκίνησης"
 msgid "_Change Network Configuration..."
 msgstr "_Αλλαγή ρυθμίσεων δικτύου..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "στατικό"
 
@@ -355,7 +357,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Ζώνη ώρας"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Παρακαλώ ορίσετε τη ζώνη ώρας για το σύστημα."
 
@@ -369,4 +371,3 @@ msgstr ""
 "ακόμη βημάτων.  Το εργαλείο ρύθμισης θα σας οδηγήσει στην εκτέλεση μιας "
 "βασικής ρύθμισης.  Παρακαλούμε επιλέξτε \"Μπροστά\" στην κάτω δεξιά γωνία "
 "για να συνεχίσετε."
-

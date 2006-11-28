@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-09-12 21:05+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -72,28 +72,28 @@ msgstr ""
 "వ్యతిరేకంగా ఒక bugని ఫైలు చేయండి. ఒక debug ప్రతి ఉద్గాతం %s కి భద్రపరచబడుతూ ఉండాలి. \n"
 "తప్పక ఆ ఫైలుని bug నివేదికకు అనుసంధిస్తూ ఉండాలి. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "వెనుకకు (_B)"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "ముందుకు (_F)"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "మీయొక్క కొన్ని ఎన్నికలు ప్రభావితం అవటానికి కంప్యూటరును పునఃప్రారంభించాలి."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "అయ్యింది (_F)"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s గుణకం దిగుమతి విఫలమైంది: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "స్వాగతం"
@@ -228,7 +228,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Network Login ఉపయోగించు (_L)"
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -237,30 +237,30 @@ msgstr ""
 "వ్యక్తిగత వినియోగదారుని ఖాతా సృష్టించటానికి ఎక్కువగా మద్దతివ్వబడుతుంది మీరు ఖాతాలేకుండా కొనసాగించదలిస్తే, "
 "నిర్వాహణా ఉపయోగాలకు మాత్రమే కేటాయించిన root ఖాతాను మాత్రమే ఉపయోగించాలి."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "కొనసాగించు (_C)"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "ఖాతా సృష్టించు"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "అనుమతిపదం సరిపోలలేదు.  మళ్లీ అనుమతిపదాన్ని ఇవ్వండి."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "అనుమతిపదం బాగా చిన్నది.  దయచేసి కనీసం ౬ అక్షరాలను ఉపయోగించండి."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "'%s'వినియోగదారు పేరు ప్రత్యేక విధానంతోకూడిన ఖాతా కలిగిఉంది.  దయచేసి వేరే వినియోగదారుపేరు తెల్పండి."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -271,7 +271,7 @@ msgstr "'%s' వినియోగదారుని home directory ఇప్ప
 msgid "Date and Time"
 msgstr "తేదీ మరియూ సమయం"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "దయచేసి కంప్యూటరు కొరకు తేదీ మరియూ సమయం అమర్చండి."
 
@@ -279,7 +279,7 @@ msgstr "దయచేసి కంప్యూటరు కొరకు తేద
 msgid "Display"
 msgstr "ప్రదర్శించు"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "దయచేసి మీరు ఉపయోగించదలచిన స్థిరీకరణను మరియూ వర్ణ గాఢతను ఎన్నుకోండి."
 
@@ -303,7 +303,7 @@ msgstr "Boot ఒడంబదికల పత్రం"
 msgid "_Change Network Configuration..."
 msgstr "Network ఆకృతిని మార్చు... (_C)"
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "గణాంకం"
 
@@ -328,7 +328,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "కాలక్షేత్రం"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "దయచేసి కంప్యూటరుకోసం కాలక్షేత్రాన్ని అమర్చండి."
 

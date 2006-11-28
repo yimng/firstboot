@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2005-04-24 23:12+0200\n"
 "Last-Translator: Tomislav Markovski <tome@users.ossm.org.mk>\n"
 "Language-Team: Macedonian <i18n-nb@lister.ping.uio.no>\n"
@@ -76,29 +76,29 @@ msgstr ""
 "Копија од излезот на грешката е зачуван во %s \n"
 "Пратете ја таа датотека заедно со извештајот. \n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 #, fuzzy
 msgid "_Finish"
 msgstr "Заврши со поставување"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "увезувањето на модулот %s не успеа: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Добродојдовте"
@@ -244,7 +244,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Користи мрежна _најава..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -254,23 +254,23 @@ msgstr ""
 "продолжите без ваков корисник, може да се најавите само привилегирано "
 "(root), кој е резервиран само за административна употреба."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Продолжи"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Креирај _корисник"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Лозинките не се исти. Внесете ги повторно."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Лозинката е премногу кратка. Мора да има барем 6 букви или бројки."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -278,7 +278,7 @@ msgid ""
 msgstr ""
 "Корисничкото име '%s' содржи големи бикву. Ваквите знаци не се дозволени."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -290,7 +290,7 @@ msgstr ""
 msgid "Date and Time"
 msgstr "Датум и време"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Наместете го датумот и времето на вашиот систем."
 
@@ -298,7 +298,7 @@ msgstr "Наместете го датумот и времето на вашио
 msgid "Display"
 msgstr "Приказ"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 "Одберете ја резолуцијата и длабочината на бои што сакате да ги користите"
@@ -323,7 +323,7 @@ msgstr "Бут протокол"
 msgid "_Change Network Configuration..."
 msgstr "_Промени ги мрежните поставувања..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "статична"
 
@@ -351,7 +351,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Временска зона"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Наместете ја временската зона на системот."
 

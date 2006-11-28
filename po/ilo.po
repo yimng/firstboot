@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Iloko\n"
-"POT-Creation-Date: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-11-26 00:33-0800\n"
 "Last-Translator: Joseph S. Maza <joemaza@comcast.net>\n"
 "Language-Team: \n"
@@ -61,29 +62,28 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Absubli"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Palpasen"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "Saan a nayangkat ti %s: %s"
 
-#: ../src/firstbootWindow.py:551
-#: ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr ""
@@ -128,13 +128,16 @@ msgstr ""
 msgid "Setup Agent"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:44
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Dadduma a CD"
 
 #: ../src/modules/additional_cds.py:65
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
 
 #: ../src/modules/additional_cds.py:71
@@ -146,7 +149,9 @@ msgstr ""
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 
 #: ../src/modules/additional_cds.py:118
@@ -154,11 +159,14 @@ msgid "Install..."
 msgstr "Instalaen..."
 
 #: ../src/modules/additional_cds.py:164
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
 
 #: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 
 #: ../src/modules/create_user.py:39
@@ -166,7 +174,10 @@ msgid "Create User"
 msgstr "Parsuaen ti Mangaramat"
 
 #: ../src/modules/create_user.py:66
-msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
 
 #: ../src/modules/create_user.py:76
@@ -186,48 +197,57 @@ msgid "Confir_m Password:"
 msgstr "_Patalgedan ti Kontrasenias:"
 
 #: ../src/modules/create_user.py:113
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
 msgstr ""
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr ""
 
-#: ../src/modules/create_user.py:159
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+#: ../src/modules/create_user.py:151
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 msgstr ""
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "I_patuloy"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "Parsua ti _kuento"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr ""
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
 msgstr ""
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
-msgid "A home directory for the username '%s' already exists.  Please specify another username."
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 msgstr ""
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Petsa ken Oras"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Isaadyo man ti petsa ken oras ti sistema."
 
@@ -235,7 +255,7 @@ msgstr "Isaadyo man ti petsa ken oras ti sistema."
 msgid "Display"
 msgstr "Ipakita"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 
@@ -259,12 +279,11 @@ msgstr "Protokol ti rubbuat"
 msgid "_Change Network Configuration..."
 msgstr "_Baliwan ti Pannakaidalimanek ti Iket..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr ""
 
-#: ../src/modules/soundcard_gui.py:43
-#: ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Tarheta ti Uni"
 
@@ -273,18 +292,23 @@ msgid "An audio device has been detected in your computer."
 msgstr ""
 
 #: ../src/modules/soundcard_gui.py:68
-msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgid ""
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
 msgstr "Sona ti Oras"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Itudingyo man ti sona ti oras maipaay ti sistema."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
-

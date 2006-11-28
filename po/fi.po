@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-10-30 03:23+0200\n"
 "Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Finnish\n"
@@ -71,29 +71,29 @@ msgstr ""
 "Kopio vianjäljitystulosteesta on tallennettu tiedostoon %s.\n"
 "Muista liittää tämä tiedosto vikailmoitukseen.\n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "_Edellinen"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "_Seuraava"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Järjestelmä käynnistyy nyt uudelleen, jotta tehdyt valinnat tulevat käyttöön."
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "_Päätä"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "moduulin %s tuominen epäonnistui: %s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Tervetuloa"
@@ -231,7 +231,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Käytä _verkkokirjautumista..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -241,23 +241,23 @@ msgstr ""
 "sen luomatta, voit kirjautua vain pääkäyttäjänä, joka on varattu ainoastaan "
 "ylläpitotehtäviin."
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "_Jatka"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "_Luo tunnus"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Salasanat eivät täsmää. Syötä salasana uudelleen."
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Salasana on liian lyhyt. Käytä ainakin kuusimerkkistä salasanaa."
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -266,19 +266,18 @@ msgstr ""
 "Käyttäjänimi %s on varattu järjestelmätunnukseksi.  Käytä jotain toista "
 "käyttäjänimeä."
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr ""
-"Tunnuksen ”%s” kotihakemisto on jo olemassa. Valitse jokin muu tunnus."
+msgstr "Tunnuksen ”%s” kotihakemisto on jo olemassa. Valitse jokin muu tunnus."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
 msgstr "Päivämäärä ja aika"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "Aseta järjestelmän päivämäärä ja aika."
 
@@ -286,7 +285,7 @@ msgstr "Aseta järjestelmän päivämäärä ja aika."
 msgid "Display"
 msgstr "Näyttö"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "Valitse haluamasi resoluutio ja värisyvyys"
 
@@ -310,7 +309,7 @@ msgstr "Boot-protokolla"
 msgid "_Change Network Configuration..."
 msgstr "_Vaihda verkkoasetuksia..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "staattinen"
 
@@ -336,7 +335,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "Aikavyöhyke"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "Aseta järjestelmän aikavyöhyke."
 
@@ -368,8 +367,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Napsauta ”Päätä asennus”-painiketta alhaalta oikealta jatkaaksesi."
+#~ msgstr "Napsauta ”Päätä asennus”-painiketta alhaalta oikealta jatkaaksesi."
 
 #~ msgid "The user name must be less than 33 characters long."
 #~ msgstr "Käyttäjänimen tulee olla alle 33 merkkiä pitkä."

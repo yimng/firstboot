@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:11+0100\n"
+"POT-Creation-Date: 2006-11-28 09:57-0500\n"
 "PO-Revision-Date: 2006-08-19 23:39+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
@@ -78,28 +78,28 @@ msgstr ""
 "除錯輸出的複本已經儲存到 %s \n"
 "請記得在程式錯誤報告中，附上這個檔案。\n"
 
-#: ../src/firstbootWindow.py:105
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
 msgstr "上一頁(_B)"
 
-#: ../src/firstbootWindow.py:114
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
 msgstr "下一頁(_F)"
 
-#: ../src/firstbootWindow.py:233
+#: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "為了讓您的選擇生效，系統現在必須重新啟動。"
 
-#: ../src/firstbootWindow.py:304
+#: ../src/firstbootWindow.py:313
 msgid "_Finish"
 msgstr "完成(_F)"
 
-#: ../src/firstbootWindow.py:399
+#: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "匯入模組 %s 失敗：%s"
 
-#: ../src/firstbootWindow.py:551 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "歡迎"
@@ -232,7 +232,7 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "使用網路登入(_L)..."
 
-#: ../src/modules/create_user.py:159
+#: ../src/modules/create_user.py:151
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
@@ -241,30 +241,30 @@ msgstr ""
 "強烈建議您建立一個個人的使用者帳號。假如您不建立帳號並繼續，您便只能使用 "
 "root 帳號登入；這帳號是專為管理用途所保留的。"
 
-#: ../src/modules/create_user.py:167
+#: ../src/modules/create_user.py:159
 msgid "_Continue"
 msgstr "繼續(_C)"
 
-#: ../src/modules/create_user.py:168
+#: ../src/modules/create_user.py:160
 msgid "Create _account"
 msgstr "建立帳號(_a)"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "兩個密碼不相同。請重輸入密碼。"
 
-#: ../src/modules/create_user.py:199
+#: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短。請至少使用 6 個字元。"
 
-#: ../src/modules/create_user.py:210
+#: ../src/modules/create_user.py:202
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "使用者名稱「%s」是系統的保留帳號。請指定另一個使用名稱。"
 
-#: ../src/modules/create_user.py:228
+#: ../src/modules/create_user.py:220
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -275,7 +275,7 @@ msgstr "使用者「%s」的家目錄已經存在。請指定另一個使用者�
 msgid "Date and Time"
 msgstr "日期與時間"
 
-#: ../src/modules/date.py:49
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
 msgstr "請設定系統的日期與時間。"
 
@@ -283,7 +283,7 @@ msgstr "請設定系統的日期與時間。"
 msgid "Display"
 msgstr "顯示"
 
-#: ../src/modules/display.py:46
+#: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
 msgstr "請選擇您想要使用的螢幕解析度和色深"
 
@@ -307,7 +307,7 @@ msgstr "開機通訊協定"
 msgid "_Change Network Configuration..."
 msgstr "變更網路配置(_C)..."
 
-#: ../src/modules/networking.py:142
+#: ../src/modules/networking.py:152
 msgid "static"
 msgstr "靜態"
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "Timezone"
 msgstr "時區"
 
-#: ../src/modules/timezone.py:50
+#: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
 msgstr "請設定系統的時區。"
 
