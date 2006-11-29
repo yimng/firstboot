@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Iloko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-28 09:57-0500\n"
-"PO-Revision-Date: 2006-11-26 00:33-0800\n"
-"Last-Translator: Joseph S. Maza <joemaza@comcast.net>\n"
+"PO-Revision-Date: 2006-11-29 11:52+0800\n"
+"Last-Translator: rva <rvaragon@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -14,23 +14,23 @@ msgstr ""
 
 #: ../src/constants_text.py:36
 msgid "Exit"
-msgstr "Turpos"
+msgstr "Rummuar"
 
 #: ../src/eula_strings.py:27
 msgid "License Agreement"
-msgstr ""
+msgstr "Lisensia ti Katulagan"
 
 #: ../src/eula_strings.py:28
 msgid "_Yes, I agree to the License Agreement"
-msgstr ""
+msgstr "_Wen, umanamongak iti Lisensia ti katulagan"
 
 #: ../src/eula_strings.py:29
 msgid "N_o, I do not agree"
-msgstr ""
+msgstr "Saan, diak umanam_ong"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
+msgstr "Kayatmo kadi a basaen manen wenno ikabilangan manen ti Lisensia ti Katulagan?"
 
 #: ../src/eula_strings.py:31
 msgid "_Reread license"
@@ -52,6 +52,10 @@ msgid ""
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
 msgstr ""
+"Agsipud ta adda parikut iti module nga %s, \n"
+"saan a maipatary ti Ahente ti Panangisimpa ti Red Hat \n"
+"daytoy a module ket padasenna nga ipataray \n"
+"dagiti nabati pay a modules."
 
 #: ../src/exceptionWindow.py:56
 #, python-format
@@ -64,33 +68,34 @@ msgstr ""
 
 #: ../src/firstbootWindow.py:107
 msgid "_Back"
-msgstr "_Absubli"
+msgstr "_Agsubli"
 
 #: ../src/firstbootWindow.py:116
 msgid "_Forward"
-msgstr "_"
+msgstr "_Umabante"
 
 #: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Nasken nga agiddep ken agriing manen ti sistema tapno sumamay ti sumagmamano kadagiti pinilim."
 
 #: ../src/firstbootWindow.py:313
 msgid "_Finish"
-msgstr "_Palpasen"
+msgstr "_Leppasen"
 
 #: ../src/firstbootWindow.py:413
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr "Saan a nayangkat ti %s: %s"
+msgstr "saan a nayangkat kas module ti %s: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580
+#: ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
-msgstr ""
+msgstr "Dumanon!"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
-msgstr ""
+msgstr "Panangpasingked"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
@@ -106,7 +111,7 @@ msgstr "Pannakaidalimanek ti Iket"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration"
-msgstr "Pannakaidalimanek ti Pagmaldit"
+msgstr "Pannakaidalimanek ti Pagimaldit"
 
 #: ../src/textWindow.py:39
 msgid "System services"
@@ -118,75 +123,67 @@ msgstr "Pannakaidalimanek ti Sona ti Oras"
 
 #: ../src/textWindow.py:42
 msgid "Run Tool"
-msgstr ""
+msgstr "Ipataray ti gamigam"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
-msgstr ""
+msgstr "Piliem ti banag a kayatmo a baliwan"
 
 #: ../src/textWindow.py:52
 msgid "Setup Agent"
-msgstr ""
+msgstr "Ahente ti Panangisimpa"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
-msgstr "Dadduma a CD"
+msgstr "Dadduma pay a CD"
 
 #: ../src/modules/additional_cds.py:65
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
 msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Isigpitmon ti dadduma pay a CD ti software a paginstolar itoy nga oras."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Nasken nga iyinstolarmo itan ti gargaret nga Intel Execution Layer manipud iti CD nga Extras tapno mapagandar ti suporta ti panangipataray iti 32-bit nga aplikasion iti arkitektura nga  Intel Itanium2."
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
-msgstr "Instalaen..."
+msgstr "Iyinstolar..."
 
 #: ../src/modules/additional_cds.py:164
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "Saan a nakita ti CD-ROM. Pangngaasim ta iserrekmo ti CD-ROM iti drive samo italmeg ni \"Mayat|\" tapno agtuloy."
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Saan a masapulan ti programa nga autorun iti CD. Italmegmo ti \"Mayat\" tapno agtuloy."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
-msgstr "Parsuaen ti Mangaramat"
+msgstr "Mangaramid iti Agaramat"
 
 #: ../src/modules/create_user.py:66
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
 msgstr ""
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
-msgstr "_Naga ti Mangaramat:"
+msgstr "_Nagan ti Mangaramat:"
 
 #: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Sibubuk_el a Nagan:"
 
 #: ../src/modules/create_user.py:90
 msgid "_Password:"
@@ -197,51 +194,42 @@ msgid "Confir_m Password:"
 msgstr "_Patalgedan ti Kontrasenias:"
 
 #: ../src/modules/create_user.py:113
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
 msgstr ""
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Aramaten ti Iket a _Serkan..."
 
 #: ../src/modules/create_user.py:151
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "Napateg unay a maisingasing ti pannakaaramid ti maysa a personal nga account ti agaramat. No ituloymo nga awanan account, makaserrekka laeng babaen ti account a root, a naireserba laeng a para pangtarawidwid."
 
 #: ../src/modules/create_user.py:159
 msgid "_Continue"
-msgstr "I_patuloy"
+msgstr "_Ituloy"
 
 #: ../src/modules/create_user.py:160
 msgid "Create _account"
-msgstr "Parsua ti _kuento"
+msgstr "Mangaramid iti _kuento"
 
 #: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Saan nga agtumpong dagiti kontrasenias. Pangngaasim ta iserrekmo manen ti kontrasenias."
 
 #: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
+msgstr "Ababa unay ti kontrasenias. Pangngaasim ta agaramatka iti di nakurkurang ngem 6 a kurdit."
 
 #: ../src/modules/create_user.py:202
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "Nakareserba ti nagan ti agaramat a '%s' a kas account ti sistema. Pangngaasim ta mangpilika iti sabali a nagan."
 
 #: ../src/modules/create_user.py:220
 #, python-format
-msgid ""
-"A home directory for the username '%s' already exists.  Please specify "
-"another username."
-msgstr ""
+msgid "A home directory for the username '%s' already exists.  Please specify another username."
+msgstr "Addan pagtaengan a direktorio para iti nagan ti agaramat a '%s'. Pangngaasim ta mangpilika iti sabali a nagan."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -249,7 +237,7 @@ msgstr "Petsa ken Oras"
 
 #: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
-msgstr "Isaadyo man ti petsa ken oras ti sistema."
+msgstr "Pangngaasim ta isaadmo ti petsa ken oras ti sistema."
 
 #: ../src/modules/display.py:43
 msgid "Display"
@@ -261,11 +249,11 @@ msgstr ""
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
-msgstr "Pannakaidalimanek ti Iket"
+msgstr "Pannakaisimpa ti Iket"
 
 #: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
-msgstr ""
+msgstr "Dagiti sumaganad a ramramit ti network ket naduktalan iti sistema:"
 
 #: ../src/modules/networking.py:88
 msgid "Network Device"
@@ -281,9 +269,10 @@ msgstr "_Baliwan ti Pannakaidalimanek ti Iket..."
 
 #: ../src/modules/networking.py:152
 msgid "static"
-msgstr ""
+msgstr "static"
 
-#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43
+#: ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Tarheta ti Uni"
 
@@ -292,10 +281,7 @@ msgid "An audio device has been detected in your computer."
 msgstr ""
 
 #: ../src/modules/soundcard_gui.py:68
-msgid ""
-"Click the \"Play\" button to hear a sample sound.  You should hear a series "
-"of three sounds.  The first sound will be in the right channel, the second "
-"sound will be in the left channel, and the third sound will be in the center."
+msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 
 #: ../src/modules/timezone.py:46
@@ -304,11 +290,9 @@ msgstr "Sona ti Oras"
 
 #: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
-msgstr "Itudingyo man ti sona ti oras maipaay ti sistema."
+msgstr "Pangngaasim ta itudingmo ti sona ti oras maipaay ti sistema."
 
 #: ../src/modules/welcome.py:34
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Adda pay sumagmamano nga aramidem sakbay a maaramatmo ti sistemam. Ibagnosnaka itan ti Ahente ti Panangisimpa iti sumagmamano a nangruna a panangidalimanek. Pangngaasim ta italmegmo ti buton nga \"Umabante\" iti akimbaba a kanawan a suli tapno agtuloyka. "
+
