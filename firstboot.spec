@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.25
+Version: 1.4.26
 Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -108,6 +108,9 @@ fi
 
 
 %changelog
+* Thu Nov 30 2006 Chris Lumens <clumens@redhat.com> 1.4.26-1
+- Update translations (#198872).
+
 * Thu Oct 26 2006 Chris Lumens <clumens@redhat.com> 1.4.25-1
 - Require matching versions of firstboot and firstboot-tui.
 - Fix language in non-rhgb graphical case (notting).
