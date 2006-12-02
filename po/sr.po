@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-12-01 12:07-0500\n"
-"PO-Revision-Date: 2006-04-06 10:57-0000\n"
+"PO-Revision-Date: 2006-12-02 01:57-0000\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora@prevod.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,13 +34,11 @@ msgstr "_Не, не слажем се"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Да ли желите поново прочитати или размотрити Лиценцни договор?"
+msgstr "Да ли желите да поново прочитате или размотрите Лиценцни договор?"
 
 #: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
+msgid "Do you want to reread or reconsider the Licence Agreement?  If not, please shut down the computer and remove this product from your system. "
+msgstr "Да ли желите да поново прочитате или размотрите Лиценцни договор? Ако не, молим угасите рачунар и уклоните овај производ са Вашег система."
 
 #: ../src/eula_strings.py:32
 msgid "_Reread license"
@@ -89,9 +87,7 @@ msgstr "Нап_ред"
 
 #: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"Систем сада мора бити поново подигнут како би неки од Ваших избора имали "
-"дејства."
+msgstr "Систем сада мора бити поново подигнут како би неки од Ваших избора имали дејства."
 
 #: ../src/firstbootWindow.py:313
 msgid "_Finish"
@@ -102,7 +98,8 @@ msgstr "За_врши"
 msgid "module import of %s failed: %s"
 msgstr "убацивање модула %s није успело: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:580
+#: ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Добродошли"
@@ -147,21 +144,14 @@ msgstr "Изаберите ставку коју желите да измени�
 msgid "Setup Agent"
 msgstr "Агент поставке"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
 msgstr "Додатни CD-ови"
 
 #: ../src/modules/additional_cds.py:65
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-"Убаците диск обележен као „Red Hat Enterprise Linux Extras“ да омогућите "
-"инсталирање додатака и програма са стране.  У овом тренутку можете убацити и "
-"диск са документацијом, или друге Red Hat достављене дискове да инсталирате "
-"додатни софтвер."
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "Убаците диск обележен као „Red Hat Enterprise Linux Extras“ да омогућите инсталирање додатака и програма са стране.  У овом тренутку можете убацити и диск са документацијом, или друге Red Hat достављене дискове да инсталирате додатни софтвер."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -172,48 +162,31 @@ msgstr "Сада убаците ма који додатни софтверск�
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Да би сте укључили подршку за 32-битне програме на Intel Itanium2 "
-"архитектури, морате инсталирати Intel Execution Layer пакет са Extras диска "
-"сада."
+"Да бисте укључили подршку за 32-битне програме на Intel Itanium2 архитектури, морате инсталирати Intel Execution Layer пакет са Extras диска сада."
 
 #: ../src/modules/additional_cds.py:118
 msgid "Install..."
 msgstr "Инсталирање..."
 
 #: ../src/modules/additional_cds.py:164
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
-"CD-ROM није пронађен.  Убаците CD-ROM у уређај и притисните „У реду“ за "
-"наставак."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "CD-ROM није пронађен.  Убаците CD-ROM у уређај и притисните „У реду“ за наставак."
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Програм са самосталним покретањем није пронађен на CD-у. За наставак "
-"притисните „У реду“."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Програм са самосталним покретањем није пронађен на CD-у. За наставак притисните „У реду“."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
 msgstr "Направи корисника"
 
 #: ../src/modules/create_user.py:66
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
-"Препоручљиво је да направите корисничко име за уобичајену "
-"(неадминистративну) употребу система. Да бисте направили системско "
-"корисничко име, унесите информације које се испод траже."
+msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
+msgstr "Препоручљиво је да направите корисничко име за уобичајену (неадминистративну) употребу система. Да бисте направили системско корисничко име, унесите информације које се испод траже."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -232,26 +205,16 @@ msgid "Confir_m Password:"
 msgstr "П_отврдите лозинку:"
 
 #: ../src/modules/create_user.py:113
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Ако морате да користите мрежну аутентификацију као што су Kerberos или NIS, "
-"притисните на дугме „Користи мрежно пријављивање“."
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "Ако морате да користите мрежну аутентификацију као што су Kerberos или NIS, притисните на дугме „Користи мрежно пријављивање“."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Користи мрежно при_јављивање"
 
 #: ../src/modules/create_user.py:151
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"Веома је препоручљиво да направите лични кориснички налог.  Ако наставите "
-"без њега, на систем се можете пријавити само коришћењем root налога, а тај "
-"налог је намењен само за административне сврхе."
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "Веома је препоручљиво да направите лични кориснички налог.  Ако наставите без њега, на систем се можете пријавити само коришћењем root налога, а тај налог је намењен само за административне сврхе."
 
 #: ../src/modules/create_user.py:159
 msgid "_Continue"
@@ -271,21 +234,13 @@ msgstr "Лозинка је прекратка.  Молим употребите
 
 #: ../src/modules/create_user.py:202
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Корисничко име „%s“ је резервисани системски налог.  Молим наведите друго "
-"корисничко име."
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "Корисничко име „%s“ је резервисани системски налог.  Молим наведите друго корисничко име."
 
 #: ../src/modules/create_user.py:220
 #, python-format
-msgid ""
-"A home directory for the username '%s' already exists.  Please specify "
-"another username."
-msgstr ""
-"Лични директоријум за корисничко име „%s“ већ постоји.  Молим наведите друго "
-"корисничко име."
+msgid "A home directory for the username '%s' already exists.  Please specify another username."
+msgstr "Лични директоријум за корисничко име „%s“ већ постоји.  Молим наведите друго корисничко име."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -327,7 +282,8 @@ msgstr "Про_мени подешавања мреже..."
 msgid "static"
 msgstr "непокретан"
 
-#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43
+#: ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Звучна картица"
 
@@ -336,14 +292,8 @@ msgid "An audio device has been detected in your computer."
 msgstr "Пронађен је аудио уређај у рачунару."
 
 #: ../src/modules/soundcard_gui.py:68
-msgid ""
-"Click the \"Play\" button to hear a sample sound.  You should hear a series "
-"of three sounds.  The first sound will be in the right channel, the second "
-"sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
-"Притисните дугме „Пусти“ да би чули пробни звук.  Требало би да чујете "
-"серију од три звука.  Први звук ће бити на десном каналу, други на левом, а "
-"трећи ће бити у центру."
+msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "Притисните дугме „Пусти“ да би чули пробни звук.  Требало би да чујете серију од три звука.  Први звук ће бити на десном каналу, други на левом, а трећи ће бити у центру."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -354,11 +304,6 @@ msgid "Please set the timezone for the system."
 msgstr "Подесите временску зону за овај систем."
 
 #: ../src/modules/welcome.py:34
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
-"Потребно је још неколико корака док систем не буде спреман за употребу.  "
-"Агент поставке ће Вас водити кроз нека основна подешавања.  За наставак "
-"молим притисните дугме „Напред“ у доњем десном углу."
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Потребно је још неколико корака док систем не буде спреман за употребу.  Агент поставке ће Вас водити кроз нека основна подешавања.  За наставак молим притисните дугме „Напред“ у доњем десном углу."
+
