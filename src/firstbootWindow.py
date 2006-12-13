@@ -65,7 +65,7 @@ class firstbootWindow:
         self.win.set_position(gtk.WIN_POS_CENTER)
         self.win.set_decorated(False)
 
-        if not self.doReconfig and not self.doDebug:
+        if not self.doReconfig:
             self.win.set_keep_below(True)
 
         x_screen = gtk.gdk.screen_width()
@@ -213,14 +213,23 @@ class firstbootWindow:
         self.exitFirstboot()
 
     def exitFirstboot(self, *args):
-        #Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
+        # Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
         firstbootBackend.writeSysconfigFile(self.doDebug)
 
-        #Exit the GTK loop
+        if len(self.needsReboot) > 0 and not self.doDebug:
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
+                                    _("The system must now reboot for some of your selections to take effect."))
+            dlg.set_position(gtk.WIN_POS_CENTER)
+            dlg.show_all()
+            dlg.run()
+            dlg.destroy()
+            os.system("/sbin/reboot")
+
+        # Exit the GTK loop
         gtk.main_quit()
 
+        # Kill the window manager
         if self.wm_pid and not self.doDebug:
-        #Kill the window manager
             os.kill(self.wm_pid, 15)
 
         if self.doReconfig:
@@ -232,21 +241,11 @@ class firstbootWindow:
         if self.xserver_pid and not self.doDebug:
             os.kill(self.xserver_pid, 15)
 
-        #Give the X server a second to exit
+        # Give the X server a second to exit
         import time
         time.sleep(1)
 
-        if len(self.needsReboot) > 0 and not self.doDebug:
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
-                                    _("The system must now reboot for some of your selections to take effect."))
-            dlg.set_position(gtk.WIN_POS_CENTER)
-            dlg.show_all()
-            dlg.run()
-            dlg.destroy()
-            os.system("/sbin/reboot")
-        else:
-            #Exit firstboot.  This should take down the X server as well
-            os._exit(0)
+        os._exit(0)
 
     def nextClicked(self, *args):
         try:

@@ -60,7 +60,7 @@ class XFirstboot (Firstboot):
             xserver.generateConfig()
             xserver.addExtraScreen("Firstboot")
             xserver.serverflags.extend(["-screen", "Firstboot"])
-            xserver.startX()
+            self.xserver_pid = xserver.startX()
         except RuntimeError:
             sys.stderr.write("X SERVER FAILED TO START")
             raise RuntimeError, "X server failed to start"
@@ -68,10 +68,11 @@ class XFirstboot (Firstboot):
         # Init GTK to connect to the X server, then write a token on a pipe to
         # tell our parent process that we're ready to start metacity.
         (rd, wr) = os.pipe()
-        self.xserver_pid = os.fork()
-        if not self.xserver_pid:
+        pid = os.fork()
+        if not pid:
             import gtk
             os.write(wr, "#")
+            return
 
         # Block on read of token
         os.read(rd, 1)
@@ -107,7 +108,6 @@ class XFirstboot (Firstboot):
         status = 0
         try:
             pid, status = os.waitpid (self.wm_pid, os.WNOHANG)
-
         except OSError, (errno, msg):
             print "in except"
             print __name__, "waitpid:", msg
