@@ -65,7 +65,7 @@ class firstbootWindow:
         self.win.set_position(gtk.WIN_POS_CENTER)
         self.win.set_decorated(False)
 
-        if not self.doReconfig:
+        if not self.doReconfig and not self.doDebug:
             self.win.set_keep_below(True)
 
         x_screen = gtk.gdk.screen_width()
