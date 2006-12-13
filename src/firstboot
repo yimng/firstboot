@@ -24,6 +24,7 @@ import os
 import signal
 import string
 import sys
+import rhpl.arch
 
 sys.path.append("/usr/share/firstboot")
 
@@ -91,10 +92,11 @@ if __name__ == "__main__":
         print "firstboot cannot run, exiting"
         os._exit(0)
 
-    # Check to see if we're in runlevel 3.  If so, call text UI.  Otherwise,
-    # we set up a graphical UI - take over rhgb's X server if it's running or
-    # create our own if not.
-    if fb.doDebug:
+    # If we have a $DISPLAY set, we are either running in debug mode or in
+    # reconfig mode from a terminal under an already running X setup.
+    # Otherwise, run in text mode if in runlevel 3, or take over rhgb's X
+    # server if running, or start up our own if not.
+    if os.environ.has_key("DISPLAY") or fb.doDebug:
         from firstbootWindow import firstbootWindow
         firstbootWindow(fb)
     elif (getRunlevel() == 3 and not fb.forcegui) or noX == True:
