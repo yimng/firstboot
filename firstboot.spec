@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.27
+Version: 1.4.28
 Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -15,7 +15,9 @@ BuildPreReq: gettext
 Requires: pygtk2
 Requires: metacity
 Requires: rhpl
+%ifnarch s390 s390x ppc64
 Requires: rhpxl >= 0.19
+%endif
 Requires: system-config-display
 Requires: system-config-language
 Requires: system-config-soundcard
@@ -28,7 +30,6 @@ Requires: authconfig-gtk
 Requires: libuser
 Requires: system-logos
 Requires: firstboot-tui = %{version}
-ExcludeArch: s390 s390x ppc64
 
 %description
 The firstboot utility runs after installation.  It guides the
@@ -108,6 +109,12 @@ fi
 
 
 %changelog
+* Mon Dec 18 2006 Chris Lumens <clumens@redhat.com> 1.4.28-1
+- Remove unused graphics (#218118).
+- Allow running on s390 and ppc64 under reconfig mode (#217921).
+- Don't leave a bunch of defunct processes around.
+- Correctly shut down if not running under rhgb.
+
 * Wed Dec 13 2006 Chris Lumens <clumens@redhat.com> 1.4.27-1
 - More translation updates (#212958, #198872).
 
