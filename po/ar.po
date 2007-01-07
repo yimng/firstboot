@@ -1,25 +1,25 @@
 # translation of ar.po to Arabic
-# translation of firstboot.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
 # Abd el rahman Ghareeb <king_abdo@yahoo.com>, 2004.
 # Ossama M. Khayat <okhayat@yahoo.com>, 2004.
 # Mohamed Eldesoky <mohamed@eldesoky.net>, 2004.
 # Munzir Taha <munzir@kacst.edu.sa>, 2004.
 # Munzir Taha <munzirtaha@newhorizons.com.sa>, 2005.
-#
+# Ali Ghareb <ali.gareb@gmail.com>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-12-01 12:07-0500\n"
-"PO-Revision-Date: 2005-02-21 01:27+0300\n"
-"Last-Translator: Munzir Taha <munzirtaha@newhorizons.com.sa>\n"
-"Language-Team: Arabic <fedora-trans-ar@redhat.com>\n"
+"PO-Revision-Date: 2007-01-08 00:22+0200\n"
+"Last-Translator: Ali Ghareb <ali.gareb@gmail.com>\n"
+"Language-Team: Arabic <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -46,6 +46,9 @@ msgid ""
 "Do you want to reread or reconsider the Licence Agreement?  If not, please "
 "shut down the computer and remove this product from your system. "
 msgstr ""
+"هل تريد إعادة قراءة أو إعادة التفكير في اتفاقية التّرخيص؟ "
+"اذا كانت اجابتك بلا "
+"من فضلك اغلق الجهاز و قم بازالة هذا المنتج من نظامك"
 
 #: ../src/eula_strings.py:32
 msgid "_Reread license"
@@ -90,11 +93,11 @@ msgstr "_رجوع"
 
 #: ../src/firstbootWindow.py:116
 msgid "_Forward"
-msgstr ""
+msgstr "تقدم"
 
 #: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "يجب اعادة تشغيل النظام الان لتفعيل اختياراتك"
 
 #: ../src/firstbootWindow.py:313
 #, fuzzy
@@ -168,7 +171,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "من فضلك ضع أى أقراص مدمجة للبرامج الاضافية الان"
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -199,8 +202,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:198
 #, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
@@ -370,70 +372,3 @@ msgstr ""
 "يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في "
 "الركن الأيمنللمتابعة."
 
-#~ msgid "_Next"
-#~ msgstr "_التالي"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "إعداد بطاقة الصوت"
-
-#~ msgid "Finish Setup"
-#~ msgstr "إنهاء الإعداد"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "تم إعداد نظامك و هو جاهز الآن للاستخدام. رجاء اضغظ زر \"التالي\" في الركن "
-#~ "الأيمن للاستمرار."
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "رجاء اضغظ زر \"التالي\" في الركن أسفل اليمين للاستمرار."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "يجب أن يكون اسم المستخدم أقل من 33 حرف."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "لا يمكن أن يبدأ اسم المستخدم برقم."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "اسم المستخدم'%s' يحتوي على مسافات. الرجاء عدم استخدام المسافات في اسم "
-#~ "المستخدم."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم "
-#~ "أو فواصل في اسم المستخدم."
-
-#, fuzzy
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "اسم المستخدم '%s' يحتوي على علامات ترقيم. الرجاء عدم استخدام علامات ترقيم "
-#~ "أو فواصل في اسم المستخدم."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "اسم المستخدم '%s' يحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "كلمة المرور تحتوي على حروف غير صالحة. الرجاء استخدام حروف ASCII فقط."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr "الاسم '%s' يحتوي على حروف غير صالحة. الرّجاء استخدام حروف ASCII فقط."
