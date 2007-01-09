@@ -51,9 +51,7 @@ class SoundWindow:
         self.soundcardBackend = soundcardBackend.soundcardBackend()
         
     def launch(self, doDebug = None):
-        cards = self.soundcardBackend.getCardArray()
-
-        if cards == []:
+        if self.soundcardBackend.getCardNum() == 0:
             return None, None, None
         else:
             self.mainVBox = gtk.VBox()
