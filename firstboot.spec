@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.28
-Release: 2%{?dist}
+Version: 1.4.29
+Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -16,7 +16,6 @@ Requires: pygtk2
 Requires: metacity
 Requires: rhpl
 Requires: rhpxl >= 0.19
-Requires: system-config-display
 Requires: system-config-language
 Requires: system-config-soundcard
 Requires: system-config-securitylevel
@@ -108,6 +107,11 @@ fi
 
 
 %changelog
+* Wed Jan 24 2007 Chris Lumens <clumens@redhat.com> 1.4.29-1
+- Fix disabling the soundcard panel if no soundcard are available
+  (#221177).
+- Remove the display module and the dependency on system-config-display.
+
 * Wed Dec 20 2006 Chris Lumens <clumens@redhat.com> 1.4.28-2
 - Revert spec file changes for s390, s390x, and ppc64 for now.
 
