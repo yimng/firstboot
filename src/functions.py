@@ -72,7 +72,7 @@ def ditheredImageFromFile(filename, height = None, width = None):
             path = "/usr/share/firstboot/pixmaps/" + filename
             pixbuf = gtk.gdk.pixbuf_new_from_file(path)
         except:
-            pass
+            raise
 
     if (height is not None and width is not None
         and height != pixbuf.get_height()
