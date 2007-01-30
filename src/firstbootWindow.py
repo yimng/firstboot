@@ -17,8 +17,10 @@
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
+import glob
 import string
 import os
+import os.path
 import traceback
 os.environ["PYGTK_DISABLE_THREADS"] = "1"
 os.environ["PYGTK_FATAL_EXCEPTIONS"] = "1"
@@ -392,14 +394,8 @@ class firstbootWindow:
 
         # Generate a list of all of the module files (which becomes the list of
         # all non-hidden files in the directory with extensions other than .py.
-        files = os.listdir(self.modulePath)
-        lst = []
-        for f in files:
-            if f[0] == '.':
-                continue
-            if f[-3:] != ".py":
-                continue
-            lst.append(f[:-3])
+        lst = glob.glob(self.modulePath + "/*.py")
+        lst = map(lambda x: os.path.splitext(os.path.basename(x))[0])
 
         # Import each module, and filter out those
         for module in lst:
