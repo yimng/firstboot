@@ -87,7 +87,4 @@ class TimeWindow(FirstbootModuleWindow):
 
         return 0
 
-    def grabFocus(self):
-        pass
-
 childWindow = TimeWindow

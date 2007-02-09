@@ -302,6 +302,8 @@ class firstbootWindow:
             if "grabFocus" in dir(module):
                 #If the module needs to grab the focus, let it
                 module.grabFocus()
+            else:
+                self.nextButton.grab_focus()
 
         else:
             #Something went wrong in the module.  Don't advance
