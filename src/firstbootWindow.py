@@ -26,6 +26,7 @@ os.environ["PYGTK_DISABLE_THREADS"] = "1"
 os.environ["PYGTK_FATAL_EXCEPTIONS"] = "1"
 os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
 
+import imputil
 import sys
 import gtk
 import functions
@@ -394,25 +395,22 @@ class firstbootWindow:
 
         # Generate a list of all of the module files (which becomes the list of
         # all non-hidden files in the directory with extensions other than .py.
-        lst = glob.glob(self.modulePath + "/*.py")
-        lst = map(lambda x: os.path.splitext(os.path.basename(x))[0])
+        lst = map(lambda x: os.path.splitext(os.path.basename(x))[0],
+                  glob.glob(self.modulePath + "/*.py"))
 
         # Import each module, and filter out those
         for module in lst:
-            cmd = ("import %s\nif %s.__dict__.has_key('childWindow'):"
-                   "obj = %s.childWindow()") % (module, module, module)
-
+            # If we can't find the module, skip it
             try:
-                exec(cmd)
+                found = imputil.imp.find_module(module)
             except:
                 print _("module import of %s failed: %s") % (module,sys.exc_type)
                 continue
 
-            # if the exec fails, skip this module
-            try:
-                obj = obj
-            except NameError:
-                continue
+            loaded = imputil.imp.load_module(module, found[0], found[1], found[2])
+
+            if loaded.__dict__.has_key("childWindow"):
+                obj = loaded.childWindow()
 
             # XXX - hack to allow firstboot to pass in the parent class into language
             # this will allow the language module to change firstboot's current locale
@@ -518,7 +516,7 @@ class firstbootWindow:
 
                 # If the module has a name, add it to the list of labels
                 if hasattr(module, "moduleName"):
-                    if not hasattr(module, "noSidebar") or getattr(module, "noSidebar") == False:
+                    if not hasattr(module, "noSidebar") or not getattr(module, "noSidebar"):
                         hbox = gtk.HBox(False, 5)
                         pix = functions.imageFromFile("pointer-blank.png")
                         label = gtk.Label("")
