@@ -71,8 +71,8 @@ class firstbootWindow:
         if not self.doReconfig:
             self.win.set_keep_below(True)
 
-        x_screen = gtk.gdk.screen_width()
-        y_screen = gtk.gdk.screen_height()
+        self.x_screen = gtk.gdk.screen_width()
+        self.y_screen = gtk.gdk.screen_height()
 
         # Create a box that will hold all other widgets.
         self.mainHBox = gtk.HBox(False, 10)
@@ -85,19 +85,22 @@ class firstbootWindow:
         self.leftEventBox = gtk.EventBox()
         self.leftEventBox.add(self.leftVBox)
         self.leftEventBox.connect("realize", self.leb_realized)
-        self.leftEventBox.set_size_request(165, 600)
 
         # rightVBox holds the notebook and the button box.
         self.rightVBox = gtk.VBox()
+        self.rightVBox.set_border_width(5)
 
         # If we're in low res mode, grow the right hand box to take up the
         # entire window.
-        if x_screen >= 800:            
-            self.rightVBox.set_size_request(635, 600)
-            self.win.set_size_request(800, 600)
+        if self.x_screen >= 800:            
+            self.leftEventBox.set_size_request(int(0.2*self.x_screen),
+                                               self.y_screen)
+            self.rightVBox.set_size_request(int(0.8*self.x_screen),
+                                            self.y_screen)
+            self.win.fullscreen()
         else:
-            self.rightVBox.set_size_request(x_screen, y_screen)
-            self.win.set_size_request(x_screen, y_screen)
+            self.rightVBox.set_size_request(self.x_screen, self.y_screen)
+            self.win.set_size_request(self.x_screen, self.y_screen)
             self.lowRes = 1
 
         # Create a button box to handle navigation.
@@ -376,8 +379,13 @@ class firstbootWindow:
 
     def leb_realized(self, eb):
         self.pixbuf = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/firstboot-left.png")
-        bgimage = gtk.gdk.Pixmap(eb.window, 160, 600, -1)
-        bgimage.draw_pixbuf(None, self.pixbuf, 0, 0, 0, 0)
+        scaledPixbuf = self.pixbuf.scale_simple(int(0.2*self.x_screen),
+                                                self.y_screen,
+                                                gtk.gdk.INTERP_BILINEAR)
+
+        bgimage = gtk.gdk.Pixmap(eb.window, int(0.2*self.x_screen),
+                                 self.y_screen, -1)
+        bgimage.draw_pixbuf(None, scaledPixbuf, 0, 0, 0, 0)
 
         style = gtk.Style()
         style.bg_pixmap[gtk.STATE_NORMAL] = bgimage
