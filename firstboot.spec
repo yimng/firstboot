@@ -1,51 +1,40 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.29
+Version: 1.4.30
 Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
 Group: System Environment/Base
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
+
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
 Source0: %{name}-%{version}.tar.bz2
 Obsoletes: anaconda-reconfig
-Prereq: chkconfig, /etc/init.d
-BuildPreReq: gettext
-Requires: pygtk2
-Requires: metacity
-Requires: rhpl
-Requires: rhpxl >= 0.19
-Requires: system-config-language
-Requires: system-config-soundcard
-Requires: system-config-securitylevel
-Requires: system-config-network
-Requires: system-config-users
-Requires: system-config-date >= 1.7.9
-Requires: system-config-keyboard
-Requires: authconfig-gtk
-Requires: libuser
-Requires: system-logos
-Requires: firstboot-tui = %{version}
+
+BuildRequires: gettext
+
+Requires: pygtk2, metacity, rhpl, rhpxl >= 0.19, authconfig-gtk, libuser
+Requires: system-config-language, system-config-soundcard
+Requires: system-config-securitylevel, system-config-network
+Requires: system-config-users, system-config-date >= 1.7.9
+Requires: system-config-keyboard, chkconfig
+Requires: system-logos, firstboot-tui = %{version}
+
 ExcludeArch: s390 s390x ppc64
 
 %description
-The firstboot utility runs after installation.  It guides the
-user through a series of steps that allows for easier 
-configuration of the machine. 
+The firstboot utility runs after installation.  It guides the user through
+a series of steps that allows for easier configuration of the machine. 
 
 %package tui
 Summary: A text interface for firstboot
 Group: System Environment/Base
-Prereq: chkconfig, /etc/init.d
-BuildPreReq: gettext
-Requires: python
-Requires: usermode >= 1.36
-Requires: rhpl
-Requires: system-config-securitylevel-tui
-Requires: system-config-network-tui
-Requires: ntsysv
-Requires: authconfig
+
+BuildRequires: gettext
+
+Requires: python, usermode >= 1.36, rhpl, system-config-securitylevel-tui
+Requires: system-config-network-tui. ntsysv, authconfig, chkconfig
 
 %description tui
 firstboot-tui is a text interface for initial system configuration.
@@ -57,12 +46,11 @@ firstboot-tui is a text interface for initial system configuration.
 make
 
 %install
-make INSTROOT=$RPM_BUILD_ROOT install
-
-%find_lang %name
+make INSTROOT=%{buildroot} install
+%find_lang %{name}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post tui
 if ! [ -f /etc/sysconfig/firstboot ]
@@ -82,31 +70,36 @@ if [ $1 = 0 ]; then
 fi
 
 %files -f %{name}.lang
-%defattr(-,root,root)
-%dir /usr/share/firstboot/
-%dir /usr/share/firstboot/modules/
-%dir /usr/share/firstboot/pixmaps/
-/usr/share/firstboot/exceptionWindow.py*
-/usr/share/firstboot/firstbootWindow.py*
-/usr/share/firstboot/firstboot_module_window.py*
-/usr/share/firstboot/xfirstboot.py*
-/usr/share/firstboot/modules/*
-/usr/share/firstboot/pixmaps/*
+%defattr(-,root,root,-)
+%dir %{_datadir}/firstboot
+%dir %{_datadir}/firstboot/modules/
+%dir %{_datadir}/firstboot/pixmaps/
+%{_datadir}/firstboot/exceptionWindow.py*
+%{_datadir}/firstboot/firstbootWindow.py*
+%{_datadir}/firstboot/firstboot_module_window.py*
+%{_datadir}/firstboot/xfirstboot.py*
+%{_datadir}/firstboot/modules/*
+%{_datadir}/firstboot/pixmaps/*
 
 %files -f %{name}.lang tui
-%defattr(-,root,root)
-%config /etc/rc.d/init.d/firstboot
-%dir /usr/share/firstboot/
-/usr/sbin/firstboot
-/usr/share/firstboot/constants_text.py*
-/usr/share/firstboot/eula_strings.py*
-/usr/share/firstboot/firstboot.py*
-/usr/share/firstboot/firstbootBackend.py*
-/usr/share/firstboot/functions.py*
-/usr/share/firstboot/textWindow.py*
+%defattr(-,root,root,-)
+%config %{_initrddir}/firstboot
+%dir %{_datadir}/firstboot/
+%{_sbindir}/firstboot
+%{_datadir}/firstboot/constants_text.py*
+%{_datadir}/firstboot/eula_strings.py*
+%{_datadir}/firstboot/firstboot.py*
+%{_datadir}/firstboot/firstbootBackend.py*
+%{_datadir}/firstboot/functions.py*
+%{_datadir}/firstboot/textWindow.py*
 
 
 %changelog
+* Mon Feb 12 2007 Chris Lumens <clumens@redhat.com> 1.4.30-1
+- Focus the next button by default (#227867).
+- Enable fullscreen mode again; scale sidebar graphics (#211198).
+- Bring spec file more in line with the packaging guidelines.
+
 * Wed Jan 24 2007 Chris Lumens <clumens@redhat.com> 1.4.29-1
 - Fix disabling the soundcard panel if no soundcard are available
   (#221177).
