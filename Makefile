@@ -75,5 +75,4 @@ local:
 clean:
 	@rm -fv *~
 	@rm -fv *.pyc
-
-
+	-rm ${PKGNAME}-$(VERSION).tar.bz2
