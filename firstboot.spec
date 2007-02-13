@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.4.30
-Release: 1%{?dist}
+Release: 2%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -34,7 +34,7 @@ Group: System Environment/Base
 BuildRequires: gettext
 
 Requires: python, usermode >= 1.36, rhpl, system-config-securitylevel-tui
-Requires: system-config-network-tui. ntsysv, authconfig, chkconfig
+Requires: system-config-network-tui, ntsysv, authconfig, chkconfig
 
 %description tui
 firstboot-tui is a text interface for initial system configuration.
@@ -95,6 +95,9 @@ fi
 
 
 %changelog
+* Tue Feb 13 2007 Chris Lumens <clumens@redhat.com> 1.4.30-2
+- Fix typo in dependencies.
+
 * Mon Feb 12 2007 Chris Lumens <clumens@redhat.com> 1.4.30-1
 - Focus the next button by default (#227867).
 - Enable fullscreen mode again; scale sidebar graphics (#211198).
