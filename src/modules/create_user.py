@@ -175,16 +175,15 @@ class childWindow:
         password = self.passwordEntry.get_text()
         confirm = self.confirmEntry.get_text()
 
-        if not userGroupCheck.isPasswordOk(password, self.passwordEntry) or \
-           not userGroupCheck.isPasswordOk(confirm, self.confirmEntry):
-            return None
-
         if password != confirm:
             self.showErrorMessage(_("The passwords do not match.  Please enter "
                                     "the password again."))
             self.passwordEntry.set_text("")
             self.confirmEntry.set_text("")
             self.passwordEntry.grab_focus()
+            return None
+
+        elif not userGroupCheck.isPasswordOk(password, self.passwordEntry):
             return None
         
         elif len (password) < 6:
