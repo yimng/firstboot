@@ -312,9 +312,11 @@ class firstbootWindow:
             #Something went wrong in the module.  Don't advance
             return
 
-        #Check to see if we're on the last page.  
-        tmp = self.notebook.get_nth_page(self.notebook.get_current_page() + 1)        
-        if not tmp:
+        #Check to see if we're on the last page. 
+        items = self.leftVBox.get_children()
+        current_page = self.notebook.get_current_page()
+        if (current_page + 1) == len(items):
+ 
             self.nextButton.disconnect(self.nextHandler)
             self.nextHandler = self.nextButton.connect('clicked', self.finishClicked)
             self.nextButton.set_label(_("_Finish"))
@@ -551,7 +553,7 @@ class firstbootWindow:
                     # we need a non tranlated name for each module so we can
                     # jump around
                     self.moduleNameToIndex[module.__module__] = (pages, sidebarIndex)
-                    self.notebook.append_page(vbox, gtk.Label(_(module.moduleName)))
+                    self.notebook.insert_page(vbox, gtk.Label(_(module.moduleName)),sidebarIndex)
                 else:
                     self.notebook.append_page(vbox, gtk.Label(" "))
                     self.moduleNameToIndex["unamemodule-%s" % pages] = (pages, sidebarIndex)
@@ -595,7 +597,7 @@ class firstbootWindow:
 
         self.leftVBox.show_all()
         self.notebook.show_all()
-        self.notebook.set_current_page(1)
+        self.notebook.set_current_page(0)
 
     def takeScreenShot(self):
         global screenshotIndex
