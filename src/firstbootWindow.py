@@ -203,20 +203,78 @@ class firstbootWindow:
         #Exit firstboot.  This should take down the X server as well
         os._exit(0)
 
-    def finishClicked(self, *args):
+    # A screen has already been displayed.  Try to apply it.  If the result of
+    # the application is None (either because there was some sort of error or
+    # or because the user didn't do what they were supposed to) then return
+    # False.  This tells the caller that we didn't advance to the next page
+    # and the caller shouldn't take further action.  Otherwise, set up the
+    # next screen.
+    def _runAndAdvance(self):
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
             pass
 
+	if self.autoscreenshot:
+            self.takeScreenShot()
+        result = None
         #Call the apply method if it exists
         try:
-            module.apply(self.notebook)
+            result = module.apply(self.notebook)
         except:
+            import exceptionWindow
+            (ty, value, tb) = sys.exc_info()
+            lst = traceback.format_exception(ty, value, tb)
+            text = string.joinfields(lst, "")
+            result = exceptionWindow.ExceptionWindow(module, text)
             pass
 
-        #Call exitFirstboot to do some cleanup before exiting
-        self.exitFirstboot()
+        # Store the name of every module that requires a reboot.  This allows
+        # us to remove a single module if the user moves back and forth through
+        # the UI while still knowing that other modules still require reboot.
+        if hasattr(module, "needsReboot") and module.needsReboot:
+            print "adding needsReboot for %s" % module.moduleName
+            self.needsReboot.append(module.moduleName)
+        elif hasattr(module, "needsReboot") and not module.needsReboot:
+            if module.moduleName in self.needsReboot:
+                print "removing needsReboot for %s" % module.moduleName
+                self.needsReboot.remove(module.moduleName)
+
+        # record the current page as the new previous page
+        self.prevPage = self.moduleNameToIndex[module.__module__][0]
+
+        if result != None:
+            pgNum = self.moduleNameToIndex[module.__module__][0]
+            self.pageHistory.append(pgNum)
+
+            if self.nextPage:
+                self.notebook.set_current_page(self.nextPage)
+                module = self.moduleList[self.nextPage]
+                self.nextPage = None
+            else:
+                self.notebook.next_page()
+                module = self.moduleList[self.notebook.get_current_page()]
+
+            #Call setPointer to make the left hand pointer move to the correct pointer
+            self.setPointer(self.moduleNameToIndex[module.__module__][1])
+
+            if "grabFocus" in dir(module):
+                #If the module needs to grab the focus, let it
+                module.grabFocus()
+            else:
+                self.nextButton.grab_focus()
+
+            return True
+        else:
+            #Something went wrong in the module.  Don't advance
+            return False
+
+    def finishClicked(self, *args):
+        advanced = self._runAndAdvance()
+
+        if advanced:
+            #Call exitFirstboot to do some cleanup before exiting
+            self.exitFirstboot()
 
     def exitFirstboot(self, *args):
         # Write the /etc/sysconfig/firstboot file to make sure firstboot doesn't run again
@@ -254,77 +312,22 @@ class firstbootWindow:
         os._exit(0)
 
     def nextClicked(self, *args):
-        try:
-            module = self.moduleList[self.notebook.get_current_page()]
-        except:
-            pass
+        advanced = self._runAndAdvance()
 
-	if self.autoscreenshot:
-            self.takeScreenShot()
-        result = None
-        #Call the apply method if it exists
-        try:
-            result = module.apply(self.notebook)
-        except:
-            import exceptionWindow
-            (ty, value, tb) = sys.exc_info()
-            lst = traceback.format_exception(ty, value, tb)
-            text = string.joinfields(lst, "")
-            result = exceptionWindow.ExceptionWindow(module, text)
-            pass
+        if advanced:
+            #Check to see if we're on the last page. 
+            items = self.leftVBox.get_children()
+            current_page = self.notebook.get_current_page()
+            if (current_page + 1) == len(items):
+     
+                self.nextButton.disconnect(self.nextHandler)
+                self.nextHandler = self.nextButton.connect('clicked', self.finishClicked)
+                self.nextButton.set_label(_("_Finish"))
+                self.nextButton.set_use_underline(True)
+                self.win.disconnect(self.winHandler)
+                self.winHandler = self.win.connect ("key-release-event", self.closeRelease)
 
-        # Store the name of every module that requires a reboot.  This allows
-        # us to remove a single module if the user moves back and forth through
-        # the UI while still knowing that other modules still require reboot.
-        if hasattr(module, "needsReboot") and module.needsReboot:
-            print "adding needsReboot for %s" % module.moduleName
-            self.needsReboot.append(module.moduleName)
-        elif hasattr(module, "needsReboot") and not module.needsReboot:
-            if module.moduleName in self.needsReboot:
-                print "removing needsReboot for %s" % module.moduleName
-                self.needsReboot.remove(module.moduleName)
-
-        # record the current page as the new previous page
-        self.prevPage = self.moduleNameToIndex[module.__module__][0]
-
-        if result != None:
-            pgNum = self.moduleNameToIndex[module.__module__][0]
-            self.pageHistory.append(pgNum)
-#            print "self.pageHistory: %s" % self.pageHistory
-            if self.nextPage:
-                self.notebook.set_current_page(self.nextPage)
-                module = self.moduleList[self.nextPage]
-                self.nextPage = None
-            else:
-                self.notebook.next_page()
-                module = self.moduleList[self.notebook.get_current_page()]
-
-            #Call setPointer to make the left hand pointer move to the correct pointer
-            self.setPointer(self.moduleNameToIndex[module.__module__][1])
-
-            if "grabFocus" in dir(module):
-                #If the module needs to grab the focus, let it
-                module.grabFocus()
-            else:
-                self.nextButton.grab_focus()
-
-        else:
-            #Something went wrong in the module.  Don't advance
-            return
-
-        #Check to see if we're on the last page. 
-        items = self.leftVBox.get_children()
-        current_page = self.notebook.get_current_page()
-        if (current_page + 1) == len(items):
- 
-            self.nextButton.disconnect(self.nextHandler)
-            self.nextHandler = self.nextButton.connect('clicked', self.finishClicked)
-            self.nextButton.set_label(_("_Finish"))
-            self.nextButton.set_use_underline(True)
-            self.win.disconnect(self.winHandler)
-            self.winHandler = self.win.connect ("key-release-event", self.closeRelease)
-
-        self.backButton.set_sensitive(True)
+            self.backButton.set_sensitive(True)
 
     def backClicked(self, *args):
 #        print "back: %s" % self.pageHistory
