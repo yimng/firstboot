@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.30
-Release: 2%{?dist}
+Version: 1.4.31
+Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
 ExclusiveOS: Linux
@@ -95,6 +95,11 @@ fi
 
 
 %changelog
+* Wed Feb 28 2007 Chris Lumens <clumens@redhat.com> - 1.4.31-1
+- Fix navigation when the language screen is enabled (#229515, #214962).
+- Remove duplicate warnings on create_user module.
+- Fix navigation when the create user module is last.
+
 * Tue Feb 13 2007 Chris Lumens <clumens@redhat.com> 1.4.30-2
 - Fix typo in dependencies.
 
