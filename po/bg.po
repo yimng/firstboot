@@ -5,19 +5,19 @@
 # Николай Сърмаджиев,преносим <nikolayds@msn.com>, 2004.
 # Николай Сърмаджиев <nikolayd@sarmadzhiev.tk>, 2004.
 # Doncho N. Gunchev <mr700@globalnet.bg>, 2004, 2005.
-# Doncho N. Gunchev <gunchev@gmail.com>, 2006.
+# Doncho N. Gunchev <gunchev@gmail.com>, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-12-01 12:07-0500\n"
-"PO-Revision-Date: 2006-01-14 04:55+0200\n"
+"PO-Revision-Date: 2007-03-10 03:41+0200\n"
 "Last-Translator: Doncho N. Gunchev <gunchev@gmail.com>\n"
 "Language-Team: Bulgarian <Bulgarian Translators' Team <dict@fsa-bg.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -37,14 +37,15 @@ msgstr "_Не, не съм съгласен"
 
 #: ../src/eula_strings.py:30
 msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
-"Бихте ли желали да препрочетете или преразгледате лицензионното споразумение?"
+msgstr "Бихте ли желали да препрочетете или преразгледате лицензионното споразумение?"
 
 #: ../src/eula_strings.py:31
 msgid ""
 "Do you want to reread or reconsider the Licence Agreement?  If not, please "
 "shut down the computer and remove this product from your system. "
 msgstr ""
+"Искате ли да препрочетете или премислите лицензното споразумение?  Ако не, моля "
+"изключете компютъра и премахнете продукта от своята система. "
 
 #: ../src/eula_strings.py:32
 msgid "_Reread license"
@@ -89,7 +90,7 @@ msgstr "_Назад"
 
 #: ../src/firstbootWindow.py:116
 msgid "_Forward"
-msgstr ""
+msgstr "На_пред"
 
 #: ../src/firstbootWindow.py:241
 msgid "The system must now reboot for some of your selections to take effect."
@@ -167,7 +168,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "Моля поставете допълнителните инсталационни CD дискове сега."
+msgstr "Моля поставете допълнителни инсталационни компакт дискове сега."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -197,27 +198,23 @@ msgstr ""
 "\"Добре\" за продължение."
 
 #: ../src/modules/additional_cds.py:198
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Няма авто-стартиращата програма на този CD. Натиснете \"Добре\" за да "
-"продължите."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Няма автоматично стартиращата програма на този диск. Натиснете \"да\" за да продължите."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Системен потребител"
+msgstr "Създаване потребител"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Препоръчително е да създадете личен потребителски акаунт за нормална (не-"
-"административна) работа. За да създадете личен акаунт, моля задайте "
-"необходимата информация изисквана по-долу."
+"Препоръчително е да създадете 'потребителско_име' за обикновени "
+"(не-административна) употреба на своята система. За да създадете "
+"системен потребител 'потребителско_име', моля попълнете изискваната "
+"по-долу информация."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -283,12 +280,12 @@ msgstr ""
 "друго потребителско име."
 
 #: ../src/modules/create_user.py:220
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Потребителското име %s е резервирано от системен потребител.  Моля изберете "
+"Домашна директория за потребител '%s' вече съществува.  Моля укажете "
 "друго потребителско име."
 
 #: ../src/modules/date.py:46
@@ -321,7 +318,7 @@ msgstr "Мрежови устройства"
 
 #: ../src/modules/networking.py:90
 msgid "Boot protocol"
-msgstr "Портокол за зареждане"
+msgstr "Протокол за зареждане"
 
 #: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
@@ -336,20 +333,18 @@ msgid "Sound Card"
 msgstr "Звукова карта"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "На Вашия компютър бе открита звукова карта."
+msgstr "В компютъра бе открита звукова карта."
 
 #: ../src/modules/soundcard_gui.py:68
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Моля натиснете бутона \"Просвирване на тестов звук\" за да чуете примерен "
-"звук.  Би трябвало да се пусне серия от три звука.  Първия ще бъде от десния "
-"канал, втория от левия канал и третия от центъра."
+"Натиснете бутон \"Свирене\" за да чуете примерен звук.  Би трябвало да "
+"чуете серия от три звука.  Първия ще бъде от десния канал, втория от "
+"левия, а третия ще бъде централен."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -360,32 +355,12 @@ msgid "Please set the timezone for the system."
 msgstr "Моля задайте часовия пояс на системата."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "Има още няколко стъпки преди системата Ви да бъде готова за работа.  Агента "
-"за настройка ще Ви преведе през някои базови настройки.  Моля натиснете "
+"за настройка ще Ви преведе през някои основни настройки.  Моля натиснете "
 "бутон \"Следващ\" в долния десен ъгъл за да продължите."
 
-#~ msgid "_Next"
-#~ msgstr "_Следващ"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Настройки на звуковата карта"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Приключване на настройката"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Вашата система е готова за използване.  Моля натиснете бутона \"Край\" в "
-#~ "долния десен ъгъл за продължение."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "Моля натиснете бутона \"Край\" в долния десен ъгъл за продължение."
