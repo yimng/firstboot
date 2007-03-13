@@ -176,9 +176,6 @@ class firstbootWindow:
         self.nextButton.grab_focus()
         gtk.main()
 
-    def setPage(self, modulename):
-        self.nextPage = self.moduleNameToIndex[modulename][0]
-
     def switchPage(self, notebook, page, page_num, *args):
         # catch the switch page signal, so we can re poke modules
         # that need a signal that they are being shown
