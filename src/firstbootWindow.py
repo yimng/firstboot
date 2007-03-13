@@ -28,6 +28,7 @@ os.environ["GNOME_DISABLE_CRASH_DIALOG"] = "1"
 
 import imputil
 import sys
+import cairo
 import gtk
 import functions
 import firstbootBackend
@@ -84,7 +85,7 @@ class firstbootWindow:
         # leftEventBox exists only so we have somewhere to paint an image.
         self.leftEventBox = gtk.EventBox()
         self.leftEventBox.add(self.leftVBox)
-        self.leftEventBox.connect("realize", self.leb_realized)
+        self.leftVBox.connect("expose-event", self.leb_exposed)
 
         # rightVBox holds the notebook and the button box.
         self.rightVBox = gtk.VBox()
@@ -382,19 +383,16 @@ class firstbootWindow:
             else:
                 pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-blank.png")
 
-    def leb_realized(self, eb):
-        self.pixbuf = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/firstboot-left.png")
-        scaledPixbuf = self.pixbuf.scale_simple(int(0.2*self.x_screen),
-                                                self.y_screen,
-                                                gtk.gdk.INTERP_BILINEAR)
+    def leb_exposed(self, eb, event):
+        pixbuf = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/firstboot-left.png")
+        aspect_ratio = (1.0 * pixbuf.get_width ()) / (1.0 * pixbuf.get_height())
+	pixbuf = pixbuf.scale_simple(int(self.y_screen * aspect_ratio),
+                                     self.y_screen, gtk.gdk.INTERP_BILINEAR)
 
-        bgimage = gtk.gdk.Pixmap(eb.window, int(0.2*self.x_screen),
-                                 self.y_screen, -1)
-        bgimage.draw_pixbuf(None, scaledPixbuf, 0, 0, 0, 0)
-
-        style = gtk.Style()
-        style.bg_pixmap[gtk.STATE_NORMAL] = bgimage
-        eb.set_style(style)
+        cairo_context = eb.window.cairo_create()
+        cairo_context.set_source_pixbuf(pixbuf, 0, self.y_screen - pixbuf.get_height())
+        cairo_context.paint()
+        return False
 
     def checkNetwork(self):
         # see if we have a non loopback interface up
