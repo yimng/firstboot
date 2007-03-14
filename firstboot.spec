@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.31
+Version: 1.4.32
 Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -95,6 +95,10 @@ fi
 
 
 %changelog
+* Wed Mar 14 2007 Chris Lumens <clumens@redhat.com> - 1.4.32-1
+- Fixes to make the graphics look better (#229837).
+- Don't wrap back to the first screen at the end of reconfig mode (#214962).
+
 * Wed Feb 28 2007 Chris Lumens <clumens@redhat.com> - 1.4.31-1
 - Fix navigation when the language screen is enabled (#229515, #214962).
 - Remove duplicate warnings on create_user module.
