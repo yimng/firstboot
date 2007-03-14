@@ -143,9 +143,7 @@ class firstbootWindow:
         sys.path.append(self.modulePath)
 
         self.loadModules()
-
-        self.notebook.set_current_page(0)
-        self.setPointer(0)
+        self.setPage(0)
 
         # Add the widgets into the right side.
         self.rightVBox.pack_start(self.notebook)
@@ -175,6 +173,10 @@ class firstbootWindow:
         self.win.present()
         self.nextButton.grab_focus()
         gtk.main()
+
+    def setPage(self, pageNum):
+        self.notebook.set_current_page(pageNum)
+        self.setPointer(pageNum)
 
     def switchPage(self, notebook, page, page_num, *args):
         # catch the switch page signal, so we can re poke modules
@@ -207,7 +209,7 @@ class firstbootWindow:
     # False.  This tells the caller that we didn't advance to the next page
     # and the caller shouldn't take further action.  Otherwise, set up the
     # next screen.
-    def _runAndAdvance(self):
+    def _runAndAdvance(self, onLastPage=False):
         try:
             module = self.moduleList[self.notebook.get_current_page()]
         except:
@@ -245,22 +247,23 @@ class firstbootWindow:
             pgNum = self.moduleNameToIndex[module.__module__][0]
             self.pageHistory.append(pgNum)
 
-            if self.nextPage:
-                self.notebook.set_current_page(self.nextPage)
-                module = self.moduleList[self.nextPage]
-                self.nextPage = None
-            else:
-                self.notebook.next_page()
-                module = self.moduleList[self.notebook.get_current_page()]
+            if not onLastPage:
+                if self.nextPage:
+                    self.notebook.set_current_page(self.nextPage)
+                    module = self.moduleList[self.nextPage]
+                    self.nextPage = None
+                else:
+                    self.notebook.next_page()
+                    module = self.moduleList[self.notebook.get_current_page()]
 
-            #Call setPointer to make the left hand pointer move to the correct pointer
-            self.setPointer(self.moduleNameToIndex[module.__module__][1])
+                #Call setPointer to make the left hand pointer move to the correct pointer
+                self.setPointer(self.moduleNameToIndex[module.__module__][1])
 
-            if "grabFocus" in dir(module):
-                #If the module needs to grab the focus, let it
-                module.grabFocus()
-            else:
-                self.nextButton.grab_focus()
+                if "grabFocus" in dir(module):
+                    #If the module needs to grab the focus, let it
+                    module.grabFocus()
+                else:
+                    self.nextButton.grab_focus()
 
             return True
         else:
@@ -268,7 +271,7 @@ class firstbootWindow:
             return False
 
     def finishClicked(self, *args):
-        advanced = self._runAndAdvance()
+        advanced = self._runAndAdvance(onLastPage=True)
 
         if advanced:
             #Call exitFirstboot to do some cleanup before exiting
@@ -595,7 +598,7 @@ class firstbootWindow:
 
         self.leftVBox.show_all()
         self.notebook.show_all()
-        self.notebook.set_current_page(0)
+        self.setPage(0)
 
     def takeScreenShot(self):
         global screenshotIndex
