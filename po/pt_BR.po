@@ -11,20 +11,20 @@
 # Rodrigo Padula de Oliveira <rodrigopadula@projetofedora.org>, 2006.
 # Diego Búrigo Zacarão <diegobz@gmail.com>, 2006.
 # Valnir Ferreira Jr. <vferreir@redhat.com>, 2006.
+# Igor Pires Soares <igor@projetofedora.org>, 2007.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-12-01 12:07-0500\n"
-"PO-Revision-Date: 2006-12-04 09:32+1000\n"
-"Last-Translator: Valnir Ferreira Jr.\n"
-"Language-Team: Brazilian Portuguese\n"
+"PO-Revision-Date: 2007-03-18 17:05-0300\n"
+"Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
+"Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
+"Plural-Forms:  nplurals=2; plural=(n > 1);"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -50,7 +50,8 @@ msgstr "Você deseja reler ou reconsiderar o Contrato de Licença?"
 msgid ""
 "Do you want to reread or reconsider the Licence Agreement?  If not, please "
 "shut down the computer and remove this product from your system. "
-msgstr "Você deseja reler ou reconsiderar o Contrato de Licença? Se não desejar, por favor desligue o computador e remova este produto do seu sistema. "
+msgstr "Você deseja reler ou reconsiderar o Contrato de Licença? Se não desejar, por favor, "
+"desligue o computador e remova este produto do seu sistema. "
 
 #: ../src/eula_strings.py:32
 msgid "_Reread license"
@@ -73,7 +74,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "Já que ocorreu um problema com o módulo %s, \n"
-"O Agente de Configuração Red Hat não carregará este módulo e \n"
+"o Agente de Configuração da Red Hat não carregará este módulo e \n"
 "tentará executar os módulos restantes."
 
 #: ../src/exceptionWindow.py:56
@@ -84,10 +85,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Por favor adicione um erro ('bug') em 'firstboot' no sistema \n"
-"de gestão de erros do Red Hat em http://www.redhat.com/bugzilla. \n"
-"Uma cópia da saída de depuração ('debug output') foi gravada em %s \n"
-"Certifique-se de anexar este arquivo ao relatório de erro ('bug report'). \n"
+"Por favor, registre um erro (bug) do 'firstboot' no sistema \n"
+"de gestão de erros da Red Hat em http://www.redhat.com/bugzilla. \n"
+"Uma cópia da saída de depuração (debug output) foi gravada em %s \n"
+"Certifique-se de anexar este arquivo ao relatório de erro. \n"
 
 #: ../src/firstbootWindow.py:107
 msgid "_Back"
@@ -169,11 +170,11 @@ msgstr ""
 "Por favor, insira o disco \"Red Hat Enterprise Linux Extras\" para permitir "
 "a instalação de aplicações e plug-ins de terceiros.  Você pode também "
 "inserir o disco de Documentação ou outros discos providos pela Red Hat para "
-"instalar software adicional neste momento."
+"instalar programas adicionais neste momento."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "Introduza por favor qualquer cd de software adicional a ser instalado agora."
+msgstr "Por favor, introduza quaisquer cds de programas adicionais a serem instalados agora."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -187,7 +188,7 @@ msgstr ""
 "\n"
 "\n"
 "Para habilitar o suporte a execução de aplicações de 32 bits na arquitetura "
-"Itanium2 da Intel você deve instalar o pacote Execution Layer da Intel do "
+"Itanium2 da Intel você deve instalar o pacote Intel Execution Layer do "
 "disco Extras agora."
 
 #: ../src/modules/additional_cds.py:118
@@ -199,14 +200,12 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Não foi detectado nenhum CD-ROM.  Por favor introduza um CD no 'drive' e "
-"clique \"OK\" para continuar."
+"Não foi detectado nenhum CD-ROM.  Por favor, introduza um CD no drive e "
+"clique em \"OK\" para continuar."
 
 #: ../src/modules/additional_cds.py:198
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"O programa autorun não pode ser encontrado no CD. Clique em \"OK\" para "
-"continuar."
+msgstr "O programa autorun não pôde ser encontrado no CD. Clique em \"OK\" para continuar."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
@@ -218,9 +217,9 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"É recomendado criar um usuário para as operações regulares (não-"
-"administrativas) de seu sistema. Para criar um 'usuário de sistema,' por "
-"favor forneça a informação pedida abaixo."
+"É recomendável criar um usuário para as operações regulares (não "
+"administrativas) de seu sistema. Para criar um \"nome de usuário\", por "
+"favor, forneça as informações pedidas abaixo."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -243,7 +242,7 @@ msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Se você precisa usar autenticação de rede, como Kerberos ou NIS, por favor "
+"Se você precisa usar a autenticação de rede, como Kerberos ou NIS, por favor, "
 "clique no botão Usar Autenticação de Rede."
 
 #: ../src/modules/create_user.py:123
@@ -256,7 +255,7 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"É altamente recomendada a criação de uma conta pessoal de usuário.  Se você "
+"É altamente recomendável a criação de uma conta pessoal de usuário.  Se você "
 "continuar sem conta, só poderá autenticar-se com a conta root, que é "
 "reservada apenas para uso administrativo."
 
@@ -270,11 +269,11 @@ msgstr "Cri_ar conta"
 
 #: ../src/modules/create_user.py:183
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "As senhas não coincidem.  Por favor insira a senha novamente."
+msgstr "As senhas não coincidem.  Por favor, insira a senha novamente."
 
 #: ../src/modules/create_user.py:191
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr "A senha é muito curta.  Por favor use no mínimo 6 caracteres."
+msgstr "A senha é muito curta.  Por favor, use no mínimo 6 caracteres."
 
 #: ../src/modules/create_user.py:202
 #, python-format
@@ -282,7 +281,7 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"O nome de usuário '%s' é uma conta reservada ao sistema.  Por favor "
+"O nome de usuário '%s' é uma conta reservada ao sistema.  Por favor, "
 "especifique outro nome de usuário"
 
 #: ../src/modules/create_user.py:220
@@ -291,7 +290,7 @@ msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Um diretório home para o nome de usuário '%s' já existe.  Por favor "
+"Já existe um diretório home para o nome de usuário \"%s\".  Por favor, "
 "especifique outro nome de usuário."
 
 #: ../src/modules/date.py:46
@@ -300,7 +299,7 @@ msgstr "Data e Hora"
 
 #: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
-msgstr "Por favor configure a data e a hora para o computador."
+msgstr "Por favor, configure a data e a hora para o sistema."
 
 #: ../src/modules/display.py:43
 msgid "Display"
@@ -308,7 +307,7 @@ msgstr "Vídeo"
 
 #: ../src/modules/display.py:45
 msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Por favor selecione a resolução e profundidade de cor que deseja utilizar"
+msgstr "Por favor, selecione a resolução e a profundidade de cor que você deseja utilizar"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -340,7 +339,7 @@ msgstr "Placa de Som"
 
 #: ../src/modules/soundcard_gui.py:45
 msgid "An audio device has been detected in your computer."
-msgstr "Um dispositivo de som foi detectado no seu computador."
+msgstr "Um dispositivo de áudio foi detectado no seu computador."
 
 #: ../src/modules/soundcard_gui.py:68
 msgid ""
@@ -348,7 +347,7 @@ msgid ""
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Clique no botão \"Teste de Som\" para ouvir um som de teste.  Você deverá "
+"Clique no botão \"Play\" para ouvir um som de teste.  Você deverá "
 "ouvir uma série de três sons.  O primeiro som tocará no canal da direita, o "
 "segundo no canal da esquerda e o terceiro tocará no centro."
 
@@ -358,7 +357,7 @@ msgstr "Fuso horário"
 
 #: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
-msgstr "Por favor configure o fuso horário do sistema."
+msgstr "Por favor, configure o fuso horário do sistema."
 
 #: ../src/modules/welcome.py:34
 msgid ""
@@ -368,6 +367,6 @@ msgid ""
 msgstr ""
 "Ainda há mais alguns passos a percorrer antes do seu computador estar pronto "
 "para ser utilizado.  O Agente de Configuração agora irá guiá-lo através de "
-"algumas configurações básicas.  Por favor clique no botão \"Avançar\" no "
+"algumas configurações básicas.  Por favor, clique no botão \"Avançar\" no "
 "canto inferior direito para continuar."
 
