@@ -91,12 +91,17 @@ class firstbootWindow:
         self.rightVBox = gtk.VBox()
         self.rightVBox.set_border_width(5)
 
+        # We need these here so we can figure out how big to make the
+        # left side right now.
+        self.leftBackground = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/firstboot-left.png")
+        self.aspect_ratio = (1.0 * self.leftBackground.get_width ()) / (1.0 * self.leftBackground.get_height())
+
         # If we're in low res mode, grow the right hand box to take up the
         # entire window.
         if self.x_screen >= 800:            
-            self.leftEventBox.set_size_request(int(0.2*self.x_screen),
-                                               self.y_screen)
-            self.rightVBox.set_size_request(int(0.8*self.x_screen),
+            leftWidth = int(self.y_screen * self.aspect_ratio)
+            self.leftEventBox.set_size_request(leftWidth, self.y_screen)
+            self.rightVBox.set_size_request(self.x_screen - leftWidth,
                                             self.y_screen)
             self.win.fullscreen()
         else:
@@ -384,10 +389,8 @@ class firstbootWindow:
                 pix.set_from_file("/usr/share/firstboot/pixmaps/pointer-blank.png")
 
     def leb_exposed(self, eb, event):
-        pixbuf = functions.pixbufFromPath("/usr/share/firstboot/pixmaps/firstboot-left.png")
-        aspect_ratio = (1.0 * pixbuf.get_width ()) / (1.0 * pixbuf.get_height())
-	pixbuf = pixbuf.scale_simple(int(self.y_screen * aspect_ratio),
-                                     self.y_screen, gtk.gdk.INTERP_BILINEAR)
+	pixbuf = self.leftBackground.scale_simple(int(self.y_screen * self.aspect_ratio),
+                                                  self.y_screen, gtk.gdk.INTERP_BILINEAR)
 
         cairo_context = eb.window.cairo_create()
         cairo_context.set_source_pixbuf(pixbuf, 0, self.y_screen - pixbuf.get_height())
