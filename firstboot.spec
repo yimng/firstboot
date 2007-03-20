@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.32
+Version: 1.4.33
 Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -87,7 +87,6 @@ fi
 %dir %{_datadir}/firstboot/
 %{_sbindir}/firstboot
 %{_datadir}/firstboot/constants_text.py*
-%{_datadir}/firstboot/eula_strings.py*
 %{_datadir}/firstboot/firstboot.py*
 %{_datadir}/firstboot/firstbootBackend.py*
 %{_datadir}/firstboot/functions.py*
@@ -95,6 +94,10 @@ fi
 
 
 %changelog
+* Tue Mar 20 2007 Chris Lumens <clumens@redhat.com> - 1.4.33-1
+- Don't chop off part of the left side background.
+- Added a new EULA module.
+
 * Wed Mar 14 2007 Chris Lumens <clumens@redhat.com> - 1.4.32-1
 - Fixes to make the graphics look better (#229837).
 - Don't wrap back to the first screen at the end of reconfig mode (#214962).
