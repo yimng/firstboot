@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2007-01-23 13:11+0100\n"
 "Last-Translator: Adnan Hodzic <AbsintheSyringe@gmail.com>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
@@ -18,34 +18,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Izlaz"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Licenčni sporazum"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Da, prihvaćam licenčni sporazum."
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "_Ne prihvaćam."
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Želite li ponovo pročitati ili razmotriti licenčni sporazum?"
-
-#: ../src/eula_strings.py:31
-msgid "Do you want to reread or reconsider the Licence Agreement?  If not, please shut down the computer and remove this product from your system. "
-msgstr "Jeste li sigurni da se ne slažete s licenčnim sporazumom ili ga ipak želite ponovo pročitati i razmotriti? Ako se ne slažete, bit će potrebno da ovaj proizvod uklonite sa svog računala."
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Ponovno čitanje"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Gašenje sustava"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -76,29 +48,28 @@ msgstr ""
 "Kopija izlaznih podataka nedostatka spremljena je u %s.\n"
 "Ovu datoteku pridodajte uz vaš izvještaj o nedostatku.\n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Povratak"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "_Naprijed"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Da bi neki od vaših odabira dobili učinak sistem će biti resetovan."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_Završetak"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "uvoz modula %s nije uspio: %s"
 
-#: ../src/firstbootWindow.py:580
-#: ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Dobrodošli"
@@ -143,14 +114,21 @@ msgstr "Označite stavku koju želite izmijeniti "
 msgid "Setup Agent"
 msgstr "Agent postavki"
 
-#: ../src/modules/additional_cds.py:44
-#: ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Dodatni CD-i"
 
 #: ../src/modules/additional_cds.py:65
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Za instalaciju dodataka i aplikacija trećih proizvođača umetnite disk označen \"Red Hat Enterprise Linux Extras\".  Možete umetnuti i disk s dokumentacijom ili druge diskove iz Red Hat distribucije ako želite u ovom trenutku instalirati još neki dodatni softver."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Za instalaciju dodataka i aplikacija trećih proizvođača umetnite disk "
+"označen \"Red Hat Enterprise Linux Extras\".  Možete umetnuti i disk s "
+"dokumentacijom ili druge diskove iz Red Hat distribucije ako želite u ovom "
+"trenutku instalirati još neki dodatni softver."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -161,31 +139,47 @@ msgstr "Umetnite disk za instalaciju dodatnog softvera."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Da biste  na Intel Itanium2 arhitekturi omogućili podršku 32-bitnih aplikacija potrebno je u ovom trenutku instalirati paket Intel Execution Layer s CD-a 'Extras'."
+"Da biste  na Intel Itanium2 arhitekturi omogućili podršku 32-bitnih "
+"aplikacija potrebno je u ovom trenutku instalirati paket Intel Execution "
+"Layer s CD-a 'Extras'."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Instaliraj..."
 
-#: ../src/modules/additional_cds.py:164
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "CD-ROM nije pronađen. Umetnite CD u vaš CD-ROM uređaj i kliknite \"U redu\" za nastavak."
+#: ../src/modules/additional_cds.py:129
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ROM nije pronađen. Umetnite CD u vaš CD-ROM uređaj i kliknite \"U redu\" "
+"za nastavak."
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "Program autorun nije moguće pronaći na CD-u. Za nastavak kliknite \"U redu\"."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Program autorun nije moguće pronaći na CD-u. Za nastavak kliknite \"U redu\"."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
 msgstr "Izrada korisnika"
 
 #: ../src/modules/create_user.py:66
-msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "Preporučuje se izrada osobnog korisničkog naloga za normalnu (ne-administrativnu) upotrebu. Za izradu osobnog naloga morate dati sljedeće potraživan podatke."
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Preporučuje se izrada osobnog korisničkog naloga za normalnu (ne-"
+"administrativnu) upotrebu. Za izradu osobnog naloga morate dati sljedeće "
+"potraživan podatke."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -204,16 +198,26 @@ msgid "Confir_m Password:"
 msgstr "_Potvrda lozinke:"
 
 #: ../src/modules/create_user.py:113
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Ako je potrebno upotrijebiti mrežnu provjeru autentičnosti poput Kerberos ili NIS, kliknite gumb 'Uz mrežnu prijavu'."
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Ako je potrebno upotrijebiti mrežnu provjeru autentičnosti poput Kerberos "
+"ili NIS, kliknite gumb 'Uz mrežnu prijavu'."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Upotrijebi _mrežnu prijavu..."
 
 #: ../src/modules/create_user.py:151
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Snažno se preporučuje izrada osobnog korisničkog naloga. Ako nastavite bez naloga moći ćete se prijaviti samo s korijenskim nalogom, koji je rezerviran samo za administrativnu upotrebu."
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"Snažno se preporučuje izrada osobnog korisničkog naloga. Ako nastavite bez "
+"naloga moći ćete se prijaviti samo s korijenskim nalogom, koji je rezerviran "
+"samo za administrativnu upotrebu."
 
 #: ../src/modules/create_user.py:159
 msgid "_Continue"
@@ -223,23 +227,31 @@ msgstr "_Nastavi"
 msgid "Create _account"
 msgstr "Izradi _nalog"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lozinka se ne poklapaju. Ponovo unesite lozinku."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lozinka je prekratka. Upotrijebite najmanje 6 znakova."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Korisničko ime '%s' rezervirani je nalog sistema. Navedite drugo korisničko ime."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Korisničko ime '%s' rezervirani je nalog sistema. Navedite drugo korisničko "
+"ime."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
-msgid "A home directory for the username '%s' already exists.  Please specify another username."
-msgstr "Korisnička mapa za korisničko ime '%s' već postoji. Odredite drugo korisničko ime."
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
+msgstr ""
+"Korisnička mapa za korisničko ime '%s' već postoji. Odredite drugo "
+"korisničko ime."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -249,13 +261,29 @@ msgstr "Datum i vrijeme"
 msgid "Please set the date and time for the system."
 msgstr "Postavite datum i vrijeme u sistemu."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Zaslon"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Licenčni sporazum"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Odaberite rezoluciju i dubinu boja koju želite upotrebljavati."
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Ponovno čitanje"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -281,8 +309,7 @@ msgstr "_Izmjena mrežne konfiguracije..."
 msgid "static"
 msgstr "statično"
 
-#: ../src/modules/soundcard_gui.py:43
-#: ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Zvučna kartica"
 
@@ -290,9 +317,15 @@ msgstr "Zvučna kartica"
 msgid "An audio device has been detected in your computer."
 msgstr "U vašem je računalu otkrivena zvučna kartica."
 
-#: ../src/modules/soundcard_gui.py:68
-msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Da biste poslušali zvuk kliknite tipku \"Pokreni\". Trebali bi ste ćuti niz od tri zvuka. Prvi je zvuk na desnom kanalu, drugi na lijevom, a treći u sredini."
+#: ../src/modules/soundcard_gui.py:66
+msgid ""
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
+msgstr ""
+"Da biste poslušali zvuk kliknite tipku \"Pokreni\". Trebali bi ste ćuti niz "
+"od tri zvuka. Prvi je zvuk na desnom kanalu, drugi na lijevom, a treći u "
+"sredini."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -303,6 +336,38 @@ msgid "Please set the timezone for the system."
 msgstr "Postavite vremensku zonu za sistema."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
-msgstr "Prije nego što vaš sistem postane spreman za upotrebu potrebno je učiniti još nekoliko koraka. Agent podešavanja sustava vodit će vas kroz neka osnovna konfiguriranja. Za nastavak kliknite tipku \"Naprijed\" u donjem desnom kutu."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue."
+msgstr ""
+"Prije nego što vaš sistem postane spreman za upotrebu potrebno je učiniti "
+"još nekoliko koraka. Agent podešavanja sustava vodit će vas kroz neka "
+"osnovna konfiguriranja. Za nastavak kliknite tipku \"Naprijed\" u donjem "
+"desnom kutu."
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Da, prihvaćam licenčni sporazum."
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "_Ne prihvaćam."
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Želite li ponovo pročitati ili razmotriti licenčni sporazum?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "Jeste li sigurni da se ne slažete s licenčnim sporazumom ili ga ipak "
+#~ "želite ponovo pročitati i razmotriti? Ako se ne slažete, bit će potrebno "
+#~ "da ovaj proizvod uklonite sa svog računala."
+
+#~ msgid "_Shut down"
+#~ msgstr "_Gašenje sustava"
+
+#~ msgid "Display"
+#~ msgstr "Zaslon"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Odaberite rezoluciju i dubinu boja koju želite upotrebljavati."

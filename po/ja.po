@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-12-04 15:02+1000\n"
 "Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
@@ -25,36 +25,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "終了"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "ライセンス同意書"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "はい、私はライセンス同意書に同意します(_Y)"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "いいえ、同意しません(_O)"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "ライセンス同意書の再読、又は再検討をしたいですか?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr "ライセンス同意書 (Licence Agreement) を再度読み直すまたは再考しますか? これを行わない場合は、 コンピュータをシャットダウンしてご使用のシステムから本製品を削除してください。"
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "ライセンスの再読(_R)"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "停止(_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -85,28 +55,29 @@ msgstr ""
 "デバッグ出力のコピーは%sに保存してあります。\n"
 "バグ報告には必ず、このファイルを添付して下さい。\n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "戻る(_B)"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "進む(_F)"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "行われた選択を有効にするためにはここでシステムを再起動する必要があります。"
+msgstr ""
+"行われた選択を有効にするためにはここでシステムを再起動する必要があります。"
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "終了(_F)"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s のモジュールのインポートに失敗しました: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ようこそ"
@@ -151,7 +122,7 @@ msgstr "修正したい項目を選択して下さい"
 msgid "Setup Agent"
 msgstr "セットアップエージェント"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "追加の CD"
 
@@ -186,11 +157,11 @@ msgstr ""
 "効にするには、ここでエクストラディスクから Intel Execution Layer パッケージを"
 "インストールする必要があります。"
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "インストール..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -198,8 +169,9 @@ msgstr ""
 "CD-ROM は検出されませんでした。CD-ROM をドライブに挿入して\"OK\"を クリックし"
 "て続けて下さい。"
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "オートランプログラムが CD 上に見つかりません。 \"OK\" をクリックして継続しま"
 "す。"
@@ -264,15 +236,15 @@ msgstr "続ける(_C)"
 msgid "Create _account"
 msgstr "アカウントの作成(_A)"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "パスワードが一致しません。再度パスワードを入力して下さい。"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "パスワードが短すぎます。最低 6 文字を使用して下さい。"
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -281,7 +253,7 @@ msgstr ""
 "ユーザー名 '%s' はシステムアカウント用に保留されています。別のユーザー名を指"
 "定してください。"
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -298,13 +270,29 @@ msgstr "日付と時刻"
 msgid "Please set the date and time for the system."
 msgstr "システム用に日付と時刻を設定して下さい。"
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "ディスプレイ"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "ライセンス同意書"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "使用したい解像度と色の深さを選択して下さい。"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "ライセンスの再読(_R)"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -338,7 +326,7 @@ msgstr "サウンドカード"
 msgid "An audio device has been detected in your computer."
 msgstr "コンピュータ上にオーディオデバイスが検出されました。"
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -366,3 +354,28 @@ msgstr ""
 "エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
 "\"進む\" ボタンをクリックして続けて下さい。"
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "はい、私はライセンス同意書に同意します(_Y)"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "いいえ、同意しません(_O)"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "ライセンス同意書の再読、又は再検討をしたいですか?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "ライセンス同意書 (Licence Agreement) を再度読み直すまたは再考しますか? こ"
+#~ "れを行わない場合は、 コンピュータをシャットダウンしてご使用のシステムから"
+#~ "本製品を削除してください。"
+
+#~ msgid "_Shut down"
+#~ msgstr "停止(_S)"
+
+#~ msgid "Display"
+#~ msgstr "ディスプレイ"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "使用したい解像度と色の深さを選択して下さい。"

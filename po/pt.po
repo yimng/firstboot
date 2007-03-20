@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-12-06 11:14+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -20,36 +20,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Sair"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Licença"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Sim, concordo com a Licença"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "Nã_o, não concordo"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Deseja voltar a ler ou reconsiderar a Licença?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr "Deseja voltar a ler ou reconsiderar o Acordo da Licença? Caso contrário, desligue por favor o computador e remova este produto do seu sistema. "
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "Volta_r a Ler Licença"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Desligar"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -80,29 +50,29 @@ msgstr ""
 "Uma cópia da saída de depuração foi gravada em %s \n"
 "Por favor anexe este ficheiro ao relatório de erro. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "Re_gressar"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "A_vançar"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "O sistema deve ser agora reiniciado para que as suas escolhas fiquem activas."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_Terminar"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "importação do módulo %s falhou: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Bem-vindo"
@@ -147,7 +117,7 @@ msgstr "Seleccione o item que deseja modificar "
 msgid "Setup Agent"
 msgstr "Agente de Configuração"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "CDs Adicionais"
 
@@ -183,11 +153,11 @@ msgstr ""
 "Intel Itanium2 deve instalar o pacote Intel Execution Layer do disco de "
 "Extras agora."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Instalar..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -195,7 +165,7 @@ msgstr ""
 "Não foi detectado nenhum CD-ROM. Introduza por favor um CD na 'drive' e "
 "carregue em \"OK\" para continuar."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
@@ -262,15 +232,15 @@ msgstr "_Continuar"
 msgid "Create _account"
 msgstr "Cri_ar conta"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "As senhas não coincidem.  Por favor volte a inserir a senha."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "A senha é demasiado curta.  Por favor insira pelo menos 6 caracteres."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -279,7 +249,7 @@ msgstr ""
 "O nome de utilizador '%s' está reservado para uso pelo sistema.  Por favor "
 "escolha outro nome de utilizador."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -296,13 +266,29 @@ msgstr "Data e Hora"
 msgid "Please set the date and time for the system."
 msgstr "Indique por favor a data e a hora do sistema."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Ecrã"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Licença"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Por favor seleccione a resolução e número de cores que deseja utilizar"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "Volta_r a Ler Licença"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -336,7 +322,7 @@ msgstr "Placa de Som"
 msgid "An audio device has been detected in your computer."
 msgstr "Foi detectado um dispositivo de áudio no seu computador."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -364,6 +350,32 @@ msgstr ""
 "pronto a utilizar.  O Agente de Configuração vai agora guiá-lo através de "
 "algumas opções básicas.  Por favor carregue no botão \"Avançar\" no canto "
 "inferior direito para continuar."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Sim, concordo com a Licença"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "Nã_o, não concordo"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Deseja voltar a ler ou reconsiderar a Licença?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "Deseja voltar a ler ou reconsiderar o Acordo da Licença? Caso contrário, "
+#~ "desligue por favor o computador e remova este produto do seu sistema. "
+
+#~ msgid "_Shut down"
+#~ msgstr "_Desligar"
+
+#~ msgid "Display"
+#~ msgstr "Ecrã"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr ""
+#~ "Por favor seleccione a resolução e número de cores que deseja utilizar"
 
 #~ msgid "_Next"
 #~ msgstr "Ava_nçar"

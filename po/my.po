@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2005-10-28 14:43-0400\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,36 +17,6 @@ msgstr ""
 
 #: ../src/constants_text.py:36
 msgid "Exit"
-msgstr ""
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr ""
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr ""
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr ""
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr ""
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
 msgstr ""
 
 #: ../src/exceptionWindow.py:47
@@ -71,28 +41,28 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr ""
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr ""
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr ""
@@ -137,7 +107,7 @@ msgstr ""
 msgid "Setup Agent"
 msgstr ""
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr ""
 
@@ -163,17 +133,17 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
@@ -230,22 +200,22 @@ msgstr ""
 msgid "Create _account"
 msgstr ""
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr ""
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -260,12 +230,27 @@ msgstr ""
 msgid "Please set the date and time for the system."
 msgstr ""
 
-#: ../src/modules/display.py:43
-msgid "Display"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
 msgstr ""
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+msgid "I have read the license."
 msgstr ""
 
 #: ../src/modules/networking.py:43
@@ -300,7 +285,7 @@ msgstr ""
 msgid "An audio device has been detected in your computer."
 msgstr ""
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "

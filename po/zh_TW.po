@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-12-02 22:50+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -23,37 +23,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "離開"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "授權同意書"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "是的，我同意授權同意書(_Y)"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "不，我不同意(_o)"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "您想要重新閱讀或再考慮一次授權同意書嗎？"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-"您是否想重讀或重新考慮授權協議？若否，請關閉電腦，並從您的系統移除這項產品。"
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "重新閱讀授權書(_R)"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "關閉(_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -84,28 +53,28 @@ msgstr ""
 "除錯輸出的複本已經儲存到 %s \n"
 "請記得在程式錯誤報告中，附上這個檔案。\n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "上一頁(_B)"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "下一頁(_F)"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "為了讓您的選擇生效，系統現在必須重新啟動。"
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "完成(_F)"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "匯入模組 %s 失敗：%s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "歡迎"
@@ -150,7 +119,7 @@ msgstr "請選擇您想要修改的項目 "
 msgid "Setup Agent"
 msgstr "設定代理程式"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "其他的光碟"
 
@@ -183,17 +152,17 @@ msgstr ""
 "要在英特爾（Intel）Itanium2 架構下支援 32 位元的應用程式，您現在必須從 "
 "Extras 光碟中安裝 Intel Execution Layer 套件。"
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "安裝..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "偵測不到光碟片。請將光碟片放入光碟機中，並按下「確定」以繼續。"
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式。請點選「確定」以繼續。"
@@ -255,22 +224,22 @@ msgstr "繼續(_C)"
 msgid "Create _account"
 msgstr "建立帳號(_a)"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "兩個密碼不相同。請重輸入密碼。"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "密碼太短。請至少使用 6 個字元。"
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "使用者名稱「%s」是系統的保留帳號。請指定另一個使用名稱。"
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -285,13 +254,29 @@ msgstr "日期與時間"
 msgid "Please set the date and time for the system."
 msgstr "請設定系統的日期與時間。"
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "顯示"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "授權同意書"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "請選擇您想要使用的螢幕解析度和色深"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "重新閱讀授權書(_R)"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -325,7 +310,7 @@ msgstr "音效卡"
 msgid "An audio device has been detected in your computer."
 msgstr "在您的電腦上偵測到一張音效卡。"
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -350,3 +335,28 @@ msgid ""
 msgstr ""
 "在使用您的系統之前，要先完成幾個步驟。現在「設定代理程式」將引導您做一些基本"
 "設定。請點選右下角的「下一頁」按鈕以繼續。"
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "是的，我同意授權同意書(_Y)"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "不，我不同意(_o)"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "您想要重新閱讀或再考慮一次授權同意書嗎？"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "您是否想重讀或重新考慮授權協議？若否，請關閉電腦，並從您的系統移除這項產"
+#~ "品。"
+
+#~ msgid "_Shut down"
+#~ msgstr "關閉(_S)"
+
+#~ msgid "Display"
+#~ msgstr "顯示"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "請選擇您想要使用的螢幕解析度和色深"

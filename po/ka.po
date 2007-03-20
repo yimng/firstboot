@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ka\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2007-03-05 20:52+0400\n"
 "Last-Translator: George Machitidze <giomac@gmail.com>\n"
 "Language-Team: Georgian <guiasher@mes.gov.ge>\n"
@@ -22,36 +22,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "გასვლა"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "სალიცენზიო შეთანხმება"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_დიახ, მე ვეთანხმები სალიცენზიო შეთანხმებას"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "_არა, არ ვეთანხმები"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "გსურთ თავიდან გადახედოთ სალიცენზიო შეთანხმებას?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr "გსურთ თავიდან გადახედოთ სალიცენზიო შეთანხმებას? თუ არა, მაშინ გთხოვთ გათიშოთ კომპიუტერი და წაშალოთ პროდუქტი თქვენი სისტემიდან."
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "ლიცენზიის გადა_კითხვა"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_გათიშვა"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -78,28 +48,28 @@ msgid ""
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_უკან"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "_წინ"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "მონიშნული ცვლილებების ძალაში შესასვლელად თქვენი უნდა გადაიტვირთოს."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_დასრულება"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s-ის მოდულის იმპორტი ვერ მოხერხდა: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "მოგესალმებით"
@@ -144,7 +114,7 @@ msgstr "აირჩიეთ ელემენტი, რომლის შ�
 msgid "Setup Agent"
 msgstr "გამართვის ოსტატი"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "დამატებითი დისკები"
 
@@ -158,7 +128,8 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "გთხოვთ მოათავსოთ ხელმისაწვდომი დამატებითი პროგრამების ნებისმიერი დისკები."
+msgstr ""
+"გთხოვთ მოათავსოთ ხელმისაწვდომი დამატებითი პროგრამების ნებისმიერი დისკები."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -170,20 +141,21 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "ჩადგმა..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM არ იქნა აღმოჩენილი.  გთხოვთ ჩადოთ CD-ROM ამძრავში და "
-"გასაგრძელებლად დააჭიროთ \"OK\"-ის."
+"CD-ROM არ იქნა აღმოჩენილი.  გთხოვთ ჩადოთ CD-ROM ამძრავში და გასაგრძელებლად "
+"დააჭიროთ \"OK\"-ის."
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 
 #: ../src/modules/create_user.py:39
@@ -239,15 +211,15 @@ msgstr "_გაგრძელება"
 msgid "Create _account"
 msgstr "ანგარიშის _შექმნა"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "პაროლები ერთმანეთს არ ემთხვევა. გთხოვთ პაროლები თავიდან შეიყვანოთ."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "პაროლი ძალიან მოკლეა. გთხოვთ შეიყვანოთ მინიმუმ 6 სიმბოლო."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -256,7 +228,7 @@ msgstr ""
 "მომხმარებელი '%s' არის რეზერვირებული სისეტმური მომხმარებელი.  გთხოვთ "
 "შეიყვანოთ სხვა სახელი."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -273,13 +245,29 @@ msgstr "დრო და თარიღი"
 msgid "Please set the date and time for the system."
 msgstr "გთხოვთ მიუთითოთ სისტემის დრო და თარიღი."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "დისპლეი"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "სალიცენზიო შეთანხმება"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "გთხოვთ აირჩიოთ თქვენთვის სასურველი გარჩევადობა და ფერების სიღრმე"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "ლიცენზიის გადა_კითხვა"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -314,7 +302,7 @@ msgstr "აუდიოდაფა"
 msgid "An audio device has been detected in your computer."
 msgstr "თქვენს სისტემაში აღმოჩენილია აუდიოდაფა."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -342,3 +330,27 @@ msgstr ""
 "გამართვის ოსტატი დაგეხმარებათ ძირითადი პარამეტრების დაყენებაში.  "
 "გასაგრძელებლად გთხოვთ დაწკაპოთ ქვედა მარჯევნა კუთხეში ღილაკს \"წინ\"."
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_დიახ, მე ვეთანხმები სალიცენზიო შეთანხმებას"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "_არა, არ ვეთანხმები"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "გსურთ თავიდან გადახედოთ სალიცენზიო შეთანხმებას?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "გსურთ თავიდან გადახედოთ სალიცენზიო შეთანხმებას? თუ არა, მაშინ გთხოვთ "
+#~ "გათიშოთ კომპიუტერი და წაშალოთ პროდუქტი თქვენი სისტემიდან."
+
+#~ msgid "_Shut down"
+#~ msgstr "_გათიშვა"
+
+#~ msgid "Display"
+#~ msgstr "დისპლეი"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "გთხოვთ აირჩიოთ თქვენთვის სასურველი გარჩევადობა და ფერების სიღრმე"

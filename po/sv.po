@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2007-01-18 15:33-0500\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -22,38 +22,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Avsluta"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Licensavtal"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Ja, jag godkänner licensavtalet"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "N_ej, jag godkänner inte"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Vill du läsa licensavtalet igen eller överväga det på nytt?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-"Vill du läsa eller fundera på licensavtalet igen? Om inte, stäng ner datorn "
-"och ta bort denna produkt från ditt system."
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Läs licensavtalet igen"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Stäng ner"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -86,28 +54,28 @@ msgstr ""
 "har sparats i %s. Försäkra dig om att du bifogar\n"
 "den filen med felrapporten.\n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Bakåt"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "_Framåt"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Systemet måste nu starta om för att dina val ska börja gälla."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_Slutför"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimport av %s misslyckades: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Välkommen"
@@ -152,7 +120,7 @@ msgstr "Välj det objekt som du vill ändra "
 msgid "Setup Agent"
 msgstr "Konfigurationsagent"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Ytterligare cd-skivor"
 
@@ -189,11 +157,11 @@ msgstr ""
 "arkitekturen måste du installera paketet Intel Execution Layer från Extras-"
 "skivan nu."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Installera..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -201,7 +169,7 @@ msgstr ""
 "En cd-romskiva har inte hittats. Stoppa in en cd-romskiva i enheten och "
 "klicka på \"OK\" för att fortsätta."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
@@ -268,15 +236,15 @@ msgstr "_Fortsätt"
 msgid "Create _account"
 msgstr "Skapa _konto"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens. Ange lösenordet igen."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lösenordet är för kort. Använd minst 6 tecken."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -285,7 +253,7 @@ msgstr ""
 "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
 "användarnamn."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -302,13 +270,29 @@ msgstr "Datum och tid"
 msgid "Please set the date and time for the system."
 msgstr "Ställ in datum och tid för systemet."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Display"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Licensavtal"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Välj den upplösning och det färgdjup som du vill använda"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Läs licensavtalet igen"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -342,7 +326,7 @@ msgstr "Ljudkort"
 msgid "An audio device has been detected in your computer."
 msgstr "En ljudenhet har hittats i din dator."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -370,6 +354,31 @@ msgstr ""
 "Konfigurationsagenten kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Framåt\" i nedre högra hörnet för att "
 "fortsätta."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Ja, jag godkänner licensavtalet"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "N_ej, jag godkänner inte"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Vill du läsa licensavtalet igen eller överväga det på nytt?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "Vill du läsa eller fundera på licensavtalet igen? Om inte, stäng ner "
+#~ "datorn och ta bort denna produkt från ditt system."
+
+#~ msgid "_Shut down"
+#~ msgstr "_Stäng ner"
+
+#~ msgid "Display"
+#~ msgstr "Display"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Välj den upplösning och det färgdjup som du vill använda"
 
 #~ msgid "Play"
 #~ msgstr "Spela"

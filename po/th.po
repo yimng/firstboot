@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-09-16 00:35+0700\n"
 "Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -21,36 +21,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "ออก"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "การยอมรับสัญญาอนุญาต"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "ใ_ช่ ข้าพเจ้ายอมรับสัญญาอนุญาตนี้"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "ไ_ม่ ข้าพเจ้าไม่ยอมรับ"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "คุณต้องการอ่านและพิจารณาซ้ำอีกครั้งหรือไม่?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_อ่านสัญญาอนุญาตซ้ำ"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_ปิดเครื่อง"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -81,28 +51,28 @@ msgstr ""
 "ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
 "อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_ย้อนกลับ"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "ถัดไ_ป"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "จำเป็นต้องเริ่มการทำงานของระบบใหม่เพื่อให้บางส่วนที่คุณเลือกทำงานได้ถูกต้อง"
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "ติดตั้งเสร็จแล้ว"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "การนำเข้ามอดูล %s ล้มเหลว: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
@@ -147,7 +117,7 @@ msgstr "เลือกไอเทมที่ต้องการแก้ไ
 msgid "Setup Agent"
 msgstr "ตัวติดตั้ง"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "แผ่นซีดีเสริม"
 
@@ -180,17 +150,17 @@ msgstr ""
 "เพื่อรองรับการทำงานของโปรแกรม 32-bit ให้สามารถรันบนสถาปัตยกรรมอินเทล Itanium2 ได้ "
 "คุณต้องติดตั้งแพกเกจ Intel Execution Layer จากแผ่นดิสก์พิเศษเดี๋ยวนี้"
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "ติดตั้ง..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "ตรวจไม่พบซีดีรอม กรุณาใส่แผ่นซีดีแล้วคลิก \"ตกลง\""
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
@@ -253,22 +223,22 @@ msgstr "_ทำต่อไป"
 msgid "Create _account"
 msgstr "สร้าง_บัญชีผู้ใช้"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "รหัสผ่านของคุณไม่ตรงกัน กรุณากรอกใหม่อีกครั้ง"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "รหัสผ่านของคุณสั้นเกินไป กรุณาใช้รหัสความยาวอย่างน้อย 6 ตัวอักษร"
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "ชื่อผู้ใช้ %s เป็นชื่อที่สงวนไว้สำหรับบัญชีของระบบ กรุณาเลือกชื่ออื่นแทน"
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -283,13 +253,29 @@ msgstr "วันที่และเวลา"
 msgid "Please set the date and time for the system."
 msgstr "กรุณาตั้งค่าวันที่และเวลาของระบบ"
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "การแสดงผล"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "การยอมรับสัญญาอนุญาต"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "กรุณาเลือกความละเอียดและความลึกสีที่คุณต้องการใช้"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_อ่านสัญญาอนุญาตซ้ำ"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -323,7 +309,7 @@ msgstr "การ์ดเสียง"
 msgid "An audio device has been detected in your computer."
 msgstr "ตรวจพบการ์ดเสียงในคอมพิวเตอร์ของคุณ"
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -350,3 +336,21 @@ msgstr ""
 "ต่อไปนี้จะเป็นขั้นตอนสั้นๆ ที่ต้องตั้งค่า ก่อนจะใช้งานระบบของคุณ "
 "ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
 "ที่มุมล่างขวาเพื่อทำงานต่อ"
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "ใ_ช่ ข้าพเจ้ายอมรับสัญญาอนุญาตนี้"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "ไ_ม่ ข้าพเจ้าไม่ยอมรับ"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "คุณต้องการอ่านและพิจารณาซ้ำอีกครั้งหรือไม่?"
+
+#~ msgid "_Shut down"
+#~ msgstr "_ปิดเครื่อง"
+
+#~ msgid "Display"
+#~ msgstr "การแสดงผล"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "กรุณาเลือกความละเอียดและความลึกสีที่คุณต้องการใช้"

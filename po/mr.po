@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-12-04 00:41+0530\n"
 "Last-Translator: Rahul Bhalerao <b.rahul.pm@gmail.com>\n"
 "Language-Team: Marathi\n"
@@ -23,38 +23,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "बाहेर"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "परवाना करार"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "हो, मला परवाना करार मान्य आहे(_Y)"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "नाही, मला मान्य नाही(_o)"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "तुम्ही परवाना कराराचे पुनर्वाचन किंवा पुनर्विचार करू इच्छिता का?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-"तुम्ही परवाना करार पुन्हा वाचून त्यावर विचार करू इच्छिता काय? जर नाही, तर कृपया संगणक "
-"बंद करा आणि हे उत्पाद तुमच्या प्रणालीवरून काढून टाका."
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "परवाना पुन्हा वाचा(_R)"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "बंद करा(शट-डाउन)(_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -85,28 +53,28 @@ msgstr ""
 "त्रुटी निर्वारण निष्पत्तीची एक प्रत %s मध्ये सुरक्षित केली आहे. \n"
 "ती फाइल त्रुटी अहवालास जोडणे विसरू नका.\n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "मागे(_B)"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "पुढे(_F)"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "तुमच्या काही निवडी प्रभावी होण्यासाठी प्रणालीस आता पुनरारंभ(रीबूट) करावे लागेल."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "समाप्त(_F)"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s ची विभाग आयात असफल: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "सुस्वागतम् "
@@ -151,7 +119,7 @@ msgstr "बदल करावयाची बाब निवडा"
 msgid "Setup Agent"
 msgstr "व्यवस्था प्रतिनिधि"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "अतिरिक्त CD(सीडी)"
 
@@ -169,7 +137,8 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "कृपया काही अतिरिक्त बुद्धीभाग(सॉफ्टवेयर) प्रतिष्ठापना सीडी(cd) या वेळी दाखल करा."
+msgstr ""
+"कृपया काही अतिरिक्त बुद्धीभाग(सॉफ्टवेयर) प्रतिष्ठापना सीडी(cd) या वेळी दाखल करा."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -185,11 +154,11 @@ msgstr ""
 "३२-बिट अनुप्रयोगांचा चलसमय आधार Intel Itanium2 आर्कीटेक्चरवर समर्थ करण्यासाठी तुम्हास "
 "Intel Execution Layer संकुल जादा चकतीमधून आता प्रतिष्ठापित करणे आवश्यक आहे."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "प्रतिष्ठापित करा..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -197,8 +166,9 @@ msgstr ""
 "CD-ROM सापडला नाही. कृपया CD-ROM ड्राइव मध्ये टाका आणि पुढे चालू राहण्यासाठी \"ठीक\" "
 "वर (दाबा) क्लिक् करा."
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "सीडीवर ऑटोरन(autorun) हा कार्यक्रम सापडला नाही. पुढे चालू ठेवण्यासाठी \"ठीक\" वर "
 "(दाबा) क्लिक् करा."
@@ -263,22 +233,23 @@ msgstr "चालू ठेवा(_C)"
 msgid "Create _account"
 msgstr "खाते बनवा(_a)"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "गुप्तशब्द मेळ खात नाहीत. कृपया गुप्तशब्द पुन्हा जमा करा."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "गुप्तशब्द खूप लहान आहे. कृपया कमीत कमी ६ अक्षरे तरी वापरा."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "उपयोक्तानाम '%s' प्रणाली खात्यासाठी आरक्षित आहे. कृपया अन्य उपयोक्तानाम नमूद करा."
+msgstr ""
+"उपयोक्तानाम '%s' प्रणाली खात्यासाठी आरक्षित आहे. कृपया अन्य उपयोक्तानाम नमूद करा."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -295,13 +266,29 @@ msgstr "दिनांक आणि वेळ"
 msgid "Please set the date and time for the system."
 msgstr "कृपया प्रणालीसाठी दिनांक आणि वेळ निश्चित करा."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "प्रदर्शन"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "परवाना करार"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "कृपया हवे असलेले दृश्यप्रमाण(रिझॉल्यूशन) आणि रंग खोली निवडा"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "परवाना पुन्हा वाचा(_R)"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -335,7 +322,7 @@ msgstr "ध्वनी कार्ड"
 msgid "An audio device has been detected in your computer."
 msgstr "तुमच्या संगणकात एक श्राव्ययंत्र सापडले आहे."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -363,3 +350,27 @@ msgstr ""
 "तुम्हास काही मुलभूत व्यूहरचनांमध्ये मार्गदर्शन करेल. कृपया \"पुढे\" हे खालील उजव्या कोपऱ्यातील "
 "बटन दाबून पुढे सरकत रहा."
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "हो, मला परवाना करार मान्य आहे(_Y)"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "नाही, मला मान्य नाही(_o)"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "तुम्ही परवाना कराराचे पुनर्वाचन किंवा पुनर्विचार करू इच्छिता का?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "तुम्ही परवाना करार पुन्हा वाचून त्यावर विचार करू इच्छिता काय? जर नाही, तर कृपया "
+#~ "संगणक बंद करा आणि हे उत्पाद तुमच्या प्रणालीवरून काढून टाका."
+
+#~ msgid "_Shut down"
+#~ msgstr "बंद करा(शट-डाउन)(_S)"
+
+#~ msgid "Display"
+#~ msgstr "प्रदर्शन"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "कृपया हवे असलेले दृश्यप्रमाण(रिझॉल्यूशन) आणि रंग खोली निवडा"

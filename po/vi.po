@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2003-09-21 15:54+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -18,36 +18,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr ""
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "License Agreement"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Vâng, tôi đồng ý License Agreement"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "_Không, tôi không đồng ý."
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Bạn có muốn đọc lại hoặc xem xét lại License Agreement không?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "Đọ_c lại giấy phép"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Tắt"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -78,29 +48,29 @@ msgstr ""
 "Một bản sao thông tin debug được lưu vào %s\n"
 "Nhớ gửi kèm tập tin này với bản báo cáo lỗi.\n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Lùi"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 #, fuzzy
 msgid "_Finish"
 msgstr "Hoàn tất cài đặt"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr ""
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Chào mừng"
@@ -151,7 +121,7 @@ msgstr ""
 msgid "Setup Agent"
 msgstr "Trợ tá Cài đặt Red Hat"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "CD bổ sung"
 
@@ -177,11 +147,11 @@ msgid ""
 "Extras disc now."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Cài đặt..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -189,7 +159,7 @@ msgstr ""
 "Không tìm thấy CD-ROM. Vui lòng chèn đĩa CD-ROM vào ổ đĩa và nhấn \"Đồng ý\" "
 "để tiếp tục."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -257,15 +227,15 @@ msgstr "_Tiếp tục"
 msgid "Create _account"
 msgstr "_Tạo tài khoản"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Mật khẩu không khớp. Vui lòng nhập lại mật khẩu."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Mật khẩu quá ngắn. Hãy dùng ít nhất 6 ký tự."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -273,7 +243,7 @@ msgid ""
 msgstr ""
 "Tên người dùng '%s' được dành riêng cho hệ thống. Vui lòng dùng tên khác."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -289,13 +259,29 @@ msgstr "Ngày giờ"
 msgid "Please set the date and time for the system."
 msgstr "Vui lòng đặt ngày giờ cho hệ thống."
 
-#: ../src/modules/display.py:43
-msgid "Display"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "License Agreement"
+
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr ""
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "Đọ_c lại giấy phép"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -330,7 +316,7 @@ msgstr "Card Âm thanh"
 msgid "An audio device has been detected in your computer."
 msgstr "Tìm thấy Card Âm thanh trên máy."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 #, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
@@ -358,6 +344,18 @@ msgstr ""
 "Bạn cần thực hiện vài bước nữa, trước khi hệ thống có thể sẵn sàng hoạt "
 "động. Bây giờ, Trợ tá Cài đặt Red Hat sẽ hướng dẫn bạn thực hiện các cấu "
 "hình cơ bản. Vui lòng nhấn nút \"Tới\" tại góc dưới, bên phải để tiếp tục."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Vâng, tôi đồng ý License Agreement"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "_Không, tôi không đồng ý."
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Bạn có muốn đọc lại hoặc xem xét lại License Agreement không?"
+
+#~ msgid "_Shut down"
+#~ msgstr "_Tắt"
 
 #~ msgid "_Next"
 #~ msgstr "_Tới"

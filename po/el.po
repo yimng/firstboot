@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2007-02-03 02:30+0000\n"
 "Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
@@ -26,39 +26,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Έξοδος"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Άδεια χρήσης"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Ναι, συμφωνώ με την άδεια χρήσης"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "Ό_χι, δε συμφωνώ"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Θέλετε να διαβάσετε ξανά ή να ξανασκεφτείτε την άδεια χρήσης;"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-"Θέλετε να ξαναδιαβάσετε ή να ξανασκεφτείτε την άδεια χρήσης; Αν όχι, "
-"παρακαλούμε κλείστε τον υπολογιστή και αφαιρέστε αυτό το προϊόν από "
-"το σύστημα σας. "
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Ανάγνωση ξανά της άδειας"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Τερματισμός λειτουργίας"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -91,30 +58,30 @@ msgstr ""
 "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος αποθηκεύτηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Πίσω"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "_Μπροστά"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Για να εφαρμοστούν κάποιες από τις επιλογές που έχετε κάνει πρέπει να γίνει "
 "τώρα επανεκκίνηση του συστήματος."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_Τέλος"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "αποτυχία εισαγωγής της λειτουργικής μονάδας  %s: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Καλώς ήλθατε"
@@ -159,7 +126,7 @@ msgstr "Επιλέξτε το στοιχείο που θέλετε να τροπ
 msgid "Setup Agent"
 msgstr "Εργαλείο ρύθμισης"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Επιπρόσθετα CD"
 
@@ -178,7 +145,8 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "Παρακαλώ εισάγετε τώρα  όποια πρόσθετα cd εγκατάστασης λογισμικού διαθέτετε."
+msgstr ""
+"Παρακαλώ εισάγετε τώρα  όποια πρόσθετα cd εγκατάστασης λογισμικού διαθέτετε."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -195,11 +163,11 @@ msgstr ""
 "Intel Itanium2, πρέπει να εγκαταστήσετε τώρα το πακέτο Intel Execution Layer "
 "από το δίσκο Extras."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Εγκατάσταση..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -207,8 +175,9 @@ msgstr ""
 "Δεν εντοπίστηκε CD-ROM.  Παρακαλώ εισάγετε ένα  CD-ROM στον οδηγό και "
 "πατήστε \"Εντάξει\" για να συνεχίσετε."
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Το πρόγραμμα autorun δεν εντοπίστηκε στο CD. Πατήστε \"Εντάξει\" για να "
 "συνεχίσετε."
@@ -274,17 +243,17 @@ msgstr "_Συνέχεια"
 msgid "Create _account"
 msgstr "Δημιουργία _λογαριασμού"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Τα συνθηματικά δε ταιριάζουν.  Παρακαλώ εισάγετε το συνθηματικό ξανά."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 "Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
 "χαρακτήρες."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -293,7 +262,7 @@ msgstr ""
 "Το όνομα χρήστη '%s' είναι δεσμευμένο  από λογαριασμό του συστήματος.  "
 "Παρακαλώ προσδιορίστεένα άλλο  όνομα χρήστη."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -310,13 +279,29 @@ msgstr "Ημερομηνία και ώρα"
 msgid "Please set the date and time for the system."
 msgstr "Παρακαλώ ορίστε ημερομηνία και ώρα για το σύστημα."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Οθόνη"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Άδεια χρήσης"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Παρακαλώ επιλέξτε την ανάλυση και αριθμό χρωμάτων που επιθυμείτε"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Ανάγνωση ξανά της άδειας"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -350,7 +335,7 @@ msgstr "Κάρτα ήχου"
 msgid "An audio device has been detected in your computer."
 msgstr "Μια κάρτα ήχου εντοπίστηκε στον υπολογιστή σας."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -380,3 +365,28 @@ msgstr ""
 "βασικής ρύθμισης.  Παρακαλούμε επιλέξτε \"Μπροστά\" στην κάτω δεξιά γωνία "
 "για να συνεχίσετε."
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Ναι, συμφωνώ με την άδεια χρήσης"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "Ό_χι, δε συμφωνώ"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Θέλετε να διαβάσετε ξανά ή να ξανασκεφτείτε την άδεια χρήσης;"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "Θέλετε να ξαναδιαβάσετε ή να ξανασκεφτείτε την άδεια χρήσης; Αν όχι, "
+#~ "παρακαλούμε κλείστε τον υπολογιστή και αφαιρέστε αυτό το προϊόν από το "
+#~ "σύστημα σας. "
+
+#~ msgid "_Shut down"
+#~ msgstr "_Τερματισμός λειτουργίας"
+
+#~ msgid "Display"
+#~ msgstr "Οθόνη"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Παρακαλώ επιλέξτε την ανάλυση και αριθμό χρωμάτων που επιθυμείτε"

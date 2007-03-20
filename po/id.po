@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2007-02-23 02:35+0700\n"
 "Last-Translator: Teguh DC <dheche@brawijaya.ac.id>\n"
 "Language-Team: Linux Indonesia <http://linux.or.id>\n"
@@ -25,61 +25,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Keluar"
-
-#  # eula_strings.py
-#  #
-#  # Copyright (C) 2003 Red Hat, Inc.
-#  # Copyright (C) 2003 Brent Fox <bfox@redhat.com>
-#  #
-#  # This program is free software; you can redistribute it and/or modify
-#  # it under the terms of the GNU General Public License as published by
-#  # the Free Software Foundation; either version 2 of the License, or
-#  # (at your option) any later version.
-#  #
-#  # This program is distributed in the hope that it will be useful,
-#  # but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  # GNU General Public License for more details.
-#  #
-#  # You should have received a copy of the GNU General Public License
-#  # along with this program; if not, write to the Free Software
-#  # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#  #
-#  # I18N
-#  #
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Persetujuan Lisensi"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Ya, Saya setuju dengan Persetujuan Lisensi"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "Tidak, Saya tidak setuju"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr ""
-"Apakah anda ingin membaca ulang atau mempertimbangkan kembali Persetujuan "
-"Lisensi?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-"Apakah anda ingin membaca kembali atau mempertimbangkan kembali Persetujuan Lisensi? "
-"Jika tidak, sila matikan komputer dan pindahkan produk ini dari sistem anda."
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "Baca kembali lisensi"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Shut down"
 
 #  # exceptionWindow.py - the UI to display traceback information
 #  #
@@ -131,28 +76,28 @@ msgstr ""
 "Salinan dari output debug telah disimpan di %s \n"
 "Pastikan anda menyertakan (attach) file tersebut pada laporan bug. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "Kem_bali"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "Lanjutkan"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Sekarang sistem harus direboot agar beberapa pilihan anda berlaku."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "Selesai"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import dari %s modul gagal: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Selamat Datang"
@@ -197,7 +142,7 @@ msgstr "Pilih item yang ingin anda modifikasi"
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "CD Tambahan"
 
@@ -233,11 +178,11 @@ msgstr ""
 "Intel Itanium2, anda harus menginstal paket Intel Excution Layer dari disk "
 "extra sekarang."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Instal..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -245,7 +190,7 @@ msgstr ""
 "Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan \"OK"
 "\" untuk melanjutkan."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
@@ -312,15 +257,15 @@ msgstr "Lanjutkan"
 msgid "Create _account"
 msgstr "Buat _account"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Password tidak cocok. Masukkan password kembali."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Password terlalu pendek. Pergunakan paling tidak 6 karakter."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -329,7 +274,7 @@ msgstr ""
 "Nama user '%s' merupakan account yang telah dicadangkan untuk sistem. Pilih "
 "username lainnya."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -344,13 +289,50 @@ msgstr "Tanggal dan Waktu"
 msgid "Please set the date and time for the system."
 msgstr "Set tanggal dan waktu untuk sistem."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Tampilan"
+#  # eula_strings.py
+#  #
+#  # Copyright (C) 2003 Red Hat, Inc.
+#  # Copyright (C) 2003 Brent Fox <bfox@redhat.com>
+#  #
+#  # This program is free software; you can redistribute it and/or modify
+#  # it under the terms of the GNU General Public License as published by
+#  # the Free Software Foundation; either version 2 of the License, or
+#  # (at your option) any later version.
+#  #
+#  # This program is distributed in the hope that it will be useful,
+#  # but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  # GNU General Public License for more details.
+#  #
+#  # You should have received a copy of the GNU General Public License
+#  # along with this program; if not, write to the Free Software
+#  # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#  #
+#  # I18N
+#  #
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Persetujuan Lisensi"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Pilih resolusi dan kedalaman warna yang ingin anda pergunakan"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "Baca kembali lisensi"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -384,7 +366,7 @@ msgstr "Sound Card"
 msgid "An audio device has been detected in your computer."
 msgstr "Terdeteksi sebuah perangkat audio pada komputer anda."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -412,6 +394,34 @@ msgstr ""
 "Ada beberapa langkah lagi yang perlu anda lakukan sebelum sistem siap "
 "dipergunakan. Setup Agent akan memandu anda melakukan beberapa konfigurasi "
 "dasar. Tekan tombol \"Lanjutkan\" pada pojok kanan bawah untuk melanjutkan."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Ya, Saya setuju dengan Persetujuan Lisensi"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "Tidak, Saya tidak setuju"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr ""
+#~ "Apakah anda ingin membaca ulang atau mempertimbangkan kembali Persetujuan "
+#~ "Lisensi?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "Apakah anda ingin membaca kembali atau mempertimbangkan kembali "
+#~ "Persetujuan Lisensi? Jika tidak, sila matikan komputer dan pindahkan "
+#~ "produk ini dari sistem anda."
+
+#~ msgid "_Shut down"
+#~ msgstr "_Shut down"
+
+#~ msgid "Display"
+#~ msgstr "Tampilan"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Pilih resolusi dan kedalaman warna yang ingin anda pergunakan"
 
 #~ msgid "_Next"
 #~ msgstr "Sela_njutnya"

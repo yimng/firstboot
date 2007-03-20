@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2005-01-16 23:08:00+EDTE\n"
 "Last-Translator: Daniel Yacob <yacob@geez.org>\n"
 "Language-Team: Amharic <am-translate@geez.org>\n"
@@ -17,37 +17,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "ውጣ"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "የፈቃድ ስምምነት"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "አዎን። በፈቃዱ ስምምነት ተስማምቻለሁ (_Y)"
-
-#: ../src/eula_strings.py:29
-#, fuzzy
-msgid "N_o, I do not agree"
-msgstr "አይ። አልተስማማሁም"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "የፈቃዱን ስምምነት እንደገና ማንበብ ወይንም እንደገና ሊያስቡበት ይፈልጋሉ?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "እንደገና ፈቃዱን አንብቡ (_R)"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "አጥፉ (_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -78,29 +47,29 @@ msgstr ""
 "የማስተካከያው መረጃ ቅጂ ለ%s \n"
 " ተቀምጧልያንን ፋይል ለስሕተቱ ሀተታ መያያዙን እርግጠኛ ይሁኑ። \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "ወደኋላ (_B)"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 #, fuzzy
 msgid "_Finish"
 msgstr "አቀማመጡን ይጨርሱ"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "ከ%s የመጣው ክፍል ውድቅ ሆኗል፦ %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "እንኳን ደህና መጡ"
@@ -146,7 +115,7 @@ msgstr "ከዝርዝር ውስጥ አንዱን ማሻሻል የሚፈልጉት�
 msgid "Setup Agent"
 msgstr "የተወካይ አቀማመጥ"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "ተጨማሪ CDዎች"
 
@@ -180,17 +149,17 @@ msgstr ""
 "የ32-ቢት መጠቀሚያ ፕሮግራሞች በIntel Itanium2 ንድፍ ላይ  የመሄጃ ሰዓት መደገፊያን ለማስቻል ከትርፎቹ ዲስክ "
 "ላይ የIntel Execution Layer ጥቅልን አሁን ማስገባት አለብዎት።"
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "አስገባ..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "CD-ROM አልተገኘም። እባክዎን CD-ROM በድራይቩ ውስጥ ያስገቡ እና ለመቀጠል «እሺ» ላይ  ያቃጭሉ።"
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -257,22 +226,22 @@ msgstr "ቀጥል (_C)"
 msgid "Create _account"
 msgstr "መግለጫ ፍጠር"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ሚስጢራዊ ቃሎቹ አይመሳሰሉም። እባክዎን ሚስጢራዊ ቃሉን እንደገና ያስገቡ።"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "ሚስጢራዊ ቃሉ በጣም አጭር ነው። እባክዎን በትንሹ 6 አኃዞች ይጠቀሙ።"
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "የተጠቃሚው ስም ‹%s› ሥርዐተ ነጥቦችን ያጠቃልላል። እባክዎን ሥርዐተ ነጥብ በመጠቀሚያ ስም ውስጥ አይጠቀሙ።"
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -287,13 +256,29 @@ msgstr "ቀን እና ሰዓት"
 msgid "Please set the date and time for the system."
 msgstr "እባክዎን ለሲስተሙ ቀን እና ሰዓት ያስገቡለት"
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "አሳይ"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "የፈቃድ ስምምነት"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "እባክዎን መጠቀም የሚፈልጉትን ውሳኔ እና የቀለም ጥልቀቱን ይምረጡ "
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "እንደገና ፈቃዱን አንብቡ (_R)"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -328,7 +313,7 @@ msgstr "የድምጽ ካርድ"
 msgid "An audio device has been detected in your computer."
 msgstr "የድምጽ ካርድ ኮምፒውተርዎት ላይ ተገኝቷል"
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 #, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
@@ -356,6 +341,25 @@ msgid ""
 msgstr ""
 "ሲስተምዎት አሁን ተስተካክሎ እና ለመጠቀም ዝግጁ ሆኗል። እባክዎን «የሚቀጥለው» የሚለውን በቀኝ ዝቅ ብሎ በጥግ በኩል "
 "የሚገኘውን ቁልፍ ያቃጭሉ።"
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "አዎን። በፈቃዱ ስምምነት ተስማምቻለሁ (_Y)"
+
+#, fuzzy
+#~ msgid "N_o, I do not agree"
+#~ msgstr "አይ። አልተስማማሁም"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "የፈቃዱን ስምምነት እንደገና ማንበብ ወይንም እንደገና ሊያስቡበት ይፈልጋሉ?"
+
+#~ msgid "_Shut down"
+#~ msgstr "አጥፉ (_S)"
+
+#~ msgid "Display"
+#~ msgstr "አሳይ"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "እባክዎን መጠቀም የሚፈልጉትን ውሳኔ እና የቀለም ጥልቀቱን ይምረጡ "
 
 #~ msgid "_Next"
 #~ msgstr "የሚቀጥለው (_N)"

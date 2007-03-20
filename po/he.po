@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2005-08-07 00:31+0200\n"
 "Last-Translator: David R <ddady1@gmail.com>\n"
 "Language-Team: none\n"
@@ -19,36 +19,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "יציאה"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "הסכם רשיון"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_כן, אני מסכים עם הסכם הרשיון"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "_לא, איני מסכים"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "האם ברצונך לקרוא מחדש או לשקול מחדש את הסכם הרשיון?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_קרא רשיון מחדש"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "כב_ה"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -79,29 +49,29 @@ msgstr ""
 "עותק של פלט ניפוי השגיאות נשמר ל-%s \n"
 "בבקשה צרף אותו לדוח הבאג שלך. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_הקודם"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "המערכת צריכה לבצע איתחול בכדי שהשינויים שבחרת יתקבלו"
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 #, fuzzy
 msgid "_Finish"
 msgstr "סיום ההתקנה"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "ייבוא המודול %s נכשל: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "ברוך הבא"
@@ -146,7 +116,7 @@ msgstr "בחר את הפריט שברצונך לשנות"
 msgid "Setup Agent"
 msgstr "סוכן התקנה"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "דיסקים נוספים"
 
@@ -180,17 +150,17 @@ msgstr ""
 "כדי לאפשר תמיכה בזמן ריצה של אפליקציות 32-bit בארכיטקטורת Intel Itanium2, יש "
 "להתקין את חבילת \"Intel Execution Layer\" מדיסק התוספות כעת."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "התקן..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "CD-ROM לא זוהה. נא הכנס CD-ROM לכונן ולחץ \"OK\" כדי להמשיך."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -257,15 +227,15 @@ msgstr "המש_ך"
 msgid "Create _account"
 msgstr "_צור חשבון"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "הסיסמאות לא תואמות. נא הכנס את הסיסמה שנית."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "הסיסמה קצרה מדי. נא השתמש לפחות ב-6 תווים."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -273,7 +243,7 @@ msgid ""
 msgstr ""
 "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -289,13 +259,29 @@ msgstr "תאריך וזמן"
 msgid "Please set the date and time for the system."
 msgstr "נא הגדר את התאריך והזמן של המערכת."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "תצוגה"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "הסכם רשיון"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "נא בחר את הרזולוציה ועומק הצבעים שברצונך להשתמש בהם"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_קרא רשיון מחדש"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -330,7 +316,7 @@ msgstr "כרטיס קול"
 msgid "An audio device has been detected in your computer."
 msgstr "כרטיס קול זוהה במחשב שלך."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 #, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
@@ -357,6 +343,24 @@ msgid ""
 msgstr ""
 "ישנם עוד כמה צעדים לפני שתוכל להשתמש במערכת. סוכן ההתקנה ידריך אותך בנוגע "
 "להגדרות בסיסיות.  בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה כדי להמשיך."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_כן, אני מסכים עם הסכם הרשיון"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "_לא, איני מסכים"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "האם ברצונך לקרוא מחדש או לשקול מחדש את הסכם הרשיון?"
+
+#~ msgid "_Shut down"
+#~ msgstr "כב_ה"
+
+#~ msgid "Display"
+#~ msgstr "תצוגה"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "נא בחר את הרזולוציה ועומק הצבעים שברצונך להשתמש בהם"
 
 #~ msgid "_Next"
 #~ msgstr "ה_בא"

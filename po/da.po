@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-10-01 02:32+0200\n"
 "Last-Translator: Keld Simonsen <keld@rap.dk>\n"
 "Language-Team:  <da@li.org>\n"
@@ -27,36 +27,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Afslut"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Licensaftale"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Ja, jeg godkender licensaftalen"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "Nej, jeg er _ikke enig"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Vil du læse licensaftalen igen eller overveje den igen?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Læs licensaftalen igen"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Luk ned"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -87,28 +57,28 @@ msgstr ""
 "En kopi af fejlsøgningsuddata er gemt i %s. \n"
 "Vær sød at vedlægge denne fil til fejlrapporten. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Tilbage"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "_Fremad"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "System skal nu genstartes for at nogle af dine valg kan få virkning."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_Færdiggør"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "modulimportering af %s mislykkedes: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkommen"
@@ -153,7 +123,7 @@ msgstr "Vælg det objekt som du vil ændre "
 msgid "Setup Agent"
 msgstr "Konfigurationshjælper"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Yderligere CDer"
 
@@ -188,11 +158,11 @@ msgstr ""
 "Itanium2-arkitekturen skal du installere Intel Execution Layer-pakken fra "
 "Extra-skiven nu."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Installér..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -200,7 +170,7 @@ msgstr ""
 "En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
 "for at fortsætte"
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
@@ -267,15 +237,15 @@ msgstr "_Fortsæt"
 msgid "Create _account"
 msgstr "Opret _konto"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Adgangskoderne er ikke ens. Indtast venligst adgangskoden igen."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Adgangskoden er for kort. Brug venligst mindst 6 tegn."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -284,7 +254,7 @@ msgstr ""
 "Brugernavnet '%s' er en reserveret systemkonto. Angiv venligst et andet "
 "brugernavn."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -301,13 +271,29 @@ msgstr "Dato og klokkeslæt"
 msgid "Please set the date and time for the system."
 msgstr "Sæt dato og klokkeslet for systemet."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Display"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Licensaftale"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Vælg den opløsning og den farvedybde som du vil bruge"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Læs licensaftalen igen"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -341,7 +327,7 @@ msgstr "Lydkort"
 msgid "An audio device has been detected in your computer."
 msgstr "En lydenhed er blevet fundet på din maskine."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -369,3 +355,21 @@ msgstr ""
 "brug. Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
 "konfigurering. Klik på 'Fremad'-knappen i det nederste højre hjørne for at "
 "fortsætte."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Ja, jeg godkender licensaftalen"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "Nej, jeg er _ikke enig"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Vil du læse licensaftalen igen eller overveje den igen?"
+
+#~ msgid "_Shut down"
+#~ msgstr "_Luk ned"
+
+#~ msgid "Display"
+#~ msgstr "Display"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Vælg den opløsning og den farvedybde som du vil bruge"

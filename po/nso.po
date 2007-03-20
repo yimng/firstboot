@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2005-01-18 12:23+0200\n"
 "Last-Translator: Translate.org.za <info@translate.org.za>\n"
 "Language-Team: Northern Sotho <translate-discuss-nso@lists.sourceforge.net>\n"
@@ -18,36 +18,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Etšwa"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Tumelelano ya Laesense"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Ee, ke dumela Tumelelano ya Laesense"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "A_owa, ga ke dumele"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Na o nyaka go bala Laesense ya Tumelelano gape goba go e gopodišiša?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Bala laesense gape"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Tima"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -80,29 +50,29 @@ msgstr ""
 "diphošo e bolokilwe go %s \n"
 "Kgonthišetša go tsenya faele yeo pegong ya twatši. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Morago"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 #, fuzzy
 msgid "_Finish"
 msgstr "Fetša Peakanyo"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "kamogelo ya tša ntle ya karolo ya %s go paletšwe: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "O a amogelwa"
@@ -147,7 +117,7 @@ msgstr "Kgetha selo seo o ratago go se mpshafatša "
 msgid "Setup Agent"
 msgstr "Moemedi wa Peakanyo"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Di-CD tše Dingwe"
 
@@ -184,11 +154,11 @@ msgstr ""
 "bja Intel Itanium2 architecture, o swanetše go tsenya sephuthelwana sa Intel "
 "Execution Layer go tšwa tisiking ya Tše Oketšegilego gona bjale."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Tsenya..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -196,7 +166,7 @@ msgstr ""
 "Go utolotšwe CD-ROM.  Hle tsenya CD-ROM ka draeveng gomme go kgotle \"Go "
 "Lokile\" gore o tšwele pele."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -268,16 +238,16 @@ msgstr "_Tšwela pele"
 msgid "Create _account"
 msgstr "Hlama _akhaonto"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Mantšuphetišo ga a swane. Hle tsenya lentšuphetišo gape."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr ""
 "Lentšuphetišo ke le lekopana kudu. Hle diriša bonyenyane ditlhaka tše 6."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -286,7 +256,7 @@ msgstr ""
 "Leina la modiriši la '%s' le na le ditlhaka tša maswao a makalo. Hle o seke "
 "wa diriša maswao a makalo leineng la modiriši."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -303,13 +273,29 @@ msgstr "Letšatši-kgwedi le Nako"
 msgid "Please set the date and time for the system."
 msgstr "Hle beakanya letšatši-kgwedi le nako bakeng sa tshepedišo."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Bonagatša"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Tumelelano ya Laesense"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Hle kgetha maikemišetšo le botebo bja mmala tšeo o ratago go di diriša"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Bala laesense gape"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -344,7 +330,7 @@ msgstr "Karata ya Modumo"
 msgid "An audio device has been detected in your computer."
 msgstr "Go utolotšwe karata ya modumo khomphuthareng ya gago."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 #, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
@@ -375,6 +361,26 @@ msgstr ""
 "gago e loketše go dirišwa. Moemedi wa Peakanyo o tla go hlahla ka go fetola "
 "sebopego go gongwe ga motheo. Hle kgotla konope ya \"Latelago\" "
 "sekhutlwaneng sa lagoja kua tlasana gore o tšwele pele."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Ee, ke dumela Tumelelano ya Laesense"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "A_owa, ga ke dumele"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr ""
+#~ "Na o nyaka go bala Laesense ya Tumelelano gape goba go e gopodišiša?"
+
+#~ msgid "_Shut down"
+#~ msgstr "_Tima"
+
+#~ msgid "Display"
+#~ msgstr "Bonagatša"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr ""
+#~ "Hle kgetha maikemišetšo le botebo bja mmala tšeo o ratago go di diriša"
 
 #~ msgid "_Next"
 #~ msgstr "_Latelago"

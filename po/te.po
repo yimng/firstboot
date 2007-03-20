@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-12-04 12:59+0530\n"
 "Last-Translator: Sree Ganesh <sthottem@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -22,36 +22,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "బయటకి"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "License ఒప్పందం"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "అవును, నేను License ఒప్పందానికి ఒప్పుకుంటున్నాను (_Y)"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "కాదు, ఒప్పుకోవటం లేదు (_N)"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "మీరు License ఒప్పందాన్ని ఇంకొకసారి చదవటంగానీ పునఃపరిశీలించటంగానీ చెయాలనుకుంటున్నారా?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr "మీరు లైసెన్సు ఎగ్రిమెంటుని చదవటం లేదా తిరిగి భావింపదలచారా?  కాకపోతే, దయచేసి మీకంప్యూటరును మూసివేసి మీ కంప్యూటరునుండీ ఈ ఉత్పత్తిని తొలగించండి. "
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "మళ్లీ licenseని చదువు (_R)"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "మూయి (_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -81,28 +51,28 @@ msgstr ""
 "వ్యతిరేకంగా ఒక bugని ఫైలు చేయండి. ఒక debug ప్రతి ఉద్గాతం %s కి భద్రపరచబడుతూ ఉండాలి. \n"
 "తప్పక ఆ ఫైలుని bug నివేదికకు అనుసంధిస్తూ ఉండాలి. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "వెనుకకు (_B)"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "ముందుకు (_F)"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "మీయొక్క కొన్ని ఎన్నికలు ప్రభావితం అవటానికి కంప్యూటరును పునఃప్రారంభించాలి."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "అయ్యింది (_F)"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s గుణకం దిగుమతి విఫలమైంది: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "స్వాగతం"
@@ -147,7 +117,7 @@ msgstr "మీరు మార్చాలనుకున్న అంశాన�
 msgid "Setup Agent"
 msgstr "ప్రతినిధిని అమర్చండి"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "అదనపు CDs"
 
@@ -180,18 +150,20 @@ msgstr ""
 "Intel Itanium2 నిర్మాణంలో i32-bit అనువర్తనాలు ఉపయోగించే మద్దతును ఏర్పరచటాని ఇప్పుడు Extras "
 "disc నుండీ తప్పకుండా Intel Execution Layer packageని సంస్థాపించాలి."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "సంస్థాపన..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
+msgstr ""
+"CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CDలో తనకుతానుగా పనిచేసే ప్రక్రమం కనుగొనబడలేదు. కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
 #: ../src/modules/create_user.py:39
@@ -252,22 +224,22 @@ msgstr "కొనసాగించు (_C)"
 msgid "Create _account"
 msgstr "ఖాతా సృష్టించు"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "అనుమతిపదం సరిపోలలేదు.  మళ్లీ అనుమతిపదాన్ని ఇవ్వండి."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "అనుమతిపదం బాగా చిన్నది.  దయచేసి కనీసం ౬ అక్షరాలను ఉపయోగించండి."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "'%s'వినియోగదారు పేరు ప్రత్యేక విధానంతోకూడిన ఖాతా కలిగిఉంది.  దయచేసి వేరే వినియోగదారుపేరు తెల్పండి."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -282,13 +254,29 @@ msgstr "తేదీ మరియూ సమయం"
 msgid "Please set the date and time for the system."
 msgstr "దయచేసి కంప్యూటరు కొరకు తేదీ మరియూ సమయం అమర్చండి."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "ప్రదర్శించు"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "License ఒప్పందం"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "దయచేసి మీరు ఉపయోగించదలచిన స్థిరీకరణను మరియూ వర్ణ గాఢతను ఎన్నుకోండి."
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "మళ్లీ licenseని చదువు (_R)"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -322,7 +310,7 @@ msgstr "ధ్వని Card"
 msgid "An audio device has been detected in your computer."
 msgstr "ఒక శ్రవణ సాధనం మీ కంప్యూటరులో కనుగొనబడింది."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -348,3 +336,27 @@ msgstr ""
 "మీ కంప్యూటరును ఉపయోగించటానికి సిద్ధంటానికి ముందు కొన్ని పనులుచేయాలి. అమర్చే ప్రతినిధి కొంత నిర్దేశిస్తాడు.  "
 "కొనసాగించటానికి కింద కుడివైపు  మూలలో ఉన్న \"ముందుకు\" మీటను నొక్కండి."
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "అవును, నేను License ఒప్పందానికి ఒప్పుకుంటున్నాను (_Y)"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "కాదు, ఒప్పుకోవటం లేదు (_N)"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "మీరు License ఒప్పందాన్ని ఇంకొకసారి చదవటంగానీ పునఃపరిశీలించటంగానీ చెయాలనుకుంటున్నారా?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "మీరు లైసెన్సు ఎగ్రిమెంటుని చదవటం లేదా తిరిగి భావింపదలచారా?  కాకపోతే, దయచేసి మీకంప్యూటరును మూసివేసి మీ "
+#~ "కంప్యూటరునుండీ ఈ ఉత్పత్తిని తొలగించండి. "
+
+#~ msgid "_Shut down"
+#~ msgstr "మూయి (_S)"
+
+#~ msgid "Display"
+#~ msgstr "ప్రదర్శించు"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "దయచేసి మీరు ఉపయోగించదలచిన స్థిరీకరణను మరియూ వర్ణ గాఢతను ఎన్నుకోండి."

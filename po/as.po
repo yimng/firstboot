@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2007-03-20 10:59+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@redhat.com>\n"
 "Language-Team: Assamese <assam@mm.assam-glug.org>\n"
@@ -21,36 +21,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "প্ৰস্থান"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "অনুজ্ঞা চুক্তি"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "হয়, মই অনুজ্ঞা চুক্তিত সন্মত হৈছোঁ (_Y)"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "নহয়, মই সন্মত নহয় (_o)"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "আপুনি অনুজ্ঞা চুক্তি পুনঃ পঢ়িব বা বিবেচনা কৰিব বিচাৰেনে ? "
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr "আপুনি অনুজ্ঞা চুক্তি পুনঃ পঢ়িব বা বিবেচনা কৰিব বিচাৰেনে ? যদি নিবিচাৰে, অনুগ্ৰহ কৰি কম্পিউটাৰ বন্ধ কৰক আৰু এই উৎপাদন আপোনাৰ ব্যৱস্থাপ্ৰণালীৰ পৰা আঁতৰাই দিয়ক ।"
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "অনুজ্ঞা চুক্তি পুনঃ পঢ়ক (_R)"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "বন্ধ কৰক (_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -81,28 +51,29 @@ msgstr ""
 "%s-ত এটা ডিবাগৰ প্ৰতিলিপ সংৰক্ষিত কৰা হৈছে ।\n"
 "সেই নথি‌-পত্ৰ বাগৰ বৰ্ণনাত সংলগ্ন কৰিব'লৈ সুনিশ্চিত কৰিব । \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "পিছলৈ (_B)"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "আগলৈ (_F)"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
+msgstr ""
+"আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "সমাপ্তি(_F)"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s একাংশৰ আমদানি অক্ষম হ'ল: %s "
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "আদৰণি"
@@ -147,7 +118,7 @@ msgstr "পৰিবৰ্ত্তন কৰিব বিচৰা বিষয়
 msgid "Setup Agent"
 msgstr "কাৰ্য্য-পদ্ধতি নিযুক্তক"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "অতিৰিক্ত CD"
 
@@ -181,11 +152,11 @@ msgstr ""
 "৩২-বিটৰ অনুনপ্ৰয়োগ-সমূহ Intel Itanium2 স্থাপত্যত চালনা-সময়ত সমৰ্থন কৰা সক্ষম কৰিবলৈ "
 "Intel Execution Layer-ৰ আহিলা‌-পাতি Extras ডিষ্কৰ পৰা এতিয়া সংস্থাপন কৰা আৱশ্যক ।"
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "সংস্থাপন কৰক..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -193,8 +164,9 @@ msgstr ""
 "কোনো CD-ROM উদ্ঘাটন কৰিব পৰা নাই । CD-ROM এখন চিডি‌-পথত ভৰাওক আৰু আগবাঢ়িব'লৈ "
 "\"ঠিক আছে\" টিপক ।"
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr " CD‌ -ত autorun কাৰ্য্যক্ৰম পোৱা ন'গ'ল । আগবাঢ়িব'লৈ \"ঠিক আছে\" টিপক ।"
 
 #: ../src/modules/create_user.py:39
@@ -207,9 +179,9 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"ব্যৱস্থাপ্ৰণালীৰ নিয়মিত(অ-প্ৰশাসনিক) প্ৰয়োগৰ বাবে এটা 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰাতো "
-"উপদেশ দিয়া হয়। 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰিব'লৈ, অনুগ্ৰহ কৰি নিম্নলিখিত তথ্যসমূহৰ "
-"যোগান ধৰক ।"
+"ব্যৱস্থাপ্ৰণালীৰ নিয়মিত(অ-প্ৰশাসনিক) প্ৰয়োগৰ বাবে এটা 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি "
+"কৰাতো উপদেশ দিয়া হয়। 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰিব'লৈ, অনুগ্ৰহ কৰি নিম্নলিখিত "
+"তথ্যসমূহৰ যোগান ধৰক ।"
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -257,15 +229,15 @@ msgstr " আগবাঢ়ক (_C)"
 msgid "Create _account"
 msgstr "হিচাব-বহি সৃষ্টি কৰক (_a) "
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "গুপ্ত‌-শব্দ একেই নহয় । পুনঃ গুপ্ত‌-শব্দ ভৰ্তি কৰক ।"
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "গুপ্ত‌-শব্দ বৰ সৰু । অতি কমেও ৬-টা বৰ্ণ প্ৰয়োগ কৰক ।"
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -274,14 +246,14 @@ msgstr ""
 " '%s' ব্যৱহাৰকৰোঁতাৰ নাম ব্যৱস্থাপ্ৰণালীৰ হিচাব‌-বহিৰ বাবে এটা সংৰক্ষিত নাম। অনুগ্ৰহ "
 "কৰি অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম নিৰ্দ্দিষ্ট কৰক ।"
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-" '%s' ব্যৱহাৰকৰোঁতাৰ ঘৰুৱা পঞ্জিকা ইতিমধ্যে আছে । অনুগ্ৰহ কৰি অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম "
-"নিৰ্দ্দিষ্ট কৰক ।"
+" '%s' ব্যৱহাৰকৰোঁতাৰ ঘৰুৱা পঞ্জিকা ইতিমধ্যে আছে । অনুগ্ৰহ কৰি অন্য এটা ব্যৱহাৰকৰোঁতাৰ "
+"নাম নিৰ্দ্দিষ্ট কৰক ।"
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -291,13 +263,29 @@ msgstr "দিন আৰু সময়"
 msgid "Please set the date and time for the system."
 msgstr "অনুগ্ৰহ কৰি ব্যৱস্থাপ্ৰণালীৰ দিন আৰু সময় অধিষ্ঠিত কৰে ।"
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "প্ৰদৰ্শন"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "অনুজ্ঞা চুক্তি"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "অনুগ্ৰহ কৰি আপুনি ইচ্ছামতে প্ৰয়োগ কৰিব খোজা স্পষ্টতা আৰু ৰঙৰ গাঢ়তা নিৰ্দ্দিষ্ট কৰক ।"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "অনুজ্ঞা চুক্তি পুনঃ পঢ়ক (_R)"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -331,7 +319,7 @@ msgstr "ধ্বনি কাৰ্ড"
 msgid "An audio device has been detected in your computer."
 msgstr "আপোনাৰ কম্পিউটাৰত এটা শব্দ যন্ত্ৰৰ সন্ধান পোৱা গৈছে ।"
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -358,3 +346,28 @@ msgstr ""
 "নিযুক্তকে আপোনাক কিছুমান মূল সংস্থাপনৰ মাজেৰে পৰিচালনা কৰিব । অনুগ্ৰহ কৰি "
 "আগবাঢ়িব'লৈ তলৰ সোঁ‌-কোনাৰ \"আগলৈ\" বুটাম টিপক ।"
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "হয়, মই অনুজ্ঞা চুক্তিত সন্মত হৈছোঁ (_Y)"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "নহয়, মই সন্মত নহয় (_o)"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "আপুনি অনুজ্ঞা চুক্তি পুনঃ পঢ়িব বা বিবেচনা কৰিব বিচাৰেনে ? "
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "আপুনি অনুজ্ঞা চুক্তি পুনঃ পঢ়িব বা বিবেচনা কৰিব বিচাৰেনে ? যদি নিবিচাৰে, অনুগ্ৰহ "
+#~ "কৰি কম্পিউটাৰ বন্ধ কৰক আৰু এই উৎপাদন আপোনাৰ ব্যৱস্থাপ্ৰণালীৰ পৰা আঁতৰাই দিয়ক ।"
+
+#~ msgid "_Shut down"
+#~ msgstr "বন্ধ কৰক (_S)"
+
+#~ msgid "Display"
+#~ msgstr "প্ৰদৰ্শন"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr ""
+#~ "অনুগ্ৰহ কৰি আপুনি ইচ্ছামতে প্ৰয়োগ কৰিব খোজা স্পষ্টতা আৰু ৰঙৰ গাঢ়তা নিৰ্দ্দিষ্ট কৰক ।"

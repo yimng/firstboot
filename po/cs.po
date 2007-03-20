@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2007-01-26 15:28+0100\n"
 "Last-Translator: Milan Kerslager <kerslage@linux.cz>\n"
 "Language-Team: Czech\n"
@@ -24,38 +24,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Ukončit"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Licenční smlouva"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Ano, souhlasím s licenční smlouvou"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "_Ne, nesouhlasím"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Chcete si licenční smlouvu přečíst znovu nebo se rozhodnout jinak?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-"Chcete si znovu přečíst licenční smlouvu? Pokud ne, odstraňte prosím z "
-"počítače tento softwarový produkt."
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Přečíst licenci znovu"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Vypnout"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -86,28 +54,28 @@ msgstr ""
 "Kopie ladicího výpisu byla uložena do %s \n"
 "Připojte tento soubor k hlášení chyby. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Zpět"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "_Další"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Aby se některé vaše volby projevily, musí se teď systém restartovat."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_Dokončit"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "import modulu %s selhal: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Vítejte"
@@ -152,7 +120,7 @@ msgstr "Vyberte položku, kterou chcete upravit "
 msgid "Setup Agent"
 msgstr "Setup Agent"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Jiná CD"
 
@@ -186,11 +154,11 @@ msgstr ""
 "Intel Itanium2 musíte nyní nainstalovat balíček Intel Execution Layer z CD "
 "Extras."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Instalovat..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -198,7 +166,7 @@ msgstr ""
 "Nebylo nalezeno CD-ROM. Vložte prosím do CD-ROM do jednotky a pokračujte "
 "kliknutím na \"OK\"."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Na cd nebyl nalezen program autorun. Pokračujte kliknutím na \"OK\"."
@@ -262,15 +230,15 @@ msgstr "_Pokračovat"
 msgid "Create _account"
 msgstr "_Vytvořit účet"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Hesla nesouhlasí. Zadejte heslo prosím znovu."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Heslo je příliš krátké. Použijte prosím alespoň 6 znaků."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -279,7 +247,7 @@ msgstr ""
 "Jméno uživatele '%s' je rezervovaný účet systému. Zadejte prosím jiné jméno "
 "uživatele."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -296,13 +264,29 @@ msgstr "Datum a čas"
 msgid "Please set the date and time for the system."
 msgstr "Nastavte prosím systémové datum a čas."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Zobrazení"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Licenční smlouva"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Vyberte prosím rozlišení a barevnou hloubku, kterou chcete používat"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Přečíst licenci znovu"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -336,7 +320,7 @@ msgstr "Zvuková karta"
 msgid "An audio device has been detected in your computer."
 msgstr "Na vašem počítači bylo nalezeno zvukové zařízení."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -363,3 +347,28 @@ msgstr ""
 "Je třeba provést ještě několik kroků, než bude Váš systém připraven k "
 "použití. Setup Agent vás nyní provede základním nastavením. Pokračujte "
 "prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Ano, souhlasím s licenční smlouvou"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "_Ne, nesouhlasím"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Chcete si licenční smlouvu přečíst znovu nebo se rozhodnout jinak?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "Chcete si znovu přečíst licenční smlouvu? Pokud ne, odstraňte prosím z "
+#~ "počítače tento softwarový produkt."
+
+#~ msgid "_Shut down"
+#~ msgstr "_Vypnout"
+
+#~ msgid "Display"
+#~ msgstr "Zobrazení"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Vyberte prosím rozlišení a barevnou hloubku, kterou chcete používat"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: si\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-12-13 13:45+0530\n"
 "Last-Translator: Tyronne Wickramarathne <tywickra@redhat.com>\n"
 "Language-Team: Sinhala <en@li.org>\n"
@@ -21,36 +21,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "පිටවෙනු"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "බලපත්‍ර ගිවිසුම"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "ඔව් මා බලපත්‍ර ගිවිසුම පිළිගනු ලබනවා(_Y)"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "නැත, මම එකඟ වන්නේ නැත(_o)"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "බලපත්‍ර ගිවිසුම නැවත සලකා බැලීමට අවශ්‍යද?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr "බලපත්‍ර ගිවිසුම නැවත කියවා බලා නැවත සැලකිල්ලට ගැනීමට ඔබට අවශ්‍යද? ඔබට එසේ කිරීමට අවශ්‍ය නැත්නම්, කරුණාකර පද්ධතිය වසා දමා මෙම නිශ්පාදනය ඔබේ පද්ධතියෙන් ඉවත් කරගන්න"
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "නැවත වරක් බලපත්‍රය කියවන්න(_R)"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "වසා දමන්න(_S)"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -81,28 +51,28 @@ msgstr ""
 "මීට අදාල දොස්-හරණ ප්‍රතිදානය %s ලෙස සුරක්‍ෂිත කර ඇත. \n"
 "මෙම දෝශය වාර්තා කරන විටදී එම ගොනුවද අමුණා යැවීමට වග බලාගන්න. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "ආපසු(_B)"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "ඉදිරියට(_F)"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "ඔබ විසින් තෝරා ගන්නා ලද අංගයන් සක්‍රීය වනු පිණිස පද්ධතිය නැවත ක්‍රියාත්මක කල යුතු වේ."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "නිම කරන්න(_F)"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "%s මොඩියුලය ආනයනය කිරීමට අසමත් විය: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "සාදරයෙන් පිළිගනිමු"
@@ -147,7 +117,7 @@ msgstr "වෙනස් කිරීමට බලාපොරොත්තු ව
 msgid "Setup Agent"
 msgstr "සකසුරුවම් නියෝජිත"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "අතිරේක සංයුක්ත තැටි"
 
@@ -182,11 +152,11 @@ msgstr ""
 "Intel Execution Layer ඇසුරුම අතිරේක මෘදුකාංග ඇතුලත් තැටිය උපයෝගී කරගනිමින් ස්ථාපනය කලයුතු "
 "වේ."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "ස්ථාපනය කරන්න..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -194,8 +164,9 @@ msgstr ""
 "සංයුක්ත තැටිය සොයාගත නොහැකි විය. කරුණාකර සංයුක්ත තැටියක් ධාවකයට ඇතුලත් කොට ඉදිරියට "
 "කරගෙනයාමට \"හරි\" සූචකය ඔබන්න."
 
-#: ../src/modules/additional_cds.py:198
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:163
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "ස්වයංක්‍රීයව ක්‍රියාත්මක වන වැඩසටහන සංයුක්ත තැටිය තුල සොයාගත නොහැකි විය. ඉදිරියට කරගෙන යාමට "
 "\"හරි\" සූචකය ඔබන්න."
@@ -260,15 +231,15 @@ msgstr "දිගට කරගෙන යන්න(_C)"
 msgid "Create _account"
 msgstr "ගිණුමක් විවෘත කරන්න(_a)"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "රහස් පදයන් ගැලපෙන්නේ නැත. රහස්පදය නැවත ඇතුල් කරන්න."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "රහසෙපදය ඉතා කෙටියි.  අවම වශයෙන් අක්‍ෂර සයක් මේ සඳහා උපයෝගී කරගත යුතුයි"
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -277,12 +248,13 @@ msgstr ""
 "'%s' පරිශීලක නාමය පද්ධතියේ සංචිතයට අයත් ගිණුමක් වේ .  කරුණාකර පරිශීලක සඳහා වෙනත් නමක් නියම "
 "කරන්න."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr "'%s' පරිශීලක සඳහා වන නිවෙස් බහලුම භාවිතයේ ඇත.  කරුණාකර පරිශීලක සඳහා වෙනත් නමක් නියම කරන්න."
+msgstr ""
+"'%s' පරිශීලක සඳහා වන නිවෙස් බහලුම භාවිතයේ ඇත.  කරුණාකර පරිශීලක සඳහා වෙනත් නමක් නියම කරන්න."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -292,13 +264,29 @@ msgstr "දිනය සහ වේලාව"
 msgid "Please set the date and time for the system."
 msgstr "පද්ධතිය සඳහා දිනය සහ වේලාව සකසන්න"
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "දර්ශණය"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "බලපත්‍ර ගිවිසුම"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "කරුණාකර ඔබ භාවිතා කිරීමට කැමති විභේදනය සහ වර්ණ තීව්‍රර තාවය යොදන්න."
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "නැවත වරක් බලපත්‍රය කියවන්න(_R)"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -332,7 +320,7 @@ msgstr "දෘශ්‍ය කාඩ්පත"
 msgid "An audio device has been detected in your computer."
 msgstr "පද්ධතිය තුල දෘශ්‍ය උපාංගයක් තිබෙන බැව් හඳුනාගනු ලැබීය."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -360,3 +348,27 @@ msgstr ""
 "නියෝජිත විසින් ඔබව පද්ධතියේ මූලික මාණකරනයන් ඔස්සේ ඔබව රැගෙන යනු ඇත. මෙය ඉදිරියට කරගෙන යාම "
 "පිණිස පහල දකණු පස කෙලවරෙහි ඇති \"ඉදිරියට\" යන බොත්තම ඔබන්න."
 
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "ඔව් මා බලපත්‍ර ගිවිසුම පිළිගනු ලබනවා(_Y)"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "නැත, මම එකඟ වන්නේ නැත(_o)"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "බලපත්‍ර ගිවිසුම නැවත සලකා බැලීමට අවශ්‍යද?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "බලපත්‍ර ගිවිසුම නැවත කියවා බලා නැවත සැලකිල්ලට ගැනීමට ඔබට අවශ්‍යද? ඔබට එසේ කිරීමට අවශ්‍ය "
+#~ "නැත්නම්, කරුණාකර පද්ධතිය වසා දමා මෙම නිශ්පාදනය ඔබේ පද්ධතියෙන් ඉවත් කරගන්න"
+
+#~ msgid "_Shut down"
+#~ msgstr "වසා දමන්න(_S)"
+
+#~ msgid "Display"
+#~ msgstr "දර්ශණය"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "කරුණාකර ඔබ භාවිතා කිරීමට කැමති විභේදනය සහ වර්ණ තීව්‍රර තාවය යොදන්න."

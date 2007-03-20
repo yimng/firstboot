@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2006-12-08 23:00+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <ra@ra.is>\n"
@@ -18,38 +18,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Hætta"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Notkunarskilmálar"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Já, ég samþykki skilmálana"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "N_ei ég samþykki ekki skilmálana."
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Viltu lesa skilmálana aftur eða íhuga þá frekar?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-"Viltu endurlesa eða hugsa betur um notkunarskilmálana?  Ef ekki skaltu "
-"vinsamlega slökkva á tölvunni og fjarlægja þennan hugbúnað af vélinni þinni."
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Endurlesa skilmálana"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Slökkva"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -80,28 +48,28 @@ msgstr ""
 "Afrit af villumeldingunum var vistað í %s \n"
 "Mundi að hengja hana við villutilkynninguna. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "Til _baka"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "Á_fram"
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Nú þarf að endurræsa vélina til að virkja sumt af því sem þú valdir."
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 msgid "_Finish"
 msgstr "_Ljúka"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "ekki tókst að lesa inn rekilinn %s: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Velkomin(n)"
@@ -146,7 +114,7 @@ msgstr "Veldu þann lið sem þú vilt breyta "
 msgid "Setup Agent"
 msgstr "Uppsetningarálfurinn"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Auka diskar"
 
@@ -180,11 +148,11 @@ msgstr ""
 "Ef þú vilt virkja stuðning við 32 bita forrit á Intel Itanium2 vélum skaltu "
 "setja inn \"Intel Execution Layer\" pakkann af aukaefnisdisknum núna."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Setja upp..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -192,7 +160,7 @@ msgstr ""
 "Geisladiskur fannst ekki. Vinsamlegast settu geisladisk í drifið og veldu "
 "\"Í lagi\" til að halda áfram."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
@@ -259,15 +227,15 @@ msgstr "_Halda áfram"
 msgid "Create _account"
 msgstr "Búa til _notandaaðgang"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lykilorðin stemma ekki. Vinsamlegast sláðu það inn aftur."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Lykilorðið er of stutt. Vinsamlegast hafðu það amk 6 stafi."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -276,7 +244,7 @@ msgstr ""
 "Notandaheitið '%s' er frátekið fyrir kerfisnotanda. Vinsamlega veldu annað "
 "notandaheiti."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -293,13 +261,29 @@ msgstr "Dagsetning og tími"
 msgid "Please set the date and time for the system."
 msgstr "Vinsamlegast settu dagsetningu og tíma vélarinnar."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Skjár"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Notkunarskilmálar"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Vinsamlegast veldu þá upplausn og lýtadýpt sem þú vilt nota"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Endurlesa skilmálana"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -333,7 +317,7 @@ msgstr "Hljóðkort"
 msgid "An audio device has been detected in your computer."
 msgstr "Hljóðkort hefur fundist í vélinni þinni."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
@@ -361,3 +345,29 @@ msgstr ""
 "tilbúin til notkunar. Uppsetningarforritið mun nú leiða þig í gegnum það sem "
 "eftir er að stilla. Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra "
 "horninu hér að neðan til að halda áfram."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Já, ég samþykki skilmálana"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "N_ei ég samþykki ekki skilmálana."
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Viltu lesa skilmálana aftur eða íhuga þá frekar?"
+
+#~ msgid ""
+#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
+#~ "please shut down the computer and remove this product from your system. "
+#~ msgstr ""
+#~ "Viltu endurlesa eða hugsa betur um notkunarskilmálana?  Ef ekki skaltu "
+#~ "vinsamlega slökkva á tölvunni og fjarlægja þennan hugbúnað af vélinni "
+#~ "þinni."
+
+#~ msgid "_Shut down"
+#~ msgstr "_Slökkva"
+
+#~ msgid "Display"
+#~ msgstr "Skjár"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Vinsamlegast veldu þá upplausn og lýtadýpt sem þú vilt nota"

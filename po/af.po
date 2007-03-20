@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"POT-Creation-Date: 2007-03-20 17:00-0400\n"
 "PO-Revision-Date: 2005-02-12 13:30+0200\n"
 "Last-Translator: Translate.org.za <info@translate.org.za>\n"
 "Language-Team: Afrikaans <translate-discuss-af@lists.sourceforge.net>\n"
@@ -18,36 +18,6 @@ msgstr ""
 #: ../src/constants_text.py:36
 msgid "Exit"
 msgstr "Sluit af"
-
-#: ../src/eula_strings.py:27
-msgid "License Agreement"
-msgstr "Lisensieooreenkoms"
-
-#: ../src/eula_strings.py:28
-msgid "_Yes, I agree to the License Agreement"
-msgstr "_Ja, ek stem in tot die lisensieooreenkoms"
-
-#: ../src/eula_strings.py:29
-msgid "N_o, I do not agree"
-msgstr "N_ee, ek stem nie in nie"
-
-#: ../src/eula_strings.py:30
-msgid "Do you want to reread or reconsider the License Agreement?"
-msgstr "Wil jy nie die lisensieooreenkoms weer lees of heroorweeg nie?"
-
-#: ../src/eula_strings.py:31
-msgid ""
-"Do you want to reread or reconsider the Licence Agreement?  If not, please "
-"shut down the computer and remove this product from your system. "
-msgstr ""
-
-#: ../src/eula_strings.py:32
-msgid "_Reread license"
-msgstr "_Lees lisensie weer"
-
-#: ../src/eula_strings.py:33
-msgid "_Shut down"
-msgstr "_Skakel af"
 
 #: ../src/exceptionWindow.py:47
 #, python-format
@@ -78,29 +48,29 @@ msgstr ""
 "'n Afskrif van die ontfoutinligting is as %s gestoor. \n"
 "Heg asseblief daardie lêer aan by jou foutverslag. \n"
 
-#: ../src/firstbootWindow.py:107
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "_Terug"
 
-#: ../src/firstbootWindow.py:116
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr ""
 
-#: ../src/firstbootWindow.py:241
+#: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/firstbootWindow.py:313
+#: ../src/firstbootWindow.py:331
 #, fuzzy
 msgid "_Finish"
 msgstr "Klaar"
 
-#: ../src/firstbootWindow.py:413
+#: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
 msgstr "module-invoer van %s het misluk: %s"
 
-#: ../src/firstbootWindow.py:580 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Welkom"
@@ -145,7 +115,7 @@ msgstr "Kies die item wat jy wil wysig "
 msgid "Setup Agent"
 msgstr "Opsteller"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:114
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Bykomende CD's"
 
@@ -181,11 +151,11 @@ msgstr ""
 "loop, moet jy nou die Intel Execution Layer-pakket van die Extras-skyf af "
 "installeer."
 
-#: ../src/modules/additional_cds.py:118
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Installeer..."
 
-#: ../src/modules/additional_cds.py:164
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -193,7 +163,7 @@ msgstr ""
 "Kon nie 'n CD-ROM bespeur nie. Steek 'n CD-ROM in die aandrywer en kliek \"OK"
 "\" om voort te gaan."
 
-#: ../src/modules/additional_cds.py:198
+#: ../src/modules/additional_cds.py:163
 #, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -264,15 +234,15 @@ msgstr "_Gaan voort"
 msgid "Create _account"
 msgstr "Skep _rekening"
 
-#: ../src/modules/create_user.py:183
+#: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Die wagwoorde is nie dieselfde nie. Tik weer die wagwoord in."
 
-#: ../src/modules/create_user.py:191
+#: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Die wagwoord is te kort. Gebruik ten minste 6 karaktes."
 
-#: ../src/modules/create_user.py:202
+#: ../src/modules/create_user.py:201
 #, fuzzy, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -281,7 +251,7 @@ msgstr ""
 "Die gebruikernaam '%s' bevat leestekenkarakters. Moenie leestekens by die "
 "gebruikernaam insluit nie."
 
-#: ../src/modules/create_user.py:220
+#: ../src/modules/create_user.py:219
 #, fuzzy, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
@@ -298,13 +268,29 @@ msgstr "Tyd en datum"
 msgid "Please set the date and time for the system."
 msgstr "Stel die tyd en datum vir die stelsel op."
 
-#: ../src/modules/display.py:43
-msgid "Display"
-msgstr "Vertoon"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Agreement"
+msgstr "Lisensieooreenkoms"
 
-#: ../src/modules/display.py:45
-msgid "Please select the resolution and color depth that you wish to use"
-msgstr "Kies watter resolusie en kleurdiepte jy wil gebruik"
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:70
+#, fuzzy
+msgid "I have read the license."
+msgstr "_Lees lisensie weer"
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -339,7 +325,7 @@ msgstr "Klankkaart"
 msgid "An audio device has been detected in your computer."
 msgstr "'n Klankkaart is op jou rekenaar bespeur."
 
-#: ../src/modules/soundcard_gui.py:68
+#: ../src/modules/soundcard_gui.py:66
 #, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
@@ -368,6 +354,24 @@ msgstr ""
 "Jy moet nog 'n paar stappe doen voor jou stelsel gereed vir gebruik is. Die "
 "Opsteller sal jou lei deur 'n paar basiese instellings. Kliek die \"Volgende"
 "\"-knoppie regs onder om voort te gaan."
+
+#~ msgid "_Yes, I agree to the License Agreement"
+#~ msgstr "_Ja, ek stem in tot die lisensieooreenkoms"
+
+#~ msgid "N_o, I do not agree"
+#~ msgstr "N_ee, ek stem nie in nie"
+
+#~ msgid "Do you want to reread or reconsider the License Agreement?"
+#~ msgstr "Wil jy nie die lisensieooreenkoms weer lees of heroorweeg nie?"
+
+#~ msgid "_Shut down"
+#~ msgstr "_Skakel af"
+
+#~ msgid "Display"
+#~ msgstr "Vertoon"
+
+#~ msgid "Please select the resolution and color depth that you wish to use"
+#~ msgstr "Kies watter resolusie en kleurdiepte jy wil gebruik"
 
 #~ msgid "_Next"
 #~ msgstr "_Volgende"
