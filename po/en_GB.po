@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-20 17:00-0400\n"
+"POT-Creation-Date: 2007-03-21 17:57-0400\n"
 "PO-Revision-Date: 2004-10-15 13:47-0400\n"
 "Last-Translator: alan@redhat.com\n"
 "Language-Team: en_GB\n"
@@ -265,8 +265,9 @@ msgid "Please set the date and time for the system."
 msgstr "Please set the system date and time."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-msgid "License Agreement"
-msgstr "Licence Agreement"
+#, fuzzy
+msgid "License Information"
+msgstr "Timezone configuration"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -284,9 +285,8 @@ msgid ""
 msgstr ""
 
 #: ../src/modules/eula.py:70
-#, fuzzy
-msgid "I have read the license."
-msgstr "_Re-read licence"
+msgid "Understood, please proceed."
+msgstr ""
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -351,6 +351,13 @@ msgstr ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Next\" button in the lower right corner to continue."
+
+#~ msgid "License Agreement"
+#~ msgstr "Licence Agreement"
+
+#, fuzzy
+#~ msgid "I have read the license."
+#~ msgstr "_Re-read licence"
 
 #~ msgid "_Yes, I agree to the License Agreement"
 #~ msgstr "_Yes, I agree to the licence agreement"

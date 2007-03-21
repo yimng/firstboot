@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-20 17:00-0400\n"
+"POT-Creation-Date: 2007-03-21 17:57-0400\n"
 "PO-Revision-Date: 2007-03-21 09:52-0300\n"
 "Last-Translator: Domingo Becker <beckerde@hotmail.com>\n"
 "Language-Team: Spanish <en@li.org>\n"
@@ -74,7 +74,9 @@ msgstr "_Adelante"
 
 #: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "El sistema necesita ser reiniciado para que algunas de las opciones elegidas surtan efecto."
+msgstr ""
+"El sistema necesita ser reiniciado para que algunas de las opciones elegidas "
+"surtan efecto."
 
 #: ../src/firstbootWindow.py:331
 msgid "_Finish"
@@ -85,8 +87,7 @@ msgstr "_Finalizar"
 msgid "module import of %s failed: %s"
 msgstr "Falló al importar el módulo %s: %s"
 
-#: ../src/firstbootWindow.py:589
-#: ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Bienvenido"
@@ -131,14 +132,21 @@ msgstr "Seleccione el elemento que desea modificar"
 msgid "Setup Agent"
 msgstr "Agente de Configuración"
 
-#: ../src/modules/additional_cds.py:44
-#: ../src/modules/additional_cds.py:92
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "CDs adicionales"
 
 #: ../src/modules/additional_cds.py:65
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Por favor inserte el disco con la etiqueta \"Red Hat Enterprise Linux Extras\" para permitir la instalación de extensiones de terceros. También puede insertar el disco de Documentación u otros discos de software adicional de Red Hat para instalarlos."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Por favor inserte el disco con la etiqueta \"Red Hat Enterprise Linux Extras"
+"\" para permitir la instalación de extensiones de terceros. También puede "
+"insertar el disco de Documentación u otros discos de software adicional de "
+"Red Hat para instalarlos."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -149,31 +157,48 @@ msgstr "Por favor inserte cualquier cd de instalación de software adicional."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Para habilitar el soporte en tiempo de ejecución para las aplicaciones de 32 bit en la arquitectura Intel Itanium2, debe instalar ahora el paquete Intel Execution Layer desde el disco de Extras."
+"Para habilitar el soporte en tiempo de ejecución para las aplicaciones de 32 "
+"bit en la arquitectura Intel Itanium2, debe instalar ahora el paquete Intel "
+"Execution Layer desde el disco de Extras."
 
 #: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Instalar..."
 
 #: ../src/modules/additional_cds.py:129
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "No se detectó un CD-ROM. Introduzca un CD-ROM en la unidad y pulse \"Aceptar\" para continuar."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"No se detectó un CD-ROM. Introduzca un CD-ROM en la unidad y pulse \"Aceptar"
+"\" para continuar."
 
 #: ../src/modules/additional_cds.py:163
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "El programa autorun no se encontró en el CD. haga clic en \"Aceptar\" para continuar."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"El programa autorun no se encontró en el CD. haga clic en \"Aceptar\" para "
+"continuar."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
 msgstr "Crear Usuario"
 
 #: ../src/modules/create_user.py:66
-msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
-msgstr "Se recomienda que cree un nombre de usuario para uso normal (no administrativo) del sistema. Para crear un nombre de usuario del sistema, proporcione la información requerida a continuación."
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"Se recomienda que cree un nombre de usuario para uso normal (no "
+"administrativo) del sistema. Para crear un nombre de usuario del sistema, "
+"proporcione la información requerida a continuación."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -192,16 +217,26 @@ msgid "Confir_m Password:"
 msgstr "Confir_mar contraseña:"
 
 #: ../src/modules/create_user.py:113
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Si necesita utilizar una autenticación de red tal como Kerberos o NIS, por favor pulse en el botón Utilizar conexión de red."
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Si necesita utilizar una autenticación de red tal como Kerberos o NIS, por "
+"favor pulse en el botón Utilizar conexión de red."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Uti_lizar conexión de red..."
 
 #: ../src/modules/create_user.py:151
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Se le recomienda que cree una cuenta de usuario personal. Si continúa sin una cuenta, sólo podrá conectarse como usuario root, lo cual es conveniente reservar para uso administrativo únicamente. "
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"Se le recomienda que cree una cuenta de usuario personal. Si continúa sin "
+"una cuenta, sólo podrá conectarse como usuario root, lo cual es conveniente "
+"reservar para uso administrativo únicamente. "
 
 #: ../src/modules/create_user.py:159
 msgid "_Continue"
@@ -221,13 +256,21 @@ msgstr "La contraseña es muy corta. Use al menos seis (6) caracteres."
 
 #: ../src/modules/create_user.py:201
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "El nombre de usuario '%s' es una cuenta de sistema reservada. Por favor especifique otro nombre de usuario."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"El nombre de usuario '%s' es una cuenta de sistema reservada. Por favor "
+"especifique otro nombre de usuario."
 
 #: ../src/modules/create_user.py:219
 #, python-format
-msgid "A home directory for the username '%s' already exists.  Please specify another username."
-msgstr "El directorio home para el nombre de usuario '%s' ya existe. Por favor especifique otro nombre de usuario."
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
+msgstr ""
+"El directorio home para el nombre de usuario '%s' ya existe. Por favor "
+"especifique otro nombre de usuario."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -237,24 +280,40 @@ msgstr "Fecha y Hora"
 msgid "Please set the date and time for the system."
 msgstr "Configure la fecha y la hora para el sistema."
 
-#: ../src/modules/eula.py:33
-#: ../src/modules/eula.py:43
-msgid "License Agreement"
-msgstr "Acuerdo de Licencia"
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+#, fuzzy
+msgid "License Information"
+msgstr "Configuración de la zona horaria"
 
 #: ../src/modules/eula.py:59
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
-"Gracias por instalar Fedora. Fedora es un conjunto de paquetes de software, cada uno con su propia licencia. La compilación se puso a disposición bajo la Licencia Pública General de GNU versión 2. No hay restricciones en cuanto al uso, copiado o modificación de este código. Sin embargo, hay restricciones y obligaciones que se aplican a la redistribución del código, ya sea en su forma original o modificada. Entre otras cosas, esas restricciones/obligaciones pertenecen al licenciamiento de la redistribución, derechos de marcas comerciales y control de exportación.\n"
+"Gracias por instalar Fedora. Fedora es un conjunto de paquetes de software, "
+"cada uno con su propia licencia. La compilación se puso a disposición bajo "
+"la Licencia Pública General de GNU versión 2. No hay restricciones en cuanto "
+"al uso, copiado o modificación de este código. Sin embargo, hay "
+"restricciones y obligaciones que se aplican a la redistribución del código, "
+"ya sea en su forma original o modificada. Entre otras cosas, esas "
+"restricciones/obligaciones pertenecen al licenciamiento de la "
+"redistribución, derechos de marcas comerciales y control de exportación.\n"
 "\n"
-"Si desea comprender cuáles son esas restricciones, por favor, visite http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"Si desea comprender cuáles son esas restricciones, por favor, visite http://"
+"fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:70
-msgid "I have read the license."
-msgstr "He leído la licencia."
+msgid "Understood, please proceed."
+msgstr ""
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -280,8 +339,7 @@ msgstr "_Cambiar configuración de la red..."
 msgid "static"
 msgstr "estático"
 
-#: ../src/modules/soundcard_gui.py:43
-#: ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Tarjeta de sonido"
 
@@ -290,8 +348,14 @@ msgid "An audio device has been detected in your computer."
 msgstr "Se ha detectado un dispositivo de audio en su máquina."
 
 #: ../src/modules/soundcard_gui.py:66
-msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
-msgstr "Pulse el botón de reproducción para escuchar un sonido de prueba. Debería oír una series de tres sonidos. El primero estará en el canal de la derecha, el segundo en el izquierdo y el tercero en el canal del centro."
+msgid ""
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
+msgstr ""
+"Pulse el botón de reproducción para escuchar un sonido de prueba. Debería "
+"oír una series de tres sonidos. El primero estará en el canal de la derecha, "
+"el segundo en el izquierdo y el tercero en el canal del centro."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -302,25 +366,43 @@ msgid "Please set the timezone for the system."
 msgstr "Configure la zona horaria para el sistema."
 
 #: ../src/modules/welcome.py:34
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
-msgstr "Hay algunos pasos más que debe realizar antes de que su sistema esté listo para ser utilizado. El Agente del configuración lo guiará a través de una configuración básica. Pulse \"Adelante\" en la esquina inferior derecha para continuar."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue."
+msgstr ""
+"Hay algunos pasos más que debe realizar antes de que su sistema esté listo "
+"para ser utilizado. El Agente del configuración lo guiará a través de una "
+"configuración básica. Pulse \"Adelante\" en la esquina inferior derecha para "
+"continuar."
+
+#~ msgid "License Agreement"
+#~ msgstr "Acuerdo de Licencia"
+
+#~ msgid "I have read the license."
+#~ msgstr "He leído la licencia."
 
 #~ msgid "_Yes, I agree to the License Agreement"
 #~ msgstr "_Sí, acepto el Acuerdo de Licencia"
+
 #~ msgid "N_o, I do not agree"
 #~ msgstr "N_o, no estoy de acuerdo"
+
 #~ msgid "Do you want to reread or reconsider the License Agreement?"
 #~ msgstr "¿Desea releer o reconsiderar el Acuerdo de Licencia?"
+
 #~ msgid ""
 #~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
 #~ "please shut down the computer and remove this product from your system. "
 #~ msgstr ""
 #~ "¿ Desea releer o reconsiderar el Acuerdo de Licencia ? Sino, por favor, "
 #~ "apage la computadora y elimine este producto de su sistema."
+
 #~ msgid "_Shut down"
 #~ msgstr "_Apagar"
+
 #~ msgid "Display"
 #~ msgstr "Pantalla"
+
 #~ msgid "Please select the resolution and color depth that you wish to use"
 #~ msgstr "Seleccione la resolución y profundidad de color que desea utilizar"
-
