@@ -617,19 +617,12 @@ class firstbootWindow:
                 except:
                     screenshotDir = None
 
-        screen_width = gtk.gdk.screen_width()
-        screen_height = gtk.gdk.screen_height()
-
-        src_x = (screen_width - 800) / 2
-        src_y = (screen_height - 600) / 2
-
         screenshot = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, False, 8,
-                                    800, 600)
+                                    self.x_screen, self.y_screen)
 
         screenshot.get_from_drawable(gtk.gdk.get_default_root_window(),
                                      gtk.gdk.colormap_get_system(),
-                                     src_x, src_y, 0, 0,
-                                     800, 600)
+                                     0, 0, 0, 0, self.x_screen, self.y_screen)
 
         if screenshot:
             while (1):
