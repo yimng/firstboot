@@ -1,19 +1,22 @@
 # Finnish translation for firstboot.
 # This file is distributed under the same license as the firstboot package.
+#
 # Mikko Ikola <ikola@iki.fi>, 2004.
 # Lauri Nurmi <lanurmi@iki.fi>, 2004-2007.
-# 
+# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-20 17:00-0400\n"
-"PO-Revision-Date: 2007-02-21 01:06+0200\n"
-"Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
+"PO-Revision-Date: 2007-03-21 20:39+0200\n"
+"Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -30,9 +33,7 @@ msgid ""
 "Since there is a problem with the %s module, \n"
 "Red Hat Setup Agent will not load this module and \n"
 "will attempt to run the remaining modules."
-msgstr ""
-"Koska moduulissa %s on ongelma, Red Hat -asennusohjelmaei lataa sitä ja "
-"suorittaa jäljellä olevat moduulit."
+msgstr "Koska moduulissa %s on ongelma, Red Hat -asennusohjelmaei lataa sitä ja suorittaa jäljellä olevat moduulit."
 
 #: ../src/exceptionWindow.py:56
 #, python-format
@@ -57,8 +58,7 @@ msgstr "_Seuraava"
 
 #: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"Järjestelmä käynnistyy nyt uudelleen, jotta tehdyt valinnat tulevat käyttöön."
+msgstr "Järjestelmä käynnistyy nyt uudelleen, jotta tehdyt valinnat tulevat käyttöön."
 
 #: ../src/firstbootWindow.py:331
 msgid "_Finish"
@@ -69,7 +69,8 @@ msgstr "_Valmis"
 msgid "module import of %s failed: %s"
 msgstr "moduulin %s tuominen epäonnistui: %s"
 
-#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589
+#: ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Tervetuloa"
@@ -114,21 +115,14 @@ msgstr "Valitse muokattava kohta"
 msgid "Setup Agent"
 msgstr "Asennusohjelma"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
+#: ../src/modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "Lisä-CD:t"
 
 #: ../src/modules/additional_cds.py:65
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-"Syötä levy ”Red Hat Enterprise Linux Extras” asentaaksesi kolmansien "
-"osapuolien liitännäsiä ja sovelluksia. Voit myös syöttää Documentation-"
-"levyn, tai muun Red Hatin toimittaman levyn asentaaksesi ylimääräisiä "
-"ohjelmistoja nyt."
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "Syötä levy ”Red Hat Enterprise Linux Extras” asentaaksesi kolmansien osapuolien liitännäsiä ja sovelluksia. Voit myös syöttää Documentation-levyn, tai muun Red Hatin toimittaman levyn asentaaksesi ylimääräisiä ohjelmistoja nyt."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -139,30 +133,22 @@ msgstr "Syötä mahdolliset erilliset ohjelmisto-CD:t asemaan nyt."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Ottaaksesi käyttöön 32-bittisten sovellusten ajonaikaisen tuen Intel "
-"Itanium2 -alustalla, Extras-levyltä on nyt asennettava Intel Execution Layer "
-"-paketti."
+"Ottaaksesi käyttöön 32-bittisten sovellusten ajonaikaisen tuen Intel Itanium2 -alustalla, Extras-levyltä on nyt asennettava Intel Execution Layer -paketti."
 
 #: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Asenna..."
 
 #: ../src/modules/additional_cds.py:129
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
-"CD-levyä ei tunnistettu. Syötä CD-levy asemaan ja napsauta OK jatkaaksesi."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "CD-levyä ei tunnistettu. Syötä CD-levy asemaan ja napsauta OK jatkaaksesi."
 
 #: ../src/modules/additional_cds.py:163
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Autorun-ohjelmaa ei löytynyt CD:ltä. Napsauta ”OK” jatkaaksesi."
 
 #: ../src/modules/create_user.py:39
@@ -170,14 +156,8 @@ msgid "Create User"
 msgstr "Käyttäjän luominen"
 
 #: ../src/modules/create_user.py:66
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
-"On erittäin suositeltavaa, että luot henkilökohtaisen käyttäjätunnuksen "
-"normaaliin (ei-ylläpito-)käyttöön. Luodaksesi tunnuksen syötä seuraavat "
-"tiedot."
+msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
+msgstr "On erittäin suositeltavaa, että luot henkilökohtaisen käyttäjätunnuksen normaaliin (ei-ylläpito-)käyttöön. Luodaksesi tunnuksen syötä seuraavat tiedot."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -196,26 +176,16 @@ msgid "Confir_m Password:"
 msgstr "V_armista salasana:"
 
 #: ../src/modules/create_user.py:113
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Jos halutaan käyttää verkkotodennusta, kuten Kerberosia tai NIS:iä, napsauta "
-"”Käytä verkkokirjautumista”."
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "Jos halutaan käyttää verkkotodennusta, kuten Kerberosia tai NIS:iä, napsauta ”Käytä verkkokirjautumista”."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Käytä v_erkkokirjautumista..."
 
 #: ../src/modules/create_user.py:151
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"On erittäin suositeltavaa luoda henkilökohtainen käyttäjätunnus. Jos jätät "
-"sen luomatta, voit kirjautua vain pääkäyttäjänä, joka on varattu ainoastaan "
-"ylläpitotehtäviin."
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "On erittäin suositeltavaa luoda henkilökohtainen käyttäjätunnus. Jos jätät sen luomatta, voit kirjautua vain pääkäyttäjänä, joka on varattu ainoastaan ylläpitotehtäviin."
 
 #: ../src/modules/create_user.py:159
 msgid "_Continue"
@@ -235,18 +205,12 @@ msgstr "Salasana on liian lyhyt. Käytä ainakin kuusimerkkistä salasanaa."
 
 #: ../src/modules/create_user.py:201
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Käyttäjänimi %s on varattu järjestelmätunnukseksi.  Käytä jotain toista "
-"käyttäjänimeä."
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "Käyttäjänimi %s on varattu järjestelmätunnukseksi.  Käytä jotain toista käyttäjänimeä."
 
 #: ../src/modules/create_user.py:219
 #, python-format
-msgid ""
-"A home directory for the username '%s' already exists.  Please specify "
-"another username."
+msgid "A home directory for the username '%s' already exists.  Please specify another username."
 msgstr "Tunnuksen ”%s” kotihakemisto on jo olemassa. Valitse jokin muu tunnus."
 
 #: ../src/modules/date.py:46
@@ -257,29 +221,24 @@ msgstr "Päivämäärä ja aika"
 msgid "Please set the date and time for the system."
 msgstr "Aseta järjestelmän päivämäärä ja aika."
 
-#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+#: ../src/modules/eula.py:33
+#: ../src/modules/eula.py:43
 msgid "License Agreement"
 msgstr "Lisenssisopimus"
 
 #: ../src/modules/eula.py:59
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Kiitos kun asensit Fedoran. Fedora on kokoelma ohjelmistopaketteja, joista jokaisella on oma lisenssinsä. Kokoelma on asetettu saataville GNU General Public License versio 2:n alaisena. Tämän koodin käyttöä, kopiointia tai muokkaamista ei ole rajoitettu. Koodin levitykseen niin muokatussa kuin alkuperäisessä muodossaan liittyy kuitenkin rajoituksia ja velvoitteita. Nämä rajoitukset ja velvoitteet liittyvät muiden muassa uudelleenjakelun lisensointiin, tavaramerkkioikeuksiin ja viennin valvontaan.\n"
+"\n"
+"Ymmärtääksesi mitä nämä rajoitukset ovat katso osoite http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:70
-#, fuzzy
 msgid "I have read the license."
-msgstr "_Lue lisenssi uudelleen"
+msgstr "Olen lukenut lisenssin."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -305,7 +264,8 @@ msgstr "_Vaihda verkkoasetuksia..."
 msgid "static"
 msgstr "staattinen"
 
-#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43
+#: ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Äänikortti"
 
@@ -314,14 +274,8 @@ msgid "An audio device has been detected in your computer."
 msgstr "Tietokoneesta löydettiin äänilaite."
 
 #: ../src/modules/soundcard_gui.py:66
-msgid ""
-"Click the \"Play\" button to hear a sample sound.  You should hear a series "
-"of three sounds.  The first sound will be in the right channel, the second "
-"sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
-"Napsauta ”Soita testiääni”-painiketta kuullaksesi esimerkkiäänen. Sinun "
-"tulisi kuulla kolme erilaista ääntä. Ensimmäinen ääni tulee oikeasta "
-"kanavasta, toinen vasemmasta ja kolmas keskeltä."
+msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "Napsauta ”Soita testiääni”-painiketta kuullaksesi esimerkkiäänen. Sinun tulisi kuulla kolme erilaista ääntä. Ensimmäinen ääni tulee oikeasta kanavasta, toinen vasemmasta ja kolmas keskeltä."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -332,151 +286,6 @@ msgid "Please set the timezone for the system."
 msgstr "Aseta järjestelmän aikavyöhyke."
 
 #: ../src/modules/welcome.py:34
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
-"Järjestelmä on muutamaa vaihetta vaille valmis käyttöön. Asennusohjelma "
-"ohjaa sinua nyt muutamien perusasetusten määrittelyssä. Jatka napsauttamalla "
-"alla olevaa ”Eteenpäin”-painiketta."
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Järjestelmä on muutamaa vaihetta vaille valmis käyttöön. Asennusohjelma ohjaa sinua nyt muutamien perusasetusten määrittelyssä. Jatka napsauttamalla alla olevaa ”Eteenpäin”-painiketta."
 
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_Kyllä, hyväksyn lisenssisopimuksen"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "_Ei, en hyväksy"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "Haluatko lukea lisenssisopimuksen uudelleen ja harkita sitä vielä?"
-
-#~ msgid ""
-#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
-#~ "please shut down the computer and remove this product from your system. "
-#~ msgstr ""
-#~ "Haluatko lukea lisenssisopimuksen uudelleen ja harkita sitä vielä? Ellet "
-#~ "halua, sammuta tietokone ja poista tämä tuote järjestelmästä."
-
-#~ msgid "_Shut down"
-#~ msgstr "_Sammuta"
-
-#~ msgid "Display"
-#~ msgstr "Näyttö"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr "Valitse haluamasi resoluutio ja värisyvyys"
-
-#~ msgid "_Next"
-#~ msgstr "_Seuraava"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Äänikorttiasetukset"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Lopeta asennus"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Järjestelmä on nyt asennettu ja valmiina käyttöön. Napsauta ”Päätä "
-#~ "asennus”-painiketta alhaalta oikealta jatkaaksesi."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "Napsauta ”Päätä asennus”-painiketta alhaalta oikealta jatkaaksesi."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Käyttäjänimen tulee olla alle 33 merkkiä pitkä."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Käyttäjänimi ei saa alkaa numerolla."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Käyttäjänimi ”%s” sisältää välilyöntejä. Älä sisällytä käyttäjänimeen "
-#~ "välilyöntejä."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Käyttäjänimi %s sisältää välimerkkejä. Älä käytä välimerkkejä "
-#~ "käyttäjänimessä."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Käyttäjänimi %s sisältää isoja kirjaimia. Älä käytä isoja kirjaimia "
-#~ "käyttäjänimessä."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Käyttäjänimi %s sisältää virheellisiä merkkejä. Käytä vain ASCII-merkkejä."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "Salasana sisältää virheellisiä merkkejä. Käytä vain ASCII-merkkejä."
-
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Nimi ”%s” sisältää virheellisiä merkkejä. Käytä vain kirjaimia, "
-#~ "numeroita, välilyöntejä ja alaviivoja."
-
-#~ msgid "Licence Aggrement"
-#~ msgstr "Lisenssisopimus"
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Jos sinulla on jokin alla olevista CD-levyistä, voit asentaa niistä "
-#~ "paketteja syöttämällä CD:n sisään ja napsauttamalla asianmukaista "
-#~ "painiketta."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Syötä aikapalvelin."
-
-#~ msgid "Error"
-#~ msgstr "Virhe"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Yhteyttä osoitteeseen %s ei saatu muodostettua. Joko %s ei ole saatavilla "
-#~ "tai palomuuriasetukset estävät NTP-yhteydet."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Yhdistetään NTP-palvelimeen. Odota..."
-
-#~ msgid "User Account"
-#~ msgstr "Käyttäjätunnus"
-
-#~ msgid "Mouse configuration "
-#~ msgstr "Hiiriasetukset "
-
-#~ msgid "Firstboot has already been run once on this system.\n"
-#~ msgstr "Firstboot on jo kerran suoritettu tässä järjestelmässä.\n"
-
-#~ msgid ""
-#~ "In order to run firstboot from the command line, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "Suorittaaksesi firstbootin komentoriviltä, kirjoita seuraavat komennot:"
-
-#~ msgid ""
-#~ "In order to run firstboot during system bootup, run the following "
-#~ "commands:"
-#~ msgstr ""
-#~ "Suorittaaksesi firstbootin järjestelmän käynnistyksessä, kirjoita "
-#~ "seuraavat komennot:"
