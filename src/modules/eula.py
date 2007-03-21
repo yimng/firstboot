@@ -30,7 +30,7 @@ translate.textdomain("firstboot")
 class childWindow:
     #You must specify a runPriority for the order in which you wish your module to run
     runPriority = 15
-    moduleName = (_("License Agreement"))
+    moduleName = (_("License Information"))
 
     def launch(self, doDebug = None):
         self.doDebug = doDebug
@@ -40,7 +40,7 @@ class childWindow:
         self.vbox = gtk.VBox()
         self.vbox.set_size_request(400, 200)
 
-        msg = (_("License Agreement"))
+        msg = (_("License Information"))
 
         title_pix = functions.imageFromFile("workstation.png")
 
@@ -67,7 +67,7 @@ licensing of the redistribution, trademark rights, and export control.\n\n\
 If you would like to understand what those restrictions are, please \
 visit http://fedoraproject.org/wiki/Legal/Licenses/EULA."""))
 
-        label = gtk.Label(_("I have read the license."))
+        label = gtk.Label(_("Understood, please proceed."))
         label.set_alignment(0.0, 0.1)
 
         textView.set_buffer(textBuffer)
