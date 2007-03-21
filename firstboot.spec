@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.33
+Version: 1.4.34
 Release: 1%{?dist}
 URL: http://fedora.redhat.com/projects/config-tools/
 License: GPL
@@ -94,6 +94,10 @@ fi
 
 
 %changelog
+* Wed Mar 21 2007 Chris Lumens <clumens@redhat.com> - 1.4.34-1
+- Reword EULA module.
+- Fix screenshot code.
+
 * Tue Mar 20 2007 Chris Lumens <clumens@redhat.com> - 1.4.33-1
 - Don't chop off part of the left side background.
 - Added a new EULA module.
