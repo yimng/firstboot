@@ -1,3 +1,4 @@
+# translation of it.po to italiano
 # translation of it.po to
 # Copyright (C) 2004 ORGANIZATION.
 #
@@ -5,15 +6,15 @@
 # Francesco Valente <fvalen@redhat.com>, 2003, 2004.
 # Paolo Dona' <vik@3jv.com>, 2004.
 # Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004.
-# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006.
+# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2006-12-02 10:09+0100\n"
+"PO-Revision-Date: 2007-03-23 01:13+0100\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
-"Language-Team:  <fedora-trans-it@redhat.com>\n"
+"Language-Team: italiano <fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -172,10 +173,8 @@ msgstr ""
 "su \"OK\" per continuare."
 
 #: ../src/modules/additional_cds.py:163
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Il programma autorun non è stato trovato sul CD. Premi \"OK\" per continuare."
 
 #: ../src/modules/create_user.py:39
 msgid "Create User"
@@ -239,13 +238,11 @@ msgstr "Crea un _account"
 
 #: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-"Le passwords non coincidono.  Si prega di riprovare ad inserire la password."
+msgstr "Le passwords non coincidono.  Si prega di riprovare ad inserire la password."
 
 #: ../src/modules/create_user.py:190
 msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
+msgstr "La password é troppo corta.  Si prega di usare un minimo di 6 caratteri."
 
 #: ../src/modules/create_user.py:201
 #, python-format
@@ -274,9 +271,8 @@ msgid "Please set the date and time for the system."
 msgstr "Impostare la data e l'ora del sistema."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "Configurazione del fuso orario"
+msgstr "Informazioni sulla licenza"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -292,10 +288,14 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Grazie per aver installato Fedora.  Fedora è una compilation di pacchetti software, avente ciascuno la propria licenza.  La compilation è resa disponibile sotto la GNU General Public License versione 2.  Non ci sono restrizioni sull'uso, la copia, o la modifica di questo codice.  Comunque ci sono restrizioni ed obblighi che si applicano alla redistribuzione del codice, sia nella sua forma originale che modificata.  D'altra parte tali restrizioni/obblighi sono pertinenti anche la licenza della ridistribuzione, diritti di trademark, e controllo sull'esportazione.\n"
+"\n"
+"Se si desidera capire quali sono queste restrizioni, visitare "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Ho compreso, procedere."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -357,35 +357,3 @@ msgstr ""
 "all'uso.  Il Setup Agent vi guiderà nel processo di configurazione di base.  "
 "Premere il pulsante \"Avanti\" nell'angolo in basso a destra per continuare."
 
-#~ msgid "License Agreement"
-#~ msgstr "Accettazione Licenza"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "_Rileggi licenza"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_Si, accetto i termini della Licenza"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "N_o, non accetto."
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "Vuoi rileggere o riconsiderare i termini della licenza?"
-
-#~ msgid ""
-#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
-#~ "please shut down the computer and remove this product from your system. "
-#~ msgstr ""
-#~ "Si desidera rileggere o riconsiderare l'accordo di licenza?  In caso "
-#~ "negativo, si prega di spegnere il computer e rimuovere questo prodotto "
-#~ "dal sistema. "
-
-#~ msgid "_Shut down"
-#~ msgstr "_Spegni"
-
-#~ msgid "Display"
-#~ msgstr "Display"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr "Selezionare la risoluzione e la profondità di colore desiderata"
