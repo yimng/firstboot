@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2006-12-03 02:40+0800\n"
+"PO-Revision-Date: 2007-03-25 00:25+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -59,9 +59,7 @@ msgstr "_Maju"
 
 #: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"Sistem mesti mengulangboot sekarang untuk sebahagian dari pilihan anda "
-"berfungsi."
+msgstr "Sistem mesti mengulangboot sekarang untuk sebahagian dari pilihan anda berfungsi."
 
 #: ../src/firstbootWindow.py:331
 msgid "_Finish"
@@ -72,7 +70,8 @@ msgstr "_Tamat"
 msgid "module import of %s failed: %s"
 msgstr "mengimport modul %s gagal: %s"
 
-#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
+#: ../src/firstbootWindow.py:589
+#: ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
 msgstr "Selamat Datang"
@@ -117,21 +116,14 @@ msgstr "Pilih perkara yang anda hendak ubahsuai "
 msgid "Setup Agent"
 msgstr "Agen Pemasangan"
 
-#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
+#: ../src/modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "CD Tambahan"
 
 #: ../src/modules/additional_cds.py:65
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-"Sila masukkan cakera berlabel \"Red Hat Enterprise Linux Extras\" untuk "
-"membenarkan pemasangan plug-in dan aplikasi pihak-ketiga.  Anda juga boleh "
-"memasukkan cakera Dokumentasi, atau cakera yang disediakan oleh Red Hat "
-"untuk memasang perisian tambahan pada masa ini."
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "Sila masukkan cakera berlabel \"Red Hat Enterprise Linux Extras\" untuk membenarkan pemasangan plug-in dan aplikasi pihak-ketiga.  Anda juga boleh memasukkan cakera Dokumentasi, atau cakera yang disediakan oleh Red Hat untuk memasang perisian tambahan pada masa ini."
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
@@ -142,31 +134,22 @@ msgstr "Sila masukkan sebarang cd pemasangan perisian tambahan pada masa ini."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Untuk menghidupkan sokongan pelaksanaan aplikasi 32-bit pada rekabentuk "
-"Intel Itanium2, anda mesti memasang pakej Intel Execution Layer daripada "
-"cakera Extra sekarang."
+"Untuk menghidupkan sokongan pelaksanaan aplikasi 32-bit pada rekabentuk Intel Itanium2, anda mesti memasang pakej Intel Execution Layer daripada cakera Extra sekarang."
 
 #: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "Pasang..."
 
 #: ../src/modules/additional_cds.py:129
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
-"CD-ROM tidak dapat dikesan.  Sila masukkan CD-ROM dalam pemacu dan klik \"OK"
-"\" untuk meneruskan."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "CD-ROM tidak dapat dikesan.  Sila masukkan CD-ROM dalam pemacu dan klik \"OK\" untuk meneruskan."
 
 #: ../src/modules/additional_cds.py:163
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Program autorun tidak dijumpai pada CD. Klik \"OK\" untuk meneruskan."
 
 #: ../src/modules/create_user.py:39
@@ -174,14 +157,8 @@ msgid "Create User"
 msgstr "Cipta Pengguna"
 
 #: ../src/modules/create_user.py:66
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
-"Adalah disyorkan anda mencipta 'nama pengguna' untuk kegunaan biasa (bukan "
-"pentadbiran) bagi sistem anda. Untuk mencipta 'nama pengguna' sistem, sila "
-"berikan maklumat yang diminta dibawah."
+msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
+msgstr "Adalah disyorkan anda mencipta 'nama pengguna' untuk kegunaan biasa (bukan pentadbiran) bagi sistem anda. Untuk mencipta 'nama pengguna' sistem, sila berikan maklumat yang diminta dibawah."
 
 #: ../src/modules/create_user.py:76
 msgid "_Username:"
@@ -200,22 +177,15 @@ msgid "Confir_m Password:"
 msgstr "Pastikan Katalaluan:"
 
 #: ../src/modules/create_user.py:113
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Jika anda hendak menggunakan pengesahan rangkaian, seperti Kerberos atau "
-"NIS, sila klik pada butang Guna Logmasuk Rangkaian."
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "Jika anda hendak menggunakan pengesahan rangkaian, seperti Kerberos atau NIS, sila klik pada butang Guna Logmasuk Rangkaian."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
 msgstr "Guna _Logmasuk Rangkaian..."
 
 #: ../src/modules/create_user.py:151
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
 msgstr "pengguna dalam."
 
 #: ../src/modules/create_user.py:159
@@ -236,21 +206,13 @@ msgstr "Katalaluan terlalu singkat.  Sila gunakan sekurang-kurangnya 6 aksara."
 
 #: ../src/modules/create_user.py:201
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Nama pengguna '%s' adalah akaun sistem dikhaskan. Sila nyatakan nama "
-"pengguna lain."
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "Nama pengguna '%s' adalah akaun sistem dikhaskan. Sila nyatakan nama pengguna lain."
 
 #: ../src/modules/create_user.py:219
 #, python-format
-msgid ""
-"A home directory for the username '%s' already exists.  Please specify "
-"another username."
-msgstr ""
-"Direktori rumah untuk namapengguna '%s' telah wujud. Sila nyatakan "
-"namapengguna lain."
+msgid "A home directory for the username '%s' already exists.  Please specify another username."
+msgstr "Direktori rumah untuk namapengguna '%s' telah wujud. Sila nyatakan namapengguna lain."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -260,29 +222,21 @@ msgstr "Tarikh dan Masa"
 msgid "Please set the date and time for the system."
 msgstr "Sila tetapkan tarikh dan masa untuk sistem."
 
-#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
+#: ../src/modules/eula.py:33
+#: ../src/modules/eula.py:43
 msgid "License Information"
-msgstr "Tetapan zonmasa"
+msgstr "Maklumat Lesen"
 
 #: ../src/modules/eula.py:59
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Difahami, sila teruskan."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -308,7 +262,8 @@ msgstr "Ubah Konfigurasi Rangkaian..."
 msgid "static"
 msgstr "statik"
 
-#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
+#: ../src/modules/soundcard_gui.py:43
+#: ../src/modules/soundcard_gui.py:44
 msgid "Sound Card"
 msgstr "Kad Bunyi"
 
@@ -317,15 +272,8 @@ msgid "An audio device has been detected in your computer."
 msgstr "Peranti bunyi telah dikesan pada komputer anda."
 
 #: ../src/modules/soundcard_gui.py:66
-msgid ""
-"Click the \"Play\" button to hear a sample sound.  You should hear a series "
-"of three sounds.  The first sound will be in the right channel, the second "
-"sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
-"Klik butang \"Main\" untuk mendengar contoh bunyi.  Anda sepatutnya "
-"mendengar rangkaian tiga bunyi.  Bunyi pertama akan berada di saluran kanan, "
-"bunyi kedua akan berada di saluran kiri, dan bunyi ketiga akan berada di "
-"tengah-tengah."
+msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
+msgstr "Klik butang \"Main\" untuk mendengar contoh bunyi.  Anda sepatutnya mendengar rangkaian tiga bunyi.  Bunyi pertama akan berada di saluran kanan, bunyi kedua akan berada di saluran kiri, dan bunyi ketiga akan berada di tengah-tengah."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -336,43 +284,6 @@ msgid "Please set the timezone for the system."
 msgstr "Sila tetapkan zonmasa untuk sistem."
 
 #: ../src/modules/welcome.py:34
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
-"Terdapat beberapa langkah lagi perlu dibuat sebelum sistem anda sedia untuk "
-"digunakan.  Agen Tetapan akan membantu anda melalui beberapa tetapan asas.  "
-"Sila klik butang \"Maju\" pada bahagian sudut bawah kanan untuk meneruskan."
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Terdapat beberapa langkah lagi perlu dibuat sebelum sistem anda sedia untuk digunakan.  Agen Tetapan akan membantu anda melalui beberapa tetapan asas.  Sila klik butang \"Maju\" pada bahagian sudut bawah kanan untuk meneruskan."
 
-#~ msgid "License Agreement"
-#~ msgstr "Perjanjian Lesen"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "Baca semula lesen"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_Ya, saya setuju dengan Perjanjian Lesen"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "Tidak, saya tidak setuju"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "Adakah anda hendak membaca semula atau memikirkan Perjanjian Lesen?"
-
-#~ msgid ""
-#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
-#~ "please shut down the computer and remove this product from your system. "
-#~ msgstr ""
-#~ "Adakah anda hendak membaca atau menimbang semula Perjanjian Lesen? Jika "
-#~ "tidak, sila matikan komputer dan buang produk ini dari sistem anda."
-
-#~ msgid "_Shut down"
-#~ msgstr "Matikan"
-
-#~ msgid "Display"
-#~ msgstr "Paparan"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr "Sila pilih resolusi dan kedalaman warna yang ada hendak guna"
