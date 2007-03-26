@@ -1,24 +1,22 @@
-# translation of hu.po to hu
-# This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Tamas Szanto <tszanto@mol.hu>, 2004.
 # Széll Tamás <tomi@digiflex.hu>, 2004.
-# Arpad Biro <biro_arpad@yahoo.com>, 2005.
+# Arpad Biro <biro_arpad@yahoo.com>, 2005, 2007.
 # Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
 # Gábor Szentiványi <szenti@ulx.hu>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: hu\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2006-09-01 10:30+0200\n"
-"Last-Translator: Gábor Szentiványi <szenti@ulx.hu>\n"
-"Language-Team: hu <en@li.org>\n"
+"PO-Revision-Date: 2007-03-27 00:12+0200\n"
+"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -63,8 +61,7 @@ msgstr "_Tovább"
 
 #: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"A változások érvénybe léptetéséhez most újra kell indítani a rendszert."
+msgstr "A változások érvénybe léptetéséhez most újra kell indítani a rendszert."
 
 #: ../src/firstbootWindow.py:331
 msgid "_Finish"
@@ -138,8 +135,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"Ha rendelkezik további szoftvertelepítési CD-vel, most helyezze be azt."
+msgstr "Ha rendelkezik további szoftvertelepítési CD-vel, most helyezze be azt."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -169,8 +165,7 @@ msgstr ""
 "kattintson az \"OK\" gombra."
 
 #: ../src/modules/additional_cds.py:163
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "\"OK\" gombra."
@@ -270,9 +265,8 @@ msgid "Please set the date and time for the system."
 msgstr "Állítsa be a pontos dátumot és időt."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "Időzóna-beállítás"
+msgstr "Licenc-információ"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -288,10 +282,23 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Köszönjük, hogy a Fedora rendszert telepítette. A Fedora egy szoftvercsomagokból "
+"álló gyűjtemény, amelyben minden csomagnak saját licence van. A teljes rendszert "
+"a GNU General Public License (GPL) 2-es verziója alapján bocsátjuk rendelkezésre. "
+"A kód használatára, másolására és módosítására "
+"vonatkozóan nincsenek korlátozások. A kód terjesztésére vonatkozóan viszont vannak "
+"bizonyos korlátozások és kötelezettségek, akár eredeti, akár módosított "
+"formában történik a terjesztés. Ezen korlátozások és kötelezettségek "
+"többek közt a terjesztés, a védjegy-jogok és az export-szabályzás "
+"licencelésére vonatkoznak.\n"
+"\n"
+"Ha szeretne többet tudni arról, mik ezek a korlátozások, akkor "
+"látogassa meg a következő weblapot: "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA"
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Elfogadom, lépjünk tovább."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -353,27 +360,3 @@ msgstr ""
 "telepítő végigvezeti Önt a beállítási lépéseken. A továbblépéshez kattintson "
 "a \"Tovább\" gombra a jobb alsó sarokban."
 
-#~ msgid "License Agreement"
-#~ msgstr "Licencegyezmény"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "A li_cenc újbóli átolvasása"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_Igen, elfogadom a licencfeltételeket"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "_Nem, nem fogadom el"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "Át szeretné még egyszer tanulmányozni a licencegyezményt?"
-
-#~ msgid "_Shut down"
-#~ msgstr "_Leállítás"
-
-#~ msgid "Display"
-#~ msgstr "Képernyő"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr "Válassza ki a kívánt felbontást és színmélységet"
