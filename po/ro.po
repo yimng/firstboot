@@ -1,21 +1,22 @@
+# translation of ro.po to
 # Romanian translation of PACKAGE.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+#
 # Răzvan Corneliu C.R. VILT <razvan.vilt@linux360.ro>, 2004.
-# , fuzzy
-#
-#
+# MIrcea Daniel <visez.trance@gmail.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2006-12-05 21:54+0200\n"
-"Last-Translator: Felix Kerekes <StTwister@yahoo.com>\n"
-"Language-Team: Romanian <ro-team@linux360.ro>\n"
+"PO-Revision-Date: 2007-03-31 22:11+0300\n"
+"Last-Translator: MIrcea Daniel <visez.trance@gmail.com>\n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -135,8 +136,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"Vă rugăm inseraţi discul de instalare pentru orice program suplimentar."
+msgstr "Vă rugăm inseraţi discul de instalare pentru orice program suplimentar."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -166,8 +166,7 @@ msgstr ""
 "daţi click pe \"OK\" pentru a continua."
 
 #: ../src/modules/additional_cds.py:163
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Programul autorun nu a putut fii localizat pe cd. Click pe \"OK\" pentru a "
 "continua."
@@ -267,9 +266,8 @@ msgid "Please set the date and time for the system."
 msgstr "Vă rog configuraţi data şi timpul pentru sistem."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "Configurarea fusului orar"
+msgstr "Informaţii licenţă"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -285,10 +283,15 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Vă mulţumim că aţi instalat Fedora. Fedora este un ansamblu de pachete "
+" software, fiecare cu o licenţă proprie. Acest ansamblu vă este disponibil sub licenţa GNU General Public License (Licenţă Publică Generală) versiunea 2. Nu "
+"există restricţii la utilizarea, copierea, sau modificarea acestui cod. Există totuşi, restricţii şi obligaţii care se aplică la redistribuirea codului, în forma originală sau modificată. Printre altele, aceste restricţii/obligaţii ţin de licenţierea redistribuirii, drepturilor mărcii înregistrate, şi controlul exportului.\n"
+"Dacă doriţi să înţelegeţi care sunt aceste restricţii, vă rugăm să vizitaţi "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Am înţeles, continuaţi."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -351,143 +354,3 @@ msgstr ""
 "aceste configurări de bază.  Vă rugăm apăsaţi pe butonul \"Înainte\" din "
 "colţul dreapta jos pentru a continua."
 
-#~ msgid "License Agreement"
-#~ msgstr "Acord de licenţiere"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "_Reciteşte licenţa"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_Da, sunt de acord cu licenţa"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "N_u, Nu sunt de acord"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "Doriţi să recitiţi sau să reconsideraţi acordul de licenţiere?"
-
-#~ msgid ""
-#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
-#~ "please shut down the computer and remove this product from your system. "
-#~ msgstr ""
-#~ "Doriţi să recitiţi sau să reconsideraţi acordul de licenţiere?  Dacă nu, "
-#~ "vă rugăm închideţi calculatorul şi înlăturaţi acest produs din sistemul "
-#~ "dvs.. "
-
-#~ msgid "_Shut down"
-#~ msgstr "_Închidere"
-
-#~ msgid "Display"
-#~ msgstr "Monitor"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr ""
-#~ "Vă rugăm selectaţi rezoluţia şi adâncimea de culoare pe care doriţi să o "
-#~ "utilizaţi"
-
-#~ msgid "_Next"
-#~ msgstr "Î_nainte"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Configurarea plăcii de reţea"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Terminaţi configurarea"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Sistemul d-voastră este acum gata pentru utilizare.  Vă rugăm daţi click "
-#~ "pe butonul \"Next\" din colţul dreapta jos pentru a continua."
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Sistemul d-voastră este acum gata pentru utilizare.  Vă rugăm daţi click "
-#~ "pe butonul \"Next\" din colţul dreapta jos pentru a continua."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr ""
-#~ "Numele de utilizator trebuie să fie de cel mult 33 de caractere lungime."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Numele de utilizator nu poate să înceapă cu un număr."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Numele de utilizator '%s' conţine spaţii libere.  Vă rog nu includeţi "
-#~ "spaţii libere în numele de utilizator."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Numele de utilizator '%s' conţine caractere de punctuaţie.  Vă rugăm nu "
-#~ "utilizaţi caractere de punctuaţie în numele de utilizator."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Numele de utilizator '%s' conţine litere mari.  Vă rugăm nu utilizaţi "
-#~ "litere mari în numele de utilizator."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Numele de utilizator '%s' conţine caractere invalide.  Vă rugăm folosiţi "
-#~ "doar caractere ASCII."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Parola conţine caractere invalide.  Vă rugăm folosiţi doar caractere "
-#~ "ASCII."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Numele '%s' conţine caractere invalide.  Vă rugăm folosiţi doar caractere "
-#~ "ASCII."
-
-#, fuzzy
-#~ msgid "Licence Aggrement"
-#~ msgstr "Licenţă"
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Dacă aveţi oricare dintre CD-urile menţionate mai jos, puteţi să "
-#~ "instalaţi pachetede pe ele, dacă le introduceţi şi daţi click pe butonul "
-#~ "corespunzător."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Vă rugăm introduceţi un server NTP."
-
-#~ msgid "Error"
-#~ msgstr "Eroare"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "O conexiune cu %s nu a putut fi realizată. Ori %s nu este disponibil "
-#~ "orifirewall-ul d-voastră blochează conexiunile NTP."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Contactez server-ul NTP.  Vă rugăm aşteptaţi..."
-
-#~ msgid "User Account"
-#~ msgstr "Cont de Utilizator"
