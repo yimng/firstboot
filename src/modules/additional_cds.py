@@ -106,25 +106,28 @@ class childWindow:
         def getCDDev():
             drives = kudzu.probe(kudzu.CLASS_CDROM,
                                  kudzu.BUS_UNSPEC, kudzu.PROBE_ALL)
-            for d in drives:
-                return d.device
-            return None
-            
-            
+            return map (lambda d: d.device, drives)
+
         #Create a gtkInvisible widget to block until the autorun is complete
         i = gtk.Invisible ()
         i.grab_add ()
 
-        mountFlag = None
+        dev = None
+        mounted = False
 
-        while not mountFlag:
-            try:
-                dev = getCDDev()
-                if dev is None:
-                    raise Exception, "no cd drive found"
-                diskutil.mount("/dev/%s" % (dev,) , '/mnt', fstype="iso9660", readOnly = 1)
-                mountFlag = 1
-            except:
+        while not mounted:
+            for device in getCDDev():
+                if device is None:
+                    continue
+
+                try:
+                    diskutil.mount("/dev/%s" % device, "/mnt", fstype="iso9660", readOnly=1)
+                    dev = device
+                    break
+                except:
+                    continue
+
+            if dev is None:
                 dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_NONE,
                                         (_("A CD-ROM has not been detected.  Please insert "
                                            "a CD-ROM in the drive and click \"OK\" to continue.")))
@@ -140,6 +143,8 @@ class childWindow:
                     #Otherwise, the user is stuck
                     i.grab_remove ()
                     return
+            else:
+                mounted = True
 
         if os.access("/mnt/autorun", os.R_OK):
             #If there's an autorun file on the cd, run it
