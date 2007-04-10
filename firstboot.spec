@@ -1,8 +1,8 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.34
+Version: 1.4.35
 Release: 1%{?dist}
-URL: http://fedora.redhat.com/projects/config-tools/
+URL: http://fedoraproject.org/wiki/FirstBoot
 License: GPL
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -94,6 +94,11 @@ fi
 
 
 %changelog
+* Tue Apr 10 2007 Chris Lumens <clumens@redhat.com> - 1.4.35-1
+- Iterate over all possible CD drives on the additional CD module (#231612).
+- Correct package URL (#235079).
+- Update translation files.
+
 * Wed Mar 21 2007 Chris Lumens <clumens@redhat.com> - 1.4.34-1
 - Reword EULA module.
 - Fix screenshot code.
