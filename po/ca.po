@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2006-03-25 11:35+0100\n"
+"PO-Revision-Date: 2007-04-14 22:02+0200\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +55,7 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Podeu emplenar un informe d'error quant al 'firstboot' en el \n"
+"Podeu emplenar un informe d'error quant al «firstboot» en el \n"
 "sistema de seguiment d'errors de Red Hat a http://www.redhat.com/bugzilla. \n"
 "S'ha desat una còpia de la sortida de depuració a %s. \n"
 "Assegureu-vos que adjunteu aquest fitxer a l'informe d'errors. \n"
@@ -173,13 +173,13 @@ msgid ""
 "click \"OK\" to continue."
 msgstr ""
 "No s'ha trobat cap disc CD-ROM. Inseriu un CD-ROM en el dispositiu i feu "
-"clic a \"D'acord\" per continuar."
+"clic a «D'acord» per continuar."
 
 #: ../src/modules/additional_cds.py:163
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"No s'ha trobat el programa autorun en el CD. Feu clic a \"D'acord\" per "
+"No s'ha trobat el programa autorun en el CD. Feu clic a «D'acord» per "
 "continuar."
 
 #: ../src/modules/create_user.py:39
@@ -192,7 +192,7 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"És recomanable que creeu un compte personal d'usuari 'username' per a ús "
+"És recomanable que creeu un compte personal d'usuari «usuari» per a ús "
 "normal (és a dir, per a tasques no administratives). Per crear el compte "
 "personal 'username', proporcioneu la informació demanada."
 
@@ -218,11 +218,11 @@ msgid ""
 "click the Use Network Login button."
 msgstr ""
 "Si heu de fer servir autenticació en xarxa com ara Kerberos o NIS, feu clic "
-"al botó «Usa entrada a xarxa»."
+"al botó «Empra una entrada a xarxa»."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
-msgstr "Usa entrada a _xarxa..."
+msgstr "Empra una entrada a _xarxa..."
 
 #: ../src/modules/create_user.py:151
 msgid ""
@@ -256,7 +256,7 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"El nom d'usuari '%s' és un compte de sistema reservat. Especifiqueu un altre "
+"El nom d'usuari «%s» és un compte de sistema reservat. Especifiqueu un altre "
 "nom d'usuari."
 
 #: ../src/modules/create_user.py:219
@@ -276,9 +276,8 @@ msgid "Please set the date and time for the system."
 msgstr "Especifiqueu la data i l'hora del sistema."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "Configuració del fus horari"
+msgstr "Informació de la llicència"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -294,10 +293,22 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Gràcies per haver instal·lat Fedora. Fedora és una compilació de diferents "
+"paquets de programari, cadascun amb la seva llicència. Aquesta compilació es "
+"posa a disposició sota la versió 2 de la Llicència Pública General de GNU. "
+"No hi ha cap mena de restricció quant a la utilització, còpia, o modificació "
+"d'aquest codi. Tanmateix, hi ha restriccions i obligacions aplicables a la "
+"redistribució del codi, ja sigui en la seva versió original o en una de "
+"modificada. Entre d'altres coses, aquestes restriccions i obligacions "
+"pertanyen a la llicència de la redistribució, marques registrades, i control "
+"de l'exportació.\n"
+"\n"
+"Si voleu conèixer amb més detall aquestes restriccions, aneu al lloc web "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Ho he entès, continua."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -361,10 +372,6 @@ msgstr ""
 
 #~ msgid "License Agreement"
 #~ msgstr "Acord de llicència"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "To_rna a llegir la llicència"
 
 #~ msgid "_Yes, I agree to the License Agreement"
 #~ msgstr "_Sí, estic d'acord amb l'acord de llicència"
