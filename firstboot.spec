@@ -1,14 +1,16 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.4.35
-Release: 1%{?dist}
+Release: 2%{?dist}
 URL: http://fedoraproject.org/wiki/FirstBoot
 License: GPL
 ExclusiveOS: Linux
 Group: System Environment/Base
-
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
+# This is a Red Hat maintained package which is specific to
+# our distribution.  Thus the source is only available from
+# within this srpm.
 Source0: %{name}-%{version}.tar.bz2
 Obsoletes: anaconda-reconfig
 
@@ -18,8 +20,8 @@ Requires: pygtk2, metacity, rhpl, rhpxl >= 0.19, authconfig-gtk, libuser
 Requires: system-config-language, system-config-soundcard
 Requires: system-config-securitylevel, system-config-network
 Requires: system-config-users, system-config-date >= 1.7.9
-Requires: system-config-keyboard, chkconfig
-Requires: system-logos, firstboot-tui = %{version}
+Requires: system-config-keyboard, system-logos
+Requires: firstboot-tui = %{version}-%{release}
 
 ExcludeArch: s390 s390x ppc64
 
@@ -34,7 +36,8 @@ Group: System Environment/Base
 BuildRequires: gettext
 
 Requires: python, usermode >= 1.36, rhpl, system-config-securitylevel-tui
-Requires: system-config-network-tui, ntsysv, authconfig, chkconfig
+Requires: system-config-network-tui, ntsysv, authconfig
+Requires(post): chkconfig
 
 %description tui
 firstboot-tui is a text interface for initial system configuration.
@@ -43,9 +46,10 @@ firstboot-tui is a text interface for initial system configuration.
 %setup -q
 
 %build
-make
+make %{?_smp_mflags}
 
 %install
+rm -rf %{buildroot}
 make INSTROOT=%{buildroot} install
 %find_lang %{name}
 
@@ -53,8 +57,7 @@ make INSTROOT=%{buildroot} install
 rm -rf %{buildroot}
 
 %post tui
-if ! [ -f /etc/sysconfig/firstboot ]
-then
+if ! [ -f /etc/sysconfig/firstboot ]; then
   chkconfig --add firstboot
 fi
 
@@ -94,6 +97,9 @@ fi
 
 
 %changelog
+* Mon Jun 11 2007 Chris Lumens <clumens@redhat.com> - 1.4.35-2
+- Fixes for package review (#225756).
+
 * Tue Apr 10 2007 Chris Lumens <clumens@redhat.com> - 1.4.35-1
 - Iterate over all possible CD drives on the additional CD module (#231612).
 - Correct package URL (#235079).
