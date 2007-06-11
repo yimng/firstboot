@@ -1,20 +1,19 @@
-# English translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# English (British) translation.
+# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2004.
+# Abigail Brady <morwen@evilmagic.org>, Bastien Nocera <hadess@hadess.net>, 2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2004-10-15 13:47-0400\n"
-"Last-Translator: alan@redhat.com\n"
-"Language-Team: en_GB\n"
+"PO-Revision-Date: 2007-06-11 13:22+0000\n"
+"Last-Translator: Abigail Brady <morwen@evilmagic.org>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -46,8 +45,8 @@ msgid ""
 msgstr ""
 "Please file a bug against 'firstboot' in the Red Hat \n"
 "bug tracking system at http://www.redhat.com/bugzilla. \n"
-"A copy of the debug output has been saved as %s \n"
-"Please attach that file to the bug report. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
 
 #: ../src/firstbootWindow.py:119
 msgid "_Back"
@@ -55,11 +54,11 @@ msgstr "_Back"
 
 #: ../src/firstbootWindow.py:128
 msgid "_Forward"
-msgstr ""
+msgstr "_Forward"
 
 #: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "The system must reboot for some of your selections to take effect."
+msgstr "The system must now reboot for some of your selections to take effect."
 
 #: ../src/firstbootWindow.py:331
 msgid "_Finish"
@@ -133,7 +132,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr "Please insert any additional software install CDs at this time."
+msgstr "Please insert any additional software install cds at this time."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
@@ -159,8 +158,8 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and hit "
-"\"OK\" to continue."
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 
 #: ../src/modules/additional_cds.py:163
 msgid ""
@@ -169,19 +168,17 @@ msgstr ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "System User"
+msgstr "Create User"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"It is recommended that you create a system 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username', please "
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 
 #: ../src/modules/create_user.py:76
@@ -205,8 +202,8 @@ msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"If you need to use network authentication, for example Kerberos or NIS, "
-"please click the Use Network Login button."
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
@@ -219,8 +216,8 @@ msgid ""
 "which is reserved for administrative use only."
 msgstr ""
 "It is highly recommended that a personal user account be created.  If you "
-"continue without an account you can only log in with the root account, which "
-"is reserved for administrative use only."
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
 
 #: ../src/modules/create_user.py:159
 msgid "_Continue"
@@ -248,13 +245,13 @@ msgstr ""
 "username."
 
 #: ../src/modules/create_user.py:219
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -262,12 +259,11 @@ msgstr "Date and Time"
 
 #: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
-msgstr "Please set the system date and time."
+msgstr "Please set the date and time for the system."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "Timezone configuration"
+msgstr "Licence Information"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -283,10 +279,21 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own licence.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licences/EULA."
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Understood, please proceed."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -317,21 +324,18 @@ msgid "Sound Card"
 msgstr "Sound Card"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "A sound card has been detected."
+msgstr "An audio device has been detected in your computer."
 
 #: ../src/modules/soundcard_gui.py:66
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Click the \"Play test sound\" button to hear a sample sound.  You should "
-"hear a series of three sounds.  The first sound will be in the right "
-"channel, the second sound will be in the left channel, and the third sound "
-"will be in the centre."
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the centre."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -339,10 +343,9 @@ msgstr "Timezone"
 
 #: ../src/modules/timezone.py:49
 msgid "Please set the timezone for the system."
-msgstr "Please set the system timezone."
+msgstr "Please set the timezone for the system."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -350,50 +353,4 @@ msgid ""
 msgstr ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Next\" button in the lower right corner to continue."
-
-#~ msgid "License Agreement"
-#~ msgstr "Licence Agreement"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "_Re-read licence"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_Yes, I agree to the licence agreement"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "N_o, I do not agree"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "Do you want to reread or reconsider the licence agreement?"
-
-#~ msgid "_Shut down"
-#~ msgstr "_Shut down"
-
-#~ msgid "Display"
-#~ msgstr "Display"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr "Please select the resolution and colour depth that you wish to use"
-
-#~ msgid "_Next"
-#~ msgstr "_Next"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Sound card configuration"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Finish Setup"
-
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Your system is now configured and ready to use.  Please click the \"Finish"
-#~ "\" button in the lower right corner to continue."
-
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
+"click the \"Forward\" button in the lower right corner to continue."
