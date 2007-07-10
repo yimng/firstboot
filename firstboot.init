@@ -1,4 +1,20 @@
 #!/bin/bash
+## BEGIN INIT INFO
+# Provides: firstboot
+# Default-Start: 3 5
+# Default-Stop: 0 3 5 6
+# Required-Start:
+# Should-Start: $network
+# Short-Description: Starts the firstboot configuration program
+# Description: Firstboot runs the first time a machine is booted after
+#              installation.  It checks for the existance of an
+#              /etc/sysconfig/firstboot file.  If it doesn't exist, then
+#              the firstboot program needs to run.  If it finds the file,
+#              firstboot will not run.  If /etc/reconfigSys exists or if
+#              "reconfig" is provided in the kernel boot arguments,
+#              firstboot will run in reconfiguration mode.
+## END INIT INFO
+
 #
 # firstboot:         Starts the firstboot druid if it hasn't been run before
 #
@@ -10,7 +26,7 @@
 #                    then the firstboot program needs to run.  If it finds the file, \
 #                    firstboot will not be run.
 #                    If /etc/reconfigSys exists, run the reconfiguration
-#		     program and remove /etc/reconfigSys when done.
+#                    program and remove /etc/reconfigSys when done.
 #
 #                    Also will run if 'reconfig' is on the kernel cmdline.
 #
@@ -27,7 +43,7 @@ case "$1" in
  start)
 	action=run
 
-	[ -f "$LOCKFILE" ] && exit 0
+	[ -f "$LOCKFILE" ] && exit 1
 
 	if [ -f "$FILENAME" ] && ! grep -q '^RUN_FIRSTBOOT=YES' "$FILENAME"; then
 	    action=skip
@@ -65,16 +81,16 @@ case "$1" in
 	    action "" /bin/false
 	fi
 
-	exit 0
+	exit $RETVAL
 	;;
 
  stop)
    rm -f $LOCKFILE
+   exit 0
    ;;
 
  *)
    echo $"Usage: $0 {start|stop}"
-   RETVAL=1
+   exit 3
+   ;;
 esac
-
-exit $RETVAL
