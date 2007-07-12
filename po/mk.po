@@ -1,23 +1,25 @@
-# translation of mk.po to Macedonian
+# translation of firstboot.HEAD.mk.po to Macedonian
 # Macedonian translations for mk package.
 # Copyright (C) 2004 THE mk'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the mk package.
+#
+#
 # Automatically generated, 2004.
 # Arangel Angov <ufo@linux.net.mk>, 2004.
 # Tomislav Markovski <herrera@users.sourceforge.net>, 2004.
-# 
-# 
+# Arangel Angov <arangel@linux.net.mk>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: mk firstboot\n"
+"Project-Id-Version: firstboot.HEAD.mk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2005-04-24 23:12+0200\n"
-"Last-Translator: Tomislav Markovski <tome@users.ossm.org.mk>\n"
-"Language-Team: Macedonian <i18n-nb@lister.ping.uio.no>\n"
+"PO-Revision-Date: 2007-07-10 16:53+0200\n"
+"Last-Translator: Arangel Angov <arangel@linux.net.mk>\n"
+"Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -47,10 +49,10 @@ msgid ""
 "A copy of the debug output has been saved to %s \n"
 "Be sure to attach that file to the bug report. \n"
 msgstr ""
-"Пратете извештај за бубачка на 'firstboot' на системот \n"
+"Пратете извештај за бубачка на системот „firstboot“ \n"
 "за следење на бубачки на Red Hat (http://www.redhat.com/bugzilla). \n"
-"Копија од излезот на грешката е зачуван во %s \n"
-"Пратете ја таа датотека заедно со извештајот. \n"
+"Копија од текстот, резултат на грешката е зачуван во %s \n"
+"Пратете ја датотеката заедно со извештајот. \n"
 
 #: ../src/firstbootWindow.py:119
 msgid "_Back"
@@ -58,26 +60,25 @@ msgstr "_Назад"
 
 #: ../src/firstbootWindow.py:128
 msgid "_Forward"
-msgstr ""
+msgstr "_Напред"
 
 #: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Системот мора да се рестартира за некои од избраните работи да функционираат."
 
 #: ../src/firstbootWindow.py:331
-#, fuzzy
 msgid "_Finish"
-msgstr "Заврши со поставување"
+msgstr "_Крај"
 
 #: ../src/firstbootWindow.py:423
 #, python-format
 msgid "module import of %s failed: %s"
-msgstr "увезувањето на модулот %s не успеа: %s"
+msgstr "увозот на модулот %s не успеа: %s"
 
 #: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
 #: ../src/modules/welcome.py:27
 msgid "Welcome"
-msgstr "Добродојдовте"
+msgstr "Добредојдовте"
 
 #: ../src/textWindow.py:34
 msgid "Authentication"
@@ -85,7 +86,7 @@ msgstr "Проверка"
 
 #: ../src/textWindow.py:35
 msgid "Firewall configuration"
-msgstr "Конфигурација на огнен ѕид"
+msgstr "Конфигурација на заштитен ѕид"
 
 #: ../src/textWindow.py:36
 msgid "Keyboard configuration"
@@ -113,11 +114,11 @@ msgstr "Изврши ја алатката"
 
 #: ../src/textWindow.py:44
 msgid "Select the item that you wish to modify "
-msgstr "Одберете го предметот што сакате да го промените"
+msgstr "Одберете го предметот што сакате да го промените "
 
 #: ../src/textWindow.py:52
 msgid "Setup Agent"
-msgstr "Агент за инсталација"
+msgstr "Агент за поставување"
 
 #: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
@@ -137,11 +138,10 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Ве молам внесете cd-иња за инсталација на додатен софтвер."
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -152,7 +152,7 @@ msgstr ""
 "\n"
 "\n"
 "За да овозможите поддршка за 32-битни апликации на Intel Itanium2 "
-"архитектура, морате веднаш да го инсталирате пакетот со Intel Execution "
+"архитектура, морате да го инсталирате пакетот со Intel Execution "
 "Layer од додатниот диск."
 
 #: ../src/modules/additional_cds.py:96
@@ -165,29 +165,25 @@ msgid ""
 "click \"OK\" to continue."
 msgstr ""
 "Не можам да го пронајдам CD-то. Ве молам ставете го CD-то во машината и "
-"кликнете „Во ред“ за понатаму."
+"кликнете \"Во ред\" за понатаму."
 
 #: ../src/modules/additional_cds.py:163
-#, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"Програмата за автоматско извршување не е пронајдена. Кликнете на „Во ред“ за "
+"Програмата за автоматско извршување не е пронајдена. Кликнете на \"Во ред\" за "
 "понатаму."
 
 #: ../src/modules/create_user.py:39
-#, fuzzy
 msgid "Create User"
-msgstr "Системски корисник"
+msgstr "Креирај корисник"
 
 #: ../src/modules/create_user.py:66
-#, fuzzy
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"Се препорачува да креирате корисник за обична (неадминистративна) употреба. "
+"Препорачливо е да креирате корисник за обична (неадминистративна) употреба. "
 "За да креирате нов корисник, внесете ги потребните информации во формата "
 "подолу."
 
@@ -201,20 +197,19 @@ msgstr "Име и _презиме:"
 
 #: ../src/modules/create_user.py:90
 msgid "_Password:"
-msgstr "_Лозинка"
+msgstr "_Лозинка:"
 
 #: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
-msgstr "Потврд_ете ја лозинката:"
+msgstr "Потврд_а за лозинката:"
 
 #: ../src/modules/create_user.py:113
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Доколку имате потреба од мрежна авторизација како Керберос или НИС, "
-"одберетего копчето „Користи мрежна најава“."
+"Доколку имате потреба од мрежна проверка од страна на Kerberos или NIS, "
+"кликнете го копчето „Користи мрежна најава“."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
@@ -247,20 +242,22 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "Лозинката е премногу кратка. Мора да има барем 6 букви или бројки."
 
 #: ../src/modules/create_user.py:201
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Корисничкото име '%s' содржи големи бикву. Ваквите знаци не се дозволени."
+"Корисничкото име '%s' е резервирана системска сметка. Ве молам "
+"изберете друго корисничко име."
 
 #: ../src/modules/create_user.py:219
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
 msgstr ""
-"Корисничкото име '%s' содржи големи бикву. Ваквите знаци не се дозволени."
+"Домашниот директориум за корисникот '%s' веќе постои.  Ве молам внесете друго "
+"корисничко име."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
@@ -268,12 +265,11 @@ msgstr "Датум и време"
 
 #: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
-msgstr "Наместете го датумот и времето на вашиот систем."
+msgstr "Поставете го датумот и времето на Вашиот систем."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "Конфигурација на временската зона"
+msgstr "Информации за лиценцата"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -289,10 +285,21 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Ви благодариме што инсталиравте Fedora. Fedora е компилација на "
+"софтверски пакети, секој со своја лиценца.  Компилацијата е "
+"достапна под GNU General Public License верзија 2.  Нема рестрикции "
+"кога станува збор за копирање или менување на овој код.  Сепак, "
+"постојат рестрикции и обврски кои што се применуваат во случај "
+"на редистрибуција на кодот, во оригинална или пак во изменета форма.  "
+"Помеѓу другото, овие рестрикции/обврски се однесуваат на лиценцирањето "
+"при редистрибуција, заштитните марки и контролата на извоз.\n"
+"\n"
+"Ако сакате да дознаете повеќе за овие рестрикции посетете ја "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Разбрав, понатаму молам."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -300,7 +307,7 @@ msgstr "Поставување на мрежа"
 
 #: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
-msgstr "Следните уреди за мрежа се пронајдени на вашиот систем."
+msgstr "Следните уреди за мрежа се пронајдени на Вашиот систем."
 
 #: ../src/modules/networking.py:88
 msgid "Network Device"
@@ -323,18 +330,16 @@ msgid "Sound Card"
 msgstr "Звучна картичка"
 
 #: ../src/modules/soundcard_gui.py:45
-#, fuzzy
 msgid "An audio device has been detected in your computer."
-msgstr "Пронајдена е звучна картичка на вашиот систем."
+msgstr "Пронајден е аудио уред на Вашиот систем."
 
 #: ../src/modules/soundcard_gui.py:66
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
-"Кликнете на „Пишти го звукот за тест“ копчето за да слушнете звук.  Треба да "
+"Кликнете го копчето \"Пушти\" за да слушнете звук.  Треба да "
 "слушнете серија од три звуци. Првиот звук ќе биде на десниот канал, вториот "
 "ќе биде на левиот канал, а третиот ќе биде во центарот."
 
@@ -347,7 +352,6 @@ msgid "Please set the timezone for the system."
 msgstr "Наместете ја временската зона на системот."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -355,134 +359,5 @@ msgid ""
 msgstr ""
 "За да го подготвите системот за употреба треба да поминете уште неколку "
 "чекори.  Агентот за инсталација ќе Ве води низ процесот за конфигурација.  "
-"Кликнете на копчето „Напред“ во десниот долен агол за да продолжите."
+"Кликнете на копчето \"Напред\" во десниот долен агол за да продолжите."
 
-#~ msgid "License Agreement"
-#~ msgstr "Договор за користење (лиценцирање)"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "_Прочитај"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_Да, го прифаќам договорот"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "Н_е се согласувам со договорот"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "Дали сакате повторно да прочитате или размислите за договорот?"
-
-#~ msgid "_Shut down"
-#~ msgstr "_Изгасни"
-
-#~ msgid "Display"
-#~ msgstr "Приказ"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr ""
-#~ "Одберете ја резолуцијата и длабочината на бои што сакате да ги користите"
-
-#~ msgid "_Next"
-#~ msgstr "_Напред"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "Конфигурација на звучната кратичка"
-
-#~ msgid "Finish Setup"
-#~ msgstr "Заврши со поставување"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "Вашиот систем е наместен и спремен за употреба. Одберете „Следно“ за да "
-#~ "продолжите."
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "Одберете го копчето „Следно“ во долниот десен агол за понатаму."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "Корисничкото име може да има најмногу 32 карактери."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "Корисничкото име мора да почнува со буква."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr ""
-#~ "Корисничкото име '%s' содржи празни места. Ваквите карактери не се "
-#~ "дозволени."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr ""
-#~ "Корисничкото име '%s' содржи интерпункциски знаци. Ваквите знаци не се "
-#~ "дозволени."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "Корисничкото име '%s' содржи големи бикву. Ваквите знаци не се дозволени."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Корисничкото име '%s' содржи непознати карактери. Ваквите знаци не се "
-#~ "дозволени."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr ""
-#~ "Лозинката содржи непознати карактери.  Користете само латинични (ASCII) "
-#~ "карактери."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr ""
-#~ "Името '%s' содржи непознати карактери.  Користете само латинични (ASCII) "
-#~ "карактери."
-
-#, fuzzy
-#~ msgid "Licence Aggrement"
-#~ msgstr "Договор за користење (лиценцирање)"
-
-#~ msgid "Firstboot does not run in runlevel 3."
-#~ msgstr "Firstboot не работи во 3-то ниво на извршување"
-
-#~ msgid ""
-#~ "If you have any of the CDs listed below, you can install packages from "
-#~ "them by inserting the CD and clicking the appropriate button."
-#~ msgstr ""
-#~ "Доколку имате некое од це-дињата спомнати подолу, може да инсталирате од "
-#~ "нивсо внесување на це-дето и одбирање на соодветната функција."
-
-#~ msgid "Please enter a time server."
-#~ msgstr "Внесете сервер за време."
-
-#~ msgid "Error"
-#~ msgstr "Грешка"
-
-#~ msgid ""
-#~ "A connection with %s could not be established.  Either %s is not "
-#~ "available or the firewall settings on your computer are blocking NTP "
-#~ "connections."
-#~ msgstr ""
-#~ "Не можам да се врзам со %s. Можеби %s е недостапен или подесувањата за "
-#~ "огнен ѕид (firewall) на вашиот систем блокираат НТП врски."
-
-#~ msgid "Contacting NTP server.  Please wait..."
-#~ msgstr "Врзување со НТП серверот. Ве молам причекајте..."
-
-#~ msgid "User Account"
-#~ msgstr "Корисник"
