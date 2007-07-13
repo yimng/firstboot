@@ -1,20 +1,23 @@
+# translation of he.po to Hebrew
 # Hebrew translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2004.
 #
+# Automatically generated, 2004.
+# Richard Frontaine <richardfrontaine@gmail.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2005-08-07 00:31+0200\n"
-"Last-Translator: David R <ddady1@gmail.com>\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2007-07-13 21:38+0300\n"
+"Last-Translator: Richard Frontaine <richardfrontaine@gmail.com>\n"
+"Language-Team: Hebrew <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -33,7 +36,7 @@ msgid ""
 "will attempt to run the remaining modules."
 msgstr ""
 "מכיוון שיש בעיה עם מודול %s, \n"
-"סוכן ההתקנה של רד האט לא יטען את מודול זה \n"
+"תוכנת ההתקנה של רד האט לא יטען את המודול הזה \n"
 "וינסה להריץ את המודולים הנותרים."
 
 #: ../src/exceptionWindow.py:56
@@ -55,16 +58,15 @@ msgstr "_הקודם"
 
 #: ../src/firstbootWindow.py:128
 msgid "_Forward"
-msgstr ""
+msgstr "_הבא"
 
 #: ../src/firstbootWindow.py:291
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "המערכת צריכה לבצע איתחול בכדי שהשינויים שבחרת יתקבלו"
+msgstr "המערכת צריכה לבצע איתחול בכדי שחלק מהשינויים שבחרת יתקבלו"
 
 #: ../src/firstbootWindow.py:331
-#, fuzzy
 msgid "_Finish"
-msgstr "סיום ההתקנה"
+msgstr "סיום"
 
 #: ../src/firstbootWindow.py:423
 #, python-format
@@ -94,7 +96,7 @@ msgstr "הגדרות רשת"
 
 #: ../src/textWindow.py:38
 msgid "Printer configuration"
-msgstr "הגדרות מספדת"
+msgstr "הגדרות מדפסת"
 
 #: ../src/textWindow.py:39
 msgid "System services"
@@ -114,7 +116,7 @@ msgstr "בחר את הפריט שברצונך לשנות"
 
 #: ../src/textWindow.py:52
 msgid "Setup Agent"
-msgstr "סוכן התקנה"
+msgstr "תוכנת התקנה"
 
 #: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
@@ -137,7 +139,6 @@ msgstr "אנא הכנס כעת את דיסק ההתקנה של התכונות ה
 
 #. if 1:
 #: ../src/modules/additional_cds.py:77
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -147,8 +148,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"כדי לאפשר תמיכה בזמן ריצה של אפליקציות 32-bit בארכיטקטורת Intel Itanium2, יש "
-"להתקין את חבילת \"Intel Execution Layer\" מדיסק התוספות כעת."
+"כדי לאפשר תמיכה בזמן ריצה של אפליקציות 32-bit בארכיטקטורת Intel Itanium2, עליך "
+"להתקין את החבילה \"Intel Execution Layer\" מדיסק התוספות כעת."
 
 #: ../src/modules/additional_cds.py:96
 msgid "Install..."
@@ -162,8 +163,7 @@ msgstr "CD-ROM לא זוהה. נא הכנס CD-ROM לכונן ולחץ \"OK\" כ
 
 #: ../src/modules/additional_cds.py:163
 #, fuzzy
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "תוכנית ההרצה האוטומטית לא נמצאה על הדיסק. לחץ \"OK\" כדי להמשיך."
 
 #: ../src/modules/create_user.py:39
@@ -198,17 +198,14 @@ msgid "Confir_m Password:"
 msgstr "_אישור סיסמה:"
 
 #: ../src/modules/create_user.py:113
-#, fuzzy
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
-"אם יש לך צורך באימות רשת כמו Kerberos או NIS, בבקשה לחץ על הכפתור \"Use "
-"Network Login\""
+msgstr "אם יש לך צורך בתוכנת אימות רשת, כמו Kerberos או NIS בבקשה לחץ על הכפתור \"השתמש באימות רשת\"."
 
 #: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
-msgstr "הש_תמש באימות רשת..."
+msgstr "השתמש באימות _רשת..."
 
 #: ../src/modules/create_user.py:151
 msgid ""
@@ -216,16 +213,16 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
-"מומלץ ליצור חשבון משתמש אישי. אם תמשיך בלי ליצור חשבון, תוכל להתחבר רק עם "
+"יצירה ושימוש בחשבון משתמש אישי זה מומלץ מאוד. אם תמשיך בלי ליצור חשבון, תוכל להתחבר רק עם "
 "חשבון ה-root, השמור לשימוש ניהולי בלבד."
 
 #: ../src/modules/create_user.py:159
 msgid "_Continue"
-msgstr "המש_ך"
+msgstr "_המשך"
 
 #: ../src/modules/create_user.py:160
 msgid "Create _account"
-msgstr "_צור חשבון"
+msgstr "צור _חשבון"
 
 #: ../src/modules/create_user.py:179
 msgid "The passwords do not match.  Please enter the password again."
@@ -236,33 +233,30 @@ msgid "The password is too short.  Please use at least 6 characters."
 msgstr "הסיסמה קצרה מדי. נא השתמש לפחות ב-6 תווים."
 
 #: ../src/modules/create_user.py:201
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
+msgstr "שם המשתמש '%s' הוא משתמש מערכת. בבקשה נסה שם משתמש אחר."
 
 #: ../src/modules/create_user.py:219
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for the username '%s' already exists.  Please specify "
 "another username."
-msgstr ""
-"שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם המשתמש."
+msgstr "תיקיית בית בשביל המשתמש '%s' כבר קיימת. בבקשה נסה שם משתמש אחר."
 
 #: ../src/modules/date.py:46
 msgid "Date and Time"
-msgstr "תאריך וזמן"
+msgstr "תאריך ושעה"
 
 #: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
-msgstr "נא הגדר את התאריך והזמן של המערכת."
+msgstr "נא הגדר את התאריך והשעה של המערכת."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "הגדרות אזור זמן"
+msgstr "מידע רשיון"
 
 #: ../src/modules/eula.py:59
 msgid ""
@@ -277,11 +271,11 @@ msgid ""
 "\n"
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
-msgstr ""
+msgstr "תודה על שהתקנת פדורה. פדורה היא אוסף של תוכנות, כל אחת תחת הרשיון הפרטי שלה. האוסף נמצא ברשיון GNU General Public גירסא 2. אין שום הגבלה לשימוש, העתקה או שינוי של הקוד מקור של האוסף. למרות זאת, יש הגבלות בנוגע לשחרור מחדש של הקוד, בצורתו המקורית או לאחר שינוי. בין השאר, ההגבלות האלו משויכות לרשיון ההפצה, זכויות יוצרים ושליטה על ייצוא. <br> <br> אם הינך רוצה להבין את ההגבלות האלו במלואן, אנא בקר באתר: http://fedoraproject.org/wiki/Legal/Licenses/EULA ."
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "מובן, אנא המשך."
 
 #: ../src/modules/networking.py:43
 msgid "Network Setup"
@@ -289,7 +283,7 @@ msgstr "התקנת רשת"
 
 #: ../src/modules/networking.py:69
 msgid "The following network devices have been detected on the system:"
-msgstr "ההתקנים הבאים זוהו במערכת:"
+msgstr "התקני הרשת הבאים זוהו במערכת:"
 
 #: ../src/modules/networking.py:88
 msgid "Network Device"
@@ -301,7 +295,7 @@ msgstr "פרוטוקול אתחול"
 
 #: ../src/modules/networking.py:96
 msgid "_Change Network Configuration..."
-msgstr "שנה ה_גדרות רשת..."
+msgstr "_שנה הגדרות רשת..."
 
 #: ../src/modules/networking.py:152
 msgid "static"
@@ -317,14 +311,11 @@ msgid "An audio device has been detected in your computer."
 msgstr "כרטיס קול זוהה במחשב שלך."
 
 #: ../src/modules/soundcard_gui.py:66
-#, fuzzy
 msgid ""
 "Click the \"Play\" button to hear a sample sound.  You should hear a series "
 "of three sounds.  The first sound will be in the right channel, the second "
 "sound will be in the left channel, and the third sound will be in the center."
-msgstr ""
-"לחץ על כפתור \"Play Test Sound\" כדי לשמוע צליל דוגמה. אתה צריך לשמוע סדרה "
-"של 3 צלילים. הצליל הראשון יהיה בערוץ הימני, השני בערוץ השמאלי, והשלישי במרכז."
+msgstr "לחץ על כפתור ה\"Play\" כדי לשמוע צליל דוגמה. אתה אמור לשמוע סדרה של שלושה צלילים. הצליל הראשון יהיה ברמקול הימני, השני ברמקול השמאלי, והשלישי במרכז."
 
 #: ../src/modules/timezone.py:46
 msgid "Timezone"
@@ -335,100 +326,9 @@ msgid "Please set the timezone for the system."
 msgstr "נא הגדר את אזור הזמן של המערכת."
 
 #: ../src/modules/welcome.py:34
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue."
-msgstr ""
-"ישנם עוד כמה צעדים לפני שתוכל להשתמש במערכת. סוכן ההתקנה ידריך אותך בנוגע "
-"להגדרות בסיסיות.  בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה כדי להמשיך."
+msgstr "ישנם עוד צעדים ספורים לקחת לפני שהמרכת שלך תהיה מוכנה לשימוש. תוכנת ההתקנה תוביל אותך עכשיו דרך כמה שלבים של הגדרות בסיסית. לחץ על כפתור \"הבא\" בפינה הימנית תחתונה בכדי להמשיך"
 
-#~ msgid "License Agreement"
-#~ msgstr "הסכם רשיון"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "_קרא רשיון מחדש"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "_כן, אני מסכים עם הסכם הרשיון"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "_לא, איני מסכים"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "האם ברצונך לקרוא מחדש או לשקול מחדש את הסכם הרשיון?"
-
-#~ msgid "_Shut down"
-#~ msgstr "כב_ה"
-
-#~ msgid "Display"
-#~ msgstr "תצוגה"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr "נא בחר את הרזולוציה ועומק הצבעים שברצונך להשתמש בהם"
-
-#~ msgid "_Next"
-#~ msgstr "ה_בא"
-
-#~ msgid "Sound card configuration"
-#~ msgstr "הגדרות כרטיס קול"
-
-#~ msgid "Finish Setup"
-#~ msgstr "סיום ההתקנה"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your system is now set up and ready to use.  Please click the \"Finish\" "
-#~ "button in the lower right corner to continue."
-#~ msgstr ""
-#~ "המערכת שלך מוכנה לשימוש. בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה "
-#~ "בשביל להמשיך."
-
-#, fuzzy
-#~ msgid ""
-#~ "Please click the \"Finish\" button in the lower right corner to continue."
-#~ msgstr "בבקשה לחץ על כפתור \"הבא\" בפינה הימנית התחתונה בשביל להמשיך."
-
-#~ msgid "The user name must be less than 33 characters long."
-#~ msgstr "שם המשתמש חייב להיות קצר מ-33 תווים."
-
-#~ msgid "The user name may not begin with a number."
-#~ msgstr "שם המשתמש לא יכול להתחיל במספר."
-
-#~ msgid ""
-#~ "The user name '%s' contains whitespace.  Please do not include whitespace "
-#~ "in the user name."
-#~ msgstr "שם המשתמש '%s' מכיל רווח לבן. בבקשה אל תכלול רווח לבן בשם המשתמש."
-
-#~ msgid ""
-#~ "The user name '%s' contains punctuation characters.  Please do not use "
-#~ "punctuation in the user name."
-#~ msgstr "שם המשתמש '%s' מכיל סימני פיסוק. בבקשה אל תשתמש בפיסוק בשם המשתמש."
-
-#~ msgid ""
-#~ "The user name '%s' contains uppercase characters.  Please do not use "
-#~ "uppercase characters in the user name."
-#~ msgstr ""
-#~ "שם המשתמש '%s' מכיל אותיות רישיות. בבקשה אל תשתמש באותיות רישיות בשם "
-#~ "המשתמש."
-
-#~ msgid ""
-#~ "The user name '%s' contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "שם המשתמש '%s' מכיל תווים לא חוקיים. בבקשה השתמש רק בתווי ASCII."
-
-#~ msgid ""
-#~ "The password contains invalid characters.  Please use only ASCII "
-#~ "characters."
-#~ msgstr "הסיסמה מכילה תווים לא חוקיים. נא השתמש רק בתווי ASCII."
-
-#, fuzzy
-#~ msgid ""
-#~ "The name '%s' contains invalid characters.  Please use only letters, "
-#~ "numbers, whitespace and the underscore character."
-#~ msgstr "השם '%s' מכיל תווים לא חוקיים. נא השתמש רק בתווי ASCII."
-
-#~ msgid "Licence Aggrement"
-#~ msgstr "הסכם רשיון"
