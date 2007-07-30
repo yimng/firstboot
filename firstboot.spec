@@ -1,7 +1,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 Version: 1.4.35
-Release: 4%{?dist}
+Release: 5%{?dist}
 URL: http://fedoraproject.org/wiki/FirstBoot
 License: GPL
 ExclusiveOS: Linux
@@ -98,6 +98,9 @@ fi
 
 
 %changelog
+* Mon Jul 30 2007 Chris Lumens <clumens@redhat.com> 1.4.35-5
+- Fix conflicts in init script start/stop lines (#250163).
+
 * Thu Jul 19 2007 Chris Lumens <clumens@redhat.com> - 1.4.35-4
 - Audit init script return codes and LSB header (#246925).
 
