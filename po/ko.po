@@ -1,23 +1,23 @@
 # translation of ko.po to
 # translation of ko.po to Korean
 # Copyright (C) 2002 Red Hat, Inc.
+#
 # Michelle J Kim <mkim@redhat.com>, 2003,2004.
 # Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
-# Eunju Kim <eukim@redhat.com>, 2006.
-#
+# Eunju Kim <eukim@redhat.com>, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-21 17:57-0400\n"
-"PO-Revision-Date: 2006-12-04 13:29+1000\n"
+"PO-Revision-Date: 2007-07-30 15:00+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/constants_text.py:36
 msgid "Exit"
@@ -164,8 +164,7 @@ msgstr ""
 "을 클릭하여 계속 진행해 주십시오."
 
 #: ../src/modules/additional_cds.py:163
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램을 CD에서 찾지 못했습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -262,11 +261,11 @@ msgid "Please set the date and time for the system."
 msgstr "시스템에 맞는 날짜 및 시간을 설정해 주십시오."
 
 #: ../src/modules/eula.py:33 ../src/modules/eula.py:43
-#, fuzzy
 msgid "License Information"
-msgstr "시간대 설정"
+msgstr "라이센스 정보"
 
 #: ../src/modules/eula.py:59
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -279,7 +278,7 @@ msgid ""
 "\n"
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
-msgstr ""
+msgstr "Fedora를 설치해 주셔서 감사합니다.  Fedora는 라이센스 하에 소프트웨어 패키지로 컴파일되어 있습니다."
 
 #: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
@@ -345,34 +344,3 @@ msgstr ""
 "전트는 이제 몇 가지 기본적인 설정 과정을 단계별로 길잡이를 해 드릴 것입니다. "
 "계속하시려면 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하십시오."
 
-#~ msgid "License Agreement"
-#~ msgstr "사용 계약서"
-
-#, fuzzy
-#~ msgid "I have read the license."
-#~ msgstr "사용 계약서 다시 읽어보기(_R)"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "네, 사용 계약서에 동의합니다(_Y)"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "아니오, 동의하지 않습니다(_O)"
-
-#~ msgid "Do you want to reread or reconsider the License Agreement?"
-#~ msgstr "사용 계약서를 다시 검토해보시겠습니까?"
-
-#~ msgid ""
-#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
-#~ "please shut down the computer and remove this product from your system. "
-#~ msgstr ""
-#~ "사용 계약서를 다시 검토해 보시겠습니까?  검토해보시지 않을 경우, 컴퓨터를 "
-#~ "종료한 후, 시스템에서 제품을 제거하시기 바랍니다."
-
-#~ msgid "_Shut down"
-#~ msgstr "종료(_S)"
-
-#~ msgid "Display"
-#~ msgstr "화면 표시"
-
-#~ msgid "Please select the resolution and color depth that you wish to use"
-#~ msgstr "해상도와 색상수를 선택해 주십시오."
