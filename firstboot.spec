@@ -1,9 +1,9 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.35
-Release: 5%{?dist}
+Version: 1.4.36
+Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/FirstBoot
-License: GPL
+License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -16,7 +16,7 @@ Obsoletes: anaconda-reconfig
 
 BuildRequires: gettext
 
-Requires: pygtk2, metacity, rhpl, rhpxl >= 0.19, authconfig-gtk, libuser
+Requires: pygtk2, metacity, rhpl, rhpxl >= 0.19, authconfig-gtk, libuser-python
 Requires: system-config-language, system-config-soundcard
 Requires: system-config-securitylevel, system-config-network
 Requires: system-config-users, system-config-date >= 1.7.9
@@ -98,6 +98,11 @@ fi
 
 
 %changelog
+* Thu Aug 09 2007 Chris Lumens <clumens@redhat.com> 1.4.36-1
+- Remove unused images (#250354).
+- Require libuser-python instead of libuser (#251356).
+- Clarify license.
+
 * Mon Jul 30 2007 Chris Lumens <clumens@redhat.com> 1.4.35-5
 - Fix conflicts in init script start/stop lines (#250163).
 
