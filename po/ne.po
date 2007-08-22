@@ -1,0 +1,325 @@
+# translation of ne.po to Nepali
+# Nabin Gautam <nabin@mpp.org.np>, 2007.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ne\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-03-21 17:57-0400\n"
+"PO-Revision-Date: 2007-08-15 17:02+0545\n"
+"Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "निस्कनुहोस्"
+
+#: ../src/exceptionWindow.py:47
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "मोड्युल %s मा एउटा त्रुटि उत्पन्न भएकोछ ।"
+
+#: ../src/exceptionWindow.py:52
+#, python-format
+msgid ""
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
+msgstr ""
+"मोड्युल %s मा समस्या भएमा, \n"
+"रेड ह्याट सेटअप अभिकर्ताले यो मोड्युल सेट गर्दैन र \n"
+"बाँकी मोड्युल चलाउने प्रयास गर्दछ ।"
+
+#: ../src/exceptionWindow.py:56
+#, python-format
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
+msgstr ""
+"कृपया रेड ह्या बग ट्र्याकिङ प्रणालीको\n"
+"http://www.redhat.com/bugzilla मा 'firstboot' बिरुद्ध एउटा बग दर्ता गर्नुहोस् । \n"
+"डिबग निर्गतको एउटा प्रति %s मा बचत गरिएकोछ \n"
+"बग प्रतिवेदनमा त्यो फाइल सङ्लग्न गर्न निश्चित हुनुहोस् । \n"
+
+#: ../src/firstbootWindow.py:119
+msgid "_Back"
+msgstr "पछाडि"
+
+#: ../src/firstbootWindow.py:128
+msgid "_Forward"
+msgstr "अगाडि"
+
+#: ../src/firstbootWindow.py:291
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "तपाईँका केही चयनले प्रभाव पार्नका लागि प्रणाली अहिले फेरि बुट गर्नुपर्दछ ।"
+
+#: ../src/firstbootWindow.py:331
+msgid "_Finish"
+msgstr "समाप्त"
+
+#: ../src/firstbootWindow.py:423
+#, python-format
+msgid "module import of %s failed: %s"
+msgstr "मोड्युल %s को आयात असफल भयो: %s"
+
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "स्वागत छ"
+
+#: ../src/textWindow.py:34
+msgid "Authentication"
+msgstr "प्रमाणीकरण"
+
+#: ../src/textWindow.py:35
+msgid "Firewall configuration"
+msgstr "फायरवाल कन्फिगरेसन"
+
+#: ../src/textWindow.py:36
+msgid "Keyboard configuration"
+msgstr "कुञ्जीपाटी कन्फिगरेसन"
+
+#: ../src/textWindow.py:37
+msgid "Network configuration"
+msgstr "सञ्जाल कन्फिगरेसन"
+
+#: ../src/textWindow.py:38
+msgid "Printer configuration"
+msgstr "मुद्रक कन्फिगरेसन"
+
+#: ../src/textWindow.py:39
+msgid "System services"
+msgstr "प्रणाली सेवा"
+
+#: ../src/textWindow.py:40
+msgid "Timezone configuration"
+msgstr "टाइमजोन कन्फिगरेसन"
+
+#: ../src/textWindow.py:42
+msgid "Run Tool"
+msgstr "चालू गर्ने उपकरण"
+
+#: ../src/textWindow.py:44
+msgid "Select the item that you wish to modify "
+msgstr "तपाईँले परिमार्जन गर्न चाहेको सामाग्री चयन गर्नुहोस् "
+
+#: ../src/textWindow.py:52
+msgid "Setup Agent"
+msgstr "सेटअप अभिकर्ता"
+
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
+msgid "Additional CDs"
+msgstr "थप सीडी"
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr "कृपया तेस्रो पक्षको प्लगइन र अनुप्रयोग स्थापनाका लागि अनुमति दिन \"रेड ह्याट इन्टरप्राइज लिनक्स एक्स्ट्रा\" लेबल दिइएको डिस्क घुसाउनुहोस् ।  यो समयमा तपाईँले थप सफ्टवेयर स्थापना गर्न मिसिलिकरण डिस्क, वा अन्य रेड ह्याटद्वारा उपलब्ध डिस्क पनि घुसाउन सक्नुहुन्छ ।"
+
+#: ../src/modules/additional_cds.py:71
+msgid "Please insert any additional software install cds at this time."
+msgstr "कृपया यस समयमा कुनै पनि थप अतिरिक्त सफ्टवेयर स्थापना सीडी घुसाउनुहोस् ।"
+
+#. if 1:
+#: ../src/modules/additional_cds.py:77
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"इन्टेल Itanium2 "
+"संरचनामा 32-बिट अनुप्रयोगको रनटाइम समर्थन सक्षम पार्न तपाईँले अहिले एक्स्ट्रा डिस्कबाट इन्टेल कार्यान्वयन तह प्याकेज स्थापना गर्नुपर्दछ ।"
+
+#: ../src/modules/additional_cds.py:96
+msgid "Install..."
+msgstr "स्थापना गर्नुहोस्..."
+
+#: ../src/modules/additional_cds.py:129
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr "CD-ROM पत्ता लागेको छैन ।  ड्राइभमा CD-ROM घुसाउनुहोस् र जारी राख्न \"ठीक छ\" बटन क्लिक गर्नुहोस् ।"
+
+#: ../src/modules/additional_cds.py:163
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "स्वचालित कार्यक्रम सीडीमा फेला पार्न सकिँदैन । जारी राख्न \"ठीक छ\" बटन क्लिक गर्नुहोस् ।"
+
+#: ../src/modules/create_user.py:39
+msgid "Create User"
+msgstr "प्रयोगकर्ता सिर्जना गर्नुहोस्"
+
+#: ../src/modules/create_user.py:66
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr "तपाईँले आफ्नो प्रणालीको नियमित (अप्रशासकिय) प्रयोगका लागि 'प्रयोगकर्ता नाम' सिर्जना गरेको सिफारिस गरिन्छ । प्रणाली 'प्रयोगकर्ता नाम,' सिर्जना गर्न कृपया तल अनुरोध गरिएका सूचना उपलब्ध गर्नुहोस् ।"
+
+#: ../src/modules/create_user.py:76
+msgid "_Username:"
+msgstr "प्रयोगकर्ता नाम:"
+
+#: ../src/modules/create_user.py:83
+msgid "Full Nam_e:"
+msgstr "पूरा नाम:"
+
+#: ../src/modules/create_user.py:90
+msgid "_Password:"
+msgstr "पासवर्ड:"
+
+#: ../src/modules/create_user.py:97
+msgid "Confir_m Password:"
+msgstr "पासवर्ड यकीन गर्नुहोस्:"
+
+#: ../src/modules/create_user.py:113
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr "तपाईँलाई केर्बेरोस वा NIS जस्ता सञ्जाल प्रमाणीकरण प्रयोग गर्नुपर्ने भएमा, कृपया 'सञ्जाल लगइन बटन प्रयोग गर्नुहोस्' बटनमा क्लिक गर्नुहोस् ।"
+
+#: ../src/modules/create_user.py:123
+msgid "Use Network _Login..."
+msgstr "सञ्जाल लगइन प्रयोग गर्नुहोस्..."
+
+#: ../src/modules/create_user.py:151
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr "एउटा व्यक्तिगत प्रयोगकर्ता खाता सिर्जना गर्न जोडदारका साथ सिफारिस गरिन्छ ।  तपाईँले खाता बिना नै निरन्तरता दिएमा, तपाईँ मूल खातामा मात्र लग गर्न सक्नुहुन्छ, जुन प्रशासकका लागि मात्र आरक्षित हुन्छ ।"
+
+#: ../src/modules/create_user.py:159
+msgid "_Continue"
+msgstr "जारी राख्नुहोस्"
+
+#: ../src/modules/create_user.py:160
+msgid "Create _account"
+msgstr "खाता सिर्जना गर्नुहोस्"
+
+#: ../src/modules/create_user.py:179
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "पासवर्ड मिलेन ।  कृपया पासवर्ड फेरि प्रविष्ट गर्नुहोस् ।"
+
+#: ../src/modules/create_user.py:190
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "पासवर्ड अति छोटो छ ।  कृपया कम्तिमा ६ क्यारेक्टर प्रयोग गर्नुहोस् ।"
+
+#: ../src/modules/create_user.py:201
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr "प्रयोगकर्ता नाम '%s' आरक्षित प्रणाली खाता हो ।  कृपया अर्को प्रयोगकर्ता नाम निर्दिष्ट गर्नुहोस् ।"
+
+#: ../src/modules/create_user.py:219
+#, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
+msgstr "प्रयोगकर्ता नाम '%s' का लागि गृह डाइरेक्टरी पहिले नै अवस्थित छ ।  कृपया अर्को प्रयोगकर्ता नाम निर्दिष्ट गर्नुहोस् ।"
+
+#: ../src/modules/date.py:46
+msgid "Date and Time"
+msgstr "मिति र समय"
+
+#: ../src/modules/date.py:48
+msgid "Please set the date and time for the system."
+msgstr "कृपया प्रणालीका लागि मिति र समय सेट गर्नुहोस् ।"
+
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
+msgid "License Information"
+msgstr "इजाजतपत्र सूचना"
+
+#: ../src/modules/eula.py:59
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"फेडोरा स्थापना गर्नुभएकोमा तपाईँलाई धन्यवाद ।  फेडोरा आफ्नो इजाजतपत्र प्राप्त सफ्टवेयर प्याकेजहरूको सङ्ग्रह हो ।  यो सङ्ग्रह GNU साधारण सार्वजनिक इजाजतपत्र संस्करण 2 मा उपलब्ध हुन्छ ।  यो सङ्केतलाई प्रयोग गर्न, प्रतिलिपि गर्न, वा परिमार्जन गर्न कुनै अवरोध छैन ।  तैपनि, मैलिक वा परिमार्जित रूपमा, यस सङ्केतको पुन: वितरण गर्न लागू गर्नुपर्ने सीमा र शर्तहरू छन् ।  अन्य कुरा, ती सीमा/शर्तले पुन: वितरण, ट्रडमार्क, र निर्यात नियन्त्रणको इजाजतपत्रसँग सम्बन्धित हुन्छन् ।\n"
+"\n"
+"यदि तपाईँले ती शर्त के के छन् जान्न चाहेमा, कृपया"
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA अवलोकन गर्नुहोस् ।"
+
+#: ../src/modules/eula.py:70
+msgid "Understood, please proceed."
+msgstr "बुझ्नुभयो, कृपया अगाडि जानुहोस् ।"
+
+#: ../src/modules/networking.py:43
+msgid "Network Setup"
+msgstr "सञ्जाल सेटअप"
+
+#: ../src/modules/networking.py:69
+msgid "The following network devices have been detected on the system:"
+msgstr "प्रणालीमा निम्न सञ्जाल यन्त्र फेला पारिएकोछ:"
+
+#: ../src/modules/networking.py:88
+msgid "Network Device"
+msgstr "सञ्जाल यन्त्र"
+
+#: ../src/modules/networking.py:90
+msgid "Boot protocol"
+msgstr "प्रोटोकल बुट गर्नुहोस्"
+
+#: ../src/modules/networking.py:96
+msgid "_Change Network Configuration..."
+msgstr "सञ्जाल कन्फिगरेसन परिवर्तन गर्नुहोस्..."
+
+#: ../src/modules/networking.py:152
+msgid "static"
+msgstr "स्थीर"
+
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
+msgid "Sound Card"
+msgstr "ध्वनि कार्ड"
+
+#: ../src/modules/soundcard_gui.py:45
+msgid "An audio device has been detected in your computer."
+msgstr "तपाईँको कम्प्युटरमा एउटा अडियो यन्त्र फेला पारिएकोछ ।"
+
+#: ../src/modules/soundcard_gui.py:66
+msgid ""
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
+msgstr "नमूना ध्वनि सुन्नका लागि \"प्ले\" बटन क्लिक गर्नुहोस् ।  तपाईँले तीनवटा ध्वनिको श्रृङ्खला सुन्नुपर्दछ ।  पहिलो ध्वनि दायाँ च्यानलमा, दोस्रो बायाँ च्यानलमा र तेस्रो ध्वनि बीचमा हुन्छ ।"
+
+#: ../src/modules/timezone.py:46
+msgid "Timezone"
+msgstr "टाइमजोन"
+
+#: ../src/modules/timezone.py:49
+msgid "Please set the timezone for the system."
+msgstr "कृपया प्रणालीका लागि टाइमजोन सेट गर्नुहोस् ।"
+
+#: ../src/modules/welcome.py:34
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue."
+msgstr "तपाईँको प्रणाली प्रयोगका लागि तयार हुनुभन्दा पहिला गर्नुपर्ने केही अरू चरणहरू छन् ।  अब सेटअप अभिकर्ताले तपाईलाई केही आधारभूत कन्फिगरेसनबाट मार्गदर्शन गर्दछ ।  कृपया जारी राख्न तलको दायाँ कुनाको \"अगाडि\" बटन क्लिक गर्नुहोस् ।"
+
