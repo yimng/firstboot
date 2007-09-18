@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.36
+Version: 1.4.37
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/FirstBoot
 License: GPLv2+
@@ -98,6 +98,9 @@ fi
 
 
 %changelog
+* Tue Sep 18 2007 Chris Lumens <clumens@redhat.com> 1.4.37-1
+- Remove sound card module (#294101).
+
 * Thu Aug 09 2007 Chris Lumens <clumens@redhat.com> 1.4.36-1
 - Remove unused images (#250354).
 - Require libuser-python instead of libuser (#251356).
