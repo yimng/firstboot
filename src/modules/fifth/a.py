@@ -31,7 +31,7 @@ class moduleClass(Module):
         self.title = "Module A"
 
     def apply(self, interface, testing=False):
-        pass
+        return RESULT_SUCCESS
 
     def createScreen(self):
         self.vbox = gtk.VBox()

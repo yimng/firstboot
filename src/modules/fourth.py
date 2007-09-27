@@ -32,7 +32,7 @@ class moduleClass(Module):
         self.title = "Fourth Module"
 
     def apply(self, interface, testing=False):
-        pass
+        return RESULT_SUCCESS
 
     def createScreen(self):
         self.vbox = gtk.VBox()
