@@ -24,6 +24,12 @@ from constants import *
 from moduleset import *
 from rhpl.translate import _
 
+class Control:
+    def __init__(self):
+        self.currentPage = 0
+        self.history = []
+        self.moduleList = []
+
 class Interface:
     def __init__(self, autoscreenshot=False, moduleList=[], testing=False,
                  themeDir=None):
@@ -43,12 +49,14 @@ class Interface:
         """
 
         self._screenshotDir = "/root/firstboot-screenshots"
-        self._currentPage = 0
-        self._history = []
         self._screenshotIndex = 0
 
-        # Stuff for making ModuleSets work
-        self._currentStack = []
+        # This is needed for ModuleSet to work.  We maintain a stack of control
+        # states, creating a new state for navigation when we enter into a
+        # ModuleSet, then popping it off when we leave.
+        self._controlStack = [Control()]
+        self._control = self._controlStack[0]
+        self._control.moduleList = moduleList
 
         self._x_size = gtk.gdk.screen_width()
         self._y_size = gtk.gdk.screen_height()
@@ -59,13 +67,25 @@ class Interface:
         self.themeDir = themeDir
 
     def _backClicked(self, *args):
-        try:
-            self._currentPage = self._history.pop()
-        except IndexError:
-            logging.error("Attempted to go back, but history is empty.")
-            raise SystemError, "Attempted to go back, but hitsory is empty."
+        # If there's nowhere to go back to, we're either at the first page in
+        # the module set or something went wrong (Back is enabled on the very
+        # first page).  In the former case, revert back to the enclosing
+        # control state for what page to display next.
+        if len(self._control.history) == 0:
+            if len(self._controlStack) == 1:
+                logging.error("Attempted to go back, but history is empty.")
+                return
+            else:
+                self._controlStack.pop()
+                self._control = self._controlStack[-1]
 
-        self._setPointer(self._currentPage)
+        # Adjust everything to go to the previous page in the history.  But
+        # don't set the sidebar pointer if we are in a ModuleSet.
+        self._control.currentPage = self._control.history.pop()
+
+        if len(self._controlStack) == 1:
+            self._setPointer(self._control.currentPage)
+
         self._setBackSensitivity()
         self.displayModule()
 
@@ -100,9 +120,12 @@ class Interface:
             self._displayException()
 
     def _setBackSensitivity(self):
-        self.backButton.set_sensitive(self._currentPage != 0)
+        self.backButton.set_sensitive(not(self._control.currentPage == 0 and len(self._controlStack) == 1))
 
     def _setPointer(self, number):
+        # The sidebar pointer only works in terms of the top-level module list
+        # as we don't display anything on the side for a ModuleSet and making
+        # the pointer move around then would be confusing.
         for i in range(len(self.moduleList)):
             (alignment, label) = self.sidebar.get_children()[i].get_children()
             pix = alignment.get_children()[0]
@@ -125,8 +148,8 @@ class Interface:
            the history, and move to the next page.  It is not safe to call this
            method from within firstboot modules.
         """
-        module = self.moduleList[self._currentPage]
-        self._history.append(self._currentPage)
+        module = self._control.moduleList[self._control.currentPage]
+        self._control.history.append(self._control.currentPage)
 
         # This could fail, in which case the exception will propagate up to the
         # interface which will know the proper way to handle it.
@@ -134,16 +157,22 @@ class Interface:
 
         # If something went wrong in the module, don't advance.
         if result == RESULT_FAILURE:
-            self._history.pop()
+            self._control.history.pop()
             return
 
         # If the apply action from the current page jumped us to another page,
         # don't try to jump again.
         if result != RESULT_JUMP:
-            self.moveToPage(pageNum=self._currentPage+1)
+            self.moveToPage(pageNum=self._control.currentPage+1)
 
-            if self._currentPage == len(self.moduleList):
-                self.destroy()
+            # Is this the last page, or are we actually in a ModuleSet and
+            # there are possibly other pages to go to next?
+            if self._control.currentPage == len(self._control.moduleList):
+                if len(self._controlStack) == 1:
+                    self.destroy()
+                else:
+                    self._controlStack.pop()
+                    self._control = self._controlStack[-1]
 
     def createMainWindow(self):
         """Create and initialize the main window.  This includes switching to
@@ -283,7 +312,7 @@ class Interface:
         # Initialize the module's UI (sync up with the state of some file on
         # disk, or whatever) and then pack it into the right side of the
         # screen for display.
-        currentModule = self.moduleList[self._currentPage]
+        currentModule = self._control.moduleList[self._control.currentPage]
 
         currentModule.initializeUI()
         self.rightBox.pack_start(currentModule.vbox)
@@ -304,7 +333,7 @@ class Interface:
 
             while True:
                 try:
-                    if self.moduleList[pageNum].title == moduleTitle:
+                    if self._control.moduleList[pageNum].title == moduleTitle:
                         break
 
                     pageNum += 1
@@ -312,14 +341,33 @@ class Interface:
                     logging.error("No module exists with the title %s" % moduleTitle)
                     raise SystemError, "No module exists with the title %s" % moduleTitle
 
-        self._currentPage = pageNum
-        self._setBackSensitivity()
+        if pageNum == len(self._control.moduleList):
+            if len(self._controlStack) > 1:
+                self._controlStack.pop()
+                self._control = self._controlStack[-1]
+                self.moveToPage(pageNum=self._control.currentPage+1)
+                return
+            else:
+                self._control.currentPage += 1
+                return
 
-        if self._currentPage == len(self.moduleList):
-            return
+        # Set this regardless so we know where we are on the way back out of
+        # a ModuleSet.
+        self._control.currentPage = pageNum
+
+        if isinstance(self._control.moduleList[pageNum], ModuleSet):
+            newControl = Control()
+            newControl.currentPage = 0
+            newControl.history = []
+            newControl.moduleList = self._control.moduleList[pageNum].moduleList
+
+            self._controlStack.append(newControl)
+            self._control = newControl
         else:
-            self._setPointer(self._currentPage)
-            self.displayModule()
+            self._setBackSensitivity()
+
+        self._setPointer(self._controlStack[0].currentPage)
+        self.displayModule()
 
     def run(self):
         """Given an interface that has had all its UI components loaded and
