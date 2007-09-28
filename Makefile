@@ -20,8 +20,8 @@ check:
 
 clean:
 	-rm src/*.pyc src/modules/*.pyc
-	$(MAKE) -C po clean
 	-rm ${PKGNAME}-$(VERSION).tar.bz2
+	$(MAKE) -C po clean
 
 install: all
 	mkdir -p $(INSTROOT)/usr/sbin
@@ -53,6 +53,7 @@ local:
 	@rm -rf ${PKGNAME}-$(VERSION).tar.bz2
 	@rm -rf /tmp/${PKGNAME}-$(VERSION) /tmp/${PKGNAME}
 	@dir=$$PWD; cp -a $$dir /tmp/${PKGNAME}-$(VERSION)
+	@rm -rf /tmp/${PKGNAME}-$(VERSION)/.git
 	@dir=$$PWD; cd /tmp; tar --bzip2 -cSpf $$dir/${PKGNAME}-$(VERSION).tar.bz2 ${PKGNAME}-$(VERSION)
 	@rm -rf /tmp/${PKGNAME}-$(VERSION)
 	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.gz"
