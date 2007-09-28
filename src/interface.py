@@ -79,15 +79,8 @@ class Interface:
                 self._controlStack.pop()
                 self._control = self._controlStack[-1]
 
-        # Adjust everything to go to the previous page in the history.  But
-        # don't set the sidebar pointer if we are in a ModuleSet.
         self._control.currentPage = self._control.history.pop()
-
-        if len(self._controlStack) == 1:
-            self._setPointer(self._control.currentPage)
-
-        self._setBackSensitivity()
-        self.displayModule()
+        self.moveToPage(pageNum=self._control.currentPage)
 
     def _displayException(self):
         import exceptionWindow, traceback
@@ -149,7 +142,6 @@ class Interface:
            method from within firstboot modules.
         """
         module = self._control.moduleList[self._control.currentPage]
-        self._control.history.append(self._control.currentPage)
 
         # This could fail, in which case the exception will propagate up to the
         # interface which will know the proper way to handle it.
@@ -157,7 +149,6 @@ class Interface:
 
         # If something went wrong in the module, don't advance.
         if result == RESULT_FAILURE:
-            self._control.history.pop()
             return
 
         # If the apply action from the current page jumped us to another page,
@@ -165,14 +156,10 @@ class Interface:
         if result != RESULT_JUMP:
             self.moveToPage(pageNum=self._control.currentPage+1)
 
-            # Is this the last page, or are we actually in a ModuleSet and
-            # there are possibly other pages to go to next?
-            if self._control.currentPage == len(self._control.moduleList):
-                if len(self._controlStack) == 1:
-                    self.destroy()
-                else:
-                    self._controlStack.pop()
-                    self._control = self._controlStack[-1]
+            # if we are on the last page overall (not just the last page of a
+            # ModuleSet), it's time to killthe interface.
+            if self._control.currentPage == len(self._control.moduleList) and len(self._controlStack) == 1:
+                self.destroy()
 
     def createMainWindow(self):
         """Create and initialize the main window.  This includes switching to
@@ -350,6 +337,12 @@ class Interface:
             else:
                 self._control.currentPage += 1
                 return
+
+        # Only add the current page to the history if we are moving forward.
+        # Adding it when we're going backwards traps us at the first page of
+        # a ModuleSet.
+        if pageNum > self._control.currentPage:
+            self._control.history.append(self._control.currentPage)
 
         # Set this regardless so we know where we are on the way back out of
         # a ModuleSet.

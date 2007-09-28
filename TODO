@@ -1,8 +1,18 @@
-- test RHGB frontend
+test
+====
+- RHGB frontend
+- busted modules should still be skipped
+
+add
+===
 - think about text frontend
-- make ModuleSet work
 - add code for loading other interfaces (?)
 - be able to log to files, etc.
 - still need to write out the /etc/sysconfig/firstboot file
-- test to make sure busted modules are still skipped
-- fix adding a ModuleSet to the history
+- packaging, Makefile, init scripts, etc.
+- i18n
+- real modules
+
+fix
+===
+- ModuleSet history should probably be stored in the class
