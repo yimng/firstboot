@@ -82,16 +82,6 @@ class Interface:
         self._control.currentPage = self._control.history.pop()
         self.moveToPage(pageNum=self._control.currentPage)
 
-    def _displayException(self):
-        import exceptionWindow, traceback
-
-        (ty, value, tb) = sys.exc_info()
-        lst = traceback.format_exception(ty, value, tb)
-        text = string.joinfields(lst, "")
-
-        exceptionWindow.ExceptionWindow(text)
-        self.destroy()
-
     def _keyRelease(self, window, event):
         if event.keyval == gtk.keysyms.F12:
             self.nextButton.clicked()
@@ -110,7 +100,7 @@ class Interface:
         try:
             self.advance()
         except:
-            self._displayException()
+            self.displayException()
 
     def _setBackSensitivity(self):
         self.backButton.set_sensitive(not(self._control.currentPage == 0 and len(self._controlStack) == 1))
@@ -159,7 +149,27 @@ class Interface:
             # if we are on the last page overall (not just the last page of a
             # ModuleSet), it's time to killthe interface.
             if self._control.currentPage == len(self._control.moduleList) and len(self._controlStack) == 1:
+                self.checkReboot()
                 self.destroy()
+
+    def checkReboot(self):
+        needReboot = False
+
+        for module in self.moduleList:
+            if module.needsReboot():
+                needReboot = True
+                break
+
+        if not needReboot or self.testing:
+            return
+
+        dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
+                                _("The system must now reboot for some of your selections to take effect."))
+        dlg.set_position(gtk.WIN_POS_CENTER)
+        dlg.show_all()
+        dlg.run()
+        dlg.destroy()
+        os.system("/sbin/reboot")
 
     def createMainWindow(self):
         """Create and initialize the main window.  This includes switching to
@@ -250,7 +260,7 @@ class Interface:
                 module.renderModule(self)
             except:
                 self.moduleList.remove(module)
-                self._displayException()
+                self.displayException()
                 continue
 
     def createSidebar(self):
@@ -285,6 +295,16 @@ class Interface:
     def destroy(self, *args):
         """Destroy the UI, but do not take any other action to quit firstboot."""
         gtk.main_quit()
+
+    def displayException(self):
+        import exceptionWindow, traceback
+
+        (ty, value, tb) = sys.exc_info()
+        lst = traceback.format_exception(ty, value, tb)
+        text = string.joinfields(lst, "")
+
+        exceptionWindow.ExceptionWindow(text)
+        self.destroy()
 
     def displayModule(self):
         """Display the current module on the main portion of the screen.  This
