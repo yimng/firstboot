@@ -185,15 +185,6 @@ class childWindow:
 
         elif not userGroupCheck.isPasswordOk(password, self.passwordEntry):
             return None
-        
-        elif len (password) < 6:
-            self.showErrorMessage(_("The password is too short.  Please use at "
-                                    "least 6 characters."))
-
-            self.passwordEntry.set_text("")
-            self.confirmEntry.set_text("")
-            self.passwordEntry.grab_focus()                
-            return None
 
         user = self.admin.lookupUserByName(username)
 
