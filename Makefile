@@ -19,7 +19,7 @@ check:
 	PYTHONPATH=. pychecker $(PYCHECKEROPTS) firstboot/*.py firstboot/modules/*.py
 
 clean:
-	-rm firstboot/*.pyc firstboot/modules/*.pyc
+	-rm src/*.pyc src/modules/*.pyc
 	$(MAKE) -C po clean
 	-rm ${PKGNAME}-$(VERSION).tar.bz2
 
