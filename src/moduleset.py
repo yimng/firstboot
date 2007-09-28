@@ -120,6 +120,17 @@ class ModuleSet:
         """
         return False
 
+    def needsReboot(self):
+        """A convenience method for running needsReboot on all the modules
+           contained within this set.  Subclasses should not need to override
+           this method.
+        """
+        for module in self.moduleList:
+            if module.needsReboot():
+                return True
+
+        return False
+
     def renderModule(self, interface):
         """A convenience method for running renderModule on all the modules
            contained within this set.  Subclasses should not need to override
