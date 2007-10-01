@@ -129,6 +129,10 @@ def loadModules(modulePath, mode=MODE_REGULAR):
         if isinstance(obj, ModuleSet):
             logging.debug("Module %s is a ModuleSet, adding" % module)
             obj.loadModules(mode=mode)
+
+            if len(obj.moduleList) == 0:
+                logging.info("skipping module set %s because it has no modules" % module)
+                continue
         else:
             logging.debug("Successfully loaded module %s, adding" % module)
 
