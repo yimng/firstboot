@@ -20,7 +20,9 @@
 import gtk
 import logging, os, sys, string
 
+from config import *
 from constants import *
+from functions import *
 from moduleset import *
 from rhpl.translate import _
 
@@ -31,8 +33,7 @@ class Control:
         self.moduleList = []
 
 class Interface:
-    def __init__(self, autoscreenshot=False, moduleList=[], testing=False,
-                 themeDir=None):
+    def __init__(self, autoscreenshot=False, moduleList=[], testing=False):
         """Create a new Interface instance.  Instance attributes:
 
            autoscreenshot -- If true, a screenshot will be taken after every
@@ -42,10 +43,6 @@ class Interface:
                              make the interface work.
            testing        -- Is firstboot running under testing mode, where no
                              changes will be made to the disk?
-           themeDir       -- The directory containing the set of artwork to be
-                             used in firstboot.  This makes branding firstboot
-                             much easier as it does not require extensive code
-                             changes.
         """
 
         self._screenshotDir = "/root/firstboot-screenshots"
@@ -64,7 +61,6 @@ class Interface:
         self.autoscreenshot = autoscreenshot
         self.moduleList = moduleList
         self.testing = testing
-        self.themeDir = themeDir
 
     def _backClicked(self, *args):
         # If there's nowhere to go back to, we're either at the first page in
@@ -90,9 +86,6 @@ class Interface:
         elif event.keyval == gtk.keysyms.Print and event.state & gtk.gdk.SHIFT_MASK:
             self.takeScreenshot()
 
-    def _loadPixbuf(self, fn):
-        return gtk.gdk.pixbuf_new_from_file(fn)
-
     def _nextClicked(self, *args):
         if self.autoscreenshot:
             self.screenshot()
@@ -114,9 +107,9 @@ class Interface:
             pix = alignment.get_children()[0]
 
             if i == number:
-                pix.set_from_file("%s/%s" % (self.themeDir, "pointer-white.png"))
+                pix.set_from_file("%s/%s" % (config.themeDir, "pointer-white.png"))
             else:
-                pix.set_from_file("%s/%s" % (self.themeDir, "pointer-blank.png"))
+                pix.set_from_file("%s/%s" % (config.themeDir, "pointer-blank.png"))
 
     def _sidebarExposed(self, eb, event):
         pixbuf = self.sidebarBg.scale_simple(int(self._y_size * self.aspectRatio),
@@ -195,7 +188,7 @@ class Interface:
 
         # Load this background now so we can figure out how big to make
         # the left side.
-        self.sidebarBg = self._loadPixbuf("%s/%s" % (self.themeDir, "firstboot-left.png"))
+        self.sidebarBg = loadPixbuf("%s/%s" % (config.themeDir, "firstboot-left.png"))
         self.aspectRatio = (1.0 * self.sidebarBg.get_width()) / (1.0 * self.sidebarBg.get_height())
 
         # leftEventBox exists only so we have somewhere to paint an image.
@@ -271,10 +264,6 @@ class Interface:
         """Add the sidebarTitle from every module to the sidebar."""
         for module in self.moduleList:
             hbox = gtk.HBox(False, 5)
-            pix = self._loadPixbuf("%s/%s" % (self.themeDir, "pointer-blank.png"))
-
-            pixWidget = gtk.Image()
-            pixWidget.set_from_pixbuf(pix)
 
             label = gtk.Label("")
             label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % _(module.sidebarTitle))
@@ -287,7 +276,7 @@ class Interface:
 
             # Make sure the arrow is at the top of any wrapped line.
             alignment = gtk.Alignment(yalign=0.2)
-            alignment.add(pixWidget)
+            alignment.add(loadToImage("%s/%s" % (config.themeDir, "pointer-blank.png")))
 
             hbox.pack_start(alignment, False)
             hbox.pack_end(label, True)

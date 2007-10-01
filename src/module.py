@@ -17,7 +17,9 @@
 # subject to the GNU General Public License and may only be used or replicated
 # with the express permission of Red Hat, Inc. 
 #
+from config import *
 from constants import *
+from functions import *
 import gtk
 from rhpl.translate import _
 
@@ -158,7 +160,7 @@ class Module:
         titleBox = gtk.HBox()
 
         if self.icon:
-            titleBox.pack_start(interface._loadPixbuf("%s/%s" % (modulePath, self.icon)), False)
+            titleBox.pack_start(loadToImage("%s/%s" % (config.themeDir, self.icon)), False)
 
         titleBox.pack_start(label, True)
         titleBox.set_spacing(8)
