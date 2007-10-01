@@ -147,7 +147,7 @@ class Interface:
             self.moveToPage(pageNum=self._control.currentPage+1)
 
             # if we are on the last page overall (not just the last page of a
-            # ModuleSet), it's time to killthe interface.
+            # ModuleSet), it's time to kill the interface.
             if self._control.currentPage == len(self._control.moduleList) and len(self._controlStack) == 1:
                 self.checkReboot()
                 self.destroy()
@@ -335,6 +335,8 @@ class Interface:
             logging.error("moveToPage must be given a module title or page number")
             raise SystemError, "moveToPage must be given a module title or page number"
 
+        # If we were given a moduleTitle, look up the corresponding pageNum.
+        # Everything else in firstboot is indexed by number.
         if moduleTitle is not None:
             pageNum = 0
 
@@ -348,10 +350,24 @@ class Interface:
                     logging.error("No module exists with the title %s" % moduleTitle)
                     raise SystemError, "No module exists with the title %s" % moduleTitle
 
+        # If we're at the end of a ModuleSet's module list, pop off the control
+        # structure and set up to move to the next page after the set.  If
+        # we're already at the top level, it's easy.
         if pageNum == len(self._control.moduleList):
             if len(self._controlStack) > 1:
-                self._controlStack.pop()
+                oldFrame = self._controlStack.pop()
                 self._control = self._controlStack[-1]
+
+                # Put the ModuleSet's history into the object so we can keep
+                # the history should we go back into the set later on.  This
+                # is kind of a hack.
+                oldPage = self._control.moduleList[self._control.currentPage]
+                if isinstance(oldPage, ModuleSet):
+                    # Add the last page in the ModuleSet, since it will
+                    # otherwise be forgotten.  We don't append to the history
+                    # until later in this method.
+                    oldPage._history = oldFrame.history + [oldFrame.currentPage]
+
                 self.moveToPage(pageNum=self._control.currentPage+1)
                 return
             else:
@@ -371,11 +387,22 @@ class Interface:
         if isinstance(self._control.moduleList[pageNum], ModuleSet):
             newControl = Control()
             newControl.currentPage = 0
-            newControl.history = []
             newControl.moduleList = self._control.moduleList[pageNum].moduleList
+
+            # If we are stepping back into a ModuleSet from somewhere after it, try
+            # to load any saved history.  This preserves the UI flow that you'd
+            # expect.
+            if hasattr(self._control.moduleList[pageNum], "_history"):
+                newControl.history = self._control.moduleList[pageNum]._history
+            else:
+                newControl.history = []
 
             self._controlStack.append(newControl)
             self._control = newControl
+
+            if len(newControl.history) > 0:
+                self.moveToPage(pageNum=self._control.history.pop())
+                return
         else:
             self._setBackSensitivity()
 
