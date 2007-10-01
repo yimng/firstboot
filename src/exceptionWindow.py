@@ -31,7 +31,7 @@ translate.textdomain ("firstboot")
 class ExceptionWindow:
     def __init__ (self, traceback, module=None):
         win = gtk.Dialog()
-        win.set_size_request(400, 300)
+        win.set_size_request(500, 350)
 
         self.okButton = win.add_button('gtk-ok', 0)
         self.okButton.connect("clicked", self.destroy)
@@ -46,37 +46,37 @@ class ExceptionWindow:
         text_scroll.add(text_view)
 
         if module is not None:
-            label = gtk.Label(_("An error has occurred in the %s module." % name))
-            explanation = (_("Since there is a problem with the %s module,\n"
-                             "firstboot will not load this module and will\n"
-                             "attempt to run the remaining modules." % name))
+            label = gtk.Label(_("An error has occurred in the %s module.") % name)
+            explanation = _("Since there is a problem with the %s module,\n"
+                            "firstboot will not load this module and will\n"
+                            "attempt to run the remaining modules.") % name
         else:
             label = gtk.Label(_("An error has occurred in firstboot."))
-            explanation = (_("Since there is a problem, firstboot will exit."))
+            explanation = _("Since there is a problem, firstboot will exit.")
 
         label.set_alignment(0.0, 0.5)
 
         path = "/root/firstboot.%s" % time.time()
 
-        bugzilla = (_("Please file a bug against 'firstboot' in the Red Hat \n"
-                      "bug tracking system at http://www.redhat.com/bugzilla. \n"
-                      "A copy of the debug output has been saved to %s \n"
-                      "Be sure to attach that file to the bug report. \n" % path))
+        try:
+            fd = open(path, "w")
+            fd.write(traceback)
+            fd.close()
+            outputFile = _("A copy of the debug output has been saved to %s\n"
+                           "Be sure to attach that file to the bug report.\n") % path
+        except:
+            outputFile = ""
 
-        text_buf.set_text("%s\n\n%s\n\n%s" % (traceback, explanation, bugzilla))
+        bugzilla = _("Please file a bug against 'firstboot' in the Red Hat\n"
+                     "bug tracking system at http://www.redhat.com/bugzilla.\n")
+
+        text_buf.set_text("%s\n\n%s\n\n%s%s" % (traceback, explanation, bugzilla, outputFile))
         text_view.set_buffer(text_buf)
 
         win.vbox.pack_start(label, False)
         win.vbox.pack_start(text_scroll, True)
 
         logging.critical(traceback)
-
-        try:
-            fd = open(path, "w")
-            fd.write(traceback)
-            fd.close()
-        except:
-            pass
 
         win.show_all()
         win.run()
