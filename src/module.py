@@ -38,9 +38,10 @@ class Module:
            is not required.  The module loader will check that all required
            attributes are present and defined.  Instance attributes;
 
-           icon         -- The full path to an icon that should appear next
-                           to the module's title when it is displayed on
-                           the main section of the screen.
+           icon         -- The base filename of the icon that should appear
+                           next to the module's title when it is displayed on
+                           the main section of the screen.  This file must
+                           be located in the theme directory.
            mode         -- The mode of firstboot operation that this module
                            should appear in.  MODE_REGULAR means the module
                            will appear only in the regular running mode.
