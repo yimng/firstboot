@@ -342,7 +342,7 @@ class Interface:
         # If we were given a moduleTitle, look up the corresponding pageNum.
         # Everything else in firstboot is indexed by number.
         if moduleTitle is not None:
-            pageNum = titleToPageNum(moduleTitle, self._control.moduleList)
+            pageNum = self.titleToPageNum(moduleTitle, self._control.moduleList)
 
         # If we're at the end of a ModuleSet's module list, pop off the control
         # structure and set up to move to the next page after the set.  If
@@ -371,7 +371,7 @@ class Interface:
         # Only add the current page to the history if we are moving forward.
         # Adding it when we're going backwards traps us at the first page of
         # a ModuleSet.
-        if pageNum > self._control.currentPage:
+        if pageNum > self._control.currentPage and not self._control.currentPage in self._control.history:
             self._control.history.append(self._control.currentPage)
 
         # Set this regardless so we know where we are on the way back out of
