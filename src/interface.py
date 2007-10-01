@@ -153,6 +153,10 @@ class Interface:
                 self.destroy()
 
     def checkReboot(self):
+        """Check to see if any module requires a reboot for changes to take
+           effect, displaying a dialog if so.  This method immediately reboots
+           the system.
+        """
         needReboot = False
 
         for module in self.moduleList:
@@ -338,17 +342,7 @@ class Interface:
         # If we were given a moduleTitle, look up the corresponding pageNum.
         # Everything else in firstboot is indexed by number.
         if moduleTitle is not None:
-            pageNum = 0
-
-            while True:
-                try:
-                    if self._control.moduleList[pageNum].title == moduleTitle:
-                        break
-
-                    pageNum += 1
-                except IndexError:
-                    logging.error("No module exists with the title %s" % moduleTitle)
-                    raise SystemError, "No module exists with the title %s" % moduleTitle
+            pageNum = titleToPageNum(moduleTitle, self._control.moduleList)
 
         # If we're at the end of a ModuleSet's module list, pop off the control
         # structure and set up to move to the next page after the set.  If
@@ -436,13 +430,38 @@ class Interface:
                                      gtk.gdk.colormap_get_system(),
                                      0, 0, 0, 0, self._x_size, self._y_size)
 
-        if screenshot:
-            while True:
-                sname = "screenshot-%04d.png" % self._screenshotIndex
-                if not os.access("%s/%s" % (self._screenshotDir, sname), os.R_OK):
+        if not screenshot:
+            return
+
+        while True:
+            sname = "screenshot-%04d.png" % self._screenshotIndex
+            if not os.access("%s/%s" % (self._screenshotDir, sname), os.R_OK):
+                break
+
+            self._screenshotIndex += 1
+
+        screenshot.save("%s/%s" % (self._screenshotDir, sname), "png")
+        self._screenshotIndex += 1
+
+    def titleToPageNum(self, moduleTitle, moduleList):
+        """Lookup the given title in the given module list.  Returns the page
+           number on success.  This only works on the given moduleList, so 
+           for a ModuleSet it would only find the page if it exists in the
+           set.
+        """
+        if moduleTitle is None:
+            return None
+
+        pageNum = 0
+
+        while True:
+            try:
+                if moduleList[pageNum].title == moduleTitle:
                     break
 
-                self._screenshotIndex += 1
+                pageNum += 1
+            except IndexError:
+                logging.error("No module exists with the title %s" % moduleTitle)
+                raise SystemError, "No module exists with the title %s" % moduleTitle
 
-            screenshot.save("%s/%s" % (self._screenshotDir, sname), "png")
-            self._screenshotIndex += 1
+        return pageNum
