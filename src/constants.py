@@ -24,4 +24,4 @@ RESULT_FAILURE = 0
 RESULT_SUCCESS = 1
 RESULT_JUMP = 2
 
-FIRSTBOOT_BASEDIR = "/usr/share/firstboot"
+BASEDIR = "/usr/share/firstboot/"
