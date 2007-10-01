@@ -298,7 +298,10 @@ class Interface:
 
     def destroy(self, *args):
         """Destroy the UI, but do not take any other action to quit firstboot."""
-        gtk.main_quit()
+        try:
+            gtk.main_quit()
+        except RuntimeError:
+           os._exit(1)
 
     def displayException(self):
         import exceptionWindow, traceback
