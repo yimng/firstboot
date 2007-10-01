@@ -19,6 +19,7 @@
 #
 from constants import *
 import gtk
+from rhpl.translate import _
 
 class Module:
     """The base class for all firstboot modules.  A firstboot module is a
@@ -152,7 +153,7 @@ class Module:
         # Create the large label that goes at the top of the right side.
         label = gtk.Label("")
         label.set_alignment(0.0, 0.5)
-        label.set_markup("<span foreground='#000000' size='30000' font_family='Helvetica'><b>%s</b></span>" % self.title)
+        label.set_markup("<span foreground='#000000' size='30000' font_family='Helvetica'><b>%s</b></span>" % _(self.title))
 
         titleBox = gtk.HBox()
 

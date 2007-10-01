@@ -277,7 +277,7 @@ class Interface:
             pixWidget.set_from_pixbuf(pix)
 
             label = gtk.Label("")
-            label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % module.sidebarTitle)
+            label.set_markup("<span foreground='#FFFFFF'><b>%s</b></span>" % _(module.sidebarTitle))
             label.set_alignment(0.0, 0.5)
 
             # Wrap the sidebar title if it's too long.
