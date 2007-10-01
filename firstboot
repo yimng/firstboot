@@ -63,13 +63,13 @@ if __name__ == "__main__":
     op.add_option("-d", "--debug", action="store_true", default=False)
     op.add_option("-g", "--forcegui", action="store_true", default=False)
     op.add_option("-l", "--loglevel", type="choice", choices=["debug", "info", "warning", "error", "critical"], default="error")
-    op.add_option("-m", "--modulePath", action="store", default=BASEDIR+"modules/")
+    op.add_option("-m", "--moduleDir", action="store", default=BASEDIR+"modules/")
     op.add_option("-r", "--reconfig", action="store_true", default=False)
     op.add_option("-t", "--test", action="store_true", default=False)
-    op.add_option("--theme", action="store", dest="themeDir", default=BASEDIR+"themes/default/")
+    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/default/")
     (opts, args) = op.parse_args()
 
-    config.modulePath = opts.modulePath
+    config.moduleDir = opts.moduleDir
     config.themeDir = opts.themeDir
 
     if opts.debug:
@@ -121,7 +121,7 @@ if __name__ == "__main__":
         logging.error("Could not start any firstboot frontend")
         raise RuntimeError, "Could not start any firstboot frontend"
 
-    moduleList = loadModules(config.modulePath, mode)
+    moduleList = loadModules(config.moduleDir, mode)
 
     if not moduleList:
         logging.error("No firstboot modules were found")

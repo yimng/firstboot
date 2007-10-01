@@ -60,10 +60,10 @@ def _insertSorted(list, obj):
     else:
         list.insert(i, obj)
 
-def loadModules(modulePath, mode=MODE_REGULAR):
-    # Make sure modulePath is in the system path so imputil works.
-    if not modulePath in sys.path:
-        sys.path.append(modulePath)
+def loadModules(moduleDir, mode=MODE_REGULAR):
+    # Make sure moduleDir is in the system path so imputil works.
+    if not moduleDir in sys.path:
+        sys.path.append(moduleDir)
 
     moduleList = []
 
@@ -73,7 +73,7 @@ def loadModules(modulePath, mode=MODE_REGULAR):
     _tmpDict = {}
 
     lst = map(lambda x: os.path.splitext(os.path.basename(x))[0],
-              glob.glob(modulePath + "/*.py"))
+              glob.glob(moduleDir + "/*.py"))
 
     for module in lst:
         # Attempt to load the found module.

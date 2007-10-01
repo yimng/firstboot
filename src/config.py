@@ -20,7 +20,7 @@
 #
 class Config:
     def __init__(self):
-        self.modulePath = None
+        self.moduleDir = None
         self.themeDir = None
 
 config = Config()
