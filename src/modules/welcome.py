@@ -29,8 +29,8 @@ class moduleClass(Module):
     def __init__(self):
         Module.__init__(self)
         self.priority = 1
-        self.sidebarTitle = "Welcome"
-        self.title = "Welcome"
+        self.sidebarTitle = N_("Welcome")
+        self.title = N_("Welcome")
         self.icon = "workstation.png"
 
     def apply(self, interface, testing=False):
