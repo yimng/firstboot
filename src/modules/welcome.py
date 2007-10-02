@@ -49,7 +49,7 @@ class moduleClass(Module):
         label.set_size_request(500, -1)
 
         self.vbox.pack_start(label, False, True)
-        self.vbox.pack_start(loadToImage(config.themeDir + "splash-small.png"), True, True, 5)
+        self.vbox.pack_start(loadToImage(config.themeDir + "/splash-small.png"), True, True, 5)
 
     def initializeUI(self):
         pass
