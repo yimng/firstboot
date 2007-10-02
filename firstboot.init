@@ -1,0 +1,90 @@
+#!/bin/bash
+## BEGIN INIT INFO
+# Provides: firstboot
+# Default-Start: 3 5
+# Default-Stop: 0 1 2 4 6
+# Required-Start:
+# Should-Start: $network
+# Short-Description: Starts the firstboot configuration program
+# Description: Firstboot runs the first time a machine is booted after
+#              installation.  It checks for the existance of an
+#              /etc/sysconfig/firstboot file.  If it doesn't exist, then
+#              the firstboot program needs to run.  If it finds the file,
+#              firstboot will not run.  If /etc/reconfigSys exists or if
+#              "reconfig" is provided in the kernel boot arguments,
+#              firstboot will run in reconfiguration mode.
+## END INIT INFO
+
+#
+# firstboot: Starts the firstboot druid if it hasn't been run before
+#
+# chkconfig: 35 99 95
+#
+# description: Firstboot is a druid style program that runs on the first \
+#              time a machine is booted after install.  It checks for \
+#              the existence of an /etc/sysconfig/firstboot file.  If \
+#              it doesn't exist, then the firstboot program needs to \
+#              run.  If it finds the file, firstboot will not run. \
+#              If /etc/reconfigSys exists or if "reconfig" is provided \
+#              in the kernel boot arguments, firstboot will run in \
+#              reconfiguration mode.
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+FILENAME=/etc/sysconfig/firstboot
+
+[ -z "$HOME" ] && export HOME=/
+
+case "$1" in
+    start)
+        args=""
+
+        # Firstboot has already run to completion once.  Don't run again.
+        if [ -f "$FILENAME" ] && ! grep -q "^RUN_FIRSTBOOT=YES" "$FILENAME"; then
+            exit 0
+        fi
+
+        if grep -i "reconfig" /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
+            args="--reconfig"
+        fi
+
+        # If X isn't running but the default runlevel is 5, start s-c-display
+        # to configure X.  After that, firstboot can run.
+        runlevel=$(set -- $(runlevel); eval "echo \$$#")
+
+        if grep -q "^id:5:initdefault:" /etc/inittab && [ "$runlevel" = "5" ]; then
+            . /etc/sysconfig/i18n
+
+            if [ ! -f /etc/X11/xorg.conf ] && [ ! -f /etc/X11/XF86Config ]; then
+                echo -n $"X is not configured.  Running system-config-display."
+                /usr/bin/system-config-display
+                echo -n $"X is now configured.  Starting firstboot."
+            fi
+        fi
+
+        /usr/sbin/firstboot $args
+        RETVAL=$?
+
+        # If firstboot succeeded, chkconfig it off so we don't see the message
+        # in rhgb every time about starting up firstboot.
+        if [ "$RETVAL" -eq 0 ]; then
+            action "" /bin/true
+            /sbin/chkconfig firstboot off
+        else
+            action "" /bin/false
+        fi
+
+        exit $RETVAL
+        ;;
+
+    stop)
+        exit 0
+        ;;
+
+    *)
+        echo $"Usage: $0 {start|stop}"
+        exit 3
+        ;;
+esac
