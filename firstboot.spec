@@ -1,6 +1,6 @@
 Summary: Initial system configuration utility
 Name: firstboot
-Version: 1.4.38
+Version: 1.4.39
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/FirstBoot
 License: GPLv2+
@@ -98,6 +98,9 @@ fi
 
 
 %changelog
+* Mon Oct 22 2007 Chris Lumens <clumens@redhat.com> 1.4.39-1
+- Remove obsolete Norwegian translation (#332111).
+
 * Wed Oct 10 2007 Chris Lumens <clumens@redhat.com> 1.4.38-1
 - Remove redundant password length check (#296651).
 - Rename sr@Latn.po to sr@latin.po (#312431).
