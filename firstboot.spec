@@ -11,12 +11,13 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPLv2+
 Group: System Environment/Base
 ExclusiveOS: Linux
-BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-Requires: metacity, pygtk2, rhpl, rhpxl >= 0.19
+Requires: metacity, pygtk2, rhpl
 Requires(post): chkconfig
 
-ExcludeArch: s390 s390x ppc64
+%ifnarch s390 s390x ppc64
+Requires: rhpxl >= 0.19
+%endif
 
 %description
 The firstboot utility runs after installation.  It guides the user through

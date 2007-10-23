@@ -29,9 +29,6 @@ from optparse import OptionParser
 import os
 import rhpl.Conf
 
-from rhgbfrontend import RHGBFrontEnd
-from xfrontend import XFrontEnd
-
 def getRunlevel():
     line = os.popen("/sbin/runlevel", "r").readline()
     line = string.strip(line)
@@ -56,6 +53,7 @@ if __name__ == "__main__":
     interface = None
     mode = MODE_REGULAR
     moduleList = None
+    needInterface = False
 
     logLevelMap = {"debug": logging.DEBUG, "info": logging.INFO,
                    "warning": logging.WARNING, "error": logging.ERROR,
@@ -108,6 +106,7 @@ if __name__ == "__main__":
     # start up our own if not.
     if os.environ.has_key("DISPLAY") or opts.debug:
         frontend = None
+        needInterface = True
         logging.debug("X is already running, not using any frontend")
     elif (getRunlevel() == 3 and not opts.forcegui):
         # from TextFrontEnd import TextFrontEnd
@@ -115,10 +114,14 @@ if __name__ == "__main__":
         logging.debug("Using text frontend")
         pass
     elif rhgbIsRunning():
+        from rhgbfrontend import RHGBFrontEnd
         frontend = RHGBFrontEnd()
+        needInterface = True
         logging.debug("RHGB is running, using RHGB frontend")
     elif not os.environ.has_key("DISPLAY"):
+        from xfrontend import XFrontEnd
         frontend = XFrontEnd()
+        needInterface = True
         logging.debug("Using X frontend")
     else:
         logging.error("Could not start any firstboot frontend")
@@ -137,7 +140,7 @@ if __name__ == "__main__":
         logging.debug("Starting frontend")
         frontend.start()
 
-    if frontend is None or isinstance(frontend, XFrontEnd):
+    if needInterface:
         from interface import *
         interface = Interface(autoscreenshot=opts.autoscreenshot,
                               moduleList=moduleList, testing=opts.test)
