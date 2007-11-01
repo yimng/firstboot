@@ -143,18 +143,17 @@ if __name__ == "__main__":
         logging.error("Could not start any firstboot frontend")
         raise RuntimeError, "Could not start any firstboot frontend"
 
-    moduleList = loadModules(config.moduleDir, mode)
-
-    if not moduleList:
-        logging.error("No firstboot modules were found")
-        raise RuntimeError, "No firstboot modules were found"
-
     # If X was already running, we don't need to make a frontend so skip this
     # step.  This also means that frontends can't do anything besides set
     # themselves up.
     if frontend is not None:
         logging.debug("Starting frontend")
         frontend.start()
+
+    moduleList = loadModules(config.moduleDir, mode)
+    if not moduleList:
+        logging.error("No firstboot modules were found")
+        raise RuntimeError, "No firstboot modules were found"
 
     if needInterface:
         from interface import *
