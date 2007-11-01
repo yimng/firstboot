@@ -30,9 +30,9 @@ install: all
 	mkdir -p $(INSTROOT)/${MODULESDIR}
 	mkdir -p $(INSTROOT)/${THEMESDIR}
 
-	install src/*.py $(INSTROOT)/${DATADIR}
-	install src/modules/ $(INSTROOT)/${MODULESDIR}
-	install themes/ $(INSTROOT)/${THEMESDIR}
+	install -m 644 src/*.py $(INSTROOT)/${DATADIR}
+	cp -r src/modules/* $(INSTROOT)/${MODULESDIR}
+	cp -r themes/* $(INSTROOT)/${THEMESDIR}
 
 	install -m 755 firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
 	install -m 755 firstboot $(INSTROOT)/usr/sbin/
