@@ -18,15 +18,31 @@
 # subject to the GNU General Public License and may only be used or replicated
 # with the express permission of Red Hat, Inc. 
 #
-import sys
+import os, string, sys
 sys.path.append("/usr/share/firstboot")
+
+# Since X may be starting up immediately after firstboot crashes, we might
+# not have any way to see the traceback.  This lets it be logged somewhere
+# useful.  Set this up as early as possible.
+def defaultExnHandler(type, value, tb):
+    import tempfile, traceback
+
+    (fd, path) = tempfile.mkstemp("", "firstboot-", "/tmp")
+    fo = os.fdopen(fd, "w")
+
+    traceback.print_exception(type, value, tb, None, fo)
+    fo.close()
+
+    # Also print on stderr just in case we have time to see the problem.
+    traceback.print_exception(type, value, tb)
+
+sys.excepthook = defaultExnHandler
 
 from config import *
 from constants import *
 from loader import *
 import logging
 from optparse import OptionParser
-import os
 import rhpl.Conf
 
 def getRunlevel():
