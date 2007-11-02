@@ -260,7 +260,7 @@ class Interface:
                 module.renderModule(self)
             except:
                 self.moduleList.remove(module)
-                self.displayException(module=module.title)
+                self.displayException()
                 continue
 
     def createSidebar(self):
@@ -295,9 +295,9 @@ class Interface:
         except RuntimeError:
            os._exit(1)
 
-    def displayException(self, module=None):
+    def displayException(self):
         import exceptionWindow
-        exceptionWindow.displayException(module=module)
+        exceptionWindow.displayException()
         self.destroy()
 
     def displayModule(self):
