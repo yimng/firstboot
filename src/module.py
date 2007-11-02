@@ -19,8 +19,6 @@
 #
 from config import *
 from constants import *
-from functions import *
-import gtk
 import logging
 
 from rhpl.translate import _
@@ -156,6 +154,9 @@ class Module:
         if self.vbox is None:
             logging.error("Module %s has not initialized its UI" % self.title)
             raise SystemError, "Module %s has not initializes its UI" % self.title
+
+        import gtk
+        from functions import loadToImage
 
         # Create the large label that goes at the top of the right side.
         label = gtk.Label("")
