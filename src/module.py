@@ -21,6 +21,7 @@ from config import *
 from constants import *
 from functions import *
 import gtk
+import logging
 
 from rhpl.translate import _
 import rhpl.translate as translate
@@ -153,8 +154,8 @@ class Module:
            interface -- A reference to the running Interface class.
         """
         if self.vbox is None:
-            logging.error("Module %s has not initialized its UI" % module.title)
-            raise SystemError, "Module %s has not initializes its UI" % module.title
+            logging.error("Module %s has not initialized its UI" % self.title)
+            raise SystemError, "Module %s has not initializes its UI" % self.title
 
         # Create the large label that goes at the top of the right side.
         label = gtk.Label("")
@@ -164,7 +165,12 @@ class Module:
         titleBox = gtk.HBox()
 
         if self.icon:
-            titleBox.pack_start(loadToImage("%s/%s" % (config.themeDir, self.icon)), False)
+            img = "%s/%s" % (config.themeDir, self.icon)
+
+            try:
+                titleBox.pack_start(loadToImage(img), False)
+            except:
+                logging.warning(_("Unable to load pixmap %s for module %s.") % (img, self.title))
 
         titleBox.pack_start(label, True)
         titleBox.set_spacing(8)
