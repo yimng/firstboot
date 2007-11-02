@@ -22,7 +22,7 @@ SRCFILES 	= $(PYSRC)
 
 all::  update-po $(MOFILES)
 
-$(POTFILE): $(SRCFILES)
+$(POTFILE):
 	$(XGETTEXT) --keyword=_ --keyword=N_ $(SRCFILES)
 	@if cmp -s $(NLSPACKAGE).po $(POTFILE); then \
 	    rm -f $(NLSPACKAGE).po; \
@@ -57,4 +57,4 @@ install: $(MOFILES)
 %.mo: %.po
 	$(MSGFMT) -o $@ $<
 
-.PHONY: missing depend
+.PHONY: missing depend $(POTFILE)
