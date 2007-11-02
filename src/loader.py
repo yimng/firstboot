@@ -18,6 +18,7 @@
 # with the express permission of Red Hat, Inc. 
 #
 from constants import *
+from exceptionWindow import displayException
 from module import Module
 from moduleset import ModuleSet
 from rhpl import ethtool
@@ -83,15 +84,14 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
         # Attempt to load the found module.
         try:
             found = imputil.imp.find_module(module)
+            loaded = imputil.imp.load_module(module, found[0], found[1], found[2])
         except:
-            logging.error(_("Import of module %s failed:  %s") % (module, sys.exc_type))
+            displayException(module=module)
             continue
 
         # If the module was loaded, check to see if there's a class named
         # moduleClass.  All firstboot modules must contain this class to be
         # executed.
-        loaded = imputil.imp.load_module(module, found[0], found[1], found[2])
-
         if loaded.__dict__.has_key("moduleClass"):
             obj = loaded.moduleClass()
         else:

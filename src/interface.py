@@ -296,13 +296,8 @@ class Interface:
            os._exit(1)
 
     def displayException(self):
-        import exceptionWindow, traceback
-
-        (ty, value, tb) = sys.exc_info()
-        lst = traceback.format_exception(ty, value, tb)
-        text = string.joinfields(lst, "")
-
-        exceptionWindow.ExceptionWindow(text)
+        import exceptionWindow
+        exceptionWindow.displayException()
         self.destroy()
 
     def displayModule(self):

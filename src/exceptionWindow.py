@@ -17,11 +17,8 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-import gtk
 import logging
-import os
-import tempfile
-import time
+import os, string, sys, tempfile, time
 
 ##
 ## I18N
@@ -32,6 +29,8 @@ translate.textdomain ("firstboot")
 
 class ExceptionWindow:
     def __init__ (self, traceback, module=None):
+        import gtk
+
         win = gtk.Dialog()
         win.set_size_request(500, 350)
 
@@ -48,10 +47,10 @@ class ExceptionWindow:
         text_scroll.add(text_view)
 
         if module is not None:
-            label = gtk.Label(_("An error has occurred in the %s module.") % name)
+            label = gtk.Label(_("An error has occurred in the %s module.") % module)
             explanation = _("Since there is a problem with the %s module,\n"
                             "firstboot will not load this module and will\n"
-                            "attempt to run the remaining modules.") % name
+                            "attempt to run the remaining modules.") % module
         else:
             label = gtk.Label(_("An error has occurred in firstboot."))
             explanation = _("Since there is a problem, firstboot will exit.")
@@ -86,3 +85,11 @@ class ExceptionWindow:
 
     def destroy (self, *args):
         return 1
+
+def displayException(module=None):
+    import traceback
+    (ty, value, tb) = sys.exc_info()
+    lst = traceback.format_exception(ty, value, tb)
+    text = string.joinfields(lst, "")
+
+    ExceptionWindow(text, module=module)
