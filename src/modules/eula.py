@@ -40,7 +40,7 @@ class moduleClass(Module):
         return RESULT_SUCCESS
 
     def createScreen(self):
-        self.vbox = gtk.VBox()
+        self.vbox = gtk.VBox(spacing=5)
 
         textBuffer = gtk.TextBuffer()
         textView = gtk.TextView()

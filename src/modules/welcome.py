@@ -40,7 +40,7 @@ class moduleClass(Module):
         return RESULT_SUCCESS
 
     def createScreen(self):
-        self.vbox = gtk.VBox()
+        self.vbox = gtk.VBox(spacing=5)
 
         label = gtk.Label(_("There are a few more steps to take before your "
                             "system is ready to use.  The Setup Agent will "
