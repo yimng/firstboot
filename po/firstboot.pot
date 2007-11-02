@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-02 10:43-0400\n"
+"POT-Creation-Date: 2007-11-02 14:16-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,12 +16,28 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/exceptionWindow.py:49
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr ""
 
-#: ../src/exceptionWindow.py:50
+#: ../src/exceptionWindow.py:51
 #, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
@@ -29,44 +45,126 @@ msgid ""
 "attempt to run the remaining modules."
 msgstr ""
 
-#: ../src/exceptionWindow.py:54
+#: ../src/exceptionWindow.py:55
 msgid "An error has occurred in firstboot."
 msgstr ""
 
-#: ../src/exceptionWindow.py:55
+#: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
-#: ../src/exceptionWindow.py:65
+#: ../src/exceptionWindow.py:66
 #, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
 
-#: ../src/exceptionWindow.py:70
+#: ../src/exceptionWindow.py:71
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 
-#: ../src/interface.py:164
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#: ../src/interface.py:167
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 
-#: ../src/interface.py:220
+#: ../src/interface.py:223
 msgid "_Back"
 msgstr ""
 
-#: ../src/interface.py:227
+#: ../src/interface.py:230
 msgid "_Forward"
 msgstr ""
 
-#: ../src/modules/eula.py:32 ../src/modules/eula.py:33
+#: ../src/interface.py:257
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:329 ../src/interface.py:330
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:414
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:454 ../src/interface.py:455
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr ""
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
 msgstr ""
 
-#: ../src/modules/eula.py:50
+#: ../src/modules/eula.py:53
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -81,15 +179,15 @@ msgid ""
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
 
-#: ../src/modules/eula.py:61
+#: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
 msgstr ""
 
-#: ../src/modules/welcome.py:32 ../src/modules/welcome.py:33
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
 msgstr ""
 
-#: ../src/modules/welcome.py:42
+#: ../src/modules/welcome.py:45
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
