@@ -43,8 +43,8 @@ class moduleClass(Module):
         self.sidebarTitle = N_("Additional CDs")
         self.title = N_("Additional CDs")
 
-#    def shouldAppear(self):
-#        return False
+    def shouldAppear(self):
+        return False
 
     def apply(self, interface, testing=False):
         return RESULT_SUCCESS
