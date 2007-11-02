@@ -78,6 +78,11 @@ class Interface:
                 self._controlStack.pop()
                 self._control = self._controlStack[-1]
 
+        # If we were previously on the last page, we need to set the Next
+        # button's label back to normal.
+        if self.nextButton.get_label() == _("_Finish"):
+            self.nextButton.set_label("gtk-go-forward")
+
         self._control.currentPage = self._control.history.pop()
         self.moveToPage(pageNum=self._control.currentPage)
 
@@ -144,9 +149,12 @@ class Interface:
 
             # if we are on the last page overall (not just the last page of a
             # ModuleSet), it's time to kill the interface.
-            if self._control.currentPage == len(self._control.moduleList) and len(self._controlStack) == 1:
-                self.checkReboot()
-                self.destroy()
+            if len(self._controlStack) == 1:
+                if self._control.currentPage == len(self._control.moduleList)-1:
+                    self.nextButton.set_label(_("_Finish"))
+                elif self._control.currentPage == len(self._control.moduleList):
+                    self.checkReboot()
+                    self.destroy()
 
     def checkReboot(self):
         """Check to see if any module requires a reboot for changes to take
