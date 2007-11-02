@@ -56,10 +56,10 @@ fi
 %dir %{_datadir}/firstboot/themes/default
 %config %{_initrddir}/firstboot
 %{_sbindir}/firstboot
-%{_datadir}/firstboot/*.py
+%{_datadir}/firstboot/*.py*
 %{_datadir}/firstboot/modules/*
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
-* Fri Sep 28 2007 Chris Lumens <clumens@redhat.com> 1.90-1
+* Fri Nov 02 2007 Chris Lumens <clumens@redhat.com> 1.90-1
 - First packaging of the new firstboot program.
