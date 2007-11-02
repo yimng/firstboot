@@ -100,11 +100,10 @@ if __name__ == "__main__":
         logging.info("Starting up in reconfig mode")
         mode = mode | MODE_RECONFIG
 
-# FIXME: uncomment this before release
-#    # First check to see if firstboot should even run.
-#    if os.getuid() > 0 or os.geteuid() > 0:
-#        logging.error("You must be root to run firstboot.")
-#        os._exit(0)
+    # First check to see if firstboot should even run.
+    if not opts.test and (os.getuid() > 0 or os.geteuid() > 0):
+        logging.error("You must be root to run firstboot.")
+        os._exit(0)
 
     # If we're in debug mode, or /etc/sysconfig/firstboot doesn't exist, or
     # RUN_FIRSTBOOT=NO isn't in it, firstboot should run.

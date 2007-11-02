@@ -41,11 +41,6 @@ case "$1" in
     start)
         args=""
 
-        # Firstboot has already run to completion once.  Don't run again.
-        if [ -f "$FILENAME" ] && ! grep -q "^RUN_FIRSTBOOT=YES" "$FILENAME"; then
-            exit 0
-        fi
-
         if grep -i "reconfig" /proc/cmdline >/dev/null || [ -f /etc/reconfigSys ]; then
             args="--reconfig"
         fi
