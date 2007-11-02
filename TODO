@@ -1,12 +1,13 @@
 test
 ====
-- busted modules should still be skipped
+- does this work on s390?
 
 add
 ===
 - think about text frontend
 - be able to log to files, etc.
-- real modules
+- rework the additional_cds module
 
 fix
 ===
+- if displayModule fails, remove it from the sidebar and don't quit
