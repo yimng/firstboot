@@ -20,8 +20,11 @@
 from constants import *
 from module import *
 import loader
-
 import logging
+
+from rhpl.translate import _
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
 
 class ModuleSet:
     """The base class for a set of firstboot modules.  A set of modules is
@@ -88,7 +91,7 @@ class ModuleSet:
             module.createScreen()
 
             if isinstance(module, Module) and module.vbox is None:
-                logging.error("module %s did not set up its UI, removing" % module.title)
+                logging.error(_("Module %s did not set up its UI; removing.") % module.title)
                 self.moduleList.remove(module)
 
     def initializeUI(self):

@@ -45,6 +45,10 @@ import logging
 from optparse import OptionParser
 import rhpl.Conf
 
+from rhpl.translate import _
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
+
 def getRunlevel():
     line = os.popen("/sbin/runlevel", "r").readline()
     line = string.strip(line)
@@ -102,7 +106,7 @@ if __name__ == "__main__":
 
     # First check to see if firstboot should even run.
     if not opts.test and (os.getuid() > 0 or os.geteuid() > 0):
-        logging.error("You must be root to run firstboot.")
+        logging.error(_("You must be root to run firstboot."))
         os._exit(0)
 
     # If we're in debug mode, or /etc/sysconfig/firstboot doesn't exist, or
@@ -139,8 +143,8 @@ if __name__ == "__main__":
         needInterface = True
         logging.debug("Using X frontend")
     else:
-        logging.error("Could not start any firstboot frontend")
-        raise RuntimeError, "Could not start any firstboot frontend"
+        logging.error(_("Could not start any firstboot frontend."))
+        raise RuntimeError, _("Could not start any firstboot frontend.")
 
     # If X was already running, we don't need to make a frontend so skip this
     # step.  This also means that frontends can't do anything besides set
@@ -151,8 +155,8 @@ if __name__ == "__main__":
 
     moduleList = loadModules(config.moduleDir, mode)
     if not moduleList:
-        logging.error("No firstboot modules were found")
-        raise RuntimeError, "No firstboot modules were found"
+        logging.error(_("No firstboot modules were found."))
+        raise RuntimeError, _("No firstboot modules were found.")
 
     if needInterface:
         from interface import *
@@ -161,8 +165,8 @@ if __name__ == "__main__":
         logging.debug("Using GTK interface")
 
     if interface is None:
-        logging.error("Could not create any firstboot interface")
-        raise RuntimeError, "Could not create any firstboot interface"
+        logging.error(_("Could not create any firstboot interface."))
+        raise RuntimeError, _("Could not create any firstboot interface.")
 
     win = interface.createMainWindow()
     interface.createSidebar()

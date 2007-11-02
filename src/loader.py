@@ -27,6 +27,10 @@ import logging
 import os
 import sys
 
+from rhpl.translate import _
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
+
 def _check(obj, attrLst):
     for attr in attrLst:
         if not hasattr(obj, attr) or getattr(obj, attr) is None:
@@ -80,7 +84,7 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
         try:
             found = imputil.imp.find_module(module)
         except:
-            logging.error("import of module %s failed:  %s" % (module, sys.exc_type))
+            logging.error(_("Import of module %s failed:  %s") % (module, sys.exc_type))
             continue
 
         # If the module was loaded, check to see if there's a class named
@@ -91,7 +95,7 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
         if loaded.__dict__.has_key("moduleClass"):
             obj = loaded.moduleClass()
         else:
-            logging.error("module %s does not contain a class named moduleClass; skipping" % module)
+            logging.error(_("Module %s does not contain a class named moduleClass; skipping.") % module)
             continue
 
         # Perform a bunch of sanity checks on the loaded module and skip if
@@ -102,7 +106,7 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
             else:
                 _checkModuleSet(obj)
         except TypeError, attr:
-            logging.error("module %s does not contain the required attribute %s; skipping" % (module, attr))
+            logging.error(_("Module %s does not contain the required attribute %s; skipping.") % (module, attr))
             continue
 
         # If the loaded module requires networking which is unavailable, skip

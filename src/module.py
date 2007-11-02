@@ -21,7 +21,10 @@ from config import *
 from constants import *
 from functions import *
 import gtk
+
 from rhpl.translate import _
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
 
 class Module:
     """The base class for all firstboot modules.  A firstboot module is a

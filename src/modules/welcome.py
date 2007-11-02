@@ -23,7 +23,10 @@ from config import *
 from constants import *
 from functions import *
 from module import *
+
 from rhpl.translate import _, N_
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
 
 class moduleClass(Module):
     def __init__(self):

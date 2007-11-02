@@ -19,12 +19,14 @@
 
 import gtk
 import logging
+import os
+import tempfile
 import time
 
 ##
 ## I18N
 ##
-from rhpl.translate import _, N_
+from rhpl.translate import _
 import rhpl.translate as translate
 translate.textdomain ("firstboot")
 
@@ -56,12 +58,12 @@ class ExceptionWindow:
 
         label.set_alignment(0.0, 0.5)
 
-        path = "/root/firstboot.%s" % time.time()
+        (fd, path) = tempfile.mkstemp("", "firstboot-", "/tmp")
+        fo = os.fdopen(fd, "w")
 
         try:
-            fd = open(path, "w")
-            fd.write(traceback)
-            fd.close()
+            fo.write(traceback)
+            fo.close()
             outputFile = _("A copy of the debug output has been saved to %s\n"
                            "Be sure to attach that file to the bug report.\n") % path
         except:

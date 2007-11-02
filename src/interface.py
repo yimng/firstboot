@@ -24,7 +24,10 @@ from config import *
 from constants import *
 from functions import *
 from moduleset import *
+
 from rhpl.translate import _
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
 
 class Control:
     def __init__(self):
@@ -69,7 +72,7 @@ class Interface:
         # control state for what page to display next.
         if len(self._control.history) == 0:
             if len(self._controlStack) == 1:
-                logging.error("Attempted to go back, but history is empty.")
+                logging.error(_("Attempted to go back, but history is empty."))
                 return
             else:
                 self._controlStack.pop()
@@ -251,7 +254,7 @@ class Interface:
                 module.createScreen()
 
                 if isinstance(module, Module) and module.vbox is None:
-                    logging.error("module %s did not set up its UI, removing" % module.title)
+                    logging.error(_("Module %s did not set up its UI, removing.") % module.title)
                     self.moduleList.remove(module)
 
                 module.renderModule(self)
@@ -328,8 +331,8 @@ class Interface:
            method of modules, unlike advance().
         """
         if moduleTitle is None and pageNum is None:
-            logging.error("moveToPage must be given a module title or page number")
-            raise SystemError, "moveToPage must be given a module title or page number"
+            logging.error(_("moveToPage must be given a module title or page number."))
+            raise SystemError, _("moveToPage must be given a module title or page number.")
 
         # If we were given a moduleTitle, look up the corresponding pageNum.
         # Everything else in firstboot is indexed by number.
@@ -413,7 +416,7 @@ class Interface:
             try:
                 os.mkdir(self._screenshotDir)
             except:
-                logging.error("unable to create the screenshot dir; skipping")
+                logging.error(_("Unable to create the screenshot dir; skipping."))
                 return
 
         screenshot = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, False, 8,
@@ -453,7 +456,7 @@ class Interface:
 
                 pageNum += 1
             except IndexError:
-                logging.error("No module exists with the title %s" % moduleTitle)
-                raise SystemError, "No module exists with the title %s" % moduleTitle
+                logging.error(_("No module exists with the title %s.") % moduleTitle)
+                raise SystemError, _("No module exists with the title %s.") % moduleTitle
 
         return pageNum
