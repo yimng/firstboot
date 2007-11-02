@@ -1,20 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of firstboot.pot to Bulgarian
+# translation of bg.po to Bulgarian
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
-#, fuzzy
+# Николай Сърмаджиев,преносим <nikolayds@msn.com>, 2004.
+# Николай Сърмаджиев <nikolayd@sarmadzhiev.tk>, 2004.
+# Doncho N. Gunchev <mr700@globalnet.bg>, 2004, 2005.
+# Doncho N. Gunchev <gunchev@gmail.com>, 2006, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-03-26 00:10+0300\n"
+"Last-Translator: Doncho N. Gunchev <gunchev@gmail.com>\n"
+"Language-Team: Bulgarian <Bulgarian Translators' Team <dict@fsa-bg.org>>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
@@ -35,36 +39,49 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Възникна грешка в модул %s."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Тъй като има проблем с модул %s, агента за \n"
+"настройка на Red Hat няма да го зареди и \n"
+"ще се опита да стартира останалите модули."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "Възникна грешка в модул %s."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Моля съобщете за грешката във 'firstboot' на следящата за \n"
+"грешки система на Red Hat на http://www.redhat.com/bugzilla. \n"
+"Копие на debug изхода е запазен в %s. \n"
+"Моля прикачете файла към рапорта за грешката. \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Моля съобщете за грешката във 'firstboot' на следящата за \n"
+"грешки система на Red Hat на http://www.redhat.com/bugzilla. \n"
+"Копие на debug изхода е запазен в %s. \n"
+"Моля прикачете файла към рапорта за грешката. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +91,19 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "_Край"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Системата следва да презареди за да влязат в сила част от промените."
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "_Назад"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "На_пред"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +145,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "Допълнителни дискове"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +154,14 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Моля поставете диска с етикет \"Red Hat Enterprise Linux Extras\" за да "
+"инсталирате приставки и приложения на други производители.  Може да "
+"поставите и диска с Документация или всеки друг предоставен от Red Hat диск "
+"за да инсталирате допълнителен софтуер сега."
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Моля поставете допълнителни инсталационни компакт дискове сега."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +171,34 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"За да включите поддръжка за 32-битови приложения на Intel Itanium2 "
+"архитектури, сега трябва да инсталирате пакета Intel Execution Layer от "
+"диска с добавки(Extras)."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Инсталиране..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"CD-ROM не бе намерен.  Моля поставете CD-ROM в устройството и натиснете "
+"\"Добре\" за продължение."
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Няма автоматично стартиращата програма на този диск. Натиснете \"да\" за да "
+"продължите."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
-msgstr ""
+msgstr "Лицензионна информация"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -184,18 +214,32 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Благодарим Ви че инсталирахте Fedora.  Fedora е набор от софтуерни пакети, "
+"всеки със собствен лиценз.  Този набор е достъпен според условията на Общия "
+"Публичен Лиценз на GNU версия 2.  Няма ограничения за ползване, копиране или "
+"промяна на кода.  Съществуват обаче ограничения, отнасящи се за "
+"редистрибутирането на кода, в оригинална или модифициран вид.  Измежду други "
+"неща, тези ограничения/задължения се отнасят до лицензирането или "
+"редистрибутиране, правата върху запазените марки и контрола за износ.\n"
+"\n"
+"Ако искате да разберете какви са тези ограничения, моля посетете http://"
+"fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Ясно, нататък."
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Добре дошли"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Има още няколко стъпки преди системата Ви да бъде готова за работа.  Агента "
+"за настройка ще Ви преведе през някои основни настройки.  Моля натиснете "
+"бутон \"Следващ\" в долния десен ъгъл за да продължите."

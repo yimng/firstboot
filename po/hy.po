@@ -1,20 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of hy.po to Armenian
+# translation of hy.po to
+# Armenian translations for PACKAGE package.
+# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Automatically generated, 2005.
+# root <xeon@4you.am>, 2005.
+# Suren Karapetyan <surenkarapetyan@gmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: hy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2006-09-14 18:16+0500\n"
+"Last-Translator: Suren Karapetyan <surenkarapetyan@gmail.com>\n"
+"Language-Team: Armenian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
@@ -35,36 +39,49 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "%s մոդուլում սխալ է առաջացել։"
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Քանի որ %s մոդուլի հետ պրոբլեմներ են առաջացել,\n"
+"Red Hat տեղադրման օգնականը չի աշխատեցնի այդ մոդուլը\n"
+"և կփորձի բացել մյուս մոդուլները։"
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "%s մոդուլում սխալ է առաջացել։"
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Պրոբլեմի մասին տեղեկացրեք «Red Hatի» \n"
+"սխալների հայտնաբերման համակարգում՝ http://www.redhat.com/bugzilla. \n"
+"Սխալի մասին ինֆորմացիայի պատճեն է պահվել՝ %s\n"
+"Այդ ֆայլը միացրեք պրոբլեմի հայտին։ \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Պրոբլեմի մասին տեղեկացրեք «Red Hatի» \n"
+"սխալների հայտնաբերման համակարգում՝ http://www.redhat.com/bugzilla. \n"
+"Սխալի մասին ինֆորմացիայի պատճեն է պահվել՝ %s\n"
+"Այդ ֆայլը միացրեք պրոբլեմի հայտին։ \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +91,20 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "_Ավարտել"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
+"Համակարգը պետք է վերաբեռնվի ձեր ընտրություններից մի քանիսի աշխատելու համար։"
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "_Ետ"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "_Առաջ"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +146,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "Հավելյալ CD–ներ"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +155,13 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Դրեք \"Red Hat Enterprise Linux Extras\" վերնագրով դիսկը, որպեսզի հնարավոր "
+"լինի տեղադրել հավելյալ ծրագրեր և հնարավորություններ։ Նաև կարող եք դնել "
+"դոկումենտացիայի կամ «Red Hat–ի» կողմից տրամադրված որևէ այլ դիսկ։"
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Տեղադրեք հավելյալ ծրագրերի դիսկերը (եթե կան)։"
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +171,31 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Որպեսզի թույլատրել 32 բիթանի ծրագրերի աշխատանքը Intel Itanium2 համակարգերի "
+"վրա, դուք պետք է տեղադրեք Intel Execution Layer փաթեթը հավելյալ ծրագրերի "
+"դիսկից։"
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Տեղադրում…"
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
+msgstr "CD-ROM–ը չկա։ Այն դրեք սարգի մեջ և սեղմեք \"OK\" շարունակելու համար։"
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
+msgstr "Դիսկի վրա ավտորան ծրագիր չկա։ Շարունակելու համար սեղմեք \"OK\"։"
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+#, fuzzy
 msgid "License Information"
-msgstr ""
+msgstr "Ժամային գօտու կոնֆիգուրացիա"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -191,11 +218,15 @@ msgstr ""
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Բարի գալուստ։"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Մինչև համակարգի պատրաստ լինելը մնաց էլի մի քանի քայլ։ Տեղադրման գործակալը "
+"ձեզ կտանի կոնֆիգուրացիայի որոշ քայլերի միջով։ Սեղմեք ներքևի աջ անկյունի "
+"\"Առաջ\" կոճակը, որպեսզի շարունակել։"

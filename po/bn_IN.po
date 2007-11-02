@@ -1,0 +1,256 @@
+# translation of bn_IN.po to Bengali
+# Bengali Translation of Firstboot
+# Copyright (C) 2004 Red Hat Inc.
+# This file is distributed under the same license as the firstboot package.
+#
+# Ashabul Yeameen <ayeameen@yahoo.com>, 2003.
+# Runa Bhattacharjee <runab@redhat.com>, 2004, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: bn_IN\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-04-04 17:32+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+"Language-Team: Bengali <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "%s মডিউলে একটি ত্রুটি দেখা দিয়েছে।"
+
+# Red Hat-->brand name
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"%s মডিউলে সমস্যা উৎপন্ন হওয়া ফলে Red Hat\n"
+"Setup Agent'র দ্বারা এই মডিউলটি লোড না করে অবশিষ্ট\n"
+"মডিউলগুলি লোড করার প্রচেষ্টা করা হবে।"
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "%s মডিউলে একটি ত্রুটি দেখা দিয়েছে।"
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+# modified for RHEL
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"অনুগ্রহ করে http://www.redhat.com/bugzilla ওয়েব-সাইটের\n"
+"Red Hat বাগ অনুসন্ধান ব্যবস্থায় 'firstboot' সংক্রান্ত এই ত্রুটি দায়ের করুন।\n"
+"debug তথ্য %s ফাইলে সংরক্ষিত হয়েছে \n"
+"অনুগ্রহ করে এই ফাইলটি বাগ রিপোর্টের সাথে সংযুক্ত করতে ভুলবেন না। \n"
+
+# modified for RHEL
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"অনুগ্রহ করে http://www.redhat.com/bugzilla ওয়েব-সাইটের\n"
+"Red Hat বাগ অনুসন্ধান ব্যবস্থায় 'firstboot' সংক্রান্ত এই ত্রুটি দায়ের করুন।\n"
+"debug তথ্য %s ফাইলে সংরক্ষিত হয়েছে \n"
+"অনুগ্রহ করে এই ফাইলটি বাগ রিপোর্টের সাথে সংযুক্ত করতে ভুলবেন না। \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+# modified by RB
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "সমাপ্তি (_F)"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "আপনার করা পরিবর্তনগুলি প্রয়োগ করার জন্য সিস্টেম পুনরায় আরম্ভ করা হবে।"
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "পূর্ববর্তী (_B)"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "পরবর্তী (_F)"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+# msgstr "অতিরিক্ত সিডিগুলো"
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "অতিরিক্ত CD"
+
+# modified for RHEL
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"স্বতন্ত্র প্লাগ-ইন এবং অ্যাপ্লিকেশন ইনস্টল করার জন্য \"Red Hat Enterprise Linux "
+"Extras\" নামক ডিস্কটি অনুগ্রহ করে ড্রাইভে ঢোকান।  অতিরিক্ত সফ্টওয়্যার ইনস্টল করার "
+"জন্য আপনি Documentation ডিস্ক, অথবা Red-Hat-র দ্বারা উপলব্ধ করা অন্যান্য ডিস্কও "
+"ঢোকাতে পারেন।"
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr "অতিরিক্ত কোনো সফ্টওয়্যার ইনস্টেলশনের উদ্দেশ্যে এই সময়ে ড্রাইভে cd ঢোকান।"
+
+# modified for RHEL
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"Intel Itanium2 আর্কিটেকচারের উপর ৩২-বিট অ্যাপ্লিকেশনের ক্ষেত্রে রান-টাইম সমর্থন "
+"সক্রিয় করার উদ্দেশ্যে Extras ডিস্ক থেকে Intel Execution Layer প্যাকেজটি ইনস্টল করা "
+"আবশ্যক।"
+
+# modified by RB
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "ইনস্টল করুন..."
+
+# modified for RHEL
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"কোনো CD-ROM পাওয়া যায়নি। অনুগ্রহ করে ড্রাইভে একটি CD-ROM প্রবেশ ঢুকিয়ে \"ঠিক আছে"
+"\" চাপুন।"
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"CD'র মধ্যে autorun প্রোগ্রাম পাওয়া যায়নি। এগিয়ে চলার জন্য \"ঠিক আছে\" চাপুন।"
+
+# msgstr "সময় এলাকা কনফিগারেশন "
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "লাইসেন্স সংক্রান্ত তথ্য"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"Fedora ইনস্টল করার জন্য অজস্র ধন্যবাদ।  Fedora-র মধ্যে পৃথক লাইসেন্স প্রয়োগকারী "
+"বিভিন্ন ধরনের সফ্টওয়্যার সংগ্রহ করে প্রস্তুত করা হয়েছে। এই সংকলনটি GNU General "
+"Public License সংস্করণ ২-র অধীন উপলব্ধ করা হয়েছে। এর কোড ব্যবহার, কপি অথবা "
+"পরিবর্তনে কোনো বাধা নেই কিন্তু মূল অথবা পরিবর্তিত রূপে কোড পুনরায় বন্টন সংক্রান্ত কিছু "
+"নিয়ম প্রযোজ্য। পুনরায় বিতরণের লাইসেন্সে, ট্রেড-মার্ক ও রপ্তানি নিয়ন্ত্রণ প্রভৃতি বিভিন্ন "
+"বিষয় এই তালিকায় অন্তর্গত।  \n"
+"\n"
+"এই সমস্ত বিধিনিয়ম সম্পর্কে অধিক জানতে http://fedoraproject.org/wiki/Legal/"
+"Licenses/EULA দেখুন।"
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "পড়া হয়েছে, এগিয়ে চলুন।"
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "স্বাগতম"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"আপনার কম্পিউটার সম্পূর্ণরূপে প্রস্তুত করার জন্য অতিরিক্ত কয়েকটি ধাপ সমাপ্ত করা প্রয়োজন। "
+"সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
+"জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"

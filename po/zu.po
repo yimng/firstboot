@@ -1,20 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Zulu translations for PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Automatically generated, 2004.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2004-03-11 19:00+0200\n"
+"Last-Translator: Thobile Mhlongo <thobile@obsidian.co.za>\n"
+"Language-Team: Zulu <zulu@translate.org.za>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
@@ -35,36 +35,51 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Kwenzeke iphutha %s endleleni."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Njengoba kunephutha ngendlela ye%s, \n"
+"Umsheshi we-Red Hat angeke alayishe le ndlela futh \n"
+"uzozama ukusebenzisa izindlela eziseleyo."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "Kwenzeke iphutha %s endleleni."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Siza ufake kwifayela igciwane lokulayisha kokuqala kwisistimu yokulandela "
+"igciwane ye-Red Hat \n"
+"e-http://www.redhat.com/bugzilla. \n"
+"Ikhophi lomphumela wokukhipha igciwane ligcinwe kwi-%s \n"
+"Qiniseka ukunamathisela ifayela lalo mbiko. \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Siza ufake kwifayela igciwane lokulayisha kokuqala kwisistimu yokulandela "
+"igciwane ye-Red Hat \n"
+"e-http://www.redhat.com/bugzilla. \n"
+"Ikhophi lomphumela wokukhipha igciwane ligcinwe kwi-%s \n"
+"Qiniseka ukunamathisela ifayela lalo mbiko. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -73,8 +88,9 @@ msgstr ""
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
+#, fuzzy
 msgid "_Finish"
-msgstr ""
+msgstr "Qeda Umiso"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
@@ -82,7 +98,7 @@ msgstr ""
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "_Emuva"
 
 #: ../src/interface.py:238
 msgid "_Forward"
@@ -128,7 +144,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "Ama-CDs Ongeziwe"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -153,22 +169,28 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Faka..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"I-CD ROM ayicoshwanga.  Siza ufake i-CD-ROM kumshayeli ebese' ucofa "
+"\"KULUNGILE\" ukuze uqhubeke."
 
 #: ../src/modules/additional_cds.py:146
+#, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Uhlelo lwemisebenzi lokusebenzisa ngokuzenzekela alutholakali kwi-cd. Cofa "
+"\"KULUNGILE\" ukuqhubeka."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+#, fuzzy
 msgid "License Information"
-msgstr ""
+msgstr "Inhlanganiselo yokwehluka kwezikhathi"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -191,11 +213,16 @@ msgstr ""
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Wamukelekile"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Kukhona izigaba ezimbalwa okumele uzithathe ngaphambi kokuba izisistimu "
+"yakho ikulungele ukusebenza.  Ummeli Womiso uzokudlulisa kwinhlanganiselo "
+"elula.  Siza ucofe inkinobho \"Okulandelayo\" ngasekhoneni "
+"langakwesokudla'ukuze uqhubeke."

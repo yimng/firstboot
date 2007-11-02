@@ -1,20 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Portuguese localization of Red Hat Linux
+# Pedro Morais <morais@kde.org>
+# José Nuno Pires <jncp@netcabo.pt>
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-03-24 13:05+0000\n"
+"Last-Translator: Pedro Morais <morais@kde.org>\n"
+"Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-POFile-IgnoreConsistency: Forward\n"
+"X-POFile-SpellExtra: Layer Kerberos firstboot autorun Enterprise Itanium\n"
+"X-POFile-SpellExtra: Execution Hat Red\n"
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
@@ -35,36 +36,49 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Ocorreu um erro no módulo %s."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Uma vez que ocorreu um problema com o módulo %s,  \n"
+"O Agente de Configuração da Red Hat não o vai carregar e \n"
+"vai tentar executar os módulos restantes."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "Ocorreu um erro no módulo %s."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Por favor registe um erro no componente 'firstboot' no sistema \n"
+"de gestão de erros da Red Hat em http://www.redhat.com/bugzilla. \n"
+"Uma cópia da saída de depuração foi gravada em %s \n"
+"Por favor anexe este ficheiro ao relatório de erro. \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Por favor registe um erro no componente 'firstboot' no sistema \n"
+"de gestão de erros da Red Hat em http://www.redhat.com/bugzilla. \n"
+"Uma cópia da saída de depuração foi gravada em %s \n"
+"Por favor anexe este ficheiro ao relatório de erro. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +88,20 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "_Terminar"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
+"O sistema deve ser agora reiniciado para que as suas escolhas fiquem activas."
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "Re_gressar"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "A_vançar"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +143,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "CDs Adicionais"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +152,15 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Por favor insira o disco \"Red Hat Enterprise Linux Extras\" para permitir a "
+"instalação de aplicações e 'plugins' de terceiros.  Pode também inserir o "
+"disco de Documentação ou outros discos fornecidos pela Red Hat para instalar "
+"mais software."
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
+"Por favor insira agora quaisquer CDs adicionais de instalação de software."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +170,34 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Para activar o suporte a execução de aplicações de 32 bits na arquitectura "
+"Intel Itanium2 deve instalar o pacote Intel Execution Layer do disco de "
+"Extras agora."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Instalar..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Não foi detectado nenhum CD-ROM. Introduza por favor um CD na 'drive' e "
+"carregue em \"OK\" para continuar."
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Não foi possível encontrar o programa 'autorun' no CD. Carregue em \"OK\" "
+"para continuar."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
-msgstr ""
+msgstr "Informação da Licença"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -184,18 +213,34 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Obrigado por instalar o Fedora.  O Fedora é uma colectânea de pacotes de "
+"'software', tendo cada um a sua própria licença. A compilação é "
+"disponibilizada segundo a Licença Pública da GNU, na sua versão 2. Não "
+"existem restrições sobre a utilização, cópia ou modificação deste código. "
+"Todavia, existem restrições e obrigações que se aplicam à redistribuição do "
+"código, sendo no seu formato original ou num modificado. Entre outras "
+"coisas, estas restrições/obrigações dizem respeito ao licenciamento de "
+"redistribuição, as marcas registadas e o controlo de exportação.\n"
+"\n"
+"Se desejar compreender o que significam estas restrições, por favor vá a "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Compreendido, prossiga por favor."
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Bem-vindo"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Ainda existem mais alguns passos a percorrer antes de o seu computador estar "
+"pronto a utilizar.  O Agente de Configuração vai agora guiá-lo através de "
+"algumas opções básicas.  Por favor carregue no botão \"Avançar\" no canto "
+"inferior direito para continuar."

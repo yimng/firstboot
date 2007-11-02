@@ -1,20 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Iloko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2006-12-02 18:27+0800\n"
+"Last-Translator: roy v. aragon <rvaragon@gmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Iloko\n"
+"X-Poedit-Country: PHILIPPINES\n"
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
@@ -35,36 +31,52 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Rimsua ti biddut iti module a %s."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Agsipud ta adda parikut iti module nga %s, \n"
+"saan a maipatary ti Ahente ti Panangisimpa ti Red Hat \n"
+"daytoy a module ket padasenna nga ipataray \n"
+"dagiti nabati pay a modules."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "Rimsua ti biddut iti module a %s."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Pangngaasim ta mangipilaka iti naduktalam a biddut ti 'firstboot' iti "
+"sistema \n"
+"ti panagsurot iti biddut iti  http://www.redhat.com/bugzilla. \n"
+"Addan naidulin a kopia ti resulta ti panangatur iti biddut iti %s \n"
+"Pennekem a naisapit dayta nga intar iti biddut nga isaklangmo. \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Pangngaasim ta mangipilaka iti naduktalam a biddut ti 'firstboot' iti "
+"sistema \n"
+"ti panagsurot iti biddut iti  http://www.redhat.com/bugzilla. \n"
+"Addan naidulin a kopia ti resulta ti panangatur iti biddut iti %s \n"
+"Pennekem a naisapit dayta nga intar iti biddut nga isaklangmo. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +86,21 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "_Leppasen"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
+"Nasken nga agiddep ken agriing manen ti sistema tapno sumamay ti sumagmamano "
+"kadagiti pinilim."
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "_Agsubli"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "_Umabante"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +142,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "Dadduma pay a CD"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +151,16 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Pangngaasim ta iserrekmo ti CD a namarkaan iti \"Red Hat Enterprise Linux "
+"Extras\" tapno maikapet dagiti maikatlo a partido a plug-ins ken "
+"applications. Kabayatan daytoy, mabalinmo met nga iserrek ti CD ti "
+"Pagbasaan, wenno sabsabali pay a CD nga inted ti Red Hat, tapno maikapet ti "
+"dadduma pay a software."
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
+"Isigpitmon ti dadduma pay a CD ti software a paginstolar itoy nga oras."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +170,35 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Nasken nga iyinstolarmo itan ti gargaret nga Intel Execution Layer manipud "
+"iti CD nga Extras tapno mapagandar ti suporta ti panangipataray iti 32-bit "
+"nga aplikasion iti arkitektura nga  Intel Itanium2."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Iyinstolar..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Saan a nakita ti CD-ROM. Pangngaasim ta iserrekmo ti CD-ROM iti drive samo "
+"italmeg ni \"Mayat|\" tapno agtuloy."
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Saan a masapulan ti programa nga autorun iti CD. Italmegmo ti \"Mayat\" "
+"tapno agtuloy."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+#, fuzzy
 msgid "License Information"
-msgstr ""
+msgstr "Pannakaidalimanek ti Sona ti Oras"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -191,11 +221,16 @@ msgstr ""
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Dumanon!"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Adda pay sumagmamano nga aramidem sakbay a maaramatmo ti sistemam. "
+"Ibagnosnaka itan ti Ahente ti Panangisimpa iti sumagmamano a nangruna a "
+"panangidalimanek. Pangngaasim ta italmegmo ti buton nga \"Umabante\" iti "
+"akimbaba a kanawan a suli tapno agtuloyka. "

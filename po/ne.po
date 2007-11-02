@@ -1,0 +1,239 @@
+# translation of ne.po to Nepali
+# Nabin Gautam <nabin@mpp.org.np>, 2007.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ne\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-08-15 17:02+0545\n"
+"Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "मोड्युल %s मा एउटा त्रुटि उत्पन्न भएकोछ ।"
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"मोड्युल %s मा समस्या भएमा, \n"
+"रेड ह्याट सेटअप अभिकर्ताले यो मोड्युल सेट गर्दैन र \n"
+"बाँकी मोड्युल चलाउने प्रयास गर्दछ ।"
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "मोड्युल %s मा एउटा त्रुटि उत्पन्न भएकोछ ।"
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"कृपया रेड ह्या बग ट्र्याकिङ प्रणालीको\n"
+"http://www.redhat.com/bugzilla मा 'firstboot' बिरुद्ध एउटा बग दर्ता गर्नुहोस् । \n"
+"डिबग निर्गतको एउटा प्रति %s मा बचत गरिएकोछ \n"
+"बग प्रतिवेदनमा त्यो फाइल सङ्लग्न गर्न निश्चित हुनुहोस् । \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"कृपया रेड ह्या बग ट्र्याकिङ प्रणालीको\n"
+"http://www.redhat.com/bugzilla मा 'firstboot' बिरुद्ध एउटा बग दर्ता गर्नुहोस् । \n"
+"डिबग निर्गतको एउटा प्रति %s मा बचत गरिएकोछ \n"
+"बग प्रतिवेदनमा त्यो फाइल सङ्लग्न गर्न निश्चित हुनुहोस् । \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "समाप्त"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "तपाईँका केही चयनले प्रभाव पार्नका लागि प्रणाली अहिले फेरि बुट गर्नुपर्दछ ।"
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "पछाडि"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "अगाडि"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "थप सीडी"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"कृपया तेस्रो पक्षको प्लगइन र अनुप्रयोग स्थापनाका लागि अनुमति दिन \"रेड ह्याट इन्टरप्राइज "
+"लिनक्स एक्स्ट्रा\" लेबल दिइएको डिस्क घुसाउनुहोस् ।  यो समयमा तपाईँले थप सफ्टवेयर स्थापना "
+"गर्न मिसिलिकरण डिस्क, वा अन्य रेड ह्याटद्वारा उपलब्ध डिस्क पनि घुसाउन सक्नुहुन्छ ।"
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr "कृपया यस समयमा कुनै पनि थप अतिरिक्त सफ्टवेयर स्थापना सीडी घुसाउनुहोस् ।"
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"इन्टेल Itanium2 संरचनामा 32-बिट अनुप्रयोगको रनटाइम समर्थन सक्षम पार्न तपाईँले अहिले "
+"एक्स्ट्रा डिस्कबाट इन्टेल कार्यान्वयन तह प्याकेज स्थापना गर्नुपर्दछ ।"
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "स्थापना गर्नुहोस्..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ROM पत्ता लागेको छैन ।  ड्राइभमा CD-ROM घुसाउनुहोस् र जारी राख्न \"ठीक छ\" बटन "
+"क्लिक गर्नुहोस् ।"
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"स्वचालित कार्यक्रम सीडीमा फेला पार्न सकिँदैन । जारी राख्न \"ठीक छ\" बटन क्लिक गर्नुहोस् ।"
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "इजाजतपत्र सूचना"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"फेडोरा स्थापना गर्नुभएकोमा तपाईँलाई धन्यवाद ।  फेडोरा आफ्नो इजाजतपत्र प्राप्त सफ्टवेयर "
+"प्याकेजहरूको सङ्ग्रह हो ।  यो सङ्ग्रह GNU साधारण सार्वजनिक इजाजतपत्र संस्करण 2 मा उपलब्ध "
+"हुन्छ ।  यो सङ्केतलाई प्रयोग गर्न, प्रतिलिपि गर्न, वा परिमार्जन गर्न कुनै अवरोध छैन ।  "
+"तैपनि, मैलिक वा परिमार्जित रूपमा, यस सङ्केतको पुन: वितरण गर्न लागू गर्नुपर्ने सीमा र "
+"शर्तहरू छन् ।  अन्य कुरा, ती सीमा/शर्तले पुन: वितरण, ट्रडमार्क, र निर्यात नियन्त्रणको "
+"इजाजतपत्रसँग सम्बन्धित हुन्छन् ।\n"
+"\n"
+"यदि तपाईँले ती शर्त के के छन् जान्न चाहेमा, कृपयाhttp://fedoraproject.org/wiki/Legal/"
+"Licenses/EULA अवलोकन गर्नुहोस् ।"
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "बुझ्नुभयो, कृपया अगाडि जानुहोस् ।"
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "स्वागत छ"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"तपाईँको प्रणाली प्रयोगका लागि तयार हुनुभन्दा पहिला गर्नुपर्ने केही अरू चरणहरू छन् ।  अब "
+"सेटअप अभिकर्ताले तपाईलाई केही आधारभूत कन्फिगरेसनबाट मार्गदर्शन गर्दछ ।  कृपया जारी राख्न "
+"तलको दायाँ कुनाको \"अगाडि\" बटन क्लिक गर्नुहोस् ।"

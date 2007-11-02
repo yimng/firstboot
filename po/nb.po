@@ -1,19 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Norwegian (bokmål) translation of firstboot.
+# Copyright © 2002 Free Software Foundation.
+# Kjartan Maraas <kmaraas@gnome.org>, 2002-2005.
+# Kjartan Maraas <kmaraas@gnome.org>, 2007.
+# 
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: firstboot 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-10-04 14:51+0200\n"
+"Last-Translator: Espen Stefansen <espenas@gmail.com>\n"
+"Language-Team: Norwegian/Bokmaal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../firstboot:109
@@ -35,36 +35,49 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "En feil har oppstått i modulen %s."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Det er et problem med modulen %s - Red Hat Setup Agent\n"
+"vil derfor ikke laste denne modulen, men vil forsøke å kjøre de\n"
+"gjenværende modulene."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "En feil har oppstått i modulen %s."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Send inn en feilmelding for \"firstboot\" i Red Hats \n"
+"feildatabase: https://bugzilla.redhat.com/\n"
+"En kopi av feilmelding er lagret som %s - husk å legge ved denne\n"
+"i feilrapporten.\n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Send inn en feilmelding for \"firstboot\" i Red Hats \n"
+"feildatabase: https://bugzilla.redhat.com/\n"
+"En kopi av feilmelding er lagret som %s - husk å legge ved denne\n"
+"i feilrapporten.\n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +87,19 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "_Fullfør"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "Systemet må nå starte på nytt for at endringene dine skal tre i kraft."
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "Til_bake"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "_Framover"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +141,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "Tilleggs-CDer"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +150,16 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Vennligst sett in disken med navnet «Red Hat Enterprise Linux Extras» slik "
+"at installasjon av tredjepartstillegg og applikasjoner. Du kan også sette "
+"inn dokumentasjons-CDen eller andre CDer fra Red Hat for å installere "
+"tilleggsprogrammer."
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
+"Vennligst sett inn eventuelle tilleggs-CDer for installasjon av programvare "
+"nå."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +169,33 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"For å aktivere støtte for å kjøre 32-bits applikasjoner på Intel Itanium2-"
+"arkitekturen må du installere pakken «Intel Execution Layer» fra ekstra-CDen "
+"nå."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Installer..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Fant ingen CD-ROM. Sett inn en CD-ROM i spilleren og trykk \"OK\" for å "
+"fortsette."
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Programmet autorun kan ikke finnes på CDen. Klikk «OK» for å fortsette."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
-msgstr ""
+msgstr "Lisensinformasjon"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -184,18 +211,33 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Takk for at du installerte Fedora. Fedora er en samling av "
+"programvarepakker, hver og en under sin egen lisens. Samlingen er gjort "
+"tilgjengelig under GNU General Public License versjon 2. Det finnes ingen "
+"restriksjoner på bruk, kopiering eller endring av denne koden. Men det "
+"finnes restriksjoner og krav til videre distribuering av koden, enten i "
+"orginal eller endret form. Blant annet berører disse restriksjonene/kravene "
+"lisensiering av videredistribusjon, varemerkerettigheter og "
+"eksportkontroll.\n"
+"\n"
+"Hvis du vil vite mer om hva disse restriksjonene er, vennligst besøk http://"
+"fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Forstått, vennligst fortsett."
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Velkommen"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Det gjenstår noen steg før systemet er klart til bruk. Oppsettagenten vil nå "
+"hjelpe deg gjennom grunnleggende konfigurasjon. Trykk på «Framover»-knappen "
+"i nedre høyre hjørne for å fortsette."

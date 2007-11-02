@@ -1,19 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of ro.po to
+# Romanian translation of PACKAGE.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Răzvan Corneliu C.R. VILT <razvan.vilt@linux360.ro>, 2004.
+# MIrcea Daniel <visez.trance@gmail.com>, 2007.
+# Alexandru Szasz <alexxed@gmail.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-09-20 00:04+0300\n"
+"Last-Translator: Alexandru Szasz <alexxed@gmail.com>\n"
+"Language-Team:  <fedora-ro@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../firstboot:109
@@ -35,36 +37,53 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "A avut loc o eroare în modulul %s."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Din moment ce este o problemă cu modulul %s, \n"
+"Red Hat Setup Agent nu va încărca acest modul şi \n"
+"va încerca să ruleze modulele rămase."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "A avut loc o eroare în modulul %s."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Dacă cunoaşteţi limba engleză, vă rugăm să raportaţi un\n"
+"un defect pentru componenta „firstboot” în sistemul Red Hat \n"
+"de urmărire a defectelor de la adresa \n"
+"http://www.redhat.com/bugzilla. O copie a mesajelor de \n"
+"diagnosticare a fost salvată în %s. Nu uitaţi să anexaţi acest \n"
+"fişier la raportul dumneavoastră. \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Dacă cunoaşteţi limba engleză, vă rugăm să raportaţi un\n"
+"un defect pentru componenta „firstboot” în sistemul Red Hat \n"
+"de urmărire a defectelor de la adresa \n"
+"http://www.redhat.com/bugzilla. O copie a mesajelor de \n"
+"diagnosticare a fost salvată în %s. Nu uitaţi să anexaţi acest \n"
+"fişier la raportul dumneavoastră. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +93,20 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "Î_ncheiere"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
+"Sistemul va fi repornit pentru ca opţiunile dumneavoastră să aibă efect."
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "Îna_poi"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "Î_nainte"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +148,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "CD-uri Adiţionale"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +157,14 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Vă rugăm să introduceţi discul etichetat „Red Hat Enterprise Linux Extras” "
+"pentru a permite instalarea altor programe şi module. Puteţi de asemenea să "
+"introduceţi discul Documentaţie sau orice alt disc furnizat de Red Hat "
+"pentru a instala programe suplimentare."
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Acum puteţi introduce un disc cu programe adiţionale."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +174,33 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Pentru a permite suport pentru rularea aplicaţiilor pe 32 de biţi pe "
+"arhitectura Intel Itanium2, trebuie să instalaţi acum pachetul Intel "
+"Execution Layer de pe discul Extras."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Instalează..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Nu s-a găsit niciun CD-ROM.  Vă rugăm să introduceţi un CD-ROM în unitate şi "
+"să clicaţi „OK” pentru a continua."
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Nu s-a găsit programul autorun pe CD. Clicaţi pe „OK” pentru a continua."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
-msgstr ""
+msgstr "Informaţii de licenţiere"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -184,18 +216,34 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Vă mulţumim că aţi instalat Fedora. Fedora este o compilaţie de pachete  de "
+"programe, fiecare cu propria ei licenţă. Compilaţia vă este disponibilă sub "
+"licenţa GNU General Public License (Licenţă Publică Generală), versiunea 2. "
+"Nu există restricţii legate de utilizarea, copierea, sau modificarea acestui "
+"cod. Există totuşi, restricţii şi obligaţii care se aplică la redistribuirea "
+"codului, în forma originală sau modificată. Printre altele, aceste "
+"restricţii/obligaţii ţin de licenţierea redistribuirii, drepturilor de autor "
+"şi controlul exportului.\n"
+"\n"
+"Dacă doriţi să aflaţi care sunt aceste restricţii, vă rugăm să vizitaţi "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Am înţeles, continuă."
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Bun venit"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Mai aveţi câţiva paşi de făcut înainte de a vă folosi noul sistem de "
+"operare. Programul de configurare vă va ajuta să efectuaţi nişte configurări "
+"esenţiale. Apăsaţi butonul „Înainte” din colţul dreapta jos pentru a "
+"continua."

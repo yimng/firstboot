@@ -1,20 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Tamas Szanto <tszanto@mol.hu>, 2004.
+# Széll Tamás <tomi@digiflex.hu>, 2004.
+# Arpad Biro <biro_arpad@yahoo.com>, 2005, 2007.
+# Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
+# Gábor Szentiványi <szenti@ulx.hu>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-04-18 20:05+0200\n"
+"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
@@ -35,36 +35,49 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Hiba történt a(z) %s modulban."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Hiba történt a(z) %s modulban, \n"
+"ezért a Red Hat Telepítőügynök nem fogja azt betölteni, \n"
+"hanem folytatja a többi modul betöltését."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "Hiba történt a(z) %s modulban."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Kérjük jelentse be a hibát a 'firstboot' szekcióba a Red Hat \n"
+"hibakövető rendszerben, ezen a címen: http://www.redhat.com/bugzilla. \n"
+"A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
+"Kérjük, csatolja ezt a fájlt a hibabejelentéshez. \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Kérjük jelentse be a hibát a 'firstboot' szekcióba a Red Hat \n"
+"hibakövető rendszerben, ezen a címen: http://www.redhat.com/bugzilla. \n"
+"A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
+"Kérjük, csatolja ezt a fájlt a hibabejelentéshez. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +87,20 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "_Befejezés"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
+"A változások érvénybe léptetéséhez most újra kell indítani a rendszert."
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "_Vissza"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "_Tovább"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +142,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "További CD-k"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +151,15 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Helyezze be a \"Red Hat Enterprise Linux Extras\" feliratú lemezt a más "
+"gyártótól származó bővítőmodulok és alkalmazások telepítéséhez. Más "
+"telepítési lemez is megadható (például a dokumentáció vagy a Red Hat által "
+"készített valamilyen más szoftver lemeze)."
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
+"Ha rendelkezik további szoftvertelepítési CD-vel, most helyezze be azt."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +169,34 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Ha engedélyezni szeretné a 32 bites alkalmazások futásidejű támogatását "
+"Intel Itanium2 rendszeren, akkor most telepítenie kell az Intel Execution "
+"Layer csomagot az Extras lemezről."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Telepítés..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"Nem található CD-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba és "
+"kattintson az \"OK\" gombra."
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
+"\"OK\" gombra."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
-msgstr ""
+msgstr "Licenc-információ"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -184,18 +212,34 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Köszönjük, hogy a Fedora rendszert telepítette. A Fedora egy "
+"szoftvercsomagokból álló gyűjtemény, amelyben minden csomagnak saját licence "
+"van. A teljes rendszert a GNU General Public License (GPL) 2-es verziója "
+"alapján bocsátjuk rendelkezésre. A kód használatára, másolására és "
+"módosítására vonatkozóan nincsenek korlátozások. A kód terjesztésére "
+"vonatkozóan viszont vannak bizonyos korlátozások és kötelezettségek, akár "
+"eredeti, akár módosított formában történik a terjesztés. Ezen korlátozások "
+"és kötelezettségek többek közt a terjesztés, a védjegy-jogok és az export-"
+"szabályzás licencelésére vonatkoznak.\n"
+"\n"
+"Ha szeretne többet tudni arról, mik ezek a korlátozások, akkor látogassa meg "
+"a következő weblapot: http://fedoraproject.org/wiki/Legal/Licenses/EULA"
 
 #: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Elfogadom, lépjünk tovább."
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Üdvözöljük"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"A rendszer használatba vétele előtt még néhány lépést el kell végeznie. A "
+"telepítő végigvezeti Önt a beállítási lépéseken. A továbblépéshez kattintson "
+"a \"Tovább\" gombra a jobb alsó sarokban."

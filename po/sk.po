@@ -1,19 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Slovak translations for firstboot package
+# Slovenské preklady pre balík firstboot.
+# Copyright (C) 2004, 2005 Marcel Telka
+# This file is distributed under the same license as the firstboot package.
+# Marcel Telka <marcel@telka.sk>, 2004, 2005.
 #
-#, fuzzy
+# $Id$
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-04-03 10:29+0200\n"
+"Last-Translator: Mike Karas <zoliqe@gmail.com>\n"
+"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../firstboot:109
@@ -35,36 +37,49 @@ msgstr ""
 #: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Vyskytla sa chyba v module %s."
 
 #: ../src/exceptionWindow.py:51
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"Pretože je problém s modulom %s, \n"
+"agent nastavenia Red Hat nebude načítavať tento modul \n"
+"a pokúsi sa spustiť zostávajúce moduly."
 
 #: ../src/exceptionWindow.py:55
+#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "Vyskytla sa chyba v module %s."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../src/exceptionWindow.py:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"Prosím vyplňte hlásenie o chybe pre 'firstboot' do systému \n"
+"pre sledovanie chýb Red Hat na http://www.redhat.com/bugzilla. \n"
+"Kópia ladiaceho výstupu bola uložená do %s \n"
+"Prosím, nezabudnite pripojiť tento súbor k hláseniu o chybe. \n"
 
 #: ../src/exceptionWindow.py:71
+#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"Prosím vyplňte hlásenie o chybe pre 'firstboot' do systému \n"
+"pre sledovanie chýb Red Hat na http://www.redhat.com/bugzilla. \n"
+"Kópia ladiaceho výstupu bola uložená do %s \n"
+"Prosím, nezabudnite pripojiť tento súbor k hláseniu o chybe. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
@@ -74,19 +89,20 @@ msgstr ""
 #. button's label back to normal.
 #: ../src/interface.py:83 ../src/interface.py:154
 msgid "_Finish"
-msgstr ""
+msgstr "_Dokončiť"
 
 #: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
+"Systém musí byť reštartovaný, aby sa prejavili niektoré z vašich výberov."
 
 #: ../src/interface.py:231
 msgid "_Back"
-msgstr ""
+msgstr "_Späť"
 
 #: ../src/interface.py:238
 msgid "_Forward"
-msgstr ""
+msgstr "_Dopredu"
 
 #: ../src/interface.py:265
 #, python-format
@@ -128,7 +144,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr ""
+msgstr "Prídavné CD"
 
 #: ../src/modules/additional_cds.py:55
 msgid ""
@@ -137,10 +153,15 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
+"Prosím, vložte disk označený \"Red Hat Enterprise Linux Extras\", aby ste "
+"umožnili inštaláciu zásuvných modulov a aplikácií od tretích dodávateľov. "
+"Tiež môžete vložiť disk s Dokumentáciou (Documentation), alebo ostatné "
+"disky, ktoré vám poskytol Red Hat, aby ste si teraz nainštalovali prídavný "
+"softvér."
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
+msgstr "Prosím, vložte teraz prípadné ďalšie inštalačné CD so softvérom."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -150,25 +171,33 @@ msgid ""
 "architecture you must install the Intel Execution Layer package from the "
 "Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"Aby ste povolili podporu behu 32-bitových aplikácií na architektúre Intel "
+"Itanium2, musíte teraz nainštalovať balík Intel Execution Layer z disku "
+"Extras."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
-msgstr ""
+msgstr "Inštalovať..."
 
 #: ../src/modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
+"CD-ROM nebol zdetekovaný. Prosím vložte CD-ROM do mechaniky a kliknite na "
+"\"Ok\" pre pokračovanie."
 
 #: ../src/modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
+"Program autorun nebol nájdený na CD. Kliknite na \"Ok\" pre pokračovanie."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
-msgstr ""
+msgstr "Informácie o licencii"
 
 #: ../src/modules/eula.py:53
 msgid ""
@@ -184,18 +213,33 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
+"Ďakujeme za inštaláciu Fedory.  Fedora je zostavou softvéru, každý so svojou "
+"vlastnou licenciou.  Zostava je k dispozícii pod GNU General Public License "
+"verzie 2.  Nie sú tu žiadne obmedzenia pri používaní, kopírovaní alebo "
+"modifikácii tohto kódu.  Aj keď tu sú reštrikcie a záväzky, ktoré sa týkajú "
+"redistribúcie kódu, tak v originálnej ako aj v modifikovanej forme.  Okrem "
+"iného sa tieto reštrikcie/záväzky týkajú licencovania redistribúcie, "
+"ochranných známok a exportných obmedzení.\n"
+"\n"
+"Ak chcete týmto obmedzeniam dobre porozumieť, prosím navštívte http://"
+"fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Pochopil som, pokračovať."
 
 #: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
 msgid "Welcome"
-msgstr ""
+msgstr "Vitajte"
 
 #: ../src/modules/welcome.py:45
+#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"Je potrebné urobiť trochu viac krokov predtým, ako bude váš systém "
+"pripravený na použitie. Agent pre nastavenie vás teraz bude sprevádzať cez "
+"základnú konfiguráciu. Prosím klinite na tlačidlo \"Ďalej\" v pravom dolnom "
+"rohu pre pokračovanie."
