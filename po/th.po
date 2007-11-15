@@ -1,0 +1,228 @@
+# translation of th.po to Thai
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Supphachoke Suntiwichaya <mrchoke@opentle.org>, 2003, 2004.
+# Surichat Sumrit <nook@opentle.org>, 2004.
+# Kamthorn Krairaksa <kamthorn_k@yahoo.com>, 2004, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: th\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2006-09-16 00:35+0700\n"
+"Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
+"Language-Team: Thai <l10n@opentle.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับมอดูล %s"
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"เนื่องจากเกิดปัญหากับมอดูล %s \n"
+"ตัวติดตั้งเรดแฮทจะไม่โหลดมอดูลนี้ \n"
+"และจะพยายามโหลดมอดูลที่ยังเหลืออยู่ต่อไป"
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับมอดูล %s"
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"กรุณาส่งบันทึกข้อผิดพลาดเกี่ยวกับ 'firstboot' ไปยังระบบ\n"
+"ติดตามข้อผิดพลาดของเรดแฮทที่ http://www.redhat.com/bugzilla \n"
+"ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
+"อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"กรุณาส่งบันทึกข้อผิดพลาดเกี่ยวกับ 'firstboot' ไปยังระบบ\n"
+"ติดตามข้อผิดพลาดของเรดแฮทที่ http://www.redhat.com/bugzilla \n"
+"ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
+"อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "ติดตั้งเสร็จแล้ว"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "จำเป็นต้องเริ่มการทำงานของระบบใหม่เพื่อให้บางส่วนที่คุณเลือกทำงานได้ถูกต้อง"
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "_ย้อนกลับ"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "ถัดไ_ป"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "แผ่นซีดีเสริม"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"กรุณาใส่แผ่นดิสก์ที่ชื่อว่า \"Red Hat Enterprise Linux Extras\" "
+"เพื่อให้สามารถติดตั้งปลั๊กอินและโปรแกรมจากผู้ผลิตรายอื่น คุณอาจจะใส่แผ่นดิสก์คู่มือการใช้งาน "
+"หรือแผ่นดิสก์ที่เรดแฮทได้ให้มาด้วย เพื่อติดตั้งโปรแกรมเพิ่มเติมในตอนนี้ทันที"
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr "กรุณาใส่ซีดีติดตั้งโปรแกรมเพิ่มเติมได้แล้ว"
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"เพื่อรองรับการทำงานของโปรแกรม 32-bit ให้สามารถรันบนสถาปัตยกรรมอินเทล Itanium2 ได้ "
+"คุณต้องติดตั้งแพกเกจ Intel Execution Layer จากแผ่นดิสก์พิเศษเดี๋ยวนี้"
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "ติดตั้ง..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr "ตรวจไม่พบซีดีรอม กรุณาใส่แผ่นซีดีแล้วคลิก \"ตกลง\""
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+#, fuzzy
+msgid "License Information"
+msgstr "ตั้งค่าเขตเวลา"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr ""
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "ยินดีต้อนรับ"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"ต่อไปนี้จะเป็นขั้นตอนสั้นๆ ที่ต้องตั้งค่า ก่อนจะใช้งานระบบของคุณ "
+"ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
+"ที่มุมล่างขวาเพื่อทำงานต่อ"

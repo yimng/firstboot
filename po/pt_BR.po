@@ -1,0 +1,257 @@
+# translation of pt_BR.po to  Brazilian Portuguese
+# translation of pt_BR.po to Brazilian Portuguese
+# Brazilian Portuguese localization of Red Hat Linux
+# Originated from the Portuguese translation by
+# Pedro Morais <morais@kde.org>
+# José Nuno Pires <jncp@netcabo.pt>
+# Daniel Brooke Peig <daniel@brookepeig.com>, 2004.
+# David Barzilay <barzilay@redhat.com>, 2003, 2004.
+# Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>, 2004.
+# Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>, 2005, 2006.
+# Rodrigo Padula de Oliveira <rodrigopadula@projetofedora.org>, 2006.
+# Diego Búrigo Zacarão <diegobz@gmail.com>, 2006.
+# Valnir Ferreira Jr. <vferreir@redhat.com>, 2006.
+# Igor Pires Soares <igor@projetofedora.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pt_BR\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-09-17 23:23-0300\n"
+"Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
+"Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "Ocorreu um erro no módulo %s."
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"Já que ocorreu um problema com o módulo %s, \n"
+"o Agente de Configuração da Red Hat não carregará este módulo e \n"
+"tentará executar os módulos restantes."
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "Ocorreu um erro no módulo %s."
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"Por favor, registre um erro (bug) do \"firstboot\" no sistema \n"
+"de gestão de erros da Red Hat em http://www.redhat.com/bugzilla. \n"
+"Uma cópia da saída de depuração (debug output) foi gravada em %s \n"
+"Certifique-se de anexar este arquivo ao relatório de erro. \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"Por favor, registre um erro (bug) do \"firstboot\" no sistema \n"
+"de gestão de erros da Red Hat em http://www.redhat.com/bugzilla. \n"
+"Uma cópia da saída de depuração (debug output) foi gravada em %s \n"
+"Certifique-se de anexar este arquivo ao relatório de erro. \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "_Concluir"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+"O sistema deve ser reinicializado agora para que as suas seleções tenham "
+"efeito."
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "_Voltar"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "_Avançar"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "CDs Adicionais"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Por favor, insira o disco \"Red Hat Enterprise Linux Extras\" para permitir "
+"a instalação de aplicações e plug-ins de terceiros.  Você pode também "
+"inserir o disco de Documentação ou outros discos fornecidos pela Red Hat "
+"para instalar programas adicionais neste momento."
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr ""
+"Por favor, introduza quaisquer cds de programas adicionais a serem "
+"instalados agora."
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"Para habilitar o suporte a execução de aplicações de 32 bits na arquitetura "
+"Itanium2 da Intel você deve instalar o pacote Intel Execution Layer do disco "
+"Extras agora."
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "Instalar..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Não foi detectado nenhum CD-ROM.  Por favor, introduza um CD no drive e "
+"clique em \"OK\" para continuar."
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"O programa autorun não pôde ser encontrado no CD. Clique em \"OK\" para "
+"continuar."
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "Informações da Licença"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"Obrigado por instalar o Fedora. O Fedora é uma compilação de pacotes de "
+"software, cada um deles sob a sua própria licença. A compilação é "
+"disponibilizada sob a GNU General Public License versão 2. Não há restrições "
+"para usar, copiar ou modificar este código. Entretanto, há restrições e "
+"obrigações que se aplicam à redistribuição do código, tanto na sua forma "
+"original como na sua forma modificada. Entre outras coisas, essas restrições/"
+"obrigações pertencem ao licenciamento da redistribuição, dos direitos da "
+"marca registrada e do controle de exportação.\n"
+"\n"
+"Caso você queira conhecer quais são estas restrições, por favor, visite "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "Entendido, por favor prossiga."
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "Bem-vindo"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"Ainda há mais alguns passos a percorrer antes do seu computador estar pronto "
+"para ser utilizado. O Agente de Configuração agora irá guiá-lo através de "
+"algumas configurações básicas. Por favor, clique no botão \"Avançar\" no "
+"canto inferior direito para continuar."

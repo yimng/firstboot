@@ -1,0 +1,244 @@
+# Serbian(Latin) translations for firstboot
+# Copyright (C) 2005 Red Hat, Inc.
+# This file is distributed under the same license as the firstboot package.
+# Filip Maličević <filip@lakinetwork.com>, 2005.
+# Miloš Komarčević <kmilos@gmail.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-03-22 00:29-0000\n"
+"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
+"Language-Team: Serbian (sr) <fedora@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "Došlo je do greške u modulu %s."
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"S obzirom da postoji problem sa modulom %s, \n"
+"Red Hat Agent postavke neće pokrenuti ovaj modul, \n"
+"a pokušaće da pokrene preostale module."
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "Došlo je do greške u modulu %s."
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"Prijavite grešku za „firstboot“ na Red Hat-ovom \n"
+"sistemu za praćenje grešaka na http://www.redhat.com/bugzilla. \n"
+"Kopija ispisa za otklanjanje grešaka je sačuvana u %s \n"
+"Priložite i tu datoteku pri prijavi greške. \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"Prijavite grešku za „firstboot“ na Red Hat-ovom \n"
+"sistemu za praćenje grešaka na http://www.redhat.com/bugzilla. \n"
+"Kopija ispisa za otklanjanje grešaka je sačuvana u %s \n"
+"Priložite i tu datoteku pri prijavi greške. \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "Za_vrši"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+"Sistem sada mora biti ponovo podignut kako bi neki od Vaših izbora imali "
+"dejstva."
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "Na_zad"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "Nap_red"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "Dodatni CD-ovi"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Ubacite disk obeležen kao „Red Hat Enterprise Linux Extras“ da omogućite "
+"instaliranje dodataka i programa sa strane.  U ovom trenutku možete ubaciti "
+"i disk sa dokumentacijom, ili druge Red Hat dostavljene diskove da "
+"instalirate dodatni softver."
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr "Sada ubacite ma koji dodatni softverski instalacioni CD."
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"Da biste uključili podršku za 32-bitne programe na Intel Itanium2 "
+"arhitekturi, morate instalirati Intel Execution Layer paket sa Extras diska "
+"sada."
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "Instaliranje..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ROM nije pronađen.  Ubacite CD-ROM u uređaj i pritisnite „U redu“ za "
+"nastavak."
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Program sa samostalnim pokretanjem nije pronađen na CD-u. Za nastavak "
+"pritisnite „U redu“."
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "Podaci o licenci"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"Zahvaljujemo na instaliranju Fedore.  Fedora je zbirka softverskih paketa, "
+"svaki pod svojom licencom.  Omogućeno je da zbirka bude dostupna pod GNU "
+"Opštom javnom licencom verzije 2.  Ne postoje ograničenja pri upotrebi, "
+"umnožavanju, ili izmenjivanju ovog koda.  Međutim, postoje ograničenja i "
+"obaveze koje se tiču dalje distribucije ovog koda, bilo u svom prvobitnom "
+"ili izmenjenom obliku.  Pored drugih stvari, ova ograničenja/obaveze se "
+"dodiru licence dalje distribucije, prava na zaštitne znake, i kontrole "
+"izvoza.\n"
+"\n"
+"Ako želite da razumete koja su tačno ova ograničenja, posetite http://"
+"fedoraproject.org/wiki/Legal/Licenses/EULA."
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "Razumeo/la, nastavi."
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "Dobrodošli"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"Potrebno je još nekoliko koraka dok sistem ne bude spreman za upotrebu.  "
+"Agent postavke će Vas voditi kroz neka osnovna podešavanja.  Za nastavak "
+"molim pritisnite dugme „Napred“ u donjem desnom uglu."

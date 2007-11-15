@@ -1,0 +1,250 @@
+# translation of da.po to
+# translation of da.po to
+# translation of da.po to
+# translation of da.po to Danish
+# Danish translation of firstboot.
+# Copyright © 2002 Free Software Foundation.
+# This file is distributed under the same license as the firstboot package.
+# Kjartan Maraas <kmaraas@gnome.org>, 2002.
+# Keld Simonsen <keld@dkuug.dk>, 2002-2003, 2004.
+# Martin Willemoes Hansen <mwh@sysrq.dk>, 2004.
+# Keld Simonsen <keld@rap.dk>, 2005, 2006, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: da\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-04-15 10:42+0200\n"
+"Last-Translator: Keld Simonsen <keld@rap.dk>\n"
+"Language-Team:  <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-Generator: KBabel 1.10.2\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "En fejl indtraf i %s-modulet."
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"Da der er et problem med %s-modulet, \n"
+"vil Red Hat Opsætningsagenten ikke indlæse dette modul, og \n"
+"den vil forsøge at køre de resterende moduler."
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "En fejl indtraf i %s-modulet."
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
+"fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
+"En kopi af fejlsøgningsuddata er gemt i %s. \n"
+"Vær sød at vedlægge denne fil til fejlrapporten. \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
+"fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
+"En kopi af fejlsøgningsuddata er gemt i %s. \n"
+"Vær sød at vedlægge denne fil til fejlrapporten. \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "_Færdiggør"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "System skal nu genstartes for at nogle af dine valg kan få virkning."
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "_Tilbage"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "_Fremad"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "Yderligere CDer"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Indsæt venligst skiven mærket \"Red Hat Enterprise Linux Extras\" for at "
+"tillade installation af tredjeparts-moduler og -programmer. Du kan også "
+"indsætte Dokumentationsskiven, eller andre Red Hat-leverede disketter for at "
+"installere flere programmer på dette tidspunkt."
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr "Indsæt andre yderligere programinstallations-cd'er nu."
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"For at aktivere køretidsunderstøttelse for 32-bit programmer på Intel "
+"Itanium2-arkitekturen skal du installere Intel Execution Layer-pakken fra "
+"Extra-skiven nu."
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "Installér..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
+"for at fortsætte"
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Autorun-programmet kan ikke findes på cd'en. Klik på \"O.k.\" for at "
+"fortsætte."
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "Licens-information"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"Tak hor at du installerer Fedora.  Fedora er en samling af programmel, som "
+"hver især har deres egen licens. Samlingen er gjort tilgængelig under GNU "
+"General Public License version 2.  Der er ingen begrænsninger på brug, "
+"kopiering eller ændring af denne kode. Men der er begrænsninger og pligter "
+"som gælder ved gendistribuering af koden, enten i sin oprindelige form eller "
+"i en ændret form. Bl. a. vedrører disse begrænsninger licensen ved "
+"gendistribution, varemærke-rettigheder og kontrol af eksport.\n"
+"\n"
+"Hvis du ønsker at vide hvad disse begrænsninger er, kan du besøge http://"
+"fedoraproject.org/wiki/Legal/Licenses/EULA."
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "Forstået, fortsæt venligst."
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "Velkommen"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"Der er endnu nogle enkelte trin der skal gøres før dit system er klar til "
+"brug. Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
+"konfigurering. Klik på 'Fremad'-knappen i det nederste højre hjørne for at "
+"fortsætte."

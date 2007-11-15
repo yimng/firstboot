@@ -1,0 +1,243 @@
+# Serbian translations for firstboot
+# Copyright (C) 2005 Red Hat, Inc.
+# This file is distributed under the same license as the firstboot package.
+# Filip Maličević <filip@lakinetwork.com>, 2005.
+# Miloš Komarčević <kmilos@gmail.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-03-22 00:29-0000\n"
+"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
+"Language-Team: Serbian (sr) <fedora@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "Дошло је до грешке у модулу %s."
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"С обзиром да постоји проблем са модулом %s, \n"
+"Red Hat Агент поставке неће покренути овај модул, \n"
+"а покушаће да покрене преостале модуле."
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "Дошло је до грешке у модулу %s."
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"Пријавите грешку за „firstboot“ на Red Hat-овом \n"
+"систему за праћење грешака на http://www.redhat.com/bugzilla. \n"
+"Копија исписа за отклањање грешака је сачувана у %s \n"
+"Приложите и ту датотеку при пријави грешке. \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"Пријавите грешку за „firstboot“ на Red Hat-овом \n"
+"систему за праћење грешака на http://www.redhat.com/bugzilla. \n"
+"Копија исписа за отклањање грешака је сачувана у %s \n"
+"Приложите и ту датотеку при пријави грешке. \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "За_врши"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+"Систем сада мора бити поново подигнут како би неки од Ваших избора имали "
+"дејства."
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "На_зад"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "Нап_ред"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "Додатни CD-ови"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Убаците диск обележен као „Red Hat Enterprise Linux Extras“ да омогућите "
+"инсталирање додатака и програма са стране.  У овом тренутку можете убацити и "
+"диск са документацијом, или друге Red Hat достављене дискове да инсталирате "
+"додатни софтвер."
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr "Сада убаците ма који додатни софтверски инсталациони CD."
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"Да бисте укључили подршку за 32-битне програме на Intel Itanium2 "
+"архитектури, морате инсталирати Intel Execution Layer пакет са Extras диска "
+"сада."
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "Инсталирање..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ROM није пронађен.  Убаците CD-ROM у уређај и притисните „У реду“ за "
+"наставак."
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Програм са самосталним покретањем није пронађен на CD-у. За наставак "
+"притисните „У реду“."
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "Подаци о лиценци"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"Захваљујемо на инсталирању Fedora-е.  Fedora је збирка софтверских пакета, "
+"сваки под својом лиценцом.  Омогућено је да збирка буде доступна под ГНУ "
+"Општом јавном лиценцом верзије 2.  Не постоје ограничења при употреби, "
+"умножавању, или измењивању овог кода.  Међутим, постоје ограничења и обавезе "
+"које се тичу даље дистрибуције овог кода, било у свом првобитном или "
+"измењеном облику.  Поред других ствари, ова ограничења/обавезе се додиру "
+"лиценце даље дистрибуције, права на заштитне знаке, и контроле извоза.\n"
+"\n"
+"Ако желите да разумете која су тачно ова ограничења, посетите http://"
+"fedoraproject.org/wiki/Legal/Licenses/EULA."
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "Разумео/ла, настави."
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "Добродошли"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"Потребно је још неколико корака док систем не буде спреман за употребу.  "
+"Агент поставке ће Вас водити кроз нека основна подешавања.  За наставак "
+"молим притисните дугме „Напред“ у доњем десном углу."

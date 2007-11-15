@@ -1,0 +1,240 @@
+# translation of ko.po to
+# translation of ko.po to Korean
+# Copyright (C) 2002 Red Hat, Inc.
+#
+# Michelle J Kim <mkim@redhat.com>, 2003,2004.
+# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
+# Eunju Kim <eukim@redhat.com>, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: ko\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-08-30 16:51+1000\n"
+"Last-Translator: Eunju Kim <eukim@redhat.com>\n"
+"Language-Team: Korean <ko@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "%s 모듈에서 오류가 발생했습니다."
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+" %s 모듈에서 문제가 발생했기 때문에, \n"
+"Red Hat 설정 에이전트는 이 모듈을 읽어오지 않고 \n"
+"그 외 나머지 모듈을 실행할 것입니다."
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "%s 모듈에서 오류가 발생했습니다."
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"'firstboot'에 대한 버그를 Red Hat 버그 추적 시스템인 \n"
+"http://www.redhat.com/bugzilla로 보고해 주십시오. \n"
+"디버그 출력 결과는 %s에 저장되어 있습니다. \n"
+"이 파일을 버그 리포트에 첨부해 주십시오. \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"'firstboot'에 대한 버그를 Red Hat 버그 추적 시스템인 \n"
+"http://www.redhat.com/bugzilla로 보고해 주십시오. \n"
+"디버그 출력 결과는 %s에 저장되어 있습니다. \n"
+"이 파일을 버그 리포트에 첨부해 주십시오. \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "완료(_F)"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "선택하신 사항을 적용하려면 지금 시스템을 재부팅하셔야 합니다."
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "이전(_B)"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "다음(_F)"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "추가 CD"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"\"Red Hat Enterprise Linux 추가\" 디스크를 삽입하여 제삼자 플러그인 및 응용 "
+"프로그램을 설치하실 수 있습니다. 문서 자료 디스크 또는 Red Hat에서 제공한 기"
+"타 다른 디스크를 이용하여 언제든지 추가 소프트웨어를 설치하실 수 있습니다."
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr "추가 소프트웨어 설치 시디를 지금 삽입해 주십시오."
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"Intel Itanium2 아키텍쳐에서 32 비트 응용 프로그램을 런타임 지원하려면, 추가 "
+"시디에서 Intel Execution Layer 패키지를 지금 설치하셔야 합니다."
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "설치..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"CD-ROM이 감지되지 않았습니다.  CD-ROM을 드라이브에 삽입하신 후 \"확인\" 버튼"
+"을 클릭하여 계속 진행해 주십시오."
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"autorun 프로그램을 CD에서 찾지 못했습니다. \"확인\"을 클릭하여 계속 진행하시"
+"기 바랍니다."
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "라이센스 정보"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"Fedora를 설치해 주셔서 감사합니다.  Fedora는 라이센스 기반 소프트웨어 패키지"
+"로 컴파일되어 있습니다. 이 컴파일은 GNU General Public License version 2 하"
+"에 사용하실 수 있습니다. 이러한 코드를 사용, 복사, 수정하는 데에는 제한이 없"
+"지만, 코드 원본이나 수정본의 재배포에는 제한 및 의무가 있습니다. 특히, 이러"
+"한 제한/의무는 재배포, 상표권, 수출 통제와 관련되어 있습니다.\n"
+"\n"
+"이러한 제한에 대한 자세한 내용은 http://fedoraproject.org/wiki/Legal/"
+"Licenses/EULA에서 확인하시기 바랍니다."
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "네, 계속 진행합니다."
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "환영합니다"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"시스템 사용 준비가 완료되기 전에 몇 가지의 단계가 더 남아 있습니다. 설정 에이"
+"전트는 이제 몇 가지 기본적인 설정 과정을 단계별로 길잡이를 해 드릴 것입니다. "
+"계속하시려면 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하십시오."

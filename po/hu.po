@@ -1,0 +1,245 @@
+# Tamas Szanto <tszanto@mol.hu>, 2004.
+# Széll Tamás <tomi@digiflex.hu>, 2004.
+# Arpad Biro <biro_arpad@yahoo.com>, 2005, 2007.
+# Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
+# Gábor Szentiványi <szenti@ulx.hu>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: firstboot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2007-04-18 20:05+0200\n"
+"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../firstboot:109
+msgid "You must be root to run firstboot."
+msgstr ""
+
+#: ../firstboot:146 ../firstboot:147
+msgid "Could not start any firstboot frontend."
+msgstr ""
+
+#: ../firstboot:158 ../firstboot:159
+msgid "No firstboot modules were found."
+msgstr ""
+
+#: ../firstboot:168 ../firstboot:169
+msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../src/exceptionWindow.py:50
+#, python-format
+msgid "An error has occurred in the %s module."
+msgstr "Hiba történt a(z) %s modulban."
+
+#: ../src/exceptionWindow.py:51
+#, fuzzy, python-format
+msgid ""
+"Since there is a problem with the %s module,\n"
+"firstboot will not load this module and will\n"
+"attempt to run the remaining modules."
+msgstr ""
+"Hiba történt a(z) %s modulban, \n"
+"ezért a Red Hat Telepítőügynök nem fogja azt betölteni, \n"
+"hanem folytatja a többi modul betöltését."
+
+#: ../src/exceptionWindow.py:55
+#, fuzzy
+msgid "An error has occurred in firstboot."
+msgstr "Hiba történt a(z) %s modulban."
+
+#: ../src/exceptionWindow.py:56
+msgid "Since there is a problem, firstboot will exit."
+msgstr ""
+
+#: ../src/exceptionWindow.py:66
+#, fuzzy, python-format
+msgid ""
+"A copy of the debug output has been saved to %s\n"
+"Be sure to attach that file to the bug report.\n"
+msgstr ""
+"Kérjük jelentse be a hibát a 'firstboot' szekcióba a Red Hat \n"
+"hibakövető rendszerben, ezen a címen: http://www.redhat.com/bugzilla. \n"
+"A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
+"Kérjük, csatolja ezt a fájlt a hibabejelentéshez. \n"
+
+#: ../src/exceptionWindow.py:71
+#, fuzzy
+msgid ""
+"Please file a bug against 'firstboot' in the Red Hat\n"
+"bug tracking system at http://www.redhat.com/bugzilla.\n"
+msgstr ""
+"Kérjük jelentse be a hibát a 'firstboot' szekcióba a Red Hat \n"
+"hibakövető rendszerben, ezen a címen: http://www.redhat.com/bugzilla. \n"
+"A nyomkövetési adatok másolata ebbe a fájlba került: %s \n"
+"Kérjük, csatolja ezt a fájlt a hibabejelentéshez. \n"
+
+#: ../src/interface.py:75
+msgid "Attempted to go back, but history is empty."
+msgstr ""
+
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../src/interface.py:83 ../src/interface.py:154
+msgid "_Finish"
+msgstr "_Befejezés"
+
+#: ../src/interface.py:175
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr ""
+"A változások érvénybe léptetéséhez most újra kell indítani a rendszert."
+
+#: ../src/interface.py:231
+msgid "_Back"
+msgstr "_Vissza"
+
+#: ../src/interface.py:238
+msgid "_Forward"
+msgstr "_Tovább"
+
+#: ../src/interface.py:265
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr ""
+
+#: ../src/interface.py:337 ../src/interface.py:338
+msgid "moveToPage must be given a module title or page number."
+msgstr ""
+
+#: ../src/interface.py:422
+msgid "Unable to create the screenshot dir; skipping."
+msgstr ""
+
+#: ../src/interface.py:462 ../src/interface.py:463
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../src/loader.py:98
+#, python-format
+msgid "Module %s does not contain a class named moduleClass; skipping."
+msgstr ""
+
+#: ../src/loader.py:109
+#, python-format
+msgid "Module %s does not contain the required attribute %s; skipping."
+msgstr ""
+
+#: ../src/module.py:173
+#, python-format
+msgid "Unable to load pixmap %s for module %s."
+msgstr ""
+
+#: ../src/moduleset.py:94
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "További CD-k"
+
+#: ../src/modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Helyezze be a \"Red Hat Enterprise Linux Extras\" feliratú lemezt a más "
+"gyártótól származó bővítőmodulok és alkalmazások telepítéséhez. Más "
+"telepítési lemez is megadható (például a dokumentáció vagy a Red Hat által "
+"készített valamilyen más szoftver lemeze)."
+
+#: ../src/modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr ""
+"Ha rendelkezik további szoftvertelepítési CD-vel, most helyezze be azt."
+
+#: ../src/modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
+msgstr ""
+"\n"
+"\n"
+"Ha engedélyezni szeretné a 32 bites alkalmazások futásidejű támogatását "
+"Intel Itanium2 rendszeren, akkor most telepítenie kell az Intel Execution "
+"Layer csomagot az Extras lemezről."
+
+#: ../src/modules/additional_cds.py:73
+msgid "Install..."
+msgstr "Telepítés..."
+
+#: ../src/modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Nem található CD-lemez a meghajtóban. Helyezzen egy lemezt a meghajtóba és "
+"kattintson az \"OK\" gombra."
+
+#: ../src/modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
+"\"OK\" gombra."
+
+#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+msgid "License Information"
+msgstr "Licenc-információ"
+
+#: ../src/modules/eula.py:53
+msgid ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+msgstr ""
+"Köszönjük, hogy a Fedora rendszert telepítette. A Fedora egy "
+"szoftvercsomagokból álló gyűjtemény, amelyben minden csomagnak saját licence "
+"van. A teljes rendszert a GNU General Public License (GPL) 2-es verziója "
+"alapján bocsátjuk rendelkezésre. A kód használatára, másolására és "
+"módosítására vonatkozóan nincsenek korlátozások. A kód terjesztésére "
+"vonatkozóan viszont vannak bizonyos korlátozások és kötelezettségek, akár "
+"eredeti, akár módosított formában történik a terjesztés. Ezen korlátozások "
+"és kötelezettségek többek közt a terjesztés, a védjegy-jogok és az export-"
+"szabályzás licencelésére vonatkoznak.\n"
+"\n"
+"Ha szeretne többet tudni arról, mik ezek a korlátozások, akkor látogassa meg "
+"a következő weblapot: http://fedoraproject.org/wiki/Legal/Licenses/EULA"
+
+#: ../src/modules/eula.py:64
+msgid "Understood, please proceed."
+msgstr "Elfogadom, lépjünk tovább."
+
+#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+msgid "Welcome"
+msgstr "Üdvözöljük"
+
+#: ../src/modules/welcome.py:45
+#, fuzzy
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"A rendszer használatba vétele előtt még néhány lépést el kell végeznie. A "
+"telepítő végigvezeti Önt a beállítási lépéseken. A továbblépéshez kattintson "
+"a \"Tovább\" gombra a jobb alsó sarokban."

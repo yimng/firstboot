@@ -1,0 +1,196 @@
+#!/usr/bin/python2
+#
+# Chris Lumens <clumens@redhat.com>
+#
+# Copyright 2007 Red Hat, Inc.
+#
+# This copyrighted material is made available to anyone wishing to use, modify,
+# copy, or redistribute it subject to the terms and conditions of the GNU
+# General Public License v.2.  This program is distributed in the hope that it
+# will be useful, but WITHOUT ANY WARRANTY expressed or implied, including the
+# implied warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program; if not, write to the Free Software Foundation, Inc., 51
+# Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  Any Red Hat
+# trademarks that are incorporated in the source code or documentation are not
+# subject to the GNU General Public License and may only be used or replicated
+# with the express permission of Red Hat, Inc. 
+#
+import os, string, sys
+sys.path.append("/usr/share/firstboot")
+
+# Since X may be starting up immediately after firstboot crashes, we might
+# not have any way to see the traceback.  This lets it be logged somewhere
+# useful.  Set this up as early as possible.
+def defaultExnHandler(type, value, tb):
+    import tempfile, traceback
+
+    (fd, path) = tempfile.mkstemp("", "firstboot-", "/tmp")
+    fo = os.fdopen(fd, "w")
+
+    traceback.print_exception(type, value, tb, None, fo)
+    fo.close()
+
+    # Also print on stderr just in case we have time to see the problem.
+    traceback.print_exception(type, value, tb)
+
+sys.excepthook = defaultExnHandler
+
+from config import *
+from constants import *
+from loader import *
+import logging
+from optparse import OptionParser
+import rhpl.Conf
+
+from rhpl.translate import _
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
+
+def getRunlevel():
+    line = os.popen("/sbin/runlevel", "r").readline()
+    line = string.strip(line)
+
+    # This can happen in kadischi, for instance
+    if line.startswith("unknown"):
+        return 3
+    else:
+        tokens = string.split(line)
+        return int(tokens[-1])
+
+def rhgbIsRunning():
+    return os.access("/usr/bin/rhgb-client", os.R_OK|os.X_OK) and os.system("/usr/bin/rhgb-client --ping") == 0
+
+def writeSysconfigFile():
+    fd = open("/etc/sysconfig/firstboot", "w")
+    fd.write("RUN_FIRSTBOOT=NO\n")
+    fd.close()
+
+if __name__ == "__main__":
+    frontend = None
+    interface = None
+    mode = MODE_REGULAR
+    moduleList = None
+    needInterface = False
+
+    logLevelMap = {"debug": logging.DEBUG, "info": logging.INFO,
+                   "warning": logging.WARNING, "error": logging.ERROR,
+                   "critical": logging.CRITICAL}
+
+    op = OptionParser()
+    op.add_option("-s", "--autoscreenshot", action="store_true", default=False)
+    op.add_option("-d", "--debug", action="store_true", default=False)
+    op.add_option("-g", "--forcegui", action="store_true", default=False)
+    op.add_option("-l", "--loglevel", type="choice", choices=["debug", "info", "warning", "error", "critical"], default="error")
+    op.add_option("-m", "--moduleDir", action="store", default=BASEDIR+"modules/")
+    op.add_option("-r", "--reconfig", action="store_true", default=False)
+    op.add_option("-t", "--test", action="store_true", default=False)
+    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/default/")
+    (opts, args) = op.parse_args()
+
+    config.moduleDir = opts.moduleDir
+    config.themeDir = opts.themeDir
+
+    if opts.debug:
+        opts.loglevel = "debug"
+
+    if logLevelMap.has_key(opts.loglevel):
+        logging.basicConfig(level=logLevelMap[opts.loglevel],
+                            format="firstboot %(levelname)s: %(message)s")
+
+    if opts.reconfig:
+        logging.info("Starting up in reconfig mode")
+        mode = mode | MODE_RECONFIG
+
+    # First check to see if firstboot should even run.
+    if not opts.test and (os.getuid() > 0 or os.geteuid() > 0):
+        logging.error(_("You must be root to run firstboot."))
+        os._exit(0)
+
+    # If we're in debug mode, or /etc/sysconfig/firstboot doesn't exist, or
+    # RUN_FIRSTBOOT=NO isn't in it, firstboot should run.
+    if not opts.debug and not opts.reconfig:
+        if os.access("/etc/sysconfig/firstboot", os.R_OK):
+            conf = rhpl.Conf.ConfShellVar("/etc/sysconfig/firstboot")
+
+            if conf.has_key("RUN_FIRSTBOOT") and conf["RUN_FIRSTBOOT"].upper() == "NO":
+                logging.info("firstboot has already been run.  Exiting.")
+                os._exit(0)
+
+    # If we have a $DISPLAY set, we are either in debug mode or in reconfig
+    # mode from a terminal already running under X.  Otherwise, run in text
+    # mode if in runlevel 3, or take over rhgb's X server if it's running, or
+    # start up our own if not.
+    if os.environ.has_key("DISPLAY") or opts.debug:
+        frontend = None
+        needInterface = True
+        logging.debug("X is already running, not using any frontend")
+    elif (getRunlevel() == 3 and not opts.forcegui):
+        # from TextFrontEnd import TextFrontEnd
+        # frontend = TextFrontEnd()
+        logging.debug("Using text frontend")
+        pass
+    elif rhgbIsRunning():
+        from rhgbfrontend import RHGBFrontEnd
+        frontend = RHGBFrontEnd()
+        needInterface = True
+        logging.debug("RHGB is running, using RHGB frontend")
+    elif not os.environ.has_key("DISPLAY"):
+        from xfrontend import XFrontEnd
+        frontend = XFrontEnd()
+        needInterface = True
+        logging.debug("Using X frontend")
+    else:
+        logging.error(_("Could not start any firstboot frontend."))
+        raise RuntimeError, _("Could not start any firstboot frontend.")
+
+    # If X was already running, we don't need to make a frontend so skip this
+    # step.  This also means that frontends can't do anything besides set
+    # themselves up.
+    if frontend is not None:
+        logging.debug("Starting frontend")
+        frontend.start()
+
+    moduleList = loadModules(config.moduleDir, mode)
+    if not moduleList:
+        logging.error(_("No firstboot modules were found."))
+        raise RuntimeError, _("No firstboot modules were found.")
+
+    if needInterface:
+        from interface import *
+        interface = Interface(autoscreenshot=opts.autoscreenshot,
+                              moduleList=moduleList, testing=opts.test)
+        logging.debug("Using GTK interface")
+
+    if interface is None:
+        logging.error(_("Could not create any firstboot interface."))
+        raise RuntimeError, _("Could not create any firstboot interface.")
+
+    win = interface.createMainWindow()
+    interface.createSidebar()
+    interface.createScreens()
+    interface.run()
+
+    # We arrive back here after the interface has been torn down.  Now
+    # kill whatever frontend is running.
+    if frontend is not None:
+        logging.debug("Stopping frontend")
+        frontend.stop()
+
+    # Now make sure we don't run again on the next reboot.
+    if not opts.test and not opts.debug:
+        logging.debug("Writing /etc/sysconfig/firstboot file")
+        writeSysconfigFile()
+
+    if opts.reconfig and not opts.test:
+        logging.debug("Removing /etc/reconfigSys")
+
+        try:
+            os.unlink("/etc/reconfigSys")
+        except:
+            pass
+
+    # If X is still running for some reason, exiting now should take it down.
+    os._exit(0)
