@@ -1,7 +1,7 @@
 PKGNAME=firstboot
 VERSION=$(shell awk '/Version:/ { print $$2 }' ${PKGNAME}.spec)
 RELEASE=$(shell awk '/Release:/ { print $$2 }' ${PKGNAME}.spec | sed -e 's|%.*$$||g')
-CVSTAG=r$(subst .,_,$(VERSION)-$(RELEASE))
+TAG=r$(VERSION)-$(RELEASE)
 
 PREFIX=/usr
 DATADIR=${PREFIX}/share/firstboot
@@ -39,14 +39,11 @@ install: all
 	$(MAKE) -C po install
 
 tag:
-	cvs tag -FR $(CVSTAG)
+	git tag -f $(TAG)
 
 archive: tag
-	@rm -rf /tmp/${PKGNAME}-$(VERSION) /tmp/${PKGNAME}
-	@CVSROOT=`cat CVS/Root`; cd /tmp; cvs -d $$CVSROOT export -r$(CVSTAG) ${PKGNAME}
-	@mv /tmp/${PKGNAME} /tmp/${PKGNAME}-$(VERSION)
-	@dir=$$PWD; cd /tmp; tar -cvjf $$dir/${PKGNAME}-$(VERSION).tar.bz2 ${PKGNAME}-$(VERSION)
-	@rm -rf /tmp/${PKGNAME}-$(VERSION)
+	git-archive --format=tar --prefix=${PKGNAME}-$(VERSION)/ $(TAG) > ${PKGNAME}-$(VERSION).tar
+	bzip2 ${PKGNAME}-$(VERSION).tar
 	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.bz2"
 
 local:
