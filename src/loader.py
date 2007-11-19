@@ -85,7 +85,11 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
         try:
             found = imputil.imp.find_module(module)
             loaded = imputil.imp.load_module(module, found[0], found[1], found[2])
-        except:
+        except Exception, e:
+            if isinstance(e, ImportError) and e.message.find("firstboot_module_window") != -1:
+                logging.error(_("Skipping old module %s that has not been updated.") % module)
+                continue
+
             displayException(module=module)
             continue
 
