@@ -12,6 +12,7 @@ License: GPLv2+
 Group: System Environment/Base
 ExclusiveOS: Linux
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRequires: gettext
 Requires: metacity, pygtk2, rhpl
 Requires(post): chkconfig
 
@@ -61,5 +62,5 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
-* Fri Nov 02 2007 Chris Lumens <clumens@redhat.com> 1.90-1
+* Mon Nov 19 2007 Chris Lumens <clumens@redhat.com> 1.90-1
 - First packaging of the new firstboot program.
