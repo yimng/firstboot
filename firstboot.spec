@@ -2,7 +2,7 @@ Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
 Version: 1.90
-Release: 1%{?dist}
+Release: 2%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -19,6 +19,8 @@ Requires(post): chkconfig
 %ifnarch s390 s390x ppc64
 Requires: rhpxl >= 0.19
 %endif
+
+Obsoletes: firstboot-tui
 
 %description
 The firstboot utility runs after installation.  It guides the user through
@@ -62,5 +64,8 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Tue Nov 20 2007 Chris Lumens <clumens@redhat.com> 1.90-2
+- Obsolete the old firstboot-tui package that no longer exists.
+
 * Mon Nov 19 2007 Chris Lumens <clumens@redhat.com> 1.90-1
 - First packaging of the new firstboot program.
