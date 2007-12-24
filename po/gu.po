@@ -1,24 +1,23 @@
-# translation of gu1.po to Gujarati
-# translation of gu.po to Gujarati
+# translation of firstboot.master.gu.po to Gujarati
 # Gujarati translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+#
 # Automatically generated, 2004.
 # Ankit Patel <ankit@redhat.com>, 2004, 2005, 2006, 2007.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: gu\n"
+"Project-Id-Version: firstboot.master.gu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: 2007-03-22 11:22+0530\n"
+"PO-Revision-Date: 2007-12-19 18:21+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -37,19 +36,19 @@ msgstr ""
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "firstboot ચલાવવા માટે તમે રુટ હોવા જ જોઈએ."
 
 #: ../firstboot:146 ../firstboot:147
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "કોઈપણ firstboot અગ્રઅંત ચલાવી શક્યા નહિં."
 
 #: ../firstboot:158 ../firstboot:159
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "કોઈ firstboot મોડ્યુલો મળ્યા નહિં."
 
 #: ../firstboot:168 ../firstboot:169
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "કોઈપણ firstboot ઈન્ટરફેસ બનાવી શક્યા નહિં."
 
 #: ../src/exceptionWindow.py:50
 #, python-format
@@ -57,52 +56,44 @@ msgid "An error has occurred in the %s module."
 msgstr "%s મોડ્યુલમાં ભૂલ ઉદ્દભવી છે."
 
 #: ../src/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"ત્યાં મોડ્યુલ %s સાથે સમસ્યા હોવાના કારણે, \n"
-"Red Hat સેટઅપ એજન્ટ આ મોડ્યુલને લાવશે નહિ અને \n"
-"તે બાકીના મોડ્યુલો ચલાવવાનો પ્રયત્ન કરશે."
+"ત્યાં %s મોડ્યુલ સાથે સમસ્યા હોવાના કારણે,\n"
+"firstboot આ મોડ્યુલને લોડ કરશે નહિં અને તે\n"
+"બાકીના મોડ્યુલો ચલાવવાનો પ્રયાસ કરશે."
 
 #: ../src/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "%s મોડ્યુલમાં ભૂલ ઉદ્દભવી છે."
+msgstr "firstboot માં ભૂલ ઉદ્ભવી છે."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "ત્યાં સમસ્યા હોવાથી, firstboot બંધ થઈ જશે."
 
 #: ../src/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"મહેરબાની કરીને http://www.redhat.com/bugzilla જગ્યાએ \n"
-"Red Hat ભૂલ શોધવાની સિસ્ટમમાં 'firstboot' વિરુદ્ધ \n"
-"ભૂલની ફાઈલ જમા કરો. ભૂલ શોધવાના પરિણામની નકલ \n"
-"%s માં સંગ્રહાઈ ગઈ છે. ખાતરી કરો કે ભૂલ શોધવાના \n"
-"અહેવાલની સાથે આ ફાઈલ જોડો. \n"
+"ડિબગ આઉટપુટની નકલ %s માં સંગ્રહાઈ ગઈ છે\n"
+"ભૂલના અહેવાલમાં ફાઈલ જોડવાનું ભૂલશો નહિં.\n"
 
 #: ../src/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"મહેરબાની કરીને http://www.redhat.com/bugzilla જગ્યાએ \n"
-"Red Hat ભૂલ શોધવાની સિસ્ટમમાં 'firstboot' વિરુદ્ધ \n"
-"ભૂલની ફાઈલ જમા કરો. ભૂલ શોધવાના પરિણામની નકલ \n"
-"%s માં સંગ્રહાઈ ગઈ છે. ખાતરી કરો કે ભૂલ શોધવાના \n"
-"અહેવાલની સાથે આ ફાઈલ જોડો. \n"
+"મહેરબાની કરીને Red Hat ભૂલ પકડતી સિસ્ટમમાં 'firstboot' વિરુદ્દ\n"
+"http://www.redhat.com/bugzilla આગળ ભૂલ જમા કરો.\n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "પાછા જવાનો પ્રયાસ કર્યો, પરંતુ ઈતિહાસ ખાલી છે."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -125,40 +116,40 @@ msgstr "આગળ ધપાવો (_F)"
 #: ../src/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "મોડ્યુલ %s એ તેનું UI સુયોજીત કર્યું નથી, દૂર કરી રહ્યા છીએ."
 
 #: ../src/interface.py:337 ../src/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage એ આપેલ મોડ્યુલ શીર્ષક અથવા પાનાં નંબર હોવું જ જોઈએ."
 
 #: ../src/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "સ્ક્રીનશોટ ડિરેક્ટરી બનાવવામાં અસમર્થ; છોડી રહ્યા છીએ."
 
 #: ../src/interface.py:462 ../src/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "%s શીર્ષક સાથેનું કોઈ મોડ્યુલ અસ્તિત્વમાં નથી."
 
 #: ../src/loader.py:98
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "મોડ્યુલ %s એ moduleClass નામવાળો ક્લાસ સમાવતું નથી; છોડી રહ્યા છીએ."
 
 #: ../src/loader.py:109
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "મોડ્યુલ %s જરૂરી લક્ષણ %s સમાવતું નથી; છોડી રહ્યા છીએ."
 
 #: ../src/module.py:173
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "પિક્સમેપ %s ને મોડ્યુલ %s માટે લાવવામાં અસમર્થ."
 
 #: ../src/moduleset.py:94
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "મોડ્યુલ %s એ તેનું UI સુયોજીત કર્યું ન હતું; દૂર કરી રહ્યા છીએ."
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -206,10 +197,8 @@ msgstr ""
 "રાખવા માટે \"બરાબર\" ક્લિક કરો."
 
 #: ../src/modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
@@ -250,12 +239,9 @@ msgid "Welcome"
 msgstr "સ્વાગત"
 
 #: ../src/modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
-"તમારી સિસ્ટમ વાપરવા માટે તૈયાર થાય તે પહેલાં ત્યાં થોડા વધુ પગલાંઓ છે.  સેટઅપ એજન્ટ હવે "
-"તમને અમુક આધારભૂત રૂપરેખાંકન મારફતે માર્ગદર્શન કરશે.  મહેરબાની કરીને ચાલુ રાખવા માટે નીચે "
-"જમણાં ખૂણે \"આગળ ધપાવો\" બટન ક્લિક કરો."
+msgstr "તમારી સિસ્ટમ વાપરવા માટે તૈયાર થાય તે પહેલાં ત્યાં થોડા વધુ પગલાંઓ છે.  સેટઅપ એજન્ટ હવે તમને અમુક આધારભૂત રૂપરેખાંકન મારફતે માર્ગદર્શન કરશે.  મહેરબાની કરીને ચાલુ રાખવા માટે નીચે જમણાં ખૂણે \"આગળ ધપાવો\" બટન ક્લિક કરો."
+
