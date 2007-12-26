@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: 2007-04-17 19:15+0530\n"
+"POT-Creation-Date: 2007-03-21 17:57-0400\n"
+"PO-Revision-Date: 2007-12-26 14:55+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,134 +19,110 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../firstboot:109
-msgid "You must be root to run firstboot."
-msgstr ""
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "ನಿರ್ಗಮಿಸಿ"
 
-#: ../firstboot:146 ../firstboot:147
-msgid "Could not start any firstboot frontend."
-msgstr ""
-
-#: ../firstboot:158 ../firstboot:159
-msgid "No firstboot modules were found."
-msgstr ""
-
-#: ../firstboot:168 ../firstboot:169
-msgid "Could not create any firstboot interface."
-msgstr ""
-
-#: ../src/exceptionWindow.py:50
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "%s ಘಟಕದಲ್ಲಿ ದೋಷ ಕಂಡುಬಂದಿದೆ."
 
-#: ../src/exceptionWindow.py:51
-#, fuzzy, python-format
+#: ../src/exceptionWindow.py:52
+#, python-format
 msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
 msgstr ""
 "%s ಘಟಕದಲ್ಲಿ ತೊಂದರೆ ಕಂಡುಬಂದಿರುವ ಕಾರಣ,\n"
 "Red Hat Setup Agent ಇದನ್ನು ಉತ್ಥಾಪಿಸುವುದಿಲ್ಲ ಮತ್ತು \n"
 "ಇತರ ಘಟಕಗಳಿಗಳನ್ನು ಚಾಲಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತದೆ."
 
-#: ../src/exceptionWindow.py:55
-#, fuzzy
-msgid "An error has occurred in firstboot."
-msgstr "%s ಘಟಕದಲ್ಲಿ ದೋಷ ಕಂಡುಬಂದಿದೆ."
-
 #: ../src/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr ""
-
-#: ../src/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
 msgstr ""
 "'firstboot' ವಿರುದ್ಧ ಒಂದು ದೋಷವನ್ನು Red Hat ನ \n"
 " ದೋಷನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ http://www.redhat.com/bugzilla ನಲ್ಲಿ ನಮೂದಿಸಿ.\n"
 "ದೋಷನಿವಾರಣಾ ಹೊರಹರಿವಿನ ಒಂದು ನಕಲನ್ನು %s ಗೆ ಉಳಿಸಲಾಗಿದೆ \n"
 "ಆ ಕಡತವನ್ನು ದೋಷವರದಿಯೊಡನೆ ಸೇರ್ಪಡಿಸಲು ಮರೆಯದಿರಿ. \n"
 
-#: ../src/exceptionWindow.py:71
-#, fuzzy
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"'firstboot' ವಿರುದ್ಧ ಒಂದು ದೋಷವನ್ನು Red Hat ನ \n"
-" ದೋಷನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ http://www.redhat.com/bugzilla ನಲ್ಲಿ ನಮೂದಿಸಿ.\n"
-"ದೋಷನಿವಾರಣಾ ಹೊರಹರಿವಿನ ಒಂದು ನಕಲನ್ನು %s ಗೆ ಉಳಿಸಲಾಗಿದೆ \n"
-"ಆ ಕಡತವನ್ನು ದೋಷವರದಿಯೊಡನೆ ಸೇರ್ಪಡಿಸಲು ಮರೆಯದಿರಿ. \n"
-
-#: ../src/interface.py:75
-msgid "Attempted to go back, but history is empty."
-msgstr ""
-
-#. If we were previously on the last page, we need to set the Next
-#. button's label back to normal.
-#: ../src/interface.py:83 ../src/interface.py:154
-msgid "_Finish"
-msgstr "ಮುಗಿಸು (_F)"
-
-#: ../src/interface.py:175
-msgid "The system must now reboot for some of your selections to take effect."
-msgstr "ನಿಮ್ಮ ಕೆಲವು ಆಯ್ಕೆಗಳು ಪರಿಣಾಮ ಬೀರಲು ಗಣಕವು ಮರುಸಜ್ಜುಗೊಳ್ಳಬೇಕಾಗುತ್ತದೆ."
-
-#: ../src/interface.py:231
+#: ../src/firstbootWindow.py:119
 msgid "_Back"
 msgstr "ಹಿಂದಕ್ಕೆ (_B)"
 
-#: ../src/interface.py:238
+#: ../src/firstbootWindow.py:128
 msgid "_Forward"
 msgstr "ಮುಂದಕ್ಕೆ (_F)"
 
-#: ../src/interface.py:265
+#: ../src/firstbootWindow.py:291
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "ನಿಮ್ಮ ಕೆಲವು ಆಯ್ಕೆಗಳು ಪರಿಣಾಮ ಬೀರಲು ಗಣಕವು ಮರುಸಜ್ಜುಗೊಳ್ಳಬೇಕಾಗುತ್ತದೆ."
+
+#: ../src/firstbootWindow.py:331
+msgid "_Finish"
+msgstr "ಮುಗಿಸು (_F)"
+
+#: ../src/firstbootWindow.py:423
 #, python-format
-msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgid "module import of %s failed: %s"
+msgstr "%s ನ ಘಟಕ ಆಮದು ವಿಫಲವಾಯಿತು: %s"
 
-#: ../src/interface.py:337 ../src/interface.py:338
-msgid "moveToPage must be given a module title or page number."
-msgstr ""
+#: ../src/firstbootWindow.py:589 ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "ಸುಸ್ವಾಗತ"
 
-#: ../src/interface.py:422
-msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+#: ../src/textWindow.py:34
+msgid "Authentication"
+msgstr "ದೃಢೀಕರಣ"
 
-#: ../src/interface.py:462 ../src/interface.py:463
-#, python-format
-msgid "No module exists with the title %s."
-msgstr ""
+#: ../src/textWindow.py:35
+msgid "Firewall configuration"
+msgstr "ಜಾಲರಕ್ಷಕ (Firewall) ಸಂರಚನೆ"
 
-#: ../src/loader.py:98
-#, python-format
-msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+#: ../src/textWindow.py:36
+msgid "Keyboard configuration"
+msgstr "ಕೀಲಿಮಣೆ ಸಂರಚನೆ"
 
-#: ../src/loader.py:109
-#, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+#: ../src/textWindow.py:37
+msgid "Network configuration"
+msgstr "ಜಾಲವ್ಯವಸ್ಥೆ ಸಂರಚನೆ"
 
-#: ../src/module.py:173
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+#: ../src/textWindow.py:38
+msgid "Printer configuration"
+msgstr "ಮುದ್ರಕ ಸಂರಚನೆ"
 
-#: ../src/moduleset.py:94
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr ""
+#: ../src/textWindow.py:39
+msgid "System services"
+msgstr "ಗಣಕವ್ಯವಸ್ಥೆ ಸೇವೆಗಳು"
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+#: ../src/textWindow.py:40
+msgid "Timezone configuration"
+msgstr "ಕಾಲವಲಯ ಸಂರಚನೆ"
+
+#: ../src/textWindow.py:42
+msgid "Run Tool"
+msgstr "ಚಾಲನಾ ಉಪಕರಣ (Run tool)"
+
+#: ../src/textWindow.py:44
+msgid "Select the item that you wish to modify "
+msgstr "ನೀವು ಮಾರ್ಪಡಿಸಬೇಕೆಂದಿರುವ ವಿಷಯವನ್ನು ಆರಿಸಿ "
+
+#: ../src/textWindow.py:52
+msgid "Setup Agent"
+msgstr "ಸಂಯೋಜನಾ ಮಧ್ಯವರ್ತಿ"
+
+#: ../src/modules/additional_cds.py:44 ../src/modules/additional_cds.py:92
 msgid "Additional CDs"
 msgstr "ಹೆಚ್ಚುವರಿ ಸೀಡಿಗಳು"
 
-#: ../src/modules/additional_cds.py:55
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -157,11 +133,12 @@ msgstr ""
 "Enterprise Linux Extras\" ಎಂಬ ಹೆಸರುಳ್ಳ ಸೀಡಿಯನ್ನು ಅಳವಡಿಸಿ.Red Hat ನವರ ಇತರ "
 "ತಂತ್ರಾಂಶ ಸೀಡಿಗಳು ಅಥವಾ ದಸ್ತಾವೇಜೀಕರಣ ಸೀಡಿಯನ್ನು ಬೇಕಾದರೂ ಈಗ ಅಳವಡಿಸಬಹುದು."
 
-#: ../src/modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr "ಹೆಚ್ಚುವರಿ ಅನುಸ್ಥಾಪನಾ ಸೀಡಿಗಳಿದ್ದ ಪಕ್ಷದಲ್ಲಿ ಈಗ ಅವುಗಳನ್ನು ಅಳವಡಿಸಿ."
 
-#: ../src/modules/additional_cds.py:65
+#. if 1:
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
@@ -175,11 +152,11 @@ msgstr ""
 "ಸಕ್ರಿಯಗೊಳಿಸಲು ನೀವು Extras ಹೆಸರಿನ ಸೀಡಿಯಿಂದ Intel Execution Layer ಸಂಗ್ರಹವನ್ನು "
 "ಅನುಸ್ಥಾಪಿಸಬೇಕು."
 
-#: ../src/modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:96
 msgid "Install..."
 msgstr "ಅನುಸ್ಢಾಪಿಸು..."
 
-#: ../src/modules/additional_cds.py:110
+#: ../src/modules/additional_cds.py:129
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -187,17 +164,109 @@ msgstr ""
 "ಒಂದು ಸೀಡಿ-ರಾಮ್ ಪತ್ತೆಯಾಗಿಲ್ಲ. ಮುಂದುವರೆಯಲು ದಯವಿಟ್ಟು ಒಂದು ಸೀಡಿ-ರಾಮ್ಯನ್ನು ಸೀಡಿ-ರಾಮ್ "
 "ಚಾಲಕಕ್ಕೆ ಅಳವಡಿಸಿ \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
 
-#: ../src/modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"autorun ಕ್ರಮವಿಧಿ ಸೀಡಿಯಲ್ಲಿಿ ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಮುಂದುವರೆಯಲು \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
+#: ../src/modules/additional_cds.py:163
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "autorun ಕ್ರಮವಿಧಿ ಸೀಡಿಯಲ್ಲಿ ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಮುಂದುವರೆಯಲು \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
 
-#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+#: ../src/modules/create_user.py:39
+msgid "Create User"
+msgstr "ಬಳಕೆದಾರನನ್ನು ಸೃಷ್ಟಿಸಿ"
+
+#: ../src/modules/create_user.py:66
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+"ಗಣಕದ ಸಾಮಾನ್ಯ (ನಿರ್ವಹಣಾ ಕಾರ್ಯಗಳಲ್ಲದ) ಬಳಕೆಗಾಗಿ ಒಂದು 'ಬಳಕೆದಾರಹೆಸರು' ಸೃಷ್ಟಿಸಿರಿ. "
+"ಗಣಕದಲ್ಲಿ ಒಂದು 'ಬಳಕೆದಾರಹೆಸರು' ನು ಸೃಷ್ಟಿಸಲು ಈ ಕೆಳಗಿನ ಮಾಹಿತಿಗಳನ್ನು ನೀಡಿ."
+
+#: ../src/modules/create_user.py:76
+msgid "_Username:"
+msgstr "ಬಳಕೆದಾರಹೆಸರು (_U):"
+
+#: ../src/modules/create_user.py:83
+msgid "Full Nam_e:"
+msgstr "ಸಂಪೂರ್ಣ ಹೆಸರು (_e):"
+
+#: ../src/modules/create_user.py:90
+msgid "_Password:"
+msgstr "ಗುಪ್ತಪದ (_P):"
+
+#: ../src/modules/create_user.py:97
+msgid "Confir_m Password:"
+msgstr "ಗುಪ್ತಪದವನ್ನು ದೃಢೀಕರಿಸಿ (_m):"
+
+#: ../src/modules/create_user.py:113
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Kerberos ಅಥವಾ NIS ನಂತಹ ಜಾಲದೃಢೀಕರಣಗಳನ್ನು ಬಳಸಬೇಕಾಗಿದ್ದಲ್ಲಿ Use Network Login "
+"ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
+
+#: ../src/modules/create_user.py:123
+msgid "Use Network _Login..."
+msgstr "ಜಾಲಬಂಧ ಪ್ರವೇಶವನ್ನು ಉಪಯೋಗಿಸಿ (_L)..."
+
+#: ../src/modules/create_user.py:151
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+"ಒಂದು ವೈಯಕ್ತಿಕ ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ತೆರೆಯುವುದು ಸೂಕ್ತವೆಂದು ಈ ಮೂಲಕ ಸೂಚಿಸುತ್ತಿದ್ದೇವೆ. "
+"ಖಾತೆ ತೆರೆಯದೇ ಮುಂದುವರೆದ ಪಕ್ಷದಲ್ಲಿ ಕೇವಲ ಉಸ್ತುವಾರಿಗೆಂದೇ ಮಿಸಲಾಗಿರುವ ನಿರ್ವಹಣಾ "
+"ಖಾತೆಯಿಂದ ಮಾತ್ರ ಪ್ರವೇಶಪಡೆಯಲು ಸಾಧ್ಯವಾದೀತು."
+
+#: ../src/modules/create_user.py:159
+msgid "_Continue"
+msgstr "ಮುಂದುವರೆ (_C)"
+
+#: ../src/modules/create_user.py:160
+msgid "Create _account"
+msgstr "ಖಾತೆಯನ್ನು ತೆರೆ (_a)"
+
+#: ../src/modules/create_user.py:179
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "ಗುಪ್ತಪದಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ.  ದಯವಿಟ್ಟು ಮತ್ತೆ ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ."
+
+#: ../src/modules/create_user.py:190
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "ಗುಪ್ತಪದ ಚಿಕ್ಕದಾಯಿತು. ದಯವಿಟ್ಟು ೬ ಅಕ್ಷರಗಳನ್ನಾದರೂ ಬಳಸಿ."
+
+#: ../src/modules/create_user.py:201
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"ಬಳಕೆದಾರನ ಹೆಸರು '%s' ಒಂದು ಕಾದಿರಿಸಲಾದ ವ್ಯವಸ್ಥಾ ಖಾತೆ. ದಯವಿಟ್ಟು ಮತ್ತೊಂದು ಹೆಸರನ್ನು "
+"ಸೂಚಿಸಿ."
+
+#: ../src/modules/create_user.py:219
+#, python-format
+msgid ""
+"A home directory for the username '%s' already exists.  Please specify "
+"another username."
+msgstr ""
+"'%s' ಬಳಕೆದಾರನ ಹೆಸರಿಗೆ ಈಗಾಗಲೇ ಒಂದು ನೆಲೆ ಕಡತಕೋಶ ಇದೆ. ದಯವಿಟ್ಟು ಮತ್ತೊಂದು ಹೆಸರನ್ನು "
+"ಸೂಚಿಸಿ."
+
+#: ../src/modules/date.py:46
+msgid "Date and Time"
+msgstr "ದಿನಾಂಕ ಮತ್ತು ಸಮಯ"
+
+#: ../src/modules/date.py:48
+msgid "Please set the date and time for the system."
+msgstr "ಗಣಕದ ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ನಿಗದಿಪಡಿಸಿ."
+
+#: ../src/modules/eula.py:33 ../src/modules/eula.py:43
 msgid "License Information"
 msgstr "ಲೈಸನ್ಸ್ ಮಾಹಿತಿ"
 
-#: ../src/modules/eula.py:53
+#: ../src/modules/eula.py:59
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -211,7 +280,7 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
+"ಫೆಡೋರಾವನ್ನು ಅನುಸ್ಥಾಪಿಸಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
 "under the GNU General Public License version 2.  There are no restrictions "
 "on using, copying, or modifying this code.  However, there are restrictions "
@@ -223,21 +292,67 @@ msgstr ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
-#: ../src/modules/eula.py:64
+#: ../src/modules/eula.py:70
 msgid "Understood, please proceed."
 msgstr "ಅರ್ಥವಾಯಿತು, ದಯವಿಟ್ಟು ಮುಂದುವರೆಯಿರಿ."
 
-#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
-msgid "Welcome"
-msgstr "ಸುಸ್ವಾಗತ"
+#: ../src/modules/networking.py:43
+msgid "Network Setup"
+msgstr "ಜಾಲವ್ಯವಸ್ಥೆ ಸಂಯೋಜನೆ"
 
-#: ../src/modules/welcome.py:45
-#, fuzzy
+#: ../src/modules/networking.py:69
+msgid "The following network devices have been detected on the system:"
+msgstr "ಈ ಕೆಳಕಂಡ ಜಾಲಸಾಧನಗಳು ಗಣಕದಲ್ಲಿ ಪತ್ತೆಹಚ್ಚಲ್ಪಟ್ಟಿವೆ:"
+
+#: ../src/modules/networking.py:88
+msgid "Network Device"
+msgstr "ಜಾಲಸಾಧನ"
+
+#: ../src/modules/networking.py:90
+msgid "Boot protocol"
+msgstr "ಸಜ್ಜುಗೊಳಿಸುವ ಪ್ರಕ್ರಮ"
+
+#: ../src/modules/networking.py:96
+msgid "_Change Network Configuration..."
+msgstr "ಜಾಲವ್ಯವಸ್ಥೆಯ ಸಂರಚನೆಯನ್ನು ಬದಲಾಯಿಸಿ (_C)..."
+
+#: ../src/modules/networking.py:152
+msgid "static"
+msgstr "ಸ್ಥಿರ"
+
+#: ../src/modules/soundcard_gui.py:43 ../src/modules/soundcard_gui.py:44
+msgid "Sound Card"
+msgstr "ಧ್ವನಿ ಸಾಧನ"
+
+#: ../src/modules/soundcard_gui.py:45
+msgid "An audio device has been detected in your computer."
+msgstr "ನಿಮ್ಮ ಗಣಕದಲ್ಲಿ ಒಂದು ಧ್ವನಿ ಸಾಧನ ಪತ್ತೆಹಚ್ಚಲ್ಪಟ್ಟಿದೆ."
+
+#: ../src/modules/soundcard_gui.py:66
+msgid ""
+"Click the \"Play\" button to hear a sample sound.  You should hear a series "
+"of three sounds.  The first sound will be in the right channel, the second "
+"sound will be in the left channel, and the third sound will be in the center."
+msgstr ""
+"ಮಾದರಿ ಧ್ವನಿಯನ್ನಾಲಿಸಲು \"Play\" ಗುಂಡಿಯನ್ನೊತ್ತಿರಿ. ಮೂರು ಧ್ವನಿಗಳ ಸರಣಿಯನ್ನು ನೀವು "
+"ಕೇಳಬೇಕು. ಮೊದಲನೆಯ ಧ್ವನಿ ಬಲವಾಹಕದಿಂದಲೂ (channel), ಎರಡನೆಯದು ಎಡವಾಹಕದಿಂದಲೂ ಹಾಗೂ "
+"ಮೂರನೆಯ ಧ್ವನಿಯು ಮಧ್ಯದಿಂದಲೂ ಹೊರಹೊಮ್ಮುತ್ತದೆ."
+
+#: ../src/modules/timezone.py:46
+msgid "Timezone"
+msgstr "ಕಾಲವಲಯ"
+
+#: ../src/modules/timezone.py:49
+msgid "Please set the timezone for the system."
+msgstr "ಗಣಕದ ಕಾಲವಲಯವನ್ನು ನಿಗದಿಪಡಿಸಿ."
+
+#: ../src/modules/welcome.py:34
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue"
+"click the \"Forward\" button in the lower right corner to continue."
 msgstr ""
 "ನಿಮ್ಮ ಗಣಕವು ಬಳಕೆಗೆ ಸಿದ್ಧವಾಗಲು ಕೆಲವೇ ಹಂತಗಳಿವೆ. Setup Agent ನಿಮಗೆ ಮೂಲಭೂತ ಸಂರಚನಾ "
 "ಕಾರ್ಯದಲ್ಲಿ ನೆರವಾಗುತ್ತದೆ. ಮುಂದುವರೆಯಲು, ದಯವಿಟ್ಟು ಬಲಕೆಳತುದಿಯಲ್ಲಿರುವ \"ಮುಂದಕ್ಕೆ\" "
 "ಗುಂಡಿಯನ್ನೊತ್ತಿರಿ."
+
