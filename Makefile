@@ -3,11 +3,6 @@ VERSION=$(shell awk '/Version:/ { print $$2 }' ${PKGNAME}.spec)
 RELEASE=$(shell awk '/Release:/ { print $$2 }' ${PKGNAME}.spec | sed -e 's|%.*$$||g')
 TAG=r$(VERSION)-$(RELEASE)
 
-PREFIX=/usr
-DATADIR=${PREFIX}/share/firstboot
-MODULESDIR=${DATADIR}/modules
-THEMESDIR=${DATADIR}/themes
-
 PYCHECKEROPTS=--no-shadowbuiltin --no-argsused --no-miximport --maxargs 0 --no-local -\# 0 --only
 
 default: all
