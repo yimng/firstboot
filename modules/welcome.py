@@ -19,10 +19,10 @@
 #
 import gtk
 
-from config import *
-from constants import *
-from functions import *
-from module import *
+from firstboot.config import *
+from firstboot.constants import *
+from firstboot.functions import *
+from firstboot.module import *
 
 from rhpl.translate import _, N_
 import rhpl.translate as translate

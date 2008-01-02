@@ -16,26 +16,16 @@ all:
 	$(MAKE) -C po
 
 check:
-	PYTHONPATH=. pychecker $(PYCHECKEROPTS) firstboot/*.py firstboot/modules/*.py
+	PYTHONPATH=. pychecker $(PYCHECKEROPTS) firstboot/*.py modules/*.py progs/*.py
 
 clean:
-	-rm src/*.pyc src/modules/*.pyc
+	-rm firstboot/*.pyc modules/*.pyc
 	-rm ${PKGNAME}-$(VERSION).tar.bz2
 	$(MAKE) -C po clean
+	python setup.py -q clean --all
 
 install: all
-	mkdir -p $(INSTROOT)/usr/sbin
-	mkdir -p $(INSTROOT)/etc/rc.d/init.d
-	mkdir -p $(INSTROOT)/${DATADIR}
-	mkdir -p $(INSTROOT)/${MODULESDIR}
-	mkdir -p $(INSTROOT)/${THEMESDIR}
-
-	install -m 644 src/*.py $(INSTROOT)/${DATADIR}
-	cp -r src/modules/* $(INSTROOT)/${MODULESDIR}
-	cp -r themes/* $(INSTROOT)/${THEMESDIR}
-
-	install -m 755 firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
-	install -m 755 firstboot $(INSTROOT)/usr/sbin/
+	python setup.py install --root=$(DESTDIR)
 	$(MAKE) -C po install
 
 tag:

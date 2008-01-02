@@ -19,7 +19,6 @@
 # with the express permission of Red Hat, Inc. 
 #
 import os, string, sys
-sys.path.append("/usr/share/firstboot")
 
 # Since X may be starting up immediately after firstboot crashes, we might
 # not have any way to see the traceback.  This lets it be logged somewhere
@@ -38,9 +37,9 @@ def defaultExnHandler(type, value, tb):
 
 sys.excepthook = defaultExnHandler
 
-from config import *
-from constants import *
-from loader import *
+from firstboot.config import *
+from firstboot.constants import *
+from firstboot.loader import *
 import logging
 from optparse import OptionParser
 import rhpl.Conf
@@ -80,14 +79,23 @@ if __name__ == "__main__":
                    "critical": logging.CRITICAL}
 
     op = OptionParser()
-    op.add_option("-s", "--autoscreenshot", action="store_true", default=False)
-    op.add_option("-d", "--debug", action="store_true", default=False)
-    op.add_option("-g", "--forcegui", action="store_true", default=False)
-    op.add_option("-l", "--loglevel", type="choice", choices=["debug", "info", "warning", "error", "critical"], default="error")
-    op.add_option("-m", "--moduleDir", action="store", default=BASEDIR+"modules/")
-    op.add_option("-r", "--reconfig", action="store_true", default=False)
-    op.add_option("-t", "--test", action="store_true", default=False)
-    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/default/")
+    op.add_option("-s", "--autoscreenshot", action="store_true", default=False,
+                  help="take a screenshot on every page")
+    op.add_option("-d", "--debug", action="store_true", default=False,
+                  help="enable debugging mode")
+    op.add_option("-g", "--forcegui", action="store_true", default=False,
+                  help="use the GUI interface no matter what")
+    op.add_option("-l", "--loglevel", type="choice",
+                  choices=["debug", "info", "warning", "error", "critical"], default="error",
+                  help="set the logging level: debug, info, warning, error, or critical [default: %default]")
+    op.add_option("-m", "--moduleDir", action="store", default=BASEDIR+"modules/",
+                  help="set the directory containing firstboot modules [default: %default]")
+    op.add_option("-r", "--reconfig", action="store_true", default=False,
+                  help="enable reconfiguration mode")
+    op.add_option("-t", "--test", action="store_true", default=False,
+                  help="only test, don't configure the system")
+    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/default/",
+                  help="set the directory containing the theme [default: %default]")
     (opts, args) = op.parse_args()
 
     config.moduleDir = opts.moduleDir
@@ -133,12 +141,12 @@ if __name__ == "__main__":
         logging.debug("Using text frontend")
         pass
     elif rhgbIsRunning():
-        from rhgbfrontend import RHGBFrontEnd
+        from firstboot.rhgbfrontend import RHGBFrontEnd
         frontend = RHGBFrontEnd()
         needInterface = True
         logging.debug("RHGB is running, using RHGB frontend")
     elif not os.environ.has_key("DISPLAY"):
-        from xfrontend import XFrontEnd
+        from firstboot.xfrontend import XFrontEnd
         frontend = XFrontEnd()
         needInterface = True
         logging.debug("Using X frontend")
@@ -159,7 +167,7 @@ if __name__ == "__main__":
         raise RuntimeError, _("No firstboot modules were found.")
 
     if needInterface:
-        from interface import *
+        from firstboot.interface import *
         interface = Interface(autoscreenshot=opts.autoscreenshot,
                               moduleList=moduleList, testing=opts.test)
         logging.debug("Using GTK interface")

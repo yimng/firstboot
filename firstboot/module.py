@@ -17,8 +17,8 @@
 # subject to the GNU General Public License and may only be used or replicated
 # with the express permission of Red Hat, Inc. 
 #
-from config import *
-from constants import *
+from firstboot.config import *
+from firstboot.constants import *
 import logging
 
 from rhpl.translate import _
@@ -156,7 +156,7 @@ class Module:
             raise SystemError, "Module %s has not initializes its UI" % self.title
 
         import gtk
-        from functions import loadToImage
+        from firstboot.functions import loadToImage
 
         # Create the large label that goes at the top of the right side.
         label = gtk.Label("")

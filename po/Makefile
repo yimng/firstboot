@@ -17,7 +17,7 @@ MSGFMT		= msgfmt --statistics --verbose
 # What do we need to do
 POFILES		= $(wildcard *.po)
 MOFILES		= $(patsubst %.po,%.mo,$(POFILES))
-PYSRC		= $(wildcard ../firstboot ../src/*.py ../src/modules/*.py)
+PYSRC		= $(wildcard ../progs/* ../firstboot/*.py ../modules/*.py)
 SRCFILES 	= $(PYSRC)
 
 all::  update-po $(MOFILES)

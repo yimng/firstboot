@@ -17,9 +17,8 @@
 # subject to the GNU General Public License and may only be used or replicated
 # with the express permission of Red Hat, Inc. 
 #
-from constants import *
-from module import *
-import loader
+from firstboot.constants import *
+from firstboot.module import *
 import logging
 
 from rhpl.translate import _
@@ -109,7 +108,8 @@ class ModuleSet:
            mode -- The mode of operation firstboot is running under.
         """
         if self.path is not None:
-            self.moduleList = loader.loadModules(self.path, mode)
+            from firstboot.loader import loadModules
+            self.moduleList = loadModules(self.path, mode)
 
     def needsNetwork(self):
         """Does this module set require the network to be active in order to
