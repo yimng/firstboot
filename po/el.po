@@ -1,4 +1,4 @@
-# translation of el.po to Greek
+# translation of firstboot.master.po to Greek
 # translation of el.po to
 # Greek translation for firstboot
 # Copyright (C) 2002 Nikos Charonitakis
@@ -8,13 +8,13 @@
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2002, 2003, 2004.
 # Simos Xenitellis <simos74@gmx.net>, 2004.
 # Dimitris Michelinakis <dimitris@michelinakis.gr>, 2006.
-# Dimitris Glezos <dimitris@glezos.com>, 2006, 2007.
+# Dimitris Glezos <dimitris@glezos.com>, 2006, 2007, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: el\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: 2007-03-26 03:38+0100\n"
+"PO-Revision-Date: 2008-01-04 21:06+0200\n"
 "Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,19 +25,19 @@ msgstr ""
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Πρέπει να είστε υπερχρήστης για να εκτελέσετε το firstboot."
 
 #: ../firstboot:146 ../firstboot:147
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Δε μπόρεσε να γίνει εκκίνηση της διεπαφής firstboot."
 
 #: ../firstboot:158 ../firstboot:159
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Δε βρέθηκαν αρθρώματα για το firstboot."
 
 #: ../firstboot:168 ../firstboot:169
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Δε μπόρεσε να δημιουργηθεί κάποια διεπαφή firstboot."
 
 #: ../src/exceptionWindow.py:50
 #, python-format
@@ -45,53 +45,44 @@ msgid "An error has occurred in the %s module."
 msgstr "Παρουσιάστηκε σφάλμα στο άρθρωμα %s."
 
 #: ../src/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Καθώς υπάρχει πρόβλημα στο άρθρωμα %s, \n"
-"το εργαλείο ρύθμισης της Red Hat δε θα φορτώσει αυτήν τη λειτουργική "
-"μονάδα \n"
-"και θα δοκιμάσει να εκτελέσει τα υπόλοιπα αρθρώματα."
+"Καθώς υπάρχει πρόβλημα στο άρθρωμα %s, το firstboot \n"
+"δε θα φορτώσει αυτήν τη λειτουργική μονάδα και \n"
+"θα δοκιμάσει να εκτελέσει τα υπόλοιπα αρθρώματα."
 
 #: ../src/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Παρουσιάστηκε σφάλμα στο άρθρωμα %s."
+msgstr "Παρουσιάστηκε σφάλμα στο firstboot."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Μια και υπάρχει ένα πρόβλημα, το firstboot θα τερματίσει."
 
 #: ../src/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Παρακαλούμε στείλτε μιά αναφορά σφάλματος για το 'firstboot' στο σύστημα \n"
-"καταγραφής σφαλμάτων της Red Hat στη σελίδα  http://www.redhat.com/"
-"bugzilla. \n"
 "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος αποθηκεύτηκε στο %s \n"
 "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
 
 #: ../src/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Παρακαλούμε στείλτε μιά αναφορά σφάλματος για το 'firstboot' στο σύστημα \n"
-"καταγραφής σφαλμάτων της Red Hat στη σελίδα  http://www.redhat.com/"
-"bugzilla. \n"
-"Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος αποθηκεύτηκε στο %s \n"
-"Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
+"Παρακαλούμε στείλτε μια αναφορά σφάλματος για το 'firstboot' στο σύστημα \n"
+"καταγραφής σφαλμάτων της Red Hat στη σελίδα http://www.redhat.com/. \n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Έγινε προσπάθεια για προς τα πίσω πλοήγηση, αλλά το ιστορικό είναι άδειο."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -116,40 +107,40 @@ msgstr "_Μπροστά"
 #: ../src/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Το άρθρωμα %s δεν έχει ρυθμίσει τη γραφική διεπαφή του, θα αφαιρεθεί."
 
 #: ../src/interface.py:337 ../src/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "Το moveToPage πρέπει να λάβει ένα τίτλο αρθρώματος ή αριθμό σελίδας."
 
 #: ../src/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Αδυναμία δημιουργίας καταλόγου στιγμιοτύπων οθόνης, γίνεται παράκαμψη."
 
 #: ../src/interface.py:462 ../src/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Δεν υπάρχει άρθρωμα με τίτλο %s."
 
 #: ../src/loader.py:98
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Το άρθρωμα %s δεν περιέχει μια κλάση με όνομα moduleClass; γίνεται παράκαμψη."
 
 #: ../src/loader.py:109
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Το άρθρωμα %s δεν διαθέτει το κατάλληλο όρισμα %s; γίνεται παράκαμψη."
 
 #: ../src/module.py:173
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Αδυναμία φόρτωσης pixmap %s για το άρθρωμα %s."
 
 #: ../src/moduleset.py:94
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Το άρθρωμα %s δεν έχει ρθυμίσει τη γραφική του διεπαφή, θα απομακρυνθεί."
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -170,8 +161,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"Παρακαλώ εισάγετε τώρα  όποια πρόσθετα cd εγκατάστασης λογισμικού διαθέτετε."
+msgstr "Παρακαλώ εισάγετε τώρα  όποια πρόσθετα cd εγκατάστασης λογισμικού διαθέτετε."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -200,8 +190,7 @@ msgstr ""
 "πατήστε \"Εντάξει\" για να συνεχίσετε."
 
 #: ../src/modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Το πρόγραμμα autorun δεν εντοπίστηκε στο CD. Πατήστε \"Εντάξει\" για να "
 "συνεχίσετε."
@@ -245,7 +234,6 @@ msgid "Welcome"
 msgstr "Καλώς ήλθατε"
 
 #: ../src/modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -254,4 +242,5 @@ msgstr ""
 "Το σύστημα σας θα είναι έτοιμο για χρήση αμέσως μετά την ολοκλήρωση μερικών "
 "ακόμη βημάτων.  Το εργαλείο ρύθμισης θα σας οδηγήσει στην εκτέλεση μιας "
 "βασικής ρύθμισης.  Παρακαλούμε επιλέξτε \"Μπροστά\" στην κάτω δεξιά γωνία "
-"για να συνεχίσετε."
+"για να συνεχίσετε"
+
