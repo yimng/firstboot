@@ -1,17 +1,17 @@
 # Dutch translation of firstboot.
-# Copyright (C) 2003, 2006, 2007 The Free Software Foundation, Inc.
+# Copyright (C) 2003, 2006, 2007, 2008 The Free Software Foundation, Inc.
 #
 # Tino Meinen <a.t.meinen@chello.nl>, 2003.
-# Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006, 2007.
+# Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006, 2007, 2008.
 # Sjoerd Smink <sjoerdsmink@hotmail.com>, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: 2007-03-24 01:04+0100\n"
+"PO-Revision-Date: 2008-01-07 20:56+0100\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
-"Language-Team: Dutch <vertaling@nl.linux.org>\n"
+"Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "U dient root te zijn om firstboot uit te voeren."
 
 #: ../firstboot:146 ../firstboot:147
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Kon geen enkele firstboot frontend opstarten."
 
 #: ../firstboot:158 ../firstboot:159
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Er zijn geen firstboot modules gevonden."
 
 #: ../firstboot:168 ../firstboot:169
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Kon geen enkele firstboot interface aanmaken."
 
 #: ../src/exceptionWindow.py:50
 #, python-format
@@ -39,52 +39,45 @@ msgid "An error has occurred in the %s module."
 msgstr "Er is een fout opgetreden in de %s module."
 
 #: ../src/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Omdat er een probleem is met de %s module, zal \n"
-"Red Hat Setup Agent deze module niet laden maar zal \n"
-"wel proberen de overige modules uit te voeren."
+"Omdat er een probleem is met de %s module,\n"
+"zal firstboot deze module niet laden en zal\n"
+"proberen de overige modules uit te voeren."
 
 #: ../src/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Er is een fout opgetreden in de %s module."
+msgstr "Er is een fout opgetreden in firstboot."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Omdat er een probleem is, zal firstboot beëindigen."
 
 #: ../src/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Rapporteer deze fout van 'firstboot' bij het betreffende \n"
-"onderdeel van het bug-tracking systeem van Red Hat op \n"
-"http://www.redhat.com/bugzilla. Een kopie van de \n"
-"debug-uitvoer is opgeslagen naar %s. Vergeet niet om dit \n"
-"bestand als bijlage te voegen bij het fout-rapport. \n"
+"Een kopie van de debug-uitvoer is opgeslagen naar %s\n"
+"Vergeet niet om dit bestand als bijlage te voegen bij het\n"
+"foutrapport.\n"
 
 #: ../src/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Rapporteer deze fout van 'firstboot' bij het betreffende \n"
-"onderdeel van het bug-tracking systeem van Red Hat op \n"
-"http://www.redhat.com/bugzilla. Een kopie van de \n"
-"debug-uitvoer is opgeslagen naar %s. Vergeet niet om dit \n"
-"bestand als bijlage te voegen bij het fout-rapport. \n"
+"Rapporteer een bug voor 'firstboot' in het bug-tracking\n"
+"systeem van Red Hat op http://www.redhat.com/bugzilla.\n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Geprobeerd om terug te gaan, maar de geschiedenis is leeg."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -108,40 +101,40 @@ msgstr "_Volgende"
 #: ../src/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Module %s heeft zijn UI niet ingesteld, verwijderen."
 
 #: ../src/interface.py:337 ../src/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage dient een module-titel of paginanummer meegegeven te krijgen."
 
 #: ../src/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Niet in staat om de map voor schermafbeeldingen aan te maken; overslaan."
 
 #: ../src/interface.py:462 ../src/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Er bestaat geen module met de titel %s."
 
 #: ../src/loader.py:98
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Module %s bevat geen klasse genaamd moduleClass; overslaan."
 
 #: ../src/loader.py:109
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Module %s bevat niet het vereiste attribuut %s; overslaan."
 
 #: ../src/module.py:173
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Niet in staat om pixmap %s voor module %s te laden."
 
 #: ../src/moduleset.py:94
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Module %s heeft zijn UI niet ingesteld; verwijderen."
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -155,7 +148,7 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Voer de CD genaamd \"Red Hat Enterprise Linux Extras\" in om third-party "
-"plug-in software en applicaties te installeren. U kunt ook de documentatie- "
+"plug-in software en applicaties te installeren. U kunt ook de documentatie-"
 "CD of andere CD's geleverd door Red Hat invoeren om additionele software te "
 "installeren."
 
@@ -217,7 +210,7 @@ msgstr ""
 "software-pakketten, elk onder een eigen licentie.  De compilatie is "
 "beschikbaar gemaakt onder de GNU General Public License version 2.  Er zijn "
 "geen restricties met betrekking tot het gebruiken, kopieëren of aanpassen "
-"van deze code.  Echter, er zijn restricties en verplichtingen die van "
+"van deze code.  Echter, er zijn wel restricties en verplichtingen die van "
 "toepassing zijn op het opnieuw distribueren van de code, ofwel in de "
 "originele of een aangepaste vorm.  Deze restricties/verplichtingen zijn, "
 "onder andere, van toepassing op de licentie van de opnieuw gedistribueerde "
@@ -235,13 +228,12 @@ msgid "Welcome"
 msgstr "Welkom"
 
 #: ../src/modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"Er zijn nog een aantal taken te verrichten voordat uw systeem klaar is voor "
+"Er zijn nog een aantal stappen te nemen voordat uw systeem klaar is voor "
 "gebruik. De Setup Agent zal u nu helpen met het maken van een "
-"basisconfiguratie. Klik op de knop \"Volgende\" rechts onderin het scherm om "
-"door te gaan."
+"basisconfiguratie. Klik op de knop \"Volgende\" rechtsonder in het scherm om "
+"door te gaan"
