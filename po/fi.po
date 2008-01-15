@@ -3,13 +3,13 @@
 #
 # Mikko Ikola <ikola@iki.fi>, 2004.
 # Lauri Nurmi <lanurmi@iki.fi>, 2004-2007.
-# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007.
+# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: 2007-03-31 01:59+0300\n"
+"PO-Revision-Date: 2008-01-11 23:38+0200\n"
 "Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Sinun on oltava pääkäyttäjä firstbootin suorittamiseksi."
 
 #: ../firstboot:146 ../firstboot:147
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Mitään firstboot-edustaohjelmaa ei voitu käynnistää."
 
 #: ../firstboot:158 ../firstboot:159
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Yhtään firstboot-moduulia ei löytynyt."
 
 #: ../firstboot:168 ../firstboot:169
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Ei voitu luoda mitään firstboot-käyttöliittymää."
 
 #: ../src/exceptionWindow.py:50
 #, python-format
@@ -40,49 +40,44 @@ msgid "An error has occurred in the %s module."
 msgstr "Tapahtui virhe moduulissa %s."
 
 #: ../src/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Koska moduulissa %s on ongelma, Red Hat -asennusohjelmaei lataa sitä ja "
-"suorittaa jäljellä olevat moduulit."
+"Koska moduulissa %s on ongelma,\n"
+"firstboot ei lataa sitä ja\n"
+"yrittää suorittaa jäljellä olevat moduulit."
 
 #: ../src/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Tapahtui virhe moduulissa %s."
+msgstr "Firstbootissa tapahtui virhe."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Firstboot lopettaa ongelman vuoksi."
 
 #: ../src/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Tee firstbootia koskeva vikailmoitus Red Hatin\n"
-"vianjäljitysjärjestelmässä http://www.redhat.com/bugzilla/.\n"
 "Kopio vianjäljitystulosteesta on tallennettu tiedostoon %s.\n"
 "Muista liittää tämä tiedosto vikailmoitukseen.\n"
 
 #: ../src/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "Tee firstbootia koskeva vikailmoitus Red Hatin\n"
 "vianjäljitysjärjestelmässä http://www.redhat.com/bugzilla/.\n"
-"Kopio vianjäljitystulosteesta on tallennettu tiedostoon %s.\n"
-"Muista liittää tämä tiedosto vikailmoitukseen.\n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Yritettiin mennä takaisin, mutta historia on tyhjä."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -106,30 +101,30 @@ msgstr "_Seuraava"
 #: ../src/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Moduuli %s ei asettanut käyttöliittymäänsä, poistetaan."
 
 #: ../src/interface.py:337 ../src/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPagelle on annettava moduulin nimi tai sivunumero."
 
 #: ../src/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Ruudunkaappaushakemistoa ei voi luoda, ohitetaan."
 
 #: ../src/interface.py:462 ../src/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Moduulia nimeltä %s ei ole olemassa."
 
 #: ../src/loader.py:98
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Moduuli %s ei sisällä luokkaa nimeltä moduleClass, ohitetaan."
 
 #: ../src/loader.py:109
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Moduuli %s ei sisällä vaadittua attribuuttia %s, ohitetaan."
 
 #: ../src/module.py:173
 #, python-format
@@ -139,7 +134,7 @@ msgstr ""
 #: ../src/moduleset.py:94
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Moduuli %s ei asettanut käyttöliittymäänsä, poistetaan."
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -230,7 +225,6 @@ msgid "Welcome"
 msgstr "Tervetuloa"
 
 #: ../src/modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -238,4 +232,4 @@ msgid ""
 msgstr ""
 "Järjestelmä on muutamaa vaihetta vaille valmis käyttöön. Asennusohjelma "
 "ohjaa sinua nyt muutamien perusasetusten määrittelyssä. Jatka napsauttamalla "
-"alla olevaa ”Eteenpäin”-painiketta."
+"oikeassa alanurkassa olevaa ”Eteenpäin”-painiketta."
