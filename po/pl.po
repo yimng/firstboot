@@ -1,14 +1,15 @@
 # translation of pl.po to Polish
 # Grzegorz Rajda <marius@w9.pl>, 2004.
 # Tom Berner <tom@man.lodz.pl>, 2004.
+# Piotr Drąg <raven@pmail.pl>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: 2007-06-10 17:38+0200\n"
-"Last-Translator: Marek Garbaczewski <mrgary@fic.uni.lodz.pl>\n"
+"PO-Revision-Date: 2008-01-19 14:35+0200\n"
+"Last-Translator: Piotr Drąg <raven@pmail.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,19 +17,19 @@ msgstr ""
 
 #: ../firstboot:109
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Musisz być rootem, aby uruchomić firstboot."
 
 #: ../firstboot:146 ../firstboot:147
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Nie można uruchomić żadnego interfejsu firstboot."
 
 #: ../firstboot:158 ../firstboot:159
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Nie znaleziono modułów firstboot."
 
 #: ../firstboot:168 ../firstboot:169
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Nie można utworzyć interfejsu firstboot."
 
 #: ../src/exceptionWindow.py:50
 #, python-format
@@ -36,52 +37,44 @@ msgid "An error has occurred in the %s module."
 msgstr "Wystąpił błąd w module %s."
 
 #: ../src/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Odkąd jest problem z modułem %s, \n"
-"Agent ustawień Red Hata nie wczyta go i \n"
+"Ponieważ jest problem z modułem %s,\n"
+"Agent ustawień Red Hata nie wczyta go i\n"
 "spróbuje uruchomić pozostałe moduły."
 
 #: ../src/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Wystąpił błąd w module %s."
+msgstr "Wystąpił błąd w firstboot."
 
 #: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Ponieważ jest problem, firstboot zostanie zakończony."
 
 #: ../src/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Wyślij informacje o błędzie w narzędziu \"firstboot\" \n"
-"do systemu śledzenia błędów firmy Red Hat na \n"
-"http://www.redhat.com/bugzilla. Kopia informacji o \n"
-"błędzie została zapisana do %s. Upewnij się, że \n"
-"załączyłeś ten plik do raportu. \n"
+"Kopia informacji o błędzie została zapisana do %s.\n"
+"Upewnij się, że załączyłeś ten plik do raportu.\n"
 
 #: ../src/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Wyślij informacje o błędzie w narzędziu \"firstboot\" \n"
-"do systemu śledzenia błędów firmy Red Hat na \n"
-"http://www.redhat.com/bugzilla. Kopia informacji o \n"
-"błędzie została zapisana do %s. Upewnij się, że \n"
-"załączyłeś ten plik do raportu. \n"
+"Zgłoś błąd w programie \"firstboot\" do systemu śledzenia\n"
+"błędów firmy Red Hat na http://www.redhat.com/bugzilla.\n"
 
 #: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Spróbowano się cofnąć, ale historia jest pusta."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -106,40 +99,40 @@ msgstr "_Dalej"
 #: ../src/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Moduł %s nie ustawił swojego UI, usuwanie."
 
 #: ../src/interface.py:337 ../src/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage musi podawać tytuł modułu lub numer strony."
 
 #: ../src/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Nie można utworzyć folderu ze zrzutami ekranu, pomijanie."
 
 #: ../src/interface.py:462 ../src/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Moduł o tytule %s nie istnieje."
 
 #: ../src/loader.py:98
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Moduł %s nie zawiera klasy o nazwie moduleClass; pomijanie."
 
 #: ../src/loader.py:109
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Moduł %s nie zawiera wymaganego atrybutu %s; pomijanie."
 
 #: ../src/module.py:173
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Nie można wczytać mapy pikseli %s dla modułu %s."
 
 #: ../src/moduleset.py:94
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Moduł %s nie ustawił swojego UI; usuwanie."
 
 #: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -159,7 +152,7 @@ msgstr ""
 
 #: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr "Włóż dowolny CD z dodatkowym oprogramowaniem."
+msgstr "Włóż dowolną płytę z dodatkowym oprogramowaniem."
 
 #: ../src/modules/additional_cds.py:65
 msgid ""
@@ -173,7 +166,7 @@ msgstr ""
 "\n"
 "Aby włączyć obsługę wykonywania aplikacji 32-bitowych w architekturze Intel "
 "Itanium 2 musisz teraz zainstalować pakiet Intel Execution Layer z płyty z "
-"dodatkami (Extras)."
+"dodatkami."
 
 #: ../src/modules/additional_cds.py:73
 msgid "Install..."
@@ -191,8 +184,8 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"Program autoodtwarzania nie został znaleziony na CD. Naciśnij \"OK\", aby "
-"kontynuować."
+"Program automatycznego odtwarzania nie został znaleziony na CD. Naciśnij "
+"\"OK\", aby kontynuować."
 
 #: ../src/modules/eula.py:35 ../src/modules/eula.py:36
 msgid "License Information"
@@ -233,7 +226,6 @@ msgid "Welcome"
 msgstr "Witaj"
 
 #: ../src/modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -241,4 +233,4 @@ msgid ""
 msgstr ""
 "Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do używania. "
 "Agent ustawień przeprowadzi cię przez podstawową konfigurację. Naciśnij "
-"\"Dalej\" w dolnym prawym rogu okna, aby kontynuować."
+"\"Dalej\" w dolnym prawym rogu okna, aby kontynuować"
