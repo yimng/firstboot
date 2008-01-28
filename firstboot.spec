@@ -1,10 +1,10 @@
-%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
+%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
 Version: 1.91
-Release: 1%{?dist}
+Release: 2%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -38,7 +38,7 @@ a series of steps that allows for easier configuration of the machine.
 
 %install
 rm -rf %{buildroot}
-make DESTDIR=%{buildroot} install
+make DESTDIR=%{buildroot} SITELIB=%{python_sitelib} install
 %find_lang %{name}
 
 %clean
@@ -69,6 +69,9 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Mon Jan 28 2008 Chris Lumens <clumens@redhat.com> 1.91-2
+- Put module in /usr/lib64 on 64-bit platforms.
+
 * Wed Jan 02 2008 Chris Lumens <clumens@redhat.com> 1.91-1
 - Reorganize to provide a python module.
 - Provide real help output for the firstboot program.

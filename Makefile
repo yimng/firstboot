@@ -3,6 +3,8 @@ VERSION=$(shell awk '/Version:/ { print $$2 }' ${PKGNAME}.spec)
 RELEASE=$(shell awk '/Release:/ { print $$2 }' ${PKGNAME}.spec | sed -e 's|%.*$$||g')
 TAG=r$(VERSION)-$(RELEASE)
 
+SITELIB := $(shell python -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")
+
 PYCHECKEROPTS=--no-shadowbuiltin --no-argsused --no-miximport --maxargs 0 --no-local -\# 0 --only
 
 default: all
@@ -20,7 +22,7 @@ clean:
 	python setup.py -q clean --all
 
 install: all
-	python setup.py install --root=$(DESTDIR)
+	python setup.py install --root=$(DESTDIR) --install-lib=$(SITELIB)
 	$(MAKE) -C po install
 
 tag:
