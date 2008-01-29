@@ -19,7 +19,7 @@
 #
 import logging
 import os
-from xfrontend import XFrontEnd
+from firstboot.xfrontend import XFrontEnd
 
 class RHGBFrontEnd(XFrontEnd):
     def __init__(self):

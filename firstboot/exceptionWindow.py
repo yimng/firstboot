@@ -18,7 +18,7 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 import logging
-import os, string, sys, tempfile, time
+import os, string, sys, tempfile
 
 ##
 ## I18N

@@ -3,10 +3,7 @@ VERSION=$(shell awk '/Version:/ { print $$2 }' ${PKGNAME}.spec)
 RELEASE=$(shell awk '/Release:/ { print $$2 }' ${PKGNAME}.spec | sed -e 's|%.*$$||g')
 TAG=r$(VERSION)-$(RELEASE)
 
-PREFIX=/usr
-DATADIR=${PREFIX}/share/firstboot
-MODULESDIR=${DATADIR}/modules
-THEMESDIR=${DATADIR}/themes
+SITELIB := $(shell python -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")
 
 PYCHECKEROPTS=--no-shadowbuiltin --no-argsused --no-miximport --maxargs 0 --no-local -\# 0 --only
 
@@ -16,26 +13,16 @@ all:
 	$(MAKE) -C po
 
 check:
-	PYTHONPATH=. pychecker $(PYCHECKEROPTS) firstboot/*.py firstboot/modules/*.py
+	PYTHONPATH=. pychecker $(PYCHECKEROPTS) firstboot/*.py modules/*.py progs/*.py
 
 clean:
-	-rm src/*.pyc src/modules/*.pyc
+	-rm firstboot/*.pyc modules/*.pyc
 	-rm ${PKGNAME}-$(VERSION).tar.bz2
 	$(MAKE) -C po clean
+	python setup.py -q clean --all
 
 install: all
-	mkdir -p $(INSTROOT)/usr/sbin
-	mkdir -p $(INSTROOT)/etc/rc.d/init.d
-	mkdir -p $(INSTROOT)/${DATADIR}
-	mkdir -p $(INSTROOT)/${MODULESDIR}
-	mkdir -p $(INSTROOT)/${THEMESDIR}
-
-	install -m 644 src/*.py $(INSTROOT)/${DATADIR}
-	cp -r src/modules/* $(INSTROOT)/${MODULESDIR}
-	cp -r themes/* $(INSTROOT)/${THEMESDIR}
-
-	install -m 755 firstboot.init $(INSTROOT)/etc/rc.d/init.d/firstboot
-	install -m 755 firstboot $(INSTROOT)/usr/sbin/
+	python setup.py install --root=$(DESTDIR) --install-lib=$(SITELIB)
 	$(MAKE) -C po install
 
 tag:

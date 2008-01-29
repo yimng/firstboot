@@ -18,12 +18,12 @@
 # with the express permission of Red Hat, Inc. 
 #
 import gtk
-import logging, os, sys, string
+import logging, os
 
-from config import *
-from constants import *
-from functions import *
-from moduleset import *
+from firstboot.config import *
+from firstboot.constants import *
+from firstboot.functions import *
+from firstboot.moduleset import *
 
 from rhpl.translate import _
 import rhpl.translate as translate
@@ -96,7 +96,7 @@ class Interface:
 
     def _nextClicked(self, *args):
         if self.autoscreenshot:
-            self.screenshot()
+            self.takeScreenshot()
 
         try:
             self.advance()
@@ -304,8 +304,8 @@ class Interface:
            os._exit(1)
 
     def displayException(self):
-        import exceptionWindow
-        exceptionWindow.displayException()
+        import firstboot.exceptionWindow
+        firstboot.exceptionWindow.displayException()
         self.destroy()
 
     def displayModule(self):

@@ -17,10 +17,10 @@
 # subject to the GNU General Public License and may only be used or replicated
 # with the express permission of Red Hat, Inc. 
 #
-from constants import *
-from exceptionWindow import displayException
-from module import Module
-from moduleset import ModuleSet
+from firstboot.constants import *
+from firstboot.exceptionWindow import displayException
+from firstboot.module import Module
+from firstboot.moduleset import ModuleSet
 from rhpl import ethtool
 import glob
 import imputil

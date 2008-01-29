@@ -20,13 +20,13 @@
 #
 import gtk
 import kudzu
-import os
+import os, time
 import rhpl.diskutil as diskutil
 
-from config import *
-from constants import *
-from functions import *
-from module import *
+from firstboot.config import *
+from firstboot.constants import *
+from firstboot.functions import *
+from firstboot.module import *
 
 ##
 ## I18N
