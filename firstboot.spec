@@ -3,8 +3,8 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.91
-Release: 2%{?dist}
+Version: 1.92
+Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -69,6 +69,10 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Thu Jan 31 2008 Chris Lumens <clumens@redhat.com> 1.92-1
+- Add a reworked user creation page (#429195).
+- If the user's home dir already exists, offer to set ownership (#426631).
+
 * Mon Jan 28 2008 Chris Lumens <clumens@redhat.com> 1.91-2
 - Put module in /usr/lib64 on 64-bit platforms.
 
