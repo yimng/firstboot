@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"POT-Creation-Date: 2008-02-01 10:33-0500\n"
 "PO-Revision-Date: 2007-12-19 18:21+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -34,28 +35,28 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../firstboot:109
+#: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
 msgstr "firstboot ચલાવવા માટે તમે રુટ હોવા જ જોઈએ."
 
-#: ../firstboot:146 ../firstboot:147
+#: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
 msgstr "કોઈપણ firstboot અગ્રઅંત ચલાવી શક્યા નહિં."
 
-#: ../firstboot:158 ../firstboot:159
+#: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
 msgstr "કોઈ firstboot મોડ્યુલો મળ્યા નહિં."
 
-#: ../firstboot:168 ../firstboot:169
+#: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
 msgstr "કોઈપણ firstboot ઈન્ટરફેસ બનાવી શક્યા નહિં."
 
-#: ../src/exceptionWindow.py:50
+#: ../firstboot/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "%s મોડ્યુલમાં ભૂલ ઉદ્દભવી છે."
 
-#: ../src/exceptionWindow.py:51
+#: ../firstboot/exceptionWindow.py:51
 #, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
@@ -66,15 +67,15 @@ msgstr ""
 "firstboot આ મોડ્યુલને લોડ કરશે નહિં અને તે\n"
 "બાકીના મોડ્યુલો ચલાવવાનો પ્રયાસ કરશે."
 
-#: ../src/exceptionWindow.py:55
+#: ../firstboot/exceptionWindow.py:55
 msgid "An error has occurred in firstboot."
 msgstr "firstboot માં ભૂલ ઉદ્ભવી છે."
 
-#: ../src/exceptionWindow.py:56
+#: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr "ત્યાં સમસ્યા હોવાથી, firstboot બંધ થઈ જશે."
 
-#: ../src/exceptionWindow.py:66
+#: ../firstboot/exceptionWindow.py:66
 #, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
@@ -83,7 +84,7 @@ msgstr ""
 "ડિબગ આઉટપુટની નકલ %s માં સંગ્રહાઈ ગઈ છે\n"
 "ભૂલના અહેવાલમાં ફાઈલ જોડવાનું ભૂલશો નહિં.\n"
 
-#: ../src/exceptionWindow.py:71
+#: ../firstboot/exceptionWindow.py:71
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
@@ -91,71 +92,76 @@ msgstr ""
 "મહેરબાની કરીને Red Hat ભૂલ પકડતી સિસ્ટમમાં 'firstboot' વિરુદ્દ\n"
 "http://www.redhat.com/bugzilla આગળ ભૂલ જમા કરો.\n"
 
-#: ../src/interface.py:75
+#: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
 msgstr "પાછા જવાનો પ્રયાસ કર્યો, પરંતુ ઈતિહાસ ખાલી છે."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../src/interface.py:83 ../src/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
 msgid "_Finish"
 msgstr "સમાપ્ત (_F)"
 
-#: ../src/interface.py:175
+#: ../firstboot/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "તમારી અમુક પસંદગીઓની અસર લાવવા માટે સિસ્ટમ હવે રીબુટ થવી જ જોઈએ."
 
-#: ../src/interface.py:231
+#: ../firstboot/interface.py:231
 msgid "_Back"
 msgstr "પાછળ (_B)"
 
-#: ../src/interface.py:238
+#: ../firstboot/interface.py:238
 msgid "_Forward"
 msgstr "આગળ ધપાવો (_F)"
 
-#: ../src/interface.py:265
+#: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "મોડ્યુલ %s એ તેનું UI સુયોજીત કર્યું નથી, દૂર કરી રહ્યા છીએ."
 
-#: ../src/interface.py:337 ../src/interface.py:338
+#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage એ આપેલ મોડ્યુલ શીર્ષક અથવા પાનાં નંબર હોવું જ જોઈએ."
 
-#: ../src/interface.py:422
+#: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "સ્ક્રીનશોટ ડિરેક્ટરી બનાવવામાં અસમર્થ; છોડી રહ્યા છીએ."
 
-#: ../src/interface.py:462 ../src/interface.py:463
+#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s શીર્ષક સાથેનું કોઈ મોડ્યુલ અસ્તિત્વમાં નથી."
 
-#: ../src/loader.py:98
+#: ../firstboot/loader.py:90
+#, python-format
+msgid "Skipping old module %s that has not been updated."
+msgstr ""
+
+#: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "મોડ્યુલ %s એ moduleClass નામવાળો ક્લાસ સમાવતું નથી; છોડી રહ્યા છીએ."
 
-#: ../src/loader.py:109
+#: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "મોડ્યુલ %s જરૂરી લક્ષણ %s સમાવતું નથી; છોડી રહ્યા છીએ."
 
-#: ../src/module.py:173
+#: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "પિક્સમેપ %s ને મોડ્યુલ %s માટે લાવવામાં અસમર્થ."
 
-#: ../src/moduleset.py:94
+#: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "મોડ્યુલ %s એ તેનું UI સુયોજીત કર્યું ન હતું; દૂર કરી રહ્યા છીએ."
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "વધારાની CD"
 
-#: ../src/modules/additional_cds.py:55
+#: ../modules/additional_cds.py:55
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -167,11 +173,11 @@ msgstr ""
 "ડિસ્ક પણ દાખલ કરી શકો છો, અથવા આ સમયે વધારાના સોફ્ટવેર સ્થાપિત કરવા માટે માટે Red "
 "Hat દ્વારા પૂરી પાડવામાં આવેલ અન્ય ડિસ્ક પણ વાપરી શકો છો."
 
-#: ../src/modules/additional_cds.py:61
+#: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
 msgstr "મહેરબાની કરીને આ સમયે કોઈપણ વધારાની સોફ્ટવેર સ્થાપન cd ઓ દાખલ કરો."
 
-#: ../src/modules/additional_cds.py:65
+#: ../modules/additional_cds.py:65
 msgid ""
 "\n"
 "\n"
@@ -184,11 +190,11 @@ msgstr ""
 "Intel Itanium2 આર્કીટેક્ચર પર 32-bit કાર્યક્રમોનો ચાલતી વખતનો આધાર સક્રિય કરવા માટે "
 "તમારે હમણાં જ Extras ડિસ્કમાંથી Intel Execution Layer પેકેજ સ્થાપિત કરવું જ જોઈએ."
 
-#: ../src/modules/additional_cds.py:73
+#: ../modules/additional_cds.py:73
 msgid "Install..."
 msgstr "સ્થાપિત કરો..."
 
-#: ../src/modules/additional_cds.py:110
+#: ../modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
@@ -196,15 +202,87 @@ msgstr ""
 "CD-ROM હજુ સુધી શોધી શકાઈ નથી. મહેરબાની કરીને ડ્રાઈવમાં CD-ROM દાખલ કરો અને ચાલુ "
 "રાખવા માટે \"બરાબર\" ક્લિક કરો."
 
-#: ../src/modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
+#: ../modules/additional_cds.py:146
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
 
-#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+#: ../modules/create_user.py:40 ../modules/create_user.py:41
+msgid "Create User"
+msgstr ""
+
+#: ../modules/create_user.py:60
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+
+#: ../modules/create_user.py:67
+msgid "_Continue"
+msgstr ""
+
+#: ../modules/create_user.py:68
+msgid "Create _account"
+msgstr ""
+
+#: ../modules/create_user.py:87
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../modules/create_user.py:99
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:118
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to reuse this "
+"home directory?  If not, please choose a different username."
+msgstr ""
+
+#: ../modules/create_user.py:165
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+
+#: ../modules/create_user.py:183
+msgid "_Username:"
+msgstr ""
+
+#: ../modules/create_user.py:190
+msgid "Full Nam_e:"
+msgstr ""
+
+#: ../modules/create_user.py:197
+msgid "_Password:"
+msgstr ""
+
+#: ../modules/create_user.py:204
+msgid "Confir_m Password:"
+msgstr ""
+
+#: ../modules/create_user.py:213
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../modules/create_user.py:222
+msgid "Use Network _Login..."
+msgstr ""
+
+#: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "લાઈસન્સ જાણકારી"
 
-#: ../src/modules/eula.py:53
+#: ../modules/eula.py:53
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -230,18 +308,20 @@ msgstr ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
-#: ../src/modules/eula.py:64
+#: ../modules/eula.py:64
 msgid "Understood, please proceed."
 msgstr "સમજાયું, મહેરબાની કરીને પ્રક્રિયા કરો."
 
-#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+#: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "સ્વાગત"
 
-#: ../src/modules/welcome.py:45
+#: ../modules/welcome.py:45
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
-msgstr "તમારી સિસ્ટમ વાપરવા માટે તૈયાર થાય તે પહેલાં ત્યાં થોડા વધુ પગલાંઓ છે.  સેટઅપ એજન્ટ હવે તમને અમુક આધારભૂત રૂપરેખાંકન મારફતે માર્ગદર્શન કરશે.  મહેરબાની કરીને ચાલુ રાખવા માટે નીચે જમણાં ખૂણે \"આગળ ધપાવો\" બટન ક્લિક કરો."
-
+msgstr ""
+"તમારી સિસ્ટમ વાપરવા માટે તૈયાર થાય તે પહેલાં ત્યાં થોડા વધુ પગલાંઓ છે.  સેટઅપ એજન્ટ હવે "
+"તમને અમુક આધારભૂત રૂપરેખાંકન મારફતે માર્ગદર્શન કરશે.  મહેરબાની કરીને ચાલુ રાખવા માટે નીચે "
+"જમણાં ખૂણે \"આગળ ધપાવો\" બટન ક્લિક કરો."

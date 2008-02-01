@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-02 11:41-0500\n"
+"POT-Creation-Date: 2008-02-01 10:33-0500\n"
 "PO-Revision-Date: 2008-02-01 11:21+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese, Tradition <zh_TW@li.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:109
+#: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
 msgstr "您必須是 root 才能執行 firstboot。"
 
-#: ../progs/firstboot:146 ../progs/firstboot:147
+#: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
 msgstr ""
 
-#: ../progs/firstboot:158 ../progs/firstboot:159
+#: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
 msgstr ""
 
-#: ../progs/firstboot:168 ../progs/firstboot:169
+#: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
 msgstr ""
 
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Unable to load pixmap %s for module %s."
 msgstr ""
 
-#: ../firstboot/moduleset.py:94
+#: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr ""
@@ -191,8 +191,79 @@ msgid ""
 msgstr "偵測不到光碟片。請將光碟片放入光碟機中，並按下「確定」以繼續。"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式。請點選「確定」以繼續。"
+
+#: ../modules/create_user.py:40 ../modules/create_user.py:41
+msgid "Create User"
+msgstr ""
+
+#: ../modules/create_user.py:60
+msgid ""
+"It is highly recommended that a personal user account be created.  If you "
+"continue without an account, you can only log in with the root account, "
+"which is reserved for administrative use only."
+msgstr ""
+
+#: ../modules/create_user.py:67
+msgid "_Continue"
+msgstr ""
+
+#: ../modules/create_user.py:68
+msgid "Create _account"
+msgstr ""
+
+#: ../modules/create_user.py:87
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../modules/create_user.py:99
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:118
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to reuse this "
+"home directory?  If not, please choose a different username."
+msgstr ""
+
+#: ../modules/create_user.py:165
+msgid ""
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
+msgstr ""
+
+#: ../modules/create_user.py:183
+msgid "_Username:"
+msgstr ""
+
+#: ../modules/create_user.py:190
+msgid "Full Nam_e:"
+msgstr ""
+
+#: ../modules/create_user.py:197
+msgid "_Password:"
+msgstr ""
+
+#: ../modules/create_user.py:204
+msgid "Confir_m Password:"
+msgstr ""
+
+#: ../modules/create_user.py:213
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../modules/create_user.py:222
+msgid "Use Network _Login..."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -237,4 +308,3 @@ msgid ""
 msgstr ""
 "在使用您的系統之前，要先完成幾個步驟。現在「設定代理程式」將引導您做一些基本"
 "設定。請點選右下角的「下一頁」按鈕以繼續。"
-
