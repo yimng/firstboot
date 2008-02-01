@@ -1,47 +1,47 @@
-# translation of zh_TW.po to Traditional Chinese
+# translation of firstboot.master.po to Chinese, Tradition
 # Translation of firstboot to Traditional Chinese
 # Copyright (C) 2002 Red Hat Inc.
 #
 # Ben Wu <hpwu@redhat.com>, 2002,2003, 2004.
-# Chester Cheng <ccheng@redhat.com>, 2004, 2005, 2006, 2007.
+# Chester Cheng <ccheng@redhat.com>, 2004, 2005, 2006, 2007, 2008.
 # Waika Liu <wliu@redhat.com>, 2005.
 # Walter Cheuk <wwycheuk@netvigator.com>, 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: zh_TW\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-02 15:30-0400\n"
-"PO-Revision-Date: 2007-06-25 16:47+1000\n"
+"POT-Creation-Date: 2008-01-02 11:41-0500\n"
+"PO-Revision-Date: 2008-02-01 11:21+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
-"Language-Team: Traditional Chinese <zh_TW@li.org>\n"
+"Language-Team: Chinese, Tradition <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../firstboot:109
+#: ../progs/firstboot:109
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "您必須是 root 才能執行 firstboot。"
 
-#: ../firstboot:146 ../firstboot:147
+#: ../progs/firstboot:146 ../progs/firstboot:147
 msgid "Could not start any firstboot frontend."
 msgstr ""
 
-#: ../firstboot:158 ../firstboot:159
+#: ../progs/firstboot:158 ../progs/firstboot:159
 msgid "No firstboot modules were found."
 msgstr ""
 
-#: ../firstboot:168 ../firstboot:169
+#: ../progs/firstboot:168 ../progs/firstboot:169
 msgid "Could not create any firstboot interface."
 msgstr ""
 
-#: ../src/exceptionWindow.py:50
+#: ../firstboot/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
 msgstr "模組 %s 發生一個錯誤。"
 
-#: ../src/exceptionWindow.py:51
+#: ../firstboot/exceptionWindow.py:51
 #, fuzzy, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
@@ -52,16 +52,16 @@ msgstr ""
 "Red Hat 設定代理程式無法載入這個模組，\n"
 "它將會試著執行其餘的模組。"
 
-#: ../src/exceptionWindow.py:55
+#: ../firstboot/exceptionWindow.py:55
 #, fuzzy
 msgid "An error has occurred in firstboot."
 msgstr "模組 %s 發生一個錯誤。"
 
-#: ../src/exceptionWindow.py:56
+#: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
-#: ../src/exceptionWindow.py:66
+#: ../firstboot/exceptionWindow.py:66
 #, fuzzy, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
@@ -72,7 +72,7 @@ msgstr ""
 "除錯輸出的複本已經儲存到 %s \n"
 "請記得在程式錯誤報告中，附上這個檔案。\n"
 
-#: ../src/exceptionWindow.py:71
+#: ../firstboot/exceptionWindow.py:71
 #, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
@@ -83,71 +83,76 @@ msgstr ""
 "除錯輸出的複本已經儲存到 %s \n"
 "請記得在程式錯誤報告中，附上這個檔案。\n"
 
-#: ../src/interface.py:75
+#: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
 msgstr ""
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../src/interface.py:83 ../src/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
 msgid "_Finish"
 msgstr "完成(_F)"
 
-#: ../src/interface.py:175
+#: ../firstboot/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "為了讓您的選擇生效，系統現在必須重新啟動。"
 
-#: ../src/interface.py:231
+#: ../firstboot/interface.py:231
 msgid "_Back"
 msgstr "上一步(_B)"
 
-#: ../src/interface.py:238
+#: ../firstboot/interface.py:238
 msgid "_Forward"
 msgstr "下一步(_F)"
 
-#: ../src/interface.py:265
+#: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr ""
 
-#: ../src/interface.py:337 ../src/interface.py:338
+#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 
-#: ../src/interface.py:422
+#: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
 msgstr ""
 
-#: ../src/interface.py:462 ../src/interface.py:463
+#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
 msgstr ""
 
-#: ../src/loader.py:98
+#: ../firstboot/loader.py:90
+#, python-format
+msgid "Skipping old module %s that has not been updated."
+msgstr ""
+
+#: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr ""
 
-#: ../src/loader.py:109
+#: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr ""
 
-#: ../src/module.py:173
+#: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr ""
 
-#: ../src/moduleset.py:94
+#: ../firstboot/moduleset.py:94
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr ""
 
-#: ../src/modules/additional_cds.py:43 ../src/modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "其他的光碟"
 
-#: ../src/modules/additional_cds.py:55
+#: ../modules/additional_cds.py:55
 msgid ""
 "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
 "for installation of third-party plug-ins and applications.  You may also "
@@ -158,11 +163,11 @@ msgstr ""
 "程式。您也可以放入文件光碟，或其他 Red Hat 所提供的光碟，好一併安裝其他額外的"
 "軟體。"
 
-#: ../src/modules/additional_cds.py:61
+#: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
 msgstr "現在請插入任何額外的軟體安裝光碟。"
 
-#: ../src/modules/additional_cds.py:65
+#: ../modules/additional_cds.py:65
 msgid ""
 "\n"
 "\n"
@@ -175,26 +180,25 @@ msgstr ""
 "要在英特爾（Intel）Itanium2 架構下支援 32 位元的應用程式，您現在必須從 "
 "Extras 光碟中安裝 Intel Execution Layer 套件。"
 
-#: ../src/modules/additional_cds.py:73
+#: ../modules/additional_cds.py:73
 msgid "Install..."
 msgstr "安裝..."
 
-#: ../src/modules/additional_cds.py:110
+#: ../modules/additional_cds.py:110
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr "偵測不到光碟片。請將光碟片放入光碟機中，並按下「確定」以繼續。"
 
-#: ../src/modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+#: ../modules/additional_cds.py:146
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式。請點選「確定」以繼續。"
 
-#: ../src/modules/eula.py:35 ../src/modules/eula.py:36
+#: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "授權資訊"
 
-#: ../src/modules/eula.py:53
+#: ../modules/eula.py:53
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -216,15 +220,15 @@ msgstr ""
 "如果您想了解這些限制，請參閱 http://fedoraproject.org/wiki/Legal/Licenses/"
 "EULA.。"
 
-#: ../src/modules/eula.py:64
+#: ../modules/eula.py:64
 msgid "Understood, please proceed."
 msgstr "了解，請繼續。"
 
-#: ../src/modules/welcome.py:35 ../src/modules/welcome.py:36
+#: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "歡迎"
 
-#: ../src/modules/welcome.py:45
+#: ../modules/welcome.py:45
 #, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
@@ -233,3 +237,4 @@ msgid ""
 msgstr ""
 "在使用您的系統之前，要先完成幾個步驟。現在「設定代理程式」將引導您做一些基本"
 "設定。請點選右下角的「下一頁」按鈕以繼續。"
+
