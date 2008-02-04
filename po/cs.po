@@ -1,41 +1,40 @@
 # translation of cs.po to Czech
 # Copyright (C) 2002, 2003, 2004, 2005 firstboot'S COPYRIGHT HOLDER
-# Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>
-# Miloslav Trmac <mitr@volny.cz>, 2002 - 2005.
+# Copyright (C) 2004, 2005, 2008 Miloslav Trmač <mitr@volny.cz>
+# Miloslav Trmac <mitr@volny.cz>, 2002 - 2005, 2008.
 # Nikola Štohanzl <niko@srnet.cz>, 2006.
 # Milan Kerslager <kerslage@linux.cz>, 2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cs\n"
+"Project-Id-Version: firstboot master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-03-28 13:01+0100\n"
-"Last-Translator: Milan Kerslager <kerslage@linux.cz>\n"
+"PO-Revision-Date: 2008-02-04 01:53+0100\n"
+"Last-Translator: Miloslav Trmač <mitr@volny.cz>\n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Pro spuštění firstboot musíte být root."
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Nemohu spustit žádné rozhraní firstbootu."
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Nebyly nalezeny žádné moduly firstbootu."
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Nemohu vytvořit žádné rozhraní firstbootu."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -43,50 +42,44 @@ msgid "An error has occurred in the %s module."
 msgstr "V modulu %s nastala chyba."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Protože s modulem %s se vyskytl problém, \n"
-"Red Hat Setup Agent tento modul nenahraje \n"
+"Protože s modulem %s je problém,\n"
+"firstboot tento modul nenahraje\n"
 "a pokusí se spustit ostatní moduly."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "V modulu %s nastala chyba."
+msgstr "Ve firstbootu dušlo k chybě."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Protože došlo k problému, firstboot skončí."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Ohlaste prosím chybu v 'firstboot' v systému sledování \n"
-"chyb Red Hat na http://www.redhat.com/bugzilla. \n"
-"Kopie ladicího výpisu byla uložena do %s \n"
-"Připojte tento soubor k hlášení chyby. \n"
+"Kopie ladicího výpisu byla uložena do %s\n"
+"Připojte tento soubor k hlášení chyby.\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Ohlaste prosím chybu v 'firstboot' v systému sledování \n"
-"chyb Red Hat na http://www.redhat.com/bugzilla. \n"
-"Kopie ladicího výpisu byla uložena do %s \n"
-"Připojte tento soubor k hlášení chyby. \n"
+"Ohlaste prosím chybu v 'firstboot' v systému sledování\n"
+"chyb Red Hat na http://www.redhat.com/bugzilla.\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Pokus jít zpět, ale historie je prázdná."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -109,45 +102,45 @@ msgstr "_Další"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Modul %s nenastavil své UI, odstraňuji jej."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage musí dostat název modulu nebo číslo strany."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Nemohu vytvořit adresář snímků obrazovky; přeskakuji."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Modul s názvem %s neexistuje."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Přeskakuji starý, neaktualizovaný modul %s."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Modul %s neobsahuje třídu nazvanou moduleClass; přeskakuji jej."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Modul %s neobsahuje vyžadovaný atribut %s; přeskakuji jej."
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Nemohu načíst pixmapu %s pro modul %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Modul %s nenastavil své UI; odstraňuji jej."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -201,73 +194,73 @@ msgstr "Na cd nebyl nalezen program autorun. Pokračujte kliknutím na \"OK\"."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "Vytvořit uživatele"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "Důrazně se doporučuje, aby byl vytvořen osobní účet uživatele. Pokud budete pokračovat bez účtu, budete se moci přihlásit jen s účtem root, který je rezervován jen pro správu systému."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "_Pokračovat"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "_Vytvořit účet"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Hesla nesouhlasí.  Zadejte prosím heslo znovu."
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "Jméno uživatele '%s' je rezervovaný účet systému. Zadejte prosím jiné jméno uživatele."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "Domovský adresář pro uživatele %s již existuje. Chcete použít tento domovský adresář? Pokud ne, zvolte prosím jiné jméno uživatele."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "Doporučuje se, abyste vytvořili \"jméno uživatele\" pro běžné použití (jiné než správu) systému. \"Jméno uživatele\" v systému prosím vytvořte zadáním informací požadovaných níže."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "_Jméno uživatele:"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "_Celé jméno:"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "_Heslo:"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "_Potvrďte heslo:"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "Pokud potřebujete používat síťovou autentizaci, např. Kerberos nebo NIS, klikněte prosím na tlačítko Používat síťové přihlašování."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Používat _síťové přihlašování..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -307,12 +300,8 @@ msgid "Welcome"
 msgstr "Vítejte"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
-"Je třeba provést ještě několik kroků, než bude Váš systém připraven k "
-"použití. Setup Agent vás nyní provede základním nastavením. Pokračujte "
-"prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu."
+msgstr "Než bude Váš systém připraven k použití, je třeba provést ještě několik kroků. Setup Agent vás nyní provede základním nastavením. Pokračujte prosím kliknutím na tlačítko \"Další\" v pravém dolním rohu"
