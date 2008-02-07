@@ -3,15 +3,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
-# Amitakhya Phukan <aphukan@redhat.com>, 2006, 2007.
+# Amitakhya Phukan <aphukan@redhat.com>, 2006, 2007, 2008.
 # Amitakhya Phukan <aphukan@fedoraproject.org>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.as\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2008-01-29 15:33+0530\n"
-"Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
+"PO-Revision-Date: 2008-02-07 15:29+0530\n"
+"Last-Translator: Amitakhya Phukan <aphukan@redhat.com>\n"
 "Language-Team: Assamese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -88,8 +88,7 @@ msgstr "সমাপ্তি(_F)"
 
 #: ../firstboot/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
+msgstr "আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
 
 #: ../firstboot/interface.py:231
 msgid "_Back"
@@ -188,79 +187,78 @@ msgstr ""
 "\"ঠিক আছে\" টিপক ।"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr " CD‌ -ত autorun কাৰ্য্যক্ৰম পোৱা ন'গ'ল । আগবাঢ়িব'লৈ \"ঠিক আছে\" টিপক ।"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "ব্যৱহাৰকৰোঁতা সৃষ্টি কৰক"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "এটা ব্যক্তিগত হিচাপ সৃষ্টি কৰাৰ উপদেশ দিয়া হয় । হিচাপ নোহোৱাকে আগবাঢ়িলে, আপুনি অকল ৰূটৰ হিচাপতহে প্ৰৱেশ কৰিব পাৰিব, যি প্ৰশায়নিক ব্যৱহাৰৰ বাবেহে সংৰক্ষিত কৰা হৈছে ।"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "আগবাঢ়ক (_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "হিচাপ সৃষ্টি কৰক (_a)"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "গুপ্তশব্দ অমিল । অনুগ্ৰহ কৰি গুপ্তশব্দ পুনঃ দিয়ক ।"
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "'%s' ব্যৱহাৰকৰোঁতাৰ নাম ব্যৱস্থাপ্ৰণালীৰ হিচাপৰ বাবে সংৰক্ষিত । অনুগ্ৰহ কৰি অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম দিয়ক ।"
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "ব্যৱহাৰকৰোঁতা %s ৰ ঘৰৰ পঞ্জিকা ইতিমধ্যে আছে । আপুনি এই ঘৰৰ পঞ্জিকাকে আকৌ ব্যৱহাৰ কৰিব খোজে নেকি ? ন'হ'লে, অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম নিৰ্ব্বাচন কৰক ।"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "আপুনি এটা 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰাৰ উপদেশ দিয়া হয় ব্যৱস্থাপ্ৰণালীৰ সাধাৰণ (অপ্ৰশাসনিক) ব্যৱহাৰৰ বাবে । ব্যৱস্থাপ্ৰণালীৰ 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰিবলৈ, তলৰ বিচৰা তথ্য অনুগ্ৰহ কৰি দিয়ক ।"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "ব্যৱহাৰকৰোঁতাৰ নাম:(_U)"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "সম্পূর্ণ নাম: (_e)"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "গুপ্তশব্দ: (_P)"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "গুপ্তশব্দ দৃঢ় কৰক (_m):"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "নে'টৱৰ্কৰ প্ৰমাণীকৰণ ব্যৱহাৰ কৰিব হ'লে, যেনে Kerberos বা NIS, অনুগ্ৰহ কৰি নে'টৱৰ্ক প্ৰৱেশ ব্যৱহাৰ কৰক বুটাম টিপক ।"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "নে'টৱৰ্ক প্ৰৱেশ ব্যৱহাৰ কৰক (_L)..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -307,3 +305,4 @@ msgstr ""
 "আপোনাৰ ব্যস্থাপ্ৰণালীক প্ৰয়োগৰ বাবে সাজু কৰিবলৈ আৰু কিছু পৰ্য্যায় আছে । কাৰ্য্যপদ্ধতি "
 "নিযুক্তকে আপোনাক কিছুমান মূল সংস্থাপনৰ মাজেৰে পৰিচালনা কৰিব । অনুগ্ৰহ কৰি "
 "আগবাঢ়িব'লৈ তলৰ সোঁ‌-কোনাৰ \"আগলৈ\" বুটাম টিপক ।"
+
