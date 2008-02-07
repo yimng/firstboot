@@ -219,323 +219,208 @@ msgstr "Ci sono pochi altri passi da fare prima che il sistema sia pronto all'us
 # Francesco Valente <fvalen@redhat.com>, 2003, 2004.
 # Paolo Dona' <vik@3jv.com>, 2004.
 # Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004.
-# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007.
+# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007, 2008.
+# Gianluca Busiello <busiello@ceinge.unina.it>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-06-09 21:36+0200\n"
+"POT-Creation-Date: 2007-11-02 15:30-0400\n"
+"PO-Revision-Date: 2008-02-07 08:45+0100\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#: ../progs/firstboot:117
+#: ../firstboot:109
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Si deve essere root per eseguire firstboot"
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../firstboot:146
+#: ../firstboot:147
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Non √® possibile avviare nessuna interfaccia di firstboot"
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../firstboot:158
+#: ../firstboot:159
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Nessun modulo firstboot trovato"
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../firstboot:168
+#: ../firstboot:169
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Non √® possibile creare nessuna interfaccia di firstboot"
 
-#: ../firstboot/exceptionWindow.py:50
+#: ../src/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "Si Ë verificato un errore nel modulo %s."
+msgstr "Si √® verificato un errore nel modulo %s."
 
-#: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#: ../src/exceptionWindow.py:51
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "A causa di un problema nel modulo %s, \n"
-"l'agente di setup Red Hat non caricher‡ questo modulo e \n"
-"tenter‡ di eseguire gli altri."
+"firstboot non caricher√† questo modulo e \n"
+"tenter√† di eseguire i moduli restanti."
 
-#: ../firstboot/exceptionWindow.py:55
-#, fuzzy
+#: ../src/exceptionWindow.py:55
 msgid "An error has occurred in firstboot."
-msgstr "Si Ë verificato un errore nel modulo %s."
+msgstr "Si √® verificato un errore in firstboot."
 
-#: ../firstboot/exceptionWindow.py:56
+#: ../src/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Poich√® c'e' stato un problema, firstboot terminer√†."
 
-#: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#: ../src/exceptionWindow.py:66
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Inviate un report d'errore relativo a 'firstboot' nel sistema di "
-"segnalazione\n"
-"dei bug di Red Hat all'indirizzo http://www.redhat.com/bugzilla. \n"
-"Una copia dell'output di debug Ë stata salvata in %s.\n"
-"Accertatevi di allegare il file al bug report. \n"
+"Una copia dei risultati del debug √® stata salvata in %s\n"
+"Accertarsi di allegare tale file al bug report.\n"
 
-#: ../firstboot/exceptionWindow.py:71
-#, fuzzy
+#: ../src/exceptionWindow.py:71
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Inviate un report d'errore relativo a 'firstboot' nel sistema di "
-"segnalazione\n"
-"dei bug di Red Hat all'indirizzo http://www.redhat.com/bugzilla. \n"
-"Una copia dell'output di debug Ë stata salvata in %s.\n"
-"Accertatevi di allegare il file al bug report. \n"
+"Inviare un report d'errore relativo a 'firstboot\n"
+" nel sistema di segnalazione dei bug di Red Hat a http://www.redhat.com/bugzilla. \n"
 
-#: ../firstboot/interface.py:75
+#: ../src/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Si √® tentato di andare indietro, ma lo storico risulta vuoto."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../src/interface.py:83
+#: ../src/interface.py:154
 msgid "_Finish"
 msgstr "_Fine"
 
-#: ../firstboot/interface.py:175
+#: ../src/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"Il sistema deve essere ora riavviato per rendere effettive alcune delle "
-"scelte."
+msgstr "Il sistema deve essere ora riavviato per rendere effettive alcune delle scelte."
 
-#: ../firstboot/interface.py:231
+#: ../src/interface.py:231
 msgid "_Back"
 msgstr "_Indietro"
 
-#: ../firstboot/interface.py:238
+#: ../src/interface.py:238
 msgid "_Forward"
 msgstr "_Avanti"
 
-#: ../firstboot/interface.py:265
+#: ../src/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Il modulo %s non ha settato la sua interfaccia utente, verr√† rimosso."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../src/interface.py:337
+#: ../src/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "E' necessario assegnare un titolo di modulo o un numero di pagina."
 
-#: ../firstboot/interface.py:422
+#: ../src/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Impossibile creare la directory per lo screenshot; operazione saltata."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../src/interface.py:462
+#: ../src/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Nessun modulo esistente con il titolo %s."
 
-#: ../firstboot/loader.py:90
-#, python-format
-msgid "Skipping old module %s that has not been updated."
-msgstr ""
-
-#: ../firstboot/loader.py:102
+#: ../src/loader.py:98
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Il modulo %s non contiene una classe chiamata moduleClass; operazione saltata."
 
-#: ../firstboot/loader.py:113
+#: ../src/loader.py:109
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Il modulo %s non contiene l'attributo richiesto %s; operazione saltata."
 
-#: ../firstboot/module.py:174
+#: ../src/module.py:173
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Impossibile caricare la pixmap %s per il modulo %s."
 
-#: ../firstboot/moduleset.py:93
+#: ../src/moduleset.py:94
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Il modulo %s non ha settato la sua interfaccia utente; rimozione"
 
-#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:43
+#: ../src/modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "CD aggiuntivi"
 
-#: ../modules/additional_cds.py:55
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-"Inserite il disco \"Red Hat Enterprise Linux Extra\" per permettere "
-"l'installazione delle applicazioni e dei plug-in di terzi. Potete inserire "
-"anche il disco di Documentazione, o altri dischi di Red Hat, per poter "
-"installare del software aggiuntivo."
+#: ../src/modules/additional_cds.py:55
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "Inserire il disco \"Red Hat Enterprise Linux Extra\" per permettere l'installazione delle applicazioni e dei plug-in di terzi. E' possibile inserire anche il disco di Documentazione, o altri dischi di Red Hat, per installare del software aggiuntivo."
 
-#: ../modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"Per ulteriori installazioni di software, inserite ora qualsiasi altro cd "
-"aggiuntivo."
+msgstr "Per ulteriori installazioni di software, inserire ora qualsiasi altro cd aggiuntivo."
 
-#: ../modules/additional_cds.py:65
+#: ../src/modules/additional_cds.py:65
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Per abilitare il supporto 'runtime' delle applicazioni a 32-bit "
-"sull'architettura Intel Itanium2, installate ora il pacchetto Intel "
-"Execution Layer contenuto nel disco Extra."
+"Per abilitare il supporto 'runtime' delle applicazioni a 32-bit sull'architettura Intel Itanium2, installare ora il pacchetto Intel Execution Layer contenuto nel disco Extra."
 
-#: ../modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:73
 msgid "Install..."
 msgstr "Installa..."
 
-#: ../modules/additional_cds.py:110
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
-"Il CD-ROM non È stato rilevato.  Inserire il CD-ROM nell'unit‡ e fare clic "
-"su \"OK\" per continuare."
+#: ../src/modules/additional_cds.py:110
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "Il CD-ROM non √© stato rilevato.  Inserire il CD-ROM nell'unit√† e fare clic su \"OK\" per continuare."
 
-#: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Il programma autorun non Ë stato trovato sul CD. Premi \"OK\" per continuare."
+#: ../src/modules/additional_cds.py:146
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Il programma autorun non √® stato trovato sul CD. Premere \"OK\" per continuare."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
-msgid "Create User"
-msgstr ""
-
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr ""
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr ""
-
-#: ../modules/create_user.py:87
-msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-
-#: ../modules/create_user.py:99
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-
-#: ../modules/create_user.py:118
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
-msgstr ""
-
-#: ../modules/create_user.py:165
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
-
-#: ../modules/create_user.py:183
-msgid "_Username:"
-msgstr ""
-
-#: ../modules/create_user.py:190
-msgid "Full Nam_e:"
-msgstr ""
-
-#: ../modules/create_user.py:197
-msgid "_Password:"
-msgstr ""
-
-#: ../modules/create_user.py:204
-msgid "Confir_m Password:"
-msgstr ""
-
-#: ../modules/create_user.py:213
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-
-#: ../modules/create_user.py:222
-msgid "Use Network _Login..."
-msgstr ""
-
-#: ../modules/eula.py:35 ../modules/eula.py:36
+#: ../src/modules/eula.py:35
+#: ../src/modules/eula.py:36
 msgid "License Information"
 msgstr "Informazioni sulla licenza"
 
-#: ../modules/eula.py:53
+#: ../src/modules/eula.py:53
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
-"Grazie per aver installato Fedora.  Fedora Ë una compilation di pacchetti "
-"software, avente ciascuno la propria licenza.  La compilation Ë resa "
-"disponibile sotto la GNU General Public License versione 2.  Non ci sono "
-"restrizioni sull'uso, la copia, o la modifica di questo codice.  Comunque ci "
-"sono restrizioni ed obblighi che si applicano alla redistribuzione del "
-"codice, sia nella sua forma originale che modificata.  D'altra parte tali "
-"restrizioni/obblighi sono pertinenti anche la licenza della ridistribuzione, "
-"diritti di trademark, e controllo sull'esportazione.\n"
+"Grazie per aver installato Fedora.  Fedora √® una compilation di pacchetti software, avente ciascuno la propria licenza.  La compilation √® resa disponibile sotto la GNU General Public License versione 2.  Non ci sono restrizioni sull'uso, la copia, o la modifica di questo codice.  Comunque ci sono restrizioni ed obblighi che si applicano alla redistribuzione del codice, sia nella sua forma originale che modificata.  D'altra parte tali restrizioni/obblighi sono pertinenti anche la licenza della ridistribuzione, diritti di trademark, e controllo sull'esportazione.\n"
 "\n"
-"Se si desidera capire quali sono queste restrizioni, visitare http://"
-"fedoraproject.org/wiki/Legal/Licenses/EULA."
+"Se si desidera capire quali sono queste restrizioni, visitare http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
-#: ../modules/eula.py:64
+#: ../src/modules/eula.py:64
 msgid "Understood, please proceed."
 msgstr "Ho compreso, procedere."
 
-#: ../modules/welcome.py:35 ../modules/welcome.py:36
+#: ../src/modules/welcome.py:35
+#: ../src/modules/welcome.py:36
 msgid "Welcome"
 msgstr "Benvenuti"
 
-#: ../modules/welcome.py:45
-#, fuzzy
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
-"Ci sono alcune operazioni da compiere prima che il sistema sia pronto "
-"all'uso.  L'agente di setup vi guider‡ nel processo di configurazione di "
-"base.  Premere il pulsante \"Avanti\" nell'angolo in basso a destra per "
-"continuare."
+#: ../src/modules/welcome.py:45
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
+msgstr "Ci sono pochi altri passi da fare prima che il sistema sia pronto all'uso. L'agente di setup vi guider√† nel processo di configurazione di base.  Premere il pulsante \"Avanti\" nell'angolo in basso a destra per continuare."
+
