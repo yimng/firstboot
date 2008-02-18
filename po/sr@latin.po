@@ -1,36 +1,42 @@
-# Serbian(Latin) translations for firstboot
+# translation of firstboot.master.sr.po to Serbian
+# Serbian translations for firstboot
 # Copyright (C) 2005 Red Hat, Inc.
 # This file is distributed under the same license as the firstboot package.
+#
 # Filip Maličević <filip@lakinetwork.com>, 2005.
 # Miloš Komarčević <kmilos@gmail.com>, 2005.
-#
+# Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: firstboot.master.sr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-03-22 00:29-0000\n"
-"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
-"Language-Team: Serbian (sr) <fedora@prevod.org>\n"
+"PO-Revision-Date: 2008-02-16 22:39-0500\n"
+"Last-Translator: Igor Miletic <grejigl-gnomeprevod@yahoo.ca>\n"
+"Language-Team: Serbian <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
 msgstr ""
+"Morate biti „root“ da bi pokrenuli „firstboot“ (program prvog pokretanja)."
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Ne može se pokrenuti ni jedno pročelje za „firstboot“."
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Nije nađen ni jedan modul za „firstboot“."
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Nije se moglo pokrenuti ni jedno sučelje za „firstboot“."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -38,50 +44,44 @@ msgid "An error has occurred in the %s module."
 msgstr "Došlo je do greške u modulu %s."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "S obzirom da postoji problem sa modulom %s, \n"
-"Red Hat Agent postavke neće pokrenuti ovaj modul, \n"
-"a pokušaće da pokrene preostale module."
+"„firstboot“ neće učitati ovaj modul, \n"
+"ali će pokušati da pokrene preostale module."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Došlo je do greške u modulu %s."
+msgstr "Došlo je do greške u “firstboot“ programu."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "„firstboot“ će biti zaustavljen zbog postojanja problema."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Prijavite grešku za „firstboot“ na Red Hat-ovom \n"
-"sistemu za praćenje grešaka na http://www.redhat.com/bugzilla. \n"
 "Kopija ispisa za otklanjanje grešaka je sačuvana u %s \n"
 "Priložite i tu datoteku pri prijavi greške. \n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "Prijavite grešku za „firstboot“ na Red Hat-ovom \n"
 "sistemu za praćenje grešaka na http://www.redhat.com/bugzilla. \n"
-"Kopija ispisa za otklanjanje grešaka je sačuvana u %s \n"
-"Priložite i tu datoteku pri prijavi greške. \n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Pokušano je da se vrati nazad, ali je istorija prazna."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -106,45 +106,46 @@ msgstr "Nap_red"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Modul %s nije podesio svoje sučelje, zato će biti izbačen."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
+"moveToPage (pomeri na stranicu) mora dobiti naslov modula ili broj stranice."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Nije moguće napraviti snimak direktorijuma, preskačem."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Ne postoji modul sa naslovom %s."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Preskačem modul %s koji nije bio ažuriran."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Modul %s ne sadrži klasu nazvanu moduleClass, preskačem."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Modul %s ne sadrži zahtevanu osobinu %s, preskačem."
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Nije moguće učitati sliku %s za modul %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Modul %s nije podesio svoje sučelje, preskačem."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -158,9 +159,9 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Ubacite disk obeležen kao „Red Hat Enterprise Linux Extras“ da omogućite "
-"instaliranje dodataka i programa sa strane.  U ovom trenutku možete ubaciti "
-"i disk sa dokumentacijom, ili druge Red Hat dostavljene diskove da "
-"instalirate dodatni softver."
+"instaliranje dodataka i programa sa strane.  U ovom trenutku možete ubaciti i "
+"disk sa dokumentacijom, ili druge Red Hat dostavljene diskove da instalirate "
+"dodatni softver."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -201,7 +202,7 @@ msgstr ""
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "Napravi korisnika"
 
 #: ../modules/create_user.py:60
 msgid ""
@@ -209,18 +210,21 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Veoma je preporučeno da napravite lični korisnički nalog. Ako nastavite bez "
+"naloga, moći ćete se prijaviti samo koristeći „root“ nalog, koji je "
+"rezervisan samo za administrativne svrhe."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "_Nastavi"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "Napravi n_alog"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Lozinke se ne podudaraju.  Unesite lozinku ponovo."
 
 #: ../modules/create_user.py:99
 #, python-format
@@ -228,6 +232,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"Korisničko ime „%s“ je rezervisani sistemski nalog. Navedite drugo "
+"korisničko ime."
 
 #: ../modules/create_user.py:118
 #, python-format
@@ -235,6 +241,9 @@ msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
+"Lični direktorijum za korisnika %s već postoji. Da li biste željeli "
+"iskoristiti ovaj lični direktorijum?  Ako ne želite, izaberite drugo "
+"korisničko ime."
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -242,32 +251,37 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"Preporučeno je da napravite „korisničko ime“ za običnog (ne "
+"administratorskog) korisnika za sistem. Da napravite sistemsko „korisničko "
+"ime“, pružite podatke koji su zahtevani ispod."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "_Korisničko ime:"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Prezime i im_e:"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "_Lozinka:"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Potvrdi_te lozinku:"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Ako morate koristiti mrežnu autentifikaciju, poput Kerberso ili NIS, "
+"kliknite na dugme Koristi mrežno prijavljivanje."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Koristi _mrežno prijavljivanje..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -287,14 +301,13 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
-"Zahvaljujemo na instaliranju Fedore.  Fedora je zbirka softverskih paketa, "
+"Zahvaljujemo na instaliranju Fedora-e.  Fedora je zbirka softverskih paketa, "
 "svaki pod svojom licencom.  Omogućeno je da zbirka bude dostupna pod GNU "
 "Opštom javnom licencom verzije 2.  Ne postoje ograničenja pri upotrebi, "
-"umnožavanju, ili izmenjivanju ovog koda.  Međutim, postoje ograničenja i "
-"obaveze koje se tiču dalje distribucije ovog koda, bilo u svom prvobitnom "
-"ili izmenjenom obliku.  Pored drugih stvari, ova ograničenja/obaveze se "
-"dodiru licence dalje distribucije, prava na zaštitne znake, i kontrole "
-"izvoza.\n"
+"umnožavanju, ili izmenjivanju ovog koda.  Međutim, postoje ograničenja i obaveze "
+"koje se tiču dalje distribucije ovog koda, bilo u svom prvobitnom ili "
+"izmenjenom obliku.  Pored drugih stvari, ova ograničenja/obaveze se dodiru "
+"licence dalje distribucije, prava na zaštitne znake, i kontrole izvoza.\n"
 "\n"
 "Ako želite da razumete koja su tačno ova ograničenja, posetite http://"
 "fedoraproject.org/wiki/Legal/Licenses/EULA."
@@ -308,7 +321,6 @@ msgid "Welcome"
 msgstr "Dobrodošli"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
