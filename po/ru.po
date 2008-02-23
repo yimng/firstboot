@@ -1,45 +1,45 @@
-# translation of ru.po to 
+# translation of firstboot.master.po to Russian
 # translation of ru.po to
 # translation of ru.po to
-# translation of ru.po to Russian
+# translation of ru.po to
 #
-# Copyright (C) 2003
 # Alexandr Kanevskiy <kad@blackcatlinux.com>, 2003.
 # Leonid Kanter <leon@asplinux.ru>, 2004.
-# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006.
+# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008.
 # Yuliya Poyarkova <ypoyarko@brisbane.redhat.com>, 2005, 2006.
 # Yuliya Poyarkova <ypoyarko@redhat.com>, 2006.
 # Yulia Poyarkova <ypoyarko@redhat.com>, 2006.
 # Nikolay Sivov <bunglehead@gmail.com>, 2007.
+# Copyright (C) 2003
 msgid ""
 msgstr ""
-"Project-Id-Version: ru\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-03-22 09:26+0300\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2008-02-22 18:04+0300\n"
+"Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
+"Language-Team: Russian <fedora-trans-ru@redhat,com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Для запуска firstboot вам необходимо быть пользователем root."
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Невозможно запустить ни один из интерфейсов firstboot."
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Не найдены модули firstboot."
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Невозможно создать ни один из интерфейсов firstboot."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -47,50 +47,44 @@ msgid "An error has occurred in the %s module."
 msgstr "Произошла ошибка в модуле %s."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "В связи с проблемой в модуле %s, \n"
-"Red Hat Setup Agent не загрузит этот модуль \n"
+"firstboot не загрузит этот модуль \n"
 "и попробует запустить остальные модули."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Произошла ошибка в модуле %s."
+msgstr "Произошла ошибка в firstboot."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "В связи с проблемой firstboot завершает свою работу."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Пожалуйста, заполните сообщение об ошибке в 'firstboot' в \n"
-"системе обработки ошибок по адресу http://www.redhat.com/bugzilla. \n"
 "Копия отладочной информации сохранена в %s \n"
 "Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "Пожалуйста, заполните сообщение об ошибке в 'firstboot' в \n"
-"системе обработки ошибок по адресу http://www.redhat.com/bugzilla. \n"
-"Копия отладочной информации сохранена в %s \n"
-"Убедитесь, что вы прикрепили этот файл к отчету об ошибке.\n"
+"системе обработки ошибок Red Hat по адресу http://www.redhat.com/bugzilla. \n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "При попытке вернуться назад обнаружено, что история возврата пуста."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -113,45 +107,45 @@ msgstr "_Вперед"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Модуль %s не настроил свой пользовательский интерфейс и будет удален."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage должен быть заданным заголовком модуля или номером страницы."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Невозможно создать каталог снимков экрана, пропускаем."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Нет модуля с заголовком %s."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Пропускаем старый модуль %s, который не был обновлен."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Модуль %s не содержит класса moduleClass; пропускаем."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Модуль %s не содержит требуемого атрибута %s; пропускаем."
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Невозможно загрузить картинку %s для модуля %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Модуль %s не настроил свой пользовательский интерфейс и будет удален."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -196,83 +190,83 @@ msgstr "Установка..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
-"CD-ROM найден.  Вставьте CD-ROM в привод и нажмите \"OK\" для продолжения."
+msgstr "CD-ROM найден.  Вставьте CD-ROM в привод и нажмите \"OK\" для продолжения."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Программа autorun не найдена на CD. Нажмите \"OK\" для продолжения."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "Создать пользователя"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "Настоятельно рекомендуется создать персональную учетную запись пользователя. Если вы продолжите без её создания, единственный способ войти в систему - использовать имя root, зарезервированное только для административных целей."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "_Продолжить"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "Создать _пользователя"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Пароли не совпадают.  Введите пароль снова."
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "Пользователь '%s' - зарезервированная системная учетная запись. Укажите другое имя."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "Домашний каталог для пользователя %s уже существует. Использовать этот ранее созданный каталог?  В противном случае укажите другое имя."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "Рекомендуется создать 'пользователя' для повседневного (не административного) использования вашей системы. Чтобы создать 'пользователя' введите необходимые данные."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "_Имя пользователя:"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Полное им_я:"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "_Пароль:"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Повто_р пароля:"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Если вам требуется использовать проверку подлинности по сети, "
+"например Kerberos или NIS, нажмите кнопку Использовать вход через сеть."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Использовать _вход через сеть..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -313,7 +307,6 @@ msgid "Welcome"
 msgstr "Добро пожаловать"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -321,4 +314,5 @@ msgid ""
 msgstr ""
 "Осталось еще несколько шагов, после которых ваша система будет готова к "
 "работе.  В этом вам поможет Помощник по настройке.  Нажмите \"Вперед\" в "
-"нижнем правом углу для продолжения."
+"нижнем правом углу для продолжения"
+
