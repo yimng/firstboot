@@ -8,36 +8,34 @@
 # Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2004, 2005, 2006.
 # Kiyoto James Hashida <khashida@redhat.com>, 2006.
 # Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2007.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-07-10 12:08+0900\n"
-"Last-Translator: Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>\n"
+"PO-Revision-Date: 2008-03-03 21:23+0900\n"
+"Last-Translator: Makoto Mizukami <mmk9060@aol.com>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.9.1\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "firstboot を起動するには、ルートになる必要があります。"
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "firstboot のフロントエンドを起動できません。"
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "firstboot のモジュールが見つかりませんでした。"
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "firstboot のインターフェースを作成てきません。"
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -45,50 +43,44 @@ msgid "An error has occurred in the %s module."
 msgstr "%s モジュールにエラーが発生しました。"
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"%s モジュールに問題がありますので、\n"
-"Red Hat セットアップエージェントはこのモジュールをロードしません。\n"
-"そして残りのモジュールの実行を試みます。"
+"%s モジュールに問題があるため、\n"
+"firstboot はこのモジュールをロードしません。\n"
+"残りのモジュールの実行を試みます。"
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "%s モジュールにエラーが発生しました。"
+msgstr "firstboot にエラーが発生しました。"
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "問題が発生したので、firstboot を終了します。"
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"http://www.redhat.com/bugzilla で Red Hatバグ追跡システムの中の \n"
-"'firstboot'へバグ報告を提出して下さい。\n"
-"デバッグ出力のコピーは%sに保存してあります。\n"
-"バグ報告には必ず、このファイルを添付して下さい。\n"
+"デバッグ出力のコピーを %s に保存しました。\n"
+"バグ報告の際には、必ずこのファイルを添付して下さい。\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"http://www.redhat.com/bugzilla で Red Hatバグ追跡システムの中の \n"
-"'firstboot'へバグ報告を提出して下さい。\n"
-"デバッグ出力のコピーは%sに保存してあります。\n"
-"バグ報告には必ず、このファイルを添付して下さい。\n"
+"firstboot のバグを、Red Hat\n"
+"バグトラッキングシステム(http://www.redhat.com/bugzilla)に報告してください。\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "戻ろうとしましたが、履歴が空です。"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -99,7 +91,7 @@ msgstr "終了(_F)"
 #: ../firstboot/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
-"行われた選択を有効にするためにはここでシステムを再起動する必要があります。"
+"いくつかの選択を有効にする為、システムを再起動する必要があります。"
 
 #: ../firstboot/interface.py:231
 msgid "_Back"
@@ -112,45 +104,45 @@ msgstr "進む(_F)"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "%s モジュールのユーザーインターフェースがセットアップされていません。削除します。"
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "ページの移動には、モジュールのタイトルか、ページ番号が必要です。"
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "スクリーンショット用のディレクトリが作成できません: スキップします。"
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "%s という名前のモジュールは存在しません。"
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "アップデートされていない、古い %s モジュールをスキップします。"
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "%s モジュールは、moduleClass が定義されていません: スキップします。"
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "%s モジュールは、必要な属性 %s を含んでいません: スキップします。"
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "画像 %s がロードできません(%s モジュールに必要とされています)。"
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "%s モジュールは、ユーザーインターフェイスが設定されていません: 削除します。"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -202,12 +194,11 @@ msgstr ""
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"オートランプログラムが CD 上に見つかりません。 \"OK\" をクリックして継続しま"
-"す。"
+"自動起動プログラムが CD 上に見つかりません。\"OK\" をクリックして継続します。"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "ユーザーの作成"
 
 #: ../modules/create_user.py:60
 msgid ""
@@ -215,25 +206,26 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"個人ユーザーの作成を強く推奨します。もしもアカウントの作成をしない場合、管理用途のみに使用されるべき、ルートアカウントでログインすることになります。"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "続ける (_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "アカウントを作成 (_A)"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "パスワードが一致していません。もう一度入力してください。"
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "ユーザー名 '%s' はシステムアカウントとして既に使用されています。他のユーザー名を指定してください。"
 
 #: ../modules/create_user.py:118
 #, python-format
@@ -241,39 +233,40 @@ msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
+"'%s' ユーザーのホームフォルダは既に存在します。このホームフォルダを再利用しますか?もししないのならば、別のユーザー名を選択してください。"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "(管理用途ではない)普通の作業のために、'ユーザー'を作成することを推奨します。以下の情報を入力し、システムに'ユーザー'を作成します。"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "ユーザー名 (_U):"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "フルネーム (_E):"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "パスワード (_P):"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "パスワードの確認 (_C):"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "もしも Kerberos や NIS のようなネットワーク認証が必要な場合、\"ネットワークログインを使用する\" をクリックしてください。"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "ネットワークログインを使用する (_L)"
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -312,12 +305,12 @@ msgid "Welcome"
 msgstr "ようこそ"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "システムが使用できるようになるまでもう少しステップがあります。セットアップ"
-"エージェントはここで、基本的な設定を通してガイドしていきます。右下隅にある "
-"\"進む\" ボタンをクリックして続けて下さい。"
+"エージェントは、基本的な設定についてガイドしていきます。右下隅にある "
+"\"進む\" をクリックして、設定を開始します。"
+
