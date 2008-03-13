@@ -1,4 +1,4 @@
-# translation of mr.po to marathi
+# translation of firstboot.master.mr.po to marathi
 # Marathi translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -7,36 +7,36 @@
 # Rahul Bhalerao <rbhalera@redhat.com>, 2006.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
 # sandeep shedmake <sandeep.shedmake@gmail.com>, 2007.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mr\n"
+"Project-Id-Version: firstboot.master.mr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-09-20 16:43+0530\n"
-"Last-Translator: sandeep shedmake <sandeep.shedmake@gmail.com>\n"
+"PO-Revision-Date: 2008-03-12 16:23+0530\n"
+"Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "firstboot चालविण्याकरीता तुम्हाला रूट मध्ये असायला हवे."
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "कुठलेही firstboot फ्रंटऐंड प्रारंभ करू शकले नाही."
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "firstboot विभाग आढळले नाही."
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "firstboot संवाद बनवू शकत नाही."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -44,50 +44,44 @@ msgid "An error has occurred in the %s module."
 msgstr "%s या विभागात(मॉड्यूल) चूक उद्भवली आहे."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"%s या विभागात(मॉड्यूल) समस्या असल्याने Red Hat\n"
-"(रेड हॅट) व्यवस्था प्रतिनिधि त्यास भारित न करता \n"
+"%s या विभागात समस्या असल्याने,\n"
+"firstboot त्यास भारित न करता\n"
 "इतर विभागांस चालवण्याचा प्रयत्न करेल."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "%s या विभागात(मॉड्यूल) चूक उद्भवली आहे."
+msgstr "firstboot मध्ये त्रुटी उद्भवली आहे."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "अडचण असल्यामुळे, firstboot बाहेर पडेल."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"कृपया 'firstboot' च्या नावे Red Hat त्रुटी शोधक प्रणाली मध्ये \n"
-"http://www.redhat.com/bugzilla येथे त्रुटी नोंदवा. \n"
 "त्रुटी निर्वारण निष्पत्तीची एक प्रत %s मध्ये सुरक्षित केली आहे. \n"
 "ती फाइल त्रुटी अहवालास जोडणे विसरू नका.\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "कृपया 'firstboot' च्या नावे Red Hat त्रुटी शोधक प्रणाली मध्ये \n"
 "http://www.redhat.com/bugzilla येथे त्रुटी नोंदवा. \n"
-"त्रुटी निर्वारण निष्पत्तीची एक प्रत %s मध्ये सुरक्षित केली आहे. \n"
-"ती फाइल त्रुटी अहवालास जोडणे विसरू नका.\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "पाठीमागे जाण्याचा प्रयत्न केला, पण इतिहास रिकामा आहे."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -110,45 +104,45 @@ msgstr "पुढे(_F)"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "विभाग %s ने UI स्थापीत केले नाही, काढूण टाकत आहे."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage ला विभाग शिर्षक किंवा पान क्रमांक पुरविले पाहिजे."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "स्क्रीनशॉट संचयीका बनविता आले नाही; वगळत आहे."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "शिर्षक %s सह विभाग अस्तित्वात नाही."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "जुने विभाग %s वगळत आहे जे अद्ययावतीत केले गेले नाही."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "विभाग %s मध्ये moduleClass नामक वर्ग नाही; वगळत आहे."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "विभाग %s मध्ये आवश्यक गुणधर्म %s समाविष्टीत नाही; वगळत आहे."
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "विभाग %s करीता pixmap %s दाखल करू शकत नाही."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "विभाग %s ने त्याचे UI निश्चित केले नाही; काढूण टाकत आहे."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -168,8 +162,7 @@ msgstr ""
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"कृपया काही अतिरिक्त बुद्धीभाग(सॉफ्टवेयर) प्रतिष्ठापना सीडी(cd) या वेळी दाखल करा."
+msgstr "कृपया काही अतिरिक्त बुद्धीभाग(सॉफ्टवेयर) प्रतिष्ठापना सीडी(cd) या वेळी दाखल करा."
 
 #: ../modules/additional_cds.py:65
 msgid ""
@@ -197,81 +190,80 @@ msgstr ""
 "वर (दाबा) क्लिक् करा."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "सीडीवर ऑटोरन(autorun) हा कार्यक्रम सापडला नाही. पुढे चालू ठेवण्यासाठी \"ठीक\" वर "
 "(दाबा) क्लिक् करा."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "वापरकर्ता बनवा"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "व्यक्तिगत खाते बनविले पाहिजे असे ठामपणे सूचविले जाते.  खाते विना पुढे जात असल्यास, तुम्ही फक्त रूट खात्यासह दाखलन करू शकाल जे प्रशासकीय वापर करीता आरक्षीत आहे."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "पुढे चला (_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "खाते बनवा (_a)"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "गुप्तशब्द जुळत नाही.  कृपया गुप्तशब्द पुन्हा प्रविष्ट करा."
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "वापरकर्ता '%s' आरक्षीत प्रणाली खाते आहे.  कृपया अन्य वापरकर्तानाव निर्देशीत करा."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "वापरकर्ता %s करीता मुख्य संचयीका आधिपासूनच अस्तित्वात आहे. तुम्हाला ही मुख्य संचयीका पुन्हा वापरायची?  नसल्यास, कृपया इतर वापरकर्तानाव निवडा."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "प्रणालीच्या रोजच्या वापर (विना प्रशासकीय) करीता तुम्ही 'वापरकर्तानाव' बनविले पाहिजे असे सूचविले जाते. प्रणाली 'वापरकर्ता,' बनविण्यास कृपया खालील विनंतीकृत माहिती पुरवा."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "वापरकर्त्याचे नाव (_U):"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "संपूर्ण नाव(_e):"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "गुप्तशब्द(_P):"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "गुप्तशब्द निश्चित करा (_m):"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "संजाळ अधिप्रमाणन वापरायचे असल्यास, जसे की कर्बेरॉस किंवा NIS, कृपया संजाळ दाखलन वापरा बटण वर क्लिक करा."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "संजाळ दाखलन वापरा (_L)..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -311,12 +303,12 @@ msgid "Welcome"
 msgstr "सुस्वागतम् "
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"प्रणाली वापरण्यायोग्य बनण्यापूर्वी आणखी काही टप्पे बाकी आहेत. व्यवस्था प्रतिनिधी आता "
-"तुम्हास काही मुलभूत व्यूहरचनांमध्ये मार्गदर्शन करेल. कृपया \"पुढे\" हे खालील उजव्या कोपऱ्यातील "
-"बटन दाबून पुढे सरकत रहा."
+"प्रणाली वापरण्यायोग्य बनण्यापूर्वी आणखी काही टप्पे बाकी आहेत.  व्यवस्था प्रतिनिधी आता "
+"तुम्हास काही मुलभूत व्यूहरचनांमध्ये मार्गदर्शन करेल.  कृपया \"पुढे चला\" हे खालील उजव्या कोपऱ्यातील "
+"बटन दाबून पुढे सरकत रहा"
+
