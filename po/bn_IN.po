@@ -1,18 +1,19 @@
-# translation of bn_IN.po to Bengali
+# translation of firstboot.master.po to Bengali INDIA
 # Bengali Translation of Firstboot
 # Copyright (C) 2004 Red Hat Inc.
 # This file is distributed under the same license as the firstboot package.
 #
 # Ashabul Yeameen <ayeameen@yahoo.com>, 2003.
 # Runa Bhattacharjee <runab@redhat.com>, 2004, 2005, 2006, 2007.
+# Runa Bhattacharjee <runab@fedoraproject.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: bn_IN\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-04-04 17:32+0530\n"
-"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
-"Language-Team: Bengali <en@li.org>\n"
+"PO-Revision-Date: 2008-03-13 16:16+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@fedoraproject.org>\n"
+"Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,19 +26,19 @@ msgstr ""
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "firstboot সঞ্চালনের জন্য root পরিচয় ব্যবহার করা আবশ্যক।"
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "firstboot-র প্রেক্ষাপট আরম্ভ করতে ব্যর্থ।"
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "firstboot-র কোনো মডিউল পাওয়া যায়নি।"
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "কোনো firstboot ইন্টারফেস নির্মাণ করা যায়নি।"
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -46,52 +47,46 @@ msgstr "%s মডিউলে একটি ত্রুটি দেখা দ�
 
 # Red Hat-->brand name
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"%s মডিউলে সমস্যা উৎপন্ন হওয়া ফলে Red Hat\n"
-"Setup Agent'র দ্বারা এই মডিউলটি লোড না করে অবশিষ্ট\n"
+"%s মডিউলে সমস্যা উৎপন্ন হওয়া ফলে firstboot\n"
+"দ্বারা এই মডিউলটি লোড না করে অবশিষ্ট\n"
 "মডিউলগুলি লোড করার প্রচেষ্টা করা হবে।"
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "%s মডিউলে একটি ত্রুটি দেখা দিয়েছে।"
+msgstr "firstboot মডিউলে একটি ত্রুটি দেখা দিয়েছে।"
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "সমস্যা উৎপন্ন হওয়ার ফলে firstboot বন্ধ করা হবে।"
 
 # modified for RHEL
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"অনুগ্রহ করে http://www.redhat.com/bugzilla ওয়েব-সাইটের\n"
-"Red Hat বাগ অনুসন্ধান ব্যবস্থায় 'firstboot' সংক্রান্ত এই ত্রুটি দায়ের করুন।\n"
 "debug তথ্য %s ফাইলে সংরক্ষিত হয়েছে \n"
 "অনুগ্রহ করে এই ফাইলটি বাগ রিপোর্টের সাথে সংযুক্ত করতে ভুলবেন না। \n"
 
 # modified for RHEL
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "অনুগ্রহ করে http://www.redhat.com/bugzilla ওয়েব-সাইটের\n"
 "Red Hat বাগ অনুসন্ধান ব্যবস্থায় 'firstboot' সংক্রান্ত এই ত্রুটি দায়ের করুন।\n"
-"debug তথ্য %s ফাইলে সংরক্ষিত হয়েছে \n"
-"অনুগ্রহ করে এই ফাইলটি বাগ রিপোর্টের সাথে সংযুক্ত করতে ভুলবেন না। \n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "প্রত্যাবর্তনের প্রচেষ্টা করা হয়েছে, কিন্তু পূর্ববর্তী তথ্য ফাঁকা।"
 
 # modified by RB
 #. If we were previously on the last page, we need to set the Next
@@ -115,45 +110,45 @@ msgstr "পরবর্তী (_F)"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "%s মডিউল দ্বারা প্রেক্ষাপট নির্ধারিত হয়নি এবং অপসারণ করা হচ্ছে।"
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage-র ক্ষেত্রে মডিউলের শিরোনাম অথবা পৃষ্ঠার সংখ্যা উল্লেখ করা আবশ্যক।"
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "স্ক্রিন-শট ডিরেক্টরি নির্মাণ করতে ব্যর্থ; উপেক্ষা করা হচ্ছে।"
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "%s শিরোনামের অধীন কোনো মডিউল উপস্থিত নেই।"
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "আপডেট না করা পুরোনো মডিউল %s অগ্রাহ্য করা হবে।"
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "%s মডিউলের মধ্যে moduleClass নামক কোনো ক্লাস উপস্থিত নেই; উপেক্ষা করা হবে।"
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "%s মডিউলের মধ্যে আবশ্যক অ্যাট্রিবিউট %s উপস্থিত নেই; উপেক্ষা করা হবে।"
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "%s পিক্সম্যাপটি, %s মডিউলের জন্য লোড করতে ব্যর্থ।"
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "%s মডিউল দ্বারা প্রয়োজনীয় ইউজার ইন্টারফেস নির্ধারণ করা যায়নি; মুছে ফেলা হচ্ছে।"
 
 # msgstr "অতিরিক্ত সিডিগুলো"
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
@@ -207,80 +202,78 @@ msgstr ""
 "\" চাপুন।"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"CD'র মধ্যে autorun প্রোগ্রাম পাওয়া যায়নি। এগিয়ে চলার জন্য \"ঠিক আছে\" চাপুন।"
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "CD'র মধ্যে autorun প্রোগ্রাম পাওয়া যায়নি। এগিয়ে চলার জন্য \"ঠিক আছে\" চাপুন।"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "নতুন ব্যবহারকারীর অ্যাকাউন্ট তৈরি করুন"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "ব্যক্তিগত অ্যাকাউন্ট নির্মাণ করা অতিমাত্রা বাঞ্ছনীয়। কোনো অ্যাকাউন্ট নির্মিত না হলে শুধুমাত্র root অ্যাকাউন্ট সহ লগ-ইন করা যাবে। root অ্যাকাউন্টি প্রশাসনিক কাজের জন্য সংরক্ষিত।"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "এগিয়ে চলুন (_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "নতুন অ্যাকাউন্ট তৈরি করুন (_a)"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "পাসওয়ার্ড দুটির মধ্যে গরমিল।  অনুগ্রহ করে পুনরায় পাসওয়ার্ড লিখুন।"
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "'%s' নামটি একটি সংরক্ষিত অ্যাকাউন্টের ক্ষেত্রে প্রযোজ্য।  অনুগ্রহ করে পৃথক ব্যবহারকারীর নাম উল্লেখ করুন।"
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "%s ব্যবহারকারীর জন্য একটি ব্যক্তিগত ডিরেক্টরি বর্তমানে উপস্থিত রয়েছে। এই ডিরেক্টরিটি পুনরায় ব্যবহার করা হবে কি?  এই ডিরেক্টরিটি ব্যবহার করতে ইচ্ছুক না হলে একটি পৃথক ব্যবহারকারীর নাম নির্বাচন করুন।"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "সিস্টেমের মধ্যে দৈনিক কাজের (প্রশাসনিক কর্ম ব্যতীত) জন্য একটি সাধারণ 'ব্যবহারকারীর অ্যাকাউন্ট' নির্মাণ করা আবশ্যক। একটি প্রশাসনিক অ্যাকাউন্ট নির্মাণের জন্য নিম্নলিখিত তথ্য পূরণ করুন।"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "ব্যবহারকারীর নাম: (_U)"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "সম্পূর্ণ নাম: (_e)"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "পাসওয়ার্ড: (_P)"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "পাসওয়ার্ড নিশ্চিত করুন: (_m)"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "Kerberos অথবা NIS প্রভৃতির সাহায্যে নেটওয়ার্ডের মাধ্যমে অনুমোদন করতে ইচ্ছুক হলে, 'নেটওয়ার্ক লগ-ইন ব্যবহার করা হবে' শীর্ষক বাটন ক্লিক করুন।"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "নেটওয়ার্ক লগ-ইন ব্যবহার করা হবে...(_L)"
 
 # msgstr "সময় এলাকা কনফিগারেশন "
 #: ../modules/eula.py:35 ../modules/eula.py:36
@@ -320,12 +313,12 @@ msgid "Welcome"
 msgstr "স্বাগতম"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "আপনার কম্পিউটার সম্পূর্ণরূপে প্রস্তুত করার জন্য অতিরিক্ত কয়েকটি ধাপ সমাপ্ত করা প্রয়োজন। "
-"সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। অগ্রসর হওয়ার "
+"সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। এগিয়ে যাওয়ার জন্য "
 "জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
+
