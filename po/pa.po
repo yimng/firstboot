@@ -12,13 +12,13 @@
 # A S Alam <apbrar@gmail.com>, 2006.
 # A P Singh <apbrar@gmail.com>, 2006.
 # A S Alam <aalam@users.sf.net>, 2007.
-# Jaswinder Singh <jsingh@redhat.com>, 2007.
+# Jaswinder Singh <jsingh@redhat.com>, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-08-31 12:50+0530\n"
+"PO-Revision-Date: 2008-03-14 10:43+0530\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -34,19 +34,19 @@ msgstr ""
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "ਫਸਟਬੂਟ ਚਲਾਉਣ ਲਈ ਤੁਸੀਂ ਪਰਬੰਧਕ ਹੋਣੇ ਜਰੂਰੀ ਹੋ।"
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਫਰੰਟਐਂਡ ਚਾਲੂ ਨਹੀਂ ਕਰ ਸਕਿਆ।"
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਮੈਡਿਊਲ ਨਹੀਂ ਲੱਭਿਆ।"
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਇੰਟਰਫੇਸ ਨਹੀਂ ਬਣਾ ਸਕਿਆ।"
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -54,50 +54,44 @@ msgid "An error has occurred in the %s module."
 msgstr "ਮੈਡਿਊਲ %s ਵਿੱਚ ਗਲਤੀ ਆਈ।"
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "ਕਿਉਕਿ ਮੈਡਿਊਲ %s ਵਿੱਚ ਗਲਤੀ ਹੈ,\n"
-"Red Hat ਸੈੱਟਅੱਪ ਏਜੰਟ ਇਸ ਮੈਡਿਊਲ ਨੂੰ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕਿਆ ਅਤੇ\n"
+"ਫਸਟਬੂਟ ਇਸ ਮੈਡਿਊਲ ਨੂੰ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕਿਆ ਅਤੇ\n"
 "ਬਾਕੀ ਮੈਡਿਊਲਾਂ ਨੂੰ ਚਲਾਉਣ ਦੀ ਕੋਸ਼ਿਸ ਕਰੇਗਾ।"
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "ਮੈਡਿਊਲ %s ਵਿੱਚ ਗਲਤੀ ਆਈ।"
+msgstr "ਫਸਟਬੂਟ ਵਿੱਚ ਇੱਕ ਗਲਤੀ ਆਈ।"
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "ਇੱਕ ਸਮੱਸਿਆ ਕਰਕੇ ਫਟਬੂਟ ਬੰਦ ਹੋ ਜਾਵੇਗਾ।"
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"'firstboot' ਵਿੱਚ ਬੱਗ ਦੀ ਜਾਣਕਾਰੀ Red Hat\n"
-"ਬੱਗ ਟਰੈਕਿੰਗ ਸਿਸਟਮ, ਜੋ ਕਿ http://www.redhat.com/bugzilla ਉੱਪਰ ਹੈ, ਦਿਉ।\n"
 "ਡੀਬੱਗ ਆਊਟਪੁੱਟ ਦੀ ਇੱਕ ਨਕਲ ਨੂੰ %s ਵਿੱਚ ਸੰਭਾਲੀ ਜਾਵੇ ਅਤੇ\n"
 "ਯਕੀਨੀ ਕਰ ਲਵੋ ਕਿ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਵਿੱਚ ਜ਼ਰੂਰ ਦਿੱਤੀ ਜਾਵੇ।\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "'firstboot' ਵਿੱਚ ਬੱਗ ਦੀ ਜਾਣਕਾਰੀ Red Hat\n"
-"ਬੱਗ ਟਰੈਕਿੰਗ ਸਿਸਟਮ, ਜੋ ਕਿ http://www.redhat.com/bugzilla ਉੱਪਰ ਹੈ, ਦਿਉ।\n"
-"ਡੀਬੱਗ ਆਊਟਪੁੱਟ ਦੀ ਇੱਕ ਨਕਲ ਨੂੰ %s ਵਿੱਚ ਸੰਭਾਲੀ ਜਾਵੇ ਅਤੇ\n"
-"ਯਕੀਨੀ ਕਰ ਲਵੋ ਕਿ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਵਿੱਚ ਜ਼ਰੂਰ ਦਿੱਤੀ ਜਾਵੇ।\n"
+"ਬੱਗ ਟਰੈਕਿੰਗ ਸਿਸਟਮ ਵਿੱਚ ਦਿਓ, ਜੋ ਕਿ http://www.redhat.com/bugzilla ਉੱਪਰ ਹੈ।\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "ਪਿੱਛੇ ਜਾਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਗਈ, ਪਰ ਹਿਸਟਰੀ ਖਾਲੀ ਹੈ।"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -120,45 +114,45 @@ msgstr "ਅੱਗੇ(_F)"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "ਮੈਡਿਊਲ %s ਨੇ ਆਪਣਾ UI ਨਿਰਧਾਰਤ ਨਹੀ ਕੀਤਾ, ਹਟਾ ਰਿਹਾ।"
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage ਨੂੰ ਮੈਡਿਊਲ ਟਾਈਟਲ ਜਾਂ ਸਫਾ ਨੰਬਰ ਦੇਣਾ ਜਰੂਰੀ ਹੈ।"
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਡਾਇਰੈਕਟਰੀ ਬਣਾਉਣ ਤੋਂ ਅਸਮਰਥ; ਛੱਡ ਰਿਹਾ ਹੈ।"
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "%s ਟਾਈਟਲ ਵਾਲਾ ਕੋਈ ਮੈਡਿਊਲ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "ਪੁਰਾਣਾ ਮੈਡਿਊਲ %s ਛੱਡ ਰਿਹਾ  ਜੋ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ।"
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "ਮੈਡਿਊਲ %s ਵਿੱਚ moduleClass ਨਾਂ ਵਾਲੀ ਕਲਾਸ ਸ਼ਾਮਿਲ ਨਹੀਂ ਹੈ; ਛੱਡ ਰਿਹਾ ਹੈ।"
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "ਮੈਡਿਊਲ %s ਵਿੱਚ ਲੋੜੀਂਦਾ ਗੁਣ %s ਮੌਜੂਦ ਨਹੀਂ ਹੈ; ਛੱਡ ਰਿਹਾ ਹੈ।"
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "pixmap %s ਨੂੰ ਮੈਡਿਊਲ %s ਲਈ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕਦਾ ਹੈ।"
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "ਮੈਡਿਊਲ %s ਨੇ ਆਪਣਾ UI ਨਿਰਧਾਰਤ ਨਹੀਂ ਕੀਤਾ; ਹਟਾ ਰਿਹਾ ਹੈ।"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -200,17 +194,15 @@ msgstr "ਇੰਸਟਾਲ..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
-"CD-ROM ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। ਡਰਾਈਵ ਵਿੱਚ CD-ROM ਵਿੱਚ CD ਪਾਓ ਅਤੇ\"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
+msgstr "CD-ROM ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। ਡਰਾਈਵ ਵਿੱਚ CD-ROM ਵਿੱਚ CD ਪਾਓ ਅਤੇ\"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CD ਉੱਤੇ autorun ਕਾਰਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ। ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਓ।"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "ਉਪਭੋਗੀ ਬਣਾਓ"
 
 #: ../modules/create_user.py:60
 msgid ""
@@ -218,65 +210,67 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"ਇਹ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਨਿੱਜੀ ਉਪਭੋਗੀ ਖਾਤਾ ਬਣਾਓ। ਜੇ ਤੁਸੀਂ ਬਿਨਾਂ ਖਾਤਾ ਜਾਰੀ ਕਰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਸਿਰਫ ਪਰਬੰਧਕ (root) ਖਾਤੇ ਨਾਲ ਲਾਗਇਨ ਕਰ ਸਕਦੇ ਹੋ, "
+"ਜੋ ਕਿ ਸਿਰਫ ਪਰਬੰਧਕੀ ਵਰਤੋਂ ਲਈ ਰਾਖਵਾਂ ਹੁੰਦਾ ਹੈ।"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "ਜਾਰੀ(_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "ਖਾਤਾ ਬਣਾਓ(_A)"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।  ਕਿਰਪਾ ਕਰਕੇ ਫਿਰ ਪਾਸਵਰਡ ਦਿਓ।"
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਸਿਸਟਮ ਖਾਤੇ ਲਈ ਰਾਖਵਾਂ ਹੈ।  ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ ਨਾਂ ਦਿਓ।"
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "ਉਪਭੋਗੀ %s ਲਈ ਇੱਕ ਘਰੇਲੂ ਡਾਇਰੈਕਟਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਘਰੇਲੂ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਮੁੜ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ?  ਜੇ ਨਹੀਂ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ-ਨਾਂ ਵਰਤੋ।"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "ਇਹ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਤੁਸੀਂ ਆਪਣੇ ਸਿਸਟਮ ਦੀ ਲਗਾਤਾਰ (ਬਿਨਾਂ-ਪਰਬੰਧਕੀ) ਵਰਤੋਂ ਲਈ ਇੱਕ 'ਉਪਭੋਗੀ-ਨਾਂ' ਬਣਾਇਆ ਹੈ। ਇੱਕ ਸਿਸਟਮ 'ਉਪਭੋਗੀ-ਨਾਂ,' ਬਣਾਉਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਪੁੱਛੀ ਗਈ ਜਾਣਕਾਰੀ ਦਿਓ।"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "ਉਪਭੋਗੀ-ਨਾਂ(_U)"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "ਪੂਰਾ ਨਾਂ(_E):"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ(_P):"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਪੁਸ਼ਟੀ(_M):"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "ਜੇ ਤੁਹਾਨੂੰ ਨੈੱਟਵਰਕ ਪ੍ਰਮਾਣਿਕਤਾ ਦੀ ਲੋੜ ਹੈ, ਜਿਵੇਂ ਕਿ ਕਰਬੀਰੋਸ ਜਾਂ NIS, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋ ਬਟਨ ਦਬਾਓ।"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋ(_L)..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -314,12 +308,9 @@ msgid "Welcome"
 msgstr "ਜੀ ਆਇਆਂ ਨੂੰ"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
-"ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ਼ ਬਾਕੀ ਹਨ।  ਸੈੱਟਅੱਪ ਏਜੰਟ ਤੁਹਾਨੂੰ "
-"ਇੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ।  ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਜਾਰੀ ਰਹਿਣ ਲਈ "
-"ਦਬਾਉ।"
+msgstr "ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ਼ ਬਾਕੀ ਹਨ।  ਸੈੱਟਅੱਪ ਏਜੰਟ ਤੁਹਾਨੂੰ ਇੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਰੀ ਰਹਿਣ ਲਈ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਦਬਾਉ।"
+
