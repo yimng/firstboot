@@ -1,7 +1,7 @@
 #!/bin/bash
 ## BEGIN INIT INFO
 # Provides: firstboot
-# Default-Start: 3 5
+# Default-Start: 5
 # Default-Stop: 0 1 2 4 6
 # Required-Start:
 # Should-Start: $network
@@ -18,7 +18,7 @@
 #
 # firstboot: Starts the firstboot druid if it hasn't been run before
 #
-# chkconfig: 35 99 95
+# chkconfig: 5 99 95
 #
 # description: Firstboot is a druid style program that runs on the first \
 #              time a machine is booted after install.  It checks for \

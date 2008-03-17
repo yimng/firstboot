@@ -138,8 +138,8 @@ if __name__ == "__main__":
     elif (getRunlevel() == 3 and not opts.forcegui):
         # from TextFrontEnd import TextFrontEnd
         # frontend = TextFrontEnd()
-        logging.debug("Using text frontend")
-        pass
+        logging.info("No text frontend yet, quitting")
+        os._exit(0)
     elif rhgbIsRunning():
         from firstboot.rhgbfrontend import RHGBFrontEnd
         frontend = RHGBFrontEnd()
