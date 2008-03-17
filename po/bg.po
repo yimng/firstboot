@@ -1,40 +1,40 @@
 # translation of firstboot.pot to Bulgarian
 # translation of bg.po to Bulgarian
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Николай Сърмаджиев,преносим <nikolayds@msn.com>, 2004.
 # Николай Сърмаджиев <nikolayd@sarmadzhiev.tk>, 2004.
 # Doncho N. Gunchev <mr700@globalnet.bg>, 2004, 2005.
 # Doncho N. Gunchev <gunchev@gmail.com>, 2006, 2007.
+# Alexander Todorov <atodorov@redhat.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-03-26 00:10+0300\n"
-"Last-Translator: Doncho N. Gunchev <gunchev@gmail.com>\n"
+"PO-Revision-Date: 2008-03-17 18:20+0100\n"
+"Last-Translator: Alexander Todorov <atodorov@redhat.com>\n"
 "Language-Team: Bulgarian <Bulgarian Translators' Team <dict@fsa-bg.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Трябва да сте root, за да стартирате firstboot."
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Не може да бъде стартиран firstboot."
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Не са намерени никакви модули за firstboot."
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Не може да бъде създаден никакъв интерфейс."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -42,50 +42,44 @@ msgid "An error has occurred in the %s module."
 msgstr "Възникна грешка в модул %s."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Тъй като има проблем с модул %s, агента за \n"
-"настройка на Red Hat няма да го зареди и \n"
-"ще се опита да стартира останалите модули."
+"Тъй като има проблем с модул %s, \n"
+"firstboot няма да го зареди и ще се \n"
+"опита да стартира останалите модули."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Възникна грешка в модул %s."
+msgstr "Възникна грешка в firstboot."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Т.к. има някакъв проблем firstboot ще се прекрати."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Моля съобщете за грешката във 'firstboot' на следящата за \n"
-"грешки система на Red Hat на http://www.redhat.com/bugzilla. \n"
 "Копие на debug изхода е запазен в %s. \n"
 "Моля прикачете файла към рапорта за грешката. \n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "Моля съобщете за грешката във 'firstboot' на следящата за \n"
 "грешки система на Red Hat на http://www.redhat.com/bugzilla. \n"
-"Копие на debug изхода е запазен в %s. \n"
-"Моля прикачете файла към рапорта за грешката. \n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Опит за връщане назад, но липсва история."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -108,45 +102,45 @@ msgstr "На_пред"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Модул %s не зареди своя ГИ, премахва се."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage изисква име на модул или номер на страница."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Не може да бъде създадена директория за снимки на екрана, пропускане."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Не съществува модул с име %s."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Пропускане на модул %s, който е стар и не е бил обновен."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Модул %s не съдържа клас с име moduleClass, пропускане."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Модул %s не съдържа задължителния атрибут %s, пропускане."
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Не може да се зареди изображение %s за модул %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Модул·%s·не·зареди·своя·ГИ,·премахва·се."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -203,7 +197,7 @@ msgstr ""
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "Създаване на потребител"
 
 #: ../modules/create_user.py:60
 msgid ""
@@ -211,18 +205,21 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"Силно се препоръчва създаването на лична потребителска сметка.  "
+"Ако не я създадете, ще може да влизате само като root, което е "
+"сметката използвана за администиране на системата."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "_Продължаване"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "Създаване на _сметка"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Паролите на съвпадат.  Моля, въведете паролата отново."
 
 #: ../modules/create_user.py:99
 #, python-format
@@ -230,6 +227,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"Потребителското име '%s' е резервирано за системна сметка.  Моля, "
+"въведете друго потребителско име."
 
 #: ../modules/create_user.py:118
 #, python-format
@@ -237,6 +236,8 @@ msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
+"Вече съществува домашна директория за потребител %s. Желаете ли да "
+"я използвате?  Ако не, моля, изберете друго потребителско име."
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -244,32 +245,37 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"Препоръчително е да създадете потребителска сметка за нормална (не административна) "
+"работа със системата. За да създадете потребителска сметка, моля, попълнете необходимата "
+"информация по-долу."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "_Потребител:"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "_Истинско име:"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "П_арола:"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "П_отвърждение:"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Ако е необходимо да използвате мрежово удостоверяване като Kerberos или NIS, "
+"моля натиснете бутона \"Използване на мрежови вход\"."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Използване на _мрежови вход..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -309,12 +315,12 @@ msgid "Welcome"
 msgstr "Добре дошли"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "Има още няколко стъпки преди системата Ви да бъде готова за работа.  Агента "
-"за настройка ще Ви преведе през някои основни настройки.  Моля натиснете "
-"бутон \"Следващ\" в долния десен ъгъл за да продължите."
+"за настройка (firstboot) ще Ви преведе през някои основни настройки.  Моля натиснете "
+"бутон \"Следващ\" в долния десен ъгъл, за да продължите."
+
