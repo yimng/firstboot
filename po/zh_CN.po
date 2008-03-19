@@ -1,43 +1,43 @@
-# translation of zh_CN.po to 
+# translation of firstboot.master.po to Simplified Chinese
 # translation of zh_CN.po to
 # translation of zh_CN.po to
-# translation of zh_CN.po to Chinese, Simplified
-# translation of zh_CN.po to zh_CN
-# translation of zh_CN.po to Simplified Chinese
+# translation of zh_CN.po to
 # Simplified Chinese Version of firstboot.
 # Copyright (C) 2002 Red Hat, Inc.
+#
 # Sarah Wang <sarahs@redhat.com>, 2003,2004.
 # Tony Fu <tfu@redhat.com>, 2004, 2006.
 # Leah Liu <weliu@redhat.com>, 2005, 2006.
-# Wu Yu <kiluawuyu@gmail.com>, 2007
-#
+# Wu Yu <kiluawuyu@gmail.com>, 2007.
+# Leah Liu <lliu@redhat.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: zh_CN\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-07-12 11:22+0800\n"
-"Last-Translator: zhangnan <znflint@126.com>\n"
-"Language-Team:  <zh@li.org>\n"
+"PO-Revision-Date: 2008-03-20 09:45+1000\n"
+"Last-Translator: Leah Liu <lliu@redhat.com>\n"
+"Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "运行 firstboot 时您必须是根用户。"
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "无法启动任何 firstboot 前端。"
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "未发现任何 firstboot 模块。"
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "无法创建任何 firstboot 界面。"
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -45,111 +45,105 @@ msgid "An error has occurred in the %s module."
 msgstr "模块 %s 中出现错误。"
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "由于 %s 模块中出现问题，\n"
-"红帽设置代理无法载入该模块，\n"
+"firstboot 无法载入该模块，\n"
 "它将会尝试运行剩余的模块。"
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "模块 %s 中出现错误。"
+msgstr "firstboot 中模块 %s 中出现错误。"
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "因为出现问题，所以 firstboot 将退出。"
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"请向红帽的错误跟踪系统报告关于“firstboot”\n"
-"的错误：http://www.redhat.com/bugzilla。\n"
 "调试输出的副本已被保存在 %s， \n"
-"请在提交错误时确定附带该文件。\n"
+"请在提交错误报告时确定附带该文件。\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "请向红帽的错误跟踪系统报告关于“firstboot”\n"
 "的错误：http://www.redhat.com/bugzilla。\n"
-"调试输出的副本已被保存在 %s， \n"
-"请在提交错误时确定附带该文件。\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "试图返回，但历史记录为空白。"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
 #: ../firstboot/interface.py:83 ../firstboot/interface.py:154
 msgid "_Finish"
-msgstr "完成(_F)"
+msgstr "完成（_F）"
 
 #: ../firstboot/interface.py:175
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "为了使您做的改变起作用，系统需要重新启动。"
+msgstr "为了使您做的修改生效，系统需要重新启动。"
 
 #: ../firstboot/interface.py:231
 msgid "_Back"
-msgstr "返回(_B)"
+msgstr "返回（_B）"
 
 #: ../firstboot/interface.py:238
 msgid "_Forward"
-msgstr "前进(_F)"
+msgstr "前进（_F）"
 
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "模块 %s 没有设置其 UI，删除。"
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "必须为 moveToPage 提供模块标题或者页号。"
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "无法生成截图目录，跳过。"
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "没有标题为 %s 的模块。"
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "跳过还没有更新的模块 %s。"
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "模块 %s 不包含名为 moduleClass 的级别，跳过。"
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "模块 %s 不包含需要的属性 %s，跳过。"
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "无法为模块 %s 载入象图（pixmap） %s。"
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "模块 %s 位设置 UI，删除。"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -162,12 +156,12 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"请插入“红帽企业 Linux 附加光盘”来安装第三方插件和应用程序。您还可以插入文档光"
+"请插入“红帽企业版 Linux 附加光盘”来安装第三方插件和应用程序。此时您还可以插入文档光"
 "盘，或其它由红帽提供的光盘来安装额外的软件。"
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr "现在请插入附带的软件安装盘"
+msgstr "现在请插入附带的软件安装盘。"
 
 #: ../modules/additional_cds.py:65
 msgid ""
@@ -179,7 +173,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"要使 Intel Itanium2 系统对32位应用程序提供运行时的支持，您现在必须从附加光盘"
+"要使 Intel Itanium2 系统对 32 位应用程序提供运行时的支持，您现在必须从附加光盘"
 "中安装 Intel Execution Layer 软件包。"
 
 #: ../modules/additional_cds.py:73
@@ -190,86 +184,85 @@ msgstr "安装..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”来继续。"
+msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”继续。"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”继续。"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "创建用户"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "强烈建议您创建个人用户帐户。如果您还没有一个这样的帐户，您就只能够以根帐户登录，而根帐户只是为管理目的而保留的。"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "继续（_C）"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "创建帐户（_a）"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "密码错误，请再次输入密码。"
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "用户名‘%s’是保留的系统帐户，请指定另一个用户名。"
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "用户 %s 的主目录已经存在，您是否想继续使用这个主目录呢？如果不，请选择其它用户名。"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "建议您为您的系统创建一个一般用途的（非管理）‘用户名’。要创建系统‘用户名’，请提供以下所需信息。"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "用户名（_U）："
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "全名（_e）："
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "密码（_P）："
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "确认密码（_m）："
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "如果您需要使用网络验证，比如 Kerberos 或者 NIS，请点击“使用网络登录”按钮。"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "使用网络登录（_L）..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
-msgstr "许可信息"
+msgstr "许可证信息"
 
 #: ../modules/eula.py:53
 msgid ""
@@ -286,10 +279,10 @@ msgid ""
 "http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 msgstr ""
 "非常感谢您安装了Fedora。Fedora集成了多种软件包，每个软件包都有自己的许可证。"
-"Fedora在GNU通用公共许可证（第二版）的保护下发布。您可以随意的使用、拷贝或者修"
+"Fedora 在 GNU 通用公共许可证（第二版）的保护下发布。您可以随意的使用、拷贝或者修"
 "改该源代码。如果您希望重新发布这些代码，无论修改与否，都需要遵守一定的限制和"
 "义务。这些限制、义务等需要符合再发布版的许可证、注册商标和出口控制。如果您希"
-"望了解这些限制，请访问http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"望了解这些限制，请访问 http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
@@ -300,11 +293,11 @@ msgid "Welcome"
 msgstr "欢迎"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "在您的系统就绪前还要进行几个步骤。设置代理将会引导您进行一些基本配置。请点击"
-"右下角的“下一步”按钮来继续。"
+"右下角的“前进”按钮继续。"
+
