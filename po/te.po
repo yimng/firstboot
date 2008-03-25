@@ -1,39 +1,40 @@
-# translation of te.po to Telugu
+# translation of firstboot.master.te.po to Telugu
 # translation of te.po to
 # translation of te.po to
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2006.
 #
 # Sree Ganesh <sthottem@redhat.com>, 2006.
-# Krishna Babu K <kkrothap@redhat.com>, 2007.
+# Krishna Babu K <kkrothap@redhat.com>, 2007, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: te\n"
+"Project-Id-Version: firstboot.master.te\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-09-21 12:41+0530\n"
+"PO-Revision-Date: 2008-03-25 19:49+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
-"Language-Team: Telugu\n"
+"Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "ఫస్ట్‍‌బూట్‌ను నడుపుటకు నువ్వు తప్పక బుట్ చేయాలి."
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "ఏ ఫస్ట్‍‌బూట్ ఫ్రంట్ఎండ్‌ను ప్రారంభించలేము."
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "ఏ ఫస్ట్‍‌బూట్ మాడ్యూల్స్‍ కనబడలేదు."
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "ఏ ఫస్ట్‍‌బూట్ అంతర్‌ఫలకం సృష్టించబడలేక పోయింది."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -41,48 +42,44 @@ msgid "An error has occurred in the %s module."
 msgstr "ఈ %s గుణకంలో దోషం సంభవించింది"
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "ఇప్పటికీ %s గుణకంతో ఇబ్బంది ఉంది, \n"
-"Red Hat అమర్పు ప్రతినిధి ఈ గుణకాలను load చేయడు మరియూ మిగిలిన గుణకాలను ఉపయోగించటానికి "
-"ప్రయత్నిస్తాడు."
+"ఫస్ట్‍‌బూట్ ఈ మాడ్యూల్‌ను నింపబోదు మరియు\n"
+"మిగిలిన మాడ్యూల్స్‍‌ను నడుపుటకు ప్రయత్నిస్తుంది."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "ఈ %s గుణకంలో దోషం సంభవించింది"
+msgstr "ఫస్ట్‍‌బూట్ నందు ఒక దోషము ఎదురైంది."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "అక్కడ సమస్య ఉన్నప్పటికి, ఫస్ట్‍‌బూట్ వుండబోతోంది."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"http://www.redhat.com/bugzilla యందలి Red Hat bug tracking విధానంలోని 'firstboot'కి "
-"వ్యతిరేకంగా ఒక bugని ఫైలు చేయండి. ఒక debug ప్రతి ఉద్గాతం %s కి భద్రపరచబడుతూ ఉండాలి. \n"
-"తప్పక ఆ ఫైలుని bug నివేదికకు అనుసంధిస్తూ ఉండాలి. \n"
+"డీబగ్ అవుట్‌పుట్ యొక్క ఒక నకలు %s కు దాయబడింది\n"
+"ఆ దస్త్రాన్ని ఖచ్చితంగా బగ్ నివేదికకు అనుబందించండి.\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"http://www.redhat.com/bugzilla యందలి Red Hat bug tracking విధానంలోని 'firstboot'కి "
-"వ్యతిరేకంగా ఒక bugని ఫైలు చేయండి. ఒక debug ప్రతి ఉద్గాతం %s కి భద్రపరచబడుతూ ఉండాలి. \n"
-"తప్పక ఆ ఫైలుని bug నివేదికకు అనుసంధిస్తూ ఉండాలి. \n"
+"'ఫస్ట్‍‌బూట్‌'కు వ్యతిరేకంగా Red Hat నందు దయచేసి బగ్‌ను నమోదు చేయండి\n"
+"బగ్ పరిశీలన వ్యవస్థ http://www.redhat.com/bugzilla వద్ద.\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "వెనుకకు వెళ్ళుటకు ప్రయత్నించింది, అయితే చరిత్ర ఖాళీగావుంది."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -105,45 +102,45 @@ msgstr "ముందుకు (_F)"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "మాడ్యూల్ %s దాని UI ను అమర్చలేదు, తీసివేస్తోంది."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage తప్పక మాడ్యూల్ శీర్షికను కాని లేదా పుట సంఖ్యను కాని ఇవ్వాలి."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "తెరపట్టు సంచయన్ని సృష్టించలేక పోయింది; వదిలివేస్తోంది."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "శీర్షిక %s తో ఏ మాడ్యూల్ లేదు."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "నవీకరించకుండా వున్న పాత మాడ్యూల్ %s ను వదిలివేయుచున్నది."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "moduleClass నామపు తరగతిని మాడ్యూల్ %s కలిగిలేదు; వదిలివేయుచున్నది."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "మాడ్యూల్ %s కావలిసిన యాట్రిబ్యూట్ %s ను కలిగిలేదు; వదిలివేయుచున్నది."
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "పిక్స్‍‌మాప్ %s ను మాడ్యూల్ %s కొరకు నింపలేక పోయింది."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "మాడ్యూల్ %s దాని UI ను అమర్చలేదు; తీసివేయుచున్నది."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -185,17 +182,15 @@ msgstr "సంస్థాపన..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr ""
-"CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
+msgstr "CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CDలో తనకుతానుగా పనిచేసే ప్రక్రమం కనుగొనబడలేదు. కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "వినియోగదారుని సృష్టించు"
 
 #: ../modules/create_user.py:60
 msgid ""
@@ -203,25 +198,27 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"వ్యక్తిగత వినియోగదారుని ఖాతా సృష్టించటానికి ఎక్కువగా మద్దతివ్వబడుతుంది మీరు ఖాతాలేకుండా కొనసాగించదలిస్తే, "
+"నిర్వాహణా ఉపయోగాలకు మాత్రమే కేటాయించిన root ఖాతాను మాత్రమే ఉపయోగించాలి."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "కొనసాగించు(_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "ఖాతా సృష్టించు"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "అనుమతిపదం సరిపోలలేదు.  మళ్లీ అనుమతిపదాన్ని ఇవ్వండి."
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "'%s'వినియోగదారు పేరు ప్రత్యేక విధానంతోకూడిన ఖాతా కలిగిఉంది.  దయచేసి వేరే వినియోగదారుపేరు తెల్పండి."
 
 #: ../modules/create_user.py:118
 #, python-format
@@ -229,6 +226,9 @@ msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
+"వినియోగదారి %s కొరకు ఒక నివాస సంచయం ఇప్పటికే వుంది. మీరు ఈ నివాస సంచయంను "
+"తిరిగి‌వుపయోగించుంటకు ఇష్టపడతారా?  లేదంటే, దయచేసి వేరే వినియోగదారినామమును "
+"ఎంచుకొనుము."
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -236,32 +236,36 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"మీరు మీ నిత్యావసరానికి (పరిపాలనాసంబంధి కాని) 'వినియోగదారుని పేరు' సృష్టించటం సమర్ధించబడింది. కంప్యూటరు "
+"'వినియోగదారు'ని పేరు సృష్టించటానికి కింద అడిగిన సమాచారాన్ని సమాకూర్చండి."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "వినియోగదారినామము(_U):"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "పూర్తి నామం(_e):"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "సంకేతపదం(_P):"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "నిర్ధారిత అనుమతి పదం: (_m)"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Kerberos లేక NIS వంటి network ప్రామాణీకరణలను ఉపయోగించటం మీకు అవసరమైతే దయచేసి Use Network "
+"Login మీటను నొక్కండి."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Network Login ఉపయోగించు (_L)"
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -299,11 +303,12 @@ msgid "Welcome"
 msgstr "స్వాగతం"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"మీ కంప్యూటరును ఉపయోగించటానికి సిద్ధంటానికి ముందు కొన్ని పనులుచేయాలి. అమర్చే ప్రతినిధి కొంత నిర్దేశిస్తాడు.  "
-"కొనసాగించటానికి కింద కుడివైపు  మూలలో ఉన్న \"ముందుకు\" మీటను నొక్కండి."
+"మీ కంప్యూటరును ఉపయోగించటానికి సిద్ధంటానికి ముందు కొన్ని పనులుచేయాలి. అమర్పు "
+"ప్రతినిది కొంత ప్రాదమిక ఆకృతీకరణ ద్వారా మిమ్మల్ని నిర్దేశిస్తాడు.  కొనసాగించుటకు దయచేసి "
+"క్రింది కుడిప్రక్క మూలనగల \"ముందుకు\" బటన్‌ను నొక్కండి."
+
