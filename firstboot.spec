@@ -17,6 +17,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: gettext
 BuildRequires: python-devel, python-setuptools-devel
 Requires: metacity, pygtk2, rhpl, python
+Requires: setuptool
 Requires(post): chkconfig
 
 %ifnarch s390 s390x ppc64

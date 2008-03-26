@@ -48,6 +48,20 @@ from rhpl.translate import _
 import rhpl.translate as translate
 translate.textdomain ("firstboot")
 
+def finish(opts):
+    # Now make sure we don't run again on the next reboot.
+    if not opts.test and not opts.debug:
+        logging.debug("Writing /etc/sysconfig/firstboot file")
+        writeSysconfigFile()
+
+    if opts.reconfig and not opts.test:
+        logging.debug("Removing /etc/reconfigSys")
+
+        try:
+            os.unlink("/etc/reconfigSys")
+        except:
+            pass
+
 def getRunlevel():
     line = os.popen("/sbin/runlevel", "r").readline()
     line = string.strip(line)
@@ -136,9 +150,11 @@ if __name__ == "__main__":
         needInterface = True
         logging.debug("X is already running, not using any frontend")
     elif (getRunlevel() == 3 and not opts.forcegui):
-        # from TextFrontEnd import TextFrontEnd
-        # frontend = TextFrontEnd()
-        logging.info("No text frontend yet, quitting")
+        logging.debug("Running text mode interface")
+        if os.access("/usr/bin/setup", os.X_OK):
+            os.system("/usr/bin/setup")
+
+        finish(opts)
         os._exit(0)
     elif rhgbIsRunning():
         from firstboot.rhgbfrontend import RHGBFrontEnd
@@ -187,18 +203,7 @@ if __name__ == "__main__":
         logging.debug("Stopping frontend")
         frontend.stop()
 
-    # Now make sure we don't run again on the next reboot.
-    if not opts.test and not opts.debug:
-        logging.debug("Writing /etc/sysconfig/firstboot file")
-        writeSysconfigFile()
-
-    if opts.reconfig and not opts.test:
-        logging.debug("Removing /etc/reconfigSys")
-
-        try:
-            os.unlink("/etc/reconfigSys")
-        except:
-            pass
+    finish(opts)
 
     # If X is still running for some reason, exiting now should take it down.
     os._exit(0)
