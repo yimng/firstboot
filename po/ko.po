@@ -1,16 +1,16 @@
+# translation of firstboot.master.po to Korean
 # translation of ko.po to
-# translation of ko.po to Korean
 # Copyright (C) 2002 Red Hat, Inc.
 #
 # Michelle J Kim <mkim@redhat.com>, 2003,2004.
 # Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
-# Eunju Kim <eukim@redhat.com>, 2006, 2007.
+# Eunju Kim <eukim@redhat.com>, 2006, 2007, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: ko\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-08-30 16:51+1000\n"
+"PO-Revision-Date: 2008-03-28 12:07+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,22 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "root로 firstboot를 실행해야 합니다. "
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "firstboot 프론트앤드를 시작할 수 없습니다. "
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "firstboot 모듈을 찾을 수 없습니다. "
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "firstboot 인터페이스를 생성할 수 없습니다. "
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -41,50 +43,44 @@ msgid "An error has occurred in the %s module."
 msgstr "%s 모듈에서 오류가 발생했습니다."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 " %s 모듈에서 문제가 발생했기 때문에, \n"
-"Red Hat 설정 에이전트는 이 모듈을 읽어오지 않고 \n"
-"그 외 나머지 모듈을 실행할 것입니다."
+"firstboot는 이 모듈을 읽어오지 않고 \n"
+"그 외 나머지 모듈을 실행할 것입니다. "
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "%s 모듈에서 오류가 발생했습니다."
+msgstr "firstboot에서 오류가 발생했습니다. "
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "문제가 발생하여 firstboot를 종료합니다. "
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"'firstboot'에 대한 버그를 Red Hat 버그 추적 시스템인 \n"
-"http://www.redhat.com/bugzilla로 보고해 주십시오. \n"
 "디버그 출력 결과는 %s에 저장되어 있습니다. \n"
 "이 파일을 버그 리포트에 첨부해 주십시오. \n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "'firstboot'에 대한 버그를 Red Hat 버그 추적 시스템인 \n"
 "http://www.redhat.com/bugzilla로 보고해 주십시오. \n"
-"디버그 출력 결과는 %s에 저장되어 있습니다. \n"
-"이 파일을 버그 리포트에 첨부해 주십시오. \n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "이전 단계로 되돌아 가려 하였으나, 기록이 남아있지 않습니다. "
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -107,45 +103,45 @@ msgstr "다음(_F)"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "%s 모듈에 UI가 설정되어 있지 않습니다, 삭제합니다. "
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "페이지로 이동하기에서는 모듈 제목이나 페이지 번호가 있어야 합니다. "
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "스크린샷 디렉토리를 생성할 수 없습니다; 생략합니다. "
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "%s 라는 모듈이 없습니다. "
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "업데이트되지 않은 이전 모듈 %s을 생략합니다. "
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "%s 모듈에는 moduleClass라는 클래스가 들어있지 않습니다; 생략합니다. "
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "%s 모듈에 %s 속성이 들어 있지 않습니다; 생략합니다. "
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "%s 모듈에 해당하는 pixmap %s을 읽어올 수 없습니다. "
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "%s 모듈에 UI가 설정되어 있지 않습니다; 삭제합니다. "
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -192,15 +188,14 @@ msgstr ""
 "을 클릭하여 계속 진행해 주십시오."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램을 CD에서 찾지 못했습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "사용자 생성 "
 
 #: ../modules/create_user.py:60
 msgid ""
@@ -208,32 +203,34 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"개인 사용자 계정을 만들 것을 적극 권장합니다.  계정을 만들지 않고 계속 진행하"
+"신다면, 관리자 전용의 루트 계정을 사용하여 로그인하셔야 합니다. "
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "계속(_C) "
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "계정 생성(_A) "
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "암호가 일치하지 않습니다. 암호를 다시 입력해 주시기 바랍니다.   "
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "사용자명 '%s'은 시스템 계정입니다.  다른 사용자명을 지정해주십시오. "
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "사용자 '%s'에 대한 홈 디렉토리는 이미 존재합니다. 이 홈 디렉토리를 다시 사용하시겠습니까? 그렇지 않다면, 다른 사용자명을 지정해 주십시오. "
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -241,32 +238,37 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+" 시스템의 일반 사용을 위한 (관리자 계정이 아닌) '사용자계정'을 생성하시기 바랍"
+"니다. 시스템 '사용자계정'을 만드시려면, 아래에서 요구하는 정보를 기입해 주십"
+"시오. "
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "사용자 이름(_U): "
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "성명(_E): "
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "암호(_P): "
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "암호 확인(_M): "
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼을 클"
+"릭해 주십시오.  "
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "네트워크 로그인 사용(_L)..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -304,7 +306,6 @@ msgid "Welcome"
 msgstr "환영합니다"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -313,3 +314,4 @@ msgstr ""
 "시스템 사용 준비가 완료되기 전에 몇 가지의 단계가 더 남아 있습니다. 설정 에이"
 "전트는 이제 몇 가지 기본적인 설정 과정을 단계별로 길잡이를 해 드릴 것입니다. "
 "계속하시려면 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하십시오."
+
