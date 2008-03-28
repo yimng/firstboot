@@ -81,7 +81,10 @@ class XFrontEnd:
         if not pid:
             import gtk
             os.write(wr, "#")
-            return
+
+            # Block until the X server is killed.
+            gtk.main()
+            os._exit(0)
 
         # Block on read of token
         os.read(rd, 1)
