@@ -5,7 +5,7 @@ TAG=r$(VERSION)-$(RELEASE)
 
 SITELIB := $(shell python -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")
 
-PYCHECKEROPTS=--no-shadowbuiltin --no-argsused --no-miximport --maxargs 0 --no-local -\# 0 --only
+PYCHECKEROPTS=--no-shadowbuiltin --no-argsused --no-miximport --maxreturns 0 --maxargs 0 --no-local -\# 0 --only
 
 default: all
 
