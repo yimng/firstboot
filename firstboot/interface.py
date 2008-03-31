@@ -115,9 +115,15 @@ class Interface:
             pix = alignment.get_children()[0]
 
             if i == number:
-                pix.set_from_file("%s/%s" % (config.themeDir, "pointer-white.png"))
+                try:
+                    pix.set_from_file("%s/%s" % (config.themeDir, "pointer-white.png"))
+                except:
+                    pix.set_from_file("%s/%s" % (config.defaultThemeDir, "pointer-white.png"))
             else:
-                pix.set_from_file("%s/%s" % (config.themeDir, "pointer-blank.png"))
+                try:
+                    pix.set_from_file("%s/%s" % (config.themeDir, "pointer-blank.png"))
+                except:
+                    pix.set_from_file("%s/%s" % (config.defaultThemeDir, "pointer-blank.png"))
 
     def _sidebarExposed(self, eb, event):
         pixbuf = self.sidebarBg.scale_simple(int(self._y_size * self.aspectRatio),
@@ -199,7 +205,11 @@ class Interface:
 
         # Load this background now so we can figure out how big to make
         # the left side.
-        self.sidebarBg = loadPixbuf("%s/%s" % (config.themeDir, "firstboot-left.png"))
+        try:
+            self.sidebarBg = loadPixbuf("%s/%s" % (config.themeDir, "firstboot-left.png"))
+        except:
+            self.sidebarBg = loadPixbuf("%s/%s" % (config.defaultThemeDir, "firstboot-left.png"))
+
         self.aspectRatio = (1.0 * self.sidebarBg.get_width()) / (1.0 * self.sidebarBg.get_height())
 
         # leftEventBox exists only so we have somewhere to paint an image.
@@ -287,7 +297,10 @@ class Interface:
 
             # Make sure the arrow is at the top of any wrapped line.
             alignment = gtk.Alignment(yalign=0.2)
-            alignment.add(loadToImage("%s/%s" % (config.themeDir, "pointer-blank.png")))
+            try:
+                alignment.add(loadToImage("%s/%s" % (config.themeDir, "pointer-blank.png")))
+            except:
+                alignment.add(loadToImage("%s/%s" % (config.defaultThemeDir, "pointer-blank.png")))
 
             hbox.pack_start(alignment, False)
             hbox.pack_end(label, True)
