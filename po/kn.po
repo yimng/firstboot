@@ -1,23 +1,24 @@
-# translation of kn.po to Kannada
+# translation of firstboot.master.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Umesh Rudrapatna <urudrapatna@yahoo.com>, 2006.
 # shankar Prasad <svenkate@redhat.com>, 2006.
-# Shankar Prasad <svenkate@redhat.com>, 2007.
+# Shankar Prasad <svenkate@redhat.com>, 2007, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: kn\n"
+"Project-Id-Version: firstboot.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-12-27 16:18+0530\n"
+"PO-Revision-Date: 2008-03-28 23:06+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"\n"
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
@@ -105,8 +106,7 @@ msgstr "%s ಘಟಕಕ್ಕೆ ಅದರ UI ಅನ್ನು ಹೊಂದಿಸ
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
-"'ಪುಟಕ್ಕೆಜರುಗಿಸು' ಗೆ ಒಂದು ಘಟಕದ ಶೀರ್ಷಿಕೆ ಅಥವ ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಒದಗಿಸಬೇಕಾಗುತ್ತದೆ."
+msgstr "'ಪುಟಕ್ಕೆಜರುಗಿಸು' ಗೆ ಒಂದು ಘಟಕದ ಶೀರ್ಷಿಕೆ ಅಥವ ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಒದಗಿಸಬೇಕಾಗುತ್ತದೆ."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
@@ -120,7 +120,7 @@ msgstr "%s ಶೀರ್ಷಿಕೆಯನ್ನು ಹೊಂದಿರುವ ಯ�
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "ಅಪ್‍ಡೇಟ್ ಮಾಡಲಾಗಿರದ ಹಳೆಯ K%sಘಟಕಗಳನ್ನು ಅಲಕ್ಷಿಸಲಾಗುತ್ತಿದೆ.."
 
 #: ../firstboot/loader.py:102
 #, python-format
@@ -188,14 +188,12 @@ msgstr ""
 "ಚಾಲಕಕ್ಕೆ ಅಳವಡಿಸಿ \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"autorun ಪ್ರೊಗ್ರಾಂ ಸೀಡಿಯಲ್ಲಿ ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಮುಂದುವರೆಯಲು \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "autorun ಪ್ರೊಗ್ರಾಂ ಸೀಡಿಯಲ್ಲಿ ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಮುಂದುವರೆಯಲು \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "ಬಳಕೆದಾರನನ್ನು ಸೃಜಿಸಿ"
 
 #: ../modules/create_user.py:60
 msgid ""
@@ -203,18 +201,21 @@ msgid ""
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
 msgstr ""
+"ಒಂದು ವೈಯಕ್ತಿಕ ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ಸೃಜಿಸಲು ಬಲವಾದ ಸಲಹೆ ಮಾಡಲಾಗುತ್ತದೆ.  ನೀವು ಒಂದು ಖಾತೆ "
+"ಇಲ್ಲದೆ ಮುಂದುವರೆದರೆ, ನೀವು ಕೇವಲ ಮೂಲ ಖಾತೆಗೆ ಮಾತ್ರ ದಾಖಲಾಗಬಹುದಾಗಿದ್ದು, ಆದರೆ ಇದು ಕೇವಲ "
+"ನಿರ್ವಹಣಾ ಕಾರ್ಯಗಳಿಗಾಗಿ ಮೀಸಲಾಗಿದೆ."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "ಮುಂದುವರೆ(_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "ಖಾತೆಯನ್ನು ರಚಿಸಿ(_a)"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "ಗುಪ್ತಪದಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ.  ದಯವಿಟ್ಟು ಗುಪ್ತಪದವನ್ನು ಪುನಃ ನಮೂದಿಸಿ."
 
 #: ../modules/create_user.py:99
 #, python-format
@@ -222,6 +223,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"ಬಳಕೆದಾರ ಹೆಸರು '%s' ಒಂದು ಕಾದಿರಿಸಲಾದ ಗಣಕದ ಖಾತೆಯದ್ದಾಗಿದೆ.  ದಯವಿಟ್ಟು ಬೇರೊಂದು ಬಳಕೆದಾರ "
+"ಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
 #: ../modules/create_user.py:118
 #, python-format
@@ -229,6 +232,8 @@ msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
+"ಬಳಕೆದಾರ %s ನ ಒಂದು ನೆಲೆಕಡತಕೋಶ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ನೀವು ಈ ನೆಲೆ ಕಡತಕೋಶವನ್ನು ಪುನಃ "
+"ಬಳಸಲು ಬಯಸುತ್ತೀರೆ?  ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ, ದಯವಿಟ್ಟು ಬೇರೊಂದು ಬಳಕೆದಾರಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -236,32 +241,37 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"ನಿಮ್ಮ ಗಣಕದ ಸಾಮಾನ್ಯ (ನಿರ್ವಹಣೆಯಲ್ಲದ) ಬಳಕೆಗಾಗಿ ಒಂದು 'ಬಳಕೆದಾರ ಹೆಸರ'ನ್ನು ಸೃಜಿಸುವಂತೆ "
+"ನಿಮಗೆ ಸಲಹೆ ಮಾಡಲಾಗುತ್ತದೆ. ಒಂದು ಗಣಕದ 'ಬಳಕೆದಾರಹೆಸರ'ನ್ನು ಸೃಜಿಸಲು, ದಯವಿಟ್ಟು ಈ ಕೆಳಗೆ "
+"ಕೇಳಲಾಗುವ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "ಬಳಕೆದಾರಹೆಸರು(_U):"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "ಸಂಪೂರ್ಣ ಹೆಸರು(_e):"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "ಗುಪ್ತಪದ(_P):"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "ಗುಪ್ತಪದವನ್ನು ಖಚಿತಪಡಿಸಿ(_P):"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"ಕರ್ಬರೋಸ್ ಅಥವ NIS ನಂತಹ ಜಾಲಬಂಧ ದೃಢೀಕರಣವನ್ನು ನೀವು ಬಳಸಬೇಕೆಂದರೆ, ದಯವಿಟ್ಟು ಜಾಲಬಂಧ "
+"ಪ್ರವೇಶ ಗುಂಡಿಯನ್ನು ಬಳಸು ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "ಜಾಲಬಂಧ ಪ್ರವೇಶವನ್ನು ಬಳಸು(_L)..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -310,3 +320,4 @@ msgstr ""
 "ನಿಮ್ಮ ಗಣಕವು ಬಳಕೆಗೆ ಸಿದ್ಧವಾಗಲು ಇನ್ನು ಕೆಲವೆ ಹಂತಗಳಿವೆ.  ಸಂಯೋಜನಾ ಮಧ್ಯವರ್ತಿಯು ನಿಮಗೆ "
 "ಮೂಲಭೂತ ಸಂರಚನಾ ಕಾರ್ಯದಲ್ಲಿ ನೆರವಾಗುತ್ತದೆ. ಮುಂದುವರೆಯಲು, ದಯವಿಟ್ಟು ಬಲಕೆಳತುದಿಯಲ್ಲಿರುವ "
 "\"ಮುಂದಕ್ಕೆ\" ಗುಂಡಿಯನ್ನೊತ್ತಿರಿ"
+
