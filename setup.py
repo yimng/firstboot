@@ -3,7 +3,7 @@
 from distutils.core import setup
 from glob import *
 
-setup(name='firstboot', version='1.92',
+setup(name='firstboot', version='1.94',
       description='Post-installation configuration utility',
       author='Chris Lumens', author_email='clumens@redhat.com',
       url='http://fedoraproject.org/wiki/FirstBoot',
