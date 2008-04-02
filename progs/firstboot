@@ -108,7 +108,7 @@ if __name__ == "__main__":
                   help="enable reconfiguration mode")
     op.add_option("-t", "--test", action="store_true", default=False,
                   help="only test, don't configure the system")
-    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/default/",
+    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/fedora-waves/",
                   help="set the directory containing the theme [default: %default]")
     (opts, args) = op.parse_args()
 
