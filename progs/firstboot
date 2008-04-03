@@ -131,16 +131,6 @@ if __name__ == "__main__":
         logging.error(_("You must be root to run firstboot."))
         os._exit(0)
 
-    # If we're in debug mode, or /etc/sysconfig/firstboot doesn't exist, or
-    # RUN_FIRSTBOOT=NO isn't in it, firstboot should run.
-    if not opts.debug and not opts.reconfig:
-        if os.access("/etc/sysconfig/firstboot", os.R_OK):
-            conf = rhpl.Conf.ConfShellVar("/etc/sysconfig/firstboot")
-
-            if conf.has_key("RUN_FIRSTBOOT") and conf["RUN_FIRSTBOOT"].upper() == "NO":
-                logging.info("firstboot has already been run.  Exiting.")
-                os._exit(0)
-
     # If we have a $DISPLAY set, we are either in debug mode or in reconfig
     # mode from a terminal already running under X.  Otherwise, run in text
     # mode if in runlevel 3, or take over rhgb's X server if it's running, or
