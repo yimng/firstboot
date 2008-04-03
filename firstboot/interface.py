@@ -115,14 +115,16 @@ class Interface:
             pix = alignment.get_children()[0]
 
             if i == number:
-                try:
-                    pix.set_from_file("%s/%s" % (config.themeDir, "pointer-white.png"))
-                except:
+                f = "%s/%s" % (config.themeDir, "pointer-white.png")
+                if os.access(f, os.F_OK):
+                    pix.set_from_file(f)
+                else:
                     pix.set_from_file("%s/%s" % (config.defaultThemeDir, "pointer-white.png"))
             else:
-                try:
-                    pix.set_from_file("%s/%s" % (config.themeDir, "pointer-blank.png"))
-                except:
+                f = "%s/%s" % (config.themeDir, "pointer-blank.png")
+                if os.access(f, os.F_OK):
+                    pix.set_from_file(f)
+                else:
                     pix.set_from_file("%s/%s" % (config.defaultThemeDir, "pointer-blank.png"))
 
     def _sidebarExposed(self, eb, event):
