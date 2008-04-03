@@ -4,7 +4,7 @@ Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
 Version: 1.95
-Release: 1%{?dist}
+Release: 2%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -17,7 +17,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: gettext
 BuildRequires: python-devel, python-setuptools-devel
 Requires: metacity, pygtk2, rhpl, python
-Requires: setuptool, libuser-python
+Requires: setuptool, libuser-python, system-config-users
 Requires(post): chkconfig
 
 %ifnarch s390 s390x ppc64
@@ -70,6 +70,9 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Thu Apr 03 2008 Chris Lumens <clumens@redhat.com> 1.95-2
+- Require another program we need.
+
 * Thu Apr 03 2008 Chris Lumens <clumens@redhat.com> 1.95-1
 - Check for RUN_FIRSTBOOT=NO in the init script.
 - Don't display broken images if files aren't found in the primary location.
