@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.94
+Version: 1.95
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -70,6 +70,10 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Thu Apr 03 2008 Chris Lumens <clumens@redhat.com> 1.95-1
+- Check for RUN_FIRSTBOOT=NO in the init script.
+- Don't display broken images if files aren't found in the primary location.
+
 * Wed Apr 02 2008 Chris Lumens <clumens@redhat.com> 1.94-1
 - Look in the right directory for Fedora artwork (#439283).
 - Require libuser-python (#439307).
