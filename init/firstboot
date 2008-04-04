@@ -41,7 +41,7 @@ case "$1" in
     start)
         args=""
 
-        if [ ! -f $(FILENAME) || -z "$(grep 'RUN_FIRSTBOOT=NO' $(FILENAME))" ]; then
+        if [ ! -f $FILENAME || -z "$(grep 'RUN_FIRSTBOOT=NO' $FILENAME)" ]; then
             exit 0
         fi
 
