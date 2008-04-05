@@ -108,7 +108,7 @@ if __name__ == "__main__":
                   help="enable reconfiguration mode")
     op.add_option("-t", "--test", action="store_true", default=False,
                   help="only test, don't configure the system")
-    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/default/",
+    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/fedora-waves/",
                   help="set the directory containing the theme [default: %default]")
     (opts, args) = op.parse_args()
 
@@ -130,16 +130,6 @@ if __name__ == "__main__":
     if not opts.test and (os.getuid() > 0 or os.geteuid() > 0):
         logging.error(_("You must be root to run firstboot."))
         os._exit(0)
-
-    # If we're in debug mode, or /etc/sysconfig/firstboot doesn't exist, or
-    # RUN_FIRSTBOOT=NO isn't in it, firstboot should run.
-    if not opts.debug and not opts.reconfig:
-        if os.access("/etc/sysconfig/firstboot", os.R_OK):
-            conf = rhpl.Conf.ConfShellVar("/etc/sysconfig/firstboot")
-
-            if conf.has_key("RUN_FIRSTBOOT") and conf["RUN_FIRSTBOOT"].upper() == "NO":
-                logging.info("firstboot has already been run.  Exiting.")
-                os._exit(0)
 
     # If we have a $DISPLAY set, we are either in debug mode or in reconfig
     # mode from a terminal already running under X.  Otherwise, run in text

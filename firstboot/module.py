@@ -171,7 +171,11 @@ class Module:
             try:
                 titleBox.pack_start(loadToImage(img), False)
             except:
-                logging.warning(_("Unable to load pixmap %s for module %s.") % (img, self.title))
+                try:
+                    img = "%s/%s" % (config.defaultThemeDir, self.icon)
+                    titleBox.pack_start(loadToImage(img), False)
+                except:
+                    logging.warning(_("Unable to load pixmap %s for module %s.") % (img, self.title))
 
         titleBox.pack_start(label, True)
         titleBox.set_spacing(8)
