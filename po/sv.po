@@ -1,7 +1,7 @@
 # Swedish messages for firstboot.
-# Copyright (C) 2002, 2003, 2004, 2005, 2006 Christian Rose.
+# Copyright © 2002, 2003, 2004, 2005, 2006 Christian Rose.
 # Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005, 2006
-# Göran Uddeborg <goeran@uddeborg.pp.se>, 2003.
+# Göran Uddeborg <goeran@uddeborg.se>, 2003, 2008.
 # Magnus Larsson <fedoratrans@gmail.com>, 2007.
 #
 # $Id$
@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2007-03-21 19:58-0400\n"
-"Last-Translator: Christian Rose <menthos@menthos.com>\n"
+"PO-Revision-Date: 2008-04-07 15:17+0200\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,19 +21,19 @@ msgstr ""
 
 #: ../progs/firstboot:117
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Du måste vara root för att köra firstboot."
 
 #: ../progs/firstboot:154 ../progs/firstboot:155
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Kunde inte starta någon framände till firstboot."
 
 #: ../progs/firstboot:166 ../progs/firstboot:167
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Hittade inga moduler till firstboot."
 
 #: ../progs/firstboot:176 ../progs/firstboot:177
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Kunde inte skapa något gränssnitt till firstboot."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -41,53 +41,45 @@ msgid "An error has occurred in the %s module."
 msgstr "Ett fel har inträffat i modulen %s."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "Eftersom det finns ett problem med modulen %s\n"
-"kommer Red Hats konfigurationsagent inte att\n"
-"läsa in denna modul, och försöker istället köra\n"
-"resterande moduler."
+"kommer firstboot inte att läsa in denna modul,\n"
+"utan försöker köra resterande moduler."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Ett fel har inträffat i modulen %s."
+msgstr "Ett fel har inträffat i firstboot."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Eftersom det uppstod ett problem kommer firstboot avsluta."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Rapportera gärna ett fel i \"firstboot\" i Red Hats\n"
-"felrapporteringssystem på http://www.redhat.com/bugzilla.\n"
-"Skriv felrapporten på engelska. En kopia av felsökningsutdatan\n"
-"har sparats i %s. Försäkra dig om att du bifogar\n"
-"den filen med felrapporten.\n"
+"En kopia av felsökningsutdatan har sparats i %s.\n"
+"Se till att bifoga den filen med felrapporten.\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "Rapportera gärna ett fel i \"firstboot\" i Red Hats\n"
 "felrapporteringssystem på http://www.redhat.com/bugzilla.\n"
-"Skriv felrapporten på engelska. En kopia av felsökningsutdatan\n"
-"har sparats i %s. Försäkra dig om att du bifogar\n"
-"den filen med felrapporten.\n"
+"Skriv felrapporten på engelska.\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Försökte gå tillbaka, men historien är tom."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -110,45 +102,45 @@ msgstr "_Framåt"
 #: ../firstboot/interface.py:265
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Modul %s satte inte upp sitt användargränssnitt, tar bort."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage måste ges en modultitel eller ett sidnummer."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Kan inte skapa skärmbildskatalog, hoppar över."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Ingen modul existerar med titeln %s."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Hoppar över gammal modul %s som inte har uppdaterats."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Modul %s innehåller inte en klass med namnet moduleClass, hoppar över."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Modul %s innehåller inte det nödvändiga attributet %s, hoppar över."
 
 #: ../firstboot/module.py:174
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Kan inte läsa in bildpunktskarta %s för modul %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Modul %s satte inte upp sitt användargränssnitt, tar bort."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -207,73 +199,73 @@ msgstr ""
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "Skapa användare"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "Det rekommenderas varmt att ett personligt användarkonto skapas.  Om du fortsätter utan ett konto kan du endast logga in med root-kontot, som är reserverat för administrativ användning."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "_Fortsätt"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "Skapa _konto"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Lösenorden stämmer inte överens.  Ange lösenordet igen."
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat användarnamn."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "En hemkatalog för användare %s finns redan.  Vill du återanvända denna hemkatalog?  Om inte, välj ett annat användarnamn."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "Det rekommenderas att du skapar ett \"användarnamn\" för normal (ej administrativ) användning av ditt system.  För att skapa ett system-\"användarnamn\", fyll informationen som efterfrågas nedan."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "_Användarnamn:"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Fullständigt _Namn:"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "_Lösenord:"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "_Bekräfta lösenord:"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "Om du behöver använda nätverksautenticering, såsom Kerberos eller NIS, klicka på knappen Använd nätverksinloggning."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Använd nät_verksinloggning..."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -313,7 +305,6 @@ msgid "Welcome"
 msgstr "Välkommen"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
