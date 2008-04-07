@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: firstboot 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-01 10:33-0500\n"
-"PO-Revision-Date: 2008-03-13 13:33+0100\n"
+"PO-Revision-Date: 2008-04-07 14:59+0200\n"
 "Last-Translator: Espen Stefansen <espenas@gmail.com>\n"
 "Language-Team: Norwegian/Bokmaal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -102,11 +102,11 @@ msgstr "Modul %s satte ikke opp brukergrensesnitt. Fjerner."
 
 #: ../firstboot/interface.py:337 ../firstboot/interface.py:338
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage må gis et navn på en modul eller et sidenummer."
 
 #: ../firstboot/interface.py:422
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Kan ikke lage katalog for skjermdump; hopper over."
 
 #: ../firstboot/interface.py:462 ../firstboot/interface.py:463
 #, python-format
@@ -116,17 +116,17 @@ msgstr "Det finnes ingen modul med navn %s."
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Hopper over gammel modul som ikke har blitt oppdatert %s."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Modul %s inneholder ikke en klasse med navn moduleClass; hopper over."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Modul %s inneholder ikke nødvendig attributt %s; hopper over."
 
 #: ../firstboot/module.py:174
 #, python-format
@@ -201,7 +201,10 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "Det anbefales på det sterkeste at du lager en personlig brukerkonto. Hvis du fortsetter uten en konto vil du bare kunne logge inn med root-kontoen som er reservert kun for administrativ bruk."
+msgstr ""
+"Det anbefales på det sterkeste at du lager en personlig brukerkonto. Hvis du "
+"fortsetter uten en konto vil du bare kunne logge inn med root-kontoen som er "
+"reservert kun for administrativ bruk."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -220,21 +223,28 @@ msgstr "Passordene er ikke like. Vennligst oppgi passord på nytt."
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "Brukernavnet «%s» er reservert for en systemkonto. Vennligst oppgi et annet brukernavn."
+msgstr ""
+"Brukernavnet «%s» er reservert for en systemkonto. Vennligst oppgi et annet "
+"brukernavn."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "En hjemmekatalog eksisterer allerede for bruker %s. Vil du gjenbruke denne hjemmekatalogen? Hvis ikke må du velge et annet brukernavn."
+msgstr ""
+"En hjemmekatalog eksisterer allerede for bruker %s. Vil du gjenbruke denne "
+"hjemmekatalogen? Hvis ikke må du velge et annet brukernavn."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "Det anbefales at du oppretter et «brukernavn» for vanlig (ikke-administrativ) bruk av systemet. For å opprette et «brukernavn» for systemet må du fylle ut informasjonen som etterspørres under."
+msgstr ""
+"Det anbefales at du oppretter et «brukernavn» for vanlig (ikke-"
+"administrativ) bruk av systemet. For å opprette et «brukernavn» for systemet "
+"må du fylle ut informasjonen som etterspørres under."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -256,7 +266,9 @@ msgstr "Bekreft pass_ord:"
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "Klikk på knappen «Bruk nettverkspålogging» hvis du må bruke nettverksautentisering slik som Kerberos eller NIS."
+msgstr ""
+"Klikk på knappen «Bruk nettverkspålogging» hvis du må bruke "
+"nettverksautentisering slik som Kerberos eller NIS."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
