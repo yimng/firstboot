@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-02-09 21:15+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -15,19 +15,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "Musisz być rootem, aby uruchomić firstboot."
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "Nie można uruchomić żadnego interfejsu firstboot."
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "Nie znaleziono modułów firstboot."
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "Nie można utworzyć żadnego interfejsu firstboot."
 
@@ -76,38 +76,40 @@ msgstr ""
 msgid "Attempted to go back, but history is empty."
 msgstr "Spróbowano się cofnąć, ale historia jest pusta."
 
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#. If we were previously on the last page, we need to set the Next
+#. button's label back to normal.
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "_Zakończ"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "System musi zostać teraz ponownie uruchomiony, aby wprowadzone zmiany "
 "zostały uwzględnione."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "_Wstecz"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "_Dalej"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "Moduł %s nie ustawił swojego UI, usuwanie."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage musi podawać tytuł modułu lub numer strony."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Nie można utworzyć folderu ze zrzutami ekranu, pomijanie."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Moduł o tytule %s nie istnieje."
@@ -127,7 +129,7 @@ msgstr "Moduł %s nie zawiera klasy o nazwie moduleClass; pomijanie."
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Moduł %s nie zawiera wymaganego atrybutu %s; pomijanie."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Nie można wczytać mapy pikseli %s dla modułu %s."
@@ -272,11 +274,20 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Użyj _logowania sieciowego..."
 
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
+
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Informacje o licencji"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -288,7 +299,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Dziękujemy za zainstalowanie Fedory. Fedora jest zestawem pakietów "
 "oprogramowania, z których każdy ma swoją własną licencję. Cały zestaw jest "

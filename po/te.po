@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-03-25 19:49+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -18,21 +18,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "ఫస్ట్‍‌బూట్‌ను నడుపుటకు నువ్వు తప్పక బుట్ చేయాలి."
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "ఏ ఫస్ట్‍‌బూట్ ఫ్రంట్ఎండ్‌ను ప్రారంభించలేము."
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "ఏ ఫస్ట్‍‌బూట్ మాడ్యూల్స్‍ కనబడలేదు."
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "ఏ ఫస్ట్‍‌బూట్ అంతర్‌ఫలకం సృష్టించబడలేక పోయింది."
 
@@ -83,36 +84,36 @@ msgstr "వెనుకకు వెళ్ళుటకు ప్రయత్న�
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "అయ్యింది (_F)"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "మీయొక్క కొన్ని ఎన్నికలు ప్రభావితం అవటానికి కంప్యూటరును పునఃప్రారంభించాలి."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "వెనుకకు (_B)"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "ముందుకు (_F)"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "మాడ్యూల్ %s దాని UI ను అమర్చలేదు, తీసివేస్తోంది."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage తప్పక మాడ్యూల్ శీర్షికను కాని లేదా పుట సంఖ్యను కాని ఇవ్వాలి."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "తెరపట్టు సంచయన్ని సృష్టించలేక పోయింది; వదిలివేస్తోంది."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "శీర్షిక %s తో ఏ మాడ్యూల్ లేదు."
@@ -132,7 +133,7 @@ msgstr "moduleClass నామపు తరగతిని మాడ్యూల�
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "మాడ్యూల్ %s కావలిసిన యాట్రిబ్యూట్ %s ను కలిగిలేదు; వదిలివేయుచున్నది."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "పిక్స్‍‌మాప్ %s ను మాడ్యూల్ %s కొరకు నింపలేక పోయింది."
@@ -182,10 +183,12 @@ msgstr "సంస్థాపన..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
+msgstr ""
+"CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CDలో తనకుతానుగా పనిచేసే ప్రక్రమం కనుగొనబడలేదు. కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
@@ -226,9 +229,8 @@ msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
-"వినియోగదారి %s కొరకు ఒక నివాస సంచయం ఇప్పటికే వుంది. మీరు ఈ నివాస సంచయంను "
-"తిరిగి‌వుపయోగించుంటకు ఇష్టపడతారా?  లేదంటే, దయచేసి వేరే వినియోగదారినామమును "
-"ఎంచుకొనుము."
+"వినియోగదారి %s కొరకు ఒక నివాస సంచయం ఇప్పటికే వుంది. మీరు ఈ నివాస సంచయంను తిరిగి‌వుపయోగించుంటకు "
+"ఇష్టపడతారా?  లేదంటే, దయచేసి వేరే వినియోగదారినామమును ఎంచుకొనుము."
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -267,11 +269,20 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Network Login ఉపయోగించు (_L)"
 
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
+
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "దృవీకరణ సమాచారం"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -283,7 +294,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Fedora సంస్థాపించినందుకు ధన్యవాదములు.Fedora తన స్వంత దృవీరణతో కూడిన సాఫ్టువేర్ ప్యాకేజీస్ "
 "కంపైలేషన్. ఈ కంపైలేషన్ GNU జెనరల్ పబ్లిక్ లైసెన్సు విడుదల 2 క్రింద మీకు లభిస్తుంది.దీనిని ఉపయోగించటానికి,"
@@ -308,7 +319,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"మీ కంప్యూటరును ఉపయోగించటానికి సిద్ధంటానికి ముందు కొన్ని పనులుచేయాలి. అమర్పు "
-"ప్రతినిది కొంత ప్రాదమిక ఆకృతీకరణ ద్వారా మిమ్మల్ని నిర్దేశిస్తాడు.  కొనసాగించుటకు దయచేసి "
-"క్రింది కుడిప్రక్క మూలనగల \"ముందుకు\" బటన్‌ను నొక్కండి."
-
+"మీ కంప్యూటరును ఉపయోగించటానికి సిద్ధంటానికి ముందు కొన్ని పనులుచేయాలి. అమర్పు ప్రతినిది కొంత ప్రాదమిక "
+"ఆకృతీకరణ ద్వారా మిమ్మల్ని నిర్దేశిస్తాడు.  కొనసాగించుటకు దయచేసి క్రింది కుడిప్రక్క మూలనగల \"ముందుకు\" "
+"బటన్‌ను నొక్కండి."

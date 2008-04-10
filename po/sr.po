@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.sr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-02-16 22:39-0500\n"
 "Last-Translator: Igor Miletic <grejigl-gnomeprevod@yahoo.ca>\n"
 "Language-Team: Serbian <fedora-trans-sr@redhat.com>\n"
@@ -21,20 +21,20 @@ msgstr ""
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr ""
 "Морате бити „root“ да би покренули „firstboot“ (програм првог покретања)."
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "Не може се покренути ни једно прочеље за „firstboot“."
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "Није нађен ни један модул за „firstboot“."
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "Није се могло покренути ни једно сучеље за „firstboot“."
 
@@ -85,39 +85,39 @@ msgstr "Покушано је да се врати назад, али је ис�
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "За_врши"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Систем сада мора бити поново подигнут како би неки од Ваших избора имали "
 "дејства."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "На_зад"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "Нап_ред"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "Модул %s није подесио своје сучеље, зато ће бити избачен."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 "moveToPage (помери на страницу) мора добити наслов модула или број странице."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Није могуће направити снимак директоријума, прескачем."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Не постоји модул са насловом %s."
@@ -137,7 +137,7 @@ msgstr "Модул %s не садржи класу названу moduleClass, �
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Модул %s не садржи захтевану особину %s, прескачем."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Није могуће учитати слику %s за модул %s."
@@ -283,11 +283,20 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Користи _мрежно пријављивање..."
 
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
+
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Подаци о лиценци"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -299,7 +308,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Захваљујемо на инсталирању Fedora-е.  Fedora је збирка софтверских пакета, "
 "сваки под својом лиценцом.  Омогућено је да збирка буде доступна под ГНУ "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-03-12 15:47+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -16,26 +16,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
 "\n"
 "\n"
 "\n"
 "\n"
 "\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "firstbootஐ இயக்க நீங்கள் ரூட்டாக இருக்க வேண்டும்."
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "எந்த firstboot முன்புலத்தையும் துவக்க முடியவில்லை."
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "firstboot தொகுதிகள் எதுவும் இல்லை."
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "firstboot முகப்பு எதையும் உருவாக்க முடியவில்லை."
 
@@ -86,36 +88,36 @@ msgstr "பின்னால் செல்ல முயற்சிக்க�
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "முடிவு (_F)"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "உங்கள் தேர்ந்தெடுப்பில் சில இயக்கத்திற்கு வர கணினியை மீண்டும் தொடங்கவும்."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "பின்னோக்கு (_B)"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "அடுத்து (_F)"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "தொகுதி %s அதன் UIஐ அமைக்கவில்லை, எனவே நீக்குகிறது."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPageக்கு ஒரு தொகுதி தலைப்பு அல்லது பக்க எண்ணை கொடுக்க வேண்டும்."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "திரைப்பிடிப்பி அடைவை உருவாக்க முடியவில்லை; எனவே தவிர்க்கப்படுகிறது."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "தலைப்பு %s இல் தொகுதிகள் எதுவும் இல்லை."
@@ -128,14 +130,16 @@ msgstr "மேம்படுத்தாத பழைய தொகுதி %s 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr "தொகுதி %s moduleClass என பெயரிடப்பட்ட வகுப்பை கொண்டிருக்கவில்லை; எனவே தவிர்க்கப்படுகிறது."
+msgstr ""
+"தொகுதி %s moduleClass என பெயரிடப்பட்ட வகுப்பை கொண்டிருக்கவில்லை; எனவே "
+"தவிர்க்கப்படுகிறது."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "தொகுதி %s தேவையான அளவுரு %sஐ கொண்டிருக்கவில்லை; எனவே தவிர்க்கப்படுகிறது."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "pixmap %sஐ தொகுதி %sக்கு ஏற்றமுடியவில்லை."
@@ -190,7 +194,8 @@ msgstr ""
 "சொடுக்கி தொடரவும்."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "குறுவட்டில் தானியக்க நிரல் கிடைக்கவில்லை. \"சரி\" என்பதை சொடுக்கி தொடரவும்."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
@@ -202,7 +207,10 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "ஒரு தனிப்பட்ட பயனர் கணக்கை உருவாக்க கடுமையாக பரிந்துரைக்கப்படுகிறது. நீங்கள் கணக்கு இல்லாமல் தொடர்ந்தால், நீங்கள் ரூட்டாக மட்டும் புகுபதிவு செய்யலாம், இது நிர்வாக பயனுக்காக மட்டும் பதிவு செய்யப்பட்டது."
+msgstr ""
+"ஒரு தனிப்பட்ட பயனர் கணக்கை உருவாக்க கடுமையாக பரிந்துரைக்கப்படுகிறது. நீங்கள் கணக்கு "
+"இல்லாமல் தொடர்ந்தால், நீங்கள் ரூட்டாக மட்டும் புகுபதிவு செய்யலாம், இது நிர்வாக பயனுக்காக "
+"மட்டும் பதிவு செய்யப்பட்டது."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -221,21 +229,26 @@ msgstr "கடவுச்சொல் பொருந்தவில்லை. 
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "பயனர் பெயர் '%s' ஏற்கனவே உள்ள கணினி கணக்கு.  எனவே வேறு பயனர் பெயரை குறிப்பிடவும்."
+msgstr ""
+"பயனர் பெயர் '%s' ஏற்கனவே உள்ள கணினி கணக்கு.  எனவே வேறு பயனர் பெயரை குறிப்பிடவும்."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "பயனர் %sக்கு இல்ல அடைவு ஏற்கனவே உள்ளது. நீங்கள் இந்த இல்ல அடைவை மீண்டும் பயன்படுத்த வேண்டுமா? இல்லையெனில், வேறு ஒரு பயனர் பெயரை தேர்வு செய்யவும்."
+msgstr ""
+"பயனர் %sக்கு இல்ல அடைவு ஏற்கனவே உள்ளது. நீங்கள் இந்த இல்ல அடைவை மீண்டும் பயன்படுத்த "
+"வேண்டுமா? இல்லையெனில், வேறு ஒரு பயனர் பெயரை தேர்வு செய்யவும்."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "உங்கள் கணினியில் சாதாரண பயனுக்கு (நிர்வாகி அல்லாத) ஒரு 'பயனர் பெயரை' உருவாக்க பரிந்துரைக்கப்படுகிறது. ஒரு கணினி 'பயனர் பெயரை' உருவாக்க, பின்வரும் தகவலை கொடுக்கவும்."
+msgstr ""
+"உங்கள் கணினியில் சாதாரண பயனுக்கு (நிர்வாகி அல்லாத) ஒரு 'பயனர் பெயரை' உருவாக்க "
+"பரிந்துரைக்கப்படுகிறது. ஒரு கணினி 'பயனர் பெயரை' உருவாக்க, பின்வரும் தகவலை கொடுக்கவும்."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -257,17 +270,28 @@ msgstr "கடவுச்சொல்லை உறுதிப்படுத�
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "நீங்கள் Kerberos அல்லது NIS போன்ற பிணைய அங்கீகாரத்தை பயன்படுத்த, பிணைய புகுபதிவை பயன்படுத்தல் பொத்தானை சொடுக்கவும்."
+msgstr ""
+"நீங்கள் Kerberos அல்லது NIS போன்ற பிணைய அங்கீகாரத்தை பயன்படுத்த, பிணைய புகுபதிவை "
+"பயன்படுத்தல் பொத்தானை சொடுக்கவும்."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
 msgstr "பிணைய புகுபதிவை பயன்படுத்தல் (_L)..."
+
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "அங்கீகார தகவல்"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -279,7 +303,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -310,4 +334,3 @@ msgstr ""
 "உங்கள் கணினியை பயன்படுத்துவதற்கு முன் சில படிமுறைகளை செய்ய வேண்டியுள்ளது. அமைப்பு "
 "முகவர் அடிப்படை சில அடிப்படை கட்டமைப்பு மூலம் உங்களை வழிநடத்தும்.  தொடர கீழ் வலது "
 "மூலையில் உள்ள \"அடுத்து\" பொத்தானை சொடுக்கி தொடரவும்."
-

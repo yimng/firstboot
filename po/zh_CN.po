@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-03-20 09:45+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -23,19 +23,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "运行 firstboot 时您必须是根用户。"
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "无法启动任何 firstboot 前端。"
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "未发现任何 firstboot 模块。"
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "无法创建任何 firstboot 界面。"
 
@@ -86,36 +86,36 @@ msgstr "试图返回，但历史记录为空白。"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "完成（_F）"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "为了使您做的修改生效，系统需要重新启动。"
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "返回（_B）"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "前进（_F）"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "模块 %s 没有设置其 UI，删除。"
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "必须为 moveToPage 提供模块标题或者页号。"
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "无法生成截图目录，跳过。"
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "没有标题为 %s 的模块。"
@@ -135,7 +135,7 @@ msgstr "模块 %s 不包含名为 moduleClass 的级别，跳过。"
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "模块 %s 不包含需要的属性 %s，跳过。"
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "无法为模块 %s 载入象图（pixmap） %s。"
@@ -156,8 +156,8 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"请插入“红帽企业版 Linux 附加光盘”来安装第三方插件和应用程序。此时您还可以插入文档光"
-"盘，或其它由红帽提供的光盘来安装额外的软件。"
+"请插入“红帽企业版 Linux 附加光盘”来安装第三方插件和应用程序。此时您还可以插入"
+"文档光盘，或其它由红帽提供的光盘来安装额外的软件。"
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -173,8 +173,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"要使 Intel Itanium2 系统对 32 位应用程序提供运行时的支持，您现在必须从附加光盘"
-"中安装 Intel Execution Layer 软件包。"
+"要使 Intel Itanium2 系统对 32 位应用程序提供运行时的支持，您现在必须从附加光"
+"盘中安装 Intel Execution Layer 软件包。"
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -187,7 +187,8 @@ msgid ""
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”继续。"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”继续。"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
@@ -199,7 +200,9 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "强烈建议您创建个人用户帐户。如果您还没有一个这样的帐户，您就只能够以根帐户登录，而根帐户只是为管理目的而保留的。"
+msgstr ""
+"强烈建议您创建个人用户帐户。如果您还没有一个这样的帐户，您就只能够以根帐户登"
+"录，而根帐户只是为管理目的而保留的。"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -225,14 +228,18 @@ msgstr "用户名‘%s’是保留的系统帐户，请指定另一个用户名�
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "用户 %s 的主目录已经存在，您是否想继续使用这个主目录呢？如果不，请选择其它用户名。"
+msgstr ""
+"用户 %s 的主目录已经存在，您是否想继续使用这个主目录呢？如果不，请选择其它用"
+"户名。"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "建议您为您的系统创建一个一般用途的（非管理）‘用户名’。要创建系统‘用户名’，请提供以下所需信息。"
+msgstr ""
+"建议您为您的系统创建一个一般用途的（非管理）‘用户名’。要创建系统‘用户名’，请"
+"提供以下所需信息。"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -254,17 +261,27 @@ msgstr "确认密码（_m）："
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "如果您需要使用网络验证，比如 Kerberos 或者 NIS，请点击“使用网络登录”按钮。"
+msgstr ""
+"如果您需要使用网络验证，比如 Kerberos 或者 NIS，请点击“使用网络登录”按钮。"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
 msgstr "使用网络登录（_L）..."
+
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "许可证信息"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -276,13 +293,13 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "非常感谢您安装了Fedora。Fedora集成了多种软件包，每个软件包都有自己的许可证。"
-"Fedora 在 GNU 通用公共许可证（第二版）的保护下发布。您可以随意的使用、拷贝或者修"
-"改该源代码。如果您希望重新发布这些代码，无论修改与否，都需要遵守一定的限制和"
-"义务。这些限制、义务等需要符合再发布版的许可证、注册商标和出口控制。如果您希"
-"望了解这些限制，请访问 http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"Fedora 在 GNU 通用公共许可证（第二版）的保护下发布。您可以随意的使用、拷贝或"
+"者修改该源代码。如果您希望重新发布这些代码，无论修改与否，都需要遵守一定的限"
+"制和义务。这些限制、义务等需要符合再发布版的许可证、注册商标和出口控制。如果"
+"您希望了解这些限制，请访问 http://fedoraproject.org/wiki/Legal/Licenses/EULA."
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
@@ -300,4 +317,3 @@ msgid ""
 msgstr ""
 "在您的系统就绪前还要进行几个步骤。设置代理将会引导您进行一些基本配置。请点击"
 "右下角的“前进”按钮继续。"
-

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-03-28 12:07+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -18,22 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "root로 firstboot를 실행해야 합니다. "
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "firstboot 프론트앤드를 시작할 수 없습니다. "
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "firstboot 모듈을 찾을 수 없습니다. "
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "firstboot 인터페이스를 생성할 수 없습니다. "
 
@@ -84,36 +85,36 @@ msgstr "이전 단계로 되돌아 가려 하였으나, 기록이 남아있지 �
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "완료(_F)"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "선택하신 사항을 적용하려면 지금 시스템을 재부팅하셔야 합니다."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "이전(_B)"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "다음(_F)"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s 모듈에 UI가 설정되어 있지 않습니다, 삭제합니다. "
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "페이지로 이동하기에서는 모듈 제목이나 페이지 번호가 있어야 합니다. "
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "스크린샷 디렉토리를 생성할 수 없습니다; 생략합니다. "
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s 라는 모듈이 없습니다. "
@@ -133,7 +134,7 @@ msgstr "%s 모듈에는 moduleClass라는 클래스가 들어있지 않습니다
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s 모듈에 %s 속성이 들어 있지 않습니다; 생략합니다. "
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "%s 모듈에 해당하는 pixmap %s을 읽어올 수 없습니다. "
@@ -188,7 +189,8 @@ msgstr ""
 "을 클릭하여 계속 진행해 주십시오."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램을 CD에서 찾지 못했습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -230,7 +232,9 @@ msgstr "사용자명 '%s'은 시스템 계정입니다.  다른 사용자명을 
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "사용자 '%s'에 대한 홈 디렉토리는 이미 존재합니다. 이 홈 디렉토리를 다시 사용하시겠습니까? 그렇지 않다면, 다른 사용자명을 지정해 주십시오. "
+msgstr ""
+"사용자 '%s'에 대한 홈 디렉토리는 이미 존재합니다. 이 홈 디렉토리를 다시 사용"
+"하시겠습니까? 그렇지 않다면, 다른 사용자명을 지정해 주십시오. "
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -238,9 +242,9 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-" 시스템의 일반 사용을 위한 (관리자 계정이 아닌) '사용자계정'을 생성하시기 바랍"
-"니다. 시스템 '사용자계정'을 만드시려면, 아래에서 요구하는 정보를 기입해 주십"
-"시오. "
+" 시스템의 일반 사용을 위한 (관리자 계정이 아닌) '사용자계정'을 생성하시기 바"
+"랍니다. 시스템 '사용자계정'을 만드시려면, 아래에서 요구하는 정보를 기입해 주"
+"십시오. "
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -263,18 +267,27 @@ msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼을 클"
-"릭해 주십시오.  "
+"커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
+"을 클릭해 주십시오.  "
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
 msgstr "네트워크 로그인 사용(_L)..."
+
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "라이센스 정보"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -286,7 +299,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Fedora를 설치해 주셔서 감사합니다.  Fedora는 라이센스 기반 소프트웨어 패키지"
 "로 컴파일되어 있습니다. 이 컴파일은 GNU General Public License version 2 하"
@@ -314,4 +327,3 @@ msgstr ""
 "시스템 사용 준비가 완료되기 전에 몇 가지의 단계가 더 남아 있습니다. 설정 에이"
 "전트는 이제 몇 가지 기본적인 설정 과정을 단계별로 길잡이를 해 드릴 것입니다. "
 "계속하시려면 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하십시오."
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-02-29 01:29+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr ""
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr ""
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr ""
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr ""
 
@@ -75,36 +75,36 @@ msgstr ""
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "समाप्त (_F)"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "अहाँक किछु चयन क' प्रभावी हए क' लेल सिस्टमकेँ जरूर रिबूट कएनाइ चाही."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "पाछाँ (_B)"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "अग्रसारित करू (_F)"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr ""
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr ""
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr ""
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr ""
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr ""
@@ -145,9 +145,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"तेसर पार्टी plug-ins आओर अनुप्रयोग क' अधिष्ठापनक अनुमति क' लेल \"Red Hat "
-"Enterprise Linux Extras\" लेबलक डिस्ककेँ दाखिल करू. अहाँ एहि समय अतिरिक्त सोफ्टवेयर "
-"क' अधिष्ठापन क' लेल दस्ताबेज डिस्क अथवा आन Red Hat प्रदत्त डिस्क दए सकैत छी."
+"तेसर पार्टी plug-ins आओर अनुप्रयोग क' अधिष्ठापनक अनुमति क' लेल \"Red Hat Enterprise "
+"Linux Extras\" लेबलक डिस्ककेँ दाखिल करू. अहाँ एहि समय अतिरिक्त सोफ्टवेयर क' अधिष्ठापन "
+"क' लेल दस्ताबेज डिस्क अथवा आन Red Hat प्रदत्त डिस्क दए सकैत छी."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -175,12 +175,14 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM खोजल नहि गेल अछि. कृप्या एकटा CD-ROM केँ ड्राइवमे प्रविष्ट करू आओर \"ठीक\" केँ जारी राखए "
-"क' लेल दाबू."
+"CD-ROM खोजल नहि गेल अछि. कृप्या एकटा CD-ROM केँ ड्राइवमे प्रविष्ट करू आओर \"ठीक\" केँ "
+"जारी राखए क' लेल दाबू."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
@@ -193,8 +195,8 @@ msgid ""
 "which is reserved for administrative use only."
 msgstr ""
 "ई अनुशंसा कएल जाएत अछि कि एकटा व्यक्तिगत प्रयोक्ता खाता बनाबू. जँ अहाँ एकटा खाताक बिनु "
-"जारी राखैत छी, तँ अहाँ सिर्फ रूट खातामे लॉग कए सकैत अछि. जे केवल प्रशासनिक प्रयोगसभक "
-"लेल आरक्षित हाएत अछि."
+"जारी राखैत छी, तँ अहाँ सिर्फ रूट खातामे लॉग कए सकैत अछि. जे केवल प्रशासनिक प्रयोगसभक लेल "
+"आरक्षित हाएत अछि."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -213,7 +215,8 @@ msgstr "शब्दकूट मेल नहि करैत अछि. कृ
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
+msgstr ""
+"'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
 
 #: ../modules/create_user.py:118
 #, python-format
@@ -228,8 +231,9 @@ msgid ""
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
-"ई अनुशंसा कएल जाएत अछि जे अहाँ सिस्टमक नियमित (अप्रशासनिक) प्रयोग क' लेल एकटा व्यक्तिगत "
-"'प्रयोक्तानाम' बनाबू. एकटा सिस्टम 'प्रयोक्तानाम' बनाबै क' लेल, नीच्चाँ माँगल गेल जानकारी दिअ'."
+"ई अनुशंसा कएल जाएत अछि जे अहाँ सिस्टमक नियमित (अप्रशासनिक) प्रयोग क' लेल एकटा "
+"व्यक्तिगत 'प्रयोक्तानाम' बनाबू. एकटा सिस्टम 'प्रयोक्तानाम' बनाबै क' लेल, नीच्चाँ माँगल गेल "
+"जानकारी दिअ'."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -259,6 +263,14 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "सँजाल लोगिनक प्रयोग करू (_L)..."
 
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
+
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "समयक्षेत्र बिन्यास"
@@ -275,7 +287,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 
 #: ../modules/eula.py:64
@@ -292,4 +304,3 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-

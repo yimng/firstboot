@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.as\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-02-07 15:29+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@redhat.com>\n"
 "Language-Team: Assamese\n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "firstboot চলাবলৈ আপুনি ৰূট হ'ব লাগিব ।"
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "কোনো firstboot frontend আৰম্ভ কৰিব নোৱাৰিলো ।"
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "কোনো firstboot অংশ পোৱা ন'গ'ল ।"
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "কোনো firstboot সংযোগক্ষেত্ৰ সৃষ্টি কৰিব নোৱাৰি ।"
 
@@ -82,36 +82,37 @@ msgstr "পিছলৈ যাবলৈ চেষ্টা কৰা হৈছ�
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "সমাপ্তি(_F)"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
+msgstr ""
+"আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "পিছলৈ (_B)"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "আগলৈ (_F)"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s অংশই তাৰ UI প্ৰতিষ্ঠা কৰিব নোৱাৰিলে, আঁতৰুৱা হৈছে ।"
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage ক এটা অংশৰ শিৰোনাম বা পৃষ্ঠাৰ সংখ্যা দিব লাগিব ।"
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "screenshot dir সৃষ্টি কৰিব নোৱাৰি; এৰি যোৱা হৈছে ।"
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "শিৰোনাম %s এৰে কোনো অংশ নাই ।"
@@ -131,7 +132,7 @@ msgstr "%s অংশত moduleClass নামৰ কোনো ক্লাছ �
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s অংশত প্ৰয়োজনীয় গুণ %s নাই; এৰি যোৱা হৈছে ।"
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "pixmap %s ক %s অংশৰ বাবে তুলিব পৰা নাযায় ।"
@@ -187,7 +188,8 @@ msgstr ""
 "\"ঠিক আছে\" টিপক ।"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr " CD‌ -ত autorun কাৰ্য্যক্ৰম পোৱা ন'গ'ল । আগবাঢ়িব'লৈ \"ঠিক আছে\" টিপক ।"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
@@ -199,7 +201,10 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "এটা ব্যক্তিগত হিচাপ সৃষ্টি কৰাৰ উপদেশ দিয়া হয় । হিচাপ নোহোৱাকে আগবাঢ়িলে, আপুনি অকল ৰূটৰ হিচাপতহে প্ৰৱেশ কৰিব পাৰিব, যি প্ৰশায়নিক ব্যৱহাৰৰ বাবেহে সংৰক্ষিত কৰা হৈছে ।"
+msgstr ""
+"এটা ব্যক্তিগত হিচাপ সৃষ্টি কৰাৰ উপদেশ দিয়া হয় । হিচাপ নোহোৱাকে আগবাঢ়িলে, আপুনি "
+"অকল ৰূটৰ হিচাপতহে প্ৰৱেশ কৰিব পাৰিব, যি প্ৰশায়নিক ব্যৱহাৰৰ বাবেহে সংৰক্ষিত কৰা "
+"হৈছে ।"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -218,21 +223,28 @@ msgstr "গুপ্তশব্দ অমিল । অনুগ্ৰহ ক�
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "'%s' ব্যৱহাৰকৰোঁতাৰ নাম ব্যৱস্থাপ্ৰণালীৰ হিচাপৰ বাবে সংৰক্ষিত । অনুগ্ৰহ কৰি অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম দিয়ক ।"
+msgstr ""
+"'%s' ব্যৱহাৰকৰোঁতাৰ নাম ব্যৱস্থাপ্ৰণালীৰ হিচাপৰ বাবে সংৰক্ষিত । অনুগ্ৰহ কৰি অন্য এটা "
+"ব্যৱহাৰকৰোঁতাৰ নাম দিয়ক ।"
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "ব্যৱহাৰকৰোঁতা %s ৰ ঘৰৰ পঞ্জিকা ইতিমধ্যে আছে । আপুনি এই ঘৰৰ পঞ্জিকাকে আকৌ ব্যৱহাৰ কৰিব খোজে নেকি ? ন'হ'লে, অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম নিৰ্ব্বাচন কৰক ।"
+msgstr ""
+"ব্যৱহাৰকৰোঁতা %s ৰ ঘৰৰ পঞ্জিকা ইতিমধ্যে আছে । আপুনি এই ঘৰৰ পঞ্জিকাকে আকৌ ব্যৱহাৰ "
+"কৰিব খোজে নেকি ? ন'হ'লে, অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম নিৰ্ব্বাচন কৰক ।"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "আপুনি এটা 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰাৰ উপদেশ দিয়া হয় ব্যৱস্থাপ্ৰণালীৰ সাধাৰণ (অপ্ৰশাসনিক) ব্যৱহাৰৰ বাবে । ব্যৱস্থাপ্ৰণালীৰ 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰিবলৈ, তলৰ বিচৰা তথ্য অনুগ্ৰহ কৰি দিয়ক ।"
+msgstr ""
+"আপুনি এটা 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰাৰ উপদেশ দিয়া হয় ব্যৱস্থাপ্ৰণালীৰ সাধাৰণ "
+"(অপ্ৰশাসনিক) ব্যৱহাৰৰ বাবে । ব্যৱস্থাপ্ৰণালীৰ 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰিবলৈ, তলৰ "
+"বিচৰা তথ্য অনুগ্ৰহ কৰি দিয়ক ।"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -254,17 +266,28 @@ msgstr "গুপ্তশব্দ দৃঢ় কৰক (_m):"
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "নে'টৱৰ্কৰ প্ৰমাণীকৰণ ব্যৱহাৰ কৰিব হ'লে, যেনে Kerberos বা NIS, অনুগ্ৰহ কৰি নে'টৱৰ্ক প্ৰৱেশ ব্যৱহাৰ কৰক বুটাম টিপক ।"
+msgstr ""
+"নে'টৱৰ্কৰ প্ৰমাণীকৰণ ব্যৱহাৰ কৰিব হ'লে, যেনে Kerberos বা NIS, অনুগ্ৰহ কৰি নে'টৱৰ্ক "
+"প্ৰৱেশ ব্যৱহাৰ কৰক বুটাম টিপক ।"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
 msgstr "নে'টৱৰ্ক প্ৰৱেশ ব্যৱহাৰ কৰক (_L)..."
+
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "অনুমতি পত্ৰৰ তথ্য"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -276,7 +299,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Fedora সংস্থাপন কৰাৰ বাবে ধন্যবাদ । Fedora হ'ল ব্যক্তিগত অনুমতিপত্ৰ থকা চালনাজ্ঞানৰ "
 "সৰঞ্জামৰ এটা সঙ্কলন । GNU General Public License সংস্কৰণ ২ ৰ অধীনত এই সঙ্কলন "
@@ -305,4 +328,3 @@ msgstr ""
 "আপোনাৰ ব্যস্থাপ্ৰণালীক প্ৰয়োগৰ বাবে সাজু কৰিবলৈ আৰু কিছু পৰ্য্যায় আছে । কাৰ্য্যপদ্ধতি "
 "নিযুক্তকে আপোনাক কিছুমান মূল সংস্থাপনৰ মাজেৰে পৰিচালনা কৰিব । অনুগ্ৰহ কৰি "
 "আগবাঢ়িব'লৈ তলৰ সোঁ‌-কোনাৰ \"আগলৈ\" বুটাম টিপক ।"
-

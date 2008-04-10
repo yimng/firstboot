@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-04-07 15:17+0200\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "Du måste vara root för att köra firstboot."
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "Kunde inte starta någon framände till firstboot."
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "Hittade inga moduler till firstboot."
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "Kunde inte skapa något gränssnitt till firstboot."
 
@@ -83,36 +83,36 @@ msgstr "Försökte gå tillbaka, men historien är tom."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "_Slutför"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Systemet måste nu starta om för att dina val ska börja gälla."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "_Bakåt"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "_Framåt"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "Modul %s satte inte upp sitt användargränssnitt, tar bort."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage måste ges en modultitel eller ett sidnummer."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Kan inte skapa skärmbildskatalog, hoppar över."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Ingen modul existerar med titeln %s."
@@ -132,7 +132,7 @@ msgstr "Modul %s innehåller inte en klass med namnet moduleClass, hoppar över.
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Modul %s innehåller inte det nödvändiga attributet %s, hoppar över."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Kan inte läsa in bildpunktskarta %s för modul %s."
@@ -206,7 +206,10 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "Det rekommenderas varmt att ett personligt användarkonto skapas.  Om du fortsätter utan ett konto kan du endast logga in med root-kontot, som är reserverat för administrativ användning."
+msgstr ""
+"Det rekommenderas varmt att ett personligt användarkonto skapas.  Om du "
+"fortsätter utan ett konto kan du endast logga in med root-kontot, som är "
+"reserverat för administrativ användning."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -225,21 +228,28 @@ msgstr "Lösenorden stämmer inte överens.  Ange lösenordet igen."
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat användarnamn."
+msgstr ""
+"Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
+"användarnamn."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "En hemkatalog för användare %s finns redan.  Vill du återanvända denna hemkatalog?  Om inte, välj ett annat användarnamn."
+msgstr ""
+"En hemkatalog för användare %s finns redan.  Vill du återanvända denna "
+"hemkatalog?  Om inte, välj ett annat användarnamn."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "Det rekommenderas att du skapar ett \"användarnamn\" för normal (ej administrativ) användning av ditt system.  För att skapa ett system-\"användarnamn\", fyll informationen som efterfrågas nedan."
+msgstr ""
+"Det rekommenderas att du skapar ett \"användarnamn\" för normal (ej "
+"administrativ) användning av ditt system.  För att skapa ett system-"
+"\"användarnamn\", fyll informationen som efterfrågas nedan."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -261,17 +271,28 @@ msgstr "_Bekräfta lösenord:"
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "Om du behöver använda nätverksautenticering, såsom Kerberos eller NIS, klicka på knappen Använd nätverksinloggning."
+msgstr ""
+"Om du behöver använda nätverksautenticering, såsom Kerberos eller NIS, "
+"klicka på knappen Använd nätverksinloggning."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
 msgstr "Använd nät_verksinloggning..."
+
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Licensinformation"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -283,7 +304,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Tack för att du installerar Fedora. Fedora är en samling av "
 "programvarupaket, var och ett med sin egna licens. Samlingen är tillgänglig "

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-02-22 18:04+0300\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat,com>\n"
@@ -25,19 +25,19 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "Для запуска firstboot вам необходимо быть пользователем root."
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "Невозможно запустить ни один из интерфейсов firstboot."
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "Не найдены модули firstboot."
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "Невозможно создать ни один из интерфейсов firstboot."
 
@@ -88,36 +88,37 @@ msgstr "При попытке вернуться назад обнаружено
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "_Готово"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Чтобы установки вступили в силу, необходим перезапуск системы."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "_Назад"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "_Вперед"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "Модуль %s не настроил свой пользовательский интерфейс и будет удален."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage должен быть заданным заголовком модуля или номером страницы."
+msgstr ""
+"moveToPage должен быть заданным заголовком модуля или номером страницы."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Невозможно создать каталог снимков экрана, пропускаем."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Нет модуля с заголовком %s."
@@ -137,7 +138,7 @@ msgstr "Модуль %s не содержит класса moduleClass; проп
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Модуль %s не содержит требуемого атрибута %s; пропускаем."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Невозможно загрузить картинку %s для модуля %s."
@@ -190,10 +191,12 @@ msgstr "Установка..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-ROM найден.  Вставьте CD-ROM в привод и нажмите \"OK\" для продолжения."
+msgstr ""
+"CD-ROM найден.  Вставьте CD-ROM в привод и нажмите \"OK\" для продолжения."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Программа autorun не найдена на CD. Нажмите \"OK\" для продолжения."
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
@@ -205,7 +208,10 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "Настоятельно рекомендуется создать персональную учетную запись пользователя. Если вы продолжите без её создания, единственный способ войти в систему - использовать имя root, зарезервированное только для административных целей."
+msgstr ""
+"Настоятельно рекомендуется создать персональную учетную запись пользователя. "
+"Если вы продолжите без её создания, единственный способ войти в систему - "
+"использовать имя root, зарезервированное только для административных целей."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -224,21 +230,28 @@ msgstr "Пароли не совпадают.  Введите пароль сн�
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "Пользователь '%s' - зарезервированная системная учетная запись. Укажите другое имя."
+msgstr ""
+"Пользователь '%s' - зарезервированная системная учетная запись. Укажите "
+"другое имя."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "Домашний каталог для пользователя %s уже существует. Использовать этот ранее созданный каталог?  В противном случае укажите другое имя."
+msgstr ""
+"Домашний каталог для пользователя %s уже существует. Использовать этот ранее "
+"созданный каталог?  В противном случае укажите другое имя."
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "Рекомендуется создать 'пользователя' для повседневного (не административного) использования вашей системы. Чтобы создать 'пользователя' введите необходимые данные."
+msgstr ""
+"Рекомендуется создать 'пользователя' для повседневного (не "
+"административного) использования вашей системы. Чтобы создать 'пользователя' "
+"введите необходимые данные."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -261,18 +274,27 @@ msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Если вам требуется использовать проверку подлинности по сети, "
-"например Kerberos или NIS, нажмите кнопку Использовать вход через сеть."
+"Если вам требуется использовать проверку подлинности по сети, например "
+"Kerberos или NIS, нажмите кнопку Использовать вход через сеть."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
 msgstr "Использовать _вход через сеть..."
+
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Информация о лицензии"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -284,7 +306,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Спасибо, что вы установили Fedora. Fedora состоит из множества пакетов, "
 "каждый из которых имеет свою собственную лицензию. Использование этих "
@@ -315,4 +337,3 @@ msgstr ""
 "Осталось еще несколько шагов, после которых ваша система будет готова к "
 "работе.  В этом вам поможет Помощник по настройке.  Нажмите \"Вперед\" в "
 "нижнем правом углу для продолжения"
-

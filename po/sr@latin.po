@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.sr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-02-16 22:39-0500\n"
 "Last-Translator: Igor Miletic <grejigl-gnomeprevod@yahoo.ca>\n"
 "Language-Team: Serbian <fedora-trans-sr@redhat.com>\n"
@@ -21,20 +21,20 @@ msgstr ""
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr ""
 "Morate biti „root“ da bi pokrenuli „firstboot“ (program prvog pokretanja)."
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "Ne može se pokrenuti ni jedno pročelje za „firstboot“."
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "Nije nađen ni jedan modul za „firstboot“."
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "Nije se moglo pokrenuti ni jedno sučelje za „firstboot“."
 
@@ -85,39 +85,39 @@ msgstr "Pokušano je da se vrati nazad, ali je istorija prazna."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "Za_vrši"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Sistem sada mora biti ponovo podignut kako bi neki od Vaših izbora imali "
 "dejstva."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "Na_zad"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "Nap_red"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "Modul %s nije podesio svoje sučelje, zato će biti izbačen."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 "moveToPage (pomeri na stranicu) mora dobiti naslov modula ili broj stranice."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Nije moguće napraviti snimak direktorijuma, preskačem."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Ne postoji modul sa naslovom %s."
@@ -137,7 +137,7 @@ msgstr "Modul %s ne sadrži klasu nazvanu moduleClass, preskačem."
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Modul %s ne sadrži zahtevanu osobinu %s, preskačem."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Nije moguće učitati sliku %s za modul %s."
@@ -159,9 +159,9 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Ubacite disk obeležen kao „Red Hat Enterprise Linux Extras“ da omogućite "
-"instaliranje dodataka i programa sa strane.  U ovom trenutku možete ubaciti i "
-"disk sa dokumentacijom, ili druge Red Hat dostavljene diskove da instalirate "
-"dodatni softver."
+"instaliranje dodataka i programa sa strane.  U ovom trenutku možete ubaciti "
+"i disk sa dokumentacijom, ili druge Red Hat dostavljene diskove da "
+"instalirate dodatni softver."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -283,11 +283,20 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Koristi _mrežno prijavljivanje..."
 
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
+
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Podaci o licenci"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -299,15 +308,16 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Zahvaljujemo na instaliranju Fedora-e.  Fedora je zbirka softverskih paketa, "
 "svaki pod svojom licencom.  Omogućeno je da zbirka bude dostupna pod GNU "
 "Opštom javnom licencom verzije 2.  Ne postoje ograničenja pri upotrebi, "
-"umnožavanju, ili izmenjivanju ovog koda.  Međutim, postoje ograničenja i obaveze "
-"koje se tiču dalje distribucije ovog koda, bilo u svom prvobitnom ili "
-"izmenjenom obliku.  Pored drugih stvari, ova ograničenja/obaveze se dodiru "
-"licence dalje distribucije, prava na zaštitne znake, i kontrole izvoza.\n"
+"umnožavanju, ili izmenjivanju ovog koda.  Međutim, postoje ograničenja i "
+"obaveze koje se tiču dalje distribucije ovog koda, bilo u svom prvobitnom "
+"ili izmenjenom obliku.  Pored drugih stvari, ova ograničenja/obaveze se "
+"dodiru licence dalje distribucije, prava na zaštitne znake, i kontrole "
+"izvoza.\n"
 "\n"
 "Ako želite da razumete koja su tačno ova ograničenja, posetite http://"
 "fedoraproject.org/wiki/Legal/Licenses/EULA."

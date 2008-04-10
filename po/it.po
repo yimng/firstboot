@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 10:33-0500\n"
+"POT-Creation-Date: 2008-04-10 09:11-0400\n"
 "PO-Revision-Date: 2008-02-14 00:47+0100\n"
 "Last-Translator: Gianluca Busiello <busiello@ceinge.unina.it>\n"
 "Language-Team: Italian <fedora-trans-it@redhat.com>\n"
@@ -25,19 +25,19 @@ msgstr ""
 "X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../progs/firstboot:117
+#: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
 msgstr "Si deve essere root per eseguire firstboot"
 
-#: ../progs/firstboot:154 ../progs/firstboot:155
+#: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "Non è possibile avviare nessuna interfaccia di firstboot"
 
-#: ../progs/firstboot:166 ../progs/firstboot:167
+#: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "Nessun modulo firstboot trovato"
 
-#: ../progs/firstboot:176 ../progs/firstboot:177
+#: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "Non è possibile creare nessuna interfaccia di firstboot"
 
@@ -89,38 +89,38 @@ msgstr "Si è tentato di andare indietro, ma lo storico risulta vuoto."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:154
+#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "_Fine"
 
-#: ../firstboot/interface.py:175
+#: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Il sistema deve essere ora riavviato per rendere effettive alcune delle "
 "scelte."
 
-#: ../firstboot/interface.py:231
+#: ../firstboot/interface.py:243
 msgid "_Back"
 msgstr "_Indietro"
 
-#: ../firstboot/interface.py:238
+#: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "_Avanti"
 
-#: ../firstboot/interface.py:265
+#: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
 msgstr "Il modulo %s non ha settato la sua interfaccia utente, verrà rimosso."
 
-#: ../firstboot/interface.py:337 ../firstboot/interface.py:338
+#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "E' necessario assegnare un titolo di modulo o un numero di pagina."
 
-#: ../firstboot/interface.py:422
+#: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Impossibile creare la directory per lo screenshot; operazione saltata."
 
-#: ../firstboot/interface.py:462 ../firstboot/interface.py:463
+#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Nessun modulo esistente con il titolo %s."
@@ -140,9 +140,10 @@ msgstr ""
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "Il modulo %s non contiene l'attributo richiesto %s; operazione saltata."
+msgstr ""
+"Il modulo %s non contiene l'attributo richiesto %s; operazione saltata."
 
-#: ../firstboot/module.py:174
+#: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Impossibile caricare la pixmap %s per il modulo %s."
@@ -201,7 +202,8 @@ msgstr ""
 "su \"OK\" per continuare."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Il programma autorun non è stato trovato sul CD. Premere \"OK\" per "
 "continuare."
@@ -215,7 +217,10 @@ msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr "La creazione di una account personale è fortemente incoraggiata.  Se si continua senza un account, sarà possibile accedere solo con l'account root, che è riservato alla sola amministrazione del computer."
+msgstr ""
+"La creazione di una account personale è fortemente incoraggiata.  Se si "
+"continua senza un account, sarà possibile accedere solo con l'account root, "
+"che è riservato alla sola amministrazione del computer."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -235,15 +240,17 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"La username '%s' corrisponde ad un account di sistema riservato.  Specificare un'altra username "
-"per piacere."
+"La username '%s' corrisponde ad un account di sistema riservato.  "
+"Specificare un'altra username per piacere."
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "Una cartella home per l'utente %s già esiste. Si vuole riutilizzare questa cartella home?  Se no, scegliere una username diversa per piacere."
+msgstr ""
+"Una cartella home per l'utente %s già esiste. Si vuole riutilizzare questa "
+"cartella home?  Se no, scegliere una username diversa per piacere."
 
 #: ../modules/create_user.py:165
 msgid ""
@@ -252,7 +259,8 @@ msgid ""
 "provide the information requested below."
 msgstr ""
 "Si consiglia di creare una 'username' per l'uso ordinario (non- "
-"amministrativo) del sistema. Per creare una username di sistema, fornire le informazioni richieste di seguito."
+"amministrativo) del sistema. Per creare una username di sistema, fornire le "
+"informazioni richieste di seguito."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -282,11 +290,20 @@ msgstr ""
 msgid "Use Network _Login..."
 msgstr "Usare _Login di Rete..."
 
+#: ../modules/date.py:40 ../modules/date.py:41
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
+
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Informazioni sulla licenza"
 
 #: ../modules/eula.py:53
+#, fuzzy
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -298,7 +315,7 @@ msgid ""
 "rights, and export control.\n"
 "\n"
 "If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA."
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "Grazie per aver installato Fedora.  Fedora è una compilation di pacchetti "
 "software, avente ciascuno la propria licenza.  La compilation è resa "
@@ -329,4 +346,3 @@ msgstr ""
 "Ci sono pochi altri passi da fare prima che il sistema sia pronto all'uso. "
 "L'agente di setup vi guiderà nel processo di configurazione di base.  "
 "Premere il pulsante \"Avanti\" nell'angolo in basso a destra per continuare."
-
