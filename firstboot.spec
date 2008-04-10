@@ -3,8 +3,8 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.95
-Release: 4%{?dist}
+Version: 1.96
+Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -17,7 +17,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: gettext
 BuildRequires: python-devel, python-setuptools-devel
 Requires: metacity, pygtk2, rhpl, python
-Requires: setuptool, libuser-python, system-config-users
+Requires: setuptool, libuser-python, system-config-users, system-config-date
 Requires(post): chkconfig
 
 %ifnarch s390 s390x ppc64
@@ -40,6 +40,7 @@ a series of steps that allows for easier configuration of the machine.
 %install
 rm -rf %{buildroot}
 make DESTDIR=%{buildroot} SITELIB=%{python_sitelib} install
+rm %{_sbindir}/firstboot/modules/additional_cds.py*
 %find_lang %{name}
 
 %clean
@@ -66,10 +67,18 @@ fi
 %config %{_initrddir}/firstboot
 %{python_sitelib}/*
 %{_sbindir}/firstboot
-%{_datadir}/firstboot/modules/*
+%{_datadir}/firstboot/modules/create_user.py*
+%{_datadir}/firstboot/modules/date.py*
+%{_datadir}/firstboot/modules/eula.py*
+%{_datadir}/firstboot/modules/welcome.py*
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Thu Apr 10 2008 Chris Lumens <clumens@redhat.com> 1.96-1
+- Don't package additional_cds module for now (#441749).
+- Add the date and time module (#441504).
+- The license agreement has moved URLs.
+
 * Mon Apr 07 2008 Chris Lumens <clumens@redhat.com> 1.95-4
 - Fix another init script typo (#441016).
 
