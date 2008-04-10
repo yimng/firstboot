@@ -40,7 +40,7 @@ a series of steps that allows for easier configuration of the machine.
 %install
 rm -rf %{buildroot}
 make DESTDIR=%{buildroot} SITELIB=%{python_sitelib} install
-rm %{_sbindir}/firstboot/modules/additional_cds.py*
+rm %{buildroot}/%{_datadir}/firstboot/modules/additional_cds.py*
 %find_lang %{name}
 
 %clean
