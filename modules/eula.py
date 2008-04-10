@@ -59,7 +59,7 @@ redistribution of the code, either in its original or a modified form.  \
 Among other things, those restrictions/obligations pertain to the \
 licensing of the redistribution, trademark rights, and export control.\n\n\
 If you would like to understand what those restrictions are, please \
-visit http://fedoraproject.org/wiki/Legal/Licenses/EULA."""))
+visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."""))
 
         label = gtk.Label(_("Understood, please proceed."))
         label.set_alignment(0.0, 0.1)
