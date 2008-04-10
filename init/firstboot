@@ -8,9 +8,9 @@
 # Short-Description: Starts the firstboot configuration program
 # Description: Firstboot runs the first time a machine is booted after
 #              installation.  It checks for the existance of an
-#              /etc/sysconfig/firstboot file.  If it doesn't exist, then
-#              the firstboot program needs to run.  If it finds the file,
-#              firstboot will not run.  If /etc/reconfigSys exists or if
+#              /etc/sysconfig/firstboot file.  If the file exists and
+#              contains RUN_FIRSTBOOT=NO, firstboot will not run.  Otherwise
+#              firstboot will be run.  If /etc/reconfigSys exists or if
 #              "reconfig" is provided in the kernel boot arguments,
 #              firstboot will run in reconfiguration mode.
 ## END INIT INFO
@@ -23,8 +23,8 @@
 # description: Firstboot is a druid style program that runs on the first \
 #              time a machine is booted after install.  It checks for \
 #              the existence of an /etc/sysconfig/firstboot file.  If \
-#              it doesn't exist, then the firstboot program needs to \
-#              run.  If it finds the file, firstboot will not run. \
+#              the file exists and contains RUN_FIRSTBOOT=NO, firstboot \
+#              will not run.  Otherwise, firstboot will be run.  \
 #              If /etc/reconfigSys exists or if "reconfig" is provided \
 #              in the kernel boot arguments, firstboot will run in \
 #              reconfiguration mode.
