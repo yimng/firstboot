@@ -295,7 +295,7 @@ class Interface:
             # Wrap the sidebar title if it's too long.
             label.set_line_wrap(True)
             (w, h) = self.leftEventBox.get_size_request()
-            label.set_size_request((int)(w*0.8), -1)
+            label.set_size_request((int)(w*0.7), -1)
 
             # Make sure the arrow is at the top of any wrapped line.
             alignment = gtk.Alignment(yalign=0.2)

@@ -47,7 +47,7 @@ class moduleClass(Module):
         if testing:
             return RESULT_SUCCESS
 
-	if self.scd.apply() == 0:
+	if self.scd.firstboot_apply() == 0:
 	    return RESULT_SUCCESS
         else:
 	    return RESULT_FAILURE
@@ -62,8 +62,7 @@ class moduleClass(Module):
 	self.vbox.pack_start(label, False, True, padding=20)
 
 	self.scd = scdMainWindow(firstboot=True)
-	self.scd.firstboot_widget()
-	self.vbox.pack_start(self.scd.nb, False, False)
+        self.vbox.pack_start(self.scd.firstboot_widget(), False, False)
 
     def initializeUI(self):
         pass
