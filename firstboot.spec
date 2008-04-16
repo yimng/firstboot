@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.96
+Version: 1.97
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -74,6 +74,11 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Wed Apr 16 2008 Chris Lumens <clumens@redhat.com> 1.97-1
+- Don't allow creating a user with no password (#442613).
+- In low resolution cases, wrap the sidebar text earlier (#442394).
+- Update translation files for EULA URL change (stickster@gmail.com).
+
 * Thu Apr 10 2008 Chris Lumens <clumens@redhat.com> 1.96-1
 - Don't package additional_cds module for now (#441749).
 - Add the date and time module (#441504).
