@@ -83,6 +83,9 @@ class moduleClass(Module):
         password = self.passwordEntry.get_text()
         confirm = self.confirmEntry.get_text()
 
+        if not password or not confirm:
+            return RESULT_FAILURE
+
         if password != confirm:
             self._showErrorMessage(_("The passwords do not match.  Please enter "
                                      "the password again."))
