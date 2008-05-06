@@ -43,6 +43,7 @@ from firstboot.loader import *
 import logging
 from optparse import OptionParser
 import rhpl.Conf
+from rhpl.keyboard import Keyboard
 
 from rhpl.translate import _
 import rhpl.translate as translate
@@ -166,6 +167,11 @@ if __name__ == "__main__":
     if frontend is not None:
         logging.debug("Starting frontend")
         frontend.start()
+
+    # Set up the keyboard just in case we're running as a real program.
+    kbd = Keyboard()
+    kbd.read()
+    kbd.activate()
 
     moduleList = loadModules(config.moduleDir, mode)
     if not moduleList:
