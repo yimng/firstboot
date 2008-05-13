@@ -20,6 +20,7 @@
 import gtk
 import libuser
 import os, string, sys, time
+import os.path
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -32,6 +33,10 @@ translate.textdomain ("firstboot")
 
 sys.path.append("/usr/share/system-config-users")
 import userGroupCheck
+
+def _chown(arg, dirname, names):
+    for n in names:
+        os.lchown("%s/%s" % (dirname, n), arg[0], arg[1])
 
 class moduleClass(Module):
     def __init__(self):
@@ -131,8 +136,10 @@ class moduleClass(Module):
                 self.usernameEntry.set_text("")
                 self.usernameEntry.grab_focus()
                 return RESULT_FAILURE
+
+            mkhomedir = False
         except:
-            pass
+            mkhomedir = True
 
         # If we get to this point, all the input seems to be valid.
         # Let's add the user.
@@ -143,14 +150,19 @@ class moduleClass(Module):
             userEnt = user
 
         userEnt.set(libuser.GECOS, [fullName])
+        uidNumber = userEnt.get(libuser.UIDNUMBER)[0]
 
         groupEnt = self.admin.initGroup(username)
         gidNumber = groupEnt.get(libuser.GIDNUMBER)[0]
         userEnt.set(libuser.GIDNUMBER, [gidNumber])
 
         if user == None:
-            self.admin.addUser(userEnt)
+            self.admin.addUser(userEnt, mkhomedir=mkhomedir)
             self.admin.addGroup(groupEnt)
+
+            if not mkhomedir:
+                os.chown("/home/%s" % username, uidNumber, gidNumber)
+                os.path.walk("/home/%s" % username, _chown, (uidNumber, gidNumber))
         else:
             self.admin.modifyUser(userEnt)
             self.admin.modifyGroup(groupEnt)
