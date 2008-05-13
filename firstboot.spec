@@ -20,10 +20,6 @@ Requires: metacity, pygtk2, rhpl, python
 Requires: setuptool, libuser-python, system-config-users, system-config-date
 Requires(post): chkconfig
 
-%ifnarch s390 s390x ppc64
-Requires: rhpxl >= 0.19
-%endif
-
 %define debug_package %{nil}
 
 Obsoletes: firstboot-tui

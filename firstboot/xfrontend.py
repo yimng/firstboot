@@ -1,7 +1,7 @@
 #
 # Chris Lumens <clumens@redhat.com>
 #
-# Copyright 2007 Red Hat, Inc.
+# Copyright 2007, 2008 Red Hat, Inc.
 #
 # This copyrighted material is made available to anyone wishing to use, modify,
 # copy, or redistribute it subject to the terms and conditions of the GNU
@@ -18,8 +18,14 @@
 # with the express permission of Red Hat, Inc. 
 #
 import logging
-import os
-import rhpl.keyboard as keyboard
+import os, subprocess, sys, time
+
+##
+## I18N
+##
+from rhpl.translate import _
+import rhpl.translate as translate
+translate.textdomain ("firstboot")
 
 class XFrontEnd:
     def __init__(self):
@@ -53,26 +59,42 @@ class XFrontEnd:
     # Initializes the UI for firstboot by starting up an X server and
     # window manager, but returns control to the caller to proceed.
     def start(self):
-        import rhpxl.xserver
-        import rhpxl.xhwstate as xhwstate
-        import rhpxl.monitor
-
-        xserver = rhpxl.xserver.XServer()
-        xserver.probeHW(skipMouseProbe=0)
-        xserver.setHWState()
-        xserver.keyboard = keyboard.Keyboard()
-        xserver.resolution = "800x600"
-
-        xhwstate.get_valid_resolution(xserver)
+        os.environ["DISPLAY"] = ":9"
 
         try:
-            xserver.generateConfig()
-            xserver.addExtraScreen("Firstboot")
-            xserver.serverflags.extend(["-screen", "Firstboot"])
-            self._xserver_pid = xserver.startX()
-        except RuntimeError:
+            logfile = "/tmp/firstbootX.log"
+            args = ["-logfile", logfile, ":9", "-ac", "-nolisten", "tcp",
+                    "vt6"]
+            noOutput = os.open("/dev/null", os.O_RDWR)
+
+            proc = subprocess.Popen(["/usr/bin/Xorg"] + args,
+                                    stdout=noOutput, stderr=noOutput)
+            sys.stdout.write(_("Waiting for X server to start... log located in %s\n") % logfile)
+            sys.stdout.flush()
+
+            for i in range(5):
+                time.sleep(1)
+                sys.stdout.write("%s..." % (i+1))
+                sys.stdout.flush()
+
+                # If the X process failed for some reason, raise an error now.
+                if proc.poll() is not None:
+                    raise OSError
+        except OSError:
             logging.error("X server failed to start")
             raise RuntimeError, "X server failed to start"
+        except:
+            import traceback
+            (ty, value, tb) = sys.exc_info()
+            lst = traceback.format_exception (ty, value, tb)
+            text = string.joinfields (lst, "")
+            print text
+
+            logging.error("X server failed to start")
+            raise RuntimeError, "X server failed to start"
+
+        logging.info("X server started successfully.")
+        self._xserver_pid = proc.pid
 
         # Init GTK to connect to the X server, then write a token on a pipe to
         # tell our parent process that we're ready to start metacity.
