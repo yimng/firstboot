@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.97
+Version: 1.98
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -70,6 +70,15 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Tue May 13 2008 Chris Lumens <clumens@redhat.com> 1.98-1
+- Remove the rhgb interface.
+- Use subprocess for starting X instead of rhpxl.
+- Don't run system-config-display from the init if there's no X config
+  file.
+- Fix tracebacks when trying to chown broken symlinks (#445092).
+- Set up the keyboard if firstboot is run as a program (#445281).
+- Lots of updated translations.
+
 * Wed Apr 16 2008 Chris Lumens <clumens@redhat.com> 1.97-1
 - Don't allow creating a user with no password (#442613).
 - In low resolution cases, wrap the sidebar text earlier (#442394).
