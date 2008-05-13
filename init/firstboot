@@ -58,7 +58,7 @@ case "$1" in
         RETVAL=$?
 
         # If firstboot succeeded, chkconfig it off so we don't see the message
-        # in rhgb every time about starting up firstboot.
+        # every time about starting up firstboot.
         if [ "$RETVAL" -eq 0 ]; then
             action "" /bin/true
             /sbin/chkconfig firstboot off
