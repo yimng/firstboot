@@ -49,18 +49,9 @@ case "$1" in
             args="--reconfig"
         fi
 
-        # If X isn't running but the default runlevel is 5, start s-c-display
-        # to configure X.  After that, firstboot can run.
         runlevel=$(set -- $(runlevel); eval "echo \$$#")
-
         if grep -q "^id:5:initdefault:" /etc/inittab && [ "$runlevel" = "5" ]; then
             . /etc/sysconfig/i18n
-
-            if [ ! -f /etc/X11/xorg.conf ] && [ ! -f /etc/X11/XF86Config ]; then
-                echo -n $"X is not configured.  Running system-config-display."
-                /usr/bin/system-config-display
-                echo -n $"X is now configured.  Starting firstboot."
-            fi
         fi
 
         /usr/sbin/firstboot $args
