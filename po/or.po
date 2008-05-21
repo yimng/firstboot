@@ -1,22 +1,23 @@
-# translation of or.po to Oriya
+# translation of firstboot.master.or.po to Oriya
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Subhransu Behera <sbehera@redhat.com>, 2006, 2007.
 # Subhransu Behera <arya_subhransu@yahoo.co.in>, 2007.
+# Manoj Kumar Giri <giri.manojkr@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: or\n"
+"Project-Id-Version: firstboot.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-04-10 11:21-0400\n"
-"Last-Translator: Subhransu Behera <arya_subhransu@yahoo.co.in>\n"
-"Language-Team: Oriya <oriya-group@lists.sarovar.org>\n"
+"PO-Revision-Date: 2008-05-21 16:03+0530\n"
+"Last-Translator: Manoj Kumar Giri <giri.manojkr@gmail.com>\n"
+"Language-Team: Oriya\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
 "\n"
@@ -26,70 +27,64 @@ msgstr ""
 
 #: ../progs/firstboot:131
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "firstboot ଚଲାଇବା ପାଇଁ ଆପଣଙ୍କୁ ମୁଖ୍ୟ ଚାଳକ ହୋଇଥିବା ଆବଶ୍ୟକ।"
 
 #: ../progs/firstboot:160 ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "କୌଣସି firstboot ସାମ୍ନାପାଖ ଆରମ୍ଭ କରି ପାରିଲେ ନାହିଁ।"
 
 #: ../progs/firstboot:172 ../progs/firstboot:173
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "କୌଣସି firstboot ଏକକାଂଶ ମିଳିଲା ନାହିଁ।"
 
 #: ../progs/firstboot:182 ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "କୌଣସି firstboot ଅନ୍ତରାପୃଷ୍ଠ ସୃଷ୍ଟିକରି ପାରିଲେ ନାହିଁ।"
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr "%s ଏକକାଂଶରେ ଗୋଟିଏ ତୃଟି ପରିଲିକ୍ଷିତ ହେଲା।"
+msgstr "%s ଏକକାଂଶରେ ଗୋଟିଏ ତୃଟି ପରିଲକ୍ଷିତ ହେଲା।"
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"ଯେହେତୁ %s ଏକକାଂଶରେ ଗୋଟିଏ ତୃଟି ଅଛି, \n"
-"Red Hat ର ବ୍ଯବସ୍ଥାପନ ପ୍ରତିନିଧୀ ଏହି ଏକକାଂଶକୁ ଧାରଣ କରିବ ନାହିଁ ଏବଂ \n"
+"ଯେହେତୁ %s ଏକକାଂଶରେ ଗୋଟିଏ ସମସ୍ୟା ଅଛି, \n"
+"firstboot ଏହି ଏକକାଂଶକୁ ଧାରଣ କରିବ ନାହିଁ ଏବଂ \n"
 "ବଳକା ଏକକାଂଶ ଗୁଡିକୁ ଚଳାଇବା ପାଇଁ ପ୍ରଚେଷ୍ଟା କରିବ।"
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "%s ଏକକାଂଶରେ ଗୋଟିଏ ତୃଟି ପରିଲିକ୍ଷିତ ହେଲା।"
+msgstr "firstboot ରେ ଗୋଟିଏ ତୃଟି ପରିଲକ୍ଷିତ ହେଲା।"
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "ସେଠାରେ ଗୋଟିଏ ସମସ୍ୟା ଥିବା ହେତୁ, firstboot ପ୍ରସ୍ଥାନ କରିବ।"
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"'firstboot' ବିରୋଧରେ ଗୋଟିଏ ତୃଟିକୁ Red Hat ତୃଟି ଅନୁସରଣ ପ୍ରଣାଳୀ \n"
-"ନିକଟରେ http://www.redhat.com/bugzilla ଜଣାନ୍ତୁ।\n"
 "ତୃଟିମୁକ୍ତ ନିର୍ଗମର ଗୋଟିଏ ନକଲ %s ରେ ସଂରକ୍ଷିତ କରାଯାଇଛି \n"
 "ତୃଟି ବିବରଣୀରେ ସେହି ଫାଇଲକୁ ସଂଲଗ୍ନ କରିବାକୁ ନିଶ୍ଚିତ ହୁଅନ୍ତୁ।\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "'firstboot' ବିରୋଧରେ ଗୋଟିଏ ତୃଟିକୁ Red Hat ତୃଟି ଅନୁସରଣ ପ୍ରଣାଳୀ \n"
 "ନିକଟରେ http://www.redhat.com/bugzilla ଜଣାନ୍ତୁ।\n"
-"ତୃଟିମୁକ୍ତ ନିର୍ଗମର ଗୋଟିଏ ନକଲ %s ରେ ସଂରକ୍ଷିତ କରାଯାଇଛି \n"
-"ତୃଟି ବିବରଣୀରେ ସେହି ଫାଇଲକୁ ସଂଲଗ୍ନ କରିବାକୁ ନିଶ୍ଚିତ ହୁଅନ୍ତୁ।\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "ପଛକୁ ଯିବା ପାଇଁ ପ୍ରଚେଷ୍ଟା କରାଯାଇଛି, କିନ୍ତୁ ଇତିହାସଟି ଖାଲି ଅଛି।"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -99,8 +94,7 @@ msgstr "ସମାପ୍ତ (_F)"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"ଆପଣଙ୍କ ଚୟନ ମଦ୍ଧ୍ଯରୁ କିଛି ଅଂଶକୁ ପ୍ରଭାବିତ କରିବା ପାଇଁ ତନ୍ତ୍ରଟି ବର୍ତ୍ତମାନ ପୁନର୍ଚାଳିତ ହେବା ଆବଶ୍ଯକ।"
+msgstr "ଆପଣଙ୍କ ଚୟନ ମଦ୍ଧ୍ଯରୁ କିଛି ଅଂଶକୁ ପ୍ରଭାବିତ କରିବା ପାଇଁ ତନ୍ତ୍ରଟି ବର୍ତ୍ତମାନ ପୁନର୍ଚାଳିତ ହେବା ଆବଶ୍ଯକ।"
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -115,45 +109,45 @@ msgstr "ଆଗକୁ (_F)"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "%s ଏକକାଂଶ ତାର UI କୁ ବିନ୍ୟାସ କରିନାହିଁ, କାଢିନେଉଛି।"
 
 #: ../firstboot/interface.py:352 ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "ପୃଷ୍ଠାକୁ ଯାଆନ୍ତୁକୁ ନିଶ୍ଚିତ ଭାବେ ଗୋଟିଏ ଏକକାଂଶ ଶୀର୍ଷକ କିମ୍ୱା ପୃଷ୍ଠା ସଂଖ୍ୟା ଦିଆଯାଇଥିବ।"
 
 #: ../firstboot/interface.py:437
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "ପରଦା ପ୍ରତିଛବି ଡିରେକ୍ଟରି ନିର୍ମାଣ କରିବାରେ ଅସମର୍ଥ; ଏଡାଇଯାଉଛି।"
 
 #: ../firstboot/interface.py:477 ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "%s ଶୀର୍ଷକ ସହିତ କୌଣସି ଏକକାଂଶ ଅବସ୍ଥିତ ନାହିଁ।"
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "ପୁରୁଣା %s ଏକକାଂଶକୁ ଏଡାଇ ଦିଆଯାଉଛି ଯେଉଁଟାକି ଅଦ୍ୟତିତ ହୋଇନାହିଁ।"
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "%s ଏକକାଂଶ ରେ ଏକକାଂଶ ଶ୍ରେଣୀ ନାମକ କୌଣସି ଶ୍ରେଣୀ ନାହିଁ; ଏଡାଇ ଯାଉଛି।"
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "%s ଏକକାଂଶ ଆବଶ୍ୟକୀୟ ଗୁଣ %s ଧାରଣ କରିନାହିଁ; ଏଡାଇ ଯାଉଛି।"
 
 #: ../firstboot/module.py:178
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "%s ଏକକାଂଶ ପାଇଁ ପିକ୍ସ ମାନଚିତ୍ର %s କୁ ଧାରଣ କରିବାରେ ଅସମର୍ଥ।"
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "%s ଏକକାଂଶ ତାର UI କୁ ବିନ୍ୟାସ କରିନାହିଁ, କାଢିନେଉଛି।"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -201,87 +195,86 @@ msgstr ""
 "ବଢିବା ପାଇଁ \"ଠିକ ଅଛି\" ବଟନକୁ ଦବାନ୍ତୁ।"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ଅଟୋରନ ପ୍ରୋଗ୍ରାମ ଟି ସି.ଡି. ରେ ମିଳିପାରିବ ନାହିଁ। ଆଗକୁ ବଢିବା ପାଇଁ \"ଠିକ ଅଛି\" ବଟନକୁ ଦବାନ୍ତୁ।"
 
 #: ../modules/create_user.py:40 ../modules/create_user.py:41
 msgid "Create User"
-msgstr ""
+msgstr "ଚାଳକ ନିର୍ମାଣ କରନ୍ତୁ"
 
 #: ../modules/create_user.py:60
 msgid ""
 "It is highly recommended that a personal user account be created.  If you "
 "continue without an account, you can only log in with the root account, "
 "which is reserved for administrative use only."
-msgstr ""
+msgstr "ଏହା ଅତିମାତ୍ରାରେ ପରାମର୍ଶିତ ଯେ ଗୋଟିଏ ବ୍ୟକ୍ତିଗତ ଚାଳକ ଖାତା ନିର୍ମାଣ କରି ନିଅନ୍ତୁ।  ଯଦି ଆପଣ ବିନା ଖାତାରେ ଆଗଉଥାନ୍ତି, ଆପଣ କେବଳ ମୂଳ ଖାତାରେ ଲଗଇନ କରିପାରିବେ, ଯେଉଁଟାକି କେବଳ ପ୍ରଶାସନିକ ବ୍ୟବହାର ପାଇଁ ସଂରକ୍ଷିତ କରାଯାଇଥାଏ।"
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
-msgstr ""
+msgstr "ଚାଲୁ ରଖନ୍ତୁ (_C)"
 
 #: ../modules/create_user.py:68
 msgid "Create _account"
-msgstr ""
+msgstr "ଖାତା ଖୋଲନ୍ତୁ (_a)"
 
 #: ../modules/create_user.py:87
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "ପ୍ରବେଶ ସଂକେତଟି ମେଳଖାଉ ନାହିଁ।  ଦୟାକରି ଆଉଥରେ ପ୍ରବେଶ ସଂକେତ ଭରଣ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:99
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "'%s' ଚାଳକ ନାମଟି ଗୋଟିଏ ସଂରକ୍ଷିତ ତନ୍ତ୍ର ନାମ।  ଦୟାକରି ଅନ୍ୟ ଏକ ଚାଳକ ନାମ ଉଲ୍ଲେଖ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:118
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr ""
+msgstr "ଚାଳକ %s ପାଇଁ ଗୋଟିଏ ମୂଳସ୍ଥାନ ପଞ୍ଜିକା ପୂର୍ବରୁ ଅବସ୍ଥିତ ଅଛି। ଆପଣ ଏହି ମୂଳସ୍ଥାନ ପଞ୍ଜିକାକୁ ପୁଣିଥରେ ବ୍ୟବହାର କରିବାକୁ ପସନ୍ଦ କରିବେ କି?  ଯଦି ନୁହଁ, ତେବେ ଅନ୍ୟ ଏକ ଚାଳକନାମ ଚୟନ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:165
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr ""
+msgstr "ଏହା ପରାମର୍ଶିତ ଯେ ଆପଣ ଆପଣଙ୍କ ତନ୍ତ୍ରର ନିୟମିତ (ଅପ୍ରଶାସନିକ) ବ୍ୟବହାର ପାଇଁ ଗୋଟିଏ 'ଚାଳକନାମ' ନିର୍ମାଣ କରନ୍ତୁ। ଗୋଟିଏ ତନ୍ତ୍ର 'ଚାଳକନାମ' ନିର୍ମାଣ କରିବାକୁ ହେଲେ, ଦୟାକରି ନିମ୍ନରେ ଅନୁରୋଧିତ ସୂଚନା ପ୍ରଦାନ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
-msgstr ""
+msgstr "ଚାଳକନାମ (_U):"
 
 #: ../modules/create_user.py:190
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "ସମ୍ପୂର୍ଣ୍ଣ ନାମ (_e):"
 
 #: ../modules/create_user.py:197
 msgid "_Password:"
-msgstr ""
+msgstr "ପ୍ରବେଶ ସଂକେତ (_P):"
 
 #: ../modules/create_user.py:204
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "ପ୍ରବେଶ ସଂକେତ ନିଶ୍ଚିତ କରନ୍ତୁ (_m):"
 
 #: ../modules/create_user.py:213
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
+msgstr "ଯଦି ଆପଣଙ୍କର ନେଟୱର୍କ ବୈଧିକରଣ ବ୍ୟବହାର କରିବା ଆବଶ୍ୟକ ହେଉଥାଏ, ଯେପରିକି Kerberos ଏବଂ NIS, ଦୟାକରି ନେଟୱର୍କ ଲଗଇନ ବ୍ୟବହାର କରନ୍ତୁ ଚାବିକୁ ଦବାନ୍ତୁ।"
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "ନେଟୱର୍କ ଲଗଇନ ବ୍ୟବହାର କରନ୍ତୁ (_L) ..."
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
-msgstr ""
+msgstr "ତାରିଖ ଏବଂ ସମୟ"
 
 #: ../modules/date.py:58
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "ଏହି ତନ୍ତ୍ର ପାଇଁ ଦୟାକରି ତାରିଖ ଏବଂ ସମୟ ସେଟକରନ୍ତୁ।"
 
 # msgid "Sound card configuration"
 # msgstr "ସାଉଣ୍ଡ କାର୍ଡ ବିନ୍ଯାସ"
@@ -323,7 +316,6 @@ msgid "Welcome"
 msgstr "ସ୍ବାଗତମ"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -332,3 +324,4 @@ msgstr ""
 "ଆପଣଙ୍କ ତନ୍ତ୍ର ଟି ବ୍ଯବହୃତ ହେବା ପୂର୍ବରୁ ସେଠାରେ ଆଉ ଅଲ୍ପ କିଛି ପଦକ୍ଷେପ ବାକି ଅଛି। ବ୍ଯବସ୍ଥାପନ ପ୍ରତିନିଧୀ "
 "ଆପଣଙ୍କୁ କିଛି ମୌଳିକ ବିନ୍ଯାସ ପ୍ରକ୍ରିୟାରେ ସାହାଯ୍ଯ କରିବ। ଆଗକୁ ବଢିବା ପାଇଁ ଦୟାକରି ଦକ୍ଷିଣ ପାର୍ଶ୍ବର ତଳ "
 "କୋଣରେ ଥିବା \"ଆଗକୁ\" ବଟନକୁ ଦବାନ୍ତୁ।"
+
