@@ -104,7 +104,7 @@ class Module:
            testing   -- If True, this method must not make any permanent
                         changes to disk.
         """
-        raise TypeError, "apply() not implemented for Module."
+        raise NotImplementedError, "apply() not implemented for Module."
 
     def createScreen(self):
         """Create a new instance of gtk.VBox, the UI elements required for
@@ -114,7 +114,7 @@ class Module:
            a module after it is loaded.  This method must be provided by all
            subclasses.
         """
-        raise TypeError, "createScreen() not implemented for Module."
+        raise NotImplementedError, "createScreen() not implemented for Module."
 
     def focus(self):
         """Focus some initial UI element on the page.  This method is called
@@ -133,7 +133,7 @@ class Module:
            It should be designed to be called multiple times.  This method
            must be provided by all subclasses.
         """
-        raise TypeError, "initializeUI() not implemented for Module."
+        raise NotImplementedError, "initializeUI() not implemented for Module."
 
     def needsNetwork(self):
         """Does this module require the network to be active in order to run?
