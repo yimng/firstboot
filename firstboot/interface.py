@@ -340,6 +340,7 @@ class Interface:
 
         currentModule.initializeUI()
         self.rightBox.pack_start(currentModule.vbox)
+        currentModule.focus()
         self.win.show_all()
 
     def moveToPage(self, moduleTitle=None, pageNum=None):

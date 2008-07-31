@@ -242,6 +242,9 @@ class moduleClass(Module):
         authHBox.pack_start(align, True)
         self.vbox.pack_start(authHBox, False, False)
 
+    def focus(self):
+        self.usernameEntry.grab_focus()
+
     def initializeUI(self):
         pass
 

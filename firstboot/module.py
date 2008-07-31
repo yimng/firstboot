@@ -116,6 +116,15 @@ class Module:
         """
         raise TypeError, "createScreen() not implemented for Module."
 
+    def focus(self):
+        """Focus some initial UI element on the page.  This method is called
+           immediately after the UI is initialized and before it is displayed
+           on the screen.  If the module requires that some UI element besides
+           the Next button be focused by default, the module should override
+           this method.  Otherwise, nothing will be done.
+       """
+        pass
+
     def initializeUI(self):
         """Synchronize the state of the UI with whatever's present on disk
            or wherever else the module looks for its default values.  This
