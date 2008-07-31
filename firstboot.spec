@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.98
+Version: 1.99
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -70,6 +70,13 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Thu Jul 31 2008 Chris Lumens <clumens@redhat.com> 1.99-1
+- Enable the correct keyboard layout (#453228).
+- Remove the timezone tab from the default date & time module (#442394).
+- Raise NotImplementedError instead of TypeError.
+- Allow modules to focus a UI element before they are displayed (#457422).
+- Lots of updated translations.
+
 * Tue May 13 2008 Chris Lumens <clumens@redhat.com> 1.98-1
 - Remove the rhgb interface.
 - Use subprocess for starting X instead of rhpxl.
