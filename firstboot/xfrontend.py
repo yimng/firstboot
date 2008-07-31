@@ -104,6 +104,12 @@ class XFrontEnd:
             import gtk
             os.write(wr, "#")
 
+            # Set up the keyboard.
+            import rhpl.keyboard as keyboard
+            kbd = keyboard.Keyboard()
+            kbd.read()
+            kbd.activate()
+
             # Block until the X server is killed.
             gtk.main()
             os._exit(0)
