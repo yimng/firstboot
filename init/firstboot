@@ -49,13 +49,14 @@ case "$1" in
             args="--reconfig"
         fi
 
-        runlevel=$(set -- $(runlevel); eval "echo \$$#")
-        if grep -q "^id:5:initdefault:" /etc/inittab && [ "$runlevel" = "5" ]; then
-            . /etc/sysconfig/i18n
-        fi
+        . /etc/sysconfig/i18n
+
+        /usr/bin/plymouth --hide-splash
 
         /usr/sbin/firstboot $args
         RETVAL=$?
+
+        /usr/bin/plymouth --show-splash
 
         # If firstboot succeeded, chkconfig it off so we don't see the message
         # every time about starting up firstboot.
