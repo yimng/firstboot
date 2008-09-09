@@ -61,24 +61,12 @@ class moduleClass(Module):
             return RESULT_SUCCESS
 
         if username == "":
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_NONE,
-                                    _("It is highly recommended that a personal user account be "
-                                      "created.  If you continue without an account, you "
-                                      "can only log in with the root account, which is reserved "
-                                      "for administrative use only."))
-            dlg.set_position(gtk.WIN_POS_CENTER)
-            dlg.set_modal(True)
-
-            dlg.add_button(_("_Continue"), 0)
-            b = dlg.add_button(_("Create _account"), 1)
-            b.grab_focus()
-
-            rc = dlg.run()
-            dlg.destroy()
-
-            if rc == 0:
+            # Only allow not creating a user if there is at least
+            # one non-system account already on the system
+            if self.admin.getFirstUnusedUid() > 500:
                 return RESULT_SUCCESS
             else:
+                self._showErrorMessage(_("You must create a user account for this system."))
                 self.usernameEntry.grab_focus()
                 return RESULT_FAILURE
 
