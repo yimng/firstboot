@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.99
+Version: 1.100
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -70,6 +70,10 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Fri Sep 12 2008 Chris Lumens <clumens@redhat.com> 1.100-1
+- Force creating a user unless the network button was checked (jmccann, #461656).
+- Don't sit at the bootup splash screen indefinitely (#458553).
+
 * Thu Jul 31 2008 Chris Lumens <clumens@redhat.com> 1.99-1
 - Enable the correct keyboard layout (#453228).
 - Remove the timezone tab from the default date & time module (#442394).
