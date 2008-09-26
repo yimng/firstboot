@@ -7,277 +7,292 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2004-03-08 16:31-0500\n"
-"Last-Translator: Automatically generated\n"
+"POT-Creation-Date: 2006-12-01 12:07-0500\n"
+"PO-Revision-Date: 2008-09-26 10:03+0200\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../progs/firstboot:131
-msgid "You must be root to run firstboot."
-msgstr ""
+#: ../src/constants_text.py:36
+msgid "Exit"
+msgstr "Dil"
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
-msgid "Could not start any firstboot frontend."
-msgstr ""
+#: ../src/eula_strings.py:27
+msgid "License Agreement"
+msgstr "Marrëveshje License"
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
-msgid "No firstboot modules were found."
-msgstr ""
+#: ../src/eula_strings.py:28
+msgid "_Yes, I agree to the License Agreement"
+msgstr "_Po, pajtohem me Marrëveshjen e Licensës"
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
-msgid "Could not create any firstboot interface."
-msgstr ""
+#: ../src/eula_strings.py:29
+msgid "N_o, I do not agree"
+msgstr "J_o, nuk pajtohem"
 
-#: ../firstboot/exceptionWindow.py:50
+#: ../src/eula_strings.py:30
+msgid "Do you want to reread or reconsider the License Agreement?"
+msgstr "Doni ta rilexoni apo ta rishqyrtoni Marrëveshjen e Licensës?"
+
+#: ../src/eula_strings.py:31
+msgid "Do you want to reread or reconsider the Licence Agreement?  If not, please shut down the computer and remove this product from your system. "
+msgstr "Doni ta rilexoni apo ta rishqyrtoni Marrëveshjen e Licensës? Po qe se jo, ju lutem fikeni kompjuterin dhe hiqeni këtë produkt nga sistemi juaj. "
+
+#: ../src/eula_strings.py:32
+msgid "_Reread license"
+msgstr "_Rilexoni licensën"
+
+#: ../src/eula_strings.py:33
+msgid "_Shut down"
+msgstr "_Fike"
+
+#: ../src/exceptionWindow.py:47
 #, python-format
 msgid "An error has occurred in the %s module."
-msgstr ""
+msgstr "Ndodhi një gabim te moduli %s."
 
-#: ../firstboot/exceptionWindow.py:51
+#: ../src/exceptionWindow.py:52
 #, python-format
 msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
+"Since there is a problem with the %s module, \n"
+"Red Hat Setup Agent will not load this module and \n"
+"will attempt to run the remaining modules."
 msgstr ""
 
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr ""
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr ""
-
-#: ../firstboot/exceptionWindow.py:66
+#: ../src/exceptionWindow.py:56
 #, python-format
 msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
+"Please file a bug against 'firstboot' in the Red Hat \n"
+"bug tracking system at http://www.redhat.com/bugzilla. \n"
+"A copy of the debug output has been saved to %s \n"
+"Be sure to attach that file to the bug report. \n"
 msgstr ""
 
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-
-#: ../firstboot/interface.py:75
-msgid "Attempted to go back, but history is empty."
-msgstr ""
-
-#. If we were previously on the last page, we need to set the Next
-#. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
-msgid "_Finish"
-msgstr ""
-
-#: ../firstboot/interface.py:183
-msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-
-#: ../firstboot/interface.py:243
+#: ../src/firstbootWindow.py:107
 msgid "_Back"
-msgstr ""
+msgstr "_Mbrapsht"
 
-#: ../firstboot/interface.py:250
+#: ../src/firstbootWindow.py:116
 msgid "_Forward"
-msgstr ""
+msgstr "_Përpara"
 
-#: ../firstboot/interface.py:277
+#: ../src/firstbootWindow.py:241
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "Që të bëhen vepruese disa prej përzgjedhjeve tuaja, sistemi tani duhet të riniset."
+
+#: ../src/firstbootWindow.py:313
+msgid "_Finish"
+msgstr "_Përfundoje"
+
+#: ../src/firstbootWindow.py:413
 #, python-format
-msgid "Module %s did not set up its UI, removing."
+msgid "module import of %s failed: %s"
+msgstr "importimi i modulit %s dështoi: %s"
+
+#: ../src/firstbootWindow.py:580
+#: ../src/modules/welcome.py:18
+#: ../src/modules/welcome.py:27
+msgid "Welcome"
+msgstr "Mirësevini"
+
+#: ../src/textWindow.py:34
+msgid "Authentication"
+msgstr "Mirëfilltësim"
+
+#: ../src/textWindow.py:35
+msgid "Firewall configuration"
+msgstr "Formësim firewall-i"
+
+#: ../src/textWindow.py:36
+msgid "Keyboard configuration"
+msgstr "Formësim tastiere"
+
+#: ../src/textWindow.py:37
+msgid "Network configuration"
+msgstr "Formësim rrjeti "
+
+#: ../src/textWindow.py:38
+msgid "Printer configuration"
+msgstr "Formësim shtypësi"
+
+#: ../src/textWindow.py:39
+msgid "System services"
+msgstr "Shërbime sistemi"
+
+#: ../src/textWindow.py:40
+msgid "Timezone configuration"
+msgstr "Formësim zone kohore"
+
+#: ../src/textWindow.py:42
+msgid "Run Tool"
 msgstr ""
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
-msgid "moveToPage must be given a module title or page number."
-msgstr ""
+#: ../src/textWindow.py:44
+msgid "Select the item that you wish to modify "
+msgstr "Përzgjidhni objektin që dëshironi të ndryshohet"
 
-#: ../firstboot/interface.py:437
-msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+#: ../src/textWindow.py:52
+msgid "Setup Agent"
+msgstr "Rregullues"
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
-#, python-format
-msgid "No module exists with the title %s."
-msgstr ""
-
-#: ../firstboot/loader.py:90
-#, python-format
-msgid "Skipping old module %s that has not been updated."
-msgstr ""
-
-#: ../firstboot/loader.py:102
-#, python-format
-msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
-
-#: ../firstboot/loader.py:113
-#, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
-
-#: ../firstboot/module.py:178
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr ""
-
-#: ../firstboot/moduleset.py:93
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr ""
-
-#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:44
+#: ../src/modules/additional_cds.py:114
 msgid "Additional CDs"
+msgstr "CDra shtesë"
+
+#: ../src/modules/additional_cds.py:65
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
 msgstr ""
 
-#: ../modules/additional_cds.py:55
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-
-#: ../modules/additional_cds.py:61
+#: ../src/modules/additional_cds.py:71
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
 
-#: ../modules/additional_cds.py:65
+#. if 1:
+#: ../src/modules/additional_cds.py:77
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 
-#: ../modules/additional_cds.py:73
+#: ../src/modules/additional_cds.py:118
 msgid "Install..."
+msgstr "Instalo..."
+
+#: ../src/modules/additional_cds.py:164
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
 msgstr ""
 
-#: ../modules/additional_cds.py:110
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
+#: ../src/modules/additional_cds.py:198
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 
-#: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../src/modules/create_user.py:39
 msgid "Create User"
+msgstr "Krijo Përdorues"
+
+#: ../src/modules/create_user.py:66
+msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
 msgstr ""
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr ""
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr ""
-
-#: ../modules/create_user.py:87
-msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-
-#: ../modules/create_user.py:99
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-
-#: ../modules/create_user.py:118
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
-msgstr ""
-
-#: ../modules/create_user.py:165
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
-
-#: ../modules/create_user.py:183
+#: ../src/modules/create_user.py:76
 msgid "_Username:"
-msgstr ""
+msgstr "_Emër përdoruesi:"
 
-#: ../modules/create_user.py:190
+#: ../src/modules/create_user.py:83
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Emër i _Plotë:"
 
-#: ../modules/create_user.py:197
+#: ../src/modules/create_user.py:90
 msgid "_Password:"
-msgstr ""
+msgstr "_Fjalëkalim:"
 
-#: ../modules/create_user.py:204
+#: ../src/modules/create_user.py:97
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Ri_pohoni Fjalëkalimin:"
 
-#: ../modules/create_user.py:213
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
+#: ../src/modules/create_user.py:113
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "Nëse keni nevojë për mirëfilltësim në rrjet, të tillë si Kerberos ose NIS, ju lutem klikoni te butoni Përdor Hyrje në Rrjet."
 
-#: ../modules/create_user.py:222
+#: ../src/modules/create_user.py:123
 msgid "Use Network _Login..."
+msgstr "Përdor _Hyrje në Rrjet:"
+
+#: ../src/modules/create_user.py:151
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
 msgstr ""
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../src/modules/create_user.py:159
+msgid "_Continue"
+msgstr "_Vazhdo"
+
+#: ../src/modules/create_user.py:160
+msgid "Create _account"
+msgstr "Krijo _llogari"
+
+#: ../src/modules/create_user.py:183
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Fjalëkalimet nuk përputhen. Ju lutem jepeni fjalëkalimin sërish."
+
+#: ../src/modules/create_user.py:191
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Fjalëkalimi është shumë i shkurtër.  Ju lutem përdorni të paktën 6 shenja."
+
+#: ../src/modules/create_user.py:202
+#, python-format
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr ""
+
+#: ../src/modules/create_user.py:220
+#, python-format
+msgid "A home directory for the username '%s' already exists.  Please specify another username."
+msgstr ""
+
+#: ../src/modules/date.py:46
 msgid "Date and Time"
-msgstr ""
+msgstr "Data dhe Koha"
 
-#: ../modules/date.py:58
+#: ../src/modules/date.py:48
 msgid "Please set the date and time for the system."
+msgstr "Ju lutem caktoni datën dhe kohën për sistemin."
+
+#: ../src/modules/display.py:43
+msgid "Display"
+msgstr "Shfaq"
+
+#: ../src/modules/display.py:45
+msgid "Please select the resolution and color depth that you wish to use"
 msgstr ""
 
-#: ../modules/eula.py:35 ../modules/eula.py:36
-msgid "License Information"
+#: ../src/modules/networking.py:43
+msgid "Network Setup"
+msgstr "Rregullim Rrjeti"
+
+#: ../src/modules/networking.py:69
+msgid "The following network devices have been detected on the system:"
+msgstr "Në kompjuterin tuaj u gjetën pajisjet vijuese për rrjet: "
+
+#: ../src/modules/networking.py:88
+msgid "Network Device"
+msgstr "Pajisje Rrjeti"
+
+#: ../src/modules/networking.py:90
+msgid "Boot protocol"
+msgstr "Protokoll nisjeje"
+
+#: ../src/modules/networking.py:96
+msgid "_Change Network Configuration..."
+msgstr "_Ndryshoni Formësim Rrjeti..."
+
+#: ../src/modules/networking.py:152
+msgid "static"
+msgstr "statike"
+
+#: ../src/modules/soundcard_gui.py:43
+#: ../src/modules/soundcard_gui.py:44
+msgid "Sound Card"
+msgstr "Kartë Zëri"
+
+#: ../src/modules/soundcard_gui.py:45
+msgid "An audio device has been detected in your computer."
+msgstr "U gjet një pajisje zëri në kompjuterin tuaj."
+
+#: ../src/modules/soundcard_gui.py:68
+msgid "Click the \"Play\" button to hear a sample sound.  You should hear a series of three sounds.  The first sound will be in the right channel, the second sound will be in the left channel, and the third sound will be in the center."
 msgstr ""
 
-#: ../modules/eula.py:53
-msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
-"\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
-msgstr ""
+#: ../src/modules/timezone.py:46
+msgid "Timezone"
+msgstr "Zonë kohore"
 
-#: ../modules/eula.py:64
-msgid "Understood, please proceed."
-msgstr ""
+#: ../src/modules/timezone.py:49
+msgid "Please set the timezone for the system."
+msgstr "Ju lutem rregulloni zonën kohore për sistemin. "
 
-#: ../modules/welcome.py:35 ../modules/welcome.py:36
-msgid "Welcome"
-msgstr ""
+#: ../src/modules/welcome.py:34
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue."
+msgstr "Ka akoma pak hapa për të bërë përpara se sistemi juaj të jetë gati për përdorim. Rregulluesi do t'ju udhëheqë nëpër ca formësim bazë. Për të vazhduar, ju lutem klikoni te butoni \"Përpara\" te cepi i poshtëm djathtas."
 
-#: ../modules/welcome.py:45
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
