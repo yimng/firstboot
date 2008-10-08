@@ -1,5 +1,5 @@
 # firstboot Bahasa Indonesia (id)
-# Teguh DC <dheche@brawijaya.ac.id>, 2004-2008.
+# Teguh DC <dheche@songolimo.net>, 2004-2008.
 # $Id$
 #
 #
@@ -8,10 +8,9 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-04-10 11:22-0400\n"
-"Last-Translator: Teguh DC <dheche@brawijaya.ac.id>\n"
-"Language-Team: Fedora Indonesia Translation Team <fedora-trans-id@redhat."
-"com>\n"
+"PO-Revision-Date: 2008-10-09 02:08+0700\n"
+"Last-Translator: Teguh DC <dheche@songolimo.net>\n"
+"Language-Team: Fedora Indonesia Translation Team <fedora-trans-id@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,15 +19,18 @@ msgstr ""
 msgid "You must be root to run firstboot."
 msgstr "Anda harus sebagai root untuk menjalankan firstboot."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:160
+#: ../progs/firstboot:161
 msgid "Could not start any firstboot frontend."
 msgstr "Tidak dapat menjalankan frontend firstboot apa pun."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:172
+#: ../progs/firstboot:173
 msgid "No firstboot modules were found."
 msgstr "Tidak ada modul firstboot yang ditemukan."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:182
+#: ../progs/firstboot:183
 msgid "Could not create any firstboot interface."
 msgstr "Tidak dapat membuat antarmuka firstboot apa pun."
 
@@ -79,7 +81,8 @@ msgstr "Mencoba untuk kembali, akan tetapi history kosong."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:83
+#: ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "_Selesai"
 
@@ -100,7 +103,8 @@ msgstr "_Lanjutkan"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Modul %s tidak menset UI-nya, dihapus."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:352
+#: ../firstboot/interface.py:353
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage harus diberi judul modul atau nomor halaman."
 
@@ -108,7 +112,8 @@ msgstr "moveToPage harus diberi judul modul atau nomor halaman."
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Tidak dapat membuat dir screenshot; lewati."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:477
+#: ../firstboot/interface.py:478
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Tidak ada modul yang tersedia dengan judul %s."
@@ -138,21 +143,14 @@ msgstr "Tidak dapat memuat pixmap %s untuk modul %s."
 msgid "Module %s did not set up its UI; removing."
 msgstr "Modul %s tidak menset UI-nya; dihapus."
 
-#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43
+#: ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "CD Tambahan"
 
 #: ../modules/additional_cds.py:55
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-"Silakan masukan disk dengan label \"Red Hat Enterprise Linux Extras\"  untuk "
-"melakukan instalasi dari plugins dan aplikasi pihak-ketiga. Anda juga "
-"diperkenankan untuk memasukan disk Dokumentasi atau disk lain yang "
-"disediakan Red Hat untuk menginstall perangkat lunak tambahan."
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "Silakan masukan disk dengan label \"Red Hat Enterprise Linux Extras\"  untuk melakukan instalasi dari plugins dan aplikasi pihak-ketiga. Anda juga diperkenankan untuk memasukan disk Dokumentasi atau disk lain yang disediakan Red Hat untuk menginstall perangkat lunak tambahan."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -163,47 +161,32 @@ msgstr "Masukkan CD instalasi perangkat lunak tambahan saat ini."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Untuk mengaktifkan dukungan runtime dari aplikasi 32-bit pada arsitektur "
-"Intel Itanium2, anda harus menginstal paket Intel Excution Layer dari disk "
-"extra sekarang."
+"Untuk mengaktifkan dukungan runtime dari aplikasi 32-bit pada arsitektur Intel Itanium2, anda harus menginstal paket Intel Excution Layer dari disk extra sekarang."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
 msgstr "Instal..."
 
 #: ../modules/additional_cds.py:110
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
-"Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan \"OK"
-"\" untuk melanjutkan."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan \"OK\" untuk melanjutkan."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"program autorun tidak dapat ditemukan pada CD. Klik \"OK\" untuk melanjutkan."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "program autorun tidak dapat ditemukan pada CD. Klik \"OK\" untuk melanjutkan."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:40
+#: ../modules/create_user.py:41
 msgid "Create User"
 msgstr "Buat Pengguna"
 
 #: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"Sangat disarankan untuk membuat akun pengguna personal. Jika anda "
-"melanjutkan tanpa akun, maka anda hanya bisa masuk mempergunakan akun root, "
-"dimana akun ini direservasi untuk penggunaan administratif saja."
+msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+msgstr "Sangat disarankan untuk membuat akun pengguna personal. Jika anda melanjutkan tanpa akun, maka anda hanya bisa masuk mempergunakan akun root, dimana akun ini direservasi untuk penggunaan administratif saja."
 
 #: ../modules/create_user.py:67
 msgid "_Continue"
@@ -219,31 +202,17 @@ msgstr "Kata sandi tidak cocok. Masukkan kata sandi lagi."
 
 #: ../modules/create_user.py:99
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Nama pengguna '%s' merupakan akun sistem yang telah direservasi. Silakan "
-"pilih nama pengguna yang lain."
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "Nama pengguna '%s' merupakan akun sistem yang telah direservasi. Silakan pilih nama pengguna yang lain."
 
 #: ../modules/create_user.py:118
 #, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
-msgstr ""
-"Direktori home untuk pengguna %s sudah ada. Apakah anda ingin mempergunakan "
-"direktori home ini? Jika tidak, silakan pilih nama pengguna yang lain."
+msgid "A home directory for user %s already exists. Would you like to reuse this home directory?  If not, please choose a different username."
+msgstr "Direktori home untuk pengguna %s sudah ada. Apakah anda ingin mempergunakan direktori home ini? Jika tidak, silakan pilih nama pengguna yang lain."
 
 #: ../modules/create_user.py:165
-msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr ""
-"Disarankan anda membuat 'Nama Pengguna' untuk pemakaian sehari-hari (non-"
-"administratif).Untuk membuat 'Nama Pengguna' sistem, sediakan informasi yang "
-"diminta di bawah ini."
+msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
+msgstr "Disarankan anda membuat 'Nama Pengguna' untuk pemakaian sehari-hari (non-administratif).Untuk membuat 'Nama Pengguna' sistem, sediakan informasi yang diminta di bawah ini."
 
 #: ../modules/create_user.py:183
 msgid "_Username:"
@@ -262,70 +231,47 @@ msgid "Confir_m Password:"
 msgstr "Konfir_masi Kata sandi:"
 
 #: ../modules/create_user.py:213
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Jika anda ingin mempergunakan otentikasi jaringan, seperti Kerberos atau "
-"NIS, silakan klik tombol Pergunakan Login Jaringan."
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "Jika anda ingin mempergunakan otentikasi jaringan, seperti Kerberos atau NIS, silakan klik tombol Pergunakan Login Jaringan."
 
 #: ../modules/create_user.py:222
 msgid "Use Network _Login..."
 msgstr "Pergunakan _Login Jaringan..."
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../modules/date.py:40
+#: ../modules/date.py:41
 msgid "Date and Time"
-msgstr ""
+msgstr "Tanggal dan Waktu"
 
 #: ../modules/date.py:58
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Silakan set tanggal dan waktu untuk sistem."
 
-#: ../modules/eula.py:35 ../modules/eula.py:36
+#: ../modules/eula.py:35
+#: ../modules/eula.py:36
 msgid "License Information"
 msgstr "Informasi Lisensi"
 
 #: ../modules/eula.py:53
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Terima kasih telah menginstal Fedora. Fedora adalah kompilasi dari paket-"
-"paket software, dan setiap software memiliki lisensi tersendiri. Kompilasi "
-"dibiat berdasarkan GNU General Public License versi 2. Tidak ada larangan "
-"dalam menggunakan, menyalin, atau memodifikasi codenya. Akan tetapi, ada "
-"beberapa larangan dan kewajiban yang harus di terapkan dalam "
-"mendistribusikan kodenya, baik seperti aslinya atau hasil modifikasi. Dalam "
-"beberapa hal larangan/tanggung jawab pertain terhadap lisensi dari "
-"distribusi, hak cipta, dan kontrol dalam ekspor.\n"
+"Terima kasih telah menginstal Fedora. Fedora adalah kompilasi dari paket-paket software, dan setiap software memiliki lisensi tersendiri. Kompilasi dibiat berdasarkan GNU General Public License versi 2. Tidak ada larangan dalam menggunakan, menyalin, atau memodifikasi codenya. Akan tetapi, ada beberapa larangan dan kewajiban yang harus di terapkan dalam mendistribusikan kodenya, baik seperti aslinya atau hasil modifikasi. Dalam beberapa hal larangan/tanggung jawab pertain terhadap lisensi dari distribusi, hak cipta, dan kontrol dalam ekspor.\n"
 "\n"
-"Jika anda ingin memahami apa saja laranganya, silakan kunjungi http://"
-"fedoraproject.org/wiki/Legal/Lecenses/LicenseAgreement."
+"Jika anda ingin memahami apa saja laranganya, silakan kunjungi http://fedoraproject.org/wiki/Legal/Lecenses/LicenseAgreement."
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
 msgstr "Mengerti, silakan lanjutkan."
 
-#: ../modules/welcome.py:35 ../modules/welcome.py:36
+#: ../modules/welcome.py:35
+#: ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "Selamat Datang"
 
 #: ../modules/welcome.py:45
-#, fuzzy
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
-"Ada beberapa langkah lagi yang perlu anda lakukan sebelum sistem siap "
-"dipergunakan. Setup Agent akan memandu anda melakukan beberapa konfigurasi "
-"dasar. Tekan tombol \"Lanjutkan\" pada pojok kanan bawah untuk melanjutkan."
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
+msgstr "Ada beberapa langkah lagi yang perlu anda lakukan sebelum sistem siap dipergunakan. Setup Agent akan memandu anda melakukan beberapa konfigurasi dasar. Tekan tombol \"Lanjutkan\" pada pojok kanan bawah untuk melanjutkan"
+
