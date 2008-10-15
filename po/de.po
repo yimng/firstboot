@@ -1,4 +1,6 @@
-# translation of firstboot.po to
+# German translation of firstboot
+# Copyright (C) 2008 Red hat, Inc.
+# This file is distributed under the same license as the firstboot package.
 #
 # Bernd Groh <bgroh@redhat.com>, 2002,2003.
 # Bernd Bartmann <Bernd.Bartmann@sohanet.de>, 2004.
@@ -16,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot-de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-04-11 12:00+0100\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-15 09:26+0100\n"
 "Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
 "Language-Team: German <fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -26,22 +28,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: German\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "Sie müssen root sein, um firstboot starten zu können."
 
-#: ../progs/firstboot:160
-#: ../progs/firstboot:161
+#: ../progs/firstboot:152
+#: ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "Kann kein firstboot-Frontend starten."
 
-#: ../progs/firstboot:172
-#: ../progs/firstboot:173
+#: ../progs/firstboot:169
+#: ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "Keine firstboot-Module gefunden."
 
-#: ../progs/firstboot:182
-#: ../progs/firstboot:183
+#: ../progs/firstboot:179
+#: ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "Kann keine firstboot-Schnittstelle erzeugen."
 
@@ -114,17 +116,17 @@ msgstr "_Vorwärts"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Modul %s konfigurierte sein UI nicht, entfernen."
 
-#: ../firstboot/interface.py:352
 #: ../firstboot/interface.py:353
+#: ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage muss ein Modul-Ttitel oderr Seitennummer übergeben werden."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Erstellen von Bildschirmfoto-Verzeichnis nicht möglich; überspringen."
 
-#: ../firstboot/interface.py:477
 #: ../firstboot/interface.py:478
+#: ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Es existiert kein Modul mit dem Titel %s."
@@ -144,7 +146,7 @@ msgstr "Modul %s enthält keine Klassen mit dem Namen moduleClass; überspringen
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Modul %s enthält die benötigten Attribute %s nicht; überspringen."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Laden der pixmap %s nicht möglich für Modul %s."
@@ -153,6 +155,11 @@ msgstr "Laden der pixmap %s nicht möglich für Modul %s."
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Modul %s konfigurierte sein UI nicht; entfernen."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "Warte auf den Start des X-Server... Log-Datei in  %s\n"
 
 #: ../modules/additional_cds.py:43
 #: ../modules/additional_cds.py:44
@@ -189,62 +196,54 @@ msgstr "Es wurde keine CD-ROM gefunden. Legen Sie eine CD-ROM in das Laufwerk ei
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Kann das Autorun-Programm nicht auf der CD finden. Klicken Sie \"OK\", um fortzufahren."
 
-#: ../modules/create_user.py:40
-#: ../modules/create_user.py:41
+#: ../modules/create_user.py:45
+#: ../modules/create_user.py:46
 msgid "Create User"
 msgstr "Erstelle Benutzer"
 
-#: ../modules/create_user.py:60
-msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
-msgstr "Es wird dringend empfohlen, ein persönliches Benutzer-Konto zu erstellen. Falls Sie ohne ein solches Konto fortfahren, können Sie sich nur mit dem root-Konto anmelden, welches für administrative Zwecke reserviert ist."
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "Sie müssen ein Benutzer-Konto für dieses System anlegen."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "_Weiter"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "Erstelle _Konto"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie das Passwort erneut ein."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid "The username '%s' is a reserved system account.  Please specify another username."
 msgstr "Der Benutzername '%s' ist ein reserviertes System-Konto. Bitte geben Sie einen anderen Benutzernamen an."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid "A home directory for user %s already exists. Would you like to reuse this home directory?  If not, please choose a different username."
 msgstr "Es existiert bereits ein Heimverzeichnis für den Benutzer %s. Möchten Sie dieses Heimverzeichnis wiederverwenden? Falls nicht, wählen Sie bitte einen anderen Benutzernamen."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid "It is recommended that you create a 'username' for regular (non-administrative) use of your system. To create a system 'username,' please provide the information requested below."
 msgstr "Es wird Ihnen empfohlen, einen 'Benutzernamen' für reguläre (nicht-administrative) Nutzung Ihres Systems anzulegen. Um einen 'Benutzernamen' anzulegen, stellen Sie bitte die unten abgefragten Informationen bereit."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "_Benutzername:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "Vollständiger _Name:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "_Passwort:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "Passwort b_estätigen:"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
 msgstr "Wenn Sie Netzwerkauthentifizierung, wie z.B. Kerberos oder NIS verwenden müssen, klicken Sie bitte auf die Netzwerk-Login nutzen-Schaltfläche."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "Netzwerk-_Login nutzen..."
 
@@ -284,4 +283,17 @@ msgstr "Willkommen"
 #: ../modules/welcome.py:45
 msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
 msgstr "Nur noch ein paar Schritte, und Sie können Ihr System verwenden. Der Setup-Assistent führt Sie jetzt durch einige Basiskonfigurationen. Klicken Sie auf \"Vor\" unten rechts, um fortzufahren."
+
+#~ msgid ""
+#~ "It is highly recommended that a personal user account be created.  If you "
+#~ "continue without an account, you can only log in with the root account, "
+#~ "which is reserved for administrative use only."
+#~ msgstr ""
+#~ "Es wird dringend empfohlen, ein persönliches Benutzer-Konto zu erstellen. "
+#~ "Falls Sie ohne ein solches Konto fortfahren, können Sie sich nur mit dem "
+#~ "root-Konto anmelden, welches für administrative Zwecke reserviert ist."
+#~ msgid "_Continue"
+#~ msgstr "_Weiter"
+#~ msgid "Create _account"
+#~ msgstr "Erstelle _Konto"
 
