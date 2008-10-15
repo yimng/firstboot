@@ -1,17 +1,16 @@
-# Swedish messages for firstboot.
-# Copyright © 2002, 2003, 2004, 2005, 2006 Christian Rose.
-# Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005, 2006
+# Swedish translation of firstboot.
+# Copyright © 2006, 2008 Free Software Foundation
 # Göran Uddeborg <goeran@uddeborg.se>, 2003, 2008.
-# Magnus Larsson <fedoratrans@gmail.com>, 2007.
+# Magnus Larsson <fedoratrans@gmail.com>, 2007, 2008.
+# Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005, 2006
 #
-# $Id: firstboot.po,v 1.4 2008-05-06 19:59:36+02 göran Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-05-06 19:59+0200\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-15 12:15-0400\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -19,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "Du måste vara root för att köra firstboot."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "Kunde inte starta någon framände till firstboot."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "Hittade inga moduler till firstboot."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "Kunde inte skapa något gränssnitt till firstboot."
 
@@ -104,15 +103,15 @@ msgstr "_Framåt"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Modul %s satte inte upp sitt användargränssnitt, tar bort."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage måste ges en modultitel eller ett sidnummer."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Kan inte skapa skärmbildskatalog, hoppar över."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Ingen modul existerar med titeln %s."
@@ -132,7 +131,7 @@ msgstr "Modul %s innehåller inte en klass med namnet moduleClass, hoppar över.
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Modul %s innehåller inte det nödvändiga attributet %s, hoppar över."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Kan inte läsa in bild %s för modul %s."
@@ -141,6 +140,11 @@ msgstr "Kan inte läsa in bild %s för modul %s."
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Modul %s satte inte upp sitt användargränssnitt, tar bort."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "Väntar på X-servern ska starta... logg finns på %s\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -197,33 +201,19 @@ msgstr ""
 "Autorun-programmet kan inte hittas på cd-skivan. Klicka på \"OK\" för att "
 "fortsätta."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "Skapa användare"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"Det rekommenderas varmt att ett personligt användarkonto skapas.  Om du "
-"fortsätter utan ett konto kan du endast logga in med root-kontot, som är "
-"reserverat för administrativ användning."
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "Du måste skapa ett användarkonto för detta system."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "_Fortsätt"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "Skapa _konto"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lösenorden stämmer inte överens.  Ange lösenordet igen."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -232,7 +222,7 @@ msgstr ""
 "Användarnamnet \"%s\" är ett reserverat systemkonto.  Ange ett annat "
 "användarnamn."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -241,7 +231,7 @@ msgstr ""
 "En hemkatalog för användare %s finns redan.  Vill du återanvända denna "
 "hemkatalog?  Om inte, välj ett annat användarnamn."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -251,23 +241,23 @@ msgstr ""
 "administrativ) användning av ditt system.  För att skapa ett system-"
 "\"användarnamn\", fyll informationen som efterfrågas nedan."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "_Användarnamn:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "Fullständigt _Namn:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "_Lösenord:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "_Bekräfta lösenord:"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -275,7 +265,7 @@ msgstr ""
 "Om du behöver använda nätverksautenticering, såsom Kerberos eller NIS, "
 "klicka på knappen Använd nätverksinloggning."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "Använd nät_verksinloggning..."
 
@@ -334,3 +324,18 @@ msgstr ""
 "Konfigurationsagenten kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Framåt\" i nedre högra hörnet för att "
 "fortsätta."
+
+#~ msgid ""
+#~ "It is highly recommended that a personal user account be created.  If you "
+#~ "continue without an account, you can only log in with the root account, "
+#~ "which is reserved for administrative use only."
+#~ msgstr ""
+#~ "Det rekommenderas varmt att ett personligt användarkonto skapas.  Om du "
+#~ "fortsätter utan ett konto kan du endast logga in med root-kontot, som är "
+#~ "reserverat för administrativ användning."
+
+#~ msgid "_Continue"
+#~ msgstr "_Fortsätt"
+
+#~ msgid "Create _account"
+#~ msgstr "Skapa _konto"
