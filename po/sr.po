@@ -1,40 +1,38 @@
-# translation of sr.po to Serbian
 # Serbian translations for firstboot
 # Copyright (C) 2005 Red Hat, Inc.
 # This file is distributed under the same license as the firstboot package.
-#
 # Filip Maličević <filip@lakinetwork.com>, 2005.
 # Miloš Komarčević <kmilos@gmail.com>, 2005.
 # Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-04-11 10:16+0100\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-18 12:54+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr ""
 "Морате бити „root“ да би покренули „firstboot“ (програм првог покретања)."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "Не може се покренути ни једно прочеље за „firstboot“."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "Није нађен ни један модул за „firstboot“."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "Није се могло покренути ни једно сучеље за „firstboot“."
 
@@ -108,16 +106,16 @@ msgstr "Нап_ред"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Модул %s није подесио своје сучеље, зато ће бити избачен."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 "moveToPage (помери на страницу) мора добити наслов модула или број странице."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Није могуће направити снимак директоријума, прескачем."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Не постоји модул са насловом %s."
@@ -137,7 +135,7 @@ msgstr "Модул %s не садржи класу названу moduleClass, �
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Модул %s не садржи захтевану особину %s, прескачем."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Није могуће учитати слику %s за модул %s."
@@ -146,6 +144,11 @@ msgstr "Није могуће учитати слику %s за модул %s."
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Модул %s није подесио своје сучеље, прескачем."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "Чекам да се покрене Икс сервер... дневник се налази у %s\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -200,33 +203,19 @@ msgstr ""
 "Програм са самосталним покретањем није пронађен на CD-у. За наставак "
 "притисните „У реду“."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "Направи корисника"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"Веома је препоручено да направите лични кориснички налог. Ако наставите без "
-"налога, моћи ћете се пријавити само користећи „root“ налог, који је "
-"резервисан само за административне сврхе."
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "Морате да направите кориснички налог за овај систем."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "_Настави"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "Направи н_алог"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Лозинке се не подударају.  Унесите лозинку поново."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -235,7 +224,7 @@ msgstr ""
 "Корисничко име „%s“ је резервисани системски налог. Наведите друго "
 "корисничко име."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -245,7 +234,7 @@ msgstr ""
 "искористити овај лични директоријум?  Ако не желите, изаберите друго "
 "корисничко име."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -255,31 +244,31 @@ msgstr ""
 "администраторског) корисника за систем. Да направите системско „корисничко "
 "име“, пружите податке који су захтевани испод."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "_Корисничко име:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "Презиме и им_е:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "_Лозинка:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "Потврди_те лозинку:"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Ако морате користити мрежну аутентификацију, попут Kerberso или NIS, "
+"Ако морате користити мрежну аутентификацију, попут Kerberos или NIS, "
 "кликните на дугме Користи мрежно пријављивање."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "Користи _мрежно пријављивање..."
 
