@@ -8,27 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-10-04 20:32+0200\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-19 16:34+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "U dient root te zijn om firstboot uit te voeren."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "Kon geen enkele firstboot frontend opstarten."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "Er zijn geen firstboot modules gevonden."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "Kon geen enkele firstboot interface aanmaken."
 
@@ -102,17 +102,17 @@ msgstr "_Volgende"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Module %s heeft zijn UI niet ingesteld, verwijderen."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 "moveToPage dient een module-titel of paginanummer meegegeven te krijgen."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr ""
 "Niet in staat om de map voor schermafbeeldingen aan te maken; overslaan."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Er bestaat geen module met de titel %s."
@@ -132,7 +132,7 @@ msgstr "Module %s bevat geen klasse genaamd moduleClass; overslaan."
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "Module %s bevat niet het vereiste attribuut %s; overslaan."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "Niet in staat om pixmap %s voor module %s te laden."
@@ -141,6 +141,11 @@ msgstr "Niet in staat om pixmap %s voor module %s te laden."
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Module %s heeft zijn UI niet ingesteld; verwijderen."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "Wachten op het opstarten van de X-server... logbestand bevindt zich in %s\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -194,33 +199,19 @@ msgstr ""
 "Het 'autorun' programma kan niet worden gevonden op de CD. Klik op \"OK\" om "
 "door te gaan."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "Gebruiker aanmaken"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"Het wordt sterk aanbevolen om een persoonlijk gebruikersaccount aan te "
-"maken.  Als u nu doorgaat zonder een account, kunt u zich alleen aanmelden "
-"met het root-account, hetgeen alleen bedoeld is voor systeembeheer."
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "U moet een gebruikersaccount voor dit systeem aanmaken."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "_Doorgaan"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "Account _aanmaken"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "De wachtwoorden komen niet overeen.  Voer het wachtwoord nogmaals in."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -229,7 +220,7 @@ msgstr ""
 "De gebruikersnaam '%s' is een gereserveerd systeemaccount.  Geef een andere "
 "gebruikersnaam op."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -239,7 +230,7 @@ msgstr ""
 "persoonlijke map opnieuw gebruiken?  Zo niet, kies dan een andere "
 "gebruikersnaam."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -250,23 +241,23 @@ msgstr ""
 "een persoonlijk gebruikersaccount aan te maken, dient u de beneden gevraagde "
 "informatie te leveren."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "Gebr_uikersnaam:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "Volledig_e naam:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "W_achtwoord:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "Wachtwoord _bevestigen:"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -274,7 +265,7 @@ msgstr ""
 "Als u netwerkauthenticatie wilt gebruiken, zoals Kerberos of NIS, klik dan "
 "op de knop: Netwerkaanmelding gebruiken."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "Netwerkaanmelding gebruiken..."
 
@@ -307,12 +298,12 @@ msgstr ""
 "Bedankt voor het installeren van Fedora.  Fedora is een compilatie van "
 "softwarepakketten, elk onder een eigen licentie.  De compilatie is "
 "beschikbaar gemaakt onder de GNU General Public License version 2.  Er zijn "
-"geen restricties met betrekking tot het gebruiken, kopiëren of aanpassen "
-"van deze code.  Er zijn echter wel restricties en verplichtingen van "
-"toepassing op het opnieuw distribueren van de code, ofwel in de "
-"originele of een aangepaste vorm.  Deze restricties/verplichtingen zijn, "
-"onder andere, van toepassing op de licentie van de opnieuw gedistribueerde "
-"code, handelsmerken en export-controle.\n"
+"geen restricties met betrekking tot het gebruiken, kopiëren of aanpassen van "
+"deze code.  Er zijn echter wel restricties en verplichtingen van toepassing "
+"op het opnieuw distribueren van de code, ofwel in de originele of een "
+"aangepaste vorm.  Deze restricties/verplichtingen zijn, onder andere, van "
+"toepassing op de licentie van de opnieuw gedistribueerde code, handelsmerken "
+"en export-controle.\n"
 "\n"
 "Als u wilt weten wat deze beperkingen zijn, bezoek dan http://fedoraproject."
 "org/wiki/Legal/Licenses/LicenseAgreement."
@@ -335,3 +326,19 @@ msgstr ""
 "gebruik.  De Setup Agent zal u nu helpen met het maken van een "
 "basisconfiguratie.  Klik op de knop \"Volgende\" rechtsonder in het scherm "
 "om door te gaan"
+
+#~ msgid ""
+#~ "It is highly recommended that a personal user account be created.  If you "
+#~ "continue without an account, you can only log in with the root account, "
+#~ "which is reserved for administrative use only."
+#~ msgstr ""
+#~ "Het wordt sterk aanbevolen om een persoonlijk gebruikersaccount aan te "
+#~ "maken.  Als u nu doorgaat zonder een account, kunt u zich alleen "
+#~ "aanmelden met het root-account, hetgeen alleen bedoeld is voor "
+#~ "systeembeheer."
+
+#~ msgid "_Continue"
+#~ msgstr "_Doorgaan"
+
+#~ msgid "Create _account"
+#~ msgstr "Account _aanmaken"
