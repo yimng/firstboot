@@ -1,4 +1,4 @@
-# translation of firstboot.master.po to Traditional Chinese
+# translation of firstboot.master.po to
 # Translation of firstboot to Traditional Chinese
 # Copyright (C) 2002 Red Hat Inc.
 #
@@ -11,29 +11,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-09-24 14:13+1000\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-20 16:52+1000\n"
 "Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
-"Language-Team: Traditional Chinese <zh@li.org>\n"
+"Language-Team:  <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "您必須是 root 才能執行 firstboot。"
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "無法啟動任何 firstboot 前端。"
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "沒有找到 firstboot 模組。"
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "無法建立任何 firstboot 介面。"
 
@@ -105,15 +106,15 @@ msgstr "下一步（_F）"
 msgid "Module %s did not set up its UI, removing."
 msgstr "模組 %s 並未設定它的 UI，正在進行移除。"
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "您必須提供 moveToPage 一個模組標題或是頁數。"
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "無法建立 dir 的畫面；即將略過。"
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "標題為 %s 的模組不存在。"
@@ -133,7 +134,7 @@ msgstr "%s 模組不包含稱為「moduleClass」的類型名稱；即將略過�
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s 模組不包含必要的 %s 屬性；即將略過。"
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "無法載入 %s 模組的 pixmap %s。"
@@ -142,6 +143,11 @@ msgstr "無法載入 %s 模組的 pixmap %s。"
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s 模組並未設定它的 UI；即將進行移除。"
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "正在等待 X 伺服器啟動... 日誌檔位於 %s 中\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -189,73 +195,66 @@ msgstr "偵測不到光碟片。請將光碟片放入光碟機中，並按下「
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "在光碟上找不到 autorun 程式。請點選「確定」以繼續。"
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "建立用戶"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr "我們建議您建立一個個人用戶帳號。若您沒有這個帳號的話，您便只能以 root 帳號來進行登錄，這是個預留來進行管理用的帳號。"
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "您必須為此系統建立用戶帳號。"
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "繼續（_C）"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "建立帳號（_a）"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "密碼不正確。請再次輸入密碼。"
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "「%s」這個用戶名稱是個預留的系統帳號。請指定另一個用戶名稱。"
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
-msgstr "%s 這個用戶家目錄已存在。您是否希望重複使用此家目錄？若您不希望重複使用的話，請選擇另一個不同的用戶名稱。"
+msgstr ""
+"%s 這個用戶家目錄已存在。您是否希望重複使用此家目錄？若您不希望重複使用的話，"
+"請選擇另一個不同的用戶名稱。"
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
-msgstr "我們建議您建立一個使用於系統一般（非管理用）情況下的「用戶名稱」。若要建立一個系統「用戶名稱」，請提供下列所要求的資訊。"
+msgstr ""
+"我們建議您建立一個使用於系統一般（非管理用）情況下的「用戶名稱」。若要建立一"
+"個系統「用戶名稱」，請提供下列所要求的資訊。"
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "用戶名稱（_U）："
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "全名（_e）："
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "密碼（_P）："
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "確認密碼（_m）："
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr "若您需要使用網路驗證（例如 kerberos 或是 NIS）請按下使用網路登錄的按鈕。"
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "使用網路登錄（_L）..."
 
@@ -306,5 +305,7 @@ msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
-msgstr "在使用您的系統之前，您要先完成幾個步驟。現在「設定代理程式」將引導您做一些基本設定。請點選右下角的「下一頁」按鈕來繼續進行。"
+msgstr ""
+"在使用您的系統之前，您要先完成幾個步驟。現在「設定代理程式」將引導您做一些基"
+"本設定。請點選右下角的「下一頁」按鈕來繼續進行。"
 
