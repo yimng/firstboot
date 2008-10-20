@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-09-29 17:32+0530\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-18 21:57+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,19 +21,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "ಫರ್ಸ್ಟ್‍-ಬೂಟನ್ನು ಚಲಾಯಿಸಲು ನೀವು ಮೂಲವಾಗಿರಬೇಕು."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "ಯಾವುದೇ ಫರ್ಸ್ಟ್-ಬೂಟ್ ಮುಖಭಾಗವನ್ನು (frontend) ಆರಂಭಿಸಲಾಗಿಲ್ಲ."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "ಯಾವುದೇ ಫರ್ಸ್ಟ್-ಬೂಟ್ ಘಟಕಗಳು ಕಂಡು ಬಂದಿಲ್ಲ."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "ಯಾವುದೇ ಫರ್ಸ್ಟ್-ಬೂಟ್ ಸಂಪರ್ಕಸಾಧನವನ್ನು ರಚಿಸಲಾಗಿಲ್ಲ."
 
@@ -105,15 +105,15 @@ msgstr "ಮುಂದಕ್ಕೆ (_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s ಘಟಕಕ್ಕೆ ಅದರ UI ಅನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ, ತೆಗೆಯಲಾಗುತ್ತಿದೆ."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "'ಪುಟಕ್ಕೆಜರುಗಿಸು' ಗೆ ಒಂದು ಘಟಕದ ಶೀರ್ಷಿಕೆ ಅಥವ ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಒದಗಿಸಬೇಕಾಗುತ್ತದೆ."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "ತೆರೆಚಿತ್ರಗಳ(ಸ್ಕ್ರೀನ್‍ಶಾಟ್) ಕೋಶವನ್ನು ರಚಿಸಲಾಗಿಲ್ಲ; ಉಪೇಕ್ಷಿಸಲಾಗುತ್ತಿದೆ."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s ಶೀರ್ಷಿಕೆಯನ್ನು ಹೊಂದಿರುವ ಯಾವುದೇ ಘಟಕ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
@@ -133,7 +133,7 @@ msgstr "%s ಘಟಕವು ಘಟಕವರ್ಗ ಎಂಬ ಹೆಸರಿನ �
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s ಘಟಕವು ಅಗತ್ಯವಿರುವ %s ವೈಶಿಷ್ಟ್ಯವನ್ನು ಹೊಂದಿಲ್ಲ; ಉಪೇಕ್ಷಿಸಲಾಗುತ್ತಿದೆ."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "ಪಿಕ್ಸ್‍ಮ್ಯಾಪ್‍ %s ಅನ್ನು %s ಘಟಕಕ್ಕೆ ಲೋಡ್ ಮಾಡಲಾಗಿಲ್ಲ."
@@ -142,6 +142,11 @@ msgstr "ಪಿಕ್ಸ್‍ಮ್ಯಾಪ್‍ %s ಅನ್ನು %s ಘಟ�
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s ಘಟಕಕ್ಕೆ ಅದರ UI ಅನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ; ತೆಗೆಯಲಾಗುತ್ತಿದೆ."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "X ಪರಿಚಾರಕವು ಆರಂಭಗೊಳ್ಳಲು ಕಾಯಲಾಗುತ್ತಿದೆ... %s ಯಲ್ಲಿ ದಾಖಲೆಯು ಇದೆ\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -172,9 +177,8 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"ಇಂಟೆಲ್ ನ Itanium2 ಗಣಕಶೈಲಿಯ ಮೇಲೆ ೩೨-ಬಿಟ್ ಚಾಲನಸಮಯ ಸಮರ್ಥನೆಯನ್ನು "
-"ಸಕ್ರಿಯಗೊಳಿಸಲು ನೀವು Extras ಹೆಸರಿನ ಸೀಡಿಯಿಂದ Intel Execution Layer ಸಂಗ್ರಹವನ್ನು "
-"ಅನುಸ್ಥಾಪಿಸಬೇಕು."
+"ಇಂಟೆಲ್ ನ Itanium2 ಗಣಕಶೈಲಿಯ ಮೇಲೆ ೩೨-ಬಿಟ್ ಚಾಲನಸಮಯ ಸಮರ್ಥನೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ನೀವು "
+"Extras ಹೆಸರಿನ ಸೀಡಿಯಿಂದ Intel Execution Layer ಸಂಗ್ರಹವನ್ನು ಅನುಸ್ಥಾಪಿಸಬೇಕು."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -192,33 +196,19 @@ msgstr ""
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "autorun ಪ್ರೊಗ್ರಾಂ ಸೀಡಿಯಲ್ಲಿ ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಮುಂದುವರೆಯಲು \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "ಬಳಕೆದಾರನನ್ನು ರಚಿಸಿ"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"ಒಂದು ವೈಯಕ್ತಿಕ ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ರಚಿಸಲು ಬಲವಾದ ಸಲಹೆ ಮಾಡಲಾಗುತ್ತದೆ.  ನೀವು ಒಂದು "
-"ಖಾತೆ ಇಲ್ಲದೆ ಮುಂದುವರೆದರೆ, ನೀವು ಕೇವಲ ಮೂಲ ಖಾತೆಗೆ ಮಾತ್ರ ದಾಖಲಾಗಬಹುದಾಗಿದ್ದು, ಆದರೆ ಇದು "
-"ಕೇವಲ ನಿರ್ವಹಣಾ ಕಾರ್ಯಗಳಿಗಾಗಿ ಮೀಸಲಾಗಿದೆ."
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "ಈ ಗಣಕಕ್ಕಾಗಿ ನೀವು ಒಂದು ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ರಚಿಸಲೇ ಬೇಕು."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "ಮುಂದುವರೆ(_C)"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "ಖಾತೆಯನ್ನು ರಚಿಸಿ(_a)"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ಗುಪ್ತಪದಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ.  ದಯವಿಟ್ಟು ಗುಪ್ತಪದವನ್ನು ಪುನಃ ನಮೂದಿಸಿ."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -227,7 +217,7 @@ msgstr ""
 "ಬಳಕೆದಾರ ಹೆಸರು '%s' ಒಂದು ಕಾದಿರಿಸಲಾದ ಗಣಕದ ಖಾತೆಯದ್ದಾಗಿದೆ.  ದಯವಿಟ್ಟು ಬೇರೊಂದು "
 "ಬಳಕೆದಾರ ಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -236,7 +226,7 @@ msgstr ""
 "ಬಳಕೆದಾರ %s ನ ಒಂದು ನೆಲೆಕಡತಕೋಶ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ನೀವು ಈ ನೆಲೆ ಕಡತಕೋಶವನ್ನು "
 "ಪುನಃ ಬಳಸಲು ಬಯಸುತ್ತೀರೆ?  ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ, ದಯವಿಟ್ಟು ಬೇರೊಂದು ಬಳಕೆದಾರಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -246,23 +236,23 @@ msgstr ""
 "ನಿಮಗೆ ಸಲಹೆ ಮಾಡಲಾಗುತ್ತದೆ. ಒಂದು ಗಣಕದ 'ಬಳಕೆದಾರಹೆಸರ'ನ್ನು ರಚಿಸಲು, ದಯವಿಟ್ಟು ಈ ಕೆಳಗೆ "
 "ಕೇಳಲಾಗುವ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "ಬಳಕೆದಾರಹೆಸರು(_U):"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "ಸಂಪೂರ್ಣ ಹೆಸರು(_e):"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "ಗುಪ್ತಪದ(_P):"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "ಗುಪ್ತಪದವನ್ನು ಖಚಿತಪಡಿಸಿ(_P):"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -270,7 +260,7 @@ msgstr ""
 "ಕರ್ಬರೋಸ್ ಅಥವ NIS ನಂತಹ ಜಾಲಬಂಧ ದೃಢೀಕರಣವನ್ನು ನೀವು ಬಳಸಬೇಕೆಂದರೆ, ದಯವಿಟ್ಟು ಜಾಲಬಂಧ "
 "ಪ್ರವೇಶ ಗುಂಡಿಯನ್ನು ಬಳಸು ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "ಜಾಲಬಂಧ ಪ್ರವೇಶವನ್ನು ಬಳಸು(_L)..."
 
