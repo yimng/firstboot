@@ -1,6 +1,8 @@
-# translation of ja.po to Japanese
+# translation of firstboot.master.ja.po to Japanese
 # firstboot ja.po Japanese Translation.
 # Copyright (C) 2002 Red Hat Inc.
+#
+#
 # James Hashida <khashida@redhat.com>,2002,2003.
 # Noriko Mizumoto <noriko@redhat.com>, 2003, 2005, 2006.
 # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004.
@@ -8,33 +10,33 @@
 # Kiyoto James Hashida <khashida@redhat.com>, 2006.
 # Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2007.
 # Makoto Mizukami <mmk9060@aol.com>, 2008.
-# 
-# 
+# Kiyoto Hashida <khashida@redhat.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: ja\n"
+"Project-Id-Version: firstboot.master.ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-04-11 19:48+0900\n"
-"Last-Translator: Makoto Mizukami <mmk9060@aol.com>\n"
-"Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-20 14:38+1000\n"
+"Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
+"Language-Team: Japanese <jp@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "firstboot を起動するには、ルートになる必要があります。"
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "firstboot のフロントエンドを起動できません。"
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "firstboot のモジュールが見つかりませんでした。"
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "firstboot のインターフェースを作成てきません。"
 
@@ -109,15 +111,15 @@ msgstr ""
 "%s モジュールのユーザーインターフェースがセットアップされていません。削除しま"
 "す。"
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "ページの移動には、モジュールのタイトルか、ページ番号が必要です。"
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "スクリーンショット用のディレクトリが作成できません: スキップします。"
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s という名前のモジュールは存在しません。"
@@ -137,7 +139,7 @@ msgstr "%s モジュールは、moduleClass が定義されていません: ス�
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s モジュールは、必要な属性 %s を含んでいません: スキップします。"
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "画像 %s がロードできません(%s モジュールに必要とされています)。"
@@ -145,8 +147,12 @@ msgstr "画像 %s がロードできません(%s モジュールに必要とさ�
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
-"%s モジュールは、ユーザーインターフェイスが設定されていません: 削除します。"
+msgstr "%s モジュールは、ユーザーインターフェイスが設定されていません: 削除します。"
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "X サーバーが開始するまでお待ち下さい... ログは %s にあります\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -195,37 +201,22 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"自動起動プログラムが CD 上に見つかりません。\"OK\" をクリックして継続します。"
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "自動起動プログラムが CD 上に見つかりません。\"OK\" をクリックして継続します。"
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "ユーザーの作成"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"個人ユーザーの作成を強く推奨します。もしもアカウントの作成をしない場合、管理"
-"用途のみに使用されるべき、ルートアカウントでログインすることになります。"
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "このシステム用にユーザーアカウントを作成する必要があります。"
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "続ける (_C)"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "アカウントを作成 (_A)"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "パスワードが一致していません。もう一度入力してください。"
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -234,7 +225,7 @@ msgstr ""
 "ユーザー名 '%s' はシステムアカウントとして既に使用されています。他のユーザー"
 "名を指定してください。"
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -243,7 +234,7 @@ msgstr ""
 "'%s' ユーザーのホームフォルダは既に存在します。このホームフォルダを再利用しま"
 "すか?もししないのならば、別のユーザー名を選択してください。"
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -252,23 +243,23 @@ msgstr ""
 "(管理用途ではない)普通の作業のために、'ユーザー'を作成することを推奨します。"
 "以下の情報を入力し、システムに'ユーザー'を作成します。"
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "ユーザー名 (_U):"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "フルネーム (_E):"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "パスワード (_P):"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "パスワードの確認 (_C):"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -276,7 +267,7 @@ msgstr ""
 "もしも Kerberos や NIS のようなネットワーク認証が必要な場合、\"ネットワークロ"
 "グインを使用する\" をクリックしてください。"
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "ネットワークログインを使用する (_L)"
 
@@ -306,15 +297,15 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Fedora をインストールしていただき、ありがとうございます。Fedora は其々が"
-"各々のライセンスを持ったソフトウェアパッケージの編集物です。編集は GNU "
-"General Public License version 2 の下で可能です。このコードの使用や複製、"
-"改変に制限はありません。しかし、改変したものかオリジナルであるかに関わらず、"
-"再配布には制限と義務とがあります。こうした制限や義務は、再配布の使用許諾や"
-"商標権、輸出規制に関係してきます。\n"
+"Fedora をインストールしていただき、ありがとうございます。Fedora は其々が各々"
+"のライセンスを持ったソフトウェアパッケージの編集物です。編集は GNU General "
+"Public License version 2 の下で可能です。このコードの使用や複製、改変に制限は"
+"ありません。しかし、改変したものかオリジナルであるかに関わらず、再配布には制"
+"限と義務とがあります。こうした制限や義務は、再配布の使用許諾や商標権、輸出規"
+"制に関係してきます。\n"
 "\n"
-"制限についての詳細をお知りになりたい場合は、"
-"http://fedoraproject.org/wiki/Legal/Licenses/EULA をご覧ください。"
+"制限についての詳細をお知りになりたい場合は、http://fedoraproject.org/wiki/"
+"Legal/Licenses/EULA をご覧ください。"
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
