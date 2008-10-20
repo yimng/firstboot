@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-05-07 10:45+1000\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-20 15:10+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,20 +21,21 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
+"\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "root로 firstboot를 실행해야 합니다. "
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "firstboot 프론트앤드를 시작할 수 없습니다. "
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "firstboot 모듈을 찾을 수 없습니다. "
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "firstboot 인터페이스를 생성할 수 없습니다. "
 
@@ -106,15 +107,15 @@ msgstr "다음(_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s 모듈에 UI가 설정되어 있지 않습니다, 삭제합니다. "
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "페이지로 이동하기에서는 모듈 제목이나 페이지 번호가 있어야 합니다. "
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "스크린샷 디렉토리를 생성할 수 없습니다; 생략합니다. "
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s 라는 모듈이 없습니다. "
@@ -134,7 +135,7 @@ msgstr "%s 모듈에는 moduleClass라는 클래스가 들어있지 않습니다
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s 모듈에 %s 속성이 들어 있지 않습니다; 생략합니다. "
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "%s 모듈에 해당하는 pixmap %s을 읽어올 수 없습니다. "
@@ -143,6 +144,11 @@ msgstr "%s 모듈에 해당하는 pixmap %s을 읽어올 수 없습니다. "
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s 모듈에 UI가 설정되어 있지 않습니다; 삭제합니다. "
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "X 서버가 시작하기를 기다리고 있습니다.. 로그는 %s에 있습니다\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -194,39 +200,26 @@ msgstr ""
 "autorun 프로그램을 CD에서 찾지 못했습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "사용자 생성 "
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"개인 사용자 계정을 만들 것을 적극 권장합니다.  계정을 만들지 않고 계속 진행하"
-"신다면, 관리자 전용의 루트 계정을 사용하여 로그인하셔야 합니다. "
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "시스템에 대한 사용자 계정을 생성하셔야 합니다."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "계속(_C) "
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "계정 생성(_A) "
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다. 암호를 다시 입력해 주시기 바랍니다.   "
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "사용자명 '%s'은 시스템 계정입니다.  다른 사용자명을 지정해주십시오. "
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -235,7 +228,7 @@ msgstr ""
 "사용자 '%s'에 대한 홈 디렉토리는 이미 존재합니다. 이 홈 디렉토리를 다시 사용"
 "하시겠습니까? 그렇지 않다면, 다른 사용자명을 지정해 주십시오. "
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -245,23 +238,23 @@ msgstr ""
 "랍니다. 시스템 '사용자계정'을 만드시려면, 아래에서 요구하는 정보를 기입해 주"
 "십시오. "
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "사용자 이름(_U): "
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "성명(_E): "
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "암호(_P): "
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "암호 확인(_M): "
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -269,7 +262,7 @@ msgstr ""
 "커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
 "을 클릭해 주십시오.  "
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "네트워크 로그인 사용(_L)..."
 
