@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-04-16 08:56+0530\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-20 11:31+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "ഫര്‍സ്റ്റ്ബൂട്ട് പ്രവര്‍ത്തിപ്പിക്കുന്നതിനായി നിങ്ങള്‍ റൂട്ട് ആകേണ്ടതുണ്ട്."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "ഫര്‍സ്റ്റ്ബൂട്ട് തുടങ്ങുവാന്‍ സാധ്യമാകുന്നില്ല."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "ഫര്‍സ്റ്റ്ബൂട്ട് ഘടകങ്ങള്‍ ലഭ്യമല്ല."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "ഒരു ഫര്‍സ്റ്റ്ബൂട്ട് സംയോജകഘടകവും ഉണ്ടാക്കുവാന്‍ സാധ്യമായില്ല."
 
@@ -104,15 +104,15 @@ msgstr "മുന്പോട്ട് (_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s എന്ന ഘടകം അതിനുള്ള യുഐ ക്രമികരിച്ചില്ല, അതിനാല്‍ നീക്കം ചെയ്യുന്നു."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage എന്നതിന് ഒരു ഘടത്തിന്റെ തലക്കെട്ട് അല്ലെങ്കില്‍ പേജ് നംബര്‍ നല്‍കേണ്ടതാകുന്നു."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "സ്ക്രീന്‍ഷോട്ട് ഡയറക്ടറി ഉണ്ടാക്കുവാന്‍ സാധിച്ചില്ല; ഉപേക്ഷിക്കുന്നു‌."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s എന്ന തലക്കെട്ടില്‍ ഒരു ഘടകവും ലഭ്യമല്ല."
@@ -132,7 +132,7 @@ msgstr "%s എന്ന ഘടകത്തിന് മൊഡ്യൂള്‍�
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s എന്ന ഘടകത്തിന് ആവശ്യമുള്ള %s എന്ന വിശേഷത ലഭ്യമല്ല; അതിനാല്‍ ഉപേക്ഷിക്കുന്നു."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "%s എന്ന പിക്സ്മാപ്പ് ലഭ്യമാക്കുവാന്‍ സാധിച്ചില്ല. ഇത് %s ഘടകത്തിനുള്ളതാകുന്നു."
@@ -141,6 +141,11 @@ msgstr "%s എന്ന പിക്സ്മാപ്പ് ലഭ്യമാ�
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s എന്ന ഘടകം അതിനുള്ള യുഐ ക്രമികരിച്ില്;: അതിനാല്‍ നീക്കം ചെയ്യുന്നു."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "എക്സ് സര്‍വര്‍ ആരംഭിക്കുന്നതിനായി കാത്തിരിക്കുന്നു... %s-ല്‍ ലോഗ് ലഭ്യമാണു്\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -194,40 +199,26 @@ msgstr ""
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CDയില്‍ ഓട്ടോറണ്‍ പ്രോഗ്രാം ലഭ്യമല്ല. തുടരുന്നതിനായി \"ശരി\" അമറ്‍ത്തുക."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "ഉപയോക്താവിനെ ഉണ്ടാക്കുക"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"ഒരു സ്വകാര്യ അക്കൌണ്ട് ഉണ്ടാക്കുന്നതാണ് ഏറ്റവും ഉത്തമം. നിങ്ങള്‍ ഈ അക്കൌണ്ടില്ലാതെ, മുമ്പോട്ട് "
-"തുടര്‍ന്നാല്‍, അഡ്മിനിസ്ട്രേറ്റീവ് കാര്യങ്ങള്‍ക്കായി മാത്രം ഉപയോഗിക്കുന്ന റൂട്ട് അക്കൌണ്ടിലൂടെ മാത്രമേ "
-"സിസ്റ്റമിലേക്ക് പ്രവേശിക്കുവാന്‍ സാധിക്കൂ. "
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "നിങ്ങളുടെ സിസ്റ്റമിനുള്ള ഉപയോക്താവിനുള്ള അക്കൌണ്ട് ദയവായി ക്രമികരിക്കുക."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "_തുടരുക"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "_അക്കൌണ്ട് ഉണ്ടാക്കുക"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "പാസ്‌വേര്‍ഡുകള്‍ പൊരുത്തപ്പെടുന്നില്ല.  ദയവായി പാസ്‌വേര്‍ഡ് വീണ്ടും നല്‍കുക."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "'%s' എന്ന പേര് മുന്‍നിശ്ചയിച്ചിട്ടുള്ള സിസ്റ്റം അക്കൌണ്ടാകുന്നു.  ദയവായി മറ്റൊരു പേര് നല്‍കുക."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -236,7 +227,7 @@ msgstr ""
 "%s എന്ന ഉപയോക്താവിന് ഒരു ഹോം ഡയറക്ടറി നിലവിലുണ്ട്. നിങ്ങള്‍ക്കിത് ഉപയോഗിക്കണമോ? "
 "ഇല്ലായെങ്കില്‍, ദയവായി മറ്റൊരു പേര് നല്‍കുക."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -246,23 +237,23 @@ msgstr ""
 "ഒരു 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നത് ഉചിതമാകുന്നു. ഒരു സിസ്റ്റം 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നതിനായി, "
 "താഴെ ആവശ്യപ്പെട്ടിരിക്കുന്ന വിവരങ്ങള്‍ ദയവായി നല്‍കുക."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "_ഉപയോക്തൃനാമം:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "പൂര്‍ണ്ണ _നാമം:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "_പാസ്‌വേര്‍ഡ്:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "പാസ്‌വേര്‍ഡ് ഉ_റപ്പാക്കുക:"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -270,7 +261,7 @@ msgstr ""
 "Kerberos അല്ലെങ്കില്‍ NIS പോലുള്ള നെറ്റ്‌വര്‍ക്ക് ആധികാരികതകള്‍ ഉപയോഗിക്കണമെങ്കില്‍, ദയവായി "
 "നെറ്റ്‌വര്‍ക്ക് ലോഗിന്‍ ഉപയോഗിക്കുക എന്ന ബട്ടണ്‍ അമര്‍ത്തുക."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "നെറ്റ്‌വര്‍ക്ക് _ലോഗിന്‍ ഉപയോഗിക്കുക..."
 
