@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-09-23 11:08+0530\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-20 12:14+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,19 +24,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "firstboot সঞ্চালনের জন্য root পরিচয় ব্যবহার করা আবশ্যক।"
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "firstboot-র প্রেক্ষাপট আরম্ভ করতে ব্যর্থ।"
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "firstboot-র কোনো মডিউল পাওয়া যায়নি।"
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "কোনো firstboot ইন্টারফেস নির্মাণ করা যায়নি।"
 
@@ -112,15 +112,15 @@ msgstr "পরবর্তী (_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s মডিউল দ্বারা প্রেক্ষাপট নির্ধারিত হয়নি এবং অপসারণ করা হচ্ছে।"
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage-র ক্ষেত্রে মডিউলের শিরোনাম অথবা পৃষ্ঠার সংখ্যা উল্লেখ করা আবশ্যক।"
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "স্ক্রিন-শট ডিরেক্টরি নির্মাণ করতে ব্যর্থ; উপেক্ষা করা হচ্ছে।"
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s শিরোনামের অধীন কোনো মডিউল উপস্থিত নেই।"
@@ -140,7 +140,7 @@ msgstr "%s মডিউলের মধ্যে moduleClass নামক কো
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s মডিউলের মধ্যে আবশ্যক অ্যাট্রিবিউট %s উপস্থিত নেই; উপেক্ষা করা হবে।"
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "%s পিক্সম্যাপটি, %s মডিউলের জন্য লোড করতে ব্যর্থ।"
@@ -149,6 +149,11 @@ msgstr "%s পিক্সম্যাপটি, %s মডিউলের জন
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s মডিউল দ্বারা প্রয়োজনীয় ইউজার ইন্টারফেস নির্ধারণ করা যায়নি; মুছে ফেলা হচ্ছে।"
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "X সার্ভার আরম্ভের অপেক্ষা করা হচ্ছে... %s-এ লগ উপস্থিত রয়েছে\n"
 
 # msgstr "অতিরিক্ত সিডিগুলো"
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
@@ -205,33 +210,19 @@ msgstr ""
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CD'র মধ্যে autorun প্রোগ্রাম পাওয়া যায়নি। এগিয়ে চলার জন্য \"ঠিক আছে\" চাপুন।"
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "নতুন ব্যবহারকারীর অ্যাকাউন্ট তৈরি করুন"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"ব্যক্তিগত অ্যাকাউন্ট নির্মাণ করা অতিমাত্রা বাঞ্ছনীয়। কোনো অ্যাকাউন্ট নির্মিত না হলে "
-"শুধুমাত্র root অ্যাকাউন্ট সহ লগ-ইন করা যাবে। root অ্যাকাউন্টি প্রশাসনিক কাজের জন্য "
-"সংরক্ষিত।"
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "বর্তমান সিস্টেমের জন্য ব্যবহারকারীর অ্যাকাউন্ট নির্মাণ করা আবশ্যক।"
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "এগিয়ে চলুন (_C)"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "নতুন অ্যাকাউন্ট তৈরি করুন (_a)"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "পাসওয়ার্ড দুটির মধ্যে গরমিল।  অনুগ্রহ করে পুনরায় পাসওয়ার্ড লিখুন।"
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -240,7 +231,7 @@ msgstr ""
 "'%s' নামটি একটি সংরক্ষিত অ্যাকাউন্টের ক্ষেত্রে প্রযোজ্য।  অনুগ্রহ করে পৃথক ব্যবহারকারীর "
 "নাম উল্লেখ করুন।"
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -250,7 +241,7 @@ msgstr ""
 "পুনরায় ব্যবহার করা হবে কি?  এই ডিরেক্টরিটি ব্যবহার করতে ইচ্ছুক না হলে একটি পৃথক "
 "ব্যবহারকারীর নাম নির্বাচন করুন।"
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -260,23 +251,23 @@ msgstr ""
 "অ্যাকাউন্ট' নির্মাণ করা আবশ্যক। একটি প্রশাসনিক অ্যাকাউন্ট নির্মাণের জন্য নিম্নলিখিত "
 "তথ্য পূরণ করুন।"
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "ব্যবহারকারীর নাম: (_U)"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "সম্পূর্ণ নাম: (_e)"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "পাসওয়ার্ড: (_P)"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ড নিশ্চিত করুন: (_m)"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -284,7 +275,7 @@ msgstr ""
 "Kerberos অথবা NIS প্রভৃতির সাহায্যে নেটওয়ার্ডের মাধ্যমে অনুমোদন করতে ইচ্ছুক হলে, "
 "'নেটওয়ার্ক লগ-ইন ব্যবহার করা হবে' শীর্ষক বাটন ক্লিক করুন।"
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ-ইন ব্যবহার করা হবে...(_L)"
 
