@@ -1,39 +1,41 @@
+# translation of firstboot.master.mai.po to Hindi
 # translation of 1.firstboot.master.po to
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Sangeeta Kumari <sangeeta09@gmail.com>, 2008.
+# Rajesh Ranjan <rranjan@redhat.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.firstboot.master\n"
+"Project-Id-Version: firstboot.master.mai\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-02-29 01:29+0530\n"
-"Last-Translator: \n"
-"Language-Team:  <en@li.org>\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-21 13:53+0530\n"
+"Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
+"Language-Team: Hindi <hindi.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n\n"
 "\n"
 "\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "फर्स्टबूट चलाबैक ले अहाँकेँ रूट होएबा चाही."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "कोनो फर्स्टबूट फ्रंटएंडक आरंभ नहि कए सकल."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "कोनो फर्स्टबूट मॉड्यूल नहि भेटल."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "कोनो फर्स्टबूट अंतरफलककेँ बनाए नहि सकल."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -47,14 +49,17 @@ msgid ""
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"%s मॉड्यूलक संग समस्या होबाक कारण,\n"
+"फर्स्टबूट ई मॉडयूलकेँ लोड नहि करताह आओर \n"
+"शेष मॉडयूलकेँ चलाबैक लेल प्रयास करताह."
 
 #: ../firstboot/exceptionWindow.py:55
 msgid "An error has occurred in firstboot."
-msgstr ""
+msgstr "फर्स्टबूटमे एकटा त्रुटि आएल अछि."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "किएक समस्या अछि, फर्स्टबूट निकलि जाएत."
 
 #: ../firstboot/exceptionWindow.py:66
 #, python-format
@@ -62,16 +67,20 @@ msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"डिबग आउटपुटक एकटा कॉपी %s मे सुरक्षित कएल गेल अछि.\n"
+"ओ फाइलकेँ बग रिपोर्टक सँग संलग्न कएनाइ नहि भूलू.\n"
 
 #: ../firstboot/exceptionWindow.py:71
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"कृप्या 'firstboot' क हवाले Red Hat बग ट्रैकिंग सिस्टमकेँ \n"
+"http://www.redhat.com/bugzilla पर एकटा बग दर्ज करू. \n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "पाछाँ जाएबाक कोशिश कए रहल अछि, इतिहास मुदा खाली अछि."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -94,45 +103,50 @@ msgstr "अग्रसारित करू (_F)"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "मॉड्यूल %s एकर UI केँ सेटअप नहि कएनए अछि, हटाए रहल अछि."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage केँ जरूर मॉड्यूल शीर्षक अथवा पृष्ठ संख्या देल जाएनाइ चाही."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "स्क्रीनशॉट निर्देशिकाकेँ बनाबैमे असमर्थ; छोड़ि रहल अछि."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "शीर्षक %s क सँग कोनो मॉड्यूल मोजुद नहि अछि."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "पुरान मॉड्यूल %s केँ छोड़ि रहल अछि जे अद्यतन नहि कएल गेल अछि."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "मॉड्यूल %s moduleClass नामक वर्ग नहि समाहित करैत अछि; छोड़ि रहल अछि."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "मॉड्यूल %s जरूरी गुण %s नहि समाहित करैत अछि; छोड़ि रहल अछि."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "पिक्समैप %s को %s मॉड्यूलक लेल लोड करबामे असमर्थ."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "मॉड्यूल %s एकर UI केँ सेटअप नहि कएनए अछि; हटाए रहल अछि."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "X सर्वरक आरंभ होएबाक लेल प्रतीक्षारत... लॉग %s पर स्थित अछि\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -179,53 +193,38 @@ msgstr ""
 "जारी राखए क' लेल दाबू."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "प्रयोक्ता बनाबू"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"ई अनुशंसा कएल जाएत अछि कि एकटा व्यक्तिगत प्रयोक्ता खाता बनाबू. जँ अहाँ एकटा खाताक बिनु "
-"जारी राखैत छी, तँ अहाँ सिर्फ रूट खातामे लॉग कए सकैत अछि. जे केवल प्रशासनिक प्रयोगसभक लेल "
-"आरक्षित हाएत अछि."
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "अहाँकेँ ई सिस्टमक लेल उपयोक्ता खाता जरूर सेट करबा चाही."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "जारी राखू (_C)"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "खाता बनाबू (_a)"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "शब्दकूट मेल नहि करैत अछि. कृप्या शब्दकूट फिनु दिअ'."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
+msgstr "'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
+"उपयोक्ता %s क लेल घर निर्देशिका पहिनेसँ मोजुद अछि. की अहाँ ई घर निर्देशिकाकेँ फिनु "
+"प्रयोग करबाक लेल चाहब?  जँ नहि, कृप्या भिन्न उपयोक्ता नाम चुनू."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -235,23 +234,23 @@ msgstr ""
 "व्यक्तिगत 'प्रयोक्तानाम' बनाबू. एकटा सिस्टम 'प्रयोक्तानाम' बनाबै क' लेल, नीच्चाँ माँगल गेल "
 "जानकारी दिअ'."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "प्रयोक्तानाम (_U):"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "पूरा नाम (_e):"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "शब्दकूट (_P):"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "शब्दकूट सुनिश्चित करू (_m):"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -259,17 +258,17 @@ msgstr ""
 "जँ अहाँ संजाल सत्यापनक प्रयोग कएनाइ चाहैत छी, जहिना जे करबरोस अथवा NIS, कृप्या सँजाल "
 "लोगिनक प्रयोग करू बटन पर क्लिक करू."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "सँजाल लोगिनक प्रयोग करू (_L)..."
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
-msgstr ""
+msgstr "दिनांक आ समय"
 
 #: ../modules/date.py:58
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "कृप्या सिस्टमक लेल दिनांक आ समय सेट करू."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -289,6 +288,17 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
+"\n"
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
@@ -304,3 +314,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
+"अहाँक सिस्टमक प्रयोगक लेल तैआर करबाक पहिने किछु आओर चरण अछि. सेटअप प्रतिनिधि आब अहाँकेँ "
+"किछु मौलिक बिन्यासक माध्यमसँ मार्गदर्शन करताह.  कृप्या जारी रखबाक लेल नीच्चाँ दहिन्ना कोनामे "
+"\"आगाँ\" बटन दबाबू."
+
