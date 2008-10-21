@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-09-23 12:22+0530\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-10-21 11:15+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
 "Language-Team: Assamese\n"
 "MIME-Version: 1.0\n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "firstboot চলাবলৈ আপুনি ৰূট হ'ব লাগিব ।"
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "কোনো firstboot frontend আৰম্ভ কৰিব নোৱাৰিলো ।"
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "কোনো firstboot অংশ পোৱা ন'গ'ল ।"
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "কোনো firstboot সংযোগক্ষেত্ৰ সৃষ্টি কৰিব নোৱাৰি ।"
 
@@ -103,15 +103,15 @@ msgstr "আগলৈ (_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s অংশই তাৰ UI প্ৰতিষ্ঠা কৰিব নোৱাৰিলে, আঁতৰুৱা হৈছে ।"
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage ক এটা অংশৰ শিৰোনাম বা পৃষ্ঠাৰ সংখ্যা দিব লাগিব ।"
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "screenshot dir সৃষ্টি কৰিব নোৱাৰি; এৰি যোৱা হৈছে ।"
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "শিৰোনাম %s এৰে কোনো অংশ নাই ।"
@@ -131,7 +131,7 @@ msgstr "%s অংশত moduleClass নামৰ কোনো ক্লাছ �
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "%s অংশত প্ৰয়োজনীয় গুণ %s নাই; এৰি যোৱা হৈছে ।"
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "pixmap %s ক %s অংশৰ বাবে তুলিব পৰা নাযায় ।"
@@ -140,6 +140,11 @@ msgstr "pixmap %s ক %s অংশৰ বাবে তুলিব পৰা ন
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s অংশই তাৰ UI প্ৰতিষ্ঠা নকৰিলে, আঁতৰুৱা হৈছে ।"
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "X সেৱক আৰম্ভ হ'বলৈ ৰখা হৈছে... লগ %s ত আছে\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -190,33 +195,19 @@ msgstr ""
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr " CD‌ -ত autorun কাৰ্য্যক্ৰম পোৱা ন'গ'ল । আগবাঢ়িব'লৈ \"ঠিক আছে\" টিপক ।"
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "ব্যৱহাৰকৰোঁতা সৃষ্টি কৰক"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"এটা ব্যক্তিগত হিচাপ সৃষ্টি কৰাৰ উপদেশ দিয়া হয় । হিচাপ নোহোৱাকে আগবাঢ়িলে, আপুনি "
-"অকল ৰূটৰ হিচাপতহে প্ৰৱেশ কৰিব পাৰিব, যি প্ৰশায়নিক ব্যৱহাৰৰ বাবেহে সংৰক্ষিত কৰা "
-"হৈছে ।"
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "অনুগ্ৰহ কৰি ব্যৱস্থাপ্ৰনালীৰ বাবে ব্যৱহাৰকৰোঁতাৰ হিচাপ সৃষ্টি কৰক ।"
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "আগবাঢ়ক (_C)"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "হিচাপ সৃষ্টি কৰক (_a)"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "গুপ্তশব্দ অমিল । অনুগ্ৰহ কৰি গুপ্তশব্দ পুনঃ দিয়ক ।"
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -225,7 +216,7 @@ msgstr ""
 "'%s' ব্যৱহাৰকৰোঁতাৰ নাম ব্যৱস্থাপ্ৰণালীৰ হিচাপৰ বাবে সংৰক্ষিত । অনুগ্ৰহ কৰি অন্য এটা "
 "ব্যৱহাৰকৰোঁতাৰ নাম দিয়ক ।"
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -234,7 +225,7 @@ msgstr ""
 "ব্যৱহাৰকৰোঁতা %s ৰ ঘৰৰ পঞ্জিকা ইতিমধ্যে আছে । আপুনি এই ঘৰৰ পঞ্জিকাকে আকৌ ব্যৱহাৰ "
 "কৰিব খোজে নেকি ? ন'হ'লে, অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম নিৰ্ব্বাচন কৰক ।"
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -244,23 +235,23 @@ msgstr ""
 "(অপ্ৰশাসনিক) ব্যৱহাৰৰ বাবে । ব্যৱস্থাপ্ৰণালীৰ 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰিবলৈ, তলৰ "
 "বিচৰা তথ্য অনুগ্ৰহ কৰি দিয়ক ।"
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "ব্যৱহাৰকৰোঁতাৰ নাম:(_U)"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "সম্পূর্ণ নাম: (_e)"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "গুপ্তশব্দ: (_P)"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "গুপ্তশব্দ দৃঢ় কৰক (_m):"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -268,7 +259,7 @@ msgstr ""
 "নে'টৱৰ্কৰ প্ৰমাণীকৰণ ব্যৱহাৰ কৰিব হ'লে, যেনে Kerberos বা NIS, অনুগ্ৰহ কৰি নে'টৱৰ্ক "
 "প্ৰৱেশ ব্যৱহাৰ কৰক বুটাম টিপক ।"
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "নে'টৱৰ্ক প্ৰৱেশ ব্যৱহাৰ কৰক (_L)..."
 
