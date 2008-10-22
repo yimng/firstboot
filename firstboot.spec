@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.100
+Version: 1.101
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -70,6 +70,11 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Wed Oct 22 2008 Chris Lumens <clumens@redhat.com> 1.101-1
+- Wait to make sure X is completely dead before continuing (ajax).
+- Don't display that ugly root weave background anymore (ajax).
+- Lots of translation updates.
+
 * Fri Sep 12 2008 Chris Lumens <clumens@redhat.com> 1.100-1
 - Force creating a user unless the network button was checked (jmccann, #461656).
 - Don't sit at the bootup splash screen indefinitely (#458553).
