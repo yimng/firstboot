@@ -64,7 +64,7 @@ class XFrontEnd:
         try:
             logfile = "/tmp/firstbootX.log"
             args = ["-logfile", logfile, ":9", "-ac", "-nolisten", "tcp",
-                    "vt6"]
+                    "vt6", "-br"]
             noOutput = os.open("/dev/null", os.O_RDWR)
 
             proc = subprocess.Popen(["/usr/bin/Xorg"] + args,
