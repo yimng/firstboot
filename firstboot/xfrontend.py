@@ -128,3 +128,4 @@ class XFrontEnd:
 
         if self._xserver_pid:
             os.kill(self._xserver_pid, 15)
+            os.waitpid(self._xserver_pid, 0)
