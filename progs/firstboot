@@ -79,6 +79,17 @@ def writeSysconfigFile():
     fd.write("RUN_FIRSTBOOT=NO\n")
     fd.close()
 
+# Find the first directory in the themes dir that's not the default and use
+# that.  If there is no theme, return None and the default will end up getting
+# used.
+def findDefaultThemeDir():
+    import glob
+    lst = filter(lambda d: d.find("default") == -1, glob.glob(BASEDIR+"themes/*"))
+    if len(lst) == 0:
+        return None
+    else:
+        return lst[0]
+
 if __name__ == "__main__":
     frontend = None
     interface = None
@@ -106,7 +117,7 @@ if __name__ == "__main__":
                   help="enable reconfiguration mode")
     op.add_option("-t", "--test", action="store_true", default=False,
                   help="only test, don't configure the system")
-    op.add_option("--themeDir", action="store", dest="themeDir", default=BASEDIR+"themes/fedora-waves/",
+    op.add_option("--themeDir", action="store", dest="themeDir", default=findDefaultThemeDir(),
                   help="set the directory containing the theme [default: %default]")
     (opts, args) = op.parse_args()
 
