@@ -30,7 +30,7 @@ translate.textdomain ("firstboot")
 class XFrontEnd:
     def __init__(self):
         self._wm_pid = None
-        self._xserver_pid = None
+        self.x = None
 
     def _mergeXresources(self):
         path = "/etc/X11/Xresources"
@@ -67,8 +67,8 @@ class XFrontEnd:
                     "vt6", "-br"]
             noOutput = os.open("/dev/null", os.O_RDWR)
 
-            proc = subprocess.Popen(["/usr/bin/Xorg"] + args,
-                                    stdout=noOutput, stderr=noOutput)
+            self.x = subprocess.Popen(["/usr/bin/Xorg"] + args,
+                                      stdout=noOutput, stderr=noOutput)
             sys.stdout.write(_("Waiting for X server to start... log located in %s\n") % logfile)
             sys.stdout.flush()
 
@@ -78,7 +78,7 @@ class XFrontEnd:
                 sys.stdout.flush()
 
                 # If the X process failed for some reason, raise an error now.
-                if proc.poll() is not None:
+                if self.x.poll() is not None:
                     raise OSError
         except OSError:
             logging.error("X server failed to start")
@@ -94,7 +94,6 @@ class XFrontEnd:
             raise RuntimeError, "X server failed to start"
 
         logging.info("X server started successfully.")
-        self._xserver_pid = proc.pid
 
         # Init GTK to connect to the X server, then write a token on a pipe to
         # tell our parent process that we're ready to start metacity.
@@ -126,6 +125,6 @@ class XFrontEnd:
         if self._wm_pid:
             os.kill(self._wm_pid, 15)
 
-        if self._xserver_pid:
-            os.kill(self._xserver_pid, 15)
-            os.waitpid(self._xserver_pid, 0)
+        if self.x:
+            os.kill(self.x.pid, 15)
+            self.x.wait()
