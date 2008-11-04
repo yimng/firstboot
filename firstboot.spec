@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.102
+Version: 1.103
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -70,6 +70,9 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Tue Nov 04 2008 Chris Lumens <clumens@redhat.com> 1.103-1
+- Try another way of waiting for X to terminate (#469501).
+
 * Mon Oct 27 2008 Chris Lumens <clumens@redhat.com> 1.102-1
 - Be smarter about finding a graphics theme to use.
 
