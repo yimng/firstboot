@@ -2,6 +2,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
+# Muayyad Saleh Alsadi <alsadi@ojuba.org>, 2008.
 # Abd el rahman Ghareeb <king_abdo@yahoo.com>, 2004.
 # Ossama M. Khayat <okhayat@yahoo.com>, 2004.
 # Mohamed Eldesoky <mohamed@eldesoky.net>, 2004.
@@ -12,28 +13,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2007-01-08 00:22+0200\n"
-"Last-Translator: Ali Ghareb <ali.gareb@gmail.com>\n"
-"Language-Team: Arabic <en@li.org>\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2008-11-06 00:22+0200\n"
+"Last-Translator: Muayyad Saleh Alsadi <alsadi@ojuba.org>\n"
+"Language-Team: Arabic <ar@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr ""
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr ""
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr ""
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr ""
 
@@ -91,9 +92,8 @@ msgstr ""
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
 #: ../firstboot/interface.py:83 ../firstboot/interface.py:162
-#, fuzzy
 msgid "_Finish"
-msgstr "إنهاء الإعداد"
+msgstr "إ_نهاء"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
@@ -112,15 +112,15 @@ msgstr "تقدم"
 msgid "Module %s did not set up its UI, removing."
 msgstr ""
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr ""
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr ""
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr ""
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr ""
@@ -148,6 +148,11 @@ msgstr ""
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
+msgstr ""
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
 msgstr ""
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
@@ -196,95 +201,86 @@ msgstr ""
 "\" للاستمرار."
 
 #: ../modules/additional_cds.py:146
-#, fuzzy
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
-msgstr ""
+msgstr "إنشاء مستخدم"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "يجب أن تنشئ حسابا لمستخدم على هذا النظام"
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr ""
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr ""
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "كلمتا المرور غير متطابقتان. أدخل كلمة المرور مرة أخرى"
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "اسم المستخدم '%s' محجوز للنظام. فضلا حدد اسما آخر."
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"يستحسن إنشاء مستخدم للقيام بالأعمال الاعتيادية (غير الإدارية). لإنشاء هذا "
+"المستخدم فضلا قدم المعلومات المطوبة أدناه."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
-msgstr ""
+msgstr "ا_سم المستحدم:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "الاسم ال_كامل:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
-msgstr ""
+msgstr "_كلمة المرور:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "تأكيد كلمة المرور_"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"إذا كنت بحاجة إلى الموثقة عبر الشبكة، مثل Kerberos أو NIS، فضلا انقر على زر "
+"استخدام الولوج عبر الشبكة"
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "استخدام الولوج عبر الشبكة"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
-msgstr ""
+msgstr "التاريخ والوقت"
 
 #: ../modules/date.py:58
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "فضلا حدد تاريخ ووقت النظام"
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
-#, fuzzy
 msgid "License Information"
-msgstr "إعداد المنطقة الزّمنيّة"
+msgstr "معلومات الرخصة"
 
 #: ../modules/eula.py:53
 msgid ""
@@ -303,14 +299,13 @@ msgstr ""
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "ادرسها ثم تابع من فضلك."
 
 #: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "أهلاً"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
@@ -318,4 +313,18 @@ msgid ""
 msgstr ""
 "بقي بعض الخطوات الأخيرة ليصبح النظام جاهزاً للاستعمال. برنامج التثبيت سوف "
 "يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في "
-"الركن الأيمنللمتابعة."
+"الركن الأيسر للمتابعة."
+
+#~ msgid ""
+#~ "It is highly recommended that a personal user account be created.  If you "
+#~ "continue without an account, you can only log in with the root account, "
+#~ "which is reserved for administrative use only."
+#~ msgstr ""
+#~ "يستحسن أن تنشئ حساب لمستخدم شخصي. إذا تابعت دون إنشاء هذا الحساب، تستطيع "
+#~ "الدخول فقط بصلاحيات الجذر rootوهو الحساب المحجوز لأغراض لإدارة النظام فقط."
+
+#~ msgid "_Continue"
+#~ msgstr "_متابعة"
+
+#~ msgid "Create _account"
+#~ msgstr "إنشاء _حساب"
