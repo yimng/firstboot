@@ -165,9 +165,9 @@ class moduleClass(Module):
     def createScreen(self):
         self.vbox = gtk.VBox(spacing=5)
 
-        label = gtk.Label(_("It is recommended that you create a 'username' for regular "
-                            "(non-administrative) use of your system. To create a system 'username,' "
-                            "please provide the information requested below."))
+        label = gtk.Label(_("You must create a 'username' for regular (non-administrative) "
+                            "use of your system.  To create a system 'username', please "
+                            "provide the information requested below."))
 
         label.set_line_wrap(True)
         label.set_alignment(0.0, 0.5)
