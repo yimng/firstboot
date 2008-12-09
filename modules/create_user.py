@@ -34,10 +34,6 @@ translate.textdomain ("firstboot")
 sys.path.append("/usr/share/system-config-users")
 import userGroupCheck
 
-def _chown(arg, dirname, names):
-    for n in names:
-        os.lchown("%s/%s" % (dirname, n), arg[0], arg[1])
-
 class moduleClass(Module):
     def __init__(self):
         Module.__init__(self)
@@ -48,6 +44,15 @@ class moduleClass(Module):
 
         self.admin = libuser.admin()
         self.nisFlag = None
+
+        self._problemFiles = []
+
+    def _chown(self, arg, dirname, names):
+        for n in names:
+            try:
+                os.lchown("%s/%s" % (dirname, n), arg[0], arg[1])
+            except:
+                self._problemFiles.append("%s/%s" % (dirname, n))
 
     def apply(self, interface, testing=False):
         if testing:
@@ -153,12 +158,28 @@ class moduleClass(Module):
             self.admin.addGroup(groupEnt)
 
             if not mkhomedir:
-                win = self._showWaitWindow("Fixing attributes on %s home directory.  "
-                                           "This may take a few minutes." % username)
+                self._problemFiles = []
+                win = self._showWaitWindow(_("Fixing attributes on %s home directory.  "
+                                             "This may take a few minutes.") % username)
                 win.show_all()
                 os.chown("/home/%s" % username, uidNumber, gidNumber)
-                os.path.walk("/home/%s" % username, _chown, (uidNumber, gidNumber))
+                os.path.walk("/home/%s" % username, self._chown, (uidNumber, gidNumber))
                 win.destroy()
+
+                if len(self._problemFiles) > 0:
+                    import tempfile
+                    (fd, path) = tempfile.mkstemp("", "firstboot-homedir-", "/tmp")
+                    fo = os.fdopen(fd, "w")
+
+                    for f in self._problemFiles:
+                        fo.write("%s\n" % f)
+
+                    fo.close()
+
+                    text = _("Problems were encountered fixing the attributes on "
+                             "some files in the %s home directory.  Please refer "
+                             "to %s for which files caused the errors.") % (username, path)
+                    self._showErrorMessage(text)
         else:
             self.admin.modifyUser(userEnt)
             self.admin.modifyGroup(groupEnt)
