@@ -112,8 +112,12 @@ class moduleClass(Module):
 
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_YES_NO,
                                     _("A home directory for user %s already exists. "
-                                      "Would you like to reuse this home directory?  "
-                                      "If not, please choose a different username.") % username)
+                                      "Would you like to continue, making the new "
+                                      "user the owner of this directory and all its "
+                                      "contents?  Doing so may take a while to reset "
+                                      "permissions and any SELinux labels.  Would "
+                                      "you like to reuse this home directory?  If "
+                                      "not, please choose a different username.") % username)
             dlg.set_position(gtk.WIN_POS_CENTER)
             dlg.set_modal(True)
 
@@ -149,8 +153,12 @@ class moduleClass(Module):
             self.admin.addGroup(groupEnt)
 
             if not mkhomedir:
+                win = self._showWaitWindow("Fixing attributes on %s home directory.  "
+                                           "This may take a few minutes." % username)
+                win.show_all()
                 os.chown("/home/%s" % username, uidNumber, gidNumber)
                 os.path.walk("/home/%s" % username, _chown, (uidNumber, gidNumber))
+                win.destroy()
         else:
             self.admin.modifyUser(userEnt)
             self.admin.modifyGroup(groupEnt)
@@ -256,6 +264,23 @@ class moduleClass(Module):
                 time.sleep(0.1)
 
         i.grab_remove()
+
+    def _showWaitWindow(self, text):
+        # Shamelessly copied from gui.py in anaconda.
+        win = gtk.Window()
+        win.set_decorated(False)
+        win.set_position(gtk.WIN_POS_CENTER)
+        win.set_modal(True)
+
+        label = gtk.Label(text)
+
+        box = gtk.Frame()
+        box.set_border_width(10)
+        box.add(label)
+        box.set_shadow_type(gtk.SHADOW_NONE)
+
+        win.add(box)
+        return win
 
     def _showErrorMessage(self, text):
         dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, text)
