@@ -47,10 +47,19 @@ class moduleClass(Module):
 
         self._problemFiles = []
 
+        self._count = 0
+
     def _chown(self, arg, dirname, names):
         for n in names:
             try:
                 os.lchown("%s/%s" % (dirname, n), arg[0], arg[1])
+
+                # Update the UI from time to time, but not so often as to
+                # really slow down the chown.
+                self._count += 1
+                if self._count % 100 == 0:
+                    while gtk.events_pending():
+                        gtk.main_iteration(False)
             except:
                 self._problemFiles.append("%s/%s" % (dirname, n))
 
@@ -159,12 +168,15 @@ class moduleClass(Module):
 
             if not mkhomedir:
                 self._problemFiles = []
-                win = self._showWaitWindow(_("Fixing attributes on %s home directory.  "
-                                             "This may take a few minutes.") % username)
-                win.show_all()
+                dlg = self._waitWindow(_("Fixing attributes on the home directory "
+                                         "for %s.  This may take a few minutes.") % username)
+                dlg.show_all()
+                while gtk.events_pending():
+                    gtk.main_iteration(False)
+
                 os.chown("/home/%s" % username, uidNumber, gidNumber)
                 os.path.walk("/home/%s" % username, self._chown, (uidNumber, gidNumber))
-                win.destroy()
+                dlg.destroy()
 
                 if len(self._problemFiles) > 0:
                     import tempfile
@@ -177,7 +189,7 @@ class moduleClass(Module):
                     fo.close()
 
                     text = _("Problems were encountered fixing the attributes on "
-                             "some files in the %s home directory.  Please refer "
+                             "some files in the home directory for %s.  Please refer "
                              "to %s for which files caused the errors.") % (username, path)
                     self._showErrorMessage(text)
         else:
@@ -286,12 +298,11 @@ class moduleClass(Module):
 
         i.grab_remove()
 
-    def _showWaitWindow(self, text):
+    def _waitWindow(self, text):
         # Shamelessly copied from gui.py in anaconda.
         win = gtk.Window()
-        win.set_decorated(False)
+        win.set_title(_("Please wait"))
         win.set_position(gtk.WIN_POS_CENTER)
-        win.set_modal(True)
 
         label = gtk.Label(text)
 
@@ -301,6 +312,7 @@ class moduleClass(Module):
         box.set_shadow_type(gtk.SHADOW_NONE)
 
         win.add(box)
+        win.set_default_size(-1, -1)
         return win
 
     def _showErrorMessage(self, text):
