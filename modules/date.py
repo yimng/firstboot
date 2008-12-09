@@ -47,10 +47,14 @@ class moduleClass(Module):
         if testing:
             return RESULT_SUCCESS
 
-	if self.scd.firstboot_apply() == 0:
-	    return RESULT_SUCCESS
-        else:
-	    return RESULT_FAILURE
+        try:
+            rc = self.scd.firstboot_apply()
+            if rc == 0 and self.scd.closeParent:
+                return RESULT_SUCCESS
+            else:
+                return RESULT_FAILURE
+        except KeyboardInterrupt:
+            return RESULT_FAILURE
 
     def createScreen(self):
         self.vbox = gtk.VBox(spacing=5)
