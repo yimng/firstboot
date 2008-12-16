@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.103
+Version: 1.104
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -71,6 +71,14 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Tue Dec 16 2008 Chris Lumens <clumens@redhat.com> 1.104-1
+- Let X tell us when it's ready to run (ajax).
+- Add a Requires: for authconfig-gtk (#474733).
+- Log errors changing file permissions and notify (#473191).
+- Improve the dialogs around reusing a home directory (#470461).
+- Fix a crash when cancelling contacting an NTP server (#475304).
+- Since you have to create a user now, change the message.
+
 * Tue Nov 04 2008 Chris Lumens <clumens@redhat.com> 1.103-1
 - Try another way of waiting for X to terminate (#469501).
 
