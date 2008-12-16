@@ -18,7 +18,7 @@
 # with the express permission of Red Hat, Inc. 
 #
 import logging
-import os, subprocess, sys, time
+import os, subprocess, sys, time, signal
 
 ##
 ## I18N
@@ -67,19 +67,24 @@ class XFrontEnd:
                     "vt6", "-br"]
             noOutput = os.open("/dev/null", os.O_RDWR)
 
+	    def sigchld_handler(num, frame):
+		raise OSError
+
+	    def sigusr1_handler(num, frame):
+		pass
+
+	    def preexec_fn():
+		signal.signal(signal.SIGUSR1, signal.SIG_IGN)
+
+	    old_sigusr1 = signal.signal(signal.SIGUSR1, sigusr1_handler)
+	    old_sigchld = signal.signal(signal.SIGCHLD, sigchld_handler)
             self.x = subprocess.Popen(["/usr/bin/Xorg"] + args,
-                                      stdout=noOutput, stderr=noOutput)
-            sys.stdout.write(_("Waiting for X server to start... log located in %s\n") % logfile)
-            sys.stdout.flush()
+                                      stdout=noOutput, stderr=noOutput
+				      preexec_fn=preexec_fn)
+	    signal.pause()
+	    signal.signal(signal.SIGUSR1, old_sigusr1)
+	    signal.signal(signal.SIGCHLD, old_sigchld)
 
-            for i in range(5):
-                time.sleep(1)
-                sys.stdout.write("%s..." % (i+1))
-                sys.stdout.flush()
-
-                # If the X process failed for some reason, raise an error now.
-                if self.x.poll() is not None:
-                    raise OSError
         except OSError:
             logging.error("X server failed to start")
             raise RuntimeError, "X server failed to start"
