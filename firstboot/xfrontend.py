@@ -79,7 +79,7 @@ class XFrontEnd:
 	    old_sigusr1 = signal.signal(signal.SIGUSR1, sigusr1_handler)
 	    old_sigchld = signal.signal(signal.SIGCHLD, sigchld_handler)
             self.x = subprocess.Popen(["/usr/bin/Xorg"] + args,
-                                      stdout=noOutput, stderr=noOutput
+                                      stdout=noOutput, stderr=noOutput,
 				      preexec_fn=preexec_fn)
 	    signal.pause()
 	    signal.signal(signal.SIGUSR1, old_sigusr1)
