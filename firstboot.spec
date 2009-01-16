@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.104
+Version: 1.105
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -71,6 +71,9 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Fri Jan 16 2009 Chris Lumens <clumens@redhat.com> 1.105-1
+- Fix a typo in starting up X.
+
 * Tue Dec 16 2008 Chris Lumens <clumens@redhat.com> 1.104-1
 - Let X tell us when it's ready to run (ajax).
 - Add a Requires: for authconfig-gtk (#474733).
