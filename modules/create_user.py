@@ -91,6 +91,10 @@ class moduleClass(Module):
         confirm = self.confirmEntry.get_text()
 
         if not password or not confirm:
+            self._showErrorMessage(_("You must enter and confirm a password for this user."))
+            self.passwordEntry.set_text("")
+            self.confirmEntry.set_text("")
+            self.passwordEntry.grab_focus()
             return RESULT_FAILURE
 
         if password != confirm:
