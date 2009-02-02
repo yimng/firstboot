@@ -12,13 +12,13 @@
 # A S Alam <apbrar@gmail.com>, 2006.
 # A P Singh <apbrar@gmail.com>, 2006.
 # A S Alam <aalam@users.sf.net>, 2007.
-# Jaswinder Singh <jsingh@redhat.com>, 2007, 2008.
+# Jaswinder Singh <jsingh@redhat.com>, 2007, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2008-09-08 12:10+0530\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2009-02-02 15:36+0530\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -32,19 +32,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
 msgstr "ਫਸਟਬੂਟ ਚਲਾਉਣ ਲਈ ਤੁਸੀਂ ਪਰਬੰਧਕ ਹੋਣੇ ਜਰੂਰੀ ਹੋ।"
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
 msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਫਰੰਟਐਂਡ ਚਾਲੂ ਨਹੀਂ ਕਰ ਸਕਿਆ।"
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
 msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਮੈਡਿਊਲ ਨਹੀਂ ਲੱਭਿਆ।"
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
 msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਇੰਟਰਫੇਸ ਨਹੀਂ ਬਣਾ ਸਕਿਆ।"
 
@@ -116,15 +116,15 @@ msgstr "ਅੱਗੇ(_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "ਮੈਡਿਊਲ %s ਨੇ ਆਪਣਾ UI ਨਿਰਧਾਰਤ ਨਹੀ ਕੀਤਾ, ਹਟਾ ਰਿਹਾ।"
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage ਨੂੰ ਮੈਡਿਊਲ ਟਾਈਟਲ ਜਾਂ ਸਫਾ ਨੰਬਰ ਦੇਣਾ ਜਰੂਰੀ ਹੈ।"
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "ਸਕਰੀਨਸ਼ਾਟ ਡਾਇਰੈਕਟਰੀ ਬਣਾਉਣ ਤੋਂ ਅਸਮਰਥ; ਛੱਡ ਰਿਹਾ ਹੈ।"
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s ਟਾਈਟਲ ਵਾਲਾ ਕੋਈ ਮੈਡਿਊਲ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
@@ -144,7 +144,7 @@ msgstr "ਮੈਡਿਊਲ %s ਵਿੱਚ moduleClass ਨਾਂ ਵਾਲੀ �
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "ਮੈਡਿਊਲ %s ਵਿੱਚ ਲੋੜੀਂਦਾ ਗੁਣ %s ਮੌਜੂਦ ਨਹੀਂ ਹੈ; ਛੱਡ ਰਿਹਾ ਹੈ।"
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "pixmap %s ਨੂੰ ਮੈਡਿਊਲ %s ਲਈ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕਦਾ ਹੈ।"
@@ -153,6 +153,11 @@ msgstr "pixmap %s ਨੂੰ ਮੈਡਿਊਲ %s ਲਈ ਲੋਡ ਨਹੀਂ 
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "ਮੈਡਿਊਲ %s ਨੇ ਆਪਣਾ UI ਨਿਰਧਾਰਤ ਨਹੀਂ ਕੀਤਾ; ਹਟਾ ਰਿਹਾ ਹੈ।"
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "X ਸਰਵਰ ਚਾਲੂ ਹੋਣ ਦੀ ਉਡੀਕ ਹੋ ਰਹੀ ਹੈ... %s ਵਿੱਚ ਸਥਿਤ ਹੈ\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -200,40 +205,26 @@ msgstr "CD-ROM ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CD ਉੱਤੇ autorun ਕਾਰਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ। ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਓ।"
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr "ਉਪਭੋਗੀ ਬਣਾਓ"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
-"ਇਹ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਨਿੱਜੀ ਉਪਭੋਗੀ ਖਾਤਾ ਬਣਾਓ। ਜੇ ਤੁਸੀਂ ਬਿਨਾਂ ਖਾਤਾ ਜਾਰੀ "
-"ਕਰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਸਿਰਫ ਪਰਬੰਧਕ (root) ਖਾਤੇ ਨਾਲ ਲਾਗਇਨ ਕਰ ਸਕਦੇ ਹੋ, ਜੋ ਕਿ ਸਿਰਫ ਪਰਬੰਧਕੀ ਵਰਤੋਂ "
-"ਲਈ ਰਾਖਵਾਂ ਹੁੰਦਾ ਹੈ।"
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਸਿਸਟਮ ਲਈ ਉਪਭੋਗੀ ਖਾਤਾ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "ਜਾਰੀ(_C)"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "ਖਾਤਾ ਬਣਾਓ(_A)"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।  ਕਿਰਪਾ ਕਰਕੇ ਫਿਰ ਪਾਸਵਰਡ ਦਿਓ।"
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਸਿਸਟਮ ਖਾਤੇ ਲਈ ਰਾਖਵਾਂ ਹੈ।  ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ ਨਾਂ ਦਿਓ।"
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
@@ -242,7 +233,7 @@ msgstr ""
 "ਉਪਭੋਗੀ %s ਲਈ ਇੱਕ ਘਰੇਲੂ ਡਾਇਰੈਕਟਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਘਰੇਲੂ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਮੁੜ "
 "ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ?  ਜੇ ਨਹੀਂ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ-ਨਾਂ ਵਰਤੋ।"
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
@@ -252,23 +243,23 @@ msgstr ""
 "'ਉਪਭੋਗੀ-ਨਾਂ' ਬਣਾਇਆ ਹੈ। ਇੱਕ ਸਿਸਟਮ 'ਉਪਭੋਗੀ-ਨਾਂ,' ਬਣਾਉਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਪੁੱਛੀ ਗਈ "
 "ਜਾਣਕਾਰੀ ਦਿਓ।"
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ(_U)"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
 msgstr "ਪੂਰਾ ਨਾਂ(_E):"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
 msgstr "ਪਾਸਵਰਡ(_P):"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
 msgstr "ਪਾਸਵਰਡ ਪੁਸ਼ਟੀ(_M):"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -276,7 +267,7 @@ msgstr ""
 "ਜੇ ਤੁਹਾਨੂੰ ਨੈੱਟਵਰਕ ਪ੍ਰਮਾਣਿਕਤਾ ਦੀ ਲੋੜ ਹੈ, ਜਿਵੇਂ ਕਿ ਕਰਬੀਰੋਸ ਜਾਂ NIS, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਨੈੱਟਵਰਕ "
 "ਲਾਗਇਨ ਵਰਤੋ ਬਟਨ ਦਬਾਓ।"
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
 msgstr "ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋ(_L)..."
 
