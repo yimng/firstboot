@@ -9,30 +9,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
-"PO-Revision-Date: 2006-09-16 00:35+0700\n"
-"Last-Translator: Kamthorn Krairaksa <kamthorn_k@yahoo.com>\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2009-03-11 15:48+0700\n"
+"Last-Translator: Manatsawin <whs@whsgroup.ath.cx>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Pootle 1.1.0\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "คุณต้องเป็นรูทเพื่อจะใช้งาน firstboot"
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "ไม่สามารถเริ่มส่วนติดต่อผู้ใช้ใดๆ ของ firstboot"
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "ไม่พบมอดูลของ firstboot"
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "ไม่สามารถสร้างส่วนติดต่อผู้ใช้ใดๆ ของ firstboot"
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -40,50 +40,44 @@ msgid "An error has occurred in the %s module."
 msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับมอดูล %s"
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "เนื่องจากเกิดปัญหากับมอดูล %s \n"
-"ตัวติดตั้งเรดแฮทจะไม่โหลดมอดูลนี้ \n"
+"firstboot จะไม่โหลดมอดูลนี้ \n"
 "และจะพยายามโหลดมอดูลที่ยังเหลืออยู่ต่อไป"
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "ข้อผิดพลาดนี้เกิดขึ้นกับมอดูล %s"
+msgstr "เกิดข้อผิดพลาดใน firstboot"
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "firstboot จะออกเนื่องจากพบปัญหา"
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"กรุณาส่งบันทึกข้อผิดพลาดเกี่ยวกับ 'firstboot' ไปยังระบบ\n"
-"ติดตามข้อผิดพลาดของเรดแฮทที่ http://www.redhat.com/bugzilla \n"
-"ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
-"อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
+"สำเนาผลลัพท์ของการดีบั๊กถูกบันทึกไว้ที่ %s\n"
+"โปรดแนบไฟล์ดังกล่าวเข้ากับรายงานข้อผิดพลาด\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
 "กรุณาส่งบันทึกข้อผิดพลาดเกี่ยวกับ 'firstboot' ไปยังระบบ\n"
-"ติดตามข้อผิดพลาดของเรดแฮทที่ http://www.redhat.com/bugzilla \n"
-"ซึ่งข้อผิดพลาดนี้จะถูกบันทึกไว้ที่แฟ้ม %s \n"
-"อย่าลืมแนบแฟ้มดังกล่าวมากับรายงานข้อผิดพลาดด้วย \n"
+"ติดตามข้อผิดพลาดของเรดแฮทที่ http://www.redhat.com/bugzilla\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "พยายามที่จะย้อนกลับ แต่ไม่มีข้อมูลประวัติ"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -106,45 +100,50 @@ msgstr "ถัดไ_ป"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "จะถอนมอดูล %s เนื่องจากไม่ได้ติดตั้งส่วนติดต่อผู้ใช้ของมัน"
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "ต้องป้อนชื่อมอดูลหรือเลขหน้าให้กับ moveToPage"
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "จะข้ามไปเนื่องจากไม่สามารถสร้างไดเรคทอรีภาพหน้าจอ"
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "ไม่มีมอดูลที่ใช้ชื่อ %s"
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "จะข้ามมอดูลเก่า %s ที่ไม่ได้ถูกอัปเดต"
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "มอดูล %s ไม่มีคลาสชื่อ moduleClass ดังนั้นจะข้ามไป"
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "มอดูล %s ไม่มีคุณสมบัติ %s ที่ต้องการ ดังนั้นจะข้ามไป"
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "ไม่สามารถโหลด pixmap %s สำหรับมอดูล %s"
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "มอดูล %s ไม่ได้ติดตั้งส่วนติดต่อผู้ใช้ของมัน ดังนั้นจะลบออก"
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "กำลังรอให้ X server เปิด... ปูมได้ถูกบันทึกไว้ใน %s\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -193,88 +192,84 @@ msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ไม่พบโปรแกรม autorun ในซีดี คลิก \"ตกลง\" เพื่อทำงานต่อ"
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
-msgstr ""
+msgstr "สร้างผู้ใช้"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr ""
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "คุณต้องสร้างบัญชีผู้ใช้ในระบบนี้"
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr ""
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr ""
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:83
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "รหัสผ่านไม่ตรงกัน  กรุณาป้อนรหัสผ่านอีกครั้ง"
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "ชื่อผู้ใช้ '%s' เป็นชื่อสงวนของบัญชีระบบ  โปรดเลือกชื่อผู้ใช้อื่น"
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to reuse this "
 "home directory?  If not, please choose a different username."
 msgstr ""
+"มีไดเรคทอรีบ้านสำหรับผู้ใช้ %s อยู่แล้ว "
+"คุณต้องการใช้ไดเรคทอรีบ้านเดิมหรือไม่?  "
+"หากไม่ต้องการกรุณาเลือกชื่อผู้ใช้งานอื่น"
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:168
 msgid ""
 "It is recommended that you create a 'username' for regular (non-"
 "administrative) use of your system. To create a system 'username,' please "
 "provide the information requested below."
 msgstr ""
+"คุณควรจะสร้างบัญชีผู้ใช้สำหรับการใช้งานระบบโดยทั่วไป "
+"(ที่ไม่ใช่การจัดการระบบ) ส่วนการสร้างบัญชีระบบ โปรดกรอกข้อมูลต่างๆ "
+"ตามด้านล่างนี้"
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:186
 msgid "_Username:"
-msgstr ""
+msgstr "_ชื่อผู้ใช้:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "ชื่_อจริง:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:200
 msgid "_Password:"
-msgstr ""
+msgstr "_รหัสผ่าน:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "_ยึนยันรหัสผ่าน"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"หากคุณต้องการใช้การยึนยันตนผ่านเครือข่าย เช่น Kerberos หรือ NIS "
+"กรุณาเลือกปุ่ม ใช้การเข้าระบบผ่านเครือข่าย"
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "_ใช้การเข้าระบบผ่านเครือข่าย..."
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
-msgstr ""
+msgstr "วันและเวลา"
 
 #: ../modules/date.py:58
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "โปรดกำหนดวันและเวลาสำหรับระบบ"
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
-#, fuzzy
 msgid "License Information"
-msgstr "ตั้งค่าเขตเวลา"
+msgstr "สัญญาอนุญาต"
 
 #: ../modules/eula.py:53
 msgid ""
@@ -290,22 +285,32 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
+"ขอบคุณที่เลือกใช้งาน Fedora  Fedora "
+"เป็นการรวมชุดซอฟต์แวร์ที่แต่ละตัวต่างก็อยู่ในสัญญาอนุญาตต่างๆ  "
+"สำหรับการรวมซอฟต์แวร์นี้อยู่ภายใต้สัญญาอนุญาต GNU General Public License "
+"รุ่น 2  ซึ่งไม่มีข้อจำกัดในการใช้งาน, คัดลอกหรือดัดแปลงต้นรหัส  อย่างไรก็ตาม "
+"ยังมีข้อจำกัดและข้อบังคับที่มีผลต่อการแจกจ่ายต้นรหัสไม่ว่าในสภาพเดิมหรือผ่า"
+"นการดัดแปลงแล้ว  และเหนือสิ่งอื่นใด "
+"ข้อกำหนดเหล่านี้เป็นไปตามสัญญาอนุญาตการแจกจ่ายซ้ำ, สิทธิในเครื่องหมายการค้า "
+"และการควบคุมการส่งออก\n"
+"\n"
+"ถ้าคุณต้องการศึกษาข้อกำหนดเหล่านี้ โปรดเข้าไปที่ "
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement"
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "เข้าใจแล้ว โปรดดำเนินการต่อไป"
 
 #: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "ยินดีต้อนรับ"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"ต่อไปนี้จะเป็นขั้นตอนสั้นๆ ที่ต้องตั้งค่า ก่อนจะใช้งานระบบของคุณ "
-"ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอนกรุณาคลิกที่ปุ่ม \"ถัดไป\" "
-"ที่มุมล่างขวาเพื่อทำงานต่อ"
+"ต่อไปนี้จะเป็นขั้นตอนสั้นๆ ที่ต้องตั้งค่า ก่อนจะใช้งานระบบของคุณ  "
+"ตัวติดตั้งจะมีการแนะนำการตั้งค่าอย่างง่ายๆ ทีละขั้นตอน  กรุณาคลิกที่ปุ่ม "
+"\"ถัดไป\" ที่มุมล่างขวาเพื่อทำงานต่อ"
