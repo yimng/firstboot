@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-20 11:31+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "ഫര്‍സ്റ്റ്ബൂട്ട് പ്രവര്‍ത്തിപ്പിക്കുന്നതിനായി നിങ്ങള്‍ റൂട്ട് ആകേണ്ടതുണ്ട്."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "ഫര്‍സ്റ്റ്ബൂട്ട് തുടങ്ങുവാന്‍ സാധ്യമാകുന്നില്ല."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "ഫര്‍സ്റ്റ്ബൂട്ട് ഘടകങ്ങള്‍ ലഭ്യമല്ല."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "ഒരു ഫര്‍സ്റ്റ്ബൂട്ട് സംയോജകഘടകവും ഉണ്ടാക്കുവാന്‍ സാധ്യമായില്ല."
 
@@ -142,11 +142,6 @@ msgstr "%s എന്ന പിക്സ്മാപ്പ് ലഭ്യമാ�
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s എന്ന ഘടകം അതിനുള്ള യുഐ ക്രമികരിച്ില്;: അതിനാല്‍ നീക്കം ചെയ്യുന്നു."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "എക്സ് സര്‍വര്‍ ആരംഭിക്കുന്നതിനായി കാത്തിരിക്കുന്നു... %s-ല്‍ ലോഗ് ലഭ്യമാണു്\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "അഡീഷണല്‍ CDകള്‍"
@@ -196,64 +191,88 @@ msgstr ""
 "മുന്പോട്ട് പോകുന്നതിനായി \"ശരി\" അമര്‍ത്തുക."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CDയില്‍ ഓട്ടോറണ്‍ പ്രോഗ്രാം ലഭ്യമല്ല. തുടരുന്നതിനായി \"ശരി\" അമറ്‍ത്തുക."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "ഉപയോക്താവിനെ ഉണ്ടാക്കുക"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "നിങ്ങളുടെ സിസ്റ്റമിനുള്ള ഉപയോക്താവിനുള്ള അക്കൌണ്ട് ദയവായി ക്രമികരിക്കുക."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "നിങ്ങളുടെ സിസ്റ്റമിനുള്ള ഉപയോക്താവിനുള്ള അക്കൌണ്ട് ദയവായി ക്രമികരിക്കുക."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "പാസ്‌വേര്‍ഡുകള്‍ പൊരുത്തപ്പെടുന്നില്ല.  ദയവായി പാസ്‌വേര്‍ഡ് വീണ്ടും നല്‍കുക."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "'%s' എന്ന പേര് മുന്‍നിശ്ചയിച്ചിട്ടുള്ള സിസ്റ്റം അക്കൌണ്ടാകുന്നു.  ദയവായി മറ്റൊരു പേര് നല്‍കുക."
+msgstr ""
+"'%s' എന്ന പേര് മുന്‍നിശ്ചയിച്ചിട്ടുള്ള സിസ്റ്റം അക്കൌണ്ടാകുന്നു.  ദയവായി മറ്റൊരു പേര് നല്‍കുക."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "%s എന്ന ഉപയോക്താവിന് ഒരു ഹോം ഡയറക്ടറി നിലവിലുണ്ട്. നിങ്ങള്‍ക്കിത് ഉപയോഗിക്കണമോ? "
 "ഇല്ലായെങ്കില്‍, ദയവായി മറ്റൊരു പേര് നല്‍കുക."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "നിങ്ങളുടെ സിസ്റ്റത്തിന്റെ സാധാരണ ഉപയോഗങ്ങള്‍ക്കായി (അഡ്മിനിസ്ട്രേറ്റീവ് അല്ലാത്ത കാര്യങ്ങള്‍ക്ക്) "
 "ഒരു 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നത് ഉചിതമാകുന്നു. ഒരു സിസ്റ്റം 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നതിനായി, "
 "താഴെ ആവശ്യപ്പെട്ടിരിക്കുന്ന വിവരങ്ങള്‍ ദയവായി നല്‍കുക."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "_ഉപയോക്തൃനാമം:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "പൂര്‍ണ്ണ _നാമം:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "_പാസ്‌വേര്‍ഡ്:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "പാസ്‌വേര്‍ഡ് ഉ_റപ്പാക്കുക:"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -261,15 +280,19 @@ msgstr ""
 "Kerberos അല്ലെങ്കില്‍ NIS പോലുള്ള നെറ്റ്‌വര്‍ക്ക് ആധികാരികതകള്‍ ഉപയോഗിക്കണമെങ്കില്‍, ദയവായി "
 "നെറ്റ്‌വര്‍ക്ക് ലോഗിന്‍ ഉപയോഗിക്കുക എന്ന ബട്ടണ്‍ അമര്‍ത്തുക."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "നെറ്റ്‌വര്‍ക്ക് _ലോഗിന്‍ ഉപയോഗിക്കുക..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "തീയതിയും സമയവും"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "നിങ്ങളുടെ സിസ്റ്റമിനുള്ള തീയതിയും സമയവും ദയവായി ക്രമികരിക്കുക."
 
@@ -321,3 +344,5 @@ msgstr ""
 "ചില അടിസ്ഥാന കോണ്‍ഫിഗറേഷനില്‍ കൂടി സെറ്റപ്പ് ഏജന്റ് നിങ്ങളെ നയിക്കുന്നതാണ്.  ദയവായി താഴെ "
 "വലത്തുളള \"മുമ്പോട്ട് പോവുക\" എന്ന ബട്ടണില്‍ ക്ലിക്ക് ചെയ്ത് തുടരുക."
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "എക്സ് സര്‍വര്‍ ആരംഭിക്കുന്നതിനായി കാത്തിരിക്കുന്നു... %s-ല്‍ ലോഗ് ലഭ്യമാണു്\n"

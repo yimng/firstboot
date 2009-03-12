@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2009-02-02 15:36+0530\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
@@ -32,19 +32,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "ਫਸਟਬੂਟ ਚਲਾਉਣ ਲਈ ਤੁਸੀਂ ਪਰਬੰਧਕ ਹੋਣੇ ਜਰੂਰੀ ਹੋ।"
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਫਰੰਟਐਂਡ ਚਾਲੂ ਨਹੀਂ ਕਰ ਸਕਿਆ।"
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਮੈਡਿਊਲ ਨਹੀਂ ਲੱਭਿਆ।"
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਇੰਟਰਫੇਸ ਨਹੀਂ ਬਣਾ ਸਕਿਆ।"
 
@@ -154,11 +154,6 @@ msgstr "pixmap %s ਨੂੰ ਮੈਡਿਊਲ %s ਲਈ ਲੋਡ ਨਹੀਂ 
 msgid "Module %s did not set up its UI; removing."
 msgstr "ਮੈਡਿਊਲ %s ਨੇ ਆਪਣਾ UI ਨਿਰਧਾਰਤ ਨਹੀਂ ਕੀਤਾ; ਹਟਾ ਰਿਹਾ ਹੈ।"
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "X ਸਰਵਰ ਚਾਲੂ ਹੋਣ ਦੀ ਉਡੀਕ ਹੋ ਰਹੀ ਹੈ... %s ਵਿੱਚ ਸਥਿਤ ਹੈ\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "ਵਾਧੂ CD"
@@ -199,67 +194,91 @@ msgstr "ਇੰਸਟਾਲ..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-ROM ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। ਡਰਾਈਵ ਵਿੱਚ CD-ROM ਵਿੱਚ CD ਪਾਓ ਅਤੇ\"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
+msgstr ""
+"CD-ROM ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। ਡਰਾਈਵ ਵਿੱਚ CD-ROM ਵਿੱਚ CD ਪਾਓ ਅਤੇ\"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CD ਉੱਤੇ autorun ਕਾਰਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ। ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਓ।"
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "ਉਪਭੋਗੀ ਬਣਾਓ"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "ਤੁਹਾਨੂੰ ਇਸ ਸਿਸਟਮ ਲਈ ਉਪਭੋਗੀ ਖਾਤਾ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਸਿਸਟਮ ਲਈ ਉਪਭੋਗੀ ਖਾਤਾ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।  ਕਿਰਪਾ ਕਰਕੇ ਫਿਰ ਪਾਸਵਰਡ ਦਿਓ।"
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ '%s' ਸਿਸਟਮ ਖਾਤੇ ਲਈ ਰਾਖਵਾਂ ਹੈ।  ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ ਨਾਂ ਦਿਓ।"
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "ਉਪਭੋਗੀ %s ਲਈ ਇੱਕ ਘਰੇਲੂ ਡਾਇਰੈਕਟਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਘਰੇਲੂ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਮੁੜ "
 "ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ?  ਜੇ ਨਹੀਂ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਉਪਭੋਗੀ-ਨਾਂ ਵਰਤੋ।"
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "ਇਹ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਤੁਸੀਂ ਆਪਣੇ ਸਿਸਟਮ ਦੀ ਲਗਾਤਾਰ (ਬਿਨਾਂ-ਪਰਬੰਧਕੀ) ਵਰਤੋਂ ਲਈ ਇੱਕ "
 "'ਉਪਭੋਗੀ-ਨਾਂ' ਬਣਾਇਆ ਹੈ। ਇੱਕ ਸਿਸਟਮ 'ਉਪਭੋਗੀ-ਨਾਂ,' ਬਣਾਉਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਪੁੱਛੀ ਗਈ "
 "ਜਾਣਕਾਰੀ ਦਿਓ।"
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "ਉਪਭੋਗੀ-ਨਾਂ(_U)"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "ਪੂਰਾ ਨਾਂ(_E):"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "ਪਾਸਵਰਡ(_P):"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "ਪਾਸਵਰਡ ਪੁਸ਼ਟੀ(_M):"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -267,15 +286,19 @@ msgstr ""
 "ਜੇ ਤੁਹਾਨੂੰ ਨੈੱਟਵਰਕ ਪ੍ਰਮਾਣਿਕਤਾ ਦੀ ਲੋੜ ਹੈ, ਜਿਵੇਂ ਕਿ ਕਰਬੀਰੋਸ ਜਾਂ NIS, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਨੈੱਟਵਰਕ "
 "ਲਾਗਇਨ ਵਰਤੋ ਬਟਨ ਦਬਾਓ।"
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋ(_L)..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "ਮਿਤੀ ਤੇ ਸਮਾਂ"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਸਿਸਟਮ ਲਈ ਮਿਤੀ ਤੇ ਸਮਾਂ ਸੈੱਟ ਕਰੋ।"
 
@@ -324,3 +347,5 @@ msgstr ""
 "ਇੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਰੀ ਰਹਿਣ ਲਈ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" "
 "ਬਟਨ ਨੂੰ ਦਬਾਉ।"
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "X ਸਰਵਰ ਚਾਲੂ ਹੋਣ ਦੀ ਉਡੀਕ ਹੋ ਰਹੀ ਹੈ... %s ਵਿੱਚ ਸਥਿਤ ਹੈ\n"

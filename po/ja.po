@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-20 14:38+1000\n"
 "Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <jp@li.org>\n"
@@ -24,19 +24,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "firstboot を起動するには、ルートになる必要があります。"
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "firstboot のフロントエンドを起動できません。"
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "firstboot のモジュールが見つかりませんでした。"
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "firstboot のインターフェースを作成てきません。"
 
@@ -147,12 +147,8 @@ msgstr "画像 %s がロードできません(%s モジュールに必要とさ�
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr "%s モジュールは、ユーザーインターフェイスが設定されていません: 削除します。"
-
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "X サーバーが開始するまでお待ち下さい... ログは %s にあります\n"
+msgstr ""
+"%s モジュールは、ユーザーインターフェイスが設定されていません: 削除します。"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -201,22 +197,29 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "自動起動プログラムが CD 上に見つかりません。\"OK\" をクリックして継続します。"
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"自動起動プログラムが CD 上に見つかりません。\"OK\" をクリックして継続します。"
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "ユーザーの作成"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "このシステム用にユーザーアカウントを作成する必要があります。"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "このシステム用にユーザーアカウントを作成する必要があります。"
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "パスワードが一致していません。もう一度入力してください。"
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -225,41 +228,58 @@ msgstr ""
 "ユーザー名 '%s' はシステムアカウントとして既に使用されています。他のユーザー"
 "名を指定してください。"
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "'%s' ユーザーのホームフォルダは既に存在します。このホームフォルダを再利用しま"
 "すか?もししないのならば、別のユーザー名を選択してください。"
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "(管理用途ではない)普通の作業のために、'ユーザー'を作成することを推奨します。"
 "以下の情報を入力し、システムに'ユーザー'を作成します。"
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "ユーザー名 (_U):"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "フルネーム (_E):"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "パスワード (_P):"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "パスワードの確認 (_C):"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -267,15 +287,19 @@ msgstr ""
 "もしも Kerberos や NIS のようなネットワーク認証が必要な場合、\"ネットワークロ"
 "グインを使用する\" をクリックしてください。"
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "ネットワークログインを使用する (_L)"
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "日付と時刻"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "システム用に日付と時刻を設定してください。"
 
@@ -325,3 +349,5 @@ msgstr ""
 "エージェントは、基本的な設定についてガイドしていきます。右下隅にある \"進む"
 "\" をクリックして、設定を開始します。"
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "X サーバーが開始するまでお待ち下さい... ログは %s にあります\n"

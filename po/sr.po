@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-18 12:54+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
@@ -19,20 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr ""
 "Морате бити „root“ да би покренули „firstboot“ (програм првог покретања)."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "Не може се покренути ни једно прочеље за „firstboot“."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "Није нађен ни један модул за „firstboot“."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "Није се могло покренути ни једно сучеље за „firstboot“."
 
@@ -145,11 +145,6 @@ msgstr "Није могуће учитати слику %s за модул %s."
 msgid "Module %s did not set up its UI; removing."
 msgstr "Модул %s није подесио своје сучеље, прескачем."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "Чекам да се покрене Икс сервер... дневник се налази у %s\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "Додатни CD-ови"
@@ -203,19 +198,24 @@ msgstr ""
 "Програм са самосталним покретањем није пронађен на CD-у. За наставак "
 "притисните „У реду“."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "Направи корисника"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "Морате да направите кориснички налог за овај систем."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "Морате да направите кориснички налог за овај систем."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Лозинке се не подударају.  Унесите лозинку поново."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -224,43 +224,60 @@ msgstr ""
 "Корисничко име „%s“ је резервисани системски налог. Наведите друго "
 "корисничко име."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "Лични директоријум за корисника %s већ постоји. Да ли бисте жељели "
 "искористити овај лични директоријум?  Ако не желите, изаберите друго "
 "корисничко име."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "Препоручено је да направите „корисничко име“ за обичног (не "
 "администраторског) корисника за систем. Да направите системско „корисничко "
 "име“, пружите податке који су захтевани испод."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "_Корисничко име:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "Презиме и им_е:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "_Лозинка:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "Потврди_те лозинку:"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -268,15 +285,19 @@ msgstr ""
 "Ако морате користити мрежну аутентификацију, попут Kerberos или NIS, "
 "кликните на дугме Користи мрежно пријављивање."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Користи _мрежно пријављивање..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "Датум и време"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "Поставите датум и време на систему."
 
@@ -326,3 +347,6 @@ msgstr ""
 "Потребно је још неколико корака док систем не буде спреман за употребу.  "
 "Агент поставке ће Вас водити кроз нека основна подешавања.  За наставак "
 "молим притисните дугме „Напред“ у доњем десном углу."
+
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "Чекам да се покрене Икс сервер... дневник се налази у %s\n"

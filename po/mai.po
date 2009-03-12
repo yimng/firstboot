@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.mai\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-21 13:53+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <hindi.sf.net>\n"
@@ -17,23 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
 "\n"
 "\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "फर्स्टबूट चलाबैक ले अहाँकेँ रूट होएबा चाही."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "कोनो फर्स्टबूट फ्रंटएंडक आरंभ नहि कए सकल."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "कोनो फर्स्टबूट मॉड्यूल नहि भेटल."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "कोनो फर्स्टबूट अंतरफलककेँ बनाए नहि सकल."
 
@@ -143,11 +145,6 @@ msgstr "पिक्समैप %s को %s मॉड्यूलक लेल
 msgid "Module %s did not set up its UI; removing."
 msgstr "मॉड्यूल %s एकर UI केँ सेटअप नहि कएनए अछि; हटाए रहल अछि."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "X सर्वरक आरंभ होएबाक लेल प्रतीक्षारत... लॉग %s पर स्थित अछि\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "अतिरिक्त CD"
@@ -193,64 +190,89 @@ msgstr ""
 "जारी राखए क' लेल दाबू."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "प्रयोक्ता बनाबू"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "अहाँकेँ ई सिस्टमक लेल उपयोक्ता खाता जरूर सेट करबा चाही."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "अहाँकेँ ई सिस्टमक लेल उपयोक्ता खाता जरूर सेट करबा चाही."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "शब्दकूट मेल नहि करैत अछि. कृप्या शब्दकूट फिनु दिअ'."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
+msgstr ""
+"'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
 
-#: ../modules/create_user.py:114
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"उपयोक्ता %s क लेल घर निर्देशिका पहिनेसँ मोजुद अछि. की अहाँ ई घर निर्देशिकाकेँ फिनु प्रयोग "
+"करबाक लेल चाहब?  जँ नहि, कृप्या भिन्न उपयोक्ता नाम चुनू."
+
+#: ../modules/create_user.py:175
 #, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
-"उपयोक्ता %s क लेल घर निर्देशिका पहिनेसँ मोजुद अछि. की अहाँ ई घर निर्देशिकाकेँ फिनु "
-"प्रयोग करबाक लेल चाहब?  जँ नहि, कृप्या भिन्न उपयोक्ता नाम चुनू."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:195
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "ई अनुशंसा कएल जाएत अछि जे अहाँ सिस्टमक नियमित (अप्रशासनिक) प्रयोग क' लेल एकटा "
 "व्यक्तिगत 'प्रयोक्तानाम' बनाबू. एकटा सिस्टम 'प्रयोक्तानाम' बनाबै क' लेल, नीच्चाँ माँगल गेल "
 "जानकारी दिअ'."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "प्रयोक्तानाम (_U):"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "पूरा नाम (_e):"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "शब्दकूट (_P):"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "शब्दकूट सुनिश्चित करू (_m):"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -258,15 +280,19 @@ msgstr ""
 "जँ अहाँ संजाल सत्यापनक प्रयोग कएनाइ चाहैत छी, जहिना जे करबरोस अथवा NIS, कृप्या सँजाल "
 "लोगिनक प्रयोग करू बटन पर क्लिक करू."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "सँजाल लोगिनक प्रयोग करू (_L)..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "दिनांक आ समय"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "कृप्या सिस्टमक लेल दिनांक आ समय सेट करू."
 
@@ -315,6 +341,8 @@ msgid ""
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "अहाँक सिस्टमक प्रयोगक लेल तैआर करबाक पहिने किछु आओर चरण अछि. सेटअप प्रतिनिधि आब अहाँकेँ "
-"किछु मौलिक बिन्यासक माध्यमसँ मार्गदर्शन करताह.  कृप्या जारी रखबाक लेल नीच्चाँ दहिन्ना कोनामे "
-"\"आगाँ\" बटन दबाबू."
+"किछु मौलिक बिन्यासक माध्यमसँ मार्गदर्शन करताह.  कृप्या जारी रखबाक लेल नीच्चाँ दहिन्ना "
+"कोनामे \"आगाँ\" बटन दबाबू."
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "X सर्वरक आरंभ होएबाक लेल प्रतीक्षारत... लॉग %s पर स्थित अछि\n"

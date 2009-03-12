@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-20 10:07+1100\n"
 "Last-Translator: Yulia Poyarkova <yulia.poyarkova@redhat.com>\n"
 "Language-Team: \n"
@@ -25,19 +25,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "Для запуска firstboot вам необходимо быть пользователем root."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "Невозможно запустить ни один из интерфейсов firstboot."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "Не найдены модули firstboot."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "Невозможно создать ни один из интерфейсов firstboot."
 
@@ -111,7 +111,8 @@ msgstr "Модуль %s не настроил свой пользователь�
 
 #: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage должен быть заданным заголовком модуля или номером страницы."
+msgstr ""
+"moveToPage должен быть заданным заголовком модуля или номером страницы."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
@@ -146,11 +147,6 @@ msgstr "Невозможно загрузить картинку %s для мо�
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Модуль %s не настроил свой пользовательский интерфейс и будет удален."
-
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "Ожидается запуск сервера X... журнал расположен в %s\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -195,25 +191,32 @@ msgstr "Установка..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-ROM найден.  Вставьте CD-ROM в привод и нажмите \"OK\" для продолжения."
+msgstr ""
+"CD-ROM найден.  Вставьте CD-ROM в привод и нажмите \"OK\" для продолжения."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Программа autorun не найдена на CD. Нажмите \"OK\" для продолжения."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "Создать пользователя"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "Необходимо создать учетную запись пользователя для этой системы."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "Необходимо создать учетную запись пользователя для этой системы."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Пароли не совпадают.  Введите пароль снова."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -222,42 +225,59 @@ msgstr ""
 "Пользователь %s -- зарезервированная системная учетная запись. Укажите "
 "другое имя."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "Домашний каталог для пользователя %s уже существует. Использовать этот ранее "
 "созданный каталог?  В противном случае укажите другое имя."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "Рекомендуется создать 'пользователя' для повседневного (не "
 "административного) использования вашей системы. Чтобы создать 'пользователя' "
 "введите необходимые данные."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "_Имя пользователя:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "Полное им_я:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "_Пароль:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "Повто_р пароля:"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -265,15 +285,19 @@ msgstr ""
 "Если вам требуется использовать проверку подлинности по сети, например "
 "Kerberos или NIS, нажмите кнопку Использовать вход через сеть."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Использовать _вход через сеть..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "Дата и Время"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "Пожалуйста установите дату и время для системы."
 
@@ -325,3 +349,5 @@ msgstr ""
 "работе.  В этом вам поможет Помощник по настройке.  Нажмите \"Вперед\" в "
 "нижнем правом углу для продолжения"
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "Ожидается запуск сервера X... журнал расположен в %s\n"

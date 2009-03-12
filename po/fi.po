@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-15 18:51+0300\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish\n"
@@ -18,19 +18,19 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "Sinun on oltava pääkäyttäjä firstbootin suorittamiseksi."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "Mitään firstboot-edustaohjelmaa ei voitu käynnistää."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "Yhtään firstboot-moduulia ei löytynyt."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "Ei voitu luoda mitään firstboot-käyttöliittymää."
 
@@ -141,11 +141,6 @@ msgstr "Ei voi ladata moduulin %s bittikarttakuvaa %s."
 msgid "Module %s did not set up its UI; removing."
 msgstr "Moduuli %s ei asettanut käyttöliittymäänsä, poistetaan."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "Odotetaan X-palvelimen käynnistymistä... loki kirjoitetaan tiedostoon %s\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "Lisä-CD:t"
@@ -196,19 +191,24 @@ msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Autorun-ohjelmaa ei löytynyt CD:ltä. Napsauta ”OK” jatkaaksesi."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "Luo käyttäjä"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "Tähän järjestelmään on luotava käyttäjätunnus."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "Tähän järjestelmään on luotava käyttäjätunnus."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Salasanat eivät ole samat.  Syötä salasana uudelleen."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -217,41 +217,58 @@ msgstr ""
 "Käyttäjätunnus ”%s” on varattu järjestelmätunnus.  Syötä toinen "
 "käyttäjätunnus."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "Käyttäjän %s kotihakemisto on jo olemassa. Haluatko käyttää tätä "
 "kotihakemistoa? Jos et, valitse toinen käyttäjätunnus."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "On suositeltua luoda käyttäjätunnus järjestelmän peruskäyttöön (joka ei ole "
 "ylläpitoa). Syötä alla pyydetyt tiedot käyttäjätunnuksen luomiseksi."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "_Käyttäjätunnus:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "Koko _nimi:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "_Salasana:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "_Vahvista salasana:"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -259,15 +276,19 @@ msgstr ""
 "Jos tarvitset verkkokirjautumista, kuten Kerberosta tai NIS:ää, napsauta "
 "Käytä verkkokirjautumista -painiketta."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Käytä verkko_kirjautumista..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "Päivämäärä ja aika"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "Aseta järjestelmän päivä ja aika"
 
@@ -318,6 +339,10 @@ msgstr ""
 "Järjestelmä on muutamaa vaihetta vaille valmis käyttöön. Asennusohjelma "
 "ohjaa sinua nyt muutamien perusasetusten määrittelyssä. Jatka napsauttamalla "
 "oikeassa alanurkassa olevaa ”Eteenpäin”-painiketta."
+
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr ""
+#~ "Odotetaan X-palvelimen käynnistymistä... loki kirjoitetaan tiedostoon %s\n"
 
 #~ msgid ""
 #~ "It is highly recommended that a personal user account be created.  If you "

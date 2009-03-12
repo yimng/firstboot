@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-04-14 13:55+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -18,22 +18,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "ఫస్ట్‍‌బూట్‌ను నడుపుటకు నువ్వు తప్పక బుట్ చేయాలి."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "ఏ ఫస్ట్‍‌బూట్ ఫ్రంట్ఎండ్‌ను ప్రారంభించలేము."
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "ఏ ఫస్ట్‍‌బూట్ మాడ్యూల్స్‍ కనబడలేదు."
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "ఏ ఫస్ట్‍‌బూట్ అంతర్‌ఫలకం సృష్టించబడలేక పోయింది."
 
@@ -105,15 +106,15 @@ msgstr "ముందుకు (_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "మాడ్యూల్ %s దాని UI ను అమర్చలేదు, తీసివేస్తోంది."
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage తప్పక మాడ్యూల్ శీర్షికను కాని లేదా పుట సంఖ్యను కాని ఇవ్వాలి."
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "తెరపట్టు సంచయన్ని సృష్టించలేక పోయింది; వదిలివేస్తోంది."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "శీర్షిక %s తో ఏ మాడ్యూల్ లేదు."
@@ -133,7 +134,7 @@ msgstr "moduleClass నామపు తరగతిని మాడ్యూల�
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr "మాడ్యూల్ %s కావలిసిన యాట్రిబ్యూట్ %s ను కలిగిలేదు; వదిలివేయుచున్నది."
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr "పిక్స్‍‌మాప్ %s ను మాడ్యూల్ %s కొరకు నింపలేక పోయింది."
@@ -183,79 +184,90 @@ msgstr "సంస్థాపన..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
+msgstr ""
+"CD-ROM కనుగొనబడలేదు.  దయచేసి ఒక CD-ROMని driveలో ఉంచి కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CDలో తనకుతానుగా పనిచేసే ప్రక్రమం కనుగొనబడలేదు. కొనసాగించటానికి \"సరే\"ను నొక్కండి."
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "వినియోగదారుని సృష్టించు"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
+#: ../modules/create_user.py:83
+#, fuzzy
+msgid "You must create a user account for this system."
+msgstr "దయచేసి సిస్టమ్ తేది మరియు సమయంను అమర్చుము."
+
+#: ../modules/create_user.py:94
+msgid "You must enter and confirm a password for this user."
 msgstr ""
-"వ్యక్తిగత వినియోగదారుని ఖాతా సృష్టించటానికి ఎక్కువగా మద్దతివ్వబడుతుంది మీరు ఖాతాలేకుండా కొనసాగించదలిస్తే, "
-"నిర్వాహణా ఉపయోగాలకు మాత్రమే కేటాయించిన root ఖాతాను మాత్రమే ఉపయోగించాలి."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "కొనసాగించు(_C)"
-
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "ఖాతా సృష్టించు"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "అనుమతిపదం సరిపోలలేదు.  మళ్లీ అనుమతిపదాన్ని ఇవ్వండి."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "'%s'వినియోగదారు పేరు ప్రత్యేక విధానంతోకూడిన ఖాతా కలిగిఉంది.  దయచేసి వేరే వినియోగదారుపేరు తెల్పండి."
 
-#: ../modules/create_user.py:118
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "వినియోగదారి %s కొరకు ఒక నివాస సంచయం ఇప్పటికే వుంది. మీరు ఈ నివాస సంచయంను తిరిగి‌వుపయోగించుంటకు "
 "ఇష్టపడతారా?  లేదంటే, దయచేసి వేరే వినియోగదారినామమును ఎంచుకొనుము."
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "మీరు మీ నిత్యావసరానికి (పరిపాలనాసంబంధి కాని) 'వినియోగదారుని పేరు' సృష్టించటం సమర్ధించబడింది. కంప్యూటరు "
 "'వినియోగదారు'ని పేరు సృష్టించటానికి కింద అడిగిన సమాచారాన్ని సమాకూర్చండి."
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "వినియోగదారినామము(_U):"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "పూర్తి నామం(_e):"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "సంకేతపదం(_P):"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "నిర్ధారిత అనుమతి పదం: (_m)"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -263,15 +275,19 @@ msgstr ""
 "Kerberos లేక NIS వంటి network ప్రామాణీకరణలను ఉపయోగించటం మీకు అవసరమైతే దయచేసి Use Network "
 "Login మీటను నొక్కండి."
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Network Login ఉపయోగించు (_L)"
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "తేది మరియు సమయం"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "దయచేసి సిస్టమ్ తేది మరియు సమయంను అమర్చుము."
 
@@ -320,3 +336,16 @@ msgstr ""
 "ఆకృతీకరణ ద్వారా మిమ్మల్ని నిర్దేశిస్తాడు.  కొనసాగించుటకు దయచేసి క్రింది కుడిప్రక్క మూలనగల \"ముందుకు\" "
 "బటన్‌ను నొక్కండి."
 
+#~ msgid ""
+#~ "It is highly recommended that a personal user account be created.  If you "
+#~ "continue without an account, you can only log in with the root account, "
+#~ "which is reserved for administrative use only."
+#~ msgstr ""
+#~ "వ్యక్తిగత వినియోగదారుని ఖాతా సృష్టించటానికి ఎక్కువగా మద్దతివ్వబడుతుంది మీరు ఖాతాలేకుండా కొనసాగించదలిస్తే, "
+#~ "నిర్వాహణా ఉపయోగాలకు మాత్రమే కేటాయించిన root ఖాతాను మాత్రమే ఉపయోగించాలి."
+
+#~ msgid "_Continue"
+#~ msgstr "కొనసాగించు(_C)"
+
+#~ msgid "Create _account"
+#~ msgstr "ఖాతా సృష్టించు"

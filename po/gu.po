@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-21 11:19+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -38,19 +38,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "firstboot ચલાવવા માટે તમે રુટ હોવા જ જોઈએ."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "કોઈપણ firstboot અગ્રઅંત ચલાવી શક્યા નહિં."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "કોઈ firstboot મોડ્યુલો મળ્યા નહિં."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "કોઈપણ firstboot ઈન્ટરફેસ બનાવી શક્યા નહિં."
 
@@ -160,11 +160,6 @@ msgstr "પિક્સમેપ %s ને મોડ્યુલ %s માટે
 msgid "Module %s did not set up its UI; removing."
 msgstr "મોડ્યુલ %s એ તેનું UI સુયોજીત કર્યું ન હતું; દૂર કરી રહ્યા છીએ."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "શરૂ કરવા માટે X સર્વર માટે રાહ જોઇ રહ્યા છે... લોગ %s માં સ્થાન થયેલ છે\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "વધારાની CD"
@@ -211,22 +206,29 @@ msgstr ""
 "રાખવા માટે \"બરાબર\" ક્લિક કરો."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "વપરાશકર્તા બનાવો"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "આ સિસ્ટમ માટે વપરાશકર્તા ખાતુ બનાવવુ જ પડશે."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "આ સિસ્ટમ માટે વપરાશકર્તા ખાતુ બનાવવુ જ પડશે."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "પાસવર્ડો બંધબેસતા નથી.  મહેરબાની કરીને ફરીથી પાસવર્ડ દાખલ કરો."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -235,42 +237,59 @@ msgstr ""
 "વપરાશકર્તાનામ '%s' એ આરક્ષિત સિસ્ટમ ખાતું છે.  મહેરબાની કરીને અન્ય વપરાશકર્તાનામ સ્પષ્ટ "
 "કરો."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "વપરાશકર્તા %s માટેની ઘર ડિરેક્ટરી પહેલાથી જ હાજર છે. શું તમે આ ઘર ડિરેક્ટરી પુનઃવાપરવા "
 "માંગો છો?  જો નહિં, તો મહેરબાની કરીને અન્ય અલગ વપરાશકર્તાનામ પસંદ કરો."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "એ આગ્રહણીય છે કે ત તમારી સિસ્ટમના નિયમિત (બિન-સંચાલક) વપરાશ માટે 'વપરાશકર્તાનામ' "
 "બનાવો. સિસ્ટમ 'વપરાશકર્તાનામ' બનાવવા માટે, મહેરબાની કરીને નીચે અરજી થયેલ જાણકારી "
 "પૂરી પાડો."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "વપરાશકર્તાનામ (_U):"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "પૂરું નામ (_e):"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "પાસવર્ડ (_P):"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "ખાતરી પાસવર્ડ (_m):"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -278,15 +297,19 @@ msgstr ""
 "જો તમારે નેટવર્ક સત્તાધિકરણ વાપરવાની જરૂર હોય, જેમ કે કર્બરોઝ અથવા NIS, તો મહેરબાની "
 "કરીને નેટવર્ક પ્રવેશ વાપરો બટન ક્લિક કરો."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "નેટવર્ક પ્રવેશ વાપરો (_L)..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "તારીખ અને સમય"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "મહેરબાની કરીને સિસ્ટમ માટે તારીખ અને સમયનુ સુયોજન કરો."
 
@@ -338,3 +361,5 @@ msgstr ""
 "તમને અમુક આધારભૂત રૂપરેખાંકન મારફતે માર્ગદર્શન કરશે.  મહેરબાની કરીને ચાલુ રાખવા માટે નીચે "
 "જમણાં ખૂણે \"આગળ ધપાવો\" બટન ક્લિક કરો."
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "શરૂ કરવા માટે X સર્વર માટે રાહ જોઇ રહ્યા છે... લોગ %s માં સ્થાન થયેલ છે\n"

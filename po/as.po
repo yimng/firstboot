@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-21 11:15+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
 "Language-Team: Assamese\n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "firstboot চলাবলৈ আপুনি ৰূট হ'ব লাগিব ।"
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "কোনো firstboot frontend আৰম্ভ কৰিব নোৱাৰিলো ।"
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "কোনো firstboot অংশ পোৱা ন'গ'ল ।"
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "কোনো firstboot সংযোগক্ষেত্ৰ সৃষ্টি কৰিব নোৱাৰি ।"
 
@@ -88,7 +88,8 @@ msgstr "সমাপ্তি(_F)"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
+msgstr ""
+"আপোনাৰ কিছু নিৰ্বাচিত বস্তু কাৰ্য্যসিদ্ধি কৰিব'লৈ ব্যৱস্থাপ্ৰণালী পুনৰাৰম্ভ কৰিব লাগিব ।"
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -141,11 +142,6 @@ msgstr "pixmap %s ক %s অংশৰ বাবে তুলিব পৰা ন
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s অংশই তাৰ UI প্ৰতিষ্ঠা নকৰিলে, আঁতৰুৱা হৈছে ।"
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "X সেৱক আৰম্ভ হ'বলৈ ৰখা হৈছে... লগ %s ত আছে\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "অতিৰিক্ত CD"
@@ -192,22 +188,28 @@ msgstr ""
 "\"ঠিক আছে\" টিপক ।"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr " CD‌ -ত autorun কাৰ্য্যক্ৰম পোৱা ন'গ'ল । আগবাঢ়িব'লৈ \"ঠিক আছে\" টিপক ।"
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "ব্যৱহাৰকৰোঁতা সৃষ্টি কৰক"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "অনুগ্ৰহ কৰি ব্যৱস্থাপ্ৰনালীৰ বাবে ব্যৱহাৰকৰোঁতাৰ হিচাপ সৃষ্টি কৰক ।"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "অনুগ্ৰহ কৰি ব্যৱস্থাপ্ৰনালীৰ বাবে ব্যৱহাৰকৰোঁতাৰ হিচাপ সৃষ্টি কৰক ।"
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "গুপ্তশব্দ অমিল । অনুগ্ৰহ কৰি গুপ্তশব্দ পুনঃ দিয়ক ।"
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -216,42 +218,59 @@ msgstr ""
 "'%s' ব্যৱহাৰকৰোঁতাৰ নাম ব্যৱস্থাপ্ৰণালীৰ হিচাপৰ বাবে সংৰক্ষিত । অনুগ্ৰহ কৰি অন্য এটা "
 "ব্যৱহাৰকৰোঁতাৰ নাম দিয়ক ।"
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "ব্যৱহাৰকৰোঁতা %s ৰ ঘৰৰ পঞ্জিকা ইতিমধ্যে আছে । আপুনি এই ঘৰৰ পঞ্জিকাকে আকৌ ব্যৱহাৰ "
 "কৰিব খোজে নেকি ? ন'হ'লে, অন্য এটা ব্যৱহাৰকৰোঁতাৰ নাম নিৰ্ব্বাচন কৰক ।"
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "আপুনি এটা 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰাৰ উপদেশ দিয়া হয় ব্যৱস্থাপ্ৰণালীৰ সাধাৰণ "
 "(অপ্ৰশাসনিক) ব্যৱহাৰৰ বাবে । ব্যৱস্থাপ্ৰণালীৰ 'ব্যৱহাৰকৰোঁতাৰ নাম' সৃষ্টি কৰিবলৈ, তলৰ "
 "বিচৰা তথ্য অনুগ্ৰহ কৰি দিয়ক ।"
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "ব্যৱহাৰকৰোঁতাৰ নাম:(_U)"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "সম্পূর্ণ নাম: (_e)"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "গুপ্তশব্দ: (_P)"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "গুপ্তশব্দ দৃঢ় কৰক (_m):"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -259,15 +278,19 @@ msgstr ""
 "নে'টৱৰ্কৰ প্ৰমাণীকৰণ ব্যৱহাৰ কৰিব হ'লে, যেনে Kerberos বা NIS, অনুগ্ৰহ কৰি নে'টৱৰ্ক "
 "প্ৰৱেশ ব্যৱহাৰ কৰক বুটাম টিপক ।"
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "নে'টৱৰ্ক প্ৰৱেশ ব্যৱহাৰ কৰক (_L)..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "দিন আৰু সময়"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "অনুগ্ৰহ কৰি ব্যৱস্থাপ্ৰনালীৰ বাবে দিন আৰু সময় নিৰ্ধাৰণ কৰক ।"
 
@@ -317,3 +340,5 @@ msgstr ""
 "নিযুক্তকে আপোনাক কিছুমান মূল সংস্থাপনৰ মাজেৰে পৰিচালনা কৰিব । অনুগ্ৰহ কৰি "
 "আগবাঢ়িব'লৈ তলৰ সোঁ‌-কোনাৰ \"আগলৈ\" বুটাম টিপক ।"
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "X সেৱক আৰম্ভ হ'বলৈ ৰখা হৈছে... লগ %s ত আছে\n"

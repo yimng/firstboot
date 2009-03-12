@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-20 15:10+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -18,24 +18,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 "\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "root로 firstboot를 실행해야 합니다. "
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "firstboot 프론트앤드를 시작할 수 없습니다. "
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "firstboot 모듈을 찾을 수 없습니다. "
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "firstboot 인터페이스를 생성할 수 없습니다. "
 
@@ -145,11 +146,6 @@ msgstr "%s 모듈에 해당하는 pixmap %s을 읽어올 수 없습니다. "
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s 모듈에 UI가 설정되어 있지 않습니다; 삭제합니다. "
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "X 서버가 시작하기를 기다리고 있습니다.. 로그는 %s에 있습니다\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "추가 CD"
@@ -195,66 +191,89 @@ msgstr ""
 "을 클릭하여 계속 진행해 주십시오."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램을 CD에서 찾지 못했습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "사용자 생성 "
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "시스템에 대한 사용자 계정을 생성하셔야 합니다."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "시스템에 대한 사용자 계정을 생성하셔야 합니다."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "암호가 일치하지 않습니다. 암호를 다시 입력해 주시기 바랍니다.   "
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "사용자명 '%s'은 시스템 계정입니다.  다른 사용자명을 지정해주십시오. "
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "사용자 '%s'에 대한 홈 디렉토리는 이미 존재합니다. 이 홈 디렉토리를 다시 사용"
 "하시겠습니까? 그렇지 않다면, 다른 사용자명을 지정해 주십시오. "
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 " 시스템의 일반 사용을 위한 (관리자 계정이 아닌) '사용자계정'을 생성하시기 바"
 "랍니다. 시스템 '사용자계정'을 만드시려면, 아래에서 요구하는 정보를 기입해 주"
 "십시오. "
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "사용자 이름(_U): "
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "성명(_E): "
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "암호(_P): "
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "암호 확인(_M): "
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -262,15 +281,19 @@ msgstr ""
 "커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
 "을 클릭해 주십시오.  "
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "네트워크 로그인 사용(_L)..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "날짜 및 시간 "
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "시스템 날짜 및 시간을 설정하시기 바랍니다. "
 
@@ -319,3 +342,5 @@ msgstr ""
 "전트는 이제 몇 가지 기본적인 설정 과정을 단계별로 길잡이를 해 드릴 것입니다. "
 "계속하시려면 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하십시오."
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "X 서버가 시작하기를 기다리고 있습니다.. 로그는 %s에 있습니다\n"

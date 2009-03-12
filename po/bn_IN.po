@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-20 12:14+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -24,19 +24,19 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "firstboot সঞ্চালনের জন্য root পরিচয় ব্যবহার করা আবশ্যক।"
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "firstboot-র প্রেক্ষাপট আরম্ভ করতে ব্যর্থ।"
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "firstboot-র কোনো মডিউল পাওয়া যায়নি।"
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "কোনো firstboot ইন্টারফেস নির্মাণ করা যায়নি।"
 
@@ -148,12 +148,8 @@ msgstr "%s পিক্সম্যাপটি, %s মডিউলের জন
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr "%s মডিউল দ্বারা প্রয়োজনীয় ইউজার ইন্টারফেস নির্ধারণ করা যায়নি; মুছে ফেলা হচ্ছে।"
-
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "X সার্ভার আরম্ভের অপেক্ষা করা হচ্ছে... %s-এ লগ উপস্থিত রয়েছে\n"
+msgstr ""
+"%s মডিউল দ্বারা প্রয়োজনীয় ইউজার ইন্টারফেস নির্ধারণ করা যায়নি; মুছে ফেলা হচ্ছে।"
 
 # msgstr "অতিরিক্ত সিডিগুলো"
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
@@ -207,22 +203,29 @@ msgstr ""
 "\" চাপুন।"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "CD'র মধ্যে autorun প্রোগ্রাম পাওয়া যায়নি। এগিয়ে চলার জন্য \"ঠিক আছে\" চাপুন।"
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"CD'র মধ্যে autorun প্রোগ্রাম পাওয়া যায়নি। এগিয়ে চলার জন্য \"ঠিক আছে\" চাপুন।"
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "নতুন ব্যবহারকারীর অ্যাকাউন্ট তৈরি করুন"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "বর্তমান সিস্টেমের জন্য ব্যবহারকারীর অ্যাকাউন্ট নির্মাণ করা আবশ্যক।"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "বর্তমান সিস্টেমের জন্য ব্যবহারকারীর অ্যাকাউন্ট নির্মাণ করা আবশ্যক।"
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "পাসওয়ার্ড দুটির মধ্যে গরমিল।  অনুগ্রহ করে পুনরায় পাসওয়ার্ড লিখুন।"
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -231,43 +234,60 @@ msgstr ""
 "'%s' নামটি একটি সংরক্ষিত অ্যাকাউন্টের ক্ষেত্রে প্রযোজ্য।  অনুগ্রহ করে পৃথক ব্যবহারকারীর "
 "নাম উল্লেখ করুন।"
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "%s ব্যবহারকারীর জন্য একটি ব্যক্তিগত ডিরেক্টরি বর্তমানে উপস্থিত রয়েছে। এই ডিরেক্টরিটি "
 "পুনরায় ব্যবহার করা হবে কি?  এই ডিরেক্টরিটি ব্যবহার করতে ইচ্ছুক না হলে একটি পৃথক "
 "ব্যবহারকারীর নাম নির্বাচন করুন।"
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "সিস্টেমের মধ্যে দৈনিক কাজের (প্রশাসনিক কর্ম ব্যতীত) জন্য একটি সাধারণ 'ব্যবহারকারীর "
 "অ্যাকাউন্ট' নির্মাণ করা আবশ্যক। একটি প্রশাসনিক অ্যাকাউন্ট নির্মাণের জন্য নিম্নলিখিত "
 "তথ্য পূরণ করুন।"
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "ব্যবহারকারীর নাম: (_U)"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "সম্পূর্ণ নাম: (_e)"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "পাসওয়ার্ড: (_P)"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ড নিশ্চিত করুন: (_m)"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -275,15 +295,19 @@ msgstr ""
 "Kerberos অথবা NIS প্রভৃতির সাহায্যে নেটওয়ার্ডের মাধ্যমে অনুমোদন করতে ইচ্ছুক হলে, "
 "'নেটওয়ার্ক লগ-ইন ব্যবহার করা হবে' শীর্ষক বাটন ক্লিক করুন।"
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "নেটওয়ার্ক লগ-ইন ব্যবহার করা হবে...(_L)"
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "তারিখ ও সময়"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "অনুগ্রহ করে সিস্টেমে তারিখ ও সময় নির্ধারণ।"
 
@@ -334,3 +358,5 @@ msgstr ""
 "সিস্টেমের কিছু মৌলিক কনফিগারেশনে Setup Agent আপনাকে সাহায্য করবে। এগিয়ে যাওয়ার "
 "জন্য জন্য নীচে ডানদিকের কোনায় অবস্থিত \"পরবর্তী\" বোতামটি চাপুন।"
 
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "X সার্ভার আরম্ভের অপেক্ষা করা হচ্ছে... %s-এ লগ উপস্থিত রয়েছে\n"

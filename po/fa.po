@@ -8,12 +8,12 @@
 # Meelad Zakaria <meelad@farsiweb.info>, 2005, 2006.
 # Roozbeh Pournader <roozbeh@farsiweb.info>, 2006.
 # Elnaz Sarbar <elnaz@farsiweb.info>, 2006.
-#Amir Farsi <afarsi@ymail.com>, 2008
+# Amir Farsi <afarsi@ymail.com>, 2008
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 09:11-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-07-19 06:41+0330\n"
 "Last-Translator: Amir Farsi\n"
 "Language-Team: Persian(fa) <fedora-trans-fa@redhat.com>\n"
@@ -22,19 +22,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../progs/firstboot:131
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "برای اجرای firstboot شما باید کاربر root باشید."
 
-#: ../progs/firstboot:160 ../progs/firstboot:161
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr ""
 
-#: ../progs/firstboot:172 ../progs/firstboot:173
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr ""
 
-#: ../progs/firstboot:182 ../progs/firstboot:183
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr ""
 
@@ -99,15 +99,15 @@ msgstr "ـجلو"
 msgid "Module %s did not set up its UI, removing."
 msgstr ""
 
-#: ../firstboot/interface.py:352 ../firstboot/interface.py:353
+#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 
-#: ../firstboot/interface.py:437
+#: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "قادر به ایجاد پوشه screenshot نمیباشد، در حال رد کردن."
 
-#: ../firstboot/interface.py:477 ../firstboot/interface.py:478
+#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "هیچ ماژولی با عنوان %s وجود ندارد."
@@ -127,7 +127,7 @@ msgstr ""
 msgid "Module %s does not contain the required attribute %s; skipping."
 msgstr ""
 
-#: ../firstboot/module.py:178
+#: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
 msgstr ""
@@ -178,84 +178,106 @@ msgstr ""
 "«تأیید» کلیک کنید."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 
-#: ../modules/create_user.py:40 ../modules/create_user.py:41
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "ایجاد کاربر"
 
-#: ../modules/create_user.py:60
-msgid ""
-"It is highly recommended that a personal user account be created.  If you "
-"continue without an account, you can only log in with the root account, "
-"which is reserved for administrative use only."
-msgstr "این بسیار توصیه شده است که یک حساب کاربری شخصی ایجاد شود. اگر شما بدون یک حساب ادامه دهید، شما فقط میتوانید با حساب root که برای استفاده مدیریتی ذخیره شده است وارد شوید."
+#: ../modules/create_user.py:83
+#, fuzzy
+msgid "You must create a user account for this system."
+msgstr "لطفا تاریخ و ساعت را برای سیستم تنظیم کنید."
 
-#: ../modules/create_user.py:67
-msgid "_Continue"
-msgstr "ـادامه"
+#: ../modules/create_user.py:94
+msgid "You must enter and confirm a password for this user."
+msgstr ""
 
-#: ../modules/create_user.py:68
-msgid "Create _account"
-msgstr "ایجاد ـحساب"
-
-#: ../modules/create_user.py:87
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "رمزهای عبور همخوانی ندارند. لطفا رمز عبور را دوباره وارد کنید."
 
-#: ../modules/create_user.py:99
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
 
-#: ../modules/create_user.py:118
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"یک پوشه آغازه(home) برای کاربر %s یافت شده است. آیا شما دوست دارید مجددا از "
+"پوشه آغازه(home) استفاده کنید؟ اگر نه، لطفا یک نام کاربری متفاوت را انتخاب "
+"کنید."
+
+#: ../modules/create_user.py:175
 #, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
-msgstr "یک پوشه آغازه(home) برای کاربر %s یافت شده است. آیا شما دوست دارید مجددا از پوشه آغازه(home) استفاده کنید؟ اگر نه، لطفا یک نام کاربری متفاوت را انتخاب کنید."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
 
-#: ../modules/create_user.py:165
+#: ../modules/create_user.py:195
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
-msgstr "این توصیه شده است که شما یک نام کاربری برای استفاده ویژه(غیر مدیریتی) سیستم خودتان ایجاد کنید. برای ایجاد نام کاربری، لطفا اطلاعاتی که در زیر درخواست شده است را ارایه دهید."
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
 
-#: ../modules/create_user.py:183
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"این توصیه شده است که شما یک نام کاربری برای استفاده ویژه(غیر مدیریتی) سیستم "
+"خودتان ایجاد کنید. برای ایجاد نام کاربری، لطفا اطلاعاتی که در زیر درخواست "
+"شده است را ارایه دهید."
+
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "نام کـارـبری:"
 
-#: ../modules/create_user.py:190
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "نام ـکـامل:"
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "ـرمز عبور:"
 
-#: ../modules/create_user.py:204
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "تایید رـمز عبور:"
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 
-#: ../modules/create_user.py:222
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
+msgstr ""
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
 msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "تاریخ و ساعت"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "لطفا تاریخ و ساعت را برای سیستم تنظیم کنید."
 
@@ -293,3 +315,17 @@ msgid ""
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 
+#~ msgid ""
+#~ "It is highly recommended that a personal user account be created.  If you "
+#~ "continue without an account, you can only log in with the root account, "
+#~ "which is reserved for administrative use only."
+#~ msgstr ""
+#~ "این بسیار توصیه شده است که یک حساب کاربری شخصی ایجاد شود. اگر شما بدون یک "
+#~ "حساب ادامه دهید، شما فقط میتوانید با حساب root که برای استفاده مدیریتی "
+#~ "ذخیره شده است وارد شوید."
+
+#~ msgid "_Continue"
+#~ msgstr "ـادامه"
+
+#~ msgid "Create _account"
+#~ msgstr "ایجاد ـحساب"

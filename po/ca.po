@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-17 18:42+0100\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -27,19 +27,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "Heu de ser el superusuari per executar firstboot."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "No s'ha pogut iniciar cap frontal de firstboot."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "No s'ha trobat cap mòdul de firsboot."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "No s'ha pogut crear cap interfície de firsboot."
 
@@ -151,11 +151,6 @@ msgstr "No s'ha pogut carregar el mapa de píxels %s per al mòdul %s."
 msgid "Module %s did not set up its UI; removing."
 msgstr "El mòdul %s no ha configurat la seva UI; s'està eliminant."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "S'està esperant que arrenqui el servidor d'X... el registre es troba a %s\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "CD addicionals"
@@ -209,19 +204,24 @@ msgstr ""
 "No s'ha trobat el programa autorun en el CD. Feu clic a «D'acord» per "
 "continuar."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "Crea un usuari"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "Heu de crear un compte d'usuari per a aquest sistema."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "Heu de crear un compte d'usuari per a aquest sistema."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Les contrasenyes no coincideixen. Si us plau, torneu-les a escriure."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -230,42 +230,59 @@ msgstr ""
 "El nom d'usuari '%s' és un compte de sistema reservat.  Especifiqueu un "
 "altre nom d'usuari."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "El directori per a l'usuari %s ja existeix. Voleu reutilitzar aquest "
 "directori?  Si no, escolliu un nom d'usuari diferent."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "És recomanable que creeu un compte personal d'usuari 'username' per a ús "
 "normal (és a dir, per a tasques no administratives). Per crear el compte "
 "personal 'username', proporcioneu la informació demanada."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "Nom d'_Usuari:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "Nom compl_et:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "_Contrasenya:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "Confir_meu la contrasenya"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -273,15 +290,19 @@ msgstr ""
 "Si heu de fer servir autenticació en xarxa com ara Kerberos o NIS, feu clic "
 "al botó «Usa entrada a xarxa»."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Usa entrada a _xarxa..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "Data i hora"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "Especifiqueu la data i l'hora del sistema"
 
@@ -333,6 +354,11 @@ msgstr ""
 "S'han de seguir uns passos més abans que aquest sistema estigui llest. "
 "L'auxiliar de la configuració us guiarà a través d'una configuració bàsica. "
 "Feu clic al botó «Endavant» de la part inferior dreta per a continuar."
+
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr ""
+#~ "S'està esperant que arrenqui el servidor d'X... el registre es troba a %"
+#~ "s\n"
 
 #~ msgid ""
 #~ "It is highly recommended that a personal user account be created.  If you "

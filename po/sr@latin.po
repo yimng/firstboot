@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-18 12:54+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
@@ -19,20 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr ""
 "Morate biti „root“ da bi pokrenuli „firstboot“ (program prvog pokretanja)."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "Ne može se pokrenuti ni jedno pročelje za „firstboot“."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "Nije nađen ni jedan modul za „firstboot“."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "Nije se moglo pokrenuti ni jedno sučelje za „firstboot“."
 
@@ -145,11 +145,6 @@ msgstr "Nije moguće učitati sliku %s za modul %s."
 msgid "Module %s did not set up its UI; removing."
 msgstr "Modul %s nije podesio svoje sučelje, preskačem."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "Čekam da se pokrene X server... dnevnik se nalazi u %s\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "Dodatni CD-ovi"
@@ -203,19 +198,24 @@ msgstr ""
 "Program sa samostalnim pokretanjem nije pronađen na CD-u. Za nastavak "
 "pritisnite „U redu“."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "Napravi korisnika"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "Morate da napravite korisnički nalog za ovaj sistem."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "Morate da napravite korisnički nalog za ovaj sistem."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Lozinke se ne podudaraju.  Unesite lozinku ponovo."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -224,43 +224,60 @@ msgstr ""
 "Korisničko ime „%s“ je rezervisani sistemski nalog. Navedite drugo "
 "korisničko ime."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "Lični direktorijum za korisnika %s već postoji. Da li biste željeli "
 "iskoristiti ovaj lični direktorijum?  Ako ne želite, izaberite drugo "
 "korisničko ime."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "Preporučeno je da napravite „korisničko ime“ za običnog (ne "
 "administratorskog) korisnika za sistem. Da napravite sistemsko „korisničko "
 "ime“, pružite podatke koji su zahtevani ispod."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "_Korisničko ime:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "Prezime i im_e:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "_Lozinka:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "Potvrdi_te lozinku:"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -268,15 +285,19 @@ msgstr ""
 "Ako morate koristiti mrežnu autentifikaciju, poput Kerberos ili NIS, "
 "kliknite na dugme Koristi mrežno prijavljivanje."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Koristi _mrežno prijavljivanje..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "Datum i vreme"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "Postavite datum i vreme na sistemu."
 
@@ -327,3 +348,6 @@ msgstr ""
 "Potrebno je još nekoliko koraka dok sistem ne bude spreman za upotrebu.  "
 "Agent postavke će Vas voditi kroz neka osnovna podešavanja.  Za nastavak "
 "molim pritisnite dugme „Napred“ u donjem desnom uglu."
+
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "Čekam da se pokrene X server... dnevnik se nalazi u %s\n"

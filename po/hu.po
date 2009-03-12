@@ -7,28 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-15 20:29+0200\n"
 "Last-Translator: Sulyok Péter <peti@sulyok.hu>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "A firstboot csak rendszergazdaként futtatható."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "Nem sikerült elindítani a firstboot előtétjét."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "Nincsenek firstboot modulok."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "Semmilyen firstboot felületet sem sikerült teremteni."
 
@@ -139,11 +139,6 @@ msgstr "Nem lehet betölteni %s képet %s modulnak."
 msgid "Module %s did not set up its UI; removing."
 msgstr "%s modul használói felülete nem állt fel. Eltávolítás."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "X kiszolgáló indulására várok... napló %s helyen\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "További CD-k"
@@ -198,60 +193,82 @@ msgstr ""
 "Nincs a CD-n automatikusan elindítandó program. Továbblépéshez kattintson az "
 "„OK” gombra."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "Használó teremtése"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "Teremtenie kell egy használó számlát e rendszerben."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "Teremtenie kell egy használó számlát e rendszerben."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "A jelszavak nem egyeznek meg. Írja be a jelszót ismét!"
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "„%s” nevet a rendszer számára tartják fent. Adjon meg másik nevet!"
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "%s használó saját mappája már létezik. Kívánja újrahasznosítani e saját "
 "mappát? Ha nem, kérem válasszon más nevet!"
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "Ajánlott legalább egy „számlát” teremteni rendszeres (nem adminisztratív) "
 "használatra. Számla teremtéséhez kérem adja meg az alábbi szükséges adatokat!"
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "_Név:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "_Teljes név:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "_Jelszó:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "Jelszó _megerősítése:"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -259,15 +276,19 @@ msgstr ""
 "Ha hálózati hitelesítést kell használni – pl. Kerberos-t vagy NIS-t – kérem "
 "kattintson a Hálózati bejelentkezés használata gombra!"
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Hálózati be_jelentkezés használata..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "Dátum és idő"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "Kérem állítsa be a dátumot és az időt!"
 
@@ -320,6 +341,9 @@ msgstr ""
 "A rendszer használatba vétele előtt még néhány lépést el kell végezni. A "
 "telepítő átsegít néhány alapvető beállításon. A folytatáshoz kérem "
 "kattintson a „Tovább” gombra a jobb alsó sarokban!"
+
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr "X kiszolgáló indulására várok... napló %s helyen\n"
 
 #~ msgid ""
 #~ "It is highly recommended that a personal user account be created.  If you "

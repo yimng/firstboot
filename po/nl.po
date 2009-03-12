@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"POT-Creation-Date: 2009-03-12 16:50-0400\n"
 "PO-Revision-Date: 2008-10-19 16:34+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../progs/firstboot:129
+#: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "U dient root te zijn om firstboot uit te voeren."
 
-#: ../progs/firstboot:152 ../progs/firstboot:153
+#: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
 msgstr "Kon geen enkele firstboot frontend opstarten."
 
-#: ../progs/firstboot:169 ../progs/firstboot:170
+#: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "Er zijn geen firstboot modules gevonden."
 
-#: ../progs/firstboot:179 ../progs/firstboot:180
+#: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "Kon geen enkele firstboot interface aanmaken."
 
@@ -142,11 +142,6 @@ msgstr "Niet in staat om pixmap %s voor module %s te laden."
 msgid "Module %s did not set up its UI; removing."
 msgstr "Module %s heeft zijn UI niet ingesteld; verwijderen."
 
-#: ../firstboot/xfrontend.py:72
-#, python-format
-msgid "Waiting for X server to start... log located in %s\n"
-msgstr "Wachten op het opstarten van de X-server... logbestand bevindt zich in %s\n"
-
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "Extra CD's"
@@ -199,19 +194,24 @@ msgstr ""
 "Het 'autorun' programma kan niet worden gevonden op de CD. Klik op \"OK\" om "
 "door te gaan."
 
-#: ../modules/create_user.py:45 ../modules/create_user.py:46
+#: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "Gebruiker aanmaken"
 
-#: ../modules/create_user.py:69
+#: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
 msgstr "U moet een gebruikersaccount voor dit systeem aanmaken."
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:94
+#, fuzzy
+msgid "You must enter and confirm a password for this user."
+msgstr "U moet een gebruikersaccount voor dit systeem aanmaken."
+
+#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "De wachtwoorden komen niet overeen.  Voer het wachtwoord nogmaals in."
 
-#: ../modules/create_user.py:95
+#: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -220,44 +220,61 @@ msgstr ""
 "De gebruikersnaam '%s' is een gereserveerd systeemaccount.  Geef een andere "
 "gebruikersnaam op."
 
-#: ../modules/create_user.py:114
-#, python-format
+#: ../modules/create_user.py:132
+#, fuzzy, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to reuse this "
-"home directory?  If not, please choose a different username."
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
 msgstr ""
 "Er bestaat al een persoonlijke map voor gebruiker %s. Wilt u deze "
 "persoonlijke map opnieuw gebruiken?  Zo niet, kies dan een andere "
 "gebruikersnaam."
 
-#: ../modules/create_user.py:168
+#: ../modules/create_user.py:175
+#, python-format
 msgid ""
-"It is recommended that you create a 'username' for regular (non-"
-"administrative) use of your system. To create a system 'username,' please "
-"provide the information requested below."
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %s.  Please refer to %s for which files caused the errors."
+msgstr ""
+
+#: ../modules/create_user.py:213
+#, fuzzy
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
 msgstr ""
 "Het wordt aanbevolen om voor het normale dagelijkse gebruik van het systeem "
 "(dus geen systeembeheer) een persoonlijk gebruikersaccount aan te maken. Om "
 "een persoonlijk gebruikersaccount aan te maken, dient u de beneden gevraagde "
 "informatie te leveren."
 
-#: ../modules/create_user.py:186
+#: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "Gebr_uikersnaam:"
 
-#: ../modules/create_user.py:193
+#: ../modules/create_user.py:238
 msgid "Full Nam_e:"
 msgstr "Volledig_e naam:"
 
-#: ../modules/create_user.py:200
+#: ../modules/create_user.py:245
 msgid "_Password:"
 msgstr "W_achtwoord:"
 
-#: ../modules/create_user.py:207
+#: ../modules/create_user.py:252
 msgid "Confir_m Password:"
 msgstr "Wachtwoord _bevestigen:"
 
-#: ../modules/create_user.py:216
+#: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -265,15 +282,19 @@ msgstr ""
 "Als u netwerkauthenticatie wilt gebruiken, zoals Kerberos of NIS, klik dan "
 "op de knop: Netwerkaanmelding gebruiken."
 
-#: ../modules/create_user.py:225
+#: ../modules/create_user.py:270
 msgid "Use Network _Login..."
 msgstr "Netwerkaanmelding gebruiken..."
+
+#: ../modules/create_user.py:308
+msgid "Please wait"
+msgstr ""
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
 msgstr "Datum en tijd"
 
-#: ../modules/date.py:58
+#: ../modules/date.py:62
 msgid "Please set the date and time for the system."
 msgstr "Stel de datum en tijd voor het systeem in."
 
@@ -326,6 +347,11 @@ msgstr ""
 "gebruik.  De Setup Agent zal u nu helpen met het maken van een "
 "basisconfiguratie.  Klik op de knop \"Volgende\" rechtsonder in het scherm "
 "om door te gaan"
+
+#~ msgid "Waiting for X server to start... log located in %s\n"
+#~ msgstr ""
+#~ "Wachten op het opstarten van de X-server... logbestand bevindt zich in %"
+#~ "s\n"
 
 #~ msgid ""
 #~ "It is highly recommended that a personal user account be created.  If you "
