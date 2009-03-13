@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-17 18:42+0100\n"
+"PO-Revision-Date: 2009-03-13 18:42+0100\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -213,9 +213,8 @@ msgid "You must create a user account for this system."
 msgstr "Heu de crear un compte d'usuari per a aquest sistema."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Heu de crear un compte d'usuari per a aquest sistema."
+msgstr "Heu d'entrar i confirmar una contrasenya per a aquest usuari."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -231,7 +230,7 @@ msgstr ""
 "altre nom d'usuari."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -239,14 +238,19 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"El directori per a l'usuari %s ja existeix. Voleu reutilitzar aquest "
-"directori?  Si no, escolliu un nom d'usuari diferent."
+"Existeix un directori d'inici per a l'usuari %s. Voleu continuar i fer que el "
+"nou usuari sigui el propietari del directori i els seus continguts? Si ho "
+"feu es trigarà una mica en reiniciar els permisos i les etiquetes del SELinux. "
+"Voleu tornar a fer servir aquest directori d'inici? Si no, escolliu un altre "
+"nom d'usuari."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
+"S'estan corregint els atributs del directori d'inici de %s. Pot trigar uns "
+"minuts."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -254,21 +258,22 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"S'han trobat errors en corregir els atributs en alguns fitxers en el directori "
+"d'inici per a %s. Referiu-vos a %s per conèixer quins fitxers han fallat."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"És recomanable que creeu un compte personal d'usuari 'username' per a ús "
-"normal (és a dir, per a tasques no administratives). Per crear el compte "
-"personal 'username', proporcioneu la informació demanada."
+"Heu de crear un «nom d'usuari» per a ús habitual (no administratiu) del vostre "
+"sistema. Per crear un «nom d'usuari» de sistema, proporcioneu la informació "
+"demanada a sota."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
-msgstr "Nom d'_Usuari:"
+msgstr "Nom d'_usuari:"
 
 #: ../modules/create_user.py:238
 msgid "Full Nam_e:"
@@ -296,7 +301,7 @@ msgstr "Usa entrada a _xarxa..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Espereu"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
