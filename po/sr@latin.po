@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-18 12:54+0100\n"
+"PO-Revision-Date: 2009-03-14 20:11+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Prijavite grešku za „firstboot“ na Red Hat-ovom \n"
+"Prijavite grešku za „firstboot“ na Red Hatovom \n"
 "sistemu za praćenje grešaka na http://www.redhat.com/bugzilla. \n"
 
 #: ../firstboot/interface.py:75
@@ -133,7 +133,7 @@ msgstr "Modul %s ne sadrži klasu nazvanu moduleClass, preskačem."
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "Modul %s ne sadrži zahtevanu osobinu %s, preskačem."
+msgstr "Modul %s ne sadrži zahtevanu osobinu %s; preskačem."
 
 #: ../firstboot/module.py:187
 #, python-format
@@ -143,7 +143,7 @@ msgstr "Nije moguće učitati sliku %s za modul %s."
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr "Modul %s nije podesio svoje sučelje, preskačem."
+msgstr "Modul %s nije podesio svoje sučelje; preskačem."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -207,9 +207,8 @@ msgid "You must create a user account for this system."
 msgstr "Morate da napravite korisnički nalog za ovaj sistem."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Morate da napravite korisnički nalog za ovaj sistem."
+msgstr "Morate da unesete i potvrdite lozinku za ovog korisnika."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -225,7 +224,7 @@ msgstr ""
 "korisničko ime."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -233,8 +232,10 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"Lični direktorijum za korisnika %s već postoji. Da li biste željeli "
-"iskoristiti ovaj lični direktorijum?  Ako ne želite, izaberite drugo "
+"Lični direktorijum za korisnika %s već postoji.  Da li biste želeli da "
+"nastavite, čineći novog korisnika vlasnikom ovog direktorijuma i svog "
+"njegovog sadržaja?  Ova radnja može malo potrajati zbog ponovnog "
+"postavljanja ovlašćenja i SELinux oznaka.  Ako ne želite, izaberite drugo "
 "korisničko ime."
 
 #: ../modules/create_user.py:175
@@ -242,6 +243,8 @@ msgstr ""
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
+"Ispravljam atribute na ličnom direktorijumu za %s.  Ovo može potrajati "
+"nekoliko minuta."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -249,17 +252,18 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"Pojavili su se problemi pri ispravci atributa na nekim datotekama u ličnom "
+"direktorijumu za %s.  Pogledajte %s za datoteke koje su izazvale greške."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"Preporučeno je da napravite „korisničko ime“ za običnog (ne "
-"administratorskog) korisnika za sistem. Da napravite sistemsko „korisničko "
-"ime“, pružite podatke koji su zahtevani ispod."
+"Morate da napravite „korisničko ime“ za običnog (ne administratorskog) "
+"korisnika za sistem.  Da napravite sistemsko „korisničko ime“, pružite "
+"podatke koji se zahtevaju ispod."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -291,7 +295,7 @@ msgstr "Koristi _mrežno prijavljivanje..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Sačekajte"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -348,6 +352,3 @@ msgstr ""
 "Potrebno je još nekoliko koraka dok sistem ne bude spreman za upotrebu.  "
 "Agent postavke će Vas voditi kroz neka osnovna podešavanja.  Za nastavak "
 "molim pritisnite dugme „Napred“ u donjem desnom uglu."
-
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "Čekam da se pokrene X server... dnevnik se nalazi u %s\n"
