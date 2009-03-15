@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-14 00:49+0200\n"
+"PO-Revision-Date: 2009-03-15 18:38+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -61,7 +61,7 @@ msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Kopia informacji o błędzie została zapisana do %s.\n"
+"Kopia informacji o błędzie została zapisana do %s\n"
 "Upewnij się, że załączyłeś ten plik do raportu.\n"
 
 #: ../firstboot/exceptionWindow.py:71
@@ -201,9 +201,8 @@ msgid "You must create a user account for this system."
 msgstr "Musisz utworzyć konto użytkownika w systemie."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Musisz utworzyć konto użytkownika w systemie."
+msgstr "Musisz podać i potwierdzić hasło dla tego użytkownika."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -219,7 +218,7 @@ msgstr ""
 "nazwę użytkownika."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -227,14 +226,18 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"Folder domowy użytkownika %s już istnieje. Czy chcesz ponownie użyć tego "
-"folderu domowego? Jeśli nie, wybierz inną nazwę użytkownika."
+"Folder domowy użytkownika %s już istnieje. Czy chcesz kontynuować "
+"sprawiając, że nowy użytkownik będzie właścicielem tego folderu i całej jego "
+"zawartości? Może to chwilę zająć, aby przywrócić upoważnienia i wszystkie "
+"etykiety SELinuksa. Czy chcesz ponownie użyć tego folderu domowego? Jeśli "
+"nie, wybierz inną nazwę użytkownika."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
+"Naprawianie atrybutów folderu domowego dla %s. Może to zająć kilka minut."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -242,17 +245,19 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"Wystąpiły problemy podczas naprawiania atrybutów niektórych plików w "
+"folderze domowym dla %s. Zobacz %s, aby dowiedzieć się, które pliki "
+"spowodowały błędy."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"Zalecane jest utworzenie \"nazwy użytkownika\" do zwykłego "
-"(nieadministracyjnego) używania systemu. Aby utworzyć \"nazwę użytkownika\", "
-"podaj poniżej wymagane informacje."
+"Musisz utworzyć \"nazwę użytkownika\" do zwykłego (nieadministracyjnego) "
+"używania systemu. Aby utworzyć \"nazwę użytkownika\", podaj poniżej wymagane "
+"informacje."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -284,7 +289,7 @@ msgstr "Użyj _logowania sieciowego..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Proszę czekać"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -341,8 +346,3 @@ msgstr ""
 "Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do używania. "
 "Agent ustawień przeprowadzi cię przez podstawową konfigurację. Naciśnij "
 "\"Dalej\" w dolnym prawym rogu okna, aby kontynuować"
-
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr ""
-#~ "Oczekiwanie na uruchomienie serwera X Window... Dziennik położony jest w %"
-#~ "s\n"
