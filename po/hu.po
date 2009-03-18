@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-15 20:29+0200\n"
+"PO-Revision-Date: 2009-03-18 21:11+0100\n"
 "Last-Translator: Sulyok Péter <peti@sulyok.hu>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -202,9 +202,8 @@ msgid "You must create a user account for this system."
 msgstr "Teremtenie kell egy használó számlát e rendszerben."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Teremtenie kell egy használó számlát e rendszerben."
+msgstr "Meg kell adnia és meg kell erősítenie egy jelszót e használó számára."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -218,7 +217,7 @@ msgid ""
 msgstr "„%s” nevet a rendszer számára tartják fent. Adjon meg másik nevet!"
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -226,14 +225,17 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"%s használó saját mappája már létezik. Kívánja újrahasznosítani e saját "
-"mappát? Ha nem, kérem válasszon más nevet!"
+"%s használó számára már van mappa. Kívánja folytatni megtéve az új "
+"használót e mappa és minden tartalma tulajdonosának?  Ha így tesz, "
+"eltarthat egy ideig a jogosultságok és a SELinux címkék beállítása.  Kívánja "
+"újrahasznosítani e saját mappát?  Ha nem, kérem válasszon más nevet!"
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
+"Tulajdonságok javítása %s saját mappájára.  Ez eltarthat néhány percig."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -241,16 +243,17 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"Baj történt %s saját mappájában néhány fájl tulajdonságait javítván.  "
+"Kérem tekintse meg %s fájlt, hogy megtudja mely fájlok okoztak hibát."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"Ajánlott legalább egy „számlát” teremteni rendszeres (nem adminisztratív) "
-"használatra. Számla teremtéséhez kérem adja meg az alábbi szükséges adatokat!"
+"Ajánlott legalább egy „használót” teremteni rendszeres (nem adminisztratív) "
+"használatra.  Használó teremtéséhez kérem adja meg az alább kért adatokat."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -282,7 +285,7 @@ msgstr "Hálózati be_jelentkezés használata..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Kérem várjon"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
