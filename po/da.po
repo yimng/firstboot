@@ -1,7 +1,3 @@
-# translation of da.po to
-# translation of da.po to
-# translation of da.po to
-# translation of da.po to Danish
 # Danish translation of firstboot.
 # Copyright © 2002 Free Software Foundation.
 # This file is distributed under the same license as the firstboot package.
@@ -9,36 +5,36 @@
 # Keld Simonsen <keld@dkuug.dk>, 2002-2003, 2004.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004.
 # Keld Simonsen <keld@rap.dk>, 2005, 2006, 2007.
+# Kris Thomsen <lakristho@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: da\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-04-10 11:22-0400\n"
-"Last-Translator: Keld Simonsen <keld@rap.dk>\n"
-"Language-Team:  <da@li.org>\n"
+"POT-Creation-Date: 2008-10-13 11:47-0400\n"
+"PO-Revision-Date: 2009-03-19 16:13+0100\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../progs/firstboot:140
+#: ../progs/firstboot:129
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Du skal være root for at køre firstboot."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
+#: ../progs/firstboot:152 ../progs/firstboot:153
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Kunne ikke starte nogen firstboot-grænseflade."
 
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:169 ../progs/firstboot:170
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Ingen firstboot-moduler blev fundet."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:179 ../progs/firstboot:180
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Kunne ikke oprette nogen firstboot-grænseflade."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -46,50 +42,45 @@ msgid "An error has occurred in the %s module."
 msgstr "En fejl indtraf i %s-modulet."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Da der er et problem med %s-modulet, \n"
-"vil Red Hat Opsætningsagenten ikke indlæse dette modul, og \n"
-"den vil forsøge at køre de resterende moduler."
+"Da der er et problem med %s-modulet,\n"
+"vil firstboot ikke indlæse dette modul og vil\n"
+"forsøge at køre de resterende moduler."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "En fejl indtraf i %s-modulet."
+msgstr "En fejl opstod i firstboot."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Eftersom der er et problem, vil firstboot afslutte."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
-"fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
-"En kopi af fejlsøgningsuddata er gemt i %s. \n"
-"Vær sød at vedlægge denne fil til fejlrapporten. \n"
+"En kopi af fejlsøgnings-uddataene er blevet gemt til %s\n"
+"Vær sikker på du vedhæfter filen til fejlrapporten.\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Vær venlig at indsende en fejlrapport på 'firstboot' via Red Hats \n"
-"fejlrapporteringssystem på http://www.redhat.com/bugzilla. \n"
-"En kopi af fejlsøgningsuddata er gemt i %s. \n"
-"Vær sød at vedlægge denne fil til fejlrapporten. \n"
+"Vær venlig at indsende en fejlrapport på \"firstboot\" via Red Hats\n"
+"fejlrapporteringssystem på http://www.redhat.com/bugzilla.\n"
+
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "Forsøgte at gå tilbage, men historikken er tom."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -112,49 +103,54 @@ msgstr "_Fremad"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Modulet %s satte ikke sin brugerflade op, bliver fjernet."
 
 #: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage skal have angivet en modultitel eller et sidenummer."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Kunne ikke oprette skærmbillede-mappen; springer over."
 
 #: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Der eksisterer intet modul med titlen %s."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Springer over gammelt modul %s, som ikke er blevet opdateret."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Modulet %s indeholder ikke en klasse kaldet moduleClass; springer over."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Modulet %s indeholder ikke den nødvendige %s-attribut; springer over."
 
 #: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Kunne ikke indlæse %s-pixmappet til %s-modulet."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Modulet %s satte ikke sin brugerflade op; bliver fjernet."
+
+#: ../firstboot/xfrontend.py:72
+#, python-format
+msgid "Waiting for X server to start... log located in %s\n"
+msgstr "Venter på at X-serveren starter... log placeret i %s\n"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr "Yderligere CDer"
+msgstr "Yderligere CD'er"
 
 #: ../modules/additional_cds.py:55
 msgid ""
@@ -165,12 +161,12 @@ msgid ""
 msgstr ""
 "Indsæt venligst skiven mærket \"Red Hat Enterprise Linux Extras\" for at "
 "tillade installation af tredjeparts-moduler og -programmer. Du kan også "
-"indsætte Dokumentationsskiven, eller andre Red Hat-leverede disketter for at "
+"indsætte dokumentationsskiven, eller andre Red Hat-leverede cd'er for at "
 "installere flere programmer på dette tidspunkt."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr "Indsæt andre yderligere programinstallations-cd'er nu."
+msgstr "Indsæt andre yderligere softwareinstallations-cd'er nu."
 
 #: ../modules/additional_cds.py:65
 msgid ""
@@ -195,106 +191,90 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"En cdrom blev ikke fundet. Indsæt venligst en cdrom i drevet og klik 'O.k.' "
-"for at fortsætte"
+"En cdrom blev ikke fundet.  Indsæt venligst en cdrom i drevet og klik \"O.k.\" "
+"for at fortsætte."
 
 #: ../modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"Autorun-programmet kan ikke findes på cd'en. Klik på \"O.k.\" for at "
-"fortsætte."
+"Autokør-programmet kan ikke findes på cd'en. Klik på \"O.k.\" for at fortsætte."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
-msgstr ""
+msgstr "Opret bruger"
+
+#: ../modules/create_user.py:69
+msgid "You must create a user account for this system."
+msgstr "Du skal oprette en brugerkonto til dette system."
 
 #: ../modules/create_user.py:83
-msgid "You must create a user account for this system."
-msgstr ""
-
-#: ../modules/create_user.py:94
-msgid "You must enter and confirm a password for this user."
-msgstr ""
-
-#: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Adgangskoderne er ikke ens.  Indtast venligst adgangskoden igen."
 
-#: ../modules/create_user.py:113
+#: ../modules/create_user.py:95
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"Brugernavnet \"%s\" er reserveret til systemkonto.  Vælg venligst et andet "
+"brugernavn."
 
-#: ../modules/create_user.py:132
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
+"A home directory for user %s already exists. Would you like to reuse this "
+"home directory?  If not, please choose a different username."
 msgstr ""
+"En hjemmemappe til brugeren %s eksisterer allerede. Vil du genbruge denne "
+"hjemmemappe? Hvis ikke, vælg venligst et andet brugernavn."
 
-#: ../modules/create_user.py:175
-#, python-format
+#: ../modules/create_user.py:168
 msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
+"It is recommended that you create a 'username' for regular (non-"
+"administrative) use of your system. To create a system 'username,' please "
+"provide the information requested below."
 msgstr ""
+"Det er anbefalet at du opretter et brugernavn til almindeligt (ikke-"
+"administrativt) brug af dit system. For at oprette et systembrugernavn, skal du "
+"venligst indtaste de nødvendige informationer nedenfor."
 
-#: ../modules/create_user.py:195
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
-
-#: ../modules/create_user.py:213
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-
-#: ../modules/create_user.py:231
+#: ../modules/create_user.py:186
 msgid "_Username:"
-msgstr ""
+msgstr "_Brugernavn:"
 
-#: ../modules/create_user.py:238
+#: ../modules/create_user.py:193
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Fulde _navn:"
 
-#: ../modules/create_user.py:245
+#: ../modules/create_user.py:200
 msgid "_Password:"
-msgstr ""
+msgstr "_Adgangskode:"
 
-#: ../modules/create_user.py:252
+#: ../modules/create_user.py:207
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Bekræf_t adgangskode:"
 
-#: ../modules/create_user.py:261
+#: ../modules/create_user.py:216
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Hvis du har brug for netværksgodkendelse, som f.eks. Kerberos eller NIS, så tryk "
+"venligst på Brug netværklogind-knappen."
 
-#: ../modules/create_user.py:270
+#: ../modules/create_user.py:225
 msgid "Use Network _Login..."
-msgstr ""
-
-#: ../modules/create_user.py:308
-msgid "Please wait"
-msgstr ""
+msgstr "Brug netværk_logind..."
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
-msgstr ""
+msgstr "Dato og tid"
 
-#: ../modules/date.py:62
+#: ../modules/date.py:58
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Sæt venligst dato og tid for systemet."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -314,7 +294,7 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Tak hor at du installerer Fedora.  Fedora er en samling af programmel, som "
+"Tak for at du installerer Fedora.  Fedora er en samling af programmel, som "
 "hver især har deres egen licens. Samlingen er gjort tilgængelig under GNU "
 "General Public License version 2.  Der er ingen begrænsninger på brug, "
 "kopiering eller ændring af denne kode. Men der er begrænsninger og pligter "
@@ -322,8 +302,8 @@ msgstr ""
 "i en ændret form. Bl. a. vedrører disse begrænsninger licensen ved "
 "gendistribution, varemærke-rettigheder og kontrol af eksport.\n"
 "\n"
-"Hvis du ønsker at vide hvad disse begrænsninger er, kan du besøge http://"
-"fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Hvis du ønsker at vide hvad disse begrænsninger er, kan du besøge "
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
@@ -334,13 +314,12 @@ msgid "Welcome"
 msgstr "Velkommen"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "Der er endnu nogle enkelte trin der skal gøres før dit system er klar til "
-"brug. Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
-"konfigurering. Klik på 'Fremad'-knappen i det nederste højre hjørne for at "
+"brug.  Opsætningshjælperen vil nu lede dig gennem noget grundlæggende "
+"konfigurering.  Klik på \"Fremad\"-knappen i det nederste højre hjørne for at "
 "fortsætte."
