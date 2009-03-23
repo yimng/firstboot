@@ -9,12 +9,12 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-19 16:34+0200\n"
+"PO-Revision-Date: 2009-03-23 12:38+0100\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -203,9 +203,8 @@ msgid "You must create a user account for this system."
 msgstr "U moet een gebruikersaccount voor dit systeem aanmaken."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "U moet een gebruikersaccount voor dit systeem aanmaken."
+msgstr "Je moet een wachtwoord voor deze gebruiker opgeven en bevestigen."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -221,7 +220,7 @@ msgstr ""
 "gebruikersnaam op."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -229,7 +228,9 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"Er bestaat al een persoonlijke map voor gebruiker %s. Wilt u deze "
+"Er bestaat al een persoonlijke map voor gebruiker %s. Wil je doorgaan en de nieuwe "
+"gebruiker eigenaar laten worden van deze map en al zijn inhoud?  Zo ja, dan kan dit "
+"even duren omdat alle rechten en SELinux labels hersteld moeten worden.  Wil je deze "
 "persoonlijke map opnieuw gebruiken?  Zo niet, kies dan een andere "
 "gebruikersnaam."
 
@@ -237,25 +238,26 @@ msgstr ""
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgstr "Herstellen van kenmerken van de persoonlijke map voor %s.  Dit kan even duren."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "Er zijn problemen met het herstellen van de kenmerken van sommige bestanden in "
+"de persoonlijke map voor %s.  Refereer naar %s om te zien welke bestanden de fouten "
+"veroorzaakt hebben."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"Het wordt aanbevolen om voor het normale dagelijkse gebruik van het systeem "
-"(dus geen systeembeheer) een persoonlijk gebruikersaccount aan te maken. Om "
-"een persoonlijk gebruikersaccount aan te maken, dient u de beneden gevraagde "
+"Je moet voor het normale dagelijkse gebruik van het systeem (dus geen "
+"systeembeheer) een persoonlijk gebruikersaccount aanmaken.  Om "
+"een persoonlijk gebruikersaccount aan te maken, moet je de beneden gevraagde "
 "informatie te leveren."
 
 #: ../modules/create_user.py:231
@@ -288,7 +290,7 @@ msgstr "Netwerkaanmelding gebruiken..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Wacht even"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
