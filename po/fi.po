@@ -3,13 +3,13 @@
 #
 # Mikko Ikola <ikola@iki.fi>, 2004.
 # Lauri Nurmi <lanurmi@iki.fi>, 2004-2007.
-# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007, 2008.
+# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007-2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-15 18:51+0300\n"
+"PO-Revision-Date: 2009-03-23 12:55+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -200,9 +200,8 @@ msgid "You must create a user account for this system."
 msgstr "Tähän järjestelmään on luotava käyttäjätunnus."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Tähän järjestelmään on luotava käyttäjätunnus."
+msgstr "Tälle käyttäjälle on annettava salasana ja se on vahvistettava."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -218,7 +217,7 @@ msgstr ""
 "käyttäjätunnus."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -226,14 +225,19 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"Käyttäjän %s kotihakemisto on jo olemassa. Haluatko käyttää tätä "
-"kotihakemistoa? Jos et, valitse toinen käyttäjätunnus."
+"Käyttäjän %s kotihakemisto on jo olemassa. Haluatko jatkaa, jolloin "
+"uudesta käyttäjästä tulee tämän hakemiston ja kaiken sen sisällön omistaja? "
+"Tämän tekeminen voi kestää jonkin aikaa, koska oikeudet ja SELinux-nimiöt on "
+"asetettava uudelleen. Haluatko käyttää tätä kotihakemistoa? Jos et, "
+"valitse toinen käyttäjätunnus."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
+"Korjataan käyttäjän %s kotihakemiston määreitä. Tämä voi kestää muutaman "
+"minuutin."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -241,9 +245,11 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"Käyttäjän %s kotihakemiston joidenkin tiedostojen määreiden korjaamisessa "
+"oli ongelmia. Tiedostossa %s on lisätietoja ongelmia aiheuttaneista "
+"tiedostoista."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
@@ -282,7 +288,7 @@ msgstr "Käytä verkko_kirjautumista..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Odota hetki"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
