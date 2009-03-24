@@ -7,21 +7,20 @@
 #
 # Marcel Telka <marcel@telka.sk>, 2004, 2005.
 # Mike Karas <zoliqe@gmail.com>, 2007.
-# Pavol Šimo <palo.simo@gmail.com>, 2008.
+# Pavol Šimo <palo.simo@gmail.com>, 2008, 2009.
 # Ondrej Šulek <feonsu@gmail.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-19 19:34+0200\n"
-"Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
+"PO-Revision-Date: 2009-03-24 21:43+0100\n"
+"Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
 "Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 0.2\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -208,13 +207,12 @@ msgid "You must create a user account for this system."
 msgstr "Pre tento systém musíte vytvoriť používateľský účet."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Pre tento systém musíte vytvoriť používateľský účet."
+msgstr "Pre tohto používateľa musíte zadať a potvrdiť heslo."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "Heslá sa nezhodujú. Prosím, zadajte heslo znova."
+msgstr "Heslá sa nezhodujú.  Prosím, zadajte heslo znova."
 
 #: ../modules/create_user.py:113
 #, python-format
@@ -226,7 +224,7 @@ msgstr ""
 "používateľské meno."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -234,14 +232,18 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"Domovský priečinok používateľa %s už existuje. Želáte si tento domovský "
-"priečinok znovu použiť? Ak nie, zvoľte, prosím, iné používateľské meno."
+"Domovský priečinok používateľa %s už existuje. Želáte si pokračovať s tým, "
+"že sa nový používateľ stane vlastníkom tohto priečinka s celým jeho obsahom? "
+"Toto môže chvíľu trvať, kým sa opätovne nastavia práva a prípadné SELinux značky. "
+"Želáte si tento domovský priečinok znovu použiť? Ak nie, zvoľte, prosím, iné "
+"používateľské meno."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
+"Opravujú sa atribúty domovského priečinka pre %s.  Môže to pár minút trvať."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -249,17 +251,18 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"Pri oprave atribútov domovského priečinka pre %s sa vyskytli problémy s "
+"niektorými súbormi.  Na zistenie, ktoré súbory spôsobili chyby, pozrite si, prosím, %s."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
 "Je odporúčané vytvoriť 'používateľské meno' pre bežné (nie administrátorské) "
-"použitie vášho systému. Na vytvorenie 'používateľského mena', prosím, "
-"vyplňte nižšie požadované informácie."
+"použitie vášho systému. Na vytvorenie 'používateľského mena' v systéme "
+"vyplňte, prosím, nižšie požadované informácie."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -291,7 +294,7 @@ msgstr "Použiť _sieťové prihlásenie..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Čakajte, prosím"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -299,7 +302,7 @@ msgstr "Dátum a čas"
 
 #: ../modules/date.py:62
 msgid "Please set the date and time for the system."
-msgstr "Prosím, nastavte pre tento systém dátum a čas"
+msgstr "Prosím, nastavte pre tento systém dátum a čas."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -332,7 +335,7 @@ msgstr ""
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr "Pochopil som, pokračovať."
+msgstr "Pochopil som, prosím pokračovať."
 
 #: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
