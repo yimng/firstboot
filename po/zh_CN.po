@@ -9,13 +9,13 @@
 # Tony Fu <tfu@redhat.com>, 2004, 2006.
 # Leah Liu <weliu@redhat.com>, 2005, 2006.
 # Wu Yu <kiluawuyu@gmail.com>, 2007.
-# Leah Liu <lliu@redhat.com>, 2008.
+# Leah Liu <lliu@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-20 10:19+1000\n"
+"PO-Revision-Date: 2009-03-30 15:42+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -187,8 +187,7 @@ msgid ""
 msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定”继续。"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”继续。"
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
@@ -200,9 +199,8 @@ msgid "You must create a user account for this system."
 msgstr "您必须为这个系统创建用户帐户。"
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "您必须为这个系统创建用户帐户。"
+msgstr "您必须为这个用户输入并确认密码。"
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -216,38 +214,34 @@ msgid ""
 msgstr "用户名‘%s’是保留的系统帐户，请指定另一个用户名。"
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
 "so may take a while to reset permissions and any SELinux labels.  Would you "
 "like to reuse this home directory?  If not, please choose a different "
 "username."
-msgstr ""
-"用户 %s 的主目录已经存在，您是否想继续使用这个主目录呢？如果不，请选择其它用"
-"户名。"
+msgstr "用户 %s 的主目录已经存在，您是否想要继续，以便使新用户成为这个目录及其所有内容的拥有者？这样做需要一些时间来重设权限以及所有 SELinux 标签。您要重新使用这个主目录吗？如果不是，请选择不同的用户名。"
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "为 %s 修复主目录属性。这需要几分钟时间。"
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "为 %s 修复主目录中的一些文件时遇到问题。请参考 %s 找出造成此错误的文件。"
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"建议您为您的系统创建一个一般用途的（非管理）‘用户名’。要创建系统‘用户名’，请"
+"您必须为您的系统创建一个常规使用的（非管理）‘用户名’。要创建系统‘用户名’，请"
 "提供以下所需信息。"
 
 #: ../modules/create_user.py:231
@@ -270,8 +264,7 @@ msgstr "确认密码（_m）："
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr ""
-"如果您需要使用网络验证，比如 Kerberos 或者 NIS，请点击“使用网络登录”按钮。"
+msgstr "如果您需要使用网络验证，比如 Kerberos 或者 NIS，请点击“使用网络登录”按钮。"
 
 #: ../modules/create_user.py:270
 msgid "Use Network _Login..."
@@ -279,7 +272,7 @@ msgstr "使用网络登录（_L）..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "请等待"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -331,5 +324,3 @@ msgstr ""
 "在您的系统就绪前还要进行几个步骤。设置代理将会引导您进行一些基本配置。请点击"
 "右下角的“前进”按钮继续。"
 
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "等待 X 服务器启动...... 日志位于 %s\n"
