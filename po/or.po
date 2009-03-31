@@ -5,20 +5,20 @@
 # Subhransu Behera <sbehera@redhat.com>, 2006, 2007.
 # Subhransu Behera <arya_subhransu@yahoo.co.in>, 2007.
 # Manoj Kumar Giri <giri.manojkr@gmail.com>, 2008.
-# Manoj Kumar Giri <mgiri@redhat.com>, 2008.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-15 14:47+0530\n"
+"PO-Revision-Date: 2009-03-31 15:00+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
-"Language-Team: Oriya\n"
+"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2;plural=(n!=1)\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -95,8 +95,7 @@ msgstr "ସମାପ୍ତ (_F)"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"ଆପଣଙ୍କ ଚୟନ ମଦ୍ଧ୍ଯରୁ କିଛି ଅଂଶକୁ ପ୍ରଭାବିତ କରିବା ପାଇଁ ତନ୍ତ୍ରଟି ବର୍ତ୍ତମାନ ପୁନର୍ଚାଳିତ ହେବା ଆବଶ୍ଯକ।"
+msgstr "ଆପଣଙ୍କ ଚୟନ ମଦ୍ଧ୍ଯରୁ କିଛି ଅଂଶକୁ ପ୍ରଭାବିତ କରିବା ପାଇଁ ତନ୍ତ୍ରଟି ବର୍ତ୍ତମାନ ପୁନର୍ଚାଳିତ ହେବା ଆବଶ୍ଯକ।"
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -197,8 +196,7 @@ msgstr ""
 "ବଢିବା ପାଇଁ \"ଠିକ ଅଛି\" ବଟନକୁ ଦବାନ୍ତୁ।"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ଅଟୋରନ ପ୍ରୋଗ୍ରାମ ଟି ସି.ଡି. ରେ ମିଳିପାରିବ ନାହିଁ। ଆଗକୁ ବଢିବା ପାଇଁ \"ଠିକ ଅଛି\" ବଟନକୁ ଦବାନ୍ତୁ।"
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
@@ -210,9 +208,8 @@ msgid "You must create a user account for this system."
 msgstr "ଏହି ତନ୍ତ୍ର ପାଇଁ ଆପଣଙ୍କୁ ଗୋଟିଏ ଚାଳକ ଖାତା ନିର୍ମାଣ କରିବା ଉଚିତ."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "ଏହି ତନ୍ତ୍ର ପାଇଁ ଆପଣଙ୍କୁ ଗୋଟିଏ ଚାଳକ ଖାତା ନିର୍ମାଣ କରିବା ଉଚିତ."
+msgstr "ଏହି ଚାଳକ ପାଇଁ ଆପଣଙ୍କୁ ଗୋଟିଏ ପ୍ରବେଶ ସଂକେତ ଭରଣ ଏବଂ ନିଶ୍ଚିତ କରିବା ଉଚିତ।"
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -223,11 +220,10 @@ msgstr "ପ୍ରବେଶ ସଂକେତଟି ମେଳଖାଉ ନାହି
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"'%s' ଚାଳକ ନାମଟି ଗୋଟିଏ ସଂରକ୍ଷିତ ତନ୍ତ୍ର ନାମ।  ଦୟାକରି ଅନ୍ୟ ଏକ ଚାଳକ ନାମ ଉଲ୍ଲେଖ କରନ୍ତୁ।"
+msgstr "'%s' ଚାଳକ ନାମଟି ଗୋଟିଏ ସଂରକ୍ଷିତ ତନ୍ତ୍ର ନାମ।  ଦୟାକରି ଅନ୍ୟ ଏକ ଚାଳକ ନାମ ଉଲ୍ଲେଖ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -235,14 +231,15 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"ଚାଳକ %s ପାଇଁ ଗୋଟିଏ ମୂଳସ୍ଥାନ ପଞ୍ଜିକା ପୂର୍ବରୁ ଅବସ୍ଥିତ ଅଛି। ଆପଣ ଏହି ମୂଳସ୍ଥାନ ପଞ୍ଜିକାକୁ ପୁଣିଥରେ "
-"ବ୍ୟବହାର କରିବାକୁ ପସନ୍ଦ କରିବେ କି?  ଯଦି ନୁହଁ, ତେବେ ଅନ୍ୟ ଏକ ଚାଳକନାମ ଚୟନ କରନ୍ତୁ।"
+"ଚାଳକ %s ପାଇଁ ଗୋଟିଏ ମୂଳସ୍ଥାନ ପଞ୍ଜିକା ପୂର୍ବରୁ ଅବସ୍ଥିତ ଅଛି। ଆପଣ ଏହି ନୂତନ ଚାଳକକୁ ସେହି ଡିରେକ୍ଟୋରୀ "
+"ଏବଂ ତାହାର ସମସ୍ତ ବିଷୟବସ୍ତୁର ମାଲିକ କରି ଅଗ୍ରସର ହେବାକୁ ଚାହୁଁଛନ୍ତି କି? ଏହା କରିବା ଦ୍ୱାରା ଅନୁମତି ଏବଂ "
+"SELinux ନାମପଟିକୁ ପୁଣି ସେଟ କରିବା ପାଇଁ କିଛି ସମୟ ଲାଗିପାରେ। ଆପଣ ଏହି ମୂଳସ୍ଥାନ ପଞ୍ଜିକାକୁ "
+"ପୁଣିଥରେ ବ୍ୟବହାର କରିବାକୁ ପସନ୍ଦ କରିବେ କି?  ଯଦି ନୁହଁ, ତେବେ ଅନ୍ୟ ଏକ ଚାଳକନାମ ଚୟନ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "%s ପାଇଁ ମୂଳସ୍ଥାନ ପଞ୍ଜିକାରେ ଗୁଣଧର୍ମଗୁଡ଼ିକୁ ସଜାଡ଼ୁଅଛି।  ଏହା ପାଇଁ କିଛି ସମୟ ଲାଗିପାରେ।"
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -250,17 +247,18 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"%s ପାଇଁ ମୂଳସ୍ଥାନ ପଞ୍ଜିକାରେ କିଛି ଫାଇଲରେ ଗୁଣଧର୍ମଗୁଡ଼ିକୁ ସଜାଡ଼ିବା ସମୟରେ ସମସ୍ୟାର ସମ୍ମୁଖିନ ହୋଇଥିଲା। "
+"କେଉଁ ଫାଇଲ ତ୍ରୁଟି ପାଇଁ ଦାୟୀ ତାହା ପାଇଁ %s କୁ ଅନୁସରଣ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"ଏହା ପରାମର୍ଶିତ ଯେ ଆପଣ ଆପଣଙ୍କ ତନ୍ତ୍ରର ନିୟମିତ (ଅପ୍ରଶାସନିକ) ବ୍ୟବହାର ପାଇଁ ଗୋଟିଏ 'ଚାଳକନାମ' "
-"ନିର୍ମାଣ କରନ୍ତୁ। ଗୋଟିଏ ତନ୍ତ୍ର 'ଚାଳକନାମ' ନିର୍ମାଣ କରିବାକୁ ହେଲେ, ଦୟାକରି ନିମ୍ନରେ ଅନୁରୋଧିତ ସୂଚନା "
-"ପ୍ରଦାନ କରନ୍ତୁ।"
+"ଆପଣଙ୍କୁ ଆପଣଙ୍କ ତନ୍ତ୍ରର ନିୟମିତ (ଅପ୍ରଶାସନିକ) ବ୍ୟବହାର ପାଇଁ ଗୋଟିଏ 'ଚାଳକନାମ' "
+"ନିର୍ମାଣ କରିବା ଉଚିତ। ଗୋଟିଏ ତନ୍ତ୍ର 'ଚାଳକନାମ' ନିର୍ମାଣ କରିବାକୁ ହେଲେ, ଦୟାକରି "
+"ନିମ୍ନରେ ଅନୁରୋଧିତ ସୂଚନା ପ୍ରଦାନ କରନ୍ତୁ।"
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -292,7 +290,7 @@ msgstr "ନେଟୱର୍କ ଲଗଇନ ବ୍ୟବହାର କରନ୍ତ
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -351,5 +349,3 @@ msgstr ""
 "ଆପଣଙ୍କୁ କିଛି ମୌଳିକ ବିନ୍ଯାସ ପ୍ରକ୍ରିୟାରେ ସାହାଯ୍ଯ କରିବ। ଆଗକୁ ବଢିବା ପାଇଁ ଦୟାକରି ଦକ୍ଷିଣ ପାର୍ଶ୍ବର ତଳ "
 "କୋଣରେ ଥିବା \"ଆଗକୁ\" ବଟନକୁ ଦବାନ୍ତୁ।"
 
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "X ସର୍ଭରକୁ ଆରମ୍ଭ କରିବା ପାଇଁ ଅପେକ୍ଷା କରିଅଛି... ଲଗ %s ରେ ଅବସ୍ଥିତ\n"
