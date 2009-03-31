@@ -7,13 +7,13 @@
 # Rahul Bhalerao <rbhalera@redhat.com>, 2006.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
 # sandeep shedmake <sandeep.shedmake@gmail.com>, 2007.
-# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.mr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-04-14 12:22+0530\n"
+"PO-Revision-Date: 2009-03-31 15:26+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
 "MIME-Version: 1.0\n"
@@ -112,7 +112,7 @@ msgstr "moveToPage ला विभाग शिर्षक किंवा प
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
-msgstr "स्क्रीनशॉट संचयीका बनविता आले नाही; वगळत आहे."
+msgstr "स्क्रीनशॉट डिरेक्ट्री बनविता आले नाही; वगळत आहे."
 
 #: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
@@ -162,8 +162,7 @@ msgstr ""
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr ""
-"कृपया काही अतिरिक्त बुद्धीभाग(सॉफ्टवेयर) प्रतिष्ठापना सीडी(cd) या वेळी दाखल करा."
+msgstr "कृपया काही अतिरिक्त बुद्धीभाग(सॉफ्टवेयर) प्रतिष्ठापना सीडी(cd) या वेळी दाखल करा."
 
 #: ../modules/additional_cds.py:65
 msgid ""
@@ -191,8 +190,7 @@ msgstr ""
 "वर (दाबा) क्लिक् करा."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "सीडीवर ऑटोरन(autorun) हा कार्यक्रम सापडला नाही. पुढे चालू ठेवण्यासाठी \"ठीक\" वर "
 "(दाबा) क्लिक् करा."
@@ -202,13 +200,12 @@ msgid "Create User"
 msgstr "वापरकर्ता बनवा"
 
 #: ../modules/create_user.py:83
-#, fuzzy
 msgid "You must create a user account for this system."
-msgstr "कृपया प्रणाली करीता दिनांक व वेळ निश्चित करा."
+msgstr "कृपया या प्रणाली करीता वापरकर्ता खाते बनवा."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
-msgstr ""
+msgstr "या वापकर्ता करीता तुम्ही परवलीचा शब्द प्रविष्ट केल्यानंतर तपासणी करायला हवी."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -222,7 +219,7 @@ msgid ""
 msgstr "वापरकर्ता '%s' आरक्षीत प्रणाली खाते आहे.  कृपया अन्य वापरकर्तानाव निर्देशीत करा."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -230,31 +227,31 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"वापरकर्ता %s करीता मुख्य संचयीका आधिपासूनच अस्तित्वात आहे. तुम्हाला ही मुख्य संचयीका पुन्हा "
+"वापरकर्ता %s करीता मुख्य डिरेक्ट्री आधिपासूनच अस्तित्वात आहे. तुम्हाला पुढे जायला आवडेल, "
+"तसेच नवीन वापरकर्त्याला या डिरेक्ट्रीचे व त्यातील अंतर्भूत माहितीचे मालक बनवण्यास आवडेल का?  असे करायचे असल्यास"
+"परवानगी व SELinux लेबल स्वच्छ करावे लागेल. तुम्हाला मुख्य डिरेक्ट्री पुन्हा "
 "वापरायची?  नसल्यास, कृपया इतर वापरकर्तानाव निवडा."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "मुख्य डिरेक्ट्री वरील %s करीता गुणधर्म निश्चित करत आहे.  याला काहिक मिनीटं लागतील."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "मुख्य डिरेक्ट्री वरील %s करीता गुणधर्म निश्चित करतेवेळी काहिक अडचणी आढळले.  फाइल अंतर्गत त्रुटी शोधण्याकरीता कृपया %s पहा."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"प्रणालीच्या रोजच्या वापर (विना प्रशासकीय) करीता तुम्ही 'वापरकर्तानाव' बनविले पाहिजे "
-"असे सूचविले जाते. प्रणाली 'वापरकर्ता,' बनविण्यास कृपया खालील विनंतीकृत माहिती पुरवा."
+"प्रणालीच्या रोजच्या वापर (अ-प्रशासकीय) करीता तुम्ही 'वापरकर्तानाव' बनविले पाहिजे. प्रणाली 'वापरकर्ता,' "
+"बनविण्याकरीता कृपया खालील विनंतीकृत माहिती पुरवा."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -286,7 +283,7 @@ msgstr "संजाळ दाखलन वापरा (_L)..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "कृपया थांबा"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -343,16 +340,3 @@ msgstr ""
 "तुम्हास काही मुलभूत व्यूहरचनांमध्ये मार्गदर्शन करेल.  कृपया \"पुढे चला\" हे खालील उजव्या "
 "कोपऱ्यातील बटन दाबून पुढे सरकत रहा"
 
-#~ msgid ""
-#~ "It is highly recommended that a personal user account be created.  If you "
-#~ "continue without an account, you can only log in with the root account, "
-#~ "which is reserved for administrative use only."
-#~ msgstr ""
-#~ "व्यक्तिगत खाते बनविले पाहिजे असे ठामपणे सूचविले जाते.  खाते विना पुढे जात असल्यास, तुम्ही "
-#~ "फक्त रूट खात्यासह दाखलन करू शकाल जे प्रशासकीय वापर करीता आरक्षीत आहे."
-
-#~ msgid "_Continue"
-#~ msgstr "पुढे चला (_C)"
-
-#~ msgid "Create _account"
-#~ msgstr "खाते बनवा (_a)"
