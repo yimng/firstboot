@@ -1,6 +1,6 @@
 # Swedish translation of firstboot.
-# Copyright © 2006, 2008 Free Software Foundation
-# Göran Uddeborg <goeran@uddeborg.se>, 2003, 2008.
+# Copyright © 2006, 2008, 2009 Free Software Foundation
+# Göran Uddeborg <goeran@uddeborg.se>, 2003, 2008, 2009.
 # Magnus Larsson <fedoratrans@gmail.com>, 2007, 2008.
 # Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005, 2006
 #
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-15 12:15-0400\n"
+"PO-Revision-Date: 2009-04-01 20:17+0200\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -205,9 +205,8 @@ msgid "You must create a user account for this system."
 msgstr "Du måste skapa ett användarkonto för detta system."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Du måste skapa ett användarkonto för detta system."
+msgstr "Du måste skriva in och bekräfta ett lösenord för denna användare."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -223,40 +222,34 @@ msgstr ""
 "användarnamn."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
 "so may take a while to reset permissions and any SELinux labels.  Would you "
 "like to reuse this home directory?  If not, please choose a different "
 "username."
-msgstr ""
-"En hemkatalog för användare %s finns redan.  Vill du återanvända denna "
-"hemkatalog?  Om inte, välj ett annat användarnamn."
+msgstr "En hemkatalog för användare %s finns redan.  Vill fortsätta och göra den nya användaren till ägare av denna katalog och all dess innehåll?  Att göra det kan ta en liten stund för att återställa rättigheter och eventuella SELinux-etiketter.  Vill du återanvända denna hemkatalog?  Om inte, välj ett annat användarnamn."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgstr "Fixar attribut på hemkatalogen för %s.  Detta kan ta några minuter."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "Problem uppstod när attributen på några filer i hemkatalogen för %s fixades.  Undersök %s för att se vilka filer som orsakade felen."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
-msgstr ""
-"Det rekommenderas att du skapar ett \"användarnamn\" för normal (ej "
-"administrativ) användning av ditt system.  För att skapa ett system-"
-"\"användarnamn\", fyll informationen som efterfrågas nedan."
+msgstr "Du måste skapa ett \"användarnamn\" för normal (ej administrativ) användning av ditt system.  För att skapa ett \"användarnamn\" för systemet, fyll informationen som efterfrågas nedan."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -288,7 +281,7 @@ msgstr "Använd nät_verksinloggning..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Var god dröj"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -345,21 +338,3 @@ msgstr ""
 "Konfigurationsagenten kommer nu att leda dig genom en del grundläggande "
 "konfiguration. Klicka på knappen \"Framåt\" i nedre högra hörnet för att "
 "fortsätta."
-
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "Väntar på X-servern ska starta... logg finns på %s\n"
-
-#~ msgid ""
-#~ "It is highly recommended that a personal user account be created.  If you "
-#~ "continue without an account, you can only log in with the root account, "
-#~ "which is reserved for administrative use only."
-#~ msgstr ""
-#~ "Det rekommenderas varmt att ett personligt användarkonto skapas.  Om du "
-#~ "fortsätter utan ett konto kan du endast logga in med root-kontot, som är "
-#~ "reserverat för administrativ användning."
-
-#~ msgid "_Continue"
-#~ msgstr "_Fortsätt"
-
-#~ msgid "Create _account"
-#~ msgstr "Skapa _konto"
