@@ -1,4 +1,4 @@
-# translation of firstboot.master.gu.po to Gujarati
+# translation of gu.po to Gujarati
 # Gujarati translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -6,13 +6,13 @@
 # Automatically generated, 2004.
 # Ankit Patel <ankit@redhat.com>, 2004, 2005, 2006, 2007, 2008.
 # Sweta Kothari <sweta2782@yahoo.co.in>, 2008.
-# Sweta Kothari <swkothar@redhat.com>, 2008.
+# Sweta Kothari <swkothar@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master.gu\n"
+"Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-21 11:19+0530\n"
+"PO-Revision-Date: 2009-04-01 15:13+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -206,10 +206,8 @@ msgstr ""
 "રાખવા માટે \"બરાબર\" ક્લિક કરો."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "autorun કાર્યક્રમ CD માં શોધી શકાયો નથી. ચાલુ રાખવા માટે \"બરાબર\" પર ક્લિક કરો."
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
@@ -220,9 +218,8 @@ msgid "You must create a user account for this system."
 msgstr "આ સિસ્ટમ માટે વપરાશકર્તા ખાતુ બનાવવુ જ પડશે."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "આ સિસ્ટમ માટે વપરાશકર્તા ખાતુ બનાવવુ જ પડશે."
+msgstr "આ વપરાશકર્તા માટે પાસવર્ડની ખાતરી અને દાખલ કરવો જ જોઇએ."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -238,7 +235,7 @@ msgstr ""
 "કરો."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -246,14 +243,16 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"વપરાશકર્તા %s માટેની ઘર ડિરેક્ટરી પહેલાથી જ હાજર છે. શું તમે આ ઘર ડિરેક્ટરી પુનઃવાપરવા "
-"માંગો છો?  જો નહિં, તો મહેરબાની કરીને અન્ય અલગ વપરાશકર્તાનામ પસંદ કરો."
+"વપરાશકર્તા %s માટેની ઘર ડિરેક્ટરી પહેલાથી જ હાજર છે. શું તમે આ ડિરેક્ટરી અને બધા "
+"તેનાં સમાવિષ્ટોનાં માલિકનાં નવા વપરાશકર્તાને બનાવવાનું ચાલુ રાખવા માંગો છો?  કરવા માટે "
+"કોઇપણ SELinux લેબલો અને પરવાનગીઓને પુન:સુયોજિત કરવા માટે થોડો સમય લાગી શકે છે.  "
+"શું તમે આ ઘર ડિરેક્ટરીને પુન:વાપરવા માંગો છો?  જો નહિં તો, મહેરબાની કરીને અલગ વપરાશકર્તાનામ "
+"પસંદ કરો."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "%s માટે ઘર ડિરેક્ટરી પર ગુણધર્મોને સુધારી રહ્યા છે.  આને થોડો સમય લાગી શકે છે."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -261,16 +260,17 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"%s માટે ઘર ડિરેક્ટરીમાં અમુક ફાઇલો પર ગુણધર્મોને સુધારા દરમ્યાન સમસ્યાઓ મળી આવી.  "
+"મહેરબાની કરીને કઇ ફાઇલો ભૂલોનાં કારણે થયેલ છે તે માટે %s નો સંદર્ભ લો."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"એ આગ્રહણીય છે કે ત તમારી સિસ્ટમના નિયમિત (બિન-સંચાલક) વપરાશ માટે 'વપરાશકર્તાનામ' "
-"બનાવો. સિસ્ટમ 'વપરાશકર્તાનામ' બનાવવા માટે, મહેરબાની કરીને નીચે અરજી થયેલ જાણકારી "
+"તમારી સિસ્ટમના નિયમિત (બિન-સંચાલક) વપરાશ માટે 'વપરાશકર્તાનામ' "
+"ને બનાવવુ જ પડશે. સિસ્ટમ 'વપરાશકર્તાનામ' બનાવવા માટે, મહેરબાની કરીને નીચે અરજી થયેલ જાણકારી "
 "પૂરી પાડો."
 
 #: ../modules/create_user.py:231
@@ -303,7 +303,7 @@ msgstr "નેટવર્ક પ્રવેશ વાપરો (_L)..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "મહેરબાની કરીને થોભો"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -359,7 +359,5 @@ msgid ""
 msgstr ""
 "તમારી સિસ્ટમ વાપરવા માટે તૈયાર થાય તે પહેલાં ત્યાં થોડા વધુ પગલાંઓ છે.  સેટઅપ એજન્ટ હવે "
 "તમને અમુક આધારભૂત રૂપરેખાંકન મારફતે માર્ગદર્શન કરશે.  મહેરબાની કરીને ચાલુ રાખવા માટે નીચે "
-"જમણાં ખૂણે \"આગળ ધપાવો\" બટન ક્લિક કરો."
+"જમણાં ખૂણે \"આગળ ધપાવો\" બટન ક્લિક કરો"
 
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "શરૂ કરવા માટે X સર્વર માટે રાહ જોઇ રહ્યા છે... લોગ %s માં સ્થાન થયેલ છે\n"
