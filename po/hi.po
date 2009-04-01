@@ -1,15 +1,15 @@
-# translation of firstboot.master.hi.po to Hindi
+# translation of firstboot.master.po to Hindi
 # translation of hi.po to
 # Copyright (C) YEAR ORGANIZATION.
 #
-# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2008.
+# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2008, 2009.
 # hi <rranjan@redhat.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master.hi\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-13 16:22+0530\n"
+"PO-Revision-Date: 2009-04-01 13:03+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <hindi.sf.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "<<<<<<< hi.poPOT-Creation-Date: 2004-08-31 16:22-0400\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -44,7 +44,7 @@ msgstr "कोई फर्स्टबूट मॉड्यूल नहीं
 
 #: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
-msgstr "किसी फर्स्टबूट अंतरफलक को बना नहीं सका."
+msgstr "कोई फर्स्टबूट अंतरफलक बना नहीं सका."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -77,14 +77,14 @@ msgid ""
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
 "डिबग आउटपुट की एक कॉपी %s में सुरक्षित किया गया है.\n"
-"उस फाइल को बग रिपोर्ट के साथ संलग्न करना न भूलें.\n"
+"उस फ़ाइल को बग रिपोर्ट के साथ संलग्न करना न भूलें.\n"
 
 #: ../firstboot/exceptionWindow.py:71
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"कृपया 'firstboot' के हवाले Red Hat बग ट्रैकिंग सिस्टम को \n"
+"कृपया 'firstboot' के हवाले Red Hat बग ट्रैकिंग तंत्र को \n"
 "http://www.redhat.com/bugzilla पर एक बग दर्ज करें. \n"
 
 #: ../firstboot/interface.py:75
@@ -99,7 +99,7 @@ msgstr "समाप्त (_F)"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "आपके कुछ चयन के प्रभावी होने के लिये सिस्टम को जरूर रिबूट करना चाहिये."
+msgstr "आपके कुछ चयन के प्रभावी होने के लिये तंत्र को जरूर रिबूट करना चाहिए."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -107,7 +107,7 @@ msgstr "पीछे (_B)"
 
 #: ../firstboot/interface.py:250
 msgid "_Forward"
-msgstr "अग्रसारित करें (_F)"
+msgstr "अग्रेषित करें (_F)"
 
 #: ../firstboot/interface.py:277
 #, python-format
@@ -163,9 +163,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"तीसरी पार्टी plug-ins और अनुप्रयोग के अधिष्ठापन की अनुमति के लिए \"Red Hat "
-"Enterprise Linux Extras\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त साफ्टवेयर "
-"के अधिष्ठापन के लिए दस्तावेज डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
+"तीसरी पार्टी plug-ins और अनुप्रयोग के संस्थापन की अनुमति के लिए \"Red Hat "
+"Enterprise Linux Extras\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त सॉफ़्टवेयर "
+"के संस्थापन के लिए दस्तावेज डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -182,11 +182,11 @@ msgstr ""
 "\n"
 "\n"
 "32-बिट अनुप्रयोग के रनटाइम को समर्थ करने के लिये Intel Itanium2 ऑर्किटेक्चर पर, आपको "
-"Intel निष्पादन स्तर संकुल को अब एक्स्ट्रा से जरूर अधिष्ठापित करना चाहिये."
+"Intel निष्पादन स्तर संकुल को अब एक्स्ट्रा से जरूर संस्थापित करना चाहिए."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
-msgstr "अधिष्ठापित करें..."
+msgstr "संस्थापित करें..."
 
 #: ../modules/additional_cds.py:110
 msgid ""
@@ -197,38 +197,34 @@ msgstr ""
 "के लिए दबाएँ."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"ऑटोरन प्रोग्राम CD पर नहीं पाया जा सकता है. जारी रखने के लिये \"ठीक\" क्लिक करें."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "ऑटोरन प्रोग्राम CD पर नहीं पाया जा सकता है. जारी रखने के लिये \"ठीक\" क्लिक करें."
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
 msgstr "उपयोक्ता बनाएँ"
 
 #: ../modules/create_user.py:83
-#, fuzzy
 msgid "You must create a user account for this system."
-msgstr "कृपया सिस्टम के लिए दिनांक व समय सेट करें."
+msgstr "आप इस तंत्र के लिए कृपया उपयोक्ता खाता जरूर बनाएँ."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
-msgstr ""
+msgstr "आप इस उपयोक्ता के लिए कूटशब्द दाखिल व संपुष्ट जरूर करें."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "शब्दकूट मेल नहीं खाता है.  कृपया शब्दकूट फिर दाखिल करें."
+msgstr "कूटशब्द मेल नहीं खाता है.  कृपया कूटशब्द फिर दाखिल करें."
 
 #: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"उपयोक्ता नाम '%s' एक आरक्षित सिस्टम खाता है.  कृपया दूसरा उपयोक्तानाम निर्दिष्ट करें."
+msgstr "उपयोक्ता नाम '%s' एक आरक्षित तंत्र खाता है.  कृपया दूसरा उपयोक्तानाम निर्दिष्ट करें."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -236,31 +232,30 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूदा है. क्या आप इस घर निर्देशिका को फिर "
+"उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूदा है. क्या आप जारी रखना चाहेंगे, "
+"नए उपयोक्ता को इस निर्देशिका का स्वामी बनाते हुए और इसकी सारी टिप्पणी?  ऐसा करना कुछ समय ले सकता है अनुमति फिर सेट करने के लिए और कोई SELinux स्तर. क्या आप इस घर निर्देशिका को फिर "
 "प्रयोग करना चाहेंगे?  यदि नहीं, कृपया भिन्न उपयोक्ता नाम चुनें."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "%s के लिए घर निर्देशिका पर विशेषता का ठीक करना.  यह कुछ मिनट ले सकता है."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "%s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना हुआ.  कृपया %s को किसी फ़ाइल ने त्रुटि दी है के लिए संदर्भ लें."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"इसकी अनुशंसा की जाती है कि आप एक 'उपयोक्तानाम' अपने सिस्टम के नियमित प्रयोग (गैर "
-"प्रशासनिक) के लिए बनाएं. सिस्टम 'उपयोक्तानाम' बनाने के लिए, कृपया नीचे निवेदित सूचना दें."
+"इसकी अनुशंसा की जाती है कि आप एक 'उपयोक्तानाम' अपने तंत्र के नियमित प्रयोग (गैर "
+"प्रशासनिक) के लिए बनाएँ. तंत्र 'उपयोक्तानाम' बनाने के लिए, कृपया नीचे निवेदित सूचना दें."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -272,11 +267,11 @@ msgstr "पूरा नाम (_e):"
 
 #: ../modules/create_user.py:245
 msgid "_Password:"
-msgstr "शब्दकूट (_P):"
+msgstr "कूटशब्द (_P):"
 
 #: ../modules/create_user.py:252
 msgid "Confir_m Password:"
-msgstr "शब्दकूट संपुष्ट करें (_m):"
+msgstr "कूटशब्द संपुष्ट करें (_m):"
 
 #: ../modules/create_user.py:261
 msgid ""
@@ -292,7 +287,7 @@ msgstr "संजाल लॉगिन का प्रयोग करें (
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "कृपया प्रतीक्षा करें"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -300,7 +295,7 @@ msgstr "दिनांक व समय"
 
 #: ../modules/date.py:62
 msgid "Please set the date and time for the system."
-msgstr "कृपया सिस्टम के लिए दिनांक व समय सेट करें."
+msgstr "कृपया तंत्र के लिए दिनांक व समय सेट करें."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -346,21 +341,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"आपके सिस्टम को प्रयोग के लिए तैयार करने के पहले कुछ और चरण हैं. सेटअप प्रतिनिधि अब आपको "
-"कुछ मौलिक विन्यास के माध्यम से मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दांएँ कोने में "
+"आपके तंत्र को प्रयोग के लिए तैयार करने के पहले कुछ और चरण हैं. सेटअप प्रतिनिधि अब आपको "
+"कुछ मौलिक विन्यास के माध्यम से मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दाएँ कोने में "
 "\"आगे\" बटन दबाएँ."
 
-#~ msgid ""
-#~ "It is highly recommended that a personal user account be created.  If you "
-#~ "continue without an account, you can only log in with the root account, "
-#~ "which is reserved for administrative use only."
-#~ msgstr ""
-#~ "यह उच्च अनुंशसित है कि निजी उपयोक्ता खाता निर्मित किया जाना चाहिए.  यदि आप खाता "
-#~ "के बिना जारी रखना चाहते हैं, आप सिर्फ एक रूट खाता के साथ लॉगिन कर सकते हैं, जो सिर्फ "
-#~ "प्रशासनिक प्रयोग के लिए आरक्षित है."
-
-#~ msgid "_Continue"
-#~ msgstr "जारी रखें (_C)"
-
-#~ msgid "Create _account"
-#~ msgstr "खाता बनाएँ (_a)"
