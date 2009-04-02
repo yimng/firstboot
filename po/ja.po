@@ -1,4 +1,4 @@
-# translation of firstboot.master.ja.po to Japanese
+# translation of firstboot.po to Japanese
 # firstboot ja.po Japanese Translation.
 # Copyright (C) 2002 Red Hat Inc.
 #
@@ -10,13 +10,13 @@
 # Kiyoto James Hashida <khashida@redhat.com>, 2006.
 # Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2007.
 # Makoto Mizukami <mmk9060@aol.com>, 2008.
-# Kiyoto Hashida <khashida@redhat.com>, 2008.
+# Kiyoto Hashida <khashida@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master.ja\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-20 14:38+1000\n"
+"PO-Revision-Date: 2009-04-02 12:11+1000\n"
 "Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <jp@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -147,8 +147,7 @@ msgstr "画像 %s がロードできません(%s モジュールに必要とさ�
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
-"%s モジュールは、ユーザーインターフェイスが設定されていません: 削除します。"
+msgstr "%s モジュールは、ユーザーインターフェイスが設定されていません: 削除します。"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -197,10 +196,8 @@ msgstr ""
 "て続けて下さい。"
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"自動起動プログラムが CD 上に見つかりません。\"OK\" をクリックして継続します。"
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "自動起動プログラムが CD 上に見つかりません。\"OK\" をクリックして継続します。"
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
@@ -211,9 +208,8 @@ msgid "You must create a user account for this system."
 msgstr "このシステム用にユーザーアカウントを作成する必要があります。"
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "このシステム用にユーザーアカウントを作成する必要があります。"
+msgstr "このユーザー用にパスワードを作成して確定する必要があります。"
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -229,7 +225,7 @@ msgstr ""
 "名を指定してください。"
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -237,14 +233,16 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"'%s' ユーザーのホームフォルダは既に存在します。このホームフォルダを再利用しま"
-"すか?もししないのならば、別のユーザー名を選択してください。"
+"ユーザー '%s' のホームディレクトリは既に存在します。継続して新しいユーザーを "
+"このディレクトリとそのコンテンツのオーナーにしますか？ これを実行するには、 "
+"権限と SELinux ラベルのリセットのために少し時間がかかります。このホーム "
+"ディレクトリを再利用しますか？ そうでなければ、別のユーザー名を選択して "
+"下さい。"
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "%s のホームディレクトリ上の属性を修復しています。これには数分かかります。"
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -252,16 +250,17 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"%s のホームディレクトリ内にある一部のファイルの属性修復中に問題が発生しました。 "
+"どのファイルがエラーを起こしたかを見るには %s を参照してください。"
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"(管理用途ではない)普通の作業のために、'ユーザー'を作成することを推奨します。"
-"以下の情報を入力し、システムに'ユーザー'を作成します。"
+"システムでの(管理用途ではない)普通の作業のために、'ユーザー'を作成することを "
+"推奨します。以下の情報を入力し、システムに 'ユーザー' を作成します。"
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -293,7 +292,7 @@ msgstr "ネットワークログインを使用する (_L)"
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "お待ち下さい"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -349,5 +348,3 @@ msgstr ""
 "エージェントは、基本的な設定についてガイドしていきます。右下隅にある \"進む"
 "\" をクリックして、設定を開始します。"
 
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "X サーバーが開始するまでお待ち下さい... ログは %s にあります\n"
