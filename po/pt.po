@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-03-17 23:44+0100\n"
+"PO-Revision-Date: 2009-03-31 17:21+0100\n"
 "Last-Translator: Marco Mendonça <marcormm@gmail.com>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgid ""
 "attempt to run the remaining modules."
 msgstr ""
 "Dado que ocorreu um problema com o módulo %s,\n"
-"o Firstboot não o vai carregar e vai tentar\n"
+"o Firstboot não carregará este módulo e vai tentar\n"
 "executar os módulos restantes."
 
 #: ../firstboot/exceptionWindow.py:55
@@ -60,7 +60,7 @@ msgstr "Ocorreu um erro no Firstboot."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr "Dado que existe um problema, o Firstboot irá sair."
+msgstr "Dado que existe um problema, o Firstboot irá encerrar."
 
 #: ../firstboot/exceptionWindow.py:66
 #, python-format
@@ -69,7 +69,7 @@ msgid ""
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
 "Foi gravada uma cópia do resultado de depuração em %s \n"
-"Por favor anexe este ficheiro ao relatório de erro. \n"
+"Por favor certifique-se que anexa este ficheiro ao relatório de erro. \n"
 
 #: ../firstboot/exceptionWindow.py:71
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr "Tentou-se recuar, mas o histórico está vazio."
+msgstr "Houve uma tentativa para recuar, mas o histórico está vazio."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -105,12 +105,12 @@ msgstr "A_vançar"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr "O módulo %s não configurou a sua interface, por isso foi removido."
+msgstr "O módulo %s não configurou a sua interface de utilizador, por isso foi removido."
 
 #: ../firstboot/interface.py:353
 #: ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr "O 'moveToPage' deverá receber um título do módulo ou um número de página."
+msgstr "Deve ser atribuído um título de módulo ou número de página a 'moveToPage'"
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
@@ -125,7 +125,7 @@ msgstr "Não existe nenhum módulo intitulado %s."
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr "A ignorar o módulo antigo %s por não ter sido actualizado."
+msgstr "A ignorar o módulo antigo %s o qual não foi actualizado"
 
 #: ../firstboot/loader.py:102
 #, python-format
@@ -140,12 +140,12 @@ msgstr "O módulo %s não contém o atributo obrigatório '%s'; a ignorar."
 #: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr "Não foi possível carregar a imagem '%s' do módulo '%s'."
+msgstr "Não foi possível carregar a imagem pixmap '%s' do módulo '%s'."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr "O módulo '%s' não configurou a sua interface; a removê-lo."
+msgstr "O módulo '%s' não configurou a sua interface de utilizador; a remover."
 
 #: ../modules/additional_cds.py:43
 #: ../modules/additional_cds.py:44
@@ -176,7 +176,7 @@ msgstr "Instalar..."
 
 #: ../modules/additional_cds.py:110
 msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Não foi detectado nenhum CD-ROM. Introduza por favor um CD na 'drive' e carregue em \"OK\" para continuar."
+msgstr "Não foi detectado nenhum CD-ROM. Insira por favor um CD na 'drive' e carregue em \"OK\" para continuar."
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
@@ -189,7 +189,7 @@ msgstr "Criar um Utilizador"
 
 #: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
-msgstr "Precisa de criar uma conta de utilizador para este sistema."
+msgstr "É necessário criar uma conta de utilizador para este sistema."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
@@ -197,7 +197,7 @@ msgstr "Precisa inserir e confirmar a senha para este utilizador."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "As senhas não correspondem. Introduza por favor a senha de novo."
+msgstr "As senhas não correspondem. Por favor, introduza novamente a senha."
 
 #: ../modules/create_user.py:113
 #, python-format
@@ -205,9 +205,9 @@ msgid "The username '%s' is a reserved system account.  Please specify another u
 msgstr "O utilizador '%s' é uma conta reservada para o sistema. Indique por favor outro utilizador."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr "Já existe uma pasta pessoal para o utilizador %s. Deseja utilizar de novo esta pasta? Caso contrário, indique por favor um utilizador diferente."
+msgstr "Já existe uma pasta pessoal para o utilizador %s. Deseja prosseguir, tornando o novo utilizador o proprietário desta directoria, bem como, de todo o seu conteúdo? Se prosseguir, demorará um certo período de tempo a restabelecer permissões e quaisquer etiquetas SELinux. Deseja reutilizar esta pasta pessoal? Se não for esse o caso, por favor indique um utilizador diferente."
 
 #: ../modules/create_user.py:175
 #, python-format
@@ -221,7 +221,7 @@ msgstr "Foram encontrados problemas na correcção das permissões em alguns fic
 
 #: ../modules/create_user.py:213
 msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr "É altamente recomendado que crie um 'utilizador' para a utilização normal (não administrativa) do seu sistema. Para criar um utilizador, indique por favor a informação pedida abaixo."
+msgstr "É altamente recomendado que crie um 'utilizador' para a utilização normal (não administrativa) do seu sistema. Para criar um utilizador, indique por favor a informação solicitada abaixo."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -258,7 +258,7 @@ msgstr "Data e Hora"
 
 #: ../modules/date.py:62
 msgid "Please set the date and time for the system."
-msgstr "Configure por favor a data e hora do sistema."
+msgstr "Acerte por favor a data e hora do sistema."
 
 #: ../modules/eula.py:35
 #: ../modules/eula.py:36
@@ -271,7 +271,7 @@ msgid ""
 "\n"
 "If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Obrigado por instalar o Fedora.  O Fedora é uma colectânea de pacotes de 'software', tendo cada um a sua própria licença. A compilação é disponibilizada segundo a Licença Pública da GNU, na sua versão 2. Não existem restrições sobre a utilização, cópia ou modificação deste código. Todavia, existem restrições e obrigações que se aplicam à redistribuição do código, sendo no seu formato original ou num modificado. Entre outras coisas, estas restrições/obrigações dizem respeito ao licenciamento de redistribuição, as marcas registadas e o controlo de exportação.\n"
+"Obrigado por instalar o Fedora.  O Fedora é uma compilação de pacotes de 'software', tendo cada um a sua própria licença. A compilação é disponibilizada segundo a Licença Pública da GNU, na sua versão 2. Não existem restrições quanto à utilização, cópia ou modificação deste código. Todavia, existem restrições e obrigações que se aplicam à redistribuição do código, quer no seu formato original quer num formato modificado. Entre outras coisas, estas restrições/obrigações dizem respeito ao licenciamento de redistribuição, as marcas registadas e o controlo de exportação.\n"
 "\n"
 "Se desejar compreender o que significam estas restrições, por favor vá a http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
@@ -286,7 +286,7 @@ msgstr "Bem-vindo"
 
 #: ../modules/welcome.py:45
 msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
-msgstr "Ainda existem mais alguns passos a percorrer antes de o seu computador estar pronto a utilizar.  O Agente de Configuração vai agora guiá-lo através de algumas opções básicas.  Por favor carregue no botão \"Seguinte\" no canto inferior direito para continuar"
+msgstr "Ainda faltam alguns passos a dar antes de o seu computador estar pronto a utilizar.  O Agente de Configuração vai agora guiá-lo através de algumas configurações básicas.  Por favor carregue no botão \"Seguinte\" no canto inferior direito para continuar"
 
 #~ msgid "Waiting for X server to start... log located in %s\n"
 #~ msgstr ""
