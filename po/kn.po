@@ -4,13 +4,13 @@
 #
 # Umesh Rudrapatna <urudrapatna@yahoo.com>, 2006.
 # shankar Prasad <svenkate@redhat.com>, 2006.
-# Shankar Prasad <svenkate@redhat.com>, 2007, 2008.
+# Shankar Prasad <svenkate@redhat.com>, 2007, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-18 21:57+0530\n"
+"PO-Revision-Date: 2009-04-02 23:18+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "ಫರ್ಸ್ಟ್‍-ಬೂಟನ್ನು ಚಲಾಯಿಸಲು ನೀವು ಮೂಲವಾಗಿರಬೇಕು."
+msgstr "ಫರ್ಸ್ಟ್‍-ಬೂಟನ್ನು ಚಲಾಯಿಸಲು ನೀವು ರೂಟ್‌ ಆಗಿರಬೇಕು."
 
 #: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
@@ -107,8 +107,7 @@ msgstr "%s ಘಟಕಕ್ಕೆ ಅದರ UI ಅನ್ನು ಹೊಂದಿಸ
 
 #: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
-"'ಪುಟಕ್ಕೆಜರುಗಿಸು' ಗೆ ಒಂದು ಘಟಕದ ಶೀರ್ಷಿಕೆ ಅಥವ ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಒದಗಿಸಬೇಕಾಗುತ್ತದೆ."
+msgstr "'ಪುಟಕ್ಕೆಜರುಗಿಸು' ಗೆ ಒಂದು ಘಟಕದ ಶೀರ್ಷಿಕೆ ಅಥವ ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಒದಗಿಸಬೇಕಾಗುತ್ತದೆ."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
@@ -189,10 +188,8 @@ msgstr ""
 "ಚಾಲಕಕ್ಕೆ ತೂರಿಸಿ \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"autorun ಪ್ರೊಗ್ರಾಂ ಸೀಡಿಯಲ್ಲಿ ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಮುಂದುವರೆಯಲು \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "autorun ಪ್ರೊಗ್ರಾಂ ಸೀಡಿಯಲ್ಲಿ ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಮುಂದುವರೆಯಲು \"ಸರಿ\" ಗುಂಡಿಯನ್ನು ಒತ್ತಿರಿ."
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
@@ -203,9 +200,8 @@ msgid "You must create a user account for this system."
 msgstr "ಈ ಗಣಕಕ್ಕಾಗಿ ನೀವು ಒಂದು ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ರಚಿಸಲೇ ಬೇಕು."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "ಈ ಗಣಕಕ್ಕಾಗಿ ನೀವು ಒಂದು ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ರಚಿಸಲೇ ಬೇಕು."
+msgstr "ಈ ಬಳಕೆದಾರನಿಗಾಗಿ ನೀವು ಒಂದು ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ ಖಚಿತಪಡಿಸಬೇಕಾಗುತ್ತದೆ."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -221,7 +217,7 @@ msgstr ""
 "ಬಳಕೆದಾರ ಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -229,32 +225,27 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"ಬಳಕೆದಾರ %s ನ ಒಂದು ನೆಲೆಕಡತಕೋಶ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ನೀವು ಈ ನೆಲೆ ಕಡತಕೋಶವನ್ನು "
+"ಬಳಕೆದಾರ %s ನ ಒಂದು ನೆಲೆಕಡತಕೋಶ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ಹೊಸ ಬಳಕೆದಾರರನ್ನು ಈ ಕಡತಕೋಶದ ಹಾಗು ಅದರಲ್ಲಿ ಎಲ್ಲಾ ಅಂಶಗಳಿಗೆ ಮಾಲಿಕರನ್ನಾಗಿ ಮಾಡಿ ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ?  ಹಾಗೆ ಮಾಡಿದಾಗ ಎಲ್ಲಾ ಅನುಮತಿಗಳನ್ನು ಹಾಗು ಇರಬಹುದಾದ ಯಾವುದೆ SELinux ಲೇಬಲ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಲು ಒಂದಿಷ್ಟು ಸಮಯ ಹಿಡಿಯಬಹುದು. ನೀವು ಈ ನೆಲೆ ಕಡತಕೋಶವನ್ನು "
 "ಪುನಃ ಬಳಸಲು ಬಯಸುತ್ತೀರೆ?  ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ, ದಯವಿಟ್ಟು ಬೇರೊಂದು ಬಳಕೆದಾರಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು %s ಸರಿಪಡಿಸಲಾಗುತ್ತಿದೆ.  ಇದಕ್ಕೆ ಒಂದಿಷ್ಟು ಹೊತ್ತು ಹಿಡಿಯಬಹುದು."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ ಕೆಲವು ಕಡತಗಳ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು %s ಸರಿಪಡಿಸುವಾಗ ತೊಂದರೆಗಳು ಎದುರಾಗಿವೆ.  ಯಾವ ಕಡತಗಳಲ್ಲಿ ದೋಷಗಳು ಕಂಡುಬಂದಿವೆ ಎಂದು ಅರಿಯಲು ದಯವಿಟ್ಟು %s ಅನ್ನು ನೋಡಿ."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
-msgstr ""
-"ನಿಮ್ಮ ಗಣಕದ ಸಾಮಾನ್ಯ (ನಿರ್ವಹಣೆಯಲ್ಲದ) ಬಳಕೆಗಾಗಿ ಒಂದು 'ಬಳಕೆದಾರ ಹೆಸರ'ನ್ನು ರಚಿಸುವಂತೆ "
-"ನಿಮಗೆ ಸಲಹೆ ಮಾಡಲಾಗುತ್ತದೆ. ಒಂದು ಗಣಕದ 'ಬಳಕೆದಾರಹೆಸರ'ನ್ನು ರಚಿಸಲು, ದಯವಿಟ್ಟು ಈ ಕೆಳಗೆ "
-"ಕೇಳಲಾಗುವ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ."
+msgstr "ನಿಮ್ಮ ಗಣಕದ ಸಾಮಾನ್ಯ (ನಿರ್ವಹಣೆಯಲ್ಲದ) ಬಳಕೆಗಾಗಿ ಒಂದು 'ಬಳಕೆದಾರ ಹೆಸರನ್ನು' ನೀವು ರಚಿಸಬೇಕಾಗುತ್ತದೆ. ಒಂದು ಗಣಕದ 'ಬಳಕೆದಾರಹೆಸರನ್ನು' ರಚಿಸಲು, ದಯವಿಟ್ಟು ಈ ಕೆಳಗೆ ಕೇಳಲಾದ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -286,7 +277,7 @@ msgstr "ಜಾಲಬಂಧ ಪ್ರವೇಶವನ್ನು ಬಳಸು(_L)...
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "ದಯವಿಟ್ಟು ಕಾಯಿರಿ"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -344,5 +335,3 @@ msgstr ""
 "ಮೂಲಭೂತ ಸಂರಚನಾ ಕಾರ್ಯದಲ್ಲಿ ನೆರವಾಗುತ್ತದೆ. ಮುಂದುವರೆಯಲು, ದಯವಿಟ್ಟು ಬಲಕೆಳತುದಿಯಲ್ಲಿರುವ "
 "\"ಮುಂದಕ್ಕೆ\" ಗುಂಡಿಯನ್ನೊತ್ತಿರಿ"
 
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "X ಪರಿಚಾರಕವು ಆರಂಭಗೊಳ್ಳಲು ಕಾಯಲಾಗುತ್ತಿದೆ... %s ಯಲ್ಲಿ ದಾಖಲೆಯು ಇದೆ\n"
