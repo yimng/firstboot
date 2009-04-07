@@ -1,23 +1,23 @@
-# translation of firstboot.master.mai.po to Hindi
+# translation of firstboot.master.mai.po to Maithili
 # translation of 1.firstboot.master.po to
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Sangeeta Kumari <sangeeta09@gmail.com>, 2008.
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2008, 2009.
 # Rajesh Ranjan <rranjan@redhat.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master.mai\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-21 13:53+0530\n"
-"Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
-"Language-Team: Hindi <hindi.sf.net>\n"
+"PO-Revision-Date: 2009-04-07 22:19+0530\n"
+"Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
+"Language-Team: Maithili <maithili.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -190,10 +190,8 @@ msgstr ""
 "जारी राखए क' लेल दाबू."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "ऑटोरन प्रोग्राम CD पर नहि पाओल जाए सकैत अछि. जारी रखबाक लेल \"ठीक\" क्लिक करू."
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
@@ -201,27 +199,25 @@ msgstr "प्रयोक्ता बनाबू"
 
 #: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
-msgstr "अहाँकेँ ई सिस्टमक लेल उपयोक्ता खाता जरूर सेट करबा चाही."
+msgstr "अहाँकेँ ई सिस्टमक लेल प्रयोक्ता खाता जरूर सेट करबा चाही."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "अहाँकेँ ई सिस्टमक लेल उपयोक्ता खाता जरूर सेट करबा चाही."
+msgstr "अहाँक ई प्रयोक्ताक लेल गुड़किल्ली दाखिल आ संपुष्ट जरूर करू."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "शब्दकूट मेल नहि करैत अछि. कृप्या शब्दकूट फिनु दिअ'."
+msgstr "गुड़किल्ली मेल नहि करैत अछि. कृप्या गुड़किल्ली फिनु दिअ'."
 
 #: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
-"'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
+msgstr "'%s' प्रयोक्तानाम एकटा संरक्षित सिस्टम खाता अछि. कृप्या आन प्रयोक्तानाम निर्दिष्ट करू."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
@@ -229,30 +225,29 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"उपयोक्ता %s क लेल घर निर्देशिका पहिनेसँ मोजुद अछि. की अहाँ ई घर निर्देशिकाकेँ फिनु प्रयोग "
-"करबाक लेल चाहब?  जँ नहि, कृप्या भिन्न उपयोक्ता नाम चुनू."
+"प्रयोक्ताक %s लेल घर निर्देशिका पहिने सँ मोजुद अछि. की अहाँ जारी रखबाक लेल चाहब, "
+"नव प्रयोक्ता केँ ई निर्देशिका कए स्वामी बनाबैत आओर एकर सभटा टिप्पणी?  एहिना कएनाइ किछु समय लए सकैत अछि अनुमति फेर सेट करबाक लेल आओर कोनो SELinux स्तर. की अहाँ ई घर निर्देशिका केँ फेर "
+"प्रयोग कएनाइ चाहब?  जँ नहि, कृप्या भिन्न प्रयोक्ता नाम चुनू."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "%s क लेल घर निर्देशिका पर विशेषताक ठीक कएनाइ.  ई किछु मिनट लए सकैत अछि."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "%s क लेल घर निर्देशिकामे किछु फाइलमे विशेषता स्थिर करैत समय समस्याक सामना हुआ.  कृप्या %s केँ कोनो फाइल त्रुटि देने अछि कए संदर्भ लिअ."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"ई अनुशंसा कएल जाएत अछि जे अहाँ सिस्टमक नियमित (अप्रशासनिक) प्रयोग क' लेल एकटा "
+"अहाँ सिस्टमक नियमित (अप्रशासनिक) प्रयोग क' लेल एकटा "
 "व्यक्तिगत 'प्रयोक्तानाम' बनाबू. एकटा सिस्टम 'प्रयोक्तानाम' बनाबै क' लेल, नीच्चाँ माँगल गेल "
 "जानकारी दिअ'."
 
@@ -266,11 +261,11 @@ msgstr "पूरा नाम (_e):"
 
 #: ../modules/create_user.py:245
 msgid "_Password:"
-msgstr "शब्दकूट (_P):"
+msgstr "गुड़किल्ली (_P):"
 
 #: ../modules/create_user.py:252
 msgid "Confir_m Password:"
-msgstr "शब्दकूट सुनिश्चित करू (_m):"
+msgstr "गुड़किल्ली सुनिश्चित करू (_m):"
 
 #: ../modules/create_user.py:261
 msgid ""
@@ -286,7 +281,7 @@ msgstr "सँजाल लोगिनक प्रयोग करू (_L)..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "कृप्या प्रतीक्षा करू"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -344,5 +339,3 @@ msgstr ""
 "किछु मौलिक बिन्यासक माध्यमसँ मार्गदर्शन करताह.  कृप्या जारी रखबाक लेल नीच्चाँ दहिन्ना "
 "कोनामे \"आगाँ\" बटन दबाबू."
 
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "X सर्वरक आरंभ होएबाक लेल प्रतीक्षारत... लॉग %s पर स्थित अछि\n"
