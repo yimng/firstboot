@@ -1,6 +1,6 @@
 # translation of firstboot.master.po to icelandic
 # Íslensk þýðing firstboot
-# Copyright (C) YEAR ORGANIZATION
+# Copyright (C) 2009 Fedora
 #
 # Richard Allen <ra@ra.is>, 2002.
 # Sveinn í Felli <sveinki@nett.is>, 2009.
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-03-20 11:28+0000\n"
+"PO-Revision-Date: 2009-04-24 08:17+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: icelandic <kde-isl@molar.is>\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Þú verður að hafa kerfisstjóraréttindi til að keyra fyrstu-ræsingar forritið."
 
 #: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Gat ekki ræst neitt fyrstu-ræsingar forrit."
 
 #: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Engar fyrstu-ræsingar einingar fundust."
 
 #: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Gat ekki myndað neitt fyrstu-ræsingar viðmót."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -40,24 +40,23 @@ msgid "An error has occurred in the %s module."
 msgstr "Villa kom upp í %s reklinum."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
-"Þar sem það er vandamál með %s rekilinn mun \n"
-"Red Hat uppsetningarforritið ekki lesa hann inn \n"
-"og mun halda áfram að reyna þá rekla sem eftir eru."
+"Þar sem það er vandamál með %s eininguna mun \n"
+"fyrstu-ræsingar forritið ekki lesa það inn \n"
+"en mun halda áfram að prófa þær einingar sem eftir eru."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Villa kom upp í %s reklinum."
+msgstr "Villa kom upp í fyrstu ræsingu."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "Fyrst vandamál kom upp, mun fyrstu-ræsingar forritið hætta."
 
 #: ../firstboot/exceptionWindow.py:66
 #, python-format
@@ -101,45 +100,45 @@ msgstr "Á_fram"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Einingin %s náði ekki að setja upp notendaviðmót (UI), fjarlægi hana."
 
 #: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage verður að fá úthlutað einingarheiti (module title) eða síðunúmeri."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Gat ekki búið til möppu fyrir skjámyndir; sleppi því."
 
 #: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Engin eining með heitinu %s er til."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Sleppi gömlu einingunni %s sem ekki hefur verið uppfærð."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Einingin %s felur ekki í sér 'class' með heitinu 'moduleClass'; sleppi henni."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Einingin %s felur ekki í sér eiginleikann %s eins og krafist er; sleppi henni."
 
 #: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Gat ekki hlaðið inn pixmap bitamyndum %s fyrir eininguna %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Einingin %s setti ekki upp notendaviðmót (UI), fjarlægi hana."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -198,22 +197,22 @@ msgstr "Búa til notanda"
 
 #: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
-msgstr ""
+msgstr "Þú verður að búa til notandasvæði fyrir þetta kerfi."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
-msgstr ""
+msgstr "Þú verður að búa til og staðfesta lykilorð fyrir þennan notanda."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Lykilorðin stemma ekki.  Settu þau aftur inn."
 
 #: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr ""
+msgstr "Notandanafnið '%s' er frátekið af kerfisstýringunni.  Tilgreindu eitthvað annað notandanafn."
 
 #: ../modules/create_user.py:132
 #, python-format
@@ -224,25 +223,27 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
+"Þegar er til heimamappa fyrir notandann %s. Viltu halda áfram og gera nýja notandann að eiganda þessarar möppu, "
+"auk alls innihalds hennar?  Ef það er gert, getur tekið nokkurn tíma að endurstilla allar heimildir auk SELinux-merkinga.  Ertu viss um að þú viljir endurnýta þessa heimamöppu?  Ef ekki, veldu þá eitthvað annað notandanafn."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgstr "Laga heimildir og aðra eiginleika fyrir heimamöppuna %s.  Þetta gæti tekið nokkrar mínútur."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "Vandamál komu upp þegar reynt var að laga eiginleika sumra skráa í heimamöppu %s.  Athugaðu %s til að sjá hvaða skrár það voru sem ullu vandamálunum."
 
 #: ../modules/create_user.py:213
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
-msgstr ""
+msgstr "Þú verður að búa til 'notandanafn' fyrir alla venjulega (ekki-kerfisstjórnun) vinnu í kerfinu.  Til að búa til 'notandanafn' í kerfinu, settu inn upplýsingarnar sem beðið er um hér að neðan."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -264,7 +265,9 @@ msgstr "_Staðfesta lykilorð:"
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "Ef þú þarft að nota auðkenningu um net, svo sem Kerberos eða NIS, vinsamlega smelltu á hnappinn 'Nota innskráningu um net'."
+msgstr ""
+"Ef þú þarft að nota auðkenningu um net, svo sem Kerberos eða NIS, vinsamlega "
+"smelltu á hnappinn 'Nota innskráningu um net'."
 
 #: ../modules/create_user.py:270
 msgid "Use Network _Login..."
