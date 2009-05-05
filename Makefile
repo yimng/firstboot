@@ -29,7 +29,7 @@ tag:
 	git tag -f $(TAG)
 
 archive: tag
-	git-archive --format=tar --prefix=${PKGNAME}-$(VERSION)/ $(TAG) > ${PKGNAME}-$(VERSION).tar
+	git archive --format=tar --prefix=${PKGNAME}-$(VERSION)/ $(TAG) > ${PKGNAME}-$(VERSION).tar
 	bzip2 ${PKGNAME}-$(VERSION).tar
 	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.bz2"
 
