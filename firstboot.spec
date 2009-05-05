@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.105
+Version: 1.106
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -71,6 +71,10 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Tue May 05 2009 Chris Lumens <clumens@redhat.com> 1.106-1
+- Display an error message when the user doesn't supply a password (#480927).
+- Lots of translation updates.
+
 * Fri Jan 16 2009 Chris Lumens <clumens@redhat.com> 1.105-1
 - Fix a typo in starting up X.
 
