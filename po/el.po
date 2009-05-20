@@ -16,14 +16,15 @@ msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-03-28 18:02+0200\n"
-"Last-Translator: Pierros Papadeas <ppapadeas@gmail.com>\n"
+"PO-Revision-Date: 2009-05-20 12:46+0200\n"
+"Last-Translator: \n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Greek\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -32,7 +33,7 @@ msgstr "Πρέπει να είστε υπερχρήστης για να εκτε
 #: ../progs/firstboot:163
 #: ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
-msgstr "Δε μπόρεσε να γίνει εκκίνηση της διεπαφής firstboot."
+msgstr "Αδυναμία εκκίνησης του περιβάλλοντος firstboot."
 
 #: ../progs/firstboot:180
 #: ../progs/firstboot:181
@@ -42,7 +43,7 @@ msgstr "Δε βρέθηκαν αρθρώματα για το firstboot."
 #: ../progs/firstboot:190
 #: ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
-msgstr "Δε μπόρεσε να δημιουργηθεί κάποια διεπαφή firstboot."
+msgstr "Αδυναμία δημιουργίας περιβάλοντος firstboot."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -87,7 +88,7 @@ msgstr ""
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr "Έγινε προσπάθεια για προς τα πίσω πλοήγηση, αλλά το ιστορικό είναι άδειο."
+msgstr "Έγινε προσπάθεια για μετάβαση προς τα πίσω, αλλά το ιστορικό είναι άδειο."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -111,7 +112,7 @@ msgstr "_Μπροστά"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr "Το άρθρωμα %s δεν έχει ρυθμίσει τη γραφική διεπαφή του, θα αφαιρεθεί."
+msgstr "Το άρθρωμα %s δεν έχει ρυθμίσει το γραφικό του περιβάλλον, γίνεται απομάκρυνση."
 
 #: ../firstboot/interface.py:353
 #: ../firstboot/interface.py:354
@@ -151,7 +152,7 @@ msgstr "Αδυναμία φόρτωσης pixmap %s για το άρθρωμα %
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr "Το άρθρωμα %s δεν έχει ρθυμίσει τη γραφική του διεπαφή, θα απομακρυνθεί."
+msgstr "Το άρθρωμα %s δεν έχει ρυθμίσει το γραφικό του περιβάλλον, γίνεται απομάκρυνση."
 
 #: ../modules/additional_cds.py:43
 #: ../modules/additional_cds.py:44
@@ -264,7 +265,7 @@ msgstr "Ημερομηνία και ώρα"
 
 #: ../modules/date.py:62
 msgid "Please set the date and time for the system."
-msgstr "Παρακαλώ ορίστε την ημερομηνία και την ωρα του συστήματος."
+msgstr "Παρακαλώ ορίστε την ημερομηνία και την ώρα του συστήματος."
 
 #: ../modules/eula.py:35
 #: ../modules/eula.py:36
@@ -277,7 +278,7 @@ msgid ""
 "\n"
 "If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Ευχαριστούμε που εγκαθιστάτε το Fedora.  Το Fedora είναι μια συλλογή από πακέτα λογισμικού, το καθένα κάτω από τη δική του άδεια χρήσης.  Η συλλογή γίνεται διαθέσιμη κάτω από την GNU General Public Licence version 2.  Δεν υπάρχουν περιορισμοί στη χρήση, αντιγραφή ή τροποποίηση του κώδικα.  Παρόλα αυτά, υπάρχουν περιορισμοί και υποχρεώσεις που εφαρμόζονται στην αναδιανομή του κώδικα,στην αρχική ή σε μια τροποποιημένη μορφή.  Μεταξύ άλλων, αυτοί οι περιορισμοί/υποχρεώσεις αφορούν άδεια για αναδιανομή, πνευματικά δικαιώματα, και έλεγχο εξαγωγής.\n"
+"Ευχαριστούμε που εγκαθιστάτε το Fedora.  Το Fedora είναι μια συλλογή από πακέτα λογισμικού, το καθένα κάτω από τη δική του άδεια χρήσης.  Η συλλογή γίνεται διαθέσιμη κάτω από την GNU General Public Licence version 2.  Δεν υπάρχουν περιορισμοί στη χρήση, αντιγραφή ή την τροποποίηση του κώδικα.  Παρόλα αυτά, υπάρχουν περιορισμοί και υποχρεώσεις που εφαρμόζονται στην αναδιανομή του κώδικα,στην αρχική ή σε μια τροποποιημένη μορφή.  Μεταξύ άλλων, αυτοί οι περιορισμοί/υποχρεώσεις αφορούν άδεια για αναδιανομή, πνευματικά δικαιώματα, και έλεγχο εξαγωγής.\n"
 "\n"
 "Αν θέλετε να καταλάβετε ποιοι είναι οι περιορισμοί αυτοί, παρακαλούμε επισκεφτείτε το http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
