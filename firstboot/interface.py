@@ -25,9 +25,8 @@ from firstboot.constants import *
 from firstboot.functions import *
 from firstboot.moduleset import *
 
-from rhpl.translate import _
-import rhpl.translate as translate
-translate.textdomain ("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 class Control:
     def __init__(self):

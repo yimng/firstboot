@@ -31,9 +31,8 @@ from firstboot.module import *
 ##
 ## I18N
 ##
-from rhpl.translate import _, N_
-from rhpl import translate
-translate.textdomain("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 class moduleClass(Module):
     def __init__(self):

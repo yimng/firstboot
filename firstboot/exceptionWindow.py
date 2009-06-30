@@ -23,9 +23,8 @@ import os, string, sys, tempfile
 ##
 ## I18N
 ##
-from rhpl.translate import _
-import rhpl.translate as translate
-translate.textdomain ("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 class ExceptionWindow:
     def __init__ (self, traceback, module=None):

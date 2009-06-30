@@ -27,10 +27,8 @@ import imputil
 import logging
 import os
 import sys
-
-from rhpl.translate import _
-import rhpl.translate as translate
-translate.textdomain ("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 def _check(obj, attrLst):
     for attr in attrLst:

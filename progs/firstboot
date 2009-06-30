@@ -45,9 +45,8 @@ from optparse import OptionParser
 import rhpl.Conf
 from rhpl.keyboard import Keyboard
 
-from rhpl.translate import _
-import rhpl.translate as translate
-translate.textdomain ("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 def finish(opts):
     # Now make sure we don't run again on the next reboot.

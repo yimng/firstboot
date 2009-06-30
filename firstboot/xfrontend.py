@@ -23,9 +23,8 @@ import os, subprocess, sys, time, signal
 ##
 ## I18N
 ##
-from rhpl.translate import _
-import rhpl.translate as translate
-translate.textdomain ("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 class XFrontEnd:
     def __init__(self):

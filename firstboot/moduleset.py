@@ -21,9 +21,8 @@ from firstboot.constants import *
 from firstboot.module import *
 import logging
 
-from rhpl.translate import _
-import rhpl.translate as translate
-translate.textdomain ("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 class ModuleSet:
     """The base class for a set of firstboot modules.  A set of modules is

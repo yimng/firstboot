@@ -26,9 +26,8 @@ from firstboot.constants import *
 from firstboot.functions import *
 from firstboot.module import *
 
-from rhpl.translate import _, N_
-import rhpl.translate as translate
-translate.textdomain ("firstboot")
+import gettext
+_ = lambda x: gettext.ldgettext("firstboot", x)
 
 sys.path.append("/usr/share/system-config-date")
 from scdMainWindow import scdMainWindow
