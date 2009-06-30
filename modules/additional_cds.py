@@ -21,7 +21,7 @@
 import gtk
 import kudzu
 import os, time
-import rhpl.diskutil as diskutil
+import subprocess
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -98,7 +98,7 @@ class moduleClass(Module):
                     continue
 
                 try:
-                    diskutil.mount("/dev/%s" % device, "/mnt", fstype="iso9660", readOnly=1)
+                    subprocess.call(["mount", "-o", "ro", "/dev/%s" % device, "/mnt"])
                     dev = device
                     break
                 except:
@@ -157,7 +157,7 @@ class moduleClass(Module):
 
         #I think system-config-packages will do a umount, but just in case it doesn't...
         try:
-            diskutil.umount('/mnt')
+            subprocess.call(["umount", "/mnt"])
         except:
             #Yep, system-config-packages has already umounted the disc, so fall through and go on
             pass
