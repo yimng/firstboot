@@ -23,7 +23,11 @@ import os, string, sys
 # Since X may be starting up immediately after firstboot crashes, we might
 # not have any way to see the traceback.  This lets it be logged somewhere
 # useful.  Set this up as early as possible.
-def defaultExnHandler(type, value, tb):
+
+# Set up some exception handling as early as possible, in case we traceback
+# before any interface is even up, let alone configured.  This lets it be
+# logged somewhere useful.  We will override this with python-meh later.
+def earlyExnHandler(type, value, tb):
     import tempfile, traceback
 
     (fd, path) = tempfile.mkstemp("", "firstboot-", "/tmp")
@@ -35,7 +39,7 @@ def defaultExnHandler(type, value, tb):
     # Also print on stderr just in case we have time to see the problem.
     traceback.print_exception(type, value, tb)
 
-sys.excepthook = defaultExnHandler
+sys.excepthook = earlyExnHandler
 
 from firstboot.config import *
 from firstboot.constants import *
