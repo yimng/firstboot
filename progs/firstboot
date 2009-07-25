@@ -18,6 +18,7 @@
 # subject to the GNU General Public License and may only be used or replicated
 # with the express permission of Red Hat, Inc. 
 #
+import meh
 import os, string, sys
 
 # Since X may be starting up immediately after firstboot crashes, we might
@@ -116,6 +117,8 @@ if __name__ == "__main__":
     op.add_option("--themeDir", action="store", dest="themeDir", default=findDefaultThemeDir(),
                   help="set the directory containing the theme [default: %default]")
     (opts, args) = op.parse_args()
+
+    meh.makeRHHandler("firstboot", "@VERSION@", config)
 
     config.moduleDir = opts.moduleDir
     config.themeDir = opts.themeDir
