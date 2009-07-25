@@ -23,7 +23,12 @@ from constants import *
 class Config:
     def __init__(self):
         self.defaultThemeDir = BASEDIR + "themes/default/"
+        self.frontend = None
+        self.interface = None
+        self.mode = MODE_REGULAR
         self.moduleDir = None
+        self.moduleList = None
+        self.needInterface = False
         self.themeDir = None
 
 config = Config()

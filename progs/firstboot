@@ -89,12 +89,6 @@ def findDefaultThemeDir():
         return lst[0]
 
 if __name__ == "__main__":
-    frontend = None
-    interface = None
-    mode = MODE_REGULAR
-    moduleList = None
-    needInterface = False
-
     logLevelMap = {"debug": logging.DEBUG, "info": logging.INFO,
                    "warning": logging.WARNING, "error": logging.ERROR,
                    "critical": logging.CRITICAL}
@@ -131,7 +125,7 @@ if __name__ == "__main__":
 
     if opts.reconfig:
         logging.info("Starting up in reconfig mode")
-        mode = mode | MODE_RECONFIG
+        config.mode = config.mode | MODE_RECONFIG
 
     # First check to see if firstboot should even run.
     if not opts.test and (os.getuid() > 0 or os.geteuid() > 0):
@@ -142,8 +136,7 @@ if __name__ == "__main__":
     # mode from a terminal already running under X.  Otherwise, run in text
     # mode if in runlevel 3, or start up our own X server.
     if os.environ.has_key("DISPLAY") or opts.debug:
-        frontend = None
-        needInterface = True
+        config.needInterface = True
         logging.debug("X is already running, not using any frontend")
     elif (getRunlevel() == 3 and not opts.forcegui):
         logging.debug("Running text mode interface")
@@ -154,8 +147,8 @@ if __name__ == "__main__":
         os._exit(0)
     elif not os.environ.has_key("DISPLAY"):
         from firstboot.xfrontend import XFrontEnd
-        frontend = XFrontEnd()
-        needInterface = True
+        config.frontend = XFrontEnd()
+        config.needInterface = True
         logging.debug("Using X frontend")
     else:
         logging.error(_("Could not start any firstboot frontend."))
@@ -164,40 +157,40 @@ if __name__ == "__main__":
     # If X was already running, we don't need to make a frontend so skip this
     # step.  This also means that frontends can't do anything besides set
     # themselves up.
-    if frontend is not None:
+    if config.frontend is not None:
         logging.debug("Starting frontend")
-        frontend.start()
+        config.frontend.start()
 
     # Set up the keyboard just in case we're running as a real program.
     kbd = Keyboard()
     kbd.read()
     kbd.activate()
 
-    moduleList = loadModules(config.moduleDir, mode)
-    if not moduleList:
+    config.moduleList = loadModules(config.moduleDir, config.mode)
+    if not config.moduleList:
         logging.error(_("No firstboot modules were found."))
         raise RuntimeError, _("No firstboot modules were found.")
 
-    if needInterface:
+    if config.needInterface:
         from firstboot.interface import *
-        interface = Interface(autoscreenshot=opts.autoscreenshot,
-                              moduleList=moduleList, testing=opts.test)
+        config.interface = Interface(autoscreenshot=opts.autoscreenshot,
+                                     moduleList=config.moduleList, testing=opts.test)
         logging.debug("Using GTK interface")
 
-    if interface is None:
+    if config.interface is None:
         logging.error(_("Could not create any firstboot interface."))
         raise RuntimeError, _("Could not create any firstboot interface.")
 
-    win = interface.createMainWindow()
-    interface.createSidebar()
-    interface.createScreens()
-    interface.run()
+    win = config.interface.createMainWindow()
+    config.interface.createSidebar()
+    config.interface.createScreens()
+    config.interface.run()
 
     # We arrive back here after the interface has been torn down.  Now
     # kill whatever frontend is running.
-    if frontend is not None:
+    if config.frontend is not None:
         logging.debug("Stopping frontend")
-        frontend.stop()
+        config.frontend.stop()
 
     finish(opts)
 
