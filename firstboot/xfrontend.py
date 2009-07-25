@@ -18,7 +18,7 @@
 # with the express permission of Red Hat, Inc. 
 #
 import logging
-import os, subprocess, sys, time, signal
+import os, string, subprocess, sys, signal
 
 ##
 ## I18N

@@ -33,6 +33,7 @@ from firstboot.module import *
 ##
 import gettext
 _ = lambda x: gettext.ldgettext("firstboot", x)
+N_ = lambda x: x
 
 class moduleClass(Module):
     def __init__(self):

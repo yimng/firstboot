@@ -29,6 +29,7 @@ from firstboot.module import *
 
 import gettext
 _ = lambda x: gettext.ldgettext("firstboot", x)
+N_ = lambda x: x
 
 sys.path.append("/usr/share/system-config-users")
 import userGroupCheck

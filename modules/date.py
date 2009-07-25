@@ -18,7 +18,6 @@
 # with the express permission of Red Hat, Inc. 
 #
 import gtk
-import libuser
 import os, string, sys, time
 
 from firstboot.config import *
@@ -28,6 +27,7 @@ from firstboot.module import *
 
 import gettext
 _ = lambda x: gettext.ldgettext("firstboot", x)
+N_ = lambda x: x
 
 sys.path.append("/usr/share/system-config-date")
 from scdMainWindow import scdMainWindow
@@ -52,7 +52,7 @@ class moduleClass(Module):
                 return RESULT_SUCCESS
             else:
                 return RESULT_FAILURE
-        except KeyboardInterrupt:
+        except:
             return RESULT_FAILURE
 
     def createScreen(self):
