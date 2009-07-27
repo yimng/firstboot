@@ -108,7 +108,7 @@ class XFrontEnd:
             os.write(wr, "#")
 
             # Set up the keyboard.
-            import rhpl.keyboard as keyboard
+            import system_config_keyboard.keyboard as keyboard
             kbd = keyboard.Keyboard()
             kbd.read()
             kbd.activate()

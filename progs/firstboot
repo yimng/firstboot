@@ -47,7 +47,7 @@ from firstboot.constants import *
 from firstboot.loader import *
 import logging
 from optparse import OptionParser
-from rhpl.keyboard import Keyboard
+from system_config_keyboard.keyboard import Keyboard
 
 import gettext
 _ = lambda x: gettext.ldgettext("firstboot", x)
