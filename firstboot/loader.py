@@ -20,7 +20,7 @@
 from firstboot.constants import *
 from firstboot.module import Module
 from firstboot.moduleset import ModuleSet
-from rhpl import ethtool
+import ethtool
 import glob
 import imputil
 import logging

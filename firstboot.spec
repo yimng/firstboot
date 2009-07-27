@@ -19,6 +19,7 @@ BuildRequires: python-devel, python-setuptools-devel
 Requires: metacity, pygtk2, rhpl, python
 Requires: setuptool, libuser-python, system-config-users, system-config-date
 Requires: authconfig-gtk, python-meh
+Requires: python-ethtool
 Requires(post): chkconfig
 
 %define debug_package %{nil}
