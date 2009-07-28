@@ -18,7 +18,6 @@
 # with the express permission of Red Hat, Inc. 
 #
 from firstboot.constants import *
-from firstboot.exceptionWindow import displayException
 from firstboot.module import Module
 from firstboot.moduleset import ModuleSet
 from rhpl import ethtool
@@ -83,12 +82,14 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
         try:
             found = imputil.imp.find_module(module)
             loaded = imputil.imp.load_module(module, found[0], found[1], found[2])
-        except Exception, e:
-            if isinstance(e, ImportError) and e.message.find("firstboot_module_window") != -1:
+        except ImportError as e:
+           if str(e).find("firstboot_module_window") != -1:
                 logging.error(_("Skipping old module %s that has not been updated.") % module)
-                continue
 
-            displayException(module=module)
+           logging.error(_("Error loading module %s:\n%s") % (module, str(e)))
+           continue
+        except Exception as e:
+            print e
             continue
 
         # If the module was loaded, check to see if there's a class named

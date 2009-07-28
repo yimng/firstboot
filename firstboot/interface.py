@@ -97,10 +97,7 @@ class Interface:
         if self.autoscreenshot:
             self.takeScreenshot()
 
-        try:
-            self.advance()
-        except:
-            self.displayException()
+        self.advance()
 
     def _setBackSensitivity(self):
         self.backButton.set_sensitive(not(self._control.currentPage == 0 and len(self._controlStack) == 1))
@@ -279,7 +276,6 @@ class Interface:
                 module.renderModule(self)
             except:
                 self.moduleList.remove(module)
-                self.displayException()
                 continue
 
     def createSidebar(self):
@@ -316,11 +312,6 @@ class Interface:
             gtk.main_quit()
         except RuntimeError:
            os._exit(1)
-
-    def displayException(self):
-        import firstboot.exceptionWindow
-        firstboot.exceptionWindow.displayException()
-        self.destroy()
 
     def displayModule(self):
         """Display the current module on the main portion of the screen.  This
