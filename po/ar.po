@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
+"POT-Creation-Date: 2009-08-01 17:37+0300\n"
 "PO-Revision-Date: 2008-11-06 00:22+0200\n"
 "Last-Translator: Muayyad Saleh Alsadi <alsadi@ojuba.org>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -44,35 +44,32 @@ msgid "An error has occurred in the %s module."
 msgstr "حدث خطأ في وحدة '%s'."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "حيث أنّه حدث خطأ في الوحدة '%s'\n"
-"فسوف يقوم عميل التثبيت الخاص برد هات بعدم تشغيل هذه الوحدة\n"
+"لن يقوم firstboot بتحميل هذه الوحدة\n"
 "و سيحاول تشغيل الوحدات المتبقية."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "حدث خطأ في وحدة '%s'."
+msgstr "حدث خطأ في firstboot '%s'."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
 msgstr ""
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"الرجاء تقرير العلّة مقابل 'firstboot' في نظام تعقّب العلل\n"
-"الخاص برد هات على http://www.redhat.com/bugzilla \n"
-"تم حفظ نسخه من خرج أداة تصحيح الأخطاء في '%s' \n"
-"تأكد من إرفاق هذا الملف بتقرير العلّة.\n"
+"تم حفظ نسخة من مخرجات التمحيص debug إلى %s\n"
+"تأكد من إرفاق ذاك الملف في تقرير العثرات.\n"
 
 #: ../firstboot/exceptionWindow.py:71
 #, fuzzy
@@ -87,7 +84,7 @@ msgstr ""
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "محاولة للعودة مع أن التأريخ خالي."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -170,7 +167,6 @@ msgid "Please insert any additional software install cds at this time."
 msgstr "من فضلك ضع أى أقراص مدمجة للبرامج الاضافية الان"
 
 #: ../modules/additional_cds.py:65
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -180,7 +176,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"لتمكين دعم التطبيقات ذات 32-بت  على هيكليّة معالج Intel Itanium2، كما يجب "
+"لتمكين دعم التطبيقات ذات 32-بت  على هيكليّة معالج Intel Itanium2، يجب "
 "عليك تثبيت حزمة Intel Execution Layer من قرص Extras الآن."
 
 #: ../modules/additional_cds.py:73
@@ -211,9 +207,8 @@ msgid "You must create a user account for this system."
 msgstr "يجب أن تنشئ حسابا لمستخدم على هذا النظام"
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "يجب أن تنشئ حسابا لمستخدم على هذا النظام"
+msgstr "يجب أن تدخل كلمة سر وتؤكدها لهذا المستخدم"
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -250,13 +245,12 @@ msgid ""
 msgstr ""
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"يستحسن إنشاء مستخدم للقيام بالأعمال الاعتيادية (غير الإدارية). لإنشاء هذا "
+"يجب إنشاء مستخدم للقيام بالأعمال الاعتيادية (غير الإدارية). لإنشاء هذا "
 "المستخدم فضلا قدم المعلومات المطوبة أدناه."
 
 #: ../modules/create_user.py:231
