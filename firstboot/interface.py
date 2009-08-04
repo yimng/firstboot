@@ -55,14 +55,19 @@ class Interface:
         # ModuleSet, then popping it off when we leave.
         self._controlStack = [Control()]
         self._control = self._controlStack[0]
-        self._control.moduleList = moduleList
+        self.moduleList = moduleList
 
         self._x_size = gtk.gdk.screen_width()
         self._y_size = gtk.gdk.screen_height()
 
         self.autoscreenshot = autoscreenshot
-        self.moduleList = moduleList
         self.testing = testing
+
+    def _setModuleList(self, moduleList):
+        self._control.moduleList = moduleList
+
+    moduleList = property(lambda s: s._control.moduleList,
+                          lambda s, v: s._setModuleList(v))
 
     def _backClicked(self, *args):
         # If there's nowhere to go back to, we're either at the first page in
@@ -136,7 +141,7 @@ class Interface:
            the history, and move to the next page.  It is not safe to call this
            method from within firstboot modules.
         """
-        module = self._control.moduleList[self._control.currentPage]
+        module = self.moduleList[self._control.currentPage]
 
         # This could fail, in which case the exception will propagate up to the
         # interface which will know the proper way to handle it.
@@ -154,9 +159,9 @@ class Interface:
             # if we are on the last page overall (not just the last page of a
             # ModuleSet), it's time to kill the interface.
             if len(self._controlStack) == 1:
-                if self._control.currentPage == len(self._control.moduleList)-1:
+                if self._control.currentPage == len(self.moduleList)-1:
                     self.nextButton.set_label(_("_Finish"))
-                elif self._control.currentPage == len(self._control.moduleList):
+                elif self._control.currentPage == len(self.moduleList):
                     self.checkReboot()
                     self.destroy()
 
@@ -326,7 +331,7 @@ class Interface:
         # Initialize the module's UI (sync up with the state of some file on
         # disk, or whatever) and then pack it into the right side of the
         # screen for display.
-        currentModule = self._control.moduleList[self._control.currentPage]
+        currentModule = self.moduleList[self._control.currentPage]
 
         currentModule.initializeUI()
         self.rightBox.pack_start(currentModule.vbox)
@@ -346,12 +351,12 @@ class Interface:
         # If we were given a moduleTitle, look up the corresponding pageNum.
         # Everything else in firstboot is indexed by number.
         if moduleTitle is not None:
-            pageNum = self.titleToPageNum(moduleTitle, self._control.moduleList)
+            pageNum = self.titleToPageNum(moduleTitle, self.moduleList)
 
         # If we're at the end of a ModuleSet's module list, pop off the control
         # structure and set up to move to the next page after the set.  If
         # we're already at the top level, it's easy.
-        if pageNum == len(self._control.moduleList):
+        if pageNum == len(self.moduleList):
             if len(self._controlStack) > 1:
                 oldFrame = self._controlStack.pop()
                 self._control = self._controlStack[-1]
@@ -359,7 +364,7 @@ class Interface:
                 # Put the ModuleSet's history into the object so we can keep
                 # the history should we go back into the set later on.  This
                 # is kind of a hack.
-                oldPage = self._control.moduleList[self._control.currentPage]
+                oldPage = self.moduleList[self._control.currentPage]
                 if isinstance(oldPage, ModuleSet):
                     # Add the last page in the ModuleSet, since it will
                     # otherwise be forgotten.  We don't append to the history
@@ -382,16 +387,16 @@ class Interface:
         # a ModuleSet.
         self._control.currentPage = pageNum
 
-        if isinstance(self._control.moduleList[pageNum], ModuleSet):
+        if isinstance(self.moduleList[pageNum], ModuleSet):
             newControl = Control()
             newControl.currentPage = 0
-            newControl.moduleList = self._control.moduleList[pageNum].moduleList
+            newControl.moduleList = self.moduleList[pageNum].moduleList
 
             # If we are stepping back into a ModuleSet from somewhere after it, try
             # to load any saved history.  This preserves the UI flow that you'd
             # expect.
-            if hasattr(self._control.moduleList[pageNum], "_history"):
-                newControl.history = self._control.moduleList[pageNum]._history
+            if hasattr(self.moduleList[pageNum], "_history"):
+                newControl.history = self.moduleList[pageNum]._history
             else:
                 newControl.history = []
 
