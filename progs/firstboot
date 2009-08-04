@@ -118,8 +118,6 @@ if __name__ == "__main__":
                   help="set the directory containing the theme [default: %default]")
     (opts, args) = op.parse_args()
 
-    meh.makeRHHandler("firstboot", "@VERSION@", config)
-
     config.moduleDir = opts.moduleDir
     config.themeDir = opts.themeDir
 
@@ -168,21 +166,28 @@ if __name__ == "__main__":
         logging.debug("Starting frontend")
         config.frontend.start()
 
-    # Set up the keyboard just in case we're running as a real program.
-    kbd = Keyboard()
-    kbd.read()
-    kbd.activate()
+    if config.needInterface:
+        from firstboot.interface import *
+        config.interface = Interface(autoscreenshot=opts.autoscreenshot,
+                                     testing=opts.test)
+        logging.debug("Using GTK interface")
+
+    # This must come as early as possible so we can present the UI for the
+    # widest class of problems, BUT it also has to come late enough for us
+    # to have already imported gtk.
+    meh.makeRHHandler("firstboot", "@VERSION@", config)
 
     config.moduleList = loadModules(config.moduleDir, config.mode)
     if not config.moduleList:
         logging.error(_("No firstboot modules were found."))
         raise RuntimeError, _("No firstboot modules were found.")
 
-    if config.needInterface:
-        from firstboot.interface import *
-        config.interface = Interface(autoscreenshot=opts.autoscreenshot,
-                                     moduleList=config.moduleList, testing=opts.test)
-        logging.debug("Using GTK interface")
+    config.interface.moduleList = config.moduleList
+
+    # Set up the keyboard just in case we're running as a real program.
+    kbd = Keyboard()
+    kbd.read()
+    kbd.activate()
 
     if config.interface is None:
         logging.error(_("Could not create any firstboot interface."))
