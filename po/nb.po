@@ -1,16 +1,15 @@
 # Norwegian (bokmål) translation of firstboot.
 # Copyright © 2002 Free Software Foundation.
-# Kjartan Maraas <kmaraas@gnome.org>, 2002-2005.
-# Kjartan Maraas <kmaraas@gnome.org>, 2007.
-#
+# Kjartan Maraas <kmaraas@gnome.org>, 2002-2009.
+# Espen Stefansen <espenas@gmail.com>, 2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot 1.0.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: firstboot 1.107\n"
+"Report-Msgid-Bugs-To:\n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-07-10 14:27+0200\n"
-"Last-Translator: Espen Stefansen <espenas@gmail.com>\n"
+"PO-Revision-Date: 2009-08-08 12:29+0200\n"
+"Last-Translator: Kjartan Maraas <kmaraas@broadpark.no>\n"
 "Language-Team: Norwegian/Bokmaal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -196,13 +195,12 @@ msgid "Create User"
 msgstr "Lag bruker"
 
 #: ../modules/create_user.py:83
-#, fuzzy
 msgid "You must create a user account for this system."
-msgstr "Vennligst sett dato og klokkeslett for systemet."
+msgstr "Du må lage en brukerkonto for dette systemet."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
-msgstr ""
+msgstr "Du må oppgi og bekrefte et passord for denne brukeren."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -218,40 +216,34 @@ msgstr ""
 "brukernavn."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
 "making the new user the owner of this directory and all its contents?  Doing "
 "so may take a while to reset permissions and any SELinux labels.  Would you "
 "like to reuse this home directory?  If not, please choose a different "
 "username."
-msgstr ""
-"En hjemmekatalog eksisterer allerede for bruker %s. Vil du gjenbruke denne "
-"hjemmekatalogen? Hvis ikke må du velge et annet brukernavn."
+msgstr "En hjemmekatalog eksisterer allerede for bruker %s. Vil du fortsette med å gjøre den nye brukeren til eier av denne hjemmekatalogen med alt innhold? Det kan i så fall ta litt tid å sette rettigheter og SELinux-etiketter på nytt. Hvis ikke må du velge et annet brukernavn."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgstr "Setter attributter for hjemmekatalogen for %s. Dette kan ta noen minutter."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "Det oppsto problemer under setting av attributter på noen filer i hjemmekatalogen for %s. Vennligst sjekk %s for å se hvilke filer som forårsaket feilene."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
-msgstr ""
-"Det anbefales at du oppretter et «brukernavn» for vanlig (ikke-administrativ) "
-"bruk av systemet. For å opprette et «brukernavn» for systemet må du fylle ut "
-"informasjonen som etterspørres under."
+msgstr "Du må lage et «brukernavn» for vanlig (ikke-administrativ) bruk av systemet. For å opprette et «brukernavn» for systemet må du fylle ut informasjonen som etterspørres under."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -283,7 +275,7 @@ msgstr "Bruk nettverkspå_logging..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Vennligst vent"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
@@ -340,18 +332,3 @@ msgstr ""
 "Det gjenstår noen steg før systemet er klart til bruk. Oppsettagenten vil nå "
 "hjelpe deg gjennom grunnleggende konfigurasjon. Trykk på «Framover»-knappen i "
 "nedre høyre hjørne for å fortsette."
-
-#~ msgid ""
-#~ "It is highly recommended that a personal user account be created.  If you "
-#~ "continue without an account, you can only log in with the root account, "
-#~ "which is reserved for administrative use only."
-#~ msgstr ""
-#~ "Det anbefales på det sterkeste at du lager en personlig brukerkonto. Hvis "
-#~ "du fortsetter uten en konto vil du bare kunne logge inn med root-kontoen "
-#~ "som er reservert kun for administrativ bruk."
-
-#~ msgid "_Continue"
-#~ msgstr "_Fortsett"
-
-#~ msgid "Create _account"
-#~ msgstr "L_ag konto"
