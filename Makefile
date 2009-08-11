@@ -23,7 +23,7 @@ clean:
 
 install: all
 	for py in progs/* ; do \
-		sed -e s,@VERSION@,$(VERSION),g $${py} > $(INSTROOT)$(PKGDATADIR)/`basename $${py}` ; \
+		sed -i -e s,@VERSION@,$(VERSION),g $${py} ; \
 	done
 	python setup.py install --root=$(DESTDIR) --install-lib=$(SITELIB)
 	$(MAKE) -C po install
