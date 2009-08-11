@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.107
+Version: 1.108
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -73,6 +73,12 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Tue Aug 11 2009 Chris Lumens <clumens@redhat.com> 1.108-1
+- Move python-meh initialization to after we have gtk imported (#515419).
+- Do @VERSION@ substitution on progs/firstboot.
+- Switch to using system-config-keyboard for the keyboard bits (katzj).
+- Stop using rhpl.ethtool (katzj).
+
 * Tue Jul 28 2009 Chris Lumens <clumens@redhat.com> 1.107-1
 - Convert to using python-meh.
 
