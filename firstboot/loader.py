@@ -83,13 +83,13 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
             found = imputil.imp.find_module(module)
             loaded = imputil.imp.load_module(module, found[0], found[1], found[2])
         except ImportError as e:
-           if str(e).find("firstboot_module_window") != -1:
+            if str(e).find("firstboot_module_window") != -1:
                 logging.error(_("Skipping old module %s that has not been updated.") % module)
 
-           logging.error(_("Error loading module %s:\n%s") % (module, str(e)))
-           continue
+            logging.error(_("Error loading module %s:\n%s") % (module, str(e)))
+            continue
         except Exception as e:
-            print e
+            logging.error(_("Error loading module %s:\n%s") % (module, str(e)))
             continue
 
         # If the module was loaded, check to see if there's a class named
