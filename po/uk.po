@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-04-10 11:19-0400\n"
+"PO-Revision-Date: 2009-09-10 11:19-0400\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,19 +17,19 @@ msgstr ""
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr ""
+msgstr "Для запуску firstboot треба бути користувачем root."
 
 #: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "Неможливо запустити жоден з інтерфейсів firstboot."
 
 #: ../progs/firstboot:180 ../progs/firstboot:181
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "Не знайдено модулі firstboot."
 
 #: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Неможливо створити жоден з интерфейсів firstboot."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -37,50 +37,44 @@ msgid "An error has occurred in the %s module."
 msgstr "Виникла помилка у модулі %s."
 
 #: ../firstboot/exceptionWindow.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Since there is a problem with the %s module,\n"
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
 "Через проблему у модулі %s, \n"
-"Red Hat Setup Agent не буде завантажувати цей модуль\n"
+"firstboot не буде завантажувати цей модуль\n"
 "та спробує завантажити решту модулів."
 
 #: ../firstboot/exceptionWindow.py:55
-#, fuzzy
 msgid "An error has occurred in firstboot."
-msgstr "Виникла помилка у модулі %s."
+msgstr "Виникла помилка у модулі firstboot."
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "У зв'язку з проблемою у firstboot завершує свою роботу."
 
 #: ../firstboot/exceptionWindow.py:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
-"Будь ласка, заповніть повідомлення про помилку у 'firstboot'\n"
-"в системі обробки помилок за адресою http://www.redhat.com/bugzilla. \n"
-"Копію налагоджувальної інформації збережено у %s \n"
+"Копію налагоджувальної інформації 'firstboot' збережено у %s \n"
 "Переконайтесь, що ви приєднали цей файл до повідомлення про помилку.\n"
 
 #: ../firstboot/exceptionWindow.py:71
-#, fuzzy
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"Будь ласка, заповніть повідомлення про помилку у 'firstboot'\n"
-"в системі обробки помилок за адресою http://www.redhat.com/bugzilla. \n"
-"Копію налагоджувальної інформації збережено у %s \n"
-"Переконайтесь, що ви приєднали цей файл до повідомлення про помилку.\n"
+"Заповніть це повідомлення про помилку у 'firstboot' в \n"
+"системі обробки помилок Red Hat за адресою http://www.redhat.com/bugzilla. \n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "При спробі повернуться назад виявлено, що історія повернень порожня."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -104,45 +98,46 @@ msgstr "_Далі"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "Модуль %s не налаштував свій інтерфейс користувача, та буде видалений."
 
 #: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
+"moveToPage має бути заголовком модуля або номером сторінки."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
+msgstr "Неможливо створити каталог знімків екрану, пропускаемо."
 
 #: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "Немає модуля із заголовком %s."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "Пропускаємо старий модуль %s, який не було оновлено."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "Модуль %s не містить класу moduleClass; пропускаемо."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "Модуль %s не містить потрібного атрибуту %s; пропускаемо."
 
 #: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "Неможливо завантажити зображення %s для модуля %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "Модуль %s не налаштував свій інтерфейс користувача та буде видалений."
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -198,19 +193,19 @@ msgstr ""
 
 #: ../modules/create_user.py:41 ../modules/create_user.py:42
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
 #: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
-msgstr ""
+msgstr "Треба створити обліковий запис користувача для цієї системи."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
-msgstr ""
+msgstr "Потрібно ввести та підтвердити пароль користувача."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
+msgstr "Паролі не збігаються.  Введіть пароль знову."
 
 #: ../modules/create_user.py:113
 #, python-format
@@ -218,6 +213,8 @@ msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
+"Користувач %s -- зарезервований системний обліковий запис. Вкажіть "
+"іншу назву."
 
 #: ../modules/create_user.py:132
 #, python-format
@@ -228,12 +225,19 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
+"Домашній каталог для користувача %s вже існує. Дійсно хочете "
+"зробити нового користувача власником цього каталогу та його змісту?  У "
+"цьому випадку перепризначення дозволів та міток SELinux може зайняти певний "
+"час. Ви хочете повторно використати цей домашній каталог? Якщо ні, "
+"виберіть інше ім'я користувача."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
+"Фіксуються атрибути домашнього каталогу для %s. Це може зайняти декілька "
+"хвилин."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -241,6 +245,8 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
+"Проблема при фіксації атрибутів деяких файлів у домашньому каталозі для %s. "
+"Зверніться до %s для отримання інформації про те, які файли викликали помилки."
 
 #: ../modules/create_user.py:213
 msgid ""
@@ -248,48 +254,53 @@ msgid ""
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
+"Потрібно створити 'користувача' для повсякденного (не адміністративного) "
+"використання вашої системи. Для створення користувача введіть потрібні "
+"дані."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
-msgstr ""
+msgstr "_Ім'я користувача:"
 
 #: ../modules/create_user.py:238
 msgid "Full Nam_e:"
-msgstr ""
+msgstr "Повне ім_я:"
 
 #: ../modules/create_user.py:245
 msgid "_Password:"
-msgstr ""
+msgstr "_Пароль:"
 
 #: ../modules/create_user.py:252
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "Повто_р пароля:"
 
 #: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
+"Якщо потрібно використовувати перевірку автентичності по мережі, наприклад "
+"Kerberos чи NIS, натисніть кнопку Використовувати вхід через мережу."
 
 #: ../modules/create_user.py:270
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "Використовувати _вхід через мережу..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "Зачекайте"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
-msgstr ""
+msgstr "Дата та час"
 
 #: ../modules/date.py:62
 msgid "Please set the date and time for the system."
-msgstr ""
+msgstr "Будь-ласка встановіть дату й час для системи."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
-msgstr "Інформація про лицензію"
+msgstr "Інформація про ліцензію"
 
 #: ../modules/eula.py:53
 msgid ""
@@ -325,12 +336,11 @@ msgid "Welcome"
 msgstr "Ласкаво просимо"
 
 #: ../modules/welcome.py:45
-#, fuzzy
 msgid ""
 "There are a few more steps to take before your system is ready to use.  The "
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"Лишилось ще декілька кроків, після чого ваша система буде готова до роботи. "
-"Помічник налаштовування допоможе вам з налаштовуванням. Для продовження "
+"Лишилось ще декілька кроків, після яких ваша система буде готова до роботи. "
+"Помічник налаштовування допоможе вам з цим. Для продовження "
 "натисніть \"Далі\"у лівому нижньому куті."
