@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.108
+Version: 1.109
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -73,6 +73,12 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Thu Sep 10 2009 Chris Lumens <clumens@redhat.com> 1.109-1
+- Change the init script return value for LSB purposes (atodorov, #521828).
+- We don't really need an X log file anymore (#521387).
+- Pull in updated translations.
+- Improve logging when modules cannot be loaded (jlaska).
+
 * Tue Aug 11 2009 Chris Lumens <clumens@redhat.com> 1.108-1
 - Move python-meh initialization to after we have gtk imported (#515419).
 - Do @VERSION@ substitution on progs/firstboot.
