@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-firewall.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-09-10 11:42+0100\n"
+"PO-Revision-Date: 2009-09-12 08:59+0100\n"
 "Last-Translator: Dušan Hokův <dusan@mirc.cz>\n"
 "Language-Team: Czech <fedora-cs-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -192,9 +192,8 @@ msgid "You must create a user account for this system."
 msgstr "Pro tento systém si musíte vytvořit uživatelský účet."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "Pro tento systém si musíte vytvořit uživatelský účet."
+msgstr "Musíte zadat a potvrdit heslo pro tohoto uživatele."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -206,22 +205,21 @@ msgid "The username '%s' is a reserved system account.  Please specify another u
 msgstr "Uživatelské jméno '%s' je reservováno pro systémové účty. Prosím vyberte si jiné jméno."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
+#, python-format
 msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr "Domovský adresář pro uživatele %s již existuje. Chcete použít tento adresář? Pokud ne, vyberte si jiné uživatelské jméno."
+msgstr "Domovský adresář pro uživatele %s již existuje. Chcete pokračovat vytvořením nového uživatele jako vlastníka tohoto adresáře a jeho obsahu? Může chvíli trvat resetování oprávnění a nastavení SELinux značek. Chcete tedy použít znovu tento domovský adresář? Pokud ne, vyberte si jiné uživatelské jméno."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgstr "Opravuju atributy pro domovský adresář %s.  To může zabrat několik minut."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid "Problems were encountered fixing the attributes on some files in the home directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgstr "Objevily se problémy s opravou atributů u některých soubrů v domovském adresáři %s.  Prosím prohlédněte si %s kde je seznam souborů, které způsobily chyby."
 
 #: ../modules/create_user.py:213
-#, fuzzy
 msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
 msgstr "Pro běžné používání systému je doporučeno vytvořit si uživatelský účet. Pro vytvoření takového účtu prosím vyplňte požadované údaje níže."
 
