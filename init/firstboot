@@ -1,5 +1,5 @@
 #!/bin/bash
-## BEGIN INIT INFO
+### BEGIN INIT INFO
 # Provides: firstboot
 # Default-Start: 3 5
 # Default-Stop: 0 1 2 4 6
@@ -13,7 +13,7 @@
 #              firstboot will be run.  If /etc/reconfigSys exists or if
 #              "reconfig" is provided in the kernel boot arguments,
 #              firstboot will run in reconfiguration mode.
-## END INIT INFO
+### END INIT INFO
 
 #
 # firstboot: Starts the firstboot druid if it hasn't been run before
@@ -37,8 +37,22 @@ FILENAME=/etc/sysconfig/firstboot
 
 [ -z "$HOME" ] && export HOME=/
 
+usage() {
+    echo $"Usage: $0 {start|stop}"
+}
+
 case "$1" in
     start)
+        if [ `/usr/bin/id -u` -ne 0 ]; then
+            echo $"ERROR: Only root can run firstboot"
+            exit 4
+        fi
+
+        if [ ! -f /usr/sbin/firstboot ]; then
+            echo $"ERROR: Program /usr/sbin/firstboot is not installed"
+            exit 5
+        fi
+
         args=""
 
         if [ -f $FILENAME ] && [ ! -z "$(grep 'RUN_FIRSTBOOT=NO' $FILENAME)" ]; then
@@ -74,8 +88,13 @@ case "$1" in
         exit 0
         ;;
 
+    restart | reload | force-reload | status | condrestart | try-restart)
+        usage
+        exit 3
+        ;;
+
     *)
-        echo $"Usage: $0 {start|stop}"
+        usage
         exit 2
         ;;
 esac
