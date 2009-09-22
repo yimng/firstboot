@@ -5,13 +5,14 @@
 # Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2008, 2009.
 # hi <rranjan@redhat.com>, 2007.
 # Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
+# Rajesh Ranjan <rajesh672@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-04-07 13:58+0530\n"
-"Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
+"PO-Revision-Date: 2009-09-22 16:01+0530\n"
+"Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Hindi <hindi.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,6 +20,7 @@ msgstr ""
 "<<<<<<< hi.poPOT-Creation-Date: 2004-08-31 16:22-0400\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -110,7 +112,7 @@ msgstr "पीछे (_B)"
 
 #: ../firstboot/interface.py:250
 msgid "_Forward"
-msgstr "अग्रेषित करें (_F)"
+msgstr "आगे (_F)"
 
 #: ../firstboot/interface.py:277
 #, python-format
@@ -166,9 +168,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"तीसरी पार्टी प्लगिन और अनुप्रयोग के संस्थापन की अनुमति के लिए \"Red Hat "
-"Enterprise Linux एक्स्ट्रा\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त सॉफ़्टवेयर "
-"के संस्थापन के लिए दस्तावेज डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
+"तीसरी पार्टी प्लगिन और अनुप्रयोग के संस्थापन की अनुमति के लिए \"Red Hat Enterprise "
+"Linux एक्स्ट्रा\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त सॉफ़्टवेयर के संस्थापन के "
+"लिए दस्तावेज डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -234,19 +236,25 @@ msgid ""
 "so may take a while to reset permissions and any SELinux labels.  Would you "
 "like to reuse this home directory?  If not, please choose a different "
 "username."
-msgstr "उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूद है. नए उपयोक्ता को इस निर्देशिका और इसकी सारी टिप्पणी का स्वामी बनाते हुए क्या आप जारी रखना चाहेंगे? अनुमति और कोई SELinux स्तर फिर सेट करने के लिए ऐसा करना कुछ समय ले सकता है. क्या आप यह घर निर्देशिका फिर प्रयोग करना चाहेंगे?  यदि नहीं, कृपया भिन्न उपयोक्ता नाम चुनें."
+msgstr ""
+"उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूद है. नए उपयोक्ता को इस निर्देशिका और इसकी "
+"सारी टिप्पणी का स्वामी बनाते हुए क्या आप जारी रखना चाहेंगे? अनुमति और कोई SELinux स्तर "
+"फिर सेट करने के लिए ऐसा करना कुछ समय ले सकता है. क्या आप यह घर निर्देशिका फिर प्रयोग "
+"करना चाहेंगे?  यदि नहीं, कृपया भिन्न उपयोक्ता नाम चुनें."
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s के लिए घर निर्देशिका पर विशेषता का समाधान.  यह कुछ मिनट ले सकता है."
+msgstr "%s के लिए घर निर्देशिका पर विशेषता का हल कर रहा है.  यह कुछ मिनट ले सकता है."
 
 #: ../modules/create_user.py:195
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
-msgstr "%s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना हुआ.  कृपया %s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि का कारण बनी."
+msgstr ""
+"%s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना हुआ.  "
+"कृपया %s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि का कारण बनी."
 
 #: ../modules/create_user.py:213
 msgid ""
@@ -329,7 +337,7 @@ msgstr ""
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr "समझ गये, कृपया आगे बढ़ें."
+msgstr "समझ लिया है, कृपया आगे बढ़ें."
 
 #: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
@@ -341,7 +349,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"आपके तंत्र को प्रयोग के लिए तैयार करने के पहले कुछ और चरण हैं. सेटअप प्रतिनिधि अब आपको "
-"कुछ मौलिक विन्यास के माध्यम से मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दाएँ कोने में "
-"\"आगे\" बटन दबाएँ."
+"आपके तंत्र को प्रयोग के लिए तैयार करने के पहले कुछ और चरण हैं. सेटअप प्रतिनिधि अब आपको कुछ "
+"मौलिक विन्यास के माध्यम से मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दाएँ कोने में \"आगे"
+"\" बटन दबाएँ."
 
