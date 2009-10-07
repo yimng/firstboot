@@ -198,13 +198,15 @@ class Interface:
         self.win = gtk.Window()
         self.win.set_position(gtk.WIN_POS_CENTER)
         self.win.set_decorated(False)
+        # we don't set border width here so that the sidebar will meet
+        # the edge of the screen
 
         # Create a box that will hold all other widgets.
         self.mainHBox = gtk.HBox(False, 10)
 
         # Create the sidebar box.
         self.sidebar = gtk.VBox()
-        self.sidebar.set_border_width(5)
+        self.sidebar.set_border_width(24)
 
         # Load this background now so we can figure out how big to make
         # the left side.
@@ -223,13 +225,10 @@ class Interface:
         # Create the box for the right side of the screen.  This holds the
         # display for the current module and the button box.
         self.rightBox = gtk.VBox()
-        self.rightBox.set_border_width(5)
+        self.rightBox.set_border_width(24)
 
-        # lowres mode is dead.  Grow the right hand box to take up the entire
-        # rest of the screen and go into fullscreen mode.
-        leftWidth = int(self._x_size * self.aspectRatio)
+        leftWidth = int(self._y_size * self.aspectRatio)
         self.leftEventBox.set_size_request(leftWidth, self._y_size)
-        self.rightBox.set_size_request(self._x_size - leftWidth, self._y_size)
         self.win.fullscreen()
 
         # Create a button box to handle navigation.
@@ -256,8 +255,8 @@ class Interface:
         self.rightBox.pack_end(self.buttonBox, expand=False)
 
         # Add the widgets into the main hbox widget.
-        self.mainHBox.pack_start(self.leftEventBox)
-        self.mainHBox.pack_start(self.rightBox)
+        self.mainHBox.pack_start(self.leftEventBox, expand=False, fill=False)
+        self.mainHBox.pack_start(self.rightBox, expand=True, fill=True)
 
         self.win.add(self.mainHBox)
         self.win.connect("destroy", self.destroy)

@@ -40,17 +40,9 @@ class moduleClass(Module):
         return RESULT_SUCCESS
 
     def createScreen(self):
-        self.vbox = gtk.VBox(spacing=5)
+        self.vbox = gtk.VBox(spacing=10)
 
-        textBuffer = gtk.TextBuffer()
-        textView = gtk.TextView()
-        textView.set_editable(False)
-        textSW = gtk.ScrolledWindow()
-        textSW.set_shadow_type(gtk.SHADOW_IN)
-        textSW.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
-        textSW.add(textView)
-
-        textBuffer.set_text(_("""Thank you for installing Fedora.  Fedora is a \
+        label = gtk.Label(_("""Thank you for installing Fedora.  Fedora is a \
 compilation of software packages, each under its own license.  The \
 compilation is made available under the GNU General Public License version \
 2.  There are no restrictions on using, copying, or modifying this code.  \
@@ -60,14 +52,14 @@ Among other things, those restrictions/obligations pertain to the \
 licensing of the redistribution, trademark rights, and export control.\n\n\
 If you would like to understand what those restrictions are, please \
 visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."""))
+        label.set_line_wrap(True)
+        label.set_alignment(0.0, 0.0)
+        label.set_size_request(500, -1)
+        self.vbox.pack_start(label, expand=False, fill=False)
 
         label = gtk.Label(_("Understood, please proceed."))
         label.set_alignment(0.0, 0.1)
 
-        textView.set_buffer(textBuffer)
-        textView.set_wrap_mode(gtk.WRAP_WORD)
-
-        self.vbox.pack_start(textSW)
         self.vbox.pack_start(label)
 
     def initializeUI(self):

@@ -39,10 +39,7 @@ class Module:
            is not required.  The module loader will check that all required
            attributes are present and defined.  Instance attributes;
 
-           icon         -- The base filename of the icon that should appear
-                           next to the module's title when it is displayed on
-                           the main section of the screen.  This file must
-                           be located in the theme directory.
+           icon         -- No longer used.
            mode         -- The mode of firstboot operation that this module
                            should appear in.  MODE_REGULAR means the module
                            will appear only in the regular running mode.
@@ -172,18 +169,6 @@ class Module:
         label.set_markup("<span foreground='#000000' size='30000' font_family='Helvetica'><b>%s</b></span>" % _(self.title))
 
         titleBox = gtk.HBox()
-
-        if self.icon:
-            img = "%s/%s" % (config.themeDir, self.icon)
-
-            try:
-                titleBox.pack_start(loadToImage(img), False)
-            except:
-                try:
-                    img = "%s/%s" % (config.defaultThemeDir, self.icon)
-                    titleBox.pack_start(loadToImage(img), False)
-                except:
-                    logging.warning(_("Unable to load pixmap %s for module %s.") % (img, self.title))
 
         titleBox.pack_start(label, True)
         titleBox.set_spacing(8)

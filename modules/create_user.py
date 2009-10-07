@@ -208,7 +208,7 @@ class moduleClass(Module):
         return RESULT_SUCCESS
 
     def createScreen(self):
-        self.vbox = gtk.VBox(spacing=5)
+        self.vbox = gtk.VBox(spacing=10)
 
         label = gtk.Label(_("You must create a 'username' for regular (non-administrative) "
                             "use of your system.  To create a system 'username', please "
@@ -228,6 +228,8 @@ class moduleClass(Module):
         self.vbox.pack_start(label, False, True)
 
         table = gtk.Table(2, 4)
+        table.set_row_spacings(6)
+        table.set_col_spacings(6)
         label = gtk.Label(_("_Username:"))
         label.set_use_underline(True)
         label.set_mnemonic_widget(self.usernameEntry)
@@ -271,7 +273,7 @@ class moduleClass(Module):
         authButton.connect("clicked", self._runAuthconfig)
         align = gtk.Alignment()
         align.add(authButton)
-        align.set(0.9, 0.5, 0.0, 1.0)
+        align.set(0.0, 0.5, 0.0, 1.0)
         authHBox.pack_start(align, True)
         self.vbox.pack_start(authHBox, False, False)
 
