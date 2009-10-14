@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.109
+Version: 1.110
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -73,6 +73,10 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Wed Oct 14 2009 Chris Lumens <clumens@redhat.com> 1.110-1
+- Always attempt to display the Fedora logo, if present (jmccann).
+- Fix a bunch of small firstboot UI problems (jmccann).
+
 * Thu Sep 10 2009 Chris Lumens <clumens@redhat.com> 1.109-1
 - Change the init script return value for LSB purposes (atodorov, #521828).
 - We don't really need an X log file anymore (#521387).
