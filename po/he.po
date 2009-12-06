@@ -1,17 +1,12 @@
-# translation of firstboot.master.po to Hebrew
-# Hebrew translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Automatically generated, 2004.
+
 # Richard Frontaine <richardfrontaine@gmail.com>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-10-18 22:53GMT\n"
-"Last-Translator: Oron Peled <oron@actcom.co.il>\n"
+"PO-Revision-Date: 2009-12-06 13:26+0200\n"
+"Last-Translator: Elad <el.il@doom.co.il>\n"
 "Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,15 +18,18 @@ msgstr ""
 msgid "You must be root to run firstboot."
 msgstr "חובה להיות root בכדי להריץ את תכנת ההפעלה הראשונה."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
+#: ../progs/firstboot:163
+#: ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "לא ניתן להתחיל אף מסך גרפי של firstboot."
 
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:180
+#: ../progs/firstboot:181
 msgid "No firstboot modules were found."
 msgstr "לא נמצאו מודולי הפעלה ראשונה."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:190
+#: ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
 msgstr "כישלון ביצירת מנשק לתכנת ההפעלה הראשונה."
 
@@ -82,7 +80,8 @@ msgstr "לא ניתן לחזור אחורה, אין היסטוריה."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:83
+#: ../firstboot/interface.py:162
 msgid "_Finish"
 msgstr "_סיום"
 
@@ -103,15 +102,17 @@ msgstr "_הבא"
 msgid "Module %s did not set up its UI, removing."
 msgstr "המודול %s לא אתחל את מנשק המשתמש שלו, מסיר אותו."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:353
+#: ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage must be given a module title or page number."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "יצירת תיקיית צילומי מסך נכשלה, מדלג."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:478
+#: ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "לא נמצא מודול עם הכותרת %s."
@@ -134,27 +135,21 @@ msgstr "במודול %s חסרה התכונה הנדרשת %s; מדלג."
 #: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "לא ניתן לטעון תמונה %s עבור המודול %s."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "המודול %s לא אתחל את מנשק המשתמש שלו; מסיר אותו."
 
-#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43
+#: ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "תקליטורים נוספים"
 
 #: ../modules/additional_cds.py:55
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-"נא להכניס את התקליטור בעל התווית \"Red Hat Enterprise Linux Extras\" כדי "
-"לאפשר התקנה של תוספים ותכניות של צד שלישי. ניתן גם להכניס את תקליטור התיעוד, "
-"או תקליטור אחר שסופק ע\"י Red Hat כדי להתקין תכנה נוספת."
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "נא להכניס את התקליטור בעל התווית \"Red Hat Enterprise Linux Extras\" כדי לאפשר התקנה של תוספים ותכניות של צד שלישי. ניתן גם להכניס את תקליטור התיעוד, או תקליטור אחר שסופק ע\"י Red Hat כדי להתקין תכנה נוספת."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -164,31 +159,26 @@ msgstr "יש להכניס כעת את תקליטור ההתקנה של התכנ�
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"כדי לאפשר תמיכת הרצה ליישומי 32 ביט בארכיטקטורת Intel Itanium2, יש להתקין "
-"כעת את החבילה \"Intel Execution Layer\" מתקליטור התוספות."
+"כדי לאפשר תמיכת הרצה ליישומי 32 ביט בארכיטקטורת Intel Itanium2, יש להתקין כעת את החבילה \"Intel Execution Layer\" מתקליטור התוספות."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
 msgstr "התקן..."
 
 #: ../modules/additional_cds.py:110
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
 msgstr "לא זוהה תקליטור. נא להכניס תקליטור לכונן וללחוץ \"אישור\" להמשך."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "תכנית ההרצה האוטומטית לא נמצאה על התקליטור. יש ללחוץ \"אישור\" להמשך."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
+#: ../modules/create_user.py:41
+#: ../modules/create_user.py:42
 msgid "Create User"
 msgstr "יצירת משתמש"
 
@@ -197,9 +187,8 @@ msgid "You must create a user account for this system."
 msgstr "חובה ליצור חשבון משתמש עבור מערכת זו."
 
 #: ../modules/create_user.py:94
-#, fuzzy
 msgid "You must enter and confirm a password for this user."
-msgstr "חובה ליצור חשבון משתמש עבור מערכת זו."
+msgstr "אתה חייב להקליד ולאשר סיסמה למשתמש זה."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -207,45 +196,27 @@ msgstr "הססמאות אינן תואמות. יש להקליד את הססמה 
 
 #: ../modules/create_user.py:113
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
+msgid "The username '%s' is a reserved system account.  Please specify another username."
 msgstr "שם המשתמש '%s' שמור לחשבון מערכת. יש לבחור שם שונה."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"למשתמש %s יש כבר תיקיית בית. האם ברצונך להשתמש בה עבור המשתמש החדש? אם לא, "
-"יש לבחור שם משתמש שונה."
+#, python-format
+msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
+msgstr "תקיית בית עבור המשתמש %s כבר קיימת. האם אתה רוצה להמשיך, ולהפוך את המשתמש החדש לבעלים של תקייה זו וכל התוכן שלה? הפיכת המשתמש החדש לבעלים של תקיה זו עלולה לקחת זמן, מכיוון שיהיה צורך לאפס את ההרשאות ואת התוויות של SELinux. האם אתה רוצה להשתמש מחדש בתקיית הבית הזו? אם לא, אנא בחר שם משתמש שונה."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "מתקן תכונות לתקיית הבית של %s. זה עלול לקחת מספר דקות."
 
 #: ../modules/create_user.py:195
 #, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgid "Problems were encountered fixing the attributes on some files in the home directory for %s.  Please refer to %s for which files caused the errors."
+msgstr "היו בעיות בתיקון התכונות של מספר קבצים בתקיית הבית %s. אנא פנה ל %s כדי לגלות אילו קבצים גרמו לבעיות."
 
 #: ../modules/create_user.py:213
-#, fuzzy
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"מומלץ ליצור חשבון משתמש לעבודה רגילה (להבדיל מניהול המערכת). ליצירת חשבון "
-"משתמש כזה, נא לספק את המידע הנדרש להלן."
+msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
+msgstr "אתה חייב ליצור משתמש לשימוש רגיל (לא למטרות ניהול) במערכת. כדי ליצור משתמש, אנא ספק את המידע המבוקש למטה."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -264,12 +235,8 @@ msgid "Confir_m Password:"
 msgstr "_אישור ססמה:"
 
 #: ../modules/create_user.py:261
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"אם ברצונך להשתמש בשרותי רשת לאימות הכניסה למערכת כגון Kerberos או NIS, יש "
-"ללחוץ על  כפתור \"שירותי רשת לאימות כניסה\"."
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "אם ברצונך להשתמש בשרותי רשת לאימות הכניסה למערכת כגון Kerberos או NIS, יש ללחוץ על  כפתור \"שירותי רשת לאימות כניסה\"."
 
 #: ../modules/create_user.py:270
 msgid "Use Network _Login..."
@@ -277,9 +244,10 @@ msgstr "שרותי רשת לאימות _כניסה למערכת (login)..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "אנא המתן"
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../modules/date.py:40
+#: ../modules/date.py:41
 msgid "Date and Time"
 msgstr "תאריך ושעה"
 
@@ -287,53 +255,33 @@ msgstr "תאריך ושעה"
 msgid "Please set the date and time for the system."
 msgstr "יש להגדיר את התאריך והשעה עבור המערכת."
 
-#: ../modules/eula.py:35 ../modules/eula.py:36
+#: ../modules/eula.py:35
+#: ../modules/eula.py:36
 msgid "License Information"
 msgstr "מידע אודות רישוי"
 
 #: ../modules/eula.py:53
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
-msgstr ""
-"תודה על שהתקנת פדורה. פדורה היא אוסף של יישומים, כל אחד תחת הרשיון הפרטי "
-"שלו. האוסף נמצא ברשיון GNU General Public גרסה 2. אין שום הגבלה לשימוש, "
-"העתקה או שינוי של הקוד מקור של האוסף. למרות זאת, יש הגבלות בנוגע לשחרור מחדש "
-"של הקוד, בצורתו המקורית או לאחר שינוי. בין השאר, ההגבלות האלו משויכות לרשיון "
-"ההפצה, זכויות יוצרים ושליטה על ייצוא. <br> <br> אם הנך רוצה להבין את ההגבלות "
-"האלו במלואן, אנא בקר באתר: http://fedoraproject.org/wiki/Legal/Licenses/"
-"LicenseAgreement ."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+msgstr "תודה על שהתקנת פדורה. פדורה היא אוסף של יישומים, כל אחד תחת הרשיון הפרטי שלו. האוסף נמצא ברשיון GNU General Public גרסה 2. אין שום הגבלה לשימוש, העתקה או שינוי של הקוד מקור של האוסף. למרות זאת, יש הגבלות בנוגע לשחרור מחדש של הקוד, בצורתו המקורית או לאחר שינוי. בין השאר, ההגבלות האלו משויכות לרשיון ההפצה, זכויות יוצרים ושליטה על ייצוא. <br> <br> אם הנך רוצה להבין את ההגבלות האלו במלואן, אנא בקר באתר: http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement ."
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
 msgstr "מובן, אנא המשך."
 
-#: ../modules/welcome.py:35 ../modules/welcome.py:36
+#: ../modules/welcome.py:35
+#: ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "ברוכים הבאים"
 
 #: ../modules/welcome.py:45
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
-"ישנם עוד צעדים ספורים לביצוע לפני שהמערכת שלך תהיה מוכנה לשימוש. תוכנת "
-"ההתקנה תוביל אותך עכשיו דרך כמה שלבים של הגדרות בסיסית. יש ללחוץ על כפתור "
-"\"הבא\" בפינה הימנית תחתונה בכדי להמשיך"
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
+msgstr "ישנם עוד צעדים ספורים לביצוע לפני שהמערכת שלך תהיה מוכנה לשימוש. תוכנת ההתקנה תוביל אותך עכשיו דרך כמה שלבים של הגדרות בסיסית. יש ללחוץ על כפתור \"הבא\" בפינה הימנית תחתונה בכדי להמשיך"
 
 #~ msgid "Waiting for X server to start... log located in %s\n"
 #~ msgstr "ממתין להפעלת שרת X... ניתן למצוא ב-%s את קובץ היומן שלו\n"
-
 #~ msgid ""
 #~ "It is highly recommended that a personal user account be created.  If you "
 #~ "continue without an account, you can only log in with the root account, "
@@ -341,9 +289,8 @@ msgstr ""
 #~ msgstr ""
 #~ "מומלץ מאוד ליצור חשבון משתמש אישי. אי יצירת חשבון כזה תגרום לכך שיהיה "
 #~ "ניתן להכנס למערכת רק לחשבון root אשר מיועד לניהול המערכת בלבד."
-
 #~ msgid "_Continue"
 #~ msgstr "_המשך"
-
 #~ msgid "Create _account"
 #~ msgstr "יצירת חשבון _משתמש"
+
