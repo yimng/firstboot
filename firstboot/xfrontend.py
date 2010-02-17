@@ -61,7 +61,7 @@ class XFrontEnd:
         os.environ["DISPLAY"] = ":9"
 
         try:
-            args = [":9", "-ac", "-nolisten", "tcp", "vt6", "-br"]
+            args = [":9", "-ac", "-nolisten", "tcp", "vt6", "-nr"]
             noOutput = os.open("/dev/null", os.O_RDWR)
 
 	    def sigchld_handler(num, frame):
