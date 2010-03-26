@@ -26,7 +26,7 @@ Requires(post): chkconfig
 
 %define debug_package %{nil}
 
-Obsoletes: firstboot-tui
+Obsoletes: firstboot-tui < 1.90-1
 
 %description
 The firstboot utility runs after installation.  It guides the user through
