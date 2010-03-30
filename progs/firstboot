@@ -18,8 +18,12 @@
 # subject to the GNU General Public License and may only be used or replicated
 # with the express permission of Red Hat, Inc. 
 #
-import meh
+
 import os, string, sys
+from meh.dump import *
+from meh.ui.gui import GraphicalIntf
+from meh.handler import *
+from meh import Config as MehConfig
 
 # Since X may be starting up immediately after firstboot crashes, we might
 # not have any way to see the traceback.  This lets it be logged somewhere
@@ -175,7 +179,10 @@ if __name__ == "__main__":
     # This must come as early as possible so we can present the UI for the
     # widest class of problems, BUT it also has to come late enough for us
     # to have already imported gtk.
-    meh.makeRHHandler("firstboot", "@VERSION@", config)
+    handler_conf = MehConfig(programName="firstboot",
+                             programVersion="@VERSION@")
+    handler = ExceptionHandler(handler_conf, GraphicalIntf(), ExceptionDump)
+    handler.install(config)
 
     config.moduleList = loadModules(config.moduleDir, config.mode)
     if not config.moduleList:
