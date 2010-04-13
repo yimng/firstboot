@@ -1,19 +1,19 @@
-# translation of firstboot.master.bn_IN.po to Bengali INDIA
+# translation of firstboot.master.po to Bengali INDIA
 # Bengali Translation of Firstboot
 # Copyright (C) 2004 Red Hat Inc.
 # This file is distributed under the same license as the firstboot package.
 #
 # Ashabul Yeameen <ayeameen@yahoo.com>, 2003.
-# Runa Bhattacharjee <runab@redhat.com>, 2004, 2005, 2006, 2007, 2008, 2009.
+# Runa Bhattacharjee <runab@redhat.com>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
 # Runa Bhattacharjee <runab@fedoraproject.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master.bn_IN\n"
+"Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-03-31 15:24+0530\n"
+"PO-Revision-Date: 2010-04-13 18:10+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
-"Language-Team: Bengali INDIA <fedora-trans-bn_in@redhat.com>\n"
+"Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -239,13 +239,18 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"%s ব্যবহারকারীর জন্য একটি ব্যক্তিগত ডিরেক্টরি বর্তমানে উপস্থিত রয়েছে। এই ডিরেক্টরি ও এর মধ্যে উপস্থিত সকল সামগ্রীগুলির মালিক রূপে নতুন ব্যবহারকারীকে চিহ্নিত করা হবে কি?  এটি করার সময় অনুমতি ও SELinux-র লেবেল পুনরায় নির্ধারণের জন্য কিছু সময় ব্যয় হতে পারে। এই ডিরেক্টরিটি "
-"পুনরায় ব্যবহার করা হবে কি?  এই ডিরেক্টরিটি ব্যবহার করতে ইচ্ছুক না হলে একটি পৃথক ব্যবহারকারীর নাম নির্বাচন করুন।"
+"%s ব্যবহারকারীর জন্য একটি ব্যক্তিগত ডিরেক্টরি বর্তমানে উপস্থিত রয়েছে। এই ডিরেক্টরি ও "
+"এর মধ্যে উপস্থিত সকল সামগ্রীগুলির মালিক রূপে নতুন ব্যবহারকারীকে চিহ্নিত করা হবে কি?  "
+"এটি করার সময় অনুমতি ও SELinux-র লেবেল পুনরায় নির্ধারণের জন্য কিছু সময় ব্যয় হতে "
+"পারে। এই ডিরেক্টরিটি পুনরায় ব্যবহার করা হবে কি?  এই ডিরেক্টরিটি ব্যবহার করতে ইচ্ছুক "
+"না হলে একটি পৃথক ব্যবহারকারীর নাম নির্বাচন করুন।"
 
 #: ../modules/create_user.py:175
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s-র জন্য ব্যক্তিগত ডিরেক্টরির বৈশিষ্ট্য নির্ধারণ করা হচ্ছে।  এই কাজে কিছু মিনিট ব্যয় হতে পারে।"
+msgstr ""
+"%s-র জন্য ব্যক্তিগত ডিরেক্টরির বৈশিষ্ট্য নির্ধারণ করা হচ্ছে।  এই কাজে কিছু মিনিট ব্যয় "
+"হতে পারে।"
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -254,7 +259,9 @@ msgid ""
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
 "Problems were encountered fixing the attributes on some files in the home "
-"directory for %s-র জন্য ব্যক্তিগত ডিরেক্টরির মধ্যে উপস্থিত কিছু ফাইলের বৈশিষ্ট্য নির্ধারণ করতে সমস্যা দেখা দিয়েছে।  সমস্যা সৃষ্টিকারী ফাইলগুলির তালিকা দেখঅর জন্য অনুগ্রহ করে %s দেখুন।"
+"directory for %s-র জন্য ব্যক্তিগত ডিরেক্টরির মধ্যে উপস্থিত কিছু ফাইলের বৈশিষ্ট্য "
+"নির্ধারণ করতে সমস্যা দেখা দিয়েছে।  সমস্যা সৃষ্টিকারী ফাইলগুলির তালিকা দেখঅর জন্য "
+"অনুগ্রহ করে %s দেখুন।"
 
 #: ../modules/create_user.py:213
 msgid ""
@@ -262,9 +269,9 @@ msgid ""
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"সিস্টেমের মধ্যে দৈনন্দিন কাজের (প্রশাসনিক কর্ম ব্যতীত) জন্য একটি সাধারণ 'ব্যবহারকারীর "
-"অ্যাকাউন্ট' নির্মাণ করা আবশ্যক। একটি সিস্টেম অ্যাকাউন্ট নির্মাণের জন্য নিম্নলিখিত "
-"তথ্য পূরণ করুন।"
+"সিস্টেমের মধ্যে দৈনন্দিন কাজের (প্রশাসনিক কর্ম ব্যতীত) জন্য একটি সাধারণ "
+"'ব্যবহারকারীর অ্যাকাউন্ট' নির্মাণ করা আবশ্যক। একটি সিস্টেম অ্যাকাউন্ট নির্মাণের জন্য "
+"নিম্নলিখিত তথ্য পূরণ করুন।"
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -287,7 +294,7 @@ msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"Kerberos অথবা NIS প্রভৃতির সাহায্যে নেটওয়ার্ডের মাধ্যমে অনুমোদন করতে ইচ্ছুক হলে, "
+"Kerberos অথবা NIS প্রভৃতির সাহায্যে নেটওয়ার্কের মাধ্যমে অনুমোদন করতে ইচ্ছুক হলে, "
 "'নেটওয়ার্ক লগ-ইন ব্যবহার করা হবে' শীর্ষক বাটন ক্লিক করুন।"
 
 #: ../modules/create_user.py:270
