@@ -11,14 +11,13 @@
 # Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2007.
 # Makoto Mizukami <mmk9060@aol.com>, 2008.
 # Kiyoto Hashida <khashida@redhat.com>, 2008, 2009.
-# Hajime Taira <htaira@redhat.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2010-04-12 00:12+0900\n"
-"Last-Translator: Hajime Taira <htaira@redhat.com>\n"
+"PO-Revision-Date: 2009-04-02 12:11+1000\n"
+"Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <jp@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +26,7 @@ msgstr ""
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "firstboot を起動するには、rootユーザーになる必要があります。"
+msgstr "firstboot を起動するには、ルートになる必要があります。"
 
 #: ../progs/firstboot:163 ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
@@ -39,7 +38,7 @@ msgstr "firstboot のモジュールが見つかりませんでした。"
 
 #: ../progs/firstboot:190 ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
-msgstr "firstboot のインターフェースを作成できません。"
+msgstr "firstboot のインターフェースを作成てきません。"
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -54,7 +53,7 @@ msgid ""
 "attempt to run the remaining modules."
 msgstr ""
 "%s モジュールに問題があるため、\n"
-"firstboot はこのモジュールをロードできません。\n"
+"firstboot はこのモジュールをロードしません。\n"
 "残りのモジュールの実行を試みます。"
 
 #: ../firstboot/exceptionWindow.py:55
@@ -79,12 +78,13 @@ msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
-"firstboot のバグを、Red Hat バグトラッキングシステム\n"
-"Bugzilla (https://bugzilla.redhat.com/)に報告してください。\n"
+"firstboot のバグを、Red Hat\n"
+"バグトラッキングシステム(http://www.redhat.com/bugzilla)に報告してくださ"
+"い。\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr "戻ろうとしましたが、履歴がありません。"
+msgstr "戻ろうとしましたが、履歴が空です。"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -94,7 +94,7 @@ msgstr "終了(_F)"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "いくつかの設定を反映させる為、システムを再起動する必要があります。"
+msgstr "いくつかの選択を有効にする為、システムを再起動する必要があります。"
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -263,8 +263,8 @@ msgid ""
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"システムでの(管理用途以外の)日常作業のために、一般ユーザーを作成することを "
-"推奨します。以下の情報を入力し、一般ユーザーを作成します。"
+"システムでの(管理用途ではない)普通の作業のために、'ユーザー'を作成することを "
+"推奨します。以下の情報を入力し、システムに 'ユーザー' を作成します。"
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -304,7 +304,7 @@ msgstr "日付と時刻"
 
 #: ../modules/date.py:62
 msgid "Please set the date and time for the system."
-msgstr "現在の日付と時刻を設定してください。"
+msgstr "システム用に日付と時刻を設定してください。"
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -348,6 +348,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"システムが利用可能になるまでもう少しステップがあります。セットアップエージェ"
-"ントは、基本的な設定についてガイドしていきます。画面の右下にある \"進む\"を"
-"クリックして、設定を開始します。"
+"システムが使用できるようになるまでもう少しステップがあります。セットアップ"
+"エージェントは、基本的な設定についてガイドしていきます。右下隅にある \"進む"
+"\" をクリックして、設定を開始します。"
