@@ -63,7 +63,7 @@ case "$1" in
             args="--reconfig"
         fi
 
-        . /etc/sysconfig/i18n
+        . /etc/profile.d/lang.sh
 
         /usr/bin/plymouth --hide-splash
 
