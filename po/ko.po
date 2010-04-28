@@ -1,24 +1,26 @@
-# translation of firstboot.master.ko.po to Korean
+# translation of firstboot.rhel6-branch.ko.po to Korean
 # translation of ko.po to
 # Copyright (C) 2002 Red Hat, Inc.
 #
 # Michelle J Kim <mkim@redhat.com>, 2003,2004.
 # Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
 # Eunju Kim <eukim@redhat.com>, 2006, 2007, 2008, 2009.
+# Hyunsok Oh <hoh@redhat.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master.ko\n"
+"Project-Id-Version: firstboot.rhel6-branch.ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-03-31 16:31+1000\n"
-"Last-Translator: Eunju Kim <eukim@redhat.com>\n"
+"PO-Revision-Date: 2010-03-31 13:45+1000\n"
+"Last-Translator: Hyunsok Oh <hoh@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=1; plural=0;\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -71,7 +73,7 @@ msgid ""
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
 "디버그 출력 결과는 %s에 저장되어 있습니다. \n"
-"이 파일을 버그 리포트에 첨부해 주십시오. \n"
+"이 파일을 버그 보고서에 첨부해 주십시오. \n"
 
 #: ../firstboot/exceptionWindow.py:71
 msgid ""
@@ -83,7 +85,7 @@ msgstr ""
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr "이전 단계로 되돌아 가려 하였으나, 기록이 남아있지 않습니다. "
+msgstr "이전 단계로 되돌아 가려했으나, 기록이 남아있지 않습니다. "
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -93,7 +95,7 @@ msgstr "완료(_F)"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "선택하신 사항을 적용하려면 지금 시스템을 재부팅하셔야 합니다."
+msgstr "선택힌 사항을 적용하려면 지금 시스템을 재부팅해야 합니다."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -110,21 +112,21 @@ msgstr "%s 모듈에 UI가 설정되어 있지 않습니다, 삭제합니다. "
 
 #: ../firstboot/interface.py:353 ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr "페이지로 이동하기에서는 모듈 제목이나 페이지 번호가 있어야 합니다. "
+msgstr "페이지이동시 모듈 제목이나 페이지 번호가 있어야 합니다."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
-msgstr "스크린샷 디렉토리를 생성할 수 없습니다; 생략합니다. "
+msgstr "스크린샷 디렉토리를 생성할 수 없습니다; 생략합니다."
 
 #: ../firstboot/interface.py:478 ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
-msgstr "%s 라는 모듈이 없습니다. "
+msgstr "%s 라는 모듈이 없습니다."
 
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr "업데이트되지 않은 이전 모듈 %s을 생략합니다. "
+msgstr "업데이트되지 않은 오래된 모듈 %s을 생략합니다. "
 
 #: ../firstboot/loader.py:102
 #, python-format
@@ -134,12 +136,12 @@ msgstr "%s 모듈에는 moduleClass라는 클래스가 들어있지 않습니다
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "%s 모듈에 %s 속성이 들어 있지 않습니다; 생략합니다. "
+msgstr "%s 모듈에 %s 필수 속성이 들어 있지 않습니다; 생략합니다. "
 
 #: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr "%s 모듈에 해당하는 pixmap %s을 읽어올 수 없습니다. "
+msgstr "pixmap %s을 %s 모듈을 위해 읽어올 수 없습니다. "
 
 #: ../firstboot/moduleset.py:93
 #, python-format
@@ -157,9 +159,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"\"Red Hat Enterprise Linux 추가\" 디스크를 삽입하여 제삼자 플러그인 및 응용 "
-"프로그램을 설치하실 수 있습니다. 문서 자료 디스크 또는 Red Hat에서 제공한 기"
-"타 다른 디스크를 이용하여 언제든지 추가 소프트웨어를 설치하실 수 있습니다."
+"\"Red Hat Enterprise Linux 추가\" 디스크를 삽입하여 서드파티 플러그인 및 응"
+"용 프로그램을 설치할 수 있습니다. 문서 자료 디스크 또는 Red Hat에서 제공한 다"
+"른 디스크를 이용하여 언제든지 추가 소프트웨어를 설치할 수 있습니다."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -187,11 +189,12 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM이 감지되지 않았습니다.  CD-ROM을 드라이브에 삽입하신 후 \"확인\" 버튼"
-"을 클릭하여 계속 진행해 주십시오."
+"CD-ROM이 감지되지 않았습니다.  CD-ROM을 드라이브에 삽입한 후 \"확인\" 버튼을 "
+"클릭하여 계속 진행해 주십시오."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "autorun 프로그램을 CD에서 찾지 못했습니다. \"확인\"을 클릭하여 계속 진행하시"
 "기 바랍니다."
@@ -202,22 +205,22 @@ msgstr "사용자 생성 "
 
 #: ../modules/create_user.py:83
 msgid "You must create a user account for this system."
-msgstr "시스템에 대한 사용자 계정을 생성하셔야 합니다."
+msgstr "이 시스템에서 사용할 사용자 계정을 생성해야 합니다."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
-msgstr "사용자에 대한 암호를 입력하고 확인해 주십시오.  "
+msgstr "사용자에 대한 암호를 입력하고 확인해 주십시오."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
-msgstr "암호가 일치하지 않습니다. 암호를 다시 입력해 주시기 바랍니다.   "
+msgstr "암호가 일치하지 않습니다. 암호를 다시 입력하시기 바랍니다."
 
 #: ../modules/create_user.py:113
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "사용자명 '%s'은 시스템 계정입니다.  다른 사용자명을 지정해주십시오. "
+msgstr "사용자명 '%s'은 시스템 계정입니다. 다른 사용자명을 지정해주십시오. "
 
 #: ../modules/create_user.py:132
 #, python-format
@@ -228,13 +231,19 @@ msgid ""
 "like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"%s 사용자에 대한 홈 디렉토리는 이미 존재합니다. 이 디렉토리의 소유자와 관련된 모든 내용에 대해 새로운 사용자를 만드시겠습니까?  디렉토리의 권한 및 SELinux 레이블을 다시 설정하려면 시간이 오래 소요될 수 있습니다. "
-"이 홈 디렉토리를 다시 사용하시겠습니까? 그렇지 않다면, 다른 사용자 이름을 지정해 주십시오.   "
+"%s 사용자에 대한 홈 디렉토리는 이미 존재합니다. 이 사용자를 새로 만들면서 이 "
+"디렉토리와 그 안의 모든 내용에 대한 소유권을 부여하겠습니까? 그러기 위해서 디"
+"렉토리의 권한 및 SELinux 레이블을 재설정해야 하므로 시간이 오래 소요될 수 있"
+"습니다. 이 홈 디렉토리를 다시 사용하시겠습니까? 그렇지 않다면, 다른 사용자 이"
+"름을 지정해 주십시오."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s의 홈 디렉토리에 있는 속성을 수정하고 있습니다.  몇 분이 소요될 수 있습니다. "
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+"%s의 홈 디렉토리에 있는 속성을 수정하고 있습니다.  몇 분이 소요될 수 있습니"
+"다."
 
 #: ../modules/create_user.py:195
 #, python-format
@@ -242,8 +251,8 @@ msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
 "directory for %s.  Please refer to %s for which files caused the errors."
 msgstr ""
-"%s의 홈 디렉토리에 있는 일부 파일에서 속성을 수정하는 도중 문제가 발생하였습니다. "
-"오류의 원인이 되는 파일을 찾으려면 %s에서 참조하십시오. "
+"%s의 홈 디렉토리에 있는 일부 파일에서 속성을 수정하는 도중 문제가 발생했습니"
+"다. 오류의 원인이 되는 파일을 찾으려면 %s를 참조하십시오. "
 
 #: ../modules/create_user.py:213
 msgid ""
@@ -251,25 +260,25 @@ msgid ""
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"시스템의 일반 사용을 위한 (관리자가 아닌) '사용자 이름'을 생성하시기 바"
-"랍니다. 시스템 '사용자 이름'을 만드시려면, 아래에서 요구하는 정보를 기입해 주"
-"십시오.  "
+"평소에 시스템을 사용하기 위한 (관리자가 아닌) '사용자 이름'을 생성하셔야 합니"
+"다. 시스템에 '사용자 이름'을 만들려면, 아래에 요구하는 정보를 기입해 주십시"
+"오."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
-msgstr "사용자 이름(_U): "
+msgstr "사용자 이름(_U):"
 
 #: ../modules/create_user.py:238
 msgid "Full Nam_e:"
-msgstr "성명(_E): "
+msgstr "성명(_E):"
 
 #: ../modules/create_user.py:245
 msgid "_Password:"
-msgstr "암호(_P): "
+msgstr "암호(_P):"
 
 #: ../modules/create_user.py:252
 msgid "Confir_m Password:"
-msgstr "암호 확인(_M): "
+msgstr "암호 확인(_M):"
 
 #: ../modules/create_user.py:261
 msgid ""
@@ -277,7 +286,7 @@ msgid ""
 "click the Use Network Login button."
 msgstr ""
 "커베로스나 NIS와 같은 네트워크 인증을 사용하시려면, 네트워크 로그인 사용 버튼"
-"을 클릭해 주십시오.  "
+"을 클릭해 주십시오."
 
 #: ../modules/create_user.py:270
 msgid "Use Network _Login..."
@@ -285,15 +294,15 @@ msgstr "네트워크 로그인 사용(_L)..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr "잠시만 기다려 주십시오 "
+msgstr "잠시만 기다려 주십시오"
 
 #: ../modules/date.py:40 ../modules/date.py:41
 msgid "Date and Time"
-msgstr "날짜 및 시간 "
+msgstr "날짜 및 시간"
 
 #: ../modules/date.py:62
 msgid "Please set the date and time for the system."
-msgstr "시스템 날짜 및 시간을 설정하시기 바랍니다. "
+msgstr "시스템 날짜 및 시간을 설정하시기 바랍니다."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -336,7 +345,6 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"시스템 사용 준비가 완료되기 전에 몇 가지의 단계가 더 남아 있습니다. 설정 에이"
-"전트는 이제 몇 가지 기본적인 설정 과정을 단계별로 길잡이를 해 드릴 것입니다. "
-"계속하시려면 오른쪽 하단 모서리에 위치한 \"다음\" 버튼을 클릭하십시오."
-
+"시스템을 사용하기 위해서는 몇 가지 단계가 남아있습니다. 이제 설정 에이전트가 "
+"기본적인 설정 과정을 도와드릴 것입니다. 계속하려면 오른쪽 하단에 위치한 \"다"
+"음\" 버튼을 클릭하십시오."
