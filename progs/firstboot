@@ -21,7 +21,6 @@
 
 import os, string, sys
 from meh.dump import *
-from meh.ui.gui import GraphicalIntf
 from meh.handler import *
 from meh import Config as MehConfig
 
@@ -147,21 +146,19 @@ if __name__ == "__main__":
     if os.environ.has_key("DISPLAY") or opts.debug:
         config.needInterface = True
         logging.debug("X is already running, not using any frontend")
-    elif (getRunlevel() == 3 and not opts.forcegui):
+    elif (getRunlevel() == 5 or not os.environ.has_key("DISPLAY") and
+          opts.forcegui):
+        from firstboot.xfrontend import XFrontEnd
+        config.frontend = XFrontEnd()
+        config.needInterface = True
+        logging.debug("Using X frontend")
+    else:
         logging.debug("Running text mode interface")
         if os.access("/usr/bin/setup", os.X_OK):
             os.system("/usr/bin/setup")
 
         finish(opts)
         os._exit(0)
-    elif not os.environ.has_key("DISPLAY"):
-        from firstboot.xfrontend import XFrontEnd
-        config.frontend = XFrontEnd()
-        config.needInterface = True
-        logging.debug("Using X frontend")
-    else:
-        logging.error(_("Could not start any firstboot frontend."))
-        raise RuntimeError, _("Could not start any firstboot frontend.")
 
     # If X was already running, we don't need to make a frontend so skip this
     # step.  This also means that frontends can't do anything besides set
@@ -170,18 +167,26 @@ if __name__ == "__main__":
         logging.debug("Starting frontend")
         config.frontend.start()
 
+    # setup the meh text interface
+    import meh.ui.text
+    ExceptionIntf = meh.ui.text.TextIntf
+
     if config.needInterface:
         from firstboot.interface import *
         config.interface = Interface(autoscreenshot=opts.autoscreenshot,
                                      testing=opts.test)
         logging.debug("Using GTK interface")
 
+        # setup the meh gui interface
+        import meh.ui.gui
+        ExceptionIntf = meh.ui.gui.GraphicalIntf
+
     # This must come as early as possible so we can present the UI for the
     # widest class of problems, BUT it also has to come late enough for us
     # to have already imported gtk.
     handler_conf = MehConfig(programName="firstboot",
                              programVersion="@VERSION@")
-    handler = ExceptionHandler(handler_conf, GraphicalIntf(), ExceptionDump)
+    handler = ExceptionHandler(handler_conf, ExceptionIntf(), ExceptionDump)
     handler.install(config)
 
     config.moduleList = loadModules(config.moduleDir, config.mode)
