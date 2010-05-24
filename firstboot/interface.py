@@ -34,7 +34,7 @@ class Control:
         self.history = []
         self.moduleList = []
 
-class Interface:
+class Interface(object):
     def __init__(self, autoscreenshot=False, moduleList=[], testing=False):
         """Create a new Interface instance.  Instance attributes:
 
@@ -111,7 +111,7 @@ class Interface:
         # The sidebar pointer only works in terms of the top-level module list
         # as we don't display anything on the side for a ModuleSet and making
         # the pointer move around then would be confusing.
-        for i in range(len(self.moduleList)):
+        for i in range(len(self.sidebar.get_children())):
             (alignment, label) = self.sidebar.get_children()[i].get_children()
             pix = alignment.get_children()[0]
 
