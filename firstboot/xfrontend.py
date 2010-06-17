@@ -18,7 +18,7 @@
 # with the express permission of Red Hat, Inc. 
 #
 import logging
-import os, string, subprocess, sys, signal
+import os, string, subprocess, sys, signal, shlex
 
 ##
 ## I18N
@@ -59,6 +59,15 @@ class XFrontEnd:
     # window manager, but returns control to the caller to proceed.
     def start(self):
         os.environ["DISPLAY"] = ":9"
+
+        # set up the lang variable according to what's set in i18n
+        with open("/etc/sysconfig/i18n", "r") as f:
+            data = f.read()
+        for line in shlex.split(data):
+            key, value = line.split("=")
+            if key == "LANG":
+                os.environ[key] = value
+                break
 
         try:
             args = [":9", "-ac", "-nolisten", "tcp", "vt6", "-nr"]
