@@ -285,6 +285,24 @@ class moduleClass(Module):
         authHBox.pack_start(align, True)
         self.vbox.pack_start(authHBox, False, False)
 
+        label = gtk.Label(_("If you need more control when creating the user "
+                            "(specifying home directory, and/or UID), "
+                            "please click the Advanced button."))
+
+        label.set_line_wrap(True)
+        label.set_alignment(0.0, 0.5)
+        label.set_size_request(500, -1)
+        self.vbox.pack_start(label, False, True, padding=20)
+
+        scuHBox = gtk.HBox()
+        scuButton = gtk.Button(_("_Advanced..."))
+        scuButton.connect("clicked", self._runSCU)
+        align = gtk.Alignment()
+        align.add(scuButton)
+        align.set(0.0, 0.5, 0.0, 1.0)
+        scuHBox.pack_start(align, True)
+        self.vbox.pack_start(scuHBox, False, False)
+
     def focus(self):
         self.usernameEntry.grab_focus()
 
@@ -357,3 +375,21 @@ class moduleClass(Module):
             entry.set_property("primary-icon-stock", gtk.STOCK_APPLY)
             entry.set_property("primary-icon-tooltip-text",
                                _("Password OK"))
+
+    def _runSCU(self, *args):
+        i = gtk.Invisible()
+        i.grab_add()
+
+        pid = start_process("/usr/bin/system-config-users")
+
+        while True:
+            while gtk.events_pending():
+                gtk.main_iteration_do()
+
+            child_pid, status = os.waitpid(pid, os.WNOHANG)
+            if child_pid == pid:
+                break
+            else:
+                time.sleep(0.1)
+
+        i.grab_remove ()
