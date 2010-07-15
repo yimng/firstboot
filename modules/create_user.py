@@ -21,6 +21,7 @@ import gtk
 import libuser
 import os, string, sys, time
 import os.path
+import cracklib
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -222,6 +223,13 @@ class moduleClass(Module):
         self.fullnameEntry = gtk.Entry()
         self.passwordEntry = gtk.Entry()
         self.passwordEntry.set_visibility(False)
+        self.passwordEntry.set_property("primary-icon-stock",
+                                        gtk.STOCK_DIALOG_WARNING)
+        self.passwordEntry.set_property("primary-icon-tooltip-text",
+                                        _("Password empty"))
+        self.passwordEntry.set_property("primary-icon-activatable", False)
+        self.passwordEntry.connect("changed", self.passwordEntry_changed)
+
         self.confirmEntry = gtk.Entry()
         self.confirmEntry.set_visibility(False)
 
@@ -328,3 +336,24 @@ class moduleClass(Module):
         rc = dlg.run()
         dlg.destroy()
         return None
+
+    def passwordEntry_changed(self, entry):
+        pw = entry.get_text()
+        if not pw:
+            entry.set_property("primary-icon-stock", gtk.STOCK_DIALOG_WARNING)
+            entry.set_property("primary-icon-tooltip-text",
+                               _("Password empty"))
+            return
+
+        try:
+            cracklib.FascistCheck(pw)
+        except ValueError as e:
+            msg = gettext.ldgettext("cracklib", e)
+
+            entry.set_property("primary-icon-stock", gtk.STOCK_DIALOG_WARNING)
+            entry.set_property("primary-icon-tooltip-text",
+                               _("Weak password: %s") % msg)
+        else:
+            entry.set_property("primary-icon-stock", gtk.STOCK_APPLY)
+            entry.set_property("primary-icon-tooltip-text",
+                               _("Password OK"))
