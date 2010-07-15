@@ -21,6 +21,7 @@ Requires: setuptool, libuser-python, system-config-users, system-config-date
 Requires: authconfig-gtk, python-meh
 Requires: system-config-keyboard
 Requires: python-ethtool
+Requires: cracklib-python
 Requires(post): chkconfig
 
 %define debug_package %{nil}
