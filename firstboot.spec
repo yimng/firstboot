@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.110
+Version: 1.111
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -74,6 +74,20 @@ fi
 %{_datadir}/firstboot/themes/default/*
 
 %changelog
+* Thu Jul 15 2010 Martin Gracik <mgracik@redhat.com> 1.111-1
+- Fixed indenting
+- Set the LANG variable if running our own X frontend (#599296)
+- Added the spec file obsoletes version number
+- Add requirement for cracklib-python
+- Allow more control when creating new user (#602030)
+- Fix functioning of module sets (#595320)
+- Don't try to use the X frontend when run in console (#537717)
+- Update to work with new python-meh with report support (#562659)
+- Add weak password checking (#612362)
+- Source the lang.sh file instead of just i18n (#563547)
+- Run Xorg with -nr option, so we have less flicker (ajax)
+- Many translation updates
+
 * Wed Oct 14 2009 Chris Lumens <clumens@redhat.com> 1.110-1
 - Always attempt to display the Fedora logo, if present (jmccann).
 - Fix a bunch of small firstboot UI problems (jmccann).
