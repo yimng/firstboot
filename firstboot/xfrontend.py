@@ -73,23 +73,23 @@ class XFrontEnd:
             args = [":9", "-ac", "-nolisten", "tcp", "vt6", "-nr"]
             noOutput = os.open("/dev/null", os.O_RDWR)
 
-	    def sigchld_handler(num, frame):
-		raise OSError
+            def sigchld_handler(num, frame):
+                raise OSError
 
-	    def sigusr1_handler(num, frame):
-		pass
+            def sigusr1_handler(num, frame):
+                pass
 
-	    def preexec_fn():
-		signal.signal(signal.SIGUSR1, signal.SIG_IGN)
+            def preexec_fn():
+                signal.signal(signal.SIGUSR1, signal.SIG_IGN)
 
-	    old_sigusr1 = signal.signal(signal.SIGUSR1, sigusr1_handler)
-	    old_sigchld = signal.signal(signal.SIGCHLD, sigchld_handler)
+            old_sigusr1 = signal.signal(signal.SIGUSR1, sigusr1_handler)
+            old_sigchld = signal.signal(signal.SIGCHLD, sigchld_handler)
             self.x = subprocess.Popen(["/usr/bin/Xorg"] + args,
                                       stdout=noOutput, stderr=noOutput,
-				      preexec_fn=preexec_fn)
-	    signal.pause()
-	    signal.signal(signal.SIGUSR1, old_sigusr1)
-	    signal.signal(signal.SIGCHLD, old_sigchld)
+                                      preexec_fn=preexec_fn)
+            signal.pause()
+            signal.signal(signal.SIGUSR1, old_sigusr1)
+            signal.signal(signal.SIGCHLD, old_sigchld)
 
         except OSError:
             logging.error("X server failed to start")
