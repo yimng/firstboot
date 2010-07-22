@@ -221,8 +221,13 @@ class moduleClass(Module):
         label.set_alignment(0.0, 0.5)
         label.set_size_request(500, -1)
 
-        self.usernameEntry = gtk.Entry()
         self.fullnameEntry = gtk.Entry()
+        self.usernameEntry = gtk.Entry()
+
+        self.guessUserName = True
+        self.fullnameEntry.connect("changed", self.fullnameEntry_changed)
+        self.usernameEntry.connect("changed", self.usernameEntry_changed)
+
         self.passwordEntry = gtk.Entry()
         self.passwordEntry.set_visibility(False)
         self.passwordEntry.set_property("primary-icon-stock",
@@ -240,19 +245,20 @@ class moduleClass(Module):
         table = gtk.Table(2, 4)
         table.set_row_spacings(6)
         table.set_col_spacings(6)
-        label = gtk.Label(_("_Username:"))
-        label.set_use_underline(True)
-        label.set_mnemonic_widget(self.usernameEntry)
-        label.set_alignment(0.0, 0.5)
-        table.attach(label, 0, 1, 0, 1, gtk.FILL)
-        table.attach(self.usernameEntry, 1, 2, 0, 1, gtk.SHRINK, gtk.FILL, 5)
 
         label = gtk.Label(_("Full Nam_e:"))
         label.set_use_underline(True)
         label.set_mnemonic_widget(self.fullnameEntry)
         label.set_alignment(0.0, 0.5)
+        table.attach(label, 0, 1, 0, 1, gtk.FILL)
+        table.attach(self.fullnameEntry, 1, 2, 0, 1, gtk.SHRINK, gtk.FILL, 5)
+
+        label = gtk.Label(_("_Username:"))
+        label.set_use_underline(True)
+        label.set_mnemonic_widget(self.usernameEntry)
+        label.set_alignment(0.0, 0.5)
         table.attach(label, 0, 1, 1, 2, gtk.FILL)
-        table.attach(self.fullnameEntry, 1, 2, 1, 2, gtk.SHRINK, gtk.FILL, 5)
+        table.attach(self.usernameEntry, 1, 2, 1, 2, gtk.SHRINK, gtk.FILL, 5)
 
         label = gtk.Label(_("_Password:"))
         label.set_use_underline(True)
@@ -306,7 +312,7 @@ class moduleClass(Module):
         self.vbox.pack_start(scuHBox, False, False)
 
     def focus(self):
-        self.usernameEntry.grab_focus()
+        self.fullnameEntry.grab_focus()
 
     def initializeUI(self):
         pass
@@ -356,6 +362,26 @@ class moduleClass(Module):
         rc = dlg.run()
         dlg.destroy()
         return None
+
+    def fullnameEntry_changed(self, fn_entry):
+        if not self.guessUserName:
+            return
+
+        name = fn_entry.get_text()
+        try:
+            user = name.split()[0]
+        except IndexError:
+            user = ""
+        else:
+            user = user.encode("ascii", "ascii_transliterate")
+            user = user.lower()
+
+        self.usernameEntry.handler_block_by_func(self.usernameEntry_changed)
+        self.usernameEntry.set_text(user)
+        self.usernameEntry.handler_unblock_by_func(self.usernameEntry_changed)
+
+    def usernameEntry_changed(self, un_entry):
+        self.guessUserName = not bool(un_entry.get_text())
 
     def passwordEntry_changed(self, entry):
         pw = entry.get_text()
