@@ -208,6 +208,12 @@ class moduleClass(Module):
 
         self.admin.setpassUser(userEnt, self.passwordEntry.get_text(), 0)
 
+        # add user to wheel group
+        if self.is_admin.get_active():
+            wheelEnt = self.admin.lookupGroupByName("wheel")
+            wheelEnt.add(libuser.MEMBERNAME, username)
+            self.admin.modifyGroup(wheelEnt)
+
         return RESULT_SUCCESS
 
     def createScreen(self):
@@ -242,7 +248,7 @@ class moduleClass(Module):
 
         self.vbox.pack_start(label, False, True)
 
-        table = gtk.Table(2, 4)
+        table = gtk.Table(3, 4)
         table.set_row_spacings(6)
         table.set_col_spacings(6)
 
@@ -273,6 +279,10 @@ class moduleClass(Module):
         label.set_alignment(0.0, 0.5)
         table.attach(label, 0, 1, 3, 4, gtk.FILL)
         table.attach(self.confirmEntry, 1, 2, 3, 4, gtk.SHRINK, gtk.FILL, 5)
+
+        self.is_admin = gtk.CheckButton(_("Add to Administrators group"))
+        self.is_admin.set_alignment(0.0, 0.5)
+        table.attach(self.is_admin, 2, 3, 1, 2, gtk.FILL)
 
         self.vbox.pack_start(table, False)
 
