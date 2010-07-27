@@ -86,10 +86,12 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
             if str(e).find("firstboot_module_window") != -1:
                 logging.error(_("Skipping old module %s that has not been updated.") % module)
 
-            logging.error(_("Error loading module %s:\n%s") % (module, str(e)))
+            logging.error(_("Error loading module %(module)s:\n%(error)s") % \
+                    {"module": module, "error": str(e)})
             continue
         except Exception as e:
-            logging.error(_("Error loading module %s:\n%s") % (module, str(e)))
+            logging.error(_("Error loading module %(module)s:\n%(error)s") % \
+                    {"module": module, "error": str(e)})
             continue
 
         # If the module was loaded, check to see if there's a class named
@@ -109,7 +111,7 @@ def loadModules(moduleDir, mode=MODE_REGULAR):
             else:
                 _checkModuleSet(obj)
         except TypeError, attr:
-            logging.error(_("Module %s does not contain the required attribute %s; skipping.") % (module, attr))
+            logging.error(_("Module %(module)s does not contain the required attribute %(attr)s; skipping.") % {"module": module, "attr": attr})
             continue
 
         # If the loaded module requires networking which is unavailable, skip

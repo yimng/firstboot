@@ -193,9 +193,11 @@ class moduleClass(Module):
 
                     fo.close()
 
-                    text = _("Problems were encountered fixing the attributes on "
-                             "some files in the home directory for %s.  Please refer "
-                             "to %s for which files caused the errors.") % (username, path)
+                    text = _("Problems were encountered fixing the attributes "
+                             "on some files in the home directory for %(user)s."
+                             "  Please refer to %(path)s for which files "
+                             "caused the errors.") % {"user": username,
+                                                      "path": path}
                     self._showErrorMessage(text)
         else:
             self.admin.modifyUser(userEnt)
