@@ -194,11 +194,6 @@ msgstr "Потребителското име '%s' е резервирано з�
 msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
 msgstr "Вече съществува домашна директория за потребител %s. Желаете ли да я използвате?  Ако не, моля, изберете друго потребителско име."
 
-#: ../modules/create_user.py:213
-#, fuzzy
-msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr "Препоръчително е да създадете потребителска сметка за нормална (не административна) работа със системата. За да създадете потребителска сметка, моля, попълнете необходимата информация по-долу."
-
 #: ../modules/create_user.py:231
 msgid "_Username:"
 msgstr "_Потребител:"
@@ -269,15 +264,19 @@ msgstr "Трябва да създадете потребителски акау
 msgid "You must enter and confirm a password for this user."
 msgstr "Трябва да въведете и потвърдите парола за този потребител."
 
-#: ../modules/create_user.py:195
-#, python-format, fuzzy
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %s.  Please refer to %s for which files caused the errors."
-msgstr "Възникнаха проблеми при поправянето на атрибутите за някои от файловете в домашната директория за %s. Моля прегледайте %s за да видите кои са файловете причинили грешките."
-
 #: ../modules/create_user.py:175
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr "Поправяне на атрибути на домашната директория за %s. Това може да отнеме няколко минути."
+
+#: ../modules/create_user.py:195
+#, python-format
+msgid "Problems were encountered fixing the attributes on some files in the home directory for %s.  Please refer to %s for which files caused the errors."
+msgstr "Възникнаха проблеми при поправянето на атрибутите за някои от файловете в домашната директория за %s. Моля прегледайте %s за да видите кои са файловете причинили грешките."
+
+#: ../modules/create_user.py:213
+msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
+msgstr "Препоръчително е да създадете потребителски акаунт за нормална (не административна) работа със системата. За да създадете потребителски акаунт, моля, попълнете необходимата информация по-долу."
 
 #~ msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
 #~ msgstr "Силно се препоръчва създаването на лична потребителска сметка.  Ако не я създадете, ще може да влизате само като root, което е сметката използвана за администиране на системата."
