@@ -1,0 +1,15 @@
+[Unit]
+Description=firstboot configuration program (text mode)
+After=livesys.service
+
+[Service]
+Environment=RUNLEVEL=3
+ExecStart=/etc/init.d/firstboot start
+TimeoutSec=0
+StandardInput=tty
+ValidNoProcess=yes
+Type=finish
+SysVStartPriority=99
+
+[Install]
+WantedBy=multi-user.target

@@ -11,5 +11,6 @@ setup(name='firstboot', version='1.110',
                   ('/etc/rc.d/init.d', ['init/firstboot']),
                   ('/usr/share/firstboot/themes/default', glob('themes/default/*.png')),
                   ('/usr/share/firstboot/modules', glob('modules/*.py')),
+                  ('/lib/systemd/system', glob('systemd/*.service')),
                  ],
       packages=['firstboot'])

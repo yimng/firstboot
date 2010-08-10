@@ -22,6 +22,7 @@ Requires: authconfig-gtk, python-meh
 Requires: system-config-keyboard
 Requires: python-ethtool
 Requires: cracklib-python
+Requires: systemd-units
 Requires(post): chkconfig
 
 %define debug_package %{nil}
@@ -49,6 +50,8 @@ rm -rf %{buildroot}
 %post
 if ! [ -f /etc/sysconfig/firstboot ]; then
   chkconfig --add firstboot
+  systemctl enable firstboot-text.service >/dev/null 2>&1 || :
+  systemctl enable firstboot-graphical.service >/dev/null 2>&1 || :
 fi
 
 %preun
@@ -56,6 +59,8 @@ if [ $1 = 0 ]; then
   rm -rf /usr/share/firstboot/*.pyc
   rm -rf /usr/share/firstboot/modules/*.pyc
   chkconfig --del firstboot
+  systemctl disable firstboot-graphical.service >/dev/null 2>&1 || :
+  systemctl disable firstboot-text.service >/dev/null 2>&1 || :
 fi
 
 %files -f %{name}.lang
@@ -72,6 +77,8 @@ fi
 %{_datadir}/firstboot/modules/eula.py*
 %{_datadir}/firstboot/modules/welcome.py*
 %{_datadir}/firstboot/themes/default/*
+/lib/systemd/system/firstboot-text.service
+/lib/systemd/system/firstboot-graphical.service
 
 %changelog
 * Thu Jul 15 2010 Martin Gracik <mgracik@redhat.com> 1.111-1
