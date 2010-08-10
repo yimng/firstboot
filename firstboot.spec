@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.111
+Version: 1.112
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -81,6 +81,10 @@ fi
 /lib/systemd/system/firstboot-graphical.service
 
 %changelog
+* Tue Aug 10 2010 Martin Gracik <mgracik@redhat.com> 1.112-1
+- Add systemd support (adamw)
+- Translation updates
+
 * Thu Jul 15 2010 Martin Gracik <mgracik@redhat.com> 1.111-1
 - Fixed indenting
 - Set the LANG variable if running our own X frontend (#599296)
