@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2008-07-19 06:41+0330\n"
-"Last-Translator: Amir Farsi\n"
+"PO-Revision-Date: 2010-08-07 16:36+0330\n"
+"Last-Translator: Mostafa <info@mostafadaneshvar.com>\n"
 "Language-Team: Persian(fa) <fedora-trans-fa@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,17 +26,20 @@ msgstr ""
 msgid "You must be root to run firstboot."
 msgstr "برای اجرای firstboot شما باید کاربر root باشید."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
+#: ../progs/firstboot:163
+#: ../progs/firstboot:164
 msgid "Could not start any firstboot frontend."
-msgstr ""
+msgstr "نمی تواند هیچ گونه مدیریت اجرای اول را آغاز کند."
 
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:180
+#: ../progs/firstboot:181
 msgid "No firstboot modules were found."
-msgstr ""
+msgstr "هیچ ماژول راه اندازی اولیه یافت نشد."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:190
+#: ../progs/firstboot:191
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "نمی تواند هیچ گونه میانگر اجرای اولینی را بسازد."
 
 #: ../firstboot/exceptionWindow.py:50
 #, python-format
@@ -50,6 +53,9 @@ msgid ""
 "firstboot will not load this module and will\n"
 "attempt to run the remaining modules."
 msgstr ""
+"از آنجایی که مشکلی در ماژول  %s وجود دارد،\n"
+"اولین آغاز این ماژول را بارگذاری نخواهد کرد\n"
+"و تلاش می کند تا سایر ماژول ها را اجرا کند."
 
 #: ../firstboot/exceptionWindow.py:55
 msgid "An error has occurred in firstboot."
@@ -57,7 +63,7 @@ msgstr "یک خطا در firstboot رخ داده است"
 
 #: ../firstboot/exceptionWindow.py:56
 msgid "Since there is a problem, firstboot will exit."
-msgstr ""
+msgstr "از آنجایی که مشکلی پیش آمده است اجرای اولین خارج می شود"
 
 #: ../firstboot/exceptionWindow.py:66
 #, python-format
@@ -65,49 +71,56 @@ msgid ""
 "A copy of the debug output has been saved to %s\n"
 "Be sure to attach that file to the bug report.\n"
 msgstr ""
+"نسخه ای از  خروجی عیب یابی در %s ذخیره شده است.\n"
+"مطمئن شوید آن فایل به این گزارش باگ الصاق شده است.\n"
 
 #: ../firstboot/exceptionWindow.py:71
 msgid ""
 "Please file a bug against 'firstboot' in the Red Hat\n"
 "bug tracking system at http://www.redhat.com/bugzilla.\n"
 msgstr ""
+"لطفا باگی برای 'firstboot' در ردهت گزارش کنید\n"
+"سیستم نگهداری باگ ها در http://www.redhat.com/bugzilla.\n"
 
 #: ../firstboot/interface.py:75
 msgid "Attempted to go back, but history is empty."
-msgstr ""
+msgstr "تلاش برای بازگشت، اما تاریخچه خالی است."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:83
+#: ../firstboot/interface.py:162
 msgid "_Finish"
-msgstr "ـپایان"
+msgstr "پایان"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
+msgstr "سیستم اکنون باید برای آنکه انتخاب ها شما اعمال شوند بار دیگر راه اندازی شود."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
-msgstr "_عقب"
+msgstr "عقب"
 
 #: ../firstboot/interface.py:250
 msgid "_Forward"
-msgstr "ـجلو"
+msgstr "جلو"
 
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "ماژول %s رابط گرافیکی اش تنظیم نشده است، در حال حذف."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:353
+#: ../firstboot/interface.py:354
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage باید عنوان ماژول یا شماره ی صفحه ای باشد."
 
 #: ../firstboot/interface.py:438
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "قادر به ایجاد پوشه screenshot نمیباشد، در حال رد کردن."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:478
+#: ../firstboot/interface.py:479
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "هیچ ماژولی با عنوان %s وجود ندارد."
@@ -115,42 +128,36 @@ msgstr "هیچ ماژولی با عنوان %s وجود ندارد."
 #: ../firstboot/loader.py:90
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr ""
+msgstr "نادیده گرفتن ماژول قدیمی %s که هنوز به روز نشده اند."
 
 #: ../firstboot/loader.py:102
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "ماژول %s شامل کلاسی به نام moduleClass نیست، نادیده گرفتن."
 
 #: ../firstboot/loader.py:113
 #, python-format
 msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr ""
+msgstr "ماژول  %s شامل نشانه ی  %s مورد نیاز نیست، ردکردنش"
 
 #: ../firstboot/module.py:187
 #, python-format
 msgid "Unable to load pixmap %s for module %s."
-msgstr ""
+msgstr "قادر به بارگذاری پیکسمپ برای %s ماژول %s نیست."
 
 #: ../firstboot/moduleset.py:93
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "ماژول %s رابط گرافیکی اش تنظیم نشده است، در حال حذف."
 
-#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43
+#: ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "سی دی های اضافی"
 
 #: ../modules/additional_cds.py:55
-msgid ""
-"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
-"for installation of third-party plug-ins and applications.  You may also "
-"insert the Documentation disc, or other Red Hat-provided discs to install "
-"additional software at this time."
-msgstr ""
-"لطفاً دیسکی را که برچسب «اضافات لینوکس انترپرایز رِدهَت» دارد وارد کنید تا نصب "
-"متصل‌شونده‌ها و برنامه‌های طرف سوم ممکن شود. همچنین می‌توانید دیسک مستندات یا "
-"دیسک‌های دیگر ارائه شده توسط رِدهَت را وارد کنید تا نرم‌افزارهای اضافی نصب شوند."
+msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgstr "لطفاً دیسکی را که برچسب «اضافات لینوکس انترپرایز رِدهَت» دارد وارد کنید تا نصب متصل‌شونده‌ها و برنامه‌های طرف سوم ممکن شود. همچنین می‌توانید دیسک مستندات یا دیسک‌های دیگر ارائه شده توسط رِدهَت را وارد کنید تا نرم‌افزارهای اضافی نصب شوند."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -160,40 +167,36 @@ msgstr "هم اکنون لطفا سی دی هرگونه نرم افزار اضا
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
+"\n"
+"\n"
+"برای فعال کردن پشتیبانی زمان‌اجرای برنامه های ۳۲-بیتی در معماری لنتیوم۲ اینتل، شما باید بسته 'Intel Execution Layer package' را از دیسک اضافه اکنون نصب کنید."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
 msgstr "نصب..."
 
 #: ../modules/additional_cds.py:110
-msgid ""
-"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
-"click \"OK\" to continue."
-msgstr ""
-"سی‌دی تشخیص داده نشده است. لطفاً یک سی‌دی را در دستگاه گذاشته و برای ادامه روی "
-"«تأیید» کلیک کنید."
+msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgstr "سی‌دی تشخیص داده نشده است. لطفاً یک سی‌دی را در دستگاه گذاشته و برای ادامه روی «تأیید» کلیک کنید."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "برنامه خوداجرا نمی تواند در سی‌دی  یافت شود. بر روی  \"OK\" برای ادامه دادن کلیک کنید."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
+#: ../modules/create_user.py:41
+#: ../modules/create_user.py:42
 msgid "Create User"
 msgstr "ایجاد کاربر"
 
 #: ../modules/create_user.py:83
-#, fuzzy
 msgid "You must create a user account for this system."
-msgstr "لطفا تاریخ و ساعت را برای سیستم تنظیم کنید."
+msgstr "شما باید برای این سیستم یک حساب کاربری ایجاد کتید."
 
 #: ../modules/create_user.py:94
 msgid "You must enter and confirm a password for this user."
-msgstr ""
+msgstr "شما باید کلمه عبور برای این کاربر وارد کرده و تایید کنید."
 
 #: ../modules/create_user.py:101
 msgid "The passwords do not match.  Please enter the password again."
@@ -201,47 +204,27 @@ msgstr "رمزهای عبور همخوانی ندارند. لطفا رمز عب�
 
 #: ../modules/create_user.py:113
 #, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
+msgid "The username '%s' is a reserved system account.  Please specify another username."
+msgstr "نام کاربری '%s' برای حساب سیستم محفوظ است. لطفا نام دیگری انتخاب کنید."
 
 #: ../modules/create_user.py:132
-#, fuzzy, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"یک پوشه آغازه(home) برای کاربر %s یافت شده است. آیا شما دوست دارید مجددا از "
-"پوشه آغازه(home) استفاده کنید؟ اگر نه، لطفا یک نام کاربری متفاوت را انتخاب "
-"کنید."
+#, python-format
+msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
+msgstr "یک شاخه خانه برای کاربر  %s کنونی وجود دارد. اگر مایل هستید ادامه دهید،‌مطمئن شوید کاربر جدید دارنده ی این شاخه و همه محتوای آن است. انجام اینکار مدتی طول بینجامد تا مجوزها  و هر برچسپ های سی‌لینوکس بازنشانی شوند. آیا می خواهید همان شاخه قبلی را مورد استفاده دوباره قرار دهید؟ اگر نه، نام کاربری دیگری انتخاب کنید."
 
 #: ../modules/create_user.py:175
 #, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "تغییر نشانه گذاری های شاخه خانه برای %s. این ممکن است چندین دقیقه طول بکشد."
 
 #: ../modules/create_user.py:195
 #, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
+msgid "Problems were encountered fixing the attributes on some files in the home directory for %s.  Please refer to %s for which files caused the errors."
+msgstr "مشکلاتی در تغییر نشانه های در برخی فایل در شاخه خانه برای %s رخد داده است. لطفا به %s جهت فایل هایی که باعث خطا شده اند مراجعه کنید."
 
 #: ../modules/create_user.py:213
-#, fuzzy
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"این توصیه شده است که شما یک نام کاربری برای استفاده ویژه(غیر مدیریتی) سیستم "
-"خودتان ایجاد کنید. برای ایجاد نام کاربری، لطفا اطلاعاتی که در زیر درخواست "
-"شده است را ارایه دهید."
+msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
+msgstr "این توصیه شده است که شما یک 'نام کاربری' برای استفاده ویژه(غیر مدیریتی) سیستم خودتان ایجاد کنید. برای ایجاد 'نام کاربری'، لطفا اطلاعاتی که در زیر درخواست شده است را ارایه دهید."
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
@@ -260,20 +243,19 @@ msgid "Confir_m Password:"
 msgstr "تایید رـمز عبور:"
 
 #: ../modules/create_user.py:261
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
+msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgstr "اگر نیاز به استفاده از تایید شبکه ای دارید از Kerberos یا NIS استفاده کنید. لطفا بر روی دکمه Use Network Login کلیک کنید."
 
 #: ../modules/create_user.py:270
 msgid "Use Network _Login..."
-msgstr ""
+msgstr "استفاده از ورود کاربری..."
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
-msgstr ""
+msgstr "صبر کنید"
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../modules/date.py:40
+#: ../modules/date.py:41
 msgid "Date and Time"
 msgstr "تاریخ و ساعت"
 
@@ -281,39 +263,33 @@ msgstr "تاریخ و ساعت"
 msgid "Please set the date and time for the system."
 msgstr "لطفا تاریخ و ساعت را برای سیستم تنظیم کنید."
 
-#: ../modules/eula.py:35 ../modules/eula.py:36
+#: ../modules/eula.py:35
+#: ../modules/eula.py:36
 msgid "License Information"
 msgstr "اطلاعات لیسانس"
 
 #: ../modules/eula.py:53
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
+"از شما برای نصب فدورا تشکر می کنیم. فدورا مجموعه ای از بسته های نرم افزاری می باشد که هر کدام لیسانس خود را دارا می باشند. این مجموعه تحت لیسانس عمومی گنو نسخه ۲ تهیه شده است. هیچ محدودیت در استفاده، کپی یا تغییر در این کد وجود ندارد. هرچند برخی محدودیت های قانونی بر بازبخش این کد، چه نسخه اصلی یا تغییر یافته ای آن،‌وجود دارد. در میان سایر چیزها چیزهایی مانند محدودیت/معذوریت های به خاطر بازپخش، حقوق نشان تجاری، و محدودیت های صادرات وجود دارد.\n"
+"\n"
+"اگر می خواهید درباره آن محدودیت های بیشتر بدانید به  http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement مراجعه کنید."
 
 #: ../modules/eula.py:64
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "متوجه ام، پیش روی لطفا."
 
-#: ../modules/welcome.py:35 ../modules/welcome.py:36
+#: ../modules/welcome.py:35
+#: ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "خوش آمدید"
 
 #: ../modules/welcome.py:45
-msgid ""
-"There are a few more steps to take before your system is ready to use.  The "
-"Setup Agent will now guide you through some basic configuration.  Please "
-"click the \"Forward\" button in the lower right corner to continue"
-msgstr ""
+msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
+msgstr "چندین مرحله ی دیگر قبل از آنکه سیستم شما برای استفاده آماده شود وجود دارد. عامل تنظیم شما را با تنظیمات اولیه شما را کمک خواهد کرد. لطفا بر روی دکمه \"Forward\" در قسمت پایین گوشه راست جهت ادامه کار کلیک کنید"
 
 #~ msgid ""
 #~ "It is highly recommended that a personal user account be created.  If you "
