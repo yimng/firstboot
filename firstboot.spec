@@ -49,7 +49,6 @@ rm -rf %{buildroot}
 
 %post
 if ! [ -f /etc/sysconfig/firstboot ]; then
-  chkconfig --add firstboot
   systemctl enable firstboot-text.service >/dev/null 2>&1 || :
   systemctl enable firstboot-graphical.service >/dev/null 2>&1 || :
 fi
@@ -58,7 +57,6 @@ fi
 if [ $1 = 0 ]; then
   rm -rf /usr/share/firstboot/*.pyc
   rm -rf /usr/share/firstboot/modules/*.pyc
-  chkconfig --del firstboot
   systemctl disable firstboot-graphical.service >/dev/null 2>&1 || :
   systemctl disable firstboot-text.service >/dev/null 2>&1 || :
 fi
