@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.112
+Version: 1.113
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -79,6 +79,14 @@ fi
 /lib/systemd/system/firstboot-graphical.service
 
 %changelog
+* Thu Aug 26 2010 Martin Gracik <mgracik@redhat.com> 1.113-1
+- Updated the .pot file
+- Changed string formatting for translations (#618610)
+- Syntax changed in new systemd
+- Make sure we start before tty1 in text mode
+- Don't use the legacy sysv services anymore
+- Translation updates
+
 * Tue Aug 10 2010 Martin Gracik <mgracik@redhat.com> 1.112-1
 - Add systemd support (adamw)
 - Translation updates
