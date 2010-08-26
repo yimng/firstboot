@@ -9,7 +9,7 @@ ExecStart=/etc/init.d/firstboot start
 TimeoutSec=0
 StandardInput=tty
 ValidNoProcess=yes
-Type=finish
+Type=oneshot
 SysVStartPriority=99
 
 [Install]
