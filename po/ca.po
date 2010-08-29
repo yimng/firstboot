@@ -89,11 +89,6 @@ msgstr "S'està ometent el mòdul antic %s que no s'ha actualitzat."
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "El mòdul %s no conté la classe anomenada moduleClass; s'està ometent."
 
-#: ../firstboot/loader.py:114
-#, fuzzy, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
-msgstr "El mòdul %s no conté l'atribut requerit %s; s'està ometent."
-
 #: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
@@ -164,11 +159,6 @@ msgstr "Existeix un directori d'inici per a l'usuari %s. Voleu continuar i fer q
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr "S'estan corregint els atributs del directori d'inici de %s. Pot trigar uns minuts."
 
-#: ../modules/create_user.py:196
-#, fuzzy, python-format
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr "S'han trobat errors en corregir els atributs en alguns fitxers en el directori d'inici per a %s. Referiu-vos a %s per conèixer quins fitxers han fallat."
-
 #: ../modules/create_user.py:216
 msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
 msgstr "Heu de crear un «nom d'usuari» per a ús habitual (no administratiu) del vostre sistema. Per crear un «nom d'usuari» de sistema, proporcioneu la informació demanada a sota."
@@ -204,11 +194,6 @@ msgstr ""
 #: ../modules/create_user.py:338
 msgid "Please wait"
 msgstr "Espereu"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr ""
 
 #: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
@@ -264,6 +249,21 @@ msgstr ""
 #: ../modules/create_user.py:231 ../modules/create_user.py:365
 msgid "Password empty"
 msgstr "Contrasenya buida"
+
+#: ../modules/create_user.py:375
+#, python-format
+msgid "Weak password: %s"
+msgstr "Contrasenya feble: %s"
+
+#: ../firstboot/loader.py:114
+#, python-format
+msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgstr "El mòdul %(module)s no conté l'atribut requerit %(attr)s; s'està ometent."
+
+#: ../modules/create_user.py:196
+#, python-format
+msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
+msgstr "S'han trobat errors en corregir els atributs en alguns fitxers en el directori d'inici per a %(user)s. Referiu-vos a %(path)s per conèixer quins fitxers han fallat."
 
 #~ msgid "Could not start any firstboot frontend."
 #~ msgstr "No s'ha pogut iniciar cap frontal de firstboot."
