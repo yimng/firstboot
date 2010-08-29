@@ -3,8 +3,8 @@
 # Greek translation for firstboot
 # Copyright (C) 2002 Nikos Charonitakis
 # reviewed from ta panta rei <ta_panta_rei@flashmail.com>
-#
-#
+# 
+# 
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2002, 2003, 2004.
 # Simos Xenitellis <simos74@gmx.net>, 2004.
 # Dimitris Michelinakis <dimitris@michelinakis.gr>, 2006.
@@ -15,89 +15,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
+"POT-Creation-Date: 2010-08-26 10:53+0200\n"
 "PO-Revision-Date: 2009-05-20 12:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Greek\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "Πρέπει να είστε υπερχρήστης για να εκτελέσετε το firstboot."
 
-#: ../progs/firstboot:163
-#: ../progs/firstboot:164
-msgid "Could not start any firstboot frontend."
-msgstr "Αδυναμία εκκίνησης του περιβάλλοντος firstboot."
-
-#: ../progs/firstboot:180
-#: ../progs/firstboot:181
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "Δε βρέθηκαν αρθρώματα για το firstboot."
 
-#: ../progs/firstboot:190
-#: ../progs/firstboot:191
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Αδυναμία δημιουργίας περιβάλοντος firstboot."
 
-#: ../firstboot/exceptionWindow.py:50
-#, python-format
-msgid "An error has occurred in the %s module."
-msgstr "Παρουσιάστηκε σφάλμα στο άρθρωμα %s."
-
-#: ../firstboot/exceptionWindow.py:51
-#, python-format
-msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
-msgstr ""
-"Καθώς υπάρχει πρόβλημα στο άρθρωμα %s, το firstboot \n"
-"δε θα φορτώσει αυτήν τη λειτουργική μονάδα και \n"
-"θα δοκιμάσει να εκτελέσει τα υπόλοιπα αρθρώματα."
-
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr "Παρουσιάστηκε σφάλμα στο firstboot."
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr "Μια και υπάρχει ένα πρόβλημα, το firstboot θα τερματίσει."
-
-#: ../firstboot/exceptionWindow.py:66
-#, python-format
-msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
-msgstr ""
-"Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος αποθηκεύτηκε στο %s \n"
-"Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
-
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"Παρακαλούμε στείλτε μια αναφορά σφάλματος για το 'firstboot' στο σύστημα \n"
-"καταγραφής σφαλμάτων της Red Hat στη σελίδα http://www.redhat.com/. \n"
-
-#: ../firstboot/interface.py:75
+#: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "Έγινε προσπάθεια για μετάβαση προς τα πίσω, αλλά το ιστορικό είναι άδειο."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83
-#: ../firstboot/interface.py:162
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "_Τέλος"
 
-#: ../firstboot/interface.py:183
+#: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Για να εφαρμοστούν κάποιες από τις επιλογές που έχετε κάνει πρέπει να γίνει τώρα επανεκκίνηση του συστήματος."
 
@@ -114,48 +65,40 @@ msgstr "_Μπροστά"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Το άρθρωμα %s δεν έχει ρυθμίσει το γραφικό του περιβάλλον, γίνεται απομάκρυνση."
 
-#: ../firstboot/interface.py:353
-#: ../firstboot/interface.py:354
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr "Το moveToPage πρέπει να λάβει ένα τίτλο αρθρώματος ή αριθμό σελίδας."
 
-#: ../firstboot/interface.py:438
+#: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Αδυναμία δημιουργίας καταλόγου στιγμιοτύπων οθόνης, γίνεται παράκαμψη."
 
-#: ../firstboot/interface.py:478
-#: ../firstboot/interface.py:479
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Δεν υπάρχει άρθρωμα με τίτλο %s."
 
-#: ../firstboot/loader.py:90
+#: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "Προσπέραση παλιού αρθρώματος %s που δεν έχει ενημερωθεί."
 
-#: ../firstboot/loader.py:102
+#: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "Το άρθρωμα %s δεν περιέχει μια κλάση με όνομα moduleClass; γίνεται παράκαμψη."
 
-#: ../firstboot/loader.py:113
-#, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
+#: ../firstboot/loader.py:114
+#, fuzzy, python-format
+msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
 msgstr "Το άρθρωμα %s δεν διαθέτει το κατάλληλο όρισμα %s; γίνεται παράκαμψη."
 
-#: ../firstboot/module.py:187
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr "Αδυναμία φόρτωσης pixmap %s για το άρθρωμα %s."
-
-#: ../firstboot/moduleset.py:93
+#: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Το άρθρωμα %s δεν έχει ρυθμίσει το γραφικό του περιβάλλον, γίνεται απομάκρυνση."
 
-#: ../modules/additional_cds.py:43
-#: ../modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "Επιπρόσθετα CD"
 
@@ -189,90 +132,97 @@ msgstr "Δεν εντοπίστηκε CD-ROM.  Παρακαλώ εισάγετε
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Το πρόγραμμα autorun δεν εντοπίστηκε στο CD. Πατήστε \"Εντάξει\" για να συνεχίσετε."
 
-#: ../modules/create_user.py:41
-#: ../modules/create_user.py:42
+#: ../modules/create_user.py:42 ../modules/create_user.py:43
 msgid "Create User"
 msgstr "Δημιουργία χρήστη"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:84
 msgid "You must create a user account for this system."
 msgstr "Πρέπει να δημιουργήσετε έναν λογαριασμό χρήστη για αυτό το σύστημα."
 
-#: ../modules/create_user.py:94
+#: ../modules/create_user.py:95
 msgid "You must enter and confirm a password for this user."
 msgstr "Πρέπει να εισάγετε και να επιβεβαιώσετε έναν κωδικό για αυτό τον χρήστη."
 
-#: ../modules/create_user.py:101
+#: ../modules/create_user.py:102
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Τα συνθηματικά δεν ταιριάζουν. Παρακαλώ εισάγετε το συνθηματικό ξανά."
 
-#: ../modules/create_user.py:113
+#: ../modules/create_user.py:114
 #, python-format
 msgid "The username '%s' is a reserved system account.  Please specify another username."
 msgstr "Το όνομα χρήστη '%s' είναι δεσμευμένος λογαριασμός συστήματος. Παρακαλώ εισάγετε ένα άλλο."
 
-#: ../modules/create_user.py:132
+#: ../modules/create_user.py:133
 #, python-format
 msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
 msgstr "Ο κατάλογος για το χρήστη %s υπάρχει ήδη. Θέλετε να συνεχίσετε, κάνοντας τον νέο χρήστη ιδιοκτήτη του καταλόγου και των περιεχόμενων του; Αν ναι, θα χρειαστεί λίγος χρόνος για να επαναπροσδιοριστούν οι άδειες και τυχόν ετικέτες SELinux. Θέλετε να χρησιμοποιήσετε ξανά αυτό τον αρχικό κατάλογο; Αν όχι, παρακαλώ επιλέξτε διαφορετικό όνομα χρήστη."
 
-#: ../modules/create_user.py:175
+#: ../modules/create_user.py:176
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr "Διορθώνονται τα ορίσματα στον αρχικό κατάλογο του χρήστη %s. Μπορεί να χρειαστούν μερικά λεπτά."
 
-#: ../modules/create_user.py:195
-#, python-format
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %s.  Please refer to %s for which files caused the errors."
+#: ../modules/create_user.py:196
+#, fuzzy, python-format
+msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
 msgstr "Παρουσιάστηκαν προβλήματα στη διόρθωση των ορισμάτων στον αρχικό κατάλογο του χρήστη %s. Ανατρέξτε στο %s για λίστα με τα αρχεία που προκάλεσαν το πρόβλημα."
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
 msgstr "Συνιστάται να δημιουργήσετε ένα 'χρήστη' για την κανονική (μη διαχειριστική) χρήση του συστήματός σας. Για να δημιουργήσετε ένα 'χρήστη', παρακαλώ συμπληρώστε τις παρακάτω πληροφορίες."
 
-#: ../modules/create_user.py:231
+#: ../modules/create_user.py:231 ../modules/create_user.py:365
+#, fuzzy
+msgid "Password empty"
+msgstr "_Συνθηματικό:"
+
+#: ../modules/create_user.py:243
 msgid "_Username:"
 msgstr "Ό_νομα χρήστη:"
 
-#: ../modules/create_user.py:238
+#: ../modules/create_user.py:250
 msgid "Full Nam_e:"
 msgstr "Πλήρ_ες όνομα:"
 
-#: ../modules/create_user.py:245
+#: ../modules/create_user.py:257
 msgid "_Password:"
 msgstr "_Συνθηματικό:"
 
-#: ../modules/create_user.py:252
+#: ../modules/create_user.py:264
 msgid "Confir_m Password:"
 msgstr "Επιβεβαίωση συνθη_ματικού:"
 
-#: ../modules/create_user.py:261
+#: ../modules/create_user.py:273
 msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
 msgstr "Αν χρειάζεται να χρησιμοποιήσετε δικτυακή σύνδεση , σαν τα  Kerberos ή NIS, παρακαλώ επιλέξτε το πλήκτρο Χρήση δικτυακής σύνδεσης."
 
-#: ../modules/create_user.py:270
+#: ../modules/create_user.py:282
 msgid "Use Network _Login..."
 msgstr "Χρήση δικτυακής σύν_δεσης..."
 
-#: ../modules/create_user.py:308
+#: ../modules/create_user.py:338
 msgid "Please wait"
 msgstr "Παρακαλώ περιμένετε"
 
-#: ../modules/date.py:40
-#: ../modules/date.py:41
+#: ../modules/create_user.py:379
+#, fuzzy
+msgid "Password OK"
+msgstr "_Συνθηματικό:"
+
+#: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
 msgstr "Ημερομηνία και ώρα"
 
-#: ../modules/date.py:62
+#: ../modules/date.py:61
 msgid "Please set the date and time for the system."
 msgstr "Παρακαλώ ορίστε την ημερομηνία και την ώρα του συστήματος."
 
-#: ../modules/eula.py:35
-#: ../modules/eula.py:36
+#: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Πληροφορίες άδειας χρήσης"
 
-#: ../modules/eula.py:53
+#: ../modules/eula.py:45
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
@@ -282,12 +232,11 @@ msgstr ""
 "\n"
 "Αν θέλετε να καταλάβετε ποιοι είναι οι περιορισμοί αυτοί, παρακαλούμε επισκεφτείτε το http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-#: ../modules/eula.py:64
+#: ../modules/eula.py:60
 msgid "Understood, please proceed."
 msgstr "Κατανοητό, παρακαλώ συνεχίστε."
 
-#: ../modules/welcome.py:35
-#: ../modules/welcome.py:36
+#: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "Καλώς ήλθατε"
 
@@ -295,16 +244,73 @@ msgstr "Καλώς ήλθατε"
 msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
 msgstr "Το σύστημα σας θα είναι έτοιμο για χρήση αμέσως μετά την ολοκλήρωση μερικών ακόμη βημάτων.  Το εργαλείο ρύθμισης θα σας οδηγήσει στην εκτέλεση μιας βασικής ρύθμισης.  Παρακαλούμε επιλέξτε \"Μπροστά\" στην κάτω δεξιά γωνία για να συνεχίσετε"
 
+#: ../modules/create_user.py:300
+#, fuzzy
+msgid "_Advanced..."
+msgstr "_Για προχωρημένους"
+
+#: ../modules/create_user.py:375
+#, python-format, fuzzy
+msgid "Weak password: %s"
+msgstr "Αδύναμο συνθηματικό:%s"
+
+#: ../modules/create_user.py:290
+#, fuzzy
+msgid "If you need more control when creating the user (specifying home directory, and/or UID), please click the Advanced button."
+msgstr "Αν επιθυμείτε περισσότερο έλεγχο στην δημιουργία χρήστη(ορισμός καταλόγου χρήστη,και/ή UID),κάντε κλικ στο κουμπί Για προχωρημένους"
+
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format, fuzzy
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"Σφάλμα κατά την φόρτωση του module %(module)s:\n"
+"%(error)s"
+
+#~ msgid "Could not start any firstboot frontend."
+#~ msgstr "Αδυναμία εκκίνησης του περιβάλλοντος firstboot."
+
+#~ msgid "An error has occurred in the %s module."
+#~ msgstr "Παρουσιάστηκε σφάλμα στο άρθρωμα %s."
+
 #~ msgid ""
-#~ "It is highly recommended that a personal user account be created.  If you "
-#~ "continue without an account, you can only log in with the root account, "
-#~ "which is reserved for administrative use only."
+#~ "Since there is a problem with the %s module,\n"
+#~ "firstboot will not load this module and will\n"
+#~ "attempt to run the remaining modules."
 #~ msgstr ""
-#~ "Σας συνιστούμε να δημιουργήσετε ένα λογαριασμό χρήστη. Αν συνεχίσετε "
-#~ "χωρίς αυτό, θα μπορείτε να συνδεθείτε μόνο με το λογαριασμό υπερχρήσρη, ο "
-#~ "οποίος είναι προορισμένος μόγο για λειτουργίες διαχείρησης."
+#~ "Καθώς υπάρχει πρόβλημα στο άρθρωμα %s, το firstboot \n"
+#~ "δε θα φορτώσει αυτήν τη λειτουργική μονάδα και \n"
+#~ "θα δοκιμάσει να εκτελέσει τα υπόλοιπα αρθρώματα."
+
+#~ msgid "An error has occurred in firstboot."
+#~ msgstr "Παρουσιάστηκε σφάλμα στο firstboot."
+
+#~ msgid "Since there is a problem, firstboot will exit."
+#~ msgstr "Μια και υπάρχει ένα πρόβλημα, το firstboot θα τερματίσει."
+
+#~ msgid ""
+#~ "A copy of the debug output has been saved to %s\n"
+#~ "Be sure to attach that file to the bug report.\n"
+#~ msgstr ""
+#~ "Ένα αντίγραφο καταγραφής λεπτομερειών του σφάλματος αποθηκεύτηκε στο %s \n"
+#~ "Μην ξεχάσετε να στείλετε αυτό το αντίγραφο μαζί με την αναφορά σας.  \n"
+
+#~ msgid ""
+#~ "Please file a bug against 'firstboot' in the Red Hat\n"
+#~ "bug tracking system at http://www.redhat.com/bugzilla.\n"
+#~ msgstr ""
+#~ "Παρακαλούμε στείλτε μια αναφορά σφάλματος για το 'firstboot' στο σύστημα \n"
+#~ "καταγραφής σφαλμάτων της Red Hat στη σελίδα http://www.redhat.com/. \n"
+
+#~ msgid "Unable to load pixmap %s for module %s."
+#~ msgstr "Αδυναμία φόρτωσης pixmap %s για το άρθρωμα %s."
+
+#~ msgid "It is highly recommended that a personal user account be created.  If you continue without an account, you can only log in with the root account, which is reserved for administrative use only."
+#~ msgstr "Σας συνιστούμε να δημιουργήσετε ένα λογαριασμό χρήστη. Αν συνεχίσετε χωρίς αυτό, θα μπορείτε να συνδεθείτε μόνο με το λογαριασμό υπερχρήσρη, ο οποίος είναι προορισμένος μόγο για λειτουργίες διαχείρησης."
+
 #~ msgid "_Continue"
 #~ msgstr "_Συνέχεια"
+
 #~ msgid "Create _account"
 #~ msgstr "Δημιουργία _λογαριασμού"
-
