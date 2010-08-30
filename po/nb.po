@@ -1,14 +1,14 @@
 # Norwegian (bokmål) translation of firstboot.
 # Copyright © 2002 Free Software Foundation.
-# Kjartan Maraas <kmaraas@gnome.org>, 2002-2009.
+# Kjartan Maraas <kmaraas@gnome.org>, 2002-2010.
 # Espen Stefansen <espenas@gmail.com>, 2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot 1.107\n"
-"Report-Msgid-Bugs-To:\n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-08-08 12:29+0200\n"
+"Project-Id-Version: firstboot 1.112\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-26 10:53+0200\n"
+"PO-Revision-Date: 2010-08-30 17:45+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@broadpark.no>\n"
 "Language-Team: Norwegian/Bokmaal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -19,70 +19,25 @@ msgstr ""
 msgid "You must be root to run firstboot."
 msgstr "Du må være root for å kjøre firstboot."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
-msgid "Could not start any firstboot frontend."
-msgstr "Kunne ikke starte visning av firstboot."
-
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "Ingen moduler funnet for firstboot."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Kunne ikke lage firstboot-grensesnitt."
 
-#: ../firstboot/exceptionWindow.py:50
-#, python-format
-msgid "An error has occurred in the %s module."
-msgstr "En feil har oppstått i modulen %s."
-
-#: ../firstboot/exceptionWindow.py:51
-#, python-format
-msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
-msgstr ""
-"Siden det er problemer med modulen %s vil denne\n"
-"ikke bli lastet. Forsøker å kjøre de gjenværende\n"
-"modulene."
-
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr "En feil har oppstått i firstboot."
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr "Firstboot avsluttes pga problemer."
-
-#: ../firstboot/exceptionWindow.py:66
-#, python-format
-msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
-msgstr ""
-"En kopi av feilmelding er lagret som %s.\n"
-"Husk å legge ved denne i feilrapporten.\n"
-
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"Send inn en feilmelding for \"firstboot\" i Red Hats \n"
-"feildatabase: http://www.redhat.com/bugzilla\n"
-
-#: ../firstboot/interface.py:75
+#: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "Prøvde å gå tilbake, men historikken var tom."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "_Fullfør"
 
-#: ../firstboot/interface.py:183
+#: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Systemet må nå starte på nytt for at endringene dine skal tre i kraft."
 
@@ -99,40 +54,45 @@ msgstr "_Framover"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Modul %s satte ikke opp brukergrensesnitt. Fjerner."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage må gis et navn på en modul eller et sidenummer."
 
-#: ../firstboot/interface.py:438
+#: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Kan ikke lage katalog for skjermdump; hopper over."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Det finnes ingen modul med navn %s."
 
-#: ../firstboot/loader.py:90
+#: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "Hopper over gammel modul som ikke har blitt oppdatert %s."
 
-#: ../firstboot/loader.py:102
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"Feil under lasting av modul %(module)s:\n"
+"%(error)s"
+
+#: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "Modul %s inneholder ikke en klasse med navn moduleClass; hopper over."
 
-#: ../firstboot/loader.py:113
+#: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "Modul %s inneholder ikke nødvendig attributt %s; hopper over."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgstr "Modul %(module)s inneholder ikke nødvendig attributt %(attr)s; hopper over."
 
-#: ../firstboot/module.py:187
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr "Kan ikke laste bilde %s for modul %s."
-
-#: ../firstboot/moduleset.py:93
+#: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Modul %s satte ikke opp sitt brukergrensesnitt. Fjerner den."
@@ -190,23 +150,23 @@ msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Programmet autorun kan ikke finnes på CDen. Klikk «OK» for å fortsette."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
+#: ../modules/create_user.py:42 ../modules/create_user.py:43
 msgid "Create User"
 msgstr "Lag bruker"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:84
 msgid "You must create a user account for this system."
 msgstr "Du må lage en brukerkonto for dette systemet."
 
-#: ../modules/create_user.py:94
+#: ../modules/create_user.py:95
 msgid "You must enter and confirm a password for this user."
 msgstr "Du må oppgi og bekrefte et passord for denne brukeren."
 
-#: ../modules/create_user.py:101
+#: ../modules/create_user.py:102
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Passordene er ikke like. Vennligst oppgi passord på nytt."
 
-#: ../modules/create_user.py:113
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
@@ -215,7 +175,7 @@ msgstr ""
 "Brukernavnet «%s» er reservert for en systemkonto. Vennligst oppgi et annet "
 "brukernavn."
 
-#: ../modules/create_user.py:132
+#: ../modules/create_user.py:133
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
@@ -223,45 +183,58 @@ msgid ""
 "so may take a while to reset permissions and any SELinux labels.  Would you "
 "like to reuse this home directory?  If not, please choose a different "
 "username."
-msgstr "En hjemmekatalog eksisterer allerede for bruker %s. Vil du fortsette med å gjøre den nye brukeren til eier av denne hjemmekatalogen med alt innhold? Det kan i så fall ta litt tid å sette rettigheter og SELinux-etiketter på nytt. Hvis ikke må du velge et annet brukernavn."
+msgstr ""
+"En hjemmekatalog eksisterer allerede for bruker %s. Vil du fortsette med å "
+"gjøre den nye brukeren til eier av denne hjemmekatalogen med alt innhold? "
+"Det kan i så fall ta litt tid å sette rettigheter og SELinux-etiketter på "
+"nytt. Hvis ikke må du velge et annet brukernavn."
 
-#: ../modules/create_user.py:175
+#: ../modules/create_user.py:176
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "Setter attributter for hjemmekatalogen for %s. Dette kan ta noen minutter."
+msgstr ""
+"Setter attributter for hjemmekatalogen for %s. Dette kan ta noen minutter."
 
-#: ../modules/create_user.py:195
+#: ../modules/create_user.py:196
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
-msgstr "Det oppsto problemer under setting av attributter på noen filer i hjemmekatalogen for %s. Vennligst sjekk %s for å se hvilke filer som forårsaket feilene."
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr "Det oppsto problemer under setting av attributter på noen filer i hjemmekatalogen for %(user)s. Vennligst sjekk %(path)s for å se hvilke filer som forårsaket feilene."
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
-msgstr "Du må lage et «brukernavn» for vanlig (ikke-administrativ) bruk av systemet. For å opprette et «brukernavn» for systemet må du fylle ut informasjonen som etterspørres under."
+msgstr ""
+"Du må lage et «brukernavn» for vanlig (ikke-administrativ) bruk av systemet. "
+"For å opprette et «brukernavn» for systemet må du fylle ut informasjonen som "
+"etterspørres under."
 
-#: ../modules/create_user.py:231
+#: ../modules/create_user.py:231 ../modules/create_user.py:365
+msgid "Password empty"
+msgstr "Tomt passord"
+
+#: ../modules/create_user.py:243
 msgid "_Username:"
 msgstr "Br_ukernavn:"
 
-#: ../modules/create_user.py:238
+#: ../modules/create_user.py:250
 msgid "Full Nam_e:"
 msgstr "Fullt na_vn:"
 
-#: ../modules/create_user.py:245
+#: ../modules/create_user.py:257
 msgid "_Password:"
 msgstr "_Passord:"
 
-#: ../modules/create_user.py:252
+#: ../modules/create_user.py:264
 msgid "Confir_m Password:"
 msgstr "Bekreft pass_ord:"
 
-#: ../modules/create_user.py:261
+#: ../modules/create_user.py:273
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -269,19 +242,38 @@ msgstr ""
 "Klikk på knappen «Bruk nettverkspålogging» hvis du må bruke "
 "nettverksautentisering slik som Kerberos eller NIS."
 
-#: ../modules/create_user.py:270
+#: ../modules/create_user.py:282
 msgid "Use Network _Login..."
 msgstr "Bruk nettverkspå_logging..."
 
-#: ../modules/create_user.py:308
+#: ../modules/create_user.py:290
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr "Hvis du trenger mer kontroll når du oppretter bruker (oppgi hjemmekatalog, og/eller UID) kan du klikke på Avansert-knappen."
+
+#: ../modules/create_user.py:300
+msgid "_Advanced..."
+msgstr "_Avansert..."
+
+#: ../modules/create_user.py:338
 msgid "Please wait"
 msgstr "Vennligst vent"
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../modules/create_user.py:375
+#, python-format
+msgid "Weak password: %s"
+msgstr "Svakt passord: %s"
+
+#: ../modules/create_user.py:379
+msgid "Password OK"
+msgstr "Passord OK"
+
+#: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
 msgstr "Dato og klokkeslett"
 
-#: ../modules/date.py:62
+#: ../modules/date.py:61
 msgid "Please set the date and time for the system."
 msgstr "Vennligst sett dato og klokkeslett for systemet."
 
@@ -289,7 +281,7 @@ msgstr "Vennligst sett dato og klokkeslett for systemet."
 msgid "License Information"
 msgstr "Lisensinformasjon"
 
-#: ../modules/eula.py:53
+#: ../modules/eula.py:45
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -315,7 +307,7 @@ msgstr ""
 "Hvis du vil vite mer om hva disse restriksjonene er, vennligst besøk http://"
 "fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-#: ../modules/eula.py:64
+#: ../modules/eula.py:60
 msgid "Understood, please proceed."
 msgstr "Forstått, vennligst fortsett."
 
