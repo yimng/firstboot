@@ -1,25 +1,23 @@
-# translation of firstboot.master.po to
 # Translation of firstboot to Traditional Chinese
 # Copyright (C) 2002 Red Hat Inc.
-#
 # Ben Wu <hpwu@redhat.com>, 2002,2003, 2004.
 # Chester Cheng <ccheng@redhat.com>, 2004, 2005, 2006, 2007, 2008.
 # Waika Liu <wliu@redhat.com>, 2005.
 # Walter Cheuk <wwycheuk@netvigator.com>, 2005.
 # Terry Chuang <tchuang@redhat.com>, 2008, 2009.
+# Wei-Lun Chao <chaoweilun@gmail.com>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-04-01 09:23+1000\n"
-"Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
+"PO-Revision-Date: 2010-09-27 22:23+1000\n"
+"Last-Translator: Wei-Lun Chao <chaoweilun@gmail.com>\n"
 "Language-Team:  <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../progs/firstboot:140
@@ -87,7 +85,7 @@ msgstr "嘗試復原，不過歷史卻是空的。"
 #. button's label back to normal.
 #: ../firstboot/interface.py:83 ../firstboot/interface.py:162
 msgid "_Finish"
-msgstr "完成（_F）"
+msgstr "完成(_F)"
 
 #: ../firstboot/interface.py:183
 msgid "The system must now reboot for some of your selections to take effect."
@@ -95,11 +93,11 @@ msgstr "為了讓您的選擇生效，系統現在必須重新啟動。"
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
-msgstr "上一步（_B）"
+msgstr "上一步(_B)"
 
 #: ../firstboot/interface.py:250
 msgid "_Forward"
-msgstr "下一步（_F）"
+msgstr "下一步(_F)"
 
 #: ../firstboot/interface.py:277
 #, python-format
@@ -173,7 +171,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"要在英特爾（Intel）Itanium2 架構下支援 32 位元的應用程式，您現在必須從 "
+"要在英特爾 (Intel) Itanium2 架構下支援 32 位元的應用程式，您現在必須從 "
 "Extras 光碟中安裝 Intel Execution Layer 套件。"
 
 #: ../modules/additional_cds.py:73
@@ -241,34 +239,34 @@ msgid ""
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"您必須建立一個使用於系統一般（非管理用）情況下的 '用戶名稱'。若要建立一"
+"您必須建立一個使用於系統一般 (非管理用) 情況下的 '用戶名稱'。若要建立一"
 "個系統 '用戶名稱'，請提供下列所要求的資訊。"
 
 #: ../modules/create_user.py:231
 msgid "_Username:"
-msgstr "用戶名稱（_U）："
+msgstr "用戶名稱(_U)："
 
 #: ../modules/create_user.py:238
 msgid "Full Nam_e:"
-msgstr "全名（_e）："
+msgstr "全名(_E)："
 
 #: ../modules/create_user.py:245
 msgid "_Password:"
-msgstr "密碼（_P）："
+msgstr "密碼(_P)："
 
 #: ../modules/create_user.py:252
 msgid "Confir_m Password:"
-msgstr "確認密碼（_m）："
+msgstr "確認密碼(_M)："
 
 #: ../modules/create_user.py:261
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "若您需要使用網路驗證（例如 kerberos 或是 NIS）請按下使用網路登錄的按鈕。"
+msgstr "若您需要使用網路驗證 (例如 kerberos 或是 NIS) 請按下使用網路登錄的按鈕。"
 
 #: ../modules/create_user.py:270
 msgid "Use Network _Login..."
-msgstr "使用網路登錄（_L）..."
+msgstr "使用網路登錄(_L)…"
 
 #: ../modules/create_user.py:308
 msgid "Please wait"
@@ -301,7 +299,7 @@ msgid ""
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
 "謝謝您安裝 Fedora。Fedora 是軟體套件的集成，每個套件都有自己的授權。本集成的"
-"授權依據為 GNU 一般公眾版權的第二版（GNU General Public Licence 2），並不限制"
+"授權依據為 GNU 一般公眾版權的第二版 (GNU General Public Licence 2) ，並不限制"
 "使用者使用、複製、或修改原始碼。然而，重新散佈原有或修改過的原始碼，必須遵循"
 "一些限制或義務。這些限制或義務均從屬於散佈之授權、商標、以及出口限制。\n"
 "\n"
