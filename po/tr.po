@@ -63,15 +63,6 @@ msgstr ""
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 
-#: ../firstboot/interface.py:432
-msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
-
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
-#, python-format
-msgid "No module exists with the title %s."
-msgstr ""
-
 #: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
@@ -133,10 +124,6 @@ msgstr "Bir CD-ROM algılanamadı.  Lütfen sürücüye bir CD-ROM yerleştirin 
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Otomaik başlama programı CD'de  bulunamadı. Devam etmek için \"Tamam\"a tıklayın."
 
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-
 #: ../modules/create_user.py:114
 #, python-format
 msgid "The username '%s' is a reserved system account.  Please specify another username."
@@ -159,14 +146,6 @@ msgstr ""
 
 #: ../modules/create_user.py:216
 msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr ""
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr ""
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
 msgstr ""
 
 #: ../modules/create_user.py:250
@@ -258,6 +237,27 @@ msgstr "Bu sistem için bir kullanıcı hesabı oluşturmanız gerekir."
 #: ../modules/create_user.py:95
 msgid "You must enter and confirm a password for this user."
 msgstr "Bu kullanıcı için bir parola girmeli ve onaylamalısınız."
+
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#, python-format
+msgid "No module exists with the title %s."
+msgstr ""
+
+#: ../firstboot/interface.py:432
+msgid "Unable to create the screenshot dir; skipping."
+msgstr "Ekran görüntüsü dizini oluşturulamadı; atlanıyor."
+
+#: ../modules/create_user.py:102
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Parolalar eşleşmiyor. Lütfen parolayı tekrar giriniz."
+
+#: ../modules/create_user.py:243
+msgid "_Username:"
+msgstr "_Kullanıcı Adı:"
+
+#: ../modules/create_user.py:231 ../modules/create_user.py:365
+msgid "Password empty"
+msgstr "Parola boş"
 
 #~ msgid "An error has occurred in the %s module."
 #~ msgstr "%s modülünde bir hata oluştu."
