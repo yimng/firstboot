@@ -8,88 +8,44 @@
 # Marcel Telka <marcel@telka.sk>, 2004, 2005.
 # Mike Karas <zoliqe@gmail.com>, 2007.
 # Pavol Šimo <palo.simo@gmail.com>, 2008, 2009.
-# Ondrej Šulek <feonsu@gmail.com>, 2008.
+# Ondrej Šulek <feonsu@gmail.com>, 2008, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-03-24 21:43+0100\n"
-"Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
+"POT-Creation-Date: 2010-08-26 10:53+0200\n"
+"PO-Revision-Date: 2010-09-29 18:48+0200\n"
+"Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.1\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "Len správca môže spustiť firstboot."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
-msgid "Could not start any firstboot frontend."
-msgstr "Nepodarilo sa spustiť žiadne rozhranie pre firstboot."
-
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "Nenašli sa žiadne moduly pre firstboot."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
-msgstr "Nepodarilo sa vytvoriť žiadne rozhranie pre firstboot"
+msgstr "Nepodarilo sa vytvoriť žiadne rozhranie pre firstboot."
 
-#: ../firstboot/exceptionWindow.py:50
-#, python-format
-msgid "An error has occurred in the %s module."
-msgstr "V module %s sa vyskytla chyba."
-
-#: ../firstboot/exceptionWindow.py:51
-#, python-format
-msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
-msgstr ""
-"Pretože s modulom %s je problém,\n"
-"program firstboot nebude načítavať tento modul\n"
-"a pokúsi sa spustiť zostávajúce moduly."
-
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr "Pri behu firstboot sa vyskytla chyba."
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr "Pretože nastala chyba, firstboot teraz skončí."
-
-#: ../firstboot/exceptionWindow.py:66
-#, python-format
-msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
-msgstr ""
-"Kópia ladiaceho výstupu bola uložená do %s \n"
-"Prosím, nezabudnite k hláseniu o chybe pripojiť tento súbor.\n"
-
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"Prosím vyplňte hlásenie o chybe pre 'firstboot' do systému\n"
-"pre sledovanie chýb Red Hat na http://www.redhat.com/bugzilla.\n"
-
-#: ../firstboot/interface.py:75
+#: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "Pokus o krok späť, ale história je prázdna."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "_Dokončiť"
 
-#: ../firstboot/interface.py:183
+#: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Aby sa prejavili niektoré z vašich volieb, systém musí byť reštartovaný."
@@ -107,40 +63,45 @@ msgstr "Ď_alej"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Modul %s nenastavil svoje rozhranie, odstránený."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage musí dostať nadpis modulu alebo číslo stránky."
 
-#: ../firstboot/interface.py:438
+#: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Nepodarilo sa vytvoriť adresár snímok obrazovky; vynechané."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Modul s nadpisom %s neexistuje."
 
-#: ../firstboot/loader.py:90
+#: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "Starý neaktualizovaný modul %s bude preskočený."
 
-#: ../firstboot/loader.py:102
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"Chyba pri nahrávaní modulu %(module)s:\n"
+"%(error)s"
+
+#: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "Modul %s neobsahuje triedu s názvom moduleClass; vynechaný."
 
-#: ../firstboot/loader.py:113
+#: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "Modul %s neobsahuje povinný atribút %s; vynechaný."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgstr "Modul %(module)s neobsahuje požadovaný atribút %(attr)s; vynechaný."
 
-#: ../firstboot/module.py:187
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr "Nepodarilo na načítať obrázok %s pre modul %s."
-
-#: ../firstboot/moduleset.py:93
+#: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "Modul %s nenastavil svoje rozhranie; odstránený."
@@ -198,32 +159,33 @@ msgid ""
 msgstr ""
 "Program autorun nebol nájdený na CD. Pre pokračovanie kliknite na \"Ok\"."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
+#: ../modules/create_user.py:42 ../modules/create_user.py:43
 msgid "Create User"
 msgstr "Vytvoriť používateľa"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:84
 msgid "You must create a user account for this system."
-msgstr "Pre tento systém musíte vytvoriť používateľský účet."
+msgstr "Pre tento systém si musíte vytvoriť používateľský účet."
 
-#: ../modules/create_user.py:94
+#: ../modules/create_user.py:95
 msgid "You must enter and confirm a password for this user."
 msgstr "Pre tohto používateľa musíte zadať a potvrdiť heslo."
 
-#: ../modules/create_user.py:101
+#: ../modules/create_user.py:102
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "Heslá sa nezhodujú.  Prosím, zadajte heslo znova."
 
-#: ../modules/create_user.py:113
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
-"Používateľské meno '%s' je rezervovaný systémový účet. Prosím, zadajte iné "
+"Používateľské meno '%s' je rezervované pre systémový účet. Prosím, zadajte "
+"iné "
 "používateľské meno."
 
-#: ../modules/create_user.py:132
+#: ../modules/create_user.py:133
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
@@ -234,27 +196,29 @@ msgid ""
 msgstr ""
 "Domovský priečinok používateľa %s už existuje. Želáte si pokračovať s tým, "
 "že sa nový používateľ stane vlastníkom tohto priečinka s celým jeho obsahom? "
-"Toto môže chvíľu trvať, kým sa opätovne nastavia práva a prípadné SELinux značky. "
-"Želáte si tento domovský priečinok znovu použiť? Ak nie, zvoľte, prosím, iné "
-"používateľské meno."
+"Toto môže chvíľu trvať, kým sa opätovne nastavia práva a prípadné SELinux "
+"značky. Želáte si tento domovský priečinok znovu použiť? Ak nie, zvoľte, "
+"prosím, iné používateľské meno."
 
-#: ../modules/create_user.py:175
+#: ../modules/create_user.py:176
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
 "Opravujú sa atribúty domovského priečinka pre %s.  Môže to pár minút trvať."
 
-#: ../modules/create_user.py:195
+#: ../modules/create_user.py:196
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
 msgstr ""
-"Pri oprave atribútov domovského priečinka pre %s sa vyskytli problémy s "
-"niektorými súbormi.  Na zistenie, ktoré súbory spôsobili chyby, pozrite si, prosím, %s."
+"Vyskytli sa problémy s opravou atribútov u niektorých súboroch v domovskom "
+"adresári %(user)s.  Prosím, skontrolujte adresár %(path)s na zistenie, ktoré "
+"súbory spôsobili chyby."
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
@@ -264,23 +228,27 @@ msgstr ""
 "použitie vášho systému. Na vytvorenie 'používateľského mena' v systéme "
 "vyplňte, prosím, nižšie požadované informácie."
 
-#: ../modules/create_user.py:231
+#: ../modules/create_user.py:231 ../modules/create_user.py:365
+msgid "Password empty"
+msgstr "Prázdne heslo"
+
+#: ../modules/create_user.py:243
 msgid "_Username:"
 msgstr "Po_užívateľské meno:"
 
-#: ../modules/create_user.py:238
+#: ../modules/create_user.py:250
 msgid "Full Nam_e:"
 msgstr "Celé _meno:"
 
-#: ../modules/create_user.py:245
+#: ../modules/create_user.py:257
 msgid "_Password:"
 msgstr "_Heslo:"
 
-#: ../modules/create_user.py:252
+#: ../modules/create_user.py:264
 msgid "Confir_m Password:"
 msgstr "P_otvrdenie hesla:"
 
-#: ../modules/create_user.py:261
+#: ../modules/create_user.py:273
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -288,19 +256,40 @@ msgstr ""
 "Ak chcete použiť sieťové overovanie, ako Kerberos alebo NIS, kliknite, "
 "prosím, na tlačidlo Použiť sieťové prihlásenie."
 
-#: ../modules/create_user.py:270
+#: ../modules/create_user.py:282
 msgid "Use Network _Login..."
 msgstr "Použiť _sieťové prihlásenie..."
 
-#: ../modules/create_user.py:308
+#: ../modules/create_user.py:290
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Ak potrebujete upraviť ďalšie špecifické nastavenia (domovský adresár, UID), "
+"kliknite na tlačidlo Pokročilé."
+
+#: ../modules/create_user.py:300
+msgid "_Advanced..."
+msgstr "_Pokročilé..."
+
+#: ../modules/create_user.py:338
 msgid "Please wait"
 msgstr "Čakajte, prosím"
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../modules/create_user.py:375
+#, python-format
+msgid "Weak password: %s"
+msgstr "Slabé heslo: %s"
+
+#: ../modules/create_user.py:379
+msgid "Password OK"
+msgstr "Heslo OK"
+
+#: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
 msgstr "Dátum a čas"
 
-#: ../modules/date.py:62
+#: ../modules/date.py:61
 msgid "Please set the date and time for the system."
 msgstr "Prosím, nastavte pre tento systém dátum a čas."
 
@@ -308,7 +297,7 @@ msgstr "Prosím, nastavte pre tento systém dátum a čas."
 msgid "License Information"
 msgstr "Informácie o licencii"
 
-#: ../modules/eula.py:53
+#: ../modules/eula.py:45
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -322,7 +311,8 @@ msgid ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Ďakujeme za inštaláciu Fedory.  Fedora je zostavou softvéru, každý so svojou "
+"Ďakujeme, že ste si nainštalovali Fedoru.  Fedora je zostavou softvéru, "
+"každý so svojou "
 "vlastnou licenciou.  Zostava je k dispozícii pod GNU General Public License "
 "verzie 2.  Neexistujú žiadne obmedzenia na používanie, kopírovanie alebo "
 "modifikáciu tohto kódu.  Aj keď tu sú reštrikcie a záväzky, ktoré sa týkajú "
@@ -333,9 +323,9 @@ msgstr ""
 "Ak chcete týmto obmedzeniam dobre porozumieť, prosím navštívte http://"
 "fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-#: ../modules/eula.py:64
+#: ../modules/eula.py:60
 msgid "Understood, please proceed."
-msgstr "Pochopil som, prosím pokračovať."
+msgstr "Rozumiem, prosím pokračovať."
 
 #: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
@@ -348,9 +338,47 @@ msgid ""
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "Je potrebné urobiť ešte zopár krokov predtým, ako bude váš systém pripravený "
-"na použitie. Agent pre nastavenie vás teraz bude sprevádzať cez základnú "
-"konfiguráciu. Pre pokračovanie kliknite, prosím, na tlačidlo \"Ďalej\" v "
+"na použitie. Agent pre nastavenie vás teraz bude sprevádzať základnou "
+"konfiguráciou. Pre pokračovanie kliknite, prosím, na tlačidlo \"Ďalej\" v "
 "pravom dolnom rohu."
+
+#~ msgid "Could not start any firstboot frontend."
+#~ msgstr "Nepodarilo sa spustiť žiadne rozhranie pre firstboot."
+
+#~ msgid "An error has occurred in the %s module."
+#~ msgstr "V module %s sa vyskytla chyba."
+
+#~ msgid ""
+#~ "Since there is a problem with the %s module,\n"
+#~ "firstboot will not load this module and will\n"
+#~ "attempt to run the remaining modules."
+#~ msgstr ""
+#~ "Pretože s modulom %s je problém,\n"
+#~ "program firstboot nebude načítavať tento modul\n"
+#~ "a pokúsi sa spustiť zostávajúce moduly."
+
+#~ msgid "An error has occurred in firstboot."
+#~ msgstr "Pri behu firstboot sa vyskytla chyba."
+
+#~ msgid "Since there is a problem, firstboot will exit."
+#~ msgstr "Pretože nastala chyba, firstboot teraz skončí."
+
+#~ msgid ""
+#~ "A copy of the debug output has been saved to %s\n"
+#~ "Be sure to attach that file to the bug report.\n"
+#~ msgstr ""
+#~ "Kópia ladiaceho výstupu bola uložená do %s \n"
+#~ "Prosím, nezabudnite k hláseniu o chybe pripojiť tento súbor.\n"
+
+#~ msgid ""
+#~ "Please file a bug against 'firstboot' in the Red Hat\n"
+#~ "bug tracking system at http://www.redhat.com/bugzilla.\n"
+#~ msgstr ""
+#~ "Prosím vyplňte hlásenie o chybe pre 'firstboot' do systému\n"
+#~ "pre sledovanie chýb Red Hat na http://www.redhat.com/bugzilla.\n"
+
+#~ msgid "Unable to load pixmap %s for module %s."
+#~ msgstr "Nepodarilo na načítať obrázok %s pre modul %s."
 
 #~ msgid "Waiting for X server to start... log located in %s\n"
 #~ msgstr "Čakanie na štart X servera... záznam umiestnený v %s\n"
