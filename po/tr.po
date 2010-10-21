@@ -17,24 +17,24 @@ msgstr ""
 "Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-10-20 17:26+0200\n"
+"PO-Revision-Date: 2010-10-21 11:19+0200\n"
 "Last-Translator: Hasan Alp iNAN <hasanalpinan@gmail.com>\n"
 "Language-Team: Turkish <none>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Poedit 1.4.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../progs/firstboot:194
 #: ../progs/firstboot:195
 msgid "No firstboot modules were found."
-msgstr "İlk başlangıç modülleri bulunamadı."
+msgstr "Firstboot modülleri bulunamadı."
 
 #: ../progs/firstboot:205
 #: ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
-msgstr ""
+msgstr "Herhangi bir firstboot arayüzü oluşturulamadı"
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -62,12 +62,12 @@ msgstr "_İleri"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr ""
+msgstr "%s modülü kendi UI birimini kuramadı, kaldırılıyor."
 
 #: ../firstboot/interface.py:347
 #: ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
-msgstr ""
+msgstr "moveToPage mutlaka bir modül başlığı ya da sayfa numarası verilmelidir."
 
 #: ../firstboot/loader.py:87
 #, python-format
@@ -87,17 +87,17 @@ msgstr ""
 #: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
+msgstr "%s modülü moduleClass adında bir sınıf içermiyor; atlanıyor. "
 
 #: ../firstboot/loader.py:114
 #, python-format
 msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
-msgstr ""
+msgstr "%(module)s modülü gerekli %(attr)s özelliğini içermiyor; atlanıyor."
 
 #: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr ""
+msgstr "%s modülü kendi UI birimini kuramadı; kaldırılıyor."
 
 #: ../modules/additional_cds.py:43
 #: ../modules/additional_cds.py:44
@@ -140,27 +140,27 @@ msgid "The username '%s' is a reserved system account.  Please specify another u
 msgstr "'%s' kullanıcı adı bir sistem hesabı tarafından ayrılmış. Lütfen başka bir kullanıcı adı belirleyin."
 
 #: ../modules/create_user.py:133
-#, fuzzy, python-format
+#, python-format
 msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr "%s kullanıcısının ev dizini zaten mevcut. Yeni kullanıcıyı, bu dizinin ve tüm içeriğinin sahibi yaparak devam etmek istermisiniz? "
+msgstr "%s kullanıcı için bir ev dizini zaten mevcut. Yeni kullanıcıyı, bu dizinin ve tüm içeriğinin sahibi yaparak devam etmek istermisiniz? İzinleri ve her bir SELinux sınıflandırmasını sıfırlamak biraz zaman alabilir. Bu ev dizinini yeniden kullanmak ister misiniz? Eğer kullanmayacaksanız lütfen başka bir kullanıcı adı seçiniz."
 
 #: ../modules/create_user.py:176
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
+msgstr "%s için ev dizini üzerindeki nitelikleri tespit ediliyor. Bu işlem birkaç dakika sürebilir."
 
 #: ../modules/create_user.py:196
 #, python-format
 msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr ""
+msgstr "%(user)s için ev dizininde bazı dosyalar üzerinde yapılan nitelik tespitinde sorunlara rastlandı. Lütfen %(path)s bakarak hangi dosyaların hatalara neden olduğunu inceleyin."
 
 #: ../modules/create_user.py:216
 msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr ""
+msgstr "Sisteminizde genel kullanım için (yönetici olmayan) bir 'kullanıcı' oluşturmanız gerekmektedir. Bir sistem 'kullanısı' oluşturmak için, lütfen aşağıda istenen bilgileri veriniz."
 
 #: ../modules/create_user.py:250
 msgid "Full Nam_e:"
-msgstr "Tam İsim:"
+msgstr "Tam İsi_m:"
 
 #: ../modules/create_user.py:257
 msgid "_Password:"
@@ -168,11 +168,11 @@ msgstr "_Parola:"
 
 #: ../modules/create_user.py:264
 msgid "Confir_m Password:"
-msgstr "Parola (Tekrar):"
+msgstr "Parol_a (Tekrar):"
 
 #: ../modules/create_user.py:273
 msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr ""
+msgstr "Eğer ağ kimlik doğrulaması kullanmanız gerekiyorsa, Kerberos veya NIS gibi, lütfen Ağ Girişi Kullan düğmesine tıklayınız."
 
 #: ../modules/create_user.py:282
 msgid "Use Network _Login..."
@@ -197,7 +197,7 @@ msgstr "Zayıf parola: %s"
 
 #: ../modules/create_user.py:379
 msgid "Password OK"
-msgstr "Parola TAMAM"
+msgstr "Parola Tamam"
 
 #: ../modules/date.py:39
 #: ../modules/date.py:40
@@ -225,7 +225,7 @@ msgstr ""
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Anlaşıldı, lütfen devam edin."
 
 #: ../modules/welcome.py:35
 #: ../modules/welcome.py:36
@@ -238,7 +238,7 @@ msgstr "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bi
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "İlk başlangıcı çalıştırmak için root olmalısınız."
+msgstr "Firstboot'u çalıştırmak için root olmalısınız."
 
 #: ../modules/create_user.py:42
 #: ../modules/create_user.py:43
@@ -257,7 +257,7 @@ msgstr "Bu kullanıcı için bir parola girmeli ve onaylamalısınız."
 #: ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
-msgstr ""
+msgstr "%s adıyla bir modül yok."
 
 #: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
