@@ -64,7 +64,7 @@ class moduleClass(Module):
 	label.set_size_request(500, -1)
 	self.vbox.pack_start(label, False, True, padding=20)
 
-	self.scd = scdMainWindow(firstboot=True, showPages=["datetime", "ntp"])
+	self.scd = scdMainWindow(firstboot=True, showPages=["datetime"])
         self.vbox.pack_start(self.scd.firstboot_widget(), False, False)
 
     def initializeUI(self):
