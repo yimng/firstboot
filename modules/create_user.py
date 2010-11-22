@@ -27,6 +27,7 @@ from firstboot.config import *
 from firstboot.constants import *
 from firstboot.functions import *
 from firstboot.module import *
+from firstboot.pwcheck import Password
 
 import gettext
 _ = lambda x: gettext.ldgettext("firstboot", x)
@@ -105,8 +106,8 @@ class moduleClass(Module):
             self.confirmEntry.set_text("")
             self.passwordEntry.grab_focus()
             return RESULT_FAILURE
-        elif not userGroupCheck.isPasswordOk(password, self.passwordEntry):
-            return RESULT_FAILURE
+        #elif not userGroupCheck.isPasswordOk(password, self.passwordEntry):
+        #    return RESULT_FAILURE
 
         user = self.admin.lookupUserByName(username)
 
@@ -236,15 +237,22 @@ class moduleClass(Module):
 
         self.passwordEntry = gtk.Entry()
         self.passwordEntry.set_visibility(False)
-        self.passwordEntry.set_property("primary-icon-stock",
-                                        gtk.STOCK_DIALOG_WARNING)
-        self.passwordEntry.set_property("primary-icon-tooltip-text",
-                                        _("Password empty"))
-        self.passwordEntry.set_property("primary-icon-activatable", False)
-        self.passwordEntry.connect("changed", self.passwordEntry_changed)
-
+        self.strengthLabel = gtk.Label()
+        self.strengthLabel.set_alignment(0.0, 0.5)
         self.confirmEntry = gtk.Entry()
         self.confirmEntry.set_visibility(False)
+        self.confirmIcon = gtk.Image()
+        self.confirmIcon.set_alignment(0.0, 0.5)
+        self.confirmIcon.set_from_stock(gtk.STOCK_APPLY, gtk.ICON_SIZE_BUTTON)
+        # hide by default
+        self.confirmIcon.set_no_show_all(True)
+
+        self.passwordEntry.connect("changed", self.passwordEntry_changed,
+                                   self.strengthLabel,
+                                   self.confirmEntry, self.confirmIcon)
+
+        self.confirmEntry.connect("changed", self.confirmEntry_changed,
+                                  self.passwordEntry, self.confirmIcon)
 
         self.vbox.pack_start(label, False, True)
 
@@ -279,6 +287,9 @@ class moduleClass(Module):
         label.set_alignment(0.0, 0.5)
         table.attach(label, 0, 1, 3, 4, gtk.FILL)
         table.attach(self.confirmEntry, 1, 2, 3, 4, gtk.SHRINK, gtk.FILL, 5)
+
+        table.attach(self.strengthLabel, 2, 3, 2, 3, gtk.FILL)
+        table.attach(self.confirmIcon, 2, 3, 3, 4, gtk.FILL)
 
         self.is_admin = gtk.CheckButton(_("Add to Administrators group"))
         self.is_admin.set_alignment(0.0, 0.5)
@@ -393,26 +404,31 @@ class moduleClass(Module):
     def usernameEntry_changed(self, un_entry):
         self.guessUserName = not bool(un_entry.get_text())
 
-    def passwordEntry_changed(self, entry):
+    def passwordEntry_changed(self, entry, strengthLabel,
+                              confirmEntry, confirmIcon):
+
+        self.confirmEntry_changed(confirmEntry, entry, confirmIcon)
+
         pw = entry.get_text()
         if not pw:
-            entry.set_property("primary-icon-stock", gtk.STOCK_DIALOG_WARNING)
-            entry.set_property("primary-icon-tooltip-text",
-                               _("Password empty"))
+            strengthLabel.set_text("")
             return
 
-        try:
-            cracklib.FascistCheck(pw)
-        except ValueError as e:
-            msg = gettext.ldgettext("cracklib", e)
+        pw = Password(pw)
+        strengthLabel.set_markup('<b>%s</b>' % pw.strength_string)
 
-            entry.set_property("primary-icon-stock", gtk.STOCK_DIALOG_WARNING)
-            entry.set_property("primary-icon-tooltip-text",
-                               _("Weak password: %s") % msg)
+    def confirmEntry_changed(self, entry, passwordEntry, confirmIcon):
+        pw = passwordEntry.get_text()
+        if not pw:
+            # blank icon
+            confirmIcon.hide()
+            return
+
+        if pw == entry.get_text():
+            confirmIcon.show()
         else:
-            entry.set_property("primary-icon-stock", gtk.STOCK_APPLY)
-            entry.set_property("primary-icon-tooltip-text",
-                               _("Password OK"))
+            # blank icon
+            confirmIcon.hide()
 
     def _runSCU(self, *args):
         i = gtk.Invisible()
