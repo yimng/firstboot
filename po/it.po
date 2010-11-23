@@ -1,24 +1,26 @@
 # translation of it.po to
 # Copyright (C) 2004 ORGANIZATION.
-# 
-# 
+#
+#
 # Francesco Valente <fvalen@redhat.com>, 2003, 2004.
 # Paolo Dona' <vik@3jv.com>, 2004.
 # Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004.
 # Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007, 2008, 2009.
 # Gianluca Busiello <busiello@ceinge.unina.it>, 2008.
+# Francesco <fdaluisio@fedoraproject.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2009-03-25 19:33+0100\n"
-"Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
-"Language-Team: <it@li.org>\n"
+"PO-Revision-Date: 2010-11-23 09:55+0100\n"
+"Last-Translator: Francesco <fdaluisio@fedoraproject.org>\n"
+"Language-Team: Italian <trans-it@fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.1\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -83,9 +85,9 @@ msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "Il modulo %s non contiene una classe chiamata moduleClass; operazione saltata."
 
 #: ../firstboot/loader.py:114
-#, fuzzy, python-format
+#, python-format
 msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
-msgstr "Il modulo %s non contiene l'attributo richiesto %s; operazione saltata."
+msgstr "Il modulo %(module)s non contiene l'attributo richiesto %(attr)s; operazione saltata."
 
 #: ../firstboot/moduleset.py:92
 #, python-format
@@ -158,9 +160,9 @@ msgid "Fixing attributes on the home directory for %s.  This may take a few minu
 msgstr "Impostazione attributi alla home directory per %s.  Potrebbero volerci alcuni minuti."
 
 #: ../modules/create_user.py:196
-#, fuzzy, python-format
+#, python-format
 msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr "Si sono verificati problemi durante l'impostazione degli attributi su alcuni file nella home directory per %s.  Si prega di fare riferimento a %s i cui file hanno causato gli errori."
+msgstr "Si sono verificati problemi durante la correzione degli attributi su alcuni file nella home directory per %(user)s.  Si prega di fare riferimento a %(path)s i cui file hanno causato gli errori."
 
 #: ../modules/create_user.py:216
 msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
@@ -246,13 +248,13 @@ msgid "If you need more control when creating the user (specifying home director
 msgstr "Se hai bisogno di più controllo quando crei un utente (specificare la directory home, e/o l'UID), premere il tasto Avanzate"
 
 #: ../firstboot/loader.py:89 ../firstboot/loader.py:93
-#, python-format, fuzzy
+#, python-format
 msgid ""
 "Error loading module %(module)s:\n"
 "%(error)s"
 msgstr ""
-"Errore nel caricamento del modulo %s:\n"
-"%s"
+"Errore nel caricamento del modulo %(module)s:\n"
+"%(error)s"
 
 #: ../modules/create_user.py:231 ../modules/create_user.py:365
 msgid "Password empty"
