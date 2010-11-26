@@ -50,8 +50,13 @@ rm -rf %{buildroot}
 
 %post
 if [ $1 -ne 2 -a ! -f /etc/sysconfig/firstboot ]; then
-  systemctl enable firstboot-text.service >/dev/null 2>&1 || :
-  systemctl enable firstboot-graphical.service >/dev/null 2>&1 || :
+  platform="$(arch)"
+  if [ "$platform" = "s390" -o "$platform" = "s390x" ]; then
+    echo "RUN_FIRSTBOOT=YES" > /etc/sysconfig/firstboot
+  else
+    systemctl enable firstboot-text.service >/dev/null 2>&1 || :
+    systemctl enable firstboot-graphical.service >/dev/null 2>&1 || :
+  fi
 fi
 
 %preun
@@ -77,6 +82,12 @@ fi
 %{_datadir}/firstboot/themes/default/*
 /lib/systemd/system/firstboot-text.service
 /lib/systemd/system/firstboot-graphical.service
+%ifarch s390 s390x
+%dir %{_sysconfdir}/profile.d
+%{_sysconfdir}/profile.d/firstboot.sh
+%{_sysconfdir}/profile.d/firstboot.csh
+%endif
+
 
 %changelog
 * Fri Feb 18 2011 Martin Gracik <mgracik@redhat.com> 1.117-1
