@@ -15,31 +15,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../progs/firstboot:140
-msgid "You must be root to run firstboot."
-msgstr ""
-
-#: ../progs/firstboot:194 ../progs/firstboot:195
-msgid "No firstboot modules were found."
-msgstr ""
-
-#: ../progs/firstboot:205 ../progs/firstboot:206
-msgid "Could not create any firstboot interface."
-msgstr ""
-
-#: ../firstboot/interface.py:79
-msgid "Attempted to go back, but history is empty."
-msgstr ""
-
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
 #: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "_Fertig"
-
-#: ../firstboot/interface.py:184
-msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -48,24 +28,6 @@ msgstr "_Torügg"
 #: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "_Vor"
-
-#: ../firstboot/interface.py:277
-#, python-format
-msgid "Module %s did not set up its UI, removing."
-msgstr ""
-
-#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
-msgid "moveToPage must be given a module title or page number."
-msgstr ""
-
-#: ../firstboot/interface.py:432
-msgid "Unable to create the screenshot dir; skipping."
-msgstr ""
-
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
-#, python-format
-msgid "No module exists with the title %s."
-msgstr ""
 
 #: ../firstboot/loader.py:87
 #, python-format
@@ -128,10 +90,6 @@ msgstr ""
 #: ../modules/create_user.py:42 ../modules/create_user.py:43
 msgid "Create User"
 msgstr "Bruker erstellen"
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr ""
 
 #: ../modules/create_user.py:102
 msgid "The passwords do not match.  Please enter the password again."
@@ -246,3 +204,45 @@ msgstr ""
 #: ../modules/create_user.py:84
 msgid "You must create a user account for this system."
 msgstr "Je mutt eenen Brukertogang för düsses System erstellen."
+
+#: ../progs/firstboot:140
+msgid "You must be root to run firstboot."
+msgstr "Je mutt root sien, um firstboot to starten."
+
+#: ../progs/firstboot:205 ../progs/firstboot:206
+msgid "Could not create any firstboot interface."
+msgstr "Kunn keene firstboot Böverflach erstellen."
+
+#: ../progs/firstboot:194 ../progs/firstboot:195
+msgid "No firstboot modules were found."
+msgstr "Keene firstboot Module funnen."
+
+#: ../firstboot/interface.py:79
+msgid "Attempted to go back, but history is empty."
+msgstr "Künn nich torügggahn, Historie is leer."
+
+#: ../firstboot/interface.py:184
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "Dat System mutt nu nejstartet werrn, damit de Utwahl een Effekt het."
+
+#: ../firstboot/interface.py:277
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr "Modul %s künn sien UI nich opsetten, lösche."
+
+#: ../firstboot/interface.py:432
+msgid "Unable to create the screenshot dir; skipping."
+msgstr "Künn dat Billschirmbillverteeknnis nich erstellen; warrt överhüppt."
+
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
+msgid "moveToPage must be given a module title or page number."
+msgstr "moveToPage mutt een Modultitel or Siettaal hebben."
+
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#, python-format
+msgid "No module exists with the title %s."
+msgstr "Dat givt keene Module mit de Titel %s."
+
+#: ../modules/create_user.py:95
+msgid "You must enter and confirm a password for this user."
+msgstr "Je mutt een Passwoord för düssen Bruker twejmol ingeven."
