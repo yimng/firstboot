@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,11 @@ msgstr ""
 
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
+msgstr ""
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
 msgstr ""
 
 #: ../firstboot/interface.py:79
@@ -92,9 +97,134 @@ msgid ""
 "Module %(module)s does not contain the required attribute %(attr)s; skipping."
 msgstr ""
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr ""
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr ""
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr ""
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr ""
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr ""
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr ""
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr ""
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr ""
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr ""
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr ""
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr ""
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr ""
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr ""
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
 msgstr ""
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
@@ -135,121 +265,6 @@ msgstr ""
 #: ../modules/additional_cds.py:146
 msgid ""
 "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr ""
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr ""
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr ""
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr ""
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr ""
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr ""
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr ""
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr ""
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr ""
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr ""
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr ""
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr ""
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr ""
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr ""
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
 msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
