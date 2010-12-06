@@ -4,7 +4,7 @@
 # translation of zh_CN.po to
 # Simplified Chinese Version of firstboot.
 # Copyright (C) 2002 Red Hat, Inc.
-# 
+#
 # Sarah Wang <sarahs@redhat.com>, 2003,2004.
 # Tony Fu <tfu@redhat.com>, 2004, 2006.
 # Leah Liu <weliu@redhat.com>, 2005, 2006.
@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2009-03-30 15:42+1000\n"
-"Last-Translator: Leah Liu <lliu@redhat.com>\n"
+"PO-Revision-Date: 2010-12-06 23:23+0800\n"
+"Last-Translator: chiachen <luojiazhen@gmail.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,15 +25,17 @@ msgstr ""
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "运行 firstboot 时您必须是根用户。"
+msgstr "首次引导必须是根用户。"
 
-#: ../progs/firstboot:194 ../progs/firstboot:195
+#: ../progs/firstboot:194
+#: ../progs/firstboot:195
 msgid "No firstboot modules were found."
-msgstr "未发现任何 firstboot 模块。"
+msgstr "未发现任何首次引导模块。"
 
-#: ../progs/firstboot:205 ../progs/firstboot:206
+#: ../progs/firstboot:205
+#: ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
-msgstr "无法创建任何 firstboot 界面。"
+msgstr "无法创建任何首次引导界面。"
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -41,7 +43,8 @@ msgstr "试图返回，但历史记录为空白。"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
+#: ../firstboot/interface.py:87
+#: ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "完成（_F）"
 
@@ -62,7 +65,8 @@ msgstr "前进（_F）"
 msgid "Module %s did not set up its UI, removing."
 msgstr "模块 %s 没有设置其 UI，删除。"
 
-#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
+#: ../firstboot/interface.py:347
+#: ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr "必须为 moveToPage 提供模块标题或者页号。"
 
@@ -70,7 +74,8 @@ msgstr "必须为 moveToPage 提供模块标题或者页号。"
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "无法生成截图目录，跳过。"
 
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#: ../firstboot/interface.py:472
+#: ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "没有标题为 %s 的模块。"
@@ -88,9 +93,10 @@ msgstr "模块 %s 不包含名为 moduleClass 的级别，跳过。"
 #: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
-msgstr "模块 %s 位设置 UI，删除。"
+msgstr "模块 %s 位设置用户界面，删除。"
 
-#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43
+#: ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "附加光盘"
 
@@ -124,7 +130,8 @@ msgstr "没有检测到光盘，请在驱动器中插入光盘并点击“确定
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "光盘上找不到自动运行程序。请点击“确定”继续。"
 
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
+#: ../modules/create_user.py:42
+#: ../modules/create_user.py:43
 msgid "Create User"
 msgstr "创建用户"
 
@@ -187,7 +194,8 @@ msgstr "使用网络登录（_L）..."
 msgid "Please wait"
 msgstr "请等待"
 
-#: ../modules/date.py:39 ../modules/date.py:40
+#: ../modules/date.py:39
+#: ../modules/date.py:40
 msgid "Date and Time"
 msgstr "日期和时间"
 
@@ -195,7 +203,8 @@ msgstr "日期和时间"
 msgid "Please set the date and time for the system."
 msgstr "请为系统设置日期和时间。"
 
-#: ../modules/eula.py:35 ../modules/eula.py:36
+#: ../modules/eula.py:35
+#: ../modules/eula.py:36
 msgid "License Information"
 msgstr "许可证信息"
 
@@ -210,7 +219,8 @@ msgstr "非常感谢您安装了Fedora。Fedora集成了多种软件包，每个
 msgid "Understood, please proceed."
 msgstr "了解，请开始进行。"
 
-#: ../modules/welcome.py:35 ../modules/welcome.py:36
+#: ../modules/welcome.py:35
+#: ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "欢迎"
 
@@ -228,15 +238,15 @@ msgid "Weak password: %s"
 msgstr "弱密码：%s"
 
 #: ../modules/create_user.py:379
-#, fuzzy
 msgid "Password OK"
-msgstr "密码 OK"
+msgstr "密码正确"
 
 #: ../modules/create_user.py:290
 msgid "If you need more control when creating the user (specifying home directory, and/or UID), please click the Advanced button."
 msgstr "如果您想要在创建用户时进行更多的设置（指定主目录、及/或 UID），请点击 高级 按钮。"
 
-#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#: ../firstboot/loader.py:89
+#: ../firstboot/loader.py:93
 #, python-format
 msgid ""
 "Error loading module %(module)s:\n"
@@ -255,7 +265,8 @@ msgstr "模块 %(module)s 不包含需要的属性 %(attr)s，跳过。"
 msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
 msgstr "修复 %(user)s 主目录内的一些文件属性时遇到问题。请参考 %(path)s 找出造成此错误的文件。"
 
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
+#: ../modules/create_user.py:231
+#: ../modules/create_user.py:365
 msgid "Password empty"
 msgstr "密码为空"
 
