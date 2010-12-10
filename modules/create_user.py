@@ -21,7 +21,7 @@ import gtk
 import libuser
 import os, string, sys, time
 import os.path
-import cracklib
+import pwd
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -80,12 +80,33 @@ class moduleClass(Module):
         if username == "":
             # Only allow not creating a user if there is at least
             # one non-system account already on the system
-            if self.admin.getFirstUnusedUid() > 500:
+            shells = "/etc/shells"
+            with open(shells) as fobj:
+                login_shells = [line.strip() for line in fobj.readlines()]
+                login_shells = [line for line in login_shells
+                                if line and line != "/sbin/nologin"]
+
+            users = [item[0] for item in pwd.getpwall()
+                     if item[0] != "root" and item[6] in login_shells]
+
+            if users:
                 return RESULT_SUCCESS
             else:
-                self._showErrorMessage(_("You must create a user account for this system."))
-                self.usernameEntry.grab_focus()
-                return RESULT_FAILURE
+                dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING,
+                                        gtk.BUTTONS_YES_NO,
+                                        _("You did not set up an user account "
+                                          "capable of logging into the system."
+                                          "\nAre you sure you want to continue?"))
+
+                dlg.set_position(gtk.WIN_POS_CENTER)
+                dlg.set_modal(True)
+                rc = dlg.run()
+                dlg.destroy()
+                if rc == gtk.RESPONSE_NO:
+                    self.usernameEntry.grab_focus()
+                    return RESULT_FAILURE
+                else:
+                    return RESULT_SUCCESS
 
         if not userGroupCheck.isUsernameOk(username, self.usernameEntry):
             return RESULT_FAILURE
