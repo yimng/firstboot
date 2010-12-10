@@ -105,6 +105,8 @@ class Password(object):
               PwRule(rule=cracklib_check, weight=-1, required=False,
                      desc="cracklib") ]
 
+    MAX_STRENGTH = 7
+
     STRENGTH_STRINGS = [ _("Very weak"),
                          _("Very weak"),
                          _("Weak"),
@@ -139,6 +141,14 @@ class Password(object):
             return self.STRENGTH_STRINGS[strength]
         except IndexError:
             return _("Undefined")
+
+    @property
+    def strength_frac(self):
+        frac = float(self.strength) / self.MAX_STRENGTH
+        if frac > 1:
+            frac = 1.0
+
+        return frac
 
     def __str__(self):
         return "%s" % self.password
