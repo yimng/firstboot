@@ -102,7 +102,7 @@ class Password(object):
                      desc="at least one digit"),
               PwRule(rule=r"[^a-zA-Z0-9]+", weight=1, required=False,
                      desc="at least one special character"),
-              PwRule(rule=cracklib_check, weight=-1, required=False,
+              PwRule(rule=cracklib_check, weight=-2, required=False,
                      desc="cracklib") ]
 
     MAX_STRENGTH = 7
