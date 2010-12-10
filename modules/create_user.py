@@ -237,8 +237,7 @@ class moduleClass(Module):
 
         self.passwordEntry = gtk.Entry()
         self.passwordEntry.set_visibility(False)
-        self.strengthLabel = gtk.Label()
-        self.strengthLabel.set_alignment(0.0, 0.5)
+        self.strengthLabel = gtk.ProgressBar()
         self.confirmEntry = gtk.Entry()
         self.confirmEntry.set_visibility(False)
         self.confirmIcon = gtk.Image()
@@ -412,10 +411,12 @@ class moduleClass(Module):
         pw = entry.get_text()
         if not pw:
             strengthLabel.set_text("")
+            strengthLabel.set_fraction(0.0)
             return
 
         pw = Password(pw)
-        strengthLabel.set_markup('<b>%s</b>' % pw.strength_string)
+        strengthLabel.set_text('%s' % pw.strength_string)
+        strengthLabel.set_fraction(pw.strength_frac)
 
     def confirmEntry_changed(self, entry, passwordEntry, confirmIcon):
         pw = passwordEntry.get_text()
