@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-08-27 13:01+0200\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2010-12-14 15:22+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,6 +27,11 @@ msgstr "Nie odnaleziono modułów programu firstboot."
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Nie można utworzyć żadnego interfejsu programu firstboot."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Moduł %s nie ustawił swojego interfejsu użytkownika; usuwanie."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -94,10 +100,154 @@ msgid ""
 "Module %(module)s does not contain the required attribute %(attr)s; skipping."
 msgstr "Moduł %(module)s nie zawiera wymaganego atrybutu %(attr)s; pomijanie."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Bardzo słabe"
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Słabe"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Dość silne"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Silne"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Bardzo silne"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Nieokreślone"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Data i czas"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Proszę ustawić datę i czas systemu."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Utworzenie użytkownika"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Należy utworzyć konto użytkownika w systemie."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Należy podać i potwierdzić hasło dla tego użytkownika."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Hasła nie zgadzają się. Proszę ponownie podać hasło."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Moduł %s nie ustawił swojego interfejsu użytkownika; usuwanie."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Nazwa użytkownika \"%s\" jest zastrzeżonym kontem systemowym. Proszę podać "
+"inną nazwę użytkownika."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Katalog domowy użytkownika %s już istnieje. Kontynuować sprawiając, że nowy "
+"użytkownik będzie właścicielem tego katalogu i całej jego zawartości? Może "
+"to chwilę zająć, aby przywrócić upoważnienia i wszystkie etykiety SELinuksa. "
+"Użyć ponownie tego katalogu domowego? Jeśli nie, proszę wybrać inną nazwę "
+"użytkownika."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+"Naprawianie atrybutów katalogu domowego użytkownika %s. Może to zająć kilka "
+"minut."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr ""
+"Wystąpiły problemy podczas naprawiania atrybutów niektórych plików w "
+"katalogu domowym użytkownika %(user)s. Proszę zobaczyć %(path)s, aby "
+"dowiedzieć się, które pliki spowodowały błędy."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Należy utworzyć \"nazwę użytkownika\" do zwykłego (nieadministracyjnego) "
+"używania systemu. Aby utworzyć \"nazwę użytkownika\", proszę podać poniżej "
+"wymagane informacje."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Imię i _nazwisko:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "Nazwa _użytkownika:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Hasło:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "_Potwierdzenie hasła:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Dodanie do grupy administratorów"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Naciśnięcie przycisku \"Użyj logowania sieciowego\" umożliwi użycie "
+"uwierzytelniania sieciowego, takiego jak Kerberos lub NIS."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Użyj logowania _sieciowego..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Naciśnięcie przycisku \"Zaawansowane\" umożliwi większą kontrolę nad "
+"tworzeniem użytkownika (podanie katalogu domowego i/lub UID)."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "Z_aawansowane..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Proszę czekać"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -152,140 +302,6 @@ msgstr ""
 "Program automatycznego odtwarzania nie został odnaleziony na płycie CD. "
 "Proszę nacisnąć przycisk \"OK\", aby kontynuować."
 
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Utworzenie użytkownika"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Należy utworzyć konto użytkownika w systemie."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Należy podać i potwierdzić hasło dla tego użytkownika."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Hasła nie zgadzają się. Proszę ponownie podać hasło."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Nazwa użytkownika \"%s\" jest zastrzeżonym kontem systemowym. Proszę podać "
-"inną nazwę użytkownika."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Katalog domowy użytkownika %s już istnieje. Kontynuować sprawiając, że nowy "
-"użytkownik będzie właścicielem tego katalogu i całej jego zawartości? Może "
-"to chwilę zająć, aby przywrócić upoważnienia i wszystkie etykiety SELinuksa. "
-"Użyć ponownie tego katalogu domowego? Jeśli nie, proszę wybrać inną nazwę "
-"użytkownika."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-"Naprawianie atrybutów katalogu domowego użytkownika %s. Może to zająć kilka "
-"minut."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-"Wystąpiły problemy podczas naprawiania atrybutów niektórych plików w "
-"katalogu domowym użytkownika %(user)s. Proszę zobaczyć %(path)s, aby "
-"dowiedzieć się, które pliki spowodowały błędy."
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"Należy utworzyć \"nazwę użytkownika\" do zwykłego (nieadministracyjnego) "
-"używania systemu. Aby utworzyć \"nazwę użytkownika\", proszę podać poniżej "
-"wymagane informacje."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Hasło jest puste"
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "Nazwa _użytkownika:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Imię i _nazwisko:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Hasło:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "_Potwierdzenie hasła:"
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Naciśnięcie przycisku \"Użyj logowania sieciowego\" umożliwi użycie "
-"uwierzytelniania sieciowego, takiego jak Kerberos lub NIS."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Użyj logowania _sieciowego..."
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"Naciśnięcie przycisku \"Zaawansowane\" umożliwi większą kontrolę nad "
-"tworzeniem użytkownika (podanie katalogu domowego i/lub UID)."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "Z_aawansowane..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Proszę czekać"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Hasło jest słabe: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Hasło jest dobre"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Data i czas"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Proszę ustawić datę i czas systemu."
-
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Informacje o licencji"
@@ -332,5 +348,4 @@ msgid ""
 msgstr ""
 "Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do używania. "
 "Agent ustawień przeprowadzi użytkownika przez podstawową konfigurację. "
-"Proszę nacisnąć przycisk \"Dalej\" w dolnym prawym rogu okna, aby "
-"kontynuować"
+"Proszę nacisnąć przycisk \"Dalej\" w dolnym prawym rogu okna, aby kontynuować"
