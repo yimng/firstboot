@@ -28,6 +28,7 @@ from firstboot.constants import *
 from firstboot.functions import *
 from firstboot.module import *
 from firstboot.pwcheck import Password
+from firstboot.pwcheck import StrengthMeterWithLabel
 
 import gettext
 _ = lambda x: gettext.ldgettext("firstboot", x)
@@ -237,7 +238,7 @@ class moduleClass(Module):
 
         self.passwordEntry = gtk.Entry()
         self.passwordEntry.set_visibility(False)
-        self.strengthLabel = gtk.ProgressBar()
+        self.strengthLabel = StrengthMeterWithLabel()
         self.confirmEntry = gtk.Entry()
         self.confirmEntry.set_visibility(False)
         self.confirmIcon = gtk.Image()
