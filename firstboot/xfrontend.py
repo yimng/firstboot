@@ -42,7 +42,12 @@ class XFrontEnd:
         self._wm_pid = os.fork()
 
         if not self._wm_pid:
-            path = "/usr/bin/metacity"
+            paths = ["/usr/bin/metacity", "/usr/bin/kwin", "/usr/bin/xfwm4",
+                     "/usr/bin/openbox"]
+            for path in paths:
+                if os.access(path, os.X_OK):
+                    break
+
             args = [path, "--display", os.environ["DISPLAY"]]
             os.execvp(path, args)
 
