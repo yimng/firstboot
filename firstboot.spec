@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.113
+Version: 1.114
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -80,6 +80,22 @@ fi
 /lib/systemd/system/firstboot-graphical.service
 
 %changelog
+* Mon Dec 20 2010 Martin Gracik <mgracik@redhat.com> 1.114-1
+- Support other window managers than metacity (#605675)
+- firstboot -> metacity dep (#605675) (rdieter)
+- Change how we check for user account
+- Use StrengthMeter widget instead of ProgressBar
+- Add StrengthMeter widget to pwcheck
+- Increase the weight of cracklib password check
+- Show the password strength in a progress bar
+- Add strength fraction property to pwcheck
+- Translation updates
+- Change the way we warn for a weak password
+- Add the pwcheck module for getting the password strength
+- Do not show tabs in date and time module
+- Allow the user to be added to wheel group (#462161)
+- Guess user name from full name (#517269)
+
 * Thu Aug 26 2010 Martin Gracik <mgracik@redhat.com> 1.113-1
 - Updated the .pot file
 - Changed string formatting for translations (#618610)
