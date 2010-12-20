@@ -16,13 +16,14 @@ ExclusiveOS: Linux
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: gettext
 BuildRequires: python-devel, python-setuptools-devel
-Requires: metacity, pygtk2, python
+Requires: pygtk2, python
 Requires: setuptool, libuser-python, system-config-users, system-config-date
 Requires: authconfig-gtk, python-meh
 Requires: system-config-keyboard
 Requires: python-ethtool
 Requires: cracklib-python
 Requires: systemd-units
+Requires: firstboot(windowmanager)
 Requires(post): chkconfig
 
 %define debug_package %{nil}
