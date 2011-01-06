@@ -1,4 +1,4 @@
-# translation of firstboot.master.po to Hindi
+# translation of firstboot.po to Hindi
 # translation of hi.po to
 # Copyright (C) YEAR ORGANIZATION.
 #
@@ -8,10 +8,10 @@
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master\n"
+"Project-Id-Version: firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2011-01-06 15:14+0530\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-01-06 15:29+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <hindi@hindi>\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,7 @@ msgstr ""
 "<<<<<<< hi.poPOT-Creation-Date: 2004-08-31 16:22-0400\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -47,6 +48,11 @@ msgstr "कोई फर्स्टबूट मॉड्यूल नहीं
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "कोई फर्स्टबूट अंतरफलक बना नहीं सका."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "मॉड्यूल %s ने इसके UI को सेटअप नहीं किया है; हटा रहा है."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -112,10 +118,146 @@ msgstr "मॉड्यूल %s moduleClass नामक वर्ग नही
 msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
 msgstr "मॉड्यूल %(module)s जरूरी गुण %(attr)s; नहीं समाहित करता है; छोड़ रहा है."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "बहुत कमजोर"
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "कमजोर"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "ठीक-ठाक मजबूत"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "मजबूत"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "बहुत मजबूत"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "अपरिभाषित"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "तिथि व समय"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "कृपया तंत्र के लिए तिथि व समय सेट करें."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "उपयोक्ता बनाएँ"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "आप इस तंत्र के लिए कृपया उपयोक्ता खाता जरूर बनाएँ."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "आप इस उपयोक्ता के लिए कूटशब्द दाखिल व संपुष्ट जरूर करें."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "कूटशब्द मेल नहीं खाता है.  कृपया कूटशब्द फिर दाखिल करें."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "मॉड्यूल %s ने इसके UI को सेटअप नहीं किया है; हटा रहा है."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr "उपयोक्ता नाम '%s' एक आरक्षित तंत्र खाता है.  कृपया दूसरा उपयोक्तानाम निर्दिष्ट करें."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूद है. नए उपयोक्ता को इस निर्देशिका और इसकी "
+"सारी टिप्पणी का स्वामी बनाते हुए क्या आप जारी रखना चाहेंगे? अनुमति और कोई SELinux स्तर "
+"फिर सेट करने के लिए ऐसा करना कुछ समय ले सकता है. क्या आप यह घर निर्देशिका फिर प्रयोग "
+"करना चाहेंगे?  यदि नहीं, कृपया भिन्न उपयोक्ता नाम चुनें."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "%s के लिए घर निर्देशिका पर विशेषता का हल कर रहा है.  यह कुछ मिनट ले सकता है."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr ""
+"%(user)s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना "
+"हुआ.  कृपया %(path)s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि का कारण बनी."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"इसकी अनुशंसा की जाती है कि आप एक 'उपयोक्तानाम' अपने तंत्र के नियमित प्रयोग (गैर "
+"प्रशासनिक) के लिए बनाएँ. तंत्र 'उपयोक्तानाम' बनाने के लिए, कृपया नीचे निवेदित सूचना दें."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "पूरा नाम (_e):"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "उपयोक्तानाम (_U):"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "कूटशब्द (_P):"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "कूटशब्द संपुष्ट करें (_m):"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "प्रशासनिक समूह में जोड़ें"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"यदि आपको संजाल सत्यापन के प्रयोग की जरूरत है, जैसे कि करबरोस या NIS, कृपया संजाल लॉगिन "
+"बटन का प्रयोग करें क्लिक करें."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "संजाल लॉगिन का प्रयोग करें (_L)..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"यदि आपको अधिक नियंत्रण की जरूरत है जब आप उपयोक्ता बना रहे हैं (गृह निर्देशिका को "
+"निर्दिष्ट कर, और/या UID), कृपया उन्नत बटन क्लिक करें."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "उन्नत (_A)..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "कृपया प्रतीक्षा करें"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -164,132 +306,6 @@ msgstr ""
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ऑटोरन प्रोग्राम CD पर नहीं पाया जा सकता है. जारी रखने के लिये \"ठीक\" क्लिक करें."
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "उपयोक्ता बनाएँ"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "आप इस तंत्र के लिए कृपया उपयोक्ता खाता जरूर बनाएँ."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "आप इस उपयोक्ता के लिए कूटशब्द दाखिल व संपुष्ट जरूर करें."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "कूटशब्द मेल नहीं खाता है.  कृपया कूटशब्द फिर दाखिल करें."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr "उपयोक्ता नाम '%s' एक आरक्षित तंत्र खाता है.  कृपया दूसरा उपयोक्तानाम निर्दिष्ट करें."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूद है. नए उपयोक्ता को इस निर्देशिका और इसकी "
-"सारी टिप्पणी का स्वामी बनाते हुए क्या आप जारी रखना चाहेंगे? अनुमति और कोई SELinux स्तर "
-"फिर सेट करने के लिए ऐसा करना कुछ समय ले सकता है. क्या आप यह घर निर्देशिका फिर प्रयोग "
-"करना चाहेंगे?  यदि नहीं, कृपया भिन्न उपयोक्ता नाम चुनें."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s के लिए घर निर्देशिका पर विशेषता का हल कर रहा है.  यह कुछ मिनट ले सकता है."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-"%(user)s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना हुआ.  "
-"कृपया %(path)s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि का कारण बनी."
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"इसकी अनुशंसा की जाती है कि आप एक 'उपयोक्तानाम' अपने तंत्र के नियमित प्रयोग (गैर "
-"प्रशासनिक) के लिए बनाएँ. तंत्र 'उपयोक्तानाम' बनाने के लिए, कृपया नीचे निवेदित सूचना दें."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "कूटशब्द रिक्त"
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "उपयोक्तानाम (_U):"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "पूरा नाम (_e):"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "कूटशब्द (_P):"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "कूटशब्द संपुष्ट करें (_m):"
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"यदि आपको संजाल सत्यापन के प्रयोग की जरूरत है, जैसे कि करबरोस या NIS, कृपया संजाल लॉगिन "
-"बटन का प्रयोग करें क्लिक करें."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "संजाल लॉगिन का प्रयोग करें (_L)..."
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"यदि आपको अधिक नियंत्रण की जरूरत है जब आप उपयोक्ता बना रहे हैं (गृह निर्देशिका को निर्दिष्ट कर, "
-"और/या UID), कृपया उन्नत बटन क्लिक करें."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "उन्नत (_A)..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "कृपया प्रतीक्षा करें"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "कमजोर कूटशब्द: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "कूटशब्द ठीक"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "तिथि व समय"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "कृपया तंत्र के लिए तिथि व समय सेट करें."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
