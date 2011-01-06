@@ -2,7 +2,7 @@
 # translation of hi.po to
 # Copyright (C) YEAR ORGANIZATION.
 #
-# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2008, 2009.
+# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2008, 2009, 2011.
 # hi <rranjan@redhat.com>, 2007.
 # Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
@@ -10,10 +10,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-09-22 16:01+0530\n"
-"Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
-"Language-Team: Hindi <hindi.sf.net>\n"
+"POT-Creation-Date: 2010-08-26 10:53+0200\n"
+"PO-Revision-Date: 2011-01-06 15:14+0530\n"
+"Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
+"Language-Team: Hindi <hindi@hindi>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,75 +34,31 @@ msgstr ""
 "\n"
 "\n"
 "\n"
+"\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr "फर्स्टबूट चलाने के लिए आपको रूट होना चाहिए."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
-msgid "Could not start any firstboot frontend."
-msgstr "किसी फर्स्टबूट फ्रंटएंड को आरंभ नहीं कर सका."
-
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "कोई फर्स्टबूट मॉड्यूल नहीं मिला."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "कोई फर्स्टबूट अंतरफलक बना नहीं सका."
 
-#: ../firstboot/exceptionWindow.py:50
-#, python-format
-msgid "An error has occurred in the %s module."
-msgstr "%s मॉडयूल में एक त्रुटि आयी है."
-
-#: ../firstboot/exceptionWindow.py:51
-#, python-format
-msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
-msgstr ""
-"%s मॉड्यूल के साथ समस्या होने के कारण,\n"
-"फर्स्टबूट इस मॉडयूल को लोड नहीं करेगा और \n"
-"शेष मॉडयूलों को चलाने के लिए प्रयास करेगा."
-
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr "फर्स्टबूट में एक त्रुटि आयी है."
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr "चूंकि समस्या है, फर्स्टबूट बाहर निकल जाएगा."
-
-#: ../firstboot/exceptionWindow.py:66
-#, python-format
-msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
-msgstr ""
-"डिबग आउटपुट की एक नक़ल %s में सुरक्षित किया गया है.\n"
-"उस फ़ाइल को बग रिपोर्ट के साथ संलग्न करना न भूलें.\n"
-
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"कृपया 'firstboot' के हवाले Red Hat बग ट्रैकिंग तंत्र को \n"
-"http://www.redhat.com/bugzilla पर एक बग दर्ज करें. \n"
-
-#: ../firstboot/interface.py:75
+#: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "लौटने की कोशिश कर रहा है, इतिहास लेकिन खाली है."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "समाप्त (_F)"
 
-#: ../firstboot/interface.py:183
+#: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "आपके कुछ चयन के प्रभावी होने के लिये तंत्र को जरूर रिबूट करना चाहिए."
 
@@ -119,40 +75,44 @@ msgstr "आगे (_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "मॉड्यूल %s ने इसके UI को सेटअप नहीं किया है, हटा रहा है."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage को जरूर मॉड्यूल शीर्षक या पृष्ठ संख्या दिया जाना चाहिए."
 
-#: ../firstboot/interface.py:438
+#: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "स्क्रीनशॉट निर्देशिका को बनाने में असमर्थ; छोड़ रहा है."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "शीर्षक %s के साथ कोई मॉड्यूल मौजूद नहीं है."
 
-#: ../firstboot/loader.py:90
+#: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "पुराने मॉड्यूल %s को छोड़ रहा है जो कि अद्यतन नहीं किया गया है."
 
-#: ../firstboot/loader.py:102
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"मॉड्यूल %(module)s लोड करने में त्रुटि:\n"
+"%(error)s"
+
+#: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "मॉड्यूल %s moduleClass नामक वर्ग नहीं समाहित करता है; छोड़ रहा है."
 
-#: ../firstboot/loader.py:113
+#: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "मॉड्यूल %s जरूरी गुण %s नहीं समाहित करता है; छोड़ रहा है."
+msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgstr "मॉड्यूल %(module)s जरूरी गुण %(attr)s; नहीं समाहित करता है; छोड़ रहा है."
 
-#: ../firstboot/module.py:187
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr "पिक्समैप %s को %s मॉड्यूल के लिए लोड करने में असमर्थ."
-
-#: ../firstboot/moduleset.py:93
+#: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "मॉड्यूल %s ने इसके UI को सेटअप नहीं किया है; हटा रहा है."
@@ -205,30 +165,30 @@ msgstr ""
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "ऑटोरन प्रोग्राम CD पर नहीं पाया जा सकता है. जारी रखने के लिये \"ठीक\" क्लिक करें."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
+#: ../modules/create_user.py:42 ../modules/create_user.py:43
 msgid "Create User"
 msgstr "उपयोक्ता बनाएँ"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:84
 msgid "You must create a user account for this system."
 msgstr "आप इस तंत्र के लिए कृपया उपयोक्ता खाता जरूर बनाएँ."
 
-#: ../modules/create_user.py:94
+#: ../modules/create_user.py:95
 msgid "You must enter and confirm a password for this user."
 msgstr "आप इस उपयोक्ता के लिए कूटशब्द दाखिल व संपुष्ट जरूर करें."
 
-#: ../modules/create_user.py:101
+#: ../modules/create_user.py:102
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "कूटशब्द मेल नहीं खाता है.  कृपया कूटशब्द फिर दाखिल करें."
 
-#: ../modules/create_user.py:113
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "उपयोक्ता नाम '%s' एक आरक्षित तंत्र खाता है.  कृपया दूसरा उपयोक्तानाम निर्दिष्ट करें."
 
-#: ../modules/create_user.py:132
+#: ../modules/create_user.py:133
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
@@ -242,21 +202,22 @@ msgstr ""
 "फिर सेट करने के लिए ऐसा करना कुछ समय ले सकता है. क्या आप यह घर निर्देशिका फिर प्रयोग "
 "करना चाहेंगे?  यदि नहीं, कृपया भिन्न उपयोक्ता नाम चुनें."
 
-#: ../modules/create_user.py:175
+#: ../modules/create_user.py:176
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr "%s के लिए घर निर्देशिका पर विशेषता का हल कर रहा है.  यह कुछ मिनट ले सकता है."
 
-#: ../modules/create_user.py:195
+#: ../modules/create_user.py:196
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
 msgstr ""
-"%s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना हुआ.  "
-"कृपया %s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि का कारण बनी."
+"%(user)s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना हुआ.  "
+"कृपया %(path)s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि का कारण बनी."
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
@@ -265,23 +226,27 @@ msgstr ""
 "इसकी अनुशंसा की जाती है कि आप एक 'उपयोक्तानाम' अपने तंत्र के नियमित प्रयोग (गैर "
 "प्रशासनिक) के लिए बनाएँ. तंत्र 'उपयोक्तानाम' बनाने के लिए, कृपया नीचे निवेदित सूचना दें."
 
-#: ../modules/create_user.py:231
+#: ../modules/create_user.py:231 ../modules/create_user.py:365
+msgid "Password empty"
+msgstr "कूटशब्द रिक्त"
+
+#: ../modules/create_user.py:243
 msgid "_Username:"
 msgstr "उपयोक्तानाम (_U):"
 
-#: ../modules/create_user.py:238
+#: ../modules/create_user.py:250
 msgid "Full Nam_e:"
 msgstr "पूरा नाम (_e):"
 
-#: ../modules/create_user.py:245
+#: ../modules/create_user.py:257
 msgid "_Password:"
 msgstr "कूटशब्द (_P):"
 
-#: ../modules/create_user.py:252
+#: ../modules/create_user.py:264
 msgid "Confir_m Password:"
 msgstr "कूटशब्द संपुष्ट करें (_m):"
 
-#: ../modules/create_user.py:261
+#: ../modules/create_user.py:273
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
@@ -289,19 +254,40 @@ msgstr ""
 "यदि आपको संजाल सत्यापन के प्रयोग की जरूरत है, जैसे कि करबरोस या NIS, कृपया संजाल लॉगिन "
 "बटन का प्रयोग करें क्लिक करें."
 
-#: ../modules/create_user.py:270
+#: ../modules/create_user.py:282
 msgid "Use Network _Login..."
 msgstr "संजाल लॉगिन का प्रयोग करें (_L)..."
 
-#: ../modules/create_user.py:308
+#: ../modules/create_user.py:290
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"यदि आपको अधिक नियंत्रण की जरूरत है जब आप उपयोक्ता बना रहे हैं (गृह निर्देशिका को निर्दिष्ट कर, "
+"और/या UID), कृपया उन्नत बटन क्लिक करें."
+
+#: ../modules/create_user.py:300
+msgid "_Advanced..."
+msgstr "उन्नत (_A)..."
+
+#: ../modules/create_user.py:338
 msgid "Please wait"
 msgstr "कृपया प्रतीक्षा करें"
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../modules/create_user.py:375
+#, python-format
+msgid "Weak password: %s"
+msgstr "कमजोर कूटशब्द: %s"
+
+#: ../modules/create_user.py:379
+msgid "Password OK"
+msgstr "कूटशब्द ठीक"
+
+#: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
 msgstr "तिथि व समय"
 
-#: ../modules/date.py:62
+#: ../modules/date.py:61
 msgid "Please set the date and time for the system."
 msgstr "कृपया तंत्र के लिए तिथि व समय सेट करें."
 
@@ -309,7 +295,7 @@ msgstr "कृपया तंत्र के लिए तिथि व सम
 msgid "License Information"
 msgstr "लाइसेंस सूचना"
 
-#: ../modules/eula.py:53
+#: ../modules/eula.py:45
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -335,7 +321,7 @@ msgstr ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-#: ../modules/eula.py:64
+#: ../modules/eula.py:60
 msgid "Understood, please proceed."
 msgstr "समझ लिया है, कृपया आगे बढ़ें."
 
