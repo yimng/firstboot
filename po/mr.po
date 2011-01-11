@@ -8,13 +8,13 @@
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
 # sandeep shedmake <sandeep.shedmake@gmail.com>, 2007.
 # Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
-# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: firstboot.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-09-22 18:46+0530\n"
+"POT-Creation-Date: 2010-08-26 10:53+0200\n"
+"PO-Revision-Date: 2011-01-11 14:50+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
 "Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,72 +25,27 @@ msgstr ""
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "firstboot चालवण्यासाठी तुम्ही रूट असायला हवे."
+msgstr "firstboot चालवण्यासाठी रूट व्हा."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
-msgid "Could not start any firstboot frontend."
-msgstr "कुठलेही firstboot फ्रंटऐंड सुरू करण्यास अशक्य."
-
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "firstboot घटके आढळले नाहीत."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "firstboot संवाद निर्माण करणे अशक्य."
 
-#: ../firstboot/exceptionWindow.py:50
-#, python-format
-msgid "An error has occurred in the %s module."
-msgstr "%s घटकात त्रुटी आढळली."
-
-#: ../firstboot/exceptionWindow.py:51
-#, python-format
-msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
-msgstr ""
-"%s घटकात समस्या आढळल्यामुळे,\n"
-"firstboot त्या घटकाला लोड न करता\n"
-"इतर घटक चालवण्याचा प्रयत्न करेल."
-
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr "firstboot मध्ये त्रुटी आढळली."
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr "अडचण आढळल्यामुळे, firstboot बाहेर पडेल."
-
-#: ../firstboot/exceptionWindow.py:66
-#, python-format
-msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
-msgstr ""
-"डीबग आऊटपुटचे एक प्रत %s मध्ये सुरक्षीत केले आहे\n"
-"फाइल बग अहवालाशी जोडायला विसरू नका.\n"
-
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"कृपया 'firstboot' च्या विरूद्ध Red Hat बग नियंत्रण प्रणाली\n"
-"http://www.redhat.com/bugzilla येथे त्रुटी नोंदवा. \n"
-
-#: ../firstboot/interface.py:75
+#: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "पाठीमागे जाण्याचा प्रयत्न केला, पण इतिहास रिकामा आहे."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "समाप्त (_F)"
 
-#: ../firstboot/interface.py:183
+#: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "तुमच्या काहिक पसंती प्रभावी ठरण्यासाठी प्रणालीला पुनःसुरू करावे लागेल."
 
@@ -107,40 +62,44 @@ msgstr "पुढे (_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "घटक %s ने UI सेट अप केले नाही, काढून टाकत आहे."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage यांस घटकाचे शिर्षक किंवा पृष्ट क्रमांक पुरवले पाहिजे."
 
-#: ../firstboot/interface.py:438
+#: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "स्क्रीनशॉट डिरेक्ट्री बनविता आले नाही; वगळत आहे."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "शिर्षक %s सह घटक अस्तित्वात नाही."
 
-#: ../firstboot/loader.py:90
+#: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "जुने घटक %s वगळत आहे जे अद्ययावतीत केले गेले नाही."
 
-#: ../firstboot/loader.py:102
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"घटक %(module)s लोड करतेवेळी त्रुटी आढळली:\n"
+"%(error)s"
+
+#: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "घटक %s मध्ये moduleClass नामक वर्ग नाही; वगळत आहे."
 
-#: ../firstboot/loader.py:113
+#: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "घटक %s मध्ये आवश्यक गुणधर्म %s समाविष्टीत नाही; वगळत आहे."
+msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgstr "घटक %(module)s मध्ये आवश्यक गुणधर्म %(attr)s समाविष्टीत नाही; वगळत आहे."
 
-#: ../firstboot/module.py:187
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr "घटक %s करीता pixmap %s दाखल करू शकत नाही."
-
-#: ../firstboot/moduleset.py:93
+#: ../firstboot/moduleset.py:92
 #, python-format
 msgid "Module %s did not set up its UI; removing."
 msgstr "घटक %s ने त्याचे UI निश्चित केले नाही; काढूण टाकत आहे."
@@ -156,10 +115,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"\"Red Hat Enterprise Linux Extras\" लेबल असलेली चकती तृतीय-पक्ष प्लगइन्स "
-"आणि अनुप्रयोग यांची प्रतिष्ठापना होऊ देण्यासाठी दाखल करा. अतिरिक्त सॉफ्टवेयर "
-"प्रतिष्ठापित करण्यासाठी तुम्ही यावेळी दस्तावेज डिस्क्स् किंवा इतर Red Hat द्वारे पुरवलेल्या "
-"डिस्क्स् देखील अंतर्भूत करू शकता."
+"\"Red Hat Enterprise Linux Extras\" लेबल असलेली चकती तृतीय-पक्ष प्लगइन्स आणि "
+"अनुप्रयोग यांची प्रतिष्ठापना होऊ देण्यासाठी दाखल करा. अतिरिक्त सॉफ्टवेयर प्रतिष्ठापित "
+"करण्यासाठी तुम्ही यावेळी दस्तावेज डिस्क्स् किंवा इतर Red Hat द्वारे पुरवलेल्या डिस्क्स् देखील "
+"अंतर्भूत करू शकता."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -186,36 +145,38 @@ msgstr "प्रतिष्ठापीत करा..."
 msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
-msgstr "CD-ROM आढळला नाही. कृपया CD-ROM ड्राइव मध्ये टाका आणि पुढे चालू राहण्यासाठी \"ठीक\" क्लिक् करा."
+msgstr ""
+"CD-ROM आढळला नाही. कृपया CD-ROM ड्राइव मध्ये टाका आणि पुढे चालू राहण्यासाठी \"ठीक\" "
+"क्लिक् करा."
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "सीडीवर ऑटोरन हा कार्यक्रम आढळला नाही. पुढे चालू ठेवण्यासाठी \"ठिक आहे\" क्लिक् करा."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
+#: ../modules/create_user.py:42 ../modules/create_user.py:43
 msgid "Create User"
 msgstr "वापरकर्ता निर्माण करा"
 
-#: ../modules/create_user.py:83
+#: ../modules/create_user.py:84
 msgid "You must create a user account for this system."
 msgstr "कृपया या प्रणाली करीता वापरकर्ता खाते बनवा."
 
-#: ../modules/create_user.py:94
+#: ../modules/create_user.py:95
 msgid "You must enter and confirm a password for this user."
 msgstr "या वापरकर्त्यासाठी पासवर्ड द्या व त्याची खात्री करा."
 
-#: ../modules/create_user.py:101
+#: ../modules/create_user.py:102
 msgid "The passwords do not match.  Please enter the password again."
 msgstr "पासवर्ड जुळत नाही.  कृपया पासवर्ड पुन्हा प्रविष्ट करा."
 
-#: ../modules/create_user.py:113
+#: ../modules/create_user.py:114
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr "वापरकर्ता '%s' आरक्षीत प्रणाली खाते आहे.  कृपया अन्य वापरकर्तानाव निर्देशीत करा."
 
-#: ../modules/create_user.py:132
+#: ../modules/create_user.py:133
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
@@ -229,21 +190,22 @@ msgstr ""
 "का?  असे करायचे असल्यासपरवानगी व SELinux लेबल स्वच्छ करावे लागेल. तुम्हाला होम डिरेक्ट्री "
 "पुन्हा वापरायची?  नसल्यास, कृपया इतर वापरकर्तानाव नीवडा."
 
-#: ../modules/create_user.py:175
+#: ../modules/create_user.py:176
 #, python-format
 msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr "होम डिरेक्ट्री वरील %s करीता गुणधर्म निश्चित करत आहे.  याला काहिक मिनीटं लागतील."
 
-#: ../modules/create_user.py:195
+#: ../modules/create_user.py:196
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
 msgstr ""
-"होम डिरेक्ट्री वरील %s करीता गुणधर्म निश्चित करतेवेळी काहिक अडचणी आढळल्यात.  "
-"त्रुटी निर्माण करणाऱ्या फाइल्स् शोधण्याकरीता कृपया %s पहा."
+"होम डिरेक्ट्री वरील %(user)s करीता गुणधर्म निश्चित करतेवेळी काहिक अडचणी आढळल्यात.  त्रुटी "
+"निर्माण करणाऱ्या फाइल्स् शोधण्याकरीता कृपया %(path)s पहा."
 
-#: ../modules/create_user.py:213
+#: ../modules/create_user.py:216
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
@@ -252,41 +214,68 @@ msgstr ""
 "प्रणालीच्या रोजच्या वापर (अ-प्रशासकीय) करीता तुम्ही 'वापरकर्तानाव' बनविले पाहिजे. "
 "प्रणाली 'वापरकर्ता,' बनविण्याकरीता कृपया खालील विनंतीकृत माहिती पुरवा."
 
-#: ../modules/create_user.py:231
+#: ../modules/create_user.py:231 ../modules/create_user.py:365
+msgid "Password empty"
+msgstr "पासवर्ड रिकामे"
+
+#: ../modules/create_user.py:243
 msgid "_Username:"
 msgstr "वापरकर्त्याचे नाव (_U):"
 
-#: ../modules/create_user.py:238
+#: ../modules/create_user.py:250
 msgid "Full Nam_e:"
 msgstr "संपूर्ण नाव(_e):"
 
-#: ../modules/create_user.py:245
+#: ../modules/create_user.py:257
 msgid "_Password:"
 msgstr "पासवर्ड (_P):"
 
-#: ../modules/create_user.py:252
+#: ../modules/create_user.py:264
 msgid "Confir_m Password:"
 msgstr "पासवर्डची खात्री करा (_m):"
 
-#: ../modules/create_user.py:261
+#: ../modules/create_user.py:273
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
-msgstr "नेटवर्क ऑथेंटीकेशन, जसे की कर्बेरॉस किंवा NIS वापरायचे असल्यास, कृपया नेटवर्क प्रवेश वापरा बटनावर क्लिक करा."
+msgstr ""
+"नेटवर्क ऑथेंटीकेशन, जसे की कर्बेरॉस किंवा NIS वापरायचे असल्यास, कृपया नेटवर्क प्रवेश वापरा "
+"बटनावर क्लिक करा."
 
-#: ../modules/create_user.py:270
+#: ../modules/create_user.py:282
 msgid "Use Network _Login..."
 msgstr "नेटवर्क प्रवेशचा वापर करा (_L)..."
 
-#: ../modules/create_user.py:308
+#: ../modules/create_user.py:290
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"वापरकर्ता निर्माण करतेवेळी अधिक नियंत्रण हवे अशल्यास (होम डिरेक्ट्री, "
+"व/किंवा UID निर्देशीत करून), कृपया प्रगत बटणावर क्लिक करा."
+
+#: ../modules/create_user.py:300
+msgid "_Advanced..."
+msgstr "प्रगत (_A)..."
+
+#: ../modules/create_user.py:338
 msgid "Please wait"
 msgstr "कृपया थांबा"
 
-#: ../modules/date.py:40 ../modules/date.py:41
+#: ../modules/create_user.py:375
+#, python-format
+msgid "Weak password: %s"
+msgstr "कमजोर पासवर्ड: %s"
+
+#: ../modules/create_user.py:379
+msgid "Password OK"
+msgstr "पासवर्ड ठिक आहे"
+
+#: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
 msgstr "दिनांक व वेळ"
 
-#: ../modules/date.py:62
+#: ../modules/date.py:61
 msgid "Please set the date and time for the system."
 msgstr "कृपया प्रणाली करीता दिनांक व वेळ सेट करा."
 
@@ -294,7 +283,7 @@ msgstr "कृपया प्रणाली करीता दिनांक
 msgid "License Information"
 msgstr "परवान्याविषयी माहिती"
 
-#: ../modules/eula.py:53
+#: ../modules/eula.py:45
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software "
 "packages, each under its own license.  The compilation is made available "
@@ -320,7 +309,7 @@ msgstr ""
 "If you would like to understand what those restrictions are, please visit "
 "http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-#: ../modules/eula.py:64
+#: ../modules/eula.py:60
 msgid "Understood, please proceed."
 msgstr "कळले, कृपया पुढे चला."
 
@@ -334,7 +323,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"प्रणाली वापरण्याजोगी बनण्यापूर्वी आणखी काही टप्पे बाकी आहेत.  सेटअप एजेंट आत्ता "
-"तुम्हाला काहिक पूर्वनिर्धारीत संरचनाचे मार्गदर्शन करेल.  कृपया पुढे चालू ठेवण्यासाठी खालील उजव्या "
+"प्रणाली वापरण्याजोगी बनण्यापूर्वी आणखी काही टप्पे बाकी आहेत.  सेटअप एजेंट आत्ता तुम्हाला "
+"काहिक पूर्वनिर्धारीत संरचनाचे मार्गदर्शन करेल.  कृपया पुढे चालू ठेवण्यासाठी खालील उजव्या "
 "कोपऱ्यातील \"पुढे\" बटनावर क्लिक करा"
 
