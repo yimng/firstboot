@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.114
+Version: 1.115
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -80,6 +80,11 @@ fi
 /lib/systemd/system/firstboot-graphical.service
 
 %changelog
+* Fri Jan 14 2011 Martin Gracik <mgracik@redhat.com> 1.115-1
+- Don't enable firstboot service on upgrade (#626676)
+- Set HOME to /root rather than / (#578903)
+- Translation updates
+
 * Mon Dec 20 2010 Martin Gracik <mgracik@redhat.com> 1.114-1
 - Support other window managers than metacity (#605675)
 - firstboot -> metacity dep (#605675) (rdieter)
