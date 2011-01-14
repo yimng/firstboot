@@ -35,7 +35,7 @@
 
 FILENAME=/etc/sysconfig/firstboot
 
-[ -z "$HOME" ] && export HOME=/
+[ -z "$HOME" ] && export HOME=/root
 
 usage() {
     echo $"Usage: $0 {start|stop}"
