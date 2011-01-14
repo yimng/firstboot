@@ -49,7 +49,7 @@ rm %{buildroot}/%{_datadir}/firstboot/modules/additional_cds.py*
 rm -rf %{buildroot}
 
 %post
-if ! [ -f /etc/sysconfig/firstboot ]; then
+if [ $1 -ne 2 -a ! -f /etc/sysconfig/firstboot ]; then
   systemctl enable firstboot-text.service >/dev/null 2>&1 || :
   systemctl enable firstboot-graphical.service >/dev/null 2>&1 || :
 fi
