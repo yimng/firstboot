@@ -75,7 +75,7 @@ class XFrontEnd:
                 break
 
         try:
-            args = [":9", "-ac", "-nolisten", "tcp", "vt6", "-nr"]
+            args = [":9", "-ac", "-nolisten", "tcp", "vt1"]
             noOutput = os.open("/dev/null", os.O_RDWR)
 
             def sigchld_handler(num, frame):
