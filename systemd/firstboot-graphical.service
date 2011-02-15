@@ -9,7 +9,7 @@ Environment=RUNLEVEL=5
 ExecStart=/etc/init.d/firstboot start
 TimeoutSec=0
 StandardInput=tty
-ValidNoProcess=yes
+RemainAfterExit=yes
 Type=oneshot
 SysVStartPriority=99
 
