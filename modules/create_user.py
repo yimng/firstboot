@@ -22,6 +22,7 @@ import libuser
 import os, string, sys, time
 import os.path
 import pwd
+import unicodedata
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -413,10 +414,16 @@ class moduleClass(Module):
         try:
             user = name.split()[0]
         except IndexError:
-            user = ""
-        else:
-            user = user.encode("ascii", "ascii_transliterate")
+            user = u""
+
+        # convert to ascii (try to replace characters)
+        try:
+            nfkd = unicodedata.normalize("NFKD", user)
+            user = u"".join([c for c in nfkd if not unicodedata.combining(c)])
+            user = user.encode("ascii", "ignore")
             user = user.lower()
+        except:
+            user = ""
 
         self.usernameEntry.handler_block_by_func(self.usernameEntry_changed)
         self.usernameEntry.set_text(user)
