@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.116
+Version: 1.117
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -80,6 +80,9 @@ fi
 /lib/systemd/system/firstboot-graphical.service
 
 %changelog
+* Fri Feb 18 2011 Martin Gracik <mgracik@redhat.com> 1.117-1
+- Fix username guessing with unicode chars (#678070)
+
 * Tue Feb 15 2011 Martin Gracik <mgracik@redhat.com> 1.116-1
 - systemd's ValidNoProcess renamed to RemainAfterExit
 - Don't run Xorg with -nr option and use vt1
