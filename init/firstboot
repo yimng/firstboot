@@ -65,12 +65,8 @@ case "$1" in
 
         . /etc/profile.d/lang.sh
 
-        /usr/bin/plymouth --hide-splash
-
         /usr/sbin/firstboot $args
         RETVAL=$?
-
-        /usr/bin/plymouth --show-splash
 
         # If firstboot succeeded, chkconfig it off so we don't see the message
         # every time about starting up firstboot.

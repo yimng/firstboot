@@ -6,12 +6,12 @@ Conflicts=firstboot-text.service
 
 [Service]
 Environment=RUNLEVEL=5
+ExecStartPre=-/bin/plymouth quit
 ExecStart=/etc/init.d/firstboot start
 TimeoutSec=0
 StandardInput=tty
 RemainAfterExit=yes
 Type=oneshot
-SysVStartPriority=99
 
 [Install]
 WantedBy=graphical.target
