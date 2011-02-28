@@ -415,6 +415,8 @@ class moduleClass(Module):
             user = name.split()[0]
         except IndexError:
             user = u""
+        else:
+            user = unicode(user)
 
         # convert to ascii (try to replace characters)
         try:
