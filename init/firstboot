@@ -73,8 +73,7 @@ case "$1" in
         if [ "$RETVAL" -eq 0 ]; then
             action "" /bin/true
             /sbin/chkconfig firstboot off
-            /bin/systemctl disable firstboot-graphical.service >/dev/null 2>&1
-            /bin/systemctl disable firstboot-text.service >/dev/null 2>&1
+            /bin/systemctl disable firstboot-graphical.service firstboot-text.service >/dev/null 2>&1
         else
             action "" /bin/false
         fi

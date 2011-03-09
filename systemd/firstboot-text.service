@@ -1,16 +1,17 @@
 [Unit]
 Description=firstboot configuration program (text mode)
-After=livesys.service
-Before=getty@tty1.service
+After=livesys.service plymouth-quit.service
+Before=prefdm.service getty@tty1.service
 
 [Service]
 Environment=RUNLEVEL=3
 ExecStart=/etc/init.d/firstboot start
 TimeoutSec=0
-StandardInput=tty
 RemainAfterExit=yes
 Type=oneshot
 SysVStartPriority=99
+StandardInput=tty
+TTYPath=/dev/tty1
 
 [Install]
 WantedBy=multi-user.target

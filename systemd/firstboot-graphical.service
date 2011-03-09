@@ -1,17 +1,17 @@
 [Unit]
 Description=firstboot configuration program (graphical mode)
-After=livesys.service
-Before=prefdm.service
-Conflicts=firstboot-text.service
+After=livesys.service plymouth-quit.service
+Before=prefdm.service getty@tty1.service
+Conflicts=firstboot-text.service plymouth-quit.service
 
 [Service]
 Environment=RUNLEVEL=5
 ExecStartPre=-/bin/plymouth quit
 ExecStart=/etc/init.d/firstboot start
 TimeoutSec=0
-StandardInput=tty
 RemainAfterExit=yes
 Type=oneshot
+SysVStartPriority=99
 
 [Install]
 WantedBy=graphical.target
