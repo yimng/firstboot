@@ -73,6 +73,9 @@ if __name__ == '__main__':
         else:
             opts.theme_dir = os.path.join(THEME_DIR, 'default')
 
+    # XXX set the theme dir in config
+    config.themeDir = opts.theme_dir
+
     frontend = None
     if 'DISPLAY' not in os.environ:
         frontend = firstboot.frontend.Frontend()
