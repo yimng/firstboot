@@ -68,7 +68,6 @@ fi
 %dir %{_datadir}/firstboot/modules/
 %dir %{_datadir}/firstboot/themes/
 %dir %{_datadir}/firstboot/themes/default
-%config %{_initrddir}/firstboot
 %{python_sitelib}/*
 %{_sbindir}/firstboot
 %{_datadir}/firstboot/modules/create_user.py*
