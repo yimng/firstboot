@@ -107,8 +107,11 @@ class ModuleSet:
            mode -- The mode of operation firstboot is running under.
         """
         if self.path is not None:
-            from firstboot.loader import loadModules
-            self.moduleList = loadModules(self.path, mode)
+            # XXX
+            reconfig = True if mode == MODE_RECONFIG else False
+
+            from firstboot.loader import load_modules
+            self.moduleList = load_modules(self.path, reconfig)
 
     def needsNetwork(self):
         """Does this module set require the network to be active in order to
