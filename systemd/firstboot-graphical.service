@@ -5,12 +5,13 @@ Before=prefdm.service getty@tty1.service
 Conflicts=firstboot-text.service plymouth-quit.service
 
 [Service]
-Environment=RUNLEVEL=5
+Type=oneshot
 ExecStartPre=-/bin/plymouth quit
-ExecStart=/etc/init.d/firstboot start
+ExecStart=/usr/sbin/firstboot
+ExecStartPost=/bin/systemctl disable firstboot-graphical.service
+ExecStartPost=/bin/systemctl disable firstboot-text.service
 TimeoutSec=0
 RemainAfterExit=yes
-Type=oneshot
 SysVStartPriority=99
 
 [Install]
