@@ -23,10 +23,12 @@
 
 import optparse
 import os
+import sys
+import tempfile
+import traceback
 
 import firstboot.frontend
 import firstboot.loader
-import firstboot.interface
 
 from firstboot.constants import *
 
@@ -36,7 +38,15 @@ from firstboot.config import *
 import meh
 import meh.handler
 import meh.dump
-import meh.ui.gui
+
+
+def exception_handler(type, value, tb):
+    fd, path = tempfile.mkstemp(prefix='firstboot-', suffix='.trace')
+    fo = os.fdopen(fd, 'w')
+    traceback.print_exception(type, value, tb, None, fo)
+    fo.close()
+
+sys.excepthook = exception_handler
 
 
 if __name__ == '__main__':
@@ -71,6 +81,11 @@ if __name__ == '__main__':
         frontend.init_gtk()
         frontend.start_wm()
         frontend.merge_xres()
+
+
+    # these modules import gtk, so we need to have a display first
+    import firstboot.interface
+    import meh.ui.gui
 
     # XXX set up the interface
     config.frontend = frontend
