@@ -1,7 +1,7 @@
 [Unit]
 Description=firstboot configuration program (text mode)
 After=livesys.service plymouth-quit.service
-Before=prefdm.service getty@tty1.service
+Before=systemd-user-sessions.service
 Conflicts=firstboot-graphical.service plymouth-quit.service
 
 [Service]
