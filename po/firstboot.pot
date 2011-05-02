@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"POT-Creation-Date: 2011-05-02 09:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,27 +97,27 @@ msgid ""
 "Module %(module)s does not contain the required attribute %(attr)s; skipping."
 msgstr ""
 
-#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
 msgid "Very weak"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+#: ../firstboot/pwcheck.py:116 ../firstboot/pwcheck.py:117
 msgid "Weak"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:112
+#: ../firstboot/pwcheck.py:118
 msgid "Fairly strong"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:113
+#: ../firstboot/pwcheck.py:119
 msgid "Strong"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+#: ../firstboot/pwcheck.py:120 ../firstboot/pwcheck.py:121
 msgid "Very strong"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:141
+#: ../firstboot/pwcheck.py:147
 msgid "Undefined"
 msgstr ""
 
@@ -129,30 +129,32 @@ msgstr ""
 msgid "Please set the date and time for the system."
 msgstr ""
 
-#: ../modules/create_user.py:43 ../modules/create_user.py:44
+#: ../modules/create_user.py:45 ../modules/create_user.py:46
 msgid "Create User"
 msgstr ""
 
-#: ../modules/create_user.py:85
-msgid "You must create a user account for this system."
+#: ../modules/create_user.py:98
+msgid ""
+"You did not set up an user account capable of logging into the system.\n"
+"Are you sure you want to continue?"
 msgstr ""
 
-#: ../modules/create_user.py:96
+#: ../modules/create_user.py:119
 msgid "You must enter and confirm a password for this user."
 msgstr ""
 
-#: ../modules/create_user.py:103
+#: ../modules/create_user.py:126
 msgid "The passwords do not match.  Please enter the password again."
 msgstr ""
 
-#: ../modules/create_user.py:115
+#: ../modules/create_user.py:138
 #, python-format
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
 msgstr ""
 
-#: ../modules/create_user.py:134
+#: ../modules/create_user.py:157
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
@@ -162,13 +164,13 @@ msgid ""
 "username."
 msgstr ""
 
-#: ../modules/create_user.py:177
+#: ../modules/create_user.py:200
 #, python-format
 msgid ""
 "Fixing attributes on the home directory for %s.  This may take a few minutes."
 msgstr ""
 
-#: ../modules/create_user.py:197
+#: ../modules/create_user.py:220
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
@@ -176,54 +178,54 @@ msgid ""
 "errors."
 msgstr ""
 
-#: ../modules/create_user.py:223
+#: ../modules/create_user.py:246
 msgid ""
 "You must create a 'username' for regular (non-administrative) use of your "
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
 
-#: ../modules/create_user.py:263
+#: ../modules/create_user.py:285
 msgid "Full Nam_e:"
 msgstr ""
 
-#: ../modules/create_user.py:270
+#: ../modules/create_user.py:292
 msgid "_Username:"
 msgstr ""
 
-#: ../modules/create_user.py:277
+#: ../modules/create_user.py:299
 msgid "_Password:"
 msgstr ""
 
-#: ../modules/create_user.py:284
+#: ../modules/create_user.py:306
 msgid "Confir_m Password:"
 msgstr ""
 
-#: ../modules/create_user.py:294
+#: ../modules/create_user.py:316
 msgid "Add to Administrators group"
 msgstr ""
 
-#: ../modules/create_user.py:300
+#: ../modules/create_user.py:322
 msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
 
-#: ../modules/create_user.py:309
+#: ../modules/create_user.py:331
 msgid "Use Network _Login..."
 msgstr ""
 
-#: ../modules/create_user.py:317
+#: ../modules/create_user.py:339
 msgid ""
 "If you need more control when creating the user (specifying home directory, "
 "and/or UID), please click the Advanced button."
 msgstr ""
 
-#: ../modules/create_user.py:327
+#: ../modules/create_user.py:349
 msgid "_Advanced..."
 msgstr ""
 
-#: ../modules/create_user.py:365
+#: ../modules/create_user.py:387
 msgid "Please wait"
 msgstr ""
 
