@@ -16,15 +16,17 @@ ExclusiveOS: Linux
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: gettext
 BuildRequires: python-devel, python-setuptools-devel
+BuildRequires: systemd-units
 Requires: pygtk2, python
 Requires: setuptool, libuser-python, system-config-users, system-config-date
 Requires: authconfig-gtk, python-meh
 Requires: system-config-keyboard
 Requires: python-ethtool
 Requires: cracklib-python
-Requires: systemd-units
+Requires(post): systemd-units systemd-sysv chkconfig
+Requires(preun): systemd-units
+Requires(postun): systemd-units
 Requires: firstboot(windowmanager)
-Requires(post): chkconfig
 
 %define debug_package %{nil}
 
@@ -45,6 +47,12 @@ make DESTDIR=%{buildroot} SITELIB=%{python_sitelib} install
 rm %{buildroot}/%{_datadir}/firstboot/modules/additional_cds.py*
 %find_lang %{name}
 
+# systemd
+mkdir -p %{buildroot}%{_unitdir}
+install -m644 /lib/systemd/system/firstboot-graphical.service %{buildroot}%{_unitdir}
+install -m644 /lib/systemd/system/firstboot-text.service %{buildroot}%{_unitdir}
+rm -rf %{buildroot}%{_initrddir}
+
 %clean
 rm -rf %{buildroot}
 
@@ -54,8 +62,7 @@ if [ $1 -ne 2 -a ! -f /etc/sysconfig/firstboot ]; then
   if [ "$platform" = "s390" -o "$platform" = "s390x" ]; then
     echo "RUN_FIRSTBOOT=YES" > /etc/sysconfig/firstboot
   else
-    systemctl enable firstboot-text.service >/dev/null 2>&1 || :
-    systemctl enable firstboot-graphical.service >/dev/null 2>&1 || :
+    /bin/systemctl daemon-reload > /dev/null 2>&1 || :
   fi
 fi
 
@@ -63,9 +70,26 @@ fi
 if [ $1 = 0 ]; then
   rm -rf /usr/share/firstboot/*.pyc
   rm -rf /usr/share/firstboot/modules/*.pyc
-  systemctl disable firstboot-graphical.service >/dev/null 2>&1 || :
-  systemctl disable firstboot-text.service >/dev/null 2>&1 || :
+  /bin/systemctl --no-reload firstboot-graphical.service > /dev/null 2>&1 || :
+  /bin/systemctl stop firstboot-graphical.service > /dev/null 2>&1 || :
+  /bin/systemctl --no-reload firstboot-text.service > /dev/null 2>&1 || :
+  /bin/systemctl stop firstboot-text.service > /dev/null 2>&1 || :
 fi
+
+%postun
+/bin/systemctl daemon-reload > /dev/null 2>&1 || :
+if [ $1 -ge 1 ] ; then
+    /bin/systemctl try-restart firstboot-graphical.service > /dev/null 2>&1 || :
+    /bin/systemctl try-restart firstboot-text.service > /dev/null 2>&1 || :
+fi
+
+%triggerun -- firstboot < 1.117
+%{_bindir}/systemd-sysv-convert --save firstboot > /dev/null 2>&1 ||:
+/bin/systemctl enable firstboot-graphical.service > /dev/null 2>&1
+/bin/systemctl enable firstboot-text.service > /dev/null 2>&1
+/sbin/chkconfig --del firstboot > /dev/null 2>&1 || :
+/bin/systemctl try-restart firstboot-graphical.service > /dev/null 2>&1 || :
+/bin/systemctl try-restart firstboot-text.service > /dev/null 2>&1 || :
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
@@ -80,8 +104,8 @@ fi
 %{_datadir}/firstboot/modules/eula.py*
 %{_datadir}/firstboot/modules/welcome.py*
 %{_datadir}/firstboot/themes/default/*
-/lib/systemd/system/firstboot-text.service
-/lib/systemd/system/firstboot-graphical.service
+%{_unitdir}/firstboot-graphical.service
+%{_unitdir}/firstboot-text.service
 %ifarch s390 s390x
 %dir %{_sysconfdir}/profile.d
 %{_sysconfdir}/profile.d/firstboot.sh
