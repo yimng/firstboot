@@ -23,6 +23,7 @@ import os, string, sys, time
 import os.path
 import pwd
 import unicodedata
+import re
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -134,7 +135,32 @@ class moduleClass(Module):
 
         user = self.admin.lookupUserByName(username)
 
-        if user != None and user.get(libuser.UIDNUMBER)[0] < 500:
+        # get UID_MIN from /etc/login.defs
+        __ld_line = re.compile(r'^[ \t]*'      # Initial whitespace
+                               r'([^ \t]+)'    # Variable name
+                               r'[ \t][ \t"]*' # Separator - yes, may have multiple "s
+                               r'(([^"]*)".*'  # Value, case 1 - terminated by "
+                               r'|([^"]*\S)?\s*' # Value, case 2 - only drop trailing \s
+                               r')$')
+
+        res = {}
+        with open('/etc/login.defs') as f:
+            for line in f:
+                match = __ld_line.match(line)
+                if match is not None:
+                    name = match.group(1)
+                    if name.startswith('#'):
+                        continue
+                    value = match.group(3)
+                    if value is None:
+                        value = match.group(4)
+                        if value is None:
+                            value = ''
+                    res[name] = value # Override previous definition
+
+        uid_min = res.get('UID_MIN', 500)
+
+        if user != None and user.get(libuser.UIDNUMBER)[0] < uid_min:
             self._showErrorMessage(_("The username '%s' is a reserved system "
                                      "account.  Please specify another username."
                                      % username))
