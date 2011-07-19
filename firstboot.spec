@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.117
+Version: 1.118
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -114,6 +114,28 @@ fi
 
 
 %changelog
+* Tue Jul 19 2011 Martin Gracik <mgracik@redhat.com> 1.118-1
+- Get UID_MIN from /etc/login.defs (#717113)
+- Drop SysV support (Jóhann B. Guðmundsson) (#714668)
+- Fix firstboot-text.service (#696320)
+- Fix firstboot for s390 architecture (#463564)
+- Set the theme directory
+- Changes to systemd service files
+- Save exception to a file
+- Remove init file from the spec
+- New systemd service files
+- Remove old init from setup
+- Remove the old init
+- Use the new loader in moduleset
+- Rewritten the firstboot executable
+- Added reconfig property to module and moduleset
+- Added new constants
+- Rewritten frontend
+- Rewritten loader
+- Update systemd config to prevent tty conflict (#681292)
+- Fix username guessing
+- We need to quit plymouth before running firstboot (#679171)
+
 * Fri Feb 18 2011 Martin Gracik <mgracik@redhat.com> 1.117-1
 - Fix username guessing with unicode chars (#678070)
 
