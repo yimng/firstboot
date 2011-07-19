@@ -4,7 +4,7 @@ Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
 Version: 16.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -46,12 +46,6 @@ rm -rf %{buildroot}
 make DESTDIR=%{buildroot} SITELIB=%{python_sitelib} install
 rm %{buildroot}/%{_datadir}/firstboot/modules/additional_cds.py*
 %find_lang %{name}
-
-# systemd
-mkdir -p %{buildroot}%{_unitdir}
-install -m644 /lib/systemd/system/firstboot-graphical.service %{buildroot}%{_unitdir}
-install -m644 /lib/systemd/system/firstboot-text.service %{buildroot}%{_unitdir}
-rm -rf %{buildroot}%{_initrddir}
 
 %clean
 rm -rf %{buildroot}
@@ -104,8 +98,8 @@ fi
 %{_datadir}/firstboot/modules/eula.py*
 %{_datadir}/firstboot/modules/welcome.py*
 %{_datadir}/firstboot/themes/default/*
-%{_unitdir}/firstboot-graphical.service
-%{_unitdir}/firstboot-text.service
+/lib/systemd/system/firstboot-graphical.service
+/lib/systemd/system/firstboot-text.service
 %ifarch s390 s390x
 %dir %{_sysconfdir}/profile.d
 %{_sysconfdir}/profile.d/firstboot.sh
