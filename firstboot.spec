@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 1.118
+Version: 16.0
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -114,6 +114,10 @@ fi
 
 
 %changelog
+* Tue Jul 19 2011 Martin Gracik <mgracik@redhat.com> 16.0-1
+- Honor the tty set by console kernel argument (#701648)
+- Translation updates
+
 * Tue Jul 19 2011 Martin Gracik <mgracik@redhat.com> 1.118-1
 - Get UID_MIN from /etc/login.defs (#717113)
 - Drop SysV support (Jóhann B. Guðmundsson) (#714668)
