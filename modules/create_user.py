@@ -24,6 +24,7 @@ import os.path
 import pwd
 import unicodedata
 import re
+import shutil
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -230,7 +231,22 @@ class moduleClass(Module):
                     gtk.main_iteration(False)
 
                 os.chown("/home/%s" % username, uidNumber, gidNumber)
-                os.path.walk("/home/%s" % username, self._chown, (uidNumber, gidNumber))
+                os.path.walk("/home/%s" % username, self._chown, (uidNumber,
+                                                                  gidNumber))
+
+                # copy skel files
+                for fname in os.listdir("/etc/skel"):
+                    dst = "/home/%s/%s" % (username, fname)
+                    if not os.path.exists(dst):
+                        src = "/etc/skel/%s" % fname
+                        if os.path.isdir(src):
+                            shutil.copytree(src, dst)
+                            os.path.walk(dst, self._chown, (uidNumber,
+                                                            gidNumber))
+                        else:
+                            shutil.copy2(src, dst)
+                            os.chown(dst, uidNumber, gidNumber)
+
                 dlg.destroy()
 
                 if len(self._problemFiles) > 0:
