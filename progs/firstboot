@@ -63,6 +63,15 @@ if __name__ == '__main__':
 
     opts, args = parser.parse_args()
 
+    # XXX should we run?
+    if os.path.isfile('/etc/sysconfig/firstboot'):
+        with open('/etc/sysconfig/firstboot') as fobj:
+            for line in fobj:
+                if line.strip() == 'RUN_FIRSTBOOT=NO':
+                    os.system('systemctl stop firstboot-graphical.service > /dev/null 2>&1')
+                    os.system('systemctl stop firstboot-text.service > /dev/null 2>&1')
+                    sys.exit(0)
+
     if not opts.module_dir:
         opts.module_dir = MODULE_DIR
 
