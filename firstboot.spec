@@ -3,8 +3,8 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 16.0
-Release: 2%{?dist}
+Version: 16.1
+Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -108,6 +108,10 @@ fi
 
 
 %changelog
+* Mon Jul 25 2011 Martin Gracik <mgracik@redhat.com> 16.1-1
+- Don't run firstboot if it's set in /etc/sysconfig/firstboot (#723526)
+- Copy skel files even if the home directory exists (#598957)
+
 * Tue Jul 19 2011 Martin Gracik <mgracik@redhat.com> 16.0-1
 - Honor the tty set by console kernel argument (#701648)
 - Translation updates
