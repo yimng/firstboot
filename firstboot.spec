@@ -56,7 +56,8 @@ if [ $1 -ne 2 -a ! -f /etc/sysconfig/firstboot ]; then
   if [ "$platform" = "s390" -o "$platform" = "s390x" ]; then
     echo "RUN_FIRSTBOOT=YES" > /etc/sysconfig/firstboot
   else
-    /bin/systemctl daemon-reload > /dev/null 2>&1 || :
+    systemctl enable firstboot-graphical.service >/dev/null 2>&1 || :
+    systemctl enable firstboot-text.service >/dev/null 2>&1 || :
   fi
 fi
 
