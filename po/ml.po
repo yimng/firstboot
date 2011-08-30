@@ -1,28 +1,27 @@
-# translation of firstboot.master.ml.po to
-# translation of ml.po to
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-#
+# 
 # Ani Peter <apeter@redhat.com>, 2006, 2007, 2010.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master.ml\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2011-01-05 20:43+0530\n"
-"Last-Translator: \n"
-"Language-Team:  <en@li.org>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: glezos <glezos@indifex.com>\n"
+"Language-Team: Malayalam <discuss@lists.smc.org.in>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"\n"
-"\n"
+"Language: ml\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "ഫസ്റ്റ്ബൂട്ട് പ്രവര്‍ത്തിപ്പിക്കുന്നതിനായി നിങ്ങള്‍ റൂട്ട് ആകേണ്ടതുണ്ടു്."
+msgstr ""
+"ഫസ്റ്റ്ബൂട്ട് പ്രവര്‍ത്തിപ്പിക്കുന്നതിനായി നിങ്ങള്‍ റൂട്ട് ആകേണ്ടതുണ്ടു്."
 
 #: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
@@ -31,6 +30,11 @@ msgstr "ഫസ്റ്റ്ബൂട്ട് ഘടകങ്ങള്‍ ല�
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "ഒരു ഫസ്റ്റ്ബൂട്ട് സംയോജകഘടകവും ഉണ്ടാക്കുവാന്‍ സാധ്യമായില്ല."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "%s എന്ന ഘടകത്തിനുള്ള യുഐ സജ്ജമല്ല;: അതിനാല്‍ നീക്കം ചെയ്യുന്നു."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -44,7 +48,9 @@ msgstr "_അവസാനിച്ചിരിക്കുന്നു"
 
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "നിങ്ങള്‍ തിരഞ്ഞെടുത്തവ പ്രാവര്‍ത്തികമാക്കുന്നതിനായി കമ്പ്യൂട്ടര്‍ റീബൂട്ട് ചെയ്യേണ്ടതാണു്."
+msgstr ""
+"നിങ്ങള്‍ തിരഞ്ഞെടുത്തവ പ്രാവര്‍ത്തികമാക്കുന്നതിനായി കമ്പ്യൂട്ടര്‍ റീബൂട്ട് "
+"ചെയ്യേണ്ടതാണു്."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -57,15 +63,19 @@ msgstr "_മുമ്പോട്ട്"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr "%s എന്ന ഘടകം അതിനുള്ള യുഐ ക്രമികരിച്ചില്ല, അതിനാല്‍ നീക്കം ചെയ്യുന്നു."
+msgstr ""
+"%s എന്ന ഘടകം അതിനുള്ള യുഐ ക്രമികരിച്ചില്ല, അതിനാല്‍ നീക്കം ചെയ്യുന്നു."
 
 #: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage എന്നതിന് ഒരു ഘടത്തിന്റെ തലക്കെട്ട് അല്ലെങ്കില്‍ പേജ് നംബര്‍ നല്‍കേണ്ടതാകുന്നു."
+msgstr ""
+"moveToPage എന്നതിന് ഒരു ഘടത്തിന്റെ തലക്കെട്ട് അല്ലെങ്കില്‍ പേജ് നംബര്‍ "
+"നല്‍കേണ്ടതാകുന്നു."
 
 #: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
-msgstr "സ്ക്രീന്‍ഷോട്ട് ഡയറക്ടറി ഉണ്ടാക്കുവാന്‍ സാധിച്ചില്ല; ഉപേക്ഷിക്കുന്നു‌."
+msgstr ""
+"സ്ക്രീന്‍ഷോട്ട് ഡയറക്ടറി ഉണ്ടാക്കുവാന്‍ സാധിച്ചില്ല; ഉപേക്ഷിക്കുന്നു‌."
 
 #: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
@@ -89,17 +99,173 @@ msgstr ""
 #: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr "%s എന്ന ഘടകത്തിന് മൊഡ്യൂള്‍ക്ലാസ്സ് എന്ന പേരിലുള്ള ക്ലാസ്സ് ലഭ്യമല്ല; അതിനാല്‍ ഉപേക്ഷിക്കുന്നു."
+msgstr ""
+"%s എന്ന ഘടകത്തിന് മൊഡ്യൂള്‍ക്ലാസ്സ് എന്ന പേരിലുള്ള ക്ലാസ്സ് ലഭ്യമല്ല; "
+"അതിനാല്‍ ഉപേക്ഷിക്കുന്നു."
 
 #: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
-msgstr "%(module)s എന്ന ഘടകത്തിന് ആവശ്യമുള്ള %(attr)s എന്ന വിശേഷത ലഭ്യമല്ല; അതിനാല്‍ ഉപേക്ഷിക്കുന്നു."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
+msgstr ""
+"%(module)s എന്ന ഘടകത്തിന് ആവശ്യമുള്ള %(attr)s എന്ന വിശേഷത ലഭ്യമല്ല; അതിനാല്‍"
+" ഉപേക്ഷിക്കുന്നു."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr ""
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "തീയതിയും സമയവും"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "നിങ്ങളുടെ സിസ്റ്റത്തിനുള്ള തീയതിയും സമയവും ദയവായി ക്രമികരിക്കുക."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "ഉപയോക്താവിനെ ഉണ്ടാക്കുക"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റത്തിനുള്ള ഉപയോക്താവിനുള്ള അക്കൌണ്ട് ദയവായി ക്രമീകരിക്കുക."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റത്തിനുള്ള ഉപയോക്താവിനുള്ള രഹസ്യവാക്ക് ദയവായി ഉറപ്പാക്കുക."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+"രഹസ്യവാക്കുകള്‍ പൊരുത്തപ്പെടുന്നില്ല.  ദയവായി രഹസ്യവാക്ക് വീണ്ടും നല്‍കുക."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "%s എന്ന ഘടകത്തിനുള്ള യുഐ സജ്ജമല്ല;: അതിനാല്‍ നീക്കം ചെയ്യുന്നു."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"'%s' എന്ന പേര് മുന്‍നിശ്ചയിച്ചിട്ടുള്ള സിസ്റ്റം അക്കൌണ്ടാകുന്നു.  ദയവായി "
+"മറ്റൊരു പേര് നല്‍കുക."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"%s എന്ന ഉപയോക്താവിന് ഒരു ഹോം ഡയറക്ടറി നിലവിലുണ്ട്. ഈ ഡയറക്ടറിയും "
+"അതിലുള്ളവയുടേയും ഉടമസ്ഥനായി നിങ്ങള്‍ക്കു് പുതിയ ഉപയോക്താവിനെ സജ്ജമാക്കി "
+"തുടരണമോ? ഇങ്ങനെ ചെയ്യുന്നതു് നിങ്ങളുടെ ഏതെങ്കിലും SELinux ലേബലുകള്‍ "
+"അല്ലെങ്കില്‍ അനുമതികള്‍ സജ്ജമാക്കുന്നു. ഈ ഹോം ഡയറക്ടറി നിങ്ങള്‍ക്കു് വീണ്ടും"
+" ഉപയോഗിക്കണമോ? വേണ്ടായെങ്കില്‍, ദയവായി മറ്റൊരു പേരു് തെരഞ്ഞെടുക്കുക."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"%s-നുള്ള ഹോം ഡയറക്ടറിയിലുള്ള വിശേഷതകള്‍ പരിഹരിക്കുന്നു.  ഇതു് അല്പ സമയം "
+"എടുക്കുന്നു."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"%(user)s-നുള്ള ഹോം ഡയറക്ടറിയില്‍ ചില ഫയലുകള്‍ക്കുള്ള വിശേഷതകള്‍ "
+"പരിഹരിക്കുന്നതില്‍ പിശക് ഉണ്ടായിരിക്കുന്നു. പിശക് ഉണ്ടായ ഫയലുകള്‍ക്കായി "
+"ദയവായി %(path)s കാണുക."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റത്തിന്റെ സാധാരണ ഉപയോഗങ്ങള്‍ക്കായി (അഡ്മിനിസ്ട്രേറ്റീവ് "
+"അല്ലാത്ത കാര്യങ്ങള്‍ക്ക്) ഒരു 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നത് ഉചിതമാകുന്നു. "
+"ഒരു സിസ്റ്റം 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നതിനായി, താഴെ ആവശ്യപ്പെട്ടിരിക്കുന്ന "
+"വിവരങ്ങള്‍ ദയവായി നല്‍കുക."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "പൂര്‍ണ്ണ _നാമം:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_ഉപയോക്തൃനാമം:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_രഹസ്യവാക്ക്:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "രഹസ്യവാക്ക് ഉ_റപ്പാക്കുക:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr ""
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Kerberos അല്ലെങ്കില്‍ NIS പോലുള്ള നെറ്റ്‌വര്‍ക്ക് ആധികാരികതകള്‍ "
+"ഉപയോഗിക്കണമെങ്കില്‍, ദയവായി നെറ്റ്‌വര്‍ക്ക് പ്രവേശനം ഉപയോഗിക്കുക എന്ന "
+"ബട്ടണ്‍ അമര്‍ത്തുക."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "നെറ്റ്‌വര്‍ക്ക് _പ്രവേശനം ഉപയോഗിക്കുക..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"ഉപയോക്താവിനെ (ഹോം ഡയറക്ടറി, യുഐഡി വ്യക്തമാക്കുക) തയ്യാറാക്കുമ്പോള്‍, "
+"കൂടുതല്‍ നിയന്ത്രണം ആവശ്യമെങ്കില്‍, സങ്കീര്‍ണ്ണം എന്ന ബട്ടണ്‍ അമര്‍ത്തുക."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "_സങ്കീര്‍ണ്ണം..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "ദയവായി കാത്തിരിക്കുക"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -112,30 +278,28 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Red Hat-ന്റേതല്ലാതായുളള ഉപകരണങ്ങളുടേയും പ്രോഗ്രാമുകളുടേയും പ്രവര്‍ത്തനം സാധ്യമാക്കുവാന്‍ \"Red "
-"Hat Enterprise Linux Extras\" എന്ന ഡിസ്ക്ക് ദയവായി ഇപ്പോള്‍ സിഡി-ഡ്രൈവില്‍ നിക്ഷേപിക്കുക. "
-"ഇതിനോടനുബന്ധിച്ച്, പ്രോഗ്രാമുകളുടെ വിശദ വിവരങ്ങള്‍ അടങ്ങിയ ഡിസ്ക്ക് (Documentation disc), "
-"അല്ലെങ്കില്‍ Red Hat-ന്റെ അനുബന്ധ പ്രോഗ്രാമുകളുടെ ഡിസ്ക്കും ഇപ്പോള്‍ ഇന്‍‌സ്റ്റോള്‍ ചെയ്യാവുന്നതാണ്."
+"Red Hat-ന്റേതല്ലാതായുളള ഉപകരണങ്ങളുടേയും പ്രോഗ്രാമുകളുടേയും പ്രവര്‍ത്തനം "
+"സാധ്യമാക്കുവാന്‍ \"Red Hat Enterprise Linux Extras\" എന്ന ഡിസ്ക്ക് ദയവായി "
+"ഇപ്പോള്‍ സിഡി-ഡ്രൈവില്‍ നിക്ഷേപിക്കുക. ഇതിനോടനുബന്ധിച്ച്, പ്രോഗ്രാമുകളുടെ "
+"വിശദ വിവരങ്ങള്‍ അടങ്ങിയ ഡിസ്ക്ക് (Documentation disc), അല്ലെങ്കില്‍ Red "
+"Hat-ന്റെ അനുബന്ധ പ്രോഗ്രാമുകളുടെ ഡിസ്ക്കും ഇപ്പോള്‍ ഇന്‍‌സ്റ്റോള്‍ "
+"ചെയ്യാവുന്നതാണ്."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
 msgstr ""
-"പുതുതായി ഏതെങ്കിലും സോഫ്റ്റ്‌വെയര്‍ ഇനിയും ഇന്‍‌സ്റ്റോള്‍ ചെയ്യുവാന്‍ ഉണ്ടെങ്കില്‍ അതിനാവശ്യാമായുള്ള "
-"സിഡികള്‍ ഇപ്പോള്‍ കമ്പ്യൂട്ടറില്‍ ഇടുക."
+"പുതുതായി ഏതെങ്കിലും സോഫ്റ്റ്‌വെയര്‍ ഇനിയും ഇന്‍‌സ്റ്റോള്‍ ചെയ്യുവാന്‍ "
+"ഉണ്ടെങ്കില്‍ അതിനാവശ്യാമായുള്ള സിഡികള്‍ ഇപ്പോള്‍ കമ്പ്യൂട്ടറില്‍ ഇടുക."
 
 #: ../modules/additional_cds.py:65
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 ആര്‍ക്കിറ്റക്ച്ചറില്‍ 32-ബിറ്റ് പ്രയോഗങ്ങളുടെ റണ്‍ടൈം പിന്തുണ പ്രവര്‍ത്ത "
-"സജ്ജമാക്കുന്നതിനായി Extras disc-ല്‍ നിന്നും Execution Layer പാക്കേജ് ഇപ്പോള്‍ നിങ്ങള്‍ "
-"ഇന്‍‌സ്റ്റോള്‍ ചെയ്യേണ്ടതാണ്."
+"Intel Itanium2 ആര്‍ക്കിറ്റക്ച്ചറില്‍ 32-ബിറ്റ് പ്രയോഗങ്ങളുടെ റണ്‍ടൈം പിന്തുണ പ്രവര്‍ത്ത സജ്ജമാക്കുന്നതിനായി Extras disc-ല്‍ നിന്നും Execution Layer പാക്കേജ് ഇപ്പോള്‍ നിങ്ങള്‍ ഇന്‍‌സ്റ്റോള്‍ ചെയ്യേണ്ടതാണ്."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -146,140 +310,12 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM ഇല്ലെന്നു് കണ്ടെത്തിയിരിക്കുന്നു.  ദയവായി ഡ്രൈവില്‍ CD-ROM നിക്ഷേപിക്കുക, ശേഷം മുമ്പോട്ട് "
-"പോകുന്നതിനായി \"ശരി\" അമര്‍ത്തുക."
+"CD-ROM ഇല്ലെന്നു് കണ്ടെത്തിയിരിക്കുന്നു.  ദയവായി ഡ്രൈവില്‍ CD-ROM "
+"നിക്ഷേപിക്കുക, ശേഷം മുമ്പോട്ട് പോകുന്നതിനായി \"ശരി\" അമര്‍ത്തുക."
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "CDയില്‍ ഓട്ടോറണ്‍ പ്രോഗ്രാം ലഭ്യമല്ല. തുടരുന്നതിനായി \"ശരി\" അമര്‍ത്തുക."
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "ഉപയോക്താവിനെ ഉണ്ടാക്കുക"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "നിങ്ങളുടെ സിസ്റ്റത്തിനുള്ള ഉപയോക്താവിനുള്ള അക്കൌണ്ട് ദയവായി ക്രമീകരിക്കുക."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "നിങ്ങളുടെ സിസ്റ്റത്തിനുള്ള ഉപയോക്താവിനുള്ള രഹസ്യവാക്ക് ദയവായി ഉറപ്പാക്കുക."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "രഹസ്യവാക്കുകള്‍ പൊരുത്തപ്പെടുന്നില്ല.  ദയവായി രഹസ്യവാക്ക് വീണ്ടും നല്‍കുക."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr "'%s' എന്ന പേര് മുന്‍നിശ്ചയിച്ചിട്ടുള്ള സിസ്റ്റം അക്കൌണ്ടാകുന്നു.  ദയവായി മറ്റൊരു പേര് നല്‍കുക."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"%s എന്ന ഉപയോക്താവിന് ഒരു ഹോം ഡയറക്ടറി നിലവിലുണ്ട്. ഈ ഡയറക്ടറിയും അതിലുള്ളവയുടേയും "
-"ഉടമസ്ഥനായി നിങ്ങള്‍ക്കു് പുതിയ ഉപയോക്താവിനെ സജ്ജമാക്കി തുടരണമോ? ഇങ്ങനെ ചെയ്യുന്നതു് നിങ്ങളുടെ "
-"ഏതെങ്കിലും SELinux ലേബലുകള്‍ അല്ലെങ്കില്‍ അനുമതികള്‍ സജ്ജമാക്കുന്നു. ഈ ഹോം ഡയറക്ടറി നിങ്ങള്‍ക്കു് "
-"വീണ്ടും ഉപയോഗിക്കണമോ? വേണ്ടായെങ്കില്‍, ദയവായി മറ്റൊരു പേരു് തെരഞ്ഞെടുക്കുക."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s-നുള്ള ഹോം ഡയറക്ടറിയിലുള്ള വിശേഷതകള്‍ പരിഹരിക്കുന്നു.  ഇതു് അല്പ സമയം എടുക്കുന്നു."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-"%(user)s-നുള്ള ഹോം ഡയറക്ടറിയില്‍ ചില ഫയലുകള്‍ക്കുള്ള വിശേഷതകള്‍ "
-"പരിഹരിക്കുന്നതില്‍ പിശക് ഉണ്ടായിരിക്കുന്നു. പിശക് ഉണ്ടായ ഫയലുകള്‍ക്കായി "
-"ദയവായി %(path)s കാണുക."
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"നിങ്ങളുടെ സിസ്റ്റത്തിന്റെ സാധാരണ ഉപയോഗങ്ങള്‍ക്കായി (അഡ്മിനിസ്ട്രേറ്റീവ് അല്ലാത്ത കാര്യങ്ങള്‍ക്ക്) "
-"ഒരു 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നത് ഉചിതമാകുന്നു. ഒരു സിസ്റ്റം 'ഉപയോക്തൃനാമം' ഉണ്ടാക്കുന്നതിനായി, "
-"താഴെ ആവശ്യപ്പെട്ടിരിക്കുന്ന വിവരങ്ങള്‍ ദയവായി നല്‍കുക."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "രഹസ്യവാക്ക് ശൂന്യം"
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_ഉപയോക്തൃനാമം:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "പൂര്‍ണ്ണ _നാമം:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_രഹസ്യവാക്ക്:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "രഹസ്യവാക്ക് ഉ_റപ്പാക്കുക:"
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Kerberos അല്ലെങ്കില്‍ NIS പോലുള്ള നെറ്റ്‌വര്‍ക്ക് ആധികാരികതകള്‍ ഉപയോഗിക്കണമെങ്കില്‍, ദയവായി "
-"നെറ്റ്‌വര്‍ക്ക് പ്രവേശനം ഉപയോഗിക്കുക എന്ന ബട്ടണ്‍ അമര്‍ത്തുക."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "നെറ്റ്‌വര്‍ക്ക് _പ്രവേശനം ഉപയോഗിക്കുക..."
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"ഉപയോക്താവിനെ (ഹോം ഡയറക്ടറി, യുഐഡി വ്യക്തമാക്കുക) തയ്യാറാക്കുമ്പോള്‍, "
-"കൂടുതല്‍ നിയന്ത്രണം ആവശ്യമെങ്കില്‍, സങ്കീര്‍ണ്ണം എന്ന ബട്ടണ്‍ അമര്‍ത്തുക."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "_സങ്കീര്‍ണ്ണം..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "ദയവായി കാത്തിരിക്കുക"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "രഹസ്യവാക്കിനു് ശക്തി കുറവു്: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "രഹസ്യവാക്ക് ശരിയാണു്"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "തീയതിയും സമയവും"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "നിങ്ങളുടെ സിസ്റ്റത്തിനുള്ള തീയതിയും സമയവും ദയവായി ക്രമികരിക്കുക."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -287,29 +323,13 @@ msgstr "ലൈസന്‍സ് വിവരം"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -325,7 +345,9 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"കമ്പ്യൂട്ടര്‍ പൂര്‍ണ്ണമായി ഉപയോഗ്യമാക്കുന്നതിലേക്ക് ഇനിയും കുറേ നടപടി ക്രമങ്ങള്‍ കൂടി ബാക്കിയുണ്ട്. ഇനി "
-"ചില അടിസ്ഥാന ക്രമീകരണങ്ങളില്‍ കൂടി സെറ്റപ്പ് ഏജന്റ് നിങ്ങളെ നയിക്കുന്നതാണ്.  ദയവായി താഴെ "
-"വലത്തുളള \"മുമ്പോട്ട്\" എന്ന ബട്ടണില്‍ ക്ലിക്ക് ചെയ്ത് തുടരുക."
+"കമ്പ്യൂട്ടര്‍ പൂര്‍ണ്ണമായി ഉപയോഗ്യമാക്കുന്നതിലേക്ക് ഇനിയും കുറേ നടപടി "
+"ക്രമങ്ങള്‍ കൂടി ബാക്കിയുണ്ട്. ഇനി ചില അടിസ്ഥാന ക്രമീകരണങ്ങളില്‍ കൂടി "
+"സെറ്റപ്പ് ഏജന്റ് നിങ്ങളെ നയിക്കുന്നതാണ്.  ദയവായി താഴെ വലത്തുളള "
+"\"മുമ്പോട്ട്\" എന്ന ബട്ടണില്‍ ക്ലിക്ക് ചെയ്ത് തുടരുക."
+
 

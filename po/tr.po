@@ -1,40 +1,43 @@
-# translation of firstboot_tr.po to
-# translation of tr.po to Turkish
-#
-# Turkish translations for firstboot messages.
-# Copyright (C) 2002,2003, 2004, 2006, 2007 Free Software Foundation, Inc
-# $Id$
-#
-# Nilgün Belma Bugüner <nilgun@superonline.com>, 2002,2003.
-# Erçin EKER <erc.caldera@gmx.net>, 2003.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Hasan Umit Ezerce <humit@tr.net>, 2004.
 # Hasan Umit Ezerce <humit@linuxmail.org>, 2004.
 # Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004, 2006.
-# Egemen Metin Turan <mturan@aegee-ankara.org>,  2006, 2007.
-# Hasan Alp İNAN <hasanalpinan@gmail.com>, 2010.
+# Egemen Metin Turan <mturan@aegee-ankara.org>, 2006, 2007.
+# Hasan Alp İNAN <hasanalpinan@gmail.com>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-10-21 11:19+0200\n"
-"Last-Translator: Hasan Alp iNAN <hasanalpinan@gmail.com>\n"
-"Language-Team: Turkish <none>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: hasanalpinan <hasanalpinan@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.net/projects/p/fedora/team/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.4.6\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../progs/firstboot:194
-#: ../progs/firstboot:195
+#: ../progs/firstboot:140
+msgid "You must be root to run firstboot."
+msgstr "Firstboot'u çalıştırmak için root olmalısınız."
+
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "Firstboot modülleri bulunamadı."
 
-#: ../progs/firstboot:205
-#: ../progs/firstboot:206
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Herhangi bir firstboot arayüzü oluşturulamadı"
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "%s modülü kendi UI birimini kuramadı; kaldırılıyor."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -42,14 +45,14 @@ msgstr "Geri dönme girişiminde bulunuldu, ancak geçmiş boş."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:87
-#: ../firstboot/interface.py:163
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "_Kurulumu Bitir"
 
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Bazı seçimlerinizin etkin olabilmesi için sistem yeniden başalatılmalı"
+msgstr ""
+"Bazı seçimlerinizin etkin olabilmesi için sistem yeniden başalatılmalı"
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -64,18 +67,26 @@ msgstr "_İleri"
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s modülü kendi UI birimini kuramadı, kaldırılıyor."
 
-#: ../firstboot/interface.py:347
-#: ../firstboot/interface.py:348
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage mutlaka bir modül başlığı ya da sayfa numarası verilmelidir."
+msgstr ""
+"moveToPage mutlaka bir modül başlığı ya da sayfa numarası verilmelidir."
+
+#: ../firstboot/interface.py:432
+msgid "Unable to create the screenshot dir; skipping."
+msgstr "Ekran görüntüsü dizini oluşturulamadı; atlanıyor."
+
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#, python-format
+msgid "No module exists with the title %s."
+msgstr "%s adıyla bir modül yok."
 
 #: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "%s eski modülü güncellemediği için atlanıyor."
 
-#: ../firstboot/loader.py:89
-#: ../firstboot/loader.py:93
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
 #, python-format
 msgid ""
 "Error loading module %(module)s:\n"
@@ -91,22 +102,176 @@ msgstr "%s modülü moduleClass adında bir sınıf içermiyor; atlanıyor. "
 
 #: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr "%(module)s modülü gerekli %(attr)s özelliğini içermiyor; atlanıyor."
 
-#: ../firstboot/moduleset.py:92
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "%s modülü kendi UI birimini kuramadı; kaldırılıyor."
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Çok zayıf"
 
-#: ../modules/additional_cds.py:43
-#: ../modules/additional_cds.py:44
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Zayıf"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Oldukça güçlü"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Güçlü"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Çok güçlü"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Tanımlanmamış"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Tarih ve Zaman"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Lütfen sistem tarih ve zamanını ayarlayınız."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Kullanıcı Oluştur"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Bu sistem için bir kullanıcı hesabı oluşturmanız gerekir."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Bu kullanıcı için bir parola girmeli ve onaylamalısınız."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Parolalar eşleşmiyor. Lütfen parolayı tekrar giriniz."
+
+#: ../modules/create_user.py:115
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"'%s' kullanıcı adı bir sistem hesabı tarafından ayrılmış. Lütfen başka bir "
+"kullanıcı adı belirleyin."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"%s kullanıcı için bir ev dizini zaten mevcut. Yeni kullanıcıyı, bu dizinin "
+"ve tüm içeriğinin sahibi yaparak devam etmek istermisiniz? İzinleri ve her "
+"bir SELinux sınıflandırmasını sıfırlamak biraz zaman alabilir. Bu ev "
+"dizinini yeniden kullanmak ister misiniz? Eğer kullanmayacaksanız lütfen "
+"başka bir kullanıcı adı seçiniz."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"%s için ev dizini üzerindeki nitelikleri tespit ediliyor. Bu işlem birkaç "
+"dakika sürebilir."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"%(user)s için ev dizininde bazı dosyalar üzerinde yapılan nitelik tespitinde"
+" sorunlara rastlandı. Lütfen %(path)s bakarak hangi dosyaların hatalara "
+"neden olduğunu inceleyin."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Sisteminizde genel kullanım için (yönetici olmayan) bir 'kullanıcı' "
+"oluşturmanız gerekmektedir. Bir sistem 'kullanısı' oluşturmak için, lütfen "
+"aşağıda istenen bilgileri veriniz."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Tam İsi_m:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Kullanıcı Adı:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Parola:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "Parol_a (Tekrar):"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Yöneticiler grubuna ekleyin"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Eğer ağ kimlik doğrulaması kullanmanız gerekiyorsa, Kerberos veya NIS gibi, "
+"lütfen Ağ Girişi Kullan düğmesine tıklayınız."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Ağ _Girişi Kullan..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Eğer kullanıcı oluştururken daha fazla denetime ihtiyaç duyuyorsanız (ev "
+"dizinini ve/veya UID belirlemek gibi), lütfen Gelişmiş düğmesine basınız."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "_Gelişmiş..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Lütfen bekleyin"
+
+#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "İlave CD'ler"
 
 #: ../modules/additional_cds.py:55
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "3. parti uygulamaları ve eklentileri yüklemek için lütfen \"Red Hat Enterprise Linux Extras\" isimli CD'yi yerleştirin. Ayrıca belgelendirme CD'si yada Red Hat tarafından sağlanan diğer program disklerini de bu aşamada yerleştirebilirsiniz."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"3. parti uygulamaları ve eklentileri yüklemek için lütfen \"Red Hat "
+"Enterprise Linux Extras\" isimli CD'yi yerleştirin. Ayrıca belgelendirme "
+"CD'si yada Red Hat tarafından sağlanan diğer program disklerini de bu "
+"aşamada yerleştirebilirsiniz."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -127,89 +292,20 @@ msgid "Install..."
 msgstr "Kur..."
 
 #: ../modules/additional_cds.py:110
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Bir CD-ROM algılanamadı.  Lütfen sürücüye bir CD-ROM yerleştirin ve devam etmek için \"TAMAM\" düğmesine basın."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Bir CD-ROM algılanamadı.  Lütfen sürücüye bir CD-ROM yerleştirin ve devam "
+"etmek için \"TAMAM\" düğmesine basın."
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "Otomatik başlama programı CD'de  bulunamadı. Devam etmek için \"TAMAM\"a tıklayın."
+msgstr ""
+"Otomatik başlama programı CD'de  bulunamadı. Devam etmek için \"TAMAM\"a "
+"tıklayın."
 
-#: ../modules/create_user.py:114
-#, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "'%s' kullanıcı adı bir sistem hesabı tarafından ayrılmış. Lütfen başka bir kullanıcı adı belirleyin."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr "%s kullanıcı için bir ev dizini zaten mevcut. Yeni kullanıcıyı, bu dizinin ve tüm içeriğinin sahibi yaparak devam etmek istermisiniz? İzinleri ve her bir SELinux sınıflandırmasını sıfırlamak biraz zaman alabilir. Bu ev dizinini yeniden kullanmak ister misiniz? Eğer kullanmayacaksanız lütfen başka bir kullanıcı adı seçiniz."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s için ev dizini üzerindeki nitelikleri tespit ediliyor. Bu işlem birkaç dakika sürebilir."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr "%(user)s için ev dizininde bazı dosyalar üzerinde yapılan nitelik tespitinde sorunlara rastlandı. Lütfen %(path)s bakarak hangi dosyaların hatalara neden olduğunu inceleyin."
-
-#: ../modules/create_user.py:216
-msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr "Sisteminizde genel kullanım için (yönetici olmayan) bir 'kullanıcı' oluşturmanız gerekmektedir. Bir sistem 'kullanısı' oluşturmak için, lütfen aşağıda istenen bilgileri veriniz."
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Tam İsi_m:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Parola:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "Parol_a (Tekrar):"
-
-#: ../modules/create_user.py:273
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Eğer ağ kimlik doğrulaması kullanmanız gerekiyorsa, Kerberos veya NIS gibi, lütfen Ağ Girişi Kullan düğmesine tıklayınız."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Ağ _Girişi Kullan..."
-
-#: ../modules/create_user.py:290
-msgid "If you need more control when creating the user (specifying home directory, and/or UID), please click the Advanced button."
-msgstr "Eğer kullanıcı oluştururken daha fazla denetime ihtiyaç duyuyorsanız (ev dizinini ve/veya UID belirlemek gibi), lütfen Gelişmiş düğmesine basınız."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "_Gelişmiş..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Lütfen bekleyin"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Zayıf parola: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Parola Tamam"
-
-#: ../modules/date.py:39
-#: ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Tarih ve Zaman"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Lütfen sistem tarih ve zamanını ayarlayınız."
-
-#: ../modules/eula.py:35
-#: ../modules/eula.py:36
+#: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Lisans Bilgileri"
 
@@ -227,86 +323,19 @@ msgstr ""
 msgid "Understood, please proceed."
 msgstr "Anlaşıldı, lütfen devam edin."
 
-#: ../modules/welcome.py:35
-#: ../modules/welcome.py:36
+#: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "Hoş Geldiniz"
 
 #: ../modules/welcome.py:45
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
-msgstr "Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç adım daha kaldı. Kurulum Yardımcısı bazı temel yapılandırmalarda size rehberlik edecek. Devam etmek için lütfen sağ alt köşedeki \"İleri\" düğmesine tıklayınız."
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"Sisteminizi kullanıma hazır duruma gelmesi için geçilmesi gereken bir kaç "
+"adım daha kaldı. Kurulum Yardımcısı bazı temel yapılandırmalarda size "
+"rehberlik edecek. Devam etmek için lütfen sağ alt köşedeki \"İleri\" "
+"düğmesine tıklayınız."
 
-#: ../progs/firstboot:140
-msgid "You must be root to run firstboot."
-msgstr "Firstboot'u çalıştırmak için root olmalısınız."
 
-#: ../modules/create_user.py:42
-#: ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Kullanıcı Oluştur"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Bu sistem için bir kullanıcı hesabı oluşturmanız gerekir."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Bu kullanıcı için bir parola girmeli ve onaylamalısınız."
-
-#: ../firstboot/interface.py:472
-#: ../firstboot/interface.py:473
-#, python-format
-msgid "No module exists with the title %s."
-msgstr "%s adıyla bir modül yok."
-
-#: ../firstboot/interface.py:432
-msgid "Unable to create the screenshot dir; skipping."
-msgstr "Ekran görüntüsü dizini oluşturulamadı; atlanıyor."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Parolalar eşleşmiyor. Lütfen parolayı tekrar giriniz."
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_Kullanıcı Adı:"
-
-#: ../modules/create_user.py:231
-#: ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Parola boş"
-
-#~ msgid "An error has occurred in the %s module."
-#~ msgstr "%s modülünde bir hata oluştu."
-
-#~ msgid ""
-#~ "Since there is a problem with the %s module,\n"
-#~ "firstboot will not load this module and will\n"
-#~ "attempt to run the remaining modules."
-#~ msgstr ""
-#~ "%s modülünde bir sorun olduğundan Red Hat Kurulum\n"
-#~ "Yardımcısı bu modülü yüklemeden kalan modülleri\n"
-#~ "çalıştırmaya uğraşacak."
-
-#~ msgid "An error has occurred in firstboot."
-#~ msgstr "%s modülünde bir hata oluştu."
-
-#~ msgid ""
-#~ "A copy of the debug output has been saved to %s\n"
-#~ "Be sure to attach that file to the bug report.\n"
-#~ msgstr ""
-#~ "Konusu 'firstboot' olan bir hata raporunu lütfen\n"
-#~ "http://www.redhat.com/bugzilla adresindeki Red Hat Hata\n"
-#~ "İzleme Sisteminden gönderiniz. Hata ayıklama çıktısının\n"
-#~ "bir koyası %s olarak kaydedilmiştir. Bu dosyayı hata\n"
-#~ "raporunuza eklemeyi unutmayınız.\n"
-
-#~ msgid ""
-#~ "Please file a bug against 'firstboot' in the Red Hat\n"
-#~ "bug tracking system at http://www.redhat.com/bugzilla.\n"
-#~ msgstr ""
-#~ "Konusu 'firstboot' olan bir hata raporunu lütfen\n"
-#~ "http://www.redhat.com/bugzilla adresindeki Red Hat Hata\n"
-#~ "İzleme Sisteminden gönderiniz. Hata ayıklama çıktısının\n"
-#~ "bir koyası %s olarak kaydedilmiştir. Bu dosyayı hata\n"
-#~ "raporunuza eklemeyi unutmayınız.\n"

@@ -1,35 +1,34 @@
-# translation of firstboot.master.de.po to
-# German translation of firstboot
-# Copyright (C) 2008 Red hat, Inc.
-# This file is distributed under the same license as the firstboot package.
-#
-# Bernd Groh <bgroh@redhat.com>, 2002,2003.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Timo Trinks <ttrinks@redhat.com>, 2007.
+# Severin Heiniger <severinheiniger@gmail.com>, 2005.
+# Thomas Ritter <nethad@gmx.net>, 2005.
+# Nadine Reissle <nreissle@redhat.com>, 2006.
+# Dominik Sandjaja <dominiksandjaja@fedoraproject.org>, 2008, 2009.
+# Bernd Groh <bgroh@redhat.com>, 2002, 2003.
 # Bernd Bartmann <Bernd.Bartmann@sohanet.de>, 2004.
 # Andreas Mueller <redhat@andreas-mueller.com>, 2004.
 # Verena <vfuehrer@redhat.com>, 2004.
 # Ronny Buchmann <ronny-vlug@vlugnet.org>, 2004.
 # Thomas Ritter <thomas@dhcppc1>, 2005.
-# Severin Heiniger <severinheiniger@gmail.com>, 2005.
-# Thomas Ritter <nethad@gmx.net>, 2005.
-# Nadine Reissle <nreissle@redhat.com>, 2006.
-# Timo Trinks <ttrinks@redhat.com>, 2007.
-# Fabian Affolter <fab@fedoraproject.org>, 2008-2009.
-# Dominik Sandjaja <dominiksandjaja@fedoraproject.org>, 2008,2009.
-#
+# Mario Blättermann <mariobl@freenet.de>, 2011.
+# Fabian Affolter <fab@fedoraproject.org>, 2008, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master.de\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-08-30 09:51+1000\n"
-"Last-Translator: \n"
-"Language-Team:  <en@li.org>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-06-23 11:55+0000\n"
+"Last-Translator: mariobl <mariobl@freenet.de>\n"
+"Language-Team: German <trans-de@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: German\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -41,11 +40,16 @@ msgstr "Keine firstboot-Module gefunden."
 
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
-msgstr "Kann keine firstboot-Schnittstelle erzeugen."
+msgstr "firstboot-Schnittstelle konnte nicht erzeugt werden."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Modul %s konfigurierte seine Nutzeroberfläche nicht; wird entfernt."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
-msgstr "Versuche zurückzugehen, aber Verlauf ist leer."
+msgstr "Zurück gehen wird versucht, aber Verlauf ist leer."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
@@ -55,7 +59,9 @@ msgstr "_Fertigstellen"
 
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Damit einige Ihrer Einstellungen wirksam werden, muss Ihr System nun neugestartet werden."
+msgstr ""
+"Damit einige Ihrer Einstellungen wirksam werden, muss Ihr System nun neu "
+"gestartet werden."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -68,15 +74,16 @@ msgstr "_Vorwärts"
 #: ../firstboot/interface.py:277
 #, python-format
 msgid "Module %s did not set up its UI, removing."
-msgstr "Modul %s konfigurierte seine Nutzeroberfläche nicht, entfernen."
+msgstr "Modul %s konfigurierte seine Nutzeroberfläche nicht, wird entfernt."
 
 #: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage muss ein Modul-Titel oder eine Seitennummer übergeben werden."
+msgstr ""
+"moveToPage muss ein Modul-Titel oder eine Seitennummer übergeben werden."
 
 #: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
-msgstr "Erstellen von Bildschirmfoto-Verzeichnis nicht möglich; überspringen."
+msgstr "Erstellen von Bildschirmfoto-Ordner nicht möglich; wird übersprungen."
 
 #: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
@@ -86,118 +93,55 @@ msgstr "Es existiert kein Modul mit dem Titel %s."
 #: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr "Überspringe altes Modul %s, welches nicht aktualisiert wurde."
+msgstr "Altes Modul %s wird übersprungen, welches nicht aktualisiert wurde."
+
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"Fehler beim Laden des Moduls %(module)s:\n"
+"%(error)s"
 
 #: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr "Modul %s enthält keine Klasse mit dem Namen moduleClass; überspringen."
-
-#: ../firstboot/moduleset.py:92
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Modul %s konfigurierte seine Nutzeroberfläche nicht; entfernen."
-
-#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
-msgid "Additional CDs"
-msgstr "Zusätzliche CDs"
-
-#: ../modules/additional_cds.py:55
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Bitte legen Sie die CD \"Red Hat Enterprise Linux Extras\" zur Installation von Programmen und Plugins anderer Anbieter ein. Sie können auch die Dokumentations-CD oder andere von Red Hat gelieferte CDs einlegen, um jetzt zusätzliche Software zu installieren."
-
-#: ../modules/additional_cds.py:61
-msgid "Please insert any additional software install cds at this time."
-msgstr "Bitte legen Sie jetzt weitere CDs ein, um zusätzliche Software zu installieren."
-
-#: ../modules/additional_cds.py:65
-msgid ""
-"\n"
-"\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
-"\n"
-"\n"
-"Zur Aktivierung der Unterstützung für 32-Bit Anwendungen auf der Intel Itanium2 Architektur müssen Sie nun das Intel Execution Layer Paket von der Extras-CD installieren."
+"Modul %s enthält keine Klasse mit dem Namen moduleClass; wird übersprungen."
 
-#: ../modules/additional_cds.py:73
-msgid "Install..."
-msgstr "Installation ..."
-
-#: ../modules/additional_cds.py:110
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Es wurde keine CD-ROM gefunden. Legen Sie eine CD-ROM in das Laufwerk ein und klicken Sie auf \"OK\", um fortzufahren."
-
-#: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "Kann das Autorun-Programm nicht auf der CD finden. Klicken Sie \"OK\", um fortzufahren."
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Erstelle Benutzer"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Sie müssen ein Benutzer-Konto für dieses System anlegen."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Sie müssen ein Passwort für diesen Benutzer eingeben und bestätigen"
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Die Passwörter stimmen nicht überein. Bitte geben Sie das Passwort erneut ein."
-
-#: ../modules/create_user.py:114
+#: ../firstboot/loader.py:114
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Der Benutzername '%s' ist ein reserviertes System-Konto. Bitte geben Sie einen anderen Benutzernamen an."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
+msgstr ""
+"Modul %(module)s enthält das benötigte Attribut %(attr)s nicht; wird "
+"übersprungen."
 
-#: ../modules/create_user.py:133
-#, python-format
-msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr "Es existiert bereits ein Heimverzeichnis für den Benutzer %s. Möchten Sie fortfahren und den neuen Benutzer den Eigentümer für das Verzeichnis und den gesamten Inhalt machen? Dies kann eine Weile dauern, um die Berechtigungen und SELinux-Markierungen neu zu erstellen. Möchten Sie dieses Heimverzeichnis wiederverwenden? Falls nein, wählen Sie bitte einen anderen Benutzernamen."
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Sehr schwach"
 
-#: ../modules/create_user.py:176
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "Repariere Attribute für das Heimverzeichnis von %s. Dies kann einige Minuten in Anspruch nehmen."
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Schwach"
 
-#: ../modules/create_user.py:216
-msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr "Sie müssen einen »Benutzernamen« für die reguläre (nicht-administrative) Nutzung Ihres Systems anlegen. Um einen System-»Benutzernamen« anzulegen, geben Sie unten die erforderlichen Informationen ein."
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Ziemlich stark"
 
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_Benutzername:"
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Stark"
 
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Vollständiger _Name:"
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Sehr stark"
 
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Passwort:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "Passwort b_estätigen:"
-
-#: ../modules/create_user.py:273
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Wenn Sie Netzwerkauthentifizierung, wie z.B. Kerberos oder NIS verwenden müssen, klicken Sie bitte auf die 'Netzwerk-Login nutzen'-Schaltfläche."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Netzwerk-_Login nutzen ..."
-
-#: ../modules/create_user.py:290
-msgid "If you need more control when creating the user (specifying home directory, and/or UID), please click the Advanced button."
-msgstr "Falls Sie mehr Kontrolle bei der Erstellung eines Benutzers benötigen (Angabe eines Home-Verzeichnisses und/oder UID), klicken Sie bitte auf die Erweitert-Schaltfläche."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Bitte warten"
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Undefiniert"
 
 #: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
@@ -206,6 +150,177 @@ msgstr "Datum und Zeit"
 #: ../modules/date.py:61
 msgid "Please set the date and time for the system."
 msgstr "Bitte legen Sie das Datum und die Zeit für das System fest."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Sie müssen ein Benutzerkonto für dieses System anlegen."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Sie müssen ein Passwort für diesen Benutzer eingeben und bestätigen"
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+"Die Passwörter stimmen nicht überein. Bitte geben Sie das Passwort erneut "
+"ein."
+
+#: ../modules/create_user.py:115
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Der Benutzername »%s« ist ein reserviertes System-Konto. Bitte geben Sie "
+"einen anderen Benutzernamen an."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Es existiert bereits ein persönlicher Ordner für den Benutzer %s. Möchten "
+"Sie fortfahren und den neuen Benutzer zum Eigentümer des Ordners und des "
+"gesamten Inhalts machen? Dies kann eine Weile dauern, um die Berechtigungen "
+"und SELinux-Markierungen neu zu erstellen. Möchten Sie diesen persönlichen "
+"Ordner wiederverwenden? Falls nein, wählen Sie bitte einen anderen "
+"Benutzernamen."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Attribute für den persönlichen Ordner von %s werden repariert. Dies kann "
+"einige Minuten in Anspruch nehmen."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"Es traten Probleme beim Reparieren der Attribute einiger Dateien im "
+"persönlichen Ordner von %(user)s auf. Bitte schauen Sie in %(path)s nach, um"
+" festzustellen, welche Dateien dafür verantwortlich sind."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Sie müssen einen »Benutzernamen« für die reguläre (nicht-administrative) "
+"Nutzung Ihres Systems anlegen. Um einen System-»Benutzernamen« anzulegen, "
+"geben Sie unten die erforderlichen Informationen ein."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Vollständiger _Name:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Benutzername:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Passwort:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "Passwort b_estätigen:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Zur Administratoren-Gruppe hinzufügen"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Wenn Sie Netzwerkauthentifizierung, wie z.B. Kerberos oder NIS verwenden "
+"müssen, klicken Sie bitte auf den Knopf »Netzwerk-Login nutzen«."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Netzwerk-_Login nutzen ..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Falls Sie mehr Kontrolle bei der Erstellung eines Benutzers benötigen "
+"(Angabe eines persönlichen Ordners und/oder UID), klicken Sie bitte auf den "
+"»Erweitert«-Knopf."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "_Erweitert..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Bitte warten"
+
+#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
+msgid "Additional CDs"
+msgstr "Zusätzliche CDs"
+
+#: ../modules/additional_cds.py:55
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Bitte legen Sie die CD »Red Hat Enterprise Linux Extras« zur Installation "
+"von Programmen und Plugins anderer Anbieter ein. Sie können auch die "
+"Dokumentations-CD oder andere von Red Hat gelieferte CDs einlegen, um jetzt "
+"zusätzliche Software zu installieren."
+
+#: ../modules/additional_cds.py:61
+msgid "Please insert any additional software install cds at this time."
+msgstr ""
+"Bitte legen Sie jetzt weitere CDs ein, um zusätzliche Software zu "
+"installieren."
+
+#: ../modules/additional_cds.py:65
+msgid ""
+"\n"
+"\n"
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+msgstr ""
+"\n"
+"Zur Aktivierung der Unterstützung für 32-Bit-Anwendungen auf der Intel Itanium2 Architektur müssen Sie nun das Intel Execution Layer Paket von der Extras-CD installieren."
+
+#: ../modules/additional_cds.py:73
+msgid "Install..."
+msgstr "Installation ..."
+
+#: ../modules/additional_cds.py:110
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Es wurde keine CD-ROM gefunden. Legen Sie eine CD-ROM in das Laufwerk ein "
+"und klicken Sie auf »OK«, um fortzufahren."
+
+#: ../modules/additional_cds.py:146
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr ""
+"Das Autorun-Programm konnte auf der CD nicht gefunden werden. Klicken Sie "
+"»OK«, um fortzufahren."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -217,9 +332,9 @@ msgid ""
 "\n"
 "If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Vielen Dank, dass Sie Fedora installiert haben. Fedora besteht aus einer Zusammenstellung von Software-Paketen, die jeweils unter eigener Lizenz stehen. Die Zusammenstellung wird im Rahmen der GNU General Public Licence, Version 2 zur Verfügung gestellt. Es bestehen keine Einschränkungen hinsichtlich der Verwendung, der Vervielfältigung oder der Veränderung dieses Codes. Allerdings gibt es Einschränkungen und Verpflichtungen, die die im Zusammenhang mit der Verteilung des Codes stehen, entweder in dessen Originalfassung oder in der veränderten Form. Neben weiteren Dingen betreffen diese Einschränkungen/Verpflichtungen die Lizensierung der Weiterverteilung, die Rechte von Warenzeichen und Exportbestimmungen.\n"
+"Vielen Dank, dass Sie Fedora installiert haben. Fedora besteht aus einer Zusammenstellung von Software-Paketen, die jeweils unter eigener Lizenz stehen. Die Zusammenstellung wird im Rahmen der GNU General Public License, Version 2 zur Verfügung gestellt. Es bestehen keine Einschränkungen hinsichtlich der Verwendung, der Vervielfältigung oder der Veränderung dieses Codes. Allerdings gibt es Einschränkungen und Verpflichtungen, die im Zusammenhang mit der Verteilung des Codes stehen, entweder in dessen Originalfassung oder in der veränderten Form. Neben weiteren Dingen betreffen diese Einschränkungen/Verpflichtungen die Lizensierung der Weiterverteilung, die Rechte von Warenzeichen und Exportbestimmungen.\n"
 "\n"
-"Falls Sie verstehen wollen, was diese Einschränkungen sind, werfen Sie bitte einen Blick auf http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Für Einzelheiten zu diesen Einschränkungen werfen Sie bitte einen Blick auf http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -230,42 +345,13 @@ msgid "Welcome"
 msgstr "Willkommen"
 
 #: ../modules/welcome.py:45
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
-msgstr "Nur noch ein paar Schritte, und Sie können Ihr System verwenden. Der Setup-Assistent führt Sie jetzt durch einige Basiskonfigurationen. Klicken Sie auf \"Vor\" unten rechts, um fortzufahren."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "_Erweitert..."
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Schwaches Passwort: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Passwort OK"
-
-#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
-#, python-format
 msgid ""
-"Error loading module %(module)s:\n"
-"%(error)s"
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"Fehler beim laden des Moduls %(module)s:\n"
-"%(error)s"
+"Nur noch ein paar Schritte, und Sie können Ihr System verwenden. "
+"Einrichtungsassistent führt Sie jetzt durch einige Basiskonfigurationen. "
+"Klicken Sie auf »Vorwärts« unten rechts, um fortzufahren."
 
-#: ../firstboot/loader.py:114
-#, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
-msgstr "Modul %(module)s enthält das benötigte Attribut %(attr)s nicht; überspringen."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr "Es traten Probleme beim Reparieren der Attribute einiger Dateien im Heimverzeichnis von %(user)s auf. Bitte wenden Sie sich an %(path)s um festzustellen welche Dateien dafür verantwortlich sind."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Passwort leer"
 

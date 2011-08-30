@@ -1,25 +1,53 @@
-# Laotian translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Nils-Christoph Fiedler <ncfiedler@fedoraproject.org>, 2010.
 # 
+# ncfiedler <ncfiedler@fedoraproject.org>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-08-12 20:37+0100\n"
-"Last-Translator: Nils-Christoph Fiedler <ncfiedler@fedoraproject.org>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: ncfiedler <ncfiedler@fedoraproject.org>\n"
 "Language-Team: Low German <nds-lowgerman@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nds\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../progs/firstboot:140
+msgid "You must be root to run firstboot."
+msgstr "Je mutt root sien, um firstboot to starten."
+
+#: ../progs/firstboot:194 ../progs/firstboot:195
+msgid "No firstboot modules were found."
+msgstr "Keene firstboot Module funnen."
+
+#: ../progs/firstboot:205 ../progs/firstboot:206
+msgid "Could not create any firstboot interface."
+msgstr "Kunn keene firstboot Böverflach erstellen."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Modul %s het sien UI nich opsett; lösche."
+
+#: ../firstboot/interface.py:79
+msgid "Attempted to go back, but history is empty."
+msgstr "Künn nich torügggahn, Historie is leer."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
 #: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "_Fertig"
+
+#: ../firstboot/interface.py:184
+msgid "The system must now reboot for some of your selections to take effect."
+msgstr "Dat System mutt nu nejstartet werrn, damit de Utwahl een Effekt het."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -28,6 +56,24 @@ msgstr "_Torügg"
 #: ../firstboot/interface.py:250
 msgid "_Forward"
 msgstr "_Vor"
+
+#: ../firstboot/interface.py:277
+#, python-format
+msgid "Module %s did not set up its UI, removing."
+msgstr "Modul %s künn sien UI nich opsetten, lösche."
+
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
+msgid "moveToPage must be given a module title or page number."
+msgstr "moveToPage mutt een Modultitel or Siettaal hebben."
+
+#: ../firstboot/interface.py:432
+msgid "Unable to create the screenshot dir; skipping."
+msgstr "Künn dat Billschirmbillverteeknnis nich erstellen; warrt överhüppt."
+
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#, python-format
+msgid "No module exists with the title %s."
+msgstr "Dat givt keene Module mit de Titel %s."
 
 #: ../firstboot/loader.py:87
 #, python-format
@@ -48,20 +94,154 @@ msgstr ""
 
 #: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr ""
 
-#: ../firstboot/moduleset.py:92
-#, python-format
-msgid "Module %s did not set up its UI; removing."
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
 msgstr ""
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr ""
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Dag un Tied"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr ""
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Bruker erstellen"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Je mutt eenen Brukertogang för düsses System erstellen."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Je mutt een Passwoord för düssen Bruker twejmol ingeven."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+"De Passwöör passen nich tosammen.\n"
+"Bidde giv dat Passwoord nej in."
+
+#: ../modules/create_user.py:115
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Heeler Na_am:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Brukernaam:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Passwoord:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "Passwoord wedder_holen:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr ""
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Netwark_anmellen bruken..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr ""
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Bidde töven"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "Tosettliche CDs"
 
 #: ../modules/additional_cds.py:55
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
 msgstr ""
 
 #: ../modules/additional_cds.py:61
@@ -80,92 +260,13 @@ msgid "Install..."
 msgstr "Installeren..."
 
 #: ../modules/additional_cds.py:110
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr ""
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Bruker erstellen"
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr ""
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr ""
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr ""
-
-#: ../modules/create_user.py:216
-msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr ""
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_Brukernaam:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Heeler Na_am:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Passwoord:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "Passwoord wedder_holen:"
-
-#: ../modules/create_user.py:273
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr ""
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Netwark_anmellen bruken..."
-
-#: ../modules/create_user.py:290
-msgid "If you need more control when creating the user (specifying home directory, and/or UID), please click the Advanced button."
-msgstr ""
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr ""
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Bidde töven"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr ""
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Dag un Tied"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
 msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
@@ -181,66 +282,17 @@ msgstr ""
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
-msgstr ""
+msgstr "Hebb ik verstohn, bidde wietermaken."
 
 #: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "Moin moin"
 
 #: ../modules/welcome.py:45
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Je mutt eenen Brukertogang för düsses System erstellen."
 
-#: ../progs/firstboot:140
-msgid "You must be root to run firstboot."
-msgstr "Je mutt root sien, um firstboot to starten."
-
-#: ../progs/firstboot:205 ../progs/firstboot:206
-msgid "Could not create any firstboot interface."
-msgstr "Kunn keene firstboot Böverflach erstellen."
-
-#: ../progs/firstboot:194 ../progs/firstboot:195
-msgid "No firstboot modules were found."
-msgstr "Keene firstboot Module funnen."
-
-#: ../firstboot/interface.py:79
-msgid "Attempted to go back, but history is empty."
-msgstr "Künn nich torügggahn, Historie is leer."
-
-#: ../firstboot/interface.py:184
-msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Dat System mutt nu nejstartet werrn, damit de Utwahl een Effekt het."
-
-#: ../firstboot/interface.py:277
-#, python-format
-msgid "Module %s did not set up its UI, removing."
-msgstr "Modul %s künn sien UI nich opsetten, lösche."
-
-#: ../firstboot/interface.py:432
-msgid "Unable to create the screenshot dir; skipping."
-msgstr "Künn dat Billschirmbillverteeknnis nich erstellen; warrt överhüppt."
-
-#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
-msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage mutt een Modultitel or Siettaal hebben."
-
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
-#, python-format
-msgid "No module exists with the title %s."
-msgstr "Dat givt keene Module mit de Titel %s."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Je mutt een Passwoord för düssen Bruker twejmol ingeven."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Passwoord leer"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Passwoord OK"

@@ -1,25 +1,23 @@
-# Translation of firstboot.master.cs.po to Czech
-# Copyright (C) 2004, 2005, 2008 Miloslav Trmač <mitr@volny.cz>
-#
-# Miloslav Trmač <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2008.
-# Nikola Štohanzl <niko@srnet.cz>, 2006.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Adam Pribyl <pribyl@lowlevel.cz>, 2007, 2008.
-# Milan Kerslager <milan@kerslager.cz>, 2010.
+# Milan Kerslager <milan.kerslager@pslib.cz>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-firewall.master\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-09-10 11:27+0200\n"
-"Last-Translator: Milan Kerslager <milan@kerslager.cz>\n"
-"Language-Team: Czech <Czech <cs-users@lists.fedoraproject.org>>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: MilanKerslager <milan.kerslager@pslib.cz>\n"
+"Language-Team: Czech (http://www.transifex.net/projects/p/fedora/team/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 0.2\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -32,6 +30,11 @@ msgstr "Pro firstboot nebyly nalezeny žádné moduly."
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Nemohu vytvořit rozhraní pro firstboot."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Modul %s nenastavil své rozhraní; odstraňuji."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -95,13 +98,156 @@ msgstr "Modul %s neobsahuje třídu pojmenovanou moduleClass; přeskakuji."
 #: ../firstboot/loader.py:114
 #, python-format
 msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; skipping."
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr "Modul %(module)s neobsahuje požadovaný atribut %(attr)s; přeskakuji."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Velmi slabé"
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Slabé"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Docela silné"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Silné"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Velmi silné"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Nedefinováno"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Datum a čas"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Prosím nastavte datum a čas pro váš systém."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Vytvořit uživatele"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Pro tento systém si musíte vytvořit uživatelský účet."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Musíte zadat a potvrdit heslo pro tohoto uživatele."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Hesla nesouhlasí. Prosím vložte heslo znovu."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Modul %s nenastavil své rozhraní; odstraňuji."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Uživatelské jméno '%s' je reservováno pro systémové účty. Prosím vyberte si "
+"jiné jméno."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Domovský adresář pro uživatele %s již existuje. Chcete pokračovat vytvořením"
+" nového uživatele jako vlastníka tohoto adresáře a jeho obsahu? Může chvíli "
+"trvat resetování oprávnění a nastavení SELinux značek. Chcete tedy použít "
+"znovu tento domovský adresář? Pokud ne, vyberte si jiné uživatelské jméno."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Opravuju atributy pro domovský adresář %s.  To může zabrat několik minut."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"Objevily se problémy s opravou atributů u některých souborů v domovském "
+"adresáři %(user)s.  Prohlédněte si adresář %(path)s, kde způsobil některý "
+"soubor(-y) chybu."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Pro běžné používání systému je doporučeno vytvořit si uživatelský účet. Pro "
+"vytvoření takového účtu prosím vyplňte požadované údaje níže."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Celé _jméno:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Uživatelské jméno:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Heslo:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "Pov_rďte heslo:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Přidat do skupiny Administrators"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Pokud potřebujete používat síťovou autentizaci, jako Kerberos nebo NIS, "
+"klikněte prosím na tlačítko Použít síťové přihlášení."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Použít síťové příh_lášení..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Pokud chcete určit další specifické údaje (domácí adresář, UID), klikněte na"
+" tlačítko Pokročilé."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "_Pokročilé"
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Prosím počkejte"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -127,14 +273,11 @@ msgstr "Nyní můžete vložit instalační CD s dodatečným softwarem."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Pro běh 32-bit aplikací na achitektuře Intel Itanium 2 musíte nainstalovat "
-"balíček Intel Execution Layer z Extra disku."
+"Pro běh 32-bit aplikací na achitektuře Intel Itanium 2 musíte nainstalovat balíček Intel Execution Layer z Extra disku."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -149,141 +292,8 @@ msgstr ""
 "\"OK\" pro pokračování."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr ""
-"Program autorun nebyl na CD nalezen. Klikněte na \"OK\" pro pokračování."
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Vytvořit uživatele"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Pro tento systém si musíte vytvořit uživatelský účet."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Musíte zadat a potvrdit heslo pro tohoto uživatele."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Hesla nesouhlasí. Prosím vložte heslo znovu."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Uživatelské jméno '%s' je reservováno pro systémové účty. Prosím vyberte si "
-"jiné jméno."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Domovský adresář pro uživatele %s již existuje. Chcete pokračovat vytvořením "
-"nového uživatele jako vlastníka tohoto adresáře a jeho obsahu? Může chvíli "
-"trvat resetování oprávnění a nastavení SELinux značek. Chcete tedy použít "
-"znovu tento domovský adresář? Pokud ne, vyberte si jiné uživatelské jméno."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-"Opravuju atributy pro domovský adresář %s.  To může zabrat několik minut."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-"Objevily se problémy s opravou atributů u některých souborů v domovském "
-"adresáři %(user)s.  Prohlédněte si adresář %(path)s, kde způsobil některý "
-"soubor(-y) chybu."
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"Pro běžné používání systému je doporučeno vytvořit si uživatelský účet. Pro "
-"vytvoření takového účtu prosím vyplňte požadované údaje níže."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Prázdné heslo"
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_Uživatelské jméno:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Celé _jméno:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Heslo:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "Pov_rďte heslo:"
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Pokud potřebujete používat síťovou autentizaci, jako Kerberos nebo NIS, "
-"klikněte prosím na tlačítko Použít síťové přihlášení."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Použít síťové příh_lášení..."
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"Pokud chcete určit další specifické údaje (domácí adresář, UID), klikněte na "
-"tlačítko Pokročilé."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "_Pokročilé"
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Prosím počkejte"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Slabé heslo: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Heslo OK"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Datum a čas"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Prosím nastavte datum a čas pro váš systém."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "Program autorun nebyl na CD nalezen. Klikněte na \"OK\" pro pokračování."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -291,28 +301,13 @@ msgstr "Licenční informace"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Děkujeme, že jste si nainstalovali Fedoru. Fedora je sbírka softwarových "
-"balíčků s různými licencemi. Sbírka je uvolněna pod GNU General Public "
-"License verze 2. Neexistují žádná omezení k používání, kopírování nebo "
-"upravování tohoto kódu. Existují ale omezení a povinosti, které je potřeba "
-"dodržet při redistribuci kódu, ať už v původní formě nebo upravené. Mimo "
-"jiné, tyto omezení a povinosti, platí pro licence o redistribuci, práva k "
-"obchodním známkám nebo pro exportní omezení.\n"
+"Děkujeme, že jste si nainstalovali Fedoru. Fedora je sbírka softwarových balíčků s různými licencemi. Sbírka je uvolněna pod GNU General Public License verze 2. Neexistují žádná omezení k používání, kopírování nebo upravování tohoto kódu. Existují ale omezení a povinosti, které je potřeba dodržet při redistribuci kódu, ať už v původní formě nebo upravené. Mimo jiné, tyto omezení a povinosti, platí pro licence o redistribuci, práva k obchodním známkám nebo pro exportní omezení.\n"
 "\n"
-"Pokud chcete více porozumět co tyto omezení znamenají, prosím navštivte "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Pokud chcete více porozumět co tyto omezení znamenají, prosím navštivte http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -328,44 +323,8 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"Zbývá několik kroků, které je potřeba udělat než bude váš systém připraven k "
-"používání. Tento průvodce vás provede základním nastavením. Prosím klikněte "
-"na tlačítko \"Vpřed\" a pravém dolním rohu pro pokračování."
+"Zbývá několik kroků, které je potřeba udělat než bude váš systém připraven k"
+" používání. Tento průvodce vás provede základním nastavením. Prosím klikněte"
+" na tlačítko \"Vpřed\" a pravém dolním rohu pro pokračování."
 
-#~ msgid "Could not start any firstboot frontend."
-#~ msgstr "Nemohu spustit žádné rozhraní pro firstboot."
 
-#~ msgid "An error has occurred in the %s module."
-#~ msgstr "V modulu %s nastala chyba."
-
-#~ msgid ""
-#~ "Since there is a problem with the %s module,\n"
-#~ "firstboot will not load this module and will\n"
-#~ "attempt to run the remaining modules."
-#~ msgstr ""
-#~ "Protože s modulem %s jsou problémy\n"
-#~ "nebude nahrán. Pokusím se spustit \n"
-#~ "zbývající moduly."
-
-#~ msgid "An error has occurred in firstboot."
-#~ msgstr "Ve firstboot nastala chyba."
-
-#~ msgid "Since there is a problem, firstboot will exit."
-#~ msgstr "Protože nastaly problémy, bude firstboot ukončen."
-
-#~ msgid ""
-#~ "A copy of the debug output has been saved to %s\n"
-#~ "Be sure to attach that file to the bug report.\n"
-#~ msgstr ""
-#~ "Kopie ladícího výpisu byla uložena do %s\n"
-#~ "Prosím připojte jeje k hlášení o chybě.\n"
-
-#~ msgid ""
-#~ "Please file a bug against 'firstboot' in the Red Hat\n"
-#~ "bug tracking system at http://www.redhat.com/bugzilla.\n"
-#~ msgstr ""
-#~ "Prosím nahlašte chybu v komponentě 'firstboot' v \n"
-#~ "systému sledování chyba na http://www.redhat.com/bugzilla.\n"
-
-#~ msgid "Unable to load pixmap %s for module %s."
-#~ msgstr "Nemohu nahrát grafiku %s pro modul %s."

@@ -1,93 +1,52 @@
-# Serbian translations for firstboot
-# Copyright (C) 2005 Red Hat, Inc.
-# This file is distributed under the same license as the firstboot package.
-# Filip Maličević <filip@lakinetwork.com>, 2005.
-# Miloš Komarčević <kmilos@gmail.com>, 2005.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008.
-#
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-03-14 20:11+0100\n"
-"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
-"Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: glezos <glezos@indifex.com>\n"
+"Language-Team: Serbian <trans-sr@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
 msgstr ""
 "Морате бити „root“ да би покренули „firstboot“ (програм првог покретања)."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
-msgid "Could not start any firstboot frontend."
-msgstr "Не може се покренути ни једно прочеље за „firstboot“."
-
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "Није нађен ни један модул за „firstboot“."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Није се могло покренути ни једно сучеље за „firstboot“."
 
-#: ../firstboot/exceptionWindow.py:50
+#: ../firstboot/moduleset.py:92
 #, python-format
-msgid "An error has occurred in the %s module."
-msgstr "Дошло је до грешке у модулу %s."
+msgid "Module %s did not set up its UI; removing."
+msgstr "Модул %s није подесио своје сучеље; прескачем."
 
-#: ../firstboot/exceptionWindow.py:51
-#, python-format
-msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
-msgstr ""
-"С обзиром да постоји проблем са модулом %s, \n"
-"„firstboot“ неће учитати овај модул, \n"
-"али ће покушати да покрене преостале модуле."
-
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr "Дошло је до грешке у “firstboot“ програму."
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr "„firstboot“ ће бити заустављен због постојања проблема."
-
-#: ../firstboot/exceptionWindow.py:66
-#, python-format
-msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
-msgstr ""
-"Копија исписа за отклањање грешака је сачувана у %s \n"
-"Приложите и ту датотеку при пријави грешке. \n"
-
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"Пријавите грешку за „firstboot“ на Red Hat-овом \n"
-"систему за праћење грешака на http://www.redhat.com/bugzilla. \n"
-
-#: ../firstboot/interface.py:75
+#: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "Покушано је да се врати назад, али је историја празна."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "За_врши"
 
-#: ../firstboot/interface.py:183
+#: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
 "Систем сада мора бити поново подигнут како би неки од Ваших избора имали "
@@ -106,44 +65,187 @@ msgstr "Нап_ред"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Модул %s није подесио своје сучеље, зато ће бити избачен."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 "moveToPage (помери на страницу) мора добити наслов модула или број странице."
 
-#: ../firstboot/interface.py:438
+#: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Није могуће направити снимак директоријума, прескачем."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Не постоји модул са насловом %s."
 
-#: ../firstboot/loader.py:90
+#: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "Прескачем модул %s који није био ажуриран."
 
-#: ../firstboot/loader.py:102
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+
+#: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
 msgstr "Модул %s не садржи класу названу moduleClass, прескачем."
 
-#: ../firstboot/loader.py:113
+#: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "Модул %s не садржи захтевану особину %s; прескачем."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
+msgstr ""
 
-#: ../firstboot/module.py:187
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr "Није могуће учитати слику %s за модул %s."
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr ""
 
-#: ../firstboot/moduleset.py:93
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr ""
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr ""
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Датум и време"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Поставите датум и време на систему."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Направи корисника"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Морате да направите кориснички налог за овај систем."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Морате да унесете и потврдите лозинку за овог корисника."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Лозинке се не подударају.  Унесите лозинку поново."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Модул %s није подесио своје сучеље; прескачем."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Корисничко име „%s“ је резервисани системски налог. Наведите друго "
+"корисничко име."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Лични директоријум за корисника %s већ постоји.  Да ли бисте желели да "
+"наставите, чинећи новог корисника власником овог директоријума и свог "
+"његовог садржаја?  Ова радња може мало потрајати због поновног постављања "
+"овлашћења и SELinux ознака.  Ако не желите, изаберите друго корисничко име."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Исправљам атрибуте на личном директоријуму за %s.  Ово може потрајати "
+"неколико минута."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Морате да направите „корисничко име“ за обичног (не администраторског) "
+"корисника за систем.  Да направите системско „корисничко име“, пружите "
+"податке који се захтевају испод."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Презиме и им_е:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Корисничко име:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Лозинка:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "Потврди_те лозинку:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr ""
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Ако морате користити мрежну аутентификацију, попут Kerberos или NIS, "
+"кликните на дугме Користи мрежно пријављивање."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Користи _мрежно пријављивање..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr ""
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Сачекајте"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -157,9 +259,9 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Убаците диск обележен као „Red Hat Enterprise Linux Extras“ да омогућите "
-"инсталирање додатака и програма са стране.  У овом тренутку можете убацити и "
-"диск са документацијом, или друге Red Hat достављене дискове да инсталирате "
-"додатни софтвер."
+"инсталирање додатака и програма са стране.  У овом тренутку можете убацити и"
+" диск са документацијом, или друге Red Hat достављене дискове да инсталирате"
+" додатни софтвер."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -169,15 +271,11 @@ msgstr "Сада убаците ма који додатни софтверск�
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Да бисте укључили подршку за 32-битне програме на Intel Itanium2 "
-"архитектури, морате инсталирати Intel Execution Layer пакет са Extras диска "
-"сада."
+"Да бисте укључили подршку за 32-битне програме на Intel Itanium2 архитектури, морате инсталирати Intel Execution Layer пакет са Extras диска сада."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -192,148 +290,26 @@ msgstr ""
 "наставак."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Програм са самосталним покретањем није пронађен на CD-у. За наставак "
 "притисните „У реду“."
-
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
-msgid "Create User"
-msgstr "Направи корисника"
-
-#: ../modules/create_user.py:83
-msgid "You must create a user account for this system."
-msgstr "Морате да направите кориснички налог за овај систем."
-
-#: ../modules/create_user.py:94
-msgid "You must enter and confirm a password for this user."
-msgstr "Морате да унесете и потврдите лозинку за овог корисника."
-
-#: ../modules/create_user.py:101
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Лозинке се не подударају.  Унесите лозинку поново."
-
-#: ../modules/create_user.py:113
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Корисничко име „%s“ је резервисани системски налог. Наведите друго "
-"корисничко име."
-
-#: ../modules/create_user.py:132
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Лични директоријум за корисника %s већ постоји.  Да ли бисте желели да "
-"наставите, чинећи новог корисника власником овог директоријума и свог "
-"његовог садржаја?  Ова радња може мало потрајати због поновног постављања "
-"овлашћења и SELinux ознака.  Ако не желите, изаберите друго корисничко име."
-
-#: ../modules/create_user.py:175
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-"Исправљам атрибуте на личном директоријуму за %s.  Ово може потрајати "
-"неколико минута."
-
-#: ../modules/create_user.py:195
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
-msgstr ""
-"Појавили су се проблеми при исправци атрибута на неким датотекама у личном "
-"директоријуму за %s.  Погледајте %s за датотеке које су изазвале грешке."
-
-#: ../modules/create_user.py:213
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"Морате да направите „корисничко име“ за обичног (не администраторског) "
-"корисника за систем.  Да направите системско „корисничко име“, пружите "
-"податке који се захтевају испод."
-
-#: ../modules/create_user.py:231
-msgid "_Username:"
-msgstr "_Корисничко име:"
-
-#: ../modules/create_user.py:238
-msgid "Full Nam_e:"
-msgstr "Презиме и им_е:"
-
-#: ../modules/create_user.py:245
-msgid "_Password:"
-msgstr "_Лозинка:"
-
-#: ../modules/create_user.py:252
-msgid "Confir_m Password:"
-msgstr "Потврди_те лозинку:"
-
-#: ../modules/create_user.py:261
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Ако морате користити мрежну аутентификацију, попут Kerberos или NIS, "
-"кликните на дугме Користи мрежно пријављивање."
-
-#: ../modules/create_user.py:270
-msgid "Use Network _Login..."
-msgstr "Користи _мрежно пријављивање..."
-
-#: ../modules/create_user.py:308
-msgid "Please wait"
-msgstr "Сачекајте"
-
-#: ../modules/date.py:40 ../modules/date.py:41
-msgid "Date and Time"
-msgstr "Датум и време"
-
-#: ../modules/date.py:62
-msgid "Please set the date and time for the system."
-msgstr "Поставите датум и време на систему."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Подаци о лиценци"
 
-#: ../modules/eula.py:53
+#: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Захваљујемо на инсталирању Fedora-е.  Fedora је збирка софтверских пакета, "
-"сваки под својом лиценцом.  Омогућено је да збирка буде доступна под ГНУ "
-"Општом јавном лиценцом верзије 2.  Не постоје ограничења при употреби, "
-"умножавању, или измењивању овог кода.  Међутим, постоје ограничења и обавезе "
-"које се тичу даље дистрибуције овог кода, било у свом првобитном или "
-"измењеном облику.  Поред других ствари, ова ограничења/обавезе се додиру "
-"лиценце даље дистрибуције, права на заштитне знаке, и контроле извоза.\n"
+"Захваљујемо на инсталирању Fedora-е.  Fedora је збирка софтверских пакета, сваки под својом лиценцом.  Омогућено је да збирка буде доступна под ГНУ Општом јавном лиценцом верзије 2.  Не постоје ограничења при употреби, умножавању, или измењивању овог кода.  Међутим, постоје ограничења и обавезе које се тичу даље дистрибуције овог кода, било у свом првобитном или измењеном облику.  Поред других ствари, ова ограничења/обавезе се додиру лиценце даље дистрибуције, права на заштитне знаке, и контроле извоза.\n"
 "\n"
-"Ако желите да разумете која су тачно ова ограничења, посетите http://"
-"fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Ако желите да разумете која су тачно ова ограничења, посетите http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-#: ../modules/eula.py:64
+#: ../modules/eula.py:60
 msgid "Understood, please proceed."
 msgstr "Разумео/ла, настави."
 
@@ -350,3 +326,5 @@ msgstr ""
 "Потребно је још неколико корака док систем не буде спреман за употребу.  "
 "Агент поставке ће Вас водити кроз нека основна подешавања.  За наставак "
 "молим притисните дугме „Напред“ у доњем десном углу."
+
+

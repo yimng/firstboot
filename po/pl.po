@@ -1,20 +1,23 @@
-# translation of pl.po to Polish
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Grzegorz Rajda <marius@w9.pl>, 2004.
 # Tom Berner <tom@man.lodz.pl>, 2004.
-# Piotr Drąg <piotrdrag@gmail.com>, 2008.
-#
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: pl\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-12-03 12:09+0100\n"
-"PO-Revision-Date: 2010-12-14 15:22+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
-"Language: pl\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: glezos <glezos@indifex.com>\n"
+"Language-Team: Polish (http://www.transifex.net/projects/p/fedora/team/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -97,7 +100,8 @@ msgstr "Moduł %s nie zawiera klasy o nazwie moduleClass; pomijanie."
 #: ../firstboot/loader.py:114
 #, python-format
 msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; skipping."
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr "Moduł %(module)s nie zawiera wymaganego atrybutu %(attr)s; pomijanie."
 
 #: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
@@ -161,21 +165,22 @@ msgstr ""
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
 "Katalog domowy użytkownika %s już istnieje. Kontynuować sprawiając, że nowy "
 "użytkownik będzie właścicielem tego katalogu i całej jego zawartości? Może "
-"to chwilę zająć, aby przywrócić upoważnienia i wszystkie etykiety SELinuksa. "
-"Użyć ponownie tego katalogu domowego? Jeśli nie, proszę wybrać inną nazwę "
+"to chwilę zająć, aby przywrócić upoważnienia i wszystkie etykiety SELinuksa."
+" Użyć ponownie tego katalogu domowego? Jeśli nie, proszę wybrać inną nazwę "
 "użytkownika."
 
 #: ../modules/create_user.py:177
 #, python-format
 msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
 msgstr ""
 "Naprawianie atrybutów katalogu domowego użytkownika %s. Może to zająć kilka "
 "minut."
@@ -184,8 +189,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
 msgstr ""
 "Wystąpiły problemy podczas naprawiania atrybutów niektórych plików w "
 "katalogu domowym użytkownika %(user)s. Proszę zobaczyć %(path)s, aby "
@@ -261,8 +266,8 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Aby zainstalować aplikacje i wtyczki innych producentów proszę włożyć płytę "
-"opisaną jako \"Red Hat Enterprise Linux Extras\". Można również włożyć płytę "
-"z dokumentacją lub inną dostarczoną przez firmę Red Hat, aby zainstalować "
+"opisaną jako \"Red Hat Enterprise Linux Extras\". Można również włożyć płytę"
+" z dokumentacją lub inną dostarczoną przez firmę Red Hat, aby zainstalować "
 "dodatkowe oprogramowanie."
 
 #: ../modules/additional_cds.py:61
@@ -273,15 +278,11 @@ msgstr "Proszę włożyć dowolną płytę z dodatkowym oprogramowaniem."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Aby włączyć obsługę wykonywania aplikacji 32 bitowych w architekturze Intel "
-"Itanium 2, należy teraz zainstalować pakiet Intel Execution Layer z płyty z "
-"dodatkami."
+"Aby włączyć obsługę wykonywania aplikacji 32 bitowych w architekturze Intel Itanium 2, należy teraz zainstalować pakiet Intel Execution Layer z płyty z dodatkami."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -296,8 +297,7 @@ msgstr ""
 "przycisk \"OK\", aby kontynuować."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Program automatycznego odtwarzania nie został odnaleziony na płycie CD. "
 "Proszę nacisnąć przycisk \"OK\", aby kontynuować."
@@ -308,29 +308,13 @@ msgstr "Informacje o licencji"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Dziękujemy za zainstalowanie Fedory. Fedora jest zestawem pakietów "
-"oprogramowania, z których każdy ma swoją własną licencję. Cały zestaw jest "
-"dostępny na Powszechnej Licencji Publicznej GNU w wersji 2. Nie ma żadnych "
-"ograniczeń odnośnie używania, kopiowania lub modyfikowania tego kodu. Są "
-"jednak ograniczenia i obowiązki, które dotyczą rozpowszechniania kodu, "
-"zarówno w formie oryginalnej, jak i zmodyfikowanej. Poza tym te ograniczenia/"
-"obowiązki dotyczą licencjonowania ponownego rozpowszechniania, znaków "
-"towarowych i kontroli eksportu.\n"
+"Dziękujemy za zainstalowanie Fedory. Fedora jest zestawem pakietów oprogramowania, z których każdy ma swoją własną licencję. Cały zestaw jest dostępny na Powszechnej Licencji Publicznej GNU w wersji 2. Nie ma żadnych ograniczeń odnośnie używania, kopiowania lub modyfikowania tego kodu. Są jednak ograniczenia i obowiązki, które dotyczą rozpowszechniania kodu, zarówno w formie oryginalnej, jak i zmodyfikowanej. Poza tym te ograniczenia/obowiązki dotyczą licencjonowania ponownego rozpowszechniania, znaków towarowych i kontroli eksportu.\n"
 "\n"
-"Aby dowiedzieć się, jakie są te ograniczenia, proszę odwiedzić http://"
-"fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Aby dowiedzieć się, jakie są te ograniczenia, proszę odwiedzić http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -348,4 +332,7 @@ msgid ""
 msgstr ""
 "Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do używania. "
 "Agent ustawień przeprowadzi użytkownika przez podstawową konfigurację. "
-"Proszę nacisnąć przycisk \"Dalej\" w dolnym prawym rogu okna, aby kontynuować"
+"Proszę nacisnąć przycisk \"Dalej\" w dolnym prawym rogu okna, aby "
+"kontynuować"
+
+

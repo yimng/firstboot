@@ -1,91 +1,55 @@
-# translation of firstboot.master.po to icelandic
-# Íslensk þýðing firstboot
-# Copyright (C) 2009 Fedora
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Richard Allen <ra@ra.is>, 2002.
-# Sveinn í Felli <sveinki@nett.is>, 2009.
+# tommi <tommi@tommi.org>, 2011.
+# Sveinn í Felli  <sveinki@nett.is>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 16:50-0400\n"
-"PO-Revision-Date: 2009-04-24 08:17+0000\n"
-"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
-"Language-Team: icelandic <kde-isl@molar.is>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-05-08 19:48+0000\n"
+"Last-Translator: tommi <tommi@tommi.org>\n"
+"Language-Team: Icelandic (http://www.transifex.net/projects/p/fedora/team/is/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: is\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "Þú verður að hafa kerfisstjóraréttindi til að keyra fyrstu-ræsingar forritið."
+msgstr ""
+"Þú verður að hafa kerfisstjóraréttindi til að keyra fyrstu-ræsingar "
+"forritið."
 
-#: ../progs/firstboot:163 ../progs/firstboot:164
-msgid "Could not start any firstboot frontend."
-msgstr "Gat ekki ræst neitt fyrstu-ræsingar forrit."
-
-#: ../progs/firstboot:180 ../progs/firstboot:181
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "Engar fyrstu-ræsingar einingar fundust."
 
-#: ../progs/firstboot:190 ../progs/firstboot:191
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Gat ekki myndað neitt fyrstu-ræsingar viðmót."
 
-#: ../firstboot/exceptionWindow.py:50
+#: ../firstboot/moduleset.py:92
 #, python-format
-msgid "An error has occurred in the %s module."
-msgstr "Villa kom upp í %s reklinum."
+msgid "Module %s did not set up its UI; removing."
+msgstr "Einingin %s setti ekki upp notendaviðmót (UI), fjarlægi hana."
 
-#: ../firstboot/exceptionWindow.py:51
-#, python-format
-msgid ""
-"Since there is a problem with the %s module,\n"
-"firstboot will not load this module and will\n"
-"attempt to run the remaining modules."
-msgstr ""
-"Þar sem það er vandamál með %s eininguna mun \n"
-"fyrstu-ræsingar forritið ekki lesa það inn \n"
-"en mun halda áfram að prófa þær einingar sem eftir eru."
-
-#: ../firstboot/exceptionWindow.py:55
-msgid "An error has occurred in firstboot."
-msgstr "Villa kom upp í fyrstu ræsingu."
-
-#: ../firstboot/exceptionWindow.py:56
-msgid "Since there is a problem, firstboot will exit."
-msgstr "Fyrst vandamál kom upp, mun fyrstu-ræsingar forritið hætta."
-
-#: ../firstboot/exceptionWindow.py:66
-#, python-format
-msgid ""
-"A copy of the debug output has been saved to %s\n"
-"Be sure to attach that file to the bug report.\n"
-msgstr ""
-"Afrit af villumeldingunum var vistað í %s \n"
-"Mundi að hengja hana við villutilkynninguna. \n"
-
-#: ../firstboot/exceptionWindow.py:71
-msgid ""
-"Please file a bug against 'firstboot' in the Red Hat\n"
-"bug tracking system at http://www.redhat.com/bugzilla.\n"
-msgstr ""
-"Vinsamlegast skráðu villutilkynningu á 'firstboot' í \n"
-"Red Hat villuvefnum á http://www.redhat.com/bugzilla. \n"
-
-#: ../firstboot/interface.py:75
+#: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "Reyndi að fara til baka, en ferilsskráin er tóm."
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:83 ../firstboot/interface.py:162
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "_Ljúka"
 
-#: ../firstboot/interface.py:183
+#: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr "Nú þarf að endurræsa vélina til að virkja sumt af því sem þú valdir."
 
@@ -102,47 +66,204 @@ msgstr "Á_fram"
 msgid "Module %s did not set up its UI, removing."
 msgstr "Einingin %s náði ekki að setja upp notendaviðmót (UI), fjarlægi hana."
 
-#: ../firstboot/interface.py:353 ../firstboot/interface.py:354
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage verður að fá úthlutað einingarheiti (module title) eða síðunúmeri."
+msgstr ""
+"moveToPage verður að fá úthlutað einingarheiti (module title) eða "
+"síðunúmeri."
 
-#: ../firstboot/interface.py:438
+#: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Gat ekki búið til möppu fyrir skjámyndir; sleppi því."
 
-#: ../firstboot/interface.py:478 ../firstboot/interface.py:479
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Engin eining með heitinu %s er til."
 
-#: ../firstboot/loader.py:90
+#: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
 msgstr "Sleppi gömlu einingunni %s sem ekki hefur verið uppfærð."
 
-#: ../firstboot/loader.py:102
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"Villa við að hlaða inn einingunni %(module)s:\n"
+"%(error)s"
+
+#: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr "Einingin %s felur ekki í sér 'class' með heitinu 'moduleClass'; sleppi henni."
+msgstr ""
+"Einingin %s felur ekki í sér 'class' með heitinu 'moduleClass'; sleppi "
+"henni."
 
-#: ../firstboot/loader.py:113
+#: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %s does not contain the required attribute %s; skipping."
-msgstr "Einingin %s felur ekki í sér eiginleikann %s eins og krafist er; sleppi henni."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
+msgstr ""
+"Einingin %(module)s inniheldur ekki %(attr)s einindin sem krafist er; sleppi"
+" þessu."
 
-#: ../firstboot/module.py:187
-#, python-format
-msgid "Unable to load pixmap %s for module %s."
-msgstr "Gat ekki hlaðið inn pixmap bitamyndum %s fyrir eininguna %s."
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Mjög veikt"
 
-#: ../firstboot/moduleset.py:93
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Veikt"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Sæmilega traust"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Sterkt"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Mjög sterkt"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Óskilgreint"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Dagssetning og tími"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Vinsamlegast stilltu dagsetningu og tíma fyrir kerfið."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Búa til notanda"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Þú verður að búa til notandasvæði fyrir þetta kerfi."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Þú verður að búa til og staðfesta lykilorð fyrir þennan notanda."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Lykilorðin stemma ekki.  Settu þau aftur inn."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Einingin %s setti ekki upp notendaviðmót (UI), fjarlægi hana."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Notandanafnið '%s' er frátekið af kerfisstýringunni.  Tilgreindu eitthvað "
+"annað notandanafn."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Þegar er til heimamappa fyrir notandann %s. Viltu halda áfram og gera nýja "
+"notandann að eiganda þessarar möppu, auk alls innihalds hennar?  Ef það er "
+"gert, getur tekið nokkurn tíma að endurstilla allar heimildir auk SELinux-"
+"merkinga.  Ertu viss um að þú viljir endurnýta þessa heimamöppu?  Ef ekki, "
+"veldu þá eitthvað annað notandanafn."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Laga heimildir og aðra eiginleika fyrir heimamöppuna %s.  Þetta gæti tekið "
+"nokkrar mínútur."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"Villur komu upp við lagfæringu heimilda á sumum skránna á heimamöppu "
+"%(user)s. Vinsamlegast skoðaðu %(path)s þar sem skrárnar eru sem ollu "
+"villum."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Þú verður að búa til 'notandanafn' fyrir alla venjulega (ekki-"
+"kerfisstjórnun) vinnu í kerfinu.  Til að búa til 'notandanafn' í kerfinu, "
+"settu inn upplýsingarnar sem beðið er um hér að neðan."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "_Fullt nafn:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Notandanafn:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Lykilorð:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "_Staðfesta lykilorð:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Bæta í kerfisstjórnunarhóp"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Ef þú þarft að nota auðkenningu um net, svo sem Kerberos eða NIS, vinsamlega"
+" smelltu á hnappinn 'Nota innskráningu um net'."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Nota inns_kráningu um net"
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Ef þú krefst meiri stjórnar við stofnun notanda (gefa upp heimamöppuna, "
+"og/eða UID), smelltu á Ítarlegt hnappinn."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "Ít_arlegt..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Vinsamlega bíðið"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
-msgstr "Auka diskar"
+msgstr "Auka CD diskar"
 
 #: ../modules/additional_cds.py:55
 msgid ""
@@ -164,14 +285,11 @@ msgstr "Ef þú hefur diska með aukahugbúnaði láttu þá í drifið núna."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Ef þú vilt virkja stuðning við 32 bita forrit á Intel Itanium2 vélum skaltu "
-"setja inn \"Intel Execution Layer\" pakkann af aukaefnisdisknum núna."
+"Ef þú vilt virkja stuðning við 32 bita forrit á Intel Itanium2 vélum skaltu setja inn \"Intel Execution Layer\" pakkann af aukaefnisdisknum núna."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -191,129 +309,21 @@ msgstr ""
 "Forritið autorun var ekki á geisladisknum.  Smelltu á \"Í lagi\" til að "
 "halda áfram."
 
-#: ../modules/create_user.py:41 ../modules/create_user.py:42
-msgid "Create User"
-msgstr "Búa til notanda"
-
-#: ../modules/create_user.py:83
-msgid "You must create a user account for this system."
-msgstr "Þú verður að búa til notandasvæði fyrir þetta kerfi."
-
-#: ../modules/create_user.py:94
-msgid "You must enter and confirm a password for this user."
-msgstr "Þú verður að búa til og staðfesta lykilorð fyrir þennan notanda."
-
-#: ../modules/create_user.py:101
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Lykilorðin stemma ekki.  Settu þau aftur inn."
-
-#: ../modules/create_user.py:113
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr "Notandanafnið '%s' er frátekið af kerfisstýringunni.  Tilgreindu eitthvað annað notandanafn."
-
-#: ../modules/create_user.py:132
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Þegar er til heimamappa fyrir notandann %s. Viltu halda áfram og gera nýja notandann að eiganda þessarar möppu, "
-"auk alls innihalds hennar?  Ef það er gert, getur tekið nokkurn tíma að endurstilla allar heimildir auk SELinux-merkinga.  Ertu viss um að þú viljir endurnýta þessa heimamöppu?  Ef ekki, veldu þá eitthvað annað notandanafn."
-
-#: ../modules/create_user.py:175
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "Laga heimildir og aðra eiginleika fyrir heimamöppuna %s.  Þetta gæti tekið nokkrar mínútur."
-
-#: ../modules/create_user.py:195
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %s.  Please refer to %s for which files caused the errors."
-msgstr "Vandamál komu upp þegar reynt var að laga eiginleika sumra skráa í heimamöppu %s.  Athugaðu %s til að sjá hvaða skrár það voru sem ullu vandamálunum."
-
-#: ../modules/create_user.py:213
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr "Þú verður að búa til 'notandanafn' fyrir alla venjulega (ekki-kerfisstjórnun) vinnu í kerfinu.  Til að búa til 'notandanafn' í kerfinu, settu inn upplýsingarnar sem beðið er um hér að neðan."
-
-#: ../modules/create_user.py:231
-msgid "_Username:"
-msgstr "_Notandanafn:"
-
-#: ../modules/create_user.py:238
-msgid "Full Nam_e:"
-msgstr "_Fullt nafn:"
-
-#: ../modules/create_user.py:245
-msgid "_Password:"
-msgstr "_Lykilorð:"
-
-#: ../modules/create_user.py:252
-msgid "Confir_m Password:"
-msgstr "_Staðfesta lykilorð:"
-
-#: ../modules/create_user.py:261
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Ef þú þarft að nota auðkenningu um net, svo sem Kerberos eða NIS, vinsamlega "
-"smelltu á hnappinn 'Nota innskráningu um net'."
-
-#: ../modules/create_user.py:270
-msgid "Use Network _Login..."
-msgstr "Nota inns_kráningu um net"
-
-#: ../modules/create_user.py:308
-msgid "Please wait"
-msgstr "Vinsamlega bíðið"
-
-#: ../modules/date.py:40 ../modules/date.py:41
-msgid "Date and Time"
-msgstr "Dagssetning og tími"
-
-#: ../modules/date.py:62
-msgid "Please set the date and time for the system."
-msgstr "Vinsamlegast stilltu dagsetningu og tíma fyrir kerfið."
-
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Notkunarskilmálar"
 
-#: ../modules/eula.py:53
+#: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Þakka þér fyrir að setja upp Fedora.  Fedora er safn hugbúnaðarpakka sem "
-"hver hefur sína notkunarskilmála.  Þetta safn hugbúnaðarpakka er gefið út "
-"samkvæmt skilmálum GNU General Public License útgáfu 2.  Það eru engar "
-"takmarkanir á notkun, afritun eða breytingum á þessum kóða.  Þó eru til "
-"staðar takmarkanir á því hvernig dreyfa má þessum hugbúnaði í sinni "
-"upprunalegu eða breyttu mynd ef þú ert búsett(ur) í Bandaríkjunum.\n"
+"Þakka þér fyrir að setja upp Fedora.  Fedora er safn hugbúnaðarpakka sem hver hefur sína notkunarskilmála.  Þetta safn hugbúnaðarpakka er gefið út samkvæmt skilmálum GNU General Public License útgáfu 2.  Það eru engar takmarkanir á notkun, afritun eða breytingum á þessum kóða.  Þó eru til staðar takmarkanir á því hvernig dreyfa má þessum hugbúnaði í sinni upprunalegu eða breyttu mynd ef þú ert búsett(ur) í Bandaríkjunum.\n"
 "\n"
-"Ef þig langar að kynna þér þessa notkunarskilmála betur getur þú heimsótt "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Ef þig langar að kynna þér þessa notkunarskilmála betur getur þú heimsótt http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-#: ../modules/eula.py:64
+#: ../modules/eula.py:60
 msgid "Understood, please proceed."
 msgstr "Skilið, höldum áfram."
 
@@ -328,7 +338,8 @@ msgid ""
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "Það eru nokkur atriði sem þú þarft að fara í gegnum áður en vélin þín er "
-"tilbúin til notkunar. Uppsetningarforritið mun nú leiða þig í gegnum það sem "
-"eftir er að stilla. Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra "
+"tilbúin til notkunar. Uppsetningarforritið mun nú leiða þig í gegnum það sem"
+" eftir er að stilla. Vinsamlegast smelltu á \"Áfram\" hnappinn í hægra "
 "horninu hér að neðan til að halda áfram."
+
 

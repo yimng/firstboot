@@ -1,26 +1,27 @@
-# translation of it.po to
-# Copyright (C) 2004 ORGANIZATION.
-#
-#
-# Francesco Valente <fvalen@redhat.com>, 2003, 2004.
-# Paolo Dona' <vik@3jv.com>, 2004.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004.
-# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007, 2008, 2009.
 # Gianluca Busiello <busiello@ceinge.unina.it>, 2008.
-# Francesco <fdaluisio@fedoraproject.org>, 2010.
+# lewis41 <>, 2011.
+# Francesco Valente <fvalen@redhat.com>, 2003, 2004.
+# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007, 2008, 2009.
+# Silvio Pierro <perplesso82@gmail.com>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot.master\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-11-23 09:55+0100\n"
-"Last-Translator: Francesco <fdaluisio@fedoraproject.org>\n"
-"Language-Team: Italian <trans-it@fedoraproject.org>\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: perplex <perplesso82@gmail.com>\n"
+"Language-Team: Italian <trans-it@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.1\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -34,6 +35,11 @@ msgstr "Nessun modulo firstboot trovato."
 msgid "Could not create any firstboot interface."
 msgstr "Impossibile creare qualsiasi interfaccia di firstboot."
 
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Il modulo %s non ha settato la sua interfaccia utente; verrà rimosso."
+
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "Si è tentato di tornare indietro, ma lo storico risulta vuoto."
@@ -46,7 +52,9 @@ msgstr "_Fine"
 
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Il sistema deve essere ora riavviato per rendere effettive alcune delle scelte."
+msgstr ""
+"Il sistema deve essere ora riavviato per rendere effettive alcune delle "
+"scelte."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -67,7 +75,8 @@ msgstr "E' necessario assegnare un titolo di modulo o un numero di pagina."
 
 #: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
-msgstr "Impossibile creare la directory per lo screenshot; operazione saltata."
+msgstr ""
+"Impossibile creare la directory per lo screenshot; operazione saltata."
 
 #: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
@@ -79,32 +88,201 @@ msgstr "Nessun modulo esistente con il titolo %s."
 msgid "Skipping old module %s that has not been updated."
 msgstr "Il vecchio modulo %s verrà saltato in quanto non è stato aggiornato."
 
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
+#, python-format
+msgid ""
+"Error loading module %(module)s:\n"
+"%(error)s"
+msgstr ""
+"Errore nel caricamento del modulo %(module)s:\n"
+"%(error)s"
+
 #: ../firstboot/loader.py:103
 #, python-format
 msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr "Il modulo %s non contiene una classe chiamata moduleClass; operazione saltata."
+msgstr ""
+"Il modulo %s non contiene una classe chiamata moduleClass; operazione "
+"saltata."
 
 #: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
-msgstr "Il modulo %(module)s non contiene l'attributo richiesto %(attr)s; operazione saltata."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
+msgstr ""
+"Il modulo %(module)s non contiene l'attributo richiesto %(attr)s; operazione"
+" saltata."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Molto debole"
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Debole"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Abbastanza forte"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Forte"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Molto forte"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Indefinito"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Data ed ora"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Si prega di impostare la data e l'ora per il sistema."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Creazione utente"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "È necessario creare un account utente per questo sistema."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "È necessario immettere e confermare una password per questo utente."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Le password non corrispondono.  Si prega di reinserirla nuovamente."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Il modulo %s non ha settato la sua interfaccia utente; verrà rimosso."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Il nome utente '%s' corrisponde ad un account di sistema riservato.  Si "
+"prega di specificarne un altro."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"E' già presente una directory home per l'utente %s. Si desidera continuare, "
+"rendendo il nuovo utente proprietario di questa directory e dei suoi "
+"contenuti?  In questo modo, ci potrà volere del tempo per impostare i "
+"permessi e le etichette SELinux. Si desidera riutilizzare questa directory "
+"home? In caso negativo, scegliere un un nome utente diverso."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Impostazione attributi alla directory home per %s.  Potrebbero volerci "
+"alcuni minuti."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"Si sono verificati problemi durante la correzione degli attributi su alcuni "
+"file nella directory home per %(user)s.  Si prega di fare riferimento a "
+"%(path)s i cui file hanno causato gli errori."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Si deve creare un 'nome utente' per l'uso ordinario (non-amministrativo) del"
+" sistema. Per creare un 'nome utente' di sistema, fornire le informazioni "
+"richieste di seguito."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Nome _Completo:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Nome utente:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Password:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "Conferma _password:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Aggiungi al gruppo Administrators"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Se è necessario usare un autenticazione di rete, come Kerberos o NIS, "
+"selezionare il pulsante Usare Login di Rete."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Usare _Login di Rete..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Se è necessario un maggiore controllo durante la creazione dell'utente "
+"(specificare la home directory, e/o l'UID), premere il tasto Avanzate."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "_Avanzate..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Attendere prego"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "CD aggiuntivi"
 
 #: ../modules/additional_cds.py:55
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "Inserire il disco \"Red Hat Enterprise Linux Extra\" per permettere l'installazione delle applicazioni e dei plug-in di terze parti. In questo momento è anche possibile inserire il disco di Documentazione, o altri dischi di Red Hat, per installare del software aggiuntivo."
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"Inserire il disco \"Red Hat Enterprise Linux Extra\" per permettere "
+"l'installazione delle applicazioni e dei plug-in di terze parti. In questo "
+"momento è anche possibile inserire il disco di Documentazione, o altri "
+"dischi di Red Hat, per installare del software aggiuntivo."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
-msgstr "Si prega di inserire ora qualsiasi altro cd di installazione aggiuntivo."
+msgstr ""
+"Si prega di inserire ora qualsiasi altro cd di installazione aggiuntivo."
 
 #: ../modules/additional_cds.py:65
 msgid ""
@@ -121,88 +299,18 @@ msgid "Install..."
 msgstr "Installa..."
 
 #: ../modules/additional_cds.py:110
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
-msgstr "Il CD-ROM non é stato rilevato.  Inserire il CD-ROM nell'unità e fare clic su \"OK\" per continuare."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
+msgstr ""
+"Il CD-ROM non è stato rilevato.  Inserire il CD-ROM nell'unità e fare clic "
+"su \"OK\" per continuare."
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "Il programma autorun non è stato trovato sul CD. Premere \"OK\" per continuare."
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Creazione utente"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "È necessario creare un account utente per questo sistema."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "È necessario immettere e confermare una password per questo utente."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Le password non corrispondono.  Si prega di reinserirla nuovamente."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "Il nome utente '%s' corrisponde ad un account di sistema riservato.  Si prega di specificarne un altro."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr "Una cartella home per l'utente %s esiste già. Si desidera continuare, rendendo il nuovo utente proprietario di questa directory e dei suoi contenuti?  In questo modo, ci potrà volere del tempo per impostare i permessi e le etichette SELinux. Si desidera riutilizzare questa directory home? In caso negativo, scegliere un un nome utente diverso."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "Impostazione attributi alla home directory per %s.  Potrebbero volerci alcuni minuti."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr "Si sono verificati problemi durante la correzione degli attributi su alcuni file nella home directory per %(user)s.  Si prega di fare riferimento a %(path)s i cui file hanno causato gli errori."
-
-#: ../modules/create_user.py:216
-msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr "Si deve creare un 'nome utente' per l'uso ordinario (non-amministrativo) del sistema. Per creare un 'nome utente' di sistema, fornire le informazioni richieste di seguito."
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_Nome utente:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Nome _Completo:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Password:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "Conferma _password:"
-
-#: ../modules/create_user.py:273
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
-msgstr "Se è necessario usare un autenticazione di rete, come Kerberos o NIS, selezionare il pulsante Usare Login di Rete."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Usare _Login di Rete..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Attendere prego"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Data ed ora"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Si prega di impostare la data e l'ora per il sistema."
+msgstr ""
+"Il programma autorun non è stato trovato sul CD. Premere \"OK\" per "
+"continuare."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -227,76 +335,13 @@ msgid "Welcome"
 msgstr "Benvenuti"
 
 #: ../modules/welcome.py:45
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
-msgstr "Ci sono pochi altri passi da fare prima che il sistema sia pronto all'uso. L'agente di setup vi guiderà nel processo di configurazione di base.  Premere il pulsante \"Avanti\" nell'angolo in basso a destra per continuare."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "_Avanzate..."
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Password debole: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Password OK"
-
-#: ../modules/create_user.py:290
-msgid "If you need more control when creating the user (specifying home directory, and/or UID), please click the Advanced button."
-msgstr "Se hai bisogno di più controllo quando crei un utente (specificare la directory home, e/o l'UID), premere il tasto Avanzate"
-
-#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
-#, python-format
 msgid ""
-"Error loading module %(module)s:\n"
-"%(error)s"
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"Errore nel caricamento del modulo %(module)s:\n"
-"%(error)s"
+"Ci sono pochi altri passi da fare prima che il sistema sia pronto all'uso. "
+"L'agente di setup vi guiderà nel processo di configurazione di base.  "
+"Premere il pulsante \"Avanti\" nell'angolo in basso a destra per continuare."
 
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Password vuota"
 
-#~ msgid "Could not start any firstboot frontend."
-#~ msgstr "Impossibile avviare alcuna interfaccia di firstboot."
-
-#~ msgid "An error has occurred in the %s module."
-#~ msgstr "Si è verificato un errore nel modulo %s."
-
-#~ msgid ""
-#~ "Since there is a problem with the %s module,\n"
-#~ "firstboot will not load this module and will\n"
-#~ "attempt to run the remaining modules."
-#~ msgstr ""
-#~ "A causa di un problema nel modulo %s, \n"
-#~ "firstboot non caricherà questo modulo e \n"
-#~ "tenterà di eseguire i moduli restanti."
-
-#~ msgid "An error has occurred in firstboot."
-#~ msgstr "Si è verificato un errore in firstboot."
-
-#~ msgid "Since there is a problem, firstboot will exit."
-#~ msgstr "Firstboot verrà terminato a causa di un problema."
-
-#~ msgid ""
-#~ "A copy of the debug output has been saved to %s\n"
-#~ "Be sure to attach that file to the bug report.\n"
-#~ msgstr ""
-#~ "Una copia dei risultati del debug è stata salvata in %s\n"
-#~ "Assicurarsi di allegare tale file alla segnalazione d'errore.\n"
-
-#~ msgid ""
-#~ "Please file a bug against 'firstboot' in the Red Hat\n"
-#~ "bug tracking system at http://www.redhat.com/bugzilla.\n"
-#~ msgstr ""
-#~ "Inviare una segnalazione d'errore relativa a 'firstboot' nel sistema di\n"
-#~ "segnalazione dei bug di Red Hat su http://www.redhat.com/bugzilla.\n"
-
-#~ msgid "Unable to load pixmap %s for module %s."
-#~ msgstr "Impossibile caricare la pixmap %s per il modulo %s."
-
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "In attesa dell'avvio del server X... log situato in %s\n"

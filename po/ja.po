@@ -1,45 +1,42 @@
-# translation of ja.po to Japanese
-# firstboot ja.po Japanese Translation.
-# Copyright (C) 2002 Red Hat Inc.
-#
-#
-# James Hashida <khashida@redhat.com>,2002,2003.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Noriko Mizumoto <noriko@redhat.com>, 2003, 2005, 2006.
 # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004.
 # Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2004, 2005, 2006.
-# Kiyoto James Hashida <khashida@redhat.com>, 2006.
-# Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2007.
 # Makoto Mizukami <mmk9060@aol.com>, 2008.
+# Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2007.
 # Kiyoto Hashida <khashida@redhat.com>, 2008, 2009, 2010.
-# Hajime Taira <htaira@redhat.com>, 2010.
+# Kiyoto James Hashida <khashida@redhat.com>, 2006.
+# James Hashida <khashida@redhat.com>, 2002, 2003.
+# Hajime Taira <htaira@redhat.com>, 2010, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: ja\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-12-03 12:09+0100\n"
-"PO-Revision-Date: 2010-12-19 15:30+0900\n"
-"Last-Translator: Hajime Taira <htaira@redhat.com>\n"
-"Language-Team: Japanese <jp@li.org>\n"
-"Language: ja\n"
+"PO-Revision-Date: 2011-06-17 02:47+0000\n"
+"Last-Translator: htaira <htaira@redhat.com>\n"
+"Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
-msgstr "firstboot を起動するには、root になる必要があります。"
+msgstr "firstboot を起動するには、root ユーザーになる必要があります。"
 
-#: ../progs/firstboot:194
-#: ../progs/firstboot:195
+#: ../progs/firstboot:194 ../progs/firstboot:195
 msgid "No firstboot modules were found."
 msgstr "firstboot のモジュールが見つかりませんでした。"
 
-#: ../progs/firstboot:205
-#: ../progs/firstboot:206
+#: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
-msgstr "firstboot のインターフェースを作成てきません。"
+msgstr "firstboot のインターフェースを作成できません。"
 
 #: ../firstboot/moduleset.py:92
 #, python-format
@@ -52,8 +49,7 @@ msgstr "戻ろうとしましたが、ページの履歴がありません。"
 
 #. If we were previously on the last page, we need to set the Next
 #. button's label back to normal.
-#: ../firstboot/interface.py:87
-#: ../firstboot/interface.py:163
+#: ../firstboot/interface.py:87 ../firstboot/interface.py:163
 msgid "_Finish"
 msgstr "終了(_F)"
 
@@ -74,17 +70,15 @@ msgstr "進む(_F)"
 msgid "Module %s did not set up its UI, removing."
 msgstr "%s モジュールのユーザーインターフェースがセットアップされていません。削除します。"
 
-#: ../firstboot/interface.py:347
-#: ../firstboot/interface.py:348
+#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
 msgstr "ページの移動には、モジュールのタイトルかページ番号が必要です。"
 
 #: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
-msgstr "スクリーンショット用のディレクトリーが作成できません。スキップします。"
+msgstr "スクリーンショット保存用のディレクトリーが作成できません。スキップします。"
 
-#: ../firstboot/interface.py:472
-#: ../firstboot/interface.py:473
+#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s という名前のモジュールは存在しません。"
@@ -94,14 +88,13 @@ msgstr "%s という名前のモジュールは存在しません。"
 msgid "Skipping old module %s that has not been updated."
 msgstr "アップデートされていない、古い %s モジュールをスキップします。"
 
-#: ../firstboot/loader.py:89
-#: ../firstboot/loader.py:93
+#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
 #, python-format
 msgid ""
 "Error loading module %(module)s:\n"
 "%(error)s"
 msgstr ""
-"モジュール %(module)s をロード中にエラー:\n"
+"モジュール %(module)s を読み込み中にエラー:\n"
 "%(error)s"
 
 #: ../firstboot/loader.py:103
@@ -111,16 +104,16 @@ msgstr "%s モジュールは、moduleClass が定義されていません: ス�
 
 #: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr "モジュール %(module)s は、必要な属性 %(attr)s を含んでいません。 スキップします。"
 
-#: ../firstboot/pwcheck.py:108
-#: ../firstboot/pwcheck.py:109
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
 msgid "Very weak"
 msgstr "非常に強度が弱い"
 
-#: ../firstboot/pwcheck.py:110
-#: ../firstboot/pwcheck.py:111
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
 msgid "Weak"
 msgstr "強度が弱い"
 
@@ -132,8 +125,7 @@ msgstr "やや強度が高い"
 msgid "Strong"
 msgstr "強度が高い"
 
-#: ../firstboot/pwcheck.py:114
-#: ../firstboot/pwcheck.py:115
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
 msgid "Very strong"
 msgstr "非常に強度が高い"
 
@@ -141,8 +133,7 @@ msgstr "非常に強度が高い"
 msgid "Undefined"
 msgstr "未定義"
 
-#: ../modules/date.py:39
-#: ../modules/date.py:40
+#: ../modules/date.py:39 ../modules/date.py:40
 msgid "Date and Time"
 msgstr "日付と時刻"
 
@@ -150,8 +141,7 @@ msgstr "日付と時刻"
 msgid "Please set the date and time for the system."
 msgstr "システム用に日付と時刻を設定してください。"
 
-#: ../modules/create_user.py:43
-#: ../modules/create_user.py:44
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
 msgid "Create User"
 msgstr "一般ユーザーの作成"
 
@@ -169,27 +159,48 @@ msgstr "パスワードが一致していません。もう一度入力してく
 
 #: ../modules/create_user.py:115
 #, python-format
-msgid "The username '%s' is a reserved system account.  Please specify another username."
-msgstr "ユーザー名 '%s' はシステムアカウントとして、すでに使用されています。他のユーザー名を指定してください。"
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr "ユーザー名 %s はシステムアカウントとして、すでに使用されています。他のユーザー名を指定してください。"
 
 #: ../modules/create_user.py:134
 #, python-format
-msgid "A home directory for user %s already exists. Would you like to continue, making the new user the owner of this directory and all its contents?  Doing so may take a while to reset permissions and any SELinux labels.  Would you like to reuse this home directory?  If not, please choose a different username."
-msgstr "ユーザー '%s' のホームディレクトリは、すでに存在します。継続して新しいユーザーを このディレクトリとそのコンテンツのオーナーにしますか？ これを実行するには、 権限と SELinux ラベルのリセットのために少し時間がかかります。このホーム ディレクトリを再利用しますか？ そうでなければ、別のユーザー名を選択して下さい。"
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"ユーザー %s のホームディレクトリーは、すでに存在します。継続して新しいユーザーを このディレクトリーとそのコンテンツのオーナーにしますか？ "
+"これを実行するには、 権限と SELinux ラベルのリセットのために少し時間がかかります。このホーム ディレクトリーを再利用しますか？ "
+"そうでなければ、別のユーザー名を選択して下さい。"
 
 #: ../modules/create_user.py:177
 #, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s のホームディレクトリー上の属性を修復しています。これには数分かかります。"
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr "%s のホームディレクトリー上の属性を修復しています。この処理には数分かかります。"
 
 #: ../modules/create_user.py:197
 #, python-format
-msgid "Problems were encountered fixing the attributes on some files in the home directory for %(user)s.  Please refer to %(path)s for which files caused the errors."
-msgstr "%(user)s 用のホームディレクトリー内にある一部のファイルの属性修復中に問題が発生しました。どのファイルがエラーを起こしたかを見るには %(path)s を参照してください。"
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"%(user)s 用のホームディレクトリー内にある一部のファイルの属性修復中に問題が発生しました。どのファイルがエラーを起こしたかを見るには "
+"%(path)s を参照してください。"
 
 #: ../modules/create_user.py:223
-msgid "You must create a 'username' for regular (non-administrative) use of your system.  To create a system 'username', please provide the information requested below."
-msgstr "システムでの(管理用途ではない)普通の作業のために、一般ユーザーを作成することを推奨します。以下の情報を入力し、システムに一般ユーザーを作成します。"
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"システムでの(管理用途ではない)普通の作業のために、一般ユーザーを作成することを推奨します。以下の情報を入力し、システムに一般ユーザーを作成します。"
 
 #: ../modules/create_user.py:263
 msgid "Full Nam_e:"
@@ -212,7 +223,9 @@ msgid "Add to Administrators group"
 msgstr "管理者グループに追加"
 
 #: ../modules/create_user.py:300
-msgid "If you need to use network authentication, such as Kerberos or NIS, please click the Use Network Login button."
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
 msgstr "もしも Kerberos や NIS のようなネットワーク認証が必要な場合、\"ネットワークログインを使用する\" をクリックしてください。"
 
 #: ../modules/create_user.py:309
@@ -220,8 +233,11 @@ msgid "Use Network _Login..."
 msgstr "ネットワークログインを使用する(_L)"
 
 #: ../modules/create_user.py:317
-msgid "If you need more control when creating the user (specifying home directory, and/or UID), please click the Advanced button."
-msgstr "一般ユーザーを作成している時点でもっと制御（ホームディレクトリや UIDの指定）が必要な場合は、 「高度な設定(A)」ボタンをクリックして下さい。"
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"一般ユーザーを作成している時点でもっと制御（ホームディレクトリーや UIDの指定）が必要な場合は、 「高度な設定(A)」ボタンをクリックして下さい。"
 
 #: ../modules/create_user.py:327
 msgid "_Advanced..."
@@ -231,14 +247,20 @@ msgstr "高度な設定(_A)"
 msgid "Please wait"
 msgstr "お待ち下さい"
 
-#: ../modules/additional_cds.py:43
-#: ../modules/additional_cds.py:44
+#: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
 msgstr "追加インストールメディア"
 
 #: ../modules/additional_cds.py:55
-msgid "Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow for installation of third-party plug-ins and applications.  You may also insert the Documentation disc, or other Red Hat-provided discs to install additional software at this time."
-msgstr "サードパーティー製のプラグインやアプリケーションのインストールをするために \"Red Hat Enterprise Linux Extras\" というラベルのメディアを入れてください。この際、ドキュメントディスクや追加ソフトのインストールのために Red Hat の提供した他のディスクを挿入できます。"
+msgid ""
+"Please insert the disc labeled \"Red Hat Enterprise Linux Extras\" to allow "
+"for installation of third-party plug-ins and applications.  You may also "
+"insert the Documentation disc, or other Red Hat-provided discs to install "
+"additional software at this time."
+msgstr ""
+"サードパーティー製のプラグインやアプリケーションのインストールをするために \"Red Hat Enterprise Linux Extras\" "
+"というラベルのメディアを入れてください。この際、ドキュメントディスクや追加ソフトのインストールのために Red Hat "
+"の提供した他のディスクを挿入できます。"
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -259,19 +281,19 @@ msgid "Install..."
 msgstr "インストール..."
 
 #: ../modules/additional_cds.py:110
-msgid "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and click \"OK\" to continue."
+msgid ""
+"A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
+"click \"OK\" to continue."
 msgstr "光学メディアは検出されませんでした。追加インストールメディアを光学ドライブを挿入して\"OK\"を クリックして続けて下さい。"
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "自動起動プログラムが追加インストールメディア上に見つかりません。\"OK\" をクリックして継続します。"
 
-#: ../modules/eula.py:35
-#: ../modules/eula.py:36
+#: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "ライセンス情報"
 
-# この文章はあえて翻訳していない。
 #: ../modules/eula.py:45
 msgid ""
 "Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
@@ -286,39 +308,17 @@ msgstr ""
 msgid "Understood, please proceed."
 msgstr "理解しました。このまま続けます。"
 
-#: ../modules/welcome.py:35
-#: ../modules/welcome.py:36
+#: ../modules/welcome.py:35 ../modules/welcome.py:36
 msgid "Welcome"
 msgstr "ようこそ"
 
 #: ../modules/welcome.py:45
-msgid "There are a few more steps to take before your system is ready to use.  The Setup Agent will now guide you through some basic configuration.  Please click the \"Forward\" button in the lower right corner to continue"
-msgstr "システムが使用できるようになるまでもう少しステップがあります。セットアップエージェントは、基本的な設定についてガイドしていきます。右下隅にある \"進む\" をクリックして、設定を開始します。"
+msgid ""
+"There are a few more steps to take before your system is ready to use.  The "
+"Setup Agent will now guide you through some basic configuration.  Please "
+"click the \"Forward\" button in the lower right corner to continue"
+msgstr ""
+"システムが使用できるようになるまでもう少しステップがあります。セットアップエージェントは、基本的な設定についてガイドしていきます。右下隅にある "
+"\"進む\" をクリックして、設定を開始します。"
 
-#~ msgid "Password empty"
-#~ msgstr "Password empty"
 
-#~ msgid "Weak password: %s"
-#~ msgstr "脆弱なパスワード: %s"
-
-#~ msgid "Password OK"
-#~ msgstr "Password OK"
-
-#~ msgid ""
-#~ "Do you want to reread or reconsider the Licence Agreement?  If not, "
-#~ "please shut down the computer and remove this product from your system. "
-#~ msgstr ""
-#~ "ライセンス同意書を再読するか、又は再考慮したいですか？ そうでなければ、 コ"
-#~ "ンピュータをシャットダウンして、この製品をシステムから削除して下さい。"
-
-#~ msgid "_Reread license"
-#~ msgstr "ライセンスを再読(_R)"
-
-#~ msgid "_Shut down"
-#~ msgstr "シャットダウン(_S)"
-
-#~ msgid "_Yes, I agree to the License Agreement"
-#~ msgstr "はい、ライセンス同意書に同意します(_Y)"
-
-#~ msgid "N_o, I do not agree"
-#~ msgstr "いいえ、同意しません(_O)"

@@ -1,22 +1,24 @@
-# Finnish translation for firstboot.
-# This file is distributed under the same license as the firstboot package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Mikko Ikola <ikola@iki.fi>, 2004.
-# Lauri Nurmi <lanurmi@iki.fi>, 2004-2007.
-# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007-2010.
+# Lauri Nurmi <lanurmi@iki.fi>, 2004.
+# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-09-22 11:57+0300\n"
-"Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
-"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
-"Language: fi\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: vpv <vpvainio@iki.fi>\n"
+"Language-Team: Finnish (http://www.transifex.net/projects/p/fedora/team/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -29,6 +31,11 @@ msgstr "Yhtään firstboot-moduulia ei löytynyt."
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Ei voitu luoda mitään firstboot-käyttöliittymää."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Moduuli %s ei asettanut käyttöliittymäänsä, poistetaan."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -43,7 +50,8 @@ msgstr "_Valmis"
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
-"Järjestelmä käynnistyy nyt uudelleen, jotta tehdyt valinnat tulevat käyttöön."
+"Järjestelmä käynnistyy nyt uudelleen, jotta tehdyt valinnat tulevat "
+"käyttöön."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -93,14 +101,159 @@ msgstr "Moduuli %s ei sisällä luokkaa nimeltä moduleClass, ohitetaan."
 #: ../firstboot/loader.py:114
 #, python-format
 msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; skipping."
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr ""
 "Moduuli %(module)s ei sisällä vaadittua attribuuttia %(attr)s, ohitetaan."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Erittäin heikko"
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Heikko"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Melko vahva"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Vahva"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Erittäin vahva"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Määrittelemätön"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Päivämäärä ja aika"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Aseta järjestelmän päivä ja aika"
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Luo käyttäjä"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Tähän järjestelmään on luotava käyttäjätunnus."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Tälle käyttäjälle on annettava salasana ja se on vahvistettava."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Salasanat eivät ole samat.  Syötä salasana uudelleen."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Moduuli %s ei asettanut käyttöliittymäänsä, poistetaan."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Käyttäjätunnus ”%s” on varattu järjestelmätunnus.  Syötä toinen "
+"käyttäjätunnus."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Käyttäjän %s kotihakemisto on jo olemassa. Haluatko jatkaa, jolloin uudesta "
+"käyttäjästä tulee tämän hakemiston ja kaiken sen sisällön omistaja? Tämän "
+"tekeminen voi kestää jonkin aikaa, koska oikeudet ja SELinux-nimiöt on "
+"asetettava uudelleen. Haluatko käyttää tätä kotihakemistoa? Jos et, valitse "
+"toinen käyttäjätunnus."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Korjataan käyttäjän %s kotihakemiston määreitä. Tämä voi kestää muutaman "
+"minuutin."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"Käyttäjän %(user)s kotihakemiston joidenkin tiedostojen määreiden "
+"korjaamisessa oli ongelmia. Tiedostossa %(path)s on lisätietoja ongelmia "
+"aiheuttaneista tiedostoista."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"On suositeltua luoda käyttäjätunnus järjestelmän peruskäyttöön (joka ei ole "
+"ylläpitoa). Syötä alla pyydetyt tiedot käyttäjätunnuksen luomiseksi."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Koko _nimi:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Käyttäjätunnus:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Salasana:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "_Vahvista salasana:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Lisää Järjestelmänvalvojien ryhmään"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Jos tarvitset verkkokirjautumista, kuten Kerberosta tai NIS:ää, napsauta "
+"Käytä verkkokirjautumista -painiketta."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Käytä verkko_kirjautumista..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Napsauttamalla Lisäasetukset voit määritellä luotavan käyttäjätunnuksen "
+"ominaisuuksia, kuten kotihakemiston ja UID:n, tarkemmin."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "_Lisäasetukset..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Odota hetki"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -126,15 +279,11 @@ msgstr "Syötä mahdolliset erilliset ohjelmisto-CD:t asemaan nyt."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Ottaaksesi käyttöön 32-bittisten sovellusten ajonaikaisen tuen Intel "
-"Itanium2 -alustalla, Extras-levyltä on nyt asennettava Intel Execution Layer "
-"-paketti."
+"Ottaaksesi käyttöön 32-bittisten sovellusten ajonaikaisen tuen Intel Itanium2 -alustalla, Extras-levyltä on nyt asennettava Intel Execution Layer -paketti."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -148,142 +297,8 @@ msgstr ""
 "CD-levyä ei tunnistettu. Syötä CD-levy asemaan ja napsauta OK jatkaaksesi."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Autorun-ohjelmaa ei löytynyt CD:ltä. Napsauta ”OK” jatkaaksesi."
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Luo käyttäjä"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Tähän järjestelmään on luotava käyttäjätunnus."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Tälle käyttäjälle on annettava salasana ja se on vahvistettava."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Salasanat eivät ole samat.  Syötä salasana uudelleen."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Käyttäjätunnus ”%s” on varattu järjestelmätunnus.  Syötä toinen "
-"käyttäjätunnus."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Käyttäjän %s kotihakemisto on jo olemassa. Haluatko jatkaa, jolloin uudesta "
-"käyttäjästä tulee tämän hakemiston ja kaiken sen sisällön omistaja? Tämän "
-"tekeminen voi kestää jonkin aikaa, koska oikeudet ja SELinux-nimiöt on "
-"asetettava uudelleen. Haluatko käyttää tätä kotihakemistoa? Jos et, valitse "
-"toinen käyttäjätunnus."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-"Korjataan käyttäjän %s kotihakemiston määreitä. Tämä voi kestää muutaman "
-"minuutin."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-"Käyttäjän %(user)s kotihakemiston joidenkin tiedostojen määreiden "
-"korjaamisessa oli ongelmia. Tiedostossa %(path)s on lisätietoja ongelmia "
-"aiheuttaneista tiedostoista."
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"On suositeltua luoda käyttäjätunnus järjestelmän peruskäyttöön (joka ei ole "
-"ylläpitoa). Syötä alla pyydetyt tiedot käyttäjätunnuksen luomiseksi."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Tyhjä salasana"
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_Käyttäjätunnus:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Koko _nimi:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Salasana:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "_Vahvista salasana:"
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Jos tarvitset verkkokirjautumista, kuten Kerberosta tai NIS:ää, napsauta "
-"Käytä verkkokirjautumista -painiketta."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Käytä verkko_kirjautumista..."
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"Napsauttamalla Lisäasetukset voit määritellä luotavan käyttäjätunnuksen "
-"ominaisuuksia, kuten kotihakemiston ja UID:n, tarkemmin."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "_Lisäasetukset..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Odota hetki"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Heikko salasana: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Salasana on OK"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Päivämäärä ja aika"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Aseta järjestelmän päivä ja aika"
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -291,30 +306,14 @@ msgstr "Lisenssitiedot"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Kiitos kun asensit Fedoran. Fedora on kokoelma ohjelmistopaketteja, joista "
-"jokaisella on oma lisenssinsä. Kokoelma on asetettu saataville GNU General "
-"Public License versio 2:n alaisena. Tämän koodin käyttöä, kopiointia tai "
-"muokkaamista ei ole rajoitettu. Koodin levitykseen niin muokatussa kuin "
-"alkuperäisessä muodossaan liittyy kuitenkin rajoituksia ja velvoitteita. "
-"Nämä rajoitukset ja velvoitteet liittyvät muiden muassa uudelleenjakelun "
-"lisensointiin, tavaramerkkioikeuksiin ja viennin valvontaan.\n"
+"Kiitos kun asensit Fedoran. Fedora on kokoelma ohjelmistopaketteja, joista jokaisella on oma lisenssinsä. Kokoelma on asetettu saataville GNU General Public License versio 2:n alaisena. Tämän koodin käyttöä, kopiointia tai muokkaamista ei ole rajoitettu. Koodin levitykseen niin muokatussa kuin alkuperäisessä muodossaan liittyy kuitenkin rajoituksia ja velvoitteita. Nämä rajoitukset ja velvoitteet liittyvät muiden muassa uudelleenjakelun lisensointiin, tavaramerkkioikeuksiin ja viennin valvontaan.\n"
 "\n"
-"Ymmärtääksesi mitä nämä rajoitukset ovat katso osoite http://fedoraproject."
-"org/wiki/Legal/Licenses/LicenseAgreement."
+"Ymmärtääksesi mitä nämä rajoitukset ovat katso osoite http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
-# Voisi olla paremminkin...
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
 msgstr "Ymmärretty, jatka eteenpäin."
@@ -330,62 +329,7 @@ msgid ""
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
 "Järjestelmä on muutamaa vaihetta vaille valmis käyttöön. Asennusohjelma "
-"ohjaa sinua nyt muutamien perusasetusten määrittelyssä. Jatka napsauttamalla "
-"oikeassa alanurkassa olevaa ”Eteenpäin”-painiketta."
+"ohjaa sinua nyt muutamien perusasetusten määrittelyssä. Jatka napsauttamalla"
+" oikeassa alanurkassa olevaa ”Eteenpäin”-painiketta."
 
-#~ msgid "Could not start any firstboot frontend."
-#~ msgstr "Mitään firstboot-edustaohjelmaa ei voitu käynnistää."
 
-#~ msgid "An error has occurred in the %s module."
-#~ msgstr "Tapahtui virhe moduulissa %s."
-
-#~ msgid ""
-#~ "Since there is a problem with the %s module,\n"
-#~ "firstboot will not load this module and will\n"
-#~ "attempt to run the remaining modules."
-#~ msgstr ""
-#~ "Koska moduulissa %s on ongelma,\n"
-#~ "firstboot ei lataa sitä ja\n"
-#~ "yrittää suorittaa jäljellä olevat moduulit."
-
-#~ msgid "An error has occurred in firstboot."
-#~ msgstr "Firstbootissa tapahtui virhe."
-
-#~ msgid "Since there is a problem, firstboot will exit."
-#~ msgstr "Firstboot lopettaa ongelman vuoksi."
-
-#~ msgid ""
-#~ "A copy of the debug output has been saved to %s\n"
-#~ "Be sure to attach that file to the bug report.\n"
-#~ msgstr ""
-#~ "Kopio vianjäljitystulosteesta on tallennettu tiedostoon %s.\n"
-#~ "Muista liittää tämä tiedosto vikailmoitukseen.\n"
-
-#~ msgid ""
-#~ "Please file a bug against 'firstboot' in the Red Hat\n"
-#~ "bug tracking system at http://www.redhat.com/bugzilla.\n"
-#~ msgstr ""
-#~ "Tee firstbootia koskeva vikailmoitus Red Hatin\n"
-#~ "vianjäljitysjärjestelmässä http://www.redhat.com/bugzilla/.\n"
-
-#~ msgid "Unable to load pixmap %s for module %s."
-#~ msgstr "Ei voi ladata moduulin %s bittikarttakuvaa %s."
-
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr ""
-#~ "Odotetaan X-palvelimen käynnistymistä... loki kirjoitetaan tiedostoon %s\n"
-
-#~ msgid ""
-#~ "It is highly recommended that a personal user account be created.  If you "
-#~ "continue without an account, you can only log in with the root account, "
-#~ "which is reserved for administrative use only."
-#~ msgstr ""
-#~ "On erittäin suositeltavaa luoda henkilökohtainen käyttäjätunnus.  Jos "
-#~ "jatkat ilman käyttäjätunnuksen luomista, voit kirjautua vain root-"
-#~ "tunnuksella, joka on varattu pelkkään ylläpitokäyttöön."
-
-#~ msgid "_Continue"
-#~ msgstr "_Jatka"
-
-#~ msgid "Create _account"
-#~ msgstr "Luo _tunnus"

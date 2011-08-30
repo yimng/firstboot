@@ -1,26 +1,30 @@
-# translation of ru.po to Russian
-# translation of firstboot.master.ru.po to
-# translation of ru.po to
-#
-# Alexandr Kanevskiy <kad@blackcatlinux.com>, 2003.
-# Leonid Kanter <leon@asplinux.ru>, 2004.
-# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008.
-# Yulia <ypoyarko@redhat.com>, 2006, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Nikolay Sivov <bunglehead@gmail.com>, 2007.
-# Copyright (C) 2003
+# Leonid Kanter <leon@asplinux.ru>, 2004.
+# Yuliya Poyarkova <ypoyarko@brisbane.redhat.com>, 2005, 2006.
+# Yuliya Poyarkova <ypoyarko@redhat.com>, 2006.
+# Yulia Poyarkova <ypoyarko@redhat.com>, 2006, 2010.
+# Alexandr Kanevskiy <kad@blackcatlinux.com>, 2003.
+# Yuri Khabarov <madb00blik@gmail.com>, 2011.
+# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008.
+# Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2008, 2009.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: ru\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-08-31 10:17\n"
-"Last-Translator: Yulia <ypoyarko@redhat.com>\n"
-"Language-Team: Russian\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-27 11:28+0000\n"
+"Last-Translator: b00blik <madb00blik@gmail.com>\n"
+"Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -33,6 +37,11 @@ msgstr "Не найдены модули firstboot."
 #: ../progs/firstboot:205 ../progs/firstboot:206
 msgid "Could not create any firstboot interface."
 msgstr "Не удалось создать ни один из интерфейсов firstboot."
+
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Модуль %s не настроил свой пользовательский интерфейс и будет удален."
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -63,7 +72,8 @@ msgstr "Модуль %s не настроил свой пользователь�
 
 #: ../firstboot/interface.py:347 ../firstboot/interface.py:348
 msgid "moveToPage must be given a module title or page number."
-msgstr "moveToPage: необходимо предоставить название модуля или номер страницы. "
+msgstr ""
+"moveToPage: необходимо предоставить название модуля или номер страницы. "
 
 #: ../firstboot/interface.py:432
 msgid "Unable to create the screenshot dir; skipping."
@@ -95,13 +105,158 @@ msgstr "Модуль %s не содержит класса moduleClass; проп
 
 #: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr "Модуль %(module)s не содержит требуемый атрибут %(attr)s; пропускаем."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Очень слабый"
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Слабый"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Достаточно сильный"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Сильный"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Очень сильный"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Неопределено"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Дата и время"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Пожалуйста, установите дату и время системы."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Пользователь"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Необходимо создать учётную запись пользователя для этой системы."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr "Требуется ввести и подтвердить пароль пользователя."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Пароли не совпадают.  Введите пароль снова."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Модуль %s не настроил свой пользовательский интерфейс и будет удален."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Имя %s &mdash; зарезервированная системная учётная запись. Укажите другое "
+"имя."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Домашний каталог пользователя %s уже существует. Вы действительно хотите "
+"сделать нового пользователя владельцем этого каталога и его содержимого?  В "
+"этом случае переназначение разрешений и меток SELinux может занять некоторое"
+" время. Использовать этот домашний каталог повторно? Если нет, выберите "
+"другое имя пользователя."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Фиксируются атрибуты домашнего каталога для %s. Это может занять несколько "
+"минут."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"Проблема при фиксации атрибутов некоторых файлов в домашнем каталоге для "
+"%(user)s. Обратитесь к %(path)s для просмотра вызвавших ошибки файлов."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Требуется создать пользователя для повседневного (не административного) "
+"использования системы. Для этого введите необходимые данные."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Полное им_я:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "_Имя пользователя:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "_Пароль:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "По_дтвердите пароль:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Добавить в группу Администраторов"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Если требуется использовать проверку подлинности по сети, например Kerberos "
+"или NIS, нажмите кнопку «Сетевая авторизация»."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Сетевая аут_ентификация..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Для настройки дополнительных параметров при создании пользователя "
+"(определение домашнего каталога, UID и т.п.) нажмите кнопку «Дополнительно»."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "_Дополнительно..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Подождите"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -127,15 +282,11 @@ msgstr "Вставьте диск с дополнительным програм
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Для выполнения 32-битных приложений на архитектуре Intel Itanium2 необходимо "
-"дополнительно установить Intel Execution Layer с диска с дополнительным "
-"программным обеспечением (Extras)."
+"Для выполнения 32-битных приложений на архитектуре Intel Itanium2 необходимо дополнительно установить Intel Execution Layer с диска с дополнительным программным обеспечением (Extras)."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -151,164 +302,19 @@ msgstr "CD-ROM найден.  Вставьте CD в привод и нажми�
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr "Программа autorun не найдена на CD. Нажмите «OK» для продолжения."
 
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Пользователь"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Необходимо создать учётную запись пользователя для этой системы."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Требуется ввести и подтвердить пароль пользователя."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Пароли не совпадают.  Введите пароль снова."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Имя %s &mdash; зарезервированная системная учётная запись. Укажите другое "
-"имя."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Домашний каталог пользователя %s уже существует. Вы действительно хотите "
-"сделать нового пользователя владельцем этого каталога и его содержимого?  В "
-"этом случае переназначение разрешений и меток SELinux может занять некоторое "
-"время. Использовать этот домашний каталог повторно? Если нет, выберите "
-"другое имя пользователя."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-"Фиксируются атрибуты домашнего каталога для %s. Это может занять несколько "
-"минут."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-"Проблема при фиксации атрибутов некоторых файлов в домашнем каталоге для %(user)s. "
-"Обратитесь к %(path)s для просмотра вызвавших ошибки файлов."
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"Требуется создать пользователя для повседневного (не административного) "
-"использования системы. Для этого введите необходимые данные."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Пустой пароль"
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "_Имя пользователя:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Полное им_я:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "_Пароль:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "По_дтвердите пароль:"
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Если требуется использовать проверку подлинности по сети, например Kerberos "
-"или NIS, нажмите кнопку «Сетевая авторизация»."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Сетевая аут_ентификация..."
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr "Для настройки дополнительных параметров при создании пользователя (определение домашнего каталога, UID и т.п.) нажмите кнопку «Дополнительно»."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "_Дополнительно..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Подождите"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Слабый пароль: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Пароль ОК"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Дата и время"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Пожалуйста, установите дату и время системы."
-
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
 msgstr "Информация о лицензии"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Благодарим за установку Fedora. Fedora состоит из множества пакетов, каждый "
-"из которых имеет свою собственную лицензию. Использование этих пакетов "
-"допускается в рамках лицензии GNU General Public License 2. Никаких "
-"ограничений по использованию, копированию или изменению данного кода нет. "
-"Однако существуют ограничения и обязательства, позволяющие распространять "
-"данное программное обеспечение только в оригинальном, неизмененном виде. Эти "
-"ограничения имеют также отношение к лицензированию распространения, правам "
-"на торговые марки и контролю использования.\n"
+"Благодарим за установку Fedora. Fedora состоит из множества пакетов, каждый из которых имеет свою собственную лицензию. Использование этих пакетов допускается в рамках лицензии GNU General Public License 2. Никаких ограничений по использованию, копированию или изменению данного кода нет. Однако существуют ограничения и обязательства, позволяющие распространять данное программное обеспечение только в оригинальном, неизмененном виде. Эти ограничения имеют также отношение к лицензированию распространения, правам на торговые марки и контролю использования.\n"
 "\n"
-"Подробную информацию можно найти по адресу "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Подробную информацию можно найти по адресу http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -324,6 +330,7 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"Осталось ещё несколько шагов, после чего ваша система будет готова к "
-"работе. В этом поможет помощник по настройке. Нажмите кнопку продолжения."
+"Осталось ещё несколько шагов, после чего ваша система будет готова к работе."
+" В этом поможет помощник по настройке. Нажмите кнопку продолжения."
+
 

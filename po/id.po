@@ -1,20 +1,23 @@
-# firstboot Bahasa Indonesia (id)
-# Teguh DC <dheche@songolimo.net>, 2004-2008, 2010.
-# $Id$
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Teguh DC <dheche@songolimo.net>, 2004.
+# Teguh Dwicaksana <dheche@songolimo.net>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 10:53+0200\n"
-"PO-Revision-Date: 2010-10-14 21:45+0700\n"
-"Last-Translator: Teguh DC <dheche@songolimo.net>\n"
-"Language-Team: Fedora Indonesia <trans-id@lists.fedoraproject.org>\n"
-"Language: id\n"
+"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"PO-Revision-Date: 2011-03-22 15:08+0000\n"
+"Last-Translator: dheche <dheche@songolimo.net>\n"
+"Language-Team: Indonesian <trans-id@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Virtaal 0.6.1\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -28,6 +31,11 @@ msgstr "Tidak ada modul firstboot yang ditemukan."
 msgid "Could not create any firstboot interface."
 msgstr "Tidak dapat membuat antarmuka firstboot apa pun."
 
+#: ../firstboot/moduleset.py:92
+#, python-format
+msgid "Module %s did not set up its UI; removing."
+msgstr "Modul %s tidak menset UI-nya; dihapus."
+
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
 msgstr "Mencoba untuk kembali, tapi riwayat kosong."
@@ -40,7 +48,8 @@ msgstr "_Selesai"
 
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr "Sekarang sistem harus diboot ulang agar beberapa pilihan Anda berlaku."
+msgstr ""
+"Sekarang sistem harus diboot ulang agar beberapa pilihan Anda berlaku."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -90,14 +99,161 @@ msgstr "Modul %s tidak mengandung kelas yang bernama moduleClass; lewati."
 #: ../firstboot/loader.py:114
 #, python-format
 msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; skipping."
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
 msgstr ""
 "Modul %(module)s tidak mengandung atribut %(attr)s yang diperlukan; lewati."
 
-#: ../firstboot/moduleset.py:92
+#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+msgid "Very weak"
+msgstr "Sangat lemah"
+
+#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+msgid "Weak"
+msgstr "Lemah"
+
+#: ../firstboot/pwcheck.py:112
+msgid "Fairly strong"
+msgstr "Cukup kuat"
+
+#: ../firstboot/pwcheck.py:113
+msgid "Strong"
+msgstr "Kuat"
+
+#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+msgid "Very strong"
+msgstr "Sangat kuat"
+
+#: ../firstboot/pwcheck.py:141
+msgid "Undefined"
+msgstr "Tak terdefinisi"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Tanggal dan Waktu"
+
+#: ../modules/date.py:61
+msgid "Please set the date and time for the system."
+msgstr "Silakan set tanggal dan waktu untuk sistem."
+
+#: ../modules/create_user.py:43 ../modules/create_user.py:44
+msgid "Create User"
+msgstr "Buat Pengguna"
+
+#: ../modules/create_user.py:85
+msgid "You must create a user account for this system."
+msgstr "Anda harus membuat akun user untuk sistem ini."
+
+#: ../modules/create_user.py:96
+msgid "You must enter and confirm a password for this user."
+msgstr ""
+"Anda harus memasukkan dan mengkonfirmasi kata sandi untuk pengguna ini."
+
+#: ../modules/create_user.py:103
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Kata sandi tidak cocok. Masukkan kata sandi lagi."
+
+#: ../modules/create_user.py:115
 #, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Modul %s tidak menset UI-nya; dihapus."
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Nama pengguna '%s' merupakan akun sistem yang telah direservasi. Silakan "
+"pilih nama pengguna yang lain."
+
+#: ../modules/create_user.py:134
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Direktori home untuk pengguna %s sudah ada. Apakah anda ingin melanjutkan, "
+"membuat pengguna baru sebagai pemilik direktori ini beserta semua "
+"isinya?Apabila iya, dibutuhkan waktu beberapa saat untuk mereset hak akses "
+"dan semua label SELinux. Apakah Anda ingin menggunakan ulang direktori home "
+"ini? Jika tidak, silakan pilih nama pengguna yang lain."
+
+#: ../modules/create_user.py:177
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"Memperbaiki atribut direktori home untuk %s. Ini mungkin memakan waktu "
+"beberapa menit."
+
+#: ../modules/create_user.py:197
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
+msgstr ""
+"Ditemukan kendala saat memperbaiki atribut beberapa berkas di direktori home"
+" %(user)s. Lihatlah %(path)s untuk mengetahui berkas mana yang menyebabkan "
+"kesalahan tersebut."
+
+#: ../modules/create_user.py:223
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Anda harus membuat 'Pengguna' baru untuk pemakaian reguler (non-"
+"administratif) sistem Anda. Untuk membuat 'Pengguna' sistem, sediakan "
+"informasi yang diminta di bawah ini."
+
+#: ../modules/create_user.py:263
+msgid "Full Nam_e:"
+msgstr "Nama L_engkap:"
+
+#: ../modules/create_user.py:270
+msgid "_Username:"
+msgstr "Nama Pengguna:"
+
+#: ../modules/create_user.py:277
+msgid "_Password:"
+msgstr "Kata Sandi:"
+
+#: ../modules/create_user.py:284
+msgid "Confir_m Password:"
+msgstr "Konfir_masi Kata sandi:"
+
+#: ../modules/create_user.py:294
+msgid "Add to Administrators group"
+msgstr "Tambahkan ke grup Administrator"
+
+#: ../modules/create_user.py:300
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Jika anda ingin mempergunakan otentikasi jaringan, seperti Kerberos atau "
+"NIS, silakan klik tombol Pergunakan Login Jaringan."
+
+#: ../modules/create_user.py:309
+msgid "Use Network _Login..."
+msgstr "Pergunakan _Login Jaringan..."
+
+#: ../modules/create_user.py:317
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Jika Anda memerlukan kendali lebih saat membuat pengguna (menentukan "
+"direktori home, dan/atau UID), silakan klik tombol Tingkat Lanjut."
+
+#: ../modules/create_user.py:327
+msgid "_Advanced..."
+msgstr "Tingk_at Lanjut..."
+
+#: ../modules/create_user.py:365
+msgid "Please wait"
+msgstr "Silakan tunggu"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -110,8 +266,8 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"Silakan masukan disk dengan label \"Red Hat Enterprise Linux Extras\"  untuk "
-"melakukan instalasi dari pengaya dan aplikasi pihak-ketiga. Anda juga "
+"Silakan masukan disk dengan label \"Red Hat Enterprise Linux Extras\"  untuk"
+" melakukan instalasi dari pengaya dan aplikasi pihak-ketiga. Anda juga "
 "diperkenankan untuk memasukan disk Dokumentasi atau disk lain yang "
 "disediakan Red Hat untuk menginstall perangkat lunak tambahan."
 
@@ -119,20 +275,15 @@ msgstr ""
 msgid "Please insert any additional software install cds at this time."
 msgstr "Masukkan CD instalasi perangkat lunak tambahan saat ini."
 
-#  if 1:
 #: ../modules/additional_cds.py:65
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Untuk mengaktifkan dukungan runtime dari aplikasi 32-bit pada arsitektur "
-"Intel Itanium2, anda harus menginstal paket Intel Excution Layer dari disk "
-"extra sekarang."
+"Untuk mengaktifkan dukungan runtime dari aplikasi 32-bit pada arsitektur Intel Itanium2, anda harus menginstal paket Intel Excution Layer dari disk extra sekarang."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -143,148 +294,14 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan \"OK"
-"\" untuk melanjutkan."
+"Tidak ada CD-ROM yang terdeteksi. Masukkan CD-ROM dalam drive dan tekan "
+"\"OK\" untuk melanjutkan."
 
 #: ../modules/additional_cds.py:146
-msgid ""
-"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
-"program autorun tidak dapat ditemukan pada CD. Klik \"OK\" untuk melanjutkan."
-
-#: ../modules/create_user.py:42 ../modules/create_user.py:43
-msgid "Create User"
-msgstr "Buat Pengguna"
-
-#: ../modules/create_user.py:84
-msgid "You must create a user account for this system."
-msgstr "Anda harus membuat akun user untuk sistem ini."
-
-#: ../modules/create_user.py:95
-msgid "You must enter and confirm a password for this user."
-msgstr "Anda harus memasukkan dan mengkonfirmasi kata sandi untuk pengguna ini."
-
-#: ../modules/create_user.py:102
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Kata sandi tidak cocok. Masukkan kata sandi lagi."
-
-#: ../modules/create_user.py:114
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Nama pengguna '%s' merupakan akun sistem yang telah direservasi. Silakan "
-"pilih nama pengguna yang lain."
-
-#: ../modules/create_user.py:133
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Direktori home untuk pengguna %s sudah ada. Apakah anda ingin melanjutkan, "
-"membuat pengguna baru sebagai pemilik direktori ini beserta semua "
-"isinya?Apabila iya, dibutuhkan waktu beberapa saat untuk mereset hak akses "
-"dan semua label SELinux. Apakah Anda ingin menggunakan ulang direktori home "
-"ini? Jika tidak, silakan pilih nama pengguna yang lain."
-
-#: ../modules/create_user.py:176
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr ""
-"Memperbaiki atribut direktori home untuk %s. Ini mungkin memakan waktu "
-"beberapa menit."
-
-#: ../modules/create_user.py:196
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
-msgstr ""
-"Ditemukan kendala saat memperbaiki atribut beberapa berkas di direktori home "
-"%(user)s. Lihatlah %(path)s untuk mengetahui berkas mana yang menyebabkan "
-"kesalahan tersebut."
-
-#: ../modules/create_user.py:216
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"Anda harus membuat 'Pengguna' baru untuk pemakaian reguler (non-"
-"administratif) sistem Anda. Untuk membuat 'Pengguna' sistem, sediakan "
-"informasi yang diminta di bawah ini."
-
-#: ../modules/create_user.py:231 ../modules/create_user.py:365
-msgid "Password empty"
-msgstr "Kata Sandi kosong"
-
-#: ../modules/create_user.py:243
-msgid "_Username:"
-msgstr "Nama Pengguna:"
-
-#: ../modules/create_user.py:250
-msgid "Full Nam_e:"
-msgstr "Nama L_engkap:"
-
-#: ../modules/create_user.py:257
-msgid "_Password:"
-msgstr "Kata Sandi:"
-
-#: ../modules/create_user.py:264
-msgid "Confir_m Password:"
-msgstr "Konfir_masi Kata sandi:"
-
-#: ../modules/create_user.py:273
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Jika anda ingin mempergunakan otentikasi jaringan, seperti Kerberos atau "
-"NIS, silakan klik tombol Pergunakan Login Jaringan."
-
-#: ../modules/create_user.py:282
-msgid "Use Network _Login..."
-msgstr "Pergunakan _Login Jaringan..."
-
-#: ../modules/create_user.py:290
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"Jika Anda memerlukan kendali lebih saat membuat pengguna (menentukan "
-"direktori home, dan/atau UID), silakan klik tombol Tingkat Lanjut."
-
-#: ../modules/create_user.py:300
-msgid "_Advanced..."
-msgstr "Tingk_at Lanjut..."
-
-#: ../modules/create_user.py:338
-msgid "Please wait"
-msgstr "Silakan tunggu"
-
-#: ../modules/create_user.py:375
-#, python-format
-msgid "Weak password: %s"
-msgstr "Sandi lemah: %s"
-
-#: ../modules/create_user.py:379
-msgid "Password OK"
-msgstr "Kata Sandi OK"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Tanggal dan Waktu"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Silakan set tanggal dan waktu untuk sistem."
+"program autorun tidak dapat ditemukan pada CD. Klik \"OK\" untuk "
+"melanjutkan."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -292,29 +309,13 @@ msgstr "Informasi Lisensi"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Terima kasih telah menginstal Fedora. Fedora adalah kompilasi dari paket-"
-"paket software, dan setiap software memiliki lisensi tersendiri. Kompilasi "
-"dibiat berdasarkan GNU General Public License versi 2. Tidak ada larangan "
-"dalam menggunakan, menyalin, atau memodifikasi codenya. Akan tetapi, ada "
-"beberapa larangan dan kewajiban yang harus di terapkan dalam "
-"mendistribusikan kodenya, baik seperti aslinya atau hasil modifikasi. Dalam "
-"beberapa hal larangan/tanggung jawab pertain terhadap lisensi dari "
-"distribusi, hak cipta, dan kontrol dalam ekspor.\n"
+"Terima kasih telah menginstal Fedora. Fedora adalah kompilasi dari paket-paket software, dan setiap software memiliki lisensi tersendiri. Kompilasi dibiat berdasarkan GNU General Public License versi 2. Tidak ada larangan dalam menggunakan, menyalin, atau memodifikasi codenya. Akan tetapi, ada beberapa larangan dan kewajiban yang harus di terapkan dalam mendistribusikan kodenya, baik seperti aslinya atau hasil modifikasi. Dalam beberapa hal larangan/tanggung jawab pertain terhadap lisensi dari distribusi, hak cipta, dan kontrol dalam ekspor.\n"
 "\n"
-"Jika anda ingin memahami apa saja laranganya, silakan kunjungi http://"
-"fedoraproject.org/wiki/Legal/Lecenses/LicenseAgreement."
+"Jika anda ingin memahami apa saja laranganya, silakan kunjungi http://fedoraproject.org/wiki/Legal/Lecenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -334,58 +335,4 @@ msgstr ""
 "dipergunakan. Setup Agent akan memandu anda melakukan beberapa konfigurasi "
 "dasar. Tekan tombol \"Lanjutkan\" pada pojok kanan bawah untuk melanjutkan"
 
-#~ msgid "Could not start any firstboot frontend."
-#~ msgstr "Tidak dapat menjalankan frontend firstboot apa pun."
 
-#~ msgid "An error has occurred in the %s module."
-#~ msgstr "Telah terjadi kesalahan pada modul %s."
-
-#~ msgid ""
-#~ "Since there is a problem with the %s module,\n"
-#~ "firstboot will not load this module and will\n"
-#~ "attempt to run the remaining modules."
-#~ msgstr ""
-#~ "Berhubung terjadi masalah dengan modul %s, \n"
-#~ "firstboot tidak akan memuat modul ini dan \n"
-#~ "akan mencoba untuk menjalankan sisa modul lainnya."
-
-#~ msgid "An error has occurred in firstboot."
-#~ msgstr "Telah terjadi kesalahan pada firstboot."
-
-#~ msgid "Since there is a problem, firstboot will exit."
-#~ msgstr "Karena terjadi masalah, firstboot akan keluar."
-
-#~ msgid ""
-#~ "A copy of the debug output has been saved to %s\n"
-#~ "Be sure to attach that file to the bug report.\n"
-#~ msgstr ""
-#~ "Salinan dari keluaran debug telah disimpan di %s\n"
-#~ "Pastikan anda menyertakan (attach) berkas tersebut pada laporan bug.\n"
-
-#~ msgid ""
-#~ "Please file a bug against 'firstboot' in the Red Hat\n"
-#~ "bug tracking system at http://www.redhat.com/bugzilla.\n"
-#~ msgstr ""
-#~ "Silakan tulis bug 'firstboot' ini pada sistem pencatatan bug\n"
-#~ "Red Hat di http://www.redhat.com/bugzilla.\n"
-
-#~ msgid "Unable to load pixmap %s for module %s."
-#~ msgstr "Tidak dapat memuat pixmap %s untuk modul %s."
-
-#~ msgid "Waiting for X server to start... log located in %s\n"
-#~ msgstr "Menunggu server X berjalan... log berada di %s\n"
-
-#~ msgid ""
-#~ "It is highly recommended that a personal user account be created.  If you "
-#~ "continue without an account, you can only log in with the root account, "
-#~ "which is reserved for administrative use only."
-#~ msgstr ""
-#~ "Sangat disarankan untuk membuat akun pengguna personal. Jika anda "
-#~ "melanjutkan tanpa akun, maka anda hanya bisa masuk mempergunakan akun "
-#~ "root, dimana akun ini direservasi untuk penggunaan administratif saja."
-
-#~ msgid "_Continue"
-#~ msgstr "Lanjutkan"
-
-#~ msgid "Create _account"
-#~ msgstr "Buat _akun"

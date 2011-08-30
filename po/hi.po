@@ -1,41 +1,25 @@
-# translation of firstboot.po to Hindi
-# translation of hi.po to
-# Copyright (C) YEAR ORGANIZATION.
-#
-# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2008, 2009, 2011.
-# hi <rranjan@redhat.com>, 2007.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
+# hi <rranjan@redhat.com>, 2007.
+# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2008, 2009, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: firstboot\n"
+"Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-12-03 12:09+0100\n"
-"PO-Revision-Date: 2011-01-06 15:29+0530\n"
-"Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
-"Language-Team: Hindi <hindi@hindi>\n"
+"PO-Revision-Date: 2011-03-29 10:28+0000\n"
+"Last-Translator: rajeshr <rranjan@redhat.com>\n"
+"Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"<<<<<<< hi.poPOT-Creation-Date: 2004-08-31 16:22-0400\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
+"Language: hi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../progs/firstboot:140
 msgid "You must be root to run firstboot."
@@ -97,7 +81,7 @@ msgstr "शीर्षक %s के साथ कोई मॉड्यूल �
 #: ../firstboot/loader.py:87
 #, python-format
 msgid "Skipping old module %s that has not been updated."
-msgstr "पुराने मॉड्यूल %s को छोड़ रहा है जो कि अद्यतन नहीं किया गया है."
+msgstr "पुराने मॉड्यूल %s छोड़ रहा है जो कि अद्यतन नहीं किया गया है."
 
 #: ../firstboot/loader.py:89 ../firstboot/loader.py:93
 #, python-format
@@ -115,8 +99,11 @@ msgstr "मॉड्यूल %s moduleClass नामक वर्ग नही
 
 #: ../firstboot/loader.py:114
 #, python-format
-msgid "Module %(module)s does not contain the required attribute %(attr)s; skipping."
-msgstr "मॉड्यूल %(module)s जरूरी गुण %(attr)s; नहीं समाहित करता है; छोड़ रहा है."
+msgid ""
+"Module %(module)s does not contain the required attribute %(attr)s; "
+"skipping."
+msgstr ""
+"मॉड्यूल %(module)s जरूरी गुण %(attr)s; नहीं समाहित करता है; छोड़ रहा है."
 
 #: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
 msgid "Very weak"
@@ -171,36 +158,43 @@ msgstr "कूटशब्द मेल नहीं खाता है.  क�
 msgid ""
 "The username '%s' is a reserved system account.  Please specify another "
 "username."
-msgstr "उपयोक्ता नाम '%s' एक आरक्षित तंत्र खाता है.  कृपया दूसरा उपयोक्तानाम निर्दिष्ट करें."
+msgstr ""
+"उपयोक्ता नाम '%s' एक आरक्षित तंत्र खाता है.  कृपया दूसरा उपयोक्तानाम "
+"निर्दिष्ट करें."
 
 #: ../modules/create_user.py:134
 #, python-format
 msgid ""
 "A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing "
-"so may take a while to reset permissions and any SELinux labels.  Would you "
-"like to reuse this home directory?  If not, please choose a different "
+"making the new user the owner of this directory and all its contents?  Doing"
+" so may take a while to reset permissions and any SELinux labels.  Would you"
+" like to reuse this home directory?  If not, please choose a different "
 "username."
 msgstr ""
-"उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूद है. नए उपयोक्ता को इस निर्देशिका और इसकी "
-"सारी टिप्पणी का स्वामी बनाते हुए क्या आप जारी रखना चाहेंगे? अनुमति और कोई SELinux स्तर "
-"फिर सेट करने के लिए ऐसा करना कुछ समय ले सकता है. क्या आप यह घर निर्देशिका फिर प्रयोग "
-"करना चाहेंगे?  यदि नहीं, कृपया भिन्न उपयोक्ता नाम चुनें."
+"उपयोक्ता %s के लिए घर निर्देशिका पहले से मौजूद है. नए उपयोक्ता को इस "
+"निर्देशिका और इसकी सारी टिप्पणी का स्वामी बनाते हुए क्या आप जारी रखना "
+"चाहेंगे? अनुमति और कोई SELinux स्तर फिर सेट करने के लिए ऐसा करना कुछ समय ले "
+"सकता है. क्या आप यह घर निर्देशिका फिर प्रयोग करना चाहेंगे?  यदि नहीं, कृपया "
+"भिन्न उपयोक्ता नाम चुनें."
 
 #: ../modules/create_user.py:177
 #, python-format
-msgid "Fixing attributes on the home directory for %s.  This may take a few minutes."
-msgstr "%s के लिए घर निर्देशिका पर विशेषता का हल कर रहा है.  यह कुछ मिनट ले सकता है."
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few "
+"minutes."
+msgstr ""
+"%s के लिए घर निर्देशिका पर विशेषता का हल कर रहा है.  यह कुछ मिनट ले सकता है."
 
 #: ../modules/create_user.py:197
 #, python-format
 msgid ""
 "Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the "
-"errors."
+"directory for %(user)s.  Please refer to %(path)s for which files caused the"
+" errors."
 msgstr ""
-"%(user)s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय समस्या का सामना "
-"हुआ.  कृपया %(path)s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि का कारण बनी."
+"%(user)s के लिए घर निर्देशिका में कुछ फाइलों में विशेषता स्थिर करते समय "
+"समस्या का सामना हुआ.  कृपया %(path)s का संदर्भ लें जिसके लिए फ़ाइलें त्रुटि "
+"का कारण बनी."
 
 #: ../modules/create_user.py:223
 msgid ""
@@ -208,8 +202,9 @@ msgid ""
 "system.  To create a system 'username', please provide the information "
 "requested below."
 msgstr ""
-"इसकी अनुशंसा की जाती है कि आप एक 'उपयोक्तानाम' अपने तंत्र के नियमित प्रयोग (गैर "
-"प्रशासनिक) के लिए बनाएँ. तंत्र 'उपयोक्तानाम' बनाने के लिए, कृपया नीचे निवेदित सूचना दें."
+"इसकी अनुशंसा की जाती है कि आप एक 'उपयोक्तानाम' अपने तंत्र के नियमित प्रयोग "
+"(गैर प्रशासनिक) के लिए बनाएँ. तंत्र 'उपयोक्तानाम' बनाने के लिए, कृपया नीचे "
+"निवेदित सूचना दें."
 
 #: ../modules/create_user.py:263
 msgid "Full Nam_e:"
@@ -236,8 +231,8 @@ msgid ""
 "If you need to use network authentication, such as Kerberos or NIS, please "
 "click the Use Network Login button."
 msgstr ""
-"यदि आपको संजाल सत्यापन के प्रयोग की जरूरत है, जैसे कि करबरोस या NIS, कृपया संजाल लॉगिन "
-"बटन का प्रयोग करें क्लिक करें."
+"यदि आपको संजाल सत्यापन के प्रयोग की जरूरत है, जैसे कि करबरोस या NIS, कृपया "
+"संजाल लॉगिन बटन का प्रयोग करें क्लिक करें."
 
 #: ../modules/create_user.py:309
 msgid "Use Network _Login..."
@@ -248,8 +243,8 @@ msgid ""
 "If you need more control when creating the user (specifying home directory, "
 "and/or UID), please click the Advanced button."
 msgstr ""
-"यदि आपको अधिक नियंत्रण की जरूरत है जब आप उपयोक्ता बना रहे हैं (गृह निर्देशिका को "
-"निर्दिष्ट कर, और/या UID), कृपया उन्नत बटन क्लिक करें."
+"यदि आपको अधिक नियंत्रण की जरूरत है जब आप उपयोक्ता बना रहे हैं (गृह "
+"निर्देशिका को निर्दिष्ट कर, और/या UID), कृपया उन्नत बटन क्लिक करें."
 
 #: ../modules/create_user.py:327
 msgid "_Advanced..."
@@ -270,9 +265,10 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"तीसरी पार्टी प्लगिन और अनुप्रयोग के संस्थापन की अनुमति के लिए \"Red Hat Enterprise "
-"Linux एक्स्ट्रा\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त सॉफ़्टवेयर के संस्थापन के "
-"लिए दस्तावेज डिस्क या अन्य Red Hat प्रदत्त डिस्क भी डाल सकते हैं."
+"तीसरी पार्टी प्लगिन और अनुप्रयोग के संस्थापन की अनुमति के लिए \"Red Hat "
+"Enterprise Linux एक्स्ट्रा\" लेबल के डिस्क को दाखिल करें. आप इस समय अतिरिक्त"
+" सॉफ़्टवेयर के संस्थापन के लिए दस्तावेज डिस्क या अन्य Red Hat प्रदत्त डिस्क "
+"भी डाल सकते हैं."
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -282,14 +278,11 @@ msgstr "कृपया किसी अतिरिक्त सॉफ्टव
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 "
-"architecture you must install the Intel Execution Layer package from the "
-"Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"32-बिट अनुप्रयोग के रनटाइम को समर्थ करने के लिये Intel Itanium2 ऑर्किटेक्चर पर, आपको "
-"Intel निष्पादन स्तर संकुल को अब एक्स्ट्रा से जरूर संस्थापित करना चाहिए."
+"32-बिट अनुप्रयोग के रनटाइम को समर्थ करने के लिये Intel Itanium2 ऑर्किटेक्चर पर, आपको Intel निष्पादन स्तर संकुल को अब एक्स्ट्रा से जरूर संस्थापित करना चाहिए."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -300,12 +293,14 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM खोजा नहीं गया है. कृपया एक CD-ROM को ड्राइव में डालें और \"ठीक\" को जारी रखने "
-"के लिए दबाएँ."
+"CD-ROM खोजा नहीं गया है. कृपया एक CD-ROM को ड्राइव में डालें और \"ठीक\" को "
+"जारी रखने के लिए दबाएँ."
 
 #: ../modules/additional_cds.py:146
 msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
-msgstr "ऑटोरन प्रोग्राम CD पर नहीं पाया जा सकता है. जारी रखने के लिये \"ठीक\" क्लिक करें."
+msgstr ""
+"ऑटोरन प्रोग्राम CD पर नहीं पाया जा सकता है. जारी रखने के लिये \"ठीक\" क्लिक "
+"करें."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -313,29 +308,13 @@ msgstr "लाइसेंस सूचना"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Thank you for installing Fedora.  Fedora is a compilation of software "
-"packages, each under its own license.  The compilation is made available "
-"under the GNU General Public License version 2.  There are no restrictions "
-"on using, copying, or modifying this code.  However, there are restrictions "
-"and obligations that apply to the redistribution of the code, either in its "
-"original or a modified form.  Among other things, those restrictions/"
-"obligations pertain to the licensing of the redistribution, trademark "
-"rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit "
-"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -351,7 +330,8 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"आपके तंत्र को प्रयोग के लिए तैयार करने के पहले कुछ और चरण हैं. सेटअप प्रतिनिधि अब आपको कुछ "
-"मौलिक विन्यास के माध्यम से मार्गदर्शन करेगा.  कृपया जारी रखने के लिए नीचे दाएँ कोने में \"आगे"
-"\" बटन दबाएँ."
+"आपके तंत्र को प्रयोग के लिए तैयार करने के पहले कुछ और चरण हैं. सेटअप "
+"प्रतिनिधि अब आपको कुछ मौलिक विन्यास के माध्यम से मार्गदर्शन करेगा.  कृपया "
+"जारी रखने के लिए नीचे दाएँ कोने में \"आगे\" बटन दबाएँ."
+
 
