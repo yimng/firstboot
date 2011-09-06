@@ -94,6 +94,7 @@ fi
 %dir %{_datadir}/firstboot/themes/default
 %{python_sitelib}/*
 %{_sbindir}/firstboot
+%{_sbindir}/firstboot-text
 %{_datadir}/firstboot/modules/create_user.py*
 %{_datadir}/firstboot/modules/date.py*
 %{_datadir}/firstboot/modules/eula.py*

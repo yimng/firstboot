@@ -6,7 +6,8 @@ Conflicts=firstboot-graphical.service plymouth-quit.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/setup
+ExecStartPre=-/bin/plymouth quit
+ExecStart=/usr/sbin/firstboot-text
 ExecStartPost=/bin/systemctl disable firstboot-graphical.service firstboot-text.service
 TimeoutSec=0
 RemainAfterExit=yes
