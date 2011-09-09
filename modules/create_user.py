@@ -404,7 +404,10 @@ class moduleClass(Module):
         self.fullnameEntry.grab_focus()
 
     def initializeUI(self):
-        pass
+        self.fullnameEntry.set_text("")
+        self.usernameEntry.set_text("")
+        self.passwordEntry.set_text("")
+        self.confirmEntry.set_text("")
 
     def _runAuthconfig(self, *args):
         self.nisFlag = 1
