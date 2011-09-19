@@ -4,7 +4,7 @@ from distutils.core import setup
 from glob import *
 import os
 
-data_files = [('/usr/sbin', ['progs/firstboot', 'progs/firstboot-text']),
+data_files = [('/usr/sbin', ['progs/firstboot']),
               ('/usr/share/firstboot/themes/default',
                glob('themes/default/*.png')),
               ('/usr/share/firstboot/modules', glob('modules/*.py')),
