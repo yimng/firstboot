@@ -46,13 +46,10 @@ class moduleClass(Module):
         if testing:
             return RESULT_SUCCESS
 
-        try:
-            rc = self.scd.firstboot_apply()
-            if rc == 0 and self.scd.closeParent:
-                return RESULT_SUCCESS
-            else:
-                return RESULT_FAILURE
-        except:
+        rc = self.scd.firstboot_apply()
+        if rc == 0 and self.scd.closeParent:
+            return RESULT_SUCCESS
+        else:
             return RESULT_FAILURE
 
     def createScreen(self):
