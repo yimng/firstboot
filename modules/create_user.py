@@ -25,6 +25,7 @@ import pwd
 import unicodedata
 import re
 import shutil
+import subprocess
 
 from firstboot.config import *
 from firstboot.constants import *
@@ -233,6 +234,9 @@ class moduleClass(Module):
                 os.chown("/home/%s" % username, uidNumber, gidNumber)
                 os.path.walk("/home/%s" % username, self._chown, (uidNumber,
                                                                   gidNumber))
+
+                # selinux context
+                subprocess.call(['restorecon', '-R', '/home/%s' % username])
 
                 # copy skel files
                 for fname in os.listdir("/etc/skel"):
