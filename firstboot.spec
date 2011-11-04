@@ -18,7 +18,8 @@ BuildRequires: gettext
 BuildRequires: python-devel, python-setuptools-devel
 BuildRequires: systemd-units
 Requires: pygtk2, python
-Requires: setuptool, libuser-python, system-config-users, system-config-date
+Requires: setuptool, libuser-python, system-config-date
+Requires: system-config-users >= 1.2.111-1
 Requires: authconfig-gtk, python-meh
 Requires: system-config-keyboard
 Requires: python-ethtool

@@ -39,6 +39,7 @@ _ = lambda x: gettext.ldgettext("firstboot", x)
 N_ = lambda x: x
 
 sys.path.append("/usr/share/system-config-users")
+import mainWindow
 import userGroupCheck
 
 class moduleClass(Module):
@@ -512,19 +513,5 @@ class moduleClass(Module):
             confirmIcon.hide()
 
     def _runSCU(self, *args):
-        i = gtk.Invisible()
-        i.grab_add()
-
-        pid = start_process("/usr/bin/system-config-users")
-
-        while True:
-            while gtk.events_pending():
-                gtk.main_iteration_do()
-
-            child_pid, status = os.waitpid(pid, os.WNOHANG)
-            if child_pid == pid:
-                break
-            else:
-                time.sleep(0.1)
-
-        i.grab_remove ()
+        reload(mainWindow)
+        win = mainWindow.mainWindow(firstboot=True)
