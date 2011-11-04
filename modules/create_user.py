@@ -44,7 +44,7 @@ import userGroupCheck
 class moduleClass(Module):
     def __init__(self):
         Module.__init__(self)
-        self.priority = 100
+        self.priority = 90
         self.sidebarTitle = N_("Create User")
         self.title = N_("Create User")
         self.icon = "create-user.png"
