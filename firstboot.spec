@@ -3,8 +3,8 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 16.1
-Release: 2%{?dist}
+Version: 17.0
+Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -103,6 +103,17 @@ fi
 
 
 %changelog
+* Thu Mar 01 2012 Martin Gracik <mgracik@redhat.com> 17.0-1
+- Disable minimize and maximize buttons on s-c-u (#747829)
+- Change priority of create_user module (#750527)
+- Clear the user entry text fields (#736193)
+- firstboot-text.service no longer exists (#750195)
+- Do not run firstboot in text mode automatically (#737118)
+- Relabel reused home directory (#750090)
+- Do not catch exceptions from system-config-date (#737882)
+- Add a firstboot-text wrapper (#734306)
+- Translation updates (#734305)
+
 * Tue Jul 26 2011 Martin Gracik <mgracik@redhat.com> 16.1-2
 - Enable firstboot after install (#725566)
 
