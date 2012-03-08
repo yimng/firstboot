@@ -495,9 +495,11 @@ class moduleClass(Module):
             strengthLabel.set_fraction(0.0)
             return
 
-        pw = Password(pw)
-        strengthLabel.set_text('%s' % pw.strength_string)
+        username = self.usernameEntry.get_text() or None
+
+        pw = Password(pw, username)
         strengthLabel.set_fraction(pw.strength_frac)
+        strengthLabel.set_text('%s' % pw.strength_string)
 
     def confirmEntry_changed(self, entry, passwordEntry, confirmIcon):
         pw = passwordEntry.get_text()
