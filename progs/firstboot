@@ -125,8 +125,8 @@ if __name__ == '__main__':
     # TODO rewrite the interface
     config.interface.moduleList = modules
     config.interface.createMainWindow()
-    config.interface.createSidebar()
     config.interface.createScreens()
+    config.interface.createSidebar()
     config.interface.run()
 
     if frontend is not None:
