@@ -269,18 +269,28 @@ class Interface(object):
            UI elements for each page and stuffs the rendered page into a UI
            wrapper containing the module's title and icon.
         """
+        loaded_modules = []
+
         for module in self.moduleList:
             try:
                 module.createScreen()
-
-                if isinstance(module, Module) and module.vbox is None:
-                    logging.error(_("Module %s did not set up its UI, removing.") % module.title)
-                    self.moduleList.remove(module)
-
-                module.renderModule(self)
-            except:
-                self.moduleList.remove(module)
+            except Exception as e:
+                logging.error(_("Module %s raised an exception while loading: %s" % (module.title, e)))
                 continue
+
+            if isinstance(module, Module) and module.vbox is None:
+                logging.error(_("Module %s did not set up its UI properly.") % module.title)
+                continue
+
+            try:
+                module.renderModule(self)
+            except Exception as e:
+                logging.error(_("Module %s raised an exception while rendering: %s" % (module.title, e)))
+                continue
+
+            loaded_modules.append(module)
+
+        self.moduleList = loaded_modules
 
     def createSidebar(self):
         """Add the sidebarTitle from every module to the sidebar."""
