@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Jaswinder Singh <jsingh@redhat.com>, 2007, 2008, 2009.
 # A S Alam <aalam@users.sf.net>, 2007, 2009.
 # Automatically generated <punjablinux@netscape.net>, 2004.
@@ -16,32 +16,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"POT-Creation-Date: 2012-03-23 12:56+0100\n"
 "PO-Revision-Date: 2011-03-29 06:46+0000\n"
 "Last-Translator: jassy <j.phulewala@gmail.com>\n"
 "Language-Team: Panjabi (Punjabi) <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pa\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-
-#: ../progs/firstboot:140
-msgid "You must be root to run firstboot."
-msgstr "ਫਸਟਬੂਟ ਚਲਾਉਣ ਲਈ ਤੁਹਾਡਾ ਰੂਟ (root) ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ।"
-
-#: ../progs/firstboot:194 ../progs/firstboot:195
-msgid "No firstboot modules were found."
-msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਮੈਡੀਊਲ ਨਹੀਂ ਲੱਭਿਆ।"
-
-#: ../progs/firstboot:205 ../progs/firstboot:206
-msgid "Could not create any firstboot interface."
-msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਇੰਟਰਫੇਸ ਨਹੀਂ ਬਣਾਇਆ ਜਾ ਸਕਿਆ।"
-
-#: ../firstboot/moduleset.py:92
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "ਮੈਡੀਊਲ %s ਨੇ ਆਪਣਾ UI ਸੈੱਟਅੱਪ ਨਹੀਂ ਕੀਤਾ। ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ।"
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -55,8 +38,7 @@ msgstr "ਮੁਕੰਮਲ(_F)"
 
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
-msgstr ""
-"ਸਿਸਟਮ ਹੁਣ ਤੁਹਾਡੇ ਰਾਹੀਂ ਕੀਤੀਆਂ ਗਈਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਚਾਲੂ ਹੋਵੇਗਾ।"
+msgstr "ਸਿਸਟਮ ਹੁਣ ਤੁਹਾਡੇ ਰਾਹੀਂ ਕੀਤੀਆਂ ਗਈਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਚਾਲੂ ਹੋਵੇਗਾ।"
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -66,196 +48,58 @@ msgstr "ਪਿੱਛੇ(_B)"
 msgid "_Forward"
 msgstr "ਅੱਗੇ(_F)"
 
-#: ../firstboot/interface.py:277
+#: ../firstboot/interface.py:278
 #, python-format
-msgid "Module %s did not set up its UI, removing."
-msgstr "ਮੈਡੀਊਲ %s ਨੇ ਆਪਣਾ UI ਸੈੱਟਅੱਪ ਨਹੀਂ ਕੀਤਾ, ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ।"
+msgid "Module %s raised an exception while loading: %s"
+msgstr ""
 
-#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
+#: ../firstboot/interface.py:282
+#, fuzzy, python-format
+msgid "Module %s did not set up its UI properly."
+msgstr "ਮੈਡੀਊਲ %s ਨੇ ਆਪਣਾ UI ਸੈੱਟਅੱਪ ਨਹੀਂ ਕੀਤਾ। ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ।"
+
+#: ../firstboot/interface.py:288
+#, python-format
+msgid "Module %s raised an exception while rendering: %s"
+msgstr ""
+
+#: ../firstboot/interface.py:357 ../firstboot/interface.py:358
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage ਨੂੰ ਮੈਡੀਊਲ ਟਾਈਟਲ ਜਾਂ ਸਫਾ ਨੰਬਰ ਦੇਣਾ ਜਰੂਰੀ ਹੈ।"
 
-#: ../firstboot/interface.py:432
+#: ../firstboot/interface.py:442
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "ਸਕਰੀਨ-ਸ਼ਾਟ ਡਾਇਰੈਕਟਰੀ ਬਣਾਉਣ ਤੋਂ ਅਸਮਰੱਥ; ਛੱਡਿਆ ਜਾ ਰਿਹਾ ਹੈ।"
 
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#: ../firstboot/interface.py:482 ../firstboot/interface.py:483
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "%s ਟਾਈਟਲ ਵਾਲਾ ਕੋਈ ਮੈਡੀਊਲ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
 
-#: ../firstboot/loader.py:87
+#: ../firstboot/moduleset.py:92
 #, python-format
-msgid "Skipping old module %s that has not been updated."
-msgstr "ਪੁਰਾਣਾ ਮੈਡੀਊਲ %s ਛੱਡ ਰਿਹਾ ਜੋ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ।"
+msgid "Module %s did not set up its UI; removing."
+msgstr "ਮੈਡੀਊਲ %s ਨੇ ਆਪਣਾ UI ਸੈੱਟਅੱਪ ਨਹੀਂ ਕੀਤਾ। ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ।"
 
-#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
-#, python-format
-msgid ""
-"Error loading module %(module)s:\n"
-"%(error)s"
-msgstr ""
-"ਮੋਡੀਊਲ %(module)s ਲੋਡ ਕਰਨ ਵੇਲੇ ਗਲਤੀ ਆਈ ਹੈ:\n"
-"%(error)s"
-
-#: ../firstboot/loader.py:103
-#, python-format
-msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
-"ਮੈਡੀਊਲ %s ਵਿੱਚ moduleClass ਨਾਂ ਵਾਲੀ ਕਲਾਸ ਸ਼ਾਮਿਲ ਨਹੀਂ ਹੈ; ਛੱਡਿਆ ਜਾ ਰਿਹਾ ਹੈ।"
-
-#: ../firstboot/loader.py:114
-#, python-format
-msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; "
-"skipping."
-msgstr ""
-"ਮੈਡੀਊਲ %(module)s ਵਿੱਚ ਲੋੜੀਂਦਾ ਗੁਣ %(attr)s ਮੌਜੂਦ ਨਹੀਂ ਹੈ; ਛੱਡ ਰਿਹਾ ਹੈ।"
-
-#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+#: ../firstboot/pwcheck.py:46
 msgid "Very weak"
 msgstr "ਬਹੁਤ ਕਮਜੋਰ"
 
-#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+#: ../firstboot/pwcheck.py:47
 msgid "Weak"
 msgstr "ਕਮਜੋਰ"
 
-#: ../firstboot/pwcheck.py:112
+#: ../firstboot/pwcheck.py:48
 msgid "Fairly strong"
 msgstr "ਥੋੜਾ ਮਜਬੂਤ"
 
-#: ../firstboot/pwcheck.py:113
+#: ../firstboot/pwcheck.py:49
 msgid "Strong"
 msgstr "ਮਜਬੂਤ"
 
-#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+#: ../firstboot/pwcheck.py:50
 msgid "Very strong"
 msgstr "ਬਹੁਤ ਮਜਬੂਤ"
-
-#: ../firstboot/pwcheck.py:141
-msgid "Undefined"
-msgstr "ਨਾ-ਪਰਿਭਾਸ਼ਤ"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "ਮਿਤੀ ਅਤੇ ਟਾਈਮ"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "ਆਪਣੇ ਸਿਸਟਮ ਲਈ ਮਿਤੀ ਅਤੇ ਟਾਈਮ ਸੈੱਟ ਕਰੋ ਜੀ।"
-
-#: ../modules/create_user.py:43 ../modules/create_user.py:44
-msgid "Create User"
-msgstr "ਯੂਜ਼ਰ ਬਣਾਓ"
-
-#: ../modules/create_user.py:85
-msgid "You must create a user account for this system."
-msgstr "ਤੁਹਾਨੂੰ ਇਸ ਸਿਸਟਮ ਲਈ ਇੱਕ ਯੂਜ਼ਰ ਅਕਾਊਂਟ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
-
-#: ../modules/create_user.py:96
-msgid "You must enter and confirm a password for this user."
-msgstr "ਤੁਹਾਨੂੰ ਇਸ ਯੂਜ਼ਰ ਲਈ ਪਾਸਵਰਡ ਬਣਾਉਣਾ ਅਤੇ ਪੁਸ਼ਟੀ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।"
-
-#: ../modules/create_user.py:103
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "ਪਾਸਵਰਡ ਮਿਲਦੇ ਨਹੀਂ ਹਨ।  ਪਾਸਵਰਡ ਫੇਰ ਦਿਓ ਜੀ।"
-
-#: ../modules/create_user.py:115
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr "ਯੂਜ਼ਰ-ਨਾਂ '%s' ਸਿਸਟਮ ਅਕਾਊਂਟ ਲਈ ਰਾਖਵਾਂ ਹੈ। ਹੋਰ ਯੂਜ਼ਰ-ਨਾਂ ਦਿਓ ਜੀ।"
-
-#: ../modules/create_user.py:134
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing"
-" so may take a while to reset permissions and any SELinux labels.  Would you"
-" like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"ਯੂਜ਼ਰ %s ਲਈ ਘਰ ਡਾਇਰੈਕਟਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਡਾਇਰੈਕਟਰੀ ਦਾ ਅਤੇ ਇਸ"
-" ਦੀ ਸਮੱਗਰੀ ਦਾ ਮਾਲਕ (ਓਨਰ) ਨਵਾਂ ਯੂਜ਼ਰ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਅਜਿਹਾ ਕਰਨ ਲਈ ਅਧਿਕਾਰ "
-"ਅਤੇ SELinux ਲੇਬਲ ਮੁੜ-ਸੈੱਟ ਹੋਣ ਉੱਤੇ ਕੁਝ ਟਾਈਮ ਲੱਗੇਗਾ? ਜੇ ਨਹੀਂ, ਤਾਂ ਵੱਖਰਾ "
-"ਯੂਜ਼ਰ-ਨਾਂ ਦਿਓ ਜੀ।"
-
-#: ../modules/create_user.py:177
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few "
-"minutes."
-msgstr ""
-"%s ਲਈ ਘਰ (home) ਡਾਇਰੈਕਟਰੀ ਦੇ ਐਟਰੀਬਿਊਟ ਫਿਕਸ ਕਰ ਰਿਹਾ ਹੈ। ਇਸ ਨੂੰ ਕੁਝ ਮਿੰਟ ਲੱਗ "
-"ਸਕਦੇ ਹਨ।"
-
-#: ../modules/create_user.py:197
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the"
-" errors."
-msgstr ""
-"%(user)s ਲਈ ਘਰ (home) ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਕੁਝ ਫਾਇਲਾਂ ਦੇ ਐਟਰੀਬਿਊਟ ਫਿਕਸ ਕਰਨ ਵਿੱਚ "
-"ਸਮੱਸਿਆ ਆਈ ਹੈ। ਫਾਇਲਾਂ, ਜਿੰਨ੍ਹਾਂ ਨਾਲ ਗਲਤੀਆਂ ਆਈਆਂ ਹਨ, ਲਈ %(path)s ਵੇਖੋ ਜੀ।"
-
-#: ../modules/create_user.py:223
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"ਤੁਹਾਨੂੰ ਆਪਣੇ ਸਿਸਟਮ ਦੀ ਲਗਾਤਾਰ (ਬਿਨ-ਪਰਸ਼ਾਸ਼ਕੀ) ਵਰਤੋਂ ਲਈ ਇੱਕ 'ਯੂਜ਼ਰ-ਨਾਂ' ਬਣਾਉਣਾ "
-"ਚਾਹੀਦਾ ਹੈ। ਇੱਕ ਸਿਸਟਮ 'ਯੂਜ਼ਰ-ਨਾਂ' ਬਣਾਉਣ ਵਾਸਤੇ, ਹੇਠਾਂ ਦਿੱਤੀ ਜਾਣਕਾਰੀ ਦਿਓ ਜੀ।"
-
-#: ../modules/create_user.py:263
-msgid "Full Nam_e:"
-msgstr "ਪੂਰਾ ਨਾਂ(_E):"
-
-#: ../modules/create_user.py:270
-msgid "_Username:"
-msgstr "ਯੂਜ਼ਰ-ਨਾਂ(_U):"
-
-#: ../modules/create_user.py:277
-msgid "_Password:"
-msgstr "ਪਾਸਵਰਡ(_P):"
-
-#: ../modules/create_user.py:284
-msgid "Confir_m Password:"
-msgstr "ਪਾਸਵਰਡ ਪੁਸ਼ਟੀ(_M):"
-
-#: ../modules/create_user.py:294
-msgid "Add to Administrators group"
-msgstr "ਪ੍ਰਸ਼ਾਸ਼ਕ ਗਰੁੱਪ ਵਿੱਚ ਜੋੜੋ"
-
-#: ../modules/create_user.py:300
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"ਜੇ ਤੁਹਾਨੂੰ ਨੈੱਟਵਰਕ ਪ੍ਰਮਾਣਿਕਤਾ ਦੀ ਲੋੜ ਹੈ, ਜਿਵੇਂ ਕਿ ਕਰਬਰੋਸ ਜਾਂ NIS, ਤਾਂ "
-"ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋਂ ਬਟਨ ਦਬਾਓ।"
-
-#: ../modules/create_user.py:309
-msgid "Use Network _Login..."
-msgstr "ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋਂ(_L)..."
-
-#: ../modules/create_user.py:317
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"ਜੇ ਤੁਹਾਨੂੰ ਵਧੇਰੇ ਕੰਟਰੋਲ ਦੀ ਲੋੜ ਹੈ ਜਦੋਂ ਯੂਜ਼ਰ ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ (ਜਿਸ ਵਿੱਚ home "
-"ਡਾਇਰੈਕਟਰੀ, ਅਤੇ/ਜਾਂ UID ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ), ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਤਕਨੀਕੀ ਬਟਨ ਦਬਾਓ।"
-
-#: ../modules/create_user.py:327
-msgid "_Advanced..."
-msgstr "ਤਕਨੀਕੀ(_A)..."
-
-#: ../modules/create_user.py:365
-msgid "Please wait"
-msgstr "ਉਡੀਕੋ ਜੀ"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -268,9 +112,9 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"\"Red Hat Enterprise Linux Extras\" ਨਾਂ ਦੀ ਡਿਸਕ ਨੂੰ ਸੁਤੰਤਰ ਪਲੱਗਇਨ ਤੇ "
-"ਐਪਲੀਕੇਸ਼ਨ ਇੰਸਟਾਲੇਸ਼ਨ ਲਈ ਪਾਓ। ਤੁਸੀਂ ਡੋਕੂਮੈਂਟੇਸ਼ਨ CD, ਜਾਂ Red Hat-ਵਲੋਂ ਉਪਲੱਬਧ "
-"ਡਿਸਕ ਨੂੰ ਇਸ ਸਮੇਂ ਵਾਧੂ ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪਾ ਸਕਦੇ ਹੋ।"
+"\"Red Hat Enterprise Linux Extras\" ਨਾਂ ਦੀ ਡਿਸਕ ਨੂੰ ਸੁਤੰਤਰ ਪਲੱਗਇਨ ਤੇ ਐਪਲੀਕੇਸ਼ਨ "
+"ਇੰਸਟਾਲੇਸ਼ਨ ਲਈ ਪਾਓ। ਤੁਸੀਂ ਡੋਕੂਮੈਂਟੇਸ਼ਨ CD, ਜਾਂ Red Hat-ਵਲੋਂ ਉਪਲੱਬਧ ਡਿਸਕ ਨੂੰ ਇਸ ਸਮੇਂ ਵਾਧੂ ਸਾਫਟਵੇਅਰ "
+"ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪਾ ਸਕਦੇ ਹੋ।"
 
 #: ../modules/additional_cds.py:61
 msgid "Please insert any additional software install cds at this time."
@@ -280,11 +124,14 @@ msgstr "ਹੁਣ ਕੋਈ ਵੀ ਵਾਧੂ ਸਾਫਟਵੇਅਰ ਇੰ�
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Intel Itanium2 ਢਾਂਚੇ ਉੱਤੇ 32-ਬਿੱਟ ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਰੰਨਟਾਈਮ ਸਹਿਯੋਗ ਯੋਗ ਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ ਵਾਧੂ ਡਿਸਕ ਤੋਂ Intel Execution Layer ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇਗਾ।"
+"Intel Itanium2 ਢਾਂਚੇ ਉੱਤੇ 32-ਬਿੱਟ ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਰੰਨਟਾਈਮ ਸਹਿਯੋਗ ਯੋਗ ਕਰਨ ਲਈ, ਤੁਹਾਨੂੰ ਵਾਧੂ "
+"ਡਿਸਕ ਤੋਂ Intel Execution Layer ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇਗਾ।"
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -295,14 +142,132 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"CD-ROM ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। ਡਰਾਈਵ ਵਿੱਚ CD-ROM ਵਿੱਚ CD ਪਾਓ ਅਤੇ\"ਠੀਕ "
-"ਹੈ\" ਨੂੰ ਦਬਾਉ।"
+"CD-ROM ਨੂੰ ਖੋਜਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। ਡਰਾਈਵ ਵਿੱਚ CD-ROM ਵਿੱਚ CD ਪਾਓ ਅਤੇ\"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਉ।"
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgstr "CD ਉੱਤੇ autorun ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ। ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ ਦਬਾਓ।"
+
+#: ../modules/create_user.py:49 ../modules/create_user.py:50
+msgid "Create User"
+msgstr "ਯੂਜ਼ਰ ਬਣਾਓ"
+
+#: ../modules/create_user.py:102
+msgid ""
+"You did not set up an user account capable of logging into the system.\n"
+"Are you sure you want to continue?"
 msgstr ""
-"CD ਉੱਤੇ autorun ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ। ਜਾਰੀ ਰੱਖਣ ਲਈ \"ਠੀਕ ਹੈ\" ਨੂੰ "
+
+#: ../modules/create_user.py:123
+msgid "You must enter and confirm a password for this user."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਯੂਜ਼ਰ ਲਈ ਪਾਸਵਰਡ ਬਣਾਉਣਾ ਅਤੇ ਪੁਸ਼ਟੀ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।"
+
+#: ../modules/create_user.py:130
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "ਪਾਸਵਰਡ ਮਿਲਦੇ ਨਹੀਂ ਹਨ।  ਪਾਸਵਰਡ ਫੇਰ ਦਿਓ ਜੀ।"
+
+#: ../modules/create_user.py:167
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr "ਯੂਜ਼ਰ-ਨਾਂ '%s' ਸਿਸਟਮ ਅਕਾਊਂਟ ਲਈ ਰਾਖਵਾਂ ਹੈ। ਹੋਰ ਯੂਜ਼ਰ-ਨਾਂ ਦਿਓ ਜੀ।"
+
+#: ../modules/create_user.py:186
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"ਯੂਜ਼ਰ %s ਲਈ ਘਰ ਡਾਇਰੈਕਟਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਡਾਇਰੈਕਟਰੀ ਦਾ ਅਤੇ ਇਸ ਦੀ ਸਮੱਗਰੀ "
+"ਦਾ ਮਾਲਕ (ਓਨਰ) ਨਵਾਂ ਯੂਜ਼ਰ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਅਜਿਹਾ ਕਰਨ ਲਈ ਅਧਿਕਾਰ ਅਤੇ SELinux ਲੇਬਲ ਮੁੜ-"
+"ਸੈੱਟ ਹੋਣ ਉੱਤੇ ਕੁਝ ਟਾਈਮ ਲੱਗੇਗਾ? ਜੇ ਨਹੀਂ, ਤਾਂ ਵੱਖਰਾ ਯੂਜ਼ਰ-ਨਾਂ ਦਿਓ ਜੀ।"
+
+#: ../modules/create_user.py:229
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+"%s ਲਈ ਘਰ (home) ਡਾਇਰੈਕਟਰੀ ਦੇ ਐਟਰੀਬਿਊਟ ਫਿਕਸ ਕਰ ਰਿਹਾ ਹੈ। ਇਸ ਨੂੰ ਕੁਝ ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ।"
+
+#: ../modules/create_user.py:267
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr ""
+"%(user)s ਲਈ ਘਰ (home) ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਕੁਝ ਫਾਇਲਾਂ ਦੇ ਐਟਰੀਬਿਊਟ ਫਿਕਸ ਕਰਨ ਵਿੱਚ ਸਮੱਸਿਆ ਆਈ "
+"ਹੈ। ਫਾਇਲਾਂ, ਜਿੰਨ੍ਹਾਂ ਨਾਲ ਗਲਤੀਆਂ ਆਈਆਂ ਹਨ, ਲਈ %(path)s ਵੇਖੋ ਜੀ।"
+
+#: ../modules/create_user.py:293
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਆਪਣੇ ਸਿਸਟਮ ਦੀ ਲਗਾਤਾਰ (ਬਿਨ-ਪਰਸ਼ਾਸ਼ਕੀ) ਵਰਤੋਂ ਲਈ ਇੱਕ 'ਯੂਜ਼ਰ-ਨਾਂ' ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ। "
+"ਇੱਕ ਸਿਸਟਮ 'ਯੂਜ਼ਰ-ਨਾਂ' ਬਣਾਉਣ ਵਾਸਤੇ, ਹੇਠਾਂ ਦਿੱਤੀ ਜਾਣਕਾਰੀ ਦਿਓ ਜੀ।"
+
+#: ../modules/create_user.py:332
+msgid "Full Nam_e:"
+msgstr "ਪੂਰਾ ਨਾਂ(_E):"
+
+#: ../modules/create_user.py:339
+msgid "_Username:"
+msgstr "ਯੂਜ਼ਰ-ਨਾਂ(_U):"
+
+#: ../modules/create_user.py:346
+msgid "_Password:"
+msgstr "ਪਾਸਵਰਡ(_P):"
+
+#: ../modules/create_user.py:353
+msgid "Confir_m Password:"
+msgstr "ਪਾਸਵਰਡ ਪੁਸ਼ਟੀ(_M):"
+
+#: ../modules/create_user.py:363
+msgid "Add to Administrators group"
+msgstr "ਪ੍ਰਸ਼ਾਸ਼ਕ ਗਰੁੱਪ ਵਿੱਚ ਜੋੜੋ"
+
+#: ../modules/create_user.py:369
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"ਜੇ ਤੁਹਾਨੂੰ ਨੈੱਟਵਰਕ ਪ੍ਰਮਾਣਿਕਤਾ ਦੀ ਲੋੜ ਹੈ, ਜਿਵੇਂ ਕਿ ਕਰਬਰੋਸ ਜਾਂ NIS, ਤਾਂ ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋਂ ਬਟਨ "
 "ਦਬਾਓ।"
+
+#: ../modules/create_user.py:378
+msgid "Use Network _Login..."
+msgstr "ਨੈੱਟਵਰਕ ਲਾਗਇਨ ਵਰਤੋਂ(_L)..."
+
+#: ../modules/create_user.py:386
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"ਜੇ ਤੁਹਾਨੂੰ ਵਧੇਰੇ ਕੰਟਰੋਲ ਦੀ ਲੋੜ ਹੈ ਜਦੋਂ ਯੂਜ਼ਰ ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ (ਜਿਸ ਵਿੱਚ home ਡਾਇਰੈਕਟਰੀ, ਅਤੇ/ਜਾਂ "
+"UID ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ), ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਤਕਨੀਕੀ ਬਟਨ ਦਬਾਓ।"
+
+#: ../modules/create_user.py:396
+msgid "_Advanced..."
+msgstr "ਤਕਨੀਕੀ(_A)..."
+
+#: ../modules/create_user.py:437
+msgid "Please wait"
+msgstr "ਉਡੀਕੋ ਜੀ"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "ਮਿਤੀ ਅਤੇ ਟਾਈਮ"
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr "ਆਪਣੇ ਸਿਸਟਮ ਲਈ ਮਿਤੀ ਅਤੇ ਟਾਈਮ ਸੈੱਟ ਕਰੋ ਜੀ।"
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -310,13 +275,26 @@ msgstr "ਲਾਈਸੈਂਸ ਜਾਣਕਾਰੀ"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"ਫੇਡੋਰਾ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਧੰਨਵਾਦ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।  ਫੇਡੋਰਾ ਸਾਫਟਵੇਅਰ ਪੈਕੇਜ ਦਾ ਗਰੁੱਪ ਹੈ, ਜਿੰਨ੍ਹਾਂ ਦੇ ਆਪਣੇ ਲਾਈਸੈਂਸ ਹਨ। ਇਸ ਗਰੁੱਪ ਨੂੰ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਈਸੈਂਸ ਵਰਜਨ 2 ਹੇਠ ਕੰਪਾਈਲ ਕੀਤਾ ਗਿਆ ਹੈ। ਇਸ ਕੋਡ ਨੂੰ ਵਰਤਣ, ਕਾਪੀ ਕਰਨ ਅਤੇ ਸੋਧਣ ਲਈ ਕੋਈ ਵੀ ਪਾਬੰਦੀ ਨਹੀਂ ਹੈ। ਪਰ ਕੁਝ ਪਾਬੰਦੀਆਂ ਅਤੇ ਰੋਕਾਂ ਤਾਂ ਹਨ, ਜੋ ਕਿ ਕੋਡ ਦੀ ਮੁੜ-ਵੰਡ ਉੱਤੇ ਲਾਗੂ ਹੁੰਦੀਆਂ ਹਨ, ਭਾਵੇਂ ਉਹ ਅਸਲੀ ਹੋਵੇ ਜਾਂ ਸੋਧਿਆ ਗਿਆ ਹੋਵੇ। ਹੋਰ ਚੀਜ਼ਾਂ ਤੋਂ ਇਲਾਵਾ ਇਹ ਰੋਕਾਂ/ਪਾਬੰਦੀਆਂ ਮੁੜ-ਵੰਡਣ, ਮਾਰਕੇ ਅਤੇ ਨਿਰਯਾਤ ਕੰਟਰੋਲ ਲਈ ਲਾਈਸੈਂਸ ਦੀ ਸੁਰੱਖਿਆ ਵਾਸਤੇ ਹਨ।\n"
+"ਫੇਡੋਰਾ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਧੰਨਵਾਦ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।  ਫੇਡੋਰਾ ਸਾਫਟਵੇਅਰ ਪੈਕੇਜ ਦਾ ਗਰੁੱਪ ਹੈ, ਜਿੰਨ੍ਹਾਂ ਦੇ ਆਪਣੇ "
+"ਲਾਈਸੈਂਸ ਹਨ। ਇਸ ਗਰੁੱਪ ਨੂੰ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਈਸੈਂਸ ਵਰਜਨ 2 ਹੇਠ ਕੰਪਾਈਲ ਕੀਤਾ ਗਿਆ ਹੈ। ਇਸ ਕੋਡ ਨੂੰ "
+"ਵਰਤਣ, ਕਾਪੀ ਕਰਨ ਅਤੇ ਸੋਧਣ ਲਈ ਕੋਈ ਵੀ ਪਾਬੰਦੀ ਨਹੀਂ ਹੈ। ਪਰ ਕੁਝ ਪਾਬੰਦੀਆਂ ਅਤੇ ਰੋਕਾਂ ਤਾਂ ਹਨ, ਜੋ ਕਿ "
+"ਕੋਡ ਦੀ ਮੁੜ-ਵੰਡ ਉੱਤੇ ਲਾਗੂ ਹੁੰਦੀਆਂ ਹਨ, ਭਾਵੇਂ ਉਹ ਅਸਲੀ ਹੋਵੇ ਜਾਂ ਸੋਧਿਆ ਗਿਆ ਹੋਵੇ। ਹੋਰ ਚੀਜ਼ਾਂ ਤੋਂ ਇਲਾਵਾ "
+"ਇਹ ਰੋਕਾਂ/ਪਾਬੰਦੀਆਂ ਮੁੜ-ਵੰਡਣ, ਮਾਰਕੇ ਅਤੇ ਨਿਰਯਾਤ ਕੰਟਰੋਲ ਲਈ ਲਾਈਸੈਂਸ ਦੀ ਸੁਰੱਖਿਆ ਵਾਸਤੇ ਹਨ।\n"
 "\n"
-"ਜੇ ਤੁਸੀਂ ਉਹਨਾਂ ਪਾਬੰਦੀਆਂ ਨੂੰ ਸਮਝਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement ਨੂੰ ਵੇਖੋ ਜੀ।"
+"ਜੇ ਤੁਸੀਂ ਉਹਨਾਂ ਪਾਬੰਦੀਆਂ ਨੂੰ ਸਮਝਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ http://fedoraproject.org/wiki/Legal/"
+"Licenses/LicenseAgreement ਨੂੰ ਵੇਖੋ ਜੀ।"
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -332,8 +310,42 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-"ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ਼ ਬਾਕੀ ਹਨ।  "
-"ਸੈੱਟਅੱਪ ਏਜੰਟ ਤੁਹਾਨੂੰ ਇੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ। ਜਾਰੀ ਰਹਿਣ ਲਈ "
-"ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਦਬਾਉ ਜੀ।"
+"ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਤੁਹਾਡਾ ਸਿਸਟਮ ਵਰਤਣ ਲਈ ਤਿਆਰ ਹੋਵੇ, ਕੁਝ ਹੋਰ ਪਗ਼ ਬਾਕੀ ਹਨ।  ਸੈੱਟਅੱਪ ਏਜੰਟ ਤੁਹਾਨੂੰ "
+"ਇੱਕ ਮੁੱਢਲੀ ਸੰਰਚਨਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ। ਜਾਰੀ ਰਹਿਣ ਲਈ ਹੇਠਲੇ ਸੱਜੇ ਕੋਨੇ ਵਿੱਚ \"ਅੱਗੇ\" ਬਟਨ ਨੂੰ ਦਬਾਉ "
+"ਜੀ।"
 
+#~ msgid "You must be root to run firstboot."
+#~ msgstr "ਫਸਟਬੂਟ ਚਲਾਉਣ ਲਈ ਤੁਹਾਡਾ ਰੂਟ (root) ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ।"
 
+#~ msgid "No firstboot modules were found."
+#~ msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਮੈਡੀਊਲ ਨਹੀਂ ਲੱਭਿਆ।"
+
+#~ msgid "Could not create any firstboot interface."
+#~ msgstr "ਕੋਈ ਵੀ ਫਸਟਬੂਟ ਇੰਟਰਫੇਸ ਨਹੀਂ ਬਣਾਇਆ ਜਾ ਸਕਿਆ।"
+
+#~ msgid "Module %s did not set up its UI, removing."
+#~ msgstr "ਮੈਡੀਊਲ %s ਨੇ ਆਪਣਾ UI ਸੈੱਟਅੱਪ ਨਹੀਂ ਕੀਤਾ, ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ।"
+
+#~ msgid "Skipping old module %s that has not been updated."
+#~ msgstr "ਪੁਰਾਣਾ ਮੈਡੀਊਲ %s ਛੱਡ ਰਿਹਾ ਜੋ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ।"
+
+#~ msgid ""
+#~ "Error loading module %(module)s:\n"
+#~ "%(error)s"
+#~ msgstr ""
+#~ "ਮੋਡੀਊਲ %(module)s ਲੋਡ ਕਰਨ ਵੇਲੇ ਗਲਤੀ ਆਈ ਹੈ:\n"
+#~ "%(error)s"
+
+#~ msgid "Module %s does not contain a class named moduleClass; skipping."
+#~ msgstr "ਮੈਡੀਊਲ %s ਵਿੱਚ moduleClass ਨਾਂ ਵਾਲੀ ਕਲਾਸ ਸ਼ਾਮਿਲ ਨਹੀਂ ਹੈ; ਛੱਡਿਆ ਜਾ ਰਿਹਾ ਹੈ।"
+
+#~ msgid ""
+#~ "Module %(module)s does not contain the required attribute %(attr)s; "
+#~ "skipping."
+#~ msgstr "ਮੈਡੀਊਲ %(module)s ਵਿੱਚ ਲੋੜੀਂਦਾ ਗੁਣ %(attr)s ਮੌਜੂਦ ਨਹੀਂ ਹੈ; ਛੱਡ ਰਿਹਾ ਹੈ।"
+
+#~ msgid "Undefined"
+#~ msgstr "ਨਾ-ਪਰਿਭਾਸ਼ਤ"
+
+#~ msgid "You must create a user account for this system."
+#~ msgstr "ਤੁਹਾਨੂੰ ਇਸ ਸਿਸਟਮ ਲਈ ਇੱਕ ਯੂਜ਼ਰ ਅਕਾਊਂਟ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"

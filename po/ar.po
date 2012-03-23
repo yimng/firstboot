@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Munzir Taha <munzir@kacst.edu.sa>, 2004.
 # Abd el rahman Ghareeb <king_abdo@yahoo.com>, 2004.
 # Mohamed Eldesoky <mohamed@eldesoky.net>, 2004.
@@ -15,32 +15,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"POT-Creation-Date: 2012-03-23 12:56+0100\n"
 "PO-Revision-Date: 2011-04-30 10:38+0000\n"
 "Last-Translator: munzirtaha <munzirtaha@gmail.com>\n"
 "Language-Team: Arabic <trans-ar@lists.fedoraproject.org>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ar\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
-
-#: ../progs/firstboot:140
-msgid "You must be root to run firstboot."
-msgstr "يجب أن تكون مستخدم مسئول لتشغيل firstboot"
-
-#: ../progs/firstboot:194 ../progs/firstboot:195
-msgid "No firstboot modules were found."
-msgstr "تعذر إيجاد وحدات firstboot"
-
-#: ../progs/firstboot:205 ../progs/firstboot:206
-msgid "Could not create any firstboot interface."
-msgstr "تعذر إنشاء وحدات firstboot"
-
-#: ../firstboot/moduleset.py:92
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "جاري إزالة الوحدة %s لعدم إعدادها واجهتها الرسومية."
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -64,186 +48,58 @@ msgstr "_رجوع"
 msgid "_Forward"
 msgstr "_تقدم"
 
-#: ../firstboot/interface.py:277
+#: ../firstboot/interface.py:278
 #, python-format
-msgid "Module %s did not set up its UI, removing."
+msgid "Module %s raised an exception while loading: %s"
+msgstr ""
+
+#: ../firstboot/interface.py:282
+#, fuzzy, python-format
+msgid "Module %s did not set up its UI properly."
 msgstr "جاري إزالة الوحدة %s لعدم إعدادها واجهتها الرسومية."
 
-#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
+#: ../firstboot/interface.py:288
+#, python-format
+msgid "Module %s raised an exception while rendering: %s"
+msgstr ""
+
+#: ../firstboot/interface.py:357 ../firstboot/interface.py:358
 msgid "moveToPage must be given a module title or page number."
 msgstr "يجب إعطاء moveToPage رقم صفحة أو عنوان وحدة."
 
-#: ../firstboot/interface.py:432
+#: ../firstboot/interface.py:442
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "تعذّر إنشاء دليل للقطات الشاشة؛ تخطي."
 
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#: ../firstboot/interface.py:482 ../firstboot/interface.py:483
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "لا يوجد وحدات بالعنوان %s."
 
-#: ../firstboot/loader.py:87
+#: ../firstboot/moduleset.py:92
 #, python-format
-msgid "Skipping old module %s that has not been updated."
-msgstr "تخطي الوحدة القديمة %s التي لم يتم تحديثها."
+msgid "Module %s did not set up its UI; removing."
+msgstr "جاري إزالة الوحدة %s لعدم إعدادها واجهتها الرسومية."
 
-#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
-#, python-format
-msgid ""
-"Error loading module %(module)s:\n"
-"%(error)s"
-msgstr ""
-
-#: ../firstboot/loader.py:103
-#, python-format
-msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr "الوحدة %s لا تحتوي فصيلة اسمها moduleClass؛ تخطي."
-
-#: ../firstboot/loader.py:114
-#, python-format
-msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; "
-"skipping."
-msgstr ""
-
-#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+#: ../firstboot/pwcheck.py:46
 msgid "Very weak"
 msgstr "ضعيف جداً"
 
-#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+#: ../firstboot/pwcheck.py:47
 msgid "Weak"
 msgstr "ضعيف"
 
-#: ../firstboot/pwcheck.py:112
+#: ../firstboot/pwcheck.py:48
 msgid "Fairly strong"
 msgstr "قوية إلى حد ما"
 
-#: ../firstboot/pwcheck.py:113
+#: ../firstboot/pwcheck.py:49
 msgid "Strong"
 msgstr "قوي"
 
-#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+#: ../firstboot/pwcheck.py:50
 msgid "Very strong"
 msgstr "قوي جدا"
-
-#: ../firstboot/pwcheck.py:141
-msgid "Undefined"
-msgstr "غير معّرف"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "التاريخ والوقت"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "فضلا حدد تاريخ ووقت النظام."
-
-#: ../modules/create_user.py:43 ../modules/create_user.py:44
-msgid "Create User"
-msgstr "إنشاء مستخدم"
-
-#: ../modules/create_user.py:85
-msgid "You must create a user account for this system."
-msgstr "يجب أن تنشئ حسابا لمستخدم على هذا النظام"
-
-#: ../modules/create_user.py:96
-msgid "You must enter and confirm a password for this user."
-msgstr "يجب أن تدخل كلمة سر وتؤكدها لهذا المستخدم"
-
-#: ../modules/create_user.py:103
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "كلمتا المرور غير متطابقتان. أدخل كلمة المرور مرة أخرى"
-
-#: ../modules/create_user.py:115
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr "اسم المستخدم '%s' محجوز للنظام. فضلا حدد اسما آخر."
-
-#: ../modules/create_user.py:134
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing"
-" so may take a while to reset permissions and any SELinux labels.  Would you"
-" like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"هناك مجلّد منزل للمستخدم %s. هل تريد المتابعة بجعل المستخدم الجديد مالكاً "
-"لهذا المجلّد وكل محتوياته؟ هذا قد يستغرق بعض الوقت لإعادة ضبط الصلاحيات "
-"وعناوين SELinux. هل ترغب بإعادة استخدام هذا المجلّد؟ إذا لم ترد ذلك، فاستخدم"
-" اسماً آخر للحساب."
-
-#: ../modules/create_user.py:177
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few "
-"minutes."
-msgstr "جاري إصلاح معاملات مجلد المنزل لـ%s. قد يستغرق هذا بضع دقائق."
-
-#: ../modules/create_user.py:197
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the"
-" errors."
-msgstr ""
-
-#: ../modules/create_user.py:223
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"يجب إنشاء مستخدم للقيام بالأعمال الاعتيادية (غير الإدارية). لإنشاء هذا "
-"المستخدم فضلا قدم المعلومات المطوبة أدناه."
-
-#: ../modules/create_user.py:263
-msgid "Full Nam_e:"
-msgstr "الاسم ال_كامل:"
-
-#: ../modules/create_user.py:270
-msgid "_Username:"
-msgstr "ا_سم المستحدم:"
-
-#: ../modules/create_user.py:277
-msgid "_Password:"
-msgstr "_كلمة المرور:"
-
-#: ../modules/create_user.py:284
-msgid "Confir_m Password:"
-msgstr "تأكيد كلمة المرور_"
-
-#: ../modules/create_user.py:294
-msgid "Add to Administrators group"
-msgstr ""
-
-#: ../modules/create_user.py:300
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"إذا كنت بحاجة إلى الموثقة عبر الشبكة، مثل Kerberos أو NIS، فضلا انقر على زر "
-"استخدام الولوج عبر الشبكة"
-
-#: ../modules/create_user.py:309
-msgid "Use Network _Login..."
-msgstr "استخدام الولوج عبر الشبكة"
-
-#: ../modules/create_user.py:317
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-
-#: ../modules/create_user.py:327
-msgid "_Advanced..."
-msgstr ""
-
-#: ../modules/create_user.py:365
-msgid "Please wait"
-msgstr "يرجى الانتظار"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -256,8 +112,8 @@ msgid ""
 "insert the Documentation disc, or other Red Hat-provided discs to install "
 "additional software at this time."
 msgstr ""
-"الرجاء إدخال القرص المسمّى \"Red Hat Enterprise Linux Extras\" للسماح بتثبيت"
-" الوظائف الإضافيّة والبرامج من طرف ثالث. يمكنك أيضاً إدخال قرص الوثائق، أو "
+"الرجاء إدخال القرص المسمّى \"Red Hat Enterprise Linux Extras\" للسماح بتثبيت "
+"الوظائف الإضافيّة والبرامج من طرف ثالث. يمكنك أيضاً إدخال قرص الوثائق، أو "
 "الأقراص الأخرى من Red Hat لتثبيت برامج إضافيّة الآن."
 
 #: ../modules/additional_cds.py:61
@@ -268,11 +124,14 @@ msgstr "من فضلك ضع أى أقراص مدمجة للبرامج الاضا�
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"لتمكين دعم التطبيقات ذات 32-بت  على هيكليّة معالج Intel Itanium2، يجب عليك تثبيت حزمة Intel Execution Layer من قرص Extras الآن."
+"لتمكين دعم التطبيقات ذات 32-بت  على هيكليّة معالج Intel Itanium2، يجب عليك "
+"تثبيت حزمة Intel Execution Layer من قرص Extras الآن."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -283,14 +142,131 @@ msgid ""
 "A CD-ROM has not been detected.  Please insert a CD-ROM in the drive and "
 "click \"OK\" to continue."
 msgstr ""
-"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ واضغط "
-"\"موافق\" للاستمرار."
+"لم يتم العثور على أي قرص مُدمج. الرّجاء إدخال قرص مُدمج في القارئ واضغط \"موافق"
+"\" للاستمرار."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "لم يتم العثور على برنامج المشغل التلقائي على القرص المُدمج. اضغط \"موافق\" "
 "للاستمرار."
+
+#: ../modules/create_user.py:49 ../modules/create_user.py:50
+msgid "Create User"
+msgstr "إنشاء مستخدم"
+
+#: ../modules/create_user.py:102
+msgid ""
+"You did not set up an user account capable of logging into the system.\n"
+"Are you sure you want to continue?"
+msgstr ""
+
+#: ../modules/create_user.py:123
+msgid "You must enter and confirm a password for this user."
+msgstr "يجب أن تدخل كلمة سر وتؤكدها لهذا المستخدم"
+
+#: ../modules/create_user.py:130
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "كلمتا المرور غير متطابقتان. أدخل كلمة المرور مرة أخرى"
+
+#: ../modules/create_user.py:167
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr "اسم المستخدم '%s' محجوز للنظام. فضلا حدد اسما آخر."
+
+#: ../modules/create_user.py:186
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"هناك مجلّد منزل للمستخدم %s. هل تريد المتابعة بجعل المستخدم الجديد مالكاً لهذا "
+"المجلّد وكل محتوياته؟ هذا قد يستغرق بعض الوقت لإعادة ضبط الصلاحيات وعناوين "
+"SELinux. هل ترغب بإعادة استخدام هذا المجلّد؟ إذا لم ترد ذلك، فاستخدم اسماً آخر "
+"للحساب."
+
+#: ../modules/create_user.py:229
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr "جاري إصلاح معاملات مجلد المنزل لـ%s. قد يستغرق هذا بضع دقائق."
+
+#: ../modules/create_user.py:267
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr ""
+
+#: ../modules/create_user.py:293
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"يجب إنشاء مستخدم للقيام بالأعمال الاعتيادية (غير الإدارية). لإنشاء هذا "
+"المستخدم فضلا قدم المعلومات المطوبة أدناه."
+
+#: ../modules/create_user.py:332
+msgid "Full Nam_e:"
+msgstr "الاسم ال_كامل:"
+
+#: ../modules/create_user.py:339
+msgid "_Username:"
+msgstr "ا_سم المستحدم:"
+
+#: ../modules/create_user.py:346
+msgid "_Password:"
+msgstr "_كلمة المرور:"
+
+#: ../modules/create_user.py:353
+msgid "Confir_m Password:"
+msgstr "تأكيد كلمة المرور_"
+
+#: ../modules/create_user.py:363
+msgid "Add to Administrators group"
+msgstr ""
+
+#: ../modules/create_user.py:369
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"إذا كنت بحاجة إلى الموثقة عبر الشبكة، مثل Kerberos أو NIS، فضلا انقر على زر "
+"استخدام الولوج عبر الشبكة"
+
+#: ../modules/create_user.py:378
+msgid "Use Network _Login..."
+msgstr "استخدام الولوج عبر الشبكة"
+
+#: ../modules/create_user.py:386
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+
+#: ../modules/create_user.py:396
+msgid "_Advanced..."
+msgstr ""
+
+#: ../modules/create_user.py:437
+msgid "Please wait"
+msgstr "يرجى الانتظار"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "التاريخ والوقت"
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr "فضلا حدد تاريخ ووقت النظام."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -298,13 +274,26 @@ msgstr "معلومات الرخصة"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"شكراً لك على تثبيت فيدورا. فيدورا خليط من حزم البرمجيات، والتي لكل منها رخصته. وهذا التجميع متاح تحت رخصة غنو العامة الإصدارة الثانية (GPLv2). لا يوجد قيود على استخدام ونسخ وتعديل هذه الأكواد. ولكن هناك بعض القيود على إعادة توزيع هذا الكود، سواء بصورته الأصليّة أو معدّلاً. وهذه القيود تشمل (ولكن لا تقتصر على) ترخيص ما يعاد توزيعه، حقوق العلامات التجارية، وقيود التصدير.\n"
+"شكراً لك على تثبيت فيدورا. فيدورا خليط من حزم البرمجيات، والتي لكل منها "
+"رخصته. وهذا التجميع متاح تحت رخصة غنو العامة الإصدارة الثانية (GPLv2). لا "
+"يوجد قيود على استخدام ونسخ وتعديل هذه الأكواد. ولكن هناك بعض القيود على "
+"إعادة توزيع هذا الكود، سواء بصورته الأصليّة أو معدّلاً. وهذه القيود تشمل (ولكن "
+"لا تقتصر على) ترخيص ما يعاد توزيعه، حقوق العلامات التجارية، وقيود التصدير.\n"
 "\n"
-"إذا أردت معرفة هذه القيود بالتفصيل، راجع http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"إذا أردت معرفة هذه القيود بالتفصيل، راجع http://fedoraproject.org/wiki/Legal/"
+"Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -324,4 +313,26 @@ msgstr ""
 "يقوم بإرشادك خلال بعض الإعداداتة الأساسية.ال رجاء اضغط زرّ \"التالي\" في "
 "الركن الأيسر للمتابعة."
 
+#~ msgid "You must be root to run firstboot."
+#~ msgstr "يجب أن تكون مستخدم مسئول لتشغيل firstboot"
 
+#~ msgid "No firstboot modules were found."
+#~ msgstr "تعذر إيجاد وحدات firstboot"
+
+#~ msgid "Could not create any firstboot interface."
+#~ msgstr "تعذر إنشاء وحدات firstboot"
+
+#~ msgid "Module %s did not set up its UI, removing."
+#~ msgstr "جاري إزالة الوحدة %s لعدم إعدادها واجهتها الرسومية."
+
+#~ msgid "Skipping old module %s that has not been updated."
+#~ msgstr "تخطي الوحدة القديمة %s التي لم يتم تحديثها."
+
+#~ msgid "Module %s does not contain a class named moduleClass; skipping."
+#~ msgstr "الوحدة %s لا تحتوي فصيلة اسمها moduleClass؛ تخطي."
+
+#~ msgid "Undefined"
+#~ msgstr "غير معّرف"
+
+#~ msgid "You must create a user account for this system."
+#~ msgstr "يجب أن تنشئ حسابا لمستخدم على هذا النظام"

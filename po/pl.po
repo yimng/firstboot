@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Grzegorz Rajda <marius@w9.pl>, 2004.
 # Tom Berner <tom@man.lodz.pl>, 2004.
 # Dimitris Glezos <glezos@indifex.com>, 2011.
@@ -9,32 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"POT-Creation-Date: 2012-03-23 12:56+0100\n"
 "PO-Revision-Date: 2011-03-22 15:08+0000\n"
 "Last-Translator: glezos <glezos@indifex.com>\n"
 "Language-Team: Polish (http://www.transifex.net/projects/p/fedora/team/pl/)\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-
-#: ../progs/firstboot:140
-msgid "You must be root to run firstboot."
-msgstr "Tylko root może uruchomić program firstboot."
-
-#: ../progs/firstboot:194 ../progs/firstboot:195
-msgid "No firstboot modules were found."
-msgstr "Nie odnaleziono modułów programu firstboot."
-
-#: ../progs/firstboot:205 ../progs/firstboot:206
-msgid "Could not create any firstboot interface."
-msgstr "Nie można utworzyć żadnego interfejsu programu firstboot."
-
-#: ../firstboot/moduleset.py:92
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr "Moduł %s nie ustawił swojego interfejsu użytkownika; usuwanie."
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2)\n"
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -60,199 +44,58 @@ msgstr "_Wstecz"
 msgid "_Forward"
 msgstr "_Dalej"
 
-#: ../firstboot/interface.py:277
+#: ../firstboot/interface.py:278
 #, python-format
-msgid "Module %s did not set up its UI, removing."
-msgstr "Moduł %s nie ustawił swojego interfejsu użytkownika, usuwanie."
+msgid "Module %s raised an exception while loading: %s"
+msgstr ""
 
-#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
+#: ../firstboot/interface.py:282
+#, fuzzy, python-format
+msgid "Module %s did not set up its UI properly."
+msgstr "Moduł %s nie ustawił swojego interfejsu użytkownika; usuwanie."
+
+#: ../firstboot/interface.py:288
+#, python-format
+msgid "Module %s raised an exception while rendering: %s"
+msgstr ""
+
+#: ../firstboot/interface.py:357 ../firstboot/interface.py:358
 msgid "moveToPage must be given a module title or page number."
 msgstr "moveToPage musi podawać tytuł modułu lub numer strony."
 
-#: ../firstboot/interface.py:432
+#: ../firstboot/interface.py:442
 msgid "Unable to create the screenshot dir; skipping."
 msgstr "Nie można utworzyć katalogu ze zrzutami ekranu; pomijanie."
 
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#: ../firstboot/interface.py:482 ../firstboot/interface.py:483
 #, python-format
 msgid "No module exists with the title %s."
 msgstr "Moduł o tytule %s nie istnieje."
 
-#: ../firstboot/loader.py:87
+#: ../firstboot/moduleset.py:92
 #, python-format
-msgid "Skipping old module %s that has not been updated."
-msgstr "Pomijanie starego modułu %s, który nie został zaktualizowany."
+msgid "Module %s did not set up its UI; removing."
+msgstr "Moduł %s nie ustawił swojego interfejsu użytkownika; usuwanie."
 
-#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
-#, python-format
-msgid ""
-"Error loading module %(module)s:\n"
-"%(error)s"
-msgstr ""
-"Błąd podczas wczytywania modułu %(module)s:\n"
-"%(error)s"
-
-#: ../firstboot/loader.py:103
-#, python-format
-msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr "Moduł %s nie zawiera klasy o nazwie moduleClass; pomijanie."
-
-#: ../firstboot/loader.py:114
-#, python-format
-msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; "
-"skipping."
-msgstr "Moduł %(module)s nie zawiera wymaganego atrybutu %(attr)s; pomijanie."
-
-#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+#: ../firstboot/pwcheck.py:46
 msgid "Very weak"
 msgstr "Bardzo słabe"
 
-#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+#: ../firstboot/pwcheck.py:47
 msgid "Weak"
 msgstr "Słabe"
 
-#: ../firstboot/pwcheck.py:112
+#: ../firstboot/pwcheck.py:48
 msgid "Fairly strong"
 msgstr "Dość silne"
 
-#: ../firstboot/pwcheck.py:113
+#: ../firstboot/pwcheck.py:49
 msgid "Strong"
 msgstr "Silne"
 
-#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+#: ../firstboot/pwcheck.py:50
 msgid "Very strong"
 msgstr "Bardzo silne"
-
-#: ../firstboot/pwcheck.py:141
-msgid "Undefined"
-msgstr "Nieokreślone"
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr "Data i czas"
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr "Proszę ustawić datę i czas systemu."
-
-#: ../modules/create_user.py:43 ../modules/create_user.py:44
-msgid "Create User"
-msgstr "Utworzenie użytkownika"
-
-#: ../modules/create_user.py:85
-msgid "You must create a user account for this system."
-msgstr "Należy utworzyć konto użytkownika w systemie."
-
-#: ../modules/create_user.py:96
-msgid "You must enter and confirm a password for this user."
-msgstr "Należy podać i potwierdzić hasło dla tego użytkownika."
-
-#: ../modules/create_user.py:103
-msgid "The passwords do not match.  Please enter the password again."
-msgstr "Hasła nie zgadzają się. Proszę ponownie podać hasło."
-
-#: ../modules/create_user.py:115
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-"Nazwa użytkownika \"%s\" jest zastrzeżonym kontem systemowym. Proszę podać "
-"inną nazwę użytkownika."
-
-#: ../modules/create_user.py:134
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing"
-" so may take a while to reset permissions and any SELinux labels.  Would you"
-" like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-"Katalog domowy użytkownika %s już istnieje. Kontynuować sprawiając, że nowy "
-"użytkownik będzie właścicielem tego katalogu i całej jego zawartości? Może "
-"to chwilę zająć, aby przywrócić upoważnienia i wszystkie etykiety SELinuksa."
-" Użyć ponownie tego katalogu domowego? Jeśli nie, proszę wybrać inną nazwę "
-"użytkownika."
-
-#: ../modules/create_user.py:177
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few "
-"minutes."
-msgstr ""
-"Naprawianie atrybutów katalogu domowego użytkownika %s. Może to zająć kilka "
-"minut."
-
-#: ../modules/create_user.py:197
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the"
-" errors."
-msgstr ""
-"Wystąpiły problemy podczas naprawiania atrybutów niektórych plików w "
-"katalogu domowym użytkownika %(user)s. Proszę zobaczyć %(path)s, aby "
-"dowiedzieć się, które pliki spowodowały błędy."
-
-#: ../modules/create_user.py:223
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-"Należy utworzyć \"nazwę użytkownika\" do zwykłego (nieadministracyjnego) "
-"używania systemu. Aby utworzyć \"nazwę użytkownika\", proszę podać poniżej "
-"wymagane informacje."
-
-#: ../modules/create_user.py:263
-msgid "Full Nam_e:"
-msgstr "Imię i _nazwisko:"
-
-#: ../modules/create_user.py:270
-msgid "_Username:"
-msgstr "Nazwa _użytkownika:"
-
-#: ../modules/create_user.py:277
-msgid "_Password:"
-msgstr "_Hasło:"
-
-#: ../modules/create_user.py:284
-msgid "Confir_m Password:"
-msgstr "_Potwierdzenie hasła:"
-
-#: ../modules/create_user.py:294
-msgid "Add to Administrators group"
-msgstr "Dodanie do grupy administratorów"
-
-#: ../modules/create_user.py:300
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-"Naciśnięcie przycisku \"Użyj logowania sieciowego\" umożliwi użycie "
-"uwierzytelniania sieciowego, takiego jak Kerberos lub NIS."
-
-#: ../modules/create_user.py:309
-msgid "Use Network _Login..."
-msgstr "Użyj logowania _sieciowego..."
-
-#: ../modules/create_user.py:317
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-"Naciśnięcie przycisku \"Zaawansowane\" umożliwi większą kontrolę nad "
-"tworzeniem użytkownika (podanie katalogu domowego i/lub UID)."
-
-#: ../modules/create_user.py:327
-msgid "_Advanced..."
-msgstr "Z_aawansowane..."
-
-#: ../modules/create_user.py:365
-msgid "Please wait"
-msgstr "Proszę czekać"
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
 msgid "Additional CDs"
@@ -266,8 +109,8 @@ msgid ""
 "additional software at this time."
 msgstr ""
 "Aby zainstalować aplikacje i wtyczki innych producentów proszę włożyć płytę "
-"opisaną jako \"Red Hat Enterprise Linux Extras\". Można również włożyć płytę"
-" z dokumentacją lub inną dostarczoną przez firmę Red Hat, aby zainstalować "
+"opisaną jako \"Red Hat Enterprise Linux Extras\". Można również włożyć płytę "
+"z dokumentacją lub inną dostarczoną przez firmę Red Hat, aby zainstalować "
 "dodatkowe oprogramowanie."
 
 #: ../modules/additional_cds.py:61
@@ -278,11 +121,15 @@ msgstr "Proszę włożyć dowolną płytę z dodatkowym oprogramowaniem."
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"Aby włączyć obsługę wykonywania aplikacji 32 bitowych w architekturze Intel Itanium 2, należy teraz zainstalować pakiet Intel Execution Layer z płyty z dodatkami."
+"Aby włączyć obsługę wykonywania aplikacji 32 bitowych w architekturze Intel "
+"Itanium 2, należy teraz zainstalować pakiet Intel Execution Layer z płyty z "
+"dodatkami."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -297,10 +144,138 @@ msgstr ""
 "przycisk \"OK\", aby kontynuować."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Program automatycznego odtwarzania nie został odnaleziony na płycie CD. "
 "Proszę nacisnąć przycisk \"OK\", aby kontynuować."
+
+#: ../modules/create_user.py:49 ../modules/create_user.py:50
+msgid "Create User"
+msgstr "Utworzenie użytkownika"
+
+#: ../modules/create_user.py:102
+msgid ""
+"You did not set up an user account capable of logging into the system.\n"
+"Are you sure you want to continue?"
+msgstr ""
+
+#: ../modules/create_user.py:123
+msgid "You must enter and confirm a password for this user."
+msgstr "Należy podać i potwierdzić hasło dla tego użytkownika."
+
+#: ../modules/create_user.py:130
+msgid "The passwords do not match.  Please enter the password again."
+msgstr "Hasła nie zgadzają się. Proszę ponownie podać hasło."
+
+#: ../modules/create_user.py:167
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+"Nazwa użytkownika \"%s\" jest zastrzeżonym kontem systemowym. Proszę podać "
+"inną nazwę użytkownika."
+
+#: ../modules/create_user.py:186
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+"Katalog domowy użytkownika %s już istnieje. Kontynuować sprawiając, że nowy "
+"użytkownik będzie właścicielem tego katalogu i całej jego zawartości? Może "
+"to chwilę zająć, aby przywrócić upoważnienia i wszystkie etykiety SELinuksa. "
+"Użyć ponownie tego katalogu domowego? Jeśli nie, proszę wybrać inną nazwę "
+"użytkownika."
+
+#: ../modules/create_user.py:229
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+"Naprawianie atrybutów katalogu domowego użytkownika %s. Może to zająć kilka "
+"minut."
+
+#: ../modules/create_user.py:267
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr ""
+"Wystąpiły problemy podczas naprawiania atrybutów niektórych plików w "
+"katalogu domowym użytkownika %(user)s. Proszę zobaczyć %(path)s, aby "
+"dowiedzieć się, które pliki spowodowały błędy."
+
+#: ../modules/create_user.py:293
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+"Należy utworzyć \"nazwę użytkownika\" do zwykłego (nieadministracyjnego) "
+"używania systemu. Aby utworzyć \"nazwę użytkownika\", proszę podać poniżej "
+"wymagane informacje."
+
+#: ../modules/create_user.py:332
+msgid "Full Nam_e:"
+msgstr "Imię i _nazwisko:"
+
+#: ../modules/create_user.py:339
+msgid "_Username:"
+msgstr "Nazwa _użytkownika:"
+
+#: ../modules/create_user.py:346
+msgid "_Password:"
+msgstr "_Hasło:"
+
+#: ../modules/create_user.py:353
+msgid "Confir_m Password:"
+msgstr "_Potwierdzenie hasła:"
+
+#: ../modules/create_user.py:363
+msgid "Add to Administrators group"
+msgstr "Dodanie do grupy administratorów"
+
+#: ../modules/create_user.py:369
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+"Naciśnięcie przycisku \"Użyj logowania sieciowego\" umożliwi użycie "
+"uwierzytelniania sieciowego, takiego jak Kerberos lub NIS."
+
+#: ../modules/create_user.py:378
+msgid "Use Network _Login..."
+msgstr "Użyj logowania _sieciowego..."
+
+#: ../modules/create_user.py:386
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+"Naciśnięcie przycisku \"Zaawansowane\" umożliwi większą kontrolę nad "
+"tworzeniem użytkownika (podanie katalogu domowego i/lub UID)."
+
+#: ../modules/create_user.py:396
+msgid "_Advanced..."
+msgstr "Z_aawansowane..."
+
+#: ../modules/create_user.py:437
+msgid "Please wait"
+msgstr "Proszę czekać"
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr "Data i czas"
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr "Proszę ustawić datę i czas systemu."
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -308,13 +283,29 @@ msgstr "Informacje o licencji"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Dziękujemy za zainstalowanie Fedory. Fedora jest zestawem pakietów oprogramowania, z których każdy ma swoją własną licencję. Cały zestaw jest dostępny na Powszechnej Licencji Publicznej GNU w wersji 2. Nie ma żadnych ograniczeń odnośnie używania, kopiowania lub modyfikowania tego kodu. Są jednak ograniczenia i obowiązki, które dotyczą rozpowszechniania kodu, zarówno w formie oryginalnej, jak i zmodyfikowanej. Poza tym te ograniczenia/obowiązki dotyczą licencjonowania ponownego rozpowszechniania, znaków towarowych i kontroli eksportu.\n"
+"Dziękujemy za zainstalowanie Fedory. Fedora jest zestawem pakietów "
+"oprogramowania, z których każdy ma swoją własną licencję. Cały zestaw jest "
+"dostępny na Powszechnej Licencji Publicznej GNU w wersji 2. Nie ma żadnych "
+"ograniczeń odnośnie używania, kopiowania lub modyfikowania tego kodu. Są "
+"jednak ograniczenia i obowiązki, które dotyczą rozpowszechniania kodu, "
+"zarówno w formie oryginalnej, jak i zmodyfikowanej. Poza tym te ograniczenia/"
+"obowiązki dotyczą licencjonowania ponownego rozpowszechniania, znaków "
+"towarowych i kontroli eksportu.\n"
 "\n"
-"Aby dowiedzieć się, jakie są te ograniczenia, proszę odwiedzić http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Aby dowiedzieć się, jakie są te ograniczenia, proszę odwiedzić http://"
+"fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -332,7 +323,41 @@ msgid ""
 msgstr ""
 "Zostało jeszcze tylko kilka kroków, zanim system będzie gotowy do używania. "
 "Agent ustawień przeprowadzi użytkownika przez podstawową konfigurację. "
-"Proszę nacisnąć przycisk \"Dalej\" w dolnym prawym rogu okna, aby "
-"kontynuować"
+"Proszę nacisnąć przycisk \"Dalej\" w dolnym prawym rogu okna, aby kontynuować"
 
+#~ msgid "You must be root to run firstboot."
+#~ msgstr "Tylko root może uruchomić program firstboot."
 
+#~ msgid "No firstboot modules were found."
+#~ msgstr "Nie odnaleziono modułów programu firstboot."
+
+#~ msgid "Could not create any firstboot interface."
+#~ msgstr "Nie można utworzyć żadnego interfejsu programu firstboot."
+
+#~ msgid "Module %s did not set up its UI, removing."
+#~ msgstr "Moduł %s nie ustawił swojego interfejsu użytkownika, usuwanie."
+
+#~ msgid "Skipping old module %s that has not been updated."
+#~ msgstr "Pomijanie starego modułu %s, który nie został zaktualizowany."
+
+#~ msgid ""
+#~ "Error loading module %(module)s:\n"
+#~ "%(error)s"
+#~ msgstr ""
+#~ "Błąd podczas wczytywania modułu %(module)s:\n"
+#~ "%(error)s"
+
+#~ msgid "Module %s does not contain a class named moduleClass; skipping."
+#~ msgstr "Moduł %s nie zawiera klasy o nazwie moduleClass; pomijanie."
+
+#~ msgid ""
+#~ "Module %(module)s does not contain the required attribute %(attr)s; "
+#~ "skipping."
+#~ msgstr ""
+#~ "Moduł %(module)s nie zawiera wymaganego atrybutu %(attr)s; pomijanie."
+
+#~ msgid "Undefined"
+#~ msgstr "Nieokreślone"
+
+#~ msgid "You must create a user account for this system."
+#~ msgstr "Należy utworzyć konto użytkownika w systemie."

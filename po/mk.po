@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Arangel Angov <ufo@linux.net.mk>, 2004.
 # Tomislav Markovski <herrera@users.sourceforge.net>, 2004.
 # Arangel Angov <arangel@linux.net.mk>, 2007.
@@ -10,32 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Firstboot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-03 12:09+0100\n"
+"POT-Creation-Date: 2012-03-23 12:56+0100\n"
 "PO-Revision-Date: 2011-03-22 15:08+0000\n"
 "Last-Translator: glezos <glezos@indifex.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mk\n"
 "Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1\n"
-
-#: ../progs/firstboot:140
-msgid "You must be root to run firstboot."
-msgstr ""
-
-#: ../progs/firstboot:194 ../progs/firstboot:195
-msgid "No firstboot modules were found."
-msgstr ""
-
-#: ../progs/firstboot:205 ../progs/firstboot:206
-msgid "Could not create any firstboot interface."
-msgstr ""
-
-#: ../firstboot/moduleset.py:92
-#, python-format
-msgid "Module %s did not set up its UI; removing."
-msgstr ""
 
 #: ../firstboot/interface.py:79
 msgid "Attempted to go back, but history is empty."
@@ -50,8 +33,7 @@ msgstr "_Крај"
 #: ../firstboot/interface.py:184
 msgid "The system must now reboot for some of your selections to take effect."
 msgstr ""
-"Системот мора да се рестартира за некои од избраните работи да "
-"функционираат."
+"Системот мора да се рестартира за некои од избраните работи да функционираат."
 
 #: ../firstboot/interface.py:243
 msgid "_Back"
@@ -61,177 +43,57 @@ msgstr "_Назад"
 msgid "_Forward"
 msgstr "_Напред"
 
-#: ../firstboot/interface.py:277
+#: ../firstboot/interface.py:278
 #, python-format
-msgid "Module %s did not set up its UI, removing."
+msgid "Module %s raised an exception while loading: %s"
 msgstr ""
 
-#: ../firstboot/interface.py:347 ../firstboot/interface.py:348
+#: ../firstboot/interface.py:282
+#, python-format
+msgid "Module %s did not set up its UI properly."
+msgstr ""
+
+#: ../firstboot/interface.py:288
+#, python-format
+msgid "Module %s raised an exception while rendering: %s"
+msgstr ""
+
+#: ../firstboot/interface.py:357 ../firstboot/interface.py:358
 msgid "moveToPage must be given a module title or page number."
 msgstr ""
 
-#: ../firstboot/interface.py:432
+#: ../firstboot/interface.py:442
 msgid "Unable to create the screenshot dir; skipping."
 msgstr ""
 
-#: ../firstboot/interface.py:472 ../firstboot/interface.py:473
+#: ../firstboot/interface.py:482 ../firstboot/interface.py:483
 #, python-format
 msgid "No module exists with the title %s."
 msgstr ""
 
-#: ../firstboot/loader.py:87
+#: ../firstboot/moduleset.py:92
 #, python-format
-msgid "Skipping old module %s that has not been updated."
+msgid "Module %s did not set up its UI; removing."
 msgstr ""
 
-#: ../firstboot/loader.py:89 ../firstboot/loader.py:93
-#, python-format
-msgid ""
-"Error loading module %(module)s:\n"
-"%(error)s"
-msgstr ""
-
-#: ../firstboot/loader.py:103
-#, python-format
-msgid "Module %s does not contain a class named moduleClass; skipping."
-msgstr ""
-
-#: ../firstboot/loader.py:114
-#, python-format
-msgid ""
-"Module %(module)s does not contain the required attribute %(attr)s; "
-"skipping."
-msgstr ""
-
-#: ../firstboot/pwcheck.py:108 ../firstboot/pwcheck.py:109
+#: ../firstboot/pwcheck.py:46
 msgid "Very weak"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:110 ../firstboot/pwcheck.py:111
+#: ../firstboot/pwcheck.py:47
 msgid "Weak"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:112
+#: ../firstboot/pwcheck.py:48
 msgid "Fairly strong"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:113
+#: ../firstboot/pwcheck.py:49
 msgid "Strong"
 msgstr ""
 
-#: ../firstboot/pwcheck.py:114 ../firstboot/pwcheck.py:115
+#: ../firstboot/pwcheck.py:50
 msgid "Very strong"
-msgstr ""
-
-#: ../firstboot/pwcheck.py:141
-msgid "Undefined"
-msgstr ""
-
-#: ../modules/date.py:39 ../modules/date.py:40
-msgid "Date and Time"
-msgstr ""
-
-#: ../modules/date.py:61
-msgid "Please set the date and time for the system."
-msgstr ""
-
-#: ../modules/create_user.py:43 ../modules/create_user.py:44
-msgid "Create User"
-msgstr ""
-
-#: ../modules/create_user.py:85
-msgid "You must create a user account for this system."
-msgstr ""
-
-#: ../modules/create_user.py:96
-msgid "You must enter and confirm a password for this user."
-msgstr ""
-
-#: ../modules/create_user.py:103
-msgid "The passwords do not match.  Please enter the password again."
-msgstr ""
-
-#: ../modules/create_user.py:115
-#, python-format
-msgid ""
-"The username '%s' is a reserved system account.  Please specify another "
-"username."
-msgstr ""
-
-#: ../modules/create_user.py:134
-#, python-format
-msgid ""
-"A home directory for user %s already exists. Would you like to continue, "
-"making the new user the owner of this directory and all its contents?  Doing"
-" so may take a while to reset permissions and any SELinux labels.  Would you"
-" like to reuse this home directory?  If not, please choose a different "
-"username."
-msgstr ""
-
-#: ../modules/create_user.py:177
-#, python-format
-msgid ""
-"Fixing attributes on the home directory for %s.  This may take a few "
-"minutes."
-msgstr ""
-
-#: ../modules/create_user.py:197
-#, python-format
-msgid ""
-"Problems were encountered fixing the attributes on some files in the home "
-"directory for %(user)s.  Please refer to %(path)s for which files caused the"
-" errors."
-msgstr ""
-
-#: ../modules/create_user.py:223
-msgid ""
-"You must create a 'username' for regular (non-administrative) use of your "
-"system.  To create a system 'username', please provide the information "
-"requested below."
-msgstr ""
-
-#: ../modules/create_user.py:263
-msgid "Full Nam_e:"
-msgstr ""
-
-#: ../modules/create_user.py:270
-msgid "_Username:"
-msgstr ""
-
-#: ../modules/create_user.py:277
-msgid "_Password:"
-msgstr ""
-
-#: ../modules/create_user.py:284
-msgid "Confir_m Password:"
-msgstr ""
-
-#: ../modules/create_user.py:294
-msgid "Add to Administrators group"
-msgstr ""
-
-#: ../modules/create_user.py:300
-msgid ""
-"If you need to use network authentication, such as Kerberos or NIS, please "
-"click the Use Network Login button."
-msgstr ""
-
-#: ../modules/create_user.py:309
-msgid "Use Network _Login..."
-msgstr ""
-
-#: ../modules/create_user.py:317
-msgid ""
-"If you need more control when creating the user (specifying home directory, "
-"and/or UID), please click the Advanced button."
-msgstr ""
-
-#: ../modules/create_user.py:327
-msgid "_Advanced..."
-msgstr ""
-
-#: ../modules/create_user.py:365
-msgid "Please wait"
 msgstr ""
 
 #: ../modules/additional_cds.py:43 ../modules/additional_cds.py:44
@@ -258,11 +120,15 @@ msgstr "Ве молам внесете cd-иња за инсталација н�
 msgid ""
 "\n"
 "\n"
-"To enable runtime support of 32-bit applications on the Intel Itanium2 architecture you must install the Intel Execution Layer package from the Extras disc now."
+"To enable runtime support of 32-bit applications on the Intel Itanium2 "
+"architecture you must install the Intel Execution Layer package from the "
+"Extras disc now."
 msgstr ""
 "\n"
 "\n"
-"За да овозможите поддршка за 32-битни апликации на Intel Itanium2 архитектура, морате да го инсталирате пакетот со Intel Execution Layer од додатниот диск."
+"За да овозможите поддршка за 32-битни апликации на Intel Itanium2 "
+"архитектура, морате да го инсталирате пакетот со Intel Execution Layer од "
+"додатниот диск."
 
 #: ../modules/additional_cds.py:73
 msgid "Install..."
@@ -277,10 +143,119 @@ msgstr ""
 "кликнете \"Во ред\" за понатаму."
 
 #: ../modules/additional_cds.py:146
-msgid "The autorun program cannot be found on the CD. Click \"OK\" to continue."
+msgid ""
+"The autorun program cannot be found on the CD. Click \"OK\" to continue."
 msgstr ""
 "Програмата за автоматско извршување не е пронајдена. Кликнете на \"Во ред\" "
 "за понатаму."
+
+#: ../modules/create_user.py:49 ../modules/create_user.py:50
+msgid "Create User"
+msgstr ""
+
+#: ../modules/create_user.py:102
+msgid ""
+"You did not set up an user account capable of logging into the system.\n"
+"Are you sure you want to continue?"
+msgstr ""
+
+#: ../modules/create_user.py:123
+msgid "You must enter and confirm a password for this user."
+msgstr ""
+
+#: ../modules/create_user.py:130
+msgid "The passwords do not match.  Please enter the password again."
+msgstr ""
+
+#: ../modules/create_user.py:167
+#, python-format
+msgid ""
+"The username '%s' is a reserved system account.  Please specify another "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:186
+#, python-format
+msgid ""
+"A home directory for user %s already exists. Would you like to continue, "
+"making the new user the owner of this directory and all its contents?  Doing "
+"so may take a while to reset permissions and any SELinux labels.  Would you "
+"like to reuse this home directory?  If not, please choose a different "
+"username."
+msgstr ""
+
+#: ../modules/create_user.py:229
+#, python-format
+msgid ""
+"Fixing attributes on the home directory for %s.  This may take a few minutes."
+msgstr ""
+
+#: ../modules/create_user.py:267
+#, python-format
+msgid ""
+"Problems were encountered fixing the attributes on some files in the home "
+"directory for %(user)s.  Please refer to %(path)s for which files caused the "
+"errors."
+msgstr ""
+
+#: ../modules/create_user.py:293
+msgid ""
+"You must create a 'username' for regular (non-administrative) use of your "
+"system.  To create a system 'username', please provide the information "
+"requested below."
+msgstr ""
+
+#: ../modules/create_user.py:332
+msgid "Full Nam_e:"
+msgstr ""
+
+#: ../modules/create_user.py:339
+msgid "_Username:"
+msgstr ""
+
+#: ../modules/create_user.py:346
+msgid "_Password:"
+msgstr ""
+
+#: ../modules/create_user.py:353
+msgid "Confir_m Password:"
+msgstr ""
+
+#: ../modules/create_user.py:363
+msgid "Add to Administrators group"
+msgstr ""
+
+#: ../modules/create_user.py:369
+msgid ""
+"If you need to use network authentication, such as Kerberos or NIS, please "
+"click the Use Network Login button."
+msgstr ""
+
+#: ../modules/create_user.py:378
+msgid "Use Network _Login..."
+msgstr ""
+
+#: ../modules/create_user.py:386
+msgid ""
+"If you need more control when creating the user (specifying home directory, "
+"and/or UID), please click the Advanced button."
+msgstr ""
+
+#: ../modules/create_user.py:396
+msgid "_Advanced..."
+msgstr ""
+
+#: ../modules/create_user.py:437
+msgid "Please wait"
+msgstr ""
+
+#: ../modules/date.py:39 ../modules/date.py:40
+msgid "Date and Time"
+msgstr ""
+
+#: ../modules/date.py:58
+msgid "Please set the date and time for the system."
+msgstr ""
 
 #: ../modules/eula.py:35 ../modules/eula.py:36
 msgid "License Information"
@@ -288,13 +263,28 @@ msgstr "Информации за лиценцата"
 
 #: ../modules/eula.py:45
 msgid ""
-"Thank you for installing Fedora.  Fedora is a compilation of software packages, each under its own license.  The compilation is made available under the GNU General Public License version 2.  There are no restrictions on using, copying, or modifying this code.  However, there are restrictions and obligations that apply to the redistribution of the code, either in its original or a modified form.  Among other things, those restrictions/obligations pertain to the licensing of the redistribution, trademark rights, and export control.\n"
+"Thank you for installing Fedora.  Fedora is a compilation of software "
+"packages, each under its own license.  The compilation is made available "
+"under the GNU General Public License version 2.  There are no restrictions "
+"on using, copying, or modifying this code.  However, there are restrictions "
+"and obligations that apply to the redistribution of the code, either in its "
+"original or a modified form.  Among other things, those restrictions/"
+"obligations pertain to the licensing of the redistribution, trademark "
+"rights, and export control.\n"
 "\n"
-"If you would like to understand what those restrictions are, please visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"If you would like to understand what those restrictions are, please visit "
+"http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 msgstr ""
-"Ви благодариме што инсталиравте Fedora. Fedora е компилација на софтверски пакети, секој со своја лиценца.  Компилацијата е достапна под GNU General Public License верзија 2.  Нема рестрикции кога станува збор за копирање или менување на овој код.  Сепак, постојат рестрикции и обврски кои што се применуваат во случај на редистрибуција на кодот, во оригинална или пак во изменета форма.  Помеѓу другото, овие рестрикции/обврски се однесуваат на лиценцирањето при редистрибуција, заштитните марки и контролата на извоз.\n"
+"Ви благодариме што инсталиравте Fedora. Fedora е компилација на софтверски "
+"пакети, секој со своја лиценца.  Компилацијата е достапна под GNU General "
+"Public License верзија 2.  Нема рестрикции кога станува збор за копирање или "
+"менување на овој код.  Сепак, постојат рестрикции и обврски кои што се "
+"применуваат во случај на редистрибуција на кодот, во оригинална или пак во "
+"изменета форма.  Помеѓу другото, овие рестрикции/обврски се однесуваат на "
+"лиценцирањето при редистрибуција, заштитните марки и контролата на извоз.\n"
 "\n"
-"Ако сакате да дознаете повеќе за овие рестрикции посетете ја http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
+"Ако сакате да дознаете повеќе за овие рестрикции посетете ја http://"
+"fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."
 
 #: ../modules/eula.py:60
 msgid "Understood, please proceed."
@@ -310,5 +300,3 @@ msgid ""
 "Setup Agent will now guide you through some basic configuration.  Please "
 "click the \"Forward\" button in the lower right corner to continue"
 msgstr ""
-
-
