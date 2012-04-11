@@ -132,7 +132,7 @@ class Frontend:
     def merge_xres(self):
         if os.access(XRES, os.R_OK):
             log.info('merging the Xresources')
-            p = subprocess.Popen(['xrdb', '--merge', XRES])
+            p = subprocess.Popen(['xrdb', '-merge', XRES])
             p.wait()
 
     def kill(self):
