@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 17.0
+Version: 17.1
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -103,6 +103,13 @@ fi
 
 
 %changelog
+* Wed Apr 11 2012 Martin Gracik <mgracik@redhat.com> 17.1-1
+- Use -merge for xrdb (#808919)
+- Translation updates
+- Improve module loading (#797896)
+- Load the screens before making the sidebar
+- Use pwquality for password strength checking
+
 * Thu Mar 01 2012 Martin Gracik <mgracik@redhat.com> 17.0-1
 - Disable minimize and maximize buttons on s-c-u (#747829)
 - Change priority of create_user module (#750527)
