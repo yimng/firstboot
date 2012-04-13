@@ -279,11 +279,14 @@ class moduleClass(Module):
 
         self.admin.setpassUser(userEnt, self.passwordEntry.get_text(), 0)
 
-        # add user to wheel group
+        # add user to wheel and dialout group
         if self.is_admin.get_active():
             wheelEnt = self.admin.lookupGroupByName("wheel")
             wheelEnt.add(libuser.MEMBERNAME, username)
             self.admin.modifyGroup(wheelEnt)
+            dialoutEnt = self.admin.lookupGroupByName("dialout")
+            dialoutEnt.add(libuser.MEMBERNAME, username)
+            self.admin.modifyGroup(dialoutEnt)
 
         return RESULT_SUCCESS
 
