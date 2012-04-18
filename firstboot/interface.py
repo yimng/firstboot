@@ -188,6 +188,16 @@ class Interface(object):
         dlg.destroy()
         os.system("/sbin/reboot")
 
+    def fit_window_to_screen(self):
+        # need this to get the monitor
+        self.win.show()
+
+        screen = self.win.get_screen()
+        monitor = screen.get_monitor_at_window(self.win.get_window())
+        geometry = screen.get_monitor_geometry(monitor)
+        self._x_size = geometry.width
+        self._y_size = geometry.height
+
     def createMainWindow(self):
         """Create and initialize the main window.  This includes switching to
            fullscreen mode if necessary, adding buttons, displaying artwork,
@@ -200,6 +210,8 @@ class Interface(object):
         self.win.set_decorated(False)
         # we don't set border width here so that the sidebar will meet
         # the edge of the screen
+
+        self.fit_window_to_screen()
 
         # Create a box that will hold all other widgets.
         self.mainHBox = gtk.HBox(False, 10)
