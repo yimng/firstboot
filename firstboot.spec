@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 17.1
+Version: 17.2
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -103,6 +103,10 @@ fi
 
 
 %changelog
+* Fri Apr 20 2012 Martin Gracik <mgracik@redhat.com> 17.2-1
+- Get the dimensions of the actual monitor (#800662)
+- Add the admin user to dialout group (#771918)
+
 * Wed Apr 11 2012 Martin Gracik <mgracik@redhat.com> 17.1-1
 - Use -merge for xrdb (#808919)
 - Translation updates
