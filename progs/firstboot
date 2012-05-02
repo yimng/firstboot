@@ -99,7 +99,6 @@ if __name__ == '__main__':
         frontend.start_wm()
         frontend.merge_xres()
 
-
     # these modules import gtk, so we need to have a display first
     import firstboot.interface
     import meh.ui.gui
@@ -111,7 +110,7 @@ if __name__ == '__main__':
 
     # XXX set up meh
     handler_conf = meh.Config(programName='firstboot',
-                                 programVersion='@VERSION@')
+                              programVersion='@VERSION@')
     handler = meh.handler.ExceptionHandler(handler_conf,
                                            meh.ui.gui.GraphicalIntf(),
                                            meh.dump.ExceptionDump)
@@ -123,8 +122,7 @@ if __name__ == '__main__':
                                   reconfig=opts.reconfig)
 
     if not modules:
-        err('no modules found')
-        log.critical(err)
+        err = 'no modules found'
         raise RuntimeError(err)
 
     # TODO rewrite the interface
