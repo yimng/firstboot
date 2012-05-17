@@ -3,7 +3,7 @@
 Summary: Initial system configuration utility
 Name: firstboot
 URL: http://fedoraproject.org/wiki/FirstBoot
-Version: 17.2
+Version: 17.3
 Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -103,6 +103,11 @@ fi
 
 
 %changelog
+* Thu May 17 2012 Brian C. Lane <bcl@redhat.com> 17.3-1
+- Let WM place the window (#821077) (bcl)
+- Fix no modules error handling (mgracik)
+- Check if firstboot is run under root (#816628) (mgracik)
+
 * Fri Apr 20 2012 Martin Gracik <mgracik@redhat.com> 17.2-1
 - Get the dimensions of the actual monitor (#800662)
 - Add the admin user to dialout group (#771918)
