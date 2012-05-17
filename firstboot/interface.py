@@ -197,6 +197,8 @@ class Interface(object):
         geometry = screen.get_monitor_geometry(monitor)
         self._x_size = geometry.width
         self._y_size = geometry.height
+        logging.info("Setting size to %sx%s" % (self._x_size, self._y_size))
+        self.win.set_size_request(self._x_size, self._y_size)
 
     def createMainWindow(self):
         """Create and initialize the main window.  This includes switching to
@@ -206,7 +208,7 @@ class Interface(object):
         """
         # Create the initial window and a vbox to fill it with.
         self.win = gtk.Window()
-        self.win.set_position(gtk.WIN_POS_CENTER)
+        self.win.set_position(gtk.WIN_POS_NONE)
         self.win.set_decorated(False)
         # we don't set border width here so that the sidebar will meet
         # the edge of the screen
