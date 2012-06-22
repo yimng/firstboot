@@ -42,7 +42,7 @@ class moduleClass(Module):
     def createScreen(self):
         self.vbox = gtk.VBox(spacing=10)
 
-        label = gtk.Label(_("""Thank you for installing Fedora.  Fedora is a \
+        label = gtk.Label(_("""Thank you for installing IprediaOS.  IprediaOS is a \
 compilation of software packages, each under its own license.  The \
 compilation is made available under the GNU General Public License version \
 2.  There are no restrictions on using, copying, or modifying this code.  \
@@ -51,7 +51,7 @@ redistribution of the code, either in its original or a modified form.  \
 Among other things, those restrictions/obligations pertain to the \
 licensing of the redistribution, trademark rights, and export control.\n\n\
 If you would like to understand what those restrictions are, please \
-visit http://fedoraproject.org/wiki/Legal/Licenses/LicenseAgreement."""))
+visit http://ipredia.org/wiki/Legal/Licenses/LicenseAgreement."""))
         label.set_line_wrap(True)
         label.set_alignment(0.0, 0.0)
         label.set_size_request(500, -1)
